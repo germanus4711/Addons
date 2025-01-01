@@ -1,7 +1,3 @@
-10
-
-It's a simple process.
-
 A) Create a personal-access-token (PAT)
 
 For that, go to github.com/YOUR_USERNAME
