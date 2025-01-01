@@ -1,0 +1,71 @@
+## Title: CrutchAlerts
+## This addon is a crutch
+## Author: Kyzeragon
+## Version: 1.6.4
+## APIVersion: 101044
+
+## DependsOn: LibAddonMenu-2.0>=31
+## OptionalDependsOn: OdySupportIcons LibFilteredChatPanel LibDialog HodorReflexes
+
+## SavedVariables: CrutchAlertsSavedVariables
+
+; Special thanks to Smaxx, oumu, Keldorem, nikepiko, and more for
+; language translations and other data!
+; and of course Lamierina7 for creating OdySupportIcons :D
+
+main/CrutchAlerts.lua
+main/CrutchAlerts.xml
+main/GlobalEvents.lua
+main/Settings.lua
+main/Utils.lua
+
+lang/en.lua
+lang/$(language).lua
+
+zones/trials/Cloudrest.xml
+zones/trials/MawOfLorkhaj.xml
+
+zones/trials/Asylumsanctorium.lua
+zones/trials/Cloudrest.lua
+zones/trials/DreadsailReef.lua
+zones/trials/HallsOfFabrication.lua
+zones/trials/KynesAegis.lua
+zones/trials/LucentCitadel.lua
+zones/trials/MawOfLorkhaj.lua
+zones/trials/Rockgrove.lua
+zones/trials/SanitysEdge.lua
+zones/trials/Sunspire.lua
+
+zones/arenas/EndlessArchive.lua
+zones/arenas/MaelstromArena.lua
+zones/arenas/VateshranHollows.lua
+
+zones/dungeons/BedlamVeil.lua
+zones/dungeons/ShipwrightsRegret.lua
+
+bosshealthbar/BossHealthBar.lua
+bosshealthbar/BossHealthBar.xml
+bosshealthbar/TrialThresholds.lua
+bosshealthbar/DungeonThresholds.lua
+bosshealthbar/ArenaThresholds.lua
+bosshealthbar/EndlessArchiveThresholds.lua
+
+damageable/Damageable.lua
+
+alerts/AbilityData.lua
+alerts/Core.lua
+alerts/DisplayFormat.lua
+alerts/Effects.lua
+alerts/Events.lua
+alerts/Fatecarver.lua
+
+icons/DrawLine.lua
+icons/Overrides.lua
+icons/WorldIcons.lua
+
+prominent/DamageTaken.lua
+prominent/Prominent.lua
+prominent/ProminentV2.lua
+
+uidebug/UIDebug.lua
+uidebug/UIDebug.xml

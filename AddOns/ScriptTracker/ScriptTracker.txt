@@ -1,0 +1,12 @@
+## Title: ScriptTracker
+## Version: 1.17
+## APIVersion: 101043
+## Author: akamatsu02
+## SavedVariables: ScriptTracker_Data
+## OptionalDependsOn: LibChatMenuButton LibObserve
+## DependsOn: LibAddonMenu-2.0 
+
+ScriptTracker.min.lua
+debug.lua
+Bindings.xml
+ui.xml

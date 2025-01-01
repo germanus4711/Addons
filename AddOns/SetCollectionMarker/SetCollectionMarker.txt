@@ -1,0 +1,20 @@
+## Title: SetCollectionMarker
+## Mark uncollected set items in inventories and chat
+## Author: Kyzeragon
+## Version: 2.1.0
+## APIVersion: 101039
+## DependsOn: LibAddonMenu-2.0>=31
+
+## OptionalDependsOn: pChat rChat LibDebugLogger>=196
+
+## SavedVariables: SetCollectionMarkerSavedVariables
+
+src/SetCollectionMarker.lua
+src/SetCollectionMarkerGamepad.lua
+src/Settings.lua
+src/ChatFormatter.lua
+
+src/requested/Whisper.lua
+src/requested/Trade.lua
+src/requested/Mail.lua
+src/requested/Buttons.xml

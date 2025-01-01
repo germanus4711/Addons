@@ -1,0 +1,301 @@
+<GuiXml> 
+	<!-- New Font definition -->
+	<Font name="TimFontTbarM"  font="$(MEDIUM_FONT)|16|soft-shadow-thin"/>
+	<Font name="TimFontTbarB"  font="$(BOLD_FONT)|16|soft-shadow-thin"/>
+	<Font name="TimFontTbarT"  font="$(MEDIUM_FONT)|18|soft-shadow-thin"/>
+	<Font name="TimFontTbarT2" font="$(MEDIUM_FONT)|17|soft-shadow-thin"/>
+<Controls> 
+	<!-- Tooltip Writs-->
+	<TopLevelControl name="TimTbarTooltipWrits" mouseEnabled="true" movable="false" clampedToScreen="true" layer="3" hidden="true">
+		<!--<Dimensions x="410" y="300"/>-->
+		<Anchor point="TOPLEFT"/>
+		<Controls>
+			<Backdrop name="$(parent)BG" alpha="1" edge="0" inherits="ZO_DefaultBackdrop"/>
+			<Label name="$(parent)Header" font="ZoFontHeader" color="999999" text="Crafting Writs" verticalAlignment="CENTER" horizontalAlignment="CENTER">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="0" offsetY="0"/>
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="0" offsetY="0"/>
+			</Label>
+			<Texture name="$(parent)Divider" textureFile="EsoUI/Art/Miscellaneous/horizontalDivider.dds">
+				<Dimensions y="4"/>
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Header" relativePoint="BOTTOMLEFT" offsetX="-30" offsetY="3"/>
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)Header" relativePoint="BOTTOMRIGHT" offsetX="30" offsetY="3"/>
+			</Texture>
+			<Label name="$(parent)Left" font="TimFontTbarT2" text="" verticalAlignment="CENTER">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Header" relativePoint="BOTTOMLEFT" offsetX="0" offsetY="9"/>
+			</Label>
+			<Label name="$(parent)Right" font="TimFontTbarT2" text="" horizontalAlignment="LEFT" verticalAlignment="CENTER">
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)Header" relativePoint="BOTTOMRIGHT" offsetX="-10" offsetY="10"/>
+			</Label>
+		</Controls>
+	</TopLevelControl>
+	<!-- Tooltip Stiller-->
+	<TopLevelControl name="TimTbarTooltipStill" mouseEnabled="true" movable="false" clampedToScreen="true" layer="3" hidden="true">
+		<!--<Dimensions x="410" y="300"/>-->
+		<Anchor point="TOPLEFT"/>
+		<Controls>
+			<Backdrop name="$(parent)BG" alpha="1" edge="0" inherits="ZO_DefaultBackdrop"/>
+			<Label name="$(parent)Header" font="ZoFontHeader" color="999999" text="DB-Supplier" verticalAlignment="CENTER" horizontalAlignment="CENTER">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="0" offsetY="0"/>
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="0" offsetY="0"/>
+			</Label>
+			<Texture name="$(parent)Divider" textureFile="EsoUI/Art/Miscellaneous/horizontalDivider.dds">
+				<Dimensions y="4"/>
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Header" relativePoint="BOTTOMLEFT" offsetX="-30" offsetY="3"/>
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)Header" relativePoint="BOTTOMRIGHT" offsetX="30" offsetY="3"/>
+			</Texture>
+			<Label name="$(parent)Left" font="TimFontTbarT2" text="" verticalAlignment="CENTER">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Header" relativePoint="BOTTOMLEFT" offsetX="0" offsetY="10"/>
+			</Label>
+			<Label name="$(parent)Right" font="TimFontTbarT2" text="" horizontalAlignment="LEFT" verticalAlignment="CENTER">
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)Header" relativePoint="BOTTOMRIGHT" offsetX="-10" offsetY="10"/>
+			</Label>
+		</Controls>
+	</TopLevelControl>
+	<!-- Tooltip Mount-->
+	<TopLevelControl name="TimTbarTooltipMount" mouseEnabled="true" movable="false" clampedToScreen="true" layer="3" hidden="true">
+		<!--<Dimensions x="410" y="300"/>-->
+		<Anchor point="TOPLEFT"/>
+		<Controls>
+			<Backdrop name="$(parent)BG" alpha="1" edge="0" inherits="ZO_DefaultBackdrop"/>
+			<Label name="$(parent)Header" font="ZoFontHeader" color="999999" text="Mount-Feeding" verticalAlignment="CENTER" horizontalAlignment="CENTER">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="0" offsetY="0"/>
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="0" offsetY="0"/>
+			</Label>
+			<Texture name="$(parent)Divider" textureFile="EsoUI/Art/Miscellaneous/horizontalDivider.dds">
+				<Dimensions y="4"/>
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Header" relativePoint="BOTTOMLEFT" offsetX="-30" offsetY="3"/>
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)Header" relativePoint="BOTTOMRIGHT" offsetX="30" offsetY="3"/>
+			</Texture>
+			<Label name="$(parent)Left" font="TimFontTbarT2" text="" verticalAlignment="CENTER">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Header" relativePoint="BOTTOMLEFT" offsetX="0" offsetY="10"/>
+			</Label>
+			<Label name="$(parent)Right" font="TimFontTbarT2" text="" horizontalAlignment="LEFT" verticalAlignment="CENTER">
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)Header" relativePoint="BOTTOMRIGHT" offsetX="-10" offsetY="10"/>
+			</Label>
+		</Controls>
+	</TopLevelControl>
+	<!-- Tooltip LoginRewards-->
+	<TopLevelControl name="TimTbarTooltipLogin" mouseEnabled="true" movable="false" clampedToScreen="true" layer="3" hidden="true">
+		<!--<Dimensions x="410" y="300"/>-->
+		<Anchor point="TOPLEFT"/>
+		<Controls>
+			<Backdrop name="$(parent)BG" alpha="1" edge="0" inherits="ZO_DefaultBackdrop"/>
+			<Label name="$(parent)Header" font="ZoFontHeader" color="999999" text="Login-Rewards" verticalAlignment="CENTER" horizontalAlignment="CENTER">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="0" offsetY="0"/>
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="0" offsetY="0"/>
+			</Label>
+			<Texture name="$(parent)Divider" textureFile="EsoUI/Art/Miscellaneous/horizontalDivider.dds">
+				<Dimensions y="4"/>
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Header" relativePoint="BOTTOMLEFT" offsetX="-30" offsetY="3"/>
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)Header" relativePoint="BOTTOMRIGHT" offsetX="30" offsetY="3"/>
+			</Texture>
+			<Label name="$(parent)Left" font="TimFontTbarT2" text="" verticalAlignment="CENTER">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Header" relativePoint="BOTTOMLEFT" offsetX="0" offsetY="10"/>
+			</Label>
+			<Label name="$(parent)Middle" font="TimFontTbarT2" text="" horizontalAlignment="LEFT" verticalAlignment="CENTER">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Left" relativePoint="TOPRIGHT" offsetX="10" offsetY="0"/>
+			</Label>
+			<Label name="$(parent)Right" font="TimFontTbarT2" text="" horizontalAlignment="LEFT" verticalAlignment="CENTER">
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)Header" relativePoint="BOTTOMRIGHT" offsetX="-10" offsetY="10"/>
+			</Label>
+		</Controls>
+	</TopLevelControl>
+	
+	<!--Toolbox-->
+	<TopLevelControl name="TimTbarWindow" clampedToScreen="true" mouseEnabled="true"> 
+		<Dimensions y="30"/>
+		<Anchor point="TOP" relativeTo="GUI_ROOT" relativePoint="TOP" offsetX="0" offsetY="0"/>
+		<!--Banner-->
+		<Controls> 
+			<!-- Banner links -->
+			<Texture name="$(parent)AllianzL" verticalAlignment="TOP" color="000000">
+				<Dimensions x="32" y="70"/>
+				<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="BOTTOMLEFT" offsetX="-1" offsetY="-1"/>
+			</Texture>
+			<!-- Banner rechts -->
+			<Texture name="$(parent)AllianzR" verticalAlignment="TOP" color="000000">
+				<Dimensions x="32" y="70"/>
+				<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="BOTTOMRIGHT" offsetX="1" offsetY="-1"/>
+			</Texture>
+		</Controls>
+		<!--Toolbar-->
+		<Controls> 
+			<Backdrop name="$(parent)BG" inherits="ZO_DarkThinFrame">
+				<AnchorFill/>
+			</Backdrop>
+			<!-- Zeit -->
+			<Label name="$(parent)Info01" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="12" offsetY="0"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)" relativePoint="BOTTOMLEFT" offsetX="12" offsetY="0"/>
+			</Label>
+			<!-- Spielerinfos -->
+			<Label name="$(parent)Info02" verticalAlignment="CENTER" font="TimFontTbarM" mouseEnabled="true">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info01" relativePoint="TOPRIGHT" offsetX="16"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info01" relativePoint="BOTTOMRIGHT" offsetX="16"/>
+				<OnMouseUp>PlaySound(SOUNDS.DIALOG_ACCEPT) SCENE_MANAGER:Show('skills')</OnMouseUp>
+			</Label>
+			<Label name="$(parent)Info03" verticalAlignment="CENTER" font="TimFontTbarB" mouseEnabled="true" clickSound="Click">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info02" relativePoint="TOPRIGHT" offsetX="12" offsetY="1"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info02" relativePoint="BOTTOMRIGHT" offsetX="12" offsetY="1"/>
+				<OnMouseUp>PlaySound(SOUNDS.DIALOG_ACCEPT) SCENE_MANAGER:Show('championPerks')</OnMouseUp>
+			</Label>
+			<Label name="$(parent)Info04" verticalAlignment="CENTER" font="TimFontTbarM" mouseEnabled="true" clickSound="Click">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info03" relativePoint="TOPRIGHT" offsetX="10" offsetY="-1"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info03" relativePoint="BOTTOMRIGHT" offsetX="10" offsetY="-1"/>
+				<OnMouseUp>PlaySound(SOUNDS.DIALOG_ACCEPT) SCENE_MANAGER:Show('groupMenuKeyboard')</OnMouseUp>
+			</Label>
+			<!-- Platz -->
+			<Label name="$(parent)Info05" verticalAlignment="CENTER" font="TimFontTbarM" mouseEnabled="true" clickSound="Click">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info04" relativePoint="TOPRIGHT" offsetX="14"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info04" relativePoint="BOTTOMRIGHT" offsetX="14"/>
+				<OnMouseUp>PlaySound(SOUNDS.DIALOG_ACCEPT) SCENE_MANAGER:Show("inventory")</OnMouseUp>
+			</Label>
+			<Label name="$(parent)Info06" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info05" relativePoint="TOPRIGHT" offsetX="15"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info05" relativePoint="BOTTOMRIGHT" offsetX="15"/>
+			</Label>
+			<!-- Währungen -->
+			<Label name="$(parent)Info07" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info06" relativePoint="TOPRIGHT" offsetX="15"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info06" relativePoint="BOTTOMRIGHT" offsetX="15"/>
+			</Label>
+			<Label name="$(parent)Info08" verticalAlignment="CENTER" font="TimFontTbarM" mouseEnabled="true" clickSound="Click">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info07" relativePoint="TOPRIGHT" offsetX="14"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info07" relativePoint="BOTTOMRIGHT" offsetX="14"/>
+				<OnMouseUp>
+					PlaySound(SOUNDS.DIALOG_ACCEPT) SCENE_MANAGER:Show("campaignOverview")</OnMouseUp>
+			</Label>
+			<Label name="$(parent)Info09" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info08" relativePoint="TOPRIGHT" offsetX="14"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info08" relativePoint="BOTTOMRIGHT" offsetX="14"/>
+			</Label>
+			<Label name="$(parent)Info10" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info09" relativePoint="TOPRIGHT" offsetX="14"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info09" relativePoint="BOTTOMRIGHT" offsetX="14"/>
+			</Label>
+			<Label name="$(parent)Info11" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info10" relativePoint="TOPRIGHT" offsetX="14"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info10" relativePoint="BOTTOMRIGHT" offsetX="14"/>
+			</Label>
+			<Label name="$(parent)Info12" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info11" relativePoint="TOPRIGHT" offsetX="15"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info11" relativePoint="BOTTOMRIGHT" offsetX="15"/>
+			</Label>
+			<Label name="$(parent)Info13" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info12" relativePoint="TOPRIGHT" offsetX="12"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info12" relativePoint="BOTTOMRIGHT" offsetX="12"/>
+			</Label>
+			<Label name="$(parent)Info14" verticalAlignment="CENTER" font="TimFontTbarM" mouseEnabled="true" clickSound="Click">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info13" relativePoint="TOPRIGHT" offsetX="15"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info13" relativePoint="BOTTOMRIGHT" offsetX="15"/>
+				<OnMouseUp>
+					PlaySound(SOUNDS.DIALOG_ACCEPT)
+					if KEYBOARD_GROUP_MENU_SCENE:IsShowing() then
+						GROUP_MENU_KEYBOARD:SetCurrentCategory(TIMED_ACTIVITIES_FRAGMENT)
+					else
+						GROUP_MENU_KEYBOARD:SetCategoryOnShow(TIMED_ACTIVITIES_FRAGMENT)
+						MAIN_MENU_KEYBOARD:RefreshCategoryBar()
+						MAIN_MENU_KEYBOARD:ShowScene("groupMenuKeyboard")
+					end
+				</OnMouseUp>
+			</Label>
+			<Label name="$(parent)Info15" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info14" relativePoint="TOPRIGHT" offsetX="3"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info14" relativePoint="BOTTOMRIGHT" offsetX="3"/>
+			</Label>
+			<Label name="$(parent)Info16" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info15" relativePoint="TOPRIGHT" offsetX="14"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info15" relativePoint="BOTTOMRIGHT" offsetX="14"/>
+			</Label>
+			<!-- Inventar -->
+			<Label name="$(parent)Info17" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info16" relativePoint="TOPRIGHT" offsetX="18"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info16" relativePoint="BOTTOMRIGHT" offsetX="18"/>
+			</Label>
+			<Label name="$(parent)Info18" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info17" relativePoint="TOPRIGHT" offsetX="10"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info17" relativePoint="BOTTOMRIGHT" offsetX="10"/>
+			</Label>
+			<Label name="$(parent)Info19" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info18" relativePoint="TOPRIGHT" offsetX="10"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info18" relativePoint="BOTTOMRIGHT" offsetX="10"/>
+			</Label>
+			<Label name="$(parent)Info20" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info19" relativePoint="TOPRIGHT" offsetX="11"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info19" relativePoint="BOTTOMRIGHT" offsetX="11"/>
+			</Label>
+			<!-- Zustände -->
+			<Label name="$(parent)Info21" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info20" relativePoint="TOPRIGHT" offsetX="16"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info20" relativePoint="BOTTOMRIGHT" offsetX="16"/>
+			</Label>
+			<!-- Red Buttons -->
+			<Label name="$(parent)Info22" verticalAlignment="CENTER" font="TimFontTbarM" mouseEnabled="true">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info21" relativePoint="TOPRIGHT" offsetX="18"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info21" relativePoint="BOTTOMRIGHT" offsetX="18"/>
+				<OnMouseEnter>aTim99_Tbar.ShowToolTipLogin()</OnMouseEnter>
+				<OnMouseExit>aTim99_Tbar.HideTooltipLogin()</OnMouseExit>
+				<OnMouseUp>PlaySound(SOUNDS.DIALOG_ACCEPT) aTim99_Tbar.ShareLoginClData(self,button,upInside,ctrl,alt,shift)</OnMouseUp>
+			</Label>
+			<Label name="$(parent)Info23" verticalAlignment="CENTER" font="TimFontTbarM" mouseEnabled="true">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info22" relativePoint="TOPRIGHT" offsetX="-1" offsetY="-1"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info22" relativePoint="BOTTOMRIGHT" offsetX="-1" offsetY="-1"/>
+				<OnMouseEnter>aTim99_Tbar.ShowToolTipWrits()</OnMouseEnter>
+				<OnMouseExit>aTim99_Tbar.HideTooltipWrits()</OnMouseExit>
+			</Label>
+			<Label name="$(parent)Info24" verticalAlignment="CENTER" font="TimFontTbarM" mouseEnabled="true">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info23" relativePoint="TOPRIGHT" offsetX="-2" offsetY="1"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info23" relativePoint="BOTTOMRIGHT" offsetX="-2" offsetY="1"/>
+				<OnMouseEnter>aTim99_Tbar.ShowToolTipStill()</OnMouseEnter>
+				<OnMouseExit>aTim99_Tbar.HideTooltipStill()</OnMouseExit>
+			</Label>
+			<Label name="$(parent)Info25" verticalAlignment="CENTER" font="TimFontTbarM" mouseEnabled="true">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info24" relativePoint="TOPRIGHT" offsetX="0"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info24" relativePoint="BOTTOMRIGHT" offsetX="0"/>
+				<OnMouseEnter>aTim99_Tbar.ShowToolTipMount()</OnMouseEnter>
+				<OnMouseExit>aTim99_Tbar.HideTooltipMount()</OnMouseExit>
+			</Label>
+			<Label name="$(parent)Info26" verticalAlignment="CENTER" font="TimFontTbarM" mouseEnabled="true">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info25" relativePoint="TOPRIGHT" offsetX="4"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info25" relativePoint="BOTTOMRIGHT" offsetX="4"/>
+				<!--<OnMouseUp>PlaySound(SOUNDS.DIALOG_ACCEPT) SCENE_MANAGER:Show('skills')</OnMouseUp>-->
+				<OnMouseUp>FastTravelToNode(407) SCENE_MANAGER:ShowBaseScene()</OnMouseUp>
+			</Label>
+			<!--
+			<Label name="$(parent)Info27" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info26" relativePoint="TOPRIGHT" offsetX="-1" offsetY="0"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info26" relativePoint="BOTTOMRIGHT" offsetX="-1" offsetY="0"/>
+			</Label>
+			-->
+			<Label name="$(parent)Info28" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info26" relativePoint="TOPRIGHT" offsetX="-2" offsetY="0"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info26" relativePoint="BOTTOMRIGHT" offsetX="-2" offsetY="0"/>
+			</Label>
+			<Label name="$(parent)Info29" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info28" relativePoint="TOPRIGHT" offsetX="8" offsetY="0"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info28" relativePoint="BOTTOMRIGHT" offsetX="8" offsetY="0"/>
+			</Label>
+			
+			<Label name="$(parent)Info30" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info29" relativePoint="TOPRIGHT" offsetX="14" offsetY="0"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info29" relativePoint="BOTTOMRIGHT" offsetX="14" offsetY="0"/>
+			</Label>
+			<Label name="$(parent)Info31" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info30" relativePoint="TOPRIGHT" offsetX="3" offsetY="0"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info30" relativePoint="BOTTOMRIGHT" offsetX="3" offsetY="0"/>
+			</Label>
+			<Label name="$(parent)Info32" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info31" relativePoint="TOPRIGHT" offsetX="3" offsetY="0"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info31" relativePoint="BOTTOMRIGHT" offsetX="3" offsetY="0"/>
+			</Label>
+			<Label name="$(parent)Info33" verticalAlignment="CENTER" font="TimFontTbarM">
+				<Anchor point="TOPLEFT" relativeTo="$(parent)Info32" relativePoint="TOPRIGHT" offsetX="2" offsetY="0"/>
+				<Anchor point="BOTTOMLEFT" relativeTo="$(parent)Info32" relativePoint="BOTTOMRIGHT" offsetX="2" offsetY="0"/>
+			</Label>
+			
+			
+		</Controls>.
+	</TopLevelControl>
+
+</Controls>
+</GuiXml>

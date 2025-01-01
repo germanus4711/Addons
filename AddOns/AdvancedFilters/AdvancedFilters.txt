@@ -1,0 +1,35 @@
+## Title: Advanced Filters
+## Author: Randactyl & Baertram
+## Version: 1.6.4.8
+## AddOnVersion: 1648
+## APIVersion: 101043 101044
+## DependsOn: LibAddonMenu-2.0>=37 LibCustomMenu>=721 LibFilters-3.0>=343 LibScrollableMenu>=0202
+## OptionalDependsOn: LibMotifCategories>=2
+## OptionalDependsOn: FCOCraftFilter>=006060 FCOCompanion>=001040
+## SavedVariables: AdvancedFilters_Settings
+
+constants.lua
+files/util.lua
+
+lang/en.lua
+lang/$(language).lua
+
+files/libraries.lua
+
+AdvancedFilters.lua
+
+files/textures.lua
+
+files/FilterBar/AF_FilterBar.xml
+files/FilterBar/AF_FilterBar.lua
+
+files/filterCallbacks.lua
+files/API.lua
+
+files/settingsmenu.lua
+
+extrafilters/LevelFilters.lua
+extrafilters/NewMotif.lua
+extrafilters/MotifKnowledge.lua
+extrafilters/EquipmentMotifCategories.lua
+extrafilters/BoPTradeableFilters.lua

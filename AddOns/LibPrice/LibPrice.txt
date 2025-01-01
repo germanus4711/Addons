@@ -1,0 +1,15 @@
+## Title: LibPrice 7.43
+## Version: 7.43
+## AddOnVersion: 70430
+## APIVersion: 101040
+## IsLibrary: true
+## Description: Return price data from multiple sources: Master Merchant, Arkadius' Trade Tools, Tamriel Trade Centre, and Furniture Catalogue.
+## Author: ziggr
+
+LibPrice.lua
+LibPrice_Internal.lua
+
+# Example code. Leave commented out except when
+# running the example.
+
+# LibPrice_Example.lua

@@ -1,0 +1,30 @@
+## Title: Pithka's Achievement Tracker
+## APIVersion: 101037 101038 101039 101040
+## Author: @pithka
+## SavedVariables: PithkaSavedVariables
+## DependsOn: LibAddonMenu-2.0
+
+fontstrings.xml
+PithkaAchievementTracker.xml
+Utils.lua
+
+Data/Achievements.lua
+Data/Scores.lua
+Data/Ranks.lua
+Data/Pledges.lua
+
+UI/Constants.lua
+UI/Layout.lua
+UI/Labels.lua
+UI/Icons.lua
+UI/Misc.lua
+
+Screens/baseDungeons.lua
+Screens/Dungeons.lua
+Screens/Trials.lua
+Screens/Trifectas.lua
+Screens/Nav.lua
+
+Options.lua
+Main.lua
+Bindings.xml

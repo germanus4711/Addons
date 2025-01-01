@@ -1,0 +1,91 @@
+<GuiXml>
+	<Controls>
+		<!-- LCA_MoveableControl -->
+
+		<TopLevelControl name="LCA_PositioningGuide" hidden="true" virtual="true">
+			<Controls>
+				<Backdrop name="$(parent)GuideX" layer="OVERLAY" hidden="true">
+					<Anchor point="TOP" />
+					<Anchor point="BOTTOM" constrains="Y" />
+				</Backdrop>
+				<Backdrop name="$(parent)GuideY" layer="OVERLAY" hidden="true">
+					<Anchor point="LEFT" />
+					<Anchor point="RIGHT" constrains="X" />
+				</Backdrop>
+			</Controls>
+		</TopLevelControl>
+
+		<TopLevelControl name="LCA_MoveableControl" mouseEnabled="true" movable="true" clampedToScreen="true" resizeToFitDescendents="true" inherits="LCA_PositioningGuide" virtual="true">
+			<OnMoveStart>
+				LCA_MoveableControl_OnMoveStart(self)
+			</OnMoveStart>
+			<OnMoveStop>
+				LCA_MoveableControl_OnMoveStop(self)
+			</OnMoveStop>
+			<Controls>
+				<Backdrop name="$(parent)AnchorX" layer="OVERLAY" hidden="true" />
+				<Backdrop name="$(parent)AnchorY" layer="OVERLAY" hidden="true" />
+			</Controls>
+		</TopLevelControl>
+
+
+		<!-- LCA_GroupPanel -->
+
+		<TopLevelControl name="LCA_GroupPanel" virtual="true" inherits="LCA_MoveableControl">
+			<Controls>
+				<Label name="$(parent)Header" font="$(BOLD_FONT)|$(KB_18)|thick-outline" horizontalAlignment="CENTER" verticalAlignment="CENTER" wrapMode="ELLIPSIS">
+					<Anchor point="TOPLEFT" />
+					<Dimensions x="320" y="24" />
+				</Label>
+			</Controls>
+		</TopLevelControl>
+
+		<Control name="LCA_GroupPanel_Pane" resizeToFitDescendents="true" hidden="true" virtual="true">
+			<Controls>
+				<Backdrop name="$(parent)Backdrop">
+					<Anchor point="LEFT" />
+					<Dimensions x="160" y="24" />
+				</Backdrop>
+				<Texture name="$(parent)Role">
+					<Anchor point="LEFT" offsetX="2" />
+					<Dimensions x="20" y="20" />
+				</Texture>
+				<Label name="$(parent)Name" font="$(GAMEPAD_MEDIUM_FONT)|$(KB_17)|soft-shadow-thin" wrapMode="ELLIPSIS" horizontalAlignment="LEFT" verticalAlignment="CENTER">
+					<Anchor point="LEFT" relativePoint="RIGHT" relativeTo="$(parent)Role" offsetX="2" />
+					<Dimensions x="106" y="24" />
+				</Label>
+				<Label name="$(parent)Stat" font="$(GAMEPAD_MEDIUM_FONT)|$(KB_17)|soft-shadow-thin" wrapMode="TRUNCATE" horizontalAlignment="RIGHT" verticalAlignment="CENTER">
+					<Anchor point="RIGHT" offsetX="-4" />
+					<Dimensions x="26" y="24" />
+				</Label>
+			</Controls>
+		</Control>
+
+
+		<!-- LCA_ScreenBorder -->
+
+		<TopLevelControl name="LCA_ScreenBorder" tier="HIGH" virtual="true">
+			<AnchorFill />
+			<Controls>
+				<Backdrop name="$(parent)Overlay">
+					<AnchorFill />
+				</Backdrop>
+			</Controls>
+		</TopLevelControl>
+
+
+		<!-- LCA_StatusPanel -->
+
+		<Label name="LCA_StatusPanel_Cell" font="$(MEDIUM_FONT)|$(KB_28)|thick-outline" wrapMode="ELLIPSIS" horizontalAlignment="LEFT" verticalAlignment="TOP" hidden="true" virtual="true" />
+
+		<Label name="LCA_StatusPanel_SubCell" font="ZoFontGameSmall" inherits="LCA_StatusPanel_Cell" virtual="true" />
+
+		<Control name="LCA_StatusPanel_Row" resizeToFitDescendents="true" hidden="true" virtual="true">
+			<Controls>
+				<Label name="$(parent)Cell1" font="$(BOLD_FONT)|$(KB_28)|thick-outline" horizontalAlignment="RIGHT" inherits="LCA_StatusPanel_Cell">
+					<Anchor point="TOPLEFT" />
+				</Label>
+			</Controls>
+		</Control>
+	</Controls>
+</GuiXml>

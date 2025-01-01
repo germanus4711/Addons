@@ -1,0 +1,79 @@
+## Title: |cFFFF00Event Tracker |c00CCFFNew Life (2)|r v2.271
+## Description: Helps track Event Tickets so you don't miss any.
+## Author: |cAA00FFKelinmiriel|r
+## Version: 2.271
+## AddOnVersion: 2271
+## APIVersion: 101044
+## SavedVariables: EventTrackerVars EventTrackerShared
+;## DependsOn: LibEventTracker>=1
+## OptionalDependsOn: LibSlashCommander
+##
+## This Add-on is not created by, affiliated with or sponsored by ZeniMax Media
+## Inc. or its affiliates. The Elder Scrolls® and related logos are registered
+## trademarks or trademarks of ZeniMax Media Inc. in the United States and/or
+## other countries. All rights reserved.
+##
+## THIS MATERIAL IS NOT MADE, GUARANTEED OR SUPPORTED
+## BY ZENIMAX OR ITS AFFILIATES.
+##
+## You can read the full terms at https://account.elderscrollsonline.com/add-on-terms
+##
+## Thank you to the following addon authors, without whom it would have been a lot
+## harder to write this.
+##   StorybookTerror (Reveries; much specific assistance!)
+##   Dolgubon (Dolgubon's Lazy Writ Crafter; library idea!)
+##   code65536 (PlunderSkullTimer, DungeonTimer)
+##   tirtow (TimersOfNirn)
+##   Kafeijao (EventTickets)
+##   AethronX (Grubmaster)
+##
+
+Bindings.xml
+EventTracker.lua
+Languages/en.lua
+Languages/$(language).lua
+EVTUtils.lua
+EVTEvents.lua
+EVTUserInterface.lua
+EventTracker.xml
+
+; Recent changes:
+; Version 2.271 (2024/12/19) Minor collectible display issue for 5-part house
+; Version 2.270 (2024/12/18) New Life
+; Version 2.260 (2024/11/20) Legacy of the Bretons
+; Version 2.250 (2024/10/21) Witches Festival
+; Version 2.241 (2024/09/30) West Weald minor change; PTS Pan-Tamriel
+; Version 2.240 (2024/09/25) Fallen Leaves of the West Weald;
+;    PTS Legacy of the Bretons, New Life, started Pan-Tamriel
+; Version 2.230 (2024/09/11) Undaunted; U44 API
+; Version 2.220 (2024/07/25) Mayhem; U43 API
+; Version 2.210 (2024/06/19) Zeal of Zenithar
+; Version 2.202 (2024/04/24) Ann. shutdown lost last partial day (NA ONLY)
+; Version 2.201 (2024/04/17) Ann. ext. 2 days after PTS/NA major fiasco. API 42
+; Version 2.200 (2024/04/04) Anniversary. Library disabled for now
+; Version 2.110 (2024/03/24) Jester's Fest w. library, corrected "d" outputs
+; Version 2.100 (2024/02/23) First experimental LIBRARY version! (private release)
+; Version 2.070 (2024/02/20) Whitestrake's Mayhem; U41 API
+; Version 2.060 (2024/01/16) Guilds & Glory; Jester & Anniversary on PTS (dates est.)
+; Version 2.050 (2023/12/20) New Life
+; Version 2.041 (2023/11/27) Event extended one extra day due to maintenance
+; Version 2.040 (2023/11/13) Gates of Oblivion
+; Version 2.031 (2023/11/05) Fixed date code that ended Witches a day early
+; Version 2.030 (2023/10/24) Witches Festival
+; Version 2.021 (2023/09/28) missed minor typo affecting those without Necrom
+; Version 2.020 (2023/09/27) Secrets of the Telvanni; U40 API
+; Version 2.010 (2023/09/05) Undaunted
+; Version 2.001 (2023/08/03) Zeal of Zenithar extended one extra day
+; Version 2.000 (2023/07/26) U39 API; Zenithar; Witches (PTS); starting localization
+; Version 1.990 (2023/06/26) 2nd Mayhem; no scroll during Tribute
+; Version 1.981 (2023/05/12) Better coll. info; stop autobuff if no scroll
+; Version 1.98 (2023/05/08) U38 API; May Mayhem; collectible info on "/evt"
+; Version 1.97 (2023/04/11) Less cakes!
+; Version 1.96 (2023/04/06) Anniversary
+; Version 1.95 (2023/03/28) Jester's Festival & start of Anniversary
+; Version 1.94 (2023/02/12) Preparing for the new reset times
+; Version 1.93 (2023/01/26) Event tickets weren't being picked up right.
+; Version 1.92 (2023/01/25) Missed NPC activator warnings for event.
+; Version 1.91 (2023/01/23) Season of the Dragon; U37 API; PTS Jester/Anniv.
+
+; Initial creation 2019/11/28 - see ChangeLog.txt for all other changes

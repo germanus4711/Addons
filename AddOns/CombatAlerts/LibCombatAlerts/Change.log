@@ -1,0 +1,20 @@
+Version 0.1.5 (2024/07/05)
+* Changed the process of registering l10n strings
+
+Version 0.1.4 (2024/07/01)
+* Added public constants: IDS.TAUNT and IDS.MAJ_VULN
+
+Version 0.1.3 (2024/06/16)
+* Added public functions: DoesPlayerHaveSingleTargetPullSlotted and
+  DoesPlayerHaveTauntOrPullSlotted
+
+Version 0.1.2 (2024/06/10)
+* Added public function: GetUnitHealthPercent
+
+Version 0.1.1 (2024/06/09)
+* Added inertia to the width of the status panel element if its position is not
+  left-anchored, to prevent excessive "jumpy" behavior as the width of its
+  content changes
+
+Version 0.1.0 (2024/06/01)
+* Initial version
