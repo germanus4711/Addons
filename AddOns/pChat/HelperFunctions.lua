@@ -1,6 +1,7 @@
 local CONSTANTS = pChat.CONSTANTS
 local apiVersion = CONSTANTS.API_VERSION
 
+local strformat = string.format
 local chatChannelLangToLangStr = CONSTANTS.chatChannelLangToLangStr
 
 do
@@ -56,7 +57,7 @@ do
 
     -- Turn a ([0,1])^3 RGB colour to "|cABCDEF" form. We could use ZO_ColorDef, but we have so many colors so we don't do it.
     local function ConvertRGBToHex(r, g, b)
-        return string.format("|c%.2x%.2x%.2x", zo_floor(r * 255), zo_floor(g * 255), zo_floor(b * 255))
+        return strformat("|c%.2x%.2x%.2x", zo_floor(r * 255), zo_floor(g * 255), zo_floor(b * 255))
     end
 
     -- Convert a colour from "|cABCDEF" form to [0,1] RGB form.
@@ -178,12 +179,28 @@ do
     pChat_GetChannelColors = GetChannelColors
 
 
-    -- Return a formatted time
-    local function CreateTimestamp(timeStr, formatStr)
-        formatStr = formatStr or pChat.db.timestampFormat
+    local function getCurrentMillisecondsFormatted()
+        -- Get milliseconds from game time
+        local currentTimeMs = GetGameTimeMilliseconds()
+        if currentTimeMs == nil then return end
+        return strformat("%03d", currentTimeMs % 1000)
+        --this below is localized and adds bulshit to de client: .575 m 65 s 875 ms
+        --return FormatTimeMilliseconds(GetGameTimeMilliseconds(), TIME_FORMAT_STYLE_COLONS, TIME_FORMAT_PRECISION_MILLISECONDS_NO_HOURS_OR_DAYS, TIME_FORMAT_DIRECTION_NONE)
+    end
+    pChat.getCurrentMillisecondsFormatted = getCurrentMillisecondsFormatted
+
+   -- Return a formatted time
+    local function CreateTimestamp(timeStr, formatStr, milliseconds)
+        local db = pChat.db
+        local showTimestamp = db.showTimestamp
+        if showTimestamp then
+            milliseconds = milliseconds or getCurrentMillisecondsFormatted()
+        end
+        if milliseconds == nil then milliseconds = "" end
+        formatStr = formatStr or db.timestampFormat
 
         -- split up default timestamp
-        local hours, minutes, seconds = timeStr:match("([^%:]+):([^%:]+):([^%:]+)")
+        local hours, minutes, seconds = zo_strmatch(timeStr, "([^%:]+):([^%:]+):([^%:]+)")
         local hoursNoLead = tonumber(hours) -- hours without leading zero
         local hours12NoLead = (hoursNoLead - 1)%12 + 1
         local hours12
@@ -200,18 +217,19 @@ do
         end
 
         -- create new one
+        -->If you add new formats make sure to update the tooltip at PCHAT_TIMESTAMPFORMATTT too
         local timestamp = formatStr
-        timestamp = timestamp:gsub("HH", hours)
-        timestamp = timestamp:gsub("H", hoursNoLead)
-        timestamp = timestamp:gsub("hh", hours12)
-        timestamp = timestamp:gsub("h", hours12NoLead)
-        timestamp = timestamp:gsub("m", minutes)
-        timestamp = timestamp:gsub("s", seconds)
-        timestamp = timestamp:gsub("A", pUp)
-        timestamp = timestamp:gsub("a", pLow)
+        timestamp = zo_strgsub(timestamp, "HH", hours)
+        timestamp = zo_strgsub(timestamp, "H", hoursNoLead)
+        timestamp = zo_strgsub(timestamp, "hh", hours12)
+        timestamp = zo_strgsub(timestamp, "h", hours12NoLead)
+        timestamp = zo_strgsub(timestamp, "m", minutes)
+        timestamp = zo_strgsub(timestamp, "s", seconds)
+        timestamp = zo_strgsub(timestamp, "A", pUp)
+        timestamp = zo_strgsub(timestamp, "a", pLow)
+        timestamp = zo_strgsub(timestamp, "xy", milliseconds)
         return timestamp
     end
-
     pChat.CreateTimestamp = CreateTimestamp
 
 
@@ -251,10 +269,10 @@ do
         for switchArg in switchesToAdd:gmatch("%S+") do
             switchArg = switchArg:lower()
             if isBuiltIn[switchArg] then
-                local message = string.format(GetString(PCHAT_BUILT_IN_CHANNEL_SWITCH_WARNING), switchArg)
+                local message = strformat(GetString(PCHAT_BUILT_IN_CHANNEL_SWITCH_WARNING), switchArg)
                 ZO_Alert(UI_ALERT_CATEGORY_ERROR, SOUNDS.NEGATIVE_CLICK, message)
             elseif g_switchLookup[switchArg] then
-                local message = string.format(GetString(PCHAT_DUPLICATE_CHANNEL_SWITCH_WARNING), switchArg)
+                local message = strformat(GetString(PCHAT_DUPLICATE_CHANNEL_SWITCH_WARNING), switchArg)
                 ZO_Alert(UI_ALERT_CATEGORY_ERROR, SOUNDS.NEGATIVE_CLICK, message)
             else
                 switches[#switches + 1] = switchArg

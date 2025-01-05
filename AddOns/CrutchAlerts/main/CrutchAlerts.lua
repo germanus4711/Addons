@@ -6,7 +6,7 @@
 CrutchAlerts = CrutchAlerts or {}
 local Crutch = CrutchAlerts
 Crutch.name = "CrutchAlerts"
-Crutch.version = "1.6.4"
+Crutch.version = "1.7.1"
 
 Crutch.registered = {
     begin = false,
@@ -112,6 +112,7 @@ local defaultOptions = {
     },
     rockgrove = {
         sludgeSides = true,
+        showBleeding = "HEAL", -- "NEVER", "HEAL", "ALWAYS"
     },
     sanitysedge = {
         showAnsuulIcon = true,

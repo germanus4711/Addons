@@ -10,7 +10,7 @@ _G['PP'] = {
 	['ADDON_NAME']		= 'PerfectPixel',
 	['ADDON_AUTHOR']	= '@KL1SK, Baertram',
 	['ADDON_WEBSITE']	= 'https://www.esoui.com/downloads/info2103-PerfectPixel.html',
-	['ADDON_VERSION'] 	= '0.13.13',
+	['ADDON_VERSION'] 	= '0.13.15',
 }
 
 local PP = PP
@@ -28,7 +28,7 @@ EVENT_MANAGER:RegisterForEvent(PP.ADDON_NAME, EVENT_ADD_ON_LOADED, function(even
 		PP.dialogsMenu()
 		PP.chatWindow()
 		PP.scrolling()
-		-- PP.playerProgressBar()
+		--PP.playerProgressBar()
 		PP.keybindStrip()
 		--
 		PP.inventoryScene()
@@ -50,6 +50,7 @@ EVENT_MANAGER:RegisterForEvent(PP.ADDON_NAME, EVENT_ADD_ON_LOADED, function(even
 		PP.helpSceneGroup()
 		PP.gameMenuInGameScene()
 		PP.performanceMeter()
+		PP.companionsScene()
 
 		PP.compatibility()
 

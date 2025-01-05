@@ -45,6 +45,8 @@ Crutch.format = {
     [105239] = 200010, -- Crushing Darkness
     [103555] =    400, -- Voltaic Current (initial of barswap)
     [104019] =  31003, -- Olorime Spears
+    [103946] =    500, -- Shadow Realm Cast
+    [105291] =    600, -- SUM Shadow Beads
 
 -- Halls of Fabrication
     [ 91019] = 430, -- Phase 1.1 (Assembly General)
@@ -75,6 +77,7 @@ Crutch.format = {
 -- Rockgrove
     [152688] = 2.5, -- Cinder Cleave (Havocrel Annihilator)
     [157860] = 1000, -- Noxious Sludge (hide because of sides)
+    [150008] = 30000, -- Hemorrhaging Smack (Flesh Abomination)
 
 -- Sanctum Ophidia
     [ 56857] = 205, -- Emerald Eclipse (The Serpent)
@@ -108,7 +111,7 @@ Crutch.format = {
     [168314] = 1505, -- Soul Bomb
 
 -- Scrivener's Hall
-    [182334] = 5.3, -- Rain of Fire (Valinna)
+    [182334] = 105.3, -- Rain of Fire (Valinna)
     [182393] = 14.5, -- Immolation Trap (Valinna)
 
 ---------------------------------------------------------------------
@@ -129,6 +132,7 @@ Crutch.format = {
     [202374] = 500, -- Pound (Bone Colossus)
     [193530] = 500, -- Befouled Air (Old Snagara) poison aoe
     [196251] = 500, -- Enervating Sheen (Nerien'eth) does it need to be shielded?
+    [198099] = 500, -- Blood Dive (Lady Thorn)
     [197002] = 500, -- Stormfront (Storm Atronach)
     [196959] = 500, -- Crush (Iron Atronach)
     [196875] = 500, -- Earthen Blast (Lurcher)
@@ -191,7 +195,7 @@ local colors = {
     [3] = "fff1ab", -- Tan, physical
     [4] = "8ef5f5", -- Light blue, shock/ice
     [5] = "ff00ff", -- Magenta
-    [6] = "6a00ff", -- Dark purple
+    [6] = "9447ff", -- The color of rrrrregality
     [7] = "3fe02a", -- Green for Arcanist
     [8] = "9999ff", -- Light indigo, magic
 }

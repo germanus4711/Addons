@@ -14,7 +14,8 @@ end
 function LE_RadialMenu:Initialize()
 	local menuControl = CreateControlFromVirtual("LE_RadialMenuControl", GuiRoot, "LE_RadialMenu_Variant_GP_Default")
 
-	self.Menu = ZO_RadialMenu:New(menuControl, "ZO_GamepadPlayerEmoteRadialMenuEntryTemplate", "LE_RadialMenuAnimation_Default", "DefaultRadialMenuEntryAnimation", "LovelyEmotes_RadialMenu")
+	local actionLayers = { "RadialMenu", GetString(SI_LOVELYEMOTES_BINDING_LAYER_RADIAL_MENU) }
+	self.Menu = ZO_RadialMenu:New(menuControl, "ZO_GamepadPlayerEmoteRadialMenuEntryTemplate", "LE_RadialMenuAnimation_Default", "DefaultRadialMenuEntryAnimation", actionLayers)
 	self.InfoText = self.Menu.control:GetNamedChild("InfoText")
 
 	self.IsActive = false
@@ -40,7 +41,10 @@ end
 
 function LE_RadialMenu:AddEntries()
 	local savedtab = LovelyEmotes_Settings.GetSavedFavoriteTab(self.TabIndex)
-	self.InfoText:SetText(self.TabIndex)
+
+	local tabName = savedtab.Name
+	if tabName == "" then tabName = self.TabIndex end
+	self.InfoText:SetText(tabName)
 
 	for i = savedtab.ButtonCount, 1, -1 do
 		local emote = savedtab.EmoteIDs[i]

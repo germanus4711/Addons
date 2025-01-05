@@ -1,0 +1,6 @@
+VotansImprovedSetsBook_Data =
+{
+    ["favorites"] = 
+    {
+    },
+}

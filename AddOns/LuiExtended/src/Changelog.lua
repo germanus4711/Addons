@@ -3,18 +3,22 @@
     License: The MIT License (MIT)
 --]]
 
----@class (partial) LuiExtended
+--- @class (partial) LuiExtended
 local LUIE = LUIE
 
 local zo_strformat = zo_strformat
 local table_concat = table.concat
 
-local changelogMessages =
-{
-    "|cFFA500LuiExtended Version 6.7.9.1|r",
+local changelogMessages = {
+    -- Version Header
+    "|cFFA500LuiExtended Version 6.7.9.3|r",
     "",
+    -- General Changes
     "|cFFFF00General:|r",
-    "[*] fixed some bugs, introduced some other bugs, fixed/ reverted reintroduced bug fixes. So fun right?!" ,
+    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Fix for operator + is not supported for number + nil error in chat announcements.",
+    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Added UI mover for Interact Text (affects default 'E' keybind position)",
+    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Fixed active guard ability toggle icon not displaying",
+    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Fixed chat announcements for crafting items and materials to properly display all entries",
     "",
 }
 

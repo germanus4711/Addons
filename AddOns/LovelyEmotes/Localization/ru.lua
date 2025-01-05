@@ -4,6 +4,7 @@ local _ru = {
 	--SI_LOVELYEMOTES_ALERT_EMOTE_MODIFICATIONS_APPLIED = "[LovelyEmotes] Emote modifications applied",
 	--SI_LOVELYEMOTES_ALERT_NO_EMOTE_SELECTED = "[LovelyEmotes] No emote selected",
 
+	--SI_LOVELYEMOTES_BINDING_LAYER_RADIAL_MENU = "LovelyEmotes - Radial Quick Menu",
 	SI_LOVELYEMOTES_BINDING_NEXT_TAB = "Следующая Вкладка",
 	SI_LOVELYEMOTES_BINDING_PLAY_FAVORITE = "Воспроизвести Избранное",
 	SI_LOVELYEMOTES_BINDING_PREVIOUS_TAB = "Предыдущая Вкладка",

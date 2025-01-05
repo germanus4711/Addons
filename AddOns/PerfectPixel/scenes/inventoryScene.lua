@@ -46,26 +46,26 @@ PP.inventoryScene = function()
 	local l_menu = PP:GetLayout('menuBar', 'menu')
 
 	for i = 1, #tlcs do
-		local control, scene	= tlcs[i][1], tlcs[i][2]
-		local l					= PP:GetLayout('inventory', control)
+		local control, scene  = tlcs[i][1], tlcs[i][2]
+		local inventoryLayout = PP:GetLayout('inventory', control)
 		
 		if control then
 			local tlc, list, sortBy, tabs, filterDivider, searchFilters, searchDivider, infoBar, menu = PP.GetLinks(control, children)
-			local menu = l.menu or menu
+			menu = inventoryLayout.menu or menu
 
 			PP:CreateBackground(tlc,		--[[#1]] nil, nil, nil, -6, 0, --[[#2]] nil, nil, nil, 0, 6)
-			PP.Anchor(tlc,					--[[#1]] TOPRIGHT, GuiRoot, TOPRIGHT, 0, l.tl_t_y, --[[#2]] true, BOTTOMRIGHT, GuiRoot, BOTTOMRIGHT, 0, l.tl_b_y)
+			PP.Anchor(tlc,					--[[#1]] TOPRIGHT, GuiRoot, TOPRIGHT, 0, inventoryLayout.tl_t_y, --[[#2]] true, BOTTOMRIGHT, GuiRoot, BOTTOMRIGHT, 0, inventoryLayout.tl_b_y)
 
 			if list then
 				PP.ScrollBar(list)
-				PP.Anchor(list,				--[[#1]] TOPRIGHT, tlc, TOPRIGHT, 0, l.list_t_y, --[[#2]] true, BOTTOMRIGHT, tlc, BOTTOMRIGHT, 0, l.list_b_y)
-				list:SetWidth(l.list_w)
+				PP.Anchor(list,				--[[#1]] TOPRIGHT, tlc, TOPRIGHT, 0, inventoryLayout.list_t_y, --[[#2]] true, BOTTOMRIGHT, tlc, BOTTOMRIGHT, 0, inventoryLayout.list_b_y)
+				list:SetWidth(inventoryLayout.list_w)
 			end
 			if sortBy then
 				PP.Anchor(sortBy,			--[[#1]] BOTTOM, list, TOP, 0, 0)
 				local sortByName = sortBy:GetNamedChild("Name")
-				sortByName:SetWidth(l.sort_name_w)
-				sortByName:SetAnchorOffsets(l.sort_name_t_x, nil, 1)
+				sortByName:SetWidth(inventoryLayout.sort_name_w)
+				sortByName:SetAnchorOffsets(inventoryLayout.sort_name_t_x, nil, 1)
 			end
 			local emptyLabel = tlc:GetNamedChild("Empty")
 			if emptyLabel then
@@ -73,12 +73,12 @@ PP.inventoryScene = function()
 			end
 			if tabs then
 				PP.Anchor(tabs,				--[[#1]] TOPRIGHT, tlc, TOPRIGHT, -20, 10)
-				tabs:SetHidden(l.noTabs)
+				tabs:SetHidden(inventoryLayout.noTabs)
 				PP:RefreshStyle_MenuBar(tabs, l_tabs)
 			end
 			if filterDivider then
 				PP.Anchor(filterDivider,	--[[#1]] TOP, tlc, TOP, 0, 52)
-				filterDivider:SetHidden(l.noFDivider)
+				filterDivider:SetHidden(inventoryLayout.noFDivider)
 			end
 			if searchFilters then
 				PP.Anchor(searchFilters,	--[[#1]] TOPRIGHT, tlc, TOPRIGHT, -20, 60)
@@ -91,15 +91,15 @@ PP.inventoryScene = function()
 				PP:RefreshStyle_MenuBar(menu, l_menu)
 			end
 			if infoBar then
-				PP:RefreshStyle_InfoBar(infoBar, layout)
+				PP:RefreshStyle_InfoBar(infoBar, inventoryLayout)
 			end
 		end
 
 		if scene then
 			local s		= SCENE_MANAGER:GetScene(scene)
-			local a_f	= l.addFragments
-			local r_f	= l.removeFragments
-			local h_bg	= l.hideBgForScene
+			local a_f	= inventoryLayout.addFragments
+			local r_f	= inventoryLayout.removeFragments
+			local h_bg	= inventoryLayout.hideBgForScene
 			
 			for i = 1, #a_f do
 				s:AddFragment(a_f[i])
@@ -123,7 +123,10 @@ PP.inventoryScene = function()
 		TREASURE_MAP_INVENTORY_SCENE:RemoveFragment(FRAME_TARGET_CENTERED_FRAGMENT)
 		TREASURE_MAP_INVENTORY_SCENE:RemoveFragment(FRAME_PLAYER_FRAGMENT)
 
+
 		local inventoryScene = SCENE_MANAGER:GetScene('inventory')
+		PP.RemoveFragmentFromSceneAndKeepPreviewFunctionality(inventoryScene, FRAME_PLAYER_FRAGMENT, {"PreviewInventoryItem"}, nil)
+		--[[
 
 		inventoryScene:RemoveFragment(FRAME_PLAYER_FRAGMENT)
 
@@ -155,6 +158,7 @@ PP.inventoryScene = function()
 				itemPreview.PreviewInventoryItem	= ex_PreviewInventoryItem
 			end
 		end)
+		]]
 	end
 
 	--SCENE_MANAGER:GetScene("stables")

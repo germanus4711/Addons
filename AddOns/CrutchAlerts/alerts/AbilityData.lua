@@ -123,6 +123,8 @@ Crutch.testing = {
     [97022] = true, -- Wraith Speed
 
     [152525] = true, -- Fire Behemoth?
+
+    [155184] = true, -- Catastrophe (Magma Incarnate)
 }
 
 ---------------------------------------------------------------------
@@ -255,7 +257,7 @@ Crutch.others = {
     [149414] = true, -- Savage Blitz (Oaxiltso)
     [152688] = true, -- Cinder Cleave (Havocrel Annihilator)
     [152463] = true, -- Skull Salvo (Flame-Herald Bahsei)
-    [150008] = true, -- Hemorrhaging Smack (Flesh Abomination)
+    -- [150008] = true, -- Hemorrhaging Smack (Flesh Abomination)
     [153175] = true, -- Scalding Strike (Fire Behemoth)
     [157482] = true, -- Molten Rain (Ash Titan)
     [152414] = true, -- Meteor Call (Havocrel Torchcaster)
@@ -351,6 +353,7 @@ Crutch.others = {
     [192517] = true, -- Seeking Spheres (Tho'at Shard)
     [223685] = true, -- Hoarfrost Fist (Frost Atronach)
     [223378] = true, -- Rending Leap (Clannfear)
+    [198099] = true, -- Blood Dive (Lady Thorn)
 
 -- Maelstrom Arena
     [72057] = true, -- Portal Spawn
@@ -415,6 +418,7 @@ Crutch.others = {
 
 -- The Dread Cellar
     [156509] = true, -- Deluge of Pain (Scorion Broodlord interruptible)
+    [155184] = true, -- Catastrophe (Magma Incarnate)
 
 -- Wayrest Sewers
     [  5699] = true, -- Shadowstep (Allene Pellingare)

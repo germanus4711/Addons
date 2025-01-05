@@ -4,18 +4,18 @@
 --]]
 
 -- LUIE namespace
----@class (partial) LuiExtended
----@field __index LuiExtended
+--- @class (partial) LuiExtended
+--- @field __index LuiExtended
 LUIE = {}
 LUIE.__index = LUIE
 LUIE.__newindex = NewIndexHandler
 
----@class (partial) LuiExtended
+--- @class (partial) LuiExtended
 local LUIE = LUIE
 
 LUIE.tag = "LUIE"
 LUIE.name = "LuiExtended"
-LUIE.version = "6.7.9.1"
+LUIE.version = "6.7.9.3"
 LUIE.author = "ArtOfShred, DakJaniels, psypanda, Saenic & SpellBuilder"
 LUIE.website = "https://www.esoui.com/downloads/info818-LuiExtended.html"
 LUIE.github = "https://github.com/ArtOfShredLuiExtended"
@@ -24,11 +24,11 @@ LUIE.translation = "https://github.com/ArtOfShredLuiExtended/tree/develop/i18n"
 LUIE.donation = "https://www.paypal.me/ArtOfShred"
 
 -- Saved variables options
-LUIE.SV = nil
+LUIE.SV = ...
 LUIE.SVVer = 2
 LUIE.SVName = "LUIESV"
 
---LUIE.Data = {};
+-- LUIE.Data = {};
 LUIE.Components = {}
 
 -- Default Settings
@@ -38,6 +38,7 @@ LUIE.Defaults =
     StartupInfo = false,
     HideAlertFrame = false,
     AlertFrameAlignment = 3,
+    -- CustomIcons_Enabled = true,
     HideXPBar = false,
     TempAlertHome = false,
     TempAlertCampaign = false,

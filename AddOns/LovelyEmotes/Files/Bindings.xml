@@ -109,4 +109,15 @@
 			</Action>
 		</Category>
 	</Layer>
+
+	<Layer name="SI_KEYBINDINGS_LAYER_LOVELYEMOTES_RADIAL_MENU">
+		<Category>
+			<Action name="LOVELYEMOTES_RADIAL_MENU_NEXT_TAB">
+				<Down> LovelyEmotes.BindingFunctions.NextTab() </Down>
+			</Action>
+			<Action name="LOVELYEMOTES_RADIAL_MENU_PREVIOUS_TAB">
+				<Down> LovelyEmotes.BindingFunctions.PreviousTab() </Down>
+			</Action>
+		</Category>
+	</Layer>
 </Bindings>

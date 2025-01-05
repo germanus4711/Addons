@@ -67,6 +67,7 @@ LE_EmoteData = {
 	[538] = { HasLoop = true, }, -- /festivalbeggar
 	[675] = { HasLoop = true, }, -- /firespinning
 	[6] = { HasLoop = true, }, -- /flute
+	[886] = { HasLoop = true, }, -- /glassharp
 	[600] = { HasLoop = true, }, -- /goutfang
 	[136] = { HasLoop = true, }, -- /hammer
 	[155] = { HasLoop = true, }, -- /hammerlow
@@ -140,8 +141,10 @@ LE_EmoteData = {
 	[540] = { HasLoop = true, }, -- /skullponder
 	[143] = { HasLoop = true, }, -- /sleep
 	[145] = { HasLoop = true, }, -- /sleep2
+	[849] = { HasLoop = true, }, -- /sommelierswirl
 	[771] = { HasLoop = true, }, -- /spyglass
 	[759] = { HasLoop = true, }, -- /stargazer
+	[848] = { HasLoop = true, }, -- /stompgrapes
 	[616] = { HasLoop = true, }, -- /summonbat
 	[187] = { HasLoop = true, }, -- /surrender
 	[290] = { HasLoop = true, }, -- /sweep

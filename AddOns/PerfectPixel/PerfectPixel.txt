@@ -1,12 +1,13 @@
-## APIVersion: 101043 101044
-## Version: 0.13.13
+## APIVersion: 101044 101045
+## Version: 0.13.15
+## AddOnVersion: 001315
 ## Title: PerfectPixel
 ## Author: @KL1SK
 ## Description: PerfectPixle changes a lot UI elements.
 ## SavedVariables: PerfectPixel
 
-## OptionalDependsOn: LibAddonMenu-2.0>=37 LibVotansAddonList>=10903 LibCustomMenu>=722 LibScrollableMenu>=020301
-## OptionalDependsOn: AdvancedFilters>=1646 SpentSkillPoints
+## OptionalDependsOn: LibAddonMenu-2.0>=37 LibCustomMenu>=722 LibMapPins-1.0>=10040 LibScrollableMenu>=020303 LibVotansAddonList>=10903
+## OptionalDependsOn: AdvancedFilters>=1648 SpentSkillPoints
 
 Init.lua
 Media.lua
@@ -40,6 +41,7 @@ scenes\mailSceneGroup.lua
 scenes\notificationsScene.lua
 scenes\helpSceneGroup.lua
 scenes\gameMenuInGameScene.lua
+scenes\companion.lua
 
 modules\chatWindow.lua
 modules\compass.lua
@@ -54,3 +56,4 @@ modules\tabs.lua
 modules\tooltips.lua
 
 compatibility.lua
+compatibility.xml

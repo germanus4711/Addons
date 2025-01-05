@@ -10,7 +10,7 @@ local _name = "LovelyEmotes"
 
 LovelyEmotes = {
 	Name = _name,
-	Version = "5.0",
+	Version = "5.1",
 
 	AvailableEmotes = _availableEmotes,
 	AvailablePersonalities = _availablePersonalities,

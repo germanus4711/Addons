@@ -4,6 +4,7 @@ local _fr = {
 	SI_LOVELYEMOTES_ALERT_EMOTE_MODIFICATIONS_APPLIED = "[LovelyEmotes] Modifications d'émotes appliquées",
 	SI_LOVELYEMOTES_ALERT_NO_EMOTE_SELECTED = "[LovelyEmotes] Aucun emote sélectionné.",
 
+	SI_LOVELYEMOTES_BINDING_LAYER_RADIAL_MENU = "LovelyEmotes - Menu radial",
 	SI_LOVELYEMOTES_BINDING_NEXT_TAB = "Onglet suivant",
 	SI_LOVELYEMOTES_BINDING_PLAY_FAVORITE = "Jouer le favori",
 	SI_LOVELYEMOTES_BINDING_PREVIOUS_TAB = "Onglet précédent",

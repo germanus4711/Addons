@@ -82,22 +82,24 @@ ZO_ChatOptions_ToggleChannel    pChat.SaveChatConfig()      Save the currently l
 
 --=======================================================================================================================================
 --Known problems/bugs:
---Last updated: 2024-11-15
+--Last updated: 2025-01-05
 --Total number: 26
 --=======================================================================================================================================
 
 --Working on:
 
 --=======================================================================================================================================
--- Changelog version: 10.0.5.7 (last version 10.0.5.6)
+-- Changelog version: 10.0.6.0 (last version 10.0.5.9)
 --=======================================================================================================================================
 --Fixed:
---Fixed chat minimize on start
+--Some wrong translations and missing translations
 
 --Changed:
+--Settings menu for colors describes better why settings are disabled and where to change it (submenus are disabled in total e.g.)
 
 --Added:
-
+--Timestamps with milliseconds format. Use xy in the formatting string to activate millisenconds (thanks to Dakjaniels for the idea and code)
+--Auto completion for /msg: Activate LibSlashCommander and type ! in the chat to show your defined ! messages, and their text
 
 --Added on request:
 
@@ -509,6 +511,9 @@ OnPlayerActivated = function()
             -- Set default tab at login
             pChat.SetDefaultTab(db.defaultTab)
             pChat.MinimizeChatAtLaunch()
+
+            --Add the auto completion at the chat editbox (via LibSlashCommander or without) for the /msg automated messages
+            pChat.InitAutomatedMessagesAutoCompletion()
 
             pChatData.isAddonInitialized = true
 

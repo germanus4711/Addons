@@ -117,7 +117,7 @@ TLW_BG:SetDrawTier(0)
 
 PP.TLW_BG = TLW_BG
 
-function PP:CreateBackground(parent, --[[#1]] point1, relTo1, relPoint1, x1, y1, --[[#2]] point2, relTo2, relPoint2, x2, y2, namespace)
+function PP:CreateBackground(parent, --[[#1]] point1, relTo1, relPoint1, x1, y1, --[[#2]] point2, relTo2, relPoint2, x2, y2, namespace, width, height)
 	local namespace		= namespace or 'WindowStyle'
 	local sv			= self:GetSavedVars(namespace)
 	local insets		= sv.skin_backdrop_insets
@@ -139,7 +139,9 @@ function PP:CreateBackground(parent, --[[#1]] point1, relTo1, relPoint1, x1, y1,
 	end
 
 	bg:SetAnchor(point1 or TOPLEFT,		relTo1 or parent,	relPoint1 or TOPLEFT,		(x1 or 0) - insets, (y1 or 0) - insets)
-	bg:SetAnchor(point2 or BOTTOMRIGHT,	relTo2 or parent,	relPoint2 or BOTTOMRIGHT,	(x2 or 0) + insets, (y2 or 0) + insets)
+	if width == nil and height == nil then
+		bg:SetAnchor(point2 or BOTTOMRIGHT,	relTo2 or parent,	relPoint2 or BOTTOMRIGHT,	(x2 or 0) + insets, (y2 or 0) + insets)
+	end
 
 	bg:SetCenterTexture(sv.skin_backdrop, sv.skin_backdrop_tile_size, sv.skin_backdrop_tile and 1 or 0)
 	bg:SetCenterColor(unpack(sv.skin_backdrop_col))
@@ -148,12 +150,21 @@ function PP:CreateBackground(parent, --[[#1]] point1, relTo1, relPoint1, x1, y1,
 	bg:SetEdgeColor(unpack(sv.skin_edge_col))
 	bg:SetIntegralWrapping(sv.skin_edge_integral_wrapping)
 
+	if width ~= nil and height ~= nil then
+		bg:SetDimensions(width, height)
+	else
+		if width ~= nil then
+			bg:SetWidth(width)
+		elseif height ~= nil then
+			bg:SetHeigt(height)
+		end
+	end
+
 	parent.PP_BG = bg
 
 	if not self.backgrounds[namespace] then
 		self.backgrounds[namespace] = {}
 	end
-
 	table.insert(self.backgrounds[namespace], bg)
 
 	if exBG then return end
@@ -265,9 +276,13 @@ PP.Anchor = function(control, --[[#1]] set1_p, set1_rTo, set1_rp, set1_x, set1_y
 		control:SetAnchor(set2_p or get2_p, set2_rTo or get2_rTo, set2_rp or get2_rp, set2_x or get2_x, set2_y or get2_y)
 	end
 end
+local PP_Anchor = PP.Anchor
 
 --outline, thick-outline, soft-shadow-thin, soft-shadow-thick, shadow
 PP.Font = function(control, --[[Font]] font, size, outline, --[[Alpha]] a, --[[Color]] c_r, c_g, c_b, c_a, --[[StyleColor]] sc_r, sc_g, sc_b, sc_a)
+	if not control then
+		return
+	end
 	if font then
 		control:SetFont(string.format("%s|%s|%s", font, size, outline))
 	end
@@ -281,6 +296,7 @@ PP.Font = function(control, --[[Font]] font, size, outline, --[[Alpha]] a, --[[C
 		control:SetStyleColor(sc_r/255, sc_g/255, sc_b/255, sc_a)
 	end
 end
+local PP_Font = PP.Font
 
 PP.ListBackdrop = function(control, x_1, y_1, x_2, y_2, --[[tex]] tex, size, mod, --[[bd]] c_r, c_g, c_b, c_a, --[[edge]] edge_r, edge_g, edge_b, edge_a, --[[e_tex]] e_tex, e_t)
 	if not control:GetNamedChild("Backdrop") then
@@ -311,6 +327,17 @@ PP.CreateBackdrop = function(control)
 
 	return backdrop
 end
+
+local function offset(slider, hidden)
+	local contents = slider:GetParent().contents
+	if contents == nil then return end
+	if hidden then
+		PP_Anchor(contents, --[[#1]] TOPLEFT, nil, TOPLEFT, 0, 0, --[[#2]] true, BOTTOMRIGHT, nil, BOTTOMRIGHT, -6, 0)
+	else
+		PP_Anchor(contents, --[[#1]] TOPLEFT, nil, TOPLEFT, 0, 0, --[[#2]] true, BOTTOMRIGHT, nil, BOTTOMRIGHT, -15, 0)
+	end
+end
+
 
 PP.ScrollBar = function(control)
 	local slider	= control:GetType() == CT_SLIDER and control or control.scrollbar or control:GetParent().scrollbar
@@ -343,21 +370,14 @@ PP.ScrollBar = function(control)
 
 	if not contents then return end
 
-	local function offset(hidden)
-		if hidden then
-			PP.Anchor(contents, --[[#1]] TOPLEFT, nil, TOPLEFT, 0, 0, --[[#2]] true, BOTTOMRIGHT, nil, BOTTOMRIGHT, -6, 0)
-		else
-			PP.Anchor(contents, --[[#1]] TOPLEFT, nil, TOPLEFT, 0, 0, --[[#2]] true, BOTTOMRIGHT, nil, BOTTOMRIGHT, -15, 0)
-		end
-	end
 
-	offset(true)
+	offset(sb, true)
 
 	ZO_PreHookHandler(sb, 'OnEffectivelyShown', function()
-		offset(false)
+		offset(sb, false)
 	end)
 	ZO_PreHookHandler(sb, 'OnEffectivelyHidden', function()
-		offset(true)
+		offset(sb, true)
 	end)
 
 end
@@ -384,12 +404,12 @@ PP.Bar = function(control, --[[height]] height, --[[fontSize]] fSize, bgEdgeColo
 			glowBG:SetCenterColor(0/255, 0/255, 0/255, 0)
 			glowBG:SetEdgeTexture(nil, 1, 1, 1, 0)
 			glowBG:SetEdgeColor(173/255, 166/255, 132/255, 1)
-			PP.Anchor(glowBG, --[[#1]] TOPLEFT, bar, TOPLEFT, -3, -3, --[[#2]] true, BOTTOMRIGHT, bar, BOTTOMRIGHT, 3, 3)
+			PP_Anchor(glowBG, --[[#1]] TOPLEFT, bar, TOPLEFT, -3, -3, --[[#2]] true, BOTTOMRIGHT, bar, BOTTOMRIGHT, 3, 3)
 		end
 	end
 
 	if barText then
-		PP.Font(barText, --[[Font]] PP.f.u67, fSize, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+		PP_Font(barText, --[[Font]] PP.f.u67, fSize, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
 	end
 
 	bg:SetHidden(true)
@@ -408,7 +428,7 @@ PP.Bar = function(control, --[[height]] height, --[[fontSize]] fSize, bgEdgeColo
 	if not control:GetNamedChild("Backdrop") then
 		local barBG = CreateControl("$(parent)Backdrop", control, CT_BACKDROP)
 
-		PP.Anchor(barBG, --[[#1]] TOPLEFT, control, TOPLEFT, -2, -2, --[[#2]] true, BOTTOMRIGHT, control, BOTTOMRIGHT,	2, 2)
+		PP_Anchor(barBG, --[[#1]] TOPLEFT, control, TOPLEFT, -2, -2, --[[#2]] true, BOTTOMRIGHT, control, BOTTOMRIGHT,	2, 2)
 		barBG:SetCenterTexture(nil, 8, 0)
 		barBG:SetCenterColor(10/255, 10/255, 10/255, 0.8)
 		barBG:SetEdgeTexture(nil, 1, 1, 1, 0)
@@ -427,8 +447,8 @@ PP.Bars = function(progressBarsOverviewContainer --[[parentControl]], isProgress
 			local progressBar = childCtrl:GetNamedChild("Progress") or childCtrl:GetNamedChild("ProgressBar")
 			if progressBar ~= nil then
 				PP_bar((isProgressBarPassedIn == true and progressBar) or childCtrl,
-						--[[height]] height or 14,
-						--[[fontSize]] fontSize or 15,
+				--[[height]] height or 14,
+				--[[fontSize]] fontSize or 15,
 						bgEdgeColor,
 						glowEdgeColor,
 						reAnchorText
@@ -721,7 +741,7 @@ end
 local function fn(label)
 	label:SetHeight(32)
 	label:SetVerticalAlignment(TEXT_ALIGN_CENTER)
-	PP.Font(label, --[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.6)
+	PP_Font(label, --[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.6)
 	PP:SetLockFn(label, 'SetFont')
 end
 
@@ -736,25 +756,25 @@ function PP:RefreshStyle_InfoBar(infoBar, layout)
 	local currency2	= infoBar:GetNamedChild("Currency2")
 	local layout	= layout or { infoBar_y = 6 }
 	
-	PP.Anchor(infoBar, --[[#1]] TOPLEFT, nil, BOTTOMLEFT, 0, layout.infoBar_y, --[[#2]] true, TOPRIGHT, nil, BOTTOMRIGHT, 0, layout.infoBar_y)
+	PP_Anchor(infoBar, --[[#1]] TOPLEFT, nil, BOTTOMLEFT, 0, layout.infoBar_y, --[[#2]] true, TOPRIGHT, nil, BOTTOMRIGHT, 0, layout.infoBar_y)
 
 	if divider and divider:GetType() == CT_CONTROL then
 		divider:SetHidden(true)
 	end
 	if slots and slots:GetType() == CT_LABEL then
-		PP.Anchor(slots,	--[[#1]] TOPLEFT,	nil, TOPLEFT, 0, 0)
+		PP_Anchor(slots,	--[[#1]] TOPLEFT,	nil, TOPLEFT, 0, 0)
 		fn(slots)
 	end
 	if altSlots and altSlots:GetType() == CT_LABEL then
-		PP.Anchor(altSlots, --[[#1]] LEFT,	nil, RIGHT, 16, 0)
+		PP_Anchor(altSlots, --[[#1]] LEFT,	nil, RIGHT, 16, 0)
 		fn(altSlots)
 	end
 	if money and money:GetType() == CT_LABEL then
-		PP.Anchor(money,	--[[#1]] TOPRIGHT,	nil, TOPRIGHT, -4, 0)
+		PP_Anchor(money,	--[[#1]] TOPRIGHT,	nil, TOPRIGHT, -4, 0)
 		fn(money)
 	end
 	if altMoney and altMoney:GetType() == CT_LABEL then
-		PP.Anchor(altMoney,	--[[#1]] RIGHT,	nil, LEFT, -16, 0)
+		PP_Anchor(altMoney,	--[[#1]] RIGHT,	nil, LEFT, -16, 0)
 		fn(altMoney)
 	end
 	if retrait and retrait:GetType() == CT_LABEL then
@@ -798,8 +818,128 @@ function PP:RefreshStyle_MenuBar(menuBar, layout)
 		divider:SetHidden(true)
 	end
 	if label and label:GetType() == CT_LABEL then
-		PP.Font(label, --[[Font]] PP.f.u67, layout.label_f_s, layout.fontOutline, --[[Alpha]] 0.9, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+		PP_Font(label, --[[Font]] PP.f.u67, layout.label_f_s, layout.fontOutline, --[[Alpha]] 0.9, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
 		label:SetVerticalAlignment(TEXT_ALIGN_CENTER)
 		label:SetHidden(layout.noLabel)
 	end
 end
+
+
+--Player fragment spin remove but keeping item preview at the scene active
+--[[
+local SM = SCENE_MANAGER
+
+local ex_PreviewMarketProduct = itemPreview.PreviewMarketProduct
+local function new_PreviewMarketProduct(...)
+	SM:GetCurrentScene():AddFragment(FRAME_PLAYER_FRAGMENT)
+	itemPreview:RegisterCallback("EndCurrentPreview", callback_EndCurrentPreview)
+	return ex_PreviewMarketProduct(...)
+end
+
+
+	function ZO_ItemPreview_Shared:PreviewMarketProduct(marketProductId)
+		self:SharedPreviewSetup(ZO_ITEM_PREVIEW_MARKET_PRODUCT, marketProductId)
+	end
+
+	function ZO_ItemPreview_Shared:PreviewFurnitureMarketProduct(marketProductId)
+		self:SharedPreviewSetup(ZO_ITEM_PREVIEW_FURNITURE_MARKET_PRODUCT, marketProductId)
+	end
+
+	function ZO_ItemPreview_Shared:PreviewCollectibleAsFurniture(collectibleId)
+		self:SharedPreviewSetup(ZO_ITEM_PREVIEW_COLLECTIBLE_AS_FURNITURE, collectibleId)
+	end
+
+	function ZO_ItemPreview_Shared:PreviewPlacedFurniture(furnitureId)
+		self:SharedPreviewSetup(ZO_ITEM_PREVIEW_PLACED_FURNITURE, furnitureId)
+	end
+
+	function ZO_ItemPreview_Shared:PreviewProvisionerItemAsFurniture(recipeListIndex, recipeIndex)
+		self:SharedPreviewSetup(ZO_ITEM_PREVIEW_PROVISIONER_ITEM_AS_FURNITURE, recipeListIndex, recipeIndex)
+	end
+
+	function ZO_ItemPreview_Shared:PreviewTradingHouseSearchResult(tradingHouseIndex)
+		self:SharedPreviewSetup(ZO_ITEM_PREVIEW_TRADING_HOUSE_SEARCH_RESULT, tradingHouseIndex)
+	end
+
+	function ZO_ItemPreview_Shared:PreviewStoreEntry(storeEntryIndex)
+		self:SharedPreviewSetup(ZO_ITEM_PREVIEW_STORE_ENTRY, storeEntryIndex)
+	end
+
+	function ZO_ItemPreview_Shared:PreviewOutfit(actorCategory, outfitIndex)
+		self:SharedPreviewSetup(ZO_ITEM_PREVIEW_OUTFIT, actorCategory, outfitIndex)
+	end
+
+	function ZO_ItemPreview_Shared:PreviewCollectible(collectibleId)
+		self:SharedPreviewSetup(ZO_ITEM_PREVIEW_COLLECTIBLE, collectibleId)
+	end
+]]
+--Backup original "is preview available" function and then overwrite if always returnign true. Register a scene state
+--change callback and on showing replace the original with the other function, also replacing the preview functions for
+--inventory, collectible etc. (dependent on the scene). On state hidden replace the overwritten functions with the backuped
+--originals again. Previewing function will also add the fragment which got removed (e.g. player fragment to stop spinning around)
+--and ending the preview removes that fragment again
+local ex_PreviewFuncs = {}
+local ex_IsCharacterPreviewingAvailable --contains the original IsCharacterPreviewingAvailable function
+local function new_IsCharacterPreviewingAvailable(...) --always return true, independently from FRAME_PLAYER_FRAGMENT
+	return true
+end
+local sceneCallbacksForPreviewDone = {}
+local new_PreviewFuncs = {}
+local function RemoveFragmentFromSceneAndKeepPreviewFunctionality(scene, fragmentToRemove, previewFuncNameTab, stateChangeFragment)
+	if scene == nil or sceneCallbacksForPreviewDone[scene] or fragmentToRemove == nil or ZO_IsTableEmpty(previewFuncNameTab) then return end
+	scene:RemoveFragment(fragmentToRemove)
+	local sceneName = scene.name
+
+	local itemPreview = SYSTEMS:GetObject("itemPreview")
+	if itemPreview == nil then return end
+
+	if ex_IsCharacterPreviewingAvailable == nil then
+		ex_IsCharacterPreviewingAvailable = IsCharacterPreviewingAvailable
+	end
+
+	if stateChangeFragment ~= nil then
+		stateChangeFragment:RegisterCallback("StateChange", function(oldState, newState)
+			if newState == SCENE_FRAGMENT_SHOWING then
+				KEYBOARD_GROUP_MENU_SCENE:AddFragment(fragmentToRemove)
+			elseif newState == SCENE_FRAGMENT_HIDDEN then
+				KEYBOARD_GROUP_MENU_SCENE:RemoveFragment(fragmentToRemove)
+			end
+		end )
+	end
+
+	local function callback_EndCurrentPreview()
+		itemPreview:UnregisterCallback("EndCurrentPreview", callback_EndCurrentPreview)
+		scene:RemoveFragment(fragmentToRemove)
+	end
+
+	for _, previewFuncName in ipairs(previewFuncNameTab) do
+		local ex_PreviewFunc = ex_PreviewFuncs[previewFuncName] or itemPreview[previewFuncName]
+		if ex_PreviewFunc ~= nil then
+			ex_PreviewFuncs[previewFuncName] = ex_PreviewFuncs[previewFuncName] or ex_PreviewFunc
+
+			local previewFuncNameOfScene = sceneName .. "_" .. previewFuncName
+			new_PreviewFuncs[previewFuncNameOfScene] = new_PreviewFuncs[previewFuncNameOfScene] or function(...)
+				scene:AddFragment(fragmentToRemove)
+				itemPreview:RegisterCallback("EndCurrentPreview", callback_EndCurrentPreview)
+				return ex_PreviewFunc(...)
+			end
+		end
+	end
+
+	scene:RegisterCallback("StateChange", function(oldState, newState)
+		if newState == SCENE_SHOWING then
+			IsCharacterPreviewingAvailable = new_IsCharacterPreviewingAvailable
+			for idx, previewFuncName in ipairs(previewFuncNameTab) do
+				itemPreview[previewFuncName] = new_PreviewFuncs[sceneName .. "_" .. previewFuncName]
+			end
+
+		elseif newState == SCENE_HIDDEN then
+			IsCharacterPreviewingAvailable = ex_IsCharacterPreviewingAvailable
+			for idx, previewFuncName in ipairs(previewFuncNameTab) do
+				itemPreview[previewFuncName] = ex_PreviewFuncs[previewFuncName]
+			end
+		end
+	end)
+	sceneCallbacksForPreviewDone[scene] = true
+end
+PP.RemoveFragmentFromSceneAndKeepPreviewFunctionality = RemoveFragmentFromSceneAndKeepPreviewFunctionality

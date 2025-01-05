@@ -4,6 +4,7 @@ local _de = {
 	SI_LOVELYEMOTES_ALERT_EMOTE_MODIFICATIONS_APPLIED = "[LovelyEmotes] Emote-Modifikationen angewendet",
 	SI_LOVELYEMOTES_ALERT_NO_EMOTE_SELECTED = "[LovelyEmotes] Kein Emote ausgewählt",
 
+	SI_LOVELYEMOTES_BINDING_LAYER_RADIAL_MENU = "LovelyEmotes - Radiales Schnellmenü",
 	SI_LOVELYEMOTES_BINDING_NEXT_TAB = "Nächster Tab",
 	SI_LOVELYEMOTES_BINDING_PLAY_FAVORITE = "Favorit Abspielen",
 	SI_LOVELYEMOTES_BINDING_PREVIOUS_TAB = "Vorheriger Tab",

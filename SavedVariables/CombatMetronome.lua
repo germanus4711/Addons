@@ -1,0 +1,1841 @@
+CombatMetronomeSavedVars =
+{
+    ["Default"] = 
+    {
+        ["@germanus4711"] = 
+        {
+            ["$AccountWide"] = 
+            {
+                ["Resources"] = 
+                {
+                    ["labelFrameXOffset"] = 2408.5000000000,
+                    ["width"] = 303,
+                    ["yOffset"] = 680,
+                    ["showMagicka"] = true,
+                    ["ultColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["labelFrameYOffset"] = 680,
+                    ["height"] = 50,
+                    ["showResourcesForGuard"] = false,
+                    ["showResources"] = false,
+                    ["healthColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0.8000000000,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["ultSize"] = 40,
+                    ["showUltimate"] = true,
+                    ["hpHighlightThreshold"] = 25,
+                    ["showStamina"] = true,
+                    ["showHealth"] = true,
+                    ["xOffset"] = 2408.5000000000,
+                    ["labelFrameHeight"] = 50,
+                    ["magColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.5000000000,
+                        [3] = 1,
+                    },
+                    ["hideResourcesInPVP"] = false,
+                    ["stamSize"] = 21,
+                    ["magSize"] = 21,
+                    ["healthHighligtColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["reticleHp"] = false,
+                    ["stamColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.8000000000,
+                        [3] = 0.3000000000,
+                    },
+                    ["anchorResourcesToProgressbar"] = true,
+                    ["hideInPVP"] = false,
+                    ["labelFrameWidth"] = 303,
+                    ["healthSize"] = 35,
+                },
+                ["global"] = true,
+                ["version"] = 2,
+                ["StackTracker"] = 
+                {
+                    ["trackBA"] = false,
+                    ["yOffset"] = 0,
+                    ["xOffset"] = 0,
+                    ["hightlightOnFullStacks"] = false,
+                    ["trackFS"] = false,
+                    ["volume"] = 100,
+                    ["hideTracker"] = true,
+                    ["trackGF"] = false,
+                    ["playSound"] = false,
+                    ["sound"] = "Ability_Companion_Ultimate_Ready",
+                    ["isUnlocked"] = false,
+                    ["indicatorSize"] = 30,
+                    ["hideInPVP"] = false,
+                    ["trackCrux"] = false,
+                    ["trackMW"] = false,
+                },
+                ["LATracker"] = 
+                {
+                    ["height"] = 50,
+                    ["width"] = 200,
+                    ["yOffset"] = 720,
+                    ["xOffset"] = 2560,
+                    ["choice"] = "Nothing",
+                    ["timeTilHiding"] = 15,
+                },
+                ["debug"] = 
+                {
+                    ["eventCancel"] = false,
+                    ["enabled"] = false,
+                    ["triggers"] = false,
+                    ["abilityUsed"] = false,
+                    ["triggerTimer"] = 170,
+                    ["currentEvent"] = false,
+                },
+                ["Progressbar"] = 
+                {
+                    ["channelColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 1,
+                    },
+                    ["hideInPVP"] = false,
+                    ["hideProgressbar"] = false,
+                    ["showTimeRemaining"] = true,
+                    ["dontHide"] = false,
+                    ["forceSoundTock"] = true,
+                    ["progressColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["dontShowPing"] = false,
+                    ["soundTickEffect"] = "Justice_PickpocketFailed",
+                    ["showPingOnGCD"] = true,
+                    ["changeOnChanneled"] = false,
+                    ["soundTickEnabled"] = false,
+                    ["xOffset"] = 2408.5000000000,
+                    ["stopHATracking"] = false,
+                    ["trackGCD"] = false,
+                    ["hide"] = false,
+                    ["tickVolume"] = 100,
+                    ["globalAbilityAdjust"] = 25,
+                    ["hideCMInPVP"] = false,
+                    ["abilityAdjusts"] = 
+                    {
+                    },
+                    ["width"] = 303,
+                    ["yOffset"] = 705,
+                    ["globalHeavyAdjust"] = 25,
+                    ["displayPingOnHeavy"] = true,
+                    ["lastBackgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["backgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["colorCache"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["labelFont"] = "CHAT_FONT",
+                    ["soundTockEnabled"] = false,
+                    ["height"] = 30,
+                    ["fontStyle"] = "outline",
+                    ["showSpell"] = true,
+                    ["soundTickOffset"] = 200,
+                    ["barAlign"] = "Center",
+                    ["makeItFancy"] = false,
+                    ["gcdAdjust"] = 0,
+                    ["maxLatency"] = 150,
+                    ["soundTockOffset"] = 300,
+                    ["pingColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["spellSize"] = 25,
+                    ["soundTockEffect"] = "Dialog_Decline",
+                },
+            },
+            ["8796093067546805"] = 
+            {
+                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
+                ["Resources"] = 
+                {
+                    ["labelFrameXOffset"] = 2408.5000000000,
+                    ["width"] = 303,
+                    ["yOffset"] = 680,
+                    ["showMagicka"] = true,
+                    ["ultColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["labelFrameYOffset"] = 680,
+                    ["height"] = 50,
+                    ["showResourcesForGuard"] = false,
+                    ["showResources"] = false,
+                    ["healthColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0.8000000000,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["ultSize"] = 40,
+                    ["showUltimate"] = true,
+                    ["hpHighlightThreshold"] = 25,
+                    ["showStamina"] = true,
+                    ["showHealth"] = true,
+                    ["xOffset"] = 2408.5000000000,
+                    ["labelFrameHeight"] = 50,
+                    ["magColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.5000000000,
+                        [3] = 1,
+                    },
+                    ["hideResourcesInPVP"] = false,
+                    ["stamSize"] = 21,
+                    ["magSize"] = 21,
+                    ["healthHighligtColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["reticleHp"] = false,
+                    ["stamColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.8000000000,
+                        [3] = 0.3000000000,
+                    },
+                    ["anchorResourcesToProgressbar"] = true,
+                    ["hideInPVP"] = false,
+                    ["labelFrameWidth"] = 303,
+                    ["healthSize"] = 35,
+                },
+                ["version"] = 2,
+                ["global"] = true,
+                ["StackTracker"] = 
+                {
+                    ["trackBA"] = false,
+                    ["yOffset"] = 0,
+                    ["xOffset"] = 0,
+                    ["hightlightOnFullStacks"] = false,
+                    ["trackFS"] = false,
+                    ["volume"] = 100,
+                    ["hideTracker"] = true,
+                    ["trackGF"] = false,
+                    ["playSound"] = false,
+                    ["sound"] = "Ability_Companion_Ultimate_Ready",
+                    ["isUnlocked"] = false,
+                    ["indicatorSize"] = 30,
+                    ["hideInPVP"] = false,
+                    ["trackCrux"] = false,
+                    ["trackMW"] = false,
+                },
+                ["LATracker"] = 
+                {
+                    ["height"] = 50,
+                    ["width"] = 200,
+                    ["yOffset"] = 720,
+                    ["xOffset"] = 2560,
+                    ["choice"] = "Nothing",
+                    ["timeTilHiding"] = 15,
+                },
+                ["debug"] = 
+                {
+                    ["eventCancel"] = false,
+                    ["enabled"] = false,
+                    ["triggers"] = false,
+                    ["abilityUsed"] = false,
+                    ["triggerTimer"] = 170,
+                    ["currentEvent"] = false,
+                },
+                ["Progressbar"] = 
+                {
+                    ["channelColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 1,
+                    },
+                    ["hideInPVP"] = false,
+                    ["hideProgressbar"] = false,
+                    ["showTimeRemaining"] = true,
+                    ["dontHide"] = false,
+                    ["height"] = 30,
+                    ["progressColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["dontShowPing"] = false,
+                    ["soundTickEffect"] = "Justice_PickpocketFailed",
+                    ["showPingOnGCD"] = true,
+                    ["changeOnChanneled"] = false,
+                    ["soundTickEnabled"] = false,
+                    ["xOffset"] = 2408.5000000000,
+                    ["stopHATracking"] = false,
+                    ["trackGCD"] = false,
+                    ["hide"] = false,
+                    ["tickVolume"] = 100,
+                    ["globalAbilityAdjust"] = 25,
+                    ["hideCMInPVP"] = false,
+                    ["abilityAdjusts"] = 
+                    {
+                    },
+                    ["width"] = 303,
+                    ["yOffset"] = 705,
+                    ["globalHeavyAdjust"] = 25,
+                    ["displayPingOnHeavy"] = true,
+                    ["lastBackgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["backgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["colorCache"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["labelFont"] = "CHAT_FONT",
+                    ["soundTockEnabled"] = false,
+                    ["barAlign"] = "Center",
+                    ["showSpell"] = true,
+                    ["soundTickOffset"] = 200,
+                    ["maxLatency"] = 150,
+                    ["makeItFancy"] = false,
+                    ["gcdAdjust"] = 0,
+                    ["soundTockOffset"] = 300,
+                    ["fontStyle"] = "outline",
+                    ["pingColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["spellSize"] = 25,
+                    ["soundTockEffect"] = "Dialog_Decline",
+                },
+            },
+            ["8796093069174989"] = 
+            {
+                ["$LastCharacterName"] = "Mike v Petra",
+                ["Resources"] = 
+                {
+                    ["labelFrameXOffset"] = 2408.5000000000,
+                    ["width"] = 303,
+                    ["yOffset"] = 680,
+                    ["showMagicka"] = true,
+                    ["ultColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["labelFrameYOffset"] = 680,
+                    ["height"] = 50,
+                    ["showResourcesForGuard"] = false,
+                    ["showResources"] = false,
+                    ["healthColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0.8000000000,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["ultSize"] = 40,
+                    ["showUltimate"] = true,
+                    ["hpHighlightThreshold"] = 25,
+                    ["showStamina"] = true,
+                    ["showHealth"] = true,
+                    ["xOffset"] = 2408.5000000000,
+                    ["labelFrameHeight"] = 50,
+                    ["magColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.5000000000,
+                        [3] = 1,
+                    },
+                    ["hideResourcesInPVP"] = false,
+                    ["stamSize"] = 21,
+                    ["magSize"] = 21,
+                    ["healthHighligtColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["reticleHp"] = false,
+                    ["stamColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.8000000000,
+                        [3] = 0.3000000000,
+                    },
+                    ["anchorResourcesToProgressbar"] = true,
+                    ["hideInPVP"] = false,
+                    ["labelFrameWidth"] = 303,
+                    ["healthSize"] = 35,
+                },
+                ["version"] = 2,
+                ["global"] = true,
+                ["StackTracker"] = 
+                {
+                    ["trackBA"] = false,
+                    ["yOffset"] = 0,
+                    ["xOffset"] = 0,
+                    ["hightlightOnFullStacks"] = false,
+                    ["trackFS"] = false,
+                    ["volume"] = 100,
+                    ["hideTracker"] = true,
+                    ["trackGF"] = false,
+                    ["playSound"] = false,
+                    ["sound"] = "Ability_Companion_Ultimate_Ready",
+                    ["isUnlocked"] = false,
+                    ["indicatorSize"] = 30,
+                    ["hideInPVP"] = false,
+                    ["trackCrux"] = false,
+                    ["trackMW"] = false,
+                },
+                ["LATracker"] = 
+                {
+                    ["height"] = 50,
+                    ["width"] = 200,
+                    ["yOffset"] = 720,
+                    ["xOffset"] = 2560,
+                    ["choice"] = "Nothing",
+                    ["timeTilHiding"] = 15,
+                },
+                ["debug"] = 
+                {
+                    ["eventCancel"] = false,
+                    ["enabled"] = false,
+                    ["triggers"] = false,
+                    ["abilityUsed"] = false,
+                    ["triggerTimer"] = 170,
+                    ["currentEvent"] = false,
+                },
+                ["Progressbar"] = 
+                {
+                    ["channelColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 1,
+                    },
+                    ["hideInPVP"] = false,
+                    ["hideProgressbar"] = false,
+                    ["showTimeRemaining"] = true,
+                    ["dontHide"] = false,
+                    ["height"] = 30,
+                    ["progressColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["dontShowPing"] = false,
+                    ["soundTickEffect"] = "Justice_PickpocketFailed",
+                    ["showPingOnGCD"] = true,
+                    ["changeOnChanneled"] = false,
+                    ["soundTickEnabled"] = false,
+                    ["xOffset"] = 2408.5000000000,
+                    ["stopHATracking"] = false,
+                    ["trackGCD"] = false,
+                    ["hide"] = false,
+                    ["tickVolume"] = 100,
+                    ["globalAbilityAdjust"] = 25,
+                    ["hideCMInPVP"] = false,
+                    ["abilityAdjusts"] = 
+                    {
+                    },
+                    ["width"] = 303,
+                    ["yOffset"] = 705,
+                    ["globalHeavyAdjust"] = 25,
+                    ["displayPingOnHeavy"] = true,
+                    ["lastBackgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["backgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["colorCache"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["labelFont"] = "CHAT_FONT",
+                    ["soundTockEnabled"] = false,
+                    ["barAlign"] = "Center",
+                    ["showSpell"] = true,
+                    ["soundTickOffset"] = 200,
+                    ["maxLatency"] = 150,
+                    ["makeItFancy"] = false,
+                    ["gcdAdjust"] = 0,
+                    ["soundTockOffset"] = 300,
+                    ["fontStyle"] = "outline",
+                    ["pingColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["spellSize"] = 25,
+                    ["soundTockEffect"] = "Dialog_Decline",
+                },
+            },
+            ["8796093062295781"] = 
+            {
+                ["$LastCharacterName"] = "Fridolin The Great",
+                ["Resources"] = 
+                {
+                    ["labelFrameXOffset"] = 2408.5000000000,
+                    ["width"] = 303,
+                    ["yOffset"] = 680,
+                    ["showMagicka"] = true,
+                    ["ultColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["labelFrameYOffset"] = 680,
+                    ["height"] = 50,
+                    ["showResourcesForGuard"] = false,
+                    ["showResources"] = false,
+                    ["healthColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0.8000000000,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["ultSize"] = 40,
+                    ["showUltimate"] = true,
+                    ["hpHighlightThreshold"] = 25,
+                    ["showStamina"] = true,
+                    ["showHealth"] = true,
+                    ["xOffset"] = 2408.5000000000,
+                    ["labelFrameHeight"] = 50,
+                    ["magColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.5000000000,
+                        [3] = 1,
+                    },
+                    ["hideResourcesInPVP"] = false,
+                    ["stamSize"] = 21,
+                    ["magSize"] = 21,
+                    ["healthHighligtColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["reticleHp"] = false,
+                    ["stamColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.8000000000,
+                        [3] = 0.3000000000,
+                    },
+                    ["anchorResourcesToProgressbar"] = true,
+                    ["hideInPVP"] = false,
+                    ["labelFrameWidth"] = 303,
+                    ["healthSize"] = 35,
+                },
+                ["version"] = 2,
+                ["global"] = true,
+                ["StackTracker"] = 
+                {
+                    ["trackBA"] = false,
+                    ["yOffset"] = 0,
+                    ["xOffset"] = 0,
+                    ["hightlightOnFullStacks"] = false,
+                    ["trackFS"] = false,
+                    ["volume"] = 100,
+                    ["hideTracker"] = true,
+                    ["trackGF"] = false,
+                    ["playSound"] = false,
+                    ["sound"] = "Ability_Companion_Ultimate_Ready",
+                    ["isUnlocked"] = false,
+                    ["indicatorSize"] = 30,
+                    ["hideInPVP"] = false,
+                    ["trackCrux"] = false,
+                    ["trackMW"] = false,
+                },
+                ["LATracker"] = 
+                {
+                    ["height"] = 50,
+                    ["width"] = 200,
+                    ["yOffset"] = 720,
+                    ["xOffset"] = 2560,
+                    ["choice"] = "Nothing",
+                    ["timeTilHiding"] = 15,
+                },
+                ["debug"] = 
+                {
+                    ["eventCancel"] = false,
+                    ["enabled"] = false,
+                    ["triggers"] = false,
+                    ["abilityUsed"] = false,
+                    ["triggerTimer"] = 170,
+                    ["currentEvent"] = false,
+                },
+                ["Progressbar"] = 
+                {
+                    ["channelColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 1,
+                    },
+                    ["hideInPVP"] = false,
+                    ["hideProgressbar"] = false,
+                    ["showTimeRemaining"] = true,
+                    ["dontHide"] = false,
+                    ["height"] = 30,
+                    ["progressColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["dontShowPing"] = false,
+                    ["soundTickEffect"] = "Justice_PickpocketFailed",
+                    ["showPingOnGCD"] = true,
+                    ["changeOnChanneled"] = false,
+                    ["soundTickEnabled"] = false,
+                    ["xOffset"] = 2408.5000000000,
+                    ["stopHATracking"] = false,
+                    ["trackGCD"] = false,
+                    ["hide"] = false,
+                    ["tickVolume"] = 100,
+                    ["globalAbilityAdjust"] = 25,
+                    ["hideCMInPVP"] = false,
+                    ["abilityAdjusts"] = 
+                    {
+                    },
+                    ["width"] = 303,
+                    ["yOffset"] = 705,
+                    ["globalHeavyAdjust"] = 25,
+                    ["displayPingOnHeavy"] = true,
+                    ["lastBackgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["backgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["colorCache"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["labelFont"] = "CHAT_FONT",
+                    ["soundTockEnabled"] = false,
+                    ["barAlign"] = "Center",
+                    ["showSpell"] = true,
+                    ["soundTickOffset"] = 200,
+                    ["maxLatency"] = 150,
+                    ["makeItFancy"] = false,
+                    ["gcdAdjust"] = 0,
+                    ["soundTockOffset"] = 300,
+                    ["fontStyle"] = "outline",
+                    ["pingColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["spellSize"] = 25,
+                    ["soundTockEffect"] = "Dialog_Decline",
+                },
+            },
+            ["8796093072557313"] = 
+            {
+                ["$LastCharacterName"] = "Gamal Loki",
+                ["Resources"] = 
+                {
+                    ["labelFrameXOffset"] = 2408.5000000000,
+                    ["width"] = 303,
+                    ["yOffset"] = 680,
+                    ["showMagicka"] = true,
+                    ["ultColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["labelFrameYOffset"] = 680,
+                    ["height"] = 50,
+                    ["showResourcesForGuard"] = false,
+                    ["showResources"] = false,
+                    ["healthColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0.8000000000,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["ultSize"] = 40,
+                    ["showUltimate"] = true,
+                    ["hpHighlightThreshold"] = 25,
+                    ["showStamina"] = true,
+                    ["showHealth"] = true,
+                    ["xOffset"] = 2408.5000000000,
+                    ["labelFrameHeight"] = 50,
+                    ["magColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.5000000000,
+                        [3] = 1,
+                    },
+                    ["hideResourcesInPVP"] = false,
+                    ["stamSize"] = 21,
+                    ["magSize"] = 21,
+                    ["healthHighligtColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["reticleHp"] = false,
+                    ["stamColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.8000000000,
+                        [3] = 0.3000000000,
+                    },
+                    ["anchorResourcesToProgressbar"] = true,
+                    ["hideInPVP"] = false,
+                    ["labelFrameWidth"] = 303,
+                    ["healthSize"] = 35,
+                },
+                ["version"] = 2,
+                ["global"] = true,
+                ["StackTracker"] = 
+                {
+                    ["trackBA"] = false,
+                    ["yOffset"] = 0,
+                    ["xOffset"] = 0,
+                    ["hightlightOnFullStacks"] = false,
+                    ["trackFS"] = false,
+                    ["volume"] = 100,
+                    ["hideTracker"] = true,
+                    ["trackGF"] = false,
+                    ["playSound"] = false,
+                    ["sound"] = "Ability_Companion_Ultimate_Ready",
+                    ["isUnlocked"] = false,
+                    ["indicatorSize"] = 30,
+                    ["hideInPVP"] = false,
+                    ["trackCrux"] = false,
+                    ["trackMW"] = false,
+                },
+                ["LATracker"] = 
+                {
+                    ["height"] = 50,
+                    ["width"] = 200,
+                    ["yOffset"] = 720,
+                    ["xOffset"] = 2560,
+                    ["choice"] = "Nothing",
+                    ["timeTilHiding"] = 15,
+                },
+                ["debug"] = 
+                {
+                    ["eventCancel"] = false,
+                    ["enabled"] = false,
+                    ["triggers"] = false,
+                    ["abilityUsed"] = false,
+                    ["triggerTimer"] = 170,
+                    ["currentEvent"] = false,
+                },
+                ["Progressbar"] = 
+                {
+                    ["channelColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 1,
+                    },
+                    ["hideInPVP"] = false,
+                    ["hideProgressbar"] = false,
+                    ["showTimeRemaining"] = true,
+                    ["dontHide"] = false,
+                    ["height"] = 30,
+                    ["progressColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["dontShowPing"] = false,
+                    ["soundTickEffect"] = "Justice_PickpocketFailed",
+                    ["showPingOnGCD"] = true,
+                    ["changeOnChanneled"] = false,
+                    ["soundTickEnabled"] = false,
+                    ["xOffset"] = 2408.5000000000,
+                    ["stopHATracking"] = false,
+                    ["trackGCD"] = false,
+                    ["hide"] = false,
+                    ["tickVolume"] = 100,
+                    ["globalAbilityAdjust"] = 25,
+                    ["hideCMInPVP"] = false,
+                    ["abilityAdjusts"] = 
+                    {
+                    },
+                    ["width"] = 303,
+                    ["yOffset"] = 705,
+                    ["globalHeavyAdjust"] = 25,
+                    ["displayPingOnHeavy"] = true,
+                    ["lastBackgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["backgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["colorCache"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["labelFont"] = "CHAT_FONT",
+                    ["soundTockEnabled"] = false,
+                    ["barAlign"] = "Center",
+                    ["showSpell"] = true,
+                    ["soundTickOffset"] = 200,
+                    ["maxLatency"] = 150,
+                    ["makeItFancy"] = false,
+                    ["gcdAdjust"] = 0,
+                    ["soundTockOffset"] = 300,
+                    ["fontStyle"] = "outline",
+                    ["pingColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["spellSize"] = 25,
+                    ["soundTockEffect"] = "Dialog_Decline",
+                },
+            },
+            ["8796093074287095"] = 
+            {
+                ["$LastCharacterName"] = "Otto von Bissmark",
+                ["Resources"] = 
+                {
+                    ["labelFrameXOffset"] = 2408.5000000000,
+                    ["width"] = 303,
+                    ["yOffset"] = 680,
+                    ["showMagicka"] = true,
+                    ["ultColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["labelFrameYOffset"] = 680,
+                    ["height"] = 50,
+                    ["showResourcesForGuard"] = false,
+                    ["showResources"] = false,
+                    ["healthColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0.8000000000,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["ultSize"] = 40,
+                    ["showUltimate"] = true,
+                    ["hpHighlightThreshold"] = 25,
+                    ["showStamina"] = true,
+                    ["showHealth"] = true,
+                    ["xOffset"] = 2408.5000000000,
+                    ["labelFrameHeight"] = 50,
+                    ["magColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.5000000000,
+                        [3] = 1,
+                    },
+                    ["hideResourcesInPVP"] = false,
+                    ["stamSize"] = 21,
+                    ["magSize"] = 21,
+                    ["healthHighligtColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["reticleHp"] = false,
+                    ["stamColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.8000000000,
+                        [3] = 0.3000000000,
+                    },
+                    ["anchorResourcesToProgressbar"] = true,
+                    ["hideInPVP"] = false,
+                    ["labelFrameWidth"] = 303,
+                    ["healthSize"] = 35,
+                },
+                ["version"] = 2,
+                ["global"] = true,
+                ["StackTracker"] = 
+                {
+                    ["trackBA"] = false,
+                    ["yOffset"] = 0,
+                    ["xOffset"] = 0,
+                    ["hightlightOnFullStacks"] = false,
+                    ["trackFS"] = false,
+                    ["volume"] = 100,
+                    ["hideTracker"] = true,
+                    ["trackGF"] = false,
+                    ["playSound"] = false,
+                    ["sound"] = "Ability_Companion_Ultimate_Ready",
+                    ["isUnlocked"] = false,
+                    ["indicatorSize"] = 30,
+                    ["hideInPVP"] = false,
+                    ["trackCrux"] = false,
+                    ["trackMW"] = false,
+                },
+                ["LATracker"] = 
+                {
+                    ["height"] = 50,
+                    ["width"] = 200,
+                    ["yOffset"] = 720,
+                    ["xOffset"] = 2560,
+                    ["choice"] = "Nothing",
+                    ["timeTilHiding"] = 15,
+                },
+                ["debug"] = 
+                {
+                    ["eventCancel"] = false,
+                    ["enabled"] = false,
+                    ["triggers"] = false,
+                    ["abilityUsed"] = false,
+                    ["triggerTimer"] = 170,
+                    ["currentEvent"] = false,
+                },
+                ["Progressbar"] = 
+                {
+                    ["channelColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 1,
+                    },
+                    ["hideInPVP"] = false,
+                    ["hideProgressbar"] = false,
+                    ["showTimeRemaining"] = true,
+                    ["dontHide"] = false,
+                    ["forceSoundTock"] = true,
+                    ["progressColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["dontShowPing"] = false,
+                    ["soundTickEffect"] = "Justice_PickpocketFailed",
+                    ["showPingOnGCD"] = true,
+                    ["changeOnChanneled"] = false,
+                    ["soundTickEnabled"] = false,
+                    ["xOffset"] = 2408.5000000000,
+                    ["stopHATracking"] = false,
+                    ["trackGCD"] = false,
+                    ["hide"] = false,
+                    ["tickVolume"] = 100,
+                    ["globalAbilityAdjust"] = 25,
+                    ["hideCMInPVP"] = false,
+                    ["abilityAdjusts"] = 
+                    {
+                    },
+                    ["width"] = 303,
+                    ["yOffset"] = 705,
+                    ["globalHeavyAdjust"] = 25,
+                    ["displayPingOnHeavy"] = true,
+                    ["lastBackgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["backgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["colorCache"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["labelFont"] = "CHAT_FONT",
+                    ["soundTockEnabled"] = false,
+                    ["height"] = 30,
+                    ["fontStyle"] = "outline",
+                    ["showSpell"] = true,
+                    ["soundTickOffset"] = 200,
+                    ["barAlign"] = "Center",
+                    ["makeItFancy"] = false,
+                    ["gcdAdjust"] = 0,
+                    ["maxLatency"] = 150,
+                    ["soundTockOffset"] = 300,
+                    ["pingColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["spellSize"] = 25,
+                    ["soundTockEffect"] = "Dialog_Decline",
+                },
+            },
+            ["8796093064640125"] = 
+            {
+                ["$LastCharacterName"] = "Maüschen",
+                ["Resources"] = 
+                {
+                    ["labelFrameXOffset"] = 2408.5000000000,
+                    ["width"] = 303,
+                    ["yOffset"] = 680,
+                    ["showMagicka"] = true,
+                    ["ultColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["labelFrameYOffset"] = 680,
+                    ["height"] = 50,
+                    ["showResourcesForGuard"] = false,
+                    ["showResources"] = false,
+                    ["healthColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0.8000000000,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["ultSize"] = 40,
+                    ["showUltimate"] = true,
+                    ["hpHighlightThreshold"] = 25,
+                    ["showStamina"] = true,
+                    ["showHealth"] = true,
+                    ["xOffset"] = 2408.5000000000,
+                    ["labelFrameHeight"] = 50,
+                    ["magColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.5000000000,
+                        [3] = 1,
+                    },
+                    ["hideResourcesInPVP"] = false,
+                    ["stamSize"] = 21,
+                    ["magSize"] = 21,
+                    ["healthHighligtColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["reticleHp"] = false,
+                    ["stamColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.8000000000,
+                        [3] = 0.3000000000,
+                    },
+                    ["anchorResourcesToProgressbar"] = true,
+                    ["hideInPVP"] = false,
+                    ["labelFrameWidth"] = 303,
+                    ["healthSize"] = 35,
+                },
+                ["version"] = 2,
+                ["global"] = true,
+                ["StackTracker"] = 
+                {
+                    ["trackBA"] = false,
+                    ["yOffset"] = 0,
+                    ["xOffset"] = 0,
+                    ["hightlightOnFullStacks"] = false,
+                    ["trackFS"] = false,
+                    ["volume"] = 100,
+                    ["hideTracker"] = true,
+                    ["trackGF"] = false,
+                    ["playSound"] = false,
+                    ["sound"] = "Ability_Companion_Ultimate_Ready",
+                    ["isUnlocked"] = false,
+                    ["indicatorSize"] = 30,
+                    ["hideInPVP"] = false,
+                    ["trackCrux"] = false,
+                    ["trackMW"] = false,
+                },
+                ["LATracker"] = 
+                {
+                    ["height"] = 50,
+                    ["width"] = 200,
+                    ["yOffset"] = 720,
+                    ["xOffset"] = 2560,
+                    ["choice"] = "Nothing",
+                    ["timeTilHiding"] = 15,
+                },
+                ["debug"] = 
+                {
+                    ["eventCancel"] = false,
+                    ["enabled"] = false,
+                    ["triggers"] = false,
+                    ["abilityUsed"] = false,
+                    ["triggerTimer"] = 170,
+                    ["currentEvent"] = false,
+                },
+                ["Progressbar"] = 
+                {
+                    ["channelColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 1,
+                    },
+                    ["hideInPVP"] = false,
+                    ["hideProgressbar"] = false,
+                    ["showTimeRemaining"] = true,
+                    ["dontHide"] = false,
+                    ["height"] = 30,
+                    ["progressColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["dontShowPing"] = false,
+                    ["soundTickEffect"] = "Justice_PickpocketFailed",
+                    ["showPingOnGCD"] = true,
+                    ["changeOnChanneled"] = false,
+                    ["soundTickEnabled"] = false,
+                    ["xOffset"] = 2408.5000000000,
+                    ["stopHATracking"] = false,
+                    ["trackGCD"] = false,
+                    ["hide"] = false,
+                    ["tickVolume"] = 100,
+                    ["globalAbilityAdjust"] = 25,
+                    ["hideCMInPVP"] = false,
+                    ["abilityAdjusts"] = 
+                    {
+                    },
+                    ["width"] = 303,
+                    ["yOffset"] = 705,
+                    ["globalHeavyAdjust"] = 25,
+                    ["displayPingOnHeavy"] = true,
+                    ["lastBackgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["backgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["colorCache"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["labelFont"] = "CHAT_FONT",
+                    ["soundTockEnabled"] = false,
+                    ["barAlign"] = "Center",
+                    ["showSpell"] = true,
+                    ["soundTickOffset"] = 200,
+                    ["maxLatency"] = 150,
+                    ["makeItFancy"] = false,
+                    ["gcdAdjust"] = 0,
+                    ["soundTockOffset"] = 300,
+                    ["fontStyle"] = "outline",
+                    ["pingColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["spellSize"] = 25,
+                    ["soundTockEffect"] = "Dialog_Decline",
+                },
+            },
+            ["8796093027479535"] = 
+            {
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["Resources"] = 
+                {
+                    ["labelFrameXOffset"] = 2408.5000000000,
+                    ["width"] = 303,
+                    ["yOffset"] = 680,
+                    ["showMagicka"] = true,
+                    ["ultColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["labelFrameYOffset"] = 680,
+                    ["height"] = 50,
+                    ["showResourcesForGuard"] = false,
+                    ["showResources"] = false,
+                    ["healthColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0.8000000000,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["ultSize"] = 40,
+                    ["showUltimate"] = true,
+                    ["hpHighlightThreshold"] = 25,
+                    ["showStamina"] = true,
+                    ["showHealth"] = true,
+                    ["xOffset"] = 2408.5000000000,
+                    ["labelFrameHeight"] = 50,
+                    ["magColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.5000000000,
+                        [3] = 1,
+                    },
+                    ["hideResourcesInPVP"] = false,
+                    ["stamSize"] = 21,
+                    ["magSize"] = 21,
+                    ["healthHighligtColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["reticleHp"] = false,
+                    ["stamColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.8000000000,
+                        [3] = 0.3000000000,
+                    },
+                    ["anchorResourcesToProgressbar"] = true,
+                    ["hideInPVP"] = false,
+                    ["labelFrameWidth"] = 303,
+                    ["healthSize"] = 35,
+                },
+                ["version"] = 2,
+                ["global"] = true,
+                ["StackTracker"] = 
+                {
+                    ["trackBA"] = false,
+                    ["yOffset"] = 0,
+                    ["xOffset"] = 0,
+                    ["hightlightOnFullStacks"] = false,
+                    ["trackFS"] = false,
+                    ["volume"] = 100,
+                    ["hideTracker"] = true,
+                    ["trackGF"] = false,
+                    ["playSound"] = false,
+                    ["sound"] = "Ability_Companion_Ultimate_Ready",
+                    ["isUnlocked"] = false,
+                    ["indicatorSize"] = 30,
+                    ["hideInPVP"] = false,
+                    ["trackCrux"] = false,
+                    ["trackMW"] = false,
+                },
+                ["LATracker"] = 
+                {
+                    ["height"] = 50,
+                    ["width"] = 200,
+                    ["yOffset"] = 720,
+                    ["xOffset"] = 2560,
+                    ["choice"] = "Nothing",
+                    ["timeTilHiding"] = 15,
+                },
+                ["debug"] = 
+                {
+                    ["eventCancel"] = false,
+                    ["enabled"] = false,
+                    ["triggers"] = false,
+                    ["abilityUsed"] = false,
+                    ["triggerTimer"] = 170,
+                    ["currentEvent"] = false,
+                },
+                ["Progressbar"] = 
+                {
+                    ["channelColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 1,
+                    },
+                    ["hideInPVP"] = false,
+                    ["hideProgressbar"] = false,
+                    ["showTimeRemaining"] = true,
+                    ["dontHide"] = false,
+                    ["forceSoundTock"] = true,
+                    ["progressColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["dontShowPing"] = false,
+                    ["soundTickEffect"] = "Justice_PickpocketFailed",
+                    ["showPingOnGCD"] = true,
+                    ["changeOnChanneled"] = false,
+                    ["soundTickEnabled"] = false,
+                    ["xOffset"] = 2408.5000000000,
+                    ["stopHATracking"] = false,
+                    ["trackGCD"] = false,
+                    ["hide"] = false,
+                    ["tickVolume"] = 100,
+                    ["globalAbilityAdjust"] = 25,
+                    ["hideCMInPVP"] = false,
+                    ["abilityAdjusts"] = 
+                    {
+                    },
+                    ["width"] = 303,
+                    ["yOffset"] = 705,
+                    ["globalHeavyAdjust"] = 25,
+                    ["displayPingOnHeavy"] = true,
+                    ["lastBackgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["backgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["colorCache"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["labelFont"] = "CHAT_FONT",
+                    ["soundTockEnabled"] = false,
+                    ["height"] = 30,
+                    ["fontStyle"] = "outline",
+                    ["showSpell"] = true,
+                    ["soundTickOffset"] = 200,
+                    ["barAlign"] = "Center",
+                    ["makeItFancy"] = false,
+                    ["gcdAdjust"] = 0,
+                    ["maxLatency"] = 150,
+                    ["soundTockOffset"] = 300,
+                    ["pingColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["spellSize"] = 25,
+                    ["soundTockEffect"] = "Dialog_Decline",
+                },
+            },
+            ["8796093025384257"] = 
+            {
+                ["Resources"] = 
+                {
+                    ["width"] = 303,
+                    ["yOffset"] = 680,
+                    ["showMagicka"] = true,
+                    ["ultColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["height"] = 50,
+                    ["showResourcesForGuard"] = false,
+                    ["showResources"] = false,
+                    ["healthColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0.8000000000,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["ultSize"] = 40,
+                    ["hpHighlightThreshold"] = 25,
+                    ["showStamina"] = true,
+                    ["showHealth"] = true,
+                    ["magSize"] = 21,
+                    ["showUltimate"] = true,
+                    ["stamSize"] = 21,
+                    ["hideInPVP"] = false,
+                    ["healthHighligtColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["reticleHp"] = false,
+                    ["stamColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.8000000000,
+                        [3] = 0.3000000000,
+                    },
+                    ["anchorResourcesToProgressbar"] = true,
+                    ["xOffset"] = 2408.5000000000,
+                    ["magColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.5000000000,
+                        [3] = 1,
+                    },
+                    ["healthSize"] = 35,
+                },
+                ["global"] = true,
+                ["version"] = 2,
+                ["StackTracker"] = 
+                {
+                    ["trackBA"] = false,
+                    ["yOffset"] = 0,
+                    ["xOffset"] = 0,
+                    ["hightlightOnFullStacks"] = false,
+                    ["trackFS"] = false,
+                    ["volume"] = 100,
+                    ["hideTracker"] = true,
+                    ["trackGF"] = false,
+                    ["playSound"] = false,
+                    ["sound"] = "Ability_Companion_Ultimate_Ready",
+                    ["isUnlocked"] = false,
+                    ["indicatorSize"] = 30,
+                    ["hideInPVP"] = false,
+                    ["trackCrux"] = false,
+                    ["trackMW"] = false,
+                },
+                ["LATracker"] = 
+                {
+                    ["height"] = 50,
+                    ["width"] = 200,
+                    ["yOffset"] = 720,
+                    ["xOffset"] = 2560,
+                    ["choice"] = "Nothing",
+                    ["timeTilHiding"] = 15,
+                },
+                ["debug"] = 
+                {
+                    ["currentEvent"] = false,
+                    ["triggers"] = false,
+                    ["enabled"] = false,
+                    ["triggerTimer"] = 170,
+                },
+                ["Progressbar"] = 
+                {
+                    ["channelColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 1,
+                    },
+                    ["hideInPVP"] = false,
+                    ["showTimeRemaining"] = true,
+                    ["dontHide"] = false,
+                    ["height"] = 30,
+                    ["progressColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["dontShowPing"] = false,
+                    ["soundTickEffect"] = "Justice_PickpocketFailed",
+                    ["showPingOnGCD"] = true,
+                    ["changeOnChanneled"] = false,
+                    ["soundTickEnabled"] = false,
+                    ["xOffset"] = 2408.5000000000,
+                    ["stopHATracking"] = false,
+                    ["trackGCD"] = false,
+                    ["hide"] = false,
+                    ["tickVolume"] = 100,
+                    ["globalAbilityAdjust"] = 25,
+                    ["abilityAdjusts"] = 
+                    {
+                    },
+                    ["width"] = 303,
+                    ["yOffset"] = 705,
+                    ["globalHeavyAdjust"] = 25,
+                    ["displayPingOnHeavy"] = true,
+                    ["lastBackgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["backgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["colorCache"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["labelFont"] = "CHAT_FONT",
+                    ["maxLatency"] = 150,
+                    ["showSpell"] = true,
+                    ["soundTickOffset"] = 200,
+                    ["soundTockEnabled"] = false,
+                    ["barAlign"] = "Center",
+                    ["gcdAdjust"] = 0,
+                    ["soundTockOffset"] = 300,
+                    ["fontStyle"] = "outline",
+                    ["pingColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["makeItFancy"] = false,
+                    ["soundTockEffect"] = "Dialog_Decline",
+                },
+            },
+            ["8796093023211051"] = 
+            {
+                ["$LastCharacterName"] = "Freya Orm",
+                ["Resources"] = 
+                {
+                    ["labelFrameXOffset"] = 2408.5000000000,
+                    ["width"] = 303,
+                    ["yOffset"] = 680,
+                    ["showMagicka"] = true,
+                    ["ultColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["labelFrameYOffset"] = 680,
+                    ["height"] = 50,
+                    ["showResourcesForGuard"] = false,
+                    ["showResources"] = false,
+                    ["healthColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0.8000000000,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["ultSize"] = 40,
+                    ["showUltimate"] = true,
+                    ["hpHighlightThreshold"] = 25,
+                    ["showStamina"] = true,
+                    ["showHealth"] = true,
+                    ["xOffset"] = 2408.5000000000,
+                    ["labelFrameHeight"] = 50,
+                    ["magColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.5000000000,
+                        [3] = 1,
+                    },
+                    ["hideResourcesInPVP"] = false,
+                    ["stamSize"] = 21,
+                    ["magSize"] = 21,
+                    ["healthHighligtColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 1,
+                        [2] = 1,
+                        [3] = 1,
+                    },
+                    ["reticleHp"] = false,
+                    ["stamColor"] = 
+                    {
+                        [4] = 1,
+                        [1] = 0,
+                        [2] = 0.8000000000,
+                        [3] = 0.3000000000,
+                    },
+                    ["anchorResourcesToProgressbar"] = true,
+                    ["hideInPVP"] = false,
+                    ["labelFrameWidth"] = 303,
+                    ["healthSize"] = 35,
+                },
+                ["version"] = 2,
+                ["global"] = true,
+                ["StackTracker"] = 
+                {
+                    ["trackBA"] = false,
+                    ["yOffset"] = 0,
+                    ["xOffset"] = 0,
+                    ["hightlightOnFullStacks"] = false,
+                    ["trackFS"] = false,
+                    ["volume"] = 100,
+                    ["hideTracker"] = true,
+                    ["trackGF"] = false,
+                    ["playSound"] = false,
+                    ["sound"] = "Ability_Companion_Ultimate_Ready",
+                    ["isUnlocked"] = false,
+                    ["indicatorSize"] = 30,
+                    ["hideInPVP"] = false,
+                    ["trackCrux"] = false,
+                    ["trackMW"] = false,
+                },
+                ["LATracker"] = 
+                {
+                    ["height"] = 50,
+                    ["width"] = 200,
+                    ["yOffset"] = 720,
+                    ["xOffset"] = 2560,
+                    ["choice"] = "Nothing",
+                    ["timeTilHiding"] = 15,
+                },
+                ["debug"] = 
+                {
+                    ["eventCancel"] = false,
+                    ["enabled"] = false,
+                    ["triggers"] = false,
+                    ["abilityUsed"] = false,
+                    ["triggerTimer"] = 170,
+                    ["currentEvent"] = false,
+                },
+                ["Progressbar"] = 
+                {
+                    ["channelColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 1,
+                    },
+                    ["hideInPVP"] = false,
+                    ["hideProgressbar"] = false,
+                    ["showTimeRemaining"] = true,
+                    ["dontHide"] = false,
+                    ["forceSoundTock"] = true,
+                    ["progressColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["dontShowPing"] = false,
+                    ["soundTickEffect"] = "Justice_PickpocketFailed",
+                    ["showPingOnGCD"] = true,
+                    ["changeOnChanneled"] = false,
+                    ["soundTickEnabled"] = false,
+                    ["xOffset"] = 2408.5000000000,
+                    ["stopHATracking"] = false,
+                    ["trackGCD"] = false,
+                    ["hide"] = false,
+                    ["tickVolume"] = 100,
+                    ["globalAbilityAdjust"] = 25,
+                    ["hideCMInPVP"] = false,
+                    ["abilityAdjusts"] = 
+                    {
+                    },
+                    ["width"] = 303,
+                    ["yOffset"] = 705,
+                    ["globalHeavyAdjust"] = 25,
+                    ["displayPingOnHeavy"] = true,
+                    ["lastBackgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["backgroundColor"] = 
+                    {
+                        [4] = 0.5000000000,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["colorCache"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0.8400000000,
+                        [3] = 0.2400000000,
+                    },
+                    ["labelFont"] = "CHAT_FONT",
+                    ["soundTockEnabled"] = false,
+                    ["height"] = 30,
+                    ["fontStyle"] = "outline",
+                    ["showSpell"] = true,
+                    ["soundTickOffset"] = 200,
+                    ["barAlign"] = "Center",
+                    ["makeItFancy"] = false,
+                    ["gcdAdjust"] = 0,
+                    ["maxLatency"] = 150,
+                    ["soundTockOffset"] = 300,
+                    ["pingColor"] = 
+                    {
+                        [4] = 0.6300000000,
+                        [1] = 1,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["spellSize"] = 25,
+                    ["soundTockEffect"] = "Dialog_Decline",
+                },
+            },
+        },
+    },
+}

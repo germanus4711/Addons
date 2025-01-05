@@ -3,11 +3,11 @@
     License: The MIT License (MIT)
 --]]
 
----@class (partial) LuiExtended
+--- @class (partial) LuiExtended
 local LUIE = LUIE
----@class (partial) CombatInfo
+--- @class (partial) CombatInfo
 local CombatInfo = LUIE.CombatInfo
----@class (partial) CrowdControlTracker
+--- @class (partial) CrowdControlTracker
 local CrowdControlTracker = CombatInfo.CrowdControlTracker
 
 local Effects = LUIE.Data.Effects
@@ -381,7 +381,7 @@ function CrowdControlTracker:OnCombat(eventCode, result, isError, abilityName, a
         return
     end
 
-    --51894
+    -- 51894
     -----------------DISORIENT PROCESSING-------------------------------
 
     if result == ACTION_RESULT_EFFECT_FADED and ((not malformedName and targetName == LUIE.PlayerNameRaw) or (malformedName and (targetName == LUIE.PlayerNameRaw .. "^Mx" or targetName == LUIE.PlayerNameRaw .. "^Fx"))) then
@@ -934,33 +934,26 @@ function CrowdControlTracker:OnCombatTipRemoved(eventCode, combatTipID, result)
 end
 
 function CrowdControlTracker:GetDefaultIcon(ccType)
-    if ccType == ACTION_RESULT_STUNNED then
-        return LUIE_CC_ICON_STUN
-    elseif ccType == ACTION_RESULT_KNOCKBACK then
-        return LUIE_CC_ICON_KNOCKBACK
-    elseif ccType == ACTION_RESULT_LEVITATED then
-        return LUIE_CC_ICON_PULL
-    elseif ccType == ACTION_RESULT_FEARED then
-        return LUIE_CC_ICON_FEAR
-    elseif ccType == ACTION_RESULT_CHARMED then
-        return LUIE_CC_ICON_CHARM
-    elseif ccType == ACTION_RESULT_DISORIENTED then
-        return LUIE_CC_ICON_DISORIENT
-    elseif ccType == ACTION_RESULT_SILENCED then
-        return LUIE_CC_ICON_SILENCE
-    elseif ccType == ACTION_RESULT_IMMUNE then
-        return LUIE_CC_ICON_IMMUNE
-    elseif ccType == ACTION_RESULT_DODGED then
-        return LUIE_CC_ICON_IMMUNE
-    elseif ccType == ACTION_RESULT_BLOCKED then
-        return LUIE_CC_ICON_IMMUNE
-    elseif ccType == ACTION_RESULT_BLOCKED_DAMAGE then
-        return LUIE_CC_ICON_IMMUNE
-    elseif ccType == ACTION_RESULT_ROOTED then
-        return LUIE_CC_ICON_ROOT
-    elseif ccType == ACTION_RESULT_SNARED then
-        return LUIE_CC_ICON_SNARE
-    end
+    -- Define mapping of action results to icons
+    local iconMap =
+    {
+        [ACTION_RESULT_STUNNED] = LUIE_CC_ICON_STUN,
+        [ACTION_RESULT_KNOCKBACK] = LUIE_CC_ICON_KNOCKBACK,
+        [ACTION_RESULT_LEVITATED] = LUIE_CC_ICON_PULL,
+        [ACTION_RESULT_FEARED] = LUIE_CC_ICON_FEAR,
+        [ACTION_RESULT_CHARMED] = LUIE_CC_ICON_CHARM,
+        [ACTION_RESULT_DISORIENTED] = LUIE_CC_ICON_DISORIENT,
+        [ACTION_RESULT_SILENCED] = LUIE_CC_ICON_SILENCE,
+        [ACTION_RESULT_ROOTED] = LUIE_CC_ICON_ROOT,
+        [ACTION_RESULT_SNARED] = LUIE_CC_ICON_SNARE,
+        -- Group immune-type results
+        [ACTION_RESULT_IMMUNE] = LUIE_CC_ICON_IMMUNE,
+        [ACTION_RESULT_DODGED] = LUIE_CC_ICON_IMMUNE,
+        [ACTION_RESULT_BLOCKED] = LUIE_CC_ICON_IMMUNE,
+        [ACTION_RESULT_BLOCKED_DAMAGE] = LUIE_CC_ICON_IMMUNE,
+    }
+
+    return iconMap[ccType]
 end
 
 function CrowdControlTracker:ShouldUseDefaultIcon(abilityId)
@@ -976,13 +969,20 @@ function CrowdControlTracker:ShouldUseDefaultIcon(abilityId)
 end
 
 function CrowdControlTracker:SetupDefaultIcon(abilityId, ccType)
-    if ccType == ACTION_RESULT_STUNNED and Effects.EffectOverride[abilityId] and Effects.EffectOverride[abilityId].cc then
-        if Effects.EffectOverride[abilityId].cc == LUIE_CC_TYPE_KNOCKBACK then
-            ccType = ACTION_RESULT_KNOCKBACK
-        elseif Effects.EffectOverride[abilityId].cc == LUIE_CC_TYPE_PULL then
-            ccType = ACTION_RESULT_LEVITATED
-        end
+    -- Map CC types to action results for special stun effects
+    local stunOverrideMap =
+    {
+        [LUIE_CC_TYPE_KNOCKBACK] = ACTION_RESULT_KNOCKBACK,
+        [LUIE_CC_TYPE_PULL] = ACTION_RESULT_LEVITATED,
+    }
+
+    -- Override ccType for stun effects with special handling
+    if  ccType == ACTION_RESULT_STUNNED
+    and Effects.EffectOverride[abilityId]
+    and Effects.EffectOverride[abilityId].cc then
+        ccType = stunOverrideMap[Effects.EffectOverride[abilityId].cc] or ccType
     end
+
     return self:GetDefaultIcon(ccType)
 end
 
@@ -1001,7 +1001,7 @@ function CrowdControlTracker:OnDraw(abilityId, abilityIcon, ccDuration, result, 
         return
     end
 
-    --Override icon with default if enabled
+    -- Override icon with default if enabled
     if CombatInfo.SV.cct.useDefaultIcon and result ~= ACTION_RESULT_AREA_EFFECT and self:ShouldUseDefaultIcon(abilityId) == true then
         abilityIcon = self:SetupDefaultIcon(abilityId, result)
     end
@@ -1247,23 +1247,19 @@ function CrowdControlTracker:FindEffectGained(abilityId, sourceUnitId, abilityGr
 end
 
 function CrowdControlTracker:CCPriority(ccType)
-    local priority
-    if ccType == 1 then
-        priority = PriorityOne
-    elseif ccType == 2 then
-        priority = PriorityTwo
-    elseif ccType == 3 then
-        priority = PriorityThree
-    elseif ccType == 4 then
-        priority = PriorityFour
-    elseif ccType == 6 then
-        priority = PrioritySix
-    elseif ccType == 7 then
-        priority = PrioritySeven
-    elseif ccType == 8 then
-        priority = PriorityEight
-    end
-    return priority
+    -- Map CC types to their priority tables
+    local priorityMap =
+    {
+        [1] = PriorityOne,   -- STUN
+        [2] = PriorityTwo,   -- FEAR/CHARM
+        [3] = PriorityThree, -- DISORIENT
+        [4] = PriorityFour,  -- SILENCE
+        [6] = PrioritySix,   -- ROOT
+        [7] = PrioritySeven, -- AOE
+        [8] = PriorityEight, -- SNARE
+    }
+
+    return priorityMap[ccType]
 end
 
 function CrowdControlTracker:BreakFreeAnimation()
@@ -1471,8 +1467,8 @@ function CrowdControlTracker:VarReset()
     self.disorientsQueue = {}
     self.fearsQueue = {}
     self.negatesQueue = {}
-    --self.rootsQueue = {}
-    --self.snaresQueue = {}
+    -- self.rootsQueue = {}
+    -- self.snaresQueue = {}
     self.currentCC = 0
     PriorityOne = { endTime = 0, abilityId = 0, abilityIcon = "", hitValue = 0, result = 0, abilityName = "" }
     PriorityTwo = { endTime = 0, abilityId = 0, abilityIcon = "", hitValue = 0, result = 0, abilityName = "" }

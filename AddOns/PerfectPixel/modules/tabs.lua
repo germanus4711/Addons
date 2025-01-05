@@ -48,7 +48,7 @@ PP.tabs = function()
 	PP.Anchor(ZO_ProvisionerTopLevelInfoBar, --[[#1]] TOPLEFT, ZO_SmithingTopLevelRefinementPanelInventoryBackpack, BOTTOMLEFT, 0, 2, --[[#2]] true, TOPRIGHT, ZO_SmithingTopLevelRefinementPanelInventoryBackpack, BOTTOMRIGHT, 0, 2)
 	
 	for _, infoBar in pairs(PP.InfoBar) do
-		PP:RefreshStyle_InfoBar(infoBar, layout)
+		PP:RefreshStyle_InfoBar(infoBar, nil)
 	end
 
 	local infoBarString = {

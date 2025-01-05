@@ -1,0 +1,266 @@
+2025-01-05T17:02:07.738-05:00 Load Screen - RESUME_FROM_SUSPEND Complete
+2025-01-05T17:02:07.738-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, CHARACTER_ACTIVATED, SHARED_CHARACTER_OBJECT, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:02:07.744-05:00 PregameStateManager_SetState - from: nil, to: AccountLogin
+2025-01-05T17:02:11.116-05:00 Load Screen - RESUME_FROM_SUSPEND Complete
+2025-01-05T17:02:11.116-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, CHARACTER_ACTIVATED, SHARED_CHARACTER_OBJECT, FIXTURE_PHYSICS, 
+2025-01-05T17:02:11.116-05:00 Load Screen - OnAreaLoadStarted - (138) Unknown Zone
+2025-01-05T17:02:11.116-05:00 Load Screen - Show
+2025-01-05T17:02:11.204-05:00 Load Screen - GAME_DATA Complete
+2025-01-05T17:02:11.204-05:00 Load Screen - Waiting On: PLAYER, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:02:11.204-05:00 Load Screen - CHARACTER_GEOMETRY Complete
+2025-01-05T17:02:11.204-05:00 Load Screen - Waiting On: PLAYER, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:02:11.204-05:00 Load Screen - KEEPS Complete
+2025-01-05T17:02:11.204-05:00 Load Screen - Waiting On: PLAYER, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:02:11.204-05:00 Load Screen - SHARED_CHARACTER_OBJECT Complete
+2025-01-05T17:02:11.204-05:00 Load Screen - Waiting On: PLAYER, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:02:11.236-05:00 Load Screen - USER_INTERFACE Complete
+2025-01-05T17:02:11.236-05:00 Load Screen - Waiting On: PLAYER, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, RENDERER, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:02:11.349-05:00 Load Screen - PLAYER Complete
+2025-01-05T17:02:11.349-05:00 Load Screen - Waiting On: TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, RENDERER, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:02:11.349-05:00 PregameStateManager_SetState - from: AccountLogin, to: CharacterSelect
+2025-01-05T17:02:11.469-05:00 Load Screen - TERRAIN_GEOMETRY Complete
+2025-01-05T17:02:11.469-05:00 Load Screen - Waiting On: FIXTURE_ASSETS, DYNAMIC_OBJECTS, RENDERER, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:02:12.079-05:00 Load Screen - Show/Hide - Animation Complete
+2025-01-05T17:02:12.813-05:00 Load Screen - FIXTURE_ASSETS Complete
+2025-01-05T17:02:12.813-05:00 Load Screen - Waiting On: DYNAMIC_OBJECTS, RENDERER, TEXTURES, CHARACTER_ACTIVATED, 
+2025-01-05T17:02:12.813-05:00 Load Screen - FIXTURE_PHYSICS Complete
+2025-01-05T17:02:12.813-05:00 Load Screen - Waiting On: DYNAMIC_OBJECTS, RENDERER, TEXTURES, CHARACTER_ACTIVATED, 
+2025-01-05T17:02:39.868-05:00 Load Screen - RENDERER Complete
+2025-01-05T17:02:39.868-05:00 Load Screen - Waiting On: TEXTURES, CHARACTER_ACTIVATED, 
+2025-01-05T17:02:39.868-05:00 Load Screen - DYNAMIC_OBJECTS Complete
+2025-01-05T17:02:39.868-05:00 Load Screen - Waiting On: TEXTURES, CHARACTER_ACTIVATED, 
+2025-01-05T17:02:39.884-05:00 Load Screen - TEXTURES Complete
+2025-01-05T17:02:39.884-05:00 Load Screen - Systems Loaded And Not Waiting For Teleport
+2025-01-05T17:02:39.884-05:00 Load Screen - Hide
+2025-01-05T17:02:39.884-05:00 Load Screen - Hide - Wasn't Already Hiding
+2025-01-05T17:02:39.885-05:00 Load Screen - CHARACTER_ACTIVATED Complete
+2025-01-05T17:02:39.885-05:00 Load Screen - Systems Loaded And Not Waiting For Teleport
+2025-01-05T17:02:39.885-05:00 Load Screen - Hide
+2025-01-05T17:02:40.738-05:00 Load Screen - Show/Hide - Animation Complete
+2025-01-05T17:02:40.738-05:00 Load Screen - Hide - Animation Complete
+2025-01-05T17:03:36.268-05:00 PregameStateManager_SetState - from: CharacterSelect, to: BeginLoadingIntoWorld
+2025-01-05T17:03:46.590-05:00 Load Screen - RESUME_FROM_SUSPEND Complete
+2025-01-05T17:03:46.590-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, CHARACTER_ACTIVATED, SHARED_CHARACTER_OBJECT, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:03:46.590-05:00 Load Screen - OnAreaLoadStarted - (760) Domus Phrasticus
+2025-01-05T17:03:46.590-05:00 Load Screen - Show
+2025-01-05T17:03:46.593-05:00 Load Screen - RESUME_FROM_SUSPEND Complete
+2025-01-05T17:03:46.593-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, CHARACTER_ACTIVATED, SHARED_CHARACTER_OBJECT, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:03:46.593-05:00 Load Screen - GAME_DATA Complete
+2025-01-05T17:03:46.593-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, CHARACTER_ACTIVATED, SHARED_CHARACTER_OBJECT, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:03:46.593-05:00 Load Screen - RENDERER Complete
+2025-01-05T17:03:46.593-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, CHARACTER_ACTIVATED, SHARED_CHARACTER_OBJECT, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:03:46.593-05:00 Load Screen - KEEPS Complete
+2025-01-05T17:03:46.593-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, CHARACTER_ACTIVATED, SHARED_CHARACTER_OBJECT, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:03:46.593-05:00 Load Screen - SHARED_CHARACTER_OBJECT Complete
+2025-01-05T17:03:46.593-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, CHARACTER_ACTIVATED, SHARED_CHARACTER_OBJECT, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:03:46.976-05:00 Load Screen - PLAYER Complete
+2025-01-05T17:03:46.977-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:03:47.488-05:00 Load Screen - Show/Hide - Animation Complete
+2025-01-05T17:03:47.786-05:00 Load Screen - TERRAIN_GEOMETRY Complete
+2025-01-05T17:03:47.786-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:03:47.812-05:00 Load Screen - FIXTURE_PHYSICS Complete
+2025-01-05T17:03:47.812-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, TEXTURES, CHARACTER_ACTIVATED, 
+2025-01-05T17:03:47.854-05:00 Load Screen - CHARACTER_GEOMETRY Complete
+2025-01-05T17:03:47.854-05:00 Load Screen - Waiting On: FIXTURE_ASSETS, USER_INTERFACE, TEXTURES, CHARACTER_ACTIVATED, 
+2025-01-05T17:03:47.854-05:00 Load Screen - DYNAMIC_OBJECTS Complete
+2025-01-05T17:03:47.854-05:00 Load Screen - Waiting On: FIXTURE_ASSETS, USER_INTERFACE, TEXTURES, CHARACTER_ACTIVATED, 
+2025-01-05T17:03:52.593-05:00 |cff0000Gui Warning: Attempting to get action layer 'Siege' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:56.909-05:00 |cff0000Gui Warning: HodorReflexes_Share_Ultimates has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:03:56.909-05:00 |cff0000Gui Warning: HodorReflexes_Share_HornCountdown has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:03:56.909-05:00 |cff0000Gui Warning: HodorReflexes_Share_HornCountdown has a set height but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="X".|r
+2025-01-05T17:03:56.909-05:00 |cff0000Gui Warning: HodorReflexes_Share_HornIcon has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:03:56.909-05:00 |cff0000Gui Warning: HodorReflexes_Share_HornIcon has a set height but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="X".|r
+2025-01-05T17:03:56.937-05:00 |cff0000Gui Warning: HodorReflexes_Share_Colos has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:03:56.937-05:00 |cff0000Gui Warning: HodorReflexes_Share_Atronach has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:03:56.937-05:00 |cff0000Gui Warning: HodorReflexes_Share_MiscUltimates has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:03:56.937-05:00 |cff0000Gui Warning: HodorReflexes_Share_Damage has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:03:56.937-05:00 |cff0000Gui Warning: HodorReflexes_Share_ColosCountdown has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:03:56.937-05:00 |cff0000Gui Warning: HodorReflexes_Share_ColosCountdown has a set height but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="X".|r
+2025-01-05T17:03:57.502-05:00 Load Screen - FIXTURE_ASSETS Complete
+2025-01-05T17:03:57.502-05:00 Load Screen - Waiting On: USER_INTERFACE, TEXTURES, CHARACTER_ACTIVATED, 
+2025-01-05T17:03:57.502-05:00 Load Screen - DYNAMIC_OBJECTS Complete
+2025-01-05T17:03:57.502-05:00 Load Screen - Waiting On: USER_INTERFACE, TEXTURES, CHARACTER_ACTIVATED, 
+2025-01-05T17:03:57.531-05:00 Load Screen - TEXTURES Complete
+2025-01-05T17:03:57.531-05:00 Load Screen - Waiting On: USER_INTERFACE, CHARACTER_ACTIVATED, 
+2025-01-05T17:03:58.488-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.489-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.489-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.489-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.489-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.489-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.489-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.489-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.489-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.490-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.490-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.490-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.490-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.490-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.490-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.490-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.490-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.490-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.490-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.491-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.491-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.491-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.491-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.491-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:03:58.491-05:00 |cff0000Gui Warning: Attempting to get action layer 'Housing Editor' with a different allowsFallthrough argument than it was created with. AllowsFallthrough has already been defined as false.
+AllowsFallthrough cannot be changed and keybindings may not act as expected.|r
+2025-01-05T17:04:30.312-05:00 |cff0000Gui Warning: HarvestFarmFilterPaneScrollChild has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:30.312-05:00 |cff0000Gui Warning: ZO_TradingHouseBrowseItemsLeftPaneGlobalFeatureAreaPriceRange has a set height but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="X".|r
+2025-01-05T17:04:30.583-05:00 Load Screen - USER_INTERFACE Complete
+2025-01-05T17:04:30.583-05:00 Load Screen - Waiting On: CHARACTER_ACTIVATED, 
+2025-01-05T17:04:30.727-05:00 Load Screen - CHARACTER_ACTIVATED Complete
+2025-01-05T17:04:30.727-05:00 Load Screen - Systems Loaded And Not Waiting For Teleport
+2025-01-05T17:04:30.727-05:00 Load Screen - Hide
+2025-01-05T17:04:30.727-05:00 Load Screen - Hide - Wasn't Already Hiding
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuGridLinesSection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuEnvironmentSection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuUndoGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuNightModeGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuSelectBoxGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuSummonStorageGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTToolDialogBuildParamsContainer has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuGridSnapHorizontalGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuLightsSection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuGridSnapVerticalGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuSelectCheckGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuSelectEffectGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuGridHorizontalGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuGridAdjustmentGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuClipboardSection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuAllOffGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuSummonGuestJournalGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuGridVerticalGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuLockGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuPasteGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuSummonCraftingGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuRecoverySection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuSnapToGridSection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuUnlockGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuBackupsGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTButtonContextMenuAllOnGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.913-05:00 |cff0000Gui Warning: EHTToolDialogTabs has a set height but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="X".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuHelpSection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuCutGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuUnlinkGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuGridLockGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuRedoGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuGridSnapRotationGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuCopyGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuLinksSection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuLinkGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuSummonSection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuFixMyFXGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuQuickTipsGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuLocksSection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuTutorialsGroup has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHHHousingHubDialogTabButtons has a set height but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="X".|r
+2025-01-05T17:04:43.914-05:00 |cff0000Gui Warning: EHTButtonContextMenuSelectSection has a set width but has resizeToFitDescendents enabled. If this is intended, use resizeToFitConstrains="Y".|r
+2025-01-05T17:04:43.925-05:00 Load Screen - Show/Hide - Animation Complete
+2025-01-05T17:04:43.925-05:00 Load Screen - Hide - Animation Complete
+2025-01-05T17:05:04.790-05:00 Load Screen - OnPrepareForJump - Craglorn
+2025-01-05T17:05:04.790-05:00 Load Screen - Show
+2025-01-05T17:05:05.657-05:00 Load Screen - Show/Hide - Animation Complete
+2025-01-05T17:05:06.702-05:00 Load Screen - OnAreaLoadStarted - (777) Craglorn
+2025-01-05T17:05:06.745-05:00 Load Screen - GAME_DATA Complete
+2025-01-05T17:05:06.745-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, CHARACTER_ACTIVATED, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:05:06.745-05:00 Load Screen - RENDERER Complete
+2025-01-05T17:05:06.745-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, CHARACTER_ACTIVATED, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:05:06.745-05:00 Load Screen - USER_INTERFACE Complete
+2025-01-05T17:05:06.745-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, CHARACTER_ACTIVATED, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:05:06.745-05:00 Load Screen - KEEPS Complete
+2025-01-05T17:05:06.745-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, CHARACTER_ACTIVATED, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:05:06.745-05:00 Load Screen - SHARED_CHARACTER_OBJECT Complete
+2025-01-05T17:05:06.745-05:00 Load Screen - Waiting On: PLAYER, CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, CHARACTER_ACTIVATED, RESUME_FROM_SUSPEND, FIXTURE_PHYSICS, 
+2025-01-05T17:05:06.993-05:00 Load Screen - PLAYER Complete
+2025-01-05T17:05:06.993-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:05:06.993-05:00 Load Screen - RESUME_FROM_SUSPEND Complete
+2025-01-05T17:05:06.993-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:05:07.374-05:00 Load Screen - TERRAIN_GEOMETRY Complete
+2025-01-05T17:05:07.374-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:05:07.419-05:00 Load Screen - CHARACTER_GEOMETRY Complete
+2025-01-05T17:05:07.419-05:00 Load Screen - Waiting On: FIXTURE_ASSETS, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:05:07.419-05:00 Load Screen - DYNAMIC_OBJECTS Complete
+2025-01-05T17:05:07.419-05:00 Load Screen - Waiting On: FIXTURE_ASSETS, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:05:08.131-05:00 Load Screen - FIXTURE_ASSETS Complete
+2025-01-05T17:05:08.131-05:00 Load Screen - Waiting On: DYNAMIC_OBJECTS, TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:05:08.167-05:00 Load Screen - DYNAMIC_OBJECTS Complete
+2025-01-05T17:05:08.167-05:00 Load Screen - Waiting On: TEXTURES, CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:05:08.176-05:00 Load Screen - TEXTURES Complete
+2025-01-05T17:05:08.176-05:00 Load Screen - Waiting On: CHARACTER_ACTIVATED, FIXTURE_PHYSICS, 
+2025-01-05T17:05:08.387-05:00 Load Screen - FIXTURE_PHYSICS Complete
+2025-01-05T17:05:08.387-05:00 Load Screen - Waiting On: CHARACTER_ACTIVATED, 
+2025-01-05T17:05:08.621-05:00 Load Screen - CHARACTER_ACTIVATED Complete
+2025-01-05T17:05:08.621-05:00 Load Screen - Systems Loaded And Not Waiting For Teleport
+2025-01-05T17:05:08.621-05:00 Load Screen - Hide
+2025-01-05T17:05:08.621-05:00 Load Screen - Hide - Wasn't Already Hiding
+2025-01-05T17:05:09.871-05:00 Load Screen - Show/Hide - Animation Complete
+2025-01-05T17:05:09.871-05:00 Load Screen - Hide - Animation Complete
+2025-01-05T17:05:49.994-05:00 Load Screen - CHARACTER_ACTIVATED Complete
+2025-01-05T17:05:49.994-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, SHARED_CHARACTER_OBJECT, FIXTURE_PHYSICS, 
+2025-01-05T17:05:49.994-05:00 Load Screen - PLAYER Complete
+2025-01-05T17:05:49.994-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, SHARED_CHARACTER_OBJECT, FIXTURE_PHYSICS, 
+2025-01-05T17:05:49.994-05:00 Load Screen - RESUME_FROM_SUSPEND Complete
+2025-01-05T17:05:49.994-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, KEEPS, FIXTURE_ASSETS, DYNAMIC_OBJECTS, USER_INTERFACE, RENDERER, GAME_DATA, TEXTURES, SHARED_CHARACTER_OBJECT, FIXTURE_PHYSICS, 
+2025-01-05T17:05:49.994-05:00 Load Screen - OnAreaLoadStarted - (777) Craglorn
+2025-01-05T17:05:49.994-05:00 Load Screen - Show
+2025-01-05T17:05:50.001-05:00 Load Screen - PLAYER Complete
+2025-01-05T17:05:50.002-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, FIXTURE_PHYSICS, 
+2025-01-05T17:05:50.002-05:00 Load Screen - CHARACTER_ACTIVATED Complete
+2025-01-05T17:05:50.002-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, FIXTURE_PHYSICS, 
+2025-01-05T17:05:50.002-05:00 Load Screen - RESUME_FROM_SUSPEND Complete
+2025-01-05T17:05:50.002-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, FIXTURE_PHYSICS, 
+2025-01-05T17:05:50.002-05:00 Load Screen - GAME_DATA Complete
+2025-01-05T17:05:50.002-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, FIXTURE_PHYSICS, 
+2025-01-05T17:05:50.002-05:00 Load Screen - RENDERER Complete
+2025-01-05T17:05:50.002-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, FIXTURE_PHYSICS, 
+2025-01-05T17:05:50.002-05:00 Load Screen - USER_INTERFACE Complete
+2025-01-05T17:05:50.002-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, FIXTURE_PHYSICS, 
+2025-01-05T17:05:50.002-05:00 Load Screen - KEEPS Complete
+2025-01-05T17:05:50.002-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, FIXTURE_PHYSICS, 
+2025-01-05T17:05:50.002-05:00 Load Screen - SHARED_CHARACTER_OBJECT Complete
+2025-01-05T17:05:50.002-05:00 Load Screen - Waiting On: CHARACTER_GEOMETRY, TERRAIN_GEOMETRY, FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, FIXTURE_PHYSICS, 
+2025-01-05T17:05:50.429-05:00 Load Screen - CHARACTER_GEOMETRY Complete
+2025-01-05T17:05:50.429-05:00 Load Screen - Waiting On: FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, FIXTURE_PHYSICS, 
+2025-01-05T17:05:50.429-05:00 Load Screen - TERRAIN_GEOMETRY Complete
+2025-01-05T17:05:50.429-05:00 Load Screen - Waiting On: FIXTURE_ASSETS, DYNAMIC_OBJECTS, TEXTURES, FIXTURE_PHYSICS, 
+2025-01-05T17:05:50.440-05:00 Load Screen - FIXTURE_ASSETS Complete
+2025-01-05T17:05:50.440-05:00 Load Screen - Waiting On: TEXTURES, 
+2025-01-05T17:05:50.440-05:00 Load Screen - FIXTURE_PHYSICS Complete
+2025-01-05T17:05:50.440-05:00 Load Screen - Waiting On: TEXTURES, 
+2025-01-05T17:05:50.440-05:00 Load Screen - DYNAMIC_OBJECTS Complete
+2025-01-05T17:05:50.440-05:00 Load Screen - Waiting On: TEXTURES, 
+2025-01-05T17:05:50.452-05:00 Load Screen - TEXTURES Complete
+2025-01-05T17:05:50.452-05:00 Load Screen - Systems Loaded And Not Waiting For Teleport
+2025-01-05T17:05:50.452-05:00 Load Screen - Hide
+2025-01-05T17:05:50.452-05:00 Load Screen - Hide - Wasn't Already Hiding
+2025-01-05T17:05:51.160-05:00 Load Screen - Show/Hide - Animation Complete
+2025-01-05T17:05:51.160-05:00 Load Screen - Hide - Animation Complete

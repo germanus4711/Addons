@@ -177,109 +177,162 @@ PP.skillsScene = function()
 	end)
 
 
+--SCRIBING
+    -- Utility functions for scribing setup
+    local function SetupScribingScene(scene)
+        scene:RemoveFragment(FRAME_PLAYER_FRAGMENT)
+        scene:RemoveFragment(RIGHT_BG_FRAGMENT)
+        scene:RemoveFragment(RIGHT_PANEL_BG_FRAGMENT)
+        scene:RemoveFragment(TREE_UNDERLAY_FRAGMENT)
+    end
 
-	--API101042 Gold Road - Scribing
-	SecurePostHook(SCRIBING_KEYBOARD, "OnDeferredInitialize", function()
-		local scribingAltarSceneName = "scribingKeyboard"
-		local scribingAltarScene = SCENE_MANAGER:GetScene(scribingAltarSceneName)
+    local function SetupScribingContainer(container, containerAnchors)
+        PP:CreateBackground(container, nil, nil, nil, -10, -5, nil, nil, nil, 0, 44)
 
-		local scribingAltarContainer = SCRIBING_KEYBOARD.libraryContainer
-		local scribingAltarSearchContainer = SCRIBING_KEYBOARD.searchContainer
-		local scribingAltarCraftedAbilitiesContainer = SCRIBING_KEYBOARD.craftedAbilitiesControl
-		--Scripts header
-		local scribingAltarScriptsBackHeaderControl = SCRIBING_KEYBOARD.backHeaderControl
-		--Mode menu bar
-		local scribingAltarModeMenuBarControl = SCRIBING_KEYBOARD.modeBar
-		--Slots container
-		local scribingAltarSclotsContainer = SCRIBING_KEYBOARD.slotsContainer
+		local set1_p, set1_rTo, set1_rp, set1_x, set1_y, toggle, set2_p, set2_rTo, set2_rp, set2_x, set2_y
+		if containerAnchors ~= nil then
+			set1_p, set1_rTo, set1_rp, set1_x, set1_y, toggle, set2_p, set2_rTo, set2_rp, set2_x, set2_y = unpack(containerAnchors)
+		else
+			--Default anchor values
+			set1_p = TOPRIGHT
+			set1_rTo = GuiRoot
+			set1_rp = TOPRIGHT
+			set1_x = 0
+			set1_y = 85
+			toggle = true
+			set2_p = BOTTOMRIGHT
+			set2_rTo = GuiRoot
+			set2_rp = BOTTOMRIGHT
+			set2_x = 0
+			set2_y = -104
+		end
+        PP.Anchor(container, set1_p, set1_rTo, set1_rp, set1_x, set1_y, toggle, set2_p, set2_rTo, set2_rp, set2_x, set2_y)
+    end
 
-		--Right
-		scribingAltarScene:RemoveFragment(FRAME_PLAYER_FRAGMENT)
-		scribingAltarScene:RemoveFragment(RIGHT_BG_FRAGMENT)
-		scribingAltarScene:RemoveFragment(TREE_UNDERLAY_FRAGMENT)
-		--scribingLibraryScene:RemoveFragment(RIGHT_PANEL_TITLE_FRAGMENT) -> Raises errors as the scene fragment tries to show again
-		local scribingPanelKeyboardFragment = SCRIBING_FRAGMENT_KEYBOARD
-		scribingPanelKeyboardFragment:RegisterCallback("StateChange", function(oldState, newState)
-			if newState == SCENE_FRAGMENT_SHOWING or newState == SCENE_FRAGMENT_SHOWN then
-				--scribingPanelKeyboardFragment.control:SetHidden(true)
-				ZO_Scribing_Keyboard_TLLibraryFilterDivider:SetHidden(true)
-				ZO_Scribing_Keyboard_TLLibraryInfoBarDivider:SetHidden(true)
-				ZO_Scribing_Keyboard_TLModeMenuDivider:SetHidden(true)
-				--Left
-				ZO_Scribing_Keyboard_TLSlotsContainerBG:SetHidden(true)
+    local function SetupScribingUI(container, containerAnchors, searchContainer, craftedAbilitiesContainer, scriptsBackHeaderControl)
+        SetupScribingContainer(container, containerAnchors)
+		if searchContainer then
+			PP.Anchor(searchContainer, TOPLEFT, container, TOPLEFT, 10, 10)
+			if craftedAbilitiesContainer then
+				PP.Anchor(craftedAbilitiesContainer, TOPRIGHT, searchContainer, BOTTOMRIGHT, 0, 15, true, BOTTOMRIGHT, container, BOTTOMRIGHT, 0, 0)
 			end
-		end)
+			if scriptsBackHeaderControl then
+				PP.Anchor(scriptsBackHeaderControl, TOPLEFT, searchContainer, BOTTOMLEFT, -30, 15)
+			end
+		end
+    end
 
-		PP:CreateBackground(scribingAltarContainer, --[[#1]] nil, nil, nil, -10, -5, --[[#2]] nil, nil, nil, 0, 44)
-		PP.Anchor(scribingAltarContainer, --[[#1]] TOPRIGHT, GuiRoot, TOPRIGHT, 0, 85,	--[[#2]] true, BOTTOMRIGHT, GuiRoot, BOTTOMRIGHT, 0, -104)
-		PP.Anchor(scribingAltarSearchContainer, --[[#1]] TOPLEFT, scribingAltarContainer, TOPLEFT, 10, 10	--[[#2]] )
-		PP.Anchor(scribingAltarCraftedAbilitiesContainer, --[[#1]] TOPRIGHT, scribingAltarSearchContainer, BOTTOMRIGHT, 0, 15,	--[[#2]] true, BOTTOMRIGHT, scribingAltarContainer, BOTTOMRIGHT, 0, 0)
-		PP.Anchor(scribingAltarScriptsBackHeaderControl, --[[#1]] TOPLEFT, scribingAltarSearchContainer, BOTTOMLEFT, -30, 15)
-		PP.Anchor(scribingAltarModeMenuBarControl, --[[#1]] TOPRIGHT, scribingAltarContainer, TOPRIGHT, -15, 15)
+    local function SetupScribingModule(module, containersData, sceneName, extraSetup)
+        SecurePostHook(module, "OnDeferredInitialize", function ()
+            local scene = SCENE_MANAGER:GetScene(sceneName)
+            SetupScribingScene(scene)
 
+			if not ZO_IsTableEmpty(containersData) then
+				local searchContainer = module.searchContainer
+				local craftedAbilitiesContainer = module.craftedAbilitiesControl
+				local scriptsBackHeaderControl = module.backHeaderControl
 
-		--Left
-		scribingAltarScene:RemoveFragment(MEDIUM_LEFT_PANEL_BG_FRAGMENT)
-		PP:CreateBackground(MEDIUM_LEFT_PANEL_BG_FRAGMENT.control, --[[#1]] nil, nil, nil, -10, -5, --[[#2]] nil, nil, nil, 0, 44)
-		PP:CreateBackground(scribingAltarSclotsContainer, --[[#1]] nil, nil, nil, -10, -5, --[[#2]] nil, nil, nil, 0, 44)
+				for _, containerData in ipairs(containersData) do
+					local container = containerData.name
+					local containerCtrl = (container ~= nil and (module[container] ~= nil and module[container]) or container) or nil
+					if containerCtrl ~= nil then
+						SetupScribingUI(containerCtrl, containerData.anchors, searchContainer, craftedAbilitiesContainer, scriptsBackHeaderControl)
+						--nil the search container etc. so they won't be applied once again after the firs
+						searchContainer, craftedAbilitiesContainer, scriptsBackHeaderControl = nil, nil, nil
+					end
+				end
+			end
 
-		PP.ScrollBar(ZO_Scribing_Keyboard_TLLibraryCraftedAbilitiesGridListContainerList)
-		PP.ScrollBar(ZO_Scribing_Keyboard_TLLibraryScripts)
+            -- Left panel setup
+            scene:RemoveFragment(MEDIUM_LEFT_PANEL_BG_FRAGMENT)
+            PP:CreateBackground(MEDIUM_LEFT_PANEL_BG_FRAGMENT.control, nil, nil, nil, -10, -5, nil, nil, nil, 0, 44)
+
+            -- Allow for custom additional setup
+            if extraSetup then
+                extraSetup(scene, module)
+            end
+        end)
+    end
+
+	local anchorsForLibraryContainer = { TOPRIGHT, GuiRoot, TOPRIGHT, 0, 115, true, BOTTOMRIGHT, GuiRoot, BOTTOMRIGHT, 0, -104 }
+    -- Setup Scribing Keyboard - At Scholarium
+    SetupScribingModule(SCRIBING_KEYBOARD, {
+			{ name = "libraryContainer", anchors = anchorsForLibraryContainer },
+			{ name = "recentContainer", anchors = anchorsForLibraryContainer }
+		}, "scribingKeyboard", function(scene, module)
+			-- Additional setup specific to scribing keyboard
+			local modeMenuControl = module.modeMenu
+			PP.Anchor(modeMenuControl, TOPRIGHT, GuiRoot, TOPRIGHT, -30, 64) --same as skills and other's SceneGroupBar
+
+			--Scribing tab
+			---Scrollbars
+            PP.ScrollBar(module.craftedAbilitiesGridList.scrollbar) -- ZO_Scribing_Keyboard_TLLibraryCraftedAbilitiesGridListContainerListScrollBar
+            PP.ScrollBar(module.scriptsList.scrollbar) -- ZO_Scribing_Keyboard_TLLibraryScripts
+
+			--Archive tab
+			local recentContainer = module.recentContainer
+			local recentScribedAbilitiesList = module.recentScribedAbilitiesList
+			---search box
+			local scribedSearchContainer = module.scribedSearchContainer
+			PP.Anchor(scribedSearchContainer, TOPLEFT, module.libraryContainer, TOPLEFT, 10, 10)
+			---list
+			PP.Anchor(recentScribedAbilitiesList, TOPLEFT, recentContainer, TOPLEFT, 0, 120, true, BOTTOMRIGHT, recentContainer, BOTTOMRIGHT, 0, 0)
+			---Scrollbars
+			PP.ScrollBar(recentScribedAbilitiesList.scrollbar)
+
+        	-- Additional background for slots container (left side)
+        	PP:CreateBackground(module.slotsContainer, nil, nil, nil, -10, -5, nil, nil, nil, 0, 44)
+
+			-- Style Tooltip
+			if ZO_Scribing_Keyboard_TLResultTooltip then
+				PP.SetStyle_Tooltip(ZO_Scribing_Keyboard_TLResultTooltip)
+			end
+
+			-- Specific fragment handling
+			local scribingPanelKeyboardFragment = SCRIBING_FRAGMENT_KEYBOARD
+			scribingPanelKeyboardFragment:RegisterCallback("StateChange", function(oldState, newState)
+				if newState == SCENE_FRAGMENT_SHOWING then --or newState == SCENE_FRAGMENT_SHOWN then
+					--Left side
+					ZO_SharedMediumLeftPanelBackgroundLeft:SetHidden(true)
+
+					--Scribing tab
+					ZO_Scribing_Keyboard_TLLibraryFilterDivider:SetHidden(true)
+					ZO_Scribing_Keyboard_TLLibraryInfoBarDivider:SetHidden(true)
+					ZO_Scribing_Keyboard_TLModeMenuDivider:SetHidden(true)
+					ZO_Scribing_Keyboard_TLSlotsContainerBG:SetHidden(true)
+
+					--Archive tab
+					ZO_Scribing_Keyboard_TLRecentFilterDivider:SetHidden(true)
+				end
+        	end)
 	end)
 
+    -- Setup Scribing Library - At skills
+    SetupScribingModule(SCRIBING_LIBRARY_KEYBOARD, { { name = "libraryContainer", anchors = anchorsForLibraryContainer } },
+			"scribingLibraryKeyboard", function (scene, module)
+			--Scribing skills
+			---Scrollbars
+			PP.ScrollBar(module.craftedAbilitiesGridList.scrollbar) -- "ZO_ScribingLibrary_Keyboard_TLLibraryCraftedAbilitiesGridListContainerList"
+			PP.ScrollBar(module.scriptsList.scrollbar) --"ZO_ScribingLibrary_Keyboard_TLLibraryScripts"
+			--Left side
+			---Scrollbars
+            PP.ScrollBar(ZO_ScribingLibrary_CraftedAbilitySkills_Keyboard_TopLevelListScrollBar) --ZO_ScribingLibrary_CraftedAbilitySkills_Keyboard_TopLevelListScrollBar
 
-	SecurePostHook(SCRIBING_LIBRARY_KEYBOARD, "OnDeferredInitialize", function()
-		local scribingSceneName ="scribingLibraryKeyboard"
-		local scribingLibraryScene = SCENE_MANAGER:GetScene(scribingSceneName)
-		local scribingLibraryContainer = SCRIBING_LIBRARY_KEYBOARD.libraryContainer
-		local scribingLibrarySearchContainer = SCRIBING_LIBRARY_KEYBOARD.searchContainer
-		local scribingLibraryCraftedAbilitiesContainer = SCRIBING_LIBRARY_KEYBOARD.craftedAbilitiesControl
-		--Scripts header
-		local scribingLibraryScriptsBackHeaderControl = SCRIBING_LIBRARY_KEYBOARD.backHeaderControl
+			-- Additional setup specific to scribing library
+			local rightPanelTitleFragment = RIGHT_PANEL_TITLE_FRAGMENT
+			rightPanelTitleFragment:RegisterCallback("StateChange", function (oldState, newState)
+				if newState == SCENE_FRAGMENT_SHOWING or newState == SCENE_FRAGMENT_SHOWN then
+					if SCENE_MANAGER.currentScene ~= scene then return end
+					--Left side
+					ZO_SharedMediumLeftPanelBackgroundLeft:SetHidden(true)
 
-		--Right
-		scribingLibraryScene:RemoveFragment(FRAME_PLAYER_FRAGMENT)
-		scribingLibraryScene:RemoveFragment(RIGHT_BG_FRAGMENT)
-		scribingLibraryScene:RemoveFragment(TREE_UNDERLAY_FRAGMENT)
-		--scribingLibraryScene:RemoveFragment(RIGHT_PANEL_TITLE_FRAGMENT) -> Raises errors as the scene fragment tries to show again
-		local rightPanelTitleFragment = RIGHT_PANEL_TITLE_FRAGMENT
-		rightPanelTitleFragment:RegisterCallback("StateChange", function(oldState, newState)
-			if newState == SCENE_FRAGMENT_SHOWING or newState == SCENE_FRAGMENT_SHOWN then
-				if SCENE_MANAGER.currentScene ~= scribingLibraryScene then return end
-				rightPanelTitleFragment.control:SetHidden(true)
-				ZO_ScribingLibrary_Keyboard_TLLibraryFilterDivider:SetHidden(true)
-				ZO_ScribingLibrary_Keyboard_TLLibraryInfoBarDivider:SetHidden(true)
-			end
-		end)
+					--Right side
+					rightPanelTitleFragment.control:SetHidden(true)
 
-		PP:CreateBackground(scribingLibraryContainer, --[[#1]] nil, nil, nil, -10, -5, --[[#2]] nil, nil, nil, 0, 44)
-		PP.Anchor(scribingLibraryContainer, --[[#1]] TOPRIGHT, GuiRoot, TOPRIGHT, 0, 85,	--[[#2]] true, BOTTOMRIGHT, GuiRoot, BOTTOMRIGHT, 0, -104)
-		PP.Anchor(scribingLibrarySearchContainer, --[[#1]] TOPLEFT, scribingLibraryContainer, TOPLEFT, 10, 10	--[[#2]] )
-		PP.Anchor(scribingLibraryCraftedAbilitiesContainer, --[[#1]] TOPRIGHT, scribingLibrarySearchContainer, BOTTOMRIGHT, 0, 15,	--[[#2]] true, BOTTOMRIGHT, scribingLibraryContainer, BOTTOMRIGHT, 0, 0)
-		PP.Anchor(scribingLibraryScriptsBackHeaderControl, --[[#1]] TOPLEFT, scribingLibrarySearchContainer, BOTTOMLEFT, -30, 15)
-
-		--Left
-		scribingLibraryScene:RemoveFragment(MEDIUM_LEFT_PANEL_BG_FRAGMENT)
-		PP:CreateBackground(MEDIUM_LEFT_PANEL_BG_FRAGMENT.control, --[[#1]] nil, nil, nil, -10, -5, --[[#2]] nil, nil, nil, 0, 44)
-
-		PP.ScrollBar(ZO_ScribingLibrary_Keyboard_TLLibraryCraftedAbilitiesGridListContainerList)
-		PP.ScrollBar(ZO_ScribingLibrary_Keyboard_TLLibraryScripts)
+					--Scribing library
+					ZO_ScribingLibrary_Keyboard_TLLibraryFilterDivider:SetHidden(true)
+					ZO_ScribingLibrary_Keyboard_TLLibraryInfoBarDivider:SetHidden(true)
+				end
+			end)
 	end)
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
