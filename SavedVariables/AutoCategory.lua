@@ -4,12 +4,844 @@ AutoCategorySavedVars =
     {
         ["@germanus4711"] = 
         {
+            ["8796093069174989"] = 
+            {
+                ["NA Megaserver"] = 
+                {
+                    ["version"] = 1.1000000000,
+                    ["bags"] = 
+                    {
+                        [1] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 975,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 90,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [2] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [3] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [4] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                            },
+                        },
+                        [5] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [6] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                    },
+                    ["accountWide"] = true,
+                    ["collapses"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                        [4] = 
+                        {
+                        },
+                        [5] = 
+                        {
+                        },
+                        [6] = 
+                        {
+                        },
+                    },
+                },
+                ["$LastCharacterName"] = "Mike v Petra",
+            },
             ["$AccountWide"] = 
             {
                 ["NA Megaserver"] = 
                 {
+                    ["version"] = 1.1000000000,
                     ["appearance"] = 
                     {
+                        ["CATEGORY_FONT_NAME"] = "Univers 67",
+                        ["CATEGORY_OTHER_TEXT"] = "Others",
                         ["CATEGORY_FONT_COLOR"] = 
                         {
                             [4] = 1,
@@ -17,10 +849,10 @@ AutoCategorySavedVars =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["CATEGORY_FONT_ALIGNMENT"] = 1,
+                        ["CATEGORY_FONT_STYLE"] = "soft-shadow-thin",
                         ["CATEGORY_HEADER_HEIGHT"] = 52,
                         ["CATEGORY_FONT_SIZE"] = 18,
-                        ["CATEGORY_OTHER_TEXT"] = "Others",
+                        ["CATEGORY_FONT_ALIGNMENT"] = 1,
                         ["HIDDEN_CATEGORY_FONT_COLOR"] = 
                         {
                             [4] = 1,
@@ -28,4608 +860,2124 @@ AutoCategorySavedVars =
                             [2] = 125,
                             [3] = 125,
                         },
-                        ["CATEGORY_FONT_STYLE"] = "soft-shadow-thin",
-                        ["CATEGORY_FONT_NAME"] = "Univers 67",
-                    },
-                    ["bags"] = 
-                    {
-                        [1] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 975,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 90,
-                                },
-                            },
-                        },
-                        [2] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [3] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [4] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [5] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [6] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
                     },
                     ["general"] = 
                     {
                         ["SHOW_CATEGORY_SET_TITLE"] = true,
-                        ["SHOW_MESSAGE_WHEN_TOGGLE"] = false,
                         ["SHOW_CATEGORY_ITEM_COUNT"] = true,
                         ["SHOW_CATEGORY_COLLAPSE_ICON"] = true,
                         ["SAVE_CATEGORY_COLLAPSE_STATUS"] = false,
+                        ["SHOW_MESSAGE_WHEN_TOGGLE"] = false,
+                    },
+                    ["bags"] = 
+                    {
+                        [1] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 975,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 90,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                            },
+                        },
+                        [2] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [3] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [4] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [5] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [6] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
                     },
                     ["collapses"] = 
                     {
                         [1] = 
                         {
-                            ["Set (Kraglen's Howl)"] = false,
-                            ["Set (Shadow Walker)"] = false,
-                            ["Set (Imperial Physique)"] = false,
-                            ["New"] = false,
-                            ["Set (Aetheric Lancer)"] = false,
-                            ["Set (Iceheart)"] = false,
-                            ["Set (Vesture of Darloc Brae)"] = true,
-                            ["Low Level"] = false,
-                            ["Alchemy"] = false,
-                            ["Set (Viper's Sting)"] = false,
-                            ["Set (Ring of the Wild Hunt)"] = true,
-                            ["Set (Maw of the Infernal)"] = false,
-                            ["Set (Marauder's Haste)"] = false,
-                            ["Set"] = false,
-                            ["Set (Combat Physician)"] = false,
-                            ["Set (Dagon's Dominion)"] = false,
-                            ["Selling"] = false,
-                            ["Clothing"] = false,
-                            ["Set (Merciless Charge)"] = false,
-                            ["Container"] = false,
-                            ["Set (Arkasis's Genius)"] = false,
-                            ["Set (Engine Guardian)"] = false,
                             ["Set (Snow Treaders)"] = false,
-                            ["Set (Pillar of Nirn)"] = false,
-                            ["Set (War Maiden)"] = false,
-                            ["Set (Kynmarcher's Cruelty)"] = false,
-                            ["New (Aetheric Lancer)"] = false,
-                            ["Set (Alessia's Bulwark)"] = false,
-                            ["Set (Undaunted Infiltrator)"] = false,
-                            ["Set (Sunderflame)"] = false,
-                            ["Set (Unleashed Ritualist)"] = false,
-                            ["Set (Wrath of the Imperium)"] = false,
-                            ["Set (Mechanical Acuity)"] = false,
-                            ["Set (Hagraven's Garden)"] = false,
-                            ["Enchanting"] = false,
-                            ["Set (Light Speaker)"] = false,
-                            ["Set (Grave Inevitability)"] = false,
-                            ["Set (Toothrow)"] = false,
-                            ["Set (Mother's Sorrow)"] = false,
-                            ["Poison"] = false,
-                            ["Set (Foolkiller's Ward)"] = false,
-                            ["Set (Frozen Watcher)"] = false,
-                            ["Set (Crushing Wall)"] = false,
-                            ["Quickslots"] = true,
-                            ["Set (Sentinel of Rkugamz)"] = false,
-                            ["Set (Heartland Conqueror)"] = false,
-                            ["Set (Wrathsun)"] = true,
-                            ["Set (Spriggan's Vigor)"] = false,
-                            ["Set (The Arch-Mage)"] = false,
-                            ["Set (Phylactery's Grasp)"] = false,
-                            ["Set (Crimson Twilight)"] = false,
-                            ["Set (Frostbite)"] = false,
-                            ["Set (Knightmare)"] = false,
-                            ["Armor"] = false,
-                            ["Set (Bastion of the Draoife)"] = false,
+                            ["Set (Leeching Plate)"] = false,
+                            ["Ring"] = false,
+                            ["Set (Marauder's Haste)"] = false,
+                            ["Set (Siegemaster's Focus)"] = false,
+                            ["Set (Bulwark Ruination)"] = false,
+                            ["Set (Combat Physician)"] = false,
+                            ["Set (Elemental Catalyst)"] = false,
+                            ["Set (Hexos' Ward)"] = true,
                             ["Set (Shacklebreaker)"] = false,
+                            ["Set (Merciless Charge)"] = false,
+                            ["Set (Order's Wrath)"] = true,
+                            ["Set (Light Speaker)"] = false,
+                            ["Set (Overwhelming Surge)"] = true,
+                            ["Equipping"] = false,
+                            ["Set (Velidreth)"] = false,
                             ["Set (Nerien'eth)"] = false,
-                            ["Set (Night Terror)"] = false,
-                            ["Set (Malacath's Band of Brutality)"] = false,
+                            ["Armor"] = false,
                             ["Set (Heem-Jas' Retribution)"] = false,
-                            ["Set (Vicecanon of Venom)"] = false,
-                            ["Set (Undaunted Bastion)"] = false,
+                            ["Set (Netch Oil)"] = false,
+                            ["Set (Dreugh King Slayer)"] = false,
+                            ["Furnishing"] = false,
+                            ["Set (Crushing Wall)"] = false,
+                            ["Set (Netch's Touch)"] = false,
+                            ["Set (Ring of the Wild Hunt)"] = true,
+                            ["Woodworking"] = false,
                             ["Set (Turning Tide)"] = false,
-                            ["Set (Belharza's Band)"] = false,
-                            ["Set (Runecarver's Blaze)"] = false,
-                            ["Set (Oakensoul Ring)"] = false,
-                            ["Set (Order's Wrath)"] = false,
+                            ["Set (Malacath's Band of Brutality)"] = false,
+                            ["Deconstruct"] = false,
+                            ["Set (Knightmare)"] = false,
                             ["Consumables"] = false,
-                            ["Set (Gossamer)"] = false,
-                            ["Set (Apocryphal Inspiration)"] = false,
-                            ["Set (Burning Spellweave)"] = false,
-                            ["Set (Back-Alley Gourmand)"] = false,
-                            ["Set (Sea-Serpent's Coil)"] = false,
-                            ["Set (Spider Cultist Cowl)"] = false,
-                            ["Provisioning"] = false,
+                            ["Set (Oakensoul Ring)"] = false,
+                            ["Set (Belharza's Band)"] = false,
                             ["Set (Amber Plasm)"] = false,
-                            ["Set (Slimecraw)"] = false,
+                            ["Set (Undaunted Bastion)"] = false,
+                            ["Set (Farstrider)"] = false,
+                            ["Set (Arkasis's Genius)"] = false,
+                            ["Set (Elf Bane)"] = false,
+                            ["Set (Sentinel of Rkugamz)"] = false,
+                            ["Set (Mother's Sorrow)"] = false,
+                            ["Set (Frostbite)"] = false,
                             ["Set (Blind Path Induction)"] = false,
                             ["Set (The Troll King)"] = false,
-                            ["Set (Velidreth)"] = false,
-                            ["Set (Macabre Vintage)"] = true,
-                            ["Set (Siegemaster's Focus)"] = false,
-                            ["Glyphs & Gems"] = false,
-                            ["New (Wrathsun)"] = false,
-                            ["Weapon"] = false,
-                            ["Set (Cruel Flurry)"] = false,
-                            ["Set (Reflected Fury)"] = false,
-                            ["New (Balorgh)"] = false,
-                            ["Set (Drake's Rush)"] = false,
-                            ["Set (Baan Dar's Blessing)"] = false,
-                            ["Set (Faun's Lark Cladding)"] = false,
-                            ["Set (Crafty Alfiq)"] = false,
-                            ["Furnishing"] = false,
-                            ["Set (Thrassian Stranglers)"] = false,
-                            ["Set (Overwhelming Surge)"] = true,
-                            ["Others"] = false,
-                            ["Set (Galerion's Revenge)"] = false,
-                            ["Set (Dreugh King Slayer)"] = false,
-                            ["Set (Curse Eater)"] = false,
-                            ["Set (Netch Oil)"] = false,
-                            ["Set (Nix-Hound's Howl)"] = false,
-                            ["Set (Balorgh)"] = false,
-                            ["Set (Harpooner's Wading Kilt)"] = true,
-                            ["Blacksmithing"] = false,
-                            ["Trait/Style Gems"] = false,
-                            ["Ring"] = false,
-                            ["Set (Hexos' Ward)"] = true,
+                            ["Set (Aetheric Lancer)"] = false,
                             ["Set (Tracker's Lash)"] = false,
-                            ["Set (Lamia's Song)"] = false,
-                            ["Researchable"] = false,
-                            ["Set (Kyne's Kiss)"] = false,
-                            ["Set (Telvanni Enforcer)"] = false,
-                            ["BoE"] = false,
-                            ["Set (Embershield)"] = false,
-                            ["Set (Storm-Cursed's Revenge)"] = false,
-                            ["Set (Barkskin)"] = false,
-                            ["Necklace"] = false,
-                            ["New (Order's Wrath)"] = false,
-                            ["Set (Ironblood)"] = false,
-                            ["Set (Sergeant's Mail)"] = false,
-                            ["New (Vicious Death)"] = false,
-                            ["Equipping"] = false,
-                            ["Set (Brands of Imperium)"] = false,
-                            ["Set (Hunt Leader)"] = false,
-                            ["Set (Gaze of Sithis)"] = false,
-                            ["Maps & Surveys"] = true,
-                            ["Set (Glorgoloch the Destroyer)"] = false,
-                            ["Set (Scavenging Demise)"] = false,
-                            ["Woodworking"] = false,
-                            ["Set (Bulwark Ruination)"] = false,
-                            ["Set (Shapeshifter's Chain)"] = false,
-                            ["Set (Valkyn Skoria)"] = false,
-                            ["Set (Oakfather's Retribution)"] = false,
-                            ["Set (Leeching Plate)"] = false,
-                            ["Recipes & Motifs"] = false,
-                            ["Set (Vicious Death)"] = true,
-                            ["Set (Netch's Touch)"] = false,
-                            ["Set (Aspect of Mazzatun)"] = false,
-                            ["Set (Elemental Catalyst)"] = false,
-                            ["Set (Farstrider)"] = false,
-                            ["Deconstruct"] = false,
-                            ["Set (Zaan)"] = false,
-                            ["Set (Sheer Venom)"] = false,
-                            ["BoP Tradeable"] = false,
-                            ["Set (Prayer Shawl)"] = false,
-                            ["Set (Blunted Blades)"] = false,
-                            ["Stolen"] = false,
                             ["Set (Deadly Strike)"] = false,
+                            ["Set (Vicecanon of Venom)"] = false,
+                            ["Set (Wrath of the Imperium)"] = false,
+                            ["Set (Phylactery's Grasp)"] = false,
+                            ["Set (Back-Alley Gourmand)"] = false,
+                            ["Set (Night Terror)"] = false,
+                            ["Provisioning"] = false,
+                            ["Researchable"] = false,
+                            ["Set (Slimecraw)"] = true,
+                            ["Set (Cruel Flurry)"] = false,
+                            ["Set (Hunt Leader)"] = false,
+                            ["New (Aetheric Lancer)"] = false,
+                            ["Set (Gossamer)"] = false,
+                            ["Set (Sea-Serpent's Coil)"] = false,
+                            ["Set (Sergeant's Mail)"] = false,
+                            ["Set (Lamia's Song)"] = false,
+                            ["Set (War Maiden)"] = false,
+                            ["Quickslots"] = true,
+                            ["New (Wrathsun)"] = false,
+                            ["Set (Apocryphal Inspiration)"] = false,
                             ["Set (Shared Pain)"] = false,
+                            ["Set (Spider Cultist Cowl)"] = false,
+                            ["BoE"] = false,
+                            ["Set (Curse Eater)"] = false,
+                            ["Set (Faun's Lark Cladding)"] = false,
+                            ["Set (Pillar of Nirn)"] = false,
+                            ["BoP Tradeable"] = false,
+                            ["Set (Dagon's Dominion)"] = false,
+                            ["Low Level"] = false,
+                            ["Set (Iceheart)"] = false,
+                            ["Set (Baan Dar's Blessing)"] = false,
+                            ["Set (Wrathsun)"] = false,
+                            ["Set (Blunted Blades)"] = false,
+                            ["New"] = false,
+                            ["Set (Engine Guardian)"] = false,
+                            ["Set (Nix-Hound's Howl)"] = false,
+                            ["Set (Unleashed Ritualist)"] = false,
+                            ["Set (The Arch-Mage)"] = false,
+                            ["Set (Hagraven's Garden)"] = false,
+                            ["Set (The Morag Tong)"] = false,
+                            ["Set (Macabre Vintage)"] = true,
+                            ["Set (Vanguard's Challenge)"] = false,
+                            ["Set"] = false,
+                            ["Set (Viper's Sting)"] = false,
+                            ["Set (Alessia's Bulwark)"] = true,
+                            ["Set (Grave Inevitability)"] = false,
+                            ["Blacksmithing"] = false,
+                            ["Alchemy"] = false,
+                            ["Others"] = false,
+                            ["Set (Toothrow)"] = false,
+                            ["Necklace"] = false,
+                            ["Set (Telvanni Enforcer)"] = false,
+                            ["Trait/Style Gems"] = false,
+                            ["Set (Heartland Conqueror)"] = false,
+                            ["Set (Thrassian Stranglers)"] = false,
+                            ["Set (Harpooner's Wading Kilt)"] = true,
+                            ["Set (Oakfather's Retribution)"] = false,
+                            ["Set (Ironblood)"] = false,
+                            ["Set (Valkyn Skoria)"] = false,
+                            ["Set (Zaan)"] = false,
+                            ["Set (Undaunted Infiltrator)"] = false,
+                            ["Set (Kyne's Kiss)"] = false,
+                            ["Set (Frozen Watcher)"] = false,
+                            ["Set (Maw of the Infernal)"] = false,
+                            ["Set (Spriggan's Vigor)"] = false,
+                            ["Set (Shadow Walker)"] = false,
+                            ["Set (Foolkiller's Ward)"] = false,
+                            ["Maps & Surveys"] = true,
+                            ["Set (Shapeshifter's Chain)"] = false,
+                            ["Set (Kynmarcher's Cruelty)"] = false,
+                            ["Set (Balorgh)"] = false,
+                            ["Set (Crafty Alfiq)"] = false,
+                            ["Stolen"] = false,
+                            ["Set (Burning Spellweave)"] = false,
+                            ["Set (Prayer Shawl)"] = false,
+                            ["Set (Embershield)"] = false,
+                            ["Set (Vesture of Darloc Brae)"] = true,
+                            ["Set (Gaze of Sithis)"] = false,
+                            ["Set (Drake's Rush)"] = false,
+                            ["Set (Vicious Death)"] = true,
+                            ["Set (Glorgoloch the Destroyer)"] = false,
+                            ["New (Vicious Death)"] = false,
+                            ["Set (Reflected Fury)"] = false,
+                            ["Set (Aspect of Mazzatun)"] = false,
+                            ["Set (Sunderflame)"] = false,
+                            ["Set (Scavenging Demise)"] = false,
+                            ["Set (Brands of Imperium)"] = false,
+                            ["Set (Sheer Venom)"] = false,
+                            ["Poison"] = false,
+                            ["Set (Kraglen's Howl)"] = false,
+                            ["Selling"] = false,
+                            ["Enchanting"] = false,
+                            ["Set (Crimson Twilight)"] = false,
+                            ["Set (Galerion's Revenge)"] = false,
+                            ["New (Order's Wrath)"] = false,
+                            ["Set (Bastion of the Draoife)"] = false,
+                            ["Set (Storm-Cursed's Revenge)"] = false,
+                            ["Clothing"] = false,
+                            ["Set (Runecarver's Blaze)"] = false,
+                            ["Container"] = false,
+                            ["Set (Imperial Physique)"] = false,
+                            ["New (Balorgh)"] = false,
+                            ["Recipes & Motifs"] = false,
+                            ["Weapon"] = false,
+                            ["Set (Barkskin)"] = false,
+                            ["Set (Mechanical Acuity)"] = false,
+                            ["Glyphs & Gems"] = false,
                         },
                         [2] = 
                         {
-                            ["Set (Imperial Physique)"] = true,
-                            ["New"] = false,
-                            ["Set (Shacklebreaker)"] = true,
-                            ["Set (Aetheric Lancer)"] = false,
-                            ["Set (Iceheart)"] = false,
-                            ["Set (Malacath's Band of Brutality)"] = true,
-                            ["Low Level"] = false,
-                            ["Set (Belharza's Band)"] = true,
-                            ["Alchemy"] = false,
-                            ["New (Night Mother's Embrace)"] = false,
-                            ["Set (Ring of the Wild Hunt)"] = false,
-                            ["Set (Order's Wrath)"] = true,
-                            ["Consumables"] = false,
-                            ["Set (Rallying Cry)"] = true,
-                            ["Glyphs & Gems"] = false,
-                            ["Set (Marauder's Haste)"] = false,
-                            ["Set"] = false,
-                            ["Set (Combat Physician)"] = true,
-                            ["Set (Markyn Ring of Majesty)"] = true,
-                            ["Selling"] = false,
-                            ["Set (Back-Alley Gourmand)"] = false,
-                            ["Set (Sea-Serpent's Coil)"] = true,
-                            ["Set (Engine Guardian)"] = true,
-                            ["Weapon"] = false,
-                            ["Set (Snow Treaders)"] = true,
-                            ["Set (Slimecraw)"] = false,
-                            ["Set (War Maiden)"] = false,
-                            ["Set (Undaunted Infiltrator)"] = false,
-                            ["Set (Macabre Vintage)"] = true,
-                            ["Set (Siegemaster's Focus)"] = false,
-                            ["Set (Cruel Flurry)"] = false,
-                            ["Set (The Ice Furnace)"] = false,
-                            ["Set (Drake's Rush)"] = false,
-                            ["BoP Tradeable"] = false,
-                            ["Enchanting"] = false,
-                            ["Furnishing"] = false,
-                            ["Set (Lamia's Song)"] = false,
-                            ["Set (Toothrow)"] = false,
-                            ["Others"] = false,
-                            ["Set (Glorgoloch the Destroyer)"] = true,
-                            ["Set (Mother's Sorrow)"] = true,
-                            ["Set (Pillar of Nirn)"] = false,
-                            ["Poison"] = false,
-                            ["Set (Medusa)"] = false,
-                            ["Provisioning"] = false,
-                            ["Trait/Style Gems"] = false,
-                            ["Ring"] = false,
-                            ["Set (Hexos' Ward)"] = true,
-                            ["Set (Oakfather's Retribution)"] = false,
-                            ["Container"] = false,
-                            ["Researchable"] = false,
-                            ["Set (Rampaging Slash)"] = true,
-                            ["Clothing"] = false,
-                            ["BoE"] = false,
-                            ["Recipes & Motifs"] = false,
-                            ["Set (Crafty Alfiq)"] = true,
-                            ["Set (Crushing Wall)"] = false,
-                            ["Quickslots"] = false,
-                            ["Set (Sentinel of Rkugamz)"] = false,
-                            ["Set (Heartland Conqueror)"] = true,
-                            ["Set (Wrathsun)"] = false,
-                            ["Set (Overwhelming Surge)"] = true,
-                            ["Equipping"] = false,
-                            ["New (Marauder's Haste)"] = false,
-                            ["New (Macabre Vintage)"] = false,
-                            ["Set (Gaze of Sithis)"] = true,
-                            ["Maps & Surveys"] = false,
-                            ["Blacksmithing"] = false,
-                            ["Set (Gossamer)"] = false,
-                            ["Woodworking"] = false,
-                            ["Necklace"] = false,
-                            ["Stolen"] = false,
-                            ["Set (Velidreth)"] = false,
-                            ["Set (Crimson Twilight)"] = false,
-                            ["Deconstruct"] = false,
-                            ["Set (Frostbite)"] = true,
-                            ["Set (Vicious Death)"] = true,
-                            ["Set (Night Mother's Embrace)"] = true,
-                            ["Set (Nerien'eth)"] = false,
                             ["Set (Hunt Leader)"] = false,
-                            ["Set (Shapeshifter's Chain)"] = true,
-                            ["Set (Balorgh)"] = true,
-                            ["Set (Zaan)"] = true,
-                            ["Set (Thrassian Stranglers)"] = true,
+                            ["Set (Gossamer)"] = false,
+                            ["Ring"] = false,
+                            ["Set (Marauder's Haste)"] = false,
+                            ["Set (The Ice Furnace)"] = false,
+                            ["Set (Sea-Serpent's Coil)"] = true,
+                            ["Maps & Surveys"] = false,
+                            ["Set (Lamia's Song)"] = false,
+                            ["Set (War Maiden)"] = false,
+                            ["Glyphs & Gems"] = false,
+                            ["Set (Crimson Twilight)"] = false,
+                            ["Quickslots"] = false,
+                            ["Set (Markyn Ring of Majesty)"] = true,
+                            ["Set (Hexos' Ward)"] = true,
+                            ["Set (Shacklebreaker)"] = true,
+                            ["Set (Shared Pain)"] = false,
+                            ["BoE"] = false,
+                            ["Set (Vicious Death)"] = true,
+                            ["Set (Rallying Cry)"] = true,
+                            ["Set (Pillar of Nirn)"] = false,
+                            ["Equipping"] = false,
+                            ["Set (Velidreth)"] = false,
+                            ["Low Level"] = false,
+                            ["Set (Nerien'eth)"] = false,
+                            ["Set (Iceheart)"] = false,
                             ["Armor"] = false,
+                            ["Set (Wrathsun)"] = false,
+                            ["New"] = false,
+                            ["Set (Engine Guardian)"] = true,
+                            ["Furnishing"] = false,
+                            ["Set (Crushing Wall)"] = false,
+                            ["Set (Balorgh)"] = true,
+                            ["Set (Ring of the Wild Hunt)"] = false,
+                            ["Woodworking"] = false,
+                            ["Set (Macabre Vintage)"] = true,
+                            ["Set"] = false,
+                            ["Set (Malacath's Band of Brutality)"] = true,
+                            ["Others"] = false,
+                            ["Set (Toothrow)"] = false,
+                            ["Deconstruct"] = false,
+                            ["Consumables"] = false,
+                            ["Set (Heartland Conqueror)"] = true,
+                            ["Set (Thrassian Stranglers)"] = true,
+                            ["Set (Oakensoul Ring)"] = false,
+                            ["Set (Belharza's Band)"] = true,
+                            ["Set (Medusa)"] = false,
+                            ["Set (Undaunted Infiltrator)"] = false,
+                            ["Set (Farstrider)"] = false,
+                            ["Blacksmithing"] = false,
+                            ["Set (Sentinel of Rkugamz)"] = false,
+                            ["Set (Mother's Sorrow)"] = true,
+                            ["Set (Frostbite)"] = true,
+                            ["Trait/Style Gems"] = false,
+                            ["Set (Night Mother's Embrace)"] = true,
                             ["Set (Ring of the Pale Order)"] = false,
                             ["Set (Brands of Imperium)"] = false,
-                            ["Set (Farstrider)"] = false,
-                            ["Set (Deadly Strike)"] = false,
-                            ["Set (Shared Pain)"] = false,
-                        },
-                        [3] = 
-                        {
-                            ["Maps & Surveys"] = false,
-                            ["Equipping"] = false,
-                            ["New"] = false,
-                            ["Clothing"] = false,
-                            ["Furnishing"] = false,
-                            ["Container"] = false,
-                            ["Necklace"] = false,
-                            ["Provisioning"] = false,
-                            ["Woodworking"] = false,
-                            ["Ring"] = false,
                             ["Stolen"] = false,
-                            ["Weapon"] = false,
-                            ["Low Level"] = false,
-                            ["Poison"] = false,
-                            ["Recipes & Motifs"] = false,
-                            ["Consumables"] = false,
-                            ["Trait/Style Gems"] = false,
-                            ["Alchemy"] = false,
-                            ["Glyphs & Gems"] = false,
-                            ["Selling"] = false,
-                            ["Deconstruct"] = false,
                             ["Researchable"] = false,
-                            ["Blacksmithing"] = false,
-                            ["Armor"] = false,
-                            ["BoE"] = false,
-                            ["Enchanting"] = false,
-                            ["BoP Tradeable"] = false,
-                            ["Quickslots"] = false,
-                            ["Set"] = false,
-                        },
-                        [4] = 
-                        {
-                            ["Clothing"] = false,
-                            ["Blacksmithing"] = false,
-                            ["Others"] = false,
-                            ["Woodworking"] = false,
                             ["Alchemy"] = false,
-                            ["Trait/Style Gems"] = false,
-                            ["Enchanting"] = false,
-                            ["Provisioning"] = false,
-                        },
-                        [5] = 
-                        {
-                            ["Set (Kraglen's Howl)"] = false,
-                            ["Set (Imperial Physique)"] = false,
-                            ["New"] = false,
-                            ["Set (Shacklebreaker)"] = false,
+                            ["New (Night Mother's Embrace)"] = false,
+                            ["Set (Rampaging Slash)"] = true,
+                            ["Set (Gaze of Sithis)"] = true,
+                            ["Set (Drake's Rush)"] = false,
+                            ["Recipes & Motifs"] = false,
+                            ["Set (Glorgoloch the Destroyer)"] = true,
+                            ["New (Marauder's Haste)"] = false,
+                            ["Set (Oakfather's Retribution)"] = false,
+                            ["BoP Tradeable"] = false,
+                            ["Necklace"] = false,
+                            ["Set (Order's Wrath)"] = true,
+                            ["Set (Deadly Strike)"] = false,
+                            ["Set (Siegemaster's Focus)"] = false,
+                            ["Set (Combat Physician)"] = true,
+                            ["Poison"] = false,
+                            ["Selling"] = false,
                             ["Set (Aetheric Lancer)"] = false,
-                            ["Set (Night Terror)"] = false,
-                            ["Set (Iceheart)"] = false,
-                            ["Set (Heem-Jas' Retribution)"] = false,
-                            ["Set (Vicecanon of Venom)"] = false,
-                            ["Low Level"] = false,
-                            ["Set (Turning Tide)"] = false,
-                            ["Set (Runecarver's Blaze)"] = false,
-                            ["Set (Order's Wrath)"] = false,
-                            ["Consumables"] = false,
-                            ["Set (Rallying Cry)"] = false,
-                            ["Glyphs & Gems"] = false,
-                            ["Set (Leeching Plate)"] = false,
-                            ["Set (Apocryphal Inspiration)"] = false,
-                            ["Set (Combat Physician)"] = false,
-                            ["Set (Dagon's Dominion)"] = false,
-                            ["Set (Burning Spellweave)"] = false,
+                            ["Set (Crafty Alfiq)"] = true,
+                            ["Set (Shapeshifter's Chain)"] = true,
+                            ["Set (Overwhelming Surge)"] = true,
+                            ["Set (Slimecraw)"] = false,
+                            ["New (Macabre Vintage)"] = false,
+                            ["Clothing"] = false,
                             ["Set (Back-Alley Gourmand)"] = false,
                             ["Container"] = false,
-                            ["Set (Arkasis's Genius)"] = false,
-                            ["Set (Medusa)"] = false,
-                            ["Set (Amber Plasm)"] = false,
-                            ["Set (Bulwark Ruination)"] = false,
-                            ["Set (Pillar of Nirn)"] = false,
-                            ["Set (War Maiden)"] = false,
-                            ["Set (Blind Path Induction)"] = false,
-                            ["Set"] = false,
-                            ["Set (Gossamer)"] = false,
-                            ["Set (The Troll King)"] = false,
-                            ["Set (Grave Inevitability)"] = false,
+                            ["Set (Imperial Physique)"] = true,
+                            ["Provisioning"] = false,
                             ["Weapon"] = false,
-                            ["Set (Alessia's Bulwark)"] = false,
-                            ["Set (Undaunted Infiltrator)"] = false,
-                            ["Deconstruct"] = false,
-                            ["Set (Macabre Vintage)"] = false,
-                            ["Set (Siegemaster's Focus)"] = false,
-                            ["Set (Blunted Blades)"] = false,
-                            ["Set (Aspect of Mazzatun)"] = false,
-                            ["Selling"] = false,
-                            ["Set (The Ice Furnace)"] = false,
-                            ["Set (Wrath of the Imperium)"] = false,
-                            ["Set (Prayer Shawl)"] = false,
-                            ["Set (Hagraven's Garden)"] = false,
-                            ["Set (Baan Dar's Blessing)"] = false,
-                            ["Necklace"] = false,
-                            ["Set (Crafty Alfiq)"] = false,
-                            ["Set (Light Speaker)"] = false,
-                            ["Set (Lamia's Song)"] = false,
-                            ["Set (Toothrow)"] = false,
-                            ["Set (Foolkiller's Ward)"] = false,
-                            ["Set (Galerion's Revenge)"] = false,
-                            ["Set (Dreugh King Slayer)"] = false,
-                            ["Set (Vesture of Darloc Brae)"] = false,
-                            ["Set (Mechanical Acuity)"] = false,
-                            ["Set (Overwhelming Surge)"] = false,
-                            ["Poison"] = false,
-                            ["Set (Barkskin)"] = false,
-                            ["Set (Drake's Rush)"] = false,
-                            ["Set (Zaan)"] = false,
-                            ["Ring"] = false,
-                            ["Set (Hexos' Ward)"] = false,
-                            ["Set (Oakfather's Retribution)"] = false,
-                            ["Researchable"] = false,
-                            ["Set (Tracker's Lash)"] = false,
-                            ["Set (Kyne's Kiss)"] = false,
-                            ["Set (Farstrider)"] = false,
-                            ["BoE"] = false,
-                            ["Set (Embershield)"] = false,
-                            ["Set (Velidreth)"] = false,
-                            ["Set (Crushing Wall)"] = false,
-                            ["Quickslots"] = false,
-                            ["Set (Sentinel of Rkugamz)"] = false,
-                            ["Set (Heartland Conqueror)"] = false,
-                            ["Set (Sergeant's Mail)"] = false,
-                            ["Set (Vicious Death)"] = false,
-                            ["Equipping"] = false,
-                            ["Set (Brands of Imperium)"] = false,
-                            ["Set (Wrathsun)"] = false,
-                            ["Set (Scavenging Demise)"] = false,
-                            ["Set (Night Mother's Embrace)"] = false,
-                            ["Set (Elemental Catalyst)"] = false,
-                            ["Set (Slimecraw)"] = false,
-                            ["Set (Reflected Fury)"] = false,
-                            ["Set (Nerien'eth)"] = false,
-                            ["Set (The Arch-Mage)"] = false,
-                            ["Set (Phylactery's Grasp)"] = false,
-                            ["Set (Crimson Twilight)"] = false,
-                            ["Set (Frozen Watcher)"] = false,
-                            ["Set (Frostbite)"] = false,
-                            ["Set (Knightmare)"] = false,
-                            ["Set (Sunderflame)"] = false,
-                            ["Set (Hunt Leader)"] = false,
-                            ["Set (Netch Oil)"] = false,
-                            ["Set (Sheer Venom)"] = false,
-                            ["Set (Balorgh)"] = false,
-                            ["Set (Netch's Touch)"] = false,
-                            ["Set (Unleashed Ritualist)"] = false,
-                            ["Armor"] = false,
-                            ["Set (Ironblood)"] = false,
-                            ["Set (Bastion of the Draoife)"] = false,
-                            ["BoP Tradeable"] = false,
-                            ["Set (Deadly Strike)"] = false,
-                            ["Set (Shared Pain)"] = false,
+                            ["Enchanting"] = false,
+                            ["Set (Zaan)"] = true,
+                            ["Set (Snow Treaders)"] = true,
+                            ["Set (Cruel Flurry)"] = false,
                         },
-                        [6] = 
+                        [3] = 
                         {
-                            ["Maps & Surveys"] = false,
-                            ["Set (War Maiden)"] = true,
-                            ["Set (Prayer Shawl)"] = true,
-                            ["Set (Glorgoloch the Destroyer)"] = false,
-                            ["BoP Tradeable"] = false,
-                            ["Set (Overwhelming Surge)"] = true,
-                            ["Set (Shacklebreaker)"] = true,
-                            ["Furnishing"] = false,
-                            ["Set (Leeching Plate)"] = true,
-                            ["Set (Night Terror)"] = true,
-                            ["Others"] = false,
-                            ["Weapon"] = false,
-                            ["Set (Armor of the Trainee)"] = true,
-                            ["Set (Mother's Sorrow)"] = true,
-                            ["Necklace"] = false,
-                            ["Set (Spectre's Eye)"] = true,
                             ["Poison"] = false,
-                            ["Set (Merciless Charge)"] = true,
-                            ["Selling"] = false,
-                            ["Trait/Style Gems"] = false,
-                            ["Alchemy"] = false,
-                            ["Set (Precise Regeneration)"] = true,
-                            ["Glyphs & Gems"] = false,
-                            ["Set (Nightflame)"] = true,
-                            ["Researchable"] = false,
-                            ["Consumables"] = false,
-                            ["Clothing"] = false,
-                            ["BoE"] = false,
-                            ["New (Shacklebreaker)"] = false,
-                            ["Set (Marauder's Haste)"] = true,
-                            ["New (The Troll King)"] = false,
-                            ["Quickslots"] = false,
-                            ["Set (Night's Silence)"] = true,
-                            ["Set (Heartland Conqueror)"] = true,
-                            ["Recipes & Motifs"] = false,
-                            ["Set (Valkyn Skoria)"] = true,
                             ["Equipping"] = false,
-                            ["Set (Engine Guardian)"] = true,
-                            ["Set (Silks of the Sun)"] = true,
-                            ["Set (Grothdarr)"] = true,
+                            ["BoP Tradeable"] = false,
+                            ["Ring"] = false,
+                            ["Low Level"] = false,
+                            ["Deconstruct"] = false,
+                            ["Consumables"] = false,
+                            ["Armor"] = false,
+                            ["Blacksmithing"] = false,
+                            ["Alchemy"] = false,
+                            ["Glyphs & Gems"] = false,
+                            ["Weapon"] = false,
+                            ["Selling"] = false,
+                            ["Enchanting"] = false,
+                            ["Researchable"] = false,
+                            ["Necklace"] = false,
                             ["Container"] = false,
-                            ["Set"] = false,
+                            ["Recipes & Motifs"] = false,
+                            ["New"] = false,
+                            ["Clothing"] = false,
+                            ["Trait/Style Gems"] = false,
+                            ["BoE"] = false,
+                            ["Maps & Surveys"] = false,
                             ["Provisioning"] = false,
                             ["Woodworking"] = false,
-                            ["Set (Law of Julianos)"] = true,
-                            ["Set (Pillar of Nirn)"] = false,
-                            ["Set (Infernal Guardian)"] = true,
-                            ["Set (Faun's Lark Cladding)"] = false,
-                            ["Low Level"] = false,
-                            ["Set (Frostbite)"] = true,
-                            ["Set (Nunatak)"] = true,
-                            ["Set (Kynmarcher's Cruelty)"] = true,
-                            ["Set (Crafty Alfiq)"] = true,
-                            ["Set (The Troll King)"] = true,
+                            ["Quickslots"] = false,
                             ["Stolen"] = false,
-                            ["Deconstruct"] = false,
-                            ["Enchanting"] = false,
+                            ["Furnishing"] = false,
+                            ["Set"] = false,
+                        },
+                        [4] = 
+                        {
+                            ["Clothing"] = false,
                             ["Blacksmithing"] = false,
-                            ["Armor"] = false,
-                            ["Set (Ilambris)"] = true,
-                            ["Set (Nerien'eth)"] = false,
+                            ["Provisioning"] = false,
+                            ["Woodworking"] = false,
+                            ["Alchemy"] = false,
+                            ["Others"] = false,
+                            ["Enchanting"] = false,
+                            ["Trait/Style Gems"] = false,
+                        },
+                        [5] = 
+                        {
+                            ["Poison"] = false,
+                            ["Set (Leeching Plate)"] = false,
+                            ["Set (Runecarver's Blaze)"] = false,
                             ["Ring"] = false,
-                            ["Set (Slimecraw)"] = false,
+                            ["Set (The Ice Furnace)"] = false,
+                            ["Set (Scavenging Demise)"] = false,
+                            ["Set (Sergeant's Mail)"] = false,
+                            ["Set (Mechanical Acuity)"] = false,
+                            ["Set (War Maiden)"] = false,
+                            ["Set (Bulwark Ruination)"] = false,
+                            ["Set (Crimson Twilight)"] = false,
+                            ["Quickslots"] = false,
+                            ["Set (Elemental Catalyst)"] = false,
+                            ["Set (Hexos' Ward)"] = false,
+                            ["Set (Shacklebreaker)"] = false,
+                            ["Set (Apocryphal Inspiration)"] = false,
+                            ["Set (Shared Pain)"] = false,
+                            ["BoE"] = false,
+                            ["Set (Curse Eater)"] = false,
+                            ["Set (Vicious Death)"] = false,
+                            ["Set (Light Speaker)"] = false,
+                            ["Set (Rallying Cry)"] = false,
+                            ["Set (Overwhelming Surge)"] = false,
+                            ["Equipping"] = false,
+                            ["Set (Velidreth)"] = false,
+                            ["Set (Dagon's Dominion)"] = false,
+                            ["Low Level"] = false,
+                            ["Set (Nerien'eth)"] = false,
+                            ["Set (Iceheart)"] = false,
+                            ["Armor"] = false,
+                            ["Set (Heem-Jas' Retribution)"] = false,
+                            ["Set (Baan Dar's Blessing)"] = false,
+                            ["Set (Wrathsun)"] = false,
+                            ["Set (Blunted Blades)"] = false,
+                            ["Set (Netch Oil)"] = false,
+                            ["Set (Dreugh King Slayer)"] = false,
+                            ["Set (Turning Tide)"] = false,
+                            ["Set (Unleashed Ritualist)"] = false,
+                            ["Set (Netch's Touch)"] = false,
+                            ["Set (The Arch-Mage)"] = false,
+                            ["Set (Hagraven's Garden)"] = false,
+                            ["Set (Prayer Shawl)"] = false,
+                            ["Set (Macabre Vintage)"] = false,
+                            ["Set (Medusa)"] = false,
+                            ["Set"] = false,
+                            ["Set (Bastion of the Draoife)"] = false,
+                            ["Set (Alessia's Bulwark)"] = false,
+                            ["Set (Grave Inevitability)"] = false,
                             ["New"] = false,
-                        },
-                    },
-                    ["version"] = 1.1000000000,
-                },
-            },
-            ["8796093067546805"] = 
-            {
-                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
-                ["NA Megaserver"] = 
-                {
-                    ["bags"] = 
-                    {
-                        [1] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 975,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 90,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [2] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [3] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [4] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [5] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
+                            ["Set (Drake's Rush)"] = false,
+                            ["BoP Tradeable"] = false,
+                            ["Set (Toothrow)"] = false,
+                            ["Deconstruct"] = false,
+                            ["Set (Knightmare)"] = false,
+                            ["Consumables"] = false,
+                            ["Set (Heartland Conqueror)"] = false,
+                            ["Researchable"] = false,
+                            ["Set (Night Terror)"] = false,
+                            ["Set (Oakfather's Retribution)"] = false,
+                            ["Set (Ironblood)"] = false,
+                            ["Set (Kyne's Kiss)"] = false,
+                            ["Set (Amber Plasm)"] = false,
+                            ["Set (Undaunted Infiltrator)"] = false,
+                            ["Set (Farstrider)"] = false,
+                            ["Set (Arkasis's Genius)"] = false,
+                            ["Set (Pillar of Nirn)"] = false,
+                            ["Set (Elf Bane)"] = false,
+                            ["Set (Sentinel of Rkugamz)"] = false,
+                            ["Set (Foolkiller's Ward)"] = false,
+                            ["Set (Frostbite)"] = false,
+                            ["Set (Brands of Imperium)"] = false,
+                            ["Set (Hunt Leader)"] = false,
+                            ["Set (Frozen Watcher)"] = false,
+                            ["Set (Vicecanon of Venom)"] = false,
+                            ["Set (Blind Path Induction)"] = false,
+                            ["Set (Burning Spellweave)"] = false,
+                            ["Set (Order's Wrath)"] = false,
+                            ["Set (Siegemaster's Focus)"] = false,
+                            ["Set (Gossamer)"] = false,
+                            ["Set (Lamia's Song)"] = false,
+                            ["Set (The Troll King)"] = false,
+                            ["Set (Aetheric Lancer)"] = false,
+                            ["Set (Balorgh)"] = false,
+                            ["Set (Barkskin)"] = false,
+                            ["Set (Reflected Fury)"] = false,
+                            ["Set (Slimecraw)"] = false,
+                            ["Set (Sunderflame)"] = false,
+                            ["Set (Crafty Alfiq)"] = false,
+                            ["Set (Deadly Strike)"] = false,
+                            ["Set (Sheer Venom)"] = false,
+                            ["Set (Crushing Wall)"] = false,
+                            ["Set (Kraglen's Howl)"] = false,
+                            ["Selling"] = false,
+                            ["Set (Aspect of Mazzatun)"] = false,
+                            ["Set (Wrath of the Imperium)"] = false,
+                            ["Set (Galerion's Revenge)"] = false,
+                            ["Set (Vesture of Darloc Brae)"] = false,
+                            ["Set (Phylactery's Grasp)"] = false,
+                            ["Glyphs & Gems"] = false,
+                            ["Set (Combat Physician)"] = false,
+                            ["Set (Back-Alley Gourmand)"] = false,
+                            ["Container"] = false,
+                            ["Set (Imperial Physique)"] = false,
+                            ["Set (Embershield)"] = false,
+                            ["Weapon"] = false,
+                            ["Set (Tracker's Lash)"] = false,
+                            ["Set (Zaan)"] = false,
+                            ["Necklace"] = false,
+                            ["Set (Night Mother's Embrace)"] = false,
                         },
                         [6] = 
                         {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
+                            ["Poison"] = false,
+                            ["Set (Leeching Plate)"] = true,
+                            ["Blacksmithing"] = false,
+                            ["Stolen"] = false,
+                            ["Ring"] = false,
+                            ["Set (Marauder's Haste)"] = true,
+                            ["Enchanting"] = false,
+                            ["Deconstruct"] = false,
+                            ["Trait/Style Gems"] = false,
+                            ["Consumables"] = false,
+                            ["Set (Heartland Conqueror)"] = true,
+                            ["Set (War Maiden)"] = true,
+                            ["Set (Valkyn Skoria)"] = true,
+                            ["Glyphs & Gems"] = false,
+                            ["New (Shacklebreaker)"] = false,
+                            ["Quickslots"] = false,
+                            ["Set (Armor of the Trainee)"] = true,
+                            ["Set (The Troll King)"] = true,
+                            ["Set (Infernal Guardian)"] = true,
+                            ["Researchable"] = false,
+                            ["Set (Shacklebreaker)"] = true,
+                            ["Set (Night Terror)"] = true,
+                            ["Set (Precise Regeneration)"] = true,
+                            ["Set (Mother's Sorrow)"] = true,
+                            ["BoE"] = false,
+                            ["Set (Pillar of Nirn)"] = false,
+                            ["Set (Kynmarcher's Cruelty)"] = true,
+                            ["Set (Engine Guardian)"] = true,
+                            ["Set (Nightflame)"] = true,
+                            ["Set (Nunatak)"] = true,
+                            ["Set (Spectre's Eye)"] = true,
+                            ["Set (Night's Silence)"] = true,
+                            ["Set (Ilambris)"] = true,
+                            ["Set (Overwhelming Surge)"] = true,
+                            ["Equipping"] = false,
+                            ["BoP Tradeable"] = false,
+                            ["Set (Silks of the Sun)"] = true,
+                            ["Set (Glorgoloch the Destroyer)"] = false,
+                            ["Low Level"] = false,
+                            ["Set (Nerien'eth)"] = false,
+                            ["Maps & Surveys"] = false,
+                            ["Necklace"] = false,
+                            ["Armor"] = false,
+                            ["Others"] = false,
+                            ["Set (Grothdarr)"] = true,
+                            ["Set (Crafty Alfiq)"] = true,
+                            ["Set (Law of Julianos)"] = true,
+                            ["Selling"] = false,
+                            ["New (The Troll King)"] = false,
+                            ["Set (Faun's Lark Cladding)"] = false,
+                            ["Set (Prayer Shawl)"] = true,
+                            ["Set (Merciless Charge)"] = true,
+                            ["Alchemy"] = false,
+                            ["New"] = false,
+                            ["Clothing"] = false,
+                            ["Furnishing"] = false,
+                            ["Container"] = false,
+                            ["Recipes & Motifs"] = false,
+                            ["Provisioning"] = false,
+                            ["Woodworking"] = false,
+                            ["Set (Frostbite)"] = true,
+                            ["Set (Slimecraw)"] = false,
+                            ["Weapon"] = false,
+                            ["Set"] = false,
                         },
                     },
-                    ["accountWide"] = true,
-                    ["collapses"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                        [4] = 
-                        {
-                        },
-                        [5] = 
-                        {
-                        },
-                        [6] = 
-                        {
-                        },
-                    },
-                    ["version"] = 1.1000000000,
-                },
-            },
-            ["8796093069174989"] = 
-            {
-                ["$LastCharacterName"] = "Mike v Petra",
-                ["NA Megaserver"] = 
-                {
-                    ["bags"] = 
-                    {
-                        [1] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 975,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 90,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [2] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [3] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [4] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [5] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [6] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                    },
-                    ["accountWide"] = true,
-                    ["collapses"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                        [4] = 
-                        {
-                        },
-                        [5] = 
-                        {
-                        },
-                        [6] = 
-                        {
-                        },
-                    },
-                    ["version"] = 1.1000000000,
-                },
-            },
-            ["8796093062295781"] = 
-            {
-                ["$LastCharacterName"] = "Fridolin The Great",
-                ["NA Megaserver"] = 
-                {
-                    ["bags"] = 
-                    {
-                        [1] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 975,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 90,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [2] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [3] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [4] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [5] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [6] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                    },
-                    ["accountWide"] = true,
-                    ["collapses"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                        [4] = 
-                        {
-                        },
-                        [5] = 
-                        {
-                        },
-                        [6] = 
-                        {
-                        },
-                    },
-                    ["version"] = 1.1000000000,
                 },
             },
             ["8796093027479535"] = 
             {
+                ["NA Megaserver"] = 
+                {
+                    ["version"] = 1.1000000000,
+                    ["bags"] = 
+                    {
+                        [1] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 975,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 90,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [2] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [3] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [4] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                            },
+                        },
+                        [5] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [6] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                    },
+                    ["accountWide"] = true,
+                    ["collapses"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                        [4] = 
+                        {
+                        },
+                        [5] = 
+                        {
+                        },
+                        [6] = 
+                        {
+                        },
+                    },
+                },
                 ["$LastCharacterName"] = "Christel v Koenigsberg",
-                ["NA Megaserver"] = 
-                {
-                    ["bags"] = 
-                    {
-                        [1] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 975,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 90,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [2] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [3] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [4] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [5] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [6] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                    },
-                    ["accountWide"] = true,
-                    ["collapses"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                        [4] = 
-                        {
-                        },
-                        [5] = 
-                        {
-                        },
-                        [6] = 
-                        {
-                        },
-                    },
-                    ["version"] = 1.1000000000,
-                },
             },
-            ["8796093074287095"] = 
+            ["8796093067546805"] = 
             {
-                ["$LastCharacterName"] = "Otto von Bissmark",
                 ["NA Megaserver"] = 
                 {
+                    ["version"] = 1.1000000000,
                     ["bags"] = 
                     {
                         [1] = 
@@ -4638,148 +2986,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 975,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 90,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -4789,148 +3137,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -4940,148 +3288,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -5091,38 +3439,38 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                             },
                         },
@@ -5132,148 +3480,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -5283,148 +3631,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -5451,843 +3799,1672 @@ AutoCategorySavedVars =
                         {
                         },
                     },
-                    ["version"] = 1.1000000000,
                 },
+                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
+            },
+            ["8796093062295781"] = 
+            {
+                ["NA Megaserver"] = 
+                {
+                    ["version"] = 1.1000000000,
+                    ["bags"] = 
+                    {
+                        [1] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 975,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 90,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [2] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [3] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [4] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                            },
+                        },
+                        [5] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [6] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                    },
+                    ["accountWide"] = true,
+                    ["collapses"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                        [4] = 
+                        {
+                        },
+                        [5] = 
+                        {
+                        },
+                        [6] = 
+                        {
+                        },
+                    },
+                },
+                ["$LastCharacterName"] = "Fridolin The Great",
             },
             ["8796093072557313"] = 
             {
+                ["NA Megaserver"] = 
+                {
+                    ["version"] = 1.1000000000,
+                    ["bags"] = 
+                    {
+                        [1] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 975,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 90,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [2] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [3] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [4] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                            },
+                        },
+                        [5] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [6] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                    },
+                    ["accountWide"] = true,
+                    ["collapses"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                        [4] = 
+                        {
+                        },
+                        [5] = 
+                        {
+                        },
+                        [6] = 
+                        {
+                        },
+                    },
+                },
                 ["$LastCharacterName"] = "Gamal Loki",
-                ["NA Megaserver"] = 
-                {
-                    ["bags"] = 
-                    {
-                        [1] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 975,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 90,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [2] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [3] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [4] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [5] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                        [6] = 
-                        {
-                            ["rules"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["name"] = "BoP Tradeable",
-                                    ["priority"] = 1000,
-                                },
-                                [2] = 
-                                {
-                                    ["name"] = "New",
-                                    ["priority"] = 1000,
-                                },
-                                [3] = 
-                                {
-                                    ["name"] = "Container",
-                                    ["priority"] = 950,
-                                },
-                                [4] = 
-                                {
-                                    ["name"] = "Selling",
-                                    ["priority"] = 900,
-                                },
-                                [5] = 
-                                {
-                                    ["name"] = "Low Level",
-                                    ["priority"] = 850,
-                                },
-                                [6] = 
-                                {
-                                    ["name"] = "Deconstruct",
-                                    ["priority"] = 800,
-                                },
-                                [7] = 
-                                {
-                                    ["name"] = "BoE",
-                                    ["priority"] = 700,
-                                },
-                                [8] = 
-                                {
-                                    ["name"] = "Researchable",
-                                    ["priority"] = 600,
-                                },
-                                [9] = 
-                                {
-                                    ["name"] = "Equipping",
-                                    ["priority"] = 500,
-                                },
-                                [10] = 
-                                {
-                                    ["name"] = "Set",
-                                    ["priority"] = 490,
-                                },
-                                [11] = 
-                                {
-                                    ["name"] = "Weapon",
-                                    ["priority"] = 480,
-                                },
-                                [12] = 
-                                {
-                                    ["name"] = "Poison",
-                                    ["priority"] = 470,
-                                },
-                                [13] = 
-                                {
-                                    ["name"] = "Armor",
-                                    ["priority"] = 460,
-                                },
-                                [14] = 
-                                {
-                                    ["name"] = "Necklace",
-                                    ["priority"] = 450,
-                                },
-                                [15] = 
-                                {
-                                    ["name"] = "Ring",
-                                    ["priority"] = 450,
-                                },
-                                [16] = 
-                                {
-                                    ["name"] = "Quickslots",
-                                    ["priority"] = 400,
-                                },
-                                [17] = 
-                                {
-                                    ["name"] = "Consumables",
-                                    ["priority"] = 350,
-                                },
-                                [18] = 
-                                {
-                                    ["name"] = "Glyphs & Gems",
-                                    ["priority"] = 350,
-                                },
-                                [19] = 
-                                {
-                                    ["name"] = "Recipes & Motifs",
-                                    ["priority"] = 350,
-                                },
-                                [20] = 
-                                {
-                                    ["name"] = "Maps & Surveys",
-                                    ["priority"] = 350,
-                                },
-                                [21] = 
-                                {
-                                    ["name"] = "Furnishing",
-                                    ["priority"] = 300,
-                                },
-                                [22] = 
-                                {
-                                    ["name"] = "Stolen",
-                                    ["priority"] = 200,
-                                },
-                                [23] = 
-                                {
-                                    ["name"] = "Alchemy",
-                                    ["priority"] = 100,
-                                },
-                                [24] = 
-                                {
-                                    ["name"] = "Blacksmithing",
-                                    ["priority"] = 100,
-                                },
-                                [25] = 
-                                {
-                                    ["name"] = "Clothing",
-                                    ["priority"] = 100,
-                                },
-                                [26] = 
-                                {
-                                    ["name"] = "Enchanting",
-                                    ["priority"] = 100,
-                                },
-                                [27] = 
-                                {
-                                    ["name"] = "Provisioning",
-                                    ["priority"] = 100,
-                                },
-                                [28] = 
-                                {
-                                    ["name"] = "Trait/Style Gems",
-                                    ["priority"] = 100,
-                                },
-                                [29] = 
-                                {
-                                    ["name"] = "Woodworking",
-                                    ["priority"] = 100,
-                                },
-                            },
-                        },
-                    },
-                    ["accountWide"] = true,
-                    ["collapses"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                        [4] = 
-                        {
-                        },
-                        [5] = 
-                        {
-                        },
-                        [6] = 
-                        {
-                        },
-                    },
-                    ["version"] = 1.1000000000,
-                },
             },
-            ["8796093064640125"] = 
+            ["8796093074287095"] = 
             {
-                ["$LastCharacterName"] = "Maüschen",
                 ["NA Megaserver"] = 
                 {
+                    ["version"] = 1.1000000000,
                     ["bags"] = 
                     {
                         [1] = 
@@ -6296,148 +5473,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 975,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 90,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -6447,148 +5624,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -6598,148 +5775,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -6749,38 +5926,38 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                             },
                         },
@@ -6790,148 +5967,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -6941,148 +6118,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -7109,14 +6286,14 @@ AutoCategorySavedVars =
                         {
                         },
                     },
-                    ["version"] = 1.1000000000,
                 },
+                ["$LastCharacterName"] = "Otto von Bissmark",
             },
             ["8796093025384257"] = 
             {
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
                 ["NA Megaserver"] = 
                 {
+                    ["version"] = 1.1000000000,
                     ["bags"] = 
                     {
                         [1] = 
@@ -7125,148 +6302,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 975,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 90,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -7276,148 +6453,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -7427,148 +6604,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -7578,38 +6755,38 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                             },
                         },
@@ -7619,148 +6796,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -7770,148 +6947,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -7938,14 +7115,36 @@ AutoCategorySavedVars =
                         {
                         },
                     },
-                    ["version"] = 1.1000000000,
                 },
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
             },
             ["8796093023211051"] = 
             {
-                ["$LastCharacterName"] = "Freya Orm",
                 ["NA Megaserver"] = 
                 {
+                    ["version"] = 1.1000000000,
+                    ["collapses"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                        [4] = 
+                        {
+                        },
+                        [5] = 
+                        {
+                        },
+                        [6] = 
+                        {
+                        },
+                    },
+                    ["accountWide"] = true,
                     ["bags"] = 
                     {
                         [1] = 
@@ -7954,148 +7153,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 975,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 90,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -8105,148 +7304,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -8256,148 +7455,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -8407,38 +7606,38 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                             },
                         },
@@ -8448,148 +7647,148 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -8599,148 +7798,955 @@ AutoCategorySavedVars =
                             {
                                 [1] = 
                                 {
-                                    ["name"] = "BoP Tradeable",
                                     ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
                                 },
                                 [2] = 
                                 {
-                                    ["name"] = "New",
                                     ["priority"] = 1000,
+                                    ["name"] = "New",
                                 },
                                 [3] = 
                                 {
-                                    ["name"] = "Container",
                                     ["priority"] = 950,
+                                    ["name"] = "Container",
                                 },
                                 [4] = 
                                 {
-                                    ["name"] = "Selling",
                                     ["priority"] = 900,
+                                    ["name"] = "Selling",
                                 },
                                 [5] = 
                                 {
-                                    ["name"] = "Low Level",
                                     ["priority"] = 850,
+                                    ["name"] = "Low Level",
                                 },
                                 [6] = 
                                 {
-                                    ["name"] = "Deconstruct",
                                     ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
                                 },
                                 [7] = 
                                 {
-                                    ["name"] = "BoE",
                                     ["priority"] = 700,
+                                    ["name"] = "BoE",
                                 },
                                 [8] = 
                                 {
-                                    ["name"] = "Researchable",
                                     ["priority"] = 600,
+                                    ["name"] = "Researchable",
                                 },
                                 [9] = 
                                 {
-                                    ["name"] = "Equipping",
                                     ["priority"] = 500,
+                                    ["name"] = "Equipping",
                                 },
                                 [10] = 
                                 {
-                                    ["name"] = "Set",
                                     ["priority"] = 490,
+                                    ["name"] = "Set",
                                 },
                                 [11] = 
                                 {
-                                    ["name"] = "Weapon",
                                     ["priority"] = 480,
+                                    ["name"] = "Weapon",
                                 },
                                 [12] = 
                                 {
-                                    ["name"] = "Poison",
                                     ["priority"] = 470,
+                                    ["name"] = "Poison",
                                 },
                                 [13] = 
                                 {
-                                    ["name"] = "Armor",
                                     ["priority"] = 460,
+                                    ["name"] = "Armor",
                                 },
                                 [14] = 
                                 {
-                                    ["name"] = "Necklace",
                                     ["priority"] = 450,
+                                    ["name"] = "Necklace",
                                 },
                                 [15] = 
                                 {
-                                    ["name"] = "Ring",
                                     ["priority"] = 450,
+                                    ["name"] = "Ring",
                                 },
                                 [16] = 
                                 {
-                                    ["name"] = "Quickslots",
                                     ["priority"] = 400,
+                                    ["name"] = "Quickslots",
                                 },
                                 [17] = 
                                 {
-                                    ["name"] = "Consumables",
                                     ["priority"] = 350,
+                                    ["name"] = "Consumables",
                                 },
                                 [18] = 
                                 {
-                                    ["name"] = "Glyphs & Gems",
                                     ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
                                 },
                                 [19] = 
                                 {
-                                    ["name"] = "Recipes & Motifs",
                                     ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
                                 },
                                 [20] = 
                                 {
-                                    ["name"] = "Maps & Surveys",
                                     ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
                                 },
                                 [21] = 
                                 {
-                                    ["name"] = "Furnishing",
                                     ["priority"] = 300,
+                                    ["name"] = "Furnishing",
                                 },
                                 [22] = 
                                 {
-                                    ["name"] = "Stolen",
                                     ["priority"] = 200,
+                                    ["name"] = "Stolen",
                                 },
                                 [23] = 
                                 {
-                                    ["name"] = "Alchemy",
                                     ["priority"] = 100,
+                                    ["name"] = "Alchemy",
                                 },
                                 [24] = 
                                 {
-                                    ["name"] = "Blacksmithing",
                                     ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
                                 },
                                 [25] = 
                                 {
-                                    ["name"] = "Clothing",
                                     ["priority"] = 100,
+                                    ["name"] = "Clothing",
                                 },
                                 [26] = 
                                 {
-                                    ["name"] = "Enchanting",
                                     ["priority"] = 100,
+                                    ["name"] = "Enchanting",
                                 },
                                 [27] = 
                                 {
-                                    ["name"] = "Provisioning",
                                     ["priority"] = 100,
+                                    ["name"] = "Provisioning",
                                 },
                                 [28] = 
                                 {
-                                    ["name"] = "Trait/Style Gems",
                                     ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
                                 },
                                 [29] = 
                                 {
-                                    ["name"] = "Woodworking",
                                     ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                    },
+                },
+                ["$LastCharacterName"] = "Freya Orm",
+            },
+            ["8796093064640125"] = 
+            {
+                ["NA Megaserver"] = 
+                {
+                    ["version"] = 1.1000000000,
+                    ["bags"] = 
+                    {
+                        [1] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 975,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 90,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [2] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [3] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [4] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                            },
+                        },
+                        [5] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
+                                },
+                            },
+                        },
+                        [6] = 
+                        {
+                            ["rules"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "BoP Tradeable",
+                                },
+                                [2] = 
+                                {
+                                    ["priority"] = 1000,
+                                    ["name"] = "New",
+                                },
+                                [3] = 
+                                {
+                                    ["priority"] = 950,
+                                    ["name"] = "Container",
+                                },
+                                [4] = 
+                                {
+                                    ["priority"] = 900,
+                                    ["name"] = "Selling",
+                                },
+                                [5] = 
+                                {
+                                    ["priority"] = 850,
+                                    ["name"] = "Low Level",
+                                },
+                                [6] = 
+                                {
+                                    ["priority"] = 800,
+                                    ["name"] = "Deconstruct",
+                                },
+                                [7] = 
+                                {
+                                    ["priority"] = 700,
+                                    ["name"] = "BoE",
+                                },
+                                [8] = 
+                                {
+                                    ["priority"] = 600,
+                                    ["name"] = "Researchable",
+                                },
+                                [9] = 
+                                {
+                                    ["priority"] = 500,
+                                    ["name"] = "Equipping",
+                                },
+                                [10] = 
+                                {
+                                    ["priority"] = 490,
+                                    ["name"] = "Set",
+                                },
+                                [11] = 
+                                {
+                                    ["priority"] = 480,
+                                    ["name"] = "Weapon",
+                                },
+                                [12] = 
+                                {
+                                    ["priority"] = 470,
+                                    ["name"] = "Poison",
+                                },
+                                [13] = 
+                                {
+                                    ["priority"] = 460,
+                                    ["name"] = "Armor",
+                                },
+                                [14] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Necklace",
+                                },
+                                [15] = 
+                                {
+                                    ["priority"] = 450,
+                                    ["name"] = "Ring",
+                                },
+                                [16] = 
+                                {
+                                    ["priority"] = 400,
+                                    ["name"] = "Quickslots",
+                                },
+                                [17] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Consumables",
+                                },
+                                [18] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Glyphs & Gems",
+                                },
+                                [19] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Recipes & Motifs",
+                                },
+                                [20] = 
+                                {
+                                    ["priority"] = 350,
+                                    ["name"] = "Maps & Surveys",
+                                },
+                                [21] = 
+                                {
+                                    ["priority"] = 300,
+                                    ["name"] = "Furnishing",
+                                },
+                                [22] = 
+                                {
+                                    ["priority"] = 200,
+                                    ["name"] = "Stolen",
+                                },
+                                [23] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Alchemy",
+                                },
+                                [24] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Blacksmithing",
+                                },
+                                [25] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Clothing",
+                                },
+                                [26] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Enchanting",
+                                },
+                                [27] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Provisioning",
+                                },
+                                [28] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Trait/Style Gems",
+                                },
+                                [29] = 
+                                {
+                                    ["priority"] = 100,
+                                    ["name"] = "Woodworking",
                                 },
                             },
                         },
@@ -8767,8 +8773,8 @@ AutoCategorySavedVars =
                         {
                         },
                     },
-                    ["version"] = 1.1000000000,
                 },
+                ["$LastCharacterName"] = "Maüschen",
             },
         },
     },

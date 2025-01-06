@@ -4,122 +4,122 @@ DWAllianceRankProgress_SavedVars =
     {
         ["@germanus4711"] = 
         {
-            ["Fridolin The Great"] = 
+            ["Gustaf Helmuth v Feld"] = 
             {
+                ["version"] = "1",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
                 ["position"] = 
                 {
                     ["x"] = 0,
                     ["y"] = 0,
                 },
-                ["showOnlyInAvaZones"] = true,
                 ["barColour"] = "alliance",
                 ["meterType"] = "nn",
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
-            },
-            ["Hubertus Freiherr v Feld"] = 
-            {
-                ["position"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 0,
-                },
-                ["showOnlyInAvaZones"] = true,
-                ["barColour"] = "alliance",
-                ["meterType"] = "nn",
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
             },
             ["Otto von Bissmark"] = 
             {
-                ["position"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 0,
-                },
+                ["version"] = "1",
+                ["swapRankAndAllianceIcons"] = false,
                 ["showOnlyInAvaZones"] = true,
-                ["barColour"] = "alliance",
-                ["meterType"] = "nn",
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
-            },
-            ["Gustaf Helmuth v Feld"] = 
-            {
                 ["position"] = 
                 {
                     ["x"] = 0,
                     ["y"] = 0,
                 },
-                ["showOnlyInAvaZones"] = true,
                 ["barColour"] = "alliance",
                 ["meterType"] = "nn",
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
-            },
-            ["Freya Orm"] = 
-            {
-                ["position"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 0,
-                },
-                ["showOnlyInAvaZones"] = true,
-                ["barColour"] = "alliance",
-                ["meterType"] = "nn",
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
-            },
-            ["Gamal Loki"] = 
-            {
-                ["position"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 0,
-                },
-                ["showOnlyInAvaZones"] = false,
-                ["barColour"] = "alliance",
-                ["meterType"] = "nn",
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
-            },
-            ["Maüschen"] = 
-            {
-                ["position"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 0,
-                },
-                ["showOnlyInAvaZones"] = true,
-                ["barColour"] = "alliance",
-                ["meterType"] = "nn",
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
-            },
-            ["Christel v Koenigsberg"] = 
-            {
-                ["position"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 0,
-                },
-                ["showOnlyInAvaZones"] = true,
-                ["barColour"] = "alliance",
-                ["meterType"] = "nn",
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
             },
             ["Mike v Petra"] = 
             {
+                ["version"] = "1",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
                 ["position"] = 
                 {
                     ["x"] = 0,
                     ["y"] = 0,
                 },
-                ["showOnlyInAvaZones"] = true,
                 ["barColour"] = "alliance",
                 ["meterType"] = "nn",
-                ["swapRankAndAllianceIcons"] = false,
+            },
+            ["Gamal Loki"] = 
+            {
                 ["version"] = "1",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = false,
+                ["position"] = 
+                {
+                    ["x"] = 0,
+                    ["y"] = 0,
+                },
+                ["barColour"] = "alliance",
+                ["meterType"] = "nn",
+            },
+            ["Maüschen"] = 
+            {
+                ["version"] = "1",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
+                ["position"] = 
+                {
+                    ["x"] = 0,
+                    ["y"] = 0,
+                },
+                ["barColour"] = "alliance",
+                ["meterType"] = "nn",
+            },
+            ["Freya Orm"] = 
+            {
+                ["version"] = "1",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
+                ["position"] = 
+                {
+                    ["x"] = 0,
+                    ["y"] = 0,
+                },
+                ["barColour"] = "alliance",
+                ["meterType"] = "nn",
+            },
+            ["Christel v Koenigsberg"] = 
+            {
+                ["version"] = "1",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
+                ["position"] = 
+                {
+                    ["x"] = 0,
+                    ["y"] = 0,
+                },
+                ["barColour"] = "alliance",
+                ["meterType"] = "nn",
+            },
+            ["Fridolin The Great"] = 
+            {
+                ["version"] = "1",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
+                ["position"] = 
+                {
+                    ["x"] = 0,
+                    ["y"] = 0,
+                },
+                ["barColour"] = "alliance",
+                ["meterType"] = "nn",
+            },
+            ["Hubertus Freiherr v Feld"] = 
+            {
+                ["version"] = "1",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
+                ["position"] = 
+                {
+                    ["x"] = 0,
+                    ["y"] = 0,
+                },
+                ["barColour"] = "alliance",
+                ["meterType"] = "nn",
             },
         },
     },

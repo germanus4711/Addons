@@ -6,12 +6,18 @@ PortToFriendsHouseVars =
         {
             ["$AccountWide"] = 
             {
+                ["defaultTab"] = 1,
+                ["port_mode"] = 3,
+                ["selectedMyHousesSort"] = 1,
                 ["vc"] = 
                 {
                     ["allowSelf"] = false,
                     ["receivedCards"] = 
                     {
                     },
+                },
+                ["favorites"] = 
+                {
                 },
                 ["myHousesFavorites"] = 
                 {
@@ -22,38 +28,32 @@ PortToFriendsHouseVars =
                     {
                     },
                 },
-                ["selectedLibraryFilter"] = 1,
+                ["selectedLibrarySort"] = 1,
                 ["version"] = 1,
-                ["favorites"] = 
-                {
-                },
+                ["selectedLibraryFilter"] = 1,
                 ["vc_chatAllowed"] = 
                 {
-                    ["o1"] = true,
-                    ["g5"] = true,
-                    ["enzone"] = false,
-                    ["dezone"] = false,
-                    ["o4"] = true,
-                    ["g3"] = true,
-                    ["o2"] = true,
                     ["jpzone"] = false,
-                    ["zone"] = false,
                     ["say"] = false,
+                    ["g4"] = true,
+                    ["o2"] = true,
                     ["tell"] = true,
                     ["frzone"] = false,
-                    ["o5"] = true,
-                    ["g2"] = true,
-                    ["yell"] = false,
-                    ["g1"] = true,
-                    ["emote"] = false,
+                    ["zone"] = false,
+                    ["dezone"] = false,
                     ["o3"] = true,
-                    ["g4"] = true,
+                    ["yell"] = false,
+                    ["g5"] = true,
+                    ["g2"] = true,
+                    ["emote"] = false,
+                    ["o5"] = true,
+                    ["g3"] = true,
                     ["group"] = true,
+                    ["o4"] = true,
+                    ["o1"] = true,
+                    ["g1"] = true,
+                    ["enzone"] = false,
                 },
-                ["defaultTab"] = 1,
-                ["port_mode"] = 3,
-                ["selectedLibrarySort"] = 1,
-                ["selectedMyHousesSort"] = 1,
             },
         },
     },

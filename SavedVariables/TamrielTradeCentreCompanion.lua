@@ -6,17 +6,29 @@ TTCCompanion_SavedVars =
         {
             ["$AccountWide"] = 
             {
+                ["version"] = 1,
+                ["customDealBuyIt"] = 90,
+                ["dealCalcToUse"] = 2,
+                ["replaceInventoryValues"] = true,
+                ["agsPercentSortOrderToUse"] = 1,
+                ["showProfitMargin"] = false,
+                ["showMaterialCost"] = true,
+                ["customDealSeventyFive"] = 75,
+                ["customDealCalc"] = false,
+                ["showUnitPrice"] = true,
+                ["modifiedSuggestedPriceDealCalc"] = false,
+                ["pricingdataeu"] = 
+                {
+                },
                 ["customDealFifty"] = 50,
+                ["replacementTypeToUse"] = 3,
+                ["customDealTwentyFive"] = 25,
+                ["customDealZero"] = 0,
+                ["modifiedSuggestedPriceInventory"] = false,
+                ["showCalc"] = false,
                 ["pricingData"] = 
                 {
                 },
-                ["version"] = 1,
-                ["replaceInventoryValues"] = true,
-                ["showProfitMargin"] = false,
-                ["modifiedSuggestedPriceDealCalc"] = false,
-                ["replacementTypeToUse"] = 3,
-                ["customDealBuyIt"] = 90,
-                ["customDealSeventyFive"] = 75,
                 ["pricingdatana"] = 
                 {
                     [812695] = 
@@ -639,19 +651,7 @@ TTCCompanion_SavedVars =
                         },
                     },
                 },
-                ["customDealCalc"] = false,
-                ["agsPercentSortOrderToUse"] = 1,
-                ["showCalc"] = false,
                 ["showCraftCost"] = false,
-                ["customDealTwentyFive"] = 25,
-                ["pricingdataeu"] = 
-                {
-                },
-                ["modifiedSuggestedPriceInventory"] = false,
-                ["customDealZero"] = 0,
-                ["dealCalcToUse"] = 2,
-                ["showMaterialCost"] = true,
-                ["showUnitPrice"] = true,
             },
         },
     },

@@ -8,8 +8,8 @@ ZO_InternalIngame_SavedVariables =
             {
                 ["Tribute"] = 
                 {
-                    ["autoPlayChecked"] = true,
                     ["version"] = 1,
+                    ["autoPlayChecked"] = true,
                 },
             },
         },

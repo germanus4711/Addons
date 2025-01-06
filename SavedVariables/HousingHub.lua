@@ -6,9 +6,83 @@ HousingHubSavedVars =
         {
             ["$AccountWide"] = 
             {
-                ["DataVersion"] = 1,
-                ["SettingsVersion"] = 1,
                 ["version"] = 1,
+                ["SettingsVersion"] = 1,
+                ["UserVersion"] = 1,
+                ["DataVersion"] = 1,
+                ["User"] = 
+                {
+                    ["AccountNameLower"] = "@germanus4711",
+                    ["AccountName"] = "@germanus4711",
+                },
+                ["Settings"] = 
+                {
+                    ["dialogsettings.ehhhousinghubdialog"] = 
+                    {
+                    },
+                    ["dialogsettings.ehhnotificationdialog"] = 
+                    {
+                    },
+                    ["preservedgamesettings"] = 
+                    {
+                    },
+                    ["HubSorts"] = 
+                    {
+                    },
+                    ["Widget"] = 
+                    {
+                        ["Anchor"] = 9,
+                        ["Y"] = 380,
+                        ["X"] = 0,
+                    },
+                    ["keybindconfiguration"] = 
+                    {
+                        ["EHT_FAV_HOUSE_7"] = 
+                        {
+                        },
+                        ["EHT_FAV_HOUSE_6"] = 
+                        {
+                        },
+                        ["EHT_FAV_HOUSE_10"] = 
+                        {
+                        },
+                        ["EHT_HOME"] = 
+                        {
+                        },
+                        ["EHT_FAV_HOUSE_3"] = 
+                        {
+                        },
+                        ["EHT_FAV_HOUSE_5"] = 
+                        {
+                        },
+                        ["EHT_FAV_HOUSE_4"] = 
+                        {
+                        },
+                        ["EHT_FAV_HOUSE_1"] = 
+                        {
+                        },
+                        ["EHT_FAV_HOUSE_9"] = 
+                        {
+                        },
+                        ["EHT_HOUSING_HUB"] = 
+                        {
+                            [1] = 
+                            {
+                                [1] = 39,
+                                [2] = 5,
+                                [3] = 0,
+                                [4] = 0,
+                                [5] = 0,
+                            },
+                        },
+                        ["EHT_FAV_HOUSE_8"] = 
+                        {
+                        },
+                        ["EHT_FAV_HOUSE_2"] = 
+                        {
+                        },
+                    },
+                },
                 ["Data"] = 
                 {
                     ["PersistentState"] = 
@@ -16,158 +90,164 @@ HousingHubSavedVars =
                         ["ehtdatamigrationdate"] = 1726631885,
                     },
                     ["InstallTimestamp"] = 1726631885,
+                    ["InaccessibleHouses"] = 
+                    {
+                        ["na"] = 
+                        {
+                        },
+                    },
                     ["RecentlyVisitedHouses"] = 
                     {
                         ["na"] = 
                         {
                             [1] = 
                             {
-                                ["HouseId"] = 26,
-                                ["TS"] = 1736114680,
+                                ["HouseId"] = 60,
+                                ["TS"] = 1736132885,
                             },
                             [2] = 
                             {
-                                ["TS"] = 1736112884,
-                                ["HouseId"] = 60,
+                                ["HouseId"] = 63,
+                                ["TS"] = 1736132206,
                             },
                             [3] = 
+                            {
+                                ["HouseId"] = 47,
+                                ["TS"] = 1736130330,
+                                ["Owner"] = "@misskatie420",
+                            },
+                            [4] = 
+                            {
+                                ["TS"] = 1736120959,
+                                ["HouseId"] = 23,
+                            },
+                            [5] = 
+                            {
+                                ["TS"] = 1736114680,
+                                ["HouseId"] = 26,
+                            },
+                            [6] = 
                             {
                                 ["TS"] = 1736036629,
                                 ["HouseId"] = 70,
                             },
-                            [4] = 
-                            {
-                                ["HouseId"] = 47,
-                                ["Owner"] = "@misskatie420",
-                                ["TS"] = 1736025764,
-                            },
-                            [5] = 
+                            [7] = 
                             {
                                 ["TS"] = 1735944425,
                                 ["HouseId"] = 29,
                             },
-                            [6] = 
+                            [8] = 
                             {
                                 ["TS"] = 1735937721,
                                 ["HouseId"] = 8,
                             },
-                            [7] = 
+                            [9] = 
                             {
                                 ["TS"] = 1735933006,
                                 ["HouseId"] = 100,
                             },
-                            [8] = 
+                            [10] = 
                             {
                                 ["HouseId"] = 110,
-                                ["Owner"] = "@pinkfoxette",
                                 ["TS"] = 1735914471,
+                                ["Owner"] = "@pinkfoxette",
                             },
-                            [9] = 
+                            [11] = 
                             {
                                 ["TS"] = 1735870179,
                                 ["HouseId"] = 30,
                             },
-                            [10] = 
+                            [12] = 
                             {
                                 ["TS"] = 1735869327,
                                 ["HouseId"] = 35,
                             },
-                            [11] = 
+                            [13] = 
                             {
                                 ["TS"] = 1735773053,
                                 ["HouseId"] = 2,
                             },
-                            [12] = 
+                            [14] = 
                             {
                                 ["TS"] = 1735767585,
                                 ["HouseId"] = 47,
                             },
-                            [13] = 
+                            [15] = 
                             {
                                 ["TS"] = 1735758934,
                                 ["HouseId"] = 20,
                             },
-                            [14] = 
+                            [16] = 
                             {
                                 ["TS"] = 1735754276,
                                 ["HouseId"] = 44,
                             },
-                            [15] = 
+                            [17] = 
                             {
                                 ["TS"] = 1735738424,
                                 ["HouseId"] = 13,
                             },
-                            [16] = 
+                            [18] = 
                             {
                                 ["TS"] = 1735652245,
                                 ["HouseId"] = 14,
                             },
-                            [17] = 
+                            [19] = 
                             {
                                 ["TS"] = 1735605465,
                                 ["HouseId"] = 59,
                             },
-                            [18] = 
+                            [20] = 
                             {
                                 ["TS"] = 1735443692,
                                 ["HouseId"] = 90,
                             },
-                            [19] = 
-                            {
-                                ["TS"] = 1735443583,
-                                ["HouseId"] = 63,
-                            },
-                            [20] = 
+                            [21] = 
                             {
                                 ["TS"] = 1735351400,
                                 ["HouseId"] = 73,
                             },
-                            [21] = 
+                            [22] = 
                             {
                                 ["TS"] = 1735342410,
                                 ["HouseId"] = 112,
                             },
-                            [22] = 
+                            [23] = 
                             {
                                 ["TS"] = 1735248453,
                                 ["HouseId"] = 42,
                             },
-                            [23] = 
-                            {
-                                ["HouseId"] = 62,
-                                ["Owner"] = "@duaric",
-                                ["TS"] = 1735246615,
-                            },
                             [24] = 
                             {
-                                ["HouseId"] = 93,
-                                ["Owner"] = "@plainnpretty",
-                                ["TS"] = 1735246319,
+                                ["HouseId"] = 62,
+                                ["TS"] = 1735246615,
+                                ["Owner"] = "@duaric",
                             },
                             [25] = 
+                            {
+                                ["HouseId"] = 93,
+                                ["TS"] = 1735246319,
+                                ["Owner"] = "@plainnpretty",
+                            },
+                            [26] = 
                             {
                                 ["TS"] = 1734987346,
                                 ["HouseId"] = 11,
                             },
-                            [26] = 
+                            [27] = 
                             {
                                 ["TS"] = 1734985373,
                                 ["HouseId"] = 87,
                             },
-                            [27] = 
+                            [28] = 
                             {
                                 ["TS"] = 1734915132,
                                 ["HouseId"] = 102,
                             },
-                            [28] = 
+                            [29] = 
                             {
                                 ["TS"] = 1734478962,
                                 ["HouseId"] = 103,
-                            },
-                            [29] = 
-                            {
-                                ["TS"] = 1734140499,
-                                ["HouseId"] = 23,
                             },
                             [30] = 
                             {
@@ -202,50 +282,50 @@ HousingHubSavedVars =
                             [36] = 
                             {
                                 ["HouseId"] = 59,
-                                ["Owner"] = "@der-teufel",
                                 ["TS"] = 1733286281,
+                                ["Owner"] = "@der-teufel",
                             },
                             [37] = 
                             {
                                 ["HouseId"] = 70,
-                                ["Owner"] = "@cmyko",
                                 ["TS"] = 1733286136,
+                                ["Owner"] = "@cmyko",
                             },
                             [38] = 
                             {
                                 ["HouseId"] = 34,
-                                ["Owner"] = "@ninjamonkey0169",
                                 ["TS"] = 1733285963,
+                                ["Owner"] = "@ninjamonkey0169",
                             },
                             [39] = 
                             {
                                 ["HouseId"] = 103,
-                                ["Owner"] = "@monkeyboy",
                                 ["TS"] = 1733285741,
+                                ["Owner"] = "@monkeyboy",
                             },
                             [40] = 
                             {
                                 ["HouseId"] = 46,
-                                ["Owner"] = "@aralakh2713",
                                 ["TS"] = 1733285627,
+                                ["Owner"] = "@aralakh2713",
                             },
                             [41] = 
                             {
                                 ["HouseId"] = 79,
-                                ["Owner"] = "@redalpheus",
                                 ["TS"] = 1733285456,
+                                ["Owner"] = "@redalpheus",
                             },
                             [42] = 
                             {
                                 ["HouseId"] = 36,
-                                ["Owner"] = "@hydlide",
                                 ["TS"] = 1733285319,
+                                ["Owner"] = "@hydlide",
                             },
                             [43] = 
                             {
                                 ["HouseId"] = 36,
-                                ["Owner"] = "@bangkokeight",
                                 ["TS"] = 1733285179,
+                                ["Owner"] = "@bangkokeight",
                             },
                             [44] = 
                             {
@@ -265,8 +345,8 @@ HousingHubSavedVars =
                             [47] = 
                             {
                                 ["HouseId"] = 111,
-                                ["Owner"] = "@perylousdemon",
                                 ["TS"] = 1732673933,
+                                ["Owner"] = "@perylousdemon",
                             },
                             [48] = 
                             {
@@ -281,8 +361,8 @@ HousingHubSavedVars =
                             [50] = 
                             {
                                 ["HouseId"] = 62,
-                                ["Owner"] = "@perylousdemon",
                                 ["TS"] = 1732155601,
+                                ["Owner"] = "@perylousdemon",
                             },
                             [51] = 
                             {
@@ -307,14 +387,14 @@ HousingHubSavedVars =
                             [55] = 
                             {
                                 ["HouseId"] = 3,
-                                ["Owner"] = "@perylousdemon",
                                 ["TS"] = 1731123410,
+                                ["Owner"] = "@perylousdemon",
                             },
                             [56] = 
                             {
                                 ["HouseId"] = 49,
-                                ["Owner"] = "@midnightkhajiit36",
                                 ["TS"] = 1731123059,
+                                ["Owner"] = "@midnightkhajiit36",
                             },
                             [57] = 
                             {
@@ -324,8 +404,8 @@ HousingHubSavedVars =
                             [58] = 
                             {
                                 ["HouseId"] = 58,
-                                ["Owner"] = "@perylousdemon",
                                 ["TS"] = 1730940011,
+                                ["Owner"] = "@perylousdemon",
                             },
                             [59] = 
                             {
@@ -355,8 +435,8 @@ HousingHubSavedVars =
                             [64] = 
                             {
                                 ["HouseId"] = 3,
-                                ["Owner"] = "@reyvarch136",
                                 ["TS"] = 1729899061,
+                                ["Owner"] = "@reyvarch136",
                             },
                             [65] = 
                             {
@@ -366,14 +446,14 @@ HousingHubSavedVars =
                             [66] = 
                             {
                                 ["HouseId"] = 104,
-                                ["Owner"] = "@judgelrae",
                                 ["TS"] = 1727912383,
+                                ["Owner"] = "@judgelrae",
                             },
                             [67] = 
                             {
                                 ["HouseId"] = 111,
-                                ["Owner"] = "@ryoring",
                                 ["TS"] = 1726883724,
+                                ["Owner"] = "@ryoring",
                             },
                             [68] = 
                             {
@@ -383,15 +463,9 @@ HousingHubSavedVars =
                             [69] = 
                             {
                                 ["HouseId"] = 81,
-                                ["Owner"] = "@mrs.batvader",
                                 ["TS"] = 1726791450,
+                                ["Owner"] = "@mrs.batvader",
                             },
-                        },
-                    },
-                    ["InaccessibleHouses"] = 
-                    {
-                        ["na"] = 
-                        {
                         },
                     },
                     ["FavoriteHouses"] = 
@@ -404,127 +478,81 @@ HousingHubSavedVars =
                     {
                         ["na"] = 
                         {
-                            ["36@hydlide"] = 
+                            ["3@reyvarch136"] = 
                             {
-                                ["LastVisitTS"] = 1733285319,
-                                ["HouseId"] = 36,
-                                ["Owner"] = "@hydlide",
-                            },
-                            ["17"] = 
-                            {
-                                ["LastVisitTS"] = 1732146386,
-                                ["HouseId"] = 17,
-                            },
-                            ["73"] = 
-                            {
-                                ["LastVisitTS"] = 1735351400,
-                                ["HouseId"] = 73,
+                                ["HouseId"] = 3,
+                                ["Owner"] = "@reyvarch136",
+                                ["LastVisitTS"] = 1729899061,
                             },
                             ["81"] = 
                             {
                                 ["LastVisitTS"] = 1726791639,
                                 ["HouseId"] = 81,
                             },
-                            ["9"] = 
+                            ["49@midnightkhajiit36"] = 
                             {
-                                ["LastVisitTS"] = 1732143625,
-                                ["HouseId"] = 9,
+                                ["HouseId"] = 49,
+                                ["Owner"] = "@midnightkhajiit36",
+                                ["LastVisitTS"] = 1731123059,
                             },
-                            ["13"] = 
+                            ["61"] = 
                             {
-                                ["LastVisitTS"] = 1735738424,
-                                ["HouseId"] = 13,
+                                ["LastVisitTS"] = 1729992746,
+                                ["HouseId"] = 61,
                             },
-                            ["103"] = 
+                            ["89"] = 
                             {
-                                ["LastVisitTS"] = 1734478962,
-                                ["HouseId"] = 103,
+                                ["LastVisitTS"] = 1733679426,
+                                ["HouseId"] = 89,
                             },
-                            ["87"] = 
+                            ["104@judgelrae"] = 
                             {
-                                ["LastVisitTS"] = 1734985373,
-                                ["HouseId"] = 87,
+                                ["HouseId"] = 104,
+                                ["Owner"] = "@judgelrae",
+                                ["LastVisitTS"] = 1727912383,
                             },
-                            ["90"] = 
+                            ["14"] = 
                             {
-                                ["LastVisitTS"] = 1735443692,
-                                ["HouseId"] = 90,
+                                ["LastVisitTS"] = 1735652245,
+                                ["HouseId"] = 14,
                             },
-                            ["35"] = 
+                            ["78"] = 
                             {
-                                ["LastVisitTS"] = 1735869327,
-                                ["HouseId"] = 35,
+                                ["LastVisitTS"] = 1733067126,
+                                ["HouseId"] = 78,
                             },
                             ["103@monkeyboy"] = 
                             {
-                                ["LastVisitTS"] = 1733285741,
                                 ["HouseId"] = 103,
                                 ["Owner"] = "@monkeyboy",
+                                ["LastVisitTS"] = 1733285741,
                             },
-                            ["6"] = 
+                            ["42"] = 
                             {
-                                ["LastVisitTS"] = 1732662836,
-                                ["HouseId"] = 6,
-                            },
-                            ["93@plainnpretty"] = 
-                            {
-                                ["LastVisitTS"] = 1735246319,
-                                ["HouseId"] = 93,
-                                ["Owner"] = "@plainnpretty",
-                            },
-                            ["47@misskatie420"] = 
-                            {
-                                ["LastVisitTS"] = 1736025764,
-                                ["HouseId"] = 47,
-                                ["Owner"] = "@misskatie420",
-                            },
-                            ["46@aralakh2713"] = 
-                            {
-                                ["LastVisitTS"] = 1733285627,
-                                ["HouseId"] = 46,
-                                ["Owner"] = "@aralakh2713",
-                            },
-                            ["70"] = 
-                            {
-                                ["LastVisitTS"] = 1736036629,
-                                ["HouseId"] = 70,
+                                ["LastVisitTS"] = 1735248453,
+                                ["HouseId"] = 42,
                             },
                             ["58@perylousdemon"] = 
                             {
-                                ["LastVisitTS"] = 1730940011,
                                 ["HouseId"] = 58,
                                 ["Owner"] = "@perylousdemon",
+                                ["LastVisitTS"] = 1730940011,
                             },
-                            ["21"] = 
+                            ["111"] = 
                             {
-                                ["LastVisitTS"] = 1731104905,
-                                ["HouseId"] = 21,
+                                ["LastVisitTS"] = 1730160711,
+                                ["HouseId"] = 111,
                             },
                             ["88"] = 
                             {
                                 ["LastVisitTS"] = 1734008216,
                                 ["HouseId"] = 88,
                             },
-                            ["12"] = 
+                            ["111@perylousdemon"] = 
                             {
-                                ["LastVisitTS"] = 1733935517,
-                                ["HouseId"] = 12,
-                            },
-                            ["29"] = 
-                            {
-                                ["LastVisitTS"] = 1735944425,
-                                ["HouseId"] = 29,
-                            },
-                            ["59"] = 
-                            {
-                                ["LastVisitTS"] = 1735605465,
-                                ["HouseId"] = 59,
-                            },
-                            ["34@ninjamonkey0169"] = 
-                            {
-                                ["LastVisitTS"] = 1733285963,
-                                ["HouseId"] = 34,
-                                ["Owner"] = "@ninjamonkey0169",
+                                ["HouseId"] = 111,
+                                ["Owner"] = "@perylousdemon",
+                                ["LastVisitTS"] = 1732673933,
                             },
                             ["109"] = 
                             {
@@ -533,319 +561,291 @@ HousingHubSavedVars =
                             },
                             ["63"] = 
                             {
-                                ["LastVisitTS"] = 1735443583,
+                                ["LastVisitTS"] = 1736132206,
                                 ["HouseId"] = 63,
                             },
-                            ["100"] = 
+                            ["87"] = 
                             {
-                                ["LastVisitTS"] = 1735933006,
-                                ["HouseId"] = 100,
+                                ["LastVisitTS"] = 1734985373,
+                                ["HouseId"] = 87,
                             },
-                            ["32"] = 
+                            ["59"] = 
                             {
-                                ["LastVisitTS"] = 1730375473,
-                                ["HouseId"] = 32,
+                                ["LastVisitTS"] = 1735605465,
+                                ["HouseId"] = 59,
                             },
                             ["59@der-teufel"] = 
                             {
-                                ["LastVisitTS"] = 1733286281,
                                 ["HouseId"] = 59,
                                 ["Owner"] = "@der-teufel",
-                            },
-                            ["104@judgelrae"] = 
-                            {
-                                ["LastVisitTS"] = 1727912383,
-                                ["HouseId"] = 104,
-                                ["Owner"] = "@judgelrae",
-                            },
-                            ["25"] = 
-                            {
-                                ["LastVisitTS"] = 1733015438,
-                                ["HouseId"] = 25,
-                            },
-                            ["3@reyvarch136"] = 
-                            {
-                                ["LastVisitTS"] = 1729899061,
-                                ["HouseId"] = 3,
-                                ["Owner"] = "@reyvarch136",
-                            },
-                            ["2"] = 
-                            {
-                                ["LastVisitTS"] = 1735773053,
-                                ["HouseId"] = 2,
-                            },
-                            ["3@perylousdemon"] = 
-                            {
-                                ["LastVisitTS"] = 1731123410,
-                                ["HouseId"] = 3,
-                                ["Owner"] = "@perylousdemon",
-                            },
-                            ["49@midnightkhajiit36"] = 
-                            {
-                                ["LastVisitTS"] = 1731123059,
-                                ["HouseId"] = 49,
-                                ["Owner"] = "@midnightkhajiit36",
-                            },
-                            ["23"] = 
-                            {
-                                ["LastVisitTS"] = 1734140499,
-                                ["HouseId"] = 23,
-                            },
-                            ["4"] = 
-                            {
-                                ["LastVisitTS"] = 1730328035,
-                                ["HouseId"] = 4,
-                            },
-                            ["44"] = 
-                            {
-                                ["LastVisitTS"] = 1735754276,
-                                ["HouseId"] = 44,
-                            },
-                            ["26"] = 
-                            {
-                                ["LastVisitTS"] = 1736114680,
-                                ["HouseId"] = 26,
-                            },
-                            ["18"] = 
-                            {
-                                ["LastVisitTS"] = 1729814807,
-                                ["HouseId"] = 18,
-                            },
-                            ["95"] = 
-                            {
-                                ["LastVisitTS"] = 1733357337,
-                                ["HouseId"] = 95,
-                            },
-                            ["62@perylousdemon"] = 
-                            {
-                                ["LastVisitTS"] = 1732155601,
-                                ["HouseId"] = 62,
-                                ["Owner"] = "@perylousdemon",
-                            },
-                            ["24"] = 
-                            {
-                                ["LastVisitTS"] = 1733358945,
-                                ["HouseId"] = 24,
-                            },
-                            ["102"] = 
-                            {
-                                ["LastVisitTS"] = 1734915132,
-                                ["HouseId"] = 102,
-                            },
-                            ["111"] = 
-                            {
-                                ["LastVisitTS"] = 1730160711,
-                                ["HouseId"] = 111,
-                            },
-                            ["112"] = 
-                            {
-                                ["LastVisitTS"] = 1735342410,
-                                ["HouseId"] = 112,
+                                ["LastVisitTS"] = 1733286281,
                             },
                             ["36@bangkokeight"] = 
                             {
-                                ["LastVisitTS"] = 1733285179,
                                 ["HouseId"] = 36,
                                 ["Owner"] = "@bangkokeight",
-                            },
-                            ["14"] = 
-                            {
-                                ["LastVisitTS"] = 1735652245,
-                                ["HouseId"] = 14,
-                            },
-                            ["61"] = 
-                            {
-                                ["LastVisitTS"] = 1729992746,
-                                ["HouseId"] = 61,
-                            },
-                            ["83"] = 
-                            {
-                                ["LastVisitTS"] = 1733069776,
-                                ["HouseId"] = 83,
-                            },
-                            ["30"] = 
-                            {
-                                ["LastVisitTS"] = 1735870179,
-                                ["HouseId"] = 30,
-                            },
-                            ["31"] = 
-                            {
-                                ["LastVisitTS"] = 1733361724,
-                                ["HouseId"] = 31,
-                            },
-                            ["79@redalpheus"] = 
-                            {
-                                ["LastVisitTS"] = 1733285456,
-                                ["HouseId"] = 79,
-                                ["Owner"] = "@redalpheus",
-                            },
-                            ["62@duaric"] = 
-                            {
-                                ["LastVisitTS"] = 1735246615,
-                                ["HouseId"] = 62,
-                                ["Owner"] = "@duaric",
-                            },
-                            ["11"] = 
-                            {
-                                ["LastVisitTS"] = 1734987346,
-                                ["HouseId"] = 11,
-                            },
-                            ["110@pinkfoxette"] = 
-                            {
-                                ["LastVisitTS"] = 1735914471,
-                                ["HouseId"] = 110,
-                                ["Owner"] = "@pinkfoxette",
-                            },
-                            ["78"] = 
-                            {
-                                ["LastVisitTS"] = 1733067126,
-                                ["HouseId"] = 78,
-                            },
-                            ["70@cmyko"] = 
-                            {
-                                ["LastVisitTS"] = 1733286136,
-                                ["HouseId"] = 70,
-                                ["Owner"] = "@cmyko",
-                            },
-                            ["20"] = 
-                            {
-                                ["LastVisitTS"] = 1735758934,
-                                ["HouseId"] = 20,
-                            },
-                            ["89"] = 
-                            {
-                                ["LastVisitTS"] = 1733679426,
-                                ["HouseId"] = 89,
-                            },
-                            ["111@ryoring"] = 
-                            {
-                                ["LastVisitTS"] = 1726883724,
-                                ["HouseId"] = 111,
-                                ["Owner"] = "@ryoring",
-                            },
-                            ["58"] = 
-                            {
-                                ["LastVisitTS"] = 1731720351,
-                                ["HouseId"] = 58,
-                            },
-                            ["81@mrs.batvader"] = 
-                            {
-                                ["LastVisitTS"] = 1726791450,
-                                ["HouseId"] = 81,
-                                ["Owner"] = "@mrs.batvader",
-                            },
-                            ["111@perylousdemon"] = 
-                            {
-                                ["LastVisitTS"] = 1732673933,
-                                ["HouseId"] = 111,
-                                ["Owner"] = "@perylousdemon",
-                            },
-                            ["42"] = 
-                            {
-                                ["LastVisitTS"] = 1735248453,
-                                ["HouseId"] = 42,
-                            },
-                            ["60"] = 
-                            {
-                                ["LastVisitTS"] = 1736112884,
-                                ["HouseId"] = 60,
+                                ["LastVisitTS"] = 1733285179,
                             },
                             ["8"] = 
                             {
                                 ["LastVisitTS"] = 1735937721,
                                 ["HouseId"] = 8,
                             },
-                            ["1"] = 
+                            ["32"] = 
                             {
-                                ["LastVisitTS"] = 1731291336,
-                                ["HouseId"] = 1,
+                                ["LastVisitTS"] = 1730375473,
+                                ["HouseId"] = 32,
+                            },
+                            ["17"] = 
+                            {
+                                ["LastVisitTS"] = 1732146386,
+                                ["HouseId"] = 17,
+                            },
+                            ["81@mrs.batvader"] = 
+                            {
+                                ["HouseId"] = 81,
+                                ["Owner"] = "@mrs.batvader",
+                                ["LastVisitTS"] = 1726791450,
                             },
                             ["38"] = 
                             {
                                 ["LastVisitTS"] = 1732459301,
                                 ["HouseId"] = 38,
                             },
+                            ["110@pinkfoxette"] = 
+                            {
+                                ["HouseId"] = 110,
+                                ["Owner"] = "@pinkfoxette",
+                                ["LastVisitTS"] = 1735914471,
+                            },
+                            ["29"] = 
+                            {
+                                ["LastVisitTS"] = 1735944425,
+                                ["HouseId"] = 29,
+                            },
+                            ["21"] = 
+                            {
+                                ["LastVisitTS"] = 1731104905,
+                                ["HouseId"] = 21,
+                            },
+                            ["103"] = 
+                            {
+                                ["LastVisitTS"] = 1734478962,
+                                ["HouseId"] = 103,
+                            },
+                            ["60"] = 
+                            {
+                                ["LastVisitTS"] = 1736132885,
+                                ["HouseId"] = 60,
+                            },
+                            ["9"] = 
+                            {
+                                ["LastVisitTS"] = 1732143625,
+                                ["HouseId"] = 9,
+                            },
+                            ["62@duaric"] = 
+                            {
+                                ["HouseId"] = 62,
+                                ["Owner"] = "@duaric",
+                                ["LastVisitTS"] = 1735246615,
+                            },
+                            ["18"] = 
+                            {
+                                ["LastVisitTS"] = 1729814807,
+                                ["HouseId"] = 18,
+                            },
+                            ["11"] = 
+                            {
+                                ["LastVisitTS"] = 1734987346,
+                                ["HouseId"] = 11,
+                            },
+                            ["35"] = 
+                            {
+                                ["LastVisitTS"] = 1735869327,
+                                ["HouseId"] = 35,
+                            },
+                            ["26"] = 
+                            {
+                                ["LastVisitTS"] = 1736114680,
+                                ["HouseId"] = 26,
+                            },
+                            ["111@ryoring"] = 
+                            {
+                                ["HouseId"] = 111,
+                                ["Owner"] = "@ryoring",
+                                ["LastVisitTS"] = 1726883724,
+                            },
+                            ["13"] = 
+                            {
+                                ["LastVisitTS"] = 1735738424,
+                                ["HouseId"] = 13,
+                            },
+                            ["36@hydlide"] = 
+                            {
+                                ["HouseId"] = 36,
+                                ["Owner"] = "@hydlide",
+                                ["LastVisitTS"] = 1733285319,
+                            },
+                            ["44"] = 
+                            {
+                                ["LastVisitTS"] = 1735754276,
+                                ["HouseId"] = 44,
+                            },
+                            ["20"] = 
+                            {
+                                ["LastVisitTS"] = 1735758934,
+                                ["HouseId"] = 20,
+                            },
+                            ["46@aralakh2713"] = 
+                            {
+                                ["HouseId"] = 46,
+                                ["Owner"] = "@aralakh2713",
+                                ["LastVisitTS"] = 1733285627,
+                            },
+                            ["112"] = 
+                            {
+                                ["LastVisitTS"] = 1735342410,
+                                ["HouseId"] = 112,
+                            },
+                            ["70"] = 
+                            {
+                                ["LastVisitTS"] = 1736036629,
+                                ["HouseId"] = 70,
+                            },
+                            ["62@perylousdemon"] = 
+                            {
+                                ["HouseId"] = 62,
+                                ["Owner"] = "@perylousdemon",
+                                ["LastVisitTS"] = 1732155601,
+                            },
+                            ["24"] = 
+                            {
+                                ["LastVisitTS"] = 1733358945,
+                                ["HouseId"] = 24,
+                            },
+                            ["58"] = 
+                            {
+                                ["LastVisitTS"] = 1731720351,
+                                ["HouseId"] = 58,
+                            },
+                            ["73"] = 
+                            {
+                                ["LastVisitTS"] = 1735351400,
+                                ["HouseId"] = 73,
+                            },
+                            ["79@redalpheus"] = 
+                            {
+                                ["HouseId"] = 79,
+                                ["Owner"] = "@redalpheus",
+                                ["LastVisitTS"] = 1733285456,
+                            },
+                            ["70@cmyko"] = 
+                            {
+                                ["HouseId"] = 70,
+                                ["Owner"] = "@cmyko",
+                                ["LastVisitTS"] = 1733286136,
+                            },
+                            ["31"] = 
+                            {
+                                ["LastVisitTS"] = 1733361724,
+                                ["HouseId"] = 31,
+                            },
+                            ["25"] = 
+                            {
+                                ["LastVisitTS"] = 1733015438,
+                                ["HouseId"] = 25,
+                            },
+                            ["34@ninjamonkey0169"] = 
+                            {
+                                ["HouseId"] = 34,
+                                ["Owner"] = "@ninjamonkey0169",
+                                ["LastVisitTS"] = 1733285963,
+                            },
+                            ["90"] = 
+                            {
+                                ["LastVisitTS"] = 1735443692,
+                                ["HouseId"] = 90,
+                            },
                             ["47"] = 
                             {
                                 ["LastVisitTS"] = 1735767585,
                                 ["HouseId"] = 47,
                             },
-                        },
-                    },
-                },
-                ["Settings"] = 
-                {
-                    ["preservedgamesettings"] = 
-                    {
-                    },
-                    ["keybindconfiguration"] = 
-                    {
-                        ["EHT_FAV_HOUSE_5"] = 
-                        {
-                        },
-                        ["EHT_FAV_HOUSE_10"] = 
-                        {
-                        },
-                        ["EHT_FAV_HOUSE_1"] = 
-                        {
-                        },
-                        ["EHT_FAV_HOUSE_9"] = 
-                        {
-                        },
-                        ["EHT_FAV_HOUSE_2"] = 
-                        {
-                        },
-                        ["EHT_FAV_HOUSE_3"] = 
-                        {
-                        },
-                        ["EHT_FAV_HOUSE_8"] = 
-                        {
-                        },
-                        ["EHT_HOUSING_HUB"] = 
-                        {
-                            [1] = 
+                            ["4"] = 
                             {
-                                [1] = 39,
-                                [2] = 5,
-                                [3] = 0,
-                                [4] = 0,
-                                [5] = 0,
+                                ["LastVisitTS"] = 1730328035,
+                                ["HouseId"] = 4,
+                            },
+                            ["30"] = 
+                            {
+                                ["LastVisitTS"] = 1735870179,
+                                ["HouseId"] = 30,
+                            },
+                            ["3@perylousdemon"] = 
+                            {
+                                ["HouseId"] = 3,
+                                ["Owner"] = "@perylousdemon",
+                                ["LastVisitTS"] = 1731123410,
+                            },
+                            ["102"] = 
+                            {
+                                ["LastVisitTS"] = 1734915132,
+                                ["HouseId"] = 102,
+                            },
+                            ["100"] = 
+                            {
+                                ["LastVisitTS"] = 1735933006,
+                                ["HouseId"] = 100,
+                            },
+                            ["93@plainnpretty"] = 
+                            {
+                                ["HouseId"] = 93,
+                                ["Owner"] = "@plainnpretty",
+                                ["LastVisitTS"] = 1735246319,
+                            },
+                            ["1"] = 
+                            {
+                                ["LastVisitTS"] = 1731291336,
+                                ["HouseId"] = 1,
+                            },
+                            ["47@misskatie420"] = 
+                            {
+                                ["HouseId"] = 47,
+                                ["Owner"] = "@misskatie420",
+                                ["LastVisitTS"] = 1736130330,
+                            },
+                            ["6"] = 
+                            {
+                                ["LastVisitTS"] = 1732662836,
+                                ["HouseId"] = 6,
+                            },
+                            ["12"] = 
+                            {
+                                ["LastVisitTS"] = 1733935517,
+                                ["HouseId"] = 12,
+                            },
+                            ["2"] = 
+                            {
+                                ["LastVisitTS"] = 1735773053,
+                                ["HouseId"] = 2,
+                            },
+                            ["23"] = 
+                            {
+                                ["LastVisitTS"] = 1736120959,
+                                ["HouseId"] = 23,
+                            },
+                            ["95"] = 
+                            {
+                                ["LastVisitTS"] = 1733357337,
+                                ["HouseId"] = 95,
+                            },
+                            ["83"] = 
+                            {
+                                ["LastVisitTS"] = 1733069776,
+                                ["HouseId"] = 83,
                             },
                         },
-                        ["EHT_FAV_HOUSE_6"] = 
-                        {
-                        },
-                        ["EHT_FAV_HOUSE_7"] = 
-                        {
-                        },
-                        ["EHT_HOME"] = 
-                        {
-                        },
-                        ["EHT_FAV_HOUSE_4"] = 
-                        {
-                        },
                     },
-                    ["Widget"] = 
-                    {
-                        ["Y"] = 380,
-                        ["X"] = 0,
-                        ["Anchor"] = 9,
-                    },
-                    ["HubSorts"] = 
-                    {
-                    },
-                    ["dialogsettings.ehhhousinghubdialog"] = 
-                    {
-                    },
-                    ["dialogsettings.ehhnotificationdialog"] = 
-                    {
-                    },
-                },
-                ["UserVersion"] = 1,
-                ["User"] = 
-                {
-                    ["AccountName"] = "@germanus4711",
-                    ["AccountNameLower"] = "@germanus4711",
                 },
             },
         },

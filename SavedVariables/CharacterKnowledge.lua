@@ -2,30 +2,30 @@ CharacterKnowledgeSavedVariables =
 {
     ["Default"] = 
     {
-        ["NA"] = 
-        {
-            ["$AccountWide"] = 
-            {
-                ["tooltips"] = 
-                {
-                    ["pinnedCharsForChapters"] = 6,
-                },
-                ["version"] = 1,
-            },
-        },
         ["$InstallationWide"] = 
         {
             ["$AccountWide"] = 
             {
+                ["version"] = 1,
+                ["filterId"] = 2,
                 ["singleAccount"] = false,
                 ["featureRev"] = 1,
-                ["filterId"] = 2,
                 ["tooltips"] = 
                 {
-                    ["enabled"] = true,
                     ["scriptInfo"] = true,
+                    ["enabled"] = true,
                 },
+            },
+        },
+        ["NA"] = 
+        {
+            ["$AccountWide"] = 
+            {
                 ["version"] = 1,
+                ["tooltips"] = 
+                {
+                    ["pinnedCharsForChapters"] = 6,
+                },
             },
         },
     },

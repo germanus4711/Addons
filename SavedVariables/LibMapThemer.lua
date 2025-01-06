@@ -8,23 +8,23 @@ LibMapThemerVars =
             {
                 ["AccurateWorldMap"] = 
                 {
-                    ["mapDescriptions"] = true,
-                    ["renames"] = true,
                     ["version"] = 2406030600,
-                    ["showAllPois"] = true,
+                    ["tamrielZoneNames"] = true,
                     ["pois"] = 
                     {
                         ["ownedHouses"] = true,
                         ["majorSettlements"] = true,
                     },
                     ["hoverFadeEffect"] = true,
-                    ["tamrielZoneNames"] = true,
                     ["aurbisZoneNames"] = true,
+                    ["showAllPois"] = true,
+                    ["renames"] = true,
+                    ["mapDescriptions"] = true,
                 },
                 ["LibMapThemer"] = 
                 {
-                    ["_lmt_current_theme_"] = "AccurateWorldMap",
                     ["version"] = 2406030600,
+                    ["_lmt_current_theme_"] = "AccurateWorldMap",
                 },
             },
         },

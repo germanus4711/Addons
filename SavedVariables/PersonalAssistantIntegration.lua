@@ -13,15 +13,24 @@ PersonalAssistantIntegration_SavedVariables =
                     {
                         ["Locked"] = 
                         {
-                            ["preventAutoSell"] = false,
                             ["preventMoving"] = true,
+                            ["preventAutoSell"] = false,
+                        },
+                        ["Improvement"] = 
+                        {
+                            ["itemMoveMode"] = 0,
                         },
                         ["SellGuildStore"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
-                        ["DynamicIcons"] = 
+                        ["Research"] = 
                         {
+                            ["itemMoveMode"] = 1,
+                        },
+                        ["Sell"] = 
+                        {
+                            ["autoSellMarked"] = false,
                         },
                         ["GearSets"] = 
                         {
@@ -38,19 +47,10 @@ PersonalAssistantIntegration_SavedVariables =
                         {
                             ["itemMoveMode"] = 2,
                         },
-                        ["Sell"] = 
+                        ["DynamicIcons"] = 
                         {
-                            ["autoSellMarked"] = false,
                         },
                         ["Intricate"] = 
-                        {
-                            ["itemMoveMode"] = 0,
-                        },
-                        ["Research"] = 
-                        {
-                            ["itemMoveMode"] = 1,
-                        },
-                        ["Improvement"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
@@ -62,8 +62,8 @@ PersonalAssistantIntegration_SavedVariables =
                     },
                     ["CharacterKnowledge"] = 
                     {
-                        ["characterName"] = "Freya Orm",
                         ["enabled"] = true,
+                        ["characterName"] = "Freya Orm",
                     },
                 },
                 ["savedVarsVersion"] = 20240922,

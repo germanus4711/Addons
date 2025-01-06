@@ -8,9 +8,9 @@ RDLVars =
             {
                 ["DropdownChoice"] = 
                 {
-                    ["Major"] = "Can Find",
-                    ["Zone"] = "All Zones",
                     ["SetType"] = "Everything",
+                    ["Zone"] = "All Zones",
+                    ["Major"] = "Can Find",
                 },
                 ["version"] = 1,
             },
