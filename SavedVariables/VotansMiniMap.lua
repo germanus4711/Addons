@@ -4,50 +4,67 @@ VotansMiniMap_Data =
     {
         ["@germanus4711"] = 
         {
-            ["8796093069174989"] = 
+            ["8796093074287095"] = 
             {
+                ["$LastCharacterName"] = "Otto von Bissmark",
                 ["version"] = 1,
                 ["showMap"] = true,
-                ["$LastCharacterName"] = "Mike v Petra",
+            },
+            ["8796093062295781"] = 
+            {
+                ["$LastCharacterName"] = "Fridolin The Great",
+                ["version"] = 1,
+                ["showMap"] = true,
+            },
+            ["8796093027479535"] = 
+            {
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["version"] = 1,
+                ["showMap"] = true,
+            },
+            ["8796093025384257"] = 
+            {
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+                ["version"] = 1,
+                ["showMap"] = true,
+            },
+            ["8796093064640125"] = 
+            {
+                ["$LastCharacterName"] = "Maüschen",
+                ["version"] = 1,
+                ["showMap"] = true,
+            },
+            ["8796093072557313"] = 
+            {
+                ["$LastCharacterName"] = "Gamal Loki",
+                ["version"] = 1,
+                ["showMap"] = true,
+            },
+            ["8796093023211051"] = 
+            {
+                ["$LastCharacterName"] = "Freya Orm",
+                ["version"] = 1,
+                ["showMap"] = true,
+            },
+            ["8796093067546805"] = 
+            {
+                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
+                ["version"] = 1,
+                ["showMap"] = true,
             },
             ["$AccountWide"] = 
             {
-                ["showLoot"] = true,
-                ["frameStyle"] = "ESO",
-                ["showRealTimeClock"] = true,
-                ["showCameraAngle"] = false,
-                ["showFullTitle"] = false,
-                ["showCombat"] = true,
-                ["zoneAlertMode"] = "MINIMAPHIDDEN",
-                ["height"] = 363,
-                ["enableCompass"] = "UNTOUCHED",
-                ["cameraAngle"] = 45,
-                ["pinSizes"] = 
+                ["zoomIn"] = 2,
+                ["dungeonZoom"] = 0.7000000000,
+                ["showSiege"] = true,
+                ["fixedMaps"] = 
                 {
                 },
-                ["borderAlpha"] = 100,
-                ["mountedZoom"] = 1,
-                ["showClock"] = true,
-                ["showInGameClock"] = true,
-                ["width"] = 301,
-                ["lockWindow"] = false,
-                ["enableMap"] = true,
+                ["enableCompass"] = "UNTOUCHED",
                 ["zoomToPlayer"] = false,
-                ["debug"] = false,
-                ["y"] = -535,
-                ["asyncUpdate"] = false,
-                ["subZoneZoom"] = 1,
-                ["zoomIn"] = 2,
-                ["showOnTop"] = false,
-                ["timeFormat"] = 4,
-                ["battlegroundZoom"] = 0,
-                ["titleAtTop"] = true,
-                ["enableTweaks"] = true,
-                ["keepSquare"] = true,
-                ["showSiege"] = true,
-                ["x"] = 1124,
-                ["zoom"] = 1.3000000000,
-                ["version"] = 1,
+                ["enableMap"] = true,
+                ["showClock"] = true,
+                ["cameraAngle"] = 45,
                 ["titleColor"] = 
                 {
                     [4] = 1,
@@ -55,64 +72,47 @@ VotansMiniMap_Data =
                     [2] = 0.7607843876,
                     [3] = 0.6196078658,
                 },
-                ["showHUD"] = true,
-                ["fixedMaps"] = 
+                ["showMounted"] = true,
+                ["showCombat"] = true,
+                ["timeFormat"] = 4,
+                ["y"] = -535,
+                ["unitPinScaleLimit"] = 0.8000000000,
+                ["zoom"] = 1.3000000000,
+                ["pinSizes"] = 
                 {
                 },
-                ["unitPinScaleLimit"] = 0.8000000000,
+                ["borderAlpha"] = 100,
                 ["zoomOut"] = 0.1500000000,
+                ["zoneAlertMode"] = "MINIMAPHIDDEN",
+                ["width"] = 301,
+                ["titleAtTop"] = true,
+                ["showRealTimeClock"] = true,
+                ["showHUD"] = true,
                 ["titleFont"] = "BOLD_FONT",
-                ["dungeonZoom"] = 0.7000000000,
-                ["showMounted"] = true,
+                ["enableTweaks"] = true,
+                ["version"] = 1,
+                ["mountedZoom"] = 1,
+                ["keepSquare"] = true,
+                ["showOnTop"] = false,
+                ["height"] = 363,
+                ["showFullTitle"] = false,
+                ["debug"] = false,
+                ["asyncUpdate"] = false,
+                ["battlegroundZoom"] = 0,
+                ["showInGameClock"] = true,
+                ["frameStyle"] = "ESO",
+                ["lockWindow"] = false,
+                ["showLoot"] = true,
                 ["titleFontSize"] = 16,
+                ["showCameraAngle"] = false,
+                ["x"] = 1124,
+                ["subZoneZoom"] = 1,
             },
-            ["8796093027479535"] = 
+            ["8796093069174989"] = 
             {
+                ["$LastCharacterName"] = "Mike v Petra",
                 ["version"] = 1,
                 ["showMap"] = true,
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
-            },
-            ["8796093067546805"] = 
-            {
-                ["version"] = 1,
-                ["showMap"] = true,
-                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
-            },
-            ["8796093062295781"] = 
-            {
-                ["version"] = 1,
-                ["showMap"] = true,
-                ["$LastCharacterName"] = "Fridolin The Great",
-            },
-            ["8796093072557313"] = 
-            {
-                ["version"] = 1,
-                ["showMap"] = true,
-                ["$LastCharacterName"] = "Gamal Loki",
-            },
-            ["8796093074287095"] = 
-            {
-                ["version"] = 1,
-                ["showMap"] = true,
-                ["$LastCharacterName"] = "Otto von Bissmark",
-            },
-            ["8796093025384257"] = 
-            {
-                ["version"] = 1,
-                ["showMap"] = true,
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-            },
-            ["8796093023211051"] = 
-            {
-                ["version"] = 1,
-                ["showMap"] = true,
-                ["$LastCharacterName"] = "Freya Orm",
-            },
-            ["8796093064640125"] = 
-            {
-                ["version"] = 1,
-                ["showMap"] = true,
-                ["$LastCharacterName"] = "Maüschen",
             },
         },
     },

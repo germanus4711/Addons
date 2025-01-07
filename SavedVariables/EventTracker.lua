@@ -8,14 +8,17 @@ EventTrackerVars =
             {
                 ["NA Megaserver"] = 
                 {
-                    ["T_Types"] = 
+                    ["T_Time"] = 
                     {
-                        [1] = "New Life",
-                        [2] = "not used",
-                        [3] = "Boss",
+                        [1] = 1736205588,
+                        [2] = 1734646238,
+                        [3] = 0,
                     },
-                    ["EVT_version"] = 2.2710000000,
-                    ["Total_Tickets"] = 4,
+                    ["Install_Time"] = 1726631845,
+                    ["Total_Tickets"] = 7,
+                    ["Current_Event"] = "New Life",
+                    ["top"] = 10,
+                    ["autoHide"] = false,
                     ["T_Tickets"] = 
                     {
                         [4] = 0,
@@ -23,29 +26,26 @@ EventTrackerVars =
                         [2] = 0,
                         [3] = 0,
                     },
+                    ["version"] = 2,
+                    ["HideUI"] = false,
+                    ["LastUpdated"] = 1736205588,
                     ["NewsIndex"] = 3,
-                    ["autoHide"] = false,
-                    ["Install_Time"] = 1726631845,
-                    ["Message_Time"] = 1736134201,
+                    ["debug"] = false,
+                    ["EVT_version"] = 2.2710000000,
+                    ["Message_Time"] = 1736215448,
+                    ["left"] = 450,
+                    ["T_Types"] = 
+                    {
+                        [1] = "New Life",
+                        [2] = "not used",
+                        [3] = "Boss",
+                    },
                     ["T_ToDo"] = 
                     {
                         [1] = 0,
                         [2] = 0,
                         [3] = 0,
                     },
-                    ["debug"] = false,
-                    ["left"] = 450,
-                    ["LastUpdated"] = 1736105653,
-                    ["version"] = 2,
-                    ["Current_Event"] = "New Life",
-                    ["top"] = 10,
-                    ["T_Time"] = 
-                    {
-                        [1] = 1736105653,
-                        [2] = 1734646238,
-                        [3] = 0,
-                    },
-                    ["HideUI"] = false,
                 },
             },
         },
@@ -59,9 +59,9 @@ EventTrackerShared =
         {
             ["$AccountWide"] = 
             {
-                ["version"] = 1,
                 ["XP_frequency"] = 5,
                 ["XP_refresh"] = 200,
+                ["version"] = 1,
             },
         },
     },

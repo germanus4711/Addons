@@ -41,19 +41,14 @@ end
 local function _stackBags()
     PAB.debugln("==============================================================")
     PAB.debugln("PA.Banking._stackBags (0 / 5)")
-
-	-- anti spam
-	PAB.SavedVars.LastStackBags = PAB.SavedVars.LastStackBags or 0
-	local skipStackBags = false
-	if GetTimeStamp() <= PAB.SavedVars.LastStackBags + 1 then
-	    skipStackBags = true
-	end 
 	
-    if PAB.SavedVars.autoStackBags and skipStackBags == false then
+    if PAB.SavedVars.autoStackBags then
         StackBag(PAB.currentBankBag)
+		
         -- if IsESOPlusSubscriber() then
             -- StackBag(BAG_SUBSCRIBER_BANK)
         -- end
+		
         StackBag(BAG_BACKPACK)
 		
 		PAB.SavedVars.LastStackBags = GetTimeStamp()

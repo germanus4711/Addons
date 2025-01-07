@@ -1,65 +1,859 @@
 LibQuestData_SavedVariables =
 {
-    ["version"] = 4,
     ["libVersion"] = 269,
-    ["reward_info"] = 
+    ["quests"] = 
     {
-        [6592] = 
+        ["cyrodiil/imperialcity_base_0"] = 
         {
-            [1] = 1,
-            [2] = 3,
-            [3] = 5,
-            [4] = 7,
         },
-        [6489] = 
+        ["galen/u36_vastyrcity_base_0"] = 
         {
-            [1] = 1,
-            [2] = 3,
-            [3] = 5,
-            [4] = 7,
         },
-        [6594] = 
+        ["deadlands/u32_theshambles_base_0"] = 
         {
-            [1] = 1,
-            [2] = 3,
-            [3] = 5,
-            [4] = 7,
         },
-        [6595] = 
+        ["deshaan/kwamacolony_base_0"] = 
         {
-            [1] = 1,
-            [2] = 3,
-            [3] = 5,
-            [4] = 7,
         },
-        [6593] = 
+        ["summerset/collegeofpsijicsruins_btm_base_0"] = 
         {
-            [1] = 1,
-            [2] = 3,
-            [3] = 5,
-            [4] = 7,
         },
-        [6485] = 
+        ["deshaan/mournhold_base_0"] = 
         {
-            [1] = 1,
-            [2] = 3,
-            [3] = 5,
-            [4] = 7,
         },
-        [6837] = 
+        ["systres/u34_amenosstation_city_base_0"] = 
         {
-            [1] = 1,
-            [2] = 7,
-            [3] = 9,
+            [1] = 
+            {
+                ["y"] = 0.6786675453,
+                ["gpsx"] = 0.0760964033,
+                ["zone_index"] = 885,
+                ["x"] = 0.5209242105,
+                ["poi_index"] = 8,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Marcelle Dantaine",
+                ["lang"] = "en",
+                ["gpsy"] = 0.5866096125,
+                ["quest_type"] = 0,
+                ["name"] = "The Long Game",
+                ["zone_name"] = "High Isle",
+            },
         },
-        [6487] = 
+        ["rivenspire/rivenspire_base_0"] = 
         {
-            [1] = 1,
-            [2] = 3,
-            [3] = 5,
-            [4] = 7,
+        },
+        ["grahtwood/eldenrootgroundfloor_base_0"] = 
+        {
+            [2] = 
+            {
+                ["y"] = 0.6666182876,
+                ["gpsx"] = 0.4362952095,
+                ["zone_index"] = 18,
+                ["x"] = 0.5633470416,
+                ["poi_index"] = 58,
+                ["quest_display_type"] = 2,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Glirion the Redbeard",
+                ["lang"] = "en",
+                ["gpsy"] = 0.7360156241,
+                ["quest_type"] = 15,
+                ["name"] = "Pledge: City of Ash II",
+                ["zone_name"] = "Greenshade",
+            },
+            [1] = 
+            {
+                ["y"] = 0.6612475514,
+                ["gpsx"] = 0.4366432095,
+                ["zone_index"] = 179,
+                ["x"] = 0.5748274922,
+                ["poi_index"] = 61,
+                ["quest_display_type"] = 2,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Maj al-Ragath",
+                ["lang"] = "en",
+                ["gpsy"] = 0.7358528242,
+                ["quest_type"] = 15,
+                ["name"] = "Pledge: Banished Cells II",
+                ["zone_name"] = "Auridon",
+            },
+        },
+        ["auridon/mehrunesspite_base_0"] = 
+        {
+        },
+        ["systres/gravendeep_island_map_0"] = 
+        {
+        },
+        ["grahtwood/eldenrootfightersguildown_base_0"] = 
+        {
+        },
+        ["clockwork/brassfortress_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.7084895968,
+                ["gpsx"] = 0.2388383956,
+                ["zone_index"] = 591,
+                ["x"] = 0.2394223213,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Associate Zanon",
+                ["lang"] = "en",
+                ["gpsy"] = 1.0430363882,
+                ["quest_type"] = 0,
+                ["name"] = "The Precursor",
+                ["zone_name"] = "Clockwork City",
+            },
+        },
+        ["housing/snowglobe_base_0"] = 
+        {
+        },
+        ["summerset/alinor_base_0"] = 
+        {
+        },
+        ["auridon/auridon_base_0"] = 
+        {
+        },
+        ["systres/u34_gonfalonbaycity_base_0"] = 
+        {
+            [2] = 
+            {
+                ["y"] = 0.6669856310,
+                ["gpsx"] = 0.0704940026,
+                ["zone_index"] = 885,
+                ["x"] = 0.6047846675,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Kishka",
+                ["lang"] = "en",
+                ["gpsy"] = 0.6048820052,
+                ["quest_type"] = 17,
+                ["name"] = "Cards Across the Continent",
+                ["zone_name"] = "High Isle",
+            },
+            [1] = 
+            {
+                ["y"] = 0.4038277566,
+                ["gpsx"] = 0.0695968028,
+                ["zone_index"] = 885,
+                ["x"] = 0.4706339836,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 10,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Jakarn",
+                ["lang"] = "en",
+                ["gpsy"] = 0.6031220053,
+                ["quest_type"] = 0,
+                ["name"] = "Of Knights and Knaves",
+                ["zone_name"] = "High Isle",
+            },
+        },
+        ["apocrypha/u40_tomehold_starterarea_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.5333333611,
+                ["gpsx"] = 0.1758663953,
+                ["zone_index"] = 974,
+                ["x"] = 0.5764706135,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 12,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Esalinwe",
+                ["lang"] = "en",
+                ["gpsy"] = -0.0311911934,
+                ["quest_type"] = 0,
+                ["name"] = "Infinite Avenger: Marauder",
+                ["zone_name"] = "Infinite Archive",
+            },
+            [2] = 
+            {
+                ["y"] = 0.4960784316,
+                ["gpsx"] = 0.1758411953,
+                ["zone_index"] = 974,
+                ["x"] = 0.4529411793,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 12,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Master Malkhest",
+                ["lang"] = "en",
+                ["gpsy"] = -0.0311987934,
+                ["quest_type"] = 0,
+                ["name"] = "Replication Elimination",
+                ["zone_name"] = "Infinite Archive",
+            },
+            [3] = 
+            {
+                ["y"] = 0.5333333611,
+                ["gpsx"] = 0.1758663953,
+                ["zone_index"] = 976,
+                ["x"] = 0.5764706135,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 12,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Esalinwe",
+                ["lang"] = "en",
+                ["gpsy"] = -0.0311911934,
+                ["quest_type"] = 0,
+                ["name"] = "Infinite Avenger: Fabled",
+                ["zone_name"] = "Infinite Archive",
+            },
+        },
+        ["vvardenfell/viviccity_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.5648705959,
+                ["gpsx"] = 0.7663275726,
+                ["zone_index"] = 294967291,
+                ["x"] = 0.2248040587,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Battlemaster Rivyn",
+                ["lang"] = "en",
+                ["gpsy"] = 0.3831359981,
+                ["quest_type"] = 13,
+                ["name"] = "Test of Mettle",
+                ["zone_name"] = "",
+            },
+        },
+        ["shadowfen/atanazruins_base_0"] = 
+        {
+        },
+        ["grahtwood/rootsunder_base_0"] = 
+        {
+        },
+        ["rivenspire/erokii_base_0"] = 
+        {
+        },
+        ["telvanni/u38_necrom_base_0"] = 
+        {
+            [2] = 
+            {
+                ["y"] = 0.5646120310,
+                ["gpsx"] = 0.9407952149,
+                ["zone_index"] = 958,
+                ["x"] = 0.5231278539,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Ordinator Tandasea",
+                ["lang"] = "en",
+                ["gpsy"] = 0.3882076065,
+                ["quest_type"] = 0,
+                ["name"] = "Bastion Nymic - Writhing Wastes",
+                ["zone_name"] = "Apocrypha",
+            },
+            [1] = 
+            {
+                ["y"] = 0.5769451261,
+                ["gpsx"] = 0.9406716169,
+                ["zone_index"] = 958,
+                ["x"] = 0.5204422474,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Ordinator Nelyn",
+                ["lang"] = "en",
+                ["gpsy"] = 0.3887752051,
+                ["quest_type"] = 1,
+                ["name"] = "Arcane Residue",
+                ["zone_name"] = "Apocrypha",
+            },
+        },
+        ["elsweyr/rimmen_base_0"] = 
+        {
+        },
+        ["eastmarch/hallofthedead_base_0"] = 
+        {
+        },
+        ["murkmire/ui_map_blackroseprison01_base_0"] = 
+        {
+        },
+        ["murkmire/lilmothcity_base_0"] = 
+        {
+        },
+        ["cyrodiil/eastelsweyrgate_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.4257530570,
+                ["gpsx"] = 0.5695340211,
+                ["zone_index"] = 38,
+                ["x"] = 0.5148420930,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 1,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Scouting Mission Board",
+                ["lang"] = "en",
+                ["gpsy"] = 0.5591815918,
+                ["quest_type"] = 7,
+                ["name"] = "Scout Arrius Farm",
+                ["zone_name"] = "Cyrodiil",
+            },
+        },
+        ["alikr/lostcity_base_0"] = 
+        {
+        },
+        ["systres/u34_systreszone_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.8088064790,
+                ["gpsx"] = 0.0633330759,
+                ["zone_index"] = 885,
+                ["x"] = 0.4388638735,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Genalda Ervine",
+                ["lang"] = "en",
+                ["gpsy"] = 0.5952501735,
+                ["quest_type"] = 0,
+                ["name"] = "The Intoxicating Mix",
+                ["zone_name"] = "High Isle",
+            },
+            [2] = 
+            {
+                ["y"] = 0.8318872452,
+                ["gpsx"] = 0.0623421534,
+                ["zone_index"] = 885,
+                ["x"] = 0.4083739519,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Balki's Instructions",
+                ["lang"] = "en",
+                ["gpsy"] = 0.5960106847,
+                ["quest_type"] = 0,
+                ["name"] = "Balki's Map Fragment",
+                ["zone_name"] = "High Isle",
+            },
+            [3] = 
+            {
+                ["y"] = 0.2036462873,
+                ["gpsx"] = 0.0829260026,
+                ["zone_index"] = 885,
+                ["x"] = 0.8190205097,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Sergeant Brusic",
+                ["lang"] = "en",
+                ["gpsy"] = 0.5731752020,
+                ["quest_type"] = 0,
+                ["name"] = "Coral Conundrum",
+                ["zone_name"] = "High Isle",
+            },
+        },
+        ["southernelsweyr/southernelsweyr_base_0"] = 
+        {
+        },
+        ["deshaan/forgottencrypts_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.7415827513,
+                ["gpsx"] = 0.7259988247,
+                ["zone_index"] = 10,
+                ["x"] = 0.3667625785,
+                ["poi_index"] = 20,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Sela",
+                ["lang"] = "en",
+                ["gpsy"] = 0.4978143911,
+                ["quest_type"] = 5,
+                ["name"] = "A Family Divided",
+                ["zone_name"] = "Deshaan",
+            },
+        },
+        ["rivenspire/hildunessecretrefuge_base_0"] = 
+        {
+        },
+        ["grahtwood/eldenrootcrafting_base_0"] = 
+        {
+        },
+        ["wrothgar/wrothgar_base_0"] = 
+        {
+        },
+        ["auridon/skywatch_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.3790257275,
+                ["gpsx"] = 0.2448463966,
+                ["zone_index"] = 294967291,
+                ["x"] = 0.5029646158,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 1,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Arch-Mage Shalidor",
+                ["lang"] = "en",
+                ["gpsy"] = 0.6735467975,
+                ["quest_type"] = 3,
+                ["name"] = "Circus of Cheerful Slaughter",
+                ["zone_name"] = "",
+            },
+        },
+        ["stonefalls/davonswatch_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.4744977951,
+                ["gpsx"] = 0.7918684003,
+                ["zone_index"] = 9,
+                ["x"] = 0.7975910902,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 2,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Kailstig the Axe",
+                ["lang"] = "en",
+                ["gpsy"] = 0.4287240092,
+                ["quest_type"] = 0,
+                ["name"] = "One of the Undaunted",
+                ["zone_name"] = "Stonefalls",
+            },
+        },
+        ["apocrypha/u40_tomehold_theater1_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.4399999976,
+                ["gpsx"] = 0.1758624001,
+                ["zone_index"] = 974,
+                ["x"] = 0.4733333290,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 12,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Destozuno",
+                ["lang"] = "en",
+                ["gpsy"] = -0.0306603957,
+                ["quest_type"] = 0,
+                ["name"] = "Restoring the Resurrected",
+                ["zone_name"] = "Infinite Archive",
+            },
+        },
+        ["blackwood/blackwood_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.6516878009,
+                ["gpsx"] = 0.6730100994,
+                ["zone_index"] = 836,
+                ["x"] = 0.5823624134,
+                ["poi_index"] = 32,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Adrahawn",
+                ["lang"] = "en",
+                ["gpsy"] = 0.6895402718,
+                ["quest_type"] = 0,
+                ["name"] = "Harrada Harvest",
+                ["zone_name"] = "Blackwood",
+            },
+        },
+        ["elsweyr/riverholdcity_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.5147333145,
+                ["gpsx"] = 0.5266655984,
+                ["zone_index"] = 683,
+                ["x"] = 0.3704067171,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Iraya",
+                ["lang"] = "en",
+                ["gpsy"] = 0.6012324028,
+                ["quest_type"] = 0,
+                ["name"] = "The Song of Kingdoms",
+                ["zone_name"] = "Northern Elsweyr",
+            },
+        },
+        ["deshaan/deepcragden_base_0"] = 
+        {
+        },
+        ["grahtwood/eldenrootmagesguilddown_base_0"] = 
+        {
+        },
+        ["reach/reach_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.5125017762,
+                ["gpsx"] = 0.3778661574,
+                ["zone_index"] = 784,
+                ["x"] = 0.3086277246,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 3,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Angair",
+                ["lang"] = "en",
+                ["gpsy"] = 0.3038548818,
+                ["quest_type"] = 1,
+                ["name"] = "A Challenge of Worth",
+                ["zone_name"] = "The Reach",
+            },
+        },
+        ["westweald/u42_leftwheal_ext2_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.9304640889,
+                ["gpsx"] = 0.3703444083,
+                ["zone_index"] = 983,
+                ["x"] = 0.8442267776,
+                ["poi_index"] = 14,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Baroness Eliana Cossa",
+                ["lang"] = "en",
+                ["gpsy"] = 0.5057219938,
+                ["quest_type"] = 0,
+                ["name"] = "Caught in a Trap",
+                ["zone_name"] = "West Weald",
+            },
+        },
+        ["vvardenfell/vivechoj01a_base_0"] = 
+        {
+            [2] = 
+            {
+                ["y"] = 0.3209039569,
+                ["gpsx"] = 0.7743740247,
+                ["zone_index"] = 469,
+                ["x"] = 0.6039603949,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Beleru Omoril",
+                ["lang"] = "en",
+                ["gpsy"] = 0.3827484036,
+                ["quest_type"] = 1,
+                ["name"] = "Culling the Swarm",
+                ["zone_name"] = "Vvardenfell",
+            },
+            [1] = 
+            {
+                ["y"] = 0.6870056391,
+                ["gpsx"] = 0.7744044247,
+                ["zone_index"] = 469,
+                ["x"] = 0.6875687838,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Traylan Omoril",
+                ["lang"] = "en",
+                ["gpsy"] = 0.3828780036,
+                ["quest_type"] = 0,
+                ["name"] = "Unsettled Syndicate",
+                ["zone_name"] = "Vvardenfell",
+            },
+        },
+        ["westweald/westwealdoverland_base_0"] = 
+        {
+        },
+        ["westweald/u42_skingrad_base_0"] = 
+        {
+            [2] = 
+            {
+                ["y"] = 0.5780492425,
+                ["gpsx"] = 0.4425620096,
+                ["zone_index"] = 981,
+                ["x"] = 0.6222179532,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Commandant Salerius",
+                ["lang"] = "en",
+                ["gpsy"] = 0.5271139952,
+                ["quest_type"] = 0,
+                ["name"] = "Loan Recall",
+                ["zone_name"] = "West Weald",
+            },
+            [1] = 
+            {
+                ["y"] = 0.5734216571,
+                ["gpsx"] = 0.4425452092,
+                ["zone_index"] = 981,
+                ["x"] = 0.6216394901,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Lieutenant Agrance",
+                ["lang"] = "en",
+                ["gpsy"] = 0.5269795953,
+                ["quest_type"] = 1,
+                ["name"] = "Fate-Eater",
+                ["zone_name"] = "West Weald",
+            },
+        },
+        ["darkbrotherhood/dbsanctuary_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.5298041105,
+                ["gpsx"] = 0.3401248054,
+                ["zone_index"] = 430,
+                ["x"] = 0.1963317990,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Speaker Terenus",
+                ["lang"] = "en",
+                ["gpsy"] = 0.5499279968,
+                ["quest_type"] = 3,
+                ["name"] = "Sacrament: Trader's Cove",
+                ["zone_name"] = "Trader's Cove",
+            },
+        },
+        ["blackwood/u30_leyawiincity_base_0"] = 
+        {
+        },
+        ["eastmarch/eastmarch_base_0"] = 
+        {
+            [2] = 
+            {
+                ["name"] = "Snow Bear Plunge",
+                ["gpsx"] = 0.6043655431,
+                ["lang"] = "en",
+                ["api"] = 101044,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["gpsy"] = 0.2970463040,
+                ["giver"] = "Breda",
+                ["zone_index"] = 15,
+                ["y"] = 0.3810400069,
+                ["quest_type"] = 12,
+                ["x"] = 0.4869675040,
+                ["zone_name"] = "Eastmarch",
+            },
+            [1] = 
+            {
+                ["y"] = 0.3787550032,
+                ["gpsx"] = 0.6043960729,
+                ["zone_index"] = 15,
+                ["x"] = 0.4871799946,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 2,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Petronius Galenus",
+                ["lang"] = "en",
+                ["gpsy"] = 0.2967180038,
+                ["quest_type"] = 12,
+                ["name"] = "Old Life Observance",
+                ["zone_name"] = "Eastmarch",
+            },
+        },
+        ["clockwork/clockwork_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.6026043296,
+                ["gpsx"] = 0.2752547984,
+                ["zone_index"] = 591,
+                ["x"] = 0.5892823339,
+                ["poi_index"] = 7,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101044,
+                ["giver"] = "Amili Lloryn",
+                ["lang"] = "en",
+                ["gpsy"] = 1.0805732101,
+                ["quest_type"] = 0,
+                ["name"] = "The Astronomer's Apprentice",
+                ["zone_name"] = "Clockwork City",
+            },
+        },
+        ["grahtwood/grahtwood_base_0"] = 
+        {
+        },
+        ["coldharbor/hollowcity_base_0"] = 
+        {
+        },
+        ["vvardenfell/forgottenwastesext_base_0"] = 
+        {
+        },
+        ["skyrim/solitudecity_base_0"] = 
+        {
+        },
+        ["deshaan/desolatecave_base_0"] = 
+        {
+        },
+        ["murkmire/rootwhisper_base_0"] = 
+        {
+        },
+        ["housing/u42_colovianwinery_ext_01_0"] = 
+        {
+        },
+        ["cyrodiil/ava_whole_0"] = 
+        {
+        },
+        ["skyrim/blackreach_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.6974254847,
+                ["gpsx"] = 0.6494880198,
+                ["zone_index"] = 744,
+                ["x"] = 0.3020680845,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 10,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Letter from the Skald-King's Agent",
+                ["lang"] = "en",
+                ["gpsy"] = 1.5565960403,
+                ["quest_type"] = 0,
+                ["name"] = "The Gathering Storm",
+                ["zone_name"] = "Western Skyrim",
+            },
+            [2] = 
+            {
+                ["y"] = 0.7161796689,
+                ["gpsx"] = 0.6518496180,
+                ["zone_index"] = 744,
+                ["x"] = 0.3313835859,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Overseer Urlvar",
+                ["lang"] = "en",
+                ["gpsy"] = 1.5581068399,
+                ["quest_type"] = 0,
+                ["name"] = "Digging Up Trouble",
+                ["zone_name"] = "Western Skyrim",
+            },
+            [3] = 
+            {
+                ["y"] = 0.6698378921,
+                ["gpsx"] = 0.6648664197,
+                ["zone_index"] = 744,
+                ["x"] = 0.4929665625,
+                ["poi_index"] = 294967291,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Kireth Vanos",
+                ["lang"] = "en",
+                ["gpsy"] = 1.5543736389,
+                ["quest_type"] = 0,
+                ["name"] = "The Tones of the Deep",
+                ["zone_name"] = "Western Skyrim",
+            },
+        },
+        ["darkbrotherhood/kvatchcity_base_0"] = 
+        {
+        },
+        ["craglorn/craglorn_base_0"] = 
+        {
+        },
+        ["thievesguild/abahslanding_base_0"] = 
+        {
+        },
+        ["apocrypha/u40_tomehold_bundle1_0"] = 
+        {
+        },
+        ["deshaan/deshaan_base_0"] = 
+        {
+            [1] = 
+            {
+                ["y"] = 0.6500750184,
+                ["gpsx"] = 0.7800070256,
+                ["zone_index"] = 10,
+                ["x"] = 0.4393571913,
+                ["poi_index"] = 4,
+                ["quest_display_type"] = 0,
+                ["repeat_type"] = 0,
+                ["questID"] = -1,
+                ["api"] = 101043,
+                ["giver"] = "Edrasa Drelas",
+                ["lang"] = "en",
+                ["gpsy"] = 0.5297298972,
+                ["quest_type"] = 0,
+                ["name"] = "Search and Rescue",
+                ["zone_name"] = "Deshaan",
+            },
+        },
+        ["deadlands/u32_fargrave_base_0"] = 
+        {
         },
     },
+    ["strored_data"] = 
+    {
+    },
+    ["effective_lang"] = "en",
     ["giver_names"] = 
     {
         [6016] = "Sealed Blacksmithing Writ",
@@ -132,6 +926,11 @@ LibQuestData_SavedVariables =
         [5973] = "Sealed Enchanting Writ",
         [6881] = "Druid Gastoc",
     },
+    ["quest_names"] = 
+    {
+    },
+    ["client_lang"] = "en",
+    ["version"] = 4,
     ["location_info"] = 
     {
         ["deshaan/forgottencrypts_base_0"] = 
@@ -153,99 +952,6 @@ LibQuestData_SavedVariables =
                 [4] = 0.4958967910,
                 [5] = 7188,
                 [6] = "Tanlorin",
-            },
-        },
-        ["westweald/westwealdoverland_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.7202926874,
-                [2] = 0.6991505623,
-                [3] = 0.4607433568,
-                [4] = 0.5437792397,
-                [5] = 7219,
-                [6] = "Belienne",
-            },
-        },
-        ["murkmire/lilmothcity_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.4435080588,
-                [2] = 0.6370046139,
-                [3] = 0.7679468142,
-                [4] = 0.8028968120,
-                [5] = 6268,
-                [6] = 100132,
-            },
-        },
-        ["telvanni/u38_necrom_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.5337488055,
-                [2] = 0.6951484680,
-                [3] = 0.9412840166,
-                [4] = 0.3942152067,
-                [5] = 6695,
-                [6] = 100206,
-            },
-            [2] = 
-            {
-                [1] = 0.5201119184,
-                [2] = 0.5778403282,
-                [3] = 0.9406564144,
-                [4] = 0.3888164045,
-                [5] = 7040,
-                [6] = 210005,
-            },
-        },
-        ["grahtwood/eldenrootmagesguilddown_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.6333879828,
-                [2] = 0.3665027320,
-                [3] = 0.4364764025,
-                [4] = 0.7206028202,
-                [5] = 5814,
-                [6] = 80011,
-            },
-            [2] = 
-            {
-                [1] = 0.6334426403,
-                [2] = 0.3575409949,
-                [3] = 0.4364768026,
-                [4] = 0.7205372203,
-                [5] = 5823,
-                [6] = 80011,
-            },
-            [3] = 
-            {
-                [1] = 0.6449726820,
-                [2] = 0.3667213023,
-                [3] = 0.4365612025,
-                [4] = 0.7206044201,
-                [5] = 5827,
-                [6] = 80011,
-            },
-            [4] = 
-            {
-                [1] = 0.6432787180,
-                [2] = 0.3693989217,
-                [3] = 0.4365488027,
-                [4] = 0.7206240203,
-                [5] = 5830,
-                [6] = 80011,
-            },
-            [5] = 
-            {
-                [1] = 0.6327868700,
-                [2] = 0.3689617515,
-                [3] = 0.4364720023,
-                [4] = 0.7206208202,
-                [5] = 5825,
-                [6] = 80011,
             },
         },
         ["galen/u36_vastyrcity_base_0"] = 
@@ -350,301 +1056,214 @@ LibQuestData_SavedVariables =
                 [6] = "Druid Gastoc",
             },
         },
-        ["housing/snowglobe_base_0"] = 
+        ["craglorn/craglorn_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.7080665827,
-                [2] = 0.6679470539,
-                [3] = 0.6320988155,
-                [4] = 0.2813951991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
+                [1] = 0.6538664699,
+                [2] = 0.5531708002,
+                [3] = 0.4398174800,
+                [4] = 0.3763625596,
+                [5] = 7207,
+                [6] = "Zerith-var",
             },
             [2] = 
             {
-                [1] = 0.7119078040,
-                [2] = 0.6850191951,
-                [3] = 0.6321024155,
-                [4] = 0.2814111991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
+                [1] = 0.5222671032,
+                [2] = 0.6431055665,
+                [3] = 0.4117080185,
+                [4] = 0.3750719938,
+                [5] = 6695,
+                [6] = 100206,
             },
             [3] = 
             {
-                [1] = 0.7106273770,
-                [2] = 0.6696543097,
-                [3] = 0.6321012154,
-                [4] = 0.2813967991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [4] = 
-            {
-                [1] = 0.7089201808,
-                [2] = 0.6769099236,
-                [3] = 0.6320996155,
-                [4] = 0.2814035991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [5] = 
-            {
-                [1] = 0.7020913363,
-                [2] = 0.6769099236,
-                [3] = 0.6320932155,
-                [4] = 0.2814035991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [6] = 
-            {
-                [1] = 0.7089201808,
-                [2] = 0.6747759581,
-                [3] = 0.6320996155,
-                [4] = 0.2814015991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [7] = 
-            {
-                [1] = 0.7183098793,
-                [2] = 0.6811779737,
-                [3] = 0.6321084155,
-                [4] = 0.2814075991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [8] = 
-            {
-                [1] = 0.7020913363,
-                [2] = 0.6760563254,
-                [3] = 0.6320932155,
-                [4] = 0.2814027991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [9] = 
-            {
-                [1] = 0.7093470097,
-                [2] = 0.6790439487,
-                [3] = 0.6321000155,
-                [4] = 0.2814055991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [10] = 
-            {
-                [1] = 0.6995305419,
-                [2] = 0.6786171794,
-                [3] = 0.6320908155,
-                [4] = 0.2814051991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [11] = 
-            {
-                [1] = 0.7050789595,
-                [2] = 0.6816048026,
-                [3] = 0.6320960155,
-                [4] = 0.2814079991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [12] = 
-            {
-                [1] = 0.7020913363,
-                [2] = 0.6794707775,
-                [3] = 0.6320932155,
-                [4] = 0.2814059991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [13] = 
-            {
-                [1] = 0.7016645074,
-                [2] = 0.6811779737,
-                [3] = 0.6320928154,
-                [4] = 0.2814075991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [14] = 
-            {
-                [1] = 0.7042253613,
-                [2] = 0.6790439487,
-                [3] = 0.6320952155,
-                [4] = 0.2814055991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [15] = 
-            {
-                [1] = 0.7059325576,
-                [2] = 0.6769099236,
-                [3] = 0.6320968154,
-                [4] = 0.2814035991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [16] = 
-            {
-                [1] = 0.7033717632,
-                [2] = 0.6820315719,
-                [3] = 0.6320944155,
-                [4] = 0.2814083991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [17] = 
-            {
-                [1] = 0.7055057883,
-                [2] = 0.6803243756,
-                [3] = 0.6320964155,
-                [4] = 0.2814067991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [18] = 
-            {
-                [1] = 0.7003841400,
-                [2] = 0.6764831543,
-                [3] = 0.6320916155,
-                [4] = 0.2814031991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [19] = 
-            {
-                [1] = 0.7042253613,
-                [2] = 0.6803243756,
-                [3] = 0.6320952155,
-                [4] = 0.2814067991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [20] = 
-            {
-                [1] = 0.7050789595,
-                [2] = 0.6790439487,
-                [3] = 0.6320960155,
-                [4] = 0.2814055991,
-                [5] = 5973,
-                [6] = "Sealed Enchanting Writ",
-            },
-            [21] = 
-            {
-                [1] = 0.7050789595,
-                [2] = 0.6790439487,
-                [3] = 0.6320960155,
-                [4] = 0.2814055991,
-                [5] = 5982,
-                [6] = "Sealed Alchemy Writ",
-            },
-            [22] = 
-            {
-                [1] = 0.7238582969,
-                [2] = 0.6572769880,
-                [3] = 0.6321136155,
-                [4] = 0.2813851991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [23] = 
-            {
-                [1] = 0.7033717632,
-                [2] = 0.6790439487,
-                [3] = 0.6320944155,
-                [4] = 0.2814055991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [24] = 
-            {
-                [1] = 0.7037985325,
-                [2] = 0.6820315719,
-                [3] = 0.6320948154,
-                [4] = 0.2814083991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [25] = 
-            {
-                [1] = 0.6999573112,
-                [2] = 0.6790439487,
-                [3] = 0.6320912154,
-                [4] = 0.2814055991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [26] = 
-            {
-                [1] = 0.6991037130,
-                [2] = 0.6798975468,
-                [3] = 0.6320904155,
-                [4] = 0.2814063991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [27] = 
-            {
-                [1] = 0.7119078040,
-                [2] = 0.6850191951,
-                [3] = 0.6321024155,
-                [4] = 0.2814111991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [28] = 
-            {
-                [1] = 0.7076397538,
-                [2] = 0.6811779737,
-                [3] = 0.6320984154,
-                [4] = 0.2814075991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [29] = 
-            {
-                [1] = 0.7080665827,
-                [2] = 0.6820315719,
-                [3] = 0.6320988155,
-                [4] = 0.2814083991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
+                [1] = 0.6840807199,
+                [2] = 0.5734534264,
+                [3] = 0.4435057335,
+                [4] = 0.3788384598,
+                [5] = 7221,
+                [6] = "Zerith-var",
             },
         },
-        ["cyrodiil/ava_whole_0"] = 
+        ["systres/u34_gonfalonbaycity_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.7078089118,
-                [2] = 0.6480777860,
-                [3] = 0.6069954176,
-                [4] = 0.5328698465,
-                [5] = 2930,
-                [6] = "Unknown Target",
-            },
-        },
-        ["coldharbor/hollowcity_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.5566938519,
-                [2] = 0.3477755189,
-                [3] = -0.0992376028,
-                [4] = 0.2565868032,
-                [5] = 5409,
+                [1] = 0.3727870882,
+                [2] = 0.5123803616,
+                [3] = 0.0689424027,
+                [4] = 0.6038480051,
+                [5] = 6104,
                 [6] = 500010,
             },
             [2] = 
             {
-                [1] = 0.5566938519,
-                [2] = 0.3477755189,
-                [3] = -0.0992376028,
-                [4] = 0.2565868032,
+                [1] = 0.3819378018,
+                [2] = 0.5014952421,
+                [3] = 0.0690036027,
+                [4] = 0.6037752054,
+                [5] = 6218,
+                [6] = 500009,
+            },
+            [3] = 
+            {
+                [1] = 0.3819378018,
+                [2] = 0.5014952421,
+                [3] = 0.0690036027,
+                [4] = 0.6037752054,
+                [5] = 5396,
+                [6] = 500009,
+            },
+            [4] = 
+            {
+                [1] = 0.3726674616,
+                [2] = 0.5128588676,
+                [3] = 0.0689416026,
+                [4] = 0.6038512054,
+                [5] = 6100,
+                [6] = 500010,
+            },
+            [5] = 
+            {
+                [1] = 0.6043062210,
+                [2] = 0.6686004996,
+                [3] = 0.0704908027,
+                [4] = 0.6048928054,
+                [5] = 6801,
+                [6] = "Marunji",
+            },
+            [6] = 
+            {
+                [1] = 0.3738636374,
+                [2] = 0.5135765672,
+                [3] = 0.0689496027,
+                [4] = 0.6038560053,
+                [5] = 6099,
+                [6] = 500010,
+            },
+            [7] = 
+            {
+                [1] = 0.3748803735,
+                [2] = 0.5124402046,
+                [3] = 0.0689564026,
+                [4] = 0.6038484053,
+                [5] = 5413,
+                [6] = 500010,
+            },
+            [8] = 
+            {
+                [1] = 0.3738038242,
+                [2] = 0.5111842155,
+                [3] = 0.0689492026,
+                [4] = 0.6038400053,
                 [5] = 6098,
                 [6] = 500010,
+            },
+            [9] = 
+            {
+                [1] = 0.3734449744,
+                [2] = 0.5125598311,
+                [3] = 0.0689468026,
+                [4] = 0.6038492054,
+                [5] = 5409,
+                [6] = 500010,
+            },
+            [10] = 
+            {
+                [1] = 0.3729664981,
+                [2] = 0.5134569407,
+                [3] = 0.0689436026,
+                [4] = 0.6038552053,
+                [5] = 6105,
+                [6] = 500010,
+            },
+            [11] = 
+            {
+                [1] = 0.3819378018,
+                [2] = 0.5005980730,
+                [3] = 0.0690036027,
+                [4] = 0.6037692052,
+                [5] = 5388,
+                [6] = 500009,
+            },
+            [12] = 
+            {
+                [1] = 0.3819378018,
+                [2] = 0.5027511716,
+                [3] = 0.0690036027,
+                [4] = 0.6037836051,
+                [5] = 5395,
+                [6] = 500009,
+            },
+            [13] = 
+            {
+                [1] = 0.3819378018,
+                [2] = 0.5005980730,
+                [3] = 0.0690036027,
+                [4] = 0.6037692052,
+                [5] = 5377,
+                [6] = 500009,
+            },
+            [14] = 
+            {
+                [1] = 0.3744019270,
+                [2] = 0.5141148567,
+                [3] = 0.0689532027,
+                [4] = 0.6038596054,
+                [5] = 5412,
+                [6] = 500010,
+            },
+            [15] = 
+            {
+                [1] = 0.3819378018,
+                [2] = 0.5027511716,
+                [3] = 0.0690036027,
+                [4] = 0.6037836051,
+                [5] = 6228,
+                [6] = 500009,
+            },
+            [16] = 
+            {
+                [1] = 0.3727870882,
+                [2] = 0.5123803616,
+                [3] = 0.0689424027,
+                [4] = 0.6038480051,
+                [5] = 5406,
+                [6] = 500010,
+            },
+            [17] = 
+            {
+                [1] = 0.6059808731,
+                [2] = 0.6684210300,
+                [3] = 0.0705020028,
+                [4] = 0.6048916051,
+                [5] = 6800,
+                [6] = "Kishka",
+            },
+        },
+        ["grahtwood/eldenrootcrafting_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.7344808578,
+                [2] = 0.4091803133,
+                [3] = 0.4352984143,
+                [4] = 0.7265107849,
+                [5] = 6103,
+                [6] = 500010,
+            },
+        },
+        ["summerset/collegeofpsijicsruins_btm_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.6006641984,
+                [2] = 0.4383577704,
+                [3] = 0.8433891891,
+                [4] = -0.0270792048,
+                [5] = 6136,
+                [6] = 100127,
             },
         },
         ["westweald/u42_skingrad_base_0"] = 
@@ -1100,400 +1719,16 @@ LibQuestData_SavedVariables =
                 [6] = "Deep Winter Charity Writ",
             },
         },
-        ["deshaan/kwamacolony_base_0"] = 
+        ["shadowfen/atanazruins_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.5588914752,
-                [2] = 0.4730561972,
-                [3] = 0.7311927800,
-                [4] = 0.5028352099,
-                [5] = 4494,
-                [6] = 30138,
-            },
-        },
-        ["systres/u34_gonfalonbaycity_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.3727870882,
-                [2] = 0.5123803616,
-                [3] = 0.0689424027,
-                [4] = 0.6038480051,
-                [5] = 6104,
-                [6] = 500010,
-            },
-            [2] = 
-            {
-                [1] = 0.3819378018,
-                [2] = 0.5014952421,
-                [3] = 0.0690036027,
-                [4] = 0.6037752054,
-                [5] = 6218,
-                [6] = 500009,
-            },
-            [3] = 
-            {
-                [1] = 0.3819378018,
-                [2] = 0.5014952421,
-                [3] = 0.0690036027,
-                [4] = 0.6037752054,
-                [5] = 5396,
-                [6] = 500009,
-            },
-            [4] = 
-            {
-                [1] = 0.3726674616,
-                [2] = 0.5128588676,
-                [3] = 0.0689416026,
-                [4] = 0.6038512054,
-                [5] = 6100,
-                [6] = 500010,
-            },
-            [5] = 
-            {
-                [1] = 0.6043062210,
-                [2] = 0.6686004996,
-                [3] = 0.0704908027,
-                [4] = 0.6048928054,
-                [5] = 6801,
-                [6] = "Marunji",
-            },
-            [6] = 
-            {
-                [1] = 0.3738636374,
-                [2] = 0.5135765672,
-                [3] = 0.0689496027,
-                [4] = 0.6038560053,
-                [5] = 6099,
-                [6] = 500010,
-            },
-            [7] = 
-            {
-                [1] = 0.3748803735,
-                [2] = 0.5124402046,
-                [3] = 0.0689564026,
-                [4] = 0.6038484053,
-                [5] = 5413,
-                [6] = 500010,
-            },
-            [8] = 
-            {
-                [1] = 0.3738038242,
-                [2] = 0.5111842155,
-                [3] = 0.0689492026,
-                [4] = 0.6038400053,
-                [5] = 6098,
-                [6] = 500010,
-            },
-            [9] = 
-            {
-                [1] = 0.3734449744,
-                [2] = 0.5125598311,
-                [3] = 0.0689468026,
-                [4] = 0.6038492054,
-                [5] = 5409,
-                [6] = 500010,
-            },
-            [10] = 
-            {
-                [1] = 0.3729664981,
-                [2] = 0.5134569407,
-                [3] = 0.0689436026,
-                [4] = 0.6038552053,
-                [5] = 6105,
-                [6] = 500010,
-            },
-            [11] = 
-            {
-                [1] = 0.3819378018,
-                [2] = 0.5005980730,
-                [3] = 0.0690036027,
-                [4] = 0.6037692052,
-                [5] = 5388,
-                [6] = 500009,
-            },
-            [12] = 
-            {
-                [1] = 0.3819378018,
-                [2] = 0.5027511716,
-                [3] = 0.0690036027,
-                [4] = 0.6037836051,
-                [5] = 5395,
-                [6] = 500009,
-            },
-            [13] = 
-            {
-                [1] = 0.3819378018,
-                [2] = 0.5005980730,
-                [3] = 0.0690036027,
-                [4] = 0.6037692052,
-                [5] = 5377,
-                [6] = 500009,
-            },
-            [14] = 
-            {
-                [1] = 0.3744019270,
-                [2] = 0.5141148567,
-                [3] = 0.0689532027,
-                [4] = 0.6038596054,
-                [5] = 5412,
-                [6] = 500010,
-            },
-            [15] = 
-            {
-                [1] = 0.3819378018,
-                [2] = 0.5027511716,
-                [3] = 0.0690036027,
-                [4] = 0.6037836051,
-                [5] = 6228,
-                [6] = 500009,
-            },
-            [16] = 
-            {
-                [1] = 0.3727870882,
-                [2] = 0.5123803616,
-                [3] = 0.0689424027,
-                [4] = 0.6038480051,
-                [5] = 5406,
-                [6] = 500010,
-            },
-            [17] = 
-            {
-                [1] = 0.6059808731,
-                [2] = 0.6684210300,
-                [3] = 0.0705020028,
-                [4] = 0.6048916051,
-                [5] = 6800,
-                [6] = "Kishka",
-            },
-        },
-        ["murkmire/ui_map_blackroseprison01_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.5884308219,
-                [2] = 0.8394281864,
-                [3] = 0.7198895972,
-                [4] = 0.7760988019,
-                [5] = 6269,
-                [6] = "Blackrose Barracks",
-            },
-            [2] = 
-            {
-                [1] = 0.6060505509,
-                [2] = 0.8756648898,
-                [3] = 0.7199107972,
-                [4] = 0.7761424019,
-                [5] = 6269,
-                [6] = "Blackrose Barracks",
-            },
-        },
-        ["deadlands/u32_theshambles_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.4163259268,
-                [2] = 0.4221386611,
-                [3] = 0.8892432295,
-                [4] = 0.9762135999,
-                [5] = 6731,
-                [6] = 96001,
-            },
-        },
-        ["grahtwood/grahtwood_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.5837756395,
-                [2] = 0.1639933735,
-                [3] = 0.4694054597,
-                [4] = 0.6614209778,
-                [5] = 6344,
-                [6] = 100097,
-            },
-            [2] = 
-            {
-                [1] = 0.5839115977,
-                [2] = 0.1635450125,
-                [3] = 0.4694259396,
-                [4] = 0.6613534394,
-                [5] = 6329,
-                [6] = 100097,
-            },
-        },
-        ["apocrypha/u40_tomehold_bundle1_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.5919117928,
-                [2] = 0.3529411852,
-                [3] = 0.1761439982,
-                [4] = -0.0309115952,
-                [5] = 7189,
-                [6] = "Tanlorin",
-            },
-        },
-        ["auridon/mehrunesspite_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.2792481780,
-                [2] = 0.4322976470,
-                [3] = 0.1675111965,
-                [4] = 0.6299436044,
-                [5] = 4532,
-                [6] = 38329,
-            },
-        },
-        ["auridon/auridon_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.2054381967,
-                [2] = 0.2426114529,
-                [3] = 0.1696731969,
-                [4] = 0.6351872149,
-                [5] = 7228,
-                [6] = "Priest Maxien Roudille",
-            },
-            [2] = 
-            {
-                [1] = 0.2044427544,
-                [2] = 0.2430015206,
-                [3] = 0.1695159966,
-                [4] = 0.6352488144,
-                [5] = 6695,
-                [6] = 100206,
-            },
-        },
-        ["systres/u34_systreszone_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.4310576320,
-                [2] = 0.7823548913,
-                [3] = 0.0630793730,
-                [4] = 0.5943785937,
-                [5] = 6772,
-                [6] = 100250,
-            },
-        },
-        ["grahtwood/eldenrootcrafting_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.7344808578,
-                [2] = 0.4091803133,
-                [3] = 0.4352984143,
-                [4] = 0.7265107849,
-                [5] = 6103,
-                [6] = 500010,
-            },
-        },
-        ["summerset/collegeofpsijicsruins_btm_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.6006641984,
-                [2] = 0.4383577704,
-                [3] = 0.8433891891,
-                [4] = -0.0270792048,
-                [5] = 6136,
-                [6] = 100127,
-            },
-        },
-        ["blackwood/u30_leyawiincity_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.1766415089,
-                [2] = 0.5737919807,
-                [3] = 0.5979344047,
-                [4] = 0.6798976071,
-                [5] = 5987,
-                [6] = "Sealed Alchemy Writ",
-            },
-            [2] = 
-            {
-                [1] = 0.2414819300,
-                [2] = 0.7383418679,
-                [3] = 0.5990412048,
-                [4] = 0.6827064080,
-                [5] = 6485,
-                [6] = "Deep Winter Charity Writ",
-            },
-            [3] = 
-            {
-                [1] = 0.2408492267,
-                [2] = 0.7399119139,
-                [3] = 0.5990304048,
-                [4] = 0.6827332080,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-        },
-        ["cyrodiil/eastelsweyrgate_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.4540514946,
-                [2] = 0.4808547795,
-                [3] = 0.5688672212,
-                [4] = 0.5597859916,
-                [5] = 2922,
-                [6] = 100077,
-            },
-            [2] = 
-            {
-                [1] = 0.5079133511,
-                [2] = 0.4310407639,
-                [3] = 0.5694580211,
-                [4] = 0.5592395916,
-                [5] = 6392,
-                [6] = 100061,
-            },
-        },
-        ["housing/u42_colovianwinery_ext_01_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.3014846444,
-                [2] = 0.5844480395,
-                [3] = 0.4208368114,
-                [4] = 0.4499636117,
-                [5] = 5976,
-                [6] = "Sealed Woodworking Writ",
-            },
-        },
-        ["craglorn/craglorn_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.6538664699,
-                [2] = 0.5531708002,
-                [3] = 0.4398174800,
-                [4] = 0.3763625596,
-                [5] = 7207,
-                [6] = "Zerith-var",
-            },
-            [2] = 
-            {
-                [1] = 0.5222671032,
-                [2] = 0.6431055665,
-                [3] = 0.4117080185,
-                [4] = 0.3750719938,
-                [5] = 6695,
-                [6] = 100206,
-            },
-            [3] = 
-            {
-                [1] = 0.6840807199,
-                [2] = 0.5734534264,
-                [3] = 0.4435057335,
-                [4] = 0.3788384598,
-                [5] = 7221,
-                [6] = "Zerith-var",
+                [1] = 0.4992711246,
+                [2] = 0.4650145769,
+                [3] = 0.7939131805,
+                [4] = 0.5855252052,
+                [5] = 4556,
+                [6] = 38996,
             },
         },
         ["grahtwood/eldenrootgroundfloor_base_0"] = 
@@ -1859,16 +2094,142 @@ LibQuestData_SavedVariables =
                 [6] = "Sealed Alchemy Writ",
             },
         },
-        ["shadowfen/atanazruins_base_0"] = 
+        ["auridon/mehrunesspite_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.4992711246,
-                [2] = 0.4650145769,
-                [3] = 0.7939131805,
-                [4] = 0.5855252052,
-                [5] = 4556,
-                [6] = 38996,
+                [1] = 0.2792481780,
+                [2] = 0.4322976470,
+                [3] = 0.1675111965,
+                [4] = 0.6299436044,
+                [5] = 4532,
+                [6] = 38329,
+            },
+        },
+        ["blackwood/u30_leyawiincity_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.1766415089,
+                [2] = 0.5737919807,
+                [3] = 0.5979344047,
+                [4] = 0.6798976071,
+                [5] = 5987,
+                [6] = "Sealed Alchemy Writ",
+            },
+            [2] = 
+            {
+                [1] = 0.2414819300,
+                [2] = 0.7383418679,
+                [3] = 0.5990412048,
+                [4] = 0.6827064080,
+                [5] = 6485,
+                [6] = "Deep Winter Charity Writ",
+            },
+            [3] = 
+            {
+                [1] = 0.2408492267,
+                [2] = 0.7399119139,
+                [3] = 0.5990304048,
+                [4] = 0.6827332080,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+        },
+        ["murkmire/ui_map_blackroseprison01_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.5884308219,
+                [2] = 0.8394281864,
+                [3] = 0.7198895972,
+                [4] = 0.7760988019,
+                [5] = 6269,
+                [6] = "Blackrose Barracks",
+            },
+            [2] = 
+            {
+                [1] = 0.6060505509,
+                [2] = 0.8756648898,
+                [3] = 0.7199107972,
+                [4] = 0.7761424019,
+                [5] = 6269,
+                [6] = "Blackrose Barracks",
+            },
+        },
+        ["murkmire/lilmothcity_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.4435080588,
+                [2] = 0.6370046139,
+                [3] = 0.7679468142,
+                [4] = 0.8028968120,
+                [5] = 6268,
+                [6] = 100132,
+            },
+        },
+        ["cyrodiil/eastelsweyrgate_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.4540514946,
+                [2] = 0.4808547795,
+                [3] = 0.5688672212,
+                [4] = 0.5597859916,
+                [5] = 2922,
+                [6] = 100077,
+            },
+            [2] = 
+            {
+                [1] = 0.5079133511,
+                [2] = 0.4310407639,
+                [3] = 0.5694580211,
+                [4] = 0.5592395916,
+                [5] = 6392,
+                [6] = 100061,
+            },
+        },
+        ["eastmarch/eastmarch_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.4878425002,
+                [2] = 0.3859024942,
+                [3] = 0.6044912591,
+                [4] = 0.2977449268,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [2] = 
+            {
+                [1] = 0.4870299995,
+                [2] = 0.3827449977,
+                [3] = 0.6043745222,
+                [4] = 0.2972912703,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+        },
+        ["coldharbor/hollowcity_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.5566938519,
+                [2] = 0.3477755189,
+                [3] = -0.0992376028,
+                [4] = 0.2565868032,
+                [5] = 5409,
+                [6] = 500010,
+            },
+            [2] = 
+            {
+                [1] = 0.5566938519,
+                [2] = 0.3477755189,
+                [3] = -0.0992376028,
+                [4] = 0.2565868032,
+                [5] = 6098,
+                [6] = 500010,
             },
         },
         ["grahtwood/eldenrootfightersguildown_base_0"] = 
@@ -1919,881 +2280,506 @@ LibQuestData_SavedVariables =
                 [6] = 80010,
             },
         },
-        ["eastmarch/eastmarch_base_0"] = 
+        ["housing/snowglobe_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.4878425002,
-                [2] = 0.3859024942,
-                [3] = 0.6044912591,
-                [4] = 0.2977449268,
-                [5] = 6592,
+                [1] = 0.7080665827,
+                [2] = 0.6679470539,
+                [3] = 0.6320988155,
+                [4] = 0.2813951991,
+                [5] = 6593,
                 [6] = "Imperial Charity Writ",
             },
             [2] = 
             {
-                [1] = 0.4870299995,
-                [2] = 0.3827449977,
-                [3] = 0.6043745222,
-                [4] = 0.2972912703,
+                [1] = 0.7119078040,
+                [2] = 0.6850191951,
+                [3] = 0.6321024155,
+                [4] = 0.2814111991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [3] = 
+            {
+                [1] = 0.7106273770,
+                [2] = 0.6696543097,
+                [3] = 0.6321012154,
+                [4] = 0.2813967991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [4] = 
+            {
+                [1] = 0.7089201808,
+                [2] = 0.6769099236,
+                [3] = 0.6320996155,
+                [4] = 0.2814035991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [5] = 
+            {
+                [1] = 0.7020913363,
+                [2] = 0.6769099236,
+                [3] = 0.6320932155,
+                [4] = 0.2814035991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [6] = 
+            {
+                [1] = 0.7089201808,
+                [2] = 0.6747759581,
+                [3] = 0.6320996155,
+                [4] = 0.2814015991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [7] = 
+            {
+                [1] = 0.7183098793,
+                [2] = 0.6811779737,
+                [3] = 0.6321084155,
+                [4] = 0.2814075991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [8] = 
+            {
+                [1] = 0.7020913363,
+                [2] = 0.6760563254,
+                [3] = 0.6320932155,
+                [4] = 0.2814027991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [9] = 
+            {
+                [1] = 0.7093470097,
+                [2] = 0.6790439487,
+                [3] = 0.6321000155,
+                [4] = 0.2814055991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [10] = 
+            {
+                [1] = 0.6995305419,
+                [2] = 0.6786171794,
+                [3] = 0.6320908155,
+                [4] = 0.2814051991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [11] = 
+            {
+                [1] = 0.7050789595,
+                [2] = 0.6816048026,
+                [3] = 0.6320960155,
+                [4] = 0.2814079991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [12] = 
+            {
+                [1] = 0.7020913363,
+                [2] = 0.6794707775,
+                [3] = 0.6320932155,
+                [4] = 0.2814059991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [13] = 
+            {
+                [1] = 0.7016645074,
+                [2] = 0.6811779737,
+                [3] = 0.6320928154,
+                [4] = 0.2814075991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [14] = 
+            {
+                [1] = 0.7042253613,
+                [2] = 0.6790439487,
+                [3] = 0.6320952155,
+                [4] = 0.2814055991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [15] = 
+            {
+                [1] = 0.7059325576,
+                [2] = 0.6769099236,
+                [3] = 0.6320968154,
+                [4] = 0.2814035991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [16] = 
+            {
+                [1] = 0.7033717632,
+                [2] = 0.6820315719,
+                [3] = 0.6320944155,
+                [4] = 0.2814083991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [17] = 
+            {
+                [1] = 0.7055057883,
+                [2] = 0.6803243756,
+                [3] = 0.6320964155,
+                [4] = 0.2814067991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [18] = 
+            {
+                [1] = 0.7003841400,
+                [2] = 0.6764831543,
+                [3] = 0.6320916155,
+                [4] = 0.2814031991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [19] = 
+            {
+                [1] = 0.7042253613,
+                [2] = 0.6803243756,
+                [3] = 0.6320952155,
+                [4] = 0.2814067991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [20] = 
+            {
+                [1] = 0.7050789595,
+                [2] = 0.6790439487,
+                [3] = 0.6320960155,
+                [4] = 0.2814055991,
+                [5] = 5973,
+                [6] = "Sealed Enchanting Writ",
+            },
+            [21] = 
+            {
+                [1] = 0.7050789595,
+                [2] = 0.6790439487,
+                [3] = 0.6320960155,
+                [4] = 0.2814055991,
+                [5] = 5982,
+                [6] = "Sealed Alchemy Writ",
+            },
+            [22] = 
+            {
+                [1] = 0.7238582969,
+                [2] = 0.6572769880,
+                [3] = 0.6321136155,
+                [4] = 0.2813851991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [23] = 
+            {
+                [1] = 0.7033717632,
+                [2] = 0.6790439487,
+                [3] = 0.6320944155,
+                [4] = 0.2814055991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [24] = 
+            {
+                [1] = 0.7037985325,
+                [2] = 0.6820315719,
+                [3] = 0.6320948154,
+                [4] = 0.2814083991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [25] = 
+            {
+                [1] = 0.6999573112,
+                [2] = 0.6790439487,
+                [3] = 0.6320912154,
+                [4] = 0.2814055991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [26] = 
+            {
+                [1] = 0.6991037130,
+                [2] = 0.6798975468,
+                [3] = 0.6320904155,
+                [4] = 0.2814063991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [27] = 
+            {
+                [1] = 0.7119078040,
+                [2] = 0.6850191951,
+                [3] = 0.6321024155,
+                [4] = 0.2814111991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [28] = 
+            {
+                [1] = 0.7076397538,
+                [2] = 0.6811779737,
+                [3] = 0.6320984154,
+                [4] = 0.2814075991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [29] = 
+            {
+                [1] = 0.7080665827,
+                [2] = 0.6820315719,
+                [3] = 0.6320988155,
+                [4] = 0.2814083991,
                 [5] = 6595,
                 [6] = "Imperial Charity Writ",
             },
         },
-    },
-    ["strored_data"] = 
-    {
-    },
-    ["quests"] = 
-    {
-        ["blackwood/blackwood_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Harrada Harvest",
-                ["gpsx"] = 0.6730100994,
-                ["x"] = 0.5823624134,
-                ["zone_name"] = "Blackwood",
-                ["lang"] = "en",
-                ["giver"] = "Adrahawn",
-                ["gpsy"] = 0.6895402718,
-                ["y"] = 0.6516878009,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 836,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 32,
-                ["questID"] = -1,
-            },
-        },
-        ["deshaan/mournhold_base_0"] = 
-        {
-        },
-        ["auridon/skywatch_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101043,
-                ["name"] = "Circus of Cheerful Slaughter",
-                ["gpsx"] = 0.2448463966,
-                ["x"] = 0.5029646158,
-                ["zone_name"] = "",
-                ["lang"] = "en",
-                ["giver"] = "Arch-Mage Shalidor",
-                ["gpsy"] = 0.6735467975,
-                ["y"] = 0.3790257275,
-                ["quest_type"] = 3,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 294967291,
-                ["quest_display_type"] = 1,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-        },
         ["grahtwood/eldenrootmagesguilddown_base_0"] = 
         {
+            [1] = 
+            {
+                [1] = 0.6333879828,
+                [2] = 0.3665027320,
+                [3] = 0.4364764025,
+                [4] = 0.7206028202,
+                [5] = 5814,
+                [6] = 80011,
+            },
+            [2] = 
+            {
+                [1] = 0.6334426403,
+                [2] = 0.3575409949,
+                [3] = 0.4364768026,
+                [4] = 0.7205372203,
+                [5] = 5823,
+                [6] = 80011,
+            },
+            [3] = 
+            {
+                [1] = 0.6449726820,
+                [2] = 0.3667213023,
+                [3] = 0.4365612025,
+                [4] = 0.7206044201,
+                [5] = 5827,
+                [6] = 80011,
+            },
+            [4] = 
+            {
+                [1] = 0.6432787180,
+                [2] = 0.3693989217,
+                [3] = 0.4365488027,
+                [4] = 0.7206240203,
+                [5] = 5830,
+                [6] = 80011,
+            },
+            [5] = 
+            {
+                [1] = 0.6327868700,
+                [2] = 0.3689617515,
+                [3] = 0.4364720023,
+                [4] = 0.7206208202,
+                [5] = 5825,
+                [6] = 80011,
+            },
         },
-        ["skyrim/solitudecity_base_0"] = 
-        {
-        },
-        ["housing/snowglobe_base_0"] = 
-        {
-        },
-        ["eastmarch/hallofthedead_base_0"] = 
-        {
-        },
-        ["stonefalls/davonswatch_base_0"] = 
+        ["cyrodiil/ava_whole_0"] = 
         {
             [1] = 
             {
-                ["api"] = 101044,
-                ["name"] = "One of the Undaunted",
-                ["gpsx"] = 0.7918684003,
-                ["x"] = 0.7975910902,
-                ["zone_name"] = "Stonefalls",
-                ["lang"] = "en",
-                ["giver"] = "Kailstig the Axe",
-                ["gpsy"] = 0.4287240092,
-                ["y"] = 0.4744977951,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 9,
-                ["quest_display_type"] = 2,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
+                [1] = 0.7078089118,
+                [2] = 0.6480777860,
+                [3] = 0.6069954176,
+                [4] = 0.5328698465,
+                [5] = 2930,
+                [6] = "Unknown Target",
             },
         },
         ["housing/u42_colovianwinery_ext_01_0"] = 
         {
-        },
-        ["rivenspire/rivenspire_base_0"] = 
-        {
-        },
-        ["grahtwood/grahtwood_base_0"] = 
-        {
-        },
-        ["craglorn/craglorn_base_0"] = 
-        {
-        },
-        ["summerset/alinor_base_0"] = 
-        {
-        },
-        ["wrothgar/wrothgar_base_0"] = 
-        {
-        },
-        ["darkbrotherhood/kvatchcity_base_0"] = 
-        {
+            [1] = 
+            {
+                [1] = 0.3014846444,
+                [2] = 0.5844480395,
+                [3] = 0.4208368114,
+                [4] = 0.4499636117,
+                [5] = 5976,
+                [6] = "Sealed Woodworking Writ",
+            },
         },
         ["telvanni/u38_necrom_base_0"] = 
         {
-            [2] = 
-            {
-                ["api"] = 101043,
-                ["name"] = "Bastion Nymic - Writhing Wastes",
-                ["gpsx"] = 0.9407952149,
-                ["x"] = 0.5231278539,
-                ["zone_name"] = "Apocrypha",
-                ["lang"] = "en",
-                ["giver"] = "Ordinator Tandasea",
-                ["gpsy"] = 0.3882076065,
-                ["y"] = 0.5646120310,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 958,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
             [1] = 
             {
-                ["api"] = 101043,
-                ["name"] = "Arcane Residue",
-                ["gpsx"] = 0.9406716169,
-                ["x"] = 0.5204422474,
-                ["zone_name"] = "Apocrypha",
-                ["lang"] = "en",
-                ["giver"] = "Ordinator Nelyn",
-                ["gpsy"] = 0.3887752051,
-                ["y"] = 0.5769451261,
-                ["quest_type"] = 1,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 958,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-        },
-        ["murkmire/ui_map_blackroseprison01_base_0"] = 
-        {
-        },
-        ["reach/reach_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101043,
-                ["name"] = "A Challenge of Worth",
-                ["gpsx"] = 0.3778661574,
-                ["x"] = 0.3086277246,
-                ["zone_name"] = "The Reach",
-                ["lang"] = "en",
-                ["giver"] = "Angair",
-                ["gpsy"] = 0.3038548818,
-                ["y"] = 0.5125017762,
-                ["quest_type"] = 1,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 784,
-                ["quest_display_type"] = 3,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-        },
-        ["vvardenfell/forgottenwastesext_base_0"] = 
-        {
-        },
-        ["vvardenfell/viviccity_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Test of Mettle",
-                ["gpsx"] = 0.7663275726,
-                ["x"] = 0.2248040587,
-                ["zone_name"] = "",
-                ["lang"] = "en",
-                ["giver"] = "Battlemaster Rivyn",
-                ["gpsy"] = 0.3831359981,
-                ["y"] = 0.5648705959,
-                ["quest_type"] = 13,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 294967291,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-        },
-        ["deadlands/u32_fargrave_base_0"] = 
-        {
-        },
-        ["apocrypha/u40_tomehold_bundle1_0"] = 
-        {
-        },
-        ["auridon/mehrunesspite_base_0"] = 
-        {
-        },
-        ["southernelsweyr/southernelsweyr_base_0"] = 
-        {
-        },
-        ["grahtwood/eldenrootgroundfloor_base_0"] = 
-        {
-            [2] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Pledge: City of Ash II",
-                ["gpsx"] = 0.4362952095,
-                ["x"] = 0.5633470416,
-                ["zone_name"] = "Greenshade",
-                ["lang"] = "en",
-                ["giver"] = "Glirion the Redbeard",
-                ["gpsy"] = 0.7360156241,
-                ["y"] = 0.6666182876,
-                ["quest_type"] = 15,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 18,
-                ["quest_display_type"] = 2,
-                ["poi_index"] = 58,
-                ["questID"] = -1,
-            },
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Pledge: Banished Cells II",
-                ["gpsx"] = 0.4366432095,
-                ["x"] = 0.5748274922,
-                ["zone_name"] = "Auridon",
-                ["lang"] = "en",
-                ["giver"] = "Maj al-Ragath",
-                ["gpsy"] = 0.7358528242,
-                ["y"] = 0.6612475514,
-                ["quest_type"] = 15,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 179,
-                ["quest_display_type"] = 2,
-                ["poi_index"] = 61,
-                ["questID"] = -1,
-            },
-        },
-        ["skyrim/blackreach_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101043,
-                ["name"] = "The Gathering Storm",
-                ["gpsx"] = 0.6494880198,
-                ["x"] = 0.3020680845,
-                ["zone_name"] = "Western Skyrim",
-                ["lang"] = "en",
-                ["giver"] = "Letter from the Skald-King's Agent",
-                ["gpsy"] = 1.5565960403,
-                ["y"] = 0.6974254847,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 744,
-                ["quest_display_type"] = 10,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
+                [1] = 0.5337488055,
+                [2] = 0.6951484680,
+                [3] = 0.9412840166,
+                [4] = 0.3942152067,
+                [5] = 6695,
+                [6] = 100206,
             },
             [2] = 
             {
-                ["api"] = 101043,
-                ["name"] = "Digging Up Trouble",
-                ["gpsx"] = 0.6518496180,
-                ["x"] = 0.3313835859,
-                ["zone_name"] = "Western Skyrim",
-                ["lang"] = "en",
-                ["giver"] = "Overseer Urlvar",
-                ["gpsy"] = 1.5581068399,
-                ["y"] = 0.7161796689,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 744,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-            [3] = 
-            {
-                ["api"] = 101043,
-                ["name"] = "The Tones of the Deep",
-                ["gpsx"] = 0.6648664197,
-                ["x"] = 0.4929665625,
-                ["zone_name"] = "Western Skyrim",
-                ["lang"] = "en",
-                ["giver"] = "Kireth Vanos",
-                ["gpsy"] = 1.5543736389,
-                ["y"] = 0.6698378921,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 744,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
+                [1] = 0.5201119184,
+                [2] = 0.5778403282,
+                [3] = 0.9406564144,
+                [4] = 0.3888164045,
+                [5] = 7040,
+                [6] = 210005,
             },
         },
-        ["murkmire/lilmothcity_base_0"] = 
-        {
-        },
-        ["elsweyr/rimmen_base_0"] = 
-        {
-        },
-        ["cyrodiil/ava_whole_0"] = 
-        {
-        },
-        ["apocrypha/u40_tomehold_theater1_0"] = 
+        ["auridon/auridon_base_0"] = 
         {
             [1] = 
             {
-                ["api"] = 101043,
-                ["name"] = "Restoring the Resurrected",
-                ["gpsx"] = 0.1758624001,
-                ["x"] = 0.4733333290,
-                ["zone_name"] = "Infinite Archive",
-                ["lang"] = "en",
-                ["giver"] = "Destozuno",
-                ["gpsy"] = -0.0306603957,
-                ["y"] = 0.4399999976,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 974,
-                ["quest_display_type"] = 12,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-        },
-        ["deshaan/deshaan_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101043,
-                ["name"] = "Search and Rescue",
-                ["gpsx"] = 0.7800070256,
-                ["x"] = 0.4393571913,
-                ["zone_name"] = "Deshaan",
-                ["lang"] = "en",
-                ["giver"] = "Edrasa Drelas",
-                ["gpsy"] = 0.5297298972,
-                ["y"] = 0.6500750184,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 10,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 4,
-                ["questID"] = -1,
-            },
-        },
-        ["coldharbor/hollowcity_base_0"] = 
-        {
-        },
-        ["rivenspire/hildunessecretrefuge_base_0"] = 
-        {
-        },
-        ["grahtwood/eldenrootcrafting_base_0"] = 
-        {
-        },
-        ["darkbrotherhood/dbsanctuary_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Sacrament: Trader's Cove",
-                ["gpsx"] = 0.3401248054,
-                ["x"] = 0.1963317990,
-                ["zone_name"] = "Trader's Cove",
-                ["lang"] = "en",
-                ["giver"] = "Speaker Terenus",
-                ["gpsy"] = 0.5499279968,
-                ["y"] = 0.5298041105,
-                ["quest_type"] = 3,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 430,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-        },
-        ["apocrypha/u40_tomehold_starterarea_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101043,
-                ["name"] = "Infinite Avenger: Marauder",
-                ["gpsx"] = 0.1758663953,
-                ["x"] = 0.5764706135,
-                ["zone_name"] = "Infinite Archive",
-                ["lang"] = "en",
-                ["giver"] = "Esalinwe",
-                ["gpsy"] = -0.0311911934,
-                ["y"] = 0.5333333611,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 974,
-                ["quest_display_type"] = 12,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
+                [1] = 0.2054381967,
+                [2] = 0.2426114529,
+                [3] = 0.1696731969,
+                [4] = 0.6351872149,
+                [5] = 7228,
+                [6] = "Priest Maxien Roudille",
             },
             [2] = 
             {
-                ["api"] = 101043,
-                ["name"] = "Replication Elimination",
-                ["gpsx"] = 0.1758411953,
-                ["x"] = 0.4529411793,
-                ["zone_name"] = "Infinite Archive",
-                ["lang"] = "en",
-                ["giver"] = "Master Malkhest",
-                ["gpsy"] = -0.0311987934,
-                ["y"] = 0.4960784316,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 974,
-                ["quest_display_type"] = 12,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-            [3] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Infinite Avenger: Fabled",
-                ["gpsx"] = 0.1758663953,
-                ["x"] = 0.5764706135,
-                ["zone_name"] = "Infinite Archive",
-                ["lang"] = "en",
-                ["giver"] = "Esalinwe",
-                ["gpsy"] = -0.0311911934,
-                ["y"] = 0.5333333611,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 976,
-                ["quest_display_type"] = 12,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-        },
-        ["clockwork/brassfortress_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "The Precursor",
-                ["gpsx"] = 0.2388383956,
-                ["x"] = 0.2394223213,
-                ["zone_name"] = "Clockwork City",
-                ["lang"] = "en",
-                ["giver"] = "Associate Zanon",
-                ["gpsy"] = 1.0430363882,
-                ["y"] = 0.7084895968,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 591,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-        },
-        ["westweald/westwealdoverland_base_0"] = 
-        {
-        },
-        ["vvardenfell/vivechoj01a_base_0"] = 
-        {
-            [2] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Culling the Swarm",
-                ["gpsx"] = 0.7743740247,
-                ["x"] = 0.6039603949,
-                ["zone_name"] = "Vvardenfell",
-                ["lang"] = "en",
-                ["giver"] = "Beleru Omoril",
-                ["gpsy"] = 0.3827484036,
-                ["y"] = 0.3209039569,
-                ["quest_type"] = 1,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 469,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Unsettled Syndicate",
-                ["gpsx"] = 0.7744044247,
-                ["x"] = 0.6875687838,
-                ["zone_name"] = "Vvardenfell",
-                ["lang"] = "en",
-                ["giver"] = "Traylan Omoril",
-                ["gpsy"] = 0.3828780036,
-                ["y"] = 0.6870056391,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 469,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-        },
-        ["deshaan/desolatecave_base_0"] = 
-        {
-        },
-        ["galen/u36_vastyrcity_base_0"] = 
-        {
-        },
-        ["cyrodiil/eastelsweyrgate_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Scout Arrius Farm",
-                ["gpsx"] = 0.5695340211,
-                ["x"] = 0.5148420930,
-                ["zone_name"] = "Cyrodiil",
-                ["lang"] = "en",
-                ["giver"] = "Scouting Mission Board",
-                ["gpsy"] = 0.5591815918,
-                ["y"] = 0.4257530570,
-                ["quest_type"] = 7,
-                ["repeat_type"] = 1,
-                ["zone_index"] = 38,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
+                [1] = 0.2044427544,
+                [2] = 0.2430015206,
+                [3] = 0.1695159966,
+                [4] = 0.6352488144,
+                [5] = 6695,
+                [6] = 100206,
             },
         },
         ["systres/u34_systreszone_base_0"] = 
         {
             [1] = 
             {
-                ["api"] = 101044,
-                ["name"] = "The Intoxicating Mix",
-                ["gpsx"] = 0.0633330759,
-                ["x"] = 0.4388638735,
-                ["zone_name"] = "High Isle",
-                ["lang"] = "en",
-                ["giver"] = "Genalda Ervine",
-                ["gpsy"] = 0.5952501735,
-                ["y"] = 0.8088064790,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 885,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-            [2] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Balki's Map Fragment",
-                ["gpsx"] = 0.0623421534,
-                ["x"] = 0.4083739519,
-                ["zone_name"] = "High Isle",
-                ["lang"] = "en",
-                ["giver"] = "Balki's Instructions",
-                ["gpsy"] = 0.5960106847,
-                ["y"] = 0.8318872452,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 885,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-            [3] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Coral Conundrum",
-                ["gpsx"] = 0.0829260026,
-                ["x"] = 0.8190205097,
-                ["zone_name"] = "High Isle",
-                ["lang"] = "en",
-                ["giver"] = "Sergeant Brusic",
-                ["gpsy"] = 0.5731752020,
-                ["y"] = 0.2036462873,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 885,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
+                [1] = 0.4310576320,
+                [2] = 0.7823548913,
+                [3] = 0.0630793730,
+                [4] = 0.5943785937,
+                [5] = 6772,
+                [6] = 100250,
             },
         },
         ["deshaan/kwamacolony_base_0"] = 
         {
+            [1] = 
+            {
+                [1] = 0.5588914752,
+                [2] = 0.4730561972,
+                [3] = 0.7311927800,
+                [4] = 0.5028352099,
+                [5] = 4494,
+                [6] = 30138,
+            },
         },
-        ["murkmire/rootwhisper_base_0"] = 
-        {
-        },
-        ["auridon/auridon_base_0"] = 
-        {
-        },
-        ["rivenspire/erokii_base_0"] = 
-        {
-        },
-        ["grahtwood/rootsunder_base_0"] = 
-        {
-        },
-        ["elsweyr/riverholdcity_base_0"] = 
+        ["westweald/westwealdoverland_base_0"] = 
         {
             [1] = 
             {
-                ["api"] = 101044,
-                ["name"] = "The Song of Kingdoms",
-                ["gpsx"] = 0.5266655984,
-                ["x"] = 0.3704067171,
-                ["zone_name"] = "Northern Elsweyr",
-                ["lang"] = "en",
-                ["giver"] = "Iraya",
-                ["gpsy"] = 0.6012324028,
-                ["y"] = 0.5147333145,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 683,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
+                [1] = 0.7202926874,
+                [2] = 0.6991505623,
+                [3] = 0.4607433568,
+                [4] = 0.5437792397,
+                [5] = 7219,
+                [6] = "Belienne",
             },
         },
-        ["cyrodiil/imperialcity_base_0"] = 
-        {
-        },
-        ["eastmarch/eastmarch_base_0"] = 
-        {
-            [2] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Stonetooth Bash",
-                ["gpsx"] = 0.6043691356,
-                ["x"] = 0.4869925082,
-                ["zone_name"] = "Eastmarch",
-                ["lang"] = "en",
-                ["giver"] = "Breda",
-                ["gpsy"] = 0.2970516906,
-                ["y"] = 0.3810774982,
-                ["quest_type"] = 12,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 15,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Old Life Observance",
-                ["gpsx"] = 0.6043960729,
-                ["x"] = 0.4871799946,
-                ["zone_name"] = "Eastmarch",
-                ["lang"] = "en",
-                ["giver"] = "Petronius Galenus",
-                ["gpsy"] = 0.2967180038,
-                ["y"] = 0.3787550032,
-                ["quest_type"] = 12,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 15,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-        },
-        ["clockwork/clockwork_base_0"] = 
+        ["apocrypha/u40_tomehold_bundle1_0"] = 
         {
             [1] = 
             {
-                ["api"] = 101044,
-                ["name"] = "The Astronomer's Apprentice",
-                ["gpsx"] = 0.2752547984,
-                ["x"] = 0.5892823339,
-                ["zone_name"] = "Clockwork City",
-                ["lang"] = "en",
-                ["giver"] = "Amili Lloryn",
-                ["gpsy"] = 1.0805732101,
-                ["y"] = 0.6026043296,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 591,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 7,
-                ["questID"] = -1,
+                [1] = 0.5919117928,
+                [2] = 0.3529411852,
+                [3] = 0.1761439982,
+                [4] = -0.0309115952,
+                [5] = 7189,
+                [6] = "Tanlorin",
             },
         },
-        ["alikr/lostcity_base_0"] = 
-        {
-        },
-        ["westweald/u42_skingrad_base_0"] = 
+        ["grahtwood/grahtwood_base_0"] = 
         {
             [1] = 
             {
-                ["api"] = 101043,
-                ["name"] = "Fate-Eater",
-                ["gpsx"] = 0.4425452092,
-                ["x"] = 0.6216394901,
-                ["zone_name"] = "West Weald",
-                ["lang"] = "en",
-                ["giver"] = "Lieutenant Agrance",
-                ["gpsy"] = 0.5269795953,
-                ["y"] = 0.5734216571,
-                ["quest_type"] = 1,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 981,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
+                [1] = 0.5837756395,
+                [2] = 0.1639933735,
+                [3] = 0.4694054597,
+                [4] = 0.6614209778,
+                [5] = 6344,
+                [6] = 100097,
             },
             [2] = 
             {
-                ["api"] = 101043,
-                ["name"] = "Loan Recall",
-                ["gpsx"] = 0.4425620096,
-                ["x"] = 0.6222179532,
-                ["zone_name"] = "West Weald",
-                ["lang"] = "en",
-                ["giver"] = "Commandant Salerius",
-                ["gpsy"] = 0.5271139952,
-                ["y"] = 0.5780492425,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 981,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
+                [1] = 0.5839115977,
+                [2] = 0.1635450125,
+                [3] = 0.4694259396,
+                [4] = 0.6613534394,
+                [5] = 6329,
+                [6] = 100097,
             },
-        },
-        ["grahtwood/eldenrootfightersguildown_base_0"] = 
-        {
         },
         ["deadlands/u32_theshambles_base_0"] = 
         {
-        },
-        ["deshaan/forgottencrypts_base_0"] = 
-        {
             [1] = 
             {
-                ["api"] = 101044,
-                ["name"] = "A Family Divided",
-                ["gpsx"] = 0.7259988247,
-                ["x"] = 0.3667625785,
-                ["zone_name"] = "Deshaan",
-                ["lang"] = "en",
-                ["giver"] = "Sela",
-                ["gpsy"] = 0.4978143911,
-                ["y"] = 0.7415827513,
-                ["quest_type"] = 5,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 10,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 20,
-                ["questID"] = -1,
-            },
-        },
-        ["summerset/collegeofpsijicsruins_btm_base_0"] = 
-        {
-        },
-        ["westweald/u42_leftwheal_ext2_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Caught in a Trap",
-                ["gpsx"] = 0.3703444083,
-                ["x"] = 0.8442267776,
-                ["zone_name"] = "West Weald",
-                ["lang"] = "en",
-                ["giver"] = "Baroness Eliana Cossa",
-                ["gpsy"] = 0.5057219938,
-                ["y"] = 0.9304640889,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 983,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 14,
-                ["questID"] = -1,
-            },
-        },
-        ["systres/u34_amenosstation_city_base_0"] = 
-        {
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "The Long Game",
-                ["gpsx"] = 0.0760964033,
-                ["x"] = 0.5209242105,
-                ["zone_name"] = "High Isle",
-                ["lang"] = "en",
-                ["giver"] = "Marcelle Dantaine",
-                ["gpsy"] = 0.5866096125,
-                ["y"] = 0.6786675453,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 885,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 8,
-                ["questID"] = -1,
-            },
-        },
-        ["deshaan/deepcragden_base_0"] = 
-        {
-        },
-        ["systres/gravendeep_island_map_0"] = 
-        {
-        },
-        ["thievesguild/abahslanding_base_0"] = 
-        {
-        },
-        ["shadowfen/atanazruins_base_0"] = 
-        {
-        },
-        ["blackwood/u30_leyawiincity_base_0"] = 
-        {
-        },
-        ["systres/u34_gonfalonbaycity_base_0"] = 
-        {
-            [2] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Cards Across the Continent",
-                ["gpsx"] = 0.0704940026,
-                ["x"] = 0.6047846675,
-                ["zone_name"] = "High Isle",
-                ["lang"] = "en",
-                ["giver"] = "Kishka",
-                ["gpsy"] = 0.6048820052,
-                ["y"] = 0.6669856310,
-                ["quest_type"] = 17,
-                ["repeat_type"] = 2,
-                ["zone_index"] = 885,
-                ["quest_display_type"] = 0,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
-            },
-            [1] = 
-            {
-                ["api"] = 101044,
-                ["name"] = "Of Knights and Knaves",
-                ["gpsx"] = 0.0695968028,
-                ["x"] = 0.4706339836,
-                ["zone_name"] = "High Isle",
-                ["lang"] = "en",
-                ["giver"] = "Jakarn",
-                ["gpsy"] = 0.6031220053,
-                ["y"] = 0.4038277566,
-                ["quest_type"] = 0,
-                ["repeat_type"] = 0,
-                ["zone_index"] = 885,
-                ["quest_display_type"] = 10,
-                ["poi_index"] = 294967291,
-                ["questID"] = -1,
+                [1] = 0.4163259268,
+                [2] = 0.4221386611,
+                [3] = 0.8892432295,
+                [4] = 0.9762135999,
+                [5] = 6731,
+                [6] = 96001,
             },
         },
     },
-    ["effective_lang"] = "en",
+    ["reward_info"] = 
+    {
+        [5856] = 
+        {
+            [1] = 1,
+            [2] = 7,
+            [3] = 7,
+            [4] = 11,
+        },
+        [5839] = 
+        {
+            [1] = 1,
+            [2] = 7,
+            [3] = 7,
+        },
+        [5845] = 
+        {
+            [1] = 1,
+            [2] = 7,
+            [3] = 7,
+        },
+        [5837] = 
+        {
+            [1] = 1,
+            [2] = 7,
+            [3] = 7,
+        },
+        [6837] = 
+        {
+            [1] = 1,
+            [2] = 7,
+            [3] = 9,
+        },
+        [5855] = 
+        {
+            [1] = 1,
+            [2] = 7,
+            [3] = 7,
+        },
+    },
     ["quest_info"] = 
     {
         [5377] = 
@@ -2876,25 +2862,25 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5394] = 
+        [7186] = 
         {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5395] = 
-        {
-            [1] = 4,
-            [2] = 2,
+            [1] = 16,
+            [2] = 0,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
-            [7] = 0,
+            [7] = 11,
+        },
+        [7187] = 
+        {
+            [1] = 16,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 11,
         },
         [5396] = 
         {
@@ -3036,22 +3022,22 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [7219] = 
+        [6451] = 
         {
-            [1] = 0,
-            [2] = 0,
+            [1] = 4,
+            [2] = 1,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
             [7] = 0,
         },
-        [5368] = 
+        [6136] = 
         {
-            [1] = 4,
-            [2] = 2,
+            [1] = 0,
+            [2] = 0,
             [3] = 101044,
-            [4] = 10001,
+            [4] = 10000,
             [5] = 10000,
             [6] = 0,
             [7] = 0,
@@ -3086,17 +3072,7 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6743] = 
-        {
-            [1] = 15,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [5733] = 
+        [5738] = 
         {
             [1] = 3,
             [2] = 2,
@@ -3106,9 +3082,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6202] = 
+        [5735] = 
         {
-            [1] = 0,
+            [1] = 3,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -3116,10 +3092,20 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6485] = 
+        [4410] = 
         {
-            [1] = 4,
-            [2] = 1,
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5733] = 
+        {
+            [1] = 3,
+            [2] = 2,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
@@ -3146,17 +3132,7 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5735] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5977] = 
+        [6489] = 
         {
             [1] = 4,
             [2] = 1,
@@ -3166,9 +3142,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5492] = 
+        [5719] = 
         {
-            [1] = 7,
+            [1] = 3,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -3176,19 +3152,29 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6392] = 
+        [5973] = 
         {
-            [1] = 7,
-            [2] = 2,
+            [1] = 4,
+            [2] = 1,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
-            [6] = 3,
+            [6] = 0,
             [7] = 0,
         },
-        [6888] = 
+        [5368] = 
         {
-            [1] = 0,
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5734] = 
+        {
+            [1] = 3,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -3206,11 +3192,11 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6237] = 
+        [5492] = 
         {
-            [1] = 0,
+            [1] = 7,
             [2] = 2,
-            [3] = 101043,
+            [3] = 101044,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
@@ -3226,14 +3212,14 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [2922] = 
+        [4840] = 
         {
-            [1] = 7,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
             [5] = 10000,
-            [6] = 3,
+            [6] = 0,
             [7] = 0,
         },
         [5703] = 
@@ -3246,11 +3232,11 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6268] = 
+        [6228] = 
         {
-            [1] = 0,
+            [1] = 4,
             [2] = 2,
-            [3] = 101043,
+            [3] = 101044,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
@@ -3306,29 +3292,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5500] = 
+        [3964] = 
         {
-            [1] = 7,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6528] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4410] = 
-        {
-            [1] = 0,
+            [1] = 5,
             [2] = 0,
             [3] = 101043,
             [4] = 10001,
@@ -3336,7 +3302,27 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6451] = 
+        [6269] = 
+        {
+            [1] = 5,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
+        },
+        [7219] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6450] = 
         {
             [1] = 4,
             [2] = 1,
@@ -3346,7 +3332,7 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6450] = 
+        [6016] = 
         {
             [1] = 4,
             [2] = 1,
@@ -3376,7 +3362,7 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5973] = 
+        [6485] = 
         {
             [1] = 4,
             [2] = 1,
@@ -3396,15 +3382,15 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5719] = 
+        [6743] = 
         {
-            [1] = 3,
+            [1] = 15,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
-            [7] = 0,
+            [7] = 2,
         },
         [5976] = 
         {
@@ -3416,7 +3402,7 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6489] = 
+        [5977] = 
         {
             [1] = 4,
             [2] = 1,
@@ -3456,20 +3442,20 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5981] = 
+        [6237] = 
         {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
+            [1] = 0,
+            [2] = 2,
+            [3] = 101043,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
             [7] = 0,
         },
-        [5982] = 
+        [5726] = 
         {
-            [1] = 4,
-            [2] = 1,
+            [1] = 3,
+            [2] = 2,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
@@ -3546,10 +3532,10 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5734] = 
+        [5990] = 
         {
-            [1] = 3,
-            [2] = 2,
+            [1] = 4,
+            [2] = 1,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
@@ -3566,12 +3552,12 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6018] = 
+        [4494] = 
         {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
             [5] = 10000,
             [6] = 0,
             [7] = 0,
@@ -3586,14 +3572,14 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5738] = 
+        [2922] = 
         {
-            [1] = 3,
-            [2] = 2,
+            [1] = 7,
+            [2] = 1,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
-            [6] = 0,
+            [6] = 3,
             [7] = 0,
         },
         [6763] = 
@@ -3656,15 +3642,15 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [7188] = 
+        [6803] = 
         {
-            [1] = 16,
-            [2] = 0,
+            [1] = 1,
+            [2] = 2,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
-            [7] = 11,
+            [7] = 0,
         },
         [2930] = 
         {
@@ -3696,7 +3682,7 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [7187] = 
+        [7188] = 
         {
             [1] = 16,
             [2] = 0,
@@ -3756,22 +3742,22 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [7186] = 
+        [5395] = 
         {
-            [1] = 16,
-            [2] = 0,
+            [1] = 4,
+            [2] = 2,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
-            [7] = 11,
+            [7] = 0,
         },
-        [3964] = 
+        [6268] = 
         {
-            [1] = 5,
-            [2] = 0,
+            [1] = 0,
+            [2] = 2,
             [3] = 101043,
-            [4] = 10001,
+            [4] = 10000,
             [5] = 10000,
             [6] = 0,
             [7] = 0,
@@ -3786,22 +3772,22 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
+        [5394] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
         [5900] = 
         {
             [1] = 0,
             [2] = 0,
             [3] = 101044,
             [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4494] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
             [5] = 10000,
             [6] = 0,
             [7] = 0,
@@ -3826,12 +3812,12 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [3970] = 
+        [6018] = 
         {
-            [1] = 5,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
             [5] = 10000,
             [6] = 0,
             [7] = 0,
@@ -3896,15 +3882,15 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 2,
         },
-        [6016] = 
+        [5248] = 
         {
-            [1] = 4,
-            [2] = 1,
+            [1] = 15,
+            [2] = 2,
             [3] = 101044,
-            [4] = 10000,
+            [4] = 10001,
             [5] = 10000,
             [6] = 0,
-            [7] = 0,
+            [7] = 2,
         },
         [5770] = 
         {
@@ -3996,9 +3982,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6803] = 
+        [5779] = 
         {
-            [1] = 1,
+            [1] = 3,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4006,9 +3992,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5791] = 
+        [6815] = 
         {
-            [1] = 3,
+            [1] = 0,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4026,9 +4012,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5794] = 
+        [6818] = 
         {
-            [1] = 3,
+            [1] = 0,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4116,9 +4102,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 2,
         },
-        [6815] = 
+        [5791] = 
         {
-            [1] = 0,
+            [1] = 3,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4146,9 +4132,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6818] = 
+        [5794] = 
         {
-            [1] = 0,
+            [1] = 3,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4166,15 +4152,15 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5796] = 
+        [5284] = 
         {
-            [1] = 3,
+            [1] = 15,
             [2] = 2,
             [3] = 101044,
-            [4] = 10000,
+            [4] = 10001,
             [5] = 10000,
             [6] = 0,
-            [7] = 0,
+            [7] = 2,
         },
         [6821] = 
         {
@@ -4186,9 +4172,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5798] = 
+        [6822] = 
         {
-            [1] = 3,
+            [1] = 0,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4196,10 +4182,10 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6081] = 
+        [6593] = 
         {
-            [1] = 1,
-            [2] = 2,
+            [1] = 4,
+            [2] = 1,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
@@ -4256,10 +4242,10 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 2,
         },
-        [6593] = 
+        [6081] = 
         {
-            [1] = 4,
-            [2] = 1,
+            [1] = 1,
+            [2] = 2,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
@@ -4386,11 +4372,11 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5838] = 
+        [7118] = 
         {
-            [1] = 12,
+            [1] = 1,
             [2] = 2,
-            [3] = 101044,
+            [3] = 101043,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
@@ -4546,9 +4532,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [7114] = 
+        [5834] = 
         {
-            [1] = 0,
+            [1] = 12,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4586,11 +4572,11 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [7118] = 
+        [5838] = 
         {
-            [1] = 1,
+            [1] = 12,
             [2] = 2,
-            [3] = 101043,
+            [3] = 101044,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
@@ -4616,9 +4602,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5834] = 
+        [7114] = 
         {
-            [1] = 12,
+            [1] = 0,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4656,9 +4642,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6101] = 
+        [6357] = 
         {
-            [1] = 4,
+            [1] = 0,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4706,9 +4692,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6357] = 
+        [6101] = 
         {
-            [1] = 0,
+            [1] = 4,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4736,9 +4722,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6822] = 
+        [5798] = 
         {
-            [1] = 0,
+            [1] = 3,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4746,15 +4732,15 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5284] = 
+        [5796] = 
         {
-            [1] = 15,
+            [1] = 3,
             [2] = 2,
             [3] = 101044,
-            [4] = 10001,
+            [4] = 10000,
             [5] = 10000,
             [6] = 0,
-            [7] = 2,
+            [7] = 0,
         },
         [5855] = 
         {
@@ -4846,12 +4832,12 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [4840] = 
+        [6888] = 
         {
             [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
             [5] = 10000,
             [6] = 0,
             [7] = 0,
@@ -4896,9 +4882,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5779] = 
+        [6528] = 
         {
-            [1] = 3,
+            [1] = 0,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4906,15 +4892,15 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5248] = 
+        [3970] = 
         {
-            [1] = 15,
-            [2] = 2,
-            [3] = 101044,
+            [1] = 5,
+            [2] = 0,
+            [3] = 101043,
             [4] = 10001,
             [5] = 10000,
             [6] = 0,
-            [7] = 2,
+            [7] = 0,
         },
         [4079] = 
         {
@@ -4936,15 +4922,15 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6269] = 
+        [6202] = 
         {
-            [1] = 5,
-            [2] = 1,
+            [1] = 0,
+            [2] = 2,
             [3] = 101044,
             [4] = 10000,
             [5] = 10000,
             [6] = 0,
-            [7] = 2,
+            [7] = 0,
         },
         [6642] = 
         {
@@ -4966,9 +4952,9 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [6228] = 
+        [6236] = 
         {
-            [1] = 4,
+            [1] = 0,
             [2] = 2,
             [3] = 101044,
             [4] = 10000,
@@ -4996,57 +4982,57 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5726] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6136] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5990] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6487] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6236] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
         [5989] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6392] = 
+        {
+            [1] = 7,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 3,
+            [7] = 0,
+        },
+        [5500] = 
+        {
+            [1] = 7,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5975] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5981] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5982] = 
         {
             [1] = 4,
             [2] = 1,
@@ -5076,7 +5062,7 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-        [5975] = 
+        [6487] = 
         {
             [1] = 4,
             [2] = 1,
@@ -5086,9 +5072,5 @@ LibQuestData_SavedVariables =
             [6] = 0,
             [7] = 0,
         },
-    },
-    ["client_lang"] = "en",
-    ["quest_names"] = 
-    {
     },
 }

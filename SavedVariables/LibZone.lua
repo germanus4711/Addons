@@ -5196,32 +5196,32 @@ LibZone_Localized_SV_Data =
         {
             ["$AccountWide"] = 
             {
+                ["MissingZoneData"] = 
+                {
+                    ["version"] = 8.9200000000,
+                },
                 ["ZoneData"] = 
                 {
-                    ["version"] = 8.9000000000,
                     ["en"] = 
                     {
                         [1504] = "Coldharbour Colosseum",
-                        [1500] = "Kthendral Deep Mines",
-                        ["APIVersionAtLastUpdate"] = 101044,
+                        [1483] = "Huntsman's Fortress",
+                        ["lastUpdate"] = 1735930809,
                         [1475] = "Seat of Detritus",
-                        [1482] = "Strid River Valley",
+                        [1498] = "Dusk Keep",
                         [1501] = "Grand Gallery of Tamriel",
                         [1494] = "Seabloom Villa",
                         [1495] = "Haven of the Five Companions",
                         [520] = "Reman's Folly",
                         [1481] = "Mota-ka",
-                        [1498] = "Dusk Keep",
+                        [1482] = "Strid River Valley",
                         [1499] = "Star Haven Adeptorium",
                         [1484] = "Shehai Waystation",
                         [1485] = "Port Dufort",
-                        [1483] = "Huntsman's Fortress",
-                        ["lastUpdate"] = 1735930809,
+                        ["APIVersionAtLastUpdate"] = 101044,
+                        [1500] = "Kthendral Deep Mines",
                     },
-                },
-                ["MissingZoneData"] = 
-                {
-                    ["version"] = 8.9200000000,
+                    ["version"] = 8.9000000000,
                 },
             },
         },

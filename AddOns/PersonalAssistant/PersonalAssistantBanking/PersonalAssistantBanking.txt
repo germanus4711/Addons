@@ -5,8 +5,8 @@
 
 ## Title: |cFFD700P|rersonal|cFFD700A|rssistant |cFFD700B|ranking
 ## Description: PABanking follows defined rules to deposit items and currencies to the bank, or withdraw from there.
-## Version: 2024.12.29
-## AddOnVersion: 20241229
+## Version: 2025.01.07
+## AddOnVersion: 20250107
 ## Author: Klingo, |c3CB371@Masteroshi430|r
 ## APIVersion: 101044 
 ## SavedVariables: PersonalAssistantBanking_SavedVariables

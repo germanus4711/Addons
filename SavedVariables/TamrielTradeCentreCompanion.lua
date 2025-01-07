@@ -6,29 +6,6 @@ TTCCompanion_SavedVars =
         {
             ["$AccountWide"] = 
             {
-                ["version"] = 1,
-                ["customDealBuyIt"] = 90,
-                ["dealCalcToUse"] = 2,
-                ["replaceInventoryValues"] = true,
-                ["agsPercentSortOrderToUse"] = 1,
-                ["showProfitMargin"] = false,
-                ["showMaterialCost"] = true,
-                ["customDealSeventyFive"] = 75,
-                ["customDealCalc"] = false,
-                ["showUnitPrice"] = true,
-                ["modifiedSuggestedPriceDealCalc"] = false,
-                ["pricingdataeu"] = 
-                {
-                },
-                ["customDealFifty"] = 50,
-                ["replacementTypeToUse"] = 3,
-                ["customDealTwentyFive"] = 25,
-                ["customDealZero"] = 0,
-                ["modifiedSuggestedPriceInventory"] = false,
-                ["showCalc"] = false,
-                ["pricingData"] = 
-                {
-                },
                 ["pricingdatana"] = 
                 {
                     [812695] = 
@@ -457,9 +434,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:4:0:0"] = 74400,
                         },
-                        [211408] = 
+                        [176592] = 
                         {
-                            ["1:0:2:0:0"] = 46000,
+                            ["1:0:3:47:0"] = 30000,
                         },
                         [198341] = 
                         {
@@ -609,9 +586,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:2:0:0"] = 8000,
                         },
-                        [176592] = 
+                        [211408] = 
                         {
-                            ["1:0:3:47:0"] = 30000,
+                            ["1:0:2:0:0"] = 46000,
                         },
                         [175863] = 
                         {
@@ -651,7 +628,30 @@ TTCCompanion_SavedVars =
                         },
                     },
                 },
+                ["modifiedSuggestedPriceInventory"] = false,
+                ["replacementTypeToUse"] = 3,
+                ["dealCalcToUse"] = 2,
+                ["showCalc"] = false,
+                ["version"] = 1,
+                ["customDealCalc"] = false,
+                ["agsPercentSortOrderToUse"] = 1,
+                ["replaceInventoryValues"] = true,
+                ["modifiedSuggestedPriceDealCalc"] = false,
+                ["customDealFifty"] = 50,
+                ["showMaterialCost"] = true,
+                ["pricingData"] = 
+                {
+                },
+                ["customDealSeventyFive"] = 75,
+                ["customDealBuyIt"] = 90,
+                ["showProfitMargin"] = false,
+                ["customDealTwentyFive"] = 25,
+                ["showUnitPrice"] = true,
                 ["showCraftCost"] = false,
+                ["customDealZero"] = 0,
+                ["pricingdataeu"] = 
+                {
+                },
             },
         },
     },
