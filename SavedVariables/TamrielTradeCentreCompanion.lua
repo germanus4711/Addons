@@ -434,9 +434,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:4:0:0"] = 74400,
                         },
-                        [176592] = 
+                        [211408] = 
                         {
-                            ["1:0:3:47:0"] = 30000,
+                            ["1:0:2:0:0"] = 46000,
                         },
                         [198341] = 
                         {
@@ -586,9 +586,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:2:0:0"] = 8000,
                         },
-                        [211408] = 
+                        [176592] = 
                         {
-                            ["1:0:2:0:0"] = 46000,
+                            ["1:0:3:47:0"] = 30000,
                         },
                         [175863] = 
                         {
@@ -628,30 +628,30 @@ TTCCompanion_SavedVars =
                         },
                     },
                 },
-                ["modifiedSuggestedPriceInventory"] = false,
-                ["replacementTypeToUse"] = 3,
-                ["dealCalcToUse"] = 2,
+                ["customDealZero"] = 0,
                 ["showCalc"] = false,
                 ["version"] = 1,
                 ["customDealCalc"] = false,
-                ["agsPercentSortOrderToUse"] = 1,
-                ["replaceInventoryValues"] = true,
                 ["modifiedSuggestedPriceDealCalc"] = false,
-                ["customDealFifty"] = 50,
+                ["agsPercentSortOrderToUse"] = 1,
+                ["dealCalcToUse"] = 2,
+                ["modifiedSuggestedPriceInventory"] = false,
+                ["customDealSeventyFive"] = 75,
+                ["replaceInventoryValues"] = true,
+                ["showCraftCost"] = false,
                 ["showMaterialCost"] = true,
+                ["customDealTwentyFive"] = 25,
+                ["replacementTypeToUse"] = 3,
+                ["showUnitPrice"] = true,
                 ["pricingData"] = 
                 {
                 },
-                ["customDealSeventyFive"] = 75,
-                ["customDealBuyIt"] = 90,
-                ["showProfitMargin"] = false,
-                ["customDealTwentyFive"] = 25,
-                ["showUnitPrice"] = true,
-                ["showCraftCost"] = false,
-                ["customDealZero"] = 0,
                 ["pricingdataeu"] = 
                 {
                 },
+                ["customDealBuyIt"] = 90,
+                ["customDealFifty"] = 50,
+                ["showProfitMargin"] = false,
             },
         },
     },

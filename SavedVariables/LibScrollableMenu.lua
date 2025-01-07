@@ -12,10 +12,10 @@ LibScrollableMenu_SavedVars =
                     {
                         ["AddonSelectorddl"] = false,
                     },
-                    ["version"] = 1,
                     ["textSearchHistory"] = 
                     {
                     },
+                    ["version"] = 1,
                 },
             },
         },

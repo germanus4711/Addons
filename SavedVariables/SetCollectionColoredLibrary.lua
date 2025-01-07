@@ -7,8 +7,8 @@ SetCollectColorSV =
             ["$AccountWide"] = 
             {
                 ["known"] = "66ff66",
-                ["unknown"] = "ff6666",
                 ["version"] = 1,
+                ["unknown"] = "ff6666",
             },
         },
     },

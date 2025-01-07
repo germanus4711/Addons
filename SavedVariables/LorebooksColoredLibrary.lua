@@ -20,8 +20,8 @@ LieberBreitAlsWide =
                         ["NA@germanus4711"] = 
                         {
                             ["name"] = "NA@germanus4711",
-                            ["claimed"] = 1736203712,
                             ["sort"] = 99,
+                            ["claimed"] = 1736256414,
                         },
                     },
                 },

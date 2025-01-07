@@ -8,17 +8,7 @@ EventTrackerVars =
             {
                 ["NA Megaserver"] = 
                 {
-                    ["T_Time"] = 
-                    {
-                        [1] = 1736205588,
-                        [2] = 1734646238,
-                        [3] = 0,
-                    },
-                    ["Install_Time"] = 1726631845,
-                    ["Total_Tickets"] = 7,
-                    ["Current_Event"] = "New Life",
-                    ["top"] = 10,
-                    ["autoHide"] = false,
+                    ["Total_Tickets"] = 0,
                     ["T_Tickets"] = 
                     {
                         [4] = 0,
@@ -26,26 +16,36 @@ EventTrackerVars =
                         [2] = 0,
                         [3] = 0,
                     },
-                    ["version"] = 2,
-                    ["HideUI"] = false,
-                    ["LastUpdated"] = 1736205588,
-                    ["NewsIndex"] = 3,
-                    ["debug"] = false,
-                    ["EVT_version"] = 2.2710000000,
-                    ["Message_Time"] = 1736215448,
                     ["left"] = 450,
+                    ["NewsIndex"] = 3,
+                    ["LastUpdated"] = 1736254438,
+                    ["Message_Time"] = 1736256421,
                     ["T_Types"] = 
                     {
                         [1] = "New Life",
                         [2] = "not used",
                         [3] = "Boss",
                     },
+                    ["top"] = 10,
                     ["T_ToDo"] = 
                     {
                         [1] = 0,
                         [2] = 0,
                         [3] = 0,
                     },
+                    ["autoHide"] = false,
+                    ["Install_Time"] = 1726631845,
+                    ["HideUI"] = false,
+                    ["EVT_version"] = 2.2710000000,
+                    ["Current_Event"] = "New Life",
+                    ["T_Time"] = 
+                    {
+                        [1] = 1736254328,
+                        [2] = 1734646238,
+                        [3] = 0,
+                    },
+                    ["debug"] = false,
+                    ["version"] = 2,
                 },
             },
         },

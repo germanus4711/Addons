@@ -5,12 +5,12 @@ LibLoreLibrary_Settings =
 }
 LibLoreLibrary_Data =
 {
-    ["isCollecting"] = false,
-    ["locales"] = 
-    {
-    },
     ["langIdx"] = 0,
     ["data"] = 
     {
     },
+    ["locales"] = 
+    {
+    },
+    ["isCollecting"] = false,
 }

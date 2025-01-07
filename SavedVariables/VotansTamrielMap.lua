@@ -8,10 +8,10 @@ VotansTamrielMap_Data =
             {
                 ["color"] = "Alliance",
                 ["showCitiesNames"] = true,
-                ["opacity"] = 50,
-                ["titleFont"] = "ANTIQUE_FONT",
                 ["hidePins"] = true,
+                ["opacity"] = 50,
                 ["version"] = 1,
+                ["titleFont"] = "ANTIQUE_FONT",
             },
         },
     },

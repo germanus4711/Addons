@@ -17,14 +17,14 @@ CharacterKnowledgeSavedVariables =
         {
             ["$AccountWide"] = 
             {
-                ["featureRev"] = 1,
                 ["singleAccount"] = false,
-                ["version"] = 1,
                 ["tooltips"] = 
                 {
-                    ["enabled"] = true,
                     ["scriptInfo"] = true,
+                    ["enabled"] = true,
                 },
+                ["version"] = 1,
+                ["featureRev"] = 1,
                 ["filterId"] = 2,
             },
         },

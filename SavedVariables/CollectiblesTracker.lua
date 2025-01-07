@@ -10,11 +10,11 @@ CollectiblesTrackerSavedVariables =
                 {
                     ["filterId"] = 1,
                 },
+                ["version"] = 1,
                 ["ct"] = 
                 {
                     ["filterId"] = 1,
                 },
-                ["version"] = 1,
             },
         },
     },

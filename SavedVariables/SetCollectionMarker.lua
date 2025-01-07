@@ -8,41 +8,41 @@ SetCollectionMarkerSavedVariables =
             {
                 ["Options"] = 
                 {
+                    ["showTradeButton"] = true,
+                    ["chatMessageLocation"] = 1,
+                    ["showMailUI"] = true,
+                    ["version"] = 1,
+                    ["iconOffset"] = 0,
+                    ["chatIconSize"] = 18,
                     ["chatSystemLocation"] = 3,
                     ["chatMessageShow"] = true,
+                    ["showRequestLink"] = true,
+                    ["iconStoreOffset"] = 0,
                     ["iconSize"] = 36,
+                    ["requestInWhisper"] = true,
                     ["chatSystemShow"] = true,
-                    ["iconOffset"] = 0,
-                    ["chatIconColor"] = 
-                    {
-                        [1] = 0.4000000000,
-                        [2] = 1,
-                        [3] = 0.5000000000,
-                    },
-                    ["version"] = 1,
-                    ["showTradeButton"] = true,
-                    ["requestPrefix"] = "Can I get",
-                    ["chatIconSize"] = 18,
                     ["iconColor"] = 
                     {
                         [1] = 0.4000000000,
                         [2] = 1,
                         [3] = 0.5000000000,
                     },
-                    ["iconStoreOffset"] = 0,
-                    ["showMailUI"] = true,
-                    ["chatMessageLocation"] = 1,
-                    ["showRequestLink"] = true,
-                    ["requestInWhisper"] = true,
+                    ["chatIconColor"] = 
+                    {
+                        [1] = 0.4000000000,
+                        [2] = 1,
+                        [3] = 0.5000000000,
+                    },
+                    ["requestPrefix"] = "Can I get",
                     ["show"] = 
                     {
-                        ["bank"] = true,
-                        ["bag"] = true,
-                        ["guildstore"] = true,
-                        ["housebank"] = true,
                         ["transmute"] = true,
-                        ["trading"] = true,
+                        ["housebank"] = true,
                         ["guild"] = true,
+                        ["trading"] = true,
+                        ["guildstore"] = true,
+                        ["bag"] = true,
+                        ["bank"] = true,
                         ["crafting"] = true,
                     },
                 },

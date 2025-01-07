@@ -6,6 +6,7 @@ PersonalAssistantIntegration_SavedVariables =
         {
             ["$AccountWide"] = 
             {
+                ["savedVarsVersion"] = 20240922,
                 [1] = 
                 {
                     ["LazyWritCrafter"] = 
@@ -13,27 +14,18 @@ PersonalAssistantIntegration_SavedVariables =
                         ["compatibility"] = true,
                     },
                     ["name"] = "Profile 1",
-                    ["CharacterKnowledge"] = 
-                    {
-                        ["characterName"] = "Freya Orm",
-                        ["enabled"] = true,
-                    },
                     ["FCOItemSaver"] = 
                     {
                         ["Locked"] = 
                         {
-                            ["preventMoving"] = true,
                             ["preventAutoSell"] = false,
+                            ["preventMoving"] = true,
+                        },
+                        ["Deconstruction"] = 
+                        {
+                            ["itemMoveMode"] = 2,
                         },
                         ["SellGuildStore"] = 
-                        {
-                            ["itemMoveMode"] = 0,
-                        },
-                        ["Research"] = 
-                        {
-                            ["itemMoveMode"] = 1,
-                        },
-                        ["Improvement"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
@@ -48,14 +40,6 @@ PersonalAssistantIntegration_SavedVariables =
                                 [5] = 0,
                             },
                         },
-                        ["Deconstruction"] = 
-                        {
-                            ["itemMoveMode"] = 2,
-                        },
-                        ["Intricate"] = 
-                        {
-                            ["itemMoveMode"] = 0,
-                        },
                         ["Sell"] = 
                         {
                             ["autoSellMarked"] = false,
@@ -63,11 +47,27 @@ PersonalAssistantIntegration_SavedVariables =
                         ["DynamicIcons"] = 
                         {
                         },
+                        ["Research"] = 
+                        {
+                            ["itemMoveMode"] = 1,
+                        },
+                        ["Intricate"] = 
+                        {
+                            ["itemMoveMode"] = 0,
+                        },
+                        ["Improvement"] = 
+                        {
+                            ["itemMoveMode"] = 0,
+                        },
+                    },
+                    ["CharacterKnowledge"] = 
+                    {
+                        ["characterName"] = "Freya Orm",
+                        ["enabled"] = true,
                     },
                 },
-                ["profileCounter"] = 1,
                 ["version"] = 1,
-                ["savedVarsVersion"] = 20240922,
+                ["profileCounter"] = 1,
             },
         },
     },
