@@ -11,6 +11,7 @@ local mapHandlers = {} -- currently registered maps
 local ENABLED = true -- this lib won't send or process map pings if this setting is set to false
 local MAIN_MAP_INDEX = 30 -- Vvardenfell
 local PING_RATE = 2020 -- minimum time between pings
+
 local lastPingTime = 0 -- time of the latest map ping
 local lastOnPingTime = 0 -- time of the latest received and processed map ping
 
@@ -327,6 +328,11 @@ local function OnMapPing(eventCode, pingEventType, pingType, pingTag, offsetX, o
 end
 
 local function Initialize()
+	-- set the ping rate to every 10seconds because of API changes in U45
+	if GetAPIVersion() >= 101045 then
+		PING_RATE = 10020
+	end
+
 	local function OnPlayerActivated()
 		-- Unregister map ping handler.
 		EM:UnregisterForEvent(NAME, EVENT_MAP_PING)

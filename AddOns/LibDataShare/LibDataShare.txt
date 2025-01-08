@@ -6,9 +6,9 @@
 
 ## Title: LibDataShare
 ## Author: |cFFFF00andy.s|r, |c76c3f4@m00nyONE|r
-## Version: 0.0.4
-## AddOnVersion: 000004
-## APIVersion: 101044
+## Version: 0.0.5
+## AddOnVersion: 000005
+## APIVersion: 101044 101045
 ## OptionalDependsOn: LibMapPing RaidNotifier BanditsUserInterface FoundryTacticalCombat TaosGroupTools POC LibGroupSocket
 ## IsLibrary: true
 

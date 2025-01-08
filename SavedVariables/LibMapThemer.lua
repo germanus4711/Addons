@@ -13,17 +13,17 @@ LibMapThemerVars =
                 },
                 ["AccurateWorldMap"] = 
                 {
-                    ["renames"] = true,
-                    ["mapDescriptions"] = true,
+                    ["hoverFadeEffect"] = true,
                     ["pois"] = 
                     {
                         ["majorSettlements"] = true,
                         ["ownedHouses"] = true,
                     },
-                    ["hoverFadeEffect"] = true,
                     ["version"] = 2406030600,
+                    ["mapDescriptions"] = true,
                     ["aurbisZoneNames"] = true,
                     ["tamrielZoneNames"] = true,
+                    ["renames"] = true,
                     ["showAllPois"] = true,
                 },
             },

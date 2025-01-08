@@ -524,10 +524,10 @@ LibMainMenu-2.0 1
 LibManifest 1
 CombatMetronome 1
 LibPhinixFunctions 1
-LibMotif 1
 HarvestMapAD 1
-VotansImprovedHouseTours 1
 CraftStoreFixedAndImproved 1
+VotansImprovedHouseTours 1
+LibMotif 1
 #NA Megaserver-Maüschen
 CustomCompassPins 0
 PerfectWeave 0
