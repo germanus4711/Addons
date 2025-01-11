@@ -4,8 +4,9 @@ GreyskullSettings =
     {
         ["@germanus4711"] = 
         {
-            ["8796093072557313"] = 
+            ["8796093062295781"] = 
             {
+                ["$LastCharacterName"] = "Fridolin The Great",
                 ["NA Megaserver"] = 
                 {
                     ["settings"] = 
@@ -17,76 +18,22 @@ GreyskullSettings =
                             [2] = 0,
                             [3] = 0,
                         },
+                        ["customScale"] = 20,
+                        ["global"] = false,
+                        ["renderTick"] = 500,
                         ["powerType"] = 
                         {
-                            ["spellPower"] = false,
                             ["weaponPower"] = true,
+                            ["spellPower"] = false,
                         },
-                        ["customScale"] = 20,
+                        ["hybrid"] = false,
                         ["levels"] = 
                         {
-                            ["weapon"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
                             ["spell"] = 
                             {
                                 [1] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -94,10 +41,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [2] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -105,10 +52,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [3] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -116,10 +63,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [4] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -127,10 +74,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [5] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -138,48 +85,13 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                             },
-                        },
-                        ["renderTick"] = 500,
-                        ["hybrid"] = false,
-                        ["global"] = false,
-                    },
-                    ["version"] = 2,
-                    ["location"] = 
-                    {
-                        ["x"] = 0,
-                        ["y"] = 0,
-                    },
-                },
-                ["$LastCharacterName"] = "Gamal Loki",
-            },
-            ["8796093067546805"] = 
-            {
-                ["NA Megaserver"] = 
-                {
-                    ["settings"] = 
-                    {
-                        ["backgroundColor"] = 
-                        {
-                            [4] = 0.8000000000,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 0,
-                        },
-                        ["powerType"] = 
-                        {
-                            ["spellPower"] = false,
-                            ["weaponPower"] = true,
-                        },
-                        ["customScale"] = 20,
-                        ["levels"] = 
-                        {
                             ["weapon"] = 
                             {
                                 [1] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -187,10 +99,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [2] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -198,10 +110,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [3] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -209,10 +121,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [4] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -220,10 +132,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [5] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -231,234 +143,21 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
-                                },
-                            },
-                            ["spell"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
                                 },
                             },
                         },
-                        ["renderTick"] = 500,
-                        ["hybrid"] = false,
-                        ["global"] = false,
                     },
                     ["version"] = 2,
                     ["location"] = 
                     {
-                        ["x"] = 0,
                         ["y"] = 0,
+                        ["x"] = 0,
                     },
                 },
-                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
             },
             ["8796093025384257"] = 
             {
-                ["NA Megaserver"] = 
-                {
-                    ["settings"] = 
-                    {
-                        ["backgroundColor"] = 
-                        {
-                            [4] = 0.8000000000,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 0,
-                        },
-                        ["powerType"] = 
-                        {
-                            ["spellPower"] = false,
-                            ["weaponPower"] = true,
-                        },
-                        ["customScale"] = 20,
-                        ["levels"] = 
-                        {
-                            ["weapon"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
-                            ["spell"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
-                        },
-                        ["renderTick"] = 500,
-                        ["hybrid"] = false,
-                        ["global"] = false,
-                    },
-                    ["version"] = 2,
-                    ["location"] = 
-                    {
-                        ["x"] = 0,
-                        ["y"] = 0,
-                    },
-                },
                 ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-            },
-            ["8796093027479535"] = 
-            {
                 ["NA Megaserver"] = 
                 {
                     ["settings"] = 
@@ -470,76 +169,22 @@ GreyskullSettings =
                             [2] = 0,
                             [3] = 0,
                         },
+                        ["customScale"] = 20,
+                        ["global"] = false,
+                        ["renderTick"] = 500,
                         ["powerType"] = 
                         {
-                            ["spellPower"] = false,
                             ["weaponPower"] = true,
+                            ["spellPower"] = false,
                         },
-                        ["customScale"] = 20,
+                        ["hybrid"] = false,
                         ["levels"] = 
                         {
-                            ["weapon"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
                             ["spell"] = 
                             {
                                 [1] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -547,10 +192,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [2] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -558,10 +203,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [3] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -569,10 +214,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [4] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -580,10 +225,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [5] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -591,478 +236,230 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
+                                },
+                            },
+                            ["weapon"] = 
+                            {
+                                [1] = 
+                                {
                                     ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
                                 },
                             },
                         },
-                        ["renderTick"] = 500,
-                        ["hybrid"] = false,
-                        ["global"] = false,
                     },
                     ["version"] = 2,
                     ["location"] = 
                     {
-                        ["x"] = 0,
                         ["y"] = 0,
-                    },
-                },
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
-            },
-            ["8796093074287095"] = 
-            {
-                ["NA Megaserver"] = 
-                {
-                    ["settings"] = 
-                    {
-                        ["backgroundColor"] = 
-                        {
-                            [4] = 0.8000000000,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 0,
-                        },
-                        ["powerType"] = 
-                        {
-                            ["spellPower"] = false,
-                            ["weaponPower"] = true,
-                        },
-                        ["customScale"] = 20,
-                        ["levels"] = 
-                        {
-                            ["weapon"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
-                            ["spell"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
-                        },
-                        ["renderTick"] = 500,
-                        ["hybrid"] = false,
-                        ["global"] = false,
-                    },
-                    ["version"] = 2,
-                    ["location"] = 
-                    {
                         ["x"] = 0,
+                    },
+                },
+            },
+            ["8796093067546805"] = 
+            {
+                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
+                ["NA Megaserver"] = 
+                {
+                    ["settings"] = 
+                    {
+                        ["backgroundColor"] = 
+                        {
+                            [4] = 0.8000000000,
+                            [1] = 0,
+                            [2] = 0,
+                            [3] = 0,
+                        },
+                        ["customScale"] = 20,
+                        ["global"] = false,
+                        ["renderTick"] = 500,
+                        ["powerType"] = 
+                        {
+                            ["weaponPower"] = true,
+                            ["spellPower"] = false,
+                        },
+                        ["hybrid"] = false,
+                        ["levels"] = 
+                        {
+                            ["spell"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                            },
+                            ["weapon"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                            },
+                        },
+                    },
+                    ["version"] = 2,
+                    ["location"] = 
+                    {
                         ["y"] = 0,
-                    },
-                },
-                ["$LastCharacterName"] = "Otto von Bissmark",
-            },
-            ["8796093023211051"] = 
-            {
-                ["NA Megaserver"] = 
-                {
-                    ["settings"] = 
-                    {
-                        ["backgroundColor"] = 
-                        {
-                            [4] = 0.8000000000,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 0,
-                        },
-                        ["powerType"] = 
-                        {
-                            ["spellPower"] = false,
-                            ["weaponPower"] = true,
-                        },
-                        ["customScale"] = 20,
-                        ["levels"] = 
-                        {
-                            ["weapon"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
-                            ["spell"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
-                        },
-                        ["renderTick"] = 500,
-                        ["hybrid"] = false,
-                        ["global"] = false,
-                    },
-                    ["version"] = 2,
-                    ["location"] = 
-                    {
-                        ["x"] = 1833,
-                        ["y"] = 1370,
-                    },
-                },
-                ["$LastCharacterName"] = "Freya Orm",
-            },
-            ["8796093062295781"] = 
-            {
-                ["NA Megaserver"] = 
-                {
-                    ["settings"] = 
-                    {
-                        ["backgroundColor"] = 
-                        {
-                            [4] = 0.8000000000,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 0,
-                        },
-                        ["powerType"] = 
-                        {
-                            ["spellPower"] = false,
-                            ["weaponPower"] = true,
-                        },
-                        ["customScale"] = 20,
-                        ["levels"] = 
-                        {
-                            ["weapon"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
-                            ["spell"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
-                        },
-                        ["renderTick"] = 500,
-                        ["hybrid"] = false,
-                        ["global"] = false,
-                    },
-                    ["version"] = 2,
-                    ["location"] = 
-                    {
                         ["x"] = 0,
-                        ["y"] = 0,
                     },
                 },
-                ["$LastCharacterName"] = "Fridolin The Great",
             },
             ["8796093069174989"] = 
             {
+                ["$LastCharacterName"] = "Mike v Petra",
                 ["NA Megaserver"] = 
                 {
                     ["settings"] = 
@@ -1074,76 +471,22 @@ GreyskullSettings =
                             [2] = 0,
                             [3] = 0,
                         },
+                        ["customScale"] = 20,
+                        ["global"] = false,
+                        ["renderTick"] = 500,
                         ["powerType"] = 
                         {
-                            ["spellPower"] = false,
                             ["weaponPower"] = true,
+                            ["spellPower"] = false,
                         },
-                        ["customScale"] = 20,
+                        ["hybrid"] = false,
                         ["levels"] = 
                         {
-                            ["weapon"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
                             ["spell"] = 
                             {
                                 [1] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -1151,10 +494,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [2] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -1162,10 +505,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [3] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -1173,10 +516,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [4] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -1184,10 +527,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [5] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -1195,25 +538,683 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
+                                },
+                            },
+                            ["weapon"] = 
+                            {
+                                [1] = 
+                                {
                                     ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
                                 },
                             },
                         },
-                        ["renderTick"] = 500,
-                        ["hybrid"] = false,
-                        ["global"] = false,
                     },
                     ["version"] = 2,
                     ["location"] = 
                     {
-                        ["x"] = 0,
                         ["y"] = 0,
+                        ["x"] = 0,
                     },
                 },
-                ["$LastCharacterName"] = "Mike v Petra",
+            },
+            ["8796093074287095"] = 
+            {
+                ["$LastCharacterName"] = "Otto von Bissmark",
+                ["NA Megaserver"] = 
+                {
+                    ["settings"] = 
+                    {
+                        ["backgroundColor"] = 
+                        {
+                            [4] = 0.8000000000,
+                            [1] = 0,
+                            [2] = 0,
+                            [3] = 0,
+                        },
+                        ["customScale"] = 20,
+                        ["global"] = false,
+                        ["renderTick"] = 500,
+                        ["powerType"] = 
+                        {
+                            ["weaponPower"] = true,
+                            ["spellPower"] = false,
+                        },
+                        ["hybrid"] = false,
+                        ["levels"] = 
+                        {
+                            ["spell"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                            },
+                            ["weapon"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                            },
+                        },
+                    },
+                    ["version"] = 2,
+                    ["location"] = 
+                    {
+                        ["y"] = 0,
+                        ["x"] = 0,
+                    },
+                },
+            },
+            ["8796093027479535"] = 
+            {
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["NA Megaserver"] = 
+                {
+                    ["settings"] = 
+                    {
+                        ["backgroundColor"] = 
+                        {
+                            [4] = 0.8000000000,
+                            [1] = 0,
+                            [2] = 0,
+                            [3] = 0,
+                        },
+                        ["customScale"] = 20,
+                        ["global"] = false,
+                        ["renderTick"] = 500,
+                        ["powerType"] = 
+                        {
+                            ["weaponPower"] = true,
+                            ["spellPower"] = false,
+                        },
+                        ["hybrid"] = false,
+                        ["levels"] = 
+                        {
+                            ["spell"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                            },
+                            ["weapon"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                            },
+                        },
+                    },
+                    ["version"] = 2,
+                    ["location"] = 
+                    {
+                        ["y"] = 0,
+                        ["x"] = 0,
+                    },
+                },
+            },
+            ["8796093023211051"] = 
+            {
+                ["$LastCharacterName"] = "Freya Orm",
+                ["NA Megaserver"] = 
+                {
+                    ["settings"] = 
+                    {
+                        ["backgroundColor"] = 
+                        {
+                            [4] = 0.8000000000,
+                            [1] = 0,
+                            [2] = 0,
+                            [3] = 0,
+                        },
+                        ["customScale"] = 20,
+                        ["global"] = false,
+                        ["renderTick"] = 500,
+                        ["powerType"] = 
+                        {
+                            ["weaponPower"] = true,
+                            ["spellPower"] = false,
+                        },
+                        ["hybrid"] = false,
+                        ["levels"] = 
+                        {
+                            ["spell"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                            },
+                            ["weapon"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                            },
+                        },
+                    },
+                    ["version"] = 2,
+                    ["location"] = 
+                    {
+                        ["y"] = 1370,
+                        ["x"] = 1833,
+                    },
+                },
+            },
+            ["8796093072557313"] = 
+            {
+                ["$LastCharacterName"] = "Gamal Loki",
+                ["NA Megaserver"] = 
+                {
+                    ["settings"] = 
+                    {
+                        ["backgroundColor"] = 
+                        {
+                            [4] = 0.8000000000,
+                            [1] = 0,
+                            [2] = 0,
+                            [3] = 0,
+                        },
+                        ["customScale"] = 20,
+                        ["global"] = false,
+                        ["renderTick"] = 500,
+                        ["powerType"] = 
+                        {
+                            ["weaponPower"] = true,
+                            ["spellPower"] = false,
+                        },
+                        ["hybrid"] = false,
+                        ["levels"] = 
+                        {
+                            ["spell"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                            },
+                            ["weapon"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                            },
+                        },
+                    },
+                    ["version"] = 2,
+                    ["location"] = 
+                    {
+                        ["y"] = 0,
+                        ["x"] = 0,
+                    },
+                },
             },
             ["8796093064640125"] = 
             {
+                ["$LastCharacterName"] = "Maüschen",
                 ["NA Megaserver"] = 
                 {
                     ["settings"] = 
@@ -1225,76 +1226,22 @@ GreyskullSettings =
                             [2] = 0,
                             [3] = 0,
                         },
+                        ["customScale"] = 20,
+                        ["global"] = false,
+                        ["renderTick"] = 500,
                         ["powerType"] = 
                         {
-                            ["spellPower"] = false,
                             ["weaponPower"] = true,
+                            ["spellPower"] = false,
                         },
-                        ["customScale"] = 20,
+                        ["hybrid"] = false,
                         ["levels"] = 
                         {
-                            ["weapon"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [2] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [3] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [4] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                                [5] = 
-                                {
-                                    ["color"] = 
-                                    {
-                                        [4] = 1,
-                                        [1] = 1,
-                                        [2] = 1,
-                                        [3] = 1,
-                                    },
-                                    ["level"] = 0,
-                                },
-                            },
                             ["spell"] = 
                             {
                                 [1] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -1302,10 +1249,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [2] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -1313,10 +1260,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [3] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -1324,10 +1271,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [4] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -1335,10 +1282,10 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
-                                    ["level"] = 0,
                                 },
                                 [5] = 
                                 {
+                                    ["level"] = 0,
                                     ["color"] = 
                                     {
                                         [4] = 1,
@@ -1346,22 +1293,75 @@ GreyskullSettings =
                                         [2] = 1,
                                         [3] = 1,
                                     },
+                                },
+                            },
+                            ["weapon"] = 
+                            {
+                                [1] = 
+                                {
                                     ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [2] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [3] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [4] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
+                                },
+                                [5] = 
+                                {
+                                    ["level"] = 0,
+                                    ["color"] = 
+                                    {
+                                        [4] = 1,
+                                        [1] = 1,
+                                        [2] = 1,
+                                        [3] = 1,
+                                    },
                                 },
                             },
                         },
-                        ["renderTick"] = 500,
-                        ["hybrid"] = false,
-                        ["global"] = false,
                     },
                     ["version"] = 2,
                     ["location"] = 
                     {
-                        ["x"] = 0,
                         ["y"] = 0,
+                        ["x"] = 0,
                     },
                 },
-                ["$LastCharacterName"] = "Maüschen",
             },
         },
     },

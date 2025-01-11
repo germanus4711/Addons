@@ -1,8 +1,5 @@
 LibQuestData_SavedVariables =
 {
-    ["quest_names"] = 
-    {
-    },
     ["giver_names"] = 
     {
         [6016] = "Sealed Blacksmithing Writ",
@@ -21,6 +18,7 @@ LibQuestData_SavedVariables =
         [7189] = "Tanlorin",
         [7194] = "Corn Flower",
         [7207] = "Zerith-var",
+        [6831] = "Kishka",
         [7216] = "Zerith-var",
         [6450] = "Sealed Jewelry Crafter Writ",
         [7219] = "Belienne",
@@ -68,48 +66,514 @@ LibQuestData_SavedVariables =
         [2930] = "Unknown Target",
         [6899] = "Druid Aishabeh",
         [6901] = "Druid Aishabeh",
-        [6881] = "Druid Gastoc",
-        [5973] = "Sealed Enchanting Writ",
+        [6451] = "Sealed Jewelry Crafter Writ",
+        [6489] = "Deep Winter Charity Writ",
         [6487] = "Deep Winter Charity Writ",
         [6269] = "Blackrose Barracks",
-        [6489] = "Deep Winter Charity Writ",
-        [6451] = "Sealed Jewelry Crafter Writ",
+        [5973] = "Sealed Enchanting Writ",
+        [6881] = "Druid Gastoc",
     },
     ["effective_lang"] = "en",
+    ["client_lang"] = "en",
     ["quests"] = 
     {
-        ["vvardenfell/forgottenwastesext_base_0"] = 
+        ["housing/u42_colovianwinery_ext_01_0"] = 
         {
         },
-        ["cyrodiil/imperialcity_base_0"] = 
+        ["cyrodiil/eastelsweyrgate_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "Scout Arrius Farm",
+                ["x"] = 0.5148420930,
+                ["repeat_type"] = 1,
+                ["api"] = 101044,
+                ["gpsx"] = 0.5695340211,
+                ["giver"] = "Scouting Mission Board",
+                ["y"] = 0.4257530570,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Cyrodiil",
+                ["zone_index"] = 38,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.5591815918,
+                ["quest_type"] = 7,
+            },
+        },
+        ["housing/snowglobe_base_0"] = 
         {
         },
-        ["elsweyr/rimmen_base_0"] = 
+        ["grahtwood/eldenrootcrafting_base_0"] = 
+        {
+        },
+        ["rivenspire/hildunessecretrefuge_base_0"] = 
+        {
+        },
+        ["reach/reach_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "A Challenge of Worth",
+                ["x"] = 0.3086277246,
+                ["repeat_type"] = 0,
+                ["api"] = 101043,
+                ["gpsx"] = 0.3778661574,
+                ["giver"] = "Angair",
+                ["y"] = 0.5125017762,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "The Reach",
+                ["zone_index"] = 784,
+                ["lang"] = "en",
+                ["quest_display_type"] = 3,
+                ["gpsy"] = 0.3038548818,
+                ["quest_type"] = 1,
+            },
+        },
+        ["eastmarch/hallofthedead_base_0"] = 
         {
         },
         ["deadlands/u32_theshambles_base_0"] = 
+        {
+        },
+        ["grahtwood/eldenrootmagesguilddown_base_0"] = 
+        {
+        },
+        ["systres/gravendeep_island_map_0"] = 
+        {
+        },
+        ["westweald/u42_skingrad_base_0"] = 
+        {
+            [2] = 
+            {
+                ["name"] = "Loan Recall",
+                ["x"] = 0.6222179532,
+                ["repeat_type"] = 2,
+                ["api"] = 101043,
+                ["gpsx"] = 0.4425620096,
+                ["giver"] = "Commandant Salerius",
+                ["y"] = 0.5780492425,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "West Weald",
+                ["zone_index"] = 981,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.5271139952,
+                ["quest_type"] = 0,
+            },
+            [1] = 
+            {
+                ["name"] = "Fate-Eater",
+                ["x"] = 0.6216394901,
+                ["repeat_type"] = 2,
+                ["api"] = 101043,
+                ["gpsx"] = 0.4425452092,
+                ["giver"] = "Lieutenant Agrance",
+                ["y"] = 0.5734216571,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "West Weald",
+                ["zone_index"] = 981,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.5269795953,
+                ["quest_type"] = 1,
+            },
+        },
+        ["rivenspire/rivenspire_base_0"] = 
+        {
+        },
+        ["clockwork/clockwork_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "The Astronomer's Apprentice",
+                ["x"] = 0.5892823339,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.2752547984,
+                ["giver"] = "Amili Lloryn",
+                ["y"] = 0.6026043296,
+                ["questID"] = -1,
+                ["poi_index"] = 7,
+                ["zone_name"] = "Clockwork City",
+                ["zone_index"] = 591,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 1.0805732101,
+                ["quest_type"] = 0,
+            },
+        },
+        ["vvardenfell/vivechoj01a_base_0"] = 
+        {
+            [2] = 
+            {
+                ["name"] = "Culling the Swarm",
+                ["x"] = 0.6039603949,
+                ["repeat_type"] = 2,
+                ["api"] = 101044,
+                ["gpsx"] = 0.7743740247,
+                ["giver"] = "Beleru Omoril",
+                ["y"] = 0.3209039569,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Vvardenfell",
+                ["zone_index"] = 469,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.3827484036,
+                ["quest_type"] = 1,
+            },
+            [1] = 
+            {
+                ["name"] = "Unsettled Syndicate",
+                ["x"] = 0.6875687838,
+                ["repeat_type"] = 2,
+                ["api"] = 101044,
+                ["gpsx"] = 0.7744044247,
+                ["giver"] = "Traylan Omoril",
+                ["y"] = 0.6870056391,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Vvardenfell",
+                ["zone_index"] = 469,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.3828780036,
+                ["quest_type"] = 0,
+            },
+        },
+        ["vvardenfell/vivechow01a_base_0"] = 
+        {
+        },
+        ["skyrim/solitudecity_base_0"] = 
         {
         },
         ["darkbrotherhood/dbsanctuary_base_0"] = 
         {
             [1] = 
             {
+                ["name"] = "Sacrament: Trader's Cove",
+                ["x"] = 0.1963317990,
+                ["repeat_type"] = 2,
+                ["api"] = 101044,
+                ["gpsx"] = 0.3401248054,
                 ["giver"] = "Speaker Terenus",
                 ["y"] = 0.5298041105,
-                ["api"] = 101044,
-                ["zone_index"] = 430,
                 ["questID"] = -1,
-                ["x"] = 0.1963317990,
-                ["gpsx"] = 0.3401248054,
-                ["gpsy"] = 0.5499279968,
-                ["zone_name"] = "Trader's Cove",
-                ["quest_type"] = 3,
-                ["name"] = "Sacrament: Trader's Cove",
                 ["poi_index"] = 294967291,
+                ["zone_name"] = "Trader's Cove",
+                ["zone_index"] = 430,
                 ["lang"] = "en",
                 ["quest_display_type"] = 0,
-                ["repeat_type"] = 2,
+                ["gpsy"] = 0.5499279968,
+                ["quest_type"] = 3,
             },
+        },
+        ["elsweyr/rimmen_base_0"] = 
+        {
+        },
+        ["summerset/alinor_base_0"] = 
+        {
+        },
+        ["alikr/lostcity_base_0"] = 
+        {
+        },
+        ["grahtwood/grahtwood_base_0"] = 
+        {
+        },
+        ["reapersmarch/thevilemansefirstfloor_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "Song of the Spinner",
+                ["x"] = 0.6114886999,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.4277475871,
+                ["giver"] = "Melrethel",
+                ["y"] = 0.4036395550,
+                ["questID"] = -1,
+                ["poi_index"] = 23,
+                ["zone_name"] = "Reaper's March",
+                ["zone_index"] = 180,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.5664063985,
+                ["quest_type"] = 5,
+            },
+        },
+        ["thievesguild/abahslanding_base_0"] = 
+        {
+        },
+        ["westweald/u42_leftwheal_ext2_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "Caught in a Trap",
+                ["x"] = 0.8442267776,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.3703444083,
+                ["giver"] = "Baroness Eliana Cossa",
+                ["y"] = 0.9304640889,
+                ["questID"] = -1,
+                ["poi_index"] = 14,
+                ["zone_name"] = "West Weald",
+                ["zone_index"] = 983,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.5057219938,
+                ["quest_type"] = 0,
+            },
+        },
+        ["systres/u34_systreszone_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "The Intoxicating Mix",
+                ["x"] = 0.4388638735,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.0633330759,
+                ["giver"] = "Genalda Ervine",
+                ["y"] = 0.8088064790,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "High Isle",
+                ["zone_index"] = 885,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.5952501735,
+                ["quest_type"] = 0,
+            },
+            [2] = 
+            {
+                ["name"] = "Balki's Map Fragment",
+                ["x"] = 0.4083739519,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.0623421534,
+                ["giver"] = "Balki's Instructions",
+                ["y"] = 0.8318872452,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "High Isle",
+                ["zone_index"] = 885,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.5960106847,
+                ["quest_type"] = 0,
+            },
+            [3] = 
+            {
+                ["name"] = "Coral Conundrum",
+                ["x"] = 0.8190205097,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.0829260026,
+                ["giver"] = "Sergeant Brusic",
+                ["y"] = 0.2036462873,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "High Isle",
+                ["zone_index"] = 885,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.5731752020,
+                ["quest_type"] = 0,
+            },
+        },
+        ["galen/u36_vastyrcity_base_0"] = 
+        {
+        },
+        ["deshaan/mournhold_base_0"] = 
+        {
+        },
+        ["eastmarch/eastmarch_base_0"] = 
+        {
+        },
+        ["clockwork/brassfortress_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "The Precursor",
+                ["x"] = 0.2394223213,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.2388383956,
+                ["giver"] = "Associate Zanon",
+                ["y"] = 0.7084895968,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Clockwork City",
+                ["zone_index"] = 591,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 1.0430363882,
+                ["quest_type"] = 0,
+            },
+        },
+        ["skyrim/blackreach_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "The Gathering Storm",
+                ["x"] = 0.3020680845,
+                ["repeat_type"] = 0,
+                ["api"] = 101043,
+                ["gpsx"] = 0.6494880198,
+                ["giver"] = "Letter from the Skald-King's Agent",
+                ["y"] = 0.6974254847,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Western Skyrim",
+                ["zone_index"] = 744,
+                ["lang"] = "en",
+                ["quest_display_type"] = 10,
+                ["gpsy"] = 1.5565960403,
+                ["quest_type"] = 0,
+            },
+            [2] = 
+            {
+                ["name"] = "Digging Up Trouble",
+                ["x"] = 0.3313835859,
+                ["repeat_type"] = 0,
+                ["api"] = 101043,
+                ["gpsx"] = 0.6518496180,
+                ["giver"] = "Overseer Urlvar",
+                ["y"] = 0.7161796689,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Western Skyrim",
+                ["zone_index"] = 744,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 1.5581068399,
+                ["quest_type"] = 0,
+            },
+            [3] = 
+            {
+                ["name"] = "The Tones of the Deep",
+                ["x"] = 0.4929665625,
+                ["repeat_type"] = 0,
+                ["api"] = 101043,
+                ["gpsx"] = 0.6648664197,
+                ["giver"] = "Kireth Vanos",
+                ["y"] = 0.6698378921,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Western Skyrim",
+                ["zone_index"] = 744,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 1.5543736389,
+                ["quest_type"] = 0,
+            },
+        },
+        ["darkbrotherhood/kvatchcity_base_0"] = 
+        {
+        },
+        ["deshaan/kwamacolony_base_0"] = 
+        {
+        },
+        ["deshaan/deepcragden_base_0"] = 
+        {
+        },
+        ["murkmire/lilmothcity_base_0"] = 
+        {
+        },
+        ["vvardenfell/viviccity_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "Test of Mettle",
+                ["x"] = 0.2248040587,
+                ["repeat_type"] = 2,
+                ["api"] = 101044,
+                ["gpsx"] = 0.7663275726,
+                ["giver"] = "Battlemaster Rivyn",
+                ["y"] = 0.5648705959,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "",
+                ["zone_index"] = 294967291,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.3831359981,
+                ["quest_type"] = 13,
+            },
+        },
+        ["stonefalls/davonswatch_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "One of the Undaunted",
+                ["x"] = 0.7975910902,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.7918684003,
+                ["giver"] = "Kailstig the Axe",
+                ["y"] = 0.4744977951,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Stonefalls",
+                ["zone_index"] = 9,
+                ["lang"] = "en",
+                ["quest_display_type"] = 2,
+                ["gpsy"] = 0.4287240092,
+                ["quest_type"] = 0,
+            },
+        },
+        ["wrothgar/wrothgar_base_0"] = 
+        {
+        },
+        ["telvanni/u38_necrom_base_0"] = 
+        {
+            [2] = 
+            {
+                ["name"] = "Bastion Nymic - Writhing Wastes",
+                ["x"] = 0.5231278539,
+                ["repeat_type"] = 2,
+                ["api"] = 101043,
+                ["gpsx"] = 0.9407952149,
+                ["giver"] = "Ordinator Tandasea",
+                ["y"] = 0.5646120310,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Apocrypha",
+                ["zone_index"] = 958,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.3882076065,
+                ["quest_type"] = 0,
+            },
+            [1] = 
+            {
+                ["name"] = "Arcane Residue",
+                ["x"] = 0.5204422474,
+                ["repeat_type"] = 2,
+                ["api"] = 101043,
+                ["gpsx"] = 0.9406716169,
+                ["giver"] = "Ordinator Nelyn",
+                ["y"] = 0.5769451261,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Apocrypha",
+                ["zone_index"] = 958,
+                ["lang"] = "en",
+                ["quest_display_type"] = 0,
+                ["gpsy"] = 0.3887752051,
+                ["quest_type"] = 1,
+            },
+        },
+        ["summerset/collegeofpsijicsruins_btm_base_0"] = 
+        {
+        },
+        ["westweald/westwealdoverland_base_0"] = 
+        {
         },
         ["shadowfen/atanazruins_base_0"] = 
         {
@@ -118,3457 +582,344 @@ LibQuestData_SavedVariables =
         {
             [1] = 
             {
+                ["name"] = "The Long Game",
+                ["x"] = 0.5209242105,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.0760964033,
                 ["giver"] = "Marcelle Dantaine",
                 ["y"] = 0.6786675453,
-                ["api"] = 101044,
-                ["zone_index"] = 885,
                 ["questID"] = -1,
-                ["x"] = 0.5209242105,
-                ["gpsx"] = 0.0760964033,
-                ["gpsy"] = 0.5866096125,
-                ["zone_name"] = "High Isle",
-                ["quest_type"] = 0,
-                ["name"] = "The Long Game",
                 ["poi_index"] = 8,
+                ["zone_name"] = "High Isle",
+                ["zone_index"] = 885,
                 ["lang"] = "en",
                 ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
+                ["gpsy"] = 0.5866096125,
+                ["quest_type"] = 0,
             },
-        },
-        ["thievesguild/abahslanding_base_0"] = 
-        {
-        },
-        ["auridon/mehrunesspite_base_0"] = 
-        {
         },
         ["blackwood/blackwood_base_0"] = 
         {
             [1] = 
             {
+                ["name"] = "Harrada Harvest",
+                ["x"] = 0.5823624134,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.6730100994,
                 ["giver"] = "Adrahawn",
                 ["y"] = 0.6516878009,
-                ["api"] = 101044,
-                ["zone_index"] = 836,
                 ["questID"] = -1,
-                ["x"] = 0.5823624134,
-                ["gpsx"] = 0.6730100994,
-                ["gpsy"] = 0.6895402718,
-                ["zone_name"] = "Blackwood",
-                ["quest_type"] = 0,
-                ["name"] = "Harrada Harvest",
                 ["poi_index"] = 32,
+                ["zone_name"] = "Blackwood",
+                ["zone_index"] = 836,
                 ["lang"] = "en",
                 ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
-            },
-        },
-        ["elsweyr/riverholdcity_base_0"] = 
-        {
-            [1] = 
-            {
-                ["giver"] = "Iraya",
-                ["y"] = 0.5147333145,
-                ["api"] = 101044,
-                ["zone_index"] = 683,
-                ["questID"] = -1,
-                ["x"] = 0.3704067171,
-                ["gpsx"] = 0.5266655984,
-                ["gpsy"] = 0.6012324028,
-                ["zone_name"] = "Northern Elsweyr",
+                ["gpsy"] = 0.6895402718,
                 ["quest_type"] = 0,
-                ["name"] = "The Song of Kingdoms",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
             },
         },
-        ["skyrim/solitudecity_base_0"] = 
+        ["rivenspire/erokii_base_0"] = 
         {
         },
-        ["apocrypha/u40_tomehold_theater1_0"] = 
+        ["apocrypha/u40_tomehold_starterarea_0"] = 
         {
             [1] = 
             {
-                ["giver"] = "Destozuno",
-                ["y"] = 0.4399999976,
+                ["name"] = "Infinite Avenger: Marauder",
+                ["x"] = 0.5764706135,
+                ["repeat_type"] = 2,
                 ["api"] = 101043,
-                ["zone_index"] = 974,
+                ["gpsx"] = 0.1758663953,
+                ["giver"] = "Esalinwe",
+                ["y"] = 0.5333333611,
                 ["questID"] = -1,
-                ["x"] = 0.4733333290,
-                ["gpsx"] = 0.1758624001,
-                ["gpsy"] = -0.0306603957,
-                ["zone_name"] = "Infinite Archive",
-                ["quest_type"] = 0,
-                ["name"] = "Restoring the Resurrected",
                 ["poi_index"] = 294967291,
+                ["zone_name"] = "Infinite Archive",
+                ["zone_index"] = 974,
                 ["lang"] = "en",
                 ["quest_display_type"] = 12,
-                ["repeat_type"] = 0,
+                ["gpsy"] = -0.0311911934,
+                ["quest_type"] = 0,
             },
-        },
-        ["systres/gravendeep_island_map_0"] = 
-        {
-        },
-        ["apocrypha/u40_tomehold_bundle1_0"] = 
-        {
-        },
-        ["auridon/auridon_base_0"] = 
-        {
-        },
-        ["telvanni/u38_necrom_base_0"] = 
-        {
             [2] = 
             {
-                ["giver"] = "Ordinator Tandasea",
-                ["y"] = 0.5646120310,
+                ["name"] = "Replication Elimination",
+                ["x"] = 0.4529411793,
+                ["repeat_type"] = 2,
                 ["api"] = 101043,
-                ["zone_index"] = 958,
+                ["gpsx"] = 0.1758411953,
+                ["giver"] = "Master Malkhest",
+                ["y"] = 0.4960784316,
                 ["questID"] = -1,
-                ["x"] = 0.5231278539,
-                ["gpsx"] = 0.9407952149,
-                ["gpsy"] = 0.3882076065,
-                ["zone_name"] = "Apocrypha",
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Infinite Archive",
+                ["zone_index"] = 974,
+                ["lang"] = "en",
+                ["quest_display_type"] = 12,
+                ["gpsy"] = -0.0311987934,
                 ["quest_type"] = 0,
-                ["name"] = "Bastion Nymic - Writhing Wastes",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 2,
             },
-            [1] = 
+            [3] = 
             {
-                ["giver"] = "Ordinator Nelyn",
-                ["y"] = 0.5769451261,
-                ["api"] = 101043,
-                ["zone_index"] = 958,
-                ["questID"] = -1,
-                ["x"] = 0.5204422474,
-                ["gpsx"] = 0.9406716169,
-                ["gpsy"] = 0.3887752051,
-                ["zone_name"] = "Apocrypha",
-                ["quest_type"] = 1,
-                ["name"] = "Arcane Residue",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
+                ["name"] = "Infinite Avenger: Fabled",
+                ["x"] = 0.5764706135,
                 ["repeat_type"] = 2,
-            },
-        },
-        ["vvardenfell/viviccity_base_0"] = 
-        {
-            [1] = 
-            {
-                ["giver"] = "Battlemaster Rivyn",
-                ["y"] = 0.5648705959,
                 ["api"] = 101044,
-                ["zone_index"] = 294967291,
+                ["gpsx"] = 0.1758663953,
+                ["giver"] = "Esalinwe",
+                ["y"] = 0.5333333611,
                 ["questID"] = -1,
-                ["x"] = 0.2248040587,
-                ["gpsx"] = 0.7663275726,
-                ["gpsy"] = 0.3831359981,
-                ["zone_name"] = "",
-                ["quest_type"] = 13,
-                ["name"] = "Test of Mettle",
                 ["poi_index"] = 294967291,
+                ["zone_name"] = "Infinite Archive",
+                ["zone_index"] = 976,
                 ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 2,
+                ["quest_display_type"] = 12,
+                ["gpsy"] = -0.0311911934,
+                ["quest_type"] = 0,
             },
         },
-        ["summerset/alinor_base_0"] = 
+        ["craglorn/craglorn_base_0"] = 
+        {
+        },
+        ["murkmire/rootwhisper_base_0"] = 
+        {
+        },
+        ["murkmire/ui_map_blackroseprison01_base_0"] = 
+        {
+        },
+        ["vvardenfell/vvardenfell_base_0"] = 
+        {
+        },
+        ["vvardenfell/forgottenwastesext_base_0"] = 
         {
         },
         ["deshaan/forgottencrypts_base_0"] = 
         {
             [1] = 
             {
+                ["name"] = "A Family Divided",
+                ["x"] = 0.3667625785,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.7259988247,
                 ["giver"] = "Sela",
                 ["y"] = 0.7415827513,
-                ["api"] = 101044,
-                ["zone_index"] = 10,
                 ["questID"] = -1,
-                ["x"] = 0.3667625785,
-                ["gpsx"] = 0.7259988247,
-                ["gpsy"] = 0.4978143911,
-                ["zone_name"] = "Deshaan",
-                ["quest_type"] = 5,
-                ["name"] = "A Family Divided",
                 ["poi_index"] = 20,
+                ["zone_name"] = "Deshaan",
+                ["zone_index"] = 10,
                 ["lang"] = "en",
                 ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
+                ["gpsy"] = 0.4978143911,
+                ["quest_type"] = 5,
             },
-        },
-        ["grahtwood/eldenrootmagesguilddown_base_0"] = 
-        {
-        },
-        ["vvardenfell/vivechoj01a_base_0"] = 
-        {
-            [2] = 
-            {
-                ["giver"] = "Beleru Omoril",
-                ["y"] = 0.3209039569,
-                ["api"] = 101044,
-                ["zone_index"] = 469,
-                ["questID"] = -1,
-                ["x"] = 0.6039603949,
-                ["gpsx"] = 0.7743740247,
-                ["gpsy"] = 0.3827484036,
-                ["zone_name"] = "Vvardenfell",
-                ["quest_type"] = 1,
-                ["name"] = "Culling the Swarm",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 2,
-            },
-            [1] = 
-            {
-                ["giver"] = "Traylan Omoril",
-                ["y"] = 0.6870056391,
-                ["api"] = 101044,
-                ["zone_index"] = 469,
-                ["questID"] = -1,
-                ["x"] = 0.6875687838,
-                ["gpsx"] = 0.7744044247,
-                ["gpsy"] = 0.3828780036,
-                ["zone_name"] = "Vvardenfell",
-                ["quest_type"] = 0,
-                ["name"] = "Unsettled Syndicate",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 2,
-            },
-        },
-        ["clockwork/brassfortress_base_0"] = 
-        {
-            [1] = 
-            {
-                ["giver"] = "Associate Zanon",
-                ["y"] = 0.7084895968,
-                ["api"] = 101044,
-                ["zone_index"] = 591,
-                ["questID"] = -1,
-                ["x"] = 0.2394223213,
-                ["gpsx"] = 0.2388383956,
-                ["gpsy"] = 1.0430363882,
-                ["zone_name"] = "Clockwork City",
-                ["quest_type"] = 0,
-                ["name"] = "The Precursor",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
-            },
-        },
-        ["deshaan/kwamacolony_base_0"] = 
-        {
-        },
-        ["craglorn/craglorn_base_0"] = 
-        {
-        },
-        ["grahtwood/eldenrootfightersguildown_base_0"] = 
-        {
-        },
-        ["rivenspire/rivenspire_base_0"] = 
-        {
-        },
-        ["wrothgar/wrothgar_base_0"] = 
-        {
-        },
-        ["stonefalls/davonswatch_base_0"] = 
-        {
-            [1] = 
-            {
-                ["giver"] = "Kailstig the Axe",
-                ["y"] = 0.4744977951,
-                ["api"] = 101044,
-                ["zone_index"] = 9,
-                ["questID"] = -1,
-                ["x"] = 0.7975910902,
-                ["gpsx"] = 0.7918684003,
-                ["gpsy"] = 0.4287240092,
-                ["zone_name"] = "Stonefalls",
-                ["quest_type"] = 0,
-                ["name"] = "One of the Undaunted",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 2,
-                ["repeat_type"] = 0,
-            },
-        },
-        ["southernelsweyr/southernelsweyr_base_0"] = 
-        {
-        },
-        ["eastmarch/eastmarch_base_0"] = 
-        {
-        },
-        ["deshaan/deepcragden_base_0"] = 
-        {
         },
         ["auridon/skywatch_base_0"] = 
         {
             [1] = 
             {
+                ["name"] = "Circus of Cheerful Slaughter",
+                ["x"] = 0.5029646158,
+                ["repeat_type"] = 0,
+                ["api"] = 101043,
+                ["gpsx"] = 0.2448463966,
                 ["giver"] = "Arch-Mage Shalidor",
                 ["y"] = 0.3790257275,
-                ["api"] = 101043,
-                ["zone_index"] = 294967291,
                 ["questID"] = -1,
-                ["x"] = 0.5029646158,
-                ["gpsx"] = 0.2448463966,
-                ["gpsy"] = 0.6735467975,
-                ["zone_name"] = "",
-                ["quest_type"] = 3,
-                ["name"] = "Circus of Cheerful Slaughter",
                 ["poi_index"] = 294967291,
+                ["zone_name"] = "",
+                ["zone_index"] = 294967291,
                 ["lang"] = "en",
                 ["quest_display_type"] = 1,
-                ["repeat_type"] = 0,
+                ["gpsy"] = 0.6735467975,
+                ["quest_type"] = 3,
             },
         },
-        ["skyrim/blackreach_base_0"] = 
-        {
-            [1] = 
-            {
-                ["giver"] = "Letter from the Skald-King's Agent",
-                ["y"] = 0.6974254847,
-                ["api"] = 101043,
-                ["zone_index"] = 744,
-                ["questID"] = -1,
-                ["x"] = 0.3020680845,
-                ["gpsx"] = 0.6494880198,
-                ["gpsy"] = 1.5565960403,
-                ["zone_name"] = "Western Skyrim",
-                ["quest_type"] = 0,
-                ["name"] = "The Gathering Storm",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 10,
-                ["repeat_type"] = 0,
-            },
-            [2] = 
-            {
-                ["giver"] = "Overseer Urlvar",
-                ["y"] = 0.7161796689,
-                ["api"] = 101043,
-                ["zone_index"] = 744,
-                ["questID"] = -1,
-                ["x"] = 0.3313835859,
-                ["gpsx"] = 0.6518496180,
-                ["gpsy"] = 1.5581068399,
-                ["zone_name"] = "Western Skyrim",
-                ["quest_type"] = 0,
-                ["name"] = "Digging Up Trouble",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
-            },
-            [3] = 
-            {
-                ["giver"] = "Kireth Vanos",
-                ["y"] = 0.6698378921,
-                ["api"] = 101043,
-                ["zone_index"] = 744,
-                ["questID"] = -1,
-                ["x"] = 0.4929665625,
-                ["gpsx"] = 0.6648664197,
-                ["gpsy"] = 1.5543736389,
-                ["zone_name"] = "Western Skyrim",
-                ["quest_type"] = 0,
-                ["name"] = "The Tones of the Deep",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
-            },
-        },
-        ["deshaan/mournhold_base_0"] = 
-        {
-        },
-        ["murkmire/ui_map_blackroseprison01_base_0"] = 
-        {
-        },
-        ["rivenspire/erokii_base_0"] = 
-        {
-        },
-        ["summerset/collegeofpsijicsruins_btm_base_0"] = 
-        {
-        },
-        ["galen/u36_vastyrcity_base_0"] = 
-        {
-        },
-        ["housing/snowglobe_base_0"] = 
-        {
-        },
-        ["deadlands/u32_fargrave_base_0"] = 
-        {
-        },
-        ["murkmire/lilmothcity_base_0"] = 
-        {
-        },
-        ["westweald/u42_skingrad_base_0"] = 
+        ["grahtwood/eldenrootgroundfloor_base_0"] = 
         {
             [2] = 
             {
-                ["giver"] = "Commandant Salerius",
-                ["y"] = 0.5780492425,
-                ["api"] = 101043,
-                ["zone_index"] = 981,
-                ["questID"] = -1,
-                ["x"] = 0.6222179532,
-                ["gpsx"] = 0.4425620096,
-                ["gpsy"] = 0.5271139952,
-                ["zone_name"] = "West Weald",
-                ["quest_type"] = 0,
-                ["name"] = "Loan Recall",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
+                ["name"] = "Pledge: City of Ash II",
+                ["x"] = 0.5633470416,
                 ["repeat_type"] = 2,
-            },
-            [1] = 
-            {
-                ["giver"] = "Lieutenant Agrance",
-                ["y"] = 0.5734216571,
-                ["api"] = 101043,
-                ["zone_index"] = 981,
-                ["questID"] = -1,
-                ["x"] = 0.6216394901,
-                ["gpsx"] = 0.4425452092,
-                ["gpsy"] = 0.5269795953,
-                ["zone_name"] = "West Weald",
-                ["quest_type"] = 1,
-                ["name"] = "Fate-Eater",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 2,
-            },
-        },
-        ["cyrodiil/eastelsweyrgate_base_0"] = 
-        {
-            [1] = 
-            {
-                ["giver"] = "Scouting Mission Board",
-                ["y"] = 0.4257530570,
                 ["api"] = 101044,
-                ["zone_index"] = 38,
+                ["gpsx"] = 0.4362952095,
+                ["giver"] = "Glirion the Redbeard",
+                ["y"] = 0.6666182876,
                 ["questID"] = -1,
-                ["x"] = 0.5148420930,
-                ["gpsx"] = 0.5695340211,
-                ["gpsy"] = 0.5591815918,
-                ["zone_name"] = "Cyrodiil",
-                ["quest_type"] = 7,
-                ["name"] = "Scout Arrius Farm",
+                ["poi_index"] = 58,
+                ["zone_name"] = "Greenshade",
+                ["zone_index"] = 18,
+                ["lang"] = "en",
+                ["quest_display_type"] = 2,
+                ["gpsy"] = 0.7360156241,
+                ["quest_type"] = 15,
+            },
+            [1] = 
+            {
+                ["name"] = "Pledge: Banished Cells II",
+                ["x"] = 0.5748274922,
+                ["repeat_type"] = 2,
+                ["api"] = 101044,
+                ["gpsx"] = 0.4366432095,
+                ["giver"] = "Maj al-Ragath",
+                ["y"] = 0.6612475514,
+                ["questID"] = -1,
+                ["poi_index"] = 61,
+                ["zone_name"] = "Auridon",
+                ["zone_index"] = 179,
+                ["lang"] = "en",
+                ["quest_display_type"] = 2,
+                ["gpsy"] = 0.7358528242,
+                ["quest_type"] = 15,
+            },
+        },
+        ["elsweyr/riverholdcity_base_0"] = 
+        {
+            [1] = 
+            {
+                ["name"] = "The Song of Kingdoms",
+                ["x"] = 0.3704067171,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.5266655984,
+                ["giver"] = "Iraya",
+                ["y"] = 0.5147333145,
+                ["questID"] = -1,
                 ["poi_index"] = 294967291,
+                ["zone_name"] = "Northern Elsweyr",
+                ["zone_index"] = 683,
                 ["lang"] = "en",
                 ["quest_display_type"] = 0,
-                ["repeat_type"] = 1,
+                ["gpsy"] = 0.6012324028,
+                ["quest_type"] = 0,
             },
         },
         ["deshaan/deshaan_base_0"] = 
         {
             [1] = 
             {
+                ["name"] = "Search and Rescue",
+                ["x"] = 0.4393571913,
+                ["repeat_type"] = 0,
+                ["api"] = 101043,
+                ["gpsx"] = 0.7800070256,
                 ["giver"] = "Edrasa Drelas",
                 ["y"] = 0.6500750184,
-                ["api"] = 101043,
-                ["zone_index"] = 10,
                 ["questID"] = -1,
-                ["x"] = 0.4393571913,
-                ["gpsx"] = 0.7800070256,
-                ["gpsy"] = 0.5297298972,
-                ["zone_name"] = "Deshaan",
-                ["quest_type"] = 0,
-                ["name"] = "Search and Rescue",
                 ["poi_index"] = 4,
+                ["zone_name"] = "Deshaan",
+                ["zone_index"] = 10,
                 ["lang"] = "en",
                 ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
-            },
-        },
-        ["cyrodiil/ava_whole_0"] = 
-        {
-        },
-        ["westweald/westwealdoverland_base_0"] = 
-        {
-        },
-        ["blackwood/u30_leyawiincity_base_0"] = 
-        {
-        },
-        ["grahtwood/grahtwood_base_0"] = 
-        {
-        },
-        ["grahtwood/eldenrootcrafting_base_0"] = 
-        {
-        },
-        ["grahtwood/eldenrootgroundfloor_base_0"] = 
-        {
-            [2] = 
-            {
-                ["giver"] = "Glirion the Redbeard",
-                ["y"] = 0.6666182876,
-                ["api"] = 101044,
-                ["zone_index"] = 18,
-                ["questID"] = -1,
-                ["x"] = 0.5633470416,
-                ["gpsx"] = 0.4362952095,
-                ["gpsy"] = 0.7360156241,
-                ["zone_name"] = "Greenshade",
-                ["quest_type"] = 15,
-                ["name"] = "Pledge: City of Ash II",
-                ["poi_index"] = 58,
-                ["lang"] = "en",
-                ["quest_display_type"] = 2,
-                ["repeat_type"] = 2,
-            },
-            [1] = 
-            {
-                ["giver"] = "Maj al-Ragath",
-                ["y"] = 0.6612475514,
-                ["api"] = 101044,
-                ["zone_index"] = 179,
-                ["questID"] = -1,
-                ["x"] = 0.5748274922,
-                ["gpsx"] = 0.4366432095,
-                ["gpsy"] = 0.7358528242,
-                ["zone_name"] = "Auridon",
-                ["quest_type"] = 15,
-                ["name"] = "Pledge: Banished Cells II",
-                ["poi_index"] = 61,
-                ["lang"] = "en",
-                ["quest_display_type"] = 2,
-                ["repeat_type"] = 2,
-            },
-        },
-        ["systres/u34_systreszone_base_0"] = 
-        {
-            [1] = 
-            {
-                ["giver"] = "Genalda Ervine",
-                ["y"] = 0.8088064790,
-                ["api"] = 101044,
-                ["zone_index"] = 885,
-                ["questID"] = -1,
-                ["x"] = 0.4388638735,
-                ["gpsx"] = 0.0633330759,
-                ["gpsy"] = 0.5952501735,
-                ["zone_name"] = "High Isle",
+                ["gpsy"] = 0.5297298972,
                 ["quest_type"] = 0,
-                ["name"] = "The Intoxicating Mix",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
-            },
-            [2] = 
-            {
-                ["giver"] = "Balki's Instructions",
-                ["y"] = 0.8318872452,
-                ["api"] = 101044,
-                ["zone_index"] = 885,
-                ["questID"] = -1,
-                ["x"] = 0.4083739519,
-                ["gpsx"] = 0.0623421534,
-                ["gpsy"] = 0.5960106847,
-                ["zone_name"] = "High Isle",
-                ["quest_type"] = 0,
-                ["name"] = "Balki's Map Fragment",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
-            },
-            [3] = 
-            {
-                ["giver"] = "Sergeant Brusic",
-                ["y"] = 0.2036462873,
-                ["api"] = 101044,
-                ["zone_index"] = 885,
-                ["questID"] = -1,
-                ["x"] = 0.8190205097,
-                ["gpsx"] = 0.0829260026,
-                ["gpsy"] = 0.5731752020,
-                ["zone_name"] = "High Isle",
-                ["quest_type"] = 0,
-                ["name"] = "Coral Conundrum",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
             },
         },
-        ["grahtwood/rootsunder_base_0"] = 
+        ["auridon/auridon_base_0"] = 
         {
         },
-        ["darkbrotherhood/kvatchcity_base_0"] = 
+        ["grahtwood/eldenrootfightersguildown_base_0"] = 
         {
-        },
-        ["westweald/u42_leftwheal_ext2_base_0"] = 
-        {
-            [1] = 
-            {
-                ["giver"] = "Baroness Eliana Cossa",
-                ["y"] = 0.9304640889,
-                ["api"] = 101044,
-                ["zone_index"] = 983,
-                ["questID"] = -1,
-                ["x"] = 0.8442267776,
-                ["gpsx"] = 0.3703444083,
-                ["gpsy"] = 0.5057219938,
-                ["zone_name"] = "West Weald",
-                ["quest_type"] = 0,
-                ["name"] = "Caught in a Trap",
-                ["poi_index"] = 14,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
-                ["repeat_type"] = 0,
-            },
         },
         ["systres/u34_gonfalonbaycity_base_0"] = 
         {
             [2] = 
             {
-                ["giver"] = "Kishka",
-                ["y"] = 0.6669856310,
-                ["api"] = 101044,
-                ["zone_index"] = 885,
-                ["questID"] = -1,
-                ["x"] = 0.6047846675,
-                ["gpsx"] = 0.0704940026,
-                ["gpsy"] = 0.6048820052,
                 ["zone_name"] = "High Isle",
-                ["quest_type"] = 17,
-                ["name"] = "Cards Across the Continent",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
+                ["gpsx"] = 0.0704992028,
                 ["repeat_type"] = 2,
+                ["api"] = 101044,
+                ["x"] = 0.6055622101,
+                ["questID"] = -1,
+                ["y"] = 0.6684808731,
+                ["zone_index"] = 885,
+                ["poi_index"] = 294967291,
+                ["giver"] = "Kishka",
+                ["quest_display_type"] = 0,
+                ["lang"] = "en",
+                ["name"] = "Cards Across the Continent",
+                ["gpsy"] = 0.6048920054,
+                ["quest_type"] = 17,
             },
             [1] = 
             {
+                ["name"] = "Of Knights and Knaves",
+                ["x"] = 0.4706339836,
+                ["repeat_type"] = 0,
+                ["api"] = 101044,
+                ["gpsx"] = 0.0695968028,
                 ["giver"] = "Jakarn",
                 ["y"] = 0.4038277566,
-                ["api"] = 101044,
-                ["zone_index"] = 885,
                 ["questID"] = -1,
-                ["x"] = 0.4706339836,
-                ["gpsx"] = 0.0695968028,
-                ["gpsy"] = 0.6031220053,
-                ["zone_name"] = "High Isle",
-                ["quest_type"] = 0,
-                ["name"] = "Of Knights and Knaves",
                 ["poi_index"] = 294967291,
+                ["zone_name"] = "High Isle",
+                ["zone_index"] = 885,
                 ["lang"] = "en",
                 ["quest_display_type"] = 10,
-                ["repeat_type"] = 0,
+                ["gpsy"] = 0.6031220053,
+                ["quest_type"] = 0,
             },
         },
-        ["alikr/lostcity_base_0"] = 
+        ["cyrodiil/imperialcity_base_0"] = 
         {
         },
-        ["reach/reach_base_0"] = 
+        ["blackwood/u30_leyawiincity_base_0"] = 
         {
-            [1] = 
-            {
-                ["giver"] = "Angair",
-                ["y"] = 0.5125017762,
-                ["api"] = 101043,
-                ["zone_index"] = 784,
-                ["questID"] = -1,
-                ["x"] = 0.3086277246,
-                ["gpsx"] = 0.3778661574,
-                ["gpsy"] = 0.3038548818,
-                ["zone_name"] = "The Reach",
-                ["quest_type"] = 1,
-                ["name"] = "A Challenge of Worth",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 3,
-                ["repeat_type"] = 0,
-            },
         },
-        ["rivenspire/hildunessecretrefuge_base_0"] = 
+        ["southernelsweyr/southernelsweyr_base_0"] = 
         {
         },
         ["deshaan/desolatecave_base_0"] = 
         {
         },
-        ["housing/u42_colovianwinery_ext_01_0"] = 
+        ["grahtwood/rootsunder_base_0"] = 
         {
         },
-        ["murkmire/rootwhisper_base_0"] = 
+        ["auridon/mehrunesspite_base_0"] = 
         {
         },
-        ["clockwork/clockwork_base_0"] = 
+        ["reapersmarch/rawlkha_base_0"] = 
+        {
+        },
+        ["apocrypha/u40_tomehold_theater1_0"] = 
         {
             [1] = 
             {
-                ["giver"] = "Amili Lloryn",
-                ["y"] = 0.6026043296,
-                ["api"] = 101044,
-                ["zone_index"] = 591,
-                ["questID"] = -1,
-                ["x"] = 0.5892823339,
-                ["gpsx"] = 0.2752547984,
-                ["gpsy"] = 1.0805732101,
-                ["zone_name"] = "Clockwork City",
-                ["quest_type"] = 0,
-                ["name"] = "The Astronomer's Apprentice",
-                ["poi_index"] = 7,
-                ["lang"] = "en",
-                ["quest_display_type"] = 0,
+                ["name"] = "Restoring the Resurrected",
+                ["x"] = 0.4733333290,
                 ["repeat_type"] = 0,
+                ["api"] = 101043,
+                ["gpsx"] = 0.1758624001,
+                ["giver"] = "Destozuno",
+                ["y"] = 0.4399999976,
+                ["questID"] = -1,
+                ["poi_index"] = 294967291,
+                ["zone_name"] = "Infinite Archive",
+                ["zone_index"] = 974,
+                ["lang"] = "en",
+                ["quest_display_type"] = 12,
+                ["gpsy"] = -0.0306603957,
+                ["quest_type"] = 0,
             },
         },
-        ["apocrypha/u40_tomehold_starterarea_0"] = 
+        ["cyrodiil/ava_whole_0"] = 
         {
-            [1] = 
-            {
-                ["giver"] = "Esalinwe",
-                ["y"] = 0.5333333611,
-                ["api"] = 101043,
-                ["zone_index"] = 974,
-                ["questID"] = -1,
-                ["x"] = 0.5764706135,
-                ["gpsx"] = 0.1758663953,
-                ["gpsy"] = -0.0311911934,
-                ["zone_name"] = "Infinite Archive",
-                ["quest_type"] = 0,
-                ["name"] = "Infinite Avenger: Marauder",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 12,
-                ["repeat_type"] = 2,
-            },
-            [2] = 
-            {
-                ["giver"] = "Master Malkhest",
-                ["y"] = 0.4960784316,
-                ["api"] = 101043,
-                ["zone_index"] = 974,
-                ["questID"] = -1,
-                ["x"] = 0.4529411793,
-                ["gpsx"] = 0.1758411953,
-                ["gpsy"] = -0.0311987934,
-                ["zone_name"] = "Infinite Archive",
-                ["quest_type"] = 0,
-                ["name"] = "Replication Elimination",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 12,
-                ["repeat_type"] = 2,
-            },
-            [3] = 
-            {
-                ["giver"] = "Esalinwe",
-                ["y"] = 0.5333333611,
-                ["api"] = 101044,
-                ["zone_index"] = 976,
-                ["questID"] = -1,
-                ["x"] = 0.5764706135,
-                ["gpsx"] = 0.1758663953,
-                ["gpsy"] = -0.0311911934,
-                ["zone_name"] = "Infinite Archive",
-                ["quest_type"] = 0,
-                ["name"] = "Infinite Avenger: Fabled",
-                ["poi_index"] = 294967291,
-                ["lang"] = "en",
-                ["quest_display_type"] = 12,
-                ["repeat_type"] = 2,
-            },
         },
-        ["eastmarch/hallofthedead_base_0"] = 
+        ["deadlands/u32_fargrave_base_0"] = 
         {
         },
         ["coldharbor/hollowcity_base_0"] = 
         {
         },
-        ["vvardenfell/vivechow01a_base_0"] = 
+        ["apocrypha/u40_tomehold_bundle1_0"] = 
         {
         },
     },
-    ["quest_info"] = 
-    {
-        [5377] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5634] = 
-        {
-            [1] = 3,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 15634,
-            [5] = 10001,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5381] = 
-        {
-            [1] = 15,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [5388] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5389] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7182] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6159] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5392] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7186] = 
-        {
-            [1] = 16,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 11,
-        },
-        [5395] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7188] = 
-        {
-            [1] = 16,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 11,
-        },
-        [7189] = 
-        {
-            [1] = 16,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 11,
-        },
-        [6166] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5400] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7194] = 
-        {
-            [1] = 16,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 11,
-        },
-        [5406] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5407] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5409] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5412] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5413] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7207] = 
-        {
-            [1] = 16,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 11,
-        },
-        [7216] = 
-        {
-            [1] = 16,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 11,
-        },
-        [6449] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6450] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6451] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7221] = 
-        {
-            [1] = 16,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 11,
-        },
-        [4406] = 
-        {
-            [1] = 5,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4151] = 
-        {
-            [1] = 5,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 14146,
-            [5] = 10002,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6136] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5990] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6202] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6757] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7228] = 
-        {
-            [1] = 12,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 3,
-        },
-        [6717] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5950] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6743] = 
-        {
-            [1] = 15,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [6228] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5738] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5991] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5443] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6392] = 
-        {
-            [1] = 7,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 3,
-            [7] = 0,
-        },
-        [6469] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5492] = 
-        {
-            [1] = 7,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5703] = 
-        {
-            [1] = 3,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5982] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [3657] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6218] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6731] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5708] = 
-        {
-            [1] = 3,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 15614,
-            [5] = 10001,
-            [6] = 0,
-            [7] = 10,
-        },
-        [6487] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6888] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4339] = 
-        {
-            [1] = 5,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [3964] = 
-        {
-            [1] = 5,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7037] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7219] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6227] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5972] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5973] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5974] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5719] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5976] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5977] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5978] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5979] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6236] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5981] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5726] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5983] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5984] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5985] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5986] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5987] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5988] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5733] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5734] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5735] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4146] = 
-        {
-            [1] = 5,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5737] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [2922] = 
-        {
-            [1] = 7,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 3,
-            [7] = 0,
-        },
-        [6763] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6508] = 
-        {
-            [1] = 15,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [6018] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5742] = 
-        {
-            [1] = 12,
-            [2] = 3,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6528] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5744] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6892] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [2930] = 
-        {
-            [1] = 7,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 3,
-            [7] = 0,
-        },
-        [5491] = 
-        {
-            [1] = 7,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6772] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6891] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5396] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5495] = 
-        {
-            [1] = 7,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6776] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7187] = 
-        {
-            [1] = 16,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 11,
-        },
-        [5498] = 
-        {
-            [1] = 7,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4072] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6268] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6269] = 
-        {
-            [1] = 5,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [4839] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5394] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7040] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6017] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [3970] = 
-        {
-            [1] = 5,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6019] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6020] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6021] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6022] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5900] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6808] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6803] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5770] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 5,
-        },
-        [5786] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5260] = 
-        {
-            [1] = 15,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [4493] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4494] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6016] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6800] = 
-        {
-            [1] = 17,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6801] = 
-        {
-            [1] = 17,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5778] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5779] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5788] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6805] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6813] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6807] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6040] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6809] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5274] = 
-        {
-            [1] = 15,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [5284] = 
-        {
-            [1] = 15,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [6812] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5789] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5278] = 
-        {
-            [1] = 15,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [5791] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6816] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5793] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6818] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6822] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5796] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6821] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5798] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4316] = 
-        {
-            [1] = 5,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5800] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6825] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6826] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5802] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6357] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7093] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6086] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5825] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5808] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6595] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6101] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5811] = 
-        {
-            [1] = 12,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4532] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6837] = 
-        {
-            [1] = 5,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [5814] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7110] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7096] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6329] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7112] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6098] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5834] = 
-        {
-            [1] = 12,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6077] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [2750] = 
-        {
-            [1] = 7,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 3,
-            [7] = 0,
-        },
-        [5823] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6592] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6081] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6594] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5827] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7108] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7109] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5830] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7111] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6344] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7113] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7114] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7115] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4556] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5837] = 
-        {
-            [1] = 12,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7118] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7119] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [7120] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5839] = 
-        {
-            [1] = 12,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5586] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6099] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6100] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5845] = 
-        {
-            [1] = 12,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6102] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6103] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6104] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6105] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6593] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5595] = 
-        {
-            [1] = 3,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 15595,
-            [5] = 10001,
-            [6] = 10,
-            [7] = 10,
-        },
-        [5852] = 
-        {
-            [1] = 12,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5794] = 
-        {
-            [1] = 3,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6815] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5855] = 
-        {
-            [1] = 12,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5856] = 
-        {
-            [1] = 12,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6881] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4322] = 
-        {
-            [1] = 5,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6883] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6884] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6885] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5606] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6887] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4840] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6889] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6890] = 
-        {
-            [1] = 1,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6635] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4844] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5248] = 
-        {
-            [1] = 15,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 2,
-        },
-        [6286] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4079] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6384] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4410] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101043,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6642] = 
-        {
-            [1] = 0,
-            [2] = 0,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6899] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5975] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6901] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6134] = 
-        {
-            [1] = 12,
-            [2] = 3,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5989] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5368] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6485] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6489] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5980] = 
-        {
-            [1] = 4,
-            [2] = 1,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [6237] = 
-        {
-            [1] = 0,
-            [2] = 2,
-            [3] = 101043,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [4349] = 
-        {
-            [1] = 7,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 3,
-            [7] = 0,
-        },
-        [5374] = 
-        {
-            [1] = 4,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10001,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-        [5500] = 
-        {
-            [1] = 7,
-            [2] = 2,
-            [3] = 101044,
-            [4] = 10000,
-            [5] = 10000,
-            [6] = 0,
-            [7] = 0,
-        },
-    },
-    ["libVersion"] = 269,
-    ["version"] = 4,
     ["location_info"] = 
     {
-        ["galen/u36_vastyrcity_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.5594805479,
-                [2] = 0.4578184783,
-                [3] = 0.0486023997,
-                [4] = 0.5707936111,
-                [5] = 6901,
-                [6] = "Druid Aishabeh",
-            },
-            [2] = 
-            {
-                [1] = 0.5636478066,
-                [2] = 0.4600959420,
-                [3] = 0.0486367995,
-                [4] = 0.5708124111,
-                [5] = 6892,
-                [6] = "Druid Gastoc",
-            },
-            [3] = 
-            {
-                [1] = 0.5667005777,
-                [2] = 0.4566070735,
-                [3] = 0.0486619996,
-                [4] = 0.5707836112,
-                [5] = 6885,
-                [6] = 100274,
-            },
-            [4] = 
-            {
-                [1] = 0.5586567521,
-                [2] = 0.4601444006,
-                [3] = 0.0485955994,
-                [4] = 0.5708128111,
-                [5] = 6899,
-                [6] = "Druid Aishabeh",
-            },
-            [5] = 
-            {
-                [1] = 0.5656830072,
-                [2] = 0.4585453272,
-                [3] = 0.0486535997,
-                [4] = 0.5707996111,
-                [5] = 6887,
-                [6] = 100274,
-            },
-            [6] = 
-            {
-                [1] = 0.5656830072,
-                [2] = 0.4585453272,
-                [3] = 0.0486535997,
-                [4] = 0.5707996111,
-                [5] = 6881,
-                [6] = "Druid Gastoc",
-            },
-            [7] = 
-            {
-                [1] = 0.5665067434,
-                [2] = 0.4568008780,
-                [3] = 0.0486603995,
-                [4] = 0.5707852110,
-                [5] = 6884,
-                [6] = 100274,
-            },
-            [8] = 
-            {
-                [1] = 0.5661675334,
-                [2] = 0.4596113861,
-                [3] = 0.0486575994,
-                [4] = 0.5708084112,
-                [5] = 6891,
-                [6] = "Druid Gastoc",
-            },
-            [9] = 
-            {
-                [1] = 0.5672336221,
-                [2] = 0.4590298831,
-                [3] = 0.0486663997,
-                [4] = 0.5708036110,
-                [5] = 6890,
-                [6] = "Druid Gastoc",
-            },
-            [10] = 
-            {
-                [1] = 0.5681542754,
-                [2] = 0.4554440975,
-                [3] = 0.0486739995,
-                [4] = 0.5707740110,
-                [5] = 6888,
-                [6] = 100274,
-            },
-            [11] = 
-            {
-                [1] = 0.5667005777,
-                [2] = 0.4577700198,
-                [3] = 0.0486619996,
-                [4] = 0.5707932110,
-                [5] = 6889,
-                [6] = "Druid Gastoc",
-            },
-        },
-        ["housing/snowglobe_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.7080665827,
-                [2] = 0.6679470539,
-                [3] = 0.6320988155,
-                [4] = 0.2813951991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [2] = 
-            {
-                [1] = 0.7119078040,
-                [2] = 0.6850191951,
-                [3] = 0.6321024155,
-                [4] = 0.2814111991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [3] = 
-            {
-                [1] = 0.7106273770,
-                [2] = 0.6696543097,
-                [3] = 0.6321012154,
-                [4] = 0.2813967991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [4] = 
-            {
-                [1] = 0.7089201808,
-                [2] = 0.6769099236,
-                [3] = 0.6320996155,
-                [4] = 0.2814035991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [5] = 
-            {
-                [1] = 0.7020913363,
-                [2] = 0.6769099236,
-                [3] = 0.6320932155,
-                [4] = 0.2814035991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [6] = 
-            {
-                [1] = 0.7089201808,
-                [2] = 0.6747759581,
-                [3] = 0.6320996155,
-                [4] = 0.2814015991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [7] = 
-            {
-                [1] = 0.7183098793,
-                [2] = 0.6811779737,
-                [3] = 0.6321084155,
-                [4] = 0.2814075991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [8] = 
-            {
-                [1] = 0.7020913363,
-                [2] = 0.6760563254,
-                [3] = 0.6320932155,
-                [4] = 0.2814027991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [9] = 
-            {
-                [1] = 0.7093470097,
-                [2] = 0.6790439487,
-                [3] = 0.6321000155,
-                [4] = 0.2814055991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [10] = 
-            {
-                [1] = 0.6995305419,
-                [2] = 0.6786171794,
-                [3] = 0.6320908155,
-                [4] = 0.2814051991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [11] = 
-            {
-                [1] = 0.7050789595,
-                [2] = 0.6816048026,
-                [3] = 0.6320960155,
-                [4] = 0.2814079991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [12] = 
-            {
-                [1] = 0.7020913363,
-                [2] = 0.6794707775,
-                [3] = 0.6320932155,
-                [4] = 0.2814059991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [13] = 
-            {
-                [1] = 0.7016645074,
-                [2] = 0.6811779737,
-                [3] = 0.6320928154,
-                [4] = 0.2814075991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [14] = 
-            {
-                [1] = 0.7042253613,
-                [2] = 0.6790439487,
-                [3] = 0.6320952155,
-                [4] = 0.2814055991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [15] = 
-            {
-                [1] = 0.7059325576,
-                [2] = 0.6769099236,
-                [3] = 0.6320968154,
-                [4] = 0.2814035991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [16] = 
-            {
-                [1] = 0.7033717632,
-                [2] = 0.6820315719,
-                [3] = 0.6320944155,
-                [4] = 0.2814083991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [17] = 
-            {
-                [1] = 0.7055057883,
-                [2] = 0.6803243756,
-                [3] = 0.6320964155,
-                [4] = 0.2814067991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [18] = 
-            {
-                [1] = 0.7003841400,
-                [2] = 0.6764831543,
-                [3] = 0.6320916155,
-                [4] = 0.2814031991,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [19] = 
-            {
-                [1] = 0.7042253613,
-                [2] = 0.6803243756,
-                [3] = 0.6320952155,
-                [4] = 0.2814067991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [20] = 
-            {
-                [1] = 0.7050789595,
-                [2] = 0.6790439487,
-                [3] = 0.6320960155,
-                [4] = 0.2814055991,
-                [5] = 5973,
-                [6] = "Sealed Enchanting Writ",
-            },
-            [21] = 
-            {
-                [1] = 0.7050789595,
-                [2] = 0.6790439487,
-                [3] = 0.6320960155,
-                [4] = 0.2814055991,
-                [5] = 5982,
-                [6] = "Sealed Alchemy Writ",
-            },
-            [22] = 
-            {
-                [1] = 0.7238582969,
-                [2] = 0.6572769880,
-                [3] = 0.6321136155,
-                [4] = 0.2813851991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [23] = 
-            {
-                [1] = 0.7033717632,
-                [2] = 0.6790439487,
-                [3] = 0.6320944155,
-                [4] = 0.2814055991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [24] = 
-            {
-                [1] = 0.7037985325,
-                [2] = 0.6820315719,
-                [3] = 0.6320948154,
-                [4] = 0.2814083991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [25] = 
-            {
-                [1] = 0.6999573112,
-                [2] = 0.6790439487,
-                [3] = 0.6320912154,
-                [4] = 0.2814055991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-            [26] = 
-            {
-                [1] = 0.6991037130,
-                [2] = 0.6798975468,
-                [3] = 0.6320904155,
-                [4] = 0.2814063991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [27] = 
-            {
-                [1] = 0.7119078040,
-                [2] = 0.6850191951,
-                [3] = 0.6321024155,
-                [4] = 0.2814111991,
-                [5] = 6594,
-                [6] = "Imperial Charity Writ",
-            },
-            [28] = 
-            {
-                [1] = 0.7076397538,
-                [2] = 0.6811779737,
-                [3] = 0.6320984154,
-                [4] = 0.2814075991,
-                [5] = 6593,
-                [6] = "Imperial Charity Writ",
-            },
-            [29] = 
-            {
-                [1] = 0.7080665827,
-                [2] = 0.6820315719,
-                [3] = 0.6320988155,
-                [4] = 0.2814083991,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-        },
-        ["grahtwood/eldenrootcrafting_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.7344808578,
-                [2] = 0.4091803133,
-                [3] = 0.4352984143,
-                [4] = 0.7265107849,
-                [5] = 6103,
-                [6] = 500010,
-            },
-        },
-        ["murkmire/lilmothcity_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.4435080588,
-                [2] = 0.6370046139,
-                [3] = 0.7679468142,
-                [4] = 0.8028968120,
-                [5] = 6268,
-                [6] = 100132,
-            },
-        },
         ["westweald/u42_skingrad_base_0"] = 
         {
             [1] = 
@@ -4022,18 +1373,297 @@ LibQuestData_SavedVariables =
                 [6] = "Deep Winter Charity Writ",
             },
         },
-        ["cyrodiil/eastelsweyrgate_base_0"] = 
+        ["apocrypha/u40_tomehold_bundle1_0"] = 
         {
             [1] = 
             {
-                [1] = 0.5079133511,
-                [2] = 0.4310407639,
-                [3] = 0.5694580211,
-                [4] = 0.5592395916,
-                [5] = 6392,
-                [6] = 100061,
+                [1] = 0.5919117928,
+                [2] = 0.3529411852,
+                [3] = 0.1761439982,
+                [4] = -0.0309115952,
+                [5] = 7189,
+                [6] = "Tanlorin",
+            },
+        },
+        ["housing/snowglobe_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.7080665827,
+                [2] = 0.6679470539,
+                [3] = 0.6320988155,
+                [4] = 0.2813951991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
             },
             [2] = 
+            {
+                [1] = 0.7119078040,
+                [2] = 0.6850191951,
+                [3] = 0.6321024155,
+                [4] = 0.2814111991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [3] = 
+            {
+                [1] = 0.7106273770,
+                [2] = 0.6696543097,
+                [3] = 0.6321012154,
+                [4] = 0.2813967991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [4] = 
+            {
+                [1] = 0.7089201808,
+                [2] = 0.6769099236,
+                [3] = 0.6320996155,
+                [4] = 0.2814035991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [5] = 
+            {
+                [1] = 0.7020913363,
+                [2] = 0.6769099236,
+                [3] = 0.6320932155,
+                [4] = 0.2814035991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [6] = 
+            {
+                [1] = 0.7089201808,
+                [2] = 0.6747759581,
+                [3] = 0.6320996155,
+                [4] = 0.2814015991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [7] = 
+            {
+                [1] = 0.7183098793,
+                [2] = 0.6811779737,
+                [3] = 0.6321084155,
+                [4] = 0.2814075991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [8] = 
+            {
+                [1] = 0.7020913363,
+                [2] = 0.6760563254,
+                [3] = 0.6320932155,
+                [4] = 0.2814027991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [9] = 
+            {
+                [1] = 0.7093470097,
+                [2] = 0.6790439487,
+                [3] = 0.6321000155,
+                [4] = 0.2814055991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [10] = 
+            {
+                [1] = 0.6995305419,
+                [2] = 0.6786171794,
+                [3] = 0.6320908155,
+                [4] = 0.2814051991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [11] = 
+            {
+                [1] = 0.7050789595,
+                [2] = 0.6816048026,
+                [3] = 0.6320960155,
+                [4] = 0.2814079991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [12] = 
+            {
+                [1] = 0.7020913363,
+                [2] = 0.6794707775,
+                [3] = 0.6320932155,
+                [4] = 0.2814059991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [13] = 
+            {
+                [1] = 0.7016645074,
+                [2] = 0.6811779737,
+                [3] = 0.6320928154,
+                [4] = 0.2814075991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [14] = 
+            {
+                [1] = 0.7042253613,
+                [2] = 0.6790439487,
+                [3] = 0.6320952155,
+                [4] = 0.2814055991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [15] = 
+            {
+                [1] = 0.7059325576,
+                [2] = 0.6769099236,
+                [3] = 0.6320968154,
+                [4] = 0.2814035991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [16] = 
+            {
+                [1] = 0.7033717632,
+                [2] = 0.6820315719,
+                [3] = 0.6320944155,
+                [4] = 0.2814083991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [17] = 
+            {
+                [1] = 0.7055057883,
+                [2] = 0.6803243756,
+                [3] = 0.6320964155,
+                [4] = 0.2814067991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [18] = 
+            {
+                [1] = 0.7003841400,
+                [2] = 0.6764831543,
+                [3] = 0.6320916155,
+                [4] = 0.2814031991,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
+            },
+            [19] = 
+            {
+                [1] = 0.7042253613,
+                [2] = 0.6803243756,
+                [3] = 0.6320952155,
+                [4] = 0.2814067991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [20] = 
+            {
+                [1] = 0.7050789595,
+                [2] = 0.6790439487,
+                [3] = 0.6320960155,
+                [4] = 0.2814055991,
+                [5] = 5973,
+                [6] = "Sealed Enchanting Writ",
+            },
+            [21] = 
+            {
+                [1] = 0.7050789595,
+                [2] = 0.6790439487,
+                [3] = 0.6320960155,
+                [4] = 0.2814055991,
+                [5] = 5982,
+                [6] = "Sealed Alchemy Writ",
+            },
+            [22] = 
+            {
+                [1] = 0.7238582969,
+                [2] = 0.6572769880,
+                [3] = 0.6321136155,
+                [4] = 0.2813851991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [23] = 
+            {
+                [1] = 0.7033717632,
+                [2] = 0.6790439487,
+                [3] = 0.6320944155,
+                [4] = 0.2814055991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [24] = 
+            {
+                [1] = 0.7037985325,
+                [2] = 0.6820315719,
+                [3] = 0.6320948154,
+                [4] = 0.2814083991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [25] = 
+            {
+                [1] = 0.6999573112,
+                [2] = 0.6790439487,
+                [3] = 0.6320912154,
+                [4] = 0.2814055991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+            [26] = 
+            {
+                [1] = 0.6991037130,
+                [2] = 0.6798975468,
+                [3] = 0.6320904155,
+                [4] = 0.2814063991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [27] = 
+            {
+                [1] = 0.7119078040,
+                [2] = 0.6850191951,
+                [3] = 0.6321024155,
+                [4] = 0.2814111991,
+                [5] = 6594,
+                [6] = "Imperial Charity Writ",
+            },
+            [28] = 
+            {
+                [1] = 0.7076397538,
+                [2] = 0.6811779737,
+                [3] = 0.6320984154,
+                [4] = 0.2814075991,
+                [5] = 6593,
+                [6] = "Imperial Charity Writ",
+            },
+            [29] = 
+            {
+                [1] = 0.7080665827,
+                [2] = 0.6820315719,
+                [3] = 0.6320988155,
+                [4] = 0.2814083991,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+        },
+        ["deshaan/kwamacolony_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.5588914752,
+                [2] = 0.4730561972,
+                [3] = 0.7311927800,
+                [4] = 0.5028352099,
+                [5] = 4494,
+                [6] = 30138,
+            },
+        },
+        ["cyrodiil/eastelsweyrgate_base_0"] = 
+        {
+            [1] = 
             {
                 [1] = 0.4540514946,
                 [2] = 0.4808547795,
@@ -4042,134 +1672,47 @@ LibQuestData_SavedVariables =
                 [5] = 2922,
                 [6] = 100077,
             },
+            [2] = 
+            {
+                [1] = 0.5079133511,
+                [2] = 0.4310407639,
+                [3] = 0.5694580211,
+                [4] = 0.5592395916,
+                [5] = 6392,
+                [6] = 100061,
+            },
         },
-        ["auridon/auridon_base_0"] = 
+        ["eastmarch/eastmarch_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.2044427544,
-                [2] = 0.2430015206,
-                [3] = 0.1695159966,
-                [4] = 0.6352488144,
-                [5] = 6695,
-                [6] = 100206,
-            },
-            [2] = 
-            {
-                [1] = 0.2054381967,
-                [2] = 0.2426114529,
-                [3] = 0.1696731969,
-                [4] = 0.6351872149,
-                [5] = 7228,
-                [6] = "Priest Maxien Roudille",
-            },
-        },
-        ["telvanni/u38_necrom_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.5201119184,
-                [2] = 0.5778403282,
-                [3] = 0.9406564144,
-                [4] = 0.3888164045,
-                [5] = 7040,
-                [6] = 210005,
-            },
-            [2] = 
-            {
-                [1] = 0.5337488055,
-                [2] = 0.6951484680,
-                [3] = 0.9412840166,
-                [4] = 0.3942152067,
-                [5] = 6695,
-                [6] = 100206,
-            },
-        },
-        ["blackwood/u30_leyawiincity_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.1766415089,
-                [2] = 0.5737919807,
-                [3] = 0.5979344047,
-                [4] = 0.6798976071,
-                [5] = 5987,
-                [6] = "Sealed Alchemy Writ",
-            },
-            [2] = 
-            {
-                [1] = 0.2414819300,
-                [2] = 0.7383418679,
-                [3] = 0.5990412048,
-                [4] = 0.6827064080,
-                [5] = 6485,
-                [6] = "Deep Winter Charity Writ",
-            },
-            [3] = 
-            {
-                [1] = 0.2408492267,
-                [2] = 0.7399119139,
-                [3] = 0.5990304048,
-                [4] = 0.6827332080,
+                [1] = 0.4870299995,
+                [2] = 0.3827449977,
+                [3] = 0.6043745222,
+                [4] = 0.2972912703,
                 [5] = 6595,
                 [6] = "Imperial Charity Writ",
             },
-        },
-        ["deadlands/u32_theshambles_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.4163259268,
-                [2] = 0.4221386611,
-                [3] = 0.8892432295,
-                [4] = 0.9762135999,
-                [5] = 6731,
-                [6] = 96001,
-            },
-        },
-        ["systres/u34_systreszone_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.4310576320,
-                [2] = 0.7823548913,
-                [3] = 0.0630793730,
-                [4] = 0.5943785937,
-                [5] = 6772,
-                [6] = 100250,
-            },
-        },
-        ["deshaan/forgottencrypts_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.5964028835,
-                [2] = 0.3966906369,
-                [3] = 0.7272756248,
-                [4] = 0.4958967910,
-                [5] = 7188,
-                [6] = "Tanlorin",
-            },
             [2] = 
             {
-                [1] = 0.5812949538,
-                [2] = 0.5079855919,
-                [3] = 0.7271916247,
-                [4] = 0.4965155909,
-                [5] = 7216,
-                [6] = "Zerith-var",
+                [1] = 0.4878425002,
+                [2] = 0.3859024942,
+                [3] = 0.6044912591,
+                [4] = 0.2977449268,
+                [5] = 6592,
+                [6] = "Imperial Charity Writ",
             },
         },
-        ["shadowfen/atanazruins_base_0"] = 
+        ["auridon/mehrunesspite_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.4992711246,
-                [2] = 0.4650145769,
-                [3] = 0.7939131805,
-                [4] = 0.5855252052,
-                [5] = 4556,
-                [6] = 38996,
+                [1] = 0.2792481780,
+                [2] = 0.4322976470,
+                [3] = 0.1675111965,
+                [4] = 0.6299436044,
+                [5] = 4532,
+                [6] = 38329,
             },
         },
         ["grahtwood/eldenrootgroundfloor_base_0"] = 
@@ -4535,139 +2078,58 @@ LibQuestData_SavedVariables =
                 [6] = "Sealed Alchemy Writ",
             },
         },
-        ["deshaan/kwamacolony_base_0"] = 
+        ["murkmire/ui_map_blackroseprison01_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.5588914752,
-                [2] = 0.4730561972,
-                [3] = 0.7311927800,
-                [4] = 0.5028352099,
-                [5] = 4494,
-                [6] = 30138,
+                [1] = 0.5884308219,
+                [2] = 0.8394281864,
+                [3] = 0.7198895972,
+                [4] = 0.7760988019,
+                [5] = 6269,
+                [6] = "Blackrose Barracks",
+            },
+            [2] = 
+            {
+                [1] = 0.6060505509,
+                [2] = 0.8756648898,
+                [3] = 0.7199107972,
+                [4] = 0.7761424019,
+                [5] = 6269,
+                [6] = "Blackrose Barracks",
             },
         },
-        ["coldharbor/hollowcity_base_0"] = 
+        ["grahtwood/eldenrootcrafting_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.5566938519,
-                [2] = 0.3477755189,
-                [3] = -0.0992376028,
-                [4] = 0.2565868032,
-                [5] = 6098,
+                [1] = 0.7344808578,
+                [2] = 0.4091803133,
+                [3] = 0.4352984143,
+                [4] = 0.7265107849,
+                [5] = 6103,
                 [6] = 500010,
             },
-            [2] = 
-            {
-                [1] = 0.5566938519,
-                [2] = 0.3477755189,
-                [3] = -0.0992376028,
-                [4] = 0.2565868032,
-                [5] = 5409,
-                [6] = 500010,
-            },
         },
-        ["grahtwood/eldenrootmagesguilddown_base_0"] = 
+        ["auridon/auridon_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.6333879828,
-                [2] = 0.3665027320,
-                [3] = 0.4364764025,
-                [4] = 0.7206028202,
-                [5] = 5814,
-                [6] = 80011,
+                [1] = 0.2054381967,
+                [2] = 0.2426114529,
+                [3] = 0.1696731969,
+                [4] = 0.6351872149,
+                [5] = 7228,
+                [6] = "Priest Maxien Roudille",
             },
             [2] = 
             {
-                [1] = 0.6334426403,
-                [2] = 0.3575409949,
-                [3] = 0.4364768026,
-                [4] = 0.7205372203,
-                [5] = 5823,
-                [6] = 80011,
-            },
-            [3] = 
-            {
-                [1] = 0.6449726820,
-                [2] = 0.3667213023,
-                [3] = 0.4365612025,
-                [4] = 0.7206044201,
-                [5] = 5827,
-                [6] = 80011,
-            },
-            [4] = 
-            {
-                [1] = 0.6432787180,
-                [2] = 0.3693989217,
-                [3] = 0.4365488027,
-                [4] = 0.7206240203,
-                [5] = 5830,
-                [6] = 80011,
-            },
-            [5] = 
-            {
-                [1] = 0.6327868700,
-                [2] = 0.3689617515,
-                [3] = 0.4364720023,
-                [4] = 0.7206208202,
-                [5] = 5825,
-                [6] = 80011,
-            },
-        },
-        ["eastmarch/eastmarch_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.4878425002,
-                [2] = 0.3859024942,
-                [3] = 0.6044912591,
-                [4] = 0.2977449268,
-                [5] = 6592,
-                [6] = "Imperial Charity Writ",
-            },
-            [2] = 
-            {
-                [1] = 0.4870299995,
-                [2] = 0.3827449977,
-                [3] = 0.6043745222,
-                [4] = 0.2972912703,
-                [5] = 6595,
-                [6] = "Imperial Charity Writ",
-            },
-        },
-        ["grahtwood/grahtwood_base_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.5839115977,
-                [2] = 0.1635450125,
-                [3] = 0.4694259396,
-                [4] = 0.6613534394,
-                [5] = 6329,
-                [6] = 100097,
-            },
-            [2] = 
-            {
-                [1] = 0.5837756395,
-                [2] = 0.1639933735,
-                [3] = 0.4694054597,
-                [4] = 0.6614209778,
-                [5] = 6344,
-                [6] = 100097,
-            },
-        },
-        ["apocrypha/u40_tomehold_bundle1_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.5919117928,
-                [2] = 0.3529411852,
-                [3] = 0.1761439982,
-                [4] = -0.0309115952,
-                [5] = 7189,
-                [6] = "Tanlorin",
+                [1] = 0.2044427544,
+                [2] = 0.2430015206,
+                [3] = 0.1695159966,
+                [4] = 0.6352488144,
+                [5] = 6695,
+                [6] = 100206,
             },
         },
         ["cyrodiil/ava_whole_0"] = 
@@ -4680,6 +2142,240 @@ LibQuestData_SavedVariables =
                 [4] = 0.5328698465,
                 [5] = 2930,
                 [6] = "Unknown Target",
+            },
+        },
+        ["housing/u42_colovianwinery_ext_01_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.3014846444,
+                [2] = 0.5844480395,
+                [3] = 0.4208368114,
+                [4] = 0.4499636117,
+                [5] = 5976,
+                [6] = "Sealed Woodworking Writ",
+            },
+        },
+        ["blackwood/u30_leyawiincity_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.1766415089,
+                [2] = 0.5737919807,
+                [3] = 0.5979344047,
+                [4] = 0.6798976071,
+                [5] = 5987,
+                [6] = "Sealed Alchemy Writ",
+            },
+            [2] = 
+            {
+                [1] = 0.2414819300,
+                [2] = 0.7383418679,
+                [3] = 0.5990412048,
+                [4] = 0.6827064080,
+                [5] = 6485,
+                [6] = "Deep Winter Charity Writ",
+            },
+            [3] = 
+            {
+                [1] = 0.2408492267,
+                [2] = 0.7399119139,
+                [3] = 0.5990304048,
+                [4] = 0.6827332080,
+                [5] = 6595,
+                [6] = "Imperial Charity Writ",
+            },
+        },
+        ["galen/u36_vastyrcity_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.5594805479,
+                [2] = 0.4578184783,
+                [3] = 0.0486023997,
+                [4] = 0.5707936111,
+                [5] = 6901,
+                [6] = "Druid Aishabeh",
+            },
+            [2] = 
+            {
+                [1] = 0.5636478066,
+                [2] = 0.4600959420,
+                [3] = 0.0486367995,
+                [4] = 0.5708124111,
+                [5] = 6892,
+                [6] = "Druid Gastoc",
+            },
+            [3] = 
+            {
+                [1] = 0.5667005777,
+                [2] = 0.4566070735,
+                [3] = 0.0486619996,
+                [4] = 0.5707836112,
+                [5] = 6885,
+                [6] = 100274,
+            },
+            [4] = 
+            {
+                [1] = 0.5586567521,
+                [2] = 0.4601444006,
+                [3] = 0.0485955994,
+                [4] = 0.5708128111,
+                [5] = 6899,
+                [6] = "Druid Aishabeh",
+            },
+            [5] = 
+            {
+                [1] = 0.5656830072,
+                [2] = 0.4585453272,
+                [3] = 0.0486535997,
+                [4] = 0.5707996111,
+                [5] = 6887,
+                [6] = 100274,
+            },
+            [6] = 
+            {
+                [1] = 0.5656830072,
+                [2] = 0.4585453272,
+                [3] = 0.0486535997,
+                [4] = 0.5707996111,
+                [5] = 6881,
+                [6] = "Druid Gastoc",
+            },
+            [7] = 
+            {
+                [1] = 0.5665067434,
+                [2] = 0.4568008780,
+                [3] = 0.0486603995,
+                [4] = 0.5707852110,
+                [5] = 6884,
+                [6] = 100274,
+            },
+            [8] = 
+            {
+                [1] = 0.5661675334,
+                [2] = 0.4596113861,
+                [3] = 0.0486575994,
+                [4] = 0.5708084112,
+                [5] = 6891,
+                [6] = "Druid Gastoc",
+            },
+            [9] = 
+            {
+                [1] = 0.5672336221,
+                [2] = 0.4590298831,
+                [3] = 0.0486663997,
+                [4] = 0.5708036110,
+                [5] = 6890,
+                [6] = "Druid Gastoc",
+            },
+            [10] = 
+            {
+                [1] = 0.5681542754,
+                [2] = 0.4554440975,
+                [3] = 0.0486739995,
+                [4] = 0.5707740110,
+                [5] = 6888,
+                [6] = 100274,
+            },
+            [11] = 
+            {
+                [1] = 0.5667005777,
+                [2] = 0.4577700198,
+                [3] = 0.0486619996,
+                [4] = 0.5707932110,
+                [5] = 6889,
+                [6] = "Druid Gastoc",
+            },
+        },
+        ["deshaan/forgottencrypts_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.5812949538,
+                [2] = 0.5079855919,
+                [3] = 0.7271916247,
+                [4] = 0.4965155909,
+                [5] = 7216,
+                [6] = "Zerith-var",
+            },
+            [2] = 
+            {
+                [1] = 0.5964028835,
+                [2] = 0.3966906369,
+                [3] = 0.7272756248,
+                [4] = 0.4958967910,
+                [5] = 7188,
+                [6] = "Tanlorin",
+            },
+        },
+        ["grahtwood/grahtwood_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.5837756395,
+                [2] = 0.1639933735,
+                [3] = 0.4694054597,
+                [4] = 0.6614209778,
+                [5] = 6344,
+                [6] = 100097,
+            },
+            [2] = 
+            {
+                [1] = 0.5839115977,
+                [2] = 0.1635450125,
+                [3] = 0.4694259396,
+                [4] = 0.6613534394,
+                [5] = 6329,
+                [6] = 100097,
+            },
+        },
+        ["grahtwood/eldenrootfightersguildown_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.4986338913,
+                [2] = 0.5820218325,
+                [3] = 0.4305300020,
+                [4] = 0.7333403764,
+                [5] = 5793,
+                [6] = 80010,
+            },
+            [2] = 
+            {
+                [1] = 0.4679781497,
+                [2] = 0.5889071226,
+                [3] = 0.4303056020,
+                [4] = 0.7333907767,
+                [5] = 5788,
+                [6] = 80010,
+            },
+            [3] = 
+            {
+                [1] = 0.4812021852,
+                [2] = 0.5735518932,
+                [3] = 0.4304024019,
+                [4] = 0.7332783765,
+                [5] = 5793,
+                [6] = 80010,
+            },
+            [4] = 
+            {
+                [1] = 0.4792349637,
+                [2] = 0.5722404122,
+                [3] = 0.4303880019,
+                [4] = 0.7332687764,
+                [5] = 5794,
+                [6] = 80010,
+            },
+            [5] = 
+            {
+                [1] = 0.4842076600,
+                [2] = 0.5663934350,
+                [3] = 0.4304244020,
+                [4] = 0.7332259765,
+                [5] = 5791,
+                [6] = 80010,
             },
         },
         ["systres/u34_gonfalonbaycity_base_0"] = 
@@ -4837,29 +2533,14 @@ LibQuestData_SavedVariables =
                 [5] = 6800,
                 [6] = "Kishka",
             },
-        },
-        ["auridon/mehrunesspite_base_0"] = 
-        {
-            [1] = 
+            [18] = 
             {
-                [1] = 0.2792481780,
-                [2] = 0.4322976470,
-                [3] = 0.1675111965,
-                [4] = 0.6299436044,
-                [5] = 4532,
-                [6] = 38329,
-            },
-        },
-        ["housing/u42_colovianwinery_ext_01_0"] = 
-        {
-            [1] = 
-            {
-                [1] = 0.3014846444,
-                [2] = 0.5844480395,
-                [3] = 0.4208368114,
-                [4] = 0.4499636117,
-                [5] = 5976,
-                [6] = "Sealed Woodworking Writ",
+                [1] = 0.6047846675,
+                [2] = 0.6669856310,
+                [3] = 0.0704940026,
+                [4] = 0.6048820052,
+                [5] = 6831,
+                [6] = "Kishka",
             },
         },
         ["westweald/westwealdoverland_base_0"] = 
@@ -4874,28 +2555,145 @@ LibQuestData_SavedVariables =
                 [6] = "Belienne",
             },
         },
-        ["deshaan/mournhold_base_0"] = 
-        {
-        },
-        ["murkmire/ui_map_blackroseprison01_base_0"] = 
+        ["telvanni/u38_necrom_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.6060505509,
-                [2] = 0.8756648898,
-                [3] = 0.7199107972,
-                [4] = 0.7761424019,
-                [5] = 6269,
-                [6] = "Blackrose Barracks",
+                [1] = 0.5337488055,
+                [2] = 0.6951484680,
+                [3] = 0.9412840166,
+                [4] = 0.3942152067,
+                [5] = 6695,
+                [6] = 100206,
             },
             [2] = 
             {
-                [1] = 0.5884308219,
-                [2] = 0.8394281864,
-                [3] = 0.7198895972,
-                [4] = 0.7760988019,
-                [5] = 6269,
-                [6] = "Blackrose Barracks",
+                [1] = 0.5201119184,
+                [2] = 0.5778403282,
+                [3] = 0.9406564144,
+                [4] = 0.3888164045,
+                [5] = 7040,
+                [6] = 210005,
+            },
+        },
+        ["summerset/collegeofpsijicsruins_btm_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.6006641984,
+                [2] = 0.4383577704,
+                [3] = 0.8433891891,
+                [4] = -0.0270792048,
+                [5] = 6136,
+                [6] = 100127,
+            },
+        },
+        ["systres/u34_systreszone_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.4310576320,
+                [2] = 0.7823548913,
+                [3] = 0.0630793730,
+                [4] = 0.5943785937,
+                [5] = 6772,
+                [6] = 100250,
+            },
+        },
+        ["shadowfen/atanazruins_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.4992711246,
+                [2] = 0.4650145769,
+                [3] = 0.7939131805,
+                [4] = 0.5855252052,
+                [5] = 4556,
+                [6] = 38996,
+            },
+        },
+        ["deadlands/u32_theshambles_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.4163259268,
+                [2] = 0.4221386611,
+                [3] = 0.8892432295,
+                [4] = 0.9762135999,
+                [5] = 6731,
+                [6] = 96001,
+            },
+        },
+        ["reapersmarch/rawlkha_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.5823623538,
+                [2] = 0.3414599001,
+                [3] = 0.4536036059,
+                [4] = 0.6142635949,
+                [5] = 6299,
+                [6] = 81002,
+            },
+        },
+        ["vvardenfell/vvardenfell_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.4752418995,
+                [2] = 0.8604635000,
+                [3] = 0.7666752223,
+                [4] = 0.3761096042,
+                [5] = 7194,
+                [6] = "Unknown Target",
+            },
+        },
+        ["grahtwood/eldenrootmagesguilddown_base_0"] = 
+        {
+            [1] = 
+            {
+                [1] = 0.6333879828,
+                [2] = 0.3665027320,
+                [3] = 0.4364764025,
+                [4] = 0.7206028202,
+                [5] = 5814,
+                [6] = 80011,
+            },
+            [2] = 
+            {
+                [1] = 0.6334426403,
+                [2] = 0.3575409949,
+                [3] = 0.4364768026,
+                [4] = 0.7205372203,
+                [5] = 5823,
+                [6] = 80011,
+            },
+            [3] = 
+            {
+                [1] = 0.6449726820,
+                [2] = 0.3667213023,
+                [3] = 0.4365612025,
+                [4] = 0.7206044201,
+                [5] = 5827,
+                [6] = 80011,
+            },
+            [4] = 
+            {
+                [1] = 0.6432787180,
+                [2] = 0.3693989217,
+                [3] = 0.4365488027,
+                [4] = 0.7206240203,
+                [5] = 5830,
+                [6] = 80011,
+            },
+            [5] = 
+            {
+                [1] = 0.6327868700,
+                [2] = 0.3689617515,
+                [3] = 0.4364720023,
+                [4] = 0.7206208202,
+                [5] = 5825,
+                [6] = 80011,
             },
         },
         ["craglorn/craglorn_base_0"] = 
@@ -4928,93 +2726,2358 @@ LibQuestData_SavedVariables =
                 [6] = "Zerith-var",
             },
         },
-        ["grahtwood/eldenrootfightersguildown_base_0"] = 
+        ["coldharbor/hollowcity_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.4986338913,
-                [2] = 0.5820218325,
-                [3] = 0.4305300020,
-                [4] = 0.7333403764,
-                [5] = 5793,
-                [6] = 80010,
+                [1] = 0.5566938519,
+                [2] = 0.3477755189,
+                [3] = -0.0992376028,
+                [4] = 0.2565868032,
+                [5] = 5409,
+                [6] = 500010,
             },
             [2] = 
             {
-                [1] = 0.4679781497,
-                [2] = 0.5889071226,
-                [3] = 0.4303056020,
-                [4] = 0.7333907767,
-                [5] = 5788,
-                [6] = 80010,
-            },
-            [3] = 
-            {
-                [1] = 0.4812021852,
-                [2] = 0.5735518932,
-                [3] = 0.4304024019,
-                [4] = 0.7332783765,
-                [5] = 5793,
-                [6] = 80010,
-            },
-            [4] = 
-            {
-                [1] = 0.4792349637,
-                [2] = 0.5722404122,
-                [3] = 0.4303880019,
-                [4] = 0.7332687764,
-                [5] = 5794,
-                [6] = 80010,
-            },
-            [5] = 
-            {
-                [1] = 0.4842076600,
-                [2] = 0.5663934350,
-                [3] = 0.4304244020,
-                [4] = 0.7332259765,
-                [5] = 5791,
-                [6] = 80010,
+                [1] = 0.5566938519,
+                [2] = 0.3477755189,
+                [3] = -0.0992376028,
+                [4] = 0.2565868032,
+                [5] = 6098,
+                [6] = 500010,
             },
         },
-        ["summerset/collegeofpsijicsruins_btm_base_0"] = 
+        ["murkmire/lilmothcity_base_0"] = 
         {
             [1] = 
             {
-                [1] = 0.6006641984,
-                [2] = 0.4383577704,
-                [3] = 0.8433891891,
-                [4] = -0.0270792048,
-                [5] = 6136,
-                [6] = 100127,
+                [1] = 0.4435080588,
+                [2] = 0.6370046139,
+                [3] = 0.7679468142,
+                [4] = 0.8028968120,
+                [5] = 6268,
+                [6] = 100132,
             },
         },
     },
-    ["reward_info"] = 
+    ["libVersion"] = 269,
+    ["quest_names"] = 
     {
-        [5412] = 
-        {
-            [1] = 1,
-            [2] = 7,
-        },
+    },
+    ["quest_info"] = 
+    {
         [5377] = 
         {
-            [1] = 1,
-            [2] = 7,
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
         },
-        [6228] = 
+        [5634] = 
         {
-            [1] = 1,
-            [2] = 7,
+            [1] = 3,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 15634,
+            [5] = 10001,
+            [6] = 0,
+            [7] = 0,
         },
-        [5395] = 
+        [5381] = 
         {
-            [1] = 1,
-            [2] = 7,
+            [1] = 15,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
         },
         [5388] = 
         {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5389] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7182] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6159] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5392] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7186] = 
+        {
+            [1] = 16,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 11,
+        },
+        [7187] = 
+        {
+            [1] = 16,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 11,
+        },
+        [7188] = 
+        {
+            [1] = 16,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 11,
+        },
+        [7189] = 
+        {
+            [1] = 16,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 11,
+        },
+        [6166] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5400] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7194] = 
+        {
+            [1] = 16,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 11,
+        },
+        [5406] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5407] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5409] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5412] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5413] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7207] = 
+        {
+            [1] = 16,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 11,
+        },
+        [6081] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7216] = 
+        {
+            [1] = 16,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 11,
+        },
+        [6449] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4146] = 
+        {
+            [1] = 5,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6451] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5368] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7221] = 
+        {
+            [1] = 16,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 11,
+        },
+        [4406] = 
+        {
+            [1] = 5,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4151] = 
+        {
+            [1] = 5,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 14146,
+            [5] = 10002,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5726] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5980] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6202] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5981] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7228] = 
+        {
+            [1] = 12,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 3,
+        },
+        [6717] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5950] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5975] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5738] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5989] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6136] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5443] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6772] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6469] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6489] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5703] = 
+        {
+            [1] = 3,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6888] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [3657] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6218] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6731] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5708] = 
+        {
+            [1] = 3,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 15614,
+            [5] = 10001,
+            [6] = 0,
+            [7] = 10,
+        },
+        [5500] = 
+        {
+            [1] = 7,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6899] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6268] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4410] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7219] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6450] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6227] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6228] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6485] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5974] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6743] = 
+        {
+            [1] = 15,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
+        },
+        [5976] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5977] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5978] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5979] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6236] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6237] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5982] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5983] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5984] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5985] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5986] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5987] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5988] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5733] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5734] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5735] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6018] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5737] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [2922] = 
+        {
+            [1] = 7,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 3,
+            [7] = 0,
+        },
+        [6763] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6508] = 
+        {
+            [1] = 15,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
+        },
+        [6016] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5742] = 
+        {
+            [1] = 12,
+            [2] = 3,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4844] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5744] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6635] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [2930] = 
+        {
+            [1] = 7,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 3,
+            [7] = 0,
+        },
+        [5491] = 
+        {
+            [1] = 7,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5492] = 
+        {
+            [1] = 7,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5779] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5396] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5495] = 
+        {
+            [1] = 7,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6776] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4840] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5498] = 
+        {
+            [1] = 7,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6887] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [3964] = 
+        {
+            [1] = 5,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6269] = 
+        {
+            [1] = 5,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
+        },
+        [5395] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5394] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7040] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6017] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [3970] = 
+        {
+            [1] = 5,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6019] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6020] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6021] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6022] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5900] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6040] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5274] = 
+        {
+            [1] = 15,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
+        },
+        [5770] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 5,
+        },
+        [6528] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5260] = 
+        {
+            [1] = 15,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
+        },
+        [4493] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4494] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6812] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6800] = 
+        {
+            [1] = 17,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6801] = 
+        {
+            [1] = 17,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5778] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6803] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5789] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6805] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6815] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6807] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6808] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6809] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5786] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6299] = 
+        {
+            [1] = 14,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5788] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6813] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5278] = 
+        {
+            [1] = 15,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
+        },
+        [5791] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6816] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5793] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6818] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5794] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5284] = 
+        {
+            [1] = 15,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
+        },
+        [6821] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6822] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5852] = 
+        {
+            [1] = 12,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5800] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6825] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6826] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5802] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6593] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6837] = 
+        {
+            [1] = 5,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
+        },
+        [6086] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6831] = 
+        {
+            [1] = 17,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5808] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5827] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5845] = 
+        {
+            [1] = 12,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5811] = 
+        {
+            [1] = 12,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4532] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7093] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5814] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7110] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7096] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6329] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6344] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5586] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5839] = 
+        {
+            [1] = 12,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6077] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [2750] = 
+        {
+            [1] = 7,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 3,
+            [7] = 0,
+        },
+        [5823] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6592] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5825] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6594] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6595] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7108] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7109] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5830] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7111] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7112] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7113] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5834] = 
+        {
+            [1] = 12,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7115] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4556] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5837] = 
+        {
+            [1] = 12,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7118] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7119] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7120] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7114] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6098] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6099] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6100] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6357] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6102] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6103] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6104] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6105] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6101] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5595] = 
+        {
+            [1] = 3,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 15595,
+            [5] = 10001,
+            [6] = 10,
+            [7] = 10,
+        },
+        [4316] = 
+        {
+            [1] = 5,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5798] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5796] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5855] = 
+        {
+            [1] = 12,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5856] = 
+        {
+            [1] = 12,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6881] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4322] = 
+        {
+            [1] = 5,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6883] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6884] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6885] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5606] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4839] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4072] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6889] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6890] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6891] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6892] = 
+        {
+            [1] = 1,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6286] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5248] = 
+        {
+            [1] = 15,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 2,
+        },
+        [4079] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6384] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [7037] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101043,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6642] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4339] = 
+        {
+            [1] = 5,
+            [2] = 0,
+            [3] = 101043,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5719] = 
+        {
+            [1] = 3,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6901] = 
+        {
+            [1] = 0,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6134] = 
+        {
+            [1] = 12,
+            [2] = 3,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6757] = 
+        {
+            [1] = 0,
+            [2] = 0,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6392] = 
+        {
+            [1] = 7,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 3,
+            [7] = 0,
+        },
+        [5990] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5972] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5973] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [6487] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [4349] = 
+        {
+            [1] = 7,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 3,
+            [7] = 0,
+        },
+        [5374] = 
+        {
+            [1] = 4,
+            [2] = 2,
+            [3] = 101044,
+            [4] = 10001,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+        [5991] = 
+        {
+            [1] = 4,
+            [2] = 1,
+            [3] = 101044,
+            [4] = 10000,
+            [5] = 10000,
+            [6] = 0,
+            [7] = 0,
+        },
+    },
+    ["strored_data"] = 
+    {
+    },
+    ["version"] = 4,
+    ["reward_info"] = 
+    {
+        [6831] = 
+        {
             [1] = 1,
             [2] = 7,
+            [3] = 13,
         },
         [6837] = 
         {
@@ -5022,19 +5085,5 @@ LibQuestData_SavedVariables =
             [2] = 7,
             [3] = 9,
         },
-        [5406] = 
-        {
-            [1] = 1,
-            [2] = 7,
-        },
-        [6103] = 
-        {
-            [1] = 1,
-            [2] = 7,
-        },
-    },
-    ["client_lang"] = "en",
-    ["strored_data"] = 
-    {
     },
 }

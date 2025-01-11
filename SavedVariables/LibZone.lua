@@ -183,6 +183,7 @@ LibZone_SV_Data =
                         ["parentZone"] = 92,
                         ["zoneIndex"] = 35,
                     },
+                    ["version"] = 8.9200000000,
                     [174] = 
                     {
                         ["parentZone"] = 174,
@@ -403,10 +404,19 @@ LibZone_SV_Data =
                         ["parentZone"] = 41,
                         ["zoneIndex"] = 79,
                     },
-                    [246] = 
+                    ["__lastZoneCheckAPIVersion__"] = 
                     {
-                        ["parentZone"] = 41,
-                        ["zoneIndex"] = 80,
+                        ["en"] = 
+                        {
+                            ["__debugInfo__"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["LastUpdate"] = "1/3/2025 10:18:57 PM",
+                                    ["APIVersionLastUpdate"] = 101044,
+                                },
+                            },
+                        },
                     },
                     [247] = 
                     {
@@ -1803,19 +1813,10 @@ LibZone_SV_Data =
                         ["parentZone"] = 208,
                         ["zoneIndex"] = 359,
                     },
-                    ["__lastZoneCheckAPIVersion__"] = 
+                    [596] = 
                     {
-                        ["en"] = 
-                        {
-                            ["__debugInfo__"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["LastUpdate"] = "1/3/2025 10:18:57 PM",
-                                    ["APIVersionLastUpdate"] = 101044,
-                                },
-                            },
-                        },
+                        ["parentZone"] = 103,
+                        ["zoneIndex"] = 360,
                     },
                     [598] = 
                     {
@@ -5177,11 +5178,10 @@ LibZone_SV_Data =
                         ["parentZone"] = 1504,
                         ["zoneIndex"] = 1032,
                     },
-                    ["version"] = 8.9200000000,
-                    [596] = 
+                    [246] = 
                     {
-                        ["parentZone"] = 103,
-                        ["zoneIndex"] = 360,
+                        ["parentZone"] = 41,
+                        ["zoneIndex"] = 80,
                     },
                 },
             },
@@ -5196,32 +5196,32 @@ LibZone_Localized_SV_Data =
         {
             ["$AccountWide"] = 
             {
-                ["MissingZoneData"] = 
-                {
-                    ["version"] = 8.9200000000,
-                },
                 ["ZoneData"] = 
                 {
+                    ["version"] = 8.9000000000,
                     ["en"] = 
                     {
                         [1504] = "Coldharbour Colosseum",
                         [1499] = "Star Haven Adeptorium",
-                        ["lastUpdate"] = 1735930809,
+                        [1500] = "Kthendral Deep Mines",
                         [1475] = "Seat of Detritus",
                         [1485] = "Port Dufort",
-                        [1484] = "Shehai Waystation",
+                        [1482] = "Strid River Valley",
                         [1494] = "Seabloom Villa",
                         [1495] = "Haven of the Five Companions",
                         [520] = "Reman's Folly",
                         [1481] = "Mota-ka",
-                        [1482] = "Strid River Valley",
-                        [1483] = "Huntsman's Fortress",
-                        [1500] = "Kthendral Deep Mines",
-                        [1501] = "Grand Gallery of Tamriel",
-                        [1498] = "Dusk Keep",
                         ["APIVersionAtLastUpdate"] = 101044,
+                        [1483] = "Huntsman's Fortress",
+                        [1484] = "Shehai Waystation",
+                        [1501] = "Grand Gallery of Tamriel",
+                        ["lastUpdate"] = 1735930809,
+                        [1498] = "Dusk Keep",
                     },
-                    ["version"] = 8.9000000000,
+                },
+                ["MissingZoneData"] = 
+                {
+                    ["version"] = 8.9200000000,
                 },
             },
         },

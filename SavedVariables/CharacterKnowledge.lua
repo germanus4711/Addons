@@ -6,26 +6,26 @@ CharacterKnowledgeSavedVariables =
         {
             ["$AccountWide"] = 
             {
-                ["version"] = 1,
                 ["tooltips"] = 
                 {
                     ["pinnedCharsForChapters"] = 6,
                 },
+                ["version"] = 1,
             },
         },
         ["$InstallationWide"] = 
         {
             ["$AccountWide"] = 
             {
-                ["filterId"] = 2,
-                ["version"] = 1,
                 ["tooltips"] = 
                 {
-                    ["enabled"] = true,
                     ["scriptInfo"] = true,
+                    ["enabled"] = true,
                 },
                 ["featureRev"] = 1,
                 ["singleAccount"] = false,
+                ["version"] = 1,
+                ["filterId"] = 2,
             },
         },
     },

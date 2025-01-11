@@ -525,9 +525,9 @@ LibManifest 1
 CombatMetronome 1
 LibPhinixFunctions 1
 HarvestMapAD 1
-CraftStoreFixedAndImproved 1
-VotansImprovedHouseTours 1
 LibMotif 1
+VotansImprovedHouseTours 1
+CraftStoreFixedAndImproved 1
 #NA Megaserver-Maüschen
 CustomCompassPins 0
 PerfectWeave 0
@@ -598,7 +598,7 @@ LibMapData 1
 CombatMetronome 0
 VotansImprovedHouseTours 0
 #NA Megaserver-Gustaf Helmuth v Feld
-CustomCompassPins 0
+CustomCompassPins 1
 PerfectWeave 0
 AutoDailyRewards 0
 AlchemyUnknown 0
@@ -612,6 +612,7 @@ ActionDurationReminder 0
 LibMapThemer 0
 HodorReflexes 0
 SetCollectionColoredLibrary 0
+AlphaScry 0
 HousingHub 0
 MasterRecipeList 0
 displayleads 0
@@ -619,11 +620,11 @@ VotansSurveyTheWorld 0
 VotansHousingFilter 0
 VotansImprovedProvisioner 0
 DariansUtilities 0
-aTim99_Tbar 0
+aTim99_Tbar 1
 LootLog 0
-MapPins 0
+MapPins 1
 DungeonQueue4Stickerbook 0
-VotansMiniMap 0
+VotansMiniMap 1
 ResearchAssistant 0
 VotansImprovedMulticraft 0
 LibDebugLogger 1
@@ -632,14 +633,17 @@ CollectiblesTracker 0
 LibCustomMenu 1
 LibAsync 1
 LibHistoire 0
-tim99sColoredLists 0
+tim99sColoredLists 1
 VotansCraftingQuickAccess 0
 DWAllianceRankProgress 0
-LostTreasure 0
+LostTreasure 1
 CombatAlerts 0
 CompanionRapportInfo 0
 libAddonKeybinds 0
+LibTreasure 1
+LibSavedVars 1
 PithkaAchievementTracker 0
+LibMapPins-1.0 1
 VotansFishermanExport 0
 LibStub 0
 LibDataShare 0
@@ -648,8 +652,8 @@ tim99sFTSIO 0
 EssentialHousingCommunity 0
 AccurateWorldMap 0
 VotansImprovedOutfit 0
-LibNotification 0
-PointsofColor 0
+LibNotification 1
+PointsofColor 1
 EssentialHousingTools 0
 VotansCollectibleMRU 0
 PlunderSkullTracker 0
@@ -661,6 +665,8 @@ AUI_FightData 0
 LibCombatAlerts 0
 LibAddonMenu-2.0 1
 DeclutteredScryingLeads 0
+LibHarvensAddonSettings 1
+AwesomeGuildStore 0
 VotansFisherman 0
 OdySupportIcons 0
 CombatMetronome 0
