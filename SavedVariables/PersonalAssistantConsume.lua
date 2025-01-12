@@ -4,64 +4,42 @@ PersonalAssistantConsume_SavedVariables =
     {
         ["@germanus4711"] = 
         {
-            ["8796093062295781"] = 
-            {
-                ["isAutoConsumeEXP"] = false,
-                ["foodBufferSeconds"] = 300,
-                ["$LastCharacterName"] = "Fridolin The Great",
-                ["EXPLink"] = "",
-                ["foodLink"] = "",
-                ["version"] = 2,
-                ["EXPBufferSeconds"] = -1,
-                ["isAutoEatFood"] = false,
-            },
-            ["8796093025384257"] = 
-            {
-                ["isAutoConsumeEXP"] = false,
-                ["foodBufferSeconds"] = 300,
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-                ["EXPLink"] = "",
-                ["foodLink"] = "",
-                ["version"] = 2,
-                ["EXPBufferSeconds"] = -1,
-                ["isAutoEatFood"] = false,
-            },
-            ["8796093067546805"] = 
-            {
-                ["isAutoConsumeEXP"] = false,
-                ["foodBufferSeconds"] = 300,
-                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
-                ["EXPLink"] = "",
-                ["foodLink"] = "",
-                ["version"] = 2,
-                ["EXPBufferSeconds"] = -1,
-                ["isAutoEatFood"] = false,
-            },
-            ["8796093069174989"] = 
-            {
-                ["isAutoConsumeEXP"] = false,
-                ["foodBufferSeconds"] = 300,
-                ["$LastCharacterName"] = "Mike v Petra",
-                ["EXPLink"] = "",
-                ["foodLink"] = "",
-                ["version"] = 2,
-                ["EXPBufferSeconds"] = -1,
-                ["isAutoEatFood"] = false,
-            },
             ["8796093074287095"] = 
             {
-                ["isAutoConsumeEXP"] = false,
-                ["foodBufferSeconds"] = 300,
-                ["$LastCharacterName"] = "Otto von Bissmark",
-                ["EXPLink"] = "",
-                ["foodLink"] = "",
-                ["version"] = 2,
                 ["EXPBufferSeconds"] = -1,
+                ["isAutoConsumeEXP"] = false,
                 ["isAutoEatFood"] = false,
+                ["foodBufferSeconds"] = 300,
+                ["foodLink"] = "",
+                ["EXPLink"] = "",
+                ["$LastCharacterName"] = "Otto von Bissmark",
+                ["version"] = 2,
+            },
+            ["8796093064640125"] = 
+            {
+                ["EXPBufferSeconds"] = -1,
+                ["isAutoConsumeEXP"] = false,
+                ["isAutoEatFood"] = false,
+                ["foodBufferSeconds"] = 300,
+                ["foodLink"] = "",
+                ["EXPLink"] = "",
+                ["$LastCharacterName"] = "Maüschen",
+                ["version"] = 2,
+            },
+            ["8796093072557313"] = 
+            {
+                ["EXPBufferSeconds"] = -1,
+                ["isAutoConsumeEXP"] = false,
+                ["isAutoEatFood"] = false,
+                ["foodBufferSeconds"] = 300,
+                ["foodLink"] = "",
+                ["EXPLink"] = "",
+                ["$LastCharacterName"] = "Gamal Loki",
+                ["version"] = 2,
             },
             ["$AccountWide"] = 
             {
-                ["version"] = 2,
+                ["savedVarsVersion"] = 20240922,
                 [1] = 
                 {
                     ["silentMode"] = false,
@@ -69,51 +47,73 @@ PersonalAssistantConsume_SavedVariables =
                     ["autoConsumePoisonEnabled"] = false,
                 },
                 ["profileCounter"] = 1,
-                ["savedVarsVersion"] = 20240922,
-            },
-            ["8796093027479535"] = 
-            {
-                ["isAutoConsumeEXP"] = false,
-                ["foodBufferSeconds"] = 300,
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
-                ["EXPLink"] = "",
-                ["foodLink"] = "",
                 ["version"] = 2,
+            },
+            ["8796093062295781"] = 
+            {
                 ["EXPBufferSeconds"] = -1,
+                ["isAutoConsumeEXP"] = false,
                 ["isAutoEatFood"] = false,
+                ["foodBufferSeconds"] = 300,
+                ["foodLink"] = "",
+                ["EXPLink"] = "",
+                ["$LastCharacterName"] = "Fridolin The Great",
+                ["version"] = 2,
+            },
+            ["8796093069174989"] = 
+            {
+                ["EXPBufferSeconds"] = -1,
+                ["isAutoConsumeEXP"] = false,
+                ["isAutoEatFood"] = false,
+                ["foodBufferSeconds"] = 300,
+                ["foodLink"] = "",
+                ["EXPLink"] = "",
+                ["$LastCharacterName"] = "Mike v Petra",
+                ["version"] = 2,
+            },
+            ["8796093067546805"] = 
+            {
+                ["EXPBufferSeconds"] = -1,
+                ["isAutoConsumeEXP"] = false,
+                ["isAutoEatFood"] = false,
+                ["foodBufferSeconds"] = 300,
+                ["foodLink"] = "",
+                ["EXPLink"] = "",
+                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
+                ["version"] = 2,
+            },
+            ["8796093025384257"] = 
+            {
+                ["EXPBufferSeconds"] = -1,
+                ["isAutoConsumeEXP"] = false,
+                ["isAutoEatFood"] = false,
+                ["foodBufferSeconds"] = 300,
+                ["foodLink"] = "",
+                ["EXPLink"] = "",
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+                ["version"] = 2,
             },
             ["8796093023211051"] = 
             {
+                ["EXPBufferSeconds"] = -1,
                 ["isAutoConsumeEXP"] = false,
+                ["isAutoEatFood"] = false,
                 ["foodBufferSeconds"] = 300,
+                ["foodLink"] = "",
+                ["EXPLink"] = "",
                 ["$LastCharacterName"] = "Freya Orm",
-                ["EXPLink"] = "",
-                ["foodLink"] = "",
                 ["version"] = 2,
-                ["EXPBufferSeconds"] = -1,
-                ["isAutoEatFood"] = false,
             },
-            ["8796093072557313"] = 
+            ["8796093027479535"] = 
             {
-                ["isAutoConsumeEXP"] = false,
-                ["foodBufferSeconds"] = 300,
-                ["$LastCharacterName"] = "Gamal Loki",
-                ["EXPLink"] = "",
-                ["foodLink"] = "",
-                ["version"] = 2,
                 ["EXPBufferSeconds"] = -1,
-                ["isAutoEatFood"] = false,
-            },
-            ["8796093064640125"] = 
-            {
                 ["isAutoConsumeEXP"] = false,
-                ["foodBufferSeconds"] = 300,
-                ["$LastCharacterName"] = "Maüschen",
-                ["EXPLink"] = "",
-                ["foodLink"] = "",
-                ["version"] = 2,
-                ["EXPBufferSeconds"] = -1,
                 ["isAutoEatFood"] = false,
+                ["foodBufferSeconds"] = 300,
+                ["foodLink"] = "",
+                ["EXPLink"] = "",
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["version"] = 2,
             },
         },
     },

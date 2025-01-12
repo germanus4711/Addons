@@ -4,59 +4,59 @@ HarvensImprovedSkillsWindow_SavedVariables =
     {
         ["@germanus4711"] = 
         {
-            ["Otto von Bissmark"] = 
+            ["Fridolin The Great"] = 
             {
                 ["showTotal"] = false,
-                ["version"] = 1,
                 ["showDetails"] = true,
-            },
-            ["Christel v Koenigsberg"] = 
-            {
-                ["showTotal"] = false,
                 ["version"] = 1,
-                ["showDetails"] = true,
             },
             ["Hubertus Freiherr v Feld"] = 
             {
                 ["showTotal"] = false,
-                ["version"] = 1,
                 ["showDetails"] = true,
-            },
-            ["Maüschen"] = 
-            {
-                ["showTotal"] = false,
                 ["version"] = 1,
-                ["showDetails"] = true,
             },
             ["Freya Orm"] = 
             {
                 ["showTotal"] = false,
-                ["version"] = 1,
                 ["showDetails"] = true,
-            },
-            ["Fridolin The Great"] = 
-            {
-                ["showTotal"] = false,
                 ["version"] = 1,
-                ["showDetails"] = true,
-            },
-            ["Mike v Petra"] = 
-            {
-                ["showTotal"] = false,
-                ["version"] = 1,
-                ["showDetails"] = true,
             },
             ["Gustaf Helmuth v Feld"] = 
             {
                 ["showTotal"] = false,
-                ["version"] = 1,
                 ["showDetails"] = true,
+                ["version"] = 1,
+            },
+            ["Otto von Bissmark"] = 
+            {
+                ["showTotal"] = false,
+                ["showDetails"] = true,
+                ["version"] = 1,
+            },
+            ["Christel v Koenigsberg"] = 
+            {
+                ["showTotal"] = false,
+                ["showDetails"] = true,
+                ["version"] = 1,
+            },
+            ["Maüschen"] = 
+            {
+                ["showTotal"] = false,
+                ["showDetails"] = true,
+                ["version"] = 1,
+            },
+            ["Mike v Petra"] = 
+            {
+                ["showTotal"] = false,
+                ["showDetails"] = true,
+                ["version"] = 1,
             },
             ["Gamal Loki"] = 
             {
                 ["showTotal"] = false,
-                ["version"] = 1,
                 ["showDetails"] = true,
+                ["version"] = 1,
             },
         },
     },

@@ -6,15 +6,39 @@ PersonalAssistantBanking_SavedVariables =
         {
             ["$AccountWide"] = 
             {
+                ["savedVarsVersion"] = 20240922,
                 [1] = 
                 {
+                    ["transactionDepositStacking"] = 0,
                     ["name"] = "TOON",
-                    ["excludeJunk"] = true,
-                    ["LastStackBags"] = 1736561189,
+                    ["LastOnBankOpen"] = 1736660384,
+                    ["autoStackBags"] = true,
                     ["silentMode"] = false,
                     ["Advanced"] = 
                     {
                         ["advancedItemsEnabled"] = true,
+                        ["LearnableItemTypes"] = 
+                        {
+                            [8] = 
+                            {
+                                ["Unknown"] = 0,
+                                ["Known"] = 0,
+                            },
+                            [29] = 
+                            {
+                                ["Unknown"] = 0,
+                                ["Known"] = 0,
+                            },
+                        },
+                        ["ItemTraitTypes"] = 
+                        {
+                            [24] = 0,
+                            [9] = 0,
+                            [10] = 0,
+                            [27] = 0,
+                            [20] = 0,
+                            [19] = 0,
+                        },
                         ["ItemTypes"] = 
                         {
                             [20] = 0,
@@ -26,6 +50,20 @@ PersonalAssistantBanking_SavedVariables =
                             [61] = 0,
                             [30] = 0,
                             [4] = 0,
+                        },
+                        ["HolidayWrits"] = 
+                        {
+                            [2760] = 0,
+                        },
+                        ["MasterWritCraftingTypes"] = 
+                        {
+                            [1] = 0,
+                            [2] = 0,
+                            [3] = 0,
+                            [4] = 0,
+                            [5] = 0,
+                            [6] = 0,
+                            [7] = 0,
                         },
                         ["SpecializedItemTypes"] = 
                         {
@@ -49,20 +87,195 @@ PersonalAssistantBanking_SavedVariables =
                             [110] = 0,
                             [3252] = 0,
                         },
-                        ["HolidayWrits"] = 
+                    },
+                    ["excludeJunk"] = true,
+                    ["Custom"] = 
+                    {
+                        ["PAItemIds"] = 
                         {
-                            [2760] = 0,
                         },
-                        ["MasterWritCraftingTypes"] = 
+                        ["customItemsEnabled"] = true,
+                    },
+                    ["Crafting"] = 
+                    {
+                        ["craftingItemsEnabled"] = true,
+                        ["ItemTypes"] = 
                         {
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 0,
-                            [4] = 0,
-                            [5] = 0,
-                            [6] = 0,
-                            [7] = 0,
+                            [64] = 0,
+                            [65] = 0,
+                            [66] = 0,
+                            [35] = 0,
+                            [36] = 0,
+                            [37] = 0,
+                            [38] = 0,
+                            [39] = 0,
+                            [40] = 0,
+                            [41] = 0,
+                            [42] = 0,
+                            [43] = 0,
+                            [44] = 0,
+                            [45] = 0,
+                            [46] = 0,
+                            [16] = 0,
+                            [17] = 0,
+                            [51] = 0,
+                            [52] = 0,
+                            [53] = 0,
+                            [31] = 0,
+                            [68] = 0,
+                            [58] = 0,
+                            [10] = 0,
+                            [33] = 0,
+                            [67] = 0,
+                            [62] = 0,
+                            [63] = 0,
                         },
+                    },
+                    ["transactionWithdrawalStacking"] = 0,
+                    ["AvA"] = 
+                    {
+                        ["ItemIds"] = 
+                        {
+                            [27112] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [27962] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [141731] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [142133] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [204483] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [27138] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                        },
+                        ["CrossAllianceItemIds"] = 
+                        {
+                            [6000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [4000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [3300] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [1300] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [1200] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [3100] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [5000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [3400] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [3200] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [1000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [3000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [1100] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [2200] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [2100] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [2000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                        },
+                        ["avaItemsEnabled"] = false,
+                    },
+                    ["LastStackBags"] = 1736660387,
+                    ["autoExecuteItemTransfers"] = true,
+                    ["Currencies"] = 
+                    {
+                        ["writVouchersMaxToKeep"] = 0,
+                        ["telVarMinToKeep"] = 0,
+                        ["goldTransaction"] = true,
+                        ["telVarTransaction"] = true,
+                        ["telVarMaxToKeep"] = 0,
+                        ["goldMinToKeep"] = 100,
+                        ["goldMaxToKeep"] = 250,
+                        ["writVouchersTransaction"] = true,
+                        ["writVouchersMinToKeep"] = 0,
+                        ["alliancePointsMaxToKeep"] = 0,
+                        ["alliancePointsTransaction"] = true,
+                        ["currenciesEnabled"] = true,
+                        ["alliancePointsMinToKeep"] = 0,
+                    },
+                },
+                [2] = 
+                {
+                    ["transactionDepositStacking"] = 0,
+                    ["name"] = "Main",
+                    ["transactionWithdrawalStacking"] = 0,
+                    ["autoStackBags"] = true,
+                    ["silentMode"] = false,
+                    ["Advanced"] = 
+                    {
+                        ["advancedItemsEnabled"] = true,
                         ["LearnableItemTypes"] = 
                         {
                             [8] = 
@@ -85,370 +298,6 @@ PersonalAssistantBanking_SavedVariables =
                             [20] = 0,
                             [19] = 0,
                         },
-                    },
-                    ["Crafting"] = 
-                    {
-                        ["craftingItemsEnabled"] = true,
-                        ["ItemTypes"] = 
-                        {
-                            [64] = 0,
-                            [65] = 0,
-                            [66] = 0,
-                            [35] = 0,
-                            [36] = 0,
-                            [37] = 0,
-                            [38] = 0,
-                            [39] = 0,
-                            [40] = 0,
-                            [41] = 0,
-                            [42] = 0,
-                            [43] = 0,
-                            [44] = 0,
-                            [45] = 0,
-                            [46] = 0,
-                            [16] = 0,
-                            [17] = 0,
-                            [51] = 0,
-                            [52] = 0,
-                            [53] = 0,
-                            [31] = 0,
-                            [68] = 0,
-                            [58] = 0,
-                            [10] = 0,
-                            [33] = 0,
-                            [67] = 0,
-                            [62] = 0,
-                            [63] = 0,
-                        },
-                    },
-                    ["Currencies"] = 
-                    {
-                        ["telVarTransaction"] = true,
-                        ["alliancePointsMaxToKeep"] = 0,
-                        ["goldMaxToKeep"] = 250,
-                        ["telVarMaxToKeep"] = 0,
-                        ["goldTransaction"] = true,
-                        ["alliancePointsTransaction"] = true,
-                        ["writVouchersMaxToKeep"] = 0,
-                        ["telVarMinToKeep"] = 0,
-                        ["currenciesEnabled"] = true,
-                        ["alliancePointsMinToKeep"] = 0,
-                        ["writVouchersTransaction"] = true,
-                        ["goldMinToKeep"] = 100,
-                        ["writVouchersMinToKeep"] = 0,
-                    },
-                    ["transactionWithdrawalStacking"] = 0,
-                    ["Custom"] = 
-                    {
-                        ["PAItemIds"] = 
-                        {
-                        },
-                        ["customItemsEnabled"] = true,
-                    },
-                    ["transactionDepositStacking"] = 0,
-                    ["autoExecuteItemTransfers"] = true,
-                    ["AvA"] = 
-                    {
-                        ["ItemIds"] = 
-                        {
-                            [27112] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [27962] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [141731] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [142133] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [204483] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [27138] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                        },
-                        ["CrossAllianceItemIds"] = 
-                        {
-                            [6000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [4000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [3300] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [1300] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [1200] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [3100] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [2200] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [3000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [3200] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [1000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [3400] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [1100] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [5000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [2100] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [2000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                        },
-                        ["avaItemsEnabled"] = false,
-                    },
-                    ["LastOnBankOpen"] = 1736561187,
-                    ["autoStackBags"] = true,
-                },
-                [2] = 
-                {
-                    ["name"] = "Main",
-                    ["excludeJunk"] = true,
-                    ["silentMode"] = false,
-                    ["Currencies"] = 
-                    {
-                        ["telVarTransaction"] = false,
-                        ["alliancePointsMaxToKeep"] = 5000,
-                        ["goldMaxToKeep"] = 5000,
-                        ["telVarMaxToKeep"] = 5000,
-                        ["goldTransaction"] = false,
-                        ["alliancePointsTransaction"] = false,
-                        ["writVouchersMaxToKeep"] = 100,
-                        ["telVarMinToKeep"] = 1000,
-                        ["currenciesEnabled"] = true,
-                        ["alliancePointsMinToKeep"] = 1000,
-                        ["writVouchersTransaction"] = false,
-                        ["goldMinToKeep"] = 1000,
-                        ["writVouchersMinToKeep"] = 10,
-                    },
-                    ["Custom"] = 
-                    {
-                        ["PAItemIds"] = 
-                        {
-                        },
-                        ["customItemsEnabled"] = true,
-                    },
-                    ["transactionWithdrawalStacking"] = 0,
-                    ["Crafting"] = 
-                    {
-                        ["craftingItemsEnabled"] = true,
-                        ["ItemTypes"] = 
-                        {
-                            [64] = 0,
-                            [65] = 0,
-                            [66] = 0,
-                            [35] = 0,
-                            [36] = 0,
-                            [37] = 0,
-                            [38] = 0,
-                            [39] = 0,
-                            [40] = 0,
-                            [41] = 0,
-                            [42] = 0,
-                            [43] = 0,
-                            [44] = 0,
-                            [45] = 0,
-                            [46] = 0,
-                            [16] = 0,
-                            [17] = 0,
-                            [51] = 0,
-                            [52] = 0,
-                            [53] = 0,
-                            [63] = 0,
-                            [68] = 0,
-                            [58] = 0,
-                            [67] = 0,
-                            [33] = 0,
-                            [10] = 0,
-                            [62] = 0,
-                            [31] = 0,
-                        },
-                    },
-                    ["transactionDepositStacking"] = 0,
-                    ["autoExecuteItemTransfers"] = true,
-                    ["AvA"] = 
-                    {
-                        ["ItemIds"] = 
-                        {
-                            [27112] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [27962] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [141731] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [142133] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [27138] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [204483] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                        },
-                        ["CrossAllianceItemIds"] = 
-                        {
-                            [6000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [2000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [1300] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [2100] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [3400] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [1100] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [2200] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [3000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [1000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [3200] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [5000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [3100] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [1200] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [3300] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                            [4000] = 
-                            {
-                                ["operator"] = 0,
-                                ["bagAmount"] = 0,
-                            },
-                        },
-                        ["avaItemsEnabled"] = false,
-                    },
-                    ["Advanced"] = 
-                    {
-                        ["advancedItemsEnabled"] = true,
                         ["ItemTypes"] = 
                         {
                             [20] = 0,
@@ -460,6 +309,20 @@ PersonalAssistantBanking_SavedVariables =
                             [61] = 0,
                             [30] = 0,
                             [4] = 0,
+                        },
+                        ["HolidayWrits"] = 
+                        {
+                            [2760] = 0,
+                        },
+                        ["MasterWritCraftingTypes"] = 
+                        {
+                            [1] = 0,
+                            [2] = 0,
+                            [3] = 0,
+                            [4] = 0,
+                            [5] = 0,
+                            [6] = 0,
+                            [7] = 0,
                         },
                         ["SpecializedItemTypes"] = 
                         {
@@ -483,127 +346,14 @@ PersonalAssistantBanking_SavedVariables =
                             [110] = 0,
                             [3252] = 0,
                         },
-                        ["HolidayWrits"] = 
-                        {
-                            [2760] = 0,
-                        },
-                        ["MasterWritCraftingTypes"] = 
-                        {
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 0,
-                            [4] = 0,
-                            [5] = 0,
-                            [6] = 0,
-                            [7] = 0,
-                        },
-                        ["LearnableItemTypes"] = 
-                        {
-                            [8] = 
-                            {
-                                ["Unknown"] = 0,
-                                ["Known"] = 0,
-                            },
-                            [29] = 
-                            {
-                                ["Unknown"] = 0,
-                                ["Known"] = 0,
-                            },
-                        },
-                        ["ItemTraitTypes"] = 
-                        {
-                            [24] = 0,
-                            [9] = 0,
-                            [10] = 0,
-                            [27] = 0,
-                            [20] = 0,
-                            [19] = 0,
-                        },
                     },
-                    ["autoStackBags"] = true,
-                },
-                ["savedVarsVersion"] = 20240922,
-                ["version"] = 2,
-                ["profileCounter"] = 3,
-                [3] = 
-                {
-                    ["name"] = "Harvest",
                     ["excludeJunk"] = true,
-                    ["LastStackBags"] = 1736550468,
-                    ["silentMode"] = false,
-                    ["Advanced"] = 
+                    ["Custom"] = 
                     {
-                        ["advancedItemsEnabled"] = true,
-                        ["ItemTypes"] = 
+                        ["PAItemIds"] = 
                         {
-                            [20] = 0,
-                            [21] = 0,
-                            [54] = 0,
-                            [7] = 0,
-                            [26] = 0,
-                            [12] = 0,
-                            [61] = 0,
-                            [30] = 0,
-                            [4] = 0,
                         },
-                        ["SpecializedItemTypes"] = 
-                        {
-                            [113] = 0,
-                            [3250] = 0,
-                            [3251] = 0,
-                            [100] = 1,
-                            [101] = 
-                            {
-                                [24] = 2,
-                                [17] = 2,
-                                [16] = 2,
-                                [13] = 2,
-                                [14] = 2,
-                                [15] = 2,
-                            },
-                            [102] = 0,
-                            [104] = 0,
-                            [108] = 0,
-                            [109] = 0,
-                            [110] = 0,
-                            [3252] = 0,
-                        },
-                        ["HolidayWrits"] = 
-                        {
-                            [2760] = 0,
-                        },
-                        ["MasterWritCraftingTypes"] = 
-                        {
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 0,
-                            [4] = 0,
-                            [5] = 0,
-                            [6] = 0,
-                            [7] = 0,
-                        },
-                        ["LearnableItemTypes"] = 
-                        {
-                            [8] = 
-                            {
-                                ["Unknown"] = 0,
-                                ["Known"] = 0,
-                            },
-                            [29] = 
-                            {
-                                ["Unknown"] = 0,
-                                ["Known"] = 0,
-                            },
-                        },
-                        ["ItemTraitTypes"] = 
-                        {
-                            [24] = 0,
-                            [9] = 0,
-                            [10] = 0,
-                            [27] = 0,
-                            [20] = 0,
-                            [19] = 0,
-                        },
+                        ["customItemsEnabled"] = true,
                     },
                     ["Crafting"] = 
                     {
@@ -640,32 +390,6 @@ PersonalAssistantBanking_SavedVariables =
                             [31] = 0,
                         },
                     },
-                    ["Currencies"] = 
-                    {
-                        ["telVarTransaction"] = true,
-                        ["alliancePointsMaxToKeep"] = 0,
-                        ["goldMaxToKeep"] = 250,
-                        ["telVarMaxToKeep"] = 0,
-                        ["goldTransaction"] = true,
-                        ["alliancePointsTransaction"] = true,
-                        ["writVouchersMaxToKeep"] = 0,
-                        ["telVarMinToKeep"] = 0,
-                        ["currenciesEnabled"] = true,
-                        ["alliancePointsMinToKeep"] = 0,
-                        ["writVouchersTransaction"] = true,
-                        ["goldMinToKeep"] = 100,
-                        ["writVouchersMinToKeep"] = 0,
-                    },
-                    ["transactionWithdrawalStacking"] = 0,
-                    ["Custom"] = 
-                    {
-                        ["PAItemIds"] = 
-                        {
-                        },
-                        ["customItemsEnabled"] = true,
-                    },
-                    ["transactionDepositStacking"] = 0,
-                    ["autoExecuteItemTransfers"] = true,
                     ["AvA"] = 
                     {
                         ["ItemIds"] = 
@@ -723,7 +447,7 @@ PersonalAssistantBanking_SavedVariables =
                                 ["operator"] = 0,
                                 ["bagAmount"] = 0,
                             },
-                            [3400] = 
+                            [3000] = 
                             {
                                 ["operator"] = 0,
                                 ["bagAmount"] = 0,
@@ -733,12 +457,12 @@ PersonalAssistantBanking_SavedVariables =
                                 ["operator"] = 0,
                                 ["bagAmount"] = 0,
                             },
-                            [2200] = 
+                            [5000] = 
                             {
                                 ["operator"] = 0,
                                 ["bagAmount"] = 0,
                             },
-                            [3000] = 
+                            [3400] = 
                             {
                                 ["operator"] = 0,
                                 ["bagAmount"] = 0,
@@ -753,7 +477,7 @@ PersonalAssistantBanking_SavedVariables =
                                 ["operator"] = 0,
                                 ["bagAmount"] = 0,
                             },
-                            [5000] = 
+                            [2200] = 
                             {
                                 ["operator"] = 0,
                                 ["bagAmount"] = 0,
@@ -781,9 +505,285 @@ PersonalAssistantBanking_SavedVariables =
                         },
                         ["avaItemsEnabled"] = false,
                     },
-                    ["LastOnBankOpen"] = 1736550464,
-                    ["autoStackBags"] = true,
+                    ["autoExecuteItemTransfers"] = true,
+                    ["Currencies"] = 
+                    {
+                        ["writVouchersMaxToKeep"] = 100,
+                        ["telVarMinToKeep"] = 1000,
+                        ["goldTransaction"] = false,
+                        ["telVarTransaction"] = false,
+                        ["telVarMaxToKeep"] = 5000,
+                        ["goldMinToKeep"] = 1000,
+                        ["goldMaxToKeep"] = 5000,
+                        ["writVouchersTransaction"] = false,
+                        ["writVouchersMinToKeep"] = 10,
+                        ["alliancePointsMaxToKeep"] = 5000,
+                        ["alliancePointsTransaction"] = false,
+                        ["currenciesEnabled"] = true,
+                        ["alliancePointsMinToKeep"] = 1000,
+                    },
                 },
+                [3] = 
+                {
+                    ["transactionDepositStacking"] = 0,
+                    ["name"] = "Harvest",
+                    ["LastOnBankOpen"] = 1736615169,
+                    ["autoStackBags"] = true,
+                    ["silentMode"] = false,
+                    ["Advanced"] = 
+                    {
+                        ["advancedItemsEnabled"] = true,
+                        ["LearnableItemTypes"] = 
+                        {
+                            [8] = 
+                            {
+                                ["Unknown"] = 0,
+                                ["Known"] = 0,
+                            },
+                            [29] = 
+                            {
+                                ["Unknown"] = 0,
+                                ["Known"] = 0,
+                            },
+                        },
+                        ["ItemTraitTypes"] = 
+                        {
+                            [24] = 0,
+                            [9] = 0,
+                            [10] = 0,
+                            [27] = 0,
+                            [20] = 0,
+                            [19] = 0,
+                        },
+                        ["ItemTypes"] = 
+                        {
+                            [20] = 0,
+                            [21] = 0,
+                            [54] = 0,
+                            [7] = 0,
+                            [26] = 0,
+                            [12] = 0,
+                            [61] = 0,
+                            [30] = 0,
+                            [4] = 0,
+                        },
+                        ["HolidayWrits"] = 
+                        {
+                            [2760] = 0,
+                        },
+                        ["MasterWritCraftingTypes"] = 
+                        {
+                            [1] = 0,
+                            [2] = 0,
+                            [3] = 0,
+                            [4] = 0,
+                            [5] = 0,
+                            [6] = 0,
+                            [7] = 0,
+                        },
+                        ["SpecializedItemTypes"] = 
+                        {
+                            [113] = 0,
+                            [3250] = 0,
+                            [3251] = 0,
+                            [100] = 1,
+                            [101] = 
+                            {
+                                [24] = 2,
+                                [17] = 2,
+                                [16] = 2,
+                                [13] = 2,
+                                [14] = 2,
+                                [15] = 2,
+                            },
+                            [102] = 0,
+                            [104] = 0,
+                            [108] = 0,
+                            [109] = 0,
+                            [110] = 0,
+                            [3252] = 0,
+                        },
+                    },
+                    ["excludeJunk"] = true,
+                    ["Custom"] = 
+                    {
+                        ["PAItemIds"] = 
+                        {
+                        },
+                        ["customItemsEnabled"] = true,
+                    },
+                    ["Crafting"] = 
+                    {
+                        ["craftingItemsEnabled"] = true,
+                        ["ItemTypes"] = 
+                        {
+                            [64] = 0,
+                            [65] = 0,
+                            [66] = 0,
+                            [35] = 0,
+                            [36] = 0,
+                            [37] = 0,
+                            [38] = 0,
+                            [39] = 0,
+                            [40] = 0,
+                            [41] = 0,
+                            [42] = 0,
+                            [43] = 0,
+                            [44] = 0,
+                            [45] = 0,
+                            [46] = 0,
+                            [16] = 0,
+                            [17] = 0,
+                            [51] = 0,
+                            [52] = 0,
+                            [53] = 0,
+                            [63] = 0,
+                            [68] = 0,
+                            [58] = 0,
+                            [67] = 0,
+                            [33] = 0,
+                            [10] = 0,
+                            [62] = 0,
+                            [31] = 0,
+                        },
+                    },
+                    ["transactionWithdrawalStacking"] = 0,
+                    ["AvA"] = 
+                    {
+                        ["ItemIds"] = 
+                        {
+                            [27112] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [27962] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [141731] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [142133] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [27138] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [204483] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                        },
+                        ["CrossAllianceItemIds"] = 
+                        {
+                            [6000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [2000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [1300] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [2100] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [3000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [1100] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [5000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [3400] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [1000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [3200] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [2200] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [3100] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [1200] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [3300] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                            [4000] = 
+                            {
+                                ["operator"] = 0,
+                                ["bagAmount"] = 0,
+                            },
+                        },
+                        ["avaItemsEnabled"] = false,
+                    },
+                    ["LastStackBags"] = 1736615172,
+                    ["autoExecuteItemTransfers"] = true,
+                    ["Currencies"] = 
+                    {
+                        ["writVouchersMaxToKeep"] = 0,
+                        ["telVarMinToKeep"] = 0,
+                        ["goldTransaction"] = true,
+                        ["telVarTransaction"] = true,
+                        ["telVarMaxToKeep"] = 0,
+                        ["goldMinToKeep"] = 100,
+                        ["goldMaxToKeep"] = 250,
+                        ["writVouchersTransaction"] = true,
+                        ["writVouchersMinToKeep"] = 0,
+                        ["alliancePointsMaxToKeep"] = 0,
+                        ["alliancePointsTransaction"] = true,
+                        ["currenciesEnabled"] = true,
+                        ["alliancePointsMinToKeep"] = 0,
+                    },
+                },
+                ["profileCounter"] = 3,
+                ["version"] = 2,
             },
         },
     },

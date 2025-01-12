@@ -6,45 +6,45 @@ PortToFriendsHouseVars =
         {
             ["$AccountWide"] = 
             {
-                ["vc_chatAllowed"] = 
-                {
-                    ["o5"] = true,
-                    ["o3"] = true,
-                    ["enzone"] = false,
-                    ["dezone"] = false,
-                    ["jpzone"] = false,
-                    ["o1"] = true,
-                    ["frzone"] = false,
-                    ["tell"] = true,
-                    ["g1"] = true,
-                    ["o4"] = true,
-                    ["g3"] = true,
-                    ["o2"] = true,
-                    ["emote"] = false,
-                    ["group"] = true,
-                    ["zone"] = false,
-                    ["g5"] = true,
-                    ["say"] = false,
-                    ["g4"] = true,
-                    ["g2"] = true,
-                    ["yell"] = false,
-                },
-                ["selectedLibraryFilter"] = 1,
+                ["selectedMyHousesSort"] = 1,
                 ["vc"] = 
                 {
-                    ["allowSelf"] = false,
                     ["receivedCards"] = 
                     {
                     },
+                    ["allowSelf"] = false,
                 },
+                ["selectedLibraryFilter"] = 1,
+                ["version"] = 1,
+                ["port_mode"] = 3,
                 ["favorites"] = 
                 {
                 },
                 ["defaultTab"] = 1,
-                ["version"] = 1,
-                ["port_mode"] = 3,
-                ["selectedMyHousesSort"] = 1,
                 ["selectedLibrarySort"] = 1,
+                ["vc_chatAllowed"] = 
+                {
+                    ["g1"] = true,
+                    ["g5"] = true,
+                    ["emote"] = false,
+                    ["dezone"] = false,
+                    ["say"] = false,
+                    ["enzone"] = false,
+                    ["g3"] = true,
+                    ["yell"] = false,
+                    ["group"] = true,
+                    ["o2"] = true,
+                    ["o5"] = true,
+                    ["g2"] = true,
+                    ["zone"] = false,
+                    ["tell"] = true,
+                    ["o1"] = true,
+                    ["jpzone"] = false,
+                    ["g4"] = true,
+                    ["frzone"] = false,
+                    ["o4"] = true,
+                    ["o3"] = true,
+                },
                 ["myHousesFavorites"] = 
                 {
                     [2] = 

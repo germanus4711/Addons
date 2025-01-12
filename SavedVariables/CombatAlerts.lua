@@ -8,25 +8,25 @@ CombatAlertsSavedVariables =
             {
                 ["lokiStance"] = false,
                 ["projectileTimingAdjustment"] = 0.8000000000,
-                ["castAlertsEnabled"] = true,
-                ["verboseCasts"] = false,
-                ["version"] = 1,
-                ["extTDC"] = false,
-                ["extMA"] = false,
                 ["panelMigrated"] = true,
+                ["debugEnabled"] = false,
+                ["castAlertsEnabled"] = true,
+                ["panelTop"] = 300,
+                ["crshift"] = true,
                 ["castAlertsSound"] = true,
-                ["maxCastMS"] = 4000,
-                ["crushing"] = false,
+                ["panelLeft"] = 400,
+                ["dsrPortSounds"] = false,
                 ["debugLog"] = 
                 {
                 },
-                ["crshift"] = true,
-                ["dsrShowWave"] = false,
-                ["panelTop"] = 300,
-                ["dsrPortSounds"] = false,
-                ["panelLeft"] = 400,
+                ["maxCastMS"] = 4000,
                 ["dsrDelugeBlame"] = false,
-                ["debugEnabled"] = false,
+                ["verboseCasts"] = false,
+                ["crushing"] = false,
+                ["dsrShowWave"] = false,
+                ["extTDC"] = false,
+                ["extMA"] = false,
+                ["version"] = 1,
             },
         },
     },
@@ -39,45 +39,45 @@ CombatAlertsSettings =
         {
             ["$AccountWide"] = 
             {
-                ["nearby"] = 0,
+                ["suppressModuleMessages"] = false,
                 ["disabledModules"] = 
                 {
                 },
-                ["disableAnnoyingMessages"] = true,
-                ["version"] = 1,
-                ["suppressModuleMessages"] = false,
-                ["bypassPurgeSlotCheck"] = false,
+                ["nearby"] = 0,
                 ["statusPanel"] = 
                 {
                     ["left"] = 400,
                     ["top"] = 300,
                 },
+                ["bypassPurgeSlotCheck"] = false,
+                ["disableAnnoyingMessages"] = true,
+                ["version"] = 1,
             },
         },
     },
 }
 CombatAlertsModules =
 {
-    ["CA_M_U09"] = 
+    ["CA_M_U14"] = 
     {
         ["raidLeadMode"] = false,
     },
-    ["CA_M_U14"] = 
+    ["CA_M_U09"] = 
     {
         ["raidLeadMode"] = false,
     },
     ["CA_M_U42"] = 
     {
         ["burstNear"] = false,
-        ["colorPassage"] = 4278190233,
-        ["knotNumber"] = true,
-        ["colorOverloaded"] = 10092441,
-        ["extraAlerts"] = true,
-        ["whirlwind"] = false,
-        ["mirrorSpawns"] = true,
         ["colorBoth"] = 4278255513,
-        ["cooldownPanel"] = true,
+        ["colorOverloaded"] = 10092441,
+        ["whirlwind"] = false,
         ["suicidePrevention"] = true,
+        ["cooldownPanel"] = true,
         ["raidLeadMode"] = false,
+        ["knotNumber"] = true,
+        ["extraAlerts"] = true,
+        ["mirrorSpawns"] = true,
+        ["colorPassage"] = 4278190233,
     },
 }

@@ -8,7 +8,6 @@ LibScrollableMenu_SavedVars =
             {
                 ["LSM"] = 
                 {
-                    ["version"] = 1,
                     ["textSearchHistory"] = 
                     {
                     },
@@ -16,6 +15,7 @@ LibScrollableMenu_SavedVars =
                     {
                         ["AddonSelectorddl"] = false,
                     },
+                    ["version"] = 1,
                 },
             },
         },

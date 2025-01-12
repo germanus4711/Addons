@@ -8,18 +8,18 @@ EventTrackerVars =
             {
                 ["NA Megaserver"] = 
                 {
-                    ["Install_Time"] = 1726631845,
                     ["EVT_version"] = 2.2710000000,
-                    ["autoHide"] = false,
-                    ["DataCleared"] = true,
-                    ["left"] = 450,
-                    ["T_ToDo"] = 
+                    ["T_Time"] = 
                     {
                         [1] = 0,
                         [2] = 0,
                         [3] = 0,
                     },
-                    ["version"] = 2,
+                    ["DataCleared"] = true,
+                    ["LastUpdated"] = 1736254438,
+                    ["Message_Time"] = 1736651152,
+                    ["Current_Event"] = "None",
+                    ["autoHide"] = false,
                     ["T_Types"] = 
                     {
                         [1] = "First",
@@ -27,9 +27,17 @@ EventTrackerVars =
                         [3] = "Boss",
                     },
                     ["HideUI"] = false,
-                    ["Message_Time"] = 1736551334,
-                    ["LastUpdated"] = 1736254438,
+                    ["T_ToDo"] = 
+                    {
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
                     ["NewsIndex"] = 3,
+                    ["Install_Time"] = 1726631845,
+                    ["Total_Tickets"] = 0,
+                    ["left"] = 450,
+                    ["version"] = 2,
                     ["T_Tickets"] = 
                     {
                         [4] = 0,
@@ -37,16 +45,8 @@ EventTrackerVars =
                         [2] = 0,
                         [3] = 0,
                     },
-                    ["Total_Tickets"] = 0,
-                    ["Current_Event"] = "None",
-                    ["T_Time"] = 
-                    {
-                        [1] = 0,
-                        [2] = 0,
-                        [3] = 0,
-                    },
-                    ["debug"] = false,
                     ["top"] = 10,
+                    ["debug"] = false,
                 },
             },
         },
@@ -60,9 +60,9 @@ EventTrackerShared =
         {
             ["$AccountWide"] = 
             {
+                ["XP_frequency"] = 5,
                 ["XP_refresh"] = 200,
                 ["version"] = 1,
-                ["XP_frequency"] = 5,
             },
         },
     },

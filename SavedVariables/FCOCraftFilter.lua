@@ -8,21 +8,11 @@ FCOCraftFilter_Settings =
             {
                 ["Settings"] = 
                 {
-                    ["languageChoosen"] = false,
+                    ["showButtonResearchOnlyCurrentlyResearched"] = false,
+                    ["defaultCraftTabDescriptorEnabled"] = false,
+                    ["enableOnlyWornFilters"] = false,
+                    ["showWornItemsAtOnlyInventory"] = false,
                     ["enableMediumFilters"] = true,
-                    ["defaultCraftTabDescriptor"] = 
-                    {
-                        [1] = -1,
-                        [2] = -1,
-                        [3] = -1,
-                        [4] = -1,
-                        [5] = -1,
-                        [6] = -1,
-                        [7] = -1,
-                        ["universalDeconstruction"] = -1,
-                        ["retrait"] = -1,
-                    },
-                    ["alwaysUseClientLanguage"] = true,
                     ["horizontalScrollBarFilterApplied"] = 
                     {
                         [6] = 
@@ -42,12 +32,25 @@ FCOCraftFilter_Settings =
                             [35] = false,
                         },
                     },
-                    ["enableOnlyWornFilters"] = false,
+                    ["version"] = 0.5100000000,
                     ["enableMasterCrafterSetsFavorites"] = false,
+                    ["languageChoosen"] = false,
                     ["masterCrafterSetsFavoritesNames"] = 
                     {
                     },
-                    ["defaultCraftTabDescriptorEnabled"] = false,
+                    ["alwaysUseClientLanguage"] = true,
+                    ["defaultCraftTabDescriptor"] = 
+                    {
+                        [1] = -1,
+                        [2] = -1,
+                        [3] = -1,
+                        [4] = -1,
+                        [5] = -1,
+                        [6] = -1,
+                        [7] = -1,
+                        ["retrait"] = -1,
+                        ["universalDeconstruction"] = -1,
+                    },
                     ["masterCrafterSetsFavoritesEnabled"] = 
                     {
                         [99001] = true,
@@ -57,9 +60,6 @@ FCOCraftFilter_Settings =
                         [99005] = true,
                         [99006] = true,
                     },
-                    ["showButtonResearchOnlyCurrentlyResearched"] = false,
-                    ["showWornItemsAtOnlyInventory"] = false,
-                    ["version"] = 0.5100000000,
                     ["filterApplied"] = 
                     {
                         [0] = 
@@ -135,8 +135,8 @@ FCOCraftFilter_Settings =
                 ["SettingsForAll"] = 
                 {
                     ["saveMode"] = 2,
-                    ["version"] = 999,
                     ["language"] = 1,
+                    ["version"] = 999,
                 },
             },
         },

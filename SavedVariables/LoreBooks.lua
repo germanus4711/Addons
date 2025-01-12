@@ -6,45 +6,45 @@ LBooks_SavedVariables =
         {
             ["$AccountWide"] = 
             {
-                ["pinTexture"] = 
-                {
-                    ["level"] = 40,
-                    ["size"] = 26,
-                    ["type"] = 1,
-                },
-                ["showDungeonTag"] = true,
                 ["version"] = 3,
-                ["pinGrayscaleEidetic"] = true,
-                ["unlockEidetic"] = false,
-                ["showQuestName"] = true,
-                ["immersiveMode"] = 1,
-                ["pinTextureEidetic"] = 1,
-                ["steps"] = 
-                {
-                },
                 ["booksCollected"] = 
                 {
                 },
                 ["filters"] = 
                 {
-                    ["LBooksMapPin_collected"] = false,
-                    ["LBooksMapPin_eidetic"] = false,
                     ["LBooksCompassPin_unknown"] = true,
                     ["LBooksCompassPin_bookshelf"] = false,
-                    ["LBooksMapPin_eideticCollected"] = false,
+                    ["LBooksCompassPin_eidetic"] = false,
+                    ["LBooksMapPin_collected"] = false,
+                    ["LBooksMapPin_eidetic"] = false,
                     ["LBooksMapPin_bookshelf"] = true,
                     ["LBooksMapPin_unknown"] = true,
-                    ["LBooksCompassPin_eidetic"] = false,
+                    ["LBooksMapPin_eideticCollected"] = false,
                 },
-                ["showClickMenu"] = true,
+                ["pinTexture"] = 
+                {
+                    ["level"] = 40,
+                    ["type"] = 1,
+                    ["size"] = 26,
+                },
                 ["postmailData"] = "",
+                ["showDungeonTag"] = true,
+                ["immersiveMode"] = 1,
+                ["pinGrayscaleEidetic"] = true,
+                ["pinTextureEidetic"] = 1,
+                ["pinGrayscale"] = true,
                 ["questTools"] = 
                 {
                 },
-                ["shareData"] = true,
+                ["showQuestName"] = true,
                 ["compassMaxDistance"] = 0.0400000000,
+                ["shareData"] = true,
                 ["postmailFirstInsert"] = 1732315105,
-                ["pinGrayscale"] = true,
+                ["showClickMenu"] = true,
+                ["steps"] = 
+                {
+                },
+                ["unlockEidetic"] = false,
             },
         },
     },

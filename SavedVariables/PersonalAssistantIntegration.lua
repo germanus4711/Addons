@@ -6,9 +6,14 @@ PersonalAssistantIntegration_SavedVariables =
         {
             ["$AccountWide"] = 
             {
-                ["version"] = 1,
+                ["savedVarsVersion"] = 20240922,
                 [1] = 
                 {
+                    ["LazyWritCrafter"] = 
+                    {
+                        ["compatibility"] = true,
+                    },
+                    ["name"] = "Profile 1",
                     ["FCOItemSaver"] = 
                     {
                         ["Locked"] = 
@@ -24,6 +29,10 @@ PersonalAssistantIntegration_SavedVariables =
                         {
                             ["itemMoveMode"] = 0,
                         },
+                        ["Intricate"] = 
+                        {
+                            ["itemMoveMode"] = 0,
+                        },
                         ["GearSets"] = 
                         {
                             ["itemMoveMode"] = 
@@ -35,39 +44,30 @@ PersonalAssistantIntegration_SavedVariables =
                                 [5] = 0,
                             },
                         },
-                        ["DynamicIcons"] = 
-                        {
-                        },
                         ["Sell"] = 
                         {
                             ["autoSellMarked"] = false,
                         },
+                        ["DynamicIcons"] = 
+                        {
+                        },
                         ["Deconstruction"] = 
                         {
                             ["itemMoveMode"] = 2,
-                        },
-                        ["Intricate"] = 
-                        {
-                            ["itemMoveMode"] = 0,
                         },
                         ["Improvement"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
                     },
-                    ["LazyWritCrafter"] = 
-                    {
-                        ["compatibility"] = true,
-                    },
                     ["CharacterKnowledge"] = 
                     {
                         ["characterName"] = "Freya Orm",
                         ["enabled"] = true,
                     },
-                    ["name"] = "Profile 1",
                 },
                 ["profileCounter"] = 1,
-                ["savedVarsVersion"] = 20240922,
+                ["version"] = 1,
             },
         },
     },

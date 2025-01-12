@@ -8,33 +8,33 @@ AdvancedFilters_Settings =
             {
                 ["Settings"] = 
                 {
-                    ["hideItemCount"] = false,
+                    ["showSubMenuHeaderlinesInFilterDropdowns"] = false,
+                    ["debugSpamExcludeRefreshSubfilterBar"] = true,
+                    ["showDropdownLastSelectedEntries"] = true,
                     ["dropdownVisibleSubmenuRows"] = 15,
+                    ["dropdownVisibleRows"] = 15,
+                    ["hideItemCount"] = false,
+                    ["debugSpam"] = false,
+                    ["hideSubFilterLabel"] = false,
+                    ["showIconsInFilterDropdowns"] = true,
                     ["debugSpamExcludeDropdownBoxFilters"] = true,
+                    ["grayOutSubFiltersWithNoItems"] = true,
+                    ["version"] = 1.5110000000,
+                    ["itemCountLabelColor"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["hideCharBoundAtBankDeposit"] = false,
                     ["subfilterBarDropdownLastSelectedEntries"] = 
                     {
                     },
-                    ["debugSpam"] = false,
-                    ["grayOutSubFiltersWithNoItems"] = true,
-                    ["version"] = 1.5110000000,
-                    ["showSubMenuHeaderlinesInFilterDropdowns"] = false,
                     ["showFilterDropdownMenuOnRightMouseAtSubFilterButton"] = false,
-                    ["doDebugOutput"] = false,
-                    ["hideCharBoundAtBankDeposit"] = false,
-                    ["itemCountLabelColor"] = 
-                    {
-                        ["b"] = 1,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                        ["a"] = 1,
-                    },
-                    ["showDropdownLastSelectedEntries"] = true,
-                    ["dropdownVisibleRows"] = 15,
-                    ["debugSpamExcludeRefreshSubfilterBar"] = true,
-                    ["hideSubFilterLabel"] = false,
-                    ["showDropdownSelectedReminderAnimation"] = true,
-                    ["showIconsInFilterDropdowns"] = true,
                     ["rememberFilterDropdownsLastSelection"] = true,
+                    ["showDropdownSelectedReminderAnimation"] = true,
+                    ["doDebugOutput"] = false,
                 },
             },
         },

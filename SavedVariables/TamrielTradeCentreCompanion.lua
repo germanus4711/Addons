@@ -6,103 +6,7 @@ TTCCompanion_SavedVars =
         {
             ["$AccountWide"] = 
             {
-                ["dealCalcToUse"] = 2,
-                ["pricingdataeu"] = 
-                {
-                },
-                ["customDealSeventyFive"] = 75,
-                ["showCraftCost"] = false,
-                ["customDealFifty"] = 50,
-                ["agsPercentSortOrderToUse"] = 1,
-                ["pricingData"] = 
-                {
-                    [167200] = 
-                    {
-                        ["1:0:4:0:0"] = 13500,
-                    },
-                    [147685] = 
-                    {
-                        ["1:0:4:0:0"] = 20000,
-                    },
-                    [139526] = 
-                    {
-                        ["1:0:3:0:0"] = 51000,
-                    },
-                    [188329] = 
-                    {
-                        ["1:0:4:0:0"] = 8000,
-                    },
-                    [182955] = 
-                    {
-                        ["1:0:3:0:0"] = 3333,
-                    },
-                    [134508] = 
-                    {
-                        ["1:0:3:0:0"] = 4500,
-                    },
-                    [203502] = 
-                    {
-                        ["1:0:4:0:0"] = 6500,
-                    },
-                    [194548] = 
-                    {
-                        ["1:0:4:0:0"] = 150000,
-                    },
-                    [203476] = 
-                    {
-                        ["1:0:4:0:0"] = 41000,
-                    },
-                    [197589] = 
-                    {
-                        ["1:0:3:0:0"] = 13000,
-                    },
-                    [182966] = 
-                    {
-                        ["1:0:3:0:0"] = 4500,
-                    },
-                    [204567] = 
-                    {
-                        ["1:0:5:0:0"] = 320000,
-                    },
-                    [167192] = 
-                    {
-                        ["1:0:4:0:0"] = 15000,
-                    },
-                    [182967] = 
-                    {
-                        ["1:0:3:0:0"] = 3333,
-                    },
-                    [71685] = 
-                    {
-                        ["1:0:4:0:0"] = 999,
-                    },
-                    [167195] = 
-                    {
-                        ["1:0:4:0:0"] = 38000,
-                    },
-                    [188312] = 
-                    {
-                        ["1:0:4:0:0"] = 17000,
-                    },
-                    [167197] = 
-                    {
-                        ["1:0:4:0:0"] = 18000,
-                    },
-                    [167198] = 
-                    {
-                        ["1:0:4:0:0"] = 26500,
-                    },
-                    [182559] = 
-                    {
-                        ["1:0:4:0:0"] = 8000,
-                    },
-                },
-                ["modifiedSuggestedPriceInventory"] = false,
-                ["version"] = 1,
-                ["replacementTypeToUse"] = 3,
-                ["modifiedSuggestedPriceDealCalc"] = false,
                 ["customDealTwentyFive"] = 25,
-                ["replaceInventoryValues"] = true,
                 ["pricingdatana"] = 
                 {
                     [812695] = 
@@ -758,6 +662,18 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:4:0:0"] = 150000,
                         },
+                        [188337] = 
+                        {
+                            ["1:0:4:0:0"] = 3000,
+                        },
+                        [188338] = 
+                        {
+                            ["1:0:4:0:0"] = 3000,
+                        },
+                        [204567] = 
+                        {
+                            ["1:0:5:0:0"] = 320000,
+                        },
                         [203476] = 
                         {
                             ["1:0:4:0:0"] = 41000,
@@ -770,9 +686,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:3:0:0"] = 4500,
                         },
-                        [204567] = 
+                        [160599] = 
                         {
-                            ["1:0:5:0:0"] = 320000,
+                            ["1:0:4:0:0"] = 1400,
                         },
                         [167192] = 
                         {
@@ -782,17 +698,17 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:3:0:0"] = 3333,
                         },
-                        [71685] = 
+                        [188312] = 
                         {
-                            ["1:0:4:0:0"] = 999,
+                            ["1:0:4:0:0"] = 17000,
                         },
                         [167195] = 
                         {
                             ["1:0:4:0:0"] = 38000,
                         },
-                        [188312] = 
+                        [71685] = 
                         {
-                            ["1:0:4:0:0"] = 17000,
+                            ["1:0:4:0:0"] = 999,
                         },
                         [167197] = 
                         {
@@ -808,13 +724,29 @@ TTCCompanion_SavedVars =
                         },
                     },
                 },
+                ["replacementTypeToUse"] = 3,
+                ["modifiedSuggestedPriceDealCalc"] = false,
+                ["agsPercentSortOrderToUse"] = 1,
                 ["showUnitPrice"] = true,
-                ["showMaterialCost"] = true,
-                ["customDealCalc"] = false,
-                ["showCalc"] = false,
+                ["dealCalcToUse"] = 2,
+                ["modifiedSuggestedPriceInventory"] = false,
                 ["customDealBuyIt"] = 90,
+                ["pricingData"] = 
+                {
+                },
+                ["customDealSeventyFive"] = 75,
+                ["pricingdataeu"] = 
+                {
+                },
+                ["showMaterialCost"] = true,
+                ["version"] = 1,
+                ["customDealCalc"] = false,
+                ["replaceInventoryValues"] = true,
+                ["showCalc"] = false,
+                ["customDealFifty"] = 50,
                 ["showProfitMargin"] = false,
                 ["customDealZero"] = 0,
+                ["showCraftCost"] = false,
             },
         },
     },
