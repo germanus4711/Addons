@@ -6,45 +6,45 @@ LBooks_SavedVariables =
         {
             ["$AccountWide"] = 
             {
-                ["version"] = 3,
+                ["unlockEidetic"] = false,
+                ["pinTextureEidetic"] = 1,
+                ["showClickMenu"] = true,
+                ["pinGrayscaleEidetic"] = true,
                 ["booksCollected"] = 
                 {
                 },
-                ["filters"] = 
-                {
-                    ["LBooksCompassPin_unknown"] = true,
-                    ["LBooksCompassPin_bookshelf"] = false,
-                    ["LBooksCompassPin_eidetic"] = false,
-                    ["LBooksMapPin_collected"] = false,
-                    ["LBooksMapPin_eidetic"] = false,
-                    ["LBooksMapPin_bookshelf"] = true,
-                    ["LBooksMapPin_unknown"] = true,
-                    ["LBooksMapPin_eideticCollected"] = false,
-                },
-                ["pinTexture"] = 
-                {
-                    ["level"] = 40,
-                    ["type"] = 1,
-                    ["size"] = 26,
-                },
-                ["postmailData"] = "",
-                ["showDungeonTag"] = true,
-                ["immersiveMode"] = 1,
-                ["pinGrayscaleEidetic"] = true,
-                ["pinTextureEidetic"] = 1,
-                ["pinGrayscale"] = true,
-                ["questTools"] = 
-                {
-                },
-                ["showQuestName"] = true,
-                ["compassMaxDistance"] = 0.0400000000,
-                ["shareData"] = true,
-                ["postmailFirstInsert"] = 1732315105,
-                ["showClickMenu"] = true,
                 ["steps"] = 
                 {
                 },
-                ["unlockEidetic"] = false,
+                ["postmailFirstInsert"] = 1732315105,
+                ["shareData"] = true,
+                ["filters"] = 
+                {
+                    ["LBooksMapPin_bookshelf"] = true,
+                    ["LBooksMapPin_collected"] = false,
+                    ["LBooksCompassPin_unknown"] = true,
+                    ["LBooksCompassPin_bookshelf"] = false,
+                    ["LBooksMapPin_unknown"] = true,
+                    ["LBooksMapPin_eideticCollected"] = false,
+                    ["LBooksCompassPin_eidetic"] = false,
+                    ["LBooksMapPin_eidetic"] = false,
+                },
+                ["compassMaxDistance"] = 0.0400000000,
+                ["questTools"] = 
+                {
+                },
+                ["version"] = 3,
+                ["postmailData"] = "",
+                ["showDungeonTag"] = true,
+                ["immersiveMode"] = 1,
+                ["showQuestName"] = true,
+                ["pinTexture"] = 
+                {
+                    ["type"] = 1,
+                    ["level"] = 40,
+                    ["size"] = 26,
+                },
+                ["pinGrayscale"] = true,
             },
         },
     },

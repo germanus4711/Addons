@@ -7,8 +7,67 @@ PersonalAssistantLoot_SavedVariables =
             ["$AccountWide"] = 
             {
                 ["savedVarsVersion"] = 20240922,
+                ["profileCounter"] = 1,
                 [1] = 
                 {
+                    ["name"] = "Profile 1",
+                    ["silentMode"] = false,
+                    ["ItemIcons"] = 
+                    {
+                        ["SetCollection"] = 
+                        {
+                            ["iconYOffsetList"] = 0,
+                            ["iconXOffsetGrid"] = -2,
+                            ["iconXOffsetList"] = 20,
+                            ["iconSizeList"] = 16,
+                            ["iconYOffsetGrid"] = -2,
+                            ["iconSizeGrid"] = 16,
+                            ["showUncollectedIcon"] = true,
+                        },
+                        ["Motifs"] = 
+                        {
+                            ["showUnknownIcon"] = true,
+                            ["showKnownIcon"] = false,
+                        },
+                        ["iconXOffsetGrid"] = 2,
+                        ["Recipes"] = 
+                        {
+                            ["showUnknownIcon"] = true,
+                            ["showKnownIcon"] = false,
+                        },
+                        ["iconYOffsetGrid"] = -2,
+                        ["iconSizeGrid"] = 16,
+                        ["iconSizeList"] = 16,
+                        ["itemIconsEnabled"] = true,
+                        ["StylePageContainers"] = 
+                        {
+                            ["showUnknownIcon"] = true,
+                            ["showKnownIcon"] = false,
+                        },
+                        ["iconYOffsetList"] = 0,
+                        ["iconXOffsetList"] = 0,
+                        ["iconTooltipShown"] = true,
+                        ["CompanionItems"] = 
+                        {
+                            ["iconYOffsetList"] = 0,
+                            ["iconXOffsetGrid"] = 2,
+                            ["iconXOffsetList"] = 0,
+                            ["iconSizeList"] = 16,
+                            ["iconYOffsetGrid"] = -2,
+                            ["showCompanionItemIcon"] = true,
+                            ["iconSizeGrid"] = 16,
+                        },
+                        ["Scribing"] = 
+                        {
+                            ["showUnknownIcon"] = true,
+                            ["showKnownIcon"] = false,
+                        },
+                        ["ApparelWeapons"] = 
+                        {
+                            ["showUnknownIcon"] = true,
+                            ["showKnownIcon"] = false,
+                        },
+                    },
                     ["LootEvents"] = 
                     {
                         ["Fishing"] = 
@@ -19,102 +78,43 @@ PersonalAssistantLoot_SavedVariables =
                         {
                             ["AutoCombine"] = false,
                         },
-                        ["LootStyles"] = 
-                        {
-                            ["autoLearnStylePage"] = false,
-                            ["autoMarkAsJunkRecipes"] = false,
-                            ["autoLearnScribingScript"] = false,
-                            ["autoLearnMotif"] = false,
-                            ["autoLearnFurnishingPlan"] = false,
-                            ["autoLearnRecipe"] = false,
-                            ["unknownStylePageMsg"] = true,
-                            ["autoLearnScribingGrimoire"] = false,
-                            ["unknownScribingScriptMsg"] = true,
-                            ["unknownMotifMsg"] = true,
-                            ["autoMarkAsJunkScribingScript"] = false,
-                            ["autoMarkAsJunkScribingGrimoire"] = false,
-                        },
-                        ["lootEventsEnabled"] = true,
                         ["LootApparelWeapons"] = 
                         {
                             ["unknownTraitMsg"] = true,
-                            ["uncollectedSetMsg"] = true,
                             ["autoBind"] = false,
+                            ["uncollectedSetMsg"] = true,
                         },
-                        ["LootCompanionItems"] = 
+                        ["lootEventsEnabled"] = true,
+                        ["LootStyles"] = 
                         {
-                            ["qualityThreshold"] = 4,
+                            ["autoLearnScribingScript"] = false,
+                            ["autoMarkAsJunkRecipes"] = false,
+                            ["autoMarkAsJunkScribingScript"] = false,
+                            ["unknownStylePageMsg"] = true,
+                            ["unknownMotifMsg"] = true,
+                            ["autoMarkAsJunkScribingGrimoire"] = false,
+                            ["unknownScribingScriptMsg"] = true,
+                            ["autoLearnFurnishingPlan"] = false,
+                            ["autoLearnRecipe"] = false,
+                            ["autoLearnStylePage"] = false,
+                            ["autoLearnScribingGrimoire"] = false,
+                            ["autoLearnMotif"] = false,
                         },
                         ["LootRecipes"] = 
                         {
                             ["unknownRecipeMsg"] = true,
                         },
+                        ["LootCompanionItems"] = 
+                        {
+                            ["qualityThreshold"] = 4,
+                        },
                     },
-                    ["name"] = "Profile 1",
-                    ["silentMode"] = false,
                     ["InventorySpace"] = 
                     {
-                        ["lowInventorySpaceWarning"] = true,
                         ["lowInventorySpaceThreshold"] = 10,
-                    },
-                    ["ItemIcons"] = 
-                    {
-                        ["StylePageContainers"] = 
-                        {
-                            ["showKnownIcon"] = false,
-                            ["showUnknownIcon"] = true,
-                        },
-                        ["ApparelWeapons"] = 
-                        {
-                            ["showKnownIcon"] = false,
-                            ["showUnknownIcon"] = true,
-                        },
-                        ["Recipes"] = 
-                        {
-                            ["showKnownIcon"] = false,
-                            ["showUnknownIcon"] = true,
-                        },
-                        ["iconTooltipShown"] = true,
-                        ["iconSizeGrid"] = 16,
-                        ["Motifs"] = 
-                        {
-                            ["showKnownIcon"] = false,
-                            ["showUnknownIcon"] = true,
-                        },
-                        ["iconYOffsetList"] = 0,
-                        ["iconYOffsetGrid"] = -2,
-                        ["iconXOffsetList"] = 0,
-                        ["iconXOffsetGrid"] = 2,
-                        ["SetCollection"] = 
-                        {
-                            ["iconSizeList"] = 16,
-                            ["iconXOffsetList"] = 20,
-                            ["iconYOffsetGrid"] = -2,
-                            ["showUncollectedIcon"] = true,
-                            ["iconSizeGrid"] = 16,
-                            ["iconYOffsetList"] = 0,
-                            ["iconXOffsetGrid"] = -2,
-                        },
-                        ["Scribing"] = 
-                        {
-                            ["showKnownIcon"] = false,
-                            ["showUnknownIcon"] = true,
-                        },
-                        ["iconSizeList"] = 16,
-                        ["itemIconsEnabled"] = true,
-                        ["CompanionItems"] = 
-                        {
-                            ["iconSizeList"] = 16,
-                            ["iconXOffsetList"] = 0,
-                            ["iconYOffsetGrid"] = -2,
-                            ["iconYOffsetList"] = 0,
-                            ["iconSizeGrid"] = 16,
-                            ["showCompanionItemIcon"] = true,
-                            ["iconXOffsetGrid"] = 2,
-                        },
+                        ["lowInventorySpaceWarning"] = true,
                     },
                 },
-                ["profileCounter"] = 1,
                 ["version"] = 2,
             },
         },

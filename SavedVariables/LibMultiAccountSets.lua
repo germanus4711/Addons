@@ -9,10 +9,10 @@ LibMultiAccountSetsSavedVariables =
                 ["noSave"] = 
                 {
                 },
-                ["chatUpdates"] = true,
                 ["exportSelection"] = 
                 {
                 },
+                ["chatUpdates"] = true,
                 ["version"] = 1,
             },
         },
@@ -141,7 +141,6 @@ LibMultiAccountSetsData =
             [171] = 0,
             [172] = 0,
             [173] = 0,
-            ["timestamp"] = 1736651155,
             [179] = 34912487460,
             [180] = 4173931666,
             [181] = 44600431105,
@@ -600,6 +599,7 @@ LibMultiAccountSetsData =
             [791] = 63166255177,
             [792] = 11492991122,
             [793] = 11837524260,
+            ["timestamp"] = 1736691931,
         },
     },
 }

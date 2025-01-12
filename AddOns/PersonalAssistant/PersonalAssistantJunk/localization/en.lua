@@ -69,6 +69,7 @@ local PAJStrings = {
 	SI_PA_MENU_JUNK_AUTO_LAUNDER_FURNISHING = "Auto-Launder Furnishing?",
     SI_PA_MENU_JUNK_AUTO_LAUNDER_SOULGEMS = "Auto-Launder Soul Gems?",
 	SI_PA_MENU_JUNK_AUTO_LAUNDER_TREASURES = "Auto-Launder Treasures?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_TREASURE_MAPS = "Auto-Launder Treasure Maps?",
 	SI_PA_MENU_JUNK_AUTO_LAUNDER_RECIPES = "Auto-Launder Recipes & Furnishing Plans?",
 	SI_PA_MENU_JUNK_AUTO_LAUNDER_MOTIFS = "Auto-Launder Motifs?",
 	SI_PA_MENU_JUNK_AUTO_LAUNDER_EDICTS = "Auto-Launder Edicts?",

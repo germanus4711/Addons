@@ -7,13 +7,9 @@ PersonalAssistantIntegration_SavedVariables =
             ["$AccountWide"] = 
             {
                 ["savedVarsVersion"] = 20240922,
+                ["profileCounter"] = 1,
                 [1] = 
                 {
-                    ["LazyWritCrafter"] = 
-                    {
-                        ["compatibility"] = true,
-                    },
-                    ["name"] = "Profile 1",
                     ["FCOItemSaver"] = 
                     {
                         ["Locked"] = 
@@ -25,13 +21,17 @@ PersonalAssistantIntegration_SavedVariables =
                         {
                             ["itemMoveMode"] = 1,
                         },
-                        ["SellGuildStore"] = 
+                        ["Improvement"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
                         ["Intricate"] = 
                         {
                             ["itemMoveMode"] = 0,
+                        },
+                        ["Sell"] = 
+                        {
+                            ["autoSellMarked"] = false,
                         },
                         ["GearSets"] = 
                         {
@@ -44,9 +44,9 @@ PersonalAssistantIntegration_SavedVariables =
                                 [5] = 0,
                             },
                         },
-                        ["Sell"] = 
+                        ["SellGuildStore"] = 
                         {
-                            ["autoSellMarked"] = false,
+                            ["itemMoveMode"] = 0,
                         },
                         ["DynamicIcons"] = 
                         {
@@ -55,18 +55,18 @@ PersonalAssistantIntegration_SavedVariables =
                         {
                             ["itemMoveMode"] = 2,
                         },
-                        ["Improvement"] = 
-                        {
-                            ["itemMoveMode"] = 0,
-                        },
                     },
+                    ["LazyWritCrafter"] = 
+                    {
+                        ["compatibility"] = true,
+                    },
+                    ["name"] = "Profile 1",
                     ["CharacterKnowledge"] = 
                     {
                         ["characterName"] = "Freya Orm",
                         ["enabled"] = true,
                     },
                 },
-                ["profileCounter"] = 1,
                 ["version"] = 1,
             },
         },

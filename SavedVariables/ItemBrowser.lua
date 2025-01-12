@@ -6,17 +6,17 @@ ItemBrowserSavedVariables =
         {
             ["$AccountWide"] = 
             {
-                ["filterId"] = 1,
                 ["favorites"] = 
                 {
                 },
+                ["usePercentage"] = false,
+                ["filterId"] = 1,
                 ["externalTooltips"] = 
                 {
                     ["showPieces"] = 1,
-                    ["showAccounts"] = 1,
                     ["enableExtension"] = false,
+                    ["showAccounts"] = 1,
                 },
-                ["usePercentage"] = false,
                 ["version"] = 1,
             },
         },

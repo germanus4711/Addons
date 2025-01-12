@@ -504,6 +504,10 @@ local PAJunkMenuFunctions = {
     getAutoLaunderTreasuresSetting = function() return getValue({"AutoLaunder", "autoLaunderTreasures"}) end,
     setAutoLaunderTreasuresSetting = function(value) setValueAndRefreshEvents(value, {"AutoLaunder", "autoLaunderTreasures"}) end,
 	
+	isAutoLaunderTreasureMapsDisabled = function() return isDisabled({"autoLaunderEnabled"}) end,
+    getAutoLaunderTreasureMapsSetting = function() return getValue({"AutoLaunder", "autoLaunderTreasureMaps"}) end,
+    setAutoLaunderTreasureMapsSetting = function(value) setValueAndRefreshEvents(value, {"AutoLaunder", "autoLaunderTreasureMaps"}) end,
+	
 	isAutoLaunderRecipesDisabled = function() return isDisabled({"autoLaunderEnabled"}) end,
     getAutoLaunderRecipesSetting = function() return getValue({"AutoLaunder", "autoLaunderRecipes"}) end,
     setAutoLaunderRecipesSetting = function(value) setValueAndRefreshEvents(value, {"AutoLaunder", "autoLaunderRecipes"}) end,

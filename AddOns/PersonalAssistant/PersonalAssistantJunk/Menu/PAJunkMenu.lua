@@ -1146,6 +1146,15 @@ local function _createPAJAutoLaunderSubMenu()
 	
 	PAJAutoLaunderSubMenu:insert({
         type = "checkbox",
+        name = GetString(SI_PA_MENU_JUNK_AUTO_LAUNDER_TREASURE_MAPS),
+        getFunc = PAJMenuFunctions.getAutoLaunderTreasureMapsSetting,
+        setFunc = PAJMenuFunctions.setAutoLaunderTreasureMapsSetting,
+        disabled = PAJMenuFunctions.isAutoLaunderTreasureMapsDisabled,
+        default = PAJMenuDefaults.AutoLaunder.autoLaunderTreasureMaps,
+    })
+	
+	PAJAutoLaunderSubMenu:insert({
+        type = "checkbox",
         name = GetString(SI_PA_MENU_JUNK_AUTO_LAUNDER_RECIPES),
         getFunc = PAJMenuFunctions.getAutoLaunderRecipesSetting,
         setFunc = PAJMenuFunctions.setAutoLaunderRecipesSetting,

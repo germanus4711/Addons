@@ -8,50 +8,50 @@ FCOLockpicker_Settings =
             {
                 ["Settings"] = 
                 {
-                    ["useSpringGreenColor"] = true,
                     ["languageChoosen"] = false,
-                    ["showChamberResolvedIcon"] = true,
                     ["debug"] = false,
                     ["version"] = 0.0100000000,
+                    ["alwaysUseClientLanguage"] = true,
                     ["chamberStressedSound"] = 2,
                     ["warnings"] = 
                     {
-                        ["medium"] = 
-                        {
-                            ["color"] = 
-                            {
-                                ["a"] = 1,
-                                ["b"] = 1,
-                                ["g"] = 1,
-                                ["r"] = 0,
-                            },
-                            ["valueMin"] = 10,
-                        },
                         ["low"] = 
                         {
+                            ["valueMin"] = 5,
                             ["color"] = 
                             {
                                 ["a"] = 1,
                                 ["b"] = 0,
-                                ["g"] = 0,
                                 ["r"] = 1,
+                                ["g"] = 0,
                             },
-                            ["valueMin"] = 5,
                         },
                         ["normal"] = 
                         {
+                            ["valueMin"] = 999,
                             ["color"] = 
                             {
                                 ["a"] = 1,
                                 ["b"] = 1,
-                                ["g"] = 1,
                                 ["r"] = 1,
+                                ["g"] = 1,
                             },
-                            ["valueMin"] = 999,
+                        },
+                        ["medium"] = 
+                        {
+                            ["valueMin"] = 10,
+                            ["color"] = 
+                            {
+                                ["a"] = 1,
+                                ["b"] = 1,
+                                ["r"] = 0,
+                                ["g"] = 1,
+                            },
                         },
                     },
+                    ["useSpringGreenColor"] = true,
                     ["deepDebug"] = false,
-                    ["alwaysUseClientLanguage"] = true,
+                    ["showChamberResolvedIcon"] = true,
                 },
                 ["SettingsForAll"] = 
                 {

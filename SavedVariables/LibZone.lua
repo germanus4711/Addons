@@ -3928,7 +3928,11 @@ LibZone_SV_Data =
                         ["zoneIndex"] = 784,
                         ["parentZone"] = 20,
                     },
-                    ["version"] = 8.9200000000,
+                    [1207] = 
+                    {
+                        ["zoneIndex"] = 785,
+                        ["parentZone"] = 1207,
+                    },
                     [1208] = 
                     {
                         ["zoneIndex"] = 786,
@@ -5178,11 +5182,7 @@ LibZone_SV_Data =
                             },
                         },
                     },
-                    [1207] = 
-                    {
-                        ["zoneIndex"] = 785,
-                        ["parentZone"] = 1207,
-                    },
+                    ["version"] = 8.9200000000,
                 },
             },
         },
@@ -5196,32 +5196,32 @@ LibZone_Localized_SV_Data =
         {
             ["$AccountWide"] = 
             {
-                ["MissingZoneData"] = 
-                {
-                    ["version"] = 8.9200000000,
-                },
                 ["ZoneData"] = 
                 {
                     ["version"] = 8.9000000000,
                     ["en"] = 
                     {
                         [1504] = "Coldharbour Colosseum",
-                        [1482] = "Strid River Valley",
-                        ["APIVersionAtLastUpdate"] = 101044,
+                        [1500] = "Kthendral Deep Mines",
+                        [1499] = "Star Haven Adeptorium",
                         [1475] = "Seat of Detritus",
                         [1485] = "Port Dufort",
-                        [1484] = "Shehai Waystation",
-                        [1494] = "Seabloom Villa",
                         ["lastUpdate"] = 1735930809,
+                        [1494] = "Seabloom Villa",
+                        [1495] = "Haven of the Five Companions",
                         [520] = "Reman's Folly",
                         [1481] = "Mota-ka",
-                        [1498] = "Dusk Keep",
-                        [1499] = "Star Haven Adeptorium",
-                        [1500] = "Kthendral Deep Mines",
-                        [1501] = "Grand Gallery of Tamriel",
+                        ["APIVersionAtLastUpdate"] = 101044,
                         [1483] = "Huntsman's Fortress",
-                        [1495] = "Haven of the Five Companions",
+                        [1484] = "Shehai Waystation",
+                        [1501] = "Grand Gallery of Tamriel",
+                        [1498] = "Dusk Keep",
+                        [1482] = "Strid River Valley",
                     },
+                },
+                ["MissingZoneData"] = 
+                {
+                    ["version"] = 8.9200000000,
                 },
             },
         },

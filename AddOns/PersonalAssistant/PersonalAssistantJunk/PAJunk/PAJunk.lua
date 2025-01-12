@@ -772,6 +772,8 @@ local function AutoLaunder()
 			        CheckAndLaunderItem(slotData.bagId, slotData.slotIndex, quantity)
 			   elseif ItemType == ITEMTYPE_TREASURE and PAJunkSavedVars.AutoLaunder.autoLaunderTreasures then
 			        CheckAndLaunderItem(slotData.bagId, slotData.slotIndex, quantity)
+			   elseif SpecializedItemType == SPECIALIZED_ITEMTYPE_TROPHY_TREASURE_MAP and PAJunkSavedVars.AutoLaunder.autoLaunderTreasureMaps then
+			        CheckAndLaunderItem(slotData.bagId, slotData.slotIndex, quantity)	
 			   elseif ItemType == ITEMTYPE_RECIPE and PAJunkSavedVars.AutoLaunder.autoLaunderRecipes then
 			        CheckAndLaunderItem(slotData.bagId, slotData.slotIndex, quantity)
 			   elseif ItemType == ITEMTYPE_RACIAL_STYLE_MOTIF and PAJunkSavedVars.AutoLaunder.autoLaunderMotifs then
@@ -779,10 +781,6 @@ local function AutoLaunder()
 			   elseif (ItemType == ITEMTYPE_CONTAINER or ItemType == ITEMTYPE_CONTAINER_CURRENCY) and PAJunkSavedVars.AutoLaunder.autoLaunderContainers then
 			        CheckAndLaunderItem(slotData.bagId, slotData.slotIndex, quantity)
 			   end
-			   
-                
-			 
-			
 			end
 		 end   
      end	 

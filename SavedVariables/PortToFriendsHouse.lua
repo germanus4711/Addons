@@ -6,44 +6,41 @@ PortToFriendsHouseVars =
         {
             ["$AccountWide"] = 
             {
-                ["selectedMyHousesSort"] = 1,
-                ["vc"] = 
-                {
-                    ["receivedCards"] = 
-                    {
-                    },
-                    ["allowSelf"] = false,
-                },
-                ["selectedLibraryFilter"] = 1,
-                ["version"] = 1,
                 ["port_mode"] = 3,
                 ["favorites"] = 
                 {
                 },
-                ["defaultTab"] = 1,
                 ["selectedLibrarySort"] = 1,
                 ["vc_chatAllowed"] = 
                 {
-                    ["g1"] = true,
-                    ["g5"] = true,
-                    ["emote"] = false,
-                    ["dezone"] = false,
+                    ["g2"] = true,
+                    ["o4"] = true,
                     ["say"] = false,
-                    ["enzone"] = false,
-                    ["g3"] = true,
-                    ["yell"] = false,
                     ["group"] = true,
                     ["o2"] = true,
-                    ["o5"] = true,
-                    ["g2"] = true,
-                    ["zone"] = false,
                     ["tell"] = true,
-                    ["o1"] = true,
                     ["jpzone"] = false,
                     ["g4"] = true,
+                    ["g3"] = true,
+                    ["emote"] = false,
+                    ["o5"] = true,
+                    ["zone"] = false,
+                    ["o1"] = true,
+                    ["g1"] = true,
+                    ["dezone"] = false,
                     ["frzone"] = false,
-                    ["o4"] = true,
+                    ["yell"] = false,
+                    ["g5"] = true,
                     ["o3"] = true,
+                    ["enzone"] = false,
+                },
+                ["version"] = 1,
+                ["vc"] = 
+                {
+                    ["allowSelf"] = false,
+                    ["receivedCards"] = 
+                    {
+                    },
                 },
                 ["myHousesFavorites"] = 
                 {
@@ -54,6 +51,9 @@ PortToFriendsHouseVars =
                     {
                     },
                 },
+                ["selectedMyHousesSort"] = 1,
+                ["selectedLibraryFilter"] = 1,
+                ["defaultTab"] = 1,
             },
         },
     },

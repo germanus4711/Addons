@@ -35,6 +35,7 @@ local PAJunkMenuDefaults = {
 		autoLaunderMotifs = false,
 		autoLaunderEdicts = false,
 		autoLaunderContainers = false,
+		autoLaunderTreasureMaps = false,
     },
     Weapons = {
         autoMarkOrnate = false,

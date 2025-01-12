@@ -6,9 +6,59 @@ LostTreasure_Account =
         {
             ["$AccountWide"] = 
             {
+                ["notifications"] = 
+                {
+                },
+                ["pinTypes"] = 
+                {
+                    ["survey"] = 
+                    {
+                        ["deletionDelay"] = 10,
+                        ["markOption"] = "inventory",
+                        ["size"] = 32,
+                        ["pinLevel"] = 47,
+                        ["showOnMap"] = true,
+                        ["showOnCompass"] = true,
+                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
+                    },
+                    ["treasure"] = 
+                    {
+                        ["deletionDelay"] = 10,
+                        ["markOption"] = "inventory",
+                        ["size"] = 32,
+                        ["pinLevel"] = 47,
+                        ["showOnMap"] = true,
+                        ["showOnCompass"] = true,
+                        ["texture"] = "LibTreasure/Icons/x_red.dds",
+                    },
+                    ["clue"] = 
+                    {
+                        ["deletionDelay"] = 10,
+                        ["markOption"] = "inventory",
+                        ["size"] = 32,
+                        ["pinLevel"] = 47,
+                        ["showOnMap"] = true,
+                        ["showOnCompass"] = true,
+                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
+                    },
+                },
+                ["misc"] = 
+                {
+                    ["hasNewIconPath"] = true,
+                },
+                ["mining"] = 
+                {
+                    ["data"] = 
+                    {
+                    },
+                    ["APIVersion"] = 101044,
+                    ["APITimeStamp"] = 1730152370,
+                },
+                ["version"] = 20,
                 ["miniMap"] = 
                 {
                     ["deletionDelay"] = 4,
+                    ["enabled"] = true,
                     ["anchor"] = 
                     {
                         ["data"] = 
@@ -20,58 +70,8 @@ LostTreasure_Account =
                             [6] = 0,
                         },
                     },
-                    ["enabled"] = true,
                     ["size"] = 300,
                 },
-                ["mining"] = 
-                {
-                    ["data"] = 
-                    {
-                    },
-                    ["APIVersion"] = 101044,
-                    ["APITimeStamp"] = 1730152370,
-                },
-                ["misc"] = 
-                {
-                    ["hasNewIconPath"] = true,
-                },
-                ["pinTypes"] = 
-                {
-                    ["treasure"] = 
-                    {
-                        ["showOnCompass"] = true,
-                        ["texture"] = "LibTreasure/Icons/x_red.dds",
-                        ["size"] = 32,
-                        ["deletionDelay"] = 10,
-                        ["markOption"] = "inventory",
-                        ["showOnMap"] = true,
-                        ["pinLevel"] = 47,
-                    },
-                    ["survey"] = 
-                    {
-                        ["showOnCompass"] = true,
-                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
-                        ["size"] = 32,
-                        ["deletionDelay"] = 10,
-                        ["markOption"] = "inventory",
-                        ["showOnMap"] = true,
-                        ["pinLevel"] = 47,
-                    },
-                    ["clue"] = 
-                    {
-                        ["showOnCompass"] = true,
-                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
-                        ["size"] = 32,
-                        ["deletionDelay"] = 10,
-                        ["markOption"] = "inventory",
-                        ["showOnMap"] = true,
-                        ["pinLevel"] = 47,
-                    },
-                },
-                ["notifications"] = 
-                {
-                },
-                ["version"] = 20,
             },
         },
     },
