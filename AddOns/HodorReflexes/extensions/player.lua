@@ -19,7 +19,8 @@ end
 -- Returns map distance, not meters
 function player.GetDistanceToPlayer(unitTag)
 
-	local x2, y2, h2, m2 = GetMapPlayerPosition(unitTag)
+	--local x2, y2, h2, m2 = GetMapPlayerPosition(unitTag)
+	local x2, y2, _, m2 = GetMapPlayerPosition(unitTag)
 	if not m2 then return nil end -- not on the same map
 	local x1, y1 = GetMapPlayerPosition('player')
 	return util.GetDistance(x1, y1, x2, y2)
@@ -91,4 +92,16 @@ function player.GetIconForUserId(id)
 		return nil
 	end
 
+end
+
+function player.GetRandomUserId()
+	local keys = {}
+	for userId in pairs(users) do
+		table.insert(keys, userId)
+	end
+	if #keys > 0 then
+		local randomIndex = math.random(#keys)
+		return keys[randomIndex]
+	end
+	return nil
 end

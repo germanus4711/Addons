@@ -146,6 +146,14 @@ function Harvest.SetWorldPinWidth(width)
 	CallbackManager:FireCallbacks(Events.SETTING_CHANGED, "worldPinHeight", width)
 end
 
+function Harvest.IsSeeThroughWallsEnabled()
+	return not Harvest.DoWorldPinsUseDepth()
+end
+
+function Harvest.SetSeeThroughWallsEnabled(value)
+	return Harvest.SetWorldPinsUseDepth(not value)
+end
+		
 function Harvest.DoWorldPinsUseDepth()
 	return Settings.savedVars.settings.worldPinDepth
 end

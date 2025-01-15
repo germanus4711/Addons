@@ -1,11 +1,11 @@
 ## Title: HodorReflexes
-## Version: 2024.12.15
+## Version: 2025.01.13
 ## Author: |cFFFF00@andy.s|r, |c76c3f4@m00nyONE|r, |cef7682@seadotarley|r
 ## APIVersion: 101044
-## AddOnVersion: 20241215
+## AddOnVersion: 20250113
 ## SavedVariables: HodorReflexesSV
 ## DependsOn: LibAddonMenu-2.0>=32 LibCombat>=54 LibDataShare>=3
-## OptionalDependsOn: RuESO
+## OptionalDependsOn: RuESO LibGroupCombatStats LibGroupBroadcast
 
 lang/en.lua
 lang/$(language).lua
@@ -29,6 +29,7 @@ users/misc3/misc3.lua
 users/misc4/misc4.lua
 users/misc5/misc5.lua
 users/misc6/misc6.lua
+users/misc7/misc7.lua
 users/hodor/hodor.lua
 users/frenchkiss/frenchkiss.lua
 users/chainreaction/chainreaction.lua

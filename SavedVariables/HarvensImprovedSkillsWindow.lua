@@ -4,6 +4,12 @@ HarvensImprovedSkillsWindow_SavedVariables =
     {
         ["@germanus4711"] = 
         {
+            ["Hubertus Freiherr v Feld"] = 
+            {
+                ["showDetails"] = true,
+                ["showTotal"] = false,
+                ["version"] = 1,
+            },
             ["Christel v Koenigsberg"] = 
             {
                 ["showDetails"] = true,
@@ -16,13 +22,7 @@ HarvensImprovedSkillsWindow_SavedVariables =
                 ["showTotal"] = false,
                 ["version"] = 1,
             },
-            ["Hubertus Freiherr v Feld"] = 
-            {
-                ["showDetails"] = true,
-                ["showTotal"] = false,
-                ["version"] = 1,
-            },
-            ["Gamal Loki"] = 
+            ["Otto von Bissmark"] = 
             {
                 ["showDetails"] = true,
                 ["showTotal"] = false,
@@ -34,7 +34,7 @@ HarvensImprovedSkillsWindow_SavedVariables =
                 ["showTotal"] = false,
                 ["version"] = 1,
             },
-            ["Otto von Bissmark"] = 
+            ["Maüschen"] = 
             {
                 ["showDetails"] = true,
                 ["showTotal"] = false,
@@ -46,7 +46,7 @@ HarvensImprovedSkillsWindow_SavedVariables =
                 ["showTotal"] = false,
                 ["version"] = 1,
             },
-            ["Maüschen"] = 
+            ["Gamal Loki"] = 
             {
                 ["showDetails"] = true,
                 ["showTotal"] = false,

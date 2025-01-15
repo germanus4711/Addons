@@ -6,25 +6,25 @@ LibMapThemerVars =
         {
             ["$AccountWide"] = 
             {
+                ["LibMapThemer"] = 
+                {
+                    ["_lmt_current_theme_"] = "AccurateWorldMap",
+                    ["version"] = 2406030600,
+                },
                 ["AccurateWorldMap"] = 
                 {
-                    ["renames"] = true,
                     ["showAllPois"] = true,
+                    ["tamrielZoneNames"] = true,
                     ["hoverFadeEffect"] = true,
+                    ["aurbisZoneNames"] = true,
+                    ["renames"] = true,
                     ["pois"] = 
                     {
                         ["ownedHouses"] = true,
                         ["majorSettlements"] = true,
                     },
-                    ["tamrielZoneNames"] = true,
                     ["mapDescriptions"] = true,
-                    ["aurbisZoneNames"] = true,
                     ["version"] = 2406030600,
-                },
-                ["LibMapThemer"] = 
-                {
-                    ["version"] = 2406030600,
-                    ["_lmt_current_theme_"] = "AccurateWorldMap",
                 },
             },
         },

@@ -1,13 +1,12 @@
 local MuchSmarterAutoLoot = ZO_Object:Subclass()
 local MuchSmarterAutoLootSettings = ZO_Object:Subclass()
 
-MuchSmarterAutoLoot.db = nil
-MuchSmarterAutoLoot.config = nil
-MuchSmarterAutoLoot.StartupInfo = false
-MuchSmarterAutoLoot.version = "4.12.6"
-MuchSmarterAutoLoot.title = "Much Smarter AutoLoot"
-MuchSmarterAutoLoot.slashCommand = "/msal"
+local startupInfoPrinted = false
+local addonVersion = "5.0.1"
+local settingPanel = {}
 local MSAL_NEVER_3RD_PARTY_WARNING = "msal_never_3rd_party_warning"
+local templateItemlink = "|H1:item:%s:123:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h"
+local WM = GetWindowManager()
 local SV_NAME = 'MSAL_VARS'
 local SV_VER = 1
 local db
@@ -31,6 +30,10 @@ local unwantedNameList = {}
 local lastNotLootedNameList = {}
 local currentNotLootedNameList = {}
 
+local TOKEN_BLIST = 0
+local TOKEN_WLIST = 1
+local tempBlist = {}
+
 local defaults = {
     latestMajorUpdateVersion = "",
     never3rdPartyWaining = false,
@@ -49,6 +52,9 @@ local defaults = {
     stolenRule = "never loot",
     minimumQuality = 1,
     minimumValue = 0,
+    autoBind = false,
+    blacklist = {},
+    whitelist = {},
     -- filters, use plural for key and value by default
     filters = {
         set = "always loot",
@@ -64,12 +70,11 @@ local defaults = {
         weapons = "never loot",
         armors = "never loot",
         jewelry = "never loot",
-        autoBind = false,
 
         craftingMaterials = "never loot",
-        traitMaterials = "only nirnhoned",
+        traitMaterials = "never loot",
         styleMaterials = "never loot",
-        runes = "only kuta hakeijo",
+        runes = "never loot",
         alchemy = "never loot",
         ingredients = "only gold ingredients",
         furnishingMaterials = "never loot",
@@ -243,204 +248,15 @@ local curtType = {
     CURT_CHAOTIC_CREATIA
 }
 
-function MuchSmarterAutoLoot:New(...)
-    local result = ZO_Object.New(self)
-    result:Initialize(...)
-    return result
-end
-
-function MuchSmarterAutoLoot:Initialize(control)
-    self.control = control
-    self.control:RegisterForEvent(EVENT_ADD_ON_LOADED, function(...)
-        self:OnLoaded(...)
-    end)
-    --    CBM:RegisterCallback( MuchSmarterAutoLootSettings.EVENT_TOGGLE_AUTOLOOT, function() self:ToggleAutoLoot()    end )
-end
-
-function MuchSmarterAutoLoot:OnLoaded(event, addon)
-    if addon ~= "MuchSmarterAutoLoot" then
-        return
-    end
-
-    if LibSavedVars ~= nil then
-        db = LibSavedVars:NewAccountWide(SV_NAME, "Account", defaults):AddCharacterSettingsToggle(SV_NAME, "Character")
-    else
-        db = ZO_SavedVars:New(SV_NAME, 1, nil, defaults)
-    end
-    self.config = MuchSmarterAutoLootSettings:New(db)
-
-    --	SLASH_COMMANDS[MuchSmarterAutoLoot.slashCommand] = MuchSmarterAutoLoot.HandleSlashCommand
-
-    SLASH_COMMANDS["/msalt"] = function(keyWord, argument)
-        if db.enabled == false then
-            SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_LOOT, 0)
-            db.enabled = true
-            EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED, function(_, ...)
-                MuchSmarterAutoLoot:OnLootUpdatedThrottled()
-            end)
-            d("Much Smarter AutoLoot |c68be3e" .. GetString(SI_SCREEN_NARRATION_TOGGLE_ON) .. "|r")
-        else
-            db.enabled = false
-            EVENT_MANAGER:UnregisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED)
-            d("Much Smarter AutoLoot |cd06756" .. GetString(SI_SCREEN_NARRATION_TOGGLE_OFF) .. "|r")
-        end
-    end
-
-    if GetUnitDisplayName("player") == "@Lykeion" then
-        SLASH_COMMANDS["/msaltest"] = function(keyWord, argument)
-            if db.enabled == true then
-                MuchSmarterAutoLoot:test()
-            end
-        end
-    end
-
-    if LibCustomTitles then
-        LibCustomTitles:RegisterTitle("@Lykeion", false, true, {en="|c275a91P|r|c2e5d8di|r|c365f88p|r|c3d6284e|r|c446480r|r |c4b677ca|r|c526977t|r |c596b73t|r|c616e6fh|r|c68706be|r |c6f7366G|r|c767562a|r|c7d775et|r|c847a5ae|r|c8c7c55s|r |c937f51o|r|c9a814df|r |ca18449D|r|ca88644a|r|caf8840w|r|cb78b3cn|r |cbe8d38E|r|cc59033r|r|ccc922fa|r",})
-    else
-        local GetUnitTitle_original = GetUnitTitle
-        GetUnitTitle = function(unitTag)
-            if not (GetUnitDisplayName(unitTag) == "@Lykeion") then
-                return GetUnitTitle_original(unitTag)
-            else
-                if GetUnitName(unitTag) == "This One Adores Inigo" then
-                    if GetCVar("language.2") == "zh" then
-                        return "|c9d1112鲜|r|c8b1011血|r|c790e0f铸|r|c670d0e就|r"
-                    else
-                        return "|cab1213A|r|ca61112g|r|ca21112e|r|c9d1112d|r |c991011T|r|c941011h|r|c901011r|r|c8b1011o|r|c870f10u|r|c820f10g|r|c7e0f10h|r |c790e0fB|r|c750e0fl|r|c700e0fo|r|c6c0d0eo|r|c670d0ed|r"
-                    end
-                elseif GetUnitName(unitTag) == "This One Might Have Wares" then
-                    if GetCVar("language.2") == "zh" then
-                        return "|c365f88黎|r|c4b677c明|r|c616e6f纪|r|c767562元|r|c8c7c55的|r|ca18449风|r|cb78b3c笛|r|ccc922f手|r"
-                    else
-                        return "|c275a91P|r|c2e5d8di|r|c365f88p|r|c3d6284e|r|c446480r|r |c4b677ca|r|c526977t|r |c596b73t|r|c616e6fh|r|c68706be|r |c6f7366G|r|c767562a|r|c7d775et|r|c847a5ae|r|c8c7c55s|r |c937f51o|r|c9a814df|r |ca18449D|r|ca88644a|r|caf8840w|r|cb78b3cn|r |cbe8d38E|r|cc59033r|r|ccc922fa|r"
-                    end
-                elseif GetUnitName(unitTag) == "This One Smuggles Skooma" then
-                    if GetCVar("language.2") == "zh" then
-                        return "|c694d91月|r|c5c4a8c亮|r|c4f4688糖|r|c424284之|r|c353f7f暗|r|c283b7b面|r"
-                    else
-                        return "|c725094D|r|c6f4f93a|r|c6b4e91r|r|c684d90k|r |c644c8fS|r|c614b8ei|r|c5d4a8dd|r|c5a498ce|r |c56488ao|r|c534789f|r |c4f4688t|r|c4b4587h|r|c484486e|r |c444384M|r|c414283o|r|c3d4182o|r|c3a4081n|r |c363f80S|r|c333e7fu|r|c2f3d7dg|r|c2c3c7ca|r|c283b7br|r"
-                    end
-                elseif GetUnitName(unitTag) == "This One Bears With You" then
-                    if GetCVar("language.2") == "zh" then
-                        return "|cbed768生|r|cd4cb61吞|r|ce9be5b活|r|cffb254剥|r"
-                    else
-                        return "|cb1de6bE|r|cb9d969a|r|cc2d466t|r|ccbcf64e|r|cd4cb61n|r |cdcc65eA|r|ce5c15cl|r|ceebc59i|r|cf6b757v|r|cffb254e|r"
-                    end
-                elseif GetUnitName(unitTag) == "This One Needs Moonsugar" then
-                    if GetCVar("language.2") == "zh" then
-                        return  "|cd4353e湮|r|cdf656b灭|r|ce99697大|r|cf4c6c4镖|r|cfff6f1客|r"
-                    else
-                        return "|ccc111cR|r|cce1d27e|r|cd12933d|r |cd4353eD|r|cd74149a|r|cd94d54e|r|cdc595fd|r|cdf656br|r|ce17176i|r|ce47e81c|r |ce78a8cR|r|ce99697e|r|ceca2a3d|r|cefaeaee|r|cf2bab9m|r|cf4c6c4p|r|cf7d2cft|r|cfadedbi|r|cfceae6o|r|cfff6f1n|r"
-                    end
-                elseif GetUnitName(unitTag) == "This One Steals Nothing" then
-                    if GetCVar("language.2") == "zh" then
-                        return "|c7ee1ca晶|r|c5ec9b0体|r|c3db196管|r"
-                    else
-                        return "|c95f2dcT|r|c8bebd4r|r|c82e3cda|r|c78dcc5n|r|c6ed5bds|r|c64ceb5i|r|c5ac7ads|r|c51bfa6t|r|c47b89eo|r|c3db196r|r"
-                    end
-                elseif GetUnitName(unitTag) == "This One Tells No Lie" then
-                    if GetCVar("language.2") == "zh" then
-                        return  "|cf4e1a3超|r|cf2d470新|r|cf1c83c星|r"
-                    else
-                        return "|cf5e9c6S|r|cf4e5b5u|r|cf4e1a3p|r|cf3dd92e|r|cf3d881r|r|cf2d470S|r|cf2d05et|r|cf1cc4da|r|cf1c83cr|r"
-                    end
-                else
-                    if GetCVar("language.2") == "zh" then
-                        return "|c3c6646沥|r|c3c6258青|r|c3d5e69世|r|c3d5a7b界|r"
-                    else
-                        return "|c3b693aA|r|c3b6740s|r|c3c6646p|r|c3c654ch|r|c3c6352a|r|c3c6258l|r|c3c615dt|r |c3c5f63W|r|c3d5e69o|r|c3d5d6fr|r|c3d5b75l|r|c3d5a7bd|r"
-                    end
-                end
-                
-            end
-        end
-    end
-   
-
-    -- if (db.allowDestroy) then
-    -- 	self.buttonDestroyRemaining = CreateControlFromVirtual("buttonDestroyRemaining", ZO_Loot, "BTN_DestroyRemaining")
-    -- end
-
-    EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED, function(_, ...)
-        self:OnLootUpdatedThrottled()
-    end)
-
-    if self:IsAprilFoolsDay() then
-        EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_UPDATED_FOOL", EVENT_LOOT_UPDATED, MuchSmarterAutoLoot.OnLootUpdatedFool)
-    end
-
-end
-
-function MuchSmarterAutoLoot:LoadScreen()
-    -- d("initPlusChecking : "..tostring(db.initPlusCheck))
-    -- d("userBuildInAutoLoot"..userBuildInAutoLoot)
-    if ((db.initPlusCheck == nil or db.initPlusCheck == false)) then
-        db.initPlusCheck = true
-        -- d("initPlusChecking...")
-        local userBuildInAutoLoot = GetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_LOOT)
-        if (IsESOPlusSubscriber() and userBuildInAutoLoot == 1) then
-            db.enabled = false
-        end
-    end
-
-    -- d("auto modify build-in autoloot")
-    -- if (db.enabled) then
-    --	SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_LOOT, 0)
-    -- end
-
-    if (not MuchSmarterAutoLoot.StartupInfo and db.loginReminder == true and db.enabled == true) then
-        d("|c215895 Lykeion's|cdb8e0b Much Smarter AutoLoot " .. MuchSmarterAutoLoot.version .. " " ..
-              GetString(SI_GAMEPAD_MARKET_FREE_TRIAL_TILE_ACTIVE_TEXT) .. "|r")
-        -- d("IsESOPlusSubscriber() : "..tostring(IsESOPlusSubscriber()))
-        if (db.closeLootWindow) then
-            d(GetString(MSAL_CLOSE_LOOT_WINDOW_REMINDER))
-        end
-        if (db.debugMode) then
-            d(GetString(MSAL_DEBUG_MODE_REMINDER))
-        end
-        EVENT_MANAGER:UnregisterForEvent("MuchSmarterAutoLoot", EVENT_PLAYER_ACTIVATED)
-    end
-
-    -- Version update info
-    if db.latestMajorUpdateVersion ~= "4.0.0" then
-        db.latestMajorUpdateVersion = "4.0.0"
-        if (MasterMerchant or TamrielTradeCentre or ArkadiusTradeTools) then
-            d(GetString(MSAL_UPDATE_IMFORM))
-        end
-    end
-
-    ----------- Toolbox Block -----------------
-    -- MuchSmarterAutoLoot:ListAllSkillLineIDs()
-    -- MuchSmarterAutoLoot:ListSkillIDs()
-    -- MuchSmarterAutoLoot:ListAllCraftedSkillInfo()
-    -- MuchSmarterAutoLoot:ListAllScripts()
-    -- MuchSmarterAutoLoot:ListAllBagItems()
-    --------------------------------------------
-    
-    MuchSmarterAutoLoot.StartupInfo = true
-end
-
-function MuchSmarterAutoLoot:OnInventoryUpdate(bagId, slotIndex, isNewItem, itemSoundCategory, updateReason,
-    stackCountChange)
-    local link = GetItemLink(bagId, slotIndex)
-    local isCrafted = IsItemLinkCrafted(link)
-    local isUncollected = not IsItemSetCollectionPieceUnlocked(GetItemLinkItemId(link))
-    local isCompanionGear = GetItemLinkActorCategory(link) == GAMEPLAY_ACTOR_CATEGORY_COMPANION
-    if (isUncollected and not isCompanionGear and db.autoBind and not isCrafted and not isRepetitiveGear) then
-        BindItem(bagId, slotIndex)
-    end
-end
-
-function MuchSmarterAutoLoot:OnLockpickSuccess()
+local function OnLockpickSuccess()
     lastUnlockTime = GetGameTimeMilliseconds()
 end
 
-
-function MuchSmarterAutoLoot:OnLootClosed()
+local function OnLootClosed()
     lootingBagContainer = false
 end
 
-function MuchSmarterAutoLoot:OnUnwantedLootClosed()
+local function OnUnwantedLootClosed()
     -- d("triggered")
     -- isResourceNode = false
     -- isLockedChest = false
@@ -451,7 +267,7 @@ function MuchSmarterAutoLoot:OnUnwantedLootClosed()
     EVENT_MANAGER:UnregisterForEvent("MSAL_LOOT_CLOSED", EVENT_LOOT_CLOSED)
 end
 
-function MuchSmarterAutoLoot:OnUnwantedUpdated(bagId, slotId, isNewItem, _, _, _)
+local function OnUnwantedUpdated(_, bagId, slotId, isNewItem, _, _, _)
     -- d("OnUnwantedUpdated")
     if bagId ~= BAG_BACKPACK then
         return
@@ -473,7 +289,7 @@ function MuchSmarterAutoLoot:OnUnwantedUpdated(bagId, slotId, isNewItem, _, _, _
     end
 end
 
-function MuchSmarterAutoLoot:ArrayHasItem(arr, item)
+local function ArrayHasItem(arr, item)
     for i = 1, #arr do
         if arr[i] ~= nil and arr[i] == item then
             return true
@@ -482,7 +298,7 @@ function MuchSmarterAutoLoot:ArrayHasItem(arr, item)
     return false
 end
 
-function MuchSmarterAutoLoot:IsSameArray(a, b)
+local function IsSameArray(a, b)
     if #a ~= #b then
         return false
     end
@@ -496,7 +312,7 @@ function MuchSmarterAutoLoot:IsSameArray(a, b)
     return true
 end
 
-function MuchSmarterAutoLoot:AddDynamicThirdPartyPriceSupport(choice, value)
+local function AddDynamicThirdPartyPriceSupport(choice, value)
     -- d("ArrayHasItem length "..#arr)
     local resultChoice, resultValue = {}, {}
     
@@ -534,7 +350,7 @@ end
 LINK_HANDLER:RegisterCallback(LINK_HANDLER.LINK_CLICKED_EVENT, HandleChatboxClick)
 LINK_HANDLER:RegisterCallback(LINK_HANDLER.LINK_MOUSE_UP_EVENT, HandleChatboxClick)
 
-function MuchSmarterAutoLoot:IsValidFilterType(filterType)
+local function IsValidFilterType(filterType)
     if (filterType == nil) then
         return false
     end
@@ -567,18 +383,10 @@ function MuchSmarterAutoLoot:IsValidFilterType(filterType)
         end
         return false
     end
-
-    -- solution for the legacy value, will be removed in 5.0
-    if ( filterType == "only unknown") then
-        db.filters.recipes = "never loot"
-        db.filters.alwaysLootUnknown = true
-        return true
-    end
-
     return true
 end
 
-function MuchSmarterAutoLoot:IsItemKnownByAnyCharacter(item, server, includedCharIds)
+local function IsItemKnownByAnyCharacter(item, server, includedCharIds)
     local LCK = LibCharacterKnowledge
     -- Assume you have access to LCK.GetItemKnowledgeList function
     local knowledgeList = LCK.GetItemKnowledgeList(item, server, includedCharIds)
@@ -594,8 +402,8 @@ function MuchSmarterAutoLoot:IsItemKnownByAnyCharacter(item, server, includedCha
     return false -- Item is not known by any character
 end
 
-function MuchSmarterAutoLoot:ShouldLootGear(filterType, quality, value)
-    if not self:IsValidFilterType(filterType) then
+local function ShouldLootGear(filterType, quality, value)
+    if not IsValidFilterType(filterType) then
         return false
     end
 
@@ -621,8 +429,8 @@ function MuchSmarterAutoLoot:ShouldLootGear(filterType, quality, value)
     return false
 end
 
-function MuchSmarterAutoLoot:ShouldLootSet(filterType, isUncollected, isJewelry, isWeapon)
-    if not self:IsValidFilterType(filterType) then
+local function ShouldLootSet(filterType, isUncollected, isJewelry, isWeapon)
+    if not IsValidFilterType(filterType) then
         return false
     end
 
@@ -657,12 +465,12 @@ function MuchSmarterAutoLoot:ShouldLootSet(filterType, isUncollected, isJewelry,
     return false
 end
 
-function MuchSmarterAutoLoot:ShouldLootIngredient(filterType, quality)
+local function ShouldLootIngredient(filterType, quality)
     if (IsESOPlusSubscriber()) then
         return true
     end
 
-    if not self:IsValidFilterType(filterType) then
+    if not IsValidFilterType(filterType) then
         return false
     end
 
@@ -678,7 +486,7 @@ function MuchSmarterAutoLoot:ShouldLootIngredient(filterType, quality)
     return false
 end
 
-function MuchSmarterAutoLoot:ShouldLootEnchanting(filterType, link)
+local function ShouldLootEnchanting(filterType, link)
     if (IsESOPlusSubscriber()) then
         return true
     end
@@ -687,16 +495,14 @@ function MuchSmarterAutoLoot:ShouldLootEnchanting(filterType, link)
         return true
     end
     local itemId = GetItemLinkItemId(link)
-    if (filterType == "only kuta hakeijo" and (itemId == 45854 or itemId == 68342 or itemId == 166045)) then
-        return true
-    end
+
     if (filterType == "never loot") then
         return false
     end
     return false
 end
 
-function MuchSmarterAutoLoot:ShouldLootScribing(filterType, itemType)
+local function ShouldLootScribing(filterType, itemType)
     if (IsESOPlusSubscriber() and itemType == ITEMTYPE_SCRIBING_INK) then
         return true
     end
@@ -710,7 +516,7 @@ function MuchSmarterAutoLoot:ShouldLootScribing(filterType, itemType)
     return false
 end
 
-function MuchSmarterAutoLoot:ShouldLootTrait(filterType, link)
+local function ShouldLootTrait(filterType, link)
     if (IsESOPlusSubscriber()) then
         return true
     end
@@ -728,8 +534,8 @@ function MuchSmarterAutoLoot:ShouldLootTrait(filterType, link)
     return false
 end
 
-function MuchSmarterAutoLoot:ShouldLootPotion(filterType, link)
-    if not self:IsValidFilterType(filterType) then
+local function ShouldLootPotion(filterType, link)
+    if not IsValidFilterType(filterType) then
         return false
     end
 
@@ -749,228 +555,7 @@ function MuchSmarterAutoLoot:ShouldLootPotion(filterType, link)
     return false
 end
 
-function MuchSmarterAutoLoot:ShouldLootMisc(filterType, link)
-    if not self:IsValidFilterType(filterType) then
-        return false
-    end
-
-    if (filterType == "always loot") then
-        return true
-    end
-    if (filterType == "never loot") then
-        return false
-    end
-
-    if (filterType == "per ttc" or filterType == "per mm" or filterType == "per att") then
-        return self:ShouldLootThirdPartyWorthyItem(filterType, link)
-    end
-
-    return false
-end
-
-function MuchSmarterAutoLoot:ShouldLootIntricate(filterType, link, quality, value, isJewelry)
-    if not self:IsValidFilterType(filterType) then
-        return false
-    end
-
-    if (filterType == "always loot") then
-        -- gearLooted = true
-        return true
-    end
-    if (filterType == "never loot") then
-        return false
-    end
-    if (filterType == "type based") then
-        local itemType = GetItemLinkItemType(link)
-
-        -- if jewelry
-        if (isJewelry) then
-            return self:ShouldLootGear(db.filters.jewelryIntricate, quality, value)
-        end
-        if (not isJewelry and itemType == ITEMTYPE_ARMOR) then
-            local weight = GetItemLinkArmorType(link)
-            -- if clothing
-            if (weight == ARMORTYPE_LIGHT or weight == ARMORTYPE_MEDIUM) then
-                return self:ShouldLootGear(db.filters.clothingIntricate, quality, value)
-            end
-            -- if blacksmithing
-            if (weight == ARMORTYPE_HEAVY) then
-                return self:ShouldLootGear(db.filters.blacksmithingIntricate, quality, value)
-            end
-        end
-        if (not isJewelry and itemType == ITEMTYPE_WEAPON) then
-            local weaponType = GetItemLinkWeaponType(link)
-            -- if woodworking
-            if (weaponType == WEAPONTYPE_BOW or weaponType == WEAPONTYPE_FIRE_STAFF or weaponType ==
-                WEAPONTYPE_FROST_STAFF or weaponType == WEAPONTYPE_LIGHTNING_STAFF or weaponType ==
-                WEAPONTYPE_HEALING_STAFF or weaponType == WEAPONTYPE_SHIELD) then
-                return self:ShouldLootGear(db.filters.woodworkingIntricate, quality, value)
-            end
-            -- if blacksmithing
-            if (weaponType == WEAPONTYPE_AXE or weaponType == WEAPONTYPE_DAGGER or weaponType == WEAPONTYPE_HAMMER or
-                weaponType == WEAPONTYPE_SWORD or weaponType == WEAPONTYPE_TWO_HANDED_AXE or weaponType ==
-                WEAPONTYPE_TWO_HANDED_HAMMER or weaponType == WEAPONTYPE_TWO_HANDED_SWORD) then
-                return self:ShouldLootGear(db.filters.blacksmithingIntricate, quality, value)
-            end
-        end
-    end
-    return false
-end
-
-function MuchSmarterAutoLoot:ShouldLootFoodAndDrink(filterType, link)
-    if not self:IsValidFilterType(filterType) then
-        return false
-    end
-
-    if (filterType == "always loot") then
-        return true
-    end
-    local itemId = GetItemLinkItemId(link)
-    if (filterType == "only exp booster" and (itemId == 64221 or itemId == 120076 or itemId == 115027)) then
-        return true
-    end
-    if (filterType == "never loot") then
-        return false
-    end
-    return false
-end
-
-function MuchSmarterAutoLoot:ShouldLootMaterial(filterType)
-    if (IsESOPlusSubscriber()) then
-        return true
-    end
-
-    if not self:IsValidFilterType(filterType) then
-        return false
-    end
-
-    if (filterType == "always loot") then
-        return true
-    end
-    if (filterType == "never loot") then
-        return false
-    end
-
-    return false
-end
-
-function MuchSmarterAutoLoot:ShouldLootStyleMaterial(filterType, link)
-    if (IsESOPlusSubscriber()) then
-        return true
-    end
-
-    if not self:IsValidFilterType(filterType) then
-        return false
-    end
-
-    if (filterType == "always loot") then
-        return true
-    end
-    if (filterType == "never loot") then
-        return false
-    end
-
-    if (filterType == "only non-racial") then
-        local itemType = GetItemLinkItemType(link)
-
-        if (itemType == ITEMTYPE_RAW_MATERIAL) then
-            return true
-        else
-            local styleId = GetItemLinkItemStyle(link)
-            if ((styleId >= 1 and styleId <= 9) or styleId == 15 or styleId == 17 or styleId == 19 or styleId == 20 or
-                styleId == GetImperialStyleId()) then
-                return false
-            else
-                return true
-            end
-        end
-    end
-
-    return false
-end
-
-function MuchSmarterAutoLoot:ShouldLootGem(filterType, value)
-    if not self:IsValidFilterType(filterType) then
-        return false
-    end
-
-    if (filterType == "always loot") then
-        return true
-    end
-    if (filterType == "never loot") then
-        return false
-    end
-
-    if (filterType == "only filled" and value > 5) then
-        return true
-    end
-
-    return false
-end
-
-function MuchSmarterAutoLoot:ShouldLootRecipe(filterType, link)
-    if not self:IsValidFilterType(filterType) then
-        return false
-    end
-
-    if (filterType == "always loot") then
-        return true
-    end
-    if (filterType == "never loot") then
-        return false
-    end
-
-    -- if the recipe is not tradeable then loot it directly
-    local tradeable = GetItemLinkBindType(link) == BIND_TYPE_NONE or GetItemLinkBindType(link) == BIND_TYPE_ON_EQUIP or GetItemLinkBindType(link) == BIND_TYPE_UNSET
-    if not tradeable then
-        return true
-    end
-
-    local tempResult = false
-    local itemType = GetItemLinkItemType(link)
-    if (db.filters.alwaysLootUnknown and ((itemType == ITEMTYPE_RECIPE and not IsItemLinkRecipeKnown(link)) or (itemType == ITEMTYPE_RACIAL_STYLE_MOTIF and not IsItemLinkBookKnown(link)))) then
-        if (db.filters.onlyLootAccountwideUnknown) then
-            tempResult = tempResult or self:IsItemKnownByAnyCharacter(link, _, _)
-        else
-            return true
-        end
-        
-    end
-
-    if (filterType == "per ttc" or filterType == "per mm" or filterType == "per att") then
-        tempResult = tempResult or self:ShouldLootThirdPartyWorthyItem(filterType, link)
-    end
-
-    return tempResult
-end
-
-function MuchSmarterAutoLoot:ShouldLootTreasureMap(filterType, link)
-    if not self:IsValidFilterType(filterType) then
-        return false
-    end
-
-    if (filterType == "always loot") then
-        return true
-    end
-    if (filterType == "only non-base-zone") then
-        if self:ArrayHasItem(basezoneTreasureMapID, GetItemLinkItemId(link)) then
-            return false
-        else
-            return true
-        end
-    end
-    if (filterType == "never loot") then
-        return false
-    end
-
-    if (filterType == "per ttc" or filterType == "per mm" or filterType == "per att") then
-        return self:ShouldLootThirdPartyWorthyItem(filterType, link)
-    end
-
-    return false
-end
-
-function MuchSmarterAutoLoot:ShouldLootThirdPartyWorthyItem(filterType, link)
+local function ShouldLootThirdPartyWorthyItem(filterType, link)
     if filterType == "per ttc" then
         local itemInfo = TamrielTradeCentre_ItemInfo:New(link)
         local priceInfo = TamrielTradeCentrePrice:GetPriceInfo(itemInfo)
@@ -1013,7 +598,227 @@ function MuchSmarterAutoLoot:ShouldLootThirdPartyWorthyItem(filterType, link)
     end
 end
 
-function MuchSmarterAutoLoot:ExceedWarning(curt)
+local function ShouldLootMisc(filterType, link)
+    if not IsValidFilterType(filterType) then
+        return false
+    end
+
+    if (filterType == "always loot") then
+        return true
+    end
+    if (filterType == "never loot") then
+        return false
+    end
+
+    if (filterType == "per ttc" or filterType == "per mm" or filterType == "per att") then
+        return ShouldLootThirdPartyWorthyItem(filterType, link)
+    end
+
+    return false
+end
+
+local function ShouldLootIntricate(filterType, link, quality, value, isJewelry)
+    if not IsValidFilterType(filterType) then
+        return false
+    end
+
+    if (filterType == "always loot") then
+        -- gearLooted = true
+        return true
+    end
+    if (filterType == "never loot") then
+        return false
+    end
+    if (filterType == "type based") then
+        local itemType = GetItemLinkItemType(link)
+
+        -- if jewelry
+        if (isJewelry) then
+            return ShouldLootGear(db.filters.jewelryIntricate, quality, value)
+        end
+        if (not isJewelry and itemType == ITEMTYPE_ARMOR) then
+            local weight = GetItemLinkArmorType(link)
+            -- if clothing
+            if (weight == ARMORTYPE_LIGHT or weight == ARMORTYPE_MEDIUM) then
+                return ShouldLootGear(db.filters.clothingIntricate, quality, value)
+            end
+            -- if blacksmithing
+            if (weight == ARMORTYPE_HEAVY) then
+                return ShouldLootGear(db.filters.blacksmithingIntricate, quality, value)
+            end
+        end
+        if (not isJewelry and itemType == ITEMTYPE_WEAPON) then
+            local weaponType = GetItemLinkWeaponType(link)
+            -- if woodworking
+            if (weaponType == WEAPONTYPE_BOW or weaponType == WEAPONTYPE_FIRE_STAFF or weaponType ==
+                WEAPONTYPE_FROST_STAFF or weaponType == WEAPONTYPE_LIGHTNING_STAFF or weaponType ==
+                WEAPONTYPE_HEALING_STAFF or weaponType == WEAPONTYPE_SHIELD) then
+                return ShouldLootGear(db.filters.woodworkingIntricate, quality, value)
+            end
+            -- if blacksmithing
+            if (weaponType == WEAPONTYPE_AXE or weaponType == WEAPONTYPE_DAGGER or weaponType == WEAPONTYPE_HAMMER or
+                weaponType == WEAPONTYPE_SWORD or weaponType == WEAPONTYPE_TWO_HANDED_AXE or weaponType ==
+                WEAPONTYPE_TWO_HANDED_HAMMER or weaponType == WEAPONTYPE_TWO_HANDED_SWORD) then
+                return ShouldLootGear(db.filters.blacksmithingIntricate, quality, value)
+            end
+        end
+    end
+    return false
+end
+
+local function ShouldLootFoodAndDrink(filterType, link)
+    if not IsValidFilterType(filterType) then
+        return false
+    end
+
+    if (filterType == "always loot") then
+        return true
+    end
+    local itemId = GetItemLinkItemId(link)
+    if (filterType == "only exp booster" and (itemId == 64221 or itemId == 120076 or itemId == 115027)) then
+        return true
+    end
+    if (filterType == "never loot") then
+        return false
+    end
+    return false
+end
+
+local function ShouldLootMaterial(filterType)
+    if (IsESOPlusSubscriber()) then
+        return true
+    end
+
+    if not IsValidFilterType(filterType) then
+        return false
+    end
+
+    if (filterType == "always loot") then
+        return true
+    end
+    if (filterType == "never loot") then
+        return false
+    end
+
+    return false
+end
+
+local function ShouldLootStyleMaterial(filterType, link)
+    if (IsESOPlusSubscriber()) then
+        return true
+    end
+
+    if not IsValidFilterType(filterType) then
+        return false
+    end
+
+    if (filterType == "always loot") then
+        return true
+    end
+    if (filterType == "never loot") then
+        return false
+    end
+
+    if (filterType == "only non-racial") then
+        local itemType = GetItemLinkItemType(link)
+
+        if (itemType == ITEMTYPE_RAW_MATERIAL) then
+            return true
+        else
+            local styleId = GetItemLinkItemStyle(link)
+            if ((styleId >= 1 and styleId <= 35) or styleId == GetImperialStyleId()) and styleId ~= 10 then
+                return false
+            else
+                return true
+            end
+        end
+    end
+
+    return false
+end
+
+local function ShouldLootGem(filterType, value)
+    if not IsValidFilterType(filterType) then
+        return false
+    end
+
+    if (filterType == "always loot") then
+        return true
+    end
+    if (filterType == "never loot") then
+        return false
+    end
+
+    if (filterType == "only filled" and value > 5) then
+        return true
+    end
+
+    return false
+end
+
+local function ShouldLootRecipe(filterType, link)
+    if not IsValidFilterType(filterType) then
+        return false
+    end
+
+    if (filterType == "always loot") then
+        return true
+    end
+    if (filterType == "never loot") then
+        return false
+    end
+
+    -- if the recipe is not tradeable then loot it directly
+    local tradeable = GetItemLinkBindType(link) == BIND_TYPE_NONE or GetItemLinkBindType(link) == BIND_TYPE_ON_EQUIP or GetItemLinkBindType(link) == BIND_TYPE_UNSET
+    if not tradeable then
+        return true
+    end
+
+    local tempResult = false
+    local itemType = GetItemLinkItemType(link)
+    if (db.filters.alwaysLootUnknown and ((itemType == ITEMTYPE_RECIPE and not IsItemLinkRecipeKnown(link)) or (itemType == ITEMTYPE_RACIAL_STYLE_MOTIF and not IsItemLinkBookKnown(link)))) then
+        if (db.filters.onlyLootAccountwideUnknown) then
+            tempResult = tempResult or IsItemKnownByAnyCharacter(link, _, _)
+        else
+            return true
+        end
+        
+    end
+
+    if (filterType == "per ttc" or filterType == "per mm" or filterType == "per att") then
+        tempResult = tempResult or ShouldLootThirdPartyWorthyItem(filterType, link)
+    end
+
+    return tempResult
+end
+
+local function ShouldLootTreasureMap(filterType, link)
+    if not IsValidFilterType(filterType) then
+        return false
+    end
+
+    if (filterType == "always loot") then
+        return true
+    end
+    if (filterType == "only non-base-zone") then
+        if ArrayHasItem(basezoneTreasureMapID, GetItemLinkItemId(link)) then
+            return false
+        else
+            return true
+        end
+    end
+    if (filterType == "never loot") then
+        return false
+    end
+
+    if (filterType == "per ttc" or filterType == "per mm" or filterType == "per att") then
+        return ShouldLootThirdPartyWorthyItem(filterType, link)
+    end
+
+    return false
+end
+
+local function ExceedWarning(curt)
     local firstExceed = 0
     if lastExceed == nil or lastExceed == 0 then
         lastExceed = GetGameTimeMilliseconds()
@@ -1021,75 +826,114 @@ function MuchSmarterAutoLoot:ExceedWarning(curt)
     end
 
     if GetGameTimeMilliseconds() - lastExceed > 20000 or firstExceed == 1 then
-        d(zo_strformat(GetString(MSAL_EXCEED_WARNING), GetCurrencyName(curt, false, true)))
+        d(zo_strformat(GetString(MSAL_EXCEED_WARNING), GetCurrencyName(curt, false, false)))
         lastExceed = GetGameTimeMilliseconds()
     end
     return
 end
 
-function MuchSmarterAutoLoot:IsAprilFoolsDay()
-    local currentDate = os.date("*t")
-    return currentDate.month == 4 and currentDate.day == 1
-end
+-- function MuchSmarterAutoLoot:OnLootUpdatedAF()
+--     local randomItemSentence = {
+--         SI_ARMORYBUILDOPERATIONTYPE_DIALOGMESSAGE2, -- Equipping <<1>> ...
+--         SI_QUEST_REWARD_MAX_CURRENCY_ERROR, -- You cannot carry any more <<1>>
+--         SI_LOOTITEMRESULT8, -- You are unable to loot the Unique <<1>> because you already have one.
+--         SI_TRADEACTIONRESULT45, -- You are unable to trade for <<1>> because it is unique and you already have one
+--         SI_INTERACT_OPTION_KEEP_GUILD_CLAIM, -- Claim ownership of <<1>>
+--         SI_MARKET_PURCHASE_ALREADY_HAVE_GIFT_TEXT, -- You have <<1>> in your Gift Inventory. Claim it for yourself before purchasing it again.
+--         SI_ANTIQUITY_LEAD_ACQUIRED_TEXT, -- <<1>> is now available to Scry.
+--         -- SI_COMPANIONSUMMONRESULT8, -- <<1>> is not responding to your summon. Try again later when they're less angry with you.
+--         -- SI_COMPANIONSUMMONRESULT6, -- <<1>> tried to join you but forgot to bring their gear.
+--         -- SI_PLAYER_TO_PLAYER_INCOMING_RITUAL_OF_MARA, -- <<1>> wants to join with you in the Ritual of Mara
+--     }
 
-function MuchSmarterAutoLoot:OnLootUpdatedFool()
-    local randomItemSentence = {
-        SI_ARMORYBUILDOPERATIONTYPE_DIALOGMESSAGE2, -- Equipping <<1>> ...
-        SI_QUEST_REWARD_MAX_CURRENCY_ERROR, -- You cannot carry any more <<1>>
-        SI_LOOTITEMRESULT8, -- You are unable to loot the Unique <<1>> because you already have one.
-        SI_TRADEACTIONRESULT45, -- You are unable to trade for <<1>> because it is unique and you already have one
-        SI_INTERACT_OPTION_KEEP_GUILD_CLAIM, -- Claim ownership of <<1>>
-        SI_MARKET_PURCHASE_ALREADY_HAVE_GIFT_TEXT, -- You have <<1>> in your Gift Inventory. Claim it for yourself before purchasing it again.
-        SI_ANTIQUITY_LEAD_ACQUIRED_TEXT, -- <<1>> is now available to Scry.
-        -- SI_COMPANIONSUMMONRESULT8, -- <<1>> is not responding to your summon. Try again later when they're less angry with you.
-        -- SI_COMPANIONSUMMONRESULT6, -- <<1>> tried to join you but forgot to bring their gear.
-        -- SI_PLAYER_TO_PLAYER_INCOMING_RITUAL_OF_MARA, -- <<1>> wants to join with you in the Ritual of Mara
-    }
+--     local randomItem = {
+--         "|H0:item:62283:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Fusozay Cushion
+--         "|H0:item:62140:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Khajiit Windowsill Sun Reflector
+--         "|H0:item:198163:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Scrap of Skooma-Inspired Poetry
+--         "|H0:item:62240:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Sheet Music Folio
+--         "|H0:item:71369:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Stainless Dueling Jock
+--         "|H0:item:150535:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Sweetwater Mouthwash
+--         "|H0:item:61213:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Book of Erotic Stories
+--         "|H0:item:187968:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- "Erotica for Werewolves"
+--         "|H0:item:61211:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Guide to Approved Methods of Procreation
+--         "|H0:item:150486:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Khajiiti Gravity Verification Gadget
+--         "|H0:item:138857:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- "Barbas" Dog Collar
+--         "|H0:item:138940:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Visual Guide to Skooma
+--         "|H0:item:63095:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Eyes of the Queen Disguise Kit
+--         "|H0:item:183100:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Ogrim Nipple Caps
+--         "|H0:item:198162:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Skooma Cat Medallion
+--         "|H0:item:63009:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- "Amorous Giantess" Royal Ensemble
+--         "|H0:item:61256:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Pamphlet of Erotic Engravings
+--         "|H0:item:166501:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Conquest of the Falmer
+--         "|H0:item:73820:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Pacrooti's Mole Asses
+--         "|H1:item:62039:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Invitation: Drinks with the Neighbors
+--         "|H1:item:126291:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h"
+--     }
 
-    local randomItem = {
-        "|H0:item:62283:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Fusozay Cushion
-        "|H0:item:62140:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Khajiit Windowsill Sun Reflector
-        "|H0:item:198163:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Scrap of Skooma-Inspired Poetry
-        "|H0:item:62240:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Sheet Music Folio
-        "|H0:item:71369:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Stainless Dueling Jock
-        "|H0:item:150535:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Sweetwater Mouthwash
-        "|H0:item:61213:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Book of Erotic Stories
-        "|H0:item:187968:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- "Erotica for Werewolves"
-        "|H0:item:61211:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Guide to Approved Methods of Procreation
-        "|H0:item:150486:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Khajiiti Gravity Verification Gadget
-        "|H0:item:138857:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- "Barbas" Dog Collar
-        "|H0:item:138940:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Visual Guide to Skooma
-        "|H0:item:63095:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Eyes of the Queen Disguise Kit
-        "|H0:item:183100:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Ogrim Nipple Caps
-        "|H0:item:198162:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Skooma Cat Medallion
-        "|H0:item:63009:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- "Amorous Giantess" Royal Ensemble
-        "|H0:item:61256:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Pamphlet of Erotic Engravings
-        "|H0:item:166501:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Conquest of the Falmer
-        "|H0:item:73820:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Pacrooti's Mole Asses
-        "|H1:item:62039:1:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h", -- Invitation: Drinks with the Neighbors
-        "|H1:item:126291:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h"
-    }
+--     local random_number = math.random()
+--     local currentTime = GetGameTimeMilliseconds()
+--     if random_number < 0.2 and currentTime - lastFoolUpdated > 300 then
+--         local randomSentenceIndex = math.random(1, #randomItemSentence)
+--         local randomItemIndex = math.random(1, #randomItem)
+--         d(zo_strformat(GetString(randomItemSentence[randomSentenceIndex]), randomItem[randomItemIndex]))
+--         lastFoolUpdated = currentTime
+--     end
+-- end
 
-    local random_number = math.random()
-    local currentTime = GetGameTimeMilliseconds()
-    if random_number < 0.2 and currentTime - lastFoolUpdated > 300 then
-        local randomSentenceIndex = math.random(1, #randomItemSentence)
-        local randomItemIndex = math.random(1, #randomItem)
-        d(zo_strformat(GetString(randomItemSentence[randomSentenceIndex]), randomItem[randomItemIndex]))
-        lastFoolUpdated = currentTime
+local function trimString(str)
+    local index = string.find(str, "%^")
+    if index then
+        local partBefore = string.sub(str, 1, index - 1)
+        return partBefore
+    else
+        return str
     end
 end
 
-function MuchSmarterAutoLoot:OnLootUpdatedThrottled()
-    -- EVENT_MANAGER:UnregisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED)
-    local currentTime = GetGameTimeMilliseconds()
-    if currentTime - lastUpdated > 300 then
-        self:OnLootUpdated()
-        lastUpdated = currentTime
+local function getStandardizeName(str)
+    str = trimString(str)
+    local result = string.gsub(str, "%s+", "")
+    result = string.lower(result)
+    return result
+end
+
+local function itemOnList(itemid, name, token)
+    local list
+    if token == TOKEN_BLIST then
+        list = db.blacklist
+    elseif token == TOKEN_WLIST then
+        list = db.whitelist
+    else
+        d("MSAL Error: Invalid list token")
+    end
+
+    if #list == 0 then
+        return false
+    end
+    name = string.lower(name)
+    for i = 1, #list, 1 do
+        local savedName = string.lower(GetItemLinkName(string.format(templateItemlink, list[i])))
+        if list[i] == itemid or getStandardizeName(savedName) == getStandardizeName(name) then
+            return true
+        end
+    end
+    return false
+end
+
+local function OnInventoryUpdate(_, bagId, slotIndex, isNewItem, itemSoundCategory, updateReason,
+    stackCountChange)
+    local link = GetItemLink(bagId, slotIndex)
+    local isCrafted = IsItemLinkCrafted(link)
+    local isUncollected = not IsItemSetCollectionPieceUnlocked(GetItemLinkItemId(link))
+    local isCompanionGear = GetItemLinkActorCategory(link) == GAMEPLAY_ACTOR_CATEGORY_COMPANION
+    local itemid = GetItemLinkItemId(link)
+    local name = GetItemLinkName(link)
+    if (db.autoBind and isUncollected and not isCompanionGear and not isCrafted and not isRepetitiveGear and not itemOnList(itemid, name, TOKEN_BLIST)) then
+        BindItem(bagId, slotIndex)
     end
 end
 
-function MuchSmarterAutoLoot:OnLootUpdated()
+local function OnLootUpdated()
     if (db.enabled == false) then
         return
     end
@@ -1113,8 +957,6 @@ function MuchSmarterAutoLoot:OnLootUpdated()
     setItemRegister = {}
     isRepetitiveGear = false
 
-
-
     -- if the loot start within 3 sec after lockpick successfully, then regard it's a locked chest loot
     if GetGameTimeMilliseconds() - lastUnlockTime < 3000 then
         isLockedChest = true
@@ -1123,6 +965,8 @@ function MuchSmarterAutoLoot:OnLootUpdated()
     end
 
     local noCurtLeft = true
+    local noBListItem = true
+
     local currencyInfo = LOOT_SHARED:GetLootCurrencyInformation()
     for curt, info in ipairs(currencyInfo) do
         if curt == CURT_MONEY then
@@ -1156,7 +1000,8 @@ function MuchSmarterAutoLoot:OnLootUpdated()
                         end
                         LootCurrency(curt)
                     else
-                        self:ExceedWarning(curt)
+                        ExceedWarning(curt)
+                        noCurtLeft = false
                     end
                 else
                     noCurtLeft = false
@@ -1226,65 +1071,74 @@ function MuchSmarterAutoLoot:OnLootUpdated()
         end
 
         -- If this one is stolen AND looting stolen is not allowed, don't continue and do nothing. 
-        if not isShiftKeyDown and (isStolen and (db.stolenRule == "never loot" or (isMat and db.stolenRule == "follow without mats"))) then
+        if not isShiftKeyDown and (isStolen and (db.stolenRule == "never loot")) then
+        -- do nothing
+        elseif itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) or itemOnList(GetItemLinkItemId(link), name, TOKEN_WLIST) then
+            if itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) then
+                noBListItem = false
+            end
+            if itemOnList(GetItemLinkItemId(link), name, TOKEN_WLIST) then
+                LootItemById(lootId)
+                looted = true
+            end
         -- Unfortunately Lua doesn't support a continue or switch statement, so this logic is MUCH UGLIER than it should be. Lua sucks.
         -- One day I'll replace it with a more elegant implementation, but not today
         else
             if (isQuest or itemType == ITEMTYPE_NONE) then
                 -- d("Looting quest item")
-                if (self:ShouldLootMisc(db.filters.questItems, link)) then
+                if (ShouldLootMisc(db.filters.questItems, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             end
             if (isGear) then
                 if (isCompanionGear) then
-                    if (self:ShouldLootGear(db.filters.companionGears, quality, value)) then
+                    if (ShouldLootGear(db.filters.companionGears, quality, value)) then
                         LootItemById(lootId)
                         looted = true
                     end
                 end
                 if (isSetItem) then
-                    isRepetitiveGear = self:ArrayHasItem(setItemRegister, name)
+                    isRepetitiveGear = ArrayHasItem(setItemRegister, name)
                     table.insert(setItemRegister, name)
 
-                    if (self:ShouldLootSet(db.filters.set, isUncollected, isJewelry, isWeapon)) then
+                    if (ShouldLootSet(db.filters.set, isUncollected, isJewelry, isWeapon)) then
                         LootItemById(lootId)
                         looted = true
                     end
                     if not isUncollected then
                         if (isUnresearched) then
-                            if (self:ShouldLootGear(db.filters.unresearched, quality, value)) then
+                            if (ShouldLootGear(db.filters.unresearched, quality, value)) then
                                 LootItemById(lootId)
                                 looted = true
                             end
                         end
                         if (isOrnate) then
-                            if (self:ShouldLootGear(db.filters.ornate, quality, value)) then
+                            if (ShouldLootGear(db.filters.ornate, quality, value)) then
                                 LootItemById(lootId)
                                 looted = true
                             end
                         end
                         if (isIntricate) then
-                            if (self:ShouldLootIntricate(db.filters.intricate, link, quality, value, isJewelry)) then
+                            if (ShouldLootIntricate(db.filters.intricate, link, quality, value, isJewelry)) then
                                 LootItemById(lootId)
                                 looted = true
                             end
                         end
                         if (isJewelry) then
-                            if (self:ShouldLootGear(db.filters.jewelry, quality, value)) then
+                            if (ShouldLootGear(db.filters.jewelry, quality, value)) then
                                 LootItemById(lootId)
                                 looted = true
                             end
                         end
                         if (itemType == ITEMTYPE_ARMOR and not isJewelry) then
-                            if (self:ShouldLootGear(db.filters.armors, quality, value)) then
+                            if (ShouldLootGear(db.filters.armors, quality, value)) then
                                 LootItemById(lootId)
                                 looted = true
                             end
                         end
                         if (itemType == ITEMTYPE_WEAPON) then
-                            if (self:ShouldLootGear(db.filters.weapons, quality, value)) then
+                            if (ShouldLootGear(db.filters.weapons, quality, value)) then
                                 LootItemById(lootId)
                                 looted = true
                             end
@@ -1292,37 +1146,37 @@ function MuchSmarterAutoLoot:OnLootUpdated()
                     end
                 else
                     if (isUnresearched) then
-                        if (self:ShouldLootGear(db.filters.unresearched, quality, value)) then
+                        if (ShouldLootGear(db.filters.unresearched, quality, value)) then
                             LootItemById(lootId)
                             looted = true
                         end
                     end
                     if (isOrnate) then
-                        if (self:ShouldLootGear(db.filters.ornate, quality, value)) then
+                        if (ShouldLootGear(db.filters.ornate, quality, value)) then
                             LootItemById(lootId)
                             looted = true
                         end
                     end
                     if (isIntricate) then
-                        if (self:ShouldLootIntricate(db.filters.intricate, link, quality, value, isJewelry)) then
+                        if (ShouldLootIntricate(db.filters.intricate, link, quality, value, isJewelry)) then
                             LootItemById(lootId)
                             looted = true
                         end
                     end
                     if (isJewelry) then
-                        if (self:ShouldLootGear(db.filters.jewelry, quality, value)) then
+                        if (ShouldLootGear(db.filters.jewelry, quality, value)) then
                             LootItemById(lootId)
                             looted = true
                         end
                     end
                     if (itemType == ITEMTYPE_ARMOR and not isJewelry) then
-                        if (self:ShouldLootGear(db.filters.armors, quality, value)) then
+                        if (ShouldLootGear(db.filters.armors, quality, value)) then
                             LootItemById(lootId)
                             looted = true
                         end
                     end
                     if (itemType == ITEMTYPE_WEAPON) then
-                        if (self:ShouldLootGear(db.filters.weapons, quality, value)) then
+                        if (ShouldLootGear(db.filters.weapons, quality, value)) then
                             LootItemById(lootId)
                             looted = true
                         end
@@ -1338,52 +1192,52 @@ function MuchSmarterAutoLoot:OnLootUpdated()
                 end
             elseif (itemType == ITEMTYPE_BLACKSMITHING_BOOSTER or itemType == ITEMTYPE_BLACKSMITHING_MATERIAL or
                 itemType == ITEMTYPE_BLACKSMITHING_RAW_MATERIAL) then
-                if (self:ShouldLootMaterial(db.filters.craftingMaterials)) then
+                if (ShouldLootMaterial(db.filters.craftingMaterials)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_CLOTHIER_BOOSTER or itemType == ITEMTYPE_CLOTHIER_MATERIAL or itemType ==
                 ITEMTYPE_CLOTHIER_RAW_MATERIAL) then
-                if (self:ShouldLootMaterial(db.filters.craftingMaterials)) then
+                if (ShouldLootMaterial(db.filters.craftingMaterials)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_WOODWORKING_BOOSTER or itemType == ITEMTYPE_WOODWORKING_MATERIAL or itemType ==
                 ITEMTYPE_WOODWORKING_RAW_MATERIAL) then
-                if (self:ShouldLootMaterial(db.filters.craftingMaterials)) then
+                if (ShouldLootMaterial(db.filters.craftingMaterials)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_JEWELRYCRAFTING_BOOSTER or itemType == ITEMTYPE_JEWELRYCRAFTING_MATERIAL or
                 itemType == ITEMTYPE_JEWELRYCRAFTING_RAW_BOOSTER or itemType == ITEMTYPE_JEWELRYCRAFTING_RAW_MATERIAL) then
-                if (self:ShouldLootMaterial(db.filters.craftingMaterials)) then
+                if (ShouldLootMaterial(db.filters.craftingMaterials)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_RAW_MATERIAL or itemType == ITEMTYPE_STYLE_MATERIAL) then
-                if (self:ShouldLootStyleMaterial(db.filters.styleMaterials, link)) then
+                if (ShouldLootStyleMaterial(db.filters.styleMaterials, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_WEAPON_TRAIT or itemType == ITEMTYPE_ARMOR_TRAIT or itemType ==
                 ITEMTYPE_JEWELRY_RAW_TRAIT or itemType == ITEMTYPE_JEWELRY_TRAIT) then
-                if (self:ShouldLootTrait(db.filters.traitMaterials, link)) then
+                if (ShouldLootTrait(db.filters.traitMaterials, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_INGREDIENT) then
-                if (self:ShouldLootIngredient(db.filters.ingredients, quality)) then
+                if (ShouldLootIngredient(db.filters.ingredients, quality)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_POTION_BASE or itemType == ITEMTYPE_POISON_BASE or itemType == ITEMTYPE_REAGENT) then
-                if (self:ShouldLootMaterial(db.filters.alchemy)) then
+                if (ShouldLootMaterial(db.filters.alchemy)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_ENCHANTING_RUNE_ASPECT or itemType == ITEMTYPE_ENCHANTING_RUNE_ESSENCE or
                 itemType == ITEMTYPE_ENCHANTING_RUNE_POTENCY or itemType == ITEMTYPE_ENCHANTMENT_BOOSTER) then
-                if (self:ShouldLootEnchanting(db.filters.runes, link)) then
+                if (ShouldLootEnchanting(db.filters.runes, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
@@ -1395,54 +1249,54 @@ function MuchSmarterAutoLoot:OnLootUpdated()
                 -- 114893 Alchemical Resin (Alchemy)
                 -- 114894 Decorative Wax (Provisioning)
                 -- 114895 Heartwood (Woodworking)
-                if (self:ShouldLootMaterial(db.filters.furnishingMaterials)) then
+                if (ShouldLootMaterial(db.filters.furnishingMaterials)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_GLYPH_ARMOR or itemType == ITEMTYPE_GLYPH_JEWELRY or itemType ==
                 ITEMTYPE_GLYPH_WEAPON) then
-                if (self:ShouldLootMisc(db.filters.glyphs, link)) then
+                if (ShouldLootMisc(db.filters.glyphs, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_CONTAINER or itemType == ITEMTYPE_CONTAINER_CURRENCY or itemType ==
                 ITEMTYPE_FISH) then
-                if (self:ShouldLootMisc(db.filters.containers, link)) then
+                if (ShouldLootMisc(db.filters.containers, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_FURNISHING) then
-                if (self:ShouldLootRecipe(db.filters.furniture, link)) then
+                if (ShouldLootRecipe(db.filters.furniture, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_CROWN_ITEM or itemType == ITEMTYPE_CROWN_REPAIR) then
-                if (self:ShouldLootMisc(db.filters.crownItems, link)) then
+                if (ShouldLootMisc(db.filters.crownItems, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_MASTER_WRIT) then
-                if (self:ShouldLootMisc(db.filters.writs, link)) then
+                if (ShouldLootMisc(db.filters.writs, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_CRAFTED_ABILITY or itemType == ITEMTYPE_CRAFTED_ABILITY_SCRIPT or itemType == ITEMTYPE_SCRIBING_INK) then
-                if (self:ShouldLootScribing(db.filters.scribing, itemType)) then
+                if (ShouldLootScribing(db.filters.scribing, itemType)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_RACIAL_STYLE_MOTIF or itemType == ITEMTYPE_RECIPE or itemType == ITEMTYPE_COLLECTIBLE) then
-                if (self:ShouldLootRecipe(db.filters.recipes, link)) then
+                if (ShouldLootRecipe(db.filters.recipes, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_SOUL_GEM) then
-                if (self:ShouldLootGem(db.filters.soulGems, value)) then
+                if (ShouldLootGem(db.filters.soulGems, value)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (lootType == LOOT_TYPE_ANTIQUITY_LEAD) then
-                if (self:ShouldLootMisc(db.filters.leads, link)) then
+                if (ShouldLootMisc(db.filters.leads, link)) then
                     local antiquityId = GetLootAntiquityLeadId(lootId)
                     LootItemById(lootId)
                     looted = true
@@ -1452,62 +1306,62 @@ function MuchSmarterAutoLoot:OnLootUpdated()
                     end
                 end
             elseif (itemType == ITEMTYPE_AVA_REPAIR or itemType == ITEMTYPE_SIEGE) then
-                if (self:ShouldLootMisc(db.filters.allianceWarConsumables, link)) then
+                if (ShouldLootMisc(db.filters.allianceWarConsumables, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_LOCKPICK) then
-                if (self:ShouldLootMisc(db.filters.lockpicks, link)) then
+                if (ShouldLootMisc(db.filters.lockpicks, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_TOOL) then
-                if (self:ShouldLootMisc(db.filters.tools, link)) then
+                if (ShouldLootMisc(db.filters.tools, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             -- elseif (lootType == LOOT_TYPE_COLLECTIBLE) then
-            --     if (self:ShouldLootMisc(db.filters.collectibles, link)) then
+            --     if (ShouldLootMisc(db.filters.collectibles, link)) then
             --         LootItemById(lootId)
             --         looted = true
             --     end
             elseif (itemType == ITEMTYPE_TROPHY) then
-                if (self:ShouldLootTreasureMap(db.filters.treasureMaps, link)) then
+                if (ShouldLootTreasureMap(db.filters.treasureMaps, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_FOOD or itemType == ITEMTYPE_DRINK) then
-                if (self:ShouldLootFoodAndDrink(db.filters.foodAndDrink, link)) then
+                if (ShouldLootFoodAndDrink(db.filters.foodAndDrink, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_POTION) then
-                if (self:ShouldLootPotion(db.filters.potions, link)) then
+                if (ShouldLootPotion(db.filters.potions, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_POISON) then
-                if (self:ShouldLootMisc(db.filters.poisons, link)) then
+                if (ShouldLootMisc(db.filters.poisons, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_TREASURE) then
-                if (self:ShouldLootGear(db.filters.treasures, quality, value)) then
+                if (ShouldLootGear(db.filters.treasures, quality, value)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_COSTUME or itemType == ITEMTYPE_DISGUISE) then
-                if (self:ShouldLootMisc(db.filters.costumes, link)) then
+                if (ShouldLootMisc(db.filters.costumes, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_LURE) then
-                if (self:ShouldLootMaterial(db.filters.fishingBaits)) then
+                if (ShouldLootMaterial(db.filters.fishingBaits)) then
                     LootItemById(lootId)
                     looted = true
                 end
             elseif (itemType == ITEMTYPE_TRASH) then
-                if (self:ShouldLootMisc(db.filters.trash, link)) then
+                if (ShouldLootMisc(db.filters.trash, link)) then
                     LootItemById(lootId)
                     looted = true
                 end
@@ -1552,7 +1406,7 @@ function MuchSmarterAutoLoot:OnLootUpdated()
             end
         end
         
-        if (looted == false) then
+        if (looted == false and not itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST)) then
             table.insert(currentNotLootedNameList, string.lower(name))
             table.insert(unwantedLootIdList, lootId)
             table.insert(unwantedNameList, string.lower(name))
@@ -1591,18 +1445,17 @@ function MuchSmarterAutoLoot:OnLootUpdated()
         d("noCurtLeft :"..tostring(noCurtLeft))
     end
 
-    if ((isLockedChest or isResourceNode or isPsijicPortal) and db.considerateMode and #unwantedLootIdList > 0 and tostring(currentScene) ~= "lootInventoryGamepad" and tostring(currentScene) ~= "inventory") then
+    if db.considerateMode and ((isLockedChest or isResourceNode or isPsijicPortal) and #unwantedLootIdList > 0 and tostring(currentScene) ~= "lootInventoryGamepad" and tostring(currentScene) ~= "inventory") then
         if (db.debugMode) then
             d("is considerateLoot")
         end
         considerateLoot = true
-        EVENT_MANAGER:RegisterForEvent("MSAL_UNWANTED_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE,
-            MuchSmarterAutoLoot.OnUnwantedUpdated)
+        EVENT_MANAGER:RegisterForEvent("MSAL_UNWANTED_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE, OnUnwantedUpdated)
         EVENT_MANAGER:AddFilterForEvent("MSAL_UNWANTED_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE,
             REGISTER_FILTER_IS_NEW_ITEM, true)
         EVENT_MANAGER:AddFilterForEvent("MSAL_UNWANTED_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE,
             REGISTER_FILTER_BAG_ID, BAG_BACKPACK)
-        zo_callLater(function() EVENT_MANAGER:RegisterForEvent("MSAL_UNWANTED_LOOT_CLOSED", EVENT_LOOT_CLOSED, MuchSmarterAutoLoot.OnUnwantedLootClosed) end, 100)
+        zo_callLater(function() EVENT_MANAGER:RegisterForEvent("MSAL_UNWANTED_LOOT_CLOSED", EVENT_LOOT_CLOSED, OnUnwantedLootClosed) end, GetLatency())
 
         if not noCurtLeft then
             LootMoney()
@@ -1615,17 +1468,26 @@ function MuchSmarterAutoLoot:OnLootUpdated()
         for i = 1, #unwantedLootIdList, 1 do
             LootItemById(unwantedLootIdList[i])
         end
+
+        -- Force close the chest looting window to avoid picking up the blacklisted item
+        if isLockedChest and not noBListItem then
+            EndLooting()
+            SCENE_MANAGER:HideCurrentScene()
+            d(string.format(GetString(MSAL_LIST_CONSIDERATE_CONFLICT), 
+                GetString(MSAL_CONSIDERATE_MODE)))
+        end
     end
 
     if (db.closeLootWindow and not considerateLoot) then
         if (db.debugMode) then
-            if (self:IsSameArray(currentNotLootedNameList, lastNotLootedNameList) and #currentNotLootedNameList ~= 0 ) then
+            if (IsSameArray(currentNotLootedNameList, lastNotLootedNameList) and #currentNotLootedNameList ~= 0 ) then
                 d("is Succession loot")
             end
         end
 
-        -- If Smarter Close is disabled or enabled but it is not a repeat loot ------ then it need to be closed unless its a bag container
-        if not db.closeLootWindowSmarter or (db.closeLootWindowSmarter and not (self:IsSameArray(currentNotLootedNameList, lastNotLootedNameList))) then
+        -- If Smarter Close is disabled or enabled but it is not a succession loot ------ then it need to be closed unless its a bag container
+        if not db.closeLootWindowSmarter or (db.closeLootWindowSmarter and not (IsSameArray(currentNotLootedNameList, lastNotLootedNameList))) and noBListItem then
+            -- if the case is bag container
             if (IsInGamepadPreferredMode() and tostring(currentScene) == "lootInventoryGamepad") or (not IsInGamepadPreferredMode() and tostring(currentScene) == "inventory") then
                 lootingBagContainer = true
                 if (db.debugMode) then
@@ -1654,7 +1516,7 @@ function MuchSmarterAutoLoot:OnLootUpdated()
         lastNotLootedNameList = currentNotLootedNameList
     end
 
-    if #currentNotLootedNameList == 0 and noCurtLeft then
+    if #currentNotLootedNameList == 0 and noCurtLeft and noBListItem then
         if (db.debugMode) then
             d("secured closing loot window, showing: "..currentScene)
         end
@@ -1669,43 +1531,24 @@ function MuchSmarterAutoLoot:OnLootUpdated()
     end
 end
 
-function MuchSmarterAutoLoot_Startup(self)
-    _Instance = MuchSmarterAutoLoot:New(self)
+local function OnLootUpdatedThrottled()
+    -- EVENT_MANAGER:UnregisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED)
+    local currentTime = GetGameTimeMilliseconds()
+    if currentTime - lastUpdated > 300 then
+        OnLootUpdated()
+        lastUpdated = currentTime
+    end
 end
-
-function MuchSmarterAutoLoot:Reset()
-end
-
-EVENT_MANAGER:RegisterForEvent("MuchSmarterAutoLoot", EVENT_PLAYER_ACTIVATED, MuchSmarterAutoLoot.LoadScreen)
-EVENT_MANAGER:RegisterForEvent("MSAL_SLOT_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE, MuchSmarterAutoLoot.OnInventoryUpdate)
-EVENT_MANAGER:AddFilterForEvent("MSAL_SLOT_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE, REGISTER_FILTER_IS_NEW_ITEM, true)
-EVENT_MANAGER:AddFilterForEvent("MSAL_SLOT_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE, REGISTER_FILTER_BAG_ID, BAG_BACKPACK)
-EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_CLOSED", EVENT_LOOT_CLOSED, MuchSmarterAutoLoot.OnLootClosed)
-EVENT_MANAGER:RegisterForEvent("MSAL_LOCKPICK_SUCCESS", EVENT_LOCKPICK_SUCCESS, MuchSmarterAutoLoot.OnLockpickSuccess)
--- EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_CLOSED", EVENT_LOOT_CLOSED, MuchSmarterAutoLoot.OnLootClosed)
-
-
--------------------- Menu --------------------
 
 local LAM2 = LibAddonMenu2
-if (not LAM2) then
-    return
-end
 
-function MuchSmarterAutoLootSettings:New(...)
-    local result = ZO_Object.New(self)
-    result:Initialize(...)
-    return result
-end
-
-function MuchSmarterAutoLootSettings:Initialize(db)
-
+local function SettingInitialize(db)
     local panelData = {
         type = "panel",
         name = GetString(MSAL_PANEL_NAME),
         displayName = GetString(MSAL_PANEL_DISPLAYNAME),
         author = "|c215895Lykeion|r",
-        version = "|ccc922f" .. MuchSmarterAutoLoot.version .. "|r",
+        version = "|ccc922f" .. addonVersion .. "|r",
         slashCommand = "/msal",
         registerForRefresh = true,
         registerForDefaults = true
@@ -1737,7 +1580,7 @@ function MuchSmarterAutoLootSettings:Initialize(db)
     local qualityChoices = {
         GetString(MSAL_ALWAYS_LOOT),
         GetString(MSAL_PER_QUALITY_THRESHOLD),
-        GetString(MSAL_NEVER_LOOT),
+        GetString(MSAL_NEVER_LOOT)
     }
     local qualityChoicesValues = {
         "always loot",
@@ -1896,10 +1739,117 @@ function MuchSmarterAutoLootSettings:Initialize(db)
         "never loot"
     }
 
-local dynamicRecipesChoices, dynamicRecipesChoicesValues = MuchSmarterAutoLoot:AddDynamicThirdPartyPriceSupport(recipesChoices, recipesChoicesValues)
-local dynamicTreasureMapsChoices, dynamicTreasureMapsChoicesValues = MuchSmarterAutoLoot:AddDynamicThirdPartyPriceSupport(treasureMapsChoices, treasureMapsChoicesValues)
-local dynamicBooleanChoices, dynamicBooleanChoicesValues = MuchSmarterAutoLoot:AddDynamicThirdPartyPriceSupport(booleanChoices, booleanChoicesValues)
+    local dynamicRecipesChoices, dynamicRecipesChoicesValues =
+        AddDynamicThirdPartyPriceSupport(recipesChoices, recipesChoicesValues)
+    local dynamicTreasureMapsChoices, dynamicTreasureMapsChoicesValues =
+        AddDynamicThirdPartyPriceSupport(treasureMapsChoices, treasureMapsChoicesValues)
+    local dynamicBooleanChoices, dynamicBooleanChoicesValues =
+        AddDynamicThirdPartyPriceSupport(booleanChoices, booleanChoicesValues)
 
+
+    local function getListChoices(token)
+        local list, title
+        if token == TOKEN_BLIST then
+            list = db.blacklist
+            title = GetString(MSAL_BLIST)
+        elseif token == TOKEN_WLIST then
+            list = db.whitelist
+            title = GetString(MSAL_WLIST)
+        end
+
+        local temp = {}
+        table.insert(temp, "-------- " .. title .. " --------")
+        for _, itemid in pairs(list) do
+            table.insert(temp,
+                trimString(GetItemLinkName(string.format(templateItemlink, itemid)) .. " (" .. itemid .. ")"))
+        end
+        return temp
+    end
+
+    local function addListItem(link, token)
+        if link == nil or link == "" then
+            return
+        end
+
+        local controlName, removeControlName, listName, list, otherList
+        if token == TOKEN_BLIST then
+            controlName = "MSAL_AddBList"
+            removeControlName = "MSAL_RemoveBList"
+            listName = GetString(MSAL_BLIST)
+            list = db.blacklist
+            otherList = db.whitelist
+        elseif token == TOKEN_WLIST then
+            controlName = "MSAL_AddWList"
+            removeControlName = "MSAL_RemoveWList"
+            listName = GetString(MSAL_WLIST)
+            list = db.whitelist
+            otherList = db.blacklist
+        end
+
+        if GetItemLinkItemId(link) == 0 then
+            d(GetString(SI_STOREITEMRESULT1))
+            WM:GetControlByName(controlName).editbox:SetText("")
+            return
+        end
+
+        for _, v in pairs(otherList) do
+            if v == GetItemLinkItemId(link) then
+                d(string.format(GetString(MSAL_LIST_CONFLICT),
+                    trimString(GetItemLinkName(string.format(templateItemlink, GetItemLinkItemId(link))))))
+                WM:GetControlByName(controlName).editbox:SetText("")
+                return
+            end
+        end
+
+        for _, v in pairs(list) do
+            if v == GetItemLinkItemId(link) then
+                d(string.format(GetString(MSAL_LIST_ALREADY_EXIST),
+                    trimString(GetItemLinkName(string.format(templateItemlink, GetItemLinkItemId(link)))),
+                    listName))
+                WM:GetControlByName(controlName).editbox:SetText("")
+                return
+            end
+        end
+        table.insert(list, GetItemLinkItemId(link))
+        d(string.format(GetString(MSAL_LIST_ADD),
+            trimString(GetItemLinkName(string.format(templateItemlink, GetItemLinkItemId(link)))), listName))
+
+        WM:GetControlByName(controlName).editbox:SetText("")
+        WM:GetControlByName(removeControlName):UpdateChoices(getListChoices(token))
+    end
+
+    local function removeListItem(itemStr, token)
+        local controlName, removeControlName, listName, list, otherList
+        if token == TOKEN_BLIST then
+            removeControlName = "MSAL_RemoveBList"
+            listName = GetString(MSAL_BLIST)
+            list = db.blacklist
+        elseif token == TOKEN_WLIST then
+            removeControlName = "MSAL_RemoveWList"
+            listName = GetString(MSAL_WLIST)
+            list = db.whitelist
+        end
+
+        if itemStr == nil or itemStr == "-------- " .. listName .. " --------" then
+            WM:GetControlByName(removeControlName).dropdown:SetSelectedItem(nil)
+            return
+        else
+            local startIndex, endIndex = string.find(itemStr, "%(%d+%)$")
+            local itemid = string.sub(itemStr, startIndex + 1, endIndex - 1)
+
+            for i = #list, 1, -1 do
+                if tostring(list[i]) == itemid then
+                    d(string.format(GetString(MSAL_LIST_REMOVE),
+                        trimString(GetItemLinkName(string.format(templateItemlink, list[i]))),
+                        listName))
+                    table.remove(list, i)
+                end
+            end
+        end
+
+        WM:GetControlByName(removeControlName).dropdown:SetSelectedItem(nil)
+        WM:GetControlByName(removeControlName):UpdateChoices(getListChoices(token))
+    end
 
     local optionsData = {
         {
@@ -1921,9 +1871,7 @@ local dynamicBooleanChoices, dynamicBooleanChoicesValues = MuchSmarterAutoLoot:A
                     SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_LOOT, 0)
                     SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AOE_LOOT, 1)
                     SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_ADD_TO_CRAFT_BAG, 1)
-                    EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED, function(_, ...)
-                        MuchSmarterAutoLoot:OnLootUpdatedThrottled()
-                    end)
+                    EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED, OnLootUpdatedThrottled)
                 else
                     EVENT_MANAGER:UnregisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED)
                 end
@@ -2493,7 +2441,8 @@ local dynamicBooleanChoices, dynamicBooleanChoicesValues = MuchSmarterAutoLoot:A
                 {
                     type = "dropdown",
                     name = GetString(SI_ITEM_FORMAT_STR_COLLECTIBLE),
-                    tooltip = GetString(SI_ITEMTYPEDISPLAYCATEGORY24) .. " & " .. GetString(SI_ITEMTYPEDISPLAYCATEGORY21) .. " & " ..
+                    tooltip = GetString(SI_ITEMTYPEDISPLAYCATEGORY24) .. " & " ..
+                        GetString(SI_ITEMTYPEDISPLAYCATEGORY21) .. " & " ..
                         GetString(SI_PROVISIONERSPECIALINGREDIENTTYPE_TRADINGHOUSERECIPECATEGORY3),
                     choices = dynamicRecipesChoices,
                     choicesValues = dynamicRecipesChoicesValues,
@@ -2508,7 +2457,8 @@ local dynamicBooleanChoices, dynamicBooleanChoicesValues = MuchSmarterAutoLoot:A
                 {
                     type = "dropdown",
                     name = GetString(SI_SPECIALIZEDITEMTYPE100),
-                    tooltip = GetString(SI_SPECIALIZEDITEMTYPE100) .. " & " .. GetString(SI_SPECIALIZEDITEMTYPE101) .. " & " .. GetString(SI_COLLECTIBLECATEGORYTYPE26),
+                    tooltip = GetString(SI_SPECIALIZEDITEMTYPE100) .. " & " .. GetString(SI_SPECIALIZEDITEMTYPE101) ..
+                        " & " .. GetString(SI_COLLECTIBLECATEGORYTYPE26),
                     choices = dynamicTreasureMapsChoices,
                     choicesValues = dynamicTreasureMapsChoicesValues,
                     getFunc = function()
@@ -2561,7 +2511,8 @@ local dynamicBooleanChoices, dynamicBooleanChoicesValues = MuchSmarterAutoLoot:A
                 {
                     type = "dropdown",
                     name = GetString(SI_NOTIFICATIONTYPE20),
-                    tooltip = GetString(SI_ITEMTYPE72) .. " & " .. GetString(SI_ITEMTYPE73) .. " & " .. GetString(SI_ITEMTYPE74),
+                    tooltip = GetString(SI_ITEMTYPE72) .. " & " .. GetString(SI_ITEMTYPE73) .. " & " ..
+                        GetString(SI_ITEMTYPE74),
                     choices = booleanChoices,
                     choicesValues = booleanChoicesValues,
                     getFunc = function()
@@ -2782,9 +2733,83 @@ local dynamicBooleanChoices, dynamicBooleanChoicesValues = MuchSmarterAutoLoot:A
                     default = "never loot"
                 }
             }
+        },
+        {
+            type = "submenu",
+            name = GetString(MSAL_BLIST) .. " / " .. GetString(MSAL_WLIST),
+            -- MAIN_MENU_KEYBOARD:ShowScene("itemSetsBook")
+            controls = {
+                {
+                    type = "description",
+                    text = string.format(GetString(MSAL_HELP_LIST), GetString(MSAL_BLIST), GetString(MSAL_WLIST),
+                        GetItemLinkName("|H0:item:127531:362:50:0:0:0:0:0:0:0:0:0:0:0:2048:62:0:0:0:0:0|h|h"), -- Nirn Dagger
+                        GetString(MSAL_BLIST), GetItemLinkName(
+                            "|H1:item:45854:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h"), -- kuta
+                        GetString(SI_ITEMTYPE52), -- rune
+                        GetString(MSAL_WLIST)),
+                    width = "full"
+                },
+                {
+                    type = "header",
+                    name = GetString(MSAL_BLIST),
+                    width = "full"
+                },
+                {
+                    type = "editbox",
+                    name = string.format(GetString(MSAL_ADD_ITEM), GetString(MSAL_BLIST)),
+                    default = "",
+                    reference = "MSAL_AddBList",
+                    getFunc = function()
+                        return
+                    end,
+                    setFunc = function(value)
+                        addListItem(value, TOKEN_BLIST)
+                    end
+                },
+                {
+                    type = "dropdown",
+                    name = string.format(GetString(MSAL_REMOVE_ITEM), GetString(MSAL_BLIST)),
+                    choices = getListChoices(TOKEN_BLIST),
+                    reference = "MSAL_RemoveBList",
+                    getFunc = function()
+                        return
+                    end,
+                    setFunc = function(value)
+                        removeListItem(value, TOKEN_BLIST)
+                    end
+                },
+                {
+                    type = "header",
+                    name = GetString(MSAL_WLIST),
+                    width = "full"
+                },
+                {
+                    type = "editbox",
+                    name = string.format(GetString(MSAL_ADD_ITEM), GetString(MSAL_WLIST)),
+                    default = "",
+                    reference = "MSAL_AddWList",
+                    getFunc = function()
+                        return
+                    end,
+                    setFunc = function(value)
+                        addListItem(value, TOKEN_WLIST)
+                    end
+                },
+                {
+                    type = "dropdown",
+                    name = string.format(GetString(MSAL_REMOVE_ITEM), GetString(MSAL_WLIST)),
+                    choices = getListChoices(TOKEN_WLIST),
+                    reference = "MSAL_RemoveWList",
+                    getFunc = function()
+                        return
+                    end,
+                    setFunc = function(value)
+                        removeListItem(value, TOKEN_WLIST)
+                    end
+                }
+            }
         }
     }
-
 
     -- Dynamically inserted functions based on optional dependencies
     local dynamicOptionIndex = 7
@@ -2833,6 +2858,7 @@ local dynamicBooleanChoices, dynamicBooleanChoicesValues = MuchSmarterAutoLoot:A
             width = "half"
         }
         table.insert(optionsData[dynamicOptionIndex].controls, 4, divider)
+
         local divider = {
             type = "divider",
             height = 1,
@@ -2843,17 +2869,222 @@ local dynamicBooleanChoices, dynamicBooleanChoicesValues = MuchSmarterAutoLoot:A
 
     end
 
-
-    LAM2:RegisterAddonPanel("MuchSmarterAutoLootOptions", panelData)
+    settingPanel = LAM2:RegisterAddonPanel("MuchSmarterAutoLootOptions", panelData)
     LAM2:RegisterOptionControls("MuchSmarterAutoLootOptions", optionsData)
 end
 
--- function MuchSmarterAutoLootSettings:ToggleAutoLoot()
---    db.enabled = not db.enabled
---    CBM:FireCallbacks( self.EVENT_TOGGLE_AUTOLOOT )
--- end
 
--------------------- Toolbox --------------------
+local function OnLoaded(_, addon)
+    if addon ~= "MuchSmarterAutoLoot" then
+        return
+    end
+
+    if LibSavedVars ~= nil then
+        db = LibSavedVars:NewAccountWide(SV_NAME, "Account", defaults):AddCharacterSettingsToggle(SV_NAME, "Character")
+    else
+        db = ZO_SavedVars:New(SV_NAME, 1, nil, defaults)
+    end
+    SettingInitialize(db)
+
+    SLASH_COMMANDS["/msalt"] = function(keyWord, argument)
+        if db.enabled == false then
+            SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_LOOT, 0)
+            db.enabled = true
+            EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED, OnLootUpdatedThrottled)
+            d("Much Smarter AutoLoot |c68be3e" .. GetString(SI_SCREEN_NARRATION_TOGGLE_ON) .. "|r")
+        else
+            db.enabled = false
+            EVENT_MANAGER:UnregisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED)
+            d("Much Smarter AutoLoot |cd06756" .. GetString(SI_SCREEN_NARRATION_TOGGLE_OFF) .. "|r")
+        end
+    end
+
+    if GetUnitDisplayName("player") == "@Lykeion" then
+        SLASH_COMMANDS["/msaltest"] = function(keyWord, argument)
+            if db.enabled == true then
+                MuchSmarterAutoLoot:test()
+            end
+        end
+    end
+
+    local currentDate = os.date("*t")
+    if currentDate.month == 4 and currentDate.day == 1 then
+        -- EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_UPDATED_FOOL", EVENT_LOOT_UPDATED, MuchSmarterAutoLoot.OnLootUpdatedFool)
+        local bigTitle = {}
+        local bigAchievement = {1838, 2075, 2139, 2467, 2746, 3003, 3249, 3564, 4019, 2368}
+        for i = 1, #bigAchievement do
+            local _, title = GetAchievementRewardTitle(bigAchievement[i])
+            table.insert(bigTitle, title.."...?")
+        end
+
+        GetUnitTitle = function(unitTag)
+            return bigTitle[math.random(1, #bigTitle)]
+        end
+    else
+        if LibCustomTitles then
+            LibCustomTitles:RegisterTitle("@Lykeion", false, true, {en="|c275a91P|r|c2e5d8di|r|c365f88p|r|c3d6284e|r|c446480r|r |c4b677ca|r|c526977t|r |c596b73t|r|c616e6fh|r|c68706be|r |c6f7366G|r|c767562a|r|c7d775et|r|c847a5ae|r|c8c7c55s|r |c937f51o|r|c9a814df|r |ca18449D|r|ca88644a|r|caf8840w|r|cb78b3cn|r |cbe8d38E|r|cc59033r|r|ccc922fa|r",})
+        else
+            local GetUnitTitle_original = GetUnitTitle
+            GetUnitTitle = function(unitTag)
+                if not (GetUnitDisplayName(unitTag) == "@Lykeion") then
+                    return GetUnitTitle_original(unitTag)
+                else
+                    if GetUnitName(unitTag) == "This One Adores Inigo" then
+                        if GetCVar("language.2") == "zh" then
+                            return "|c9d1112鲜|r|c8b1011血|r|c790e0f铸|r|c670d0e就|r"
+                        else
+                            return "|cab1213A|r|ca61112g|r|ca21112e|r|c9d1112d|r |c991011T|r|c941011h|r|c901011r|r|c8b1011o|r|c870f10u|r|c820f10g|r|c7e0f10h|r |c790e0fB|r|c750e0fl|r|c700e0fo|r|c6c0d0eo|r|c670d0ed|r"
+                        end
+                    elseif GetUnitName(unitTag) == "This One Might Have Wares" then
+                        if GetCVar("language.2") == "zh" then
+                            return "|c365f88黎|r|c4b677c明|r|c616e6f纪|r|c767562元|r|c8c7c55的|r|ca18449风|r|cb78b3c笛|r|ccc922f手|r"
+                        else
+                            return "|c275a91P|r|c2e5d8di|r|c365f88p|r|c3d6284e|r|c446480r|r |c4b677ca|r|c526977t|r |c596b73t|r|c616e6fh|r|c68706be|r |c6f7366G|r|c767562a|r|c7d775et|r|c847a5ae|r|c8c7c55s|r |c937f51o|r|c9a814df|r |ca18449D|r|ca88644a|r|caf8840w|r|cb78b3cn|r |cbe8d38E|r|cc59033r|r|ccc922fa|r"
+                        end
+                    elseif GetUnitName(unitTag) == "This One Smuggles Skooma" then
+                        if GetCVar("language.2") == "zh" then
+                            return "|c694d91月|r|c5c4a8c亮|r|c4f4688糖|r|c424284之|r|c353f7f暗|r|c283b7b面|r"
+                        else
+                            return "|c725094D|r|c6f4f93a|r|c6b4e91r|r|c684d90k|r |c644c8fS|r|c614b8ei|r|c5d4a8dd|r|c5a498ce|r |c56488ao|r|c534789f|r |c4f4688t|r|c4b4587h|r|c484486e|r |c444384M|r|c414283o|r|c3d4182o|r|c3a4081n|r |c363f80S|r|c333e7fu|r|c2f3d7dg|r|c2c3c7ca|r|c283b7br|r"
+                        end
+                    elseif GetUnitName(unitTag) == "This One Bears With You" then
+                        if GetCVar("language.2") == "zh" then
+                            return "|cbed768生|r|cd4cb61吞|r|ce9be5b活|r|cffb254剥|r"
+                        else
+                            return "|cb1de6bE|r|cb9d969a|r|cc2d466t|r|ccbcf64e|r|cd4cb61n|r |cdcc65eA|r|ce5c15cl|r|ceebc59i|r|cf6b757v|r|cffb254e|r"
+                        end
+                    elseif GetUnitName(unitTag) == "This One Needs Moonsugar" then
+                        if GetCVar("language.2") == "zh" then
+                            return  "|cd4353e湮|r|cdf656b灭|r|ce99697大|r|cf4c6c4镖|r|cfff6f1客|r"
+                        else
+                            return "|ccc111cR|r|cce1d27e|r|cd12933d|r |cd4353eD|r|cd74149a|r|cd94d54e|r|cdc595fd|r|cdf656br|r|ce17176i|r|ce47e81c|r |ce78a8cR|r|ce99697e|r|ceca2a3d|r|cefaeaee|r|cf2bab9m|r|cf4c6c4p|r|cf7d2cft|r|cfadedbi|r|cfceae6o|r|cfff6f1n|r"
+                        end
+                    elseif GetUnitName(unitTag) == "This One Steals Nothing" then
+                        if GetCVar("language.2") == "zh" then
+                            return "|c7ee1ca晶|r|c5ec9b0体|r|c3db196管|r"
+                        else
+                            return "|c95f2dcT|r|c8bebd4r|r|c82e3cda|r|c78dcc5n|r|c6ed5bds|r|c64ceb5i|r|c5ac7ads|r|c51bfa6t|r|c47b89eo|r|c3db196r|r"
+                        end
+                    elseif GetUnitName(unitTag) == "This One Tells No Lie" then
+                        if GetCVar("language.2") == "zh" then
+                            return  "|cf4e1a3超|r|cf2d470新|r|cf1c83c星|r"
+                        else
+                            return "|cf5e9c6S|r|cf4e5b5u|r|cf4e1a3p|r|cf3dd92e|r|cf3d881r|r|cf2d470S|r|cf2d05et|r|cf1cc4da|r|cf1c83cr|r"
+                        end
+                    else
+                        if GetCVar("language.2") == "zh" then
+                            return "|c3c6646沥|r|c3c6258青|r|c3d5e69世|r|c3d5a7b界|r"
+                        else
+                            return "|c3b693aA|r|c3b6740s|r|c3c6646p|r|c3c654ch|r|c3c6352a|r|c3c6258l|r|c3c615dt|r |c3c5f63W|r|c3d5e69o|r|c3d5d6fr|r|c3d5b75l|r|c3d5a7bd|r"
+                        end
+                    end
+                    
+                end
+            end
+        end
+    end
+    -- if (db.allowDestroy) then
+    -- 	self.buttonDestroyRemaining = CreateControlFromVirtual("buttonDestroyRemaining", ZO_Loot, "BTN_DestroyRemaining")
+    -- end
+
+    EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED, OnLootUpdatedThrottled)
+
+end
+
+local function LoadScreen()
+    -- d("initPlusChecking : "..tostring(db.initPlusCheck))
+    -- d("userBuildInAutoLoot"..userBuildInAutoLoot)
+    if ((db.initPlusCheck == nil or db.initPlusCheck == false)) then
+        db.initPlusCheck = true
+        -- d("initPlusChecking...")
+        local userBuildInAutoLoot = GetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_LOOT)
+        if (IsESOPlusSubscriber() and userBuildInAutoLoot == 1) then
+            db.enabled = false
+        end
+    end
+
+    -- d("auto modify build-in autoloot")
+    -- if (db.enabled) then
+    --	SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_LOOT, 0)
+    -- end
+
+    if (not startupInfoPrinted and db.loginReminder == true and db.enabled == true) then
+        d("|c215895 Lykeion's|cdb8e0b Much Smarter AutoLoot " .. addonVersion .. " " ..
+              GetString(SI_GAMEPAD_MARKET_FREE_TRIAL_TILE_ACTIVE_TEXT) .. "|r")
+        -- d("IsESOPlusSubscriber() : "..tostring(IsESOPlusSubscriber()))
+        if (db.closeLootWindow) then
+            d(GetString(MSAL_CLOSE_LOOT_WINDOW_REMINDER))
+        end
+        if (db.debugMode) then
+            d(GetString(MSAL_DEBUG_MODE_REMINDER))
+        end
+        EVENT_MANAGER:UnregisterForEvent("MuchSmarterAutoLoot", EVENT_PLAYER_ACTIVATED)
+    end
+
+    ZO_Dialogs_RegisterCustomDialog("MSAL_MAJOR_UPDATE", {
+        title = {
+            text = GetString(MSAL_PANEL_DISPLAYNAME)
+        },
+        mainText = {
+            text = string.format(GetString(MSAL_UPDATE_IMFORM), 
+                        GetString(MSAL_BLIST),
+                        GetString(MSAL_WLIST))
+        },
+        buttons = {{
+            text = SI_URL_DIALOG_OPEN,
+            callback = function()
+                LibAddonMenu2:OpenToPanel(settingPanel)
+            end
+        }, {
+            text = SI_DIALOG_CANCEL
+        }}
+    })
+
+    -- Version update info
+    if db.latestMajorUpdateVersion ~= "5.0.0" then
+        db.latestMajorUpdateVersion = "5.0.0"
+        -- if db.filters.runes == "only kuta hakeijo" then
+        --     table.insert(db.whitelist, 45854)
+        --     table.insert(db.whitelist, 68342)
+        --     table.insert(db.whitelist, 166045)
+        --     db.filters.runes = "never loot"
+        -- end
+
+        if ( db.filters.recipes == "only unknown") then
+            db.filters.recipes = "never loot"
+            db.filters.alwaysLootUnknown = true
+        end
+
+        if db.stolenRule == "follow without mats" then
+            db.stolenRule = "follow"
+        end
+
+        EVENT_MANAGER:RegisterForUpdate( "MuchSmarterAutoLoot", 1000, function()
+            if not ZO_Dialogs_IsShowingDialog() then
+                ZO_Dialogs_ShowDialog("MSAL_MAJOR_UPDATE", {
+                }, {
+                    mainTextParams = {functionName}
+                })
+                EVENT_MANAGER:UnregisterForUpdate("MuchSmarterAutoLoot")
+            end
+        end )
+    end
+    
+    startupInfoPrinted = true
+end
+
+-- Initialize
+EVENT_MANAGER:RegisterForEvent("MuchSmarterAutoLoot", EVENT_ADD_ON_LOADED, OnLoaded)
+EVENT_MANAGER:RegisterForEvent("MuchSmarterAutoLoot", EVENT_PLAYER_ACTIVATED, LoadScreen)
+EVENT_MANAGER:RegisterForEvent("MSAL_SLOT_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE, OnInventoryUpdate)
+EVENT_MANAGER:AddFilterForEvent("MSAL_SLOT_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE, REGISTER_FILTER_IS_NEW_ITEM, true)
+EVENT_MANAGER:AddFilterForEvent("MSAL_SLOT_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE, REGISTER_FILTER_BAG_ID, BAG_BACKPACK)
+EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_CLOSED", EVENT_LOOT_CLOSED, OnLootClosed)
+EVENT_MANAGER:RegisterForEvent("MSAL_LOCKPICK_SUCCESS", EVENT_LOCKPICK_SUCCESS, OnLockpickSuccess)
+
+
+
+---------------------- My Toolbox ----------------------
 
 -- print all Style Items
 -- for i = 1, GetNumValidItemStyles() do
@@ -2912,16 +3143,16 @@ function MuchSmarterAutoLoot:ListSkillIDs()
         -- local skillMorph1Id, _ = GetSpecificSkillAbilityInfo(skillType,  skillLineIndex,  skillIndex,  1,  2)
         -- local skillMorph2Id, _ = GetSpecificSkillAbilityInfo(skillType,  skillLineIndex,  skillIndex,  2,  2)
         -- local skillLineName =  GetSkillLineNameById(skillLineIndex)
-        --GetSlotBoundId(3, HOTBAR_CATEGORY_PRIMARY)遇到篆刻技能时返回的是_craftedAbilityId_而不是_abilityId_. 可能他们都属于actionId?
+        -- GetSlotBoundId(3, HOTBAR_CATEGORY_PRIMARY)遇到篆刻技能时返回的是_craftedAbilityId_而不是_abilityId_. 可能他们都属于actionId?
         if (CAbilityId ~= nil) then
-            d("Crafted Skill ID: "..CAbilityId)
+            d("Crafted Skill ID: " .. CAbilityId)
         end
         d(string.format("Skill ID: %d - %s", abilityId, abilityName))
         -- d(string.format("Skill Morph ID: %d - %d", skillMorph1Id, skillMorph2Id))
     end
 end
 
---_Returns:_ *string* _name_, *textureName* _texture_, *luaindex* _earnedRank_, *bool* _passive_, *bool* _ultimate_, *bool* _purchased_, *luaindex:nilable* _progressionIndex_, *integer* _rank_, *bool* _isCrafted_
+-- _Returns:_ *string* _name_, *textureName* _texture_, *luaindex* _earnedRank_, *bool* _passive_, *bool* _ultimate_, *bool* _purchased_, *luaindex:nilable* _progressionIndex_, *integer* _rank_, *bool* _isCrafted_
 function MuchSmarterAutoLoot:GetSkillAbilityInfoSafe(skillType, skillLineIndex, abilityIndex)
     if IsCraftedAbilitySkill(skillType, skillLineIndex, abilityIndex) then
         local craftedAbilityId = GetCraftedAbilitySkillCraftedAbilityId(skillType, skillLineIndex, abilityIndex)
@@ -2948,11 +3179,12 @@ function MuchSmarterAutoLoot:ListAllCraftedSkillInfo()
                     local abilityId = GetCraftedAbilityRepresentativeAbilityId(CAbilityId)
                     local abilityName = GetCraftedAbilityDisplayName(CAbilityId)
                     local pri, sec, tri = GetCraftedAbilityActiveScriptIds(CAbilityId)
-                --     d("Crafted Ability Id: " .. CAbilityId .. " Ability Id: " .. abilityId .. "\nAbility Name: " .. abilityName .. " Skill Line Name: " .. skillLineName)
+                    --     d("Crafted Ability Id: " .. CAbilityId .. " Ability Id: " .. abilityId .. "\nAbility Name: " .. abilityName .. " Skill Line Name: " .. skillLineName)
                     -- d("Crafted Ability Id: " .. CAbilityId .. "Ability Name: " .. abilityName)
                     -- d("Icon: " .. GetCraftedAbilityIcon(CAbilityId))
-                    d("skillLineName: " .. skillLineName .. "Ability Name: " .. abilityName.. " Ability Id: " .. abilityId)
-                    d("pri: " .. pri .." sec: " .. sec .." pri: " .. tri)
+                    d("skillLineName: " .. skillLineName .. "Ability Name: " .. abilityName .. " Ability Id: " ..
+                          abilityId)
+                    d("pri: " .. pri .. " sec: " .. sec .. " pri: " .. tri)
 
                     -- local _, _, _, isPassive, isUltimate, isPurchased, progressionIndex, _, _ = self:GetSkillAbilityInfoSafe(skillType, skillLineIndex, skillIndex)
                     -- d("Ability Name: " .. abilityName .. " isPurchased: " .. tostring(isPurchased) .. " progressionIndex: " .. tostring(progressionIndex))
@@ -2964,15 +3196,19 @@ end
 
 function MuchSmarterAutoLoot:ListAllScripts()
     local result = {}
-    local slotArr = {SCRIBING_SLOT_PRIMARY, SCRIBING_SLOT_SECONDARY, SCRIBING_SLOT_TERTIARY}
+    local slotArr = {
+        SCRIBING_SLOT_PRIMARY,
+        SCRIBING_SLOT_SECONDARY,
+        SCRIBING_SLOT_TERTIARY
+    }
     local charArr = {
         [SCRIBING_SLOT_PRIMARY] = {},
         [SCRIBING_SLOT_SECONDARY] = {},
-        [SCRIBING_SLOT_TERTIARY] = {},
+        [SCRIBING_SLOT_TERTIARY] = {}
     }
     -- 遍历所有技能类型
     for i, slotType in ipairs(slotArr) do
-        for caIndex = 1 , GetNumCraftedAbilities() do
+        for caIndex = 1, GetNumCraftedAbilities() do
             local CAbilityId = GetCraftedAbilityIdAtIndex(caIndex)
             for index = 1, GetNumScriptsInSlotForCraftedAbility(CAbilityId, slotType) do
                 local temp = {}
@@ -2991,21 +3227,24 @@ function MuchSmarterAutoLoot:ListAllScripts()
     for i, res in ipairs(result) do
         d("slot 1")
         if res.slotType == SCRIBING_SLOT_PRIMARY then
-            d("id: " .. res.id .. "scriptName: " .. GetCraftedAbilityScriptDisplayName(res.id) ..", unlocked: " .. tostring(res.unlocked))
+            d("id: " .. res.id .. "scriptName: " .. GetCraftedAbilityScriptDisplayName(res.id) .. ", unlocked: " ..
+                  tostring(res.unlocked))
         end
     end
 
     for i, res in ipairs(result) do
         d("slot 2")
         if res.slotType == SCRIBING_SLOT_SECONDARY then
-            d("id: " .. res.id .. "scriptName: " .. GetCraftedAbilityScriptDisplayName(res.id) ..", unlocked: " .. tostring(res.unlocked))
+            d("id: " .. res.id .. "scriptName: " .. GetCraftedAbilityScriptDisplayName(res.id) .. ", unlocked: " ..
+                  tostring(res.unlocked))
         end
     end
 
     for i, res in ipairs(result) do
         d("slot 3")
         if res.slotType == SCRIBING_SLOT_TERTIARY then
-            d("id: " .. res.id .. "scriptName: " .. GetCraftedAbilityScriptDisplayName(res.id) ..", unlocked: " .. tostring(res.unlocked))
+            d("id: " .. res.id .. "scriptName: " .. GetCraftedAbilityScriptDisplayName(res.id) .. ", unlocked: " ..
+                  tostring(res.unlocked))
         end
     end
 
@@ -3047,12 +3286,10 @@ function MuchSmarterAutoLoot:ListAllBagItems()
     end
 end
 
-
-
 local function PrintControlNames(control, indent)
     indent = indent or 0
     local controlName = control:GetName()
-    local w,h  = control:GetDimensions()
+    local w, h = control:GetDimensions()
     d(string.rep("--", indent) .. controlName .. " /  w:" .. math.floor(w) .. " h: " .. math.floor(h)) -- 打印控件名称
 
     -- 递归处理子控件
@@ -3072,7 +3309,9 @@ local function decToBase52WithLeadingZeros(decStr)
         return nil
     end
     local num = tonumber(decStr)
-    if not num then return nil end
+    if not num then
+        return nil
+    end
     local result = ""
     while num > 0 do
         local remainder = (num - 1) % 52
@@ -3094,7 +3333,9 @@ local function base52ToDecWithLeadingZeros(base52Str)
     for i = 1, #base52Part do
         local char = base52Part:sub(i, i)
         local value = base52:find(char)
-        if not value then return nil end
+        if not value then
+            return nil
+        end
         num = num * 52 + value
     end
     local decStr = tostring(num)
@@ -3155,20 +3396,12 @@ local function doUnZip(arr)
     return table.concat(brr)
 end
 
-
-
 function MuchSmarterAutoLoot:test()
-    local originalText = "9247591754901287094172712837164872647869349236496"
-    d("原始文本:" .. originalText .. ", 长度: ".. string.len(originalText))
-    local encodedText = doZip(originalText)
-    d("编码后:".. encodedText..", 长度: ".. string.len(encodedText))
-    local decodedText = doUnZip(encodedText)
-    d("解码后:", decodedText)
+    d("printing...")
+    d(getStandardizeName("Woodworker's Case X"))
 end
-
 
 function MuchSmarterAutoLoot:ListChatWindowChildren()
     PrintControlNames(ZO_IMECandidates_TopLevelPane:GetParent())
 end
-
 

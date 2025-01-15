@@ -1,6 +1,6 @@
 local NAME = "LibDataShare"
 
-local lib = {version = 4}
+local lib = {version = 6}
 _G[NAME] = lib
 
 local LMP = LibMapPing2
@@ -328,12 +328,43 @@ local function OnMapPing(eventCode, pingEventType, pingType, pingTag, offsetX, o
 end
 
 local function Initialize()
-	-- set the ping rate to every 10seconds because of API changes in U45
-	if GetAPIVersion() >= 101045 then
-		PING_RATE = 10020
-	end
 
 	local function OnPlayerActivated()
+
+		-- EOL detection
+		local ApiVersion = GetAPIVersion()
+		local WorldName = GetWorldName()
+		if ApiVersion >= 101046 then
+			if WorldName ~= "PTS" then
+				zo_callLater(function()
+					d("|cFF00FFWarning: 'LibDataShare' is now disabled due to API restrictions in Update 46. The MapPing API only allows one ping every 10 seconds, and this library is no longer functional. Please uninstall it to avoid seeing this message.|r")
+				end, 5000)
+
+				-- remove functionality of the addon completely by overwriting all functions of the Library
+				MapHandler.QueueData = function() end
+				MapHandler.SendData = function() end
+				lib.PrepareMap = function() return false end
+				lib.IsEnabled = function() return false end
+				lib.GetMapPing = function() return 0, 0 end
+				lib.SetMapPing = function() end
+				lib.ResolveConflicts = function() end
+				OnMapPing = function() end
+				MapStateChange = function() end
+
+				return -- exit Initialize function here to not load the OnPlayerActivated function
+			end
+
+
+			-- set the ping rate to every 10seconds because of API changes in U46
+			PING_RATE = 10200
+			zo_callLater(function()
+				d("|cFF00FFImportant: Please remove 'LibDataShare' from your add-ons! The MapPing API has been rate-limited in Update 46, allowing only one ping every 10 seconds. Continuing to use this library may result in being kicked from the server.|r")
+			end, 5000)
+		end
+
+
+
+
 		-- Unregister map ping handler.
 		EM:UnregisterForEvent(NAME, EVENT_MAP_PING)
 
@@ -356,7 +387,15 @@ local function Initialize()
 		end
 	end
 
+
+
 	EM:RegisterForEvent(NAME, EVENT_PLAYER_ACTIVATED, OnPlayerActivated)
+
 end
 
-Initialize()
+EM:RegisterForEvent(NAME, EVENT_ADD_ON_LOADED, function(_, name)
+	if name ~= NAME then return end
+	EM:UnregisterForEvent(NAME, EVENT_ADD_ON_LOADED)
+
+	Initialize()
+end)

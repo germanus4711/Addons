@@ -6,59 +6,12 @@ LostTreasure_Account =
         {
             ["$AccountWide"] = 
             {
-                ["notifications"] = 
-                {
-                },
-                ["pinTypes"] = 
-                {
-                    ["survey"] = 
-                    {
-                        ["deletionDelay"] = 10,
-                        ["markOption"] = "inventory",
-                        ["size"] = 32,
-                        ["pinLevel"] = 47,
-                        ["showOnMap"] = true,
-                        ["showOnCompass"] = true,
-                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
-                    },
-                    ["treasure"] = 
-                    {
-                        ["deletionDelay"] = 10,
-                        ["markOption"] = "inventory",
-                        ["size"] = 32,
-                        ["pinLevel"] = 47,
-                        ["showOnMap"] = true,
-                        ["showOnCompass"] = true,
-                        ["texture"] = "LibTreasure/Icons/x_red.dds",
-                    },
-                    ["clue"] = 
-                    {
-                        ["deletionDelay"] = 10,
-                        ["markOption"] = "inventory",
-                        ["size"] = 32,
-                        ["pinLevel"] = 47,
-                        ["showOnMap"] = true,
-                        ["showOnCompass"] = true,
-                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
-                    },
-                },
                 ["misc"] = 
                 {
                     ["hasNewIconPath"] = true,
                 },
-                ["mining"] = 
-                {
-                    ["data"] = 
-                    {
-                    },
-                    ["APIVersion"] = 101044,
-                    ["APITimeStamp"] = 1730152370,
-                },
-                ["version"] = 20,
                 ["miniMap"] = 
                 {
-                    ["deletionDelay"] = 4,
-                    ["enabled"] = true,
                     ["anchor"] = 
                     {
                         ["data"] = 
@@ -70,8 +23,55 @@ LostTreasure_Account =
                             [6] = 0,
                         },
                     },
+                    ["deletionDelay"] = 4,
                     ["size"] = 300,
+                    ["enabled"] = true,
                 },
+                ["mining"] = 
+                {
+                    ["APITimeStamp"] = 1730152370,
+                    ["data"] = 
+                    {
+                    },
+                    ["APIVersion"] = 101044,
+                },
+                ["pinTypes"] = 
+                {
+                    ["survey"] = 
+                    {
+                        ["showOnMap"] = true,
+                        ["size"] = 32,
+                        ["showOnCompass"] = true,
+                        ["markOption"] = "inventory",
+                        ["pinLevel"] = 47,
+                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
+                        ["deletionDelay"] = 10,
+                    },
+                    ["treasure"] = 
+                    {
+                        ["showOnMap"] = true,
+                        ["size"] = 32,
+                        ["showOnCompass"] = true,
+                        ["markOption"] = "inventory",
+                        ["pinLevel"] = 47,
+                        ["texture"] = "LibTreasure/Icons/x_red.dds",
+                        ["deletionDelay"] = 10,
+                    },
+                    ["clue"] = 
+                    {
+                        ["showOnMap"] = true,
+                        ["size"] = 32,
+                        ["showOnCompass"] = true,
+                        ["markOption"] = "inventory",
+                        ["pinLevel"] = 47,
+                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
+                        ["deletionDelay"] = 10,
+                    },
+                },
+                ["notifications"] = 
+                {
+                },
+                ["version"] = 20,
             },
         },
     },

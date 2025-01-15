@@ -475,11 +475,17 @@ function Settings:InitializeLAM()
 		type = "checkbox",
 		name = Harvest.GetLocalization("worldpinsdepth"),
 		tooltip = Harvest.GetLocalization("worldpinsdepthtooltip"),
-		warning = Harvest.GetLocalization("worldpinsdepthwarning"),
-		getFunc = Harvest.DoWorldPinsUseDepth,
-		setFunc = Harvest.SetWorldPinsUseDepth,
-		default = Harvest.settings.defaultSettings.worldPinDepth,
+		--warning = Harvest.GetLocalization("worldpinsdepthwarning"),
+		getFunc = Harvest.IsSeeThroughWallsEnabled,
+		setFunc = Harvest.SetSeeThroughWallsEnabled,
+		default = not Harvest.settings.defaultSettings.worldPinDepth,
 		disabled = IsWorldDisabled,
+	})
+	
+	submenuTable:insert({
+		type = "description",
+		title = nil,
+		text = Harvest.GetLocalization("worldpinsdepthtext")
 	})
 	
 	local filterTable = setmetatable({}, { __index = table })

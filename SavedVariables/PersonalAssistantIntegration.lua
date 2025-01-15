@@ -7,21 +7,19 @@ PersonalAssistantIntegration_SavedVariables =
             ["$AccountWide"] = 
             {
                 ["savedVarsVersion"] = 20240922,
-                ["profileCounter"] = 1,
                 [1] = 
                 {
                     ["FCOItemSaver"] = 
                     {
-                        ["Locked"] = 
+                        ["Improvement"] = 
                         {
-                            ["preventAutoSell"] = false,
-                            ["preventMoving"] = true,
+                            ["itemMoveMode"] = 0,
                         },
                         ["Research"] = 
                         {
                             ["itemMoveMode"] = 1,
                         },
-                        ["Improvement"] = 
+                        ["SellGuildStore"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
@@ -32,6 +30,15 @@ PersonalAssistantIntegration_SavedVariables =
                         ["Sell"] = 
                         {
                             ["autoSellMarked"] = false,
+                        },
+                        ["Deconstruction"] = 
+                        {
+                            ["itemMoveMode"] = 2,
+                        },
+                        ["Locked"] = 
+                        {
+                            ["preventAutoSell"] = false,
+                            ["preventMoving"] = true,
                         },
                         ["GearSets"] = 
                         {
@@ -44,29 +51,22 @@ PersonalAssistantIntegration_SavedVariables =
                                 [5] = 0,
                             },
                         },
-                        ["SellGuildStore"] = 
-                        {
-                            ["itemMoveMode"] = 0,
-                        },
                         ["DynamicIcons"] = 
                         {
                         },
-                        ["Deconstruction"] = 
-                        {
-                            ["itemMoveMode"] = 2,
-                        },
                     },
+                    ["name"] = "Profile 1",
                     ["LazyWritCrafter"] = 
                     {
                         ["compatibility"] = true,
                     },
-                    ["name"] = "Profile 1",
                     ["CharacterKnowledge"] = 
                     {
                         ["characterName"] = "Freya Orm",
                         ["enabled"] = true,
                     },
                 },
+                ["profileCounter"] = 1,
                 ["version"] = 1,
             },
         },

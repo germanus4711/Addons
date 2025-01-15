@@ -4,375 +4,57 @@ CombatMetrics_Save =
     {
         ["@germanus4711"] = 
         {
-            ["8796093025384257"] = 
-            {
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-                ["Settings"] = 
-                {
-                    ["currentNotificationVersion"] = 0,
-                    ["CombatMetrics_Report"] = 
-                    {
-                        ["x"] = 2560,
-                        ["y"] = 645,
-                    },
-                    ["NotificationRead"] = 0,
-                    ["FightReport"] = 
-                    {
-                        ["mainpanel"] = "FightStats",
-                        ["rightpanel"] = "buffs",
-                        ["showWereWolf"] = false,
-                        ["scale"] = 1,
-                        ["showPets"] = true,
-                        ["Cursor"] = true,
-                        ["category"] = "damageOut",
-                        ["maxValue"] = 
-                        {
-                            ["healingOut"] = true,
-                            ["damageOut"] = true,
-                            ["damageIn"] = true,
-                            ["healingIn"] = true,
-                        },
-                        ["PlotColors"] = 
-                        {
-                            [1] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [2] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 0,
-                            },
-                            [3] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [4] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [5] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [6] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 0.4000000000,
-                                [2] = 1,
-                                [3] = 0.4000000000,
-                            },
-                            [7] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 1,
-                                [2] = 0.4000000000,
-                                [3] = 0.9000000000,
-                            },
-                        },
-                        ["FavouriteBuffs"] = 
-                        {
-                        },
-                        ["useDisplayNames"] = false,
-                        ["hitCritLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["CLSelection"] = 
-                        {
-                            [16] = false,
-                            [4] = true,
-                            [5] = false,
-                            [7] = false,
-                            [8] = false,
-                            [10] = false,
-                            [11] = false,
-                            [12] = false,
-                            [13] = false,
-                            [14] = false,
-                            [15] = false,
-                        },
-                        ["ShowGroupBuffsInPlots"] = true,
-                        ["fightstatspanel"] = 4,
-                        ["averageLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["SmoothWindow"] = 5,
-                    },
-                    ["NotificationAllowed"] = true,
-                    ["autoscreenshotmintime"] = 30,
-                    ["accountwide"] = false,
-                    ["lightmodeincyrodil"] = true,
-                    ["unitresistance"] = 18200,
-                    ["SVsize"] = 0.0000381470,
-                    ["CombatMetrics_LiveReport"] = 
-                    {
-                        ["x"] = 1601,
-                        ["y"] = 42,
-                    },
-                    ["crusherValue"] = 2108,
-                    ["keepbossfights"] = false,
-                    ["chatLog"] = 
-                    {
-                        ["name"] = "CMX Combat Log",
-                        ["damageIn"] = false,
-                        ["healingIn"] = false,
-                        ["damageOut"] = true,
-                        ["healingOut"] = false,
-                        ["enabled"] = false,
-                    },
-                    ["recordgrp"] = true,
-                    ["tremorscaleValue"] = 2640,
-                    ["fighthistory"] = 25,
-                    ["autoselectchatchannel"] = true,
-                    ["showDebugIds"] = false,
-                    ["showstacks"] = true,
-                    ["version"] = 5,
-                    ["ForceNotification"] = false,
-                    ["lightmode"] = false,
-                    ["offincyrodil"] = false,
-                    ["maxSVsize"] = 10,
-                    ["chunksize"] = 1000,
-                    ["recordgrpinlarge"] = true,
-                    ["autoscreenshot"] = false,
-                    ["alkoshValue"] = 6000,
-                    ["liveReport"] = 
-                    {
-                        ["layout"] = "Compact",
-                        ["damageOut"] = true,
-                        ["time"] = true,
-                        ["damageOutSingle"] = false,
-                        ["alignmentleft"] = false,
-                        ["locked"] = false,
-                        ["bgalpha"] = 95,
-                        ["scale"] = 1,
-                        ["healOut"] = true,
-                        ["damageIn"] = true,
-                        ["healOutAbsolute"] = false,
-                        ["healIn"] = true,
-                        ["enabled"] = true,
-                    },
-                },
-            },
-            ["8796093072557313"] = 
-            {
-                ["$LastCharacterName"] = "Gamal Loki",
-                ["Settings"] = 
-                {
-                    ["currentNotificationVersion"] = 1,
-                    ["CombatMetrics_Report"] = 
-                    {
-                        ["x"] = 2560,
-                        ["y"] = 645,
-                    },
-                    ["NotificationRead"] = 0,
-                    ["FightReport"] = 
-                    {
-                        ["mainpanel"] = "FightStats",
-                        ["rightpanel"] = "buffs",
-                        ["showWereWolf"] = false,
-                        ["scale"] = 1,
-                        ["showPets"] = true,
-                        ["Cursor"] = true,
-                        ["category"] = "damageOut",
-                        ["maxValue"] = 
-                        {
-                            ["healingOut"] = true,
-                            ["damageOut"] = true,
-                            ["damageIn"] = true,
-                            ["healingIn"] = true,
-                        },
-                        ["PlotColors"] = 
-                        {
-                            [1] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [2] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 0,
-                            },
-                            [3] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [4] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [5] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [6] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 0.4000000000,
-                                [2] = 1,
-                                [3] = 0.4000000000,
-                            },
-                            [7] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 1,
-                                [2] = 0.4000000000,
-                                [3] = 0.9000000000,
-                            },
-                        },
-                        ["FavouriteBuffs"] = 
-                        {
-                        },
-                        ["useDisplayNames"] = false,
-                        ["hitCritLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["CLSelection"] = 
-                        {
-                            [16] = false,
-                            [4] = true,
-                            [5] = false,
-                            [7] = false,
-                            [8] = false,
-                            [10] = false,
-                            [11] = false,
-                            [12] = false,
-                            [13] = false,
-                            [14] = false,
-                            [15] = false,
-                        },
-                        ["ShowGroupBuffsInPlots"] = true,
-                        ["fightstatspanel"] = 32,
-                        ["averageLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["SmoothWindow"] = 5,
-                    },
-                    ["NotificationAllowed"] = true,
-                    ["autoscreenshotmintime"] = 30,
-                    ["accountwide"] = false,
-                    ["lightmodeincyrodil"] = true,
-                    ["unitresistance"] = 18200,
-                    ["SVsize"] = 0.0000381470,
-                    ["CombatMetrics_LiveReport"] = 
-                    {
-                        ["x"] = 1424,
-                        ["y"] = 34,
-                    },
-                    ["crusherValue"] = 2108,
-                    ["keepbossfights"] = false,
-                    ["chatLog"] = 
-                    {
-                        ["name"] = "CMX Combat Log",
-                        ["damageIn"] = false,
-                        ["healingIn"] = false,
-                        ["damageOut"] = true,
-                        ["healingOut"] = false,
-                        ["enabled"] = false,
-                    },
-                    ["recordgrp"] = true,
-                    ["tremorscaleValue"] = 2640,
-                    ["fighthistory"] = 25,
-                    ["autoselectchatchannel"] = true,
-                    ["showDebugIds"] = false,
-                    ["showstacks"] = true,
-                    ["version"] = 5,
-                    ["ForceNotification"] = false,
-                    ["lightmode"] = false,
-                    ["offincyrodil"] = false,
-                    ["maxSVsize"] = 10,
-                    ["chunksize"] = 1000,
-                    ["recordgrpinlarge"] = true,
-                    ["autoscreenshot"] = false,
-                    ["alkoshValue"] = 6000,
-                    ["liveReport"] = 
-                    {
-                        ["layout"] = "Compact",
-                        ["damageOut"] = true,
-                        ["time"] = true,
-                        ["damageOutSingle"] = false,
-                        ["alignmentleft"] = false,
-                        ["locked"] = false,
-                        ["bgalpha"] = 95,
-                        ["scale"] = 1,
-                        ["healOut"] = true,
-                        ["damageIn"] = true,
-                        ["healOutAbsolute"] = false,
-                        ["healIn"] = true,
-                        ["enabled"] = true,
-                    },
-                },
-            },
             ["8796093069174989"] = 
             {
-                ["$LastCharacterName"] = "Mike v Petra",
                 ["Settings"] = 
                 {
+                    ["chunksize"] = 1000,
+                    ["offincyrodil"] = false,
+                    ["ForceNotification"] = false,
                     ["currentNotificationVersion"] = 0,
-                    ["CombatMetrics_Report"] = 
-                    {
-                        ["x"] = 2560,
-                        ["y"] = 645,
-                    },
-                    ["NotificationRead"] = 0,
                     ["FightReport"] = 
                     {
-                        ["mainpanel"] = "FightStats",
-                        ["rightpanel"] = "buffs",
+                        ["ShowGroupBuffsInPlots"] = true,
                         ["showWereWolf"] = false,
+                        ["FavouriteBuffs"] = 
+                        {
+                        },
+                        ["SmoothWindow"] = 5,
+                        ["hitCritLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                        ["rightpanel"] = "buffs",
+                        ["mainpanel"] = "FightStats",
+                        ["useDisplayNames"] = false,
                         ["scale"] = 1,
-                        ["showPets"] = true,
                         ["Cursor"] = true,
+                        ["showPets"] = true,
+                        ["fightstatspanel"] = 32,
                         ["category"] = "damageOut",
+                        ["CLSelection"] = 
+                        {
+                            [16] = false,
+                            [4] = true,
+                            [5] = false,
+                            [7] = false,
+                            [8] = false,
+                            [10] = false,
+                            [11] = false,
+                            [12] = false,
+                            [13] = false,
+                            [14] = false,
+                            [15] = false,
+                        },
                         ["maxValue"] = 
                         {
+                            ["healingIn"] = true,
                             ["healingOut"] = true,
                             ["damageOut"] = true,
                             ["damageIn"] = true,
-                            ["healingIn"] = true,
                         },
                         ["PlotColors"] = 
                         {
@@ -426,1149 +108,295 @@ CombatMetrics_Save =
                                 [3] = 0.9000000000,
                             },
                         },
-                        ["FavouriteBuffs"] = 
-                        {
-                        },
-                        ["useDisplayNames"] = false,
-                        ["hitCritLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["CLSelection"] = 
-                        {
-                            [16] = false,
-                            [4] = true,
-                            [5] = false,
-                            [7] = false,
-                            [8] = false,
-                            [10] = false,
-                            [11] = false,
-                            [12] = false,
-                            [13] = false,
-                            [14] = false,
-                            [15] = false,
-                        },
-                        ["ShowGroupBuffsInPlots"] = true,
-                        ["fightstatspanel"] = 32,
                         ["averageLayout"] = 
                         {
+                            ["healingIn"] = 1,
                             ["healingOut"] = 1,
                             ["damageOut"] = 1,
                             ["damageIn"] = 1,
-                            ["healingIn"] = 1,
                         },
-                        ["SmoothWindow"] = 5,
                     },
-                    ["NotificationAllowed"] = true,
-                    ["autoscreenshotmintime"] = 30,
-                    ["accountwide"] = false,
-                    ["lightmodeincyrodil"] = true,
+                    ["recordgrp"] = true,
+                    ["NotificationRead"] = 0,
+                    ["lightmode"] = false,
                     ["unitresistance"] = 18200,
+                    ["autoscreenshotmintime"] = 30,
+                    ["CombatMetrics_Report"] = 
+                    {
+                        ["y"] = 645,
+                        ["x"] = 2560,
+                    },
+                    ["alkoshValue"] = 6000,
+                    ["chatLog"] = 
+                    {
+                        ["name"] = "CMX Combat Log",
+                        ["damageOut"] = true,
+                        ["enabled"] = false,
+                        ["healingIn"] = false,
+                        ["healingOut"] = false,
+                        ["damageIn"] = false,
+                    },
                     ["SVsize"] = 0.0000381470,
+                    ["keepbossfights"] = false,
+                    ["maxSVsize"] = 10,
+                    ["crusherValue"] = 2108,
+                    ["autoscreenshot"] = false,
+                    ["liveReport"] = 
+                    {
+                        ["alignmentleft"] = false,
+                        ["damageIn"] = true,
+                        ["time"] = true,
+                        ["enabled"] = true,
+                        ["scale"] = 1,
+                        ["layout"] = "Compact",
+                        ["bgalpha"] = 95,
+                        ["locked"] = false,
+                        ["damageOutSingle"] = false,
+                        ["damageOut"] = true,
+                        ["healOutAbsolute"] = false,
+                        ["healOut"] = true,
+                        ["healIn"] = true,
+                    },
                     ["CombatMetrics_LiveReport"] = 
                     {
-                        ["x"] = 1547,
                         ["y"] = 32,
+                        ["x"] = 1547,
                     },
-                    ["crusherValue"] = 2108,
-                    ["keepbossfights"] = false,
-                    ["chatLog"] = 
-                    {
-                        ["name"] = "CMX Combat Log",
-                        ["damageIn"] = false,
-                        ["healingIn"] = false,
-                        ["damageOut"] = true,
-                        ["healingOut"] = false,
-                        ["enabled"] = false,
-                    },
-                    ["recordgrp"] = true,
-                    ["tremorscaleValue"] = 2640,
-                    ["fighthistory"] = 25,
-                    ["autoselectchatchannel"] = true,
-                    ["showDebugIds"] = false,
-                    ["showstacks"] = true,
-                    ["version"] = 5,
-                    ["ForceNotification"] = false,
-                    ["lightmode"] = false,
-                    ["offincyrodil"] = false,
-                    ["maxSVsize"] = 10,
-                    ["chunksize"] = 1000,
                     ["recordgrpinlarge"] = true,
-                    ["autoscreenshot"] = false,
-                    ["alkoshValue"] = 6000,
-                    ["liveReport"] = 
-                    {
-                        ["layout"] = "Compact",
-                        ["damageOut"] = true,
-                        ["time"] = true,
-                        ["damageOutSingle"] = false,
-                        ["alignmentleft"] = false,
-                        ["locked"] = false,
-                        ["bgalpha"] = 95,
-                        ["scale"] = 1,
-                        ["healOut"] = true,
-                        ["damageIn"] = true,
-                        ["healOutAbsolute"] = false,
-                        ["healIn"] = true,
-                        ["enabled"] = true,
-                    },
-                },
-            },
-            ["8796093067546805"] = 
-            {
-                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
-                ["Settings"] = 
-                {
-                    ["currentNotificationVersion"] = 0,
-                    ["CombatMetrics_Report"] = 
-                    {
-                        ["x"] = 2560,
-                        ["y"] = 645,
-                    },
-                    ["NotificationRead"] = 0,
-                    ["FightReport"] = 
-                    {
-                        ["mainpanel"] = "FightStats",
-                        ["rightpanel"] = "buffs",
-                        ["showWereWolf"] = false,
-                        ["scale"] = 1,
-                        ["showPets"] = true,
-                        ["Cursor"] = true,
-                        ["category"] = "damageOut",
-                        ["maxValue"] = 
-                        {
-                            ["healingOut"] = true,
-                            ["damageOut"] = true,
-                            ["damageIn"] = true,
-                            ["healingIn"] = true,
-                        },
-                        ["PlotColors"] = 
-                        {
-                            [1] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [2] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 0,
-                            },
-                            [3] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [4] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [5] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [6] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 0.4000000000,
-                                [2] = 1,
-                                [3] = 0.4000000000,
-                            },
-                            [7] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 1,
-                                [2] = 0.4000000000,
-                                [3] = 0.9000000000,
-                            },
-                        },
-                        ["FavouriteBuffs"] = 
-                        {
-                        },
-                        ["useDisplayNames"] = false,
-                        ["hitCritLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["CLSelection"] = 
-                        {
-                            [16] = false,
-                            [4] = true,
-                            [5] = false,
-                            [7] = false,
-                            [8] = false,
-                            [10] = false,
-                            [11] = false,
-                            [12] = false,
-                            [13] = false,
-                            [14] = false,
-                            [15] = false,
-                        },
-                        ["ShowGroupBuffsInPlots"] = true,
-                        ["fightstatspanel"] = 32,
-                        ["averageLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["SmoothWindow"] = 5,
-                    },
-                    ["NotificationAllowed"] = true,
-                    ["autoscreenshotmintime"] = 30,
-                    ["accountwide"] = false,
+                    ["version"] = 5,
+                    ["showDebugIds"] = false,
+                    ["autoselectchatchannel"] = true,
                     ["lightmodeincyrodil"] = true,
-                    ["unitresistance"] = 18200,
-                    ["SVsize"] = 0.0000381470,
-                    ["CombatMetrics_LiveReport"] = 
-                    {
-                        ["x"] = 1556,
-                        ["y"] = 46,
-                    },
-                    ["crusherValue"] = 2108,
-                    ["keepbossfights"] = false,
-                    ["chatLog"] = 
-                    {
-                        ["name"] = "CMX Combat Log",
-                        ["damageIn"] = false,
-                        ["healingIn"] = false,
-                        ["damageOut"] = true,
-                        ["healingOut"] = false,
-                        ["enabled"] = false,
-                    },
-                    ["recordgrp"] = true,
-                    ["tremorscaleValue"] = 2640,
                     ["fighthistory"] = 25,
-                    ["autoselectchatchannel"] = true,
-                    ["showDebugIds"] = false,
+                    ["tremorscaleValue"] = 2640,
+                    ["accountwide"] = false,
                     ["showstacks"] = true,
-                    ["version"] = 5,
-                    ["ForceNotification"] = false,
-                    ["lightmode"] = false,
-                    ["offincyrodil"] = false,
-                    ["maxSVsize"] = 10,
-                    ["chunksize"] = 1000,
-                    ["recordgrpinlarge"] = true,
-                    ["autoscreenshot"] = false,
-                    ["alkoshValue"] = 6000,
-                    ["liveReport"] = 
-                    {
-                        ["layout"] = "Compact",
-                        ["damageOut"] = true,
-                        ["time"] = true,
-                        ["damageOutSingle"] = false,
-                        ["alignmentleft"] = false,
-                        ["locked"] = false,
-                        ["bgalpha"] = 95,
-                        ["scale"] = 1,
-                        ["healOut"] = true,
-                        ["damageIn"] = true,
-                        ["healOutAbsolute"] = false,
-                        ["healIn"] = true,
-                        ["enabled"] = true,
-                    },
+                    ["NotificationAllowed"] = true,
                 },
+                ["$LastCharacterName"] = "Mike v Petra",
             },
             ["8796093062295781"] = 
             {
-                ["$LastCharacterName"] = "Fridolin The Great",
                 ["Settings"] = 
                 {
+                    ["chunksize"] = 1000,
+                    ["offincyrodil"] = false,
+                    ["ForceNotification"] = false,
                     ["currentNotificationVersion"] = 0,
-                    ["CombatMetrics_Report"] = 
-                    {
-                        ["x"] = 2560,
-                        ["y"] = 645,
-                    },
-                    ["NotificationRead"] = 0,
                     ["FightReport"] = 
                     {
-                        ["mainpanel"] = "FightStats",
-                        ["rightpanel"] = "buffs",
+                        ["ShowGroupBuffsInPlots"] = true,
                         ["showWereWolf"] = false,
-                        ["scale"] = 1,
-                        ["showPets"] = true,
-                        ["Cursor"] = true,
-                        ["category"] = "damageOut",
-                        ["maxValue"] = 
-                        {
-                            ["healingOut"] = true,
-                            ["damageOut"] = true,
-                            ["damageIn"] = true,
-                            ["healingIn"] = true,
-                        },
-                        ["PlotColors"] = 
-                        {
-                            [1] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [2] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 0,
-                            },
-                            [3] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [4] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [5] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [6] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 0.4000000000,
-                                [2] = 1,
-                                [3] = 0.4000000000,
-                            },
-                            [7] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 1,
-                                [2] = 0.4000000000,
-                                [3] = 0.9000000000,
-                            },
-                        },
                         ["FavouriteBuffs"] = 
                         {
                         },
-                        ["useDisplayNames"] = false,
+                        ["SmoothWindow"] = 5,
                         ["hitCritLayout"] = 
                         {
+                            ["healingIn"] = 1,
                             ["healingOut"] = 1,
                             ["damageOut"] = 1,
                             ["damageIn"] = 1,
-                            ["healingIn"] = 1,
                         },
-                        ["CLSelection"] = 
-                        {
-                            [16] = false,
-                            [4] = true,
-                            [5] = false,
-                            [7] = false,
-                            [8] = false,
-                            [10] = false,
-                            [11] = false,
-                            [12] = false,
-                            [13] = false,
-                            [14] = false,
-                            [15] = false,
-                        },
-                        ["ShowGroupBuffsInPlots"] = true,
+                        ["rightpanel"] = "buffs",
+                        ["mainpanel"] = "FightStats",
+                        ["useDisplayNames"] = false,
+                        ["scale"] = 1,
+                        ["Cursor"] = true,
+                        ["showPets"] = true,
                         ["fightstatspanel"] = 32,
+                        ["category"] = "damageOut",
+                        ["CLSelection"] = 
+                        {
+                            [16] = false,
+                            [4] = true,
+                            [5] = false,
+                            [7] = false,
+                            [8] = false,
+                            [10] = false,
+                            [11] = false,
+                            [12] = false,
+                            [13] = false,
+                            [14] = false,
+                            [15] = false,
+                        },
+                        ["maxValue"] = 
+                        {
+                            ["healingIn"] = true,
+                            ["healingOut"] = true,
+                            ["damageOut"] = true,
+                            ["damageIn"] = true,
+                        },
+                        ["PlotColors"] = 
+                        {
+                            [1] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [2] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 0,
+                            },
+                            [3] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [4] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [5] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [6] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 0.4000000000,
+                                [2] = 1,
+                                [3] = 0.4000000000,
+                            },
+                            [7] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 1,
+                                [2] = 0.4000000000,
+                                [3] = 0.9000000000,
+                            },
+                        },
                         ["averageLayout"] = 
                         {
+                            ["healingIn"] = 1,
                             ["healingOut"] = 1,
                             ["damageOut"] = 1,
                             ["damageIn"] = 1,
-                            ["healingIn"] = 1,
                         },
-                        ["SmoothWindow"] = 5,
                     },
-                    ["NotificationAllowed"] = true,
-                    ["autoscreenshotmintime"] = 30,
-                    ["accountwide"] = false,
-                    ["lightmodeincyrodil"] = true,
+                    ["recordgrp"] = true,
+                    ["NotificationRead"] = 0,
+                    ["lightmode"] = false,
                     ["unitresistance"] = 18200,
+                    ["autoscreenshotmintime"] = 30,
+                    ["CombatMetrics_Report"] = 
+                    {
+                        ["y"] = 645,
+                        ["x"] = 2560,
+                    },
+                    ["alkoshValue"] = 6000,
+                    ["chatLog"] = 
+                    {
+                        ["name"] = "CMX Combat Log",
+                        ["damageOut"] = true,
+                        ["enabled"] = false,
+                        ["healingIn"] = false,
+                        ["healingOut"] = false,
+                        ["damageIn"] = false,
+                    },
                     ["SVsize"] = 0.0000381470,
+                    ["keepbossfights"] = false,
+                    ["maxSVsize"] = 10,
+                    ["crusherValue"] = 2108,
+                    ["autoscreenshot"] = false,
+                    ["liveReport"] = 
+                    {
+                        ["alignmentleft"] = false,
+                        ["damageIn"] = true,
+                        ["time"] = true,
+                        ["enabled"] = true,
+                        ["scale"] = 1,
+                        ["layout"] = "Compact",
+                        ["bgalpha"] = 95,
+                        ["locked"] = false,
+                        ["damageOutSingle"] = false,
+                        ["damageOut"] = true,
+                        ["healOutAbsolute"] = false,
+                        ["healOut"] = true,
+                        ["healIn"] = true,
+                    },
                     ["CombatMetrics_LiveReport"] = 
                     {
+                        ["y"] = 40,
                         ["x"] = 1450,
-                        ["y"] = 40,
                     },
-                    ["crusherValue"] = 2108,
-                    ["keepbossfights"] = false,
-                    ["chatLog"] = 
-                    {
-                        ["name"] = "CMX Combat Log",
-                        ["damageIn"] = false,
-                        ["healingIn"] = false,
-                        ["damageOut"] = true,
-                        ["healingOut"] = false,
-                        ["enabled"] = false,
-                    },
-                    ["recordgrp"] = true,
-                    ["tremorscaleValue"] = 2640,
-                    ["fighthistory"] = 25,
-                    ["autoselectchatchannel"] = true,
-                    ["showDebugIds"] = false,
-                    ["showstacks"] = true,
-                    ["version"] = 5,
-                    ["ForceNotification"] = false,
-                    ["lightmode"] = false,
-                    ["offincyrodil"] = false,
-                    ["maxSVsize"] = 10,
-                    ["chunksize"] = 1000,
                     ["recordgrpinlarge"] = true,
-                    ["autoscreenshot"] = false,
-                    ["alkoshValue"] = 6000,
-                    ["liveReport"] = 
-                    {
-                        ["layout"] = "Compact",
-                        ["damageOut"] = true,
-                        ["time"] = true,
-                        ["damageOutSingle"] = false,
-                        ["alignmentleft"] = false,
-                        ["locked"] = false,
-                        ["bgalpha"] = 95,
-                        ["scale"] = 1,
-                        ["healOut"] = true,
-                        ["damageIn"] = true,
-                        ["healOutAbsolute"] = false,
-                        ["healIn"] = true,
-                        ["enabled"] = true,
-                    },
-                },
-            },
-            ["8796093064640125"] = 
-            {
-                ["$LastCharacterName"] = "Maüschen",
-                ["Settings"] = 
-                {
-                    ["currentNotificationVersion"] = 0,
-                    ["CombatMetrics_Report"] = 
-                    {
-                        ["x"] = 2560,
-                        ["y"] = 645,
-                    },
-                    ["NotificationRead"] = 0,
-                    ["FightReport"] = 
-                    {
-                        ["mainpanel"] = "FightStats",
-                        ["rightpanel"] = "buffs",
-                        ["showWereWolf"] = false,
-                        ["scale"] = 1,
-                        ["showPets"] = true,
-                        ["Cursor"] = true,
-                        ["category"] = "damageOut",
-                        ["maxValue"] = 
-                        {
-                            ["healingOut"] = true,
-                            ["damageOut"] = true,
-                            ["damageIn"] = true,
-                            ["healingIn"] = true,
-                        },
-                        ["PlotColors"] = 
-                        {
-                            [1] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [2] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 0,
-                            },
-                            [3] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [4] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [5] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [6] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 0.4000000000,
-                                [2] = 1,
-                                [3] = 0.4000000000,
-                            },
-                            [7] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 1,
-                                [2] = 0.4000000000,
-                                [3] = 0.9000000000,
-                            },
-                        },
-                        ["FavouriteBuffs"] = 
-                        {
-                        },
-                        ["useDisplayNames"] = false,
-                        ["hitCritLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["CLSelection"] = 
-                        {
-                            [16] = false,
-                            [4] = true,
-                            [5] = false,
-                            [7] = false,
-                            [8] = false,
-                            [10] = false,
-                            [11] = false,
-                            [12] = false,
-                            [13] = false,
-                            [14] = false,
-                            [15] = false,
-                        },
-                        ["ShowGroupBuffsInPlots"] = true,
-                        ["fightstatspanel"] = 4,
-                        ["averageLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["SmoothWindow"] = 5,
-                    },
-                    ["NotificationAllowed"] = true,
-                    ["autoscreenshotmintime"] = 30,
-                    ["accountwide"] = false,
+                    ["version"] = 5,
+                    ["showDebugIds"] = false,
+                    ["autoselectchatchannel"] = true,
                     ["lightmodeincyrodil"] = true,
-                    ["unitresistance"] = 18200,
-                    ["SVsize"] = 0.0000381470,
-                    ["CombatMetrics_LiveReport"] = 
-                    {
-                        ["x"] = 1425,
-                        ["y"] = 34,
-                    },
-                    ["crusherValue"] = 2108,
-                    ["keepbossfights"] = false,
-                    ["chatLog"] = 
-                    {
-                        ["name"] = "CMX Combat Log",
-                        ["damageIn"] = false,
-                        ["healingIn"] = false,
-                        ["damageOut"] = true,
-                        ["healingOut"] = false,
-                        ["enabled"] = false,
-                    },
-                    ["recordgrp"] = true,
-                    ["tremorscaleValue"] = 2640,
                     ["fighthistory"] = 25,
-                    ["autoselectchatchannel"] = true,
-                    ["showDebugIds"] = false,
-                    ["showstacks"] = true,
-                    ["version"] = 5,
-                    ["ForceNotification"] = false,
-                    ["lightmode"] = false,
-                    ["offincyrodil"] = false,
-                    ["maxSVsize"] = 10,
-                    ["chunksize"] = 1000,
-                    ["recordgrpinlarge"] = true,
-                    ["autoscreenshot"] = false,
-                    ["alkoshValue"] = 6000,
-                    ["liveReport"] = 
-                    {
-                        ["layout"] = "Compact",
-                        ["damageOut"] = true,
-                        ["time"] = true,
-                        ["damageOutSingle"] = false,
-                        ["alignmentleft"] = false,
-                        ["locked"] = false,
-                        ["bgalpha"] = 95,
-                        ["scale"] = 1,
-                        ["healOut"] = true,
-                        ["damageIn"] = true,
-                        ["healOutAbsolute"] = false,
-                        ["healIn"] = true,
-                        ["enabled"] = true,
-                    },
-                },
-            },
-            ["8796093027479535"] = 
-            {
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
-                ["Settings"] = 
-                {
-                    ["currentNotificationVersion"] = 0,
-                    ["CombatMetrics_Report"] = 
-                    {
-                        ["x"] = 2560,
-                        ["y"] = 645,
-                    },
-                    ["NotificationRead"] = 0,
-                    ["FightReport"] = 
-                    {
-                        ["mainpanel"] = "FightStats",
-                        ["rightpanel"] = "buffs",
-                        ["showWereWolf"] = false,
-                        ["scale"] = 1,
-                        ["showPets"] = true,
-                        ["Cursor"] = true,
-                        ["category"] = "damageOut",
-                        ["maxValue"] = 
-                        {
-                            ["healingOut"] = true,
-                            ["damageOut"] = true,
-                            ["damageIn"] = true,
-                            ["healingIn"] = true,
-                        },
-                        ["PlotColors"] = 
-                        {
-                            [1] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [2] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 0,
-                            },
-                            [3] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [4] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [5] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [6] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 0.4000000000,
-                                [2] = 1,
-                                [3] = 0.4000000000,
-                            },
-                            [7] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 1,
-                                [2] = 0.4000000000,
-                                [3] = 0.9000000000,
-                            },
-                        },
-                        ["FavouriteBuffs"] = 
-                        {
-                        },
-                        ["useDisplayNames"] = false,
-                        ["hitCritLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["CLSelection"] = 
-                        {
-                            [16] = false,
-                            [4] = true,
-                            [5] = false,
-                            [7] = false,
-                            [8] = false,
-                            [10] = false,
-                            [11] = false,
-                            [12] = false,
-                            [13] = false,
-                            [14] = false,
-                            [15] = false,
-                        },
-                        ["ShowGroupBuffsInPlots"] = true,
-                        ["fightstatspanel"] = 1,
-                        ["averageLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["SmoothWindow"] = 5,
-                    },
-                    ["NotificationAllowed"] = true,
-                    ["autoscreenshotmintime"] = 30,
+                    ["tremorscaleValue"] = 2640,
                     ["accountwide"] = false,
-                    ["lightmodeincyrodil"] = true,
-                    ["unitresistance"] = 18200,
-                    ["SVsize"] = 0.0000381470,
-                    ["CombatMetrics_LiveReport"] = 
-                    {
-                        ["x"] = 1533,
-                        ["y"] = 37,
-                    },
-                    ["crusherValue"] = 2108,
-                    ["keepbossfights"] = false,
-                    ["chatLog"] = 
-                    {
-                        ["name"] = "CMX Combat Log",
-                        ["damageIn"] = false,
-                        ["healingIn"] = false,
-                        ["damageOut"] = true,
-                        ["healingOut"] = false,
-                        ["enabled"] = false,
-                    },
-                    ["recordgrp"] = true,
-                    ["tremorscaleValue"] = 2640,
-                    ["fighthistory"] = 25,
-                    ["autoselectchatchannel"] = true,
-                    ["showDebugIds"] = false,
                     ["showstacks"] = true,
-                    ["version"] = 5,
-                    ["ForceNotification"] = false,
-                    ["lightmode"] = false,
-                    ["offincyrodil"] = false,
-                    ["maxSVsize"] = 10,
-                    ["chunksize"] = 1000,
-                    ["recordgrpinlarge"] = true,
-                    ["autoscreenshot"] = false,
-                    ["alkoshValue"] = 6000,
-                    ["liveReport"] = 
-                    {
-                        ["layout"] = "Compact",
-                        ["damageOut"] = true,
-                        ["time"] = true,
-                        ["damageOutSingle"] = false,
-                        ["alignmentleft"] = false,
-                        ["locked"] = false,
-                        ["bgalpha"] = 95,
-                        ["scale"] = 1,
-                        ["healOut"] = true,
-                        ["damageIn"] = true,
-                        ["healOutAbsolute"] = false,
-                        ["healIn"] = true,
-                        ["enabled"] = true,
-                    },
-                },
-            },
-            ["8796093023211051"] = 
-            {
-                ["$LastCharacterName"] = "Freya Orm",
-                ["Settings"] = 
-                {
-                    ["currentNotificationVersion"] = 1,
-                    ["CombatMetrics_Report"] = 
-                    {
-                        ["x"] = 2560,
-                        ["y"] = 645,
-                    },
-                    ["NotificationRead"] = 0,
-                    ["FightReport"] = 
-                    {
-                        ["mainpanel"] = "FightStats",
-                        ["rightpanel"] = "buffs",
-                        ["showWereWolf"] = false,
-                        ["scale"] = 1,
-                        ["showPets"] = true,
-                        ["Cursor"] = true,
-                        ["category"] = "damageOut",
-                        ["maxValue"] = 
-                        {
-                            ["healingOut"] = true,
-                            ["damageOut"] = true,
-                            ["damageIn"] = true,
-                            ["healingIn"] = true,
-                        },
-                        ["PlotColors"] = 
-                        {
-                            [1] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [2] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 0,
-                            },
-                            [3] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [4] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [5] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [6] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 0.4000000000,
-                                [2] = 1,
-                                [3] = 0.4000000000,
-                            },
-                            [7] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 1,
-                                [2] = 0.4000000000,
-                                [3] = 0.9000000000,
-                            },
-                        },
-                        ["FavouriteBuffs"] = 
-                        {
-                        },
-                        ["useDisplayNames"] = false,
-                        ["hitCritLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["CLSelection"] = 
-                        {
-                            [16] = false,
-                            [4] = true,
-                            [5] = false,
-                            [7] = false,
-                            [8] = false,
-                            [10] = false,
-                            [11] = false,
-                            [12] = false,
-                            [13] = false,
-                            [14] = false,
-                            [15] = false,
-                        },
-                        ["ShowGroupBuffsInPlots"] = true,
-                        ["fightstatspanel"] = 1,
-                        ["averageLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["SmoothWindow"] = 5,
-                    },
                     ["NotificationAllowed"] = true,
-                    ["autoscreenshotmintime"] = 30,
-                    ["accountwide"] = false,
-                    ["lightmodeincyrodil"] = true,
-                    ["unitresistance"] = 18200,
-                    ["SVsize"] = 0.0000381470,
-                    ["CombatMetrics_LiveReport"] = 
-                    {
-                        ["x"] = 1434,
-                        ["y"] = 31,
-                    },
-                    ["crusherValue"] = 2108,
-                    ["keepbossfights"] = false,
-                    ["chatLog"] = 
-                    {
-                        ["name"] = "CMX Combat Log",
-                        ["damageIn"] = false,
-                        ["healingIn"] = false,
-                        ["damageOut"] = true,
-                        ["healingOut"] = false,
-                        ["enabled"] = false,
-                    },
-                    ["recordgrp"] = true,
-                    ["tremorscaleValue"] = 2640,
-                    ["fighthistory"] = 25,
-                    ["autoselectchatchannel"] = true,
-                    ["showDebugIds"] = false,
-                    ["showstacks"] = true,
-                    ["version"] = 5,
-                    ["ForceNotification"] = false,
-                    ["lightmode"] = false,
-                    ["offincyrodil"] = false,
-                    ["maxSVsize"] = 10,
-                    ["chunksize"] = 1400,
-                    ["recordgrpinlarge"] = true,
-                    ["autoscreenshot"] = false,
-                    ["alkoshValue"] = 6000,
-                    ["liveReport"] = 
-                    {
-                        ["layout"] = "Compact",
-                        ["damageOut"] = true,
-                        ["time"] = true,
-                        ["damageOutSingle"] = false,
-                        ["alignmentleft"] = false,
-                        ["locked"] = false,
-                        ["bgalpha"] = 95,
-                        ["scale"] = 1,
-                        ["healOut"] = true,
-                        ["damageIn"] = true,
-                        ["healOutAbsolute"] = false,
-                        ["healIn"] = true,
-                        ["enabled"] = true,
-                    },
                 },
-            },
-            ["8796093074287095"] = 
-            {
-                ["$LastCharacterName"] = "Otto von Bissmark",
-                ["Settings"] = 
-                {
-                    ["currentNotificationVersion"] = 1,
-                    ["CombatMetrics_Report"] = 
-                    {
-                        ["x"] = 2560,
-                        ["y"] = 645,
-                    },
-                    ["NotificationRead"] = 0,
-                    ["FightReport"] = 
-                    {
-                        ["mainpanel"] = "FightStats",
-                        ["rightpanel"] = "buffs",
-                        ["showWereWolf"] = false,
-                        ["scale"] = 1,
-                        ["showPets"] = true,
-                        ["Cursor"] = true,
-                        ["category"] = "damageOut",
-                        ["maxValue"] = 
-                        {
-                            ["healingOut"] = true,
-                            ["damageOut"] = true,
-                            ["damageIn"] = true,
-                            ["healingIn"] = true,
-                        },
-                        ["PlotColors"] = 
-                        {
-                            [1] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [2] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 0,
-                            },
-                            [3] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 1,
-                                [3] = 0,
-                            },
-                            [4] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 0,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [5] = 
-                            {
-                                [4] = 0.6600000000,
-                                [1] = 1,
-                                [2] = 0,
-                                [3] = 1,
-                            },
-                            [6] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 0.4000000000,
-                                [2] = 1,
-                                [3] = 0.4000000000,
-                            },
-                            [7] = 
-                            {
-                                [4] = 0.4000000000,
-                                [1] = 1,
-                                [2] = 0.4000000000,
-                                [3] = 0.9000000000,
-                            },
-                        },
-                        ["FavouriteBuffs"] = 
-                        {
-                        },
-                        ["useDisplayNames"] = false,
-                        ["hitCritLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["CLSelection"] = 
-                        {
-                            [16] = false,
-                            [4] = true,
-                            [5] = false,
-                            [7] = false,
-                            [8] = false,
-                            [10] = false,
-                            [11] = false,
-                            [12] = false,
-                            [13] = false,
-                            [14] = false,
-                            [15] = false,
-                        },
-                        ["ShowGroupBuffsInPlots"] = true,
-                        ["fightstatspanel"] = 1,
-                        ["averageLayout"] = 
-                        {
-                            ["healingOut"] = 1,
-                            ["damageOut"] = 1,
-                            ["damageIn"] = 1,
-                            ["healingIn"] = 1,
-                        },
-                        ["SmoothWindow"] = 5,
-                    },
-                    ["NotificationAllowed"] = true,
-                    ["autoscreenshotmintime"] = 30,
-                    ["accountwide"] = false,
-                    ["lightmodeincyrodil"] = true,
-                    ["unitresistance"] = 18200,
-                    ["SVsize"] = 0.0000381470,
-                    ["CombatMetrics_LiveReport"] = 
-                    {
-                        ["x"] = 1502,
-                        ["y"] = 40,
-                    },
-                    ["crusherValue"] = 2108,
-                    ["keepbossfights"] = false,
-                    ["chatLog"] = 
-                    {
-                        ["name"] = "CMX Combat Log",
-                        ["damageIn"] = false,
-                        ["healingIn"] = false,
-                        ["damageOut"] = true,
-                        ["healingOut"] = false,
-                        ["enabled"] = false,
-                    },
-                    ["recordgrp"] = true,
-                    ["tremorscaleValue"] = 2640,
-                    ["fighthistory"] = 25,
-                    ["autoselectchatchannel"] = true,
-                    ["showDebugIds"] = false,
-                    ["showstacks"] = true,
-                    ["version"] = 5,
-                    ["ForceNotification"] = false,
-                    ["lightmode"] = false,
-                    ["offincyrodil"] = false,
-                    ["maxSVsize"] = 10,
-                    ["chunksize"] = 1000,
-                    ["recordgrpinlarge"] = true,
-                    ["autoscreenshot"] = false,
-                    ["alkoshValue"] = 6000,
-                    ["liveReport"] = 
-                    {
-                        ["layout"] = "Compact",
-                        ["damageOut"] = true,
-                        ["time"] = true,
-                        ["damageOutSingle"] = false,
-                        ["alignmentleft"] = false,
-                        ["locked"] = false,
-                        ["bgalpha"] = 95,
-                        ["scale"] = 1,
-                        ["healOut"] = true,
-                        ["damageIn"] = true,
-                        ["healOutAbsolute"] = false,
-                        ["healIn"] = true,
-                        ["enabled"] = true,
-                    },
-                },
+                ["$LastCharacterName"] = "Fridolin The Great",
             },
             ["$AccountWide"] = 
             {
                 ["Settings"] = 
                 {
+                    ["chunksize"] = 1000,
+                    ["offincyrodil"] = false,
+                    ["ForceNotification"] = false,
                     ["currentNotificationVersion"] = 0,
-                    ["CombatMetrics_Report"] = 
-                    {
-                        ["x"] = 2560,
-                        ["y"] = 645,
-                    },
-                    ["NotificationRead"] = 0,
                     ["FightReport"] = 
                     {
-                        ["mainpanel"] = "FightStats",
-                        ["rightpanel"] = "buffs",
+                        ["ShowGroupBuffsInPlots"] = true,
                         ["showWereWolf"] = false,
+                        ["FavouriteBuffs"] = 
+                        {
+                        },
+                        ["SmoothWindow"] = 5,
+                        ["hitCritLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                        ["rightpanel"] = "buffs",
+                        ["mainpanel"] = "FightStats",
+                        ["useDisplayNames"] = false,
                         ["scale"] = 1,
-                        ["showPets"] = true,
                         ["Cursor"] = true,
+                        ["showPets"] = true,
+                        ["fightstatspanel"] = 1,
                         ["category"] = "damageOut",
+                        ["CLSelection"] = 
+                        {
+                            [16] = false,
+                            [4] = true,
+                            [5] = false,
+                            [7] = false,
+                            [8] = false,
+                            [10] = false,
+                            [11] = false,
+                            [12] = false,
+                            [13] = false,
+                            [14] = false,
+                            [15] = false,
+                        },
                         ["maxValue"] = 
                         {
+                            ["healingIn"] = true,
                             ["healingOut"] = true,
                             ["damageOut"] = true,
                             ["damageIn"] = true,
-                            ["healingIn"] = true,
                         },
                         ["PlotColors"] = 
                         {
@@ -1622,17 +450,103 @@ CombatMetrics_Save =
                                 [3] = 0.9000000000,
                             },
                         },
-                        ["FavouriteBuffs"] = 
+                        ["averageLayout"] = 
                         {
-                        },
-                        ["useDisplayNames"] = false,
-                        ["hitCritLayout"] = 
-                        {
+                            ["healingIn"] = 1,
                             ["healingOut"] = 1,
                             ["damageOut"] = 1,
                             ["damageIn"] = 1,
-                            ["healingIn"] = 1,
                         },
+                    },
+                    ["recordgrp"] = true,
+                    ["NotificationRead"] = 0,
+                    ["lightmode"] = false,
+                    ["unitresistance"] = 18200,
+                    ["autoscreenshotmintime"] = 30,
+                    ["CombatMetrics_Report"] = 
+                    {
+                        ["y"] = 645,
+                        ["x"] = 2560,
+                    },
+                    ["alkoshValue"] = 6000,
+                    ["chatLog"] = 
+                    {
+                        ["name"] = "CMX Combat Log",
+                        ["damageOut"] = true,
+                        ["enabled"] = false,
+                        ["healingIn"] = false,
+                        ["healingOut"] = false,
+                        ["damageIn"] = false,
+                    },
+                    ["SVsize"] = 0,
+                    ["keepbossfights"] = false,
+                    ["maxSVsize"] = 10,
+                    ["crusherValue"] = 2108,
+                    ["autoscreenshot"] = false,
+                    ["liveReport"] = 
+                    {
+                        ["alignmentleft"] = false,
+                        ["damageIn"] = true,
+                        ["time"] = true,
+                        ["enabled"] = true,
+                        ["scale"] = 1,
+                        ["layout"] = "Compact",
+                        ["bgalpha"] = 95,
+                        ["locked"] = false,
+                        ["damageOutSingle"] = false,
+                        ["damageOut"] = true,
+                        ["healOutAbsolute"] = false,
+                        ["healOut"] = true,
+                        ["healIn"] = true,
+                    },
+                    ["CombatMetrics_LiveReport"] = 
+                    {
+                        ["y"] = 500,
+                        ["x"] = 700,
+                    },
+                    ["recordgrpinlarge"] = true,
+                    ["version"] = 5,
+                    ["showDebugIds"] = false,
+                    ["autoselectchatchannel"] = true,
+                    ["lightmodeincyrodil"] = true,
+                    ["fighthistory"] = 25,
+                    ["tremorscaleValue"] = 2640,
+                    ["accountwide"] = false,
+                    ["showstacks"] = true,
+                    ["NotificationAllowed"] = true,
+                },
+            },
+            ["8796093023211051"] = 
+            {
+                ["Settings"] = 
+                {
+                    ["chunksize"] = 1400,
+                    ["offincyrodil"] = false,
+                    ["ForceNotification"] = false,
+                    ["currentNotificationVersion"] = 1,
+                    ["FightReport"] = 
+                    {
+                        ["ShowGroupBuffsInPlots"] = true,
+                        ["showWereWolf"] = false,
+                        ["FavouriteBuffs"] = 
+                        {
+                        },
+                        ["SmoothWindow"] = 5,
+                        ["hitCritLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                        ["rightpanel"] = "buffs",
+                        ["mainpanel"] = "FightStats",
+                        ["useDisplayNames"] = false,
+                        ["scale"] = 1,
+                        ["Cursor"] = true,
+                        ["showPets"] = true,
+                        ["fightstatspanel"] = 1,
+                        ["category"] = "damageOut",
                         ["CLSelection"] = 
                         {
                             [16] = false,
@@ -1647,71 +561,1157 @@ CombatMetrics_Save =
                             [14] = false,
                             [15] = false,
                         },
-                        ["ShowGroupBuffsInPlots"] = true,
-                        ["fightstatspanel"] = 1,
+                        ["maxValue"] = 
+                        {
+                            ["healingIn"] = true,
+                            ["healingOut"] = true,
+                            ["damageOut"] = true,
+                            ["damageIn"] = true,
+                        },
+                        ["PlotColors"] = 
+                        {
+                            [1] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [2] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 0,
+                            },
+                            [3] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [4] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [5] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [6] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 0.4000000000,
+                                [2] = 1,
+                                [3] = 0.4000000000,
+                            },
+                            [7] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 1,
+                                [2] = 0.4000000000,
+                                [3] = 0.9000000000,
+                            },
+                        },
                         ["averageLayout"] = 
                         {
+                            ["healingIn"] = 1,
                             ["healingOut"] = 1,
                             ["damageOut"] = 1,
                             ["damageIn"] = 1,
-                            ["healingIn"] = 1,
                         },
-                        ["SmoothWindow"] = 5,
                     },
-                    ["NotificationAllowed"] = true,
-                    ["autoscreenshotmintime"] = 30,
-                    ["accountwide"] = false,
-                    ["lightmodeincyrodil"] = true,
+                    ["recordgrp"] = true,
+                    ["NotificationRead"] = 0,
+                    ["lightmode"] = false,
                     ["unitresistance"] = 18200,
-                    ["SVsize"] = 0,
-                    ["CombatMetrics_LiveReport"] = 
+                    ["autoscreenshotmintime"] = 30,
+                    ["CombatMetrics_Report"] = 
                     {
-                        ["x"] = 700,
-                        ["y"] = 500,
+                        ["y"] = 645,
+                        ["x"] = 2560,
                     },
-                    ["crusherValue"] = 2108,
-                    ["keepbossfights"] = false,
+                    ["alkoshValue"] = 6000,
                     ["chatLog"] = 
                     {
                         ["name"] = "CMX Combat Log",
-                        ["damageIn"] = false,
-                        ["healingIn"] = false,
                         ["damageOut"] = true,
-                        ["healingOut"] = false,
                         ["enabled"] = false,
+                        ["healingIn"] = false,
+                        ["healingOut"] = false,
+                        ["damageIn"] = false,
                     },
-                    ["recordgrp"] = true,
-                    ["tremorscaleValue"] = 2640,
-                    ["fighthistory"] = 25,
-                    ["autoselectchatchannel"] = true,
-                    ["showDebugIds"] = false,
-                    ["showstacks"] = true,
-                    ["version"] = 5,
-                    ["ForceNotification"] = false,
-                    ["lightmode"] = false,
-                    ["offincyrodil"] = false,
+                    ["SVsize"] = 0.0000381470,
+                    ["keepbossfights"] = false,
                     ["maxSVsize"] = 10,
-                    ["chunksize"] = 1000,
-                    ["recordgrpinlarge"] = true,
+                    ["crusherValue"] = 2108,
                     ["autoscreenshot"] = false,
-                    ["alkoshValue"] = 6000,
                     ["liveReport"] = 
                     {
-                        ["layout"] = "Compact",
-                        ["damageOut"] = true,
-                        ["time"] = true,
-                        ["damageOutSingle"] = false,
                         ["alignmentleft"] = false,
-                        ["locked"] = false,
-                        ["bgalpha"] = 95,
-                        ["scale"] = 1,
-                        ["healOut"] = true,
                         ["damageIn"] = true,
-                        ["healOutAbsolute"] = false,
-                        ["healIn"] = true,
+                        ["time"] = true,
                         ["enabled"] = true,
+                        ["scale"] = 1,
+                        ["layout"] = "Compact",
+                        ["bgalpha"] = 95,
+                        ["locked"] = false,
+                        ["damageOutSingle"] = false,
+                        ["damageOut"] = true,
+                        ["healOutAbsolute"] = false,
+                        ["healOut"] = true,
+                        ["healIn"] = true,
                     },
+                    ["CombatMetrics_LiveReport"] = 
+                    {
+                        ["y"] = 31,
+                        ["x"] = 1434,
+                    },
+                    ["recordgrpinlarge"] = true,
+                    ["version"] = 5,
+                    ["showDebugIds"] = false,
+                    ["autoselectchatchannel"] = true,
+                    ["lightmodeincyrodil"] = true,
+                    ["fighthistory"] = 25,
+                    ["tremorscaleValue"] = 2640,
+                    ["accountwide"] = false,
+                    ["showstacks"] = true,
+                    ["NotificationAllowed"] = true,
                 },
+                ["$LastCharacterName"] = "Freya Orm",
+            },
+            ["8796093027479535"] = 
+            {
+                ["Settings"] = 
+                {
+                    ["chunksize"] = 1000,
+                    ["offincyrodil"] = false,
+                    ["ForceNotification"] = false,
+                    ["currentNotificationVersion"] = 0,
+                    ["FightReport"] = 
+                    {
+                        ["ShowGroupBuffsInPlots"] = true,
+                        ["showWereWolf"] = false,
+                        ["FavouriteBuffs"] = 
+                        {
+                        },
+                        ["SmoothWindow"] = 5,
+                        ["hitCritLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                        ["rightpanel"] = "buffs",
+                        ["mainpanel"] = "FightStats",
+                        ["useDisplayNames"] = false,
+                        ["scale"] = 1,
+                        ["Cursor"] = true,
+                        ["showPets"] = true,
+                        ["fightstatspanel"] = 1,
+                        ["category"] = "damageOut",
+                        ["CLSelection"] = 
+                        {
+                            [16] = false,
+                            [4] = true,
+                            [5] = false,
+                            [7] = false,
+                            [8] = false,
+                            [10] = false,
+                            [11] = false,
+                            [12] = false,
+                            [13] = false,
+                            [14] = false,
+                            [15] = false,
+                        },
+                        ["maxValue"] = 
+                        {
+                            ["healingIn"] = true,
+                            ["healingOut"] = true,
+                            ["damageOut"] = true,
+                            ["damageIn"] = true,
+                        },
+                        ["PlotColors"] = 
+                        {
+                            [1] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [2] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 0,
+                            },
+                            [3] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [4] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [5] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [6] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 0.4000000000,
+                                [2] = 1,
+                                [3] = 0.4000000000,
+                            },
+                            [7] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 1,
+                                [2] = 0.4000000000,
+                                [3] = 0.9000000000,
+                            },
+                        },
+                        ["averageLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                    },
+                    ["recordgrp"] = true,
+                    ["NotificationRead"] = 0,
+                    ["lightmode"] = false,
+                    ["unitresistance"] = 18200,
+                    ["autoscreenshotmintime"] = 30,
+                    ["CombatMetrics_Report"] = 
+                    {
+                        ["y"] = 645,
+                        ["x"] = 2560,
+                    },
+                    ["alkoshValue"] = 6000,
+                    ["chatLog"] = 
+                    {
+                        ["name"] = "CMX Combat Log",
+                        ["damageOut"] = true,
+                        ["enabled"] = false,
+                        ["healingIn"] = false,
+                        ["healingOut"] = false,
+                        ["damageIn"] = false,
+                    },
+                    ["SVsize"] = 0.0000381470,
+                    ["keepbossfights"] = false,
+                    ["maxSVsize"] = 10,
+                    ["crusherValue"] = 2108,
+                    ["autoscreenshot"] = false,
+                    ["liveReport"] = 
+                    {
+                        ["alignmentleft"] = false,
+                        ["damageIn"] = true,
+                        ["time"] = true,
+                        ["enabled"] = true,
+                        ["scale"] = 1,
+                        ["layout"] = "Compact",
+                        ["bgalpha"] = 95,
+                        ["locked"] = false,
+                        ["damageOutSingle"] = false,
+                        ["damageOut"] = true,
+                        ["healOutAbsolute"] = false,
+                        ["healOut"] = true,
+                        ["healIn"] = true,
+                    },
+                    ["CombatMetrics_LiveReport"] = 
+                    {
+                        ["y"] = 37,
+                        ["x"] = 1533,
+                    },
+                    ["recordgrpinlarge"] = true,
+                    ["version"] = 5,
+                    ["showDebugIds"] = false,
+                    ["autoselectchatchannel"] = true,
+                    ["lightmodeincyrodil"] = true,
+                    ["fighthistory"] = 25,
+                    ["tremorscaleValue"] = 2640,
+                    ["accountwide"] = false,
+                    ["showstacks"] = true,
+                    ["NotificationAllowed"] = true,
+                },
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+            },
+            ["8796093025384257"] = 
+            {
+                ["Settings"] = 
+                {
+                    ["chunksize"] = 1000,
+                    ["offincyrodil"] = false,
+                    ["ForceNotification"] = false,
+                    ["currentNotificationVersion"] = 0,
+                    ["FightReport"] = 
+                    {
+                        ["ShowGroupBuffsInPlots"] = true,
+                        ["showWereWolf"] = false,
+                        ["FavouriteBuffs"] = 
+                        {
+                        },
+                        ["SmoothWindow"] = 5,
+                        ["hitCritLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                        ["rightpanel"] = "buffs",
+                        ["mainpanel"] = "FightStats",
+                        ["useDisplayNames"] = false,
+                        ["scale"] = 1,
+                        ["Cursor"] = true,
+                        ["showPets"] = true,
+                        ["fightstatspanel"] = 4,
+                        ["category"] = "damageOut",
+                        ["CLSelection"] = 
+                        {
+                            [16] = false,
+                            [4] = true,
+                            [5] = false,
+                            [7] = false,
+                            [8] = false,
+                            [10] = false,
+                            [11] = false,
+                            [12] = false,
+                            [13] = false,
+                            [14] = false,
+                            [15] = false,
+                        },
+                        ["maxValue"] = 
+                        {
+                            ["healingIn"] = true,
+                            ["healingOut"] = true,
+                            ["damageOut"] = true,
+                            ["damageIn"] = true,
+                        },
+                        ["PlotColors"] = 
+                        {
+                            [1] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [2] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 0,
+                            },
+                            [3] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [4] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [5] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [6] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 0.4000000000,
+                                [2] = 1,
+                                [3] = 0.4000000000,
+                            },
+                            [7] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 1,
+                                [2] = 0.4000000000,
+                                [3] = 0.9000000000,
+                            },
+                        },
+                        ["averageLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                    },
+                    ["recordgrp"] = true,
+                    ["NotificationRead"] = 0,
+                    ["lightmode"] = false,
+                    ["unitresistance"] = 18200,
+                    ["autoscreenshotmintime"] = 30,
+                    ["CombatMetrics_Report"] = 
+                    {
+                        ["y"] = 645,
+                        ["x"] = 2560,
+                    },
+                    ["alkoshValue"] = 6000,
+                    ["chatLog"] = 
+                    {
+                        ["name"] = "CMX Combat Log",
+                        ["damageOut"] = true,
+                        ["enabled"] = false,
+                        ["healingIn"] = false,
+                        ["healingOut"] = false,
+                        ["damageIn"] = false,
+                    },
+                    ["SVsize"] = 0.0000381470,
+                    ["keepbossfights"] = false,
+                    ["maxSVsize"] = 10,
+                    ["crusherValue"] = 2108,
+                    ["autoscreenshot"] = false,
+                    ["liveReport"] = 
+                    {
+                        ["alignmentleft"] = false,
+                        ["damageIn"] = true,
+                        ["time"] = true,
+                        ["enabled"] = true,
+                        ["scale"] = 1,
+                        ["layout"] = "Compact",
+                        ["bgalpha"] = 95,
+                        ["locked"] = false,
+                        ["damageOutSingle"] = false,
+                        ["damageOut"] = true,
+                        ["healOutAbsolute"] = false,
+                        ["healOut"] = true,
+                        ["healIn"] = true,
+                    },
+                    ["CombatMetrics_LiveReport"] = 
+                    {
+                        ["y"] = 42,
+                        ["x"] = 1601,
+                    },
+                    ["recordgrpinlarge"] = true,
+                    ["version"] = 5,
+                    ["showDebugIds"] = false,
+                    ["autoselectchatchannel"] = true,
+                    ["lightmodeincyrodil"] = true,
+                    ["fighthistory"] = 25,
+                    ["tremorscaleValue"] = 2640,
+                    ["accountwide"] = false,
+                    ["showstacks"] = true,
+                    ["NotificationAllowed"] = true,
+                },
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+            },
+            ["8796093074287095"] = 
+            {
+                ["Settings"] = 
+                {
+                    ["chunksize"] = 1000,
+                    ["offincyrodil"] = false,
+                    ["ForceNotification"] = false,
+                    ["currentNotificationVersion"] = 1,
+                    ["FightReport"] = 
+                    {
+                        ["ShowGroupBuffsInPlots"] = true,
+                        ["showWereWolf"] = false,
+                        ["FavouriteBuffs"] = 
+                        {
+                        },
+                        ["SmoothWindow"] = 5,
+                        ["hitCritLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                        ["rightpanel"] = "buffs",
+                        ["mainpanel"] = "FightStats",
+                        ["useDisplayNames"] = false,
+                        ["scale"] = 1,
+                        ["Cursor"] = true,
+                        ["showPets"] = true,
+                        ["fightstatspanel"] = 1,
+                        ["category"] = "damageOut",
+                        ["CLSelection"] = 
+                        {
+                            [16] = false,
+                            [4] = true,
+                            [5] = false,
+                            [7] = false,
+                            [8] = false,
+                            [10] = false,
+                            [11] = false,
+                            [12] = false,
+                            [13] = false,
+                            [14] = false,
+                            [15] = false,
+                        },
+                        ["maxValue"] = 
+                        {
+                            ["healingIn"] = true,
+                            ["healingOut"] = true,
+                            ["damageOut"] = true,
+                            ["damageIn"] = true,
+                        },
+                        ["PlotColors"] = 
+                        {
+                            [1] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [2] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 0,
+                            },
+                            [3] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [4] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [5] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [6] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 0.4000000000,
+                                [2] = 1,
+                                [3] = 0.4000000000,
+                            },
+                            [7] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 1,
+                                [2] = 0.4000000000,
+                                [3] = 0.9000000000,
+                            },
+                        },
+                        ["averageLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                    },
+                    ["recordgrp"] = true,
+                    ["NotificationRead"] = 0,
+                    ["lightmode"] = false,
+                    ["unitresistance"] = 18200,
+                    ["autoscreenshotmintime"] = 30,
+                    ["CombatMetrics_Report"] = 
+                    {
+                        ["y"] = 645,
+                        ["x"] = 2560,
+                    },
+                    ["alkoshValue"] = 6000,
+                    ["chatLog"] = 
+                    {
+                        ["name"] = "CMX Combat Log",
+                        ["damageOut"] = true,
+                        ["enabled"] = false,
+                        ["healingIn"] = false,
+                        ["healingOut"] = false,
+                        ["damageIn"] = false,
+                    },
+                    ["SVsize"] = 0.0000381470,
+                    ["keepbossfights"] = false,
+                    ["maxSVsize"] = 10,
+                    ["crusherValue"] = 2108,
+                    ["autoscreenshot"] = false,
+                    ["liveReport"] = 
+                    {
+                        ["alignmentleft"] = false,
+                        ["damageIn"] = true,
+                        ["time"] = true,
+                        ["enabled"] = true,
+                        ["scale"] = 1,
+                        ["layout"] = "Compact",
+                        ["bgalpha"] = 95,
+                        ["locked"] = false,
+                        ["damageOutSingle"] = false,
+                        ["damageOut"] = true,
+                        ["healOutAbsolute"] = false,
+                        ["healOut"] = true,
+                        ["healIn"] = true,
+                    },
+                    ["CombatMetrics_LiveReport"] = 
+                    {
+                        ["y"] = 40,
+                        ["x"] = 1502,
+                    },
+                    ["recordgrpinlarge"] = true,
+                    ["version"] = 5,
+                    ["showDebugIds"] = false,
+                    ["autoselectchatchannel"] = true,
+                    ["lightmodeincyrodil"] = true,
+                    ["fighthistory"] = 25,
+                    ["tremorscaleValue"] = 2640,
+                    ["accountwide"] = false,
+                    ["showstacks"] = true,
+                    ["NotificationAllowed"] = true,
+                },
+                ["$LastCharacterName"] = "Otto von Bissmark",
+            },
+            ["8796093064640125"] = 
+            {
+                ["Settings"] = 
+                {
+                    ["chunksize"] = 1000,
+                    ["offincyrodil"] = false,
+                    ["ForceNotification"] = false,
+                    ["currentNotificationVersion"] = 0,
+                    ["FightReport"] = 
+                    {
+                        ["ShowGroupBuffsInPlots"] = true,
+                        ["showWereWolf"] = false,
+                        ["FavouriteBuffs"] = 
+                        {
+                        },
+                        ["SmoothWindow"] = 5,
+                        ["hitCritLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                        ["rightpanel"] = "buffs",
+                        ["mainpanel"] = "FightStats",
+                        ["useDisplayNames"] = false,
+                        ["scale"] = 1,
+                        ["Cursor"] = true,
+                        ["showPets"] = true,
+                        ["fightstatspanel"] = 4,
+                        ["category"] = "damageOut",
+                        ["CLSelection"] = 
+                        {
+                            [16] = false,
+                            [4] = true,
+                            [5] = false,
+                            [7] = false,
+                            [8] = false,
+                            [10] = false,
+                            [11] = false,
+                            [12] = false,
+                            [13] = false,
+                            [14] = false,
+                            [15] = false,
+                        },
+                        ["maxValue"] = 
+                        {
+                            ["healingIn"] = true,
+                            ["healingOut"] = true,
+                            ["damageOut"] = true,
+                            ["damageIn"] = true,
+                        },
+                        ["PlotColors"] = 
+                        {
+                            [1] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [2] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 0,
+                            },
+                            [3] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [4] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [5] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [6] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 0.4000000000,
+                                [2] = 1,
+                                [3] = 0.4000000000,
+                            },
+                            [7] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 1,
+                                [2] = 0.4000000000,
+                                [3] = 0.9000000000,
+                            },
+                        },
+                        ["averageLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                    },
+                    ["recordgrp"] = true,
+                    ["NotificationRead"] = 0,
+                    ["lightmode"] = false,
+                    ["unitresistance"] = 18200,
+                    ["autoscreenshotmintime"] = 30,
+                    ["CombatMetrics_Report"] = 
+                    {
+                        ["y"] = 645,
+                        ["x"] = 2560,
+                    },
+                    ["alkoshValue"] = 6000,
+                    ["chatLog"] = 
+                    {
+                        ["name"] = "CMX Combat Log",
+                        ["damageOut"] = true,
+                        ["enabled"] = false,
+                        ["healingIn"] = false,
+                        ["healingOut"] = false,
+                        ["damageIn"] = false,
+                    },
+                    ["SVsize"] = 0.0000381470,
+                    ["keepbossfights"] = false,
+                    ["maxSVsize"] = 10,
+                    ["crusherValue"] = 2108,
+                    ["autoscreenshot"] = false,
+                    ["liveReport"] = 
+                    {
+                        ["alignmentleft"] = false,
+                        ["damageIn"] = true,
+                        ["time"] = true,
+                        ["enabled"] = true,
+                        ["scale"] = 1,
+                        ["layout"] = "Compact",
+                        ["bgalpha"] = 95,
+                        ["locked"] = false,
+                        ["damageOutSingle"] = false,
+                        ["damageOut"] = true,
+                        ["healOutAbsolute"] = false,
+                        ["healOut"] = true,
+                        ["healIn"] = true,
+                    },
+                    ["CombatMetrics_LiveReport"] = 
+                    {
+                        ["y"] = 34,
+                        ["x"] = 1425,
+                    },
+                    ["recordgrpinlarge"] = true,
+                    ["version"] = 5,
+                    ["showDebugIds"] = false,
+                    ["autoselectchatchannel"] = true,
+                    ["lightmodeincyrodil"] = true,
+                    ["fighthistory"] = 25,
+                    ["tremorscaleValue"] = 2640,
+                    ["accountwide"] = false,
+                    ["showstacks"] = true,
+                    ["NotificationAllowed"] = true,
+                },
+                ["$LastCharacterName"] = "Maüschen",
+            },
+            ["8796093067546805"] = 
+            {
+                ["Settings"] = 
+                {
+                    ["chunksize"] = 1000,
+                    ["offincyrodil"] = false,
+                    ["ForceNotification"] = false,
+                    ["currentNotificationVersion"] = 0,
+                    ["FightReport"] = 
+                    {
+                        ["ShowGroupBuffsInPlots"] = true,
+                        ["showWereWolf"] = false,
+                        ["FavouriteBuffs"] = 
+                        {
+                        },
+                        ["SmoothWindow"] = 5,
+                        ["hitCritLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                        ["rightpanel"] = "buffs",
+                        ["mainpanel"] = "FightStats",
+                        ["useDisplayNames"] = false,
+                        ["scale"] = 1,
+                        ["Cursor"] = true,
+                        ["showPets"] = true,
+                        ["fightstatspanel"] = 32,
+                        ["category"] = "damageOut",
+                        ["CLSelection"] = 
+                        {
+                            [16] = false,
+                            [4] = true,
+                            [5] = false,
+                            [7] = false,
+                            [8] = false,
+                            [10] = false,
+                            [11] = false,
+                            [12] = false,
+                            [13] = false,
+                            [14] = false,
+                            [15] = false,
+                        },
+                        ["maxValue"] = 
+                        {
+                            ["healingIn"] = true,
+                            ["healingOut"] = true,
+                            ["damageOut"] = true,
+                            ["damageIn"] = true,
+                        },
+                        ["PlotColors"] = 
+                        {
+                            [1] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [2] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 0,
+                            },
+                            [3] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [4] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [5] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [6] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 0.4000000000,
+                                [2] = 1,
+                                [3] = 0.4000000000,
+                            },
+                            [7] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 1,
+                                [2] = 0.4000000000,
+                                [3] = 0.9000000000,
+                            },
+                        },
+                        ["averageLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                    },
+                    ["recordgrp"] = true,
+                    ["NotificationRead"] = 0,
+                    ["lightmode"] = false,
+                    ["unitresistance"] = 18200,
+                    ["autoscreenshotmintime"] = 30,
+                    ["CombatMetrics_Report"] = 
+                    {
+                        ["y"] = 645,
+                        ["x"] = 2560,
+                    },
+                    ["alkoshValue"] = 6000,
+                    ["chatLog"] = 
+                    {
+                        ["name"] = "CMX Combat Log",
+                        ["damageOut"] = true,
+                        ["enabled"] = false,
+                        ["healingIn"] = false,
+                        ["healingOut"] = false,
+                        ["damageIn"] = false,
+                    },
+                    ["SVsize"] = 0.0000381470,
+                    ["keepbossfights"] = false,
+                    ["maxSVsize"] = 10,
+                    ["crusherValue"] = 2108,
+                    ["autoscreenshot"] = false,
+                    ["liveReport"] = 
+                    {
+                        ["alignmentleft"] = false,
+                        ["damageIn"] = true,
+                        ["time"] = true,
+                        ["enabled"] = true,
+                        ["scale"] = 1,
+                        ["layout"] = "Compact",
+                        ["bgalpha"] = 95,
+                        ["locked"] = false,
+                        ["damageOutSingle"] = false,
+                        ["damageOut"] = true,
+                        ["healOutAbsolute"] = false,
+                        ["healOut"] = true,
+                        ["healIn"] = true,
+                    },
+                    ["CombatMetrics_LiveReport"] = 
+                    {
+                        ["y"] = 46,
+                        ["x"] = 1556,
+                    },
+                    ["recordgrpinlarge"] = true,
+                    ["version"] = 5,
+                    ["showDebugIds"] = false,
+                    ["autoselectchatchannel"] = true,
+                    ["lightmodeincyrodil"] = true,
+                    ["fighthistory"] = 25,
+                    ["tremorscaleValue"] = 2640,
+                    ["accountwide"] = false,
+                    ["showstacks"] = true,
+                    ["NotificationAllowed"] = true,
+                },
+                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
+            },
+            ["8796093072557313"] = 
+            {
+                ["Settings"] = 
+                {
+                    ["chunksize"] = 1000,
+                    ["offincyrodil"] = false,
+                    ["ForceNotification"] = false,
+                    ["currentNotificationVersion"] = 1,
+                    ["FightReport"] = 
+                    {
+                        ["ShowGroupBuffsInPlots"] = true,
+                        ["showWereWolf"] = false,
+                        ["FavouriteBuffs"] = 
+                        {
+                        },
+                        ["SmoothWindow"] = 5,
+                        ["hitCritLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                        ["rightpanel"] = "buffs",
+                        ["mainpanel"] = "FightStats",
+                        ["useDisplayNames"] = false,
+                        ["scale"] = 1,
+                        ["Cursor"] = true,
+                        ["showPets"] = true,
+                        ["fightstatspanel"] = 32,
+                        ["category"] = "damageOut",
+                        ["CLSelection"] = 
+                        {
+                            [16] = false,
+                            [4] = true,
+                            [5] = false,
+                            [7] = false,
+                            [8] = false,
+                            [10] = false,
+                            [11] = false,
+                            [12] = false,
+                            [13] = false,
+                            [14] = false,
+                            [15] = false,
+                        },
+                        ["maxValue"] = 
+                        {
+                            ["healingIn"] = true,
+                            ["healingOut"] = true,
+                            ["damageOut"] = true,
+                            ["damageIn"] = true,
+                        },
+                        ["PlotColors"] = 
+                        {
+                            [1] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [2] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 0,
+                            },
+                            [3] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 1,
+                                [3] = 0,
+                            },
+                            [4] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 0,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [5] = 
+                            {
+                                [4] = 0.6600000000,
+                                [1] = 1,
+                                [2] = 0,
+                                [3] = 1,
+                            },
+                            [6] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 0.4000000000,
+                                [2] = 1,
+                                [3] = 0.4000000000,
+                            },
+                            [7] = 
+                            {
+                                [4] = 0.4000000000,
+                                [1] = 1,
+                                [2] = 0.4000000000,
+                                [3] = 0.9000000000,
+                            },
+                        },
+                        ["averageLayout"] = 
+                        {
+                            ["healingIn"] = 1,
+                            ["healingOut"] = 1,
+                            ["damageOut"] = 1,
+                            ["damageIn"] = 1,
+                        },
+                    },
+                    ["recordgrp"] = true,
+                    ["NotificationRead"] = 0,
+                    ["lightmode"] = false,
+                    ["unitresistance"] = 18200,
+                    ["autoscreenshotmintime"] = 30,
+                    ["CombatMetrics_Report"] = 
+                    {
+                        ["y"] = 645,
+                        ["x"] = 2560,
+                    },
+                    ["alkoshValue"] = 6000,
+                    ["chatLog"] = 
+                    {
+                        ["name"] = "CMX Combat Log",
+                        ["damageOut"] = true,
+                        ["enabled"] = false,
+                        ["healingIn"] = false,
+                        ["healingOut"] = false,
+                        ["damageIn"] = false,
+                    },
+                    ["SVsize"] = 0.0000381470,
+                    ["keepbossfights"] = false,
+                    ["maxSVsize"] = 10,
+                    ["crusherValue"] = 2108,
+                    ["autoscreenshot"] = false,
+                    ["liveReport"] = 
+                    {
+                        ["alignmentleft"] = false,
+                        ["damageIn"] = true,
+                        ["time"] = true,
+                        ["enabled"] = true,
+                        ["scale"] = 1,
+                        ["layout"] = "Compact",
+                        ["bgalpha"] = 95,
+                        ["locked"] = false,
+                        ["damageOutSingle"] = false,
+                        ["damageOut"] = true,
+                        ["healOutAbsolute"] = false,
+                        ["healOut"] = true,
+                        ["healIn"] = true,
+                    },
+                    ["CombatMetrics_LiveReport"] = 
+                    {
+                        ["y"] = 34,
+                        ["x"] = 1424,
+                    },
+                    ["recordgrpinlarge"] = true,
+                    ["version"] = 5,
+                    ["showDebugIds"] = false,
+                    ["autoselectchatchannel"] = true,
+                    ["lightmodeincyrodil"] = true,
+                    ["fighthistory"] = 25,
+                    ["tremorscaleValue"] = 2640,
+                    ["accountwide"] = false,
+                    ["showstacks"] = true,
+                    ["NotificationAllowed"] = true,
+                },
+                ["$LastCharacterName"] = "Gamal Loki",
             },
         },
     },

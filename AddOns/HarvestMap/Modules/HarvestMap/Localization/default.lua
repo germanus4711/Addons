@@ -14,8 +14,8 @@ Harvest.defaultLocalizedStrings = {
 	outdateddata = "Outdated Data Settings",
 	outdateddatainfo = "These data related settings are shared between all accounts and characters on this computer.",
 	timedifference = "Keep only recent data",
-	timedifferencetooltip = "HarvestMap will only keep data from the last X days.\nThis prevents displaying old data which may already be outdated.\nSet to 0 to keep any data regardless of its age.",
-	applywarning = "Once old data has been removed, it can not be restored!",
+	timedifferencetooltip = "HarvestMap will only keep data from the last X days.\nThis prevents displaying old data which may already be outdated.\nSet to 0 to keep all data regardless of its age.",
+	applywarning = "Once old data has been removed, it cannot be restored!",
 	
 	-- account wide settings
 	account = "Account-wide Settings",
@@ -54,9 +54,12 @@ Harvest.defaultLocalizedStrings = {
 	worldpinwidthtooltip = "The width of the 3D pins in centimeters.",
 	worldpinheight = "3D pin height",
 	worldpinheighttooltip = "The height of the 3D pins in centimeters.",
-	worldpinsdepth = "Use depth-buffer for 3D pins",
-	worldpinsdepthtooltip = "When disabled, the 3D pins will be visible through through walls and other objects.",
-	worldpinsdepthwarning = "Because of a bug in ESO, this option does not work, when a Sub-Sampling quality of medium or low is selected in the game's video options.",
+	--worldpinsdepth = "Use depth-buffer for 3D pins",
+	--worldpinsdepthtooltip = "When disabled, the 3D pins will be visible through through walls and other objects.",
+	--worldpinsdepthwarning = "Because of a bug in ESO, this option does not work, when a Sub-Sampling quality of medium or low is selected in the game's video options.",
+	worldpinsdepth = "See through walls",
+	worldpinsdepthtooltip = "When enabled, the 3D pins will be visible through walls and other objects.",
+	worldpinsdepthtext = "Turning \"see through walls\" off only works if\n1) The game's resolution matches the monitor resolution (in the game's or graphics driver settings), and\n2) sub-sampling quality is set to high in the game's video settings.",
 	
 	
 	-- respawn timer settings
@@ -73,10 +76,11 @@ Harvest.defaultLocalizedStrings = {
 	-- spawn filter
 	spawnfilter = "Spawned Resource Filters",
 	nodedetectionmissing = "These options can only be enabled, if the 'NodeDetection' library is enabled.",
-	spawnfilterdescription = [[When enabled, HarvestMap will hide pins for resources that have not respawned yet.
-For example if another player already harvested the resource, then the pin will be hidden until the resource is available again.
-This option works only for harvestable crafting material. HarvestMap can not detect spawned containers such as chests, heavy sacks, or psijic portals.
-The filter does not work if another addon hides or rescales the compass.]],
+	spawnfilterdescription = [[When enabled, HarvestMap will hide pins for resources that have not respawned yet. For example if another player already harvested the resource, then the pin will be hidden until the resource is available again.
+- This option works only for harvestable crafting material. 
+- It does not work for containers such as chests, heavy sacks, or psijic portals.
+- The filter does not work if another addon hides or rescales the compass.
+- The addon cannot know if a resource respawned on the other side of the map. Thus only nearby resources will be displayed on the map.]],
 	spawnfilter_map = "Use filter on main map",
 	spawnfilter_minimap = "Use filter on minimap",
 	spawnfilter_compass = "Use filter for compass pins",

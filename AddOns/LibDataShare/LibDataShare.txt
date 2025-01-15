@@ -6,11 +6,12 @@
 
 ## Title: LibDataShare
 ## Author: |cFFFF00andy.s|r, |c76c3f4@m00nyONE|r
-## Version: 0.0.5
-## AddOnVersion: 000005
+## Version: 0.0.6
+## AddOnVersion: 000006
 ## APIVersion: 101044 101045
 ## OptionalDependsOn: LibMapPing RaidNotifier BanditsUserInterface FoundryTacticalCombat TaosGroupTools POC LibGroupSocket
 ## IsLibrary: true
+## Description: Deprecated Library for sharing small amounts of data between group members. Originally created for HodorReflexes. Please use LibGroupBroadcast after U45 instead of this Library.
 
 LibDataShare.lua
 Maps.lua

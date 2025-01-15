@@ -1,9 +1,5 @@
 <GuiXml>
     <Controls>
-        <TopLevelControl name="MuchSmarterAutoLoot">
-            <OnInitialized>
-                MuchSmarterAutoLoot_Startup(self)
-            </OnInitialized> 
-        </TopLevelControl>
+        <!-- This file is used to serve as Addon Inititiator but now it is deprecated -->
     </Controls>
 </GuiXml>

@@ -1,5 +1,10 @@
+## 0.0.6 - @m00nyONE
+- !LAST UPDATE!
+- adjust PING_RATE for U46 because ZoS extended the time before limiting the MapPingAPI until U46 launches.
+- addon will now disable itself on U46 except on PTS -- So Addon devs still have a chance to do a last minute patch of their addons if they missed it.
+
 ## 0.0.5 - @m00nyONE
-- ZoS will limit the mapPing API in U45 - this addon should no longer be used for creating new projects and all existing projects should migrate to LibGroupBroadcast by @sirinister when it's released. Don't worry, this does not mean the end of data sharing! ZoS introduced a new dedicated sharing api for addons in U45. This Library will still work, but only every 10s instead of every 2s.
+- ZoS will limit the mapPing API in U46 - this addon should no longer be used for creating new projects and all existing projects should migrate to LibGroupBroadcast by @sirinister when it's released. Don't worry, this does not mean the end of data sharing! ZoS introduced a new dedicated sharing api for addons in U45. This Library will still work, but only every 10s instead of every 2s.
 - automatically change PING_RATE to every 10s after U45
 
 ## 0.0.4 - m00nyONE

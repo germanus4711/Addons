@@ -80,14 +80,14 @@ HodorReflexes.modules.share = {
 
 local HR = HodorReflexes
 local M = HR.modules.share
-local SV = nil -- shortcut for M.sv
-local SW = nil -- shortcut for M.sw
+local SV -- shortcut for M.sv
+local SW -- shortcut for M.sw
 
 local LDS = LibDataShare
 local EM = EVENT_MANAGER
 
 local controlsVisible = false -- current state of UI controls
-local countdownVisible = false
+--local countdownVisible = false
 
 -- Ultimate types.
 local ULT_MISC = 0
@@ -104,7 +104,7 @@ local ULT_HORN_ATRO = 9
 --local ULT_HORN_ULT5 = 11
 --local ULT_HORN_ULT6 = 12
 --local ULT_HORN_ULT7 = 13
-local ULT_COLOS_ATRO = 14 -- this can't exist
+--local ULT_COLOS_ATRO = 14 -- this can't exist
 --local ULT_COLOS_ULT4 = 15
 --local ULT_COLOS_ULT5 = 16
 --local ULT_COLOS_ULT6 = 17
@@ -161,9 +161,13 @@ local atronachEnd = 0 -- atronach end time
 local berserkEnd = 0 -- major berserk end time
 local atronachActive, berserkActive = false, false
 
-local countdownTimeline = nil -- Horn and Colossus animation timeline
+local countdownTimeline -- Horn and Colossus animation timeline
 
 local DATA_PREFIX = 100000000000
+
+local DATA_PING_EXITINSTANCE = 22
+local DATA_PING_HANDSHAKE = 32
+local isGroupMemberSharing = false -- Tracks the number of valid responses
 
 local isNecro = GetUnitClassId('player') == 5
 local isSorc = GetUnitClassId('player') == 2
@@ -349,11 +353,13 @@ local function SendData()
 	package = packet.meta.New(pingType, ultType, ult, dmg, dps)
 	package = packet.data.New()
 	]]--
-
-	share:SendData(rawData)
-
+	
 	-- Own pings are not processed, so we update our data manually.
 	M.UpdatePlayerData(playerTag, pingType, ultType, ult, dmg, dps, lastPingTime)
+
+	if isGroupMemberSharing then
+		share:SendData(rawData)
+	end
 end
 
 -- Send a number between 1 and 449953.
@@ -379,7 +385,7 @@ end
 local function SendExitInstance()
 	if exitInstancePending then return end -- prevent button spam
 	-- Leave yourself only after the ping is sent.
-	M.SendCustomData(22, false, function()
+	M.SendCustomData(DATA_PING_EXITINSTANCE, false, function()
 		if CanExitInstanceImmediately() then
 			zo_callLater(function()
 				exitInstancePending = false
@@ -628,6 +634,97 @@ function M.ApplyStyle()
 	end
 end
 
+
+--- Initializes and updates texture controls with user icons or animations for the HodorReflexes addon.
+--- The function populates up to 5 texture controls with icons of friends who have valid icons or animations,
+--- ensuring a minimum of 4 entries by adding random user IDs if necessary.
+--- Additionally, it displays a version update window and notifies the player if any icons are missing.
+
+local function initializeUpdateIcons()
+	--- List of texture controls to be updated with icons, excluding the player's icon.
+	local updatedTextureControls = {
+		HodorReflexes_Updated_Icon4,
+		HodorReflexes_Updated_Icon3,
+		HodorReflexes_Updated_Icon2,
+		HodorReflexes_Updated_Icon1,
+	}
+
+	--- Updates a texture control with the given user ID's icon or animation.
+	--- @param userId string The user ID of the player whose icon or animation will be displayed.
+	--- @param texture_control userdata The texture control to update with the user's icon or animation.
+	local function _setUpdateIconOnTextureControl(userId, texture_control)
+		local userIcon = player.GetIconForUserId(userId)
+		texture_control:SetTextureCoords(0, 1, 0, 1)
+		if HR.anim.RegisterUser(userId) then
+			HR.anim.RegisterUserControl(userId, texture_control)
+			HR.anim.RunUserAnimations(userId)
+		elseif userIcon then
+			texture_control:SetTexture(userIcon)
+		end
+	end
+
+	--- Retrieves a list of friends with valid icons or animations.
+	--- @return table A list of user IDs for friends with valid icons or animations.
+	local function _getFriendsWithIcons()
+		local friends = {}
+		local numFriends = GetNumFriends()
+
+		-- Gather all friend display names.
+		for i = 1, numFriends do
+			local displayName, _, _, _, _, _, _, _, _, _ = GetFriendInfo(i)
+			table.insert(friends, displayName)
+		end
+
+		-- Filter friends who have valid icons or animations.
+		local filteredFriends = {}
+		for _, userId in ipairs(friends) do
+			if player.GetIconForUserId(userId) or HR.anim.IsValidUser(userId) then
+				table.insert(filteredFriends, userId)
+			end
+		end
+
+		return filteredFriends
+	end
+
+	-- Retrieve friends with icons and fill up to 4 entries with random user IDs if needed.
+	local updateIcons = _getFriendsWithIcons()
+	if #updateIcons < 4 then
+		local iconsNeeded = 4 - #updateIcons
+		for _ = 1, iconsNeeded do
+			table.insert(updateIcons, player.GetRandomUserId())
+		end
+	end
+
+	-- Set the player's icon to the main texture control.
+	_setUpdateIconOnTextureControl(GetUnitDisplayName('player'), HodorReflexes_Updated_Icon5)
+
+	-- Update the other texture controls with user icons or animations.
+	for i, control in ipairs(updatedTextureControls) do
+		_setUpdateIconOnTextureControl(updateIcons[i], control)
+	end
+
+	--- Checks for missing icons and shows the version update window if required.
+	zo_callLater(function()
+		-- Notify the player if any icons failed to load.
+		if not (HodorReflexes_Updated_Icon5:IsTextureLoaded()
+			and HodorReflexes_Updated_Icon4:IsTextureLoaded()
+			and HodorReflexes_Updated_Icon3:IsTextureLoaded()
+			and HodorReflexes_Updated_Icon2:IsTextureLoaded()
+			and HodorReflexes_Updated_Icon1:IsTextureLoaded()) then
+			d(strformat("|cFF6600%s|r", GetString(HR_MISSING_ICON)))
+		end
+
+		-- Display the version update window if there is a new version.
+		if SW.lastIconsVersion ~= HR.version then
+			SW.lastIconsVersion = HR.version
+			PlaySound(SOUNDS.BOOK_COLLECTION_COMPLETED)
+			HodorReflexes_Updated:SetHidden(false)
+		end
+	end, 1000)
+end
+
+
+-- This addon checks if someone in the group also has Hodor installed to minimize stress on the ESO API and avoid sending data to players who cannot process it.
 function M.Initialize()
 
 	-- Register Vvardenfell map for data sharing.
@@ -647,29 +744,7 @@ function M.Initialize()
 	SV = M.sv
 	SW = M.sw
 
-	-- Load user icon, if he has one.
-	local userId = GetUnitDisplayName('player')
-	local userIcon = player.GetIconForUserId(userId)
-	HodorReflexes_Updated_Icon5:SetTextureCoords(0, 1, 0, 1)
-	if HR.anim.RegisterUser(userId) then
-		HR.anim.RegisterUserControl(userId, HodorReflexes_Updated_Icon5)
-		HR.anim.RunUserAnimations(userId)
-	elseif userIcon then
-		HodorReflexes_Updated_Icon5:SetTexture(userIcon)
-	end
-
-	-- Show version update window and notify player if his icon is missing.
-	zo_callLater(function()
-		if not HodorReflexes_Updated_Icon5:IsTextureLoaded() then
-			d(strformat("|cFF6600%s|r", GetString(HR_MISSING_ICON)))
-		end
-		-- Version update window.
-		if SW.lastIconsVersion ~= HR.version then
-			SW.lastIconsVersion = HR.version
-			PlaySound(SOUNDS.BOOK_COLLECTION_COMPLETED)
-			HodorReflexes_Updated:SetHidden(false)
-		end
-	end, 1000)
+	initializeUpdateIcons()
 
 	-- Set default values for custom name and color.
 	if not IsValidString(SW.myIconPathFull) then
@@ -723,7 +798,8 @@ function M.Initialize()
 	M.ApplyStyle()
 
 	-- Add hotkey to exit instance
-	local function OnStateChanged(oldState, newState)
+	--local function OnStateChanged(oldState, newState)
+	local function OnStateChanged(_, newState)
 		if newState == SCENE_FRAGMENT_SHOWING and IsUnitGroupLeader('player') then
 			KEYBIND_STRIP:AddKeybindButton(sendExitInstanceButton)
 		elseif newState == SCENE_FRAGMENT_HIDING then
@@ -828,7 +904,13 @@ function M.ToggleEnabled()
 
 end
 
+function M.SendHandshakePing()
+	M.SendCustomData(DATA_PING_HANDSHAKE, false)
+end
+
 function M.GroupChanged()
+	isGroupMemberSharing = false
+	M.SendHandshakePing()
 
 	M.ToggleShare()
 
@@ -928,7 +1010,8 @@ do
 		HNT_FRAGMENT:Refresh()
 	end
 
-	function M.OnHornEffectChanged(_, change, _, _, _, beginTime, endTime, _, _, _, _, _, _, _, _, abilityId)
+	--function M.OnHornEffectChanged(_, change, _, _, _, beginTime, endTime, _, _, _, _, _, _, _, _, abilityId)
+	function M.OnHornEffectChanged(_, change, _, _, _, _, endTime, _, _, _, _, _, _, _, _, abilityId)
 		-- War Horn or Major Force cast
 		if change == EFFECT_RESULT_GAINED then
 			local t = time()
@@ -995,7 +1078,8 @@ do
 		colosEnd = time() + 3000
 	end
 
-	function M.MajorVulnerability(_, changeType, _, _, _, beginTime, endTime, _, _, _, _, _, _, _, _, abilityId)
+	--function M.MajorVulnerability(_, changeType, _, _, _, beginTime, endTime, _, _, _, _, _, _, _, _, abilityId)
+	function M.MajorVulnerability(_, changeType, _, _, _, _, endTime, _, _, _, _, _, _, _, _, _)
 		if changeType == EFFECT_RESULT_GAINED or changeType == EFFECT_RESULT_UPDATED and endTime > 0 then
 			-- Convert endTime to time() format
 			endTime = zo_ceil(endTime * 1000)
@@ -1084,7 +1168,8 @@ do
 
 	end
 
-	function M.MajorBerserk(_, changeType, _, _, _, beginTime, endTime, _, _, _, _, _, _, _, _, abilityId)
+	--function M.MajorBerserk(_, changeType, _, _, _, beginTime, endTime, _, _, _, _, _, _, _, _, abilityId)
+	function M.MajorBerserk(_, changeType, _, _, _, _, endTime, _, _, _, _, _, _, _, _, _)
 		if changeType == EFFECT_RESULT_GAINED or changeType == EFFECT_RESULT_UPDATED and endTime > 0 then
 			-- Convert endTime to time() format
 			endTime = zo_ceil(endTime * 1000)
@@ -1108,9 +1193,13 @@ end
 
 -- Process data decoded from a map ping.
 function M.ProcessData(tag, data, ms)
+	if data > 0 then
+		isGroupMemberSharing = true
+	end
+
 	-- Custom data ping.
 	if data > 0 and data < share:GetMapSize() then
-		if data == 22 and IsUnitGroupLeader(tag) then
+		if data == DATA_PING_EXITINSTANCE and IsUnitGroupLeader(tag) then
 			-- Group leader wants everybody to exit the instance
 			HR.ExitInstance()
 		else
@@ -1492,7 +1581,8 @@ do
 		local rowsAtronach = {}
 
 		-- Update rows
-		for name, data in pairs(M.playersData) do
+		--for name, data in pairs(M.playersData) do
+		for _, data in pairs(M.playersData) do
 			local tag = data.tag
 			local ultRow = data.ultRow
 			local miscUltRow = data.miscUltRow
@@ -1666,7 +1756,7 @@ end
 -- Refresh damage list.
 function M.UpdateDamage()
 	local rows = {}
-	local dmgType = nil
+	local dmgType
 
 	-- Update rows
 	for name, data in pairs(M.playersData) do

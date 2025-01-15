@@ -159,6 +159,128 @@ function MapPins:RegisterCallbacks()
 	
 end
 
+function MapPins:EnableScrollableFilters()
+	-- The following code is from LibMapPins
+	
+	-------------------------------------------------------------------------------
+	-- LibMapPins-1.0
+	-------------------------------------------------------------------------------
+	--
+	-- Copyright (c) 2014, 2015 Ales Machat (Garkin)
+	--
+	-- Permission is hereby granted, free of charge, to any person
+	-- obtaining a copy of this software and associated documentation
+	-- files (the "Software"), to deal in the Software without
+	-- restriction, including without limitation the rights to use,
+	-- copy, modify, merge, publish, distribute, sublicense, and/or sell
+	-- copies of the Software, and to permit persons to whom the
+	-- Software is furnished to do so, subject to the following
+	-- conditions:
+	--
+	-- The above copyright notice and this permission notice shall be
+	-- included in all copies or substantial portions of the Software.
+	--
+	-- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	-- EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+	-- OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+	-- NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+	-- HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+	-- WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+	-- FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+	-- OTHER DEALINGS IN THE SOFTWARE.
+	--
+	-------------------------------------------------------------------------------
+	if WORLD_MAP_FILTERS.pvePanel.checkBoxPool then
+        WORLD_MAP_FILTERS.pvePanel.checkBoxPool.parent = ZO_WorldMapFiltersPvEContainerScrollChild or WINDOW_MANAGER:CreateControlFromVirtual("ZO_WorldMapFiltersPvEContainer", ZO_WorldMapFiltersPvE, "ZO_ScrollContainer"):GetNamedChild("ScrollChild")
+        for i, control in pairs(WORLD_MAP_FILTERS.pvePanel.checkBoxPool.m_Active) do
+            control:SetParent(WORLD_MAP_FILTERS.pvePanel.checkBoxPool.parent)
+        end
+        if ZO_WorldMapFiltersPvECheckBox1 then
+            local valid, point, control, relPoint, x, y = ZO_WorldMapFiltersPvECheckBox1:GetAnchor(0)
+            if control == WORLD_MAP_FILTERS.pvePanel.control then
+                ZO_WorldMapFiltersPvECheckBox1:SetAnchor(point, ZO_WorldMapFiltersPvEContainerScrollChild, relPoint, x, y)
+            end
+        end
+    end
+    if WORLD_MAP_FILTERS.pvePanel.comboBoxPool then
+        WORLD_MAP_FILTERS.pvePanel.comboBoxPool.parent = ZO_WorldMapFiltersPvEContainerScrollChild or WINDOW_MANAGER:CreateControlFromVirtual("ZO_WorldMapFiltersPvEContainer", ZO_WorldMapFiltersPvE, "ZO_ScrollContainer"):GetNamedChild("ScrollChild")
+        for i, control in pairs(WORLD_MAP_FILTERS.pvePanel.comboBoxPool.m_Active) do
+            control:SetParent(WORLD_MAP_FILTERS.pvePanel.comboBoxPool.parent)
+        end
+        if ZO_WorldMapFiltersPvEComboBox1 then
+            local valid, point, control, relPoint, x, y = ZO_WorldMapFiltersPvEComboBox1:GetAnchor(0)
+            if control == WORLD_MAP_FILTERS.pvePanel.control then
+                ZO_WorldMapFiltersPvEComboBox1:SetAnchor(point, ZO_WorldMapFiltersPvEContainerScrollChild, relPoint, x, y)
+            end
+        end
+    end
+    if ZO_WorldMapFiltersPvEContainer then
+        ZO_WorldMapFiltersPvEContainer:SetAnchorFill()
+    end
+
+    if WORLD_MAP_FILTERS.pvpPanel.checkBoxPool then
+        WORLD_MAP_FILTERS.pvpPanel.checkBoxPool.parent = ZO_WorldMapFiltersPvPContainerScrollChild or WINDOW_MANAGER:CreateControlFromVirtual("ZO_WorldMapFiltersPvPContainer", ZO_WorldMapFiltersPvP, "ZO_ScrollContainer"):GetNamedChild("ScrollChild")
+        for i, control in pairs(WORLD_MAP_FILTERS.pvpPanel.checkBoxPool.m_Active) do
+            control:SetParent(WORLD_MAP_FILTERS.pvpPanel.checkBoxPool.parent)
+        end
+        if ZO_WorldMapFiltersPvPCheckBox1 then
+            local valid, point, control, relPoint, x, y = ZO_WorldMapFiltersPvPCheckBox1:GetAnchor(0)
+            if control == WORLD_MAP_FILTERS.pvpPanel.control then
+                ZO_WorldMapFiltersPvPCheckBox1:SetAnchor(point, ZO_WorldMapFiltersPvPContainerScrollChild, relPoint, x, y)
+            end
+        end
+    end
+    if WORLD_MAP_FILTERS.pvpPanel.comboBoxPool then
+        WORLD_MAP_FILTERS.pvpPanel.comboBoxPool.parent = ZO_WorldMapFiltersPvPContainerScrollChild or WINDOW_MANAGER:CreateControlFromVirtual("ZO_WorldMapFiltersPvPContainer", ZO_WorldMapFiltersPvP, "ZO_ScrollContainer"):GetNamedChild("ScrollChild")
+        for i, control in pairs(WORLD_MAP_FILTERS.pvpPanel.comboBoxPool.m_Active) do
+            control:SetParent(WORLD_MAP_FILTERS.pvpPanel.comboBoxPool.parent)
+        end
+        if ZO_WorldMapFiltersPvPComboBox1 then
+            local valid, point, control, relPoint, x, y = ZO_WorldMapFiltersPvPComboBox1:GetAnchor(0)
+            if control == WORLD_MAP_FILTERS.pvpPanel.control then
+                ZO_WorldMapFiltersPvPComboBox1:SetAnchor(point, ZO_WorldMapFiltersPvPContainerScrollChild, relPoint, x, y)
+            end
+        end
+    end
+    if ZO_WorldMapFiltersPvPContainer then
+        ZO_WorldMapFiltersPvPContainer:SetAnchorFill()
+    end
+
+    if WORLD_MAP_FILTERS.imperialPvPPanel.checkBoxPool then
+        WORLD_MAP_FILTERS.imperialPvPPanel.checkBoxPool.parent = ZO_WorldMapFiltersImperialPvPContainerScrollChild or WINDOW_MANAGER:CreateControlFromVirtual("ZO_WorldMapFiltersImperialPvPContainer", ZO_WorldMapFiltersImperialPvP, "ZO_ScrollContainer"):GetNamedChild("ScrollChild")
+        for i, control in pairs(WORLD_MAP_FILTERS.imperialPvPPanel.checkBoxPool.m_Active) do
+            control:SetParent(WORLD_MAP_FILTERS.imperialPvPPanel.checkBoxPool.parent)
+        end
+        if ZO_WorldMapFiltersImperialPvPCheckBox1 then
+            local valid, point, control, relPoint, x, y = ZO_WorldMapFiltersImperialPvPCheckBox1:GetAnchor(0)
+            if control == WORLD_MAP_FILTERS.imperialPvPPanel.control then
+                ZO_WorldMapFiltersImperialPvPCheckBox1:SetAnchor(point, ZO_WorldMapFiltersImperialPvPContainerScrollChild, relPoint, x, y)
+            end
+        end
+    end
+    if WORLD_MAP_FILTERS.imperialPvPPanel.comboBoxPool then
+        WORLD_MAP_FILTERS.imperialPvPPanel.comboBoxPool.parent = ZO_WorldMapFiltersImperialPvPContainerScrollChild or WINDOW_MANAGER:CreateControlFromVirtual("ZO_WorldMapFiltersImperialPvPContainer", ZO_WorldMapFiltersImperialPvP, "ZO_ScrollContainer"):GetNamedChild("ScrollChild")
+        for i, control in pairs(WORLD_MAP_FILTERS.imperialPvPPanel.comboBoxPool.m_Active) do
+            control:SetParent(WORLD_MAP_FILTERS.imperialPvPPanel.comboBoxPool.parent)
+        end
+        if ZO_WorldMapFiltersImperialPvPComboBox1 then
+            local valid, point, control, relPoint, x, y = ZO_WorldMapFiltersImperialPvPComboBox1:GetAnchor(0)
+            if control == WORLD_MAP_FILTERS.imperialPvPPanel.control then
+                ZO_WorldMapFiltersPvPComboBox1:SetAnchor(point, ZO_WorldMapFiltersImperialPvPContainerScrollChild, relPoint, x, y)
+            end
+        end
+    end
+    if ZO_WorldMapFiltersImperialPvPContainer then
+        ZO_WorldMapFiltersImperialPvPContainer:SetAnchorFill()
+    end
+	
+	--[[
+	
+	End of LibMapPins code
+	
+	]]--
+end
+
 local function OnButtonToggled(pinTypeId, button, visible)
 	local filterProfile = Harvest.mapPins.filterProfile
 	filterProfile[pinTypeId] = visible
@@ -283,6 +405,7 @@ function MapPins:Initialize()
 	-- additional filter checkboxes
 	self:AddHeatMapCheckbox()
 	self:AddDeletePinCheckbox()
+	self:EnableScrollableFilters()
 	
 	self:RefreshVisibleDistance()
 end

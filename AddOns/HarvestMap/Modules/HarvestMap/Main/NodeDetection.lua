@@ -91,6 +91,8 @@ function Detection.LinkControlWithNode(event, control)
 			if control.mapCache.pinTypeId[control.nodeId] == Harvest.UNKNOWN then
 				CallbackManager:FireCallbacks(Events.NODE_DELETED, control.mapCache, control.nodeId)
 				control.mapCache:Delete(control.nodeId)
+			else
+				CallbackManager:FireCallbacks(Events.NODE_COMPASS_LINK_CHANGED, control.mapCache, control.nodeId)
 			end
 		end
 		-- link
