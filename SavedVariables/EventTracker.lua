@@ -8,7 +8,38 @@ EventTrackerVars =
             {
                 ["NA Megaserver"] = 
                 {
+                    ["autoHide"] = false,
+                    ["version"] = 2,
+                    ["T_Types"] = 
+                    {
+                        [1] = "First",
+                        [2] = "Second",
+                        [3] = "Boss",
+                    },
+                    ["left"] = 450,
+                    ["debug"] = false,
+                    ["Message_Time"] = 1737160174,
+                    ["EVT_version"] = 2.2710000000,
+                    ["Current_Event"] = "None",
+                    ["T_Time"] = 
+                    {
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["HideUI"] = false,
+                    ["LastUpdated"] = 1736254438,
+                    ["Install_Time"] = 1726631845,
                     ["DataCleared"] = true,
+                    ["T_ToDo"] = 
+                    {
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["NewsIndex"] = 3,
+                    ["top"] = 10,
+                    ["Total_Tickets"] = 0,
                     ["T_Tickets"] = 
                     {
                         [4] = 0,
@@ -16,37 +47,6 @@ EventTrackerVars =
                         [2] = 0,
                         [3] = 0,
                     },
-                    ["debug"] = false,
-                    ["EVT_version"] = 2.2710000000,
-                    ["T_Time"] = 
-                    {
-                        [1] = 0,
-                        [2] = 0,
-                        [3] = 0,
-                    },
-                    ["T_ToDo"] = 
-                    {
-                        [1] = 0,
-                        [2] = 0,
-                        [3] = 0,
-                    },
-                    ["Current_Event"] = "None",
-                    ["top"] = 10,
-                    ["T_Types"] = 
-                    {
-                        [1] = "First",
-                        [2] = "Second",
-                        [3] = "Boss",
-                    },
-                    ["version"] = 2,
-                    ["left"] = 450,
-                    ["Install_Time"] = 1726631845,
-                    ["autoHide"] = false,
-                    ["Message_Time"] = 1736947922,
-                    ["Total_Tickets"] = 0,
-                    ["NewsIndex"] = 3,
-                    ["HideUI"] = false,
-                    ["LastUpdated"] = 1736254438,
                 },
             },
         },

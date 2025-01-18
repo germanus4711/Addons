@@ -8,11 +8,21 @@ AdvancedFilters_Settings =
             {
                 ["Settings"] = 
                 {
-                    ["showDropdownLastSelectedEntries"] = true,
-                    ["showSubMenuHeaderlinesInFilterDropdowns"] = false,
-                    ["hideItemCount"] = false,
                     ["showFilterDropdownMenuOnRightMouseAtSubFilterButton"] = false,
+                    ["hideItemCount"] = false,
+                    ["debugSpamExcludeRefreshSubfilterBar"] = true,
+                    ["rememberFilterDropdownsLastSelection"] = true,
+                    ["hideCharBoundAtBankDeposit"] = false,
                     ["showDropdownSelectedReminderAnimation"] = true,
+                    ["hideSubFilterLabel"] = false,
+                    ["doDebugOutput"] = false,
+                    ["grayOutSubFiltersWithNoItems"] = true,
+                    ["subfilterBarDropdownLastSelectedEntries"] = 
+                    {
+                    },
+                    ["dropdownVisibleRows"] = 15,
+                    ["dropdownVisibleSubmenuRows"] = 15,
+                    ["version"] = 1.5110000000,
                     ["itemCountLabelColor"] = 
                     {
                         ["a"] = 1,
@@ -20,21 +30,11 @@ AdvancedFilters_Settings =
                         ["r"] = 1,
                         ["g"] = 1,
                     },
-                    ["dropdownVisibleSubmenuRows"] = 15,
-                    ["debugSpamExcludeDropdownBoxFilters"] = true,
-                    ["debugSpamExcludeRefreshSubfilterBar"] = true,
-                    ["debugSpam"] = false,
-                    ["version"] = 1.5110000000,
-                    ["rememberFilterDropdownsLastSelection"] = true,
-                    ["subfilterBarDropdownLastSelectedEntries"] = 
-                    {
-                    },
-                    ["doDebugOutput"] = false,
-                    ["dropdownVisibleRows"] = 15,
+                    ["showDropdownLastSelectedEntries"] = true,
                     ["showIconsInFilterDropdowns"] = true,
-                    ["hideSubFilterLabel"] = false,
-                    ["grayOutSubFiltersWithNoItems"] = true,
-                    ["hideCharBoundAtBankDeposit"] = false,
+                    ["debugSpamExcludeDropdownBoxFilters"] = true,
+                    ["showSubMenuHeaderlinesInFilterDropdowns"] = false,
+                    ["debugSpam"] = false,
                 },
             },
         },

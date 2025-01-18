@@ -10,6 +10,7 @@ LostTreasure_Account =
                 {
                     ["hasNewIconPath"] = true,
                 },
+                ["version"] = 20,
                 ["miniMap"] = 
                 {
                     ["anchor"] = 
@@ -27,6 +28,9 @@ LostTreasure_Account =
                     ["size"] = 300,
                     ["enabled"] = true,
                 },
+                ["notifications"] = 
+                {
+                },
                 ["mining"] = 
                 {
                     ["APITimeStamp"] = 1730152370,
@@ -40,38 +44,34 @@ LostTreasure_Account =
                     ["survey"] = 
                     {
                         ["showOnMap"] = true,
-                        ["size"] = 32,
-                        ["showOnCompass"] = true,
-                        ["markOption"] = "inventory",
-                        ["pinLevel"] = 47,
                         ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
                         ["deletionDelay"] = 10,
+                        ["markOption"] = "inventory",
+                        ["showOnCompass"] = true,
+                        ["size"] = 32,
+                        ["pinLevel"] = 47,
                     },
                     ["treasure"] = 
                     {
                         ["showOnMap"] = true,
-                        ["size"] = 32,
-                        ["showOnCompass"] = true,
-                        ["markOption"] = "inventory",
-                        ["pinLevel"] = 47,
                         ["texture"] = "LibTreasure/Icons/x_red.dds",
                         ["deletionDelay"] = 10,
+                        ["markOption"] = "inventory",
+                        ["showOnCompass"] = true,
+                        ["size"] = 32,
+                        ["pinLevel"] = 47,
                     },
                     ["clue"] = 
                     {
                         ["showOnMap"] = true,
-                        ["size"] = 32,
-                        ["showOnCompass"] = true,
-                        ["markOption"] = "inventory",
-                        ["pinLevel"] = 47,
                         ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
                         ["deletionDelay"] = 10,
+                        ["markOption"] = "inventory",
+                        ["showOnCompass"] = true,
+                        ["size"] = 32,
+                        ["pinLevel"] = 47,
                     },
                 },
-                ["notifications"] = 
-                {
-                },
-                ["version"] = 20,
             },
         },
     },
@@ -84,12 +84,12 @@ LostTreasure_Character =
         {
             ["8796093023211051"] = 
             {
+                ["$LastCharacterName"] = "Freya Orm",
+                ["version"] = 20,
                 ["LibSavedVars"] = 
                 {
                     ["accountSavedVarsActive"] = true,
                 },
-                ["$LastCharacterName"] = "Freya Orm",
-                ["version"] = 20,
             },
         },
     },

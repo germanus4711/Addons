@@ -11,13 +11,13 @@ ItemBrowserSavedVariables =
                 ["favorites"] = 
                 {
                 },
-                ["usePercentage"] = false,
                 ["externalTooltips"] = 
                 {
-                    ["showAccounts"] = 1,
                     ["enableExtension"] = false,
                     ["showPieces"] = 1,
+                    ["showAccounts"] = 1,
                 },
+                ["usePercentage"] = false,
             },
         },
     },

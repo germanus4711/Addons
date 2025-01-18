@@ -6,38 +6,34 @@ LibSets_SV_Data =
         {
             ["$AccountWide"] = 
             {
-                ["setSearchSaveNameHistory"] = true,
-                ["setSearchTooltipsAtFilters"] = true,
+                ["version"] = 0.3800000000,
                 ["setSearchTooltipsAtFilterEntries"] = true,
-                ["useCustomTooltipPattern"] = "",
-                ["setSearchUIRowLeftClickDefaultAction"] = "linkToChat",
                 ["setSearchPopupTooltipPosition"] = 8,
-                ["setSearchTooltipsAtTextFilters"] = true,
-                ["showSetSearchDropLocationTooltip"] = false,
+                ["setSearchShowSetNamesInEnglishToo"] = false,
                 ["setSearchFavorites"] = 
                 {
-                    ["fireStaff"] = 
+                    ["twoHand"] = 
+                    {
+                    },
+                    ["PVPHybrid"] = 
+                    {
+                    },
+                    ["dualWield"] = 
+                    {
+                    },
+                    ["stamHeal"] = 
                     {
                     },
                     ["frostStaff"] = 
                     {
                     },
+                    ["tank"] = 
+                    {
+                    },
+                    ["fireStaff"] = 
+                    {
+                    },
                     ["bow"] = 
-                    {
-                    },
-                    ["PVPTank"] = 
-                    {
-                    },
-                    ["PVPStamDD"] = 
-                    {
-                    },
-                    ["lightningStaff"] = 
-                    {
-                    },
-                    ["stamDD"] = 
-                    {
-                    },
-                    ["PVPHybrid"] = 
                     {
                     },
                     ["magHeal"] = 
@@ -46,25 +42,25 @@ LibSets_SV_Data =
                     ["hybrid"] = 
                     {
                     },
+                    ["PVPTank"] = 
+                    {
+                    },
                     ["star"] = 
                     {
                     },
                     ["PVPMagHeal"] = 
                     {
                     },
-                    ["magDD"] = 
+                    ["lightningStaff"] = 
                     {
                     },
                     ["PVPMagDD"] = 
                     {
                     },
-                    ["dualWield"] = 
+                    ["PVPStamDD"] = 
                     {
                     },
-                    ["twoHand"] = 
-                    {
-                    },
-                    ["tank"] = 
+                    ["farm"] = 
                     {
                     },
                     ["PVPStamHeal"] = 
@@ -73,49 +69,53 @@ LibSets_SV_Data =
                     ["sneak"] = 
                     {
                     },
-                    ["farm"] = 
+                    ["stamDD"] = 
                     {
                     },
-                    ["stamHeal"] = 
+                    ["magDD"] = 
                     {
                     },
+                },
+                ["setSearchTooltipsAtFilters"] = true,
+                ["setSearchTooltipsAtTextFilters"] = true,
+                ["useCustomTooltipPattern"] = "",
+                ["tooltipModifications"] = 
+                {
+                    ["addDropMechanic"] = true,
+                    ["addDropLocation"] = true,
+                    ["addNeededTraits"] = true,
+                    ["addFavorites"] = true,
+                    ["addReconstructionCost"] = true,
+                    ["addBossName"] = true,
+                    ["addSetType"] = true,
+                    ["addDLC"] = true,
+                    ["tooltipTextures"] = true,
                 },
                 ["setSearchSaveBonusHistory"] = true,
-                ["version"] = 0.3800000000,
                 ["modifyTooltips"] = false,
-                ["setPreviewTooltips"] = 
-                {
-                    ["sendToChatToo"] = true,
-                    ["equipType"] = 3,
-                    ["traitType"] = 18,
-                    ["enchantSearchCategoryType"] = 0,
-                    ["quality"] = 370,
-                },
-                ["addSetCollectionsCurrentZoneButton"] = true,
-                ["setSearchShowSetNamesInEnglishToo"] = false,
+                ["addLineBreakAtCustomTooltipParts"] = false,
+                ["showSetSearchDropLocationTooltip"] = false,
                 ["setSearchHistory"] = 
                 {
-                    ["bonus"] = 
-                    {
-                    },
                     ["name"] = 
                     {
                     },
+                    ["bonus"] = 
+                    {
+                    },
+                },
+                ["setSearchUIRowLeftClickDefaultAction"] = "linkToChat",
+                ["addSetCollectionsCurrentZoneButton"] = true,
+                ["setPreviewTooltips"] = 
+                {
+                    ["sendToChatToo"] = true,
+                    ["quality"] = 370,
+                    ["enchantSearchCategoryType"] = 0,
+                    ["traitType"] = 18,
+                    ["equipType"] = 3,
                 },
                 ["setSearchHistoryMaxEntries"] = 10,
-                ["addLineBreakAtCustomTooltipParts"] = false,
-                ["tooltipModifications"] = 
-                {
-                    ["addFavorites"] = true,
-                    ["addDropLocation"] = true,
-                    ["tooltipTextures"] = true,
-                    ["addNeededTraits"] = true,
-                    ["addDropMechanic"] = true,
-                    ["addSetType"] = true,
-                    ["addDLC"] = true,
-                    ["addBossName"] = true,
-                    ["addReconstructionCost"] = true,
-                },
+                ["setSearchSaveNameHistory"] = true,
             },
         },
     },
@@ -128,32 +128,28 @@ LibSets_SV_DEBUG_Data =
         {
             ["$AccountWide"] = 
             {
-                ["setItemIds"] = 
-                {
-                },
-                ["NewSetIDs"] = 
-                {
-                },
                 ["collectibleNames"] = 
-                {
-                },
-                ["maps"] = 
-                {
-                },
-                ["version"] = 1,
-                ["zoneData"] = 
-                {
-                },
-                ["setItemIds_Compressed"] = 
                 {
                 },
                 ["setItemIdsNoSetId"] = 
                 {
                 },
-                ["collectible_DLCNames"] = 
+                ["NewSetIDs"] = 
+                {
+                },
+                ["setItemIds_Compressed"] = 
+                {
+                },
+                ["maps"] = 
+                {
+                },
+                ["setItemIds"] = 
                 {
                 },
                 ["setNames"] = 
+                {
+                },
+                ["zoneData"] = 
                 {
                 },
                 ["wayshrineNames"] = 
@@ -162,6 +158,10 @@ LibSets_SV_DEBUG_Data =
                 ["dungeonFinderData"] = 
                 {
                 },
+                ["collectible_DLCNames"] = 
+                {
+                },
+                ["version"] = 1,
             },
         },
     },

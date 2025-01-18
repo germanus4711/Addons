@@ -5168,7 +5168,6 @@ LibZone_SV_Data =
                         ["parentZone"] = 1504,
                         ["zoneIndex"] = 1032,
                     },
-                    ["version"] = 8.9200000000,
                     ["__lastZoneCheckAPIVersion__"] = 
                     {
                         ["en"] = 
@@ -5183,6 +5182,7 @@ LibZone_SV_Data =
                             },
                         },
                     },
+                    ["version"] = 8.9200000000,
                 },
             },
         },
@@ -5196,32 +5196,32 @@ LibZone_Localized_SV_Data =
         {
             ["$AccountWide"] = 
             {
+                ["MissingZoneData"] = 
+                {
+                    ["version"] = 8.9200000000,
+                },
                 ["ZoneData"] = 
                 {
-                    ["version"] = 8.9000000000,
                     ["en"] = 
                     {
                         [1504] = "Coldharbour Colosseum",
-                        [1498] = "Dusk Keep",
-                        ["lastUpdate"] = 1735930809,
+                        [1482] = "Strid River Valley",
+                        [1483] = "Huntsman's Fortress",
                         [1475] = "Seat of Detritus",
-                        [1485] = "Port Dufort",
-                        [1500] = "Kthendral Deep Mines",
+                        ["lastUpdate"] = 1735930809,
+                        ["APIVersionAtLastUpdate"] = 101044,
                         [1494] = "Seabloom Villa",
                         [1495] = "Haven of the Five Companions",
                         [520] = "Reman's Folly",
                         [1481] = "Mota-ka",
-                        [1482] = "Strid River Valley",
-                        [1483] = "Huntsman's Fortress",
-                        [1484] = "Shehai Waystation",
-                        [1501] = "Grand Gallery of Tamriel",
+                        [1498] = "Dusk Keep",
                         [1499] = "Star Haven Adeptorium",
-                        ["APIVersionAtLastUpdate"] = 101044,
+                        [1500] = "Kthendral Deep Mines",
+                        [1501] = "Grand Gallery of Tamriel",
+                        [1485] = "Port Dufort",
+                        [1484] = "Shehai Waystation",
                     },
-                },
-                ["MissingZoneData"] = 
-                {
-                    ["version"] = 8.9200000000,
+                    ["version"] = 8.9000000000,
                 },
             },
         },

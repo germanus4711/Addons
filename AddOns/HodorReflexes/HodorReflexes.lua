@@ -27,7 +27,7 @@ Dependencies:
 -- Core Addon Table
 HodorReflexes = {
 	name = "HodorReflexes",
-	version = "2025.01.13",
+	version = "2025.01.17",
 
 	-- Default settings for saved variables
 	default = {

@@ -6,6 +6,7 @@ EssentialHousingCommunitySavedVars =
         {
             ["$AccountWide"] = 
             {
+                ["version"] = 1,
                 ["PublicRecords"] = 
                 {
                     ["td__@germanus4711"] = 
@@ -14,7 +15,6 @@ EssentialHousingCommunitySavedVars =
                     },
                 },
                 ["CommunityUserId"] = "@germanus4711",
-                ["version"] = 1,
             },
         },
     },

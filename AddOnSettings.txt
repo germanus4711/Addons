@@ -524,8 +524,8 @@ LibMainMenu-2.0 1
 LibManifest 1
 CombatMetronome 1
 LibPhinixFunctions 1
-HarvestMapAD 1
 LibMotif 1
+HarvestMapAD 1
 LibLootSummary 1
 LibCraftText 1
 #NA Megaserver-Maüschen

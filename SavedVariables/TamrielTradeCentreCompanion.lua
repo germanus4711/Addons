@@ -6,21 +6,17 @@ TTCCompanion_SavedVars =
         {
             ["$AccountWide"] = 
             {
-                ["showCraftCost"] = false,
-                ["customDealZero"] = 0,
-                ["customDealBuyIt"] = 90,
-                ["customDealSeventyFive"] = 75,
-                ["pricingData"] = 
+                ["version"] = 1,
+                ["showProfitMargin"] = false,
+                ["pricingdataeu"] = 
                 {
                 },
-                ["showUnitPrice"] = true,
-                ["showProfitMargin"] = false,
-                ["dealCalcToUse"] = 2,
-                ["agsPercentSortOrderToUse"] = 1,
-                ["customDealCalc"] = false,
+                ["modifiedSuggestedPriceInventory"] = false,
                 ["customDealTwentyFive"] = 25,
-                ["replacementTypeToUse"] = 3,
-                ["version"] = 1,
+                ["showMaterialCost"] = true,
+                ["modifiedSuggestedPriceDealCalc"] = false,
+                ["dealCalcToUse"] = 2,
+                ["customDealFifty"] = 50,
                 ["pricingdatana"] = 
                 {
                     [812695] = 
@@ -449,9 +445,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:4:0:0"] = 74400,
                         },
-                        [176592] = 
+                        [211408] = 
                         {
-                            ["1:0:3:47:0"] = 30000,
+                            ["1:0:2:0:0"] = 46000,
                         },
                         [198341] = 
                         {
@@ -601,9 +597,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:2:0:0"] = 8000,
                         },
-                        [211408] = 
+                        [176592] = 
                         {
-                            ["1:0:2:0:0"] = 46000,
+                            ["1:0:3:47:0"] = 30000,
                         },
                         [175863] = 
                         {
@@ -688,9 +684,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:3:0:0"] = 1200,
                         },
-                        [204567] = 
+                        [160599] = 
                         {
-                            ["1:0:5:0:0"] = 320000,
+                            ["1:0:4:0:0"] = 1400,
                         },
                         [188337] = 
                         {
@@ -704,9 +700,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:4:0:0"] = 17000,
                         },
-                        [203476] = 
+                        [194548] = 
                         {
-                            ["1:0:4:0:0"] = 41000,
+                            ["1:0:4:0:0"] = 150000,
                         },
                         [197589] = 
                         {
@@ -716,9 +712,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:3:0:0"] = 4500,
                         },
-                        [160599] = 
+                        [204567] = 
                         {
-                            ["1:0:4:0:0"] = 1400,
+                            ["1:0:5:0:0"] = 320000,
                         },
                         [167192] = 
                         {
@@ -736,9 +732,9 @@ TTCCompanion_SavedVars =
                         {
                             ["1:0:4:0:0"] = 38000,
                         },
-                        [194548] = 
+                        [203476] = 
                         {
-                            ["1:0:4:0:0"] = 150000,
+                            ["1:0:4:0:0"] = 41000,
                         },
                         [167197] = 
                         {
@@ -754,15 +750,19 @@ TTCCompanion_SavedVars =
                         },
                     },
                 },
-                ["showMaterialCost"] = true,
+                ["customDealBuyIt"] = 90,
+                ["showUnitPrice"] = true,
                 ["replaceInventoryValues"] = true,
-                ["modifiedSuggestedPriceInventory"] = false,
-                ["pricingdataeu"] = 
+                ["agsPercentSortOrderToUse"] = 1,
+                ["pricingData"] = 
                 {
                 },
+                ["customDealZero"] = 0,
+                ["customDealSeventyFive"] = 75,
+                ["replacementTypeToUse"] = 3,
+                ["customDealCalc"] = false,
                 ["showCalc"] = false,
-                ["modifiedSuggestedPriceDealCalc"] = false,
-                ["customDealFifty"] = 50,
+                ["showCraftCost"] = false,
             },
         },
     },

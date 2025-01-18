@@ -13,18 +13,18 @@ LibMapThemerVars =
                 },
                 ["AccurateWorldMap"] = 
                 {
-                    ["showAllPois"] = true,
                     ["tamrielZoneNames"] = true,
+                    ["version"] = 2406030600,
+                    ["renames"] = true,
                     ["hoverFadeEffect"] = true,
                     ["aurbisZoneNames"] = true,
-                    ["renames"] = true,
                     ["pois"] = 
                     {
                         ["ownedHouses"] = true,
                         ["majorSettlements"] = true,
                     },
+                    ["showAllPois"] = true,
                     ["mapDescriptions"] = true,
-                    ["version"] = 2406030600,
                 },
             },
         },

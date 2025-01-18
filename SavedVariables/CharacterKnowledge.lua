@@ -7,14 +7,14 @@ CharacterKnowledgeSavedVariables =
             ["$AccountWide"] = 
             {
                 ["filterId"] = 2,
+                ["version"] = 1,
+                ["featureRev"] = 1,
+                ["singleAccount"] = false,
                 ["tooltips"] = 
                 {
                     ["scriptInfo"] = true,
                     ["enabled"] = true,
                 },
-                ["featureRev"] = 1,
-                ["version"] = 1,
-                ["singleAccount"] = false,
             },
         },
         ["NA"] = 
