@@ -11,11 +11,11 @@ LibScrollableMenu_SavedVars =
                     ["textSearchHistory"] = 
                     {
                     },
-                    ["version"] = 1,
                     ["collapsedHeaderState"] = 
                     {
                         ["AddonSelectorddl"] = false,
                     },
+                    ["version"] = 1,
                 },
             },
         },

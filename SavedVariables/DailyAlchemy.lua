@@ -4,63 +4,17 @@ DailyAlchemyVariables =
     {
         ["@germanus4711"] = 
         {
-            ["8796093072557313"] = 
-            {
-                ["$LastCharacterName"] = "Gamal Loki",
-                ["version"] = 1,
-                ["rankWhenReceived"] = 8,
-            },
-            ["8796093074287095"] = 
-            {
-                ["$LastCharacterName"] = "Otto von Bissmark",
-                ["version"] = 1,
-                ["rankWhenReceived"] = 8,
-            },
-            ["8796093069174989"] = 
-            {
-                ["$LastCharacterName"] = "Mike v Petra",
-                ["version"] = 1,
-                ["rankWhenReceived"] = 8,
-            },
-            ["8796093023211051"] = 
-            {
-                ["$LastCharacterName"] = "Freya Orm",
-                ["version"] = 1,
-                ["rankWhenReceived"] = 8,
-            },
-            ["8796093064640125"] = 
-            {
-                ["$LastCharacterName"] = "Maüschen",
-                ["version"] = 1,
-                ["rankWhenReceived"] = 8,
-            },
-            ["8796093025384257"] = 
-            {
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-                ["version"] = 1,
-                ["rankWhenReceived"] = 8,
-            },
-            ["8796093027479535"] = 
-            {
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
-                ["version"] = 1,
-                ["rankWhenReceived"] = 8,
-            },
-            ["8796093062295781"] = 
-            {
-                ["$LastCharacterName"] = "Fridolin The Great",
-                ["version"] = 1,
-                ["rankWhenReceived"] = 8,
-            },
-            ["8796093067546805"] = 
-            {
-                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
-                ["version"] = 1,
-                ["rankWhenReceived"] = 8,
-            },
             ["$AccountWide"] = 
             {
+                ["debugLog"] = 
+                {
+                },
+                ["priorityBy"] = 1,
+                ["bulkQuantity"] = 1,
+                ["isAutoExit"] = true,
                 ["version"] = 1,
+                ["showPriceMM"] = false,
+                ["acquireDelay"] = 1,
                 ["priorityByManual"] = 
                 {
                     [1] = 30148,
@@ -98,21 +52,67 @@ DailyAlchemyVariables =
                     [33] = 150670,
                     [34] = 150672,
                 },
-                ["isLog"] = true,
                 ["showPriceTTC"] = false,
                 ["isDebugQuest"] = true,
-                ["acquireDelay"] = 1,
                 ["isAcquireItem"] = true,
-                ["showPriceMM"] = false,
-                ["bulkQuantity"] = 1,
-                ["priorityBy"] = 1,
-                ["isAutoExit"] = true,
+                ["isLog"] = true,
                 ["reservations"] = 
                 {
                 },
-                ["debugLog"] = 
-                {
-                },
+            },
+            ["8796093062295781"] = 
+            {
+                ["rankWhenReceived"] = 8,
+                ["$LastCharacterName"] = "Fridolin The Great",
+                ["version"] = 1,
+            },
+            ["8796093074287095"] = 
+            {
+                ["rankWhenReceived"] = 8,
+                ["$LastCharacterName"] = "Otto von Bissmark",
+                ["version"] = 1,
+            },
+            ["8796093069174989"] = 
+            {
+                ["rankWhenReceived"] = 8,
+                ["$LastCharacterName"] = "Mike v Petra",
+                ["version"] = 1,
+            },
+            ["8796093064640125"] = 
+            {
+                ["rankWhenReceived"] = 8,
+                ["$LastCharacterName"] = "Maüschen",
+                ["version"] = 1,
+            },
+            ["8796093027479535"] = 
+            {
+                ["rankWhenReceived"] = 8,
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["version"] = 1,
+            },
+            ["8796093067546805"] = 
+            {
+                ["rankWhenReceived"] = 8,
+                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
+                ["version"] = 1,
+            },
+            ["8796093023211051"] = 
+            {
+                ["rankWhenReceived"] = 8,
+                ["$LastCharacterName"] = "Freya Orm",
+                ["version"] = 1,
+            },
+            ["8796093025384257"] = 
+            {
+                ["rankWhenReceived"] = 8,
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+                ["version"] = 1,
+            },
+            ["8796093072557313"] = 
+            {
+                ["rankWhenReceived"] = 8,
+                ["$LastCharacterName"] = "Gamal Loki",
+                ["version"] = 1,
             },
         },
     },

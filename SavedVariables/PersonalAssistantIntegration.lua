@@ -6,18 +6,20 @@ PersonalAssistantIntegration_SavedVariables =
         {
             ["$AccountWide"] = 
             {
+                ["profileCounter"] = 1,
+                ["savedVarsVersion"] = 20240922,
                 [1] = 
                 {
-                    ["name"] = "Profile 1",
                     ["CharacterKnowledge"] = 
                     {
-                        ["enabled"] = true,
                         ["characterName"] = "Freya Orm",
+                        ["enabled"] = true,
                     },
                     ["LazyWritCrafter"] = 
                     {
                         ["compatibility"] = true,
                     },
+                    ["name"] = "Profile 1",
                     ["FCOItemSaver"] = 
                     {
                         ["Locked"] = 
@@ -32,13 +34,6 @@ PersonalAssistantIntegration_SavedVariables =
                         ["Deconstruction"] = 
                         {
                             ["itemMoveMode"] = 2,
-                        },
-                        ["Intricate"] = 
-                        {
-                            ["itemMoveMode"] = 0,
-                        },
-                        ["DynamicIcons"] = 
-                        {
                         },
                         ["GearSets"] = 
                         {
@@ -55,19 +50,24 @@ PersonalAssistantIntegration_SavedVariables =
                         {
                             ["autoSellMarked"] = false,
                         },
-                        ["Research"] = 
+                        ["DynamicIcons"] = 
                         {
-                            ["itemMoveMode"] = 1,
+                        },
+                        ["Intricate"] = 
+                        {
+                            ["itemMoveMode"] = 0,
                         },
                         ["SellGuildStore"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
+                        ["Research"] = 
+                        {
+                            ["itemMoveMode"] = 1,
+                        },
                     },
                 },
                 ["version"] = 1,
-                ["savedVarsVersion"] = 20240922,
-                ["profileCounter"] = 1,
             },
         },
     },

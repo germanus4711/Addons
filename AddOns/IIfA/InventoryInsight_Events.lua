@@ -162,7 +162,7 @@ end
 
 --Contextmenu from inventory row
 local function ZO_InventorySlot_ShowContextMenu_For_IIfA(inventorySlot, slotActions)
-  IIfA:dm("Debug", "[ZO_InventorySlot_ShowContextMenu_For_IIfA] Inventory Menu")
+  -- IIfA:dm("Debug", "[ZO_InventorySlot_ShowContextMenu_For_IIfA] Inventory Menu")
   local slotType = ZO_InventorySlot_GetType(inventorySlot)
   local itemLink = nil
   if slotType == SLOT_TYPE_ITEM or slotType == SLOT_TYPE_EQUIPMENT or slotType == SLOT_TYPE_BANK_ITEM or slotType == SLOT_TYPE_GUILD_BANK_ITEM or

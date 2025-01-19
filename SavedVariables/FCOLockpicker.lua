@@ -6,30 +6,10 @@ FCOLockpicker_Settings =
         {
             ["$AccountWide"] = 
             {
-                ["SettingsForAll"] = 
-                {
-                    ["version"] = 999,
-                    ["language"] = 1,
-                    ["saveMode"] = 2,
-                },
                 ["Settings"] = 
                 {
-                    ["alwaysUseClientLanguage"] = true,
-                    ["version"] = 0.0100000000,
-                    ["useSpringGreenColor"] = true,
                     ["warnings"] = 
                     {
-                        ["low"] = 
-                        {
-                            ["color"] = 
-                            {
-                                ["a"] = 1,
-                                ["b"] = 0,
-                                ["r"] = 1,
-                                ["g"] = 0,
-                            },
-                            ["valueMin"] = 5,
-                        },
                         ["medium"] = 
                         {
                             ["color"] = 
@@ -52,12 +32,32 @@ FCOLockpicker_Settings =
                             },
                             ["valueMin"] = 999,
                         },
+                        ["low"] = 
+                        {
+                            ["color"] = 
+                            {
+                                ["a"] = 1,
+                                ["b"] = 0,
+                                ["r"] = 1,
+                                ["g"] = 0,
+                            },
+                            ["valueMin"] = 5,
+                        },
                     },
                     ["debug"] = false,
-                    ["showChamberResolvedIcon"] = true,
+                    ["deepDebug"] = false,
                     ["chamberStressedSound"] = 2,
                     ["languageChoosen"] = false,
-                    ["deepDebug"] = false,
+                    ["useSpringGreenColor"] = true,
+                    ["alwaysUseClientLanguage"] = true,
+                    ["showChamberResolvedIcon"] = true,
+                    ["version"] = 0.0100000000,
+                },
+                ["SettingsForAll"] = 
+                {
+                    ["saveMode"] = 2,
+                    ["language"] = 1,
+                    ["version"] = 999,
                 },
             },
         },

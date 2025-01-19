@@ -4,93 +4,21 @@ VotansImprovedLocations_Data =
     {
         ["@germanus4711"] = 
         {
-            ["8796093072557313"] = 
+            ["$AccountWide"] = 
             {
-                ["$LastCharacterName"] = "Gamal Loki",
-                ["version"] = 1,
-                ["recent"] = 
+                ["sortBy"] = "Name",
+                ["showLevels"] = false,
+                ["allAllianceOnTop"] = false,
+                ["favorites"] = 
                 {
-                    [1] = 30,
                 },
-            },
-            ["8796093074287095"] = 
-            {
-                ["$LastCharacterName"] = "Otto von Bissmark",
+                ["showRecentList"] = true,
+                ["assignToAlliance"] = false,
+                ["showToggleFavorite"] = true,
                 ["version"] = 1,
-                ["recent"] = 
-                {
-                    [1] = 30,
-                },
-            },
-            ["8796093069174989"] = 
-            {
-                ["$LastCharacterName"] = "Mike v Petra",
-                ["version"] = 1,
-                ["recent"] = 
-                {
-                    [1] = 30,
-                    [2] = 8,
-                    [3] = 16,
-                    [4] = 17,
-                    [5] = 51,
-                },
-            },
-            ["8796093023211051"] = 
-            {
-                ["$LastCharacterName"] = "Freya Orm",
-                ["version"] = 1,
-                ["recent"] = 
-                {
-                    [1] = 51,
-                    [2] = 32,
-                    [3] = 30,
-                    [4] = 14,
-                    [5] = 26,
-                },
-            },
-            ["8796093064640125"] = 
-            {
-                ["$LastCharacterName"] = "Maüschen",
-                ["version"] = 1,
-                ["recent"] = 
-                {
-                    [1] = 30,
-                    [2] = 17,
-                    [3] = 9,
-                    [4] = 10,
-                    [5] = 43,
-                },
-            },
-            ["8796093025384257"] = 
-            {
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-                ["version"] = 1,
-                ["recent"] = 
-                {
-                    [1] = 30,
-                    [2] = 13,
-                    [3] = 11,
-                    [4] = 9,
-                    [5] = 5,
-                },
-            },
-            ["8796093027479535"] = 
-            {
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
-                ["version"] = 1,
-                ["recent"] = 
-                {
-                    [1] = 30,
-                    [2] = 25,
-                    [3] = 13,
-                    [4] = 5,
-                    [5] = 10,
-                },
             },
             ["8796093062295781"] = 
             {
-                ["$LastCharacterName"] = "Fridolin The Great",
-                ["version"] = 1,
                 ["recent"] = 
                 {
                     [1] = 30,
@@ -99,28 +27,101 @@ VotansImprovedLocations_Data =
                     [4] = 51,
                     [5] = 5,
                 },
-            },
-            ["8796093067546805"] = 
-            {
-                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
+                ["$LastCharacterName"] = "Fridolin The Great",
                 ["version"] = 1,
+            },
+            ["8796093074287095"] = 
+            {
                 ["recent"] = 
                 {
                     [1] = 30,
                 },
-            },
-            ["$AccountWide"] = 
-            {
-                ["assignToAlliance"] = false,
+                ["$LastCharacterName"] = "Otto von Bissmark",
                 ["version"] = 1,
-                ["favorites"] = 
+            },
+            ["8796093069174989"] = 
+            {
+                ["recent"] = 
                 {
+                    [1] = 30,
+                    [2] = 8,
+                    [3] = 16,
+                    [4] = 17,
+                    [5] = 51,
                 },
-                ["showToggleFavorite"] = true,
-                ["allAllianceOnTop"] = false,
-                ["sortBy"] = "Name",
-                ["showLevels"] = false,
-                ["showRecentList"] = true,
+                ["$LastCharacterName"] = "Mike v Petra",
+                ["version"] = 1,
+            },
+            ["8796093064640125"] = 
+            {
+                ["recent"] = 
+                {
+                    [1] = 30,
+                    [2] = 17,
+                    [3] = 9,
+                    [4] = 10,
+                    [5] = 43,
+                },
+                ["$LastCharacterName"] = "Maüschen",
+                ["version"] = 1,
+            },
+            ["8796093027479535"] = 
+            {
+                ["recent"] = 
+                {
+                    [1] = 30,
+                    [2] = 25,
+                    [3] = 13,
+                    [4] = 5,
+                    [5] = 10,
+                },
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["version"] = 1,
+            },
+            ["8796093067546805"] = 
+            {
+                ["recent"] = 
+                {
+                    [1] = 30,
+                },
+                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
+                ["version"] = 1,
+            },
+            ["8796093023211051"] = 
+            {
+                ["recent"] = 
+                {
+                    [1] = 30,
+                    [2] = 51,
+                    [3] = 6,
+                    [4] = 42,
+                    [5] = 5,
+                },
+                ["$LastCharacterName"] = "Freya Orm",
+                ["version"] = 1,
+            },
+            ["8796093025384257"] = 
+            {
+                ["recent"] = 
+                {
+                    [1] = 30,
+                    [2] = 13,
+                    [3] = 11,
+                    [4] = 9,
+                    [5] = 5,
+                },
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+                ["version"] = 1,
+            },
+            ["8796093072557313"] = 
+            {
+                ["recent"] = 
+                {
+                    [2] = 30,
+                    [1] = 51,
+                },
+                ["$LastCharacterName"] = "Gamal Loki",
+                ["version"] = 1,
             },
         },
     },

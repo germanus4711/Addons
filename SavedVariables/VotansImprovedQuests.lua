@@ -6,11 +6,11 @@ VotansImprovedQuests_Data =
         {
             ["$AccountWide"] = 
             {
+                ["consolidateOtherZones"] = true,
+                ["alwaysShowOnMap"] = true,
+                ["showLevels"] = false,
                 ["version"] = 1,
                 ["alwaysShowQuests"] = false,
-                ["alwaysShowOnMap"] = true,
-                ["consolidateOtherZones"] = true,
-                ["showLevels"] = false,
             },
         },
     },

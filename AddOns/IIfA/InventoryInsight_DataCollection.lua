@@ -604,7 +604,7 @@ end
 function IIfA:UpdateGuildBankLookup()
   local serverData = IIFA_DATABASE[IIfA.currentAccount].servers[IIfA.currentServerType]
   serverData.guildBankInfo = serverData.guildBankInfo or {}
-  IIfA:dm("Debug", serverData.guildBankInfo)
+  -- IIfA:dm("Debug", serverData.guildBankInfo)
 
   for index = 1, GetNumGuilds() do
     local guildId = GetGuildId(index)
@@ -616,7 +616,7 @@ function IIfA:UpdateGuildBankLookup()
       }
     end
   end
-  IIfA:dm("Debug", serverData.guildBankInfo)
+  -- IIfA:dm("Debug", serverData.guildBankInfo)
 end
 
 function IIfA:GuildBankReady()
@@ -649,10 +649,10 @@ function IIfA:GuildBankAddRemove(eventCode, slotId, addedByLocalPlayer, itemSoun
     local guildName = GetGuildName(GetSelectedGuildBankId())
     local itemLink, itemKey, itemLinkFromBag, itemCount = IIfA:GetBagItemDetails(BAG_GUILDBANK, slotId)
     if guildName and eventCode == EVENT_GUILD_BANK_ITEM_ADDED then
-      IIfA:dm("Debug", "Added: '<<1>>', '<<2>>', slot: <<3>>", itemLink, guildName, slotId)
+      IIfA:dm("Debug", "[GuildBankAddRemove] Added: '<<1>>', '<<2>>', slot: <<3>>", itemLink, guildName, slotId)
       IIfA:EvalBagItem(BAG_GUILDBANK, slotId)
     elseif guildName and eventCode == EVENT_GUILD_BANK_ITEM_REMOVED then
-      IIfA:dm("Debug", "Removed: '<<1>>', '<<2>>', slot: <<3>>", itemLink, guildName, slotId)
+      IIfA:dm("Debug", "[GuildBankAddRemove] Removed: '<<1>>', '<<2>>', slot: <<3>>", itemLink, guildName, slotId)
       IIfA:EvalBagItem(BAG_GUILDBANK, slotId)
     end
   end)

@@ -259,7 +259,7 @@ function IIfA:MigrateLegacyValues()
     IIfA:dm("Debug", "Settings or Account based information was nil migration of Legacy Values not possible.")
     return
   end
-  -- Skip migration if it has already been completed
+
   IIfA:dm("Info", "MigrateLegacyValues Starting...")
 
   -- Convert in2ToggleGuildBankDataCollection to bCollectGuildBankData
@@ -390,8 +390,6 @@ function IIfA:ConvertCompanionToServerFormat()
 end
 
 function IIfA:MigrateFrameSettings()
-  IIfA:dm("Info", "MigrateFrameSettings Starting...")
-
   local settingsData, locationData = GetSettingsAndDataLocations()
   local hasSettingsData = settingsData and settingsData["frameSettings"]
   if not settingsData then
@@ -403,6 +401,8 @@ function IIfA:MigrateFrameSettings()
     IIfA:dm("Debug", "[MigrateFrameSettings] Migration not possible, settingsData present but no remaining frameSettings. Exiting early.")
     return
   end
+
+  IIfA:dm("Info", "MigrateFrameSettings Starting...")
 
   -- Migrate settingsData to IIFA_DATABASE using defaults_character if settingsData is valid
   for key, _ in pairs(IIfA.defaults_character) do
@@ -428,13 +428,13 @@ function IIfA:MigrateFrameSettings()
 end
 
 function IIfA:MigrateToAccountAndServerSpecificFormat()
-  IIfA:dm("Info", "MigrateToAccountAndServerSpecificFormat Starting...")
-
   local settingsData, locationData = GetSettingsAndDataLocations()
   if not settingsData then
     IIfA:dm("Debug", "Migration not possible no data found for the current account. Exiting early.")
     return
   end
+
+  IIfA:dm("Info", "MigrateToAccountAndServerSpecificFormat Starting...")
 
   -- Assign NA and EU specific DBv3 tables
   local naData = locationData.NA.DBv3
@@ -637,7 +637,7 @@ function IIfA:InitializeDatabase()
 
   -- Remove keys from saved variables not in defaults
   local skipRequiredMigrationData = { legacyMigrationComplete = true, newFormatMigrationCompleted = true }
-  IIfA:dm("Info", "Adding - Removing Vars ")
+  IIfA:dm("Debug", "Adding - Removing Vars ")
   for key in pairs(settingsSavedVariables) do
     if defaults_account[key] == nil and not skipRequiredMigrationData[key] then
       IIfA:dm("Warn", "[<<1>>] Removed ", key)
@@ -710,7 +710,7 @@ function IIfA:InitializeDatabase()
 end
 
 function IIfA:CleanupOldCharacterSettings()
-  IIfA:dm("Info", "[CleanupOldCharacterSettings]")
+  IIfA:dm("Debug", "[CleanupOldCharacterSettings]")
 
   local settingsData = IIfA_Settings and IIfA_Settings["Default"] and IIfA_Settings["Default"][IIfA.currentAccount]
   if not settingsData then

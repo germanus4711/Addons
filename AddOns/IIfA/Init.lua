@@ -1,4 +1,6 @@
 IIfA = {}
+IIfA.debugtask = LibAsync:Create("IIfA_Debug")
+local task = IIfA.debugtask
 
 -- --------------------------------------------------------------
 --	Global Variables
@@ -22,7 +24,7 @@ IIfA.currentServerType = GetWorldName():gsub(" Megaserver", "")
 
 IIfA.name = "InventoryInsight"
 IIfA.displayName = "Inventory Insight"
-IIfA.version = "3.84"
+IIfA.version = "3.85"
 IIfA.authors = "AssemblerManiac, manavortex, |cff9b15Sharlikran|r"
 IIfA.defaultAlertSound = nil
 IIfA.colorHandler = nil
@@ -375,12 +377,12 @@ local function create_log(log_type, log_content)
     CHAT_ROUTER:AddSystemMessage(log_content)
     return
   end
+  if logger and log_type == "Info" then
+    IIfA.logger:Info(log_content)
+  end
   if not IIfA.show_log then return end
   if logger and log_type == "Debug" then
     IIfA.logger:Debug(log_content)
-  end
-  if logger and log_type == "Info" then
-    IIfA.logger:Info(log_content)
   end
   if logger and log_type == "Verbose" then
     IIfA.logger:Verbose(log_content)
@@ -391,10 +393,12 @@ local function create_log(log_type, log_content)
 end
 
 local function emit_message(log_type, text)
-  if (text == "") then
+  if text == "" then
     text = "[Empty String]"
   end
-  create_log(log_type, text)
+  task:Call(function()
+    create_log(log_type, text)
+  end)
 end
 
 local function emit_table(log_type, t, indent, table_history)
@@ -467,6 +471,14 @@ local function contains_placeholders(str)
 end
 
 function IIfA:dm(log_type, ...)
+  if not IIfA.show_log then
+    if log_type == "Info" then
+    else
+      -- Exit early if show_log is false and log_type is not "Info"
+      return
+    end
+  end
+
   local num_args = select("#", ...)
   local first_arg = select(1, ...)  -- The first argument is always the message string
 

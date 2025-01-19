@@ -58,36 +58,16 @@ local function SetGuildBankCollectionSetting(guildNum, newSetting)
   serverData.guildBankInfo[guildName].bCollectData = newSetting
 end
 
-local function GetDebugSetting()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.bDebug
-end
-
-local function SetDebugSetting(value)
-  IIFA_DATABASE[IIfA.currentAccount].settings.bDebug = value
-end
-
-local function GetItemCountPositionSetting()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.showItemCountOnRight
-end
-
 local function SetItemCountPositionSetting(value)
   IIfA:StatusAlert("[IIfA]:ItemCountOnRight[" .. tostring(value) .. "]")
   IIFA_DATABASE[IIfA.currentAccount].settings.showItemCountOnRight = value
   IIfA:SetItemCountPosition()
 end
 
-local function GetShowItemStatsSetting()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.showItemStats
-end
-
 local function SetShowItemStatsSetting(value)
   IIfA:StatusAlert("[IIfA]:ItemStats[" .. tostring(value) .. "]")
   IIFA_DATABASE[IIfA.currentAccount].settings.showItemStats = value
   IIFA_GUI_ListHolder_Counts:SetHidden(not value)
-end
-
-local function GetDefaultInventoryFrameView()
-  return IIFA_DATABASE[IIfA.currentAccount].characters[IIfA.currentCharacterId].defaultInventoryFrameView
 end
 
 local function SetDefaultInventoryFrameView(value)
@@ -97,41 +77,9 @@ local function SetDefaultInventoryFrameView(value)
   IIfA:SetInventoryListFilter(value)
 end
 
-local function GetFocusSearchBoxSetting()
-  return not IIFA_DATABASE[IIfA.currentAccount].settings.dontFocusSearch
-end
-
-local function SetFocusSearchBoxSetting(value)
-  IIFA_DATABASE[IIfA.currentAccount].settings.dontFocusSearch = not value
-end
-
-local function GetFilterIncludeSetNameSetting()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.bFilterOnSetNameToo
-end
-
-local function SetFilterIncludeSetNameSetting(value)
-  IIFA_DATABASE[IIfA.currentAccount].settings.bFilterOnSetNameToo = value
-end
-
-local function GetFilterSetNameOnlySetting()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.bFilterOnSetName
-end
-
 local function SetFilterSetNameOnlySetting(value)
   IIFA_DATABASE[IIfA.currentAccount].settings.bFilterOnSetName = value
   IIfA.bFilterOnSetName = value
-end
-
-local function IsFilterSetNameOnlyDisabled()
-  return not IIFA_DATABASE[IIfA.currentAccount].settings.bFilterOnSetNameToo
-end
-
-local function IsShowStyleInfoDisabled()
-  return not IIFA_DATABASE[IIfA.currentAccount].settings.showStyleInfo
-end
-
-local function GetEnableSearchMenuSetting()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.bAddContextMenuEntrySearchInIIfA
 end
 
 local function SetEnableSearchMenuSetting(value)
@@ -139,17 +87,9 @@ local function SetEnableSearchMenuSetting(value)
   IIfA.bAddContextMenuEntrySearchInIIfA = value
 end
 
-local function GetEnableMissingMotifsMenuSetting()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.bAddContextMenuEntryMissingMotifsInIIfA
-end
-
 local function SetEnableMissingMotifsMenuSetting(value)
   IIFA_DATABASE[IIfA.currentAccount].settings.bAddContextMenuEntryMissingMotifsInIIfA = value
   IIfA.bAddContextMenuEntryMissingMotifsInIIfA = value
-end
-
-local function GetHideCloseButtonSetting()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.hideCloseButton or false
 end
 
 local function SetHideCloseButtonSetting(value)
@@ -158,26 +98,9 @@ local function SetHideCloseButtonSetting(value)
   IIFA_GUI_Header_Hide:SetHidden(value)
 end
 
-local function GetFCOISShowMarkerIcons()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.FCOISshowMarkerIcons
-end
-
-local function SetFCOISShowMarkerIcons(value)
-  IIFA_DATABASE[IIfA.currentAccount].settings.FCOISshowMarkerIcons = value
-end
-
-local function GetCollectGuildBankData()
-  return IIFA_DATABASE[IIfA.currentAccount].servers[IIfA.currentServerType].bCollectGuildBankData
-end
-
 local function SetCollectGuildBankData(value)
   IIFA_DATABASE[IIfA.currentAccount].servers[IIfA.currentServerType].bCollectGuildBankData = value
   IIfA.trackedBags[BAG_GUILDBANK] = value
-end
-
-local function GetCompanionEquipIgnored()
-  -- Access the account-wide settings for `ignoreCompanionEquipment`
-  return IIFA_DATABASE[IIfA.currentAccount].settings.ignoreCompanionEquipment
 end
 
 local function SetCompanionEquipIgnored(value)
@@ -198,14 +121,6 @@ local function RestoreHouseTracking()
     IIfA:SetTrackingForHouse(restoreHouse, true)
     IIfA:RescanHouse()
   end
-end
-
-local function GetBagSpaceWarnThreshold()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.BagSpaceWarn.threshold
-end
-
-local function SetBagSpaceWarnThreshold(value)
-  IIFA_DATABASE[IIfA.currentAccount].settings.BagSpaceWarn.threshold = value
 end
 
 local function GetBagSpaceWarnColor()
@@ -230,14 +145,6 @@ local function GetBagSpaceWarnDefaultColor()
   local g = color.g
   local b = color.b
   return { r = r, g = g, b = b }
-end
-
-local function GetAlertSpaceThreshold()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.BagSpaceAlert.threshold
-end
-
-local function SetAlertSpaceThreshold(choice)
-  IIFA_DATABASE[IIfA.currentAccount].settings.BagSpaceAlert.threshold = choice
 end
 
 local function GetBagSpaceAlertColor()
@@ -288,42 +195,6 @@ local function GetBagSpaceFullDefaultColor()
   return { r = r, g = g, b = b }
 end
 
-local function GetShowToolTipWhen()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.showToolTipWhen
-end
-
-local function SetShowToolTipWhen(value)
-  IIFA_DATABASE[IIfA.currentAccount].settings.showToolTipWhen = value
-end
-
-local function GetShowSeparateFrame()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.bInSeparateFrame
-end
-
-local function SetShowSeparateFrame(value)
-  IIFA_DATABASE[IIfA.currentAccount].settings.bInSeparateFrame = value
-end
-
-local function GetShowStyleInfo()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.showStyleInfo
-end
-
-local function SetShowStyleInfo(value)
-  IIFA_DATABASE[IIfA.currentAccount].settings.showStyleInfo = value
-end
-
-local function GetAlwaysUseStyleMaterial()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.alwaysUseStyleMaterial
-end
-
-local function SetAlwaysUseStyleMaterial(value)
-  IIFA_DATABASE[IIfA.currentAccount].settings.alwaysUseStyleMaterial = value
-end
-
-local function GetCharacterTooltipColor()
-  return IIfA.colorHandlerToon:UnpackRGB()
-end
-
 local function SetCharacterTooltipColor(r, g, b)
   IIfA.colorHandlerToon:SetRGB(r, g, b)
   IIFA_DATABASE[IIfA.currentAccount].settings.TextColorsToon = IIfA.colorHandlerToon:ToHex()
@@ -332,10 +203,6 @@ end
 local function GetCharacterTooltipDefaultColor()
   local r, g, b, a = ZO_ColorDef.HexToFloats(IIfA.defaults_account.TextColorsToon)
   return { r = r, g = g, b = b }
-end
-
-local function GetCompanionTooltipColor()
-  return IIfA.colorHandlerCompanion:UnpackRGBA()
 end
 
 local function SetCompanionTooltipColor(r, g, b)
@@ -348,10 +215,6 @@ local function GetCompanionTooltipDefaultColor()
   return { r = r, g = g, b = b }
 end
 
-local function GetBankTooltipColor()
-  return IIfA.colorHandlerBank:UnpackRGBA()
-end
-
 local function SetBankTooltipColor(r, g, b)
   IIfA.colorHandlerBank:SetRGBA(r, g, b)
   IIFA_DATABASE[IIfA.currentAccount].settings.TextColorsBank = IIfA.colorHandlerBank:ToHex()
@@ -360,10 +223,6 @@ end
 local function GetBankTooltipDefaultColor()
   local r, g, b, a = ZO_ColorDef.HexToFloats(IIfA.defaults_account.TextColorsBank)
   return { r = r, g = g, b = b }
-end
-
-local function GetGuildBankTooltipColor()
-  return IIfA.colorHandlerGBank:UnpackRGBA()
 end
 
 local function SetGuildBankTooltipColor(r, g, b)
@@ -376,10 +235,6 @@ local function GetGuildBankTooltipDefaultColor()
   return { r = r, g = g, b = b }
 end
 
-local function GetHouseChestTooltipColor()
-  return IIfA.colorHandlerHouseChest:UnpackRGBA()
-end
-
 local function SetHouseChestTooltipColor(r, g, b)
   IIfA.colorHandlerHouseChest:SetRGBA(r, g, b)
   IIFA_DATABASE[IIfA.currentAccount].settings.TextColorsHouseChest = IIfA.colorHandlerHouseChest:ToHex()
@@ -388,10 +243,6 @@ end
 local function GetHouseChestTooltipDefaultColor()
   local r, g, b, a = ZO_ColorDef.HexToFloats(IIfA.defaults_account.TextColorsHouseChest)
   return { r = r, g = g, b = b }
-end
-
-local function GetHouseContentsTooltipColor()
-  return IIfA.colorHandlerHouse:UnpackRGBA()
 end
 
 local function SetHouseContentsTooltipColor(r, g, b)
@@ -404,10 +255,6 @@ local function GetHouseContentsTooltipDefaultColor()
   return { r = r, g = g, b = b } -- Always returns a table with `r`, `g`, `b`, `a` keys
 end
 
-local function GetCraftBagTooltipColor()
-  return IIfA.colorHandlerCraftBag:UnpackRGBA()
-end
-
 local function SetCraftBagTooltipColor(r, g, b)
   IIfA.colorHandlerCraftBag:SetRGBA(r, g, b)
   IIFA_DATABASE[IIfA.currentAccount].settings.TextColorsCraftBag = IIfA.colorHandlerCraftBag:ToHex()
@@ -418,18 +265,10 @@ local function GetCraftBagTooltipDefaultColor()
   return { r = r, g = g, b = b } -- Always returns a table with `r`, `g`, `b`, `a` keys
 end
 
-local function GetTooltipFontFace()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.TooltipFontFace or IIfA.defaults_account.TooltipFontFace
-end
-
 local function SetTooltipFontFace(value)
   IIfA:StatusAlert("[IIfA]:TooltipFontFaceChanged[" .. value .. "]")
   IIFA_DATABASE[IIfA.currentAccount].settings.TooltipFontFace = value
   IIfA:SetTooltipFont()
-end
-
-local function GetTooltipFontSize()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.TooltipFontSize or IIfA.defaults_account.TooltipFontSize
 end
 
 local function SetTooltipFontSize(value)
@@ -438,22 +277,10 @@ local function SetTooltipFontSize(value)
   IIfA:SetTooltipFont()
 end
 
-local function GetTooltipFontEffect()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.TooltipFontEffect or IIfA.defaults_account.TooltipFontEffect
-end
-
 local function SetTooltipFontEffect(value)
   IIFA_DATABASE[IIfA.currentAccount].settings.TooltipFontEffect = value
   IIfA:StatusAlert("[IIfA]:TooltipFontEffectChanged[" .. value .. "]")
   IIfA:SetTooltipFont()
-end
-
-local function GetWindowRefreshDelay()
-  return IIFA_DATABASE[IIfA.currentAccount].settings.refreshDelay or IIfA.defaults_account.refreshDelay
-end
-
-local function SetWindowRefreshDelay(value)
-  IIFA_DATABASE[IIfA.currentAccount].settings.refreshDelay = value
 end
 
 -----------------------------
@@ -524,7 +351,7 @@ function IIfA:CreateOptionsMenu()
     type = "checkbox",
     name = GetString(IIFA_DATA_IGNORE_COMPANION_EQUIPMENT),
     tooltip = GetString(IIFA_DATA_IGNORE_COMPANION_EQUIPMENT_TT),
-    getFunc = function() return GetCompanionEquipIgnored() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.ignoreCompanionEquipment end,
     setFunc = function(value) SetCompanionEquipIgnored(value) end,
     default = IIfA.defaults_server.ignoreCompanionEquipment,
   }
@@ -660,8 +487,8 @@ function IIfA:CreateOptionsMenu()
     type = "slider",
     name = GetString(IIFA_USED_SPACE_THRESHOLD),
     tooltip = GetString(IIFA_USED_SPACE_THRESHOLD_TT),
-    getFunc = function() return GetBagSpaceWarnThreshold() end,
-    setFunc = function(value) SetBagSpaceWarnThreshold(value) end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.BagSpaceWarn.threshold end,
+    setFunc = function(value) IIFA_DATABASE[IIfA.currentAccount].settings.BagSpaceWarn.threshold = value end,
     min = 1,
     max = 100,
     step = 1,
@@ -681,8 +508,8 @@ function IIfA:CreateOptionsMenu()
     type = "slider",
     name = GetString(IIFA_ALERT_SPACE_THRESHOLD),
     tooltip = GetString(IIFA_ALERT_SPACE_THRESHOLD_TT),
-    getFunc = function() return GetAlertSpaceThreshold() end,
-    setFunc = function(choice) SetAlertSpaceThreshold(choice) end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.BagSpaceAlert.threshold end,
+    setFunc = function(choice) IIFA_DATABASE[IIfA.currentAccount].settings.BagSpaceAlert.threshold = choice end,
     min = 1,
     max = 100,
     step = 1,
@@ -856,40 +683,40 @@ function IIfA:CreateOptionsMenu()
     name = GetString(IIFA_MANAGE_TOOLTIP_SHOW),
     tooltip = GetString(IIFA_MANAGE_TOOLTIP_SHOW_TT),
     choices = showTooltipChoices,
-    getFunc = function() return GetShowToolTipWhen() end,
-    setFunc = function(value) SetShowToolTipWhen(value) end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.showToolTipWhen end,
+    setFunc = function(value) IIFA_DATABASE[IIfA.currentAccount].settings.showToolTipWhen = value end,
     default = IIfA.defaults_account.showToolTipWhen,
   }
   tooltipControls[#tooltipControls + 1] = {
     type = "checkbox",
     name = GetString(IIFA_SHOW_SEPARATE_FRAME),
     tooltip = GetString(IIFA_SHOW_SEPARATE_FRAME_TT),
-    getFunc = function() return GetShowSeparateFrame() end,
-    setFunc = function(value) SetShowSeparateFrame(value) end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.bInSeparateFrame end,
+    setFunc = function(value) IIFA_DATABASE[IIfA.currentAccount].settings.bInSeparateFrame = value end,
     default = IIfA.defaults_account.bInSeparateFrame,
   }
   tooltipControls[#tooltipControls + 1] = {
     type = "checkbox",
     name = GetString(IIFA_SHOW_STYLE_INFO),
     tooltip = GetString(IIFA_SHOW_STYLE_INFO_TT),
-    getFunc = function() return GetShowStyleInfo() end,
-    setFunc = function(value) SetShowStyleInfo(value) end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.showStyleInfo end,
+    setFunc = function(value) IIFA_DATABASE[IIfA.currentAccount].settings.showStyleInfo = value end,
     default = IIfA.defaults_account.showStyleInfo,
   }
   tooltipControls[#tooltipControls + 1] = {
     type = "checkbox",
     name = GetString(IIFA_ALWAYS_STYLE_MAT),
     tooltip = GetString(IIFA_ALWAYS_STYLE_MAT_TT),
-    getFunc = function() return GetAlwaysUseStyleMaterial() end,
-    setFunc = function(value) SetAlwaysUseStyleMaterial(value) end,
-    disabled = function() return IsShowStyleInfoDisabled() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.alwaysUseStyleMaterial end,
+    setFunc = function(value) IIFA_DATABASE[IIfA.currentAccount].settings.alwaysUseStyleMaterial = value end,
+    disabled = function() return not IIFA_DATABASE[IIfA.currentAccount].settings.showStyleInfo end,
     default = IIfA.defaults_account.alwaysUseStyleMaterial,
   }
   tooltipControls[#tooltipControls + 1] = {
     type = "colorpicker",
     name = GetString(IIFA_TOOLTIP_COLOR_CHARACTERS),
     tooltip = GetString(IIFA_TOOLTIP_COLOR_CHARACTERS_TT),
-    getFunc = function() return GetCharacterTooltipColor() end,
+    getFunc = function() return IIfA.colorHandlerToon:UnpackRGB() end,
     setFunc = function(r, g, b) SetCharacterTooltipColor(r, g, b) end,
     default = GetCharacterTooltipDefaultColor,
   }
@@ -897,7 +724,7 @@ function IIfA:CreateOptionsMenu()
     type = "colorpicker",
     name = GetString(IIFA_TOOLTIP_COLOR_COMPANIONS),
     tooltip = GetString(IIFA_TOOLTIP_COLOR_COMPANIONS_TT),
-    getFunc = function() return GetCompanionTooltipColor() end,
+    getFunc = function() return IIfA.colorHandlerCompanion:UnpackRGBA() end,
     setFunc = function(r, g, b) SetCompanionTooltipColor(r, g, b) end,
     default = GetCompanionTooltipDefaultColor,
   }
@@ -905,7 +732,7 @@ function IIfA:CreateOptionsMenu()
     type = "colorpicker",
     name = GetString(IIFA_TOOLTIP_COLOR_BANKS),
     tooltip = GetString(IIFA_TOOLTIP_COLOR_BANKS_TT),
-    getFunc = function() return GetBankTooltipColor() end,
+    getFunc = function() return IIfA.colorHandlerBank:UnpackRGBA() end,
     setFunc = function(r, g, b) SetBankTooltipColor(r, g, b) end,
     default = GetBankTooltipDefaultColor,
   }
@@ -913,7 +740,7 @@ function IIfA:CreateOptionsMenu()
     type = "colorpicker",
     name = GetString(IIFA_TOOLTIP_COLOR_GUILDBANKS),
     tooltip = GetString(IIFA_TOOLTIP_COLOR_GUILDBANKS_TT),
-    getFunc = function() return GetGuildBankTooltipColor() end,
+    getFunc = function() return IIfA.colorHandlerGBank:UnpackRGBA() end,
     setFunc = function(r, g, b) SetGuildBankTooltipColor(r, g, b) end,
     default = GetGuildBankTooltipDefaultColor,
   }
@@ -921,7 +748,7 @@ function IIfA:CreateOptionsMenu()
     type = "colorpicker",
     name = GetString(IIFA_TOOLTIP_COLOR_HOUSECHESTS),
     tooltip = GetString(IIFA_TOOLTIP_COLOR_HOUSECHESTS_TT),
-    getFunc = function() return GetHouseChestTooltipColor() end,
+    getFunc = function() return IIfA.colorHandlerHouseChest:UnpackRGBA() end,
     setFunc = function(r, g, b) SetHouseChestTooltipColor(r, g, b) end,
     default = GetHouseChestTooltipDefaultColor,
   }
@@ -929,7 +756,7 @@ function IIfA:CreateOptionsMenu()
     type = "colorpicker",
     name = GetString(IIFA_TOOLTIP_COLOR_HOUSE_CONTENTS),
     tooltip = GetString(IIFA_TOOLTIP_COLOR_HOUSE_CONTENTS_TT),
-    getFunc = function() return GetHouseContentsTooltipColor() end,
+    getFunc = function() return IIfA.colorHandlerHouse:UnpackRGBA() end,
     setFunc = function(r, g, b) SetHouseContentsTooltipColor(r, g, b) end,
     default = GetHouseContentsTooltipDefaultColor,
   }
@@ -937,7 +764,7 @@ function IIfA:CreateOptionsMenu()
     type = "colorpicker",
     name = GetString(IIFA_TOOLTIP_COLOR_CRAFT_BAG),
     tooltip = GetString(IIFA_TOOLTIP_COLOR_CRAFT_BAG_TT),
-    getFunc = function() return GetCraftBagTooltipColor() end,
+    getFunc = function() return IIfA.colorHandlerCraftBag:UnpackRGBA() end,
     setFunc = function(r, g, b) SetCraftBagTooltipColor(r, g, b) end,
     default = GetCraftBagTooltipDefaultColor,
   }
@@ -947,7 +774,7 @@ function IIfA:CreateOptionsMenu()
     tooltip = GetString(IIFA_TOOLTIP_FONT_CUSTOM_TT),
     choices = IIfA.fontListChoices,
     scrollable = true,
-    getFunc = function() return GetTooltipFontFace() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.TooltipFontFace or IIfA.defaults_account.TooltipFontFace end,
     setFunc = function(value) SetTooltipFontFace(value) end,
     default = IIfA.defaults_account.TooltipFontFace, -- Corrected reference
   }
@@ -958,7 +785,7 @@ function IIfA:CreateOptionsMenu()
     min = 5,
     max = 40,
     step = 1,
-    getFunc = function() return GetTooltipFontSize() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.TooltipFontSize or IIfA.defaults_account.TooltipFontSize end,
     setFunc = function(value) SetTooltipFontSize(value) end,
     default = IIfA.defaults_account.TooltipFontSize, -- Corrected reference
   }
@@ -967,7 +794,7 @@ function IIfA:CreateOptionsMenu()
     name = GetString(IIFA_TOOLTIP_FONT_EFFECT),
     tooltip = GetString(IIFA_TOOLTIP_FONT_EFFECT_TT),
     choices = IIfA.fontStyleChoices,
-    getFunc = function() return GetTooltipFontEffect() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.TooltipFontEffect or IIfA.defaults_account.TooltipFontEffect end,
     setFunc = function(value) SetTooltipFontEffect(value) end,
     default = IIfA.defaults_account.TooltipFontEffect, -- Corrected reference
   }
@@ -980,7 +807,7 @@ function IIfA:CreateOptionsMenu()
     type = "checkbox",
     name = GetString(IIFA_SHOW_ITEM_COUNT_RIGHT),
     tooltip = GetString(IIFA_SHOW_ITEM_COUNT_RIGHT_TT),
-    getFunc = function() return GetItemCountPositionSetting() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.showItemCountOnRight end,
     setFunc = function(value) SetItemCountPositionSetting(value) end,
     default = IIfA.defaults_account.showItemCountOnRight,
   }
@@ -988,7 +815,7 @@ function IIfA:CreateOptionsMenu()
     type = "checkbox",
     name = GetString(IIFA_SHOW_STATS_BELOW_LIST),
     tooltip = GetString(IIFA_SHOW_STATS_BELOW_LIST_TT),
-    getFunc = function() return GetShowItemStatsSetting() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.showItemStats end,
     setFunc = function(value) SetShowItemStatsSetting(value) end,
     default = IIfA.defaults_account.showItemStats,
   }
@@ -998,7 +825,7 @@ function IIfA:CreateOptionsMenu()
     tooltip = GetString(IIFA_DEFAULT_INVENTORY_FRAME_VIEW_TT),
     choices = IIfA.dropdownLocNames,
     scrollable = true,
-    getFunc = function() return GetDefaultInventoryFrameView() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].characters[IIfA.currentCharacterId].defaultInventoryFrameView end,
     setFunc = function(value) SetDefaultInventoryFrameView(value) end,
     default = IIfA.defaults_character.defaultInventoryFrameView,
   }
@@ -1006,32 +833,32 @@ function IIfA:CreateOptionsMenu()
     type = "checkbox",
     name = GetString(IIFA_FOCUS_STATS_SEARCHBOX),
     tooltip = GetString(IIFA_FOCUS_STATS_SEARCHBOX_TT),
-    getFunc = function() return GetFocusSearchBoxSetting() end,
-    setFunc = function(value) SetFocusSearchBoxSetting(value) end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.dontFocusSearch end,
+    setFunc = function(value) IIFA_DATABASE[IIfA.currentAccount].settings.dontFocusSearch = not value end,
     default = not IIfA.defaults_account.dontFocusSearch,
   }
   optionsData[#optionsData + 1] = {
     type = "checkbox",
     name = GetString(IIFA_FILTER_INCLUDE_SETNAME),
     tooltip = GetString(IIFA_FILTER_INCLUDE_SETNAME_TT),
-    getFunc = function() return GetFilterIncludeSetNameSetting() end,
-    setFunc = function(value) SetFilterIncludeSetNameSetting(value) end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.bFilterOnSetNameToo end,
+    setFunc = function(value) IIFA_DATABASE[IIfA.currentAccount].settings.bFilterOnSetNameToo = value end,
     default = IIfA.defaults_account.bFilterOnSetNameToo,
   }
   optionsData[#optionsData + 1] = {
     type = "checkbox",
     name = GetString(IIFA_FILTER_SETNAME_ONLY),
     tooltip = GetString(IIFA_FILTER_SETNAME_ONLY_TT),
-    getFunc = function() return GetFilterSetNameOnlySetting() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.bFilterOnSetName end,
     setFunc = function(value) SetFilterSetNameOnlySetting(value) end,
-    disabled = function() return IsFilterSetNameOnlyDisabled() end,
+    disabled = function() return not IIFA_DATABASE[IIfA.currentAccount].settings.bFilterOnSetNameToo end,
     default = IIfA.defaults_account.bFilterOnSetName,
   }
   optionsData[#optionsData + 1] = {
     type = "checkbox",
     name = GetString(IIFA_ENABLE_SEARCH_IIFA_MENU),
     tooltip = GetString(IIFA_ENABLE_SEARCH_IIFA_MENU_TT),
-    getFunc = function() return GetEnableSearchMenuSetting() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.bAddContextMenuEntrySearchInIIfA end,
     setFunc = function(value) SetEnableSearchMenuSetting(value) end,
     requiresReload = true,
     default = IIfA.defaults_account.bAddContextMenuEntrySearchInIIfA,
@@ -1040,7 +867,7 @@ function IIfA:CreateOptionsMenu()
     type = "checkbox",
     name = GetString(IIFA_ENABLE_MISSING_MOTIF_IIFA_MENU),
     tooltip = GetString(IIFA_ENABLE_MISSING_MOTIF_IIFA_MENU_TT),
-    getFunc = function() return GetEnableMissingMotifsMenuSetting() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.bAddContextMenuEntryMissingMotifsInIIfA end,
     setFunc = function(value) SetEnableMissingMotifsMenuSetting(value) end,
     default = IIfA.defaults_account.bAddContextMenuEntryMissingMotifsInIIfA,
   }
@@ -1048,7 +875,7 @@ function IIfA:CreateOptionsMenu()
     type = "checkbox",
     name = GetString(IIFA_HIDE_CLOSE_BUTTON),
     tooltip = GetString(IIFA_HIDE_CLOSE_BUTTON_TT),
-    getFunc = function() return GetHideCloseButtonSetting() end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.hideCloseButton or false end,
     setFunc = function(value) SetHideCloseButtonSetting(value) end,
     default = IIfA.defaults_account.hideCloseButton,
   }
@@ -1068,8 +895,8 @@ function IIfA:CreateOptionsMenu()
           type = "checkbox",
           name = GetString(IIFA_FCOITEMSAVER_MENU_SHOW_MARKERS),
           tooltip = GetString(IIFA_FCOITEMSAVER_MENU_SHOW_MARKERS_TT),
-          getFunc = function() return GetFCOISShowMarkerIcons() end,
-          setFunc = function(value) SetFCOISShowMarkerIcons(value) end,
+          getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.FCOISshowMarkerIcons end,
+          setFunc = function(value) IIFA_DATABASE[IIfA.currentAccount].settings.FCOISshowMarkerIcons = value end,
           default = IIfA.defaults_account.FCOISshowMarkerIcons,
         },
       },
@@ -1087,8 +914,8 @@ function IIfA:CreateOptionsMenu()
     min = 250,
     max = 3000,
     step = 250,
-    getFunc = function() return GetWindowRefreshDelay() end,
-    setFunc = function(value) SetWindowRefreshDelay(value) end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.refreshDelay or IIfA.defaults_account.refreshDelay end,
+    setFunc = function(value) IIFA_DATABASE[IIfA.currentAccount].settings.refreshDelay = value end,
     default = IIfA.defaults_account.refreshDelay, -- Corrected reference
   }
 
@@ -1100,8 +927,8 @@ function IIfA:CreateOptionsMenu()
     type = "checkbox",
     name = GetString(IIFA_DEBUGGING_NAME),
     tooltip = GetString(IIFA_DEBUGGING_TT),
-    getFunc = function() return GetDebugSetting() end,
-    setFunc = function(value) SetDebugSetting(value) end,
+    getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].settings.bDebug end,
+    setFunc = function(value) IIFA_DATABASE[IIfA.currentAccount].settings.bDebug = value end,
     default = IIfA.defaults_account.bDebug,
   }
 
@@ -1113,7 +940,7 @@ function IIfA:CreateOptionsMenu()
         name = GetString(IIFA_DATA_GUILDBANK_COLLECT_DATA),
         tooltip = GetString(IIFA_DATA_GUILDBANK_COLLECT_DATA_TT),
         warning = GetString(IIFA_DATA_GUILDBANK_COLLECT_DATA_WARN),
-        getFunc = function() return GetCollectGuildBankData() end,
+        getFunc = function() return IIFA_DATABASE[IIfA.currentAccount].servers[IIfA.currentServerType].bCollectGuildBankData end,
         setFunc = function(value) SetCollectGuildBankData(value) end,
         default = IIfA.defaults_server[IIfA.currentServerType].bCollectGuildBankData,
       }

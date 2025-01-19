@@ -285,27 +285,27 @@ function IIfA:ApplySearchText(text)
   --Function to strip the article of a text in some client languages, e.g. de (der, die, das) or french (le, la, les)
   local function stripArticlePrefix(textToStripFrom)
     if not textToStripFrom then return false, nil end
-    local articelStripped = false
+
+    -- Articles for supported languages
     local articlesOfLanguage = {
       ["de"] = { ["der"] = true, ["die"] = true, ["das"] = true },
       ["fr"] = { ["le"] = true, ["la"] = true, ["les"] = true },
     }
+
+    -- Get client language
     local lang = IIfA.clientLanguage or GetCVar("language.2")
     if not articlesOfLanguage[lang] then return false, nil end
-    local textWithoutArticle
-    --Any whitespaces in the text?
-    local firstWhiteSpaceIndex = zo_strfind(textToStripFrom, "%s")
-    --d(">firstWhiteSpaceIndex: " ..tostring(firstWhiteSpaceIndex))
-    if firstWhiteSpaceIndex ~= nil then
-      --Get the text before the first whitespace
-      local possibleArticleText = zo_strgsub(textToStripFrom, 1, firstWhiteSpaceIndex)
-      --d(">possibleArticleText: " ..tostring(possibleArticleText))
-      if articlesOfLanguage[lang][possibleArticleText] then
-        articelStripped = true
-        textWithoutArticle = zo_strgsub(textToStripFrom, firstWhiteSpaceIndex + 1)
-      end
+
+    -- Match the first word (up to whitespace) in the string
+    local firstWord, restOfText = zo_strmatch(textToStripFrom, "^(%S+)%s+(.*)")
+
+    -- Check if the first word is an article
+    if firstWord and articlesOfLanguage[lang][firstWord] then
+      return true, restOfText
     end
-    return articelStripped, textWithoutArticle
+
+    -- No article to strip
+    return false, textToStripFrom
   end
 
   local searchTextLower = zo_strlower(text)
