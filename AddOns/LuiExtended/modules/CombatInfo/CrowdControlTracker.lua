@@ -1,11 +1,11 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
---- @class (partial) CombatInfo
+--- @class (partial) LUIE.CombatInfo
 local CombatInfo = LUIE.CombatInfo
 --- @class (partial) CrowdControlTracker
 local CrowdControlTracker = CombatInfo.CrowdControlTracker

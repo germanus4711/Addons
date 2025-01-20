@@ -6,57 +6,16 @@ LostTreasure_Account =
         {
             ["$AccountWide"] = 
             {
-                ["pinTypes"] = 
-                {
-                    ["clue"] = 
-                    {
-                        ["markOption"] = "inventory",
-                        ["deletionDelay"] = 10,
-                        ["size"] = 32,
-                        ["pinLevel"] = 47,
-                        ["showOnCompass"] = true,
-                        ["showOnMap"] = true,
-                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
-                    },
-                    ["survey"] = 
-                    {
-                        ["markOption"] = "inventory",
-                        ["deletionDelay"] = 10,
-                        ["size"] = 32,
-                        ["pinLevel"] = 47,
-                        ["showOnCompass"] = true,
-                        ["showOnMap"] = true,
-                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
-                    },
-                    ["treasure"] = 
-                    {
-                        ["markOption"] = "inventory",
-                        ["deletionDelay"] = 10,
-                        ["size"] = 32,
-                        ["pinLevel"] = 47,
-                        ["showOnCompass"] = true,
-                        ["showOnMap"] = true,
-                        ["texture"] = "LibTreasure/Icons/x_red.dds",
-                    },
-                },
-                ["mining"] = 
-                {
-                    ["APITimeStamp"] = 1730152370,
-                    ["data"] = 
-                    {
-                    },
-                    ["APIVersion"] = 101044,
-                },
                 ["version"] = 20,
                 ["misc"] = 
                 {
                     ["hasNewIconPath"] = true,
                 },
-                ["notifications"] = 
-                {
-                },
                 ["miniMap"] = 
                 {
+                    ["size"] = 300,
+                    ["enabled"] = true,
+                    ["deletionDelay"] = 4,
                     ["anchor"] = 
                     {
                         ["data"] = 
@@ -68,9 +27,50 @@ LostTreasure_Account =
                             [6] = 0,
                         },
                     },
-                    ["size"] = 300,
-                    ["enabled"] = true,
-                    ["deletionDelay"] = 4,
+                },
+                ["notifications"] = 
+                {
+                },
+                ["mining"] = 
+                {
+                    ["APIVersion"] = 101044,
+                    ["APITimeStamp"] = 1730152370,
+                    ["data"] = 
+                    {
+                    },
+                },
+                ["pinTypes"] = 
+                {
+                    ["survey"] = 
+                    {
+                        ["showOnMap"] = true,
+                        ["showOnCompass"] = true,
+                        ["deletionDelay"] = 10,
+                        ["size"] = 32,
+                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
+                        ["pinLevel"] = 47,
+                        ["markOption"] = "inventory",
+                    },
+                    ["clue"] = 
+                    {
+                        ["showOnMap"] = true,
+                        ["showOnCompass"] = true,
+                        ["deletionDelay"] = 10,
+                        ["size"] = 32,
+                        ["texture"] = "LibTreasure/Icons/hammerstrike.dds",
+                        ["pinLevel"] = 47,
+                        ["markOption"] = "inventory",
+                    },
+                    ["treasure"] = 
+                    {
+                        ["showOnMap"] = true,
+                        ["showOnCompass"] = true,
+                        ["deletionDelay"] = 10,
+                        ["size"] = 32,
+                        ["texture"] = "LibTreasure/Icons/x_red.dds",
+                        ["pinLevel"] = 47,
+                        ["markOption"] = "inventory",
+                    },
                 },
             },
         },
@@ -85,11 +85,11 @@ LostTreasure_Character =
             ["8796093023211051"] = 
             {
                 ["$LastCharacterName"] = "Freya Orm",
+                ["version"] = 20,
                 ["LibSavedVars"] = 
                 {
                     ["accountSavedVarsActive"] = true,
                 },
-                ["version"] = 20,
             },
         },
     },

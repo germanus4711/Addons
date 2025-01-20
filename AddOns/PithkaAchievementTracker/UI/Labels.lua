@@ -190,7 +190,8 @@ function PITHKA.UI.Labels.stateBased(data)
 		-- use stateVar to lookup in textLibrary
 		local state = PITHKA.SV.state[data.stateVar]
 
-		assert(data.textFnLibrary[state], 'stateVar value not in textFnLibrary')
+		-- check if state is still valid (removing guild selections can cause saved state to no longer be valid)
+		-- assert(data.textFnLibrary[state], 'stateVar value not in textFnLibrary')
 
 		local tFn  = data.textFnLibrary[state].text
 		local ttFn = data.textFnLibrary[state].tt

@@ -1,10 +1,11 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
+--- @class (partial) LUIE.SlashCommands
 local SlashCommands = LUIE.SlashCommands
 
 local printToChat = LUIE.PrintToChat

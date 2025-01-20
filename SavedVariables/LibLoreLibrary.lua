@@ -1,7 +1,7 @@
 LibLoreLibrary_Settings =
 {
-    ["lang"] = "en",
     ["version"] = 1,
+    ["lang"] = "en",
 }
 LibLoreLibrary_Data =
 {
@@ -9,8 +9,8 @@ LibLoreLibrary_Data =
     {
     },
     ["isCollecting"] = false,
-    ["langIdx"] = 0,
     ["locales"] = 
     {
     },
+    ["langIdx"] = 0,
 }

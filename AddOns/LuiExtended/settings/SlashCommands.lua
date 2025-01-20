@@ -1,11 +1,13 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
+--- @class (partial) LUIE.SlashCommands
 local SlashCommands = LUIE.SlashCommands
+--- @type CollectibleTables
 local CollectibleTables = LUIE.Data.CollectibleTables
 
 local pairs = pairs
@@ -16,6 +18,9 @@ local function GetFormattedCollectibleName(id)
     return zo_strformat("<<1>>", GetCollectibleName(id)) -- Remove ^M and ^F
 end
 
+--- @param collectibleTable CollectibleTables
+--- @return table options
+--- @return table optionKeys
 local function CreateOptions(collectibleTable)
     local options = {}
     local optionKeys = {}
@@ -108,7 +113,7 @@ function SlashCommands.CreateSettings()
         donation = LUIE.donation,
         slashCommand = "/luisc",
         registerForRefresh = true,
-        registerForDefaults = false,
+        registerForDefaults = true,
     }
 
     local optionsDataSlashCommands = {}
@@ -793,6 +798,7 @@ function SlashCommands.CreateSettings()
         },
     }
 
+    -- Holiday XP Buffs are applied by the event now and not an item. No need to have these settings. Commented, maybe we can repurpose the code.
     -- Slash Commands - Holiday XP Events Commands Options Submenu
     optionsDataSlashCommands[#optionsDataSlashCommands + 1] =
     {

@@ -1,67 +1,88 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
-
+-- -----------------------------------------------------------------------------
 local string_format = string.format
 
---[[
-    Called from the menu and on initialization to update the timestamp color when changed.
-]]
+-- -----------------------------------------------------------------------------
+--- Called from the menu and on initialization to update the timestamp color when changed.
 LUIE.TimeStampColorize = nil
 
---[[
-    Updates the timestamp color based on the value in LUIE.ChatAnnouncements.SV.TimeStampColor.
-]]
+-- -----------------------------------------------------------------------------
+--- Updates the timestamp color based on the value in LUIE.ChatAnnouncements.SV.TimeStampColor.
 function LUIE.UpdateTimeStampColor()
     LUIE.TimeStampColorize = ZO_ColorDef:New(unpack(LUIE.ChatAnnouncements.SV.TimeStampColor)):ToHex()
 end
 
---[[
-    Toggle the display of the Alert Frame.
-    Sets the visibility of the ZO_AlertTextNotification based on the value of LUIE.SV.HideAlertFrame.
-]]
+-- -----------------------------------------------------------------------------
+--- Toggle the display of the Alert Frame.
+--- Sets the visibility of the ZO_AlertTextNotification based on the value of LUIE.SV.HideAlertFrame.
 function LUIE.SetupAlertFrameVisibility()
     ZO_AlertTextNotification:SetHidden(LUIE.SV.HideAlertFrame)
 end
 
+-- -----------------------------------------------------------------------------
 do
+    -- Get milliseconds from game time
+    local function getCurrentMillisecondsFormatted()
+        local currentTimeMs = GetGameTimeMilliseconds()
+        if currentTimeMs == nil then return end
+        return string_format("%03d", currentTimeMs % 1000)
+    end
+
     --- Returns a formatted timestamp based on the provided time string and format string.
     --- @param timeStr string: The time string in the format "HH:MM:SS".
     --- @param formatStr string|nil (optional): The format string for the timestamp. If not provided, the default format from LUIE.ChatAnnouncements.SV.TimeStampFormat will be used.
-    --- @return string: The formatted timestamp.
-    local function CreateTimestamp(timeStr, formatStr)
+    --- @param milliseconds string|nil
+    --- @return string @ The formatted timestamp.
+    local function CreateTimestamp(timeStr, formatStr, milliseconds)
+        local showTimestamp = LUIE.ChatAnnouncements.SV.TimeStamp
+        if showTimestamp then
+            milliseconds = milliseconds or getCurrentMillisecondsFormatted()
+        end
+        if milliseconds == nil then milliseconds = "" end
         formatStr = formatStr or LUIE.ChatAnnouncements.SV.TimeStampFormat
 
         -- split up default timestamp
-        local hours, minutes, seconds = zo_strmatch(timeStr, "([^:]+):([^:]+):([^:]+)")
+        local hours, minutes, seconds = zo_strmatch(timeStr, "([^%:]+):([^%:]+):([^%:]+)")
         local hoursNoLead = tonumber(hours) -- hours without leading zero
         local hours12NoLead = (hoursNoLead - 1) % 12 + 1
-        local hours12 = hours12NoLead < 10 and "0" .. hours12NoLead or tostring(hours12NoLead)
-        local pUp = hoursNoLead >= 12 and "PM" or "AM"
-        local pLow = hoursNoLead >= 12 and "pm" or "am"
+        local hours12
+        if (hours12NoLead < 10) then
+            hours12 = "0" .. hours12NoLead
+        else
+            hours12 = hours12NoLead
+        end
+        local pUp = "AM"
+        local pLow = "am"
+        if (hoursNoLead >= 12) then
+            pUp = "PM"
+            pLow = "pm"
+        end
 
-        -- create new timestamp using substitutions
+        -- create new one
+        -- >If you add new formats make sure to update the tooltip at LUIE_STRING_LAM_CA_TIMESTAMPFORMAT_TP too
         local timestamp = formatStr
         timestamp = zo_strgsub(timestamp, "HH", hours)
-        timestamp = zo_strgsub(timestamp, "H", tostring(hoursNoLead))
+        timestamp = zo_strgsub(timestamp, "H", hoursNoLead)
         timestamp = zo_strgsub(timestamp, "hh", hours12)
-        timestamp = zo_strgsub(timestamp, "h", tostring(hours12NoLead))
+        timestamp = zo_strgsub(timestamp, "h", hours12NoLead)
         timestamp = zo_strgsub(timestamp, "m", minutes)
         timestamp = zo_strgsub(timestamp, "s", seconds)
         timestamp = zo_strgsub(timestamp, "A", pUp)
         timestamp = zo_strgsub(timestamp, "a", pLow)
-
+        timestamp = zo_strgsub(timestamp, "xy", milliseconds)
         return timestamp
     end
 
     LUIE.CreateTimestamp = CreateTimestamp
 end
 
-
+-- -----------------------------------------------------------------------------
 do
     --- Helper function to format a message with an optional timestamp.
     --- @param msg string: The message to be formatted.
@@ -94,7 +115,7 @@ do
 
     LUIE.FormatMessage = FormatMessage
 end
-
+-- -----------------------------------------------------------------------------
 --- Hides or shows all LUIE components.
 --- @param hidden boolean: If true, all components will be hidden. If false, all components will be shown.
 function LUIE.ToggleVisibility(hidden)
@@ -103,6 +124,7 @@ function LUIE.ToggleVisibility(hidden)
     end
 end
 
+-- -----------------------------------------------------------------------------
 do
     --- Adds a system message to the chat.
     --- @param messageOrFormatter string: The message to be printed.
@@ -120,7 +142,7 @@ do
     end
     LUIE.AddSystemMessage = AddSystemMessage
 end
-
+-- -----------------------------------------------------------------------------
 do
     --- Easy Print to Chat.
     --- Prints a message to the chat.
@@ -136,7 +158,7 @@ do
                     local formattedMsg = FormatMessage(msg or "no message", LUIE.ChatAnnouncements.SV.TimeStamp)
                     AddSystemMessage(formattedMsg)
                 else
-                    AddSystemMessage(msg)
+                    CHAT_ROUTER:AddSystemMessage(msg)
                 end
             else
                 -- If we have system messages sent to display in all windows then just print to all windows at once, otherwise send messages to individual tabs.
@@ -146,7 +168,7 @@ do
                         local formattedMsg = FormatMessage(msg or "no message", LUIE.ChatAnnouncements.SV.TimeStamp)
                         AddSystemMessage(formattedMsg)
                     else
-                        AddSystemMessage(msg)
+                        CHAT_ROUTER:AddSystemMessage(msg)
                     end
                 else
                     for k, cc in ipairs(CHAT_SYSTEM.containers) do
@@ -176,7 +198,7 @@ do
     end
     LUIE.PrintToChat = PrintToChat
 end
-
+-- -----------------------------------------------------------------------------
 --- Formats a number with optional shortening and localized separators.
 --- @param number number The number to format
 --- @param shorten? boolean Whether to abbreviate large numbers (e.g. 1.5M)
@@ -225,6 +247,7 @@ function LUIE.AbbreviateNumber(number, shorten, comma)
     return number
 end
 
+-- -----------------------------------------------------------------------------
 --- Takes an input with a name identifier, title, text, and callback function to create a dialogue button.
 --- @param identifier string: The identifier for the dialogue button.
 --- @param title string: The title text for the dialogue button.
@@ -261,6 +284,7 @@ function LUIE.RegisterDialogueButton(identifier, title, text, callback)
     return ESO_Dialogs[identifier]
 end
 
+-- -----------------------------------------------------------------------------
 --- Function to update guild data.
 --- Retrieves information about each guild the player is a member of and stores it in LUIE.GuildIndexData table.
 function LUIE.UpdateGuildData()
@@ -274,6 +298,7 @@ function LUIE.UpdateGuildData()
     end
 end
 
+-- -----------------------------------------------------------------------------
 --- Simple function to check the veteran difficulty.
 --- @return boolean: Returns true if the player is in a veteran dungeon or using veteran difficulty, false otherwise.
 function LUIE.ResolveVeteranDifficulty()
@@ -286,6 +311,7 @@ function LUIE.ResolveVeteranDifficulty()
     end
 end
 
+-- -----------------------------------------------------------------------------
 --- Simple function that checks if the player is in a PVP zone.
 --- @return boolean: Returns true if the player is PvP flagged, false otherwise.
 function LUIE.ResolvePVPZone()
@@ -296,6 +322,7 @@ function LUIE.ResolvePVPZone()
     end
 end
 
+-- -----------------------------------------------------------------------------
 --- Pulls the name for the current morph of a skill.
 --- @param abilityId number: The AbilityId of the skill.
 --- @return string abilityName: The name of the current morph of the skill.
@@ -305,6 +332,7 @@ function LUIE.GetSkillMorphName(abilityId)
     return abilityName
 end
 
+-- -----------------------------------------------------------------------------
 --- Pulls the icon for the current morph of a skill.
 --- @param abilityId number: The AbilityId of the skill.
 --- @return string abilityIcon: The icon path of the current morph of the skill.
@@ -314,6 +342,7 @@ function LUIE.GetSkillMorphIcon(abilityId)
     return abilityIcon
 end
 
+-- -----------------------------------------------------------------------------
 --- Pulls the AbilityId for the current morph of a skill.
 --- @param abilityId number: The AbilityId of the skill.
 --- @return number morphAbilityId: The AbilityId of the current morph of the skill.
@@ -323,6 +352,7 @@ function LUIE.GetSkillMorphAbilityId(abilityId)
     return morphAbilityId -- renamed local (abilityId) to avoid naming conflicts with the parameter
 end
 
+-- -----------------------------------------------------------------------------
 --- Function to update the syntax for default Mundus Stone tooltips we pull (in order to retain scaling).
 --- @param abilityId number: The ID of the ability.
 --- @param tooltipText string: The original tooltip text.
@@ -339,6 +369,7 @@ function LUIE.UpdateMundusTooltipSyntax(abilityId, tooltipText)
     return tooltipText
 end
 
+-- -----------------------------------------------------------------------------
 --- @param index number
 --- @param bar? HotBarCategory
 --- @return number actionId
@@ -351,3 +382,264 @@ function LUIE.GetSlotTrueBoundId(index, bar)
     end
     return id
 end
+
+-- -----------------------------------------------------------------------------
+
+-- Add this if not already.
+if not SLASH_COMMANDS["/rl"] then
+    SLASH_COMMANDS["/rl"] = ReloadUI
+end
+
+-- -----------------------------------------------------------------------------
+---
+--- @param conditionType QuestConditionType
+--- @return string
+function LUIE.GetQuestConditionTypeName(conditionType)
+    local conditionTypes =
+    {
+        [1] = "QUEST_CONDITION_TYPE_KILL_MONSTER",
+        [2] = "QUEST_CONDITION_TYPE_INTERACT_MONSTER",
+        [3] = "QUEST_CONDITION_TYPE_PLAYER_DEATH",
+        [4] = "QUEST_CONDITION_TYPE_TIMER",
+        [5] = "QUEST_CONDITION_TYPE_GOTO_POINT",
+        [6] = "QUEST_CONDITION_TYPE_COLLECT_ITEM",
+        [7] = "QUEST_CONDITION_TYPE_GIVE_ITEM",
+        [8] = "QUEST_CONDITION_TYPE_INTERACT_OBJECT",
+        [9] = "QUEST_CONDITION_TYPE_TALK_TO",
+        [10] = "QUEST_CONDITION_TYPE_NPC_GOAL",
+        [11] = "QUEST_CONDITION_TYPE_USE_QUEST_ITEM",
+        [12] = "QUEST_CONDITION_TYPE_NPC_GOAL_FAIL",
+        [13] = "QUEST_CONDITION_TYPE_FOLLOWER_LOST",
+        [14] = "QUEST_CONDITION_TYPE_INTERACT_OBJECT_IN_STATE",
+        [15] = "QUEST_CONDITION_TYPE_TRANSITION_INTERACT_OBJECT",
+        [16] = "QUEST_CONDITION_TYPE_PLAYER_LOGOUT",
+        [17] = "QUEST_CONDITION_TYPE_SCRIPT_ACTION",
+        [18] = "QUEST_CONDITION_TYPE_ABILITY_USED_ON_NPC",
+        [19] = "QUEST_CONDITION_TYPE_ABILITY_TYPE_USED_ON_NPC",
+        [20] = "QUEST_CONDITION_TYPE_ENTER_SUBZONE",
+        [21] = "QUEST_CONDITION_TYPE_EXIT_SUBZONE",
+        [22] = "QUEST_CONDITION_TYPE_ABILITY_USED_ON_TABLE",
+        [23] = "QUEST_CONDITION_TYPE_ABILITY_TYPE_USED_ON_TABLE",
+        [24] = "QUEST_CONDITION_TYPE_KILL_MONSTER_TABLE",
+        [25] = "QUEST_CONDITION_TYPE_DECONSTRUCT_ITEM",
+        [26] = "QUEST_CONDITION_TYPE_KILL_ENEMY_PLAYERS",
+        [27] = "QUEST_CONDITION_TYPE_KILL_ENEMY_GUARDS",
+        [28] = "QUEST_CONDITION_TYPE_CAPTURE_KEEP_TYPE",
+        [29] = "QUEST_CONDITION_TYPE_CAPTURE_SPECIFIC_KEEP",
+        [30] = "QUEST_CONDITION_TYPE_HAS_ITEM",
+        [31] = "QUEST_CONDITION_TYPE_CRAFT_ITEM",
+        [32] = "QUEST_CONDITION_TYPE_PICKPOCKET_ITEM",
+        [33] = "QUEST_CONDITION_TYPE_EQUIP_ITEM",
+        [34] = "QUEST_CONDITION_TYPE_LEAVE_REVIVE_COUNTER_LIST",
+        [35] = "QUEST_CONDITION_TYPE_EVENT_SUCCESS",
+        [36] = "QUEST_CONDITION_TYPE_EVENT_FAIL",
+        [37] = "QUEST_CONDITION_TYPE_FOLLOWER_GAINED",
+        [38] = "QUEST_CONDITION_TYPE_INTERACT_SIMPLE_OBJECT",
+        [39] = "QUEST_CONDITION_TYPE_INTERACT_SIMPLE_OBJECT_IN_STATE",
+        [40] = "QUEST_CONDITION_TYPE_ARTIFACT_CAPTURED",
+        [41] = "QUEST_CONDITION_TYPE_ARTIFACT_RETURNED",
+        [42] = "QUEST_CONDITION_TYPE_KILL_ENEMY_PLAYERS_OF_CLASS",
+        [43] = "QUEST_CONDITION_TYPE_KILL_ENEMY_PLAYERS_WHILE_DEFENDING_KEEP",
+        [44] = "QUEST_CONDITION_TYPE_GATHER_ITEM",
+        [45] = "QUEST_CONDITION_TYPE_ADVANCE_COMPLETABLE_SIBLINGS",
+        [46] = "QUEST_CONDITION_TYPE_SELL_LAUNDER_ITEM",
+        [47] = "QUEST_CONDITION_TYPE_KILL_BOUNTY_CLASSIFICATION_TYPE",
+        [48] = "QUEST_CONDITION_TYPE_CRAFT_RANDOM_WRIT_ITEM",
+        [49] = "QUEST_CONDITION_TYPE_GATHER_ITEM_TYPE",
+        [50] = "QUEST_CONDITION_TYPE_BATTLEGROUND_PARTICIPATION",
+        [51] = "QUEST_CONDITION_TYPE_BATTLEGROUND_VICTORY",
+        [52] = "QUEST_CONDITION_TYPE_BATTLEGROUND_EARNED_POINTS",
+        [53] = "QUEST_CONDITION_TYPE_GATHER_ITEM_TRAIT",
+        [54] = "QUEST_CONDITION_TYPE_CAPTURE_KEEP_TYPE_UNIQUE_KEEPS",
+        [55] = "QUEST_CONDITION_TYPE_SUMMONED_COMPANION",
+        [56] = "QUEST_CONDITION_TYPE_DISMISSED_COMPANION",
+        [57] = "QUEST_CONDITION_TYPE_LEVEL_UP",
+        [58] = "QUEST_CONDITION_TYPE_EARN_CHAMPION_POINT",
+        [60] = "QUEST_CONDITION_TYPE_UNEARTH_ANTIQUITY",
+        [61] = "QUEST_CONDITION_TYPE_LOOT_TREASURE_CHEST",
+        [62] = "QUEST_CONDITION_TYPE_VENDOR_GOLD_TRANSACTION",
+        [63] = "QUEST_CONDITION_TYPE_GUILD_TRADER_GOLD_TRANSACTION",
+        [64] = "QUEST_CONDITION_TYPE_ENTER_ZONE",
+        [65] = "QUEST_CONDITION_TYPE_TRIBUTE_WON_MATCH_MONSTER",
+        [66] = "QUEST_CONDITION_TYPE_TRIBUTE_LOST_MATCH_MONSTER",
+        [67] = "QUEST_CONDITION_TYPE_TRIBUTE_WON_MATCH_PLAYER",
+        [68] = "QUEST_CONDITION_TYPE_TRIBUTE_LOST_MATCH_PLAYER",
+        [69] = "QUEST_CONDITION_TYPE_READ_BOOK",
+        [70] = "QUEST_CONDITION_TYPE_KILL_MONSTER_TYPE",
+        [71] = "QUEST_CONDITION_TYPE_MAX_VALUE"
+    }
+    return conditionTypes[conditionType] or string_format("UNKNOWN_CONDITION_TYPE_%d", conditionType)
+end
+
+-- -----------------------------------------------------------------------------
+--- Converts a quest type to its string name representation
+--- @param questType QuestType
+--- @return string
+function LUIE.GetQuestTypeName(questType)
+    local questTypes =
+    {
+        [QUEST_TYPE_NONE] = "QUEST_TYPE_NONE",
+        [QUEST_TYPE_GROUP] = "QUEST_TYPE_GROUP",
+        [QUEST_TYPE_MAIN_STORY] = "QUEST_TYPE_MAIN_STORY",
+        [QUEST_TYPE_GUILD] = "QUEST_TYPE_GUILD",
+        [QUEST_TYPE_CRAFTING] = "QUEST_TYPE_CRAFTING",
+        [QUEST_TYPE_DUNGEON] = "QUEST_TYPE_DUNGEON",
+        [QUEST_TYPE_RAID] = "QUEST_TYPE_RAID",
+        [QUEST_TYPE_AVA] = "QUEST_TYPE_AVA",
+        [QUEST_TYPE_CLASS] = "QUEST_TYPE_CLASS",
+        [QUEST_TYPE_AVA_GROUP] = "QUEST_TYPE_AVA_GROUP",
+        [QUEST_TYPE_AVA_GRAND] = "QUEST_TYPE_AVA_GRAND",
+        [QUEST_TYPE_HOLIDAY_EVENT] = "QUEST_TYPE_HOLIDAY_EVENT",
+        [QUEST_TYPE_BATTLEGROUND] = "QUEST_TYPE_BATTLEGROUND",
+        [QUEST_TYPE_PROLOGUE] = "QUEST_TYPE_PROLOGUE",
+        [QUEST_TYPE_UNDAUNTED_PLEDGE] = "QUEST_TYPE_UNDAUNTED_PLEDGE",
+        [QUEST_TYPE_COMPANION] = "QUEST_TYPE_COMPANION",
+        [QUEST_TYPE_TRIBUTE] = "QUEST_TYPE_TRIBUTE",
+        [QUEST_TYPE_SCRIBING] = "QUEST_TYPE_SCRIBING",
+    }
+    return questTypes[questType] or string_format("UNKNOWN_QUEST_TYPE_%d", questType)
+end
+
+-- -----------------------------------------------------------------------------
+--- Valid item types for deconstruction
+local DECONSTRUCTIBLE_ITEM_TYPES =
+{
+    [ITEMTYPE_ADDITIVE] = true,
+    [ITEMTYPE_ARMOR_BOOSTER] = true,
+    [ITEMTYPE_ARMOR_TRAIT] = true,
+    [ITEMTYPE_BLACKSMITHING_BOOSTER] = true,
+    [ITEMTYPE_BLACKSMITHING_MATERIAL] = true,
+    [ITEMTYPE_BLACKSMITHING_RAW_MATERIAL] = true,
+    [ITEMTYPE_CLOTHIER_BOOSTER] = true,
+    [ITEMTYPE_CLOTHIER_MATERIAL] = true,
+    [ITEMTYPE_CLOTHIER_RAW_MATERIAL] = true,
+    [ITEMTYPE_ENCHANTING_RUNE_ASPECT] = true,
+    [ITEMTYPE_ENCHANTING_RUNE_ESSENCE] = true,
+    [ITEMTYPE_ENCHANTING_RUNE_POTENCY] = true,
+    [ITEMTYPE_ENCHANTMENT_BOOSTER] = true,
+    [ITEMTYPE_FISH] = true,
+    [ITEMTYPE_GLYPH_ARMOR] = true,
+    [ITEMTYPE_GLYPH_JEWELRY] = true,
+    [ITEMTYPE_GLYPH_WEAPON] = true,
+    [ITEMTYPE_GROUP_REPAIR] = true,
+    [ITEMTYPE_INGREDIENT] = true,
+    [ITEMTYPE_JEWELRYCRAFTING_BOOSTER] = true,
+    [ITEMTYPE_JEWELRYCRAFTING_MATERIAL] = true,
+    [ITEMTYPE_JEWELRYCRAFTING_RAW_BOOSTER] = true,
+    [ITEMTYPE_JEWELRYCRAFTING_RAW_MATERIAL] = true,
+    [ITEMTYPE_JEWELRY_RAW_TRAIT] = true,
+    [ITEMTYPE_JEWELRY_TRAIT] = true,
+    [ITEMTYPE_POISON_BASE] = true,
+    [ITEMTYPE_POTION_BASE] = true,
+    [ITEMTYPE_RAW_MATERIAL] = true,
+    [ITEMTYPE_REAGENT] = true,
+    [ITEMTYPE_STYLE_MATERIAL] = true,
+    [ITEMTYPE_WEAPON] = true,
+    [ITEMTYPE_WEAPON_BOOSTER] = true,
+    [ITEMTYPE_WEAPON_TRAIT] = true,
+    [ITEMTYPE_WOODWORKING_BOOSTER] = true,
+    [ITEMTYPE_WOODWORKING_MATERIAL] = true,
+    [ITEMTYPE_WOODWORKING_RAW_MATERIAL] = true,
+}
+
+-- -----------------------------------------------------------------------------
+--- Valid crafting types for deconstruction
+local DECONSTRUCTIBLE_CRAFTING_TYPES =
+{
+    [CRAFTING_TYPE_BLACKSMITHING] = true,
+    [CRAFTING_TYPE_CLOTHIER] = true,
+    [CRAFTING_TYPE_WOODWORKING] = true,
+    [CRAFTING_TYPE_JEWELRYCRAFTING] = true,
+}
+
+-- -----------------------------------------------------------------------------
+--- Get the current crafting mode, accounting for both keyboard and gamepad UI
+--- @return number The current crafting mode
+function LUIE.GetMode()
+    if SCENE_MANAGER:IsShowingBaseScene() then
+        -- Gamepad UI
+        return SMITHING_GAMEPAD and SMITHING_GAMEPAD.mode or SMITHING.mode
+    else
+        -- Keyboard UI
+        return SMITHING.mode
+    end
+end
+
+-- -----------------------------------------------------------------------------
+--- Checks if an item type is valid for deconstruction in the current crafting context
+--- @param itemType number The item type to check
+--- @return boolean Returns true if the item can be deconstructed in current context
+function LUIE.ResolveCraftingUsed(itemType)
+    local craftingType = GetCraftingInteractionType()
+    local DECONSTRUCTION_MODE = 4
+
+    -- Check if current crafting type allows deconstruction and we're in deconstruction mode
+    return DECONSTRUCTIBLE_CRAFTING_TYPES[craftingType]
+        and LUIE.GetMode() == DECONSTRUCTION_MODE
+        and DECONSTRUCTIBLE_ITEM_TYPES[itemType] or false
+end
+
+-- -----------------------------------------------------------------------------
+--- Utility function to handle font setup and validation
+--- @param fontNameKey string: The key for the font name.
+--- @param fontStyleKey string|nil: The key for the font style (optional).
+--- @param fontSizeKey string|nil: The key for the font size (optional).
+--- @param settings table: The settings table containing the font settings.
+--- @param defaultFont string: The default font name.
+--- @param defaultStyle string|nil: The default font style (optional).
+--- @param defaultSize number|nil: The default font size (optional).
+--- @return string: The formatted font string.
+function LUIE.SetupFont(fontNameKey, fontStyleKey, fontSizeKey, settings, defaultFont, defaultStyle, defaultSize)
+    -- Handle font name
+    local fontName = LUIE.Fonts[settings[fontNameKey]]
+    if not fontName or fontName == "" then
+        LUIE.PrintToChat(GetString(LUIE_STRING_ERROR_FONT), true)
+        fontName = defaultFont
+    end
+
+    -- Handle font size and style - if keys aren't provided, don't try to access them in settings
+    local fontSize = fontSizeKey and ((settings[fontSizeKey] and settings[fontSizeKey] > 0) and settings[fontSizeKey] or defaultSize)
+    local fontStyle = fontStyleKey and ((settings[fontStyleKey] and settings[fontStyleKey] ~= "") and settings[fontStyleKey] or defaultStyle)
+
+    -- Build the font string based on what parameters are available
+    if fontSize and fontStyle then
+        return fontName .. "|" .. fontSize .. "|" .. fontStyle
+    elseif fontSize then
+        return fontName .. "|" .. fontSize
+    else
+        return fontName
+    end
+end
+
+-- -----------------------------------------------------------------------------
+--- Helper function to generate font string with appropriate shadow style based on size
+--- @param fontName string: The name of the font.
+--- @param fontSize number: The size of the font.
+--- @param overrideShadowStyle? string: The shadow style to override.
+--- @return string: The formatted font string.
+function LUIE.GetFormattedFontString(fontName, fontSize, overrideShadowStyle)
+    local shadowStyle = overrideShadowStyle
+    if not shadowStyle then
+        shadowStyle = fontSize <= 14 and "soft-shadow-thin" or "soft-shadow-thick"
+    end
+    return ("%s|%d|%s"):format(fontName, fontSize, shadowStyle)
+end
+
+-- -----------------------------------------------------------------------------
+
+local CLASS_ICONS = {}
+local GAMEPAD_CLASS_ICONS = {}
+
+for i = 1, GetNumClasses() do
+    local classId, _, _, _, _, _, keyboardIcon, gamepadIcon = GetClassInfo(i)
+    CLASS_ICONS[classId] = keyboardIcon
+    GAMEPAD_CLASS_ICONS[classId] = gamepadIcon
+end
+
+LUIE.CLASS_ICONS = CLASS_ICONS
+LUIE.GAMEPAD_CLASS_ICONS = GAMEPAD_CLASS_ICONS
+
+function LUIE.GetClassIcon(classId)
+    return GAMEPAD_CLASS_ICONS[classId]
+end
+-- -----------------------------------------------------------------------------

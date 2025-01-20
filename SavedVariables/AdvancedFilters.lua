@@ -8,33 +8,33 @@ AdvancedFilters_Settings =
             {
                 ["Settings"] = 
                 {
-                    ["grayOutSubFiltersWithNoItems"] = true,
-                    ["showIconsInFilterDropdowns"] = true,
-                    ["hideItemCount"] = false,
-                    ["subfilterBarDropdownLastSelectedEntries"] = 
-                    {
-                    },
-                    ["debugSpamExcludeDropdownBoxFilters"] = true,
-                    ["dropdownVisibleRows"] = 15,
-                    ["showDropdownSelectedReminderAnimation"] = true,
                     ["itemCountLabelColor"] = 
                     {
                         ["a"] = 1,
-                        ["b"] = 1,
                         ["r"] = 1,
+                        ["b"] = 1,
                         ["g"] = 1,
                     },
-                    ["hideCharBoundAtBankDeposit"] = false,
-                    ["debugSpamExcludeRefreshSubfilterBar"] = true,
-                    ["version"] = 1.5110000000,
                     ["showDropdownLastSelectedEntries"] = true,
-                    ["showFilterDropdownMenuOnRightMouseAtSubFilterButton"] = false,
-                    ["doDebugOutput"] = false,
+                    ["showDropdownSelectedReminderAnimation"] = true,
                     ["dropdownVisibleSubmenuRows"] = 15,
-                    ["debugSpam"] = false,
+                    ["hideCharBoundAtBankDeposit"] = false,
+                    ["hideItemCount"] = false,
+                    ["debugSpamExcludeDropdownBoxFilters"] = true,
+                    ["debugSpamExcludeRefreshSubfilterBar"] = true,
+                    ["grayOutSubFiltersWithNoItems"] = true,
                     ["showSubMenuHeaderlinesInFilterDropdowns"] = false,
-                    ["hideSubFilterLabel"] = false,
+                    ["showIconsInFilterDropdowns"] = true,
+                    ["doDebugOutput"] = false,
                     ["rememberFilterDropdownsLastSelection"] = true,
+                    ["debugSpam"] = false,
+                    ["hideSubFilterLabel"] = false,
+                    ["version"] = 1.5110000000,
+                    ["dropdownVisibleRows"] = 15,
+                    ["showFilterDropdownMenuOnRightMouseAtSubFilterButton"] = false,
+                    ["subfilterBarDropdownLastSelectedEntries"] = 
+                    {
+                    },
                 },
             },
         },

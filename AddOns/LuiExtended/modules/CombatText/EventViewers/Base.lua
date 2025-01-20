@@ -1,7 +1,7 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
@@ -13,7 +13,7 @@ local string_format = string.format
 local Effects = LUIE.Data.Effects
 local CombatTextConstants = LUIE.Data.CombatTextConstants
 
-local callbackManager = CALLBACK_MANAGER
+local callbackManager = LUIE.callbackObject
 
 CombatTextEventViewer.resourceNames = setmetatable({},
     {
@@ -304,7 +304,7 @@ function CombatTextEventViewer:PrepareLabel(label, fontSize, color, text)
     local Settings = LUIE.CombatText.SV
     label:SetText(text)
     label:SetColor(unpack(color))
-    label:SetFont(string_format("%s|%d|%s", Settings.fontFaceApplied, fontSize, Settings.fontOutline))
+    label:SetFont(string_format("%s|%d|%s", Settings.fontFaceApplied, fontSize, Settings.fontStyle))
     label:SetAlpha(Settings.common.transparencyValue / 100)
 end
 

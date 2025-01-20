@@ -14,7 +14,7 @@ function PITHKA.Screens.Trials.initialize()
     
     -- create grid header
     local t = {{
-        PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=155, t="TRIALS", tt="Click to port"},
+        PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=155, t="TRIALS"},
         PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=75,  t="BEST SCORE", align=TEXT_ALIGN_RIGHT},
         PITHKA.UI.Misc.spacer{ v=_v, w=20},
         PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=46, t="VET"},
@@ -70,8 +70,8 @@ function PITHKA.Screens.Trials.initialize()
     local options  = {'~ Trial Summary ~', 
                     'Aedra',
                     'Black Dragon Defenders',
-                    'Bora pro Wipe',
-                    'ESO Runs',
+--                    'Bora pro Wipe',
+--                    'ESO Runs',
 --                    'Rose ESO',
                     'Heart of Tamriel',
                     'One More Pull', 
@@ -86,6 +86,9 @@ function PITHKA.Screens.Trials.initialize()
     -- if a user has the removed guild selected, the label function fails an assertion
     -- fix is to simply remove it from the saved variable
     if PITHKA.SV.state[stateVar] == 'Rose ESO' then PITHKA.SV.state[stateVar] = nil end
+    if PITHKA.SV.state[stateVar] == 'ESO Runs' then PITHKA.SV.state[stateVar] = nil end
+    if PITHKA.SV.state[stateVar] == 'Bora pro Wipe' then PITHKA.SV.state[stateVar] = nil end
+
 
     -- summary menu
     PITHKA.SV.state[stateVar] = PITHKA.SV.state[stateVar] or '~ Trial Summary ~' -- set default for state variable

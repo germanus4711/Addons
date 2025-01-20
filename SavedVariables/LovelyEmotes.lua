@@ -4,45 +4,1308 @@ LovelyEmotesVariables =
     {
         ["@germanus4711"] = 
         {
+            ["8796093062295781"] = 
+            {
+                ["NumberOfFavoriteEmotesTabs"] = 4,
+                ["FavoriteEmotesTabIndex"] = 1,
+                ["FavoriteEmotesTabs"] = 
+                {
+                    [16] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [1] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [2] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [3] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [4] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [5] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [6] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [7] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [8] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [9] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [10] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [11] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [12] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [13] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [14] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [15] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                },
+                ["RadialMenuTargetTabIndex"] = 0,
+                ["version"] = 2,
+                ["IsUsingSharedFavorites"] = true,
+                ["$LastCharacterName"] = "Fridolin The Great",
+            },
+            ["8796093069174989"] = 
+            {
+                ["NumberOfFavoriteEmotesTabs"] = 4,
+                ["FavoriteEmotesTabIndex"] = 1,
+                ["FavoriteEmotesTabs"] = 
+                {
+                    [16] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [1] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [2] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [3] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [4] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [5] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [6] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [7] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [8] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [9] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [10] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [11] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [12] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [13] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [14] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [15] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                },
+                ["RadialMenuTargetTabIndex"] = 0,
+                ["version"] = 2,
+                ["IsUsingSharedFavorites"] = true,
+                ["$LastCharacterName"] = "Mike v Petra",
+            },
+            ["8796093027479535"] = 
+            {
+                ["NumberOfFavoriteEmotesTabs"] = 4,
+                ["FavoriteEmotesTabIndex"] = 1,
+                ["FavoriteEmotesTabs"] = 
+                {
+                    [16] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [1] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [2] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [3] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [4] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [5] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [6] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [7] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [8] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [9] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [10] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [11] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [12] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [13] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [14] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [15] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                },
+                ["RadialMenuTargetTabIndex"] = 0,
+                ["version"] = 2,
+                ["IsUsingSharedFavorites"] = true,
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+            },
+            ["8796093067546805"] = 
+            {
+                ["NumberOfFavoriteEmotesTabs"] = 4,
+                ["FavoriteEmotesTabIndex"] = 1,
+                ["FavoriteEmotesTabs"] = 
+                {
+                    [16] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [1] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [2] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [3] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [4] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [5] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [6] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [7] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [8] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [9] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [10] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [11] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [12] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [13] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [14] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [15] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                },
+                ["RadialMenuTargetTabIndex"] = 0,
+                ["version"] = 2,
+                ["IsUsingSharedFavorites"] = true,
+                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
+            },
+            ["8796093072557313"] = 
+            {
+                ["NumberOfFavoriteEmotesTabs"] = 4,
+                ["FavoriteEmotesTabIndex"] = 1,
+                ["FavoriteEmotesTabs"] = 
+                {
+                    [16] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [1] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [2] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [3] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [4] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [5] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [6] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [7] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [8] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [9] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [10] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [11] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [12] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [13] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [14] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [15] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                },
+                ["RadialMenuTargetTabIndex"] = 0,
+                ["version"] = 2,
+                ["IsUsingSharedFavorites"] = true,
+                ["$LastCharacterName"] = "Gamal Loki",
+            },
+            ["8796093025384257"] = 
+            {
+                ["NumberOfFavoriteEmotesTabs"] = 4,
+                ["FavoriteEmotesTabIndex"] = 1,
+                ["FavoriteEmotesTabs"] = 
+                {
+                    [16] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [1] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [2] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [3] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [4] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [5] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [6] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [7] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [8] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [9] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [10] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [11] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [12] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [13] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [14] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [15] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                },
+                ["RadialMenuTargetTabIndex"] = 0,
+                ["version"] = 2,
+                ["IsUsingSharedFavorites"] = true,
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+            },
+            ["8796093064640125"] = 
+            {
+                ["NumberOfFavoriteEmotesTabs"] = 4,
+                ["FavoriteEmotesTabIndex"] = 1,
+                ["FavoriteEmotesTabs"] = 
+                {
+                    [16] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [1] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [2] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [3] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [4] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [5] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [6] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [7] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [8] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [9] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [10] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [11] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [12] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [13] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [14] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [15] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                },
+                ["RadialMenuTargetTabIndex"] = 0,
+                ["version"] = 2,
+                ["IsUsingSharedFavorites"] = true,
+                ["$LastCharacterName"] = "Maüschen",
+            },
+            ["8796093023211051"] = 
+            {
+                ["NumberOfFavoriteEmotesTabs"] = 4,
+                ["FavoriteEmotesTabIndex"] = 1,
+                ["FavoriteEmotesTabs"] = 
+                {
+                    [16] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [1] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [2] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [3] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [4] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [5] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [6] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [7] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [8] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [9] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [10] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [11] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [12] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [13] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [14] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [15] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                },
+                ["RadialMenuTargetTabIndex"] = 0,
+                ["version"] = 2,
+                ["IsUsingSharedFavorites"] = true,
+                ["$LastCharacterName"] = "Freya Orm",
+            },
+            ["8796093074287095"] = 
+            {
+                ["NumberOfFavoriteEmotesTabs"] = 4,
+                ["FavoriteEmotesTabIndex"] = 1,
+                ["FavoriteEmotesTabs"] = 
+                {
+                    [16] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [1] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [2] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [3] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [4] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [5] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [6] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [7] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [8] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [9] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [10] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [11] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [12] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [13] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [14] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                    [15] = 
+                    {
+                        ["Name"] = "",
+                        ["EmoteIDs"] = 
+                        {
+                        },
+                        ["ButtonCount"] = 5,
+                    },
+                },
+                ["RadialMenuTargetTabIndex"] = 0,
+                ["version"] = 2,
+                ["IsUsingSharedFavorites"] = true,
+                ["$LastCharacterName"] = "Otto von Bissmark",
+            },
             ["$AccountWide"] = 
             {
-                ["MinimizeAutomatically"] = false,
-                ["EnableWhisperChatSync"] = true,
-                ["EnableZoneChatSync"] = false,
-                ["ToggleCursorWidthKeyBinding"] = true,
-                ["EnableAlternativeSounds"] = true,
-                ["FavoritesButtonDesign"] = 1,
+                ["NumberOfFavoriteEmotesTabs"] = 4,
                 ["MinimizeInCombat"] = true,
                 ["FavoriteCommandsData"] = 
                 {
                 },
-                ["LockedWindowPositions"] = false,
-                ["MinimizedScale"] = 1,
-                ["EnableMinimizedState"] = true,
-                ["RadialMenuScale"] = 1,
-                ["EnableChatWindowButton"] = false,
-                ["ChatWindowButtonPositionX"] = 0,
                 ["MainWindowMinimizedPositionY"] = 576,
-                ["EmoteListPositionX"] = 397,
                 ["MainWindowMinimizedPositionX"] = 0,
-                ["EnablePersonalitiesAsFavorites"] = false,
-                ["SettingsVersion"] = 2,
                 ["FavoriteCommandsShowDisplayName"] = true,
+                ["LockedWindowPositions"] = false,
+                ["ChatWindowButtonPositionX"] = 0,
+                ["MainWindowPositionX"] = 936,
+                ["EnableChatWindowButton"] = false,
+                ["version"] = 1,
+                ["EnableWhisperChatSync"] = true,
+                ["MinimizeAutomatically"] = false,
+                ["ToggleCursorWidthKeyBinding"] = true,
+                ["EnableZoneChatSync"] = false,
+                ["Alpha"] = 100,
+                ["EnablePartyChatSync"] = true,
+                ["MinimizedScale"] = 1,
+                ["EmoteListButtonDesign"] = 1,
+                ["MinimizedAlpha"] = 50,
+                ["ShowEndlessLoopIcons"] = true,
+                ["HighlightLockedEmotes"] = true,
+                ["EnableSayChatSync"] = true,
+                ["RadialMenuTargetTabIndex"] = 0,
                 ["FavoriteEmotesTabIndex"] = 4,
                 ["FavoriteEmotesTabs"] = 
                 {
                     [16] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [1] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                             [1] = 74,
@@ -51,11 +1314,11 @@ LovelyEmotesVariables =
                             [4] = 11,
                             [5] = 5,
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [2] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                             [1] = 171,
@@ -64,11 +1327,11 @@ LovelyEmotesVariables =
                             [4] = 237,
                             [5] = 300,
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [3] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                             [1] = 5,
@@ -77,11 +1340,11 @@ LovelyEmotesVariables =
                             [4] = 283,
                             [5] = 297,
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [4] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                             [1] = 785,
@@ -90,1372 +1353,109 @@ LovelyEmotesVariables =
                             [4] = 781,
                             [5] = 24,
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [5] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [6] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [7] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [8] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [9] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [10] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [11] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [12] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [13] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [14] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                     [15] = 
                     {
                         ["Name"] = "",
-                        ["ButtonCount"] = 5,
                         ["EmoteIDs"] = 
                         {
                         },
+                        ["ButtonCount"] = 5,
                     },
                 },
-                ["EmoteListPositionY"] = 401,
-                ["MinimizedAlpha"] = 50,
-                ["ShowEndlessLoopIcons"] = true,
-                ["ShowLockedEmotes"] = true,
+                ["EnablePersonalitiesAsFavorites"] = false,
                 ["MainWindowPositionY"] = 16,
-                ["EnablePartyChatSync"] = true,
-                ["EmoteListButtonDesign"] = 1,
-                ["version"] = 1,
-                ["Alpha"] = 100,
-                ["RadialMenuTargetTabIndex"] = 0,
-                ["ShowSlashNames"] = false,
+                ["EmoteListPositionY"] = 401,
+                ["EnableAlternativeSounds"] = true,
+                ["FavoritesButtonDesign"] = 1,
+                ["EnableMinimizedState"] = true,
+                ["ShowLockedEmotes"] = true,
+                ["RadialMenuScale"] = 1,
+                ["EmoteListPositionX"] = 397,
                 ["StartMinimized"] = false,
-                ["NumberOfFavoriteEmotesTabs"] = 4,
-                ["HighlightLockedEmotes"] = true,
-                ["MainWindowPositionX"] = 936,
-                ["EnableSayChatSync"] = true,
-            },
-            ["8796093062295781"] = 
-            {
-                ["FavoriteEmotesTabs"] = 
-                {
-                    [16] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [1] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [2] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [3] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [4] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [5] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [6] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [7] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [8] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [9] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [10] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [11] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [12] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [13] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [14] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [15] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                },
-                ["RadialMenuTargetTabIndex"] = 0,
-                ["IsUsingSharedFavorites"] = true,
-                ["NumberOfFavoriteEmotesTabs"] = 4,
-                ["FavoriteEmotesTabIndex"] = 1,
-                ["$LastCharacterName"] = "Fridolin The Great",
-                ["version"] = 2,
-            },
-            ["8796093074287095"] = 
-            {
-                ["FavoriteEmotesTabs"] = 
-                {
-                    [16] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [1] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [2] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [3] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [4] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [5] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [6] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [7] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [8] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [9] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [10] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [11] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [12] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [13] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [14] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [15] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                },
-                ["RadialMenuTargetTabIndex"] = 0,
-                ["IsUsingSharedFavorites"] = true,
-                ["NumberOfFavoriteEmotesTabs"] = 4,
-                ["FavoriteEmotesTabIndex"] = 1,
-                ["$LastCharacterName"] = "Otto von Bissmark",
-                ["version"] = 2,
-            },
-            ["8796093069174989"] = 
-            {
-                ["FavoriteEmotesTabs"] = 
-                {
-                    [16] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [1] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [2] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [3] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [4] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [5] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [6] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [7] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [8] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [9] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [10] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [11] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [12] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [13] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [14] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [15] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                },
-                ["RadialMenuTargetTabIndex"] = 0,
-                ["IsUsingSharedFavorites"] = true,
-                ["NumberOfFavoriteEmotesTabs"] = 4,
-                ["FavoriteEmotesTabIndex"] = 1,
-                ["$LastCharacterName"] = "Mike v Petra",
-                ["version"] = 2,
-            },
-            ["8796093064640125"] = 
-            {
-                ["FavoriteEmotesTabs"] = 
-                {
-                    [16] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [1] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [2] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [3] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [4] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [5] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [6] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [7] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [8] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [9] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [10] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [11] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [12] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [13] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [14] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [15] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                },
-                ["RadialMenuTargetTabIndex"] = 0,
-                ["IsUsingSharedFavorites"] = true,
-                ["NumberOfFavoriteEmotesTabs"] = 4,
-                ["FavoriteEmotesTabIndex"] = 1,
-                ["$LastCharacterName"] = "Maüschen",
-                ["version"] = 2,
-            },
-            ["8796093027479535"] = 
-            {
-                ["FavoriteEmotesTabs"] = 
-                {
-                    [16] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [1] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [2] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [3] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [4] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [5] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [6] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [7] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [8] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [9] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [10] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [11] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [12] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [13] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [14] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [15] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                },
-                ["RadialMenuTargetTabIndex"] = 0,
-                ["IsUsingSharedFavorites"] = true,
-                ["NumberOfFavoriteEmotesTabs"] = 4,
-                ["FavoriteEmotesTabIndex"] = 1,
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
-                ["version"] = 2,
-            },
-            ["8796093067546805"] = 
-            {
-                ["FavoriteEmotesTabs"] = 
-                {
-                    [16] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [1] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [2] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [3] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [4] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [5] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [6] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [7] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [8] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [9] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [10] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [11] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [12] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [13] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [14] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [15] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                },
-                ["RadialMenuTargetTabIndex"] = 0,
-                ["IsUsingSharedFavorites"] = true,
-                ["NumberOfFavoriteEmotesTabs"] = 4,
-                ["FavoriteEmotesTabIndex"] = 1,
-                ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
-                ["version"] = 2,
-            },
-            ["8796093023211051"] = 
-            {
-                ["FavoriteEmotesTabs"] = 
-                {
-                    [16] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [1] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [2] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [3] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [4] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [5] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [6] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [7] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [8] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [9] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [10] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [11] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [12] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [13] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [14] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [15] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                },
-                ["RadialMenuTargetTabIndex"] = 0,
-                ["IsUsingSharedFavorites"] = true,
-                ["NumberOfFavoriteEmotesTabs"] = 4,
-                ["FavoriteEmotesTabIndex"] = 1,
-                ["$LastCharacterName"] = "Freya Orm",
-                ["version"] = 2,
-            },
-            ["8796093025384257"] = 
-            {
-                ["FavoriteEmotesTabs"] = 
-                {
-                    [16] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [1] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [2] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [3] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [4] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [5] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [6] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [7] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [8] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [9] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [10] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [11] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [12] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [13] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [14] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [15] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                },
-                ["RadialMenuTargetTabIndex"] = 0,
-                ["IsUsingSharedFavorites"] = true,
-                ["NumberOfFavoriteEmotesTabs"] = 4,
-                ["FavoriteEmotesTabIndex"] = 1,
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-                ["version"] = 2,
-            },
-            ["8796093072557313"] = 
-            {
-                ["FavoriteEmotesTabs"] = 
-                {
-                    [16] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [1] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [2] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [3] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [4] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [5] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [6] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [7] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [8] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [9] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [10] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [11] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [12] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [13] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [14] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                    [15] = 
-                    {
-                        ["Name"] = "",
-                        ["ButtonCount"] = 5,
-                        ["EmoteIDs"] = 
-                        {
-                        },
-                    },
-                },
-                ["RadialMenuTargetTabIndex"] = 0,
-                ["IsUsingSharedFavorites"] = true,
-                ["NumberOfFavoriteEmotesTabs"] = 4,
-                ["FavoriteEmotesTabIndex"] = 1,
-                ["$LastCharacterName"] = "Gamal Loki",
-                ["version"] = 2,
+                ["SettingsVersion"] = 2,
+                ["ShowSlashNames"] = false,
             },
         },
     },

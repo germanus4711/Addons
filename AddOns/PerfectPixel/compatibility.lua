@@ -1,8 +1,10 @@
+local CM = CALLBACK_MANAGER
+local tinsert = table.insert
+
+local PP = PP
+
 PP.compatibilityFunctions = {}
 PP.compatibility = function ()
-    local PP = PP
-    local tinsert = table.insert
-
     local function Compatibility()
         -- ==LibCustomMenu==--
         if LibCustomMenu then
@@ -14,7 +16,7 @@ PP.compatibility = function ()
             ZO_PreHookHandler(LibCustomMenuSubmenu, "OnShow", function ()
                 lcmSMBG:SetCenterTexture(nil, 4, 0)
                 lcmSMBG:SetCenterColor(10 / 255, 10 / 255, 10 / 255, 0.96)
-                lcmSMBG:SetEdgeTexture(nil, 1, 1, 1, 0)
+                lcmSMBG:SetEdgeTexture("", 1, 1, 1, 0)
                 lcmSMBG:SetEdgeColor(60 / 255, 60 / 255, 60 / 255, 1)
                 lcmSMBG:SetInsets(-1, -1, 1, 1)
                 if lcmSMBGMungeOverlay then lcmSMBGMungeOverlay:SetHidden(true) end
@@ -26,7 +28,7 @@ PP.compatibility = function ()
             if lcmSMHighlight then
                 lcmSMHighlight:SetCenterTexture(nil, 4, 0)
                 lcmSMHighlight:SetCenterColor(96 / 255 * 0.3, 125 / 255 * 0.3, 139 / 255 * 0.3, 1)
-                lcmSMHighlight:SetEdgeTexture(nil, 1, 1, 1, 0)
+                lcmSMHighlight:SetEdgeTexture("", 1, 1, 1, 0)
                 lcmSMHighlight:SetEdgeColor(96 / 255 * 0.5, 125 / 255 * 0.5, 139 / 255 * 0.5, 0)
                 lcmSMHighlight:SetInsets(0, 0, 0, 0)
                 -- lcmSMHighlight:SetInheritAlpha(false)
@@ -46,7 +48,7 @@ PP.compatibility = function ()
 
             local function defaultEntryTypeLayout(highlight)
                 highlight:SetCenterTexture(nil, 4, 0)
-                highlight:SetEdgeTexture(nil, 1, 1, 1, 0)
+                highlight:SetEdgeTexture("", 1, 1, 1, 0)
                 highlight:SetInsets(0, 0, 0, 0)
                 highlight:SetBlendMode(TEX_BLEND_MODE_ADD)
                 if highlight:IsPixelRoundingEnabled() then
@@ -116,7 +118,7 @@ PP.compatibility = function ()
                 --parentControl:SetCenterTexture(nil, 4, 0)
                 parentControl:SetCenterColor(10 / 255, 10 / 255, 10 / 255, 0.96)
                 --SetEdgeTexture(*string* _filename_, *integer* _edgeFileWidth_, *integer* _edgeFileHeight_, *layout_measurement* _cornerSize_, *integer* _edgeFilePadding_)
-                --parentControl:SetEdgeTexture(nil, 1, 1, 1, 0)
+                --parentControl:SetEdgeTexture("", 1, 1, 1, 0)
                 parentControl:SetEdgeColor(60 / 255, 60 / 255, 60 / 255, 1)
                 --SetInsets(*layout_measurement* _left_, *layout_measurement* _top_, *layout_measurement* _right_, *layout_measurement* _bottom_)
                 --parentControl:SetInsets(-1, -1, 1, 1)
@@ -320,6 +322,7 @@ PP.compatibility = function ()
 
         -- ==AddonSelector==--
         if AddonSelector then
+            PP.Anchor(ZO_AddOns, --[[#1]] TOPLEFT, GuiRoot, TOPLEFT, 256, 35, --[[#2]] false, nil, nil, nil, nil, nil)
             PP.Anchor(ZO_AddOnsList, --[[#1]] TOPLEFT, AddonSelector, BOTTOMLEFT, 0, 5, --[[#2]] true, BOTTOMRIGHT, ZO_AddOns, BOTTOMRIGHT, 0, -10)
             PP.Anchor(AddonSelectorBottomDivider, --[[#1]] BOTTOM, AddonSelector, BOTTOM, 40, 0)
             PP.Anchor(AddonSelectorSearchBox, --[[#1]] TOPRIGHT, ZO_AddOns, TOPRIGHT, -6, 6)
@@ -617,6 +620,27 @@ PP.compatibility = function ()
         if DebugLogViewer then
             PP:CreateBackground(DebugLogViewerMainWindowBG, --[[#1]] nil, nil, nil, 0, 0, --[[#2]] nil, nil, nil, 0, 0)
             DebugLogViewerMainWindowBGMungeOverlay:SetHidden(true)
+
+            PP.ScrollBar(DebugLogViewerMainWindowListScrollBar)
+            ZO_Scroll_SetMaxFadeDistance(DebugLogViewerMainWindowList, 10)
+            DebugLogViewerMainWindowListScrollBar:ClearAnchors()
+            DebugLogViewerMainWindowListScrollBar:SetAnchor(TOPLEFT, DebugLogViewerMainWindowList, TOPRIGHT, 10, 25)
+            DebugLogViewerMainWindowListScrollBar:SetAnchor(BOTTOMLEFT, DebugLogViewerMainWindowList, BOTTOMRIGHT, -6, -25)
+
+            DebugLogViewerMainWindowListScrollBarUp:SetHidden(false)
+            DebugLogViewerMainWindowListScrollBarDown:SetHidden(false)
+        end
+
+        --DebugLogViewer - Quicklog window
+        if DebugLogWindow then
+            PP.ScrollBar(DebugLogWindowScrollbar)
+            ZO_Scroll_SetMaxFadeDistance(DebugLogWindow, 10)
+            DebugLogWindowScrollbar:ClearAnchors()
+            DebugLogWindowScrollbar:SetAnchor(TOPRIGHT, DebugLogWindow, TOPRIGHT, -10, 40)
+            DebugLogWindowScrollbar:SetAnchor(BOTTOMRIGHT, DebugLogWindow, BOTTOMRIGHT, -8, -40)
+
+            DebugLogWindowScrollbarScrollUp:SetHidden(false)
+            DebugLogWindowScrollbarScrollDown:SetHidden(false)
         end
         -- ===============================================================================================--
 
@@ -858,6 +882,42 @@ PP.compatibility = function ()
             PP.ScrollBar(LAMAddonSettingsWindowAddonListScrollBar)
             PP.Anchor(LAMAddonSettingsWindowAddonListScrollBar, --[[#1]] nil, nil, nil, nil, nil, --[[#2]] true, nil, nil, nil, nil, nil)
             ZO_Scroll_SetMaxFadeDistance(LAMAddonSettingsWindowAddonListContents, PP.savedVars.ListStyle.list_fade_distance)
+
+            LAMAddonSettingsWindowBackgroundLeft:SetHidden(true)
+            LAMAddonSettingsWindowBackgroundRight:SetHidden(true)
+            LAMAddonSettingsWindowUnderlayLeft:SetHidden(true)
+            LAMAddonSettingsWindowUnderlayRight:SetHidden(true)
+	        PP:CreateBackground(LAMAddonSettingsWindow,		--[[#1]] nil, nil, nil, 40, 60, --[[#2]] nil, nil, nil, 46, -50)
+
+            --Use LAM2-.0 callback "panel opened" to know when a panel was created, and add the PP style scrollbar then "once"
+            local panelsWithPPScrollbar = {}
+            local function addPPScrollbarToLAM2Panel(panel, updateScrollBar)
+                updateScrollBar = updateScrollBar or false
+                local scrollBarCtrl = (panel and panel.container and panel.container.scrollbar) or nil
+                if scrollBarCtrl  ~= nil then
+                    if not updateScrollBar then
+                        PP.ScrollBar(scrollBarCtrl)
+                        local scrollBarParent = scrollBarCtrl:GetParent()
+                        PP.Anchor(scrollBarCtrl, --[[#1]] TOPLEFT, scrollBarParent, TOPRIGHT, nil, nil, --[[#2]] true, BOTTOMLEFT, scrollBarParent, BOTTOMRIGHT, 10, 0)
+                        panelsWithPPScrollbar[panel] = true
+                    end
+                    ZO_Scroll_SetMaxFadeDistance(scrollBarCtrl, PP.savedVars.ListStyle.list_fade_distance)
+                end
+            end
+
+            CM:RegisterCallback("LAM-PanelOpened", function(panel)
+                if panel and panelsWithPPScrollbar[panel] then return end
+                addPPScrollbarToLAM2Panel(panel, false)
+            end)
+            CM:RegisterCallback("LAM-PanelControlsCreated", function(panel)
+                if not panel then return end
+                if panelsWithPPScrollbar[panel] then
+                    --Just update the scrollbar bounds
+                    addPPScrollbarToLAM2Panel(panel, true)
+                else
+                    addPPScrollbarToLAM2Panel(panel, false)
+                end
+            end)
         end
 
         -- ===============================================================================================--
@@ -981,29 +1041,11 @@ PP.compatibility = function ()
         -- ==Misc ZO things==--
         -- ===============================================================================================--
 
-        -- ==ZO_ChatOptionsDialog==--
-        if ZO_ChatOptionsDialog then
-            PP:CreateBackground(ZO_ChatOptionsDialogBG, --[[#1]] nil, nil, nil, 0, 0, --[[#2]] nil, nil, nil, 0, 0)
-            ZO_ChatOptionsDialogBGMungeOverlay:SetHidden(true)
-        end
-
         -- ==ZO_UIErrors==--
         if ZO_UIErrors then
             PP:CreateBackground(ZO_UIErrors, --[[#1]] nil, nil, nil, 0, 0, --[[#2]] nil, nil, nil, 0, 0)
             ZO_UIErrorsBG:SetHidden(false)
             ZO_UIErrorsBGMungeOverlay:SetHidden(true)
-        end
-
-        -- ==ZO_GameMenu==--
-        if ZO_GameMenu_InGame then
-            PP.ScrollBar(ZO_OptionsWindowSettingsScrollBar)
-            PP.Anchor(ZO_OptionsWindowSettingsScrollBar, --[[#1]] nil, nil, nil, nil, nil, --[[#2]] true, nil, nil, nil, nil, nil)
-            ZO_Scroll_SetMaxFadeDistance(ZO_OptionsWindowSettingsScrollBar, PP.savedVars.ListStyle.list_fade_distance)
-            PP.ScrollBar(ZO_GameMenu_InGameNavigationContainerScrollBar)
-            PP.Anchor(ZO_GameMenu_InGameNavigationContainerScrollBar, --[[#1]] nil, nil, nil, nil, nil, --[[#2]] true, nil, nil, nil, nil, nil)
-            ZO_Scroll_SetMaxFadeDistance(ZO_GameMenu_InGameNavigationContainer, PP.savedVars.ListStyle.list_fade_distance)
-            ZO_SharedThinLeftPanelBackgroundLeft:SetHidden(true)
-            ZO_SharedThinLeftPanelBackgroundRight:SetHidden(true)
         end
 
         -- ==ZO_ComboBoxDropdown_Singleton_Keyboard==--

@@ -70,10 +70,16 @@ local DailyPledges={
 		{en="Scrivener's Hall",		},
 		{en="Oathsworn Pit",        },
 		{en="Bedlam Veil",		    },
-		shift=13
+        shift=13
 	},
 }
 
+-- Conditionally add new dungeons based on API version
+if GetAPIVersion() >= 101045 then
+    table.insert(DailyPledges[3], {en = "Exiled Redoubt"})
+    table.insert(DailyPledges[3], {en = "Lep Seclusa"})
+    DailyPledges[3].shift = 27
+end
 
 function PITHKA.Data.Pledges.GetGoalPledges()
 	local Pledges,haveQuest={},false
@@ -92,10 +98,6 @@ function PITHKA.Data.Pledges.GetGoalPledges()
 end
 
 function PITHKA.Data.Pledges.DailyPledges()
-	if GetAPIVersion()<101041 then -- if addon is being used before update 41, use this data
-		PITHKA.Data.Pledges.UseLastUpdatePledgeData()
-	end
-
 	local Pledges=PITHKA.Data.Pledges.GetGoalPledges()
 	local day=math.floor(GetDiffBetweenTimeStamps(GetTimeStamp(),1517464800)/86400)
 	d("Daily pledges:")
@@ -114,39 +116,4 @@ function PITHKA.Data.Pledges.DailyPledges()
 
 		d("["..npc.."] "..tostring(pledge)..quest)
 	end
-end
-
-function PITHKA.Data.Pledges.UseLastUpdatePledgeData()
-	-- values for 101040
-	DailyPledges[3]={	--Urgarlag
-		{en="Imperial City Prison",	},
-		{en="Ruins of Mazzatun",	},
-		{en="White-Gold Tower",		},
-		{en="Cradle of Shadows",	},
-		{en="Bloodroot Forge",		},
-		{en="Falkreath Hold",		},
-		{en="Fang Lair",			},
-		{en="Scalecaller Peak",		},
-		{en="Moon Hunter Keep",		},
-		{en="March of Sacrifices",	},
-		{en="Depths of Malatar",	},
-		{en="Frostvault",			},
-		{en="Moongrave Fane",		},
-		{en="Lair of Maarselok",	},
-		{en="Icereach",			    },
-		{en="Unhallowed Grave",		},
-		{en="Stone Garden",		    },
-		{en="Castle Thorn",		    },
-		{en="Black Drake Villa",	},
-		{en="The Cauldron",		    },
-		{en="Red Petal Bastion",	},
-		{en="The Dread Cellar",		},
-		{en="Coral Aerie",			},
-		{en="Shipwright's Regret",  },
-		{en="Earthen Root Enclave",	},
-		{en="Graven Deep",		    },
-		{en="Bal Sunnar",           },
-		{en="Scrivener's Hall",		},
-		shift=7
-	}
 end

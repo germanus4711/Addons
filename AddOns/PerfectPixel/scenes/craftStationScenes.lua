@@ -1,4 +1,4 @@
-local PP		= PP
+local PP = PP ---@class PP
 local namespace	= 'CraftStations'
 
 PP.craftStationScenes = function()
@@ -18,10 +18,21 @@ PP.craftStationScenes = function()
 	}
 
 	local tlcs = {
-		{ ZO_SmithingTopLevelRefinementPanel, 'smithing' }, { ZO_SmithingTopLevelCreationPanel }, { ZO_SmithingTopLevelDeconstructionPanel }, { ZO_SmithingTopLevelImprovementPanel },  { ZO_SmithingTopLevelResearchPanel },
+		--Smithing
+		{ ZO_SmithingTopLevelRefinementPanel, 'smithing' },
+		{ ZO_SmithingTopLevelCreationPanel },
+		{ ZO_SmithingTopLevelDeconstructionPanel },
+		{ ZO_SmithingTopLevelImprovementPanel },
+		{ ZO_SmithingTopLevelResearchPanel },
+		--Universal Deconstruction
 		{ ZO_UniversalDeconstructionTopLevel_KeyboardPanel, 'universalDeconstructionSceneKeyboard' },
-		{ ZO_EnchantingTopLevelInventory, 'enchanting' }, { ZO_AlchemyTopLevelInventory, 'alchemy' },
+		--Enchanting
+		{ ZO_EnchantingTopLevelInventory, 'enchanting' },
+		--Alchemy
+		{ ZO_AlchemyTopLevelInventory, 'alchemy' },
+		--Provisioning
 		{ ZO_ProvisionerTopLevel, 'provisioner' },
+		--Retrait
 		{ ZO_RetraitStation_KeyboardTopLevelRetraitPanel, 'retrait_keyboard_root' },
 	}
 
@@ -40,6 +51,9 @@ PP.craftStationScenes = function()
 				tlc = CreateControl("$(parent)Panel", tlc, CT_CONTROL)
 				tlc:SetAnchorFill(ZO_SmithingTopLevelRefinementPanel)
 				tlc:SetWidth(craftStationLayout.list_w)
+
+				PP:CreateBackground(ZO_ProvisionerTopLevelFilletPanelSlotContainer,		--[[#1]] nil, nil, nil, -6, 0, --[[#2]] nil, nil, nil, 0, 6)
+				ZO_ProvisionerTopLevelFilletPanelSlotContainerBg:SetHidden(true)
 			end
 
 			PP:CreateBackground(tlc,		--[[#1]] nil, nil, nil, -6, 0, --[[#2]] nil, nil, nil, 0, 6)
@@ -50,7 +64,25 @@ PP.craftStationScenes = function()
 			end
 			if list then
 				PP.ScrollBar(list)
-				PP.Anchor(list,				--[[#1]] TOPRIGHT, tlc, TOPRIGHT, 0, craftStationLayout.list_t_y, --[[#2]] true, BOTTOMRIGHT, tlc, BOTTOMRIGHT, 0, craftStationLayout.list_b_y)
+
+--[[
+Checking type on argument offsetY failed in ControlSetAnchorLua
+if control is ZO_EnchantingTopLevelInventory -> list_t_y got 2 enties (I guess for enchanting mode create and mode extarct?)
+->local craftStationLayout = PP:GetLayout('inventory', ZO_EnchantingTopLevelInventory)
+-->Will be properly applying the table's entry Y offset then at e.g. ENCHANTING inventory:SetMode function below
+]]
+				local listOffsetY = craftStationLayout.list_t_y
+				local listOffsetYCopy = listOffsetY --remove reference so we do not overwrite the original layout
+				if type(listOffsetY) == "table" then
+					listOffsetYCopy = 0
+				end
+				local listOffsetBY = craftStationLayout.list_b_y
+				local listOffsetBYCopy = listOffsetBY --remove reference so we do not overwrite the original layout
+				if type(listOffsetBYCopy) == "table" then
+					listOffsetBYCopy = 0
+				end
+				PP.Anchor(list,				--[[#1]] TOPRIGHT, tlc, TOPRIGHT, 0, listOffsetYCopy, --[[#2]] true, BOTTOMRIGHT, tlc, BOTTOMRIGHT, 0, listOffsetBYCopy)
+
 				list:SetWidth(craftStationLayout.list_w)
 			end
 			-- if categories then
@@ -81,6 +113,22 @@ PP.craftStationScenes = function()
 			if infoBar then
 				PP:RefreshStyle_InfoBar(infoBar, craftStationLayout)
 			end
+
+			local slotContainer = control:GetNamedChild("SlotContainer")
+			if slotContainer then
+				PP:CreateBackground(slotContainer,		--[[#1]] nil, nil, nil, -6, 0, --[[#2]] nil, nil, nil, 0, 6)
+				local oldSlotContainerBg = slotContainer:GetNamedChild("Bg")
+				if oldSlotContainerBg then
+					oldSlotContainerBg:SetHidden(true)
+				end
+			elseif control == ZO_SmithingTopLevelCreationPanel then
+				PP:CreateBackground(ZO_SmithingTopLevelCreationPanelMultiCraftContainer,		--[[#1]] nil, nil, nil, -6, 0, --[[#2]] nil, nil, nil, 0, 6)
+				ZO_SmithingTopLevelCreationPanelMultiCraftContainerBg:SetHidden(true)
+			elseif control == ZO_AlchemyTopLevelInventory then
+				PP:CreateBackground(ZO_AlchemyTopLevelSlotContainer,		--[[#1]] nil, nil, nil, -6, 0, --[[#2]] nil, nil, nil, 0, 6)
+				ZO_AlchemyTopLevelSlotContainerBg:SetHidden(true)
+			end
+
 		end
 
 		if scene then
@@ -89,18 +137,18 @@ PP.craftStationScenes = function()
 			local r_f	= craftStationLayout.removeFragments
 			local fr_f	= craftStationLayout.forceRemoveFragment
 			local h_bg	= craftStationLayout.hideBgForScene
-			
-			for i = 1, #a_f do
-				s:AddFragment(a_f[i])
+
+			for j = 1, #a_f do
+				s:AddFragment(a_f[j])
 			end
-			for i = 1, #r_f do
-				s:RemoveFragment(r_f[i])
+			for k = 1, #r_f do
+				s:RemoveFragment(r_f[k])
 			end
-			for i = 1, #fr_f do
-				PP:ForceRemoveFragment(s, fr_f[i])
+			for l = 1, #fr_f do
+				PP:ForceRemoveFragment(s, fr_f[l])
 			end
-			for i = 1, #h_bg do	
-				PP:HideBackgroundForScene(SCENE_MANAGER:GetScene(scene), h_bg[i].PP_BG)
+			for m = 1, #h_bg do
+				PP:HideBackgroundForScene(SCENE_MANAGER:GetScene(scene), h_bg[m].PP_BG)
 			end
 		end
 	end
@@ -147,7 +195,14 @@ PP.craftStationScenes = function()
 	local el = PP:GetLayout('inventory', ZO_EnchantingTopLevelInventory)
 	ZO_PreHook(ZO_EnchantingInventory, "ChangeMode", function(self, enchantingMode)
 		self.list:SetAnchorOffsets(0, el.list_t_y[enchantingMode], 1)
+
+		ZO_EnchantingTopLevelRuneSlotContainerBg:SetHidden(true)
+		ZO_EnchantingTopLevelExtractionSlotContainerBg:SetHidden(true)
 	end)
+
+	PP:CreateBackground(ZO_EnchantingTopLevelRuneSlotContainer, --[[#1]] nil, nil, nil, -10, -10, --[[#2]] nil, nil, nil, -30, 10)
+	PP:CreateBackground(ZO_EnchantingTopLevelExtractionSlotContainer, --[[#1]] nil, nil, nil, -10, -10, --[[#2]] nil, nil, nil, 0, 10)
+
 ---------------------------------------------------------------------------------------------------
 	-- ZO_RETRAIT_KEYBOARD ZO_RETRAIT_STATION_KEYBOARD --==SCENE_MANAGER:GetScene('retrait_keyboard_root')==-- -- ZO_RetraitStation_KeyboardTopLevel-- ZO_RetraitStation_KeyboardTopLevelReconstructPanel	
 	local retrait_panel		= ZO_RETRAIT_KEYBOARD
@@ -168,7 +223,7 @@ PP.craftStationScenes = function()
 	PP.ScrollBar(traitList)
 
 	PP.Font(ZO_RetraitStation_KeyboardTopLevelRetraitPanelTraitContainerSelectTraitLabel, --[[Font]] PP.f.u67, 22, "outline", --[[Alpha]] 0.9, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
-	
+
 	ZO_RetraitStation_KeyboardTopLevelRetraitPanelTraitContainerDivider:SetHidden(true)
 	ZO_RetraitStation_KeyboardTopLevelRetraitPanelTraitContainerBGMungeOverlay:SetHidden(true)
 
@@ -262,7 +317,7 @@ PP.craftStationScenes = function()
 			control.text:SetDimensionConstraints(0, 0, 400, 0)
 		end
 	end
-	
+
 
 --========================================================================	
 	local function OnCheckChanged()
@@ -298,7 +353,7 @@ PP.craftStationScenes = function()
 
 		control.name	= name
 		control.count	= count
-		
+
 		return control
 	end
 
@@ -323,12 +378,11 @@ PP.craftStationScenes = function()
 	end
 
 	function PROVISIONER:AddIngredientRowsTooltip(tooltip, numIngredients, recipeListIndex, recipeIndex, listId)
-		local ingredientRowsPool = self.ingredientRowsPool
-		
+		ingredientRowsPool = self.ingredientRowsPool
+
 		if not ingredientRowsPool[listId] then
 			ingredientRowsPool[listId] = {}
 		end
-		
 		ingredientRowsPool:ReleaseIngredientRowsTo(listId)
 
 		for ingredientIndex = 1, numIngredients do
@@ -365,7 +419,7 @@ PP.craftStationScenes = function()
 		if sv.Provisioner_ShowTooltip then
 			ZO_SelectableLabel_OnMouseEnter(self)
 			InitializeTooltip(ItemTooltip, self, RIGHT, -64, 0)
-			
+
 			local data				= self.data
 			local numIngredients	= data.numIngredients
 			local recipeListIndex	= data.recipeListIndex
@@ -381,7 +435,7 @@ PP.craftStationScenes = function()
 						local level = GetNonCombatBonus(GetNonCombatBonusLevelTypeForTradeskillType(tradeskill))
 						if level < levelReq then
 							local levelPassiveAbilityId = GetTradeskillLevelPassiveAbilityId(tradeskill)
-							local levelPassiveAbilityName = GetAbilityName(levelPassiveAbilityId)
+							local levelPassiveAbilityName = ZO_CachedStrFormat(SI_ABILITY_NAME, GetAbilityName(levelPassiveAbilityId, "player"))
 							ItemTooltip:AddLine(zo_strformat(SI_RECIPE_REQUIRES_LEVEL_PASSIVE, levelPassiveAbilityName, levelReq), "", ZO_ERROR_COLOR:UnpackRGBA())
 						end
 					end
@@ -401,5 +455,16 @@ PP.craftStationScenes = function()
 			return true
 		end
 	end)
+
+	--Reused in several crafting scenes, like enchanting, jewelry, smithing, clothier, woodworking, provisioner -> all of them at the "Recipes" tab
+	SecurePostHook(PROVISIONER, "EmbedInCraftingScene", function()
+		--Move the provisioner multicraft control to the same bottom Y offset -64 like other PP crafting backgrounds use
+		--so it's all at 1 line while switching the different craftingModes (e.g. at enchanting)
+		ZO_ProvisionerTopLevelMultiCraftContainerBg:SetHidden(true)
+		ZO_ProvisionerTopLevelMultiCraftContainer:ClearAnchors()
+		ZO_ProvisionerTopLevelMultiCraftContainer:SetAnchor(BOTTOM, GuiRoot, BOTTOM, 0, -64)
+	end)
+	PP:CreateBackground(ZO_ProvisionerTopLevelMultiCraftContainer, --[[#1]] nil, nil, nil, -10, -10, --[[#2]] nil, nil, nil, 0, 10)
+	ZO_ProvisionerTopLevelMultiCraftContainerBg:SetHidden(true)
 --===============================================================================================--
 end

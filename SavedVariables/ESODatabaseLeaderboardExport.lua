@@ -8,37 +8,37 @@ ESODBLeaderboardExportSV =
             {
                 ["EU"] = 
                 {
+                    ["WeeklyChallenge"] = 
+                    {
+                    },
                     ["Trials"] = 
                     {
                     },
-                    ["TalesOfTribute"] = 
-                    {
-                    },
-                    ["WeeklyChallenge"] = 
+                    ["WeeklyTrial"] = 
                     {
                     },
                     ["Battlegrounds"] = 
                     {
                     },
-                    ["WeeklyTrial"] = 
+                    ["TalesOfTribute"] = 
                     {
                     },
                 },
                 ["NA"] = 
                 {
+                    ["WeeklyChallenge"] = 
+                    {
+                    },
                     ["Trials"] = 
                     {
                     },
-                    ["TalesOfTribute"] = 
-                    {
-                    },
-                    ["WeeklyChallenge"] = 
+                    ["WeeklyTrial"] = 
                     {
                     },
                     ["Battlegrounds"] = 
                     {
                     },
-                    ["WeeklyTrial"] = 
+                    ["TalesOfTribute"] = 
                     {
                     },
                 },

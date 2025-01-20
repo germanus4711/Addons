@@ -1,19 +1,21 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
+-- -----------------------------------------------------------------------------
 --- @class (partial) LuiExtended
 --- @field UI table UI utilities
 --- @field SV table Saved variables
 local LUIE = LUIE
-
+-- -----------------------------------------------------------------------------
 local UI = LUIE.UI
 local sceneManager = SCENE_MANAGER
-
+-- -----------------------------------------------------------------------------
 local firstRun = true
-local savedHiddenStates = {}
-
+local g_LUIE_Movers = {}
+local g_framesUnlocked = false
+-- -----------------------------------------------------------------------------
 --- Table of UI elements to unlock for moving.
 --- Constraints for some elements need to be adjusted - using values from Azurah.
 --- @type table<Control, {[integer]:string, [integer]:number?, [integer]:number?}>
@@ -38,53 +40,40 @@ local defaultPanels =
     [ZO_PlayerProgress] = { GetString(LUIE_STRING_DEFAULT_FRAME_PLAYER_PROGRESS) },                              -- Needs custom template applied
     -- [ZO_CenterScreenAnnounce] = { GetString(LUIE_STRING_DEFAULT_FRAME_CSA), nil, 100 }, -- Needs custom template applied
     [ZO_EndDunHUDTrackerContainer] = { GetString(LUIE_STRING_DEFAULT_FRAME_ENDLESS_DUNGEON_TRACKER), 230, 100 }, -- Needs custom template applied
+    -- [ZO_EndDunBuffTracker_Gamepad] = { GetString(LUIE_STRING_DEFAULT_FRAME_ENDLESS_DUNGEON_TRACKER), 400, 400 }, -- Needs custom template applied
     [ZO_ReticleContainerInteract] = { GetString(LUIE_STRING_DEFAULT_FRAME_RETICLE_CONTAINER_INTERACT) }
 }
-
---- Our custom mover frames
-local g_LUIE_Movers = {}
-local g_framesUnlocked = false
-
+-- -----------------------------------------------------------------------------
 --- Replace the template function for certain elements to also use custom positions
 --- @param object table The object containing the template function to be replaced
 --- @param functionName string The name of the template function to be replaced
 --- @param frameName string The name of the frame associated with the template function
 local function ReplaceDefaultTemplate(object, functionName, frameName)
-    --- @type function
     local zos_function = object[functionName]
     object[functionName] = function (self)
-        local result = zos_function(self)    -- Get Original Function results
-        local frameData = LUIE.SV[frameName] -- Get LUIE Saved Frame Data
-        -- Apply positional setup
+        local result = zos_function(self)
+        local frameData = LUIE.SV[frameName]
         if frameData then
-            local x = frameData[1]
-            local y = frameData[2]
-            --- @type Control
             local frame = _G[frameName]
             frame:ClearAnchors()
-            frame:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
+            frame:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, frameData[1], frameData[2])
         end
         return result
     end
 end
-
+-- -----------------------------------------------------------------------------
 --- Run when the UI scene changes to hide the unlocked elements if we're in the Addon Settings Menu
 --- @param oldState number The previous state of the UI scene
 --- @param newState number The new state of the UI scene
 local function sceneChange(oldState, newState)
-    if g_framesUnlocked then
-        local isHidden = false
-        if newState == SCENE_SHOWN then
-            isHidden = true
-        elseif newState == SCENE_HIDDEN then
-            isHidden = false
-        end
-        for k, v in pairs(g_LUIE_Movers) do
-            v:SetHidden(isHidden)
-        end
+    if not g_framesUnlocked then return end
+
+    local isHidden = (newState == SCENE_SHOWN)
+    for _, v in pairs(g_LUIE_Movers) do
+        v:SetHidden(isHidden)
     end
 end
-
+-- -----------------------------------------------------------------------------
 --- Helper function to adjust an element
 --- @param k Control The element to be adjusted
 --- @param v {[1]:string, [2]:number?, [3]:number?} The table containing adjustment values
@@ -97,7 +86,7 @@ local function adjustElement(k, v)
         k:SetHeight(v[3])
     end
 end
-
+-- -----------------------------------------------------------------------------
 --- Helper function to set the anchor of an element
 --- @param k Control The element to set the anchor for
 --- @param frameName string The name of the frame associated with the element
@@ -131,7 +120,7 @@ local function setAnchor(k, frameName)
         end
     end
 end
-
+-- -----------------------------------------------------------------------------
 --- Called when an element mover is adjusted and on initialization to update all positions
 function LUIE.SetElementPosition()
     for k, v in pairs(defaultPanels) do
@@ -148,6 +137,7 @@ function LUIE.SetElementPosition()
     end
 end
 
+-- -----------------------------------------------------------------------------
 --- Helper function to create a top-level window
 --- @param k Control The element to create the top-level window for
 --- @param v {[1]:string, [2]:number?, [3]:number?} The table containing window configuration values
@@ -164,7 +154,7 @@ local function createTopLevelWindow(k, v, point, relativePoint, offsetX, offsetY
     tlw.previewLabel = UI:Label(tlw.preview, { CENTER, CENTER }, nil, nil, "ZoFontGameMedium", v[1], false)
     return tlw
 end
-
+-- -----------------------------------------------------------------------------
 --- Setup Movers for Elements, called by the menu unlock settings
 --- @param state boolean The state indicating whether the elements are unlocked or not
 function LUIE.SetupElementMover(state)
@@ -180,6 +170,7 @@ function LUIE.SetupElementMover(state)
             end
             -- Create a top-level window for backbar buttons.
             local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY, anchorConstrains = k:GetAnchor()
+            if not isValidAnchor then return end
             -- Default Alert text doesn't really align with the frame so we just move this visually on initial setup.
             if k == ZO_AlertTextNotification then
                 local frameName = k:GetName()
@@ -189,6 +180,7 @@ function LUIE.SetupElementMover(state)
                     relativePoint = TOPRIGHT
                     offsetX = 0
                     offsetY = 0
+                    anchorConstrains = anchorConstrains or ANCHOR_CONSTRAINS_XY
                 end
             end
             --- @type TopLevelWindow
@@ -215,6 +207,7 @@ function LUIE.SetupElementMover(state)
     firstRun = false
 end
 
+-- -----------------------------------------------------------------------------
 --- Reset the position of windows. Called from the Settings Menu
 function LUIE.ResetElementPosition()
     for k, v in pairs(defaultPanels) do
@@ -223,3 +216,5 @@ function LUIE.ResetElementPosition()
     end
     ReloadUI("ingame")
 end
+
+-- -----------------------------------------------------------------------------

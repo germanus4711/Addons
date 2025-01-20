@@ -1,3 +1,4 @@
+local PP = PP ---@class PP
 PP.groupMenuKeyboardScene = function()
 
 	--KEYBOARD_GROUP_MENU_SCENE:RemoveFragment(FRAME_PLAYER_FRAGMENT)
@@ -105,4 +106,10 @@ PP.groupMenuKeyboardScene = function()
 			sceneFragmentsShown[PROMOTIONAL_EVENTS_PREVIEW_OPTIONS_FRAGMENT] = true
 		end
 	end)
+
+	--Tribute finder
+	local tributeFinderObj = TRIBUTE_FINDER_KEYBOARD
+	local tributeFinderClubRankControl = tributeFinderObj.clubRankControl
+	local tributeFinderClubRankControlXPBar = GetControl(tributeFinderClubRankControl, "XPBar") --ZO_TributeFinder_KeyboardClubRankXPBar
+ 	PP.Bar(tributeFinderClubRankControlXPBar, 14, 15, nil, nil, true)
 end

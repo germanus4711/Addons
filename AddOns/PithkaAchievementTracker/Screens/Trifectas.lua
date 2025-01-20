@@ -12,7 +12,7 @@ function PITHKA.Screens.Trifectas.initialize()
     -- LEFT COLUMN WITH SCORE
     -- create header
     local t = {{
-        PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=155, t="TRIALS", tt="Click to port"},
+        PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=155, t="TRIALS"},
         PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=75,  t="BEST SCORE", align=TEXT_ALIGN_RIGHT},
         PITHKA.UI.Misc.spacer{ v=_v, w=20},
         PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=216, t="TRIFECTA"},
@@ -35,7 +35,7 @@ function PITHKA.Screens.Trifectas.initialize()
 
     -- create arena rows
     t[#t+1] = {PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=155, t="   "},}
-    t[#t+1] = {PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=155, t="ARENAS", tt="Click to port"},}
+    t[#t+1] = {PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=155, t="ARENAS"},}
     local rows = PITHKA.Data.Achievements.DBFilter({TYPE='arena'})
     for _, row in pairs(rows) do
         --if row.TRI then
@@ -51,7 +51,7 @@ function PITHKA.Screens.Trifectas.initialize()
     end
     -- Oct 30, 2023
     t[#t+1] = {PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=155, t="   "},}
-    t[#t+1] = {PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=155, t="INFINITY ARCHIVE", tt="Click to port"},}
+    t[#t+1] = {PITHKA.UI.Labels.basic{v=_v, f="ZoFontGameSmall", w=155, t="INFINITY ARCHIVE"},}
     local rows = PITHKA.Data.Achievements.DBFilter({TYPE='endless'})
     for _, row in pairs(rows) do
             t[#t+1] =  {
@@ -71,7 +71,7 @@ function PITHKA.Screens.Trifectas.initialize()
     -- RIGHT COLUMN DUNGEONS
     -- create header
     local t = {{
-        PITHKA.UI.Labels.basic{ v=_v,      f="ZoFontGameSmall", w=155,  t="DUNGEONS", tt="Click to port"},
+        PITHKA.UI.Labels.basic{ v=_v,      f="ZoFontGameSmall", w=155,  t="DUNGEONS"},
         PITHKA.UI.Labels.basic{ v=_v,      f="ZoFontGameSmall", w=270,  t='TRIFECTA' },
         }}
 

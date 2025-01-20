@@ -56,16 +56,16 @@ function PITHKA.UI.Layout.updateScreenSize()
   local w, h
   if PITHKA.SV.state.currentScreen == 'dungeon' then
     w = 600 + (PITHKA.SV.state.showExtra and 210 or 0)
-    h = 880+80
+    h = 830
   elseif PITHKA.SV.state.currentScreen == 'trial' then
     w = 930 + (PITHKA.SV.state.showExtra and 225 or 0)
-    h = 450
+    h = 480
   elseif PITHKA.SV.state.currentScreen == 'trifecta' then
     w = 925 
-    h = 685+80
+    h = 790
   elseif PITHKA.SV.state.currentScreen == 'baseDungeon' then
-    w = 1000 
-    h = 350
+    w = 1300 
+    h = 350 -- 350
   end
   PITHKA_GUI:SetDrawTier(DT_LOW)
   PITHKA_GUI:SetDimensions(w, h)

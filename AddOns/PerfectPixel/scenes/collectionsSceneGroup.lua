@@ -1,3 +1,5 @@
+local PP = PP ---@class PP
+
 PP.collectionsSceneGroup = function()
 	--orig
 	function ZO_RestyleCommon_Keyboard.UpdateAnchors(control, hasSubTabs)
@@ -78,12 +80,11 @@ PP.collectionsSceneGroup = function()
 		if progressBar then
 			PP.Bar(progressBar, --[[h]] 14, --[[f]] 15)
 		end
-		--At set collecitons book: This will only have 1 line as PP inits, so we need to call it again on each SetCollectionsOpen
+		--At set collections book: This will only have 1 line as PP inits, so we need to call it again on each SetCollectionsOpen
 		updateContentScrollChildProgressBars(summaryContentScrollChild, true, 14, 15)
 	end
 
 	--COLLECTIONS_BOOK_SCENE, COLLECTIONS_BOOK
-
 	local function EmptyCellHidden(control, data)
 		if data.isEmptyCell then
 			control:SetHidden(true)
@@ -113,7 +114,7 @@ PP.collectionsSceneGroup = function()
 				backdrop:SetCenterColor(10/255, 10/255, 10/255, 0.7)
 				backdrop:SetCenterTexture(nil, 4, 0)
 				backdrop:SetEdgeColor(40/255, 40/255, 40/255, 0.9)
-				backdrop:SetEdgeTexture(nil, 1, 1, 1, 0)
+				backdrop:SetEdgeTexture("", 1, 1, 1, 0)
 				backdrop:SetInsets(1, 1, -1, -1)
 				backdrop:SetDrawLayer(0)
 				backdrop:SetDrawTier(0)
@@ -183,7 +184,7 @@ PP.collectionsSceneGroup = function()
 			backdrop:SetCenterColor(10/255, 10/255, 10/255, 0.7)
 			backdrop:SetCenterTexture(nil, 4, 0)
 			backdrop:SetEdgeColor(40/255, 40/255, 40/255, 0.9)
-			backdrop:SetEdgeTexture(nil, 1, 1, 1, 0)
+			backdrop:SetEdgeTexture("", 1, 1, 1, 0)
 			backdrop:SetInsets(1, 1, -1, -1)
 			---------------------------------
 		end
@@ -225,7 +226,7 @@ PP.collectionsSceneGroup = function()
 		backdrop:SetCenterColor(10/255, 10/255, 10/255, 0.7)
 		backdrop:SetCenterTexture(nil, 4, 0)
 		backdrop:SetEdgeColor(40/255, 40/255, 40/255, 0.9)
-		backdrop:SetEdgeTexture(nil, 1, 1, 1, 0)
+		backdrop:SetEdgeTexture("", 1, 1, 1, 0)
 		backdrop:SetInsets(1, 1, -1, -1)
 		backdrop:SetDrawLayer(0)
 		backdrop:SetDrawLevel(0)
@@ -274,7 +275,7 @@ PP.collectionsSceneGroup = function()
 					backdrop:SetCenterColor(10/255, 10/255, 10/255, 0.7)
 					backdrop:SetCenterTexture(nil, 4, 0)
 					backdrop:SetEdgeColor(40/255, 40/255, 40/255, 0.9)
-					backdrop:SetEdgeTexture(nil, 1, 1, 1, 0)
+					backdrop:SetEdgeTexture("", 1, 1, 1, 0)
 					backdrop:SetInsets(1, 1, -1, -1)
 					backdrop:SetDrawLayer(DL_BACKGROUND)
 					backdrop:SetDrawLevel(0)
@@ -291,12 +292,20 @@ PP.collectionsSceneGroup = function()
 	end
 
 	--------------------------
-	--On each open of the set collecitons book: Update the summary progress bars as they might have added new
+	--On each open of the set collections book: Update the summary progress bars as they might have added new
 	local setCollectionsBookScene = scenes[6][1]
 	local setCollectionsBookSceneGVar = scenes[6][2]
 	setCollectionsBookScene:RegisterCallback("StateChange", function(oldState, newState)
 		if newState == SCENE_SHOWN then
 			updateContentScrollChildProgressBars(setCollectionsBookSceneGVar.summaryScrollChild, true, 14, 15)
 		end
+	end)
+
+
+	--DLC BOOK
+	local dlcBookObj = scenes[2][2] -- DLC_BOOK_KEYBOARD
+	PP.onDeferredInitCheck(dlcBookObj, function()
+		--Scrollbar at the left navigation scrollChild
+		PP.ScrollBar(dlcBookObj.navigationList, --[[sb_c]] 180, 180, 180, 0.8, --[[bd_c]] 20, 20, 20, 0.6, false)
 	end)
 end

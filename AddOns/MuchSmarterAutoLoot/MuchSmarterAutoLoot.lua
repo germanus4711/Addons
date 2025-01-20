@@ -3004,9 +3004,12 @@ local function LoadScreen()
     end
 
     -- d("auto modify build-in autoloot")
-    -- if (db.enabled) then
-    --	SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_LOOT, 0)
-    -- end
+    if (db.enabled) then
+        SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_LOOT, 0)
+        SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AOE_LOOT, 1)
+        SetSetting(SETTING_TYPE_LOOT, LOOT_SETTING_AUTO_ADD_TO_CRAFT_BAG, 1)
+        EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED, OnLootUpdatedThrottled)
+    end
 
     if (not startupInfoPrinted and db.loginReminder == true and db.enabled == true) then
         d("|c215895 Lykeion's|cdb8e0b Much Smarter AutoLoot " .. addonVersion .. " " ..

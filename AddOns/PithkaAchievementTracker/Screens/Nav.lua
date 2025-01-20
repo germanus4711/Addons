@@ -8,10 +8,10 @@ PITHKA.Screens.Nav = {}
 function PITHKA.Screens.Nav.initialize()
     -- create nav buttons
     local ns = PITHKA.UI.Constants.navIconSize+10
-    local n0 = PITHKA.UI.Icons.nav{s=ns, tt='Base Dungeons', state='baseDungeon', tta=LEFT, t=PITHKA.UI.Constants.texture.DUNGEON}
-    local n1 = PITHKA.UI.Icons.nav{s=ns, tt='DLC Dungeons', state='dungeon', tta=LEFT, t=PITHKA.UI.Constants.texture.INSTANCE}
+    local n0 = PITHKA.UI.Icons.nav{s=ns, tt='Starter Dungeons', state='baseDungeon', tta=LEFT, t=PITHKA.UI.Constants.texture.DUNGEON}
+    local n1 = PITHKA.UI.Icons.nav{s=ns, tt='4-Man Trifectas', state='dungeon', tta=LEFT, t=PITHKA.UI.Constants.texture.INSTANCE}
     local n2 = PITHKA.UI.Icons.nav{s=ns, tt='Trials',   state='trial',   tta=LEFT, t=PITHKA.UI.Constants.texture.TRIAL}
-    local n3 = PITHKA.UI.Icons.nav{s=ns+5, tt='Tris and Scores',   state='trifecta', tta=LEFT, t=PITHKA.UI.Constants.texture.STAR}
+    local n3 = PITHKA.UI.Icons.nav{s=ns+5, tt='All Tris and Scores',   state='trifecta', tta=LEFT, t=PITHKA.UI.Constants.texture.STAR}
     n0:SetAnchor(TOPLEFT, PITHKA_GUI, TOPLET, -ns-12, 0)
     n1:SetAnchor(TOP, n0, BOTTOM, 0, 0)
     n2:SetAnchor(TOP, n1, BOTTOM, 0, 0)

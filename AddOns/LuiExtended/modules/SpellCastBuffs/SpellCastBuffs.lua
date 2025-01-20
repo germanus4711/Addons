@@ -1,13 +1,16 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
 -- SpellCastBuffs namespace
-LUIE.SpellCastBuffs = {}
-local SpellCastBuffs = LUIE.SpellCastBuffs
+--- @class (partial) LUIE.SpellCastBuffs
+local SpellCastBuffs = {}
+SpellCastBuffs.__index = SpellCastBuffs
+--- @class (partial) LUIE.SpellCastBuffs
+LUIE.SpellCastBuffs = SpellCastBuffs
 
 local UI = LUIE.UI
 --- @type Data
@@ -75,7 +78,7 @@ SpellCastBuffs.Defaults =
     },
     IconSize = 40,
     LabelPosition = 0,
-    BuffFontFace = "Fontin Regular",
+    BuffFontFace = "Univers 67",
     BuffFontStyle = "outline",
     BuffFontSize = 16,
     BuffShowLabel = true,
@@ -728,8 +731,10 @@ function SpellCastBuffs.RegisterWerewolfEvents()
 end
 
 function SpellCastBuffs.RegisterDebugEvents()
+    -- Unregister existing events
     eventManager:UnregisterForEvent(moduleName .. "DebugCombat", EVENT_COMBAT_EVENT)
     eventManager:UnregisterForEvent(moduleName .. "DebugEffect", EVENT_EFFECT_CHANGED)
+    -- Register standard debug events if enabled
     if SpellCastBuffs.SV.ShowDebugCombat then
         eventManager:RegisterForEvent(moduleName .. "DebugCombat", EVENT_COMBAT_EVENT, SpellCastBuffs.EventCombatDebug)
     end
@@ -737,8 +742,8 @@ function SpellCastBuffs.RegisterDebugEvents()
         eventManager:RegisterForEvent(moduleName .. "DebugEffect", EVENT_EFFECT_CHANGED, SpellCastBuffs.EventEffectDebug)
     end
 
-    -- Debugs only enabled for my accounts
-    if LUIE.PlayerDisplayName == "@ArtOfShred" or LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@ArtOfShredLegacy" then
+    -- Author-specific debug events
+    if LUIE.IsDevDebugEnabled() and SpellCastBuffs.SV.ShowDebugEffect and SpellCastBuffs.SV.ShowDebugEffect then
         eventManager:RegisterForEvent(moduleName .. "AuthorDebugCombat", EVENT_COMBAT_EVENT, SpellCastBuffs.AuthorCombatDebug)
         eventManager:RegisterForEvent(moduleName .. "AuthorDebugEffect", EVENT_EFFECT_CHANGED, SpellCastBuffs.AuthorEffectDebug)
     end
@@ -1395,7 +1400,9 @@ end
 
 -- Right Click Cancel Buff function
 function SpellCastBuffs.Buff_OnMouseUp(self, button, upInside)
+    --- @diagnostic disable-next-line: undefined-field
     if upInside and button == MOUSE_BUTTON_INDEX_RIGHT and self.buffSlot then
+        --- @diagnostic disable-next-line: undefined-field
         CancelBuff(self.buffSlot)
     end
 end
@@ -1516,7 +1523,7 @@ function SpellCastBuffs.Buff_OnMouseEnter(control)
                     elseif Effects.EffectOverride[control.effectId].tooltipValue2Mod then
                         value2 = zo_floor(duration + Effects.EffectOverride[control.effectId].tooltipValue2Mod + 0.5)
                     elseif Effects.EffectOverride[control.effectId].tooltipValue2Id then
-                        value2 = zo_floor((GetAbilityDuration(Effects.EffectOverride[control.effectId].tooltipValue2Id) or 0) + 0.5) / 1000
+                        value2 = zo_floor((GetAbilityDuration(Effects.EffectOverride[control.effectId].tooltipValue2Id, nil, "player" or nil) or 0) + 0.5) / 1000
                     else
                         value2 = 0
                     end
@@ -1558,8 +1565,8 @@ function SpellCastBuffs.Buff_OnMouseEnter(control)
 
                 -- Display Default Description if no internal effect description is present
                 if tooltipText == "" or tooltipText == nil then
-                    if GetAbilityDescription(control.effectId) ~= "" then
-                        tooltipText = GetAbilityDescription(control.effectId)
+                    if GetAbilityDescription(control.effectId, nil, "player" or nil) ~= "" then
+                        tooltipText = GetAbilityDescription(control.effectId, nil, "player" or nil)
                     end
                 end
 
@@ -1732,7 +1739,7 @@ function SpellCastBuffs.CreateSingleIcon(container, AnchorItem, effectType)
             }
 
             -- Setup bar properties
-            buff.bar.backdrop:SetEdgeTexture("", 8, 2, 2)
+            buff.bar.backdrop:SetEdgeTexture("", 8, 2, 2, 2)
             buff.bar.backdrop:SetDrawLayer(DL_BACKGROUND)
             buff.bar.backdrop:SetDrawLevel(DL_CONTROLS)
             buff.bar.bar:SetMinMax(0, 1)
@@ -1857,8 +1864,8 @@ function SpellCastBuffs.ApplyFont()
     -- Font setup for standard Buffs & Debuffs
     local fontName = LUIE.Fonts[SpellCastBuffs.SV.BuffFontFace]
     if not fontName or fontName == "" then
-        printToChat(GetString(LUIE_STRING_ERROR_FONT), true)
-        fontName = "$(MEDIUM_FONT)"
+        LUIE.Debug(GetString(LUIE_STRING_ERROR_FONT))
+        fontName = "Univers 67"
     end
     local fontStyle = (SpellCastBuffs.SV.BuffFontStyle and SpellCastBuffs.SV.BuffFontStyle ~= "") and SpellCastBuffs.SV.BuffFontStyle or "outline"
     local fontSize = (SpellCastBuffs.SV.BuffFontSize and SpellCastBuffs.SV.BuffFontSize > 0) and SpellCastBuffs.SV.BuffFontSize or 17
@@ -1867,8 +1874,8 @@ function SpellCastBuffs.ApplyFont()
     -- Font Setup for Prominent Buffs & Debuffs
     local prominentName = LUIE.Fonts[SpellCastBuffs.SV.ProminentLabelFontFace]
     if not prominentName or prominentName == "" then
-        printToChat(GetString(LUIE_STRING_ERROR_FONT), true)
-        prominentName = "$(MEDIUM_FONT)"
+        LUIE.Debug(GetString(LUIE_STRING_ERROR_FONT))
+        prominentName = "Univers 67"
     end
     local prominentStyle = (SpellCastBuffs.SV.ProminentLabelFontStyle and SpellCastBuffs.SV.ProminentLabelFontStyle ~= "") and SpellCastBuffs.SV.ProminentLabelFontStyle or "outline"
     local prominentSize = (SpellCastBuffs.SV.ProminentLabelFontSize and SpellCastBuffs.SV.ProminentLabelFontSize > 0) and SpellCastBuffs.SV.ProminentLabelFontSize or 17

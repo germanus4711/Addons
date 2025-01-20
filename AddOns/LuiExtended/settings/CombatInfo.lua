@@ -1,12 +1,16 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
 
---- @class (partial) CombatInfo
+local FontsList = LUIE.Media.FontList
+local SoundsList = LUIE.Media.SoundList
+local StatusbarTexturesList = LUIE.Media.StatusbarTexturesList
+
+--- @class LUIE.CombatInfo
 local CombatInfo = LUIE.CombatInfo
 local CrowdControlTracker = CombatInfo.CrowdControlTracker
 local AbilityAlerts = CombatInfo.AbilityAlerts
@@ -67,7 +71,7 @@ local function loadDialogButtons()
         LUIE.RegisterDialogueButton(dialog.identifier, dialog.title, dialog.text, dialog.callback)
     end
 end
---- @diagnostic disable-next-line: duplicate-set-field
+
 function CombatInfo.CreateSettings()
     -- Load LibAddonMenu
     local LAM = LibAddonMenu2
@@ -77,54 +81,6 @@ function CombatInfo.CreateSettings()
 
     local Defaults = CombatInfo.Defaults
     local Settings = CombatInfo.SV
-
-    local FontsList = {}
-    local LMP = LibMediaProvider
-    if LMP then
-        -- Add LUIE fonts first
-        for f, _ in pairs(LUIE.Fonts) do
-            table_insert(FontsList, f)
-        end
-        -- Add LMP fonts
-        for _, font in ipairs(LMP:List(LMP.MediaType.FONT)) do
-            -- Only add if not already in list
-            if not LUIE.Fonts[font] then
-                table_insert(FontsList, font)
-            end
-        end
-    end
-
-    -- Get sounds from LibMediaProvider
-    local SoundsList = {}
-    if LMP then
-        -- Add LUIE sounds first
-        for sound, _ in pairs(LUIE.Sounds) do
-            table_insert(SoundsList, sound)
-        end
-        -- Add LMP sounds
-        for _, sound in ipairs(LMP:List(LMP.MediaType.SOUND)) do
-            -- Only add if not already in list
-            if not LUIE.Sounds[sound] then
-                table_insert(SoundsList, sound)
-            end
-        end
-    end
-
-    -- Get statusbar textures from LibMediaProvider
-    local StatusbarTexturesList = {}
-    if LMP then
-        -- Add LUIE textures first
-        for key, _ in pairs(LUIE.StatusbarTextures) do
-            table_insert(StatusbarTexturesList, key)
-        end
-        -- Add LMP statusbar textures
-        for _, texture in ipairs(LMP:List(LMP.MediaType.STATUSBAR)) do
-            -- Only add if not already in list
-            if not LUIE.StatusbarTextures[texture] then
-                table_insert(StatusbarTexturesList, texture)
-            end
-        end
-    end
 
     -- Load Dialog Buttons
     loadDialogButtons()
@@ -142,7 +98,7 @@ function CombatInfo.CreateSettings()
         donation = LUIE.donation,
         slashCommand = "/luici",
         registerForRefresh = true,
-        registerForDefaults = false,
+        registerForDefaults = true,
     }
 
     local optionsDataCombatInfo = {}
@@ -386,7 +342,22 @@ function CombatInfo.CreateSettings()
                 type = "dropdown",
                 name = zo_strformat("\t\t\t\t\t<<1>>", GetString(LUIE_STRING_LAM_FONT_STYLE)),
                 tooltip = GetString(LUIE_STRING_LAM_CI_SHARED_FONTSTYLE_TP),
-                choices = { "normal", "outline", "shadow", "soft-shadow-thick", "soft-shadow-thin", "thick-outline" },
+                choices = {
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
+                    "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                },
+                choicesValues = {
+                    GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                },
                 sort = "name-up",
                 getFunc = function ()
                     return Settings.UltimateFontStyle
@@ -619,7 +590,22 @@ function CombatInfo.CreateSettings()
                 type = "dropdown",
                 name = zo_strformat("\t\t\t\t\t\t\t\t\t\t<<1>>", GetString(LUIE_STRING_LAM_FONT_STYLE)),
                 tooltip = GetString(LUIE_STRING_LAM_CI_SHARED_FONTSTYLE_TP),
-                choices = { "normal", "outline", "shadow", "soft-shadow-thick", "soft-shadow-thin", "thick-outline" },
+                choices = {
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
+                    "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                },
+                choicesValues = {
+                    GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                },
                 sort = "name-up",
                 getFunc = function ()
                     return Settings.BarFontStyle
@@ -865,7 +851,22 @@ function CombatInfo.CreateSettings()
                 type = "dropdown",
                 name = zo_strformat("\t\t\t\t\t<<1>>", GetString(LUIE_STRING_LAM_FONT_STYLE)),
                 tooltip = GetString(LUIE_STRING_LAM_CI_SHARED_FONTSTYLE_TP),
-                choices = { "normal", "outline", "shadow", "soft-shadow-thick", "soft-shadow-thin", "thick-outline" },
+                choices = {
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
+                    "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                },
+                choicesValues = {
+                    GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                },
                 sort = "name-up",
                 getFunc = function ()
                     return Settings.PotionTimerFontStyle
@@ -1148,7 +1149,22 @@ function CombatInfo.CreateSettings()
                 type = "dropdown",
                 name = zo_strformat("\t\t\t\t\t\t\t\t\t\t<<1>>", GetString(LUIE_STRING_LAM_CI_CASTBAR_FONTSTYLE)),
                 tooltip = GetString(LUIE_STRING_LAM_CI_CASTBAR_FONTSTYLE_TP),
-                choices = { "normal", "outline", "shadow", "soft-shadow-thick", "soft-shadow-thin", "thick-outline" },
+                choices = {
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
+                    "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                },
+                choicesValues = {
+                    GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                },
                 sort = "name-up",
                 getFunc = function ()
                     return Settings.CastBarFontStyle
@@ -1410,7 +1426,22 @@ function CombatInfo.CreateSettings()
                 type = "dropdown",
                 name = zo_strformat("\t\t\t\t\t<<1>>", GetString(LUIE_STRING_LAM_FONT_STYLE)),
                 tooltip = GetString(LUIE_STRING_LAM_CI_ALERT_FONTSTYLE_TP),
-                choices = { "normal", "outline", "shadow", "soft-shadow-thick", "soft-shadow-thin", "thick-outline" },
+                choices = {
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
+                    "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                },
+                choicesValues = {
+                    GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                },
                 sort = "name-up",
                 getFunc = function ()
                     return Settings.alerts.toggles.alertFontStyle
@@ -3274,22 +3305,21 @@ function CombatInfo.CreateSettings()
             },
             {
                 -- Display Method
-                -- TODO: Change theses to displayOptions + better punctuation
                 type = "dropdown",
                 name = GetString(LUIE_STRING_LAM_CI_CCT_DISPLAY_STYLE),
                 tooltip = GetString(LUIE_STRING_LAM_CI_CCT_DISPLAY_STYLE_TP),
-                choices = { "Both icon and text", "Icon only", "Text only" },
+                choices = { "Display: Icon & Text", "Display: Icon", "Display: Text" },
                 getFunc = function ()
                     if Settings.cct.showOptions == "all" then
-                        return "Both icon and text"
+                        return "Display: Icon & Text"
                     elseif Settings.cct.showOptions == "icon" then
-                        return "Icon only"
+                        return "Display: Icon"
                     elseif Settings.cct.showOptions == "text" then
-                        return "Text only"
+                        return "Display: Text"
                     end
                 end,
                 setFunc = function (newValue)
-                    if newValue == "Both icon and text" then
+                    if newValue == "Display: Icon & Text" then
                         Settings.cct.showOptions = "all"
                     elseif newValue == "Icon only" then
                         Settings.cct.showOptions = "icon"

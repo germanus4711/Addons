@@ -6,13 +6,12 @@ LowChampionPointFinderVars =
         {
             ["$AccountWide"] = 
             {
+                ["fontSize"] = 32,
+                ["isPvpOnly"] = true,
                 ["ChampionPointGroups"] = 
                 {
                     [1] = 
                     {
-                        ["text"] = "Low Cp",
-                        ["lowCp"] = 0,
-                        ["highCp"] = 160,
                         ["color"] = 
                         {
                             ["a"] = 1,
@@ -20,12 +19,12 @@ LowChampionPointFinderVars =
                             ["g"] = 1,
                             ["r"] = 0,
                         },
+                        ["lowCp"] = 0,
+                        ["highCp"] = 160,
+                        ["text"] = "Low Cp",
                     },
                     [2] = 
                     {
-                        ["text"] = "Low Cp",
-                        ["lowCp"] = 160,
-                        ["highCp"] = 600,
                         ["color"] = 
                         {
                             ["a"] = 1,
@@ -33,12 +32,12 @@ LowChampionPointFinderVars =
                             ["g"] = 1,
                             ["r"] = 0,
                         },
+                        ["lowCp"] = 160,
+                        ["highCp"] = 600,
+                        ["text"] = "Low Cp",
                     },
                     [3] = 
                     {
-                        ["text"] = "Low Cp",
-                        ["lowCp"] = 600,
-                        ["highCp"] = 810,
                         ["color"] = 
                         {
                             ["a"] = 1,
@@ -46,12 +45,12 @@ LowChampionPointFinderVars =
                             ["g"] = 1,
                             ["r"] = 0,
                         },
+                        ["lowCp"] = 600,
+                        ["highCp"] = 810,
+                        ["text"] = "Low Cp",
                     },
                     [4] = 
                     {
-                        ["text"] = "",
-                        ["lowCp"] = 810,
-                        ["highCp"] = 1200,
                         ["color"] = 
                         {
                             ["a"] = 0.8000000000,
@@ -59,12 +58,12 @@ LowChampionPointFinderVars =
                             ["g"] = 1,
                             ["r"] = 0.8000000000,
                         },
+                        ["lowCp"] = 810,
+                        ["highCp"] = 1200,
+                        ["text"] = "",
                     },
                     [5] = 
                     {
-                        ["text"] = "",
-                        ["lowCp"] = 1200,
-                        ["highCp"] = 1500,
                         ["color"] = 
                         {
                             ["a"] = 0.5000000000,
@@ -72,12 +71,12 @@ LowChampionPointFinderVars =
                             ["g"] = 0.2000000000,
                             ["r"] = 1,
                         },
+                        ["lowCp"] = 1200,
+                        ["highCp"] = 1500,
+                        ["text"] = "",
                     },
                     [6] = 
                     {
-                        ["text"] = "",
-                        ["lowCp"] = 1500,
-                        ["highCp"] = 3600,
                         ["color"] = 
                         {
                             ["a"] = 0.5000000000,
@@ -85,16 +84,17 @@ LowChampionPointFinderVars =
                             ["g"] = 0,
                             ["r"] = 1,
                         },
+                        ["lowCp"] = 1500,
+                        ["highCp"] = 3600,
+                        ["text"] = "",
                     },
                 },
-                ["fontSize"] = 32,
-                ["isPvpOnly"] = true,
+                ["isAttackableOnly"] = true,
                 ["CpOffset"] = 
                 {
-                    ["x"] = 0,
                     ["y"] = 60,
+                    ["x"] = 0,
                 },
-                ["isAttackableOnly"] = true,
                 ["version"] = "1.01",
             },
         },

@@ -1,10 +1,15 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
+
+local FontsList = LUIE.Media.FontList
+local SoundsList = LUIE.Media.SoundList
+local StatusbarTexturesList = LUIE.Media.StatusbarTexturesList
+
 --- @class (partial) ChatAnnouncements
 local ChatAnnouncements = LUIE.ChatAnnouncements
 
@@ -47,7 +52,7 @@ function ChatAnnouncements.CreateSettings()
         donation = LUIE.donation,
         slashCommand = "/luica",
         registerForRefresh = true,
-        registerForDefaults = false,
+        registerForDefaults = true,
     }
 
     local optionsDataChatAnnouncements = {}

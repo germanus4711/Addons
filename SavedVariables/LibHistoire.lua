@@ -1,64 +1,69 @@
 LibHistoire_Settings =
 {
-    ["markGapsInHistory"] = true,
+    ["version"] = 2,
     ["statusWindow"] = 
     {
-        ["enabled"] = true,
         ["locked"] = true,
+        ["enabled"] = true,
     },
-    ["version"] = 2,
+    ["markGapsInHistory"] = true,
 }
 LibHistoire_GuildHistoryCache =
 {
     ["@germanus4711"] = 
     {
+        ["NA Megaserver/955435/3"] = 
+        {
+            ["lastProcessorRegisteredTime"] = 1737379313,
+            ["newestManagedEventId"] = 317517893,
+            ["lastLinkedTime"] = 1737379165,
+            ["oldestManagedEventId"] = 317240355,
+            ["oldestManagedEventTime"] = 1737323296,
+            ["newestManagedEventTime"] = 1737367385,
+        },
+        ["NA Megaserver/347967/0"] = 
+        {
+        },
+        ["NA Megaserver/955435/4"] = 
+        {
+        },
+        ["NA Megaserver/955435/2"] = 
+        {
+        },
+        ["NA Megaserver/347967/2"] = 
+        {
+        },
+        ["NA Megaserver/955435/1"] = 
+        {
+        },
+        ["NA Megaserver/347967/1"] = 
+        {
+        },
         ["NA Megaserver/347967/5"] = 
         {
         },
         ["NA Megaserver/955435/6"] = 
         {
         },
-        ["NA Megaserver/347967/0"] = 
+        ["NA Megaserver/955435/0"] = 
         {
         },
-        ["NA Megaserver/347967/2"] = 
+        ["NA Megaserver/347967/6"] = 
         {
         },
         ["NA Megaserver/347967/3"] = 
         {
-            ["oldestManagedEventTime"] = 1735118130,
-            ["newestManagedEventId"] = 312883819,
-            ["lastProcessorRegisteredTime"] = 1736811758,
+            ["lastProcessorRegisteredTime"] = 1737379313,
+            ["newestManagedEventId"] = 316570321,
+            ["lastLinkedTime"] = 1737379165,
             ["oldestManagedEventId"] = 301493719,
-            ["lastLinkedTime"] = 1737034541,
-            ["newestManagedEventTime"] = 1736634754,
-        },
-        ["NA Megaserver/955435/0"] = 
-        {
+            ["oldestManagedEventTime"] = 1735118130,
+            ["newestManagedEventTime"] = 1737237857,
         },
         ["NA Megaserver/347967/4"] = 
         {
         },
         ["NA Megaserver/955435/5"] = 
-        {
-        },
-        ["NA Megaserver/955435/2"] = 
-        {
-        },
-        ["NA Megaserver/955435/3"] = 
-        {
-            ["lastProcessorRegisteredTime"] = 1736811758,
-        },
-        ["NA Megaserver/347967/1"] = 
-        {
-        },
-        ["NA Megaserver/955435/1"] = 
-        {
-        },
-        ["NA Megaserver/955435/4"] = 
-        {
-        },
-        ["NA Megaserver/347967/6"] = 
         {
         },
     },

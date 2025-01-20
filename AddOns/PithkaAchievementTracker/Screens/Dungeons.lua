@@ -13,7 +13,7 @@ function PITHKA.Screens.Dungeons.initialize()
 
     --m
     local t = {{
-        PITHKA.UI.Labels.basic{ v=_v,      f="ZoFontGameSmall", w=155,  t="DUNGEONS", tt="Click to port"},
+        PITHKA.UI.Labels.basic{ v=_v,      f="ZoFontGameSmall", w=155,  t="DUNGEONS"},
         PITHKA.UI.Labels.basic{ v=_v,      f="ZoFontGameSmall", w=_is,  t="VET",      tt="Veteran",  align=TEXT_ALIGN_CENTER},
         PITHKA.UI.Misc.spacer{  v=_v, w=20},
         PITHKA.UI.Labels.basic{ v=_v,      f="ZoFontGameSmall", w=_is,  t="HM",       tt="Hard Mode",  align=TEXT_ALIGN_CENTER},

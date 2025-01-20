@@ -1,15 +1,17 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
+-- -----------------------------------------------------------------------------
 --- @class (partial) LuiExtended
 local LUIE = LUIE
-
+-- -----------------------------------------------------------------------------
 local windowManager = GetWindowManager()
-
+-- -----------------------------------------------------------------------------
 --- @class UI
 --- @field __index UI
+--- @field isInDebug boolean # Flag to control debug naming mode
 --- @field TopLevel fun(self:UI, anchors?: table, dims?: table): TopLevelWindow # Creates a top-level window control
 --- @field Control fun(self:UI, parent: userdata, anchors?: table|string, dims?: table|string, hidden?: boolean, name?: string): Control|nil # Creates a basic UI control
 --- @field Texture fun(self:UI, parent: userdata, anchors?: table|"fill", dims?: table|"inherit", texture?: string, drawlayer?: integer, hidden?: boolean): TextureControl|nil # Creates a texture control
@@ -19,7 +21,10 @@ local windowManager = GetWindowManager()
 --- @field Label fun(self:UI, parent: userdata, anchors?: table|"fill", dims?: table|"inherit", align?: table, font?: string, text?: string, hidden?: boolean, name?: string): LabelControl|nil # Creates a label control
 local UI = {}
 UI.__index = UI
-
+-- -----------------------------------------------------------------------------
+-- Debug flag - exposed through UI for testing
+UI.isInDebug = false
+-- -----------------------------------------------------------------------------
 -- Local control counters
 local controlCounters =
 {
@@ -31,15 +36,18 @@ local controlCounters =
     StatusBar = 0,
     Label = 0,
 }
-
+-- -----------------------------------------------------------------------------
 --- Gets a unique control name for UI elements
 --- @param controlType string The type of control to generate a name for
---- @return string uniqueName The generated unique control name
+--- @return string|nil uniqueName The generated unique control name or nil if not in debug mode
 local function GetUniqueControlName(controlType)
+    if not UI.isInDebug then
+        return nil
+    end
     controlCounters[controlType] = controlCounters[controlType] + 1
     return string.format("LUIE_%s_Unique_%d", controlType, controlCounters[controlType])
 end
-
+-- -----------------------------------------------------------------------------
 --- Creates an empty top-level window control
 --- @param anchors? table Array of anchor points: [point, relativeTo, relativePoint, offsetX, offsetY]
 --- @param dims? table Array of dimensions: [width, height]
@@ -61,6 +69,7 @@ function UI:TopLevel(anchors, dims)
     return tlw
 end
 
+-- -----------------------------------------------------------------------------
 --- Creates a basic UI control element
 --- @param parent userdata The parent control
 --- @param anchors? table|"fill" Array of anchor points or "fill" to fill parent
@@ -91,6 +100,7 @@ function UI:Control(parent, anchors, dims, hidden, name)
     return c
 end
 
+-- -----------------------------------------------------------------------------
 --- Creates a texture control element
 --- @param parent userdata The parent control to attach the texture to
 --- @param anchors? table|"fill" Array of anchor points [point, relativeTo, relativePoint, offsetX, offsetY] or "fill" to fill parent
@@ -106,6 +116,7 @@ function UI:Texture(parent, anchors, dims, texture, drawlayer, hidden)
     local name = GetUniqueControlName("Texture")
     --- @type TextureControl
     local t = windowManager:CreateControl(name, parent, CT_TEXTURE)
+    t:SetTextureReleaseOption(RELEASE_TEXTURE_AT_ZERO_REFERENCES)
     if anchors == "fill" then
         t:SetAnchorFill()
     elseif anchors ~= nil and #anchors >= 2 and #anchors <= 5 then
@@ -128,6 +139,7 @@ function UI:Texture(parent, anchors, dims, texture, drawlayer, hidden)
     return t
 end
 
+-- -----------------------------------------------------------------------------
 --- Creates a backdrop control element
 --- @param parent userdata The parent control to attach the backdrop to
 --- @param anchors? table|"fill" Array of anchor points [point, relativeTo, relativePoint, offsetX, offsetY] or "fill" to fill parent
@@ -145,9 +157,10 @@ function UI:Backdrop(parent, anchors, dims, center, edge, hidden)
     local edgeColor = (edge ~= nil and #edge == 4) and edge or { 0, 0, 0, 0.6 }
     --- @type BackdropControl
     local bg = windowManager:CreateControl(name, parent, CT_BACKDROP)
+    bg:SetTextureReleaseOption(RELEASE_TEXTURE_AT_ZERO_REFERENCES)
     bg:SetCenterColor(centerColor[1], centerColor[2], centerColor[3], centerColor[4])
     bg:SetEdgeColor(edgeColor[1], edgeColor[2], edgeColor[3], edgeColor[4])
-    bg:SetEdgeTexture("", 8, 1, 0)
+    bg:SetEdgeTexture("", 8, 1, 1, 1)
     bg:SetDrawLayer(DL_BACKGROUND)
     if anchors == "fill" then
         bg:SetAnchorFill()
@@ -165,6 +178,7 @@ function UI:Backdrop(parent, anchors, dims, center, edge, hidden)
     return bg
 end
 
+-- -----------------------------------------------------------------------------
 --- Creates a chat-style backdrop control element
 --- @param parent userdata The parent control to attach the backdrop to
 --- @param anchors? table|"fill" Array of anchor points [point, relativeTo, relativePoint, offsetX, offsetY] or "fill" to fill parent
@@ -182,10 +196,11 @@ function UI:ChatBackdrop(parent, anchors, dims, color, edge_size, hidden)
     local edgeSize = (edge_size ~= nil and edge_size > 0) and edge_size or 16
     --- @type BackdropControl
     local bg = windowManager:CreateControl(name, parent, CT_BACKDROP)
+    bg:SetTextureReleaseOption(RELEASE_TEXTURE_AT_ZERO_REFERENCES)
     bg:SetCenterColor(bgColor[1], bgColor[2], bgColor[3], bgColor[4])
     bg:SetEdgeColor(bgColor[1], bgColor[2], bgColor[3], bgColor[4])
     bg:SetCenterTexture("/esoui/art/chatwindow/chat_bg_center.dds", nil, nil)
-    bg:SetEdgeTexture("/esoui/art/chatwindow/chat_bg_edge.dds", 256, 256, edgeSize)
+    bg:SetEdgeTexture("/esoui/art/chatwindow/chat_bg_edge.dds", 256, 256, edgeSize, 1)
     bg:SetInsets(edgeSize, edgeSize, -edgeSize, -edgeSize)
     bg:SetDrawLayer(DL_BACKGROUND)
 
@@ -205,6 +220,7 @@ function UI:ChatBackdrop(parent, anchors, dims, color, edge_size, hidden)
     return bg
 end
 
+-- -----------------------------------------------------------------------------
 --- Creates a status bar control element
 --- @param parent userdata The parent control to attach the status bar to
 --- @param anchors? table|"fill" Array of anchor points [point, relativeTo, relativePoint, offsetX, offsetY] or "fill" to fill parent
@@ -239,6 +255,7 @@ function UI:StatusBar(parent, anchors, dims, color, hidden)
     return sb
 end
 
+-- -----------------------------------------------------------------------------
 --- Creates a label control element
 --- @param parent userdata The parent control to attach the label to
 --- @param anchors? table|"fill" Array of anchor points [point, relativeTo, relativePoint, offsetX, offsetY] or "fill" to fill parent
@@ -280,5 +297,6 @@ function UI:Label(parent, anchors, dims, align, font, text, hidden, name)
     return label
 end
 
+-- -----------------------------------------------------------------------------
 --- @type UI
 LUIE.UI = UI

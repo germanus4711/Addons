@@ -4,85 +4,85 @@ DailyProvisioningVariables =
     {
         ["@germanus4711"] = 
         {
-            ["$AccountWide"] = 
-            {
-                ["isDontKnow"] = true,
-                ["debugLog"] = 
-                {
-                },
-                ["bulkQuantity"] = 1,
-                ["isAutoExit"] = true,
-                ["version"] = 1,
-                ["reservations"] = 
-                {
-                },
-                ["isDebugQuest"] = true,
-                ["isAcquireItem"] = true,
-                ["acquireDelay"] = 1,
-                ["isLog"] = true,
-            },
             ["8796093062295781"] = 
             {
-                ["levelWhenReceived"] = 6,
                 ["qualityWhenReceived"] = 1,
-                ["$LastCharacterName"] = "Fridolin The Great",
                 ["version"] = 1,
-            },
-            ["8796093074287095"] = 
-            {
                 ["levelWhenReceived"] = 6,
-                ["qualityWhenReceived"] = 2,
-                ["$LastCharacterName"] = "Otto von Bissmark",
-                ["version"] = 1,
+                ["$LastCharacterName"] = "Fridolin The Great",
             },
             ["8796093069174989"] = 
             {
-                ["levelWhenReceived"] = 6,
                 ["qualityWhenReceived"] = 3,
-                ["$LastCharacterName"] = "Mike v Petra",
                 ["version"] = 1,
-            },
-            ["8796093064640125"] = 
-            {
                 ["levelWhenReceived"] = 6,
-                ["qualityWhenReceived"] = 4,
-                ["$LastCharacterName"] = "Maüschen",
-                ["version"] = 1,
+                ["$LastCharacterName"] = "Mike v Petra",
             },
             ["8796093027479535"] = 
             {
-                ["levelWhenReceived"] = 6,
                 ["qualityWhenReceived"] = 4,
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
                 ["version"] = 1,
+                ["levelWhenReceived"] = 6,
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
             },
             ["8796093067546805"] = 
             {
-                ["levelWhenReceived"] = 6,
                 ["qualityWhenReceived"] = 1,
+                ["version"] = 1,
+                ["levelWhenReceived"] = 6,
                 ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
-                ["version"] = 1,
-            },
-            ["8796093023211051"] = 
-            {
-                ["levelWhenReceived"] = 6,
-                ["qualityWhenReceived"] = 4,
-                ["$LastCharacterName"] = "Freya Orm",
-                ["version"] = 1,
-            },
-            ["8796093025384257"] = 
-            {
-                ["levelWhenReceived"] = 6,
-                ["qualityWhenReceived"] = 1,
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-                ["version"] = 1,
             },
             ["8796093072557313"] = 
             {
-                ["levelWhenReceived"] = 6,
                 ["qualityWhenReceived"] = 4,
-                ["$LastCharacterName"] = "Gamal Loki",
                 ["version"] = 1,
+                ["levelWhenReceived"] = 6,
+                ["$LastCharacterName"] = "Gamal Loki",
+            },
+            ["8796093025384257"] = 
+            {
+                ["qualityWhenReceived"] = 1,
+                ["version"] = 1,
+                ["levelWhenReceived"] = 6,
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+            },
+            ["8796093064640125"] = 
+            {
+                ["qualityWhenReceived"] = 4,
+                ["version"] = 1,
+                ["levelWhenReceived"] = 6,
+                ["$LastCharacterName"] = "Maüschen",
+            },
+            ["8796093023211051"] = 
+            {
+                ["qualityWhenReceived"] = 4,
+                ["version"] = 1,
+                ["levelWhenReceived"] = 6,
+                ["$LastCharacterName"] = "Freya Orm",
+            },
+            ["8796093074287095"] = 
+            {
+                ["qualityWhenReceived"] = 2,
+                ["version"] = 1,
+                ["levelWhenReceived"] = 6,
+                ["$LastCharacterName"] = "Otto von Bissmark",
+            },
+            ["$AccountWide"] = 
+            {
+                ["isDontKnow"] = true,
+                ["isLog"] = true,
+                ["version"] = 1,
+                ["isDebugQuest"] = true,
+                ["debugLog"] = 
+                {
+                },
+                ["isAutoExit"] = true,
+                ["reservations"] = 
+                {
+                },
+                ["bulkQuantity"] = 1,
+                ["acquireDelay"] = 1,
+                ["isAcquireItem"] = true,
             },
         },
     },

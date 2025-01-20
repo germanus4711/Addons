@@ -1,22 +1,14 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
--- ChatAnnouncements namespace
---- @class (partial) ChatAnnouncements
-LUIE.ChatAnnouncements = {}
+
 --- @class (partial) ChatAnnouncements
 local ChatAnnouncements = LUIE.ChatAnnouncements
 
--- Queued Messages Storage for CA Modules
-ChatAnnouncements.QueuedMessages = {}
-ChatAnnouncements.QueuedMessagesCounter = 1
-
--- Setup Color Table
-ChatAnnouncements.Colors = {}
 local ColorizeColors = ChatAnnouncements.Colors
 
 --- @type Data
@@ -35,607 +27,6 @@ local eventManager = GetEventManager()
 local windowManager = GetWindowManager()
 
 local moduleName = LUIE.name .. "ChatAnnouncements"
-
-------------------------------------------------
--- DEFAULT VARIABLE SETUP ----------------------
-------------------------------------------------
-ChatAnnouncements.Enabled = false
-ChatAnnouncements.Defaults =
-{
-    -- Chat Message Settings
-    ChatPlayerDisplayOptions = 2,
-    -- NotificationColor             = { .75, .75, .75, 1 },
-    BracketOptionCharacter = 2,
-    BracketOptionItem = 2,
-    BracketOptionLorebook = 2,
-    BracketOptionCollectible = 2,
-    BracketOptionCollectibleUse = 2,
-    BracketOptionAchievement = 2,
-    ChatMethod = "Print to All Tabs",
-    ChatBypassFormat = false,
-    ChatTab = { [1] = true, [2] = true, [3] = true, [4] = true, [5] = true },
-    ChatSystemAll = true,
-    TimeStamp = false,
-    TimeStampFormat = "HH:m:s",
-    TimeStampColor = { 143 / 255, 143 / 255, 143 / 255 },
-
-    -- Achievements
-    Achievement =
-    {
-        AchievementCategoryIgnore = {}, -- Inverted list of achievements to be tracked
-        AchievementProgressMsg = GetString(LUIE_STRING_CA_ACHIEVEMENT_PROGRESS_MSG),
-        AchievementCompleteMsg = GetString(SI_ACHIEVEMENT_AWARDED_CENTER_SCREEN),
-        AchievementColorProgress = true,
-        AchievementColor1 = { 0.75, 0.75, 0.75, 1 },
-        AchievementColor2 = { 1, 1, 1, 1 },
-        AchievementCompPercentage = false,
-        AchievementUpdateCA = false,
-        AchievementUpdateAlert = false,
-        AchievementCompleteCA = true,
-        AchievementCompleteCSA = true,
-        AchievementCompleteAlwaysCSA = true,
-        AchievementCompleteAlert = false,
-        AchievementIcon = true,
-        AchievementCategory = true,
-        AchievementSubcategory = true,
-        AchievementDetails = true,
-        AchievementBracketOptions = 4,
-        AchievementCatBracketOptions = 2,
-        AchievementStep = 10,
-    },
-
-    -- Group
-    Group =
-    {
-        GroupCA = true,
-        GroupAlert = false,
-        GroupLFGCA = true,
-        GroupLFGAlert = false,
-        GroupLFGQueueCA = true,
-        GroupLFGQueueAlert = false,
-        GroupLFGCompleteCA = false,
-        GroupLFGCompleteCSA = true,
-        GroupLFGCompleteAlert = false,
-        GroupVoteCA = true,
-        GroupVoteAlert = true,
-        GroupRaidCA = false,
-        GroupRaidCSA = true,
-        GroupRaidAlert = false,
-        GroupRaidScoreCA = false,
-        GroupRaidScoreCSA = true,
-        GroupRaidScoreAlert = false,
-        GroupRaidBestScoreCA = false,
-        GroupRaidBestScoreCSA = true,
-        GroupRaidBestScoreAlert = false,
-        GroupRaidReviveCA = false,
-        GroupRaidReviveCSA = true,
-        GroupRaidReviveAlert = false,
-    },
-
-    -- Social
-    Social =
-    {
-        -- Guild
-        GuildCA = true,
-        GuildAlert = false,
-        GuildRankCA = true,
-        GuildRankAlert = false,
-        GuildManageCA = false,
-        GuildManageAlert = false,
-        GuildIcon = true,
-        GuildAllianceColor = true,
-        GuildColor = { 1, 1, 1, 1 },
-        GuildRankDisplayOptions = 1,
-
-        -- Friend
-        FriendIgnoreCA = true,
-        FriendIgnoreAlert = false,
-        FriendStatusCA = true,
-        FriendStatusAlert = false,
-
-        -- Duel
-        DuelCA = true,
-        DuelAlert = false,
-        DuelBoundaryCA = false,
-        DuelBoundaryCSA = true,
-        DuelBoundaryAlert = false,
-        DuelWonCA = false,
-        DuelWonCSA = true,
-        DuelWonAlert = false,
-        DuelStartCA = false,
-        DuelStartCSA = true,
-        DuelStartAlert = false,
-        DuelStartOptions = 1,
-
-        -- Pledge of Mara
-        PledgeOfMaraCA = true,
-        PledgeOfMaraCSA = true,
-        PledgeOfMaraAlert = false,
-        PledgeOfMaraAlertOnlyFail = true,
-    },
-
-    -- Notifications
-    Notify =
-    {
-        -- Notifications
-        NotificationConfiscateCA = true,
-        NotificationConfiscateAlert = false,
-        NotificationLockpickCA = true,
-        NotificationLockpickAlert = false,
-        NotificationMailSendCA = false,
-        NotificationMailSendAlert = false,
-        NotificationMailErrorCA = true,
-        NotificationMailErrorAlert = false,
-        NotificationTradeCA = true,
-        NotificationTradeAlert = false,
-
-        -- Disguise
-        DisguiseCA = false,
-        DisguiseCSA = true,
-        DisguiseAlert = false,
-        DisguiseWarnCA = false,
-        DisguiseWarnCSA = true,
-        DisguiseWarnAlert = false,
-        DisguiseAlertColor = { 1, 0, 0, 1 },
-
-        -- Storage / Riding Upgrades
-        StorageRidingColor = { 0.75, 0.75, 0.75, 1 },
-        StorageRidingBookColor = { 0.75, 0.75, 0.75, 1 },
-        StorageRidingCA = true,
-        StorageRidingCSA = true,
-        StorageRidingAlert = false,
-
-        StorageBagColor = { 0.75, 0.75, 0.75, 1 },
-        StorageBagCA = true,
-        StorageBagCSA = true,
-        StorageBagAlert = false,
-    },
-
-    -- Collectibles
-    Collectibles =
-    {
-        CollectibleCA = true,
-        CollectibleCSA = true,
-        CollectibleAlert = false,
-        CollectibleBracket = 4,
-        CollectiblePrefix = GetString(LUIE_STRING_CA_COLLECTIBLE),
-        CollectibleIcon = true,
-        CollectibleColor1 = { 0.75, 0.75, 0.75, 1 },
-        CollectibleColor2 = { 0.75, 0.75, 0.75, 1 },
-        CollectibleCategory = true,
-        CollectibleSubcategory = true,
-        CollectibleUseCA = false,
-        CollectibleUseAlert = false,
-        CollectibleUsePetNickname = false,
-        CollectibleUseIcon = true,
-        CollectibleUseColor = { 0.75, 0.75, 0.75, 1 },
-        CollectibleUseCategory3 = true,  -- Appearance
-        CollectibleUseCategory7 = true,  -- Assistants
-        -- CollectibleUseCategory8       = true, -- Mementos
-        CollectibleUseCategory10 = true, -- Non-Combat Pets
-        CollectibleUseCategory12 = true, -- Special
-    },
-
-    -- Lorebooks
-    Lorebooks =
-    {
-        LorebookCA = true,          -- Display a CA for Lorebooks
-        LorebookCSA = true,         -- Display a CSA for Lorebooks
-        LorebookCSALoreOnly = true, -- Only Display a CSA for non-Eidetic Memory Books
-        LorebookAlert = false,      -- Display a ZO_Alert for Lorebooks
-        LorebookCollectionCA = true,
-        LorebookCollectionCSA = true,
-        LorebookCollectionAlert = false,
-        LorebookCollectionPrefix = GetString(SI_LORE_LIBRARY_COLLECTION_COMPLETED_LARGE),
-        LorebookPrefix1 = GetString(SI_LORE_LIBRARY_ANNOUNCE_BOOK_LEARNED),
-        LorebookPrefix2 = GetString(LUIE_STRING_CA_LOREBOOK_BOOK),
-        LorebookBracket = 4,                      -- Bracket Options
-        LorebookColor1 = { 0.75, 0.75, 0.75, 1 }, -- Lorebook Message Color 1
-        LorebookColor2 = { 0.75, 0.75, 0.75, 1 }, -- Lorebook Message Color 2
-        LorebookIcon = true,                      -- Display an icon for Lorebook CA
-        LorebookShowHidden = false,               -- Display books even when they are hidden in the journal menu
-        LorebookCategory = true,                  -- Display "added to X category" message
-    },
-
-    -- Antiquities
-    Antiquities =
-    {
-        AntiquityCA = true,
-        AntiquityCSA = true,
-        AntiquityAlert = false,
-        AntiquityBracket = 2,
-        AntiquityPrefix = GetString(LUIE_STRING_CA_ANTIQUITY_PREFIX),
-        AntiquityPrefixBracket = 4,
-        AntiquitySuffix = "",
-        AntiquityColor = { 0.75, 0.75, 0.75, 1 },
-        AntiquityIcon = true,
-    },
-
-    -- Quest
-    Quests =
-    {
-        QuestShareCA = true,
-        QuestShareAlert = false,
-        QuestColorLocName = { 1, 1, 1, 1 },
-        QuestColorLocDescription = { 0.75, 0.75, 0.75, 1 },
-        QuestColorName = { 1, 0.647058, 0, 1 },
-        QuestColorDescription = { 0.75, 0.75, 0.75, 1 },
-        QuestLocLong = true,
-        QuestIcon = true,
-        QuestLong = true,
-        QuestLocDiscoveryCA = true,
-        QuestLocDiscoveryCSA = true,
-        QuestLocDiscoveryAlert = false,
-        QuestLocObjectiveCA = true,
-        QuestLocObjectiveCSA = true,
-        QuestLocObjectiveAlert = false,
-        QuestLocCompleteCA = true,
-        QuestLocCompleteCSA = true,
-        QuestLocCompleteAlert = false,
-        QuestAcceptCA = true,
-        QuestAcceptCSA = true,
-        QuestAcceptAlert = false,
-        QuestCompleteCA = true,
-        QuestCompleteCSA = true,
-        QuestCompleteAlert = false,
-        QuestAbandonCA = true,
-        QuestAbandonCSA = true,
-        QuestAbandonAlert = false,
-        QuestFailCA = true,
-        QuestFailCSA = true,
-        QuestFailAlert = false,
-        QuestObjCompleteCA = false,
-        QuestObjCompleteCSA = true,
-        QuestObjCompleteAlert = false,
-        QuestObjUpdateCA = false,
-        QuestObjUpdateCSA = true,
-        QuestObjUpdateAlert = false,
-    },
-
-    -- Experience
-    XP =
-    {
-        ExperienceEnlightenedCA = false,
-        ExperienceEnlightenedCSA = true,
-        ExperienceEnlightenedAlert = false,
-        ExperienceLevelUpCA = true,
-        ExperienceLevelUpCSA = true,
-        ExperienceLevelUpAlert = false,
-        ExperienceLevelUpCSAExpand = true,
-        ExperienceLevelUpIcon = true,
-        ExperienceLevelColorByLevel = true,
-        ExperienceLevelUpColor = { 0.75, 0.75, 0.75, 1 },
-        Experience = true,
-        ExperienceIcon = true,
-        ExperienceMessage = GetString(LUIE_STRING_CA_EXPERIENCE_MESSAGE),
-        ExperienceName = GetString(LUIE_STRING_CA_EXPERIENCE_NAME),
-        ExperienceHideCombat = false,
-        ExperienceFilter = 0,
-        ExperienceThrottle = 3500,
-        ExperienceColorMessage = { 0.75, 0.75, 0.75, 1 },
-        ExperienceColorName = { 0.75, 0.75, 0.75, 1 },
-    },
-
-    -- Skills
-    Skills =
-    {
-        SkillPointCA = true,
-        SkillPointCSA = true,
-        SkillPointAlert = false,
-        SkillPointSkyshard = GetString(SI_SKYSHARD_GAINED),
-        SkillPointBracket = 4,
-        SkillPointsPartial = true,
-        SkillPointColor1 = { 0.75, 0.75, 0.75, 1 },
-        SkillPointColor2 = { 0.75, 0.75, 0.75, 1 },
-
-        SkillLineUnlockCA = true,
-        SkillLineUnlockCSA = true,
-        SkillLineUnlockAlert = false,
-        SkillLineCA = false,
-        SkillLineCSA = true,
-        SkillLineAlert = false,
-        SkillAbilityCA = false,
-        SkillAbilityCSA = true,
-        SkillAbilityAlert = false,
-        SkillLineIcon = true,
-        SkillLineColor = { 0.75, 0.75, 0.75, 1 },
-
-        SkillGuildFighters = true,
-        SkillGuildMages = true,
-        SkillGuildUndaunted = true,
-        SkillGuildThieves = true,
-        SkillGuildDarkBrotherhood = true,
-        SkillGuildPsijicOrder = true,
-        SkillGuildIcon = true,
-        SkillGuildMsg = GetString(LUIE_STRING_CA_SKILL_GUILD_MSG),
-        SkillGuildRepName = GetString(LUIE_STRING_CA_SKILL_GUILD_REPUTATION),
-        SkillGuildColor = { 0.75, 0.75, 0.75, 1 },
-        SkillGuildColorFG = { 0.75, 0.37, 0, 1 },
-        SkillGuildColorMG = { 0, 0.52, 0.75, 1 },
-        SkillGuildColorUD = { 0.58, 0.75, 0, 1 },
-        SkillGuildColorTG = { 0.29, 0.27, 0.42, 1 },
-        SkillGuildColorDB = { 0.70, 0, 0.19, 1 },
-        SkillGuildColorPO = { 0.5, 1, 1, 1 },
-
-        SkillGuildThrottle = 0,
-        SkillGuildThreshold = 0,
-        SkillGuildAlert = false,
-    },
-
-    -- Currency
-    Currency =
-    {
-        CurrencyAPColor = { 0.164706, 0.862745, 0.133333, 1 },
-        CurrencyAPFilter = 0,
-        CurrencyAPName = GetString(LUIE_STRING_CA_CURRENCY_ALLIANCE_POINT),
-        CurrencyIcon = true,
-        CurrencyAPShowChange = true,
-        CurrencyAPShowTotal = false,
-        CurrencyAPThrottle = 3500,
-        CurrencyColor = { 0.75, 0.75, 0.75, 1 },
-        CurrencyColorDown = { 0.7, 0, 0, 1 },
-        CurrencyColorUp = { 0.043137, 0.380392, 0.043137, 1 },
-        CurrencyContextColor = true,
-        CurrencyContextMergedColor = false,
-        CurrencyGoldChange = true,
-        CurrencyGoldColor = { 1, 1, 0.2, 1 },
-        CurrencyGoldFilter = 0,
-        CurrencyGoldHideAH = false,
-        CurrencyGoldHideListingAH = false,
-        CurrencyGoldName = GetString(LUIE_STRING_CA_CURRENCY_GOLD),
-        CurrencyGoldShowTotal = false,
-        CurrencyGoldThrottle = true,
-        CurrencyTVChange = true,
-        CurrencyTVColor = { 0.368627, 0.643137, 1, 1 },
-        CurrencyTVFilter = 0,
-        CurrencyTVName = GetString(LUIE_STRING_CA_CURRENCY_TELVAR_STONE),
-        CurrencyTVShowTotal = false,
-        CurrencyTVThrottle = 2500,
-        CurrencyWVChange = true,
-        CurrencyWVColor = { 1, 1, 1, 1 },
-        CurrencyWVName = GetString(LUIE_STRING_CA_CURRENCY_WRIT_VOUCHER),
-        CurrencyWVShowTotal = false,
-        CurrencyTransmuteChange = true,
-        CurrencyTransmuteColor = { 1, 1, 1, 1 },
-        CurrencyTransmuteName = GetString(LUIE_STRING_CA_CURRENCY_TRANSMUTE_CRYSTAL),
-        CurrencyTransmuteShowTotal = false,
-        CurrencyEventChange = true,
-        CurrencyEventColor = { 250 / 255, 173 / 255, 187 / 255, 1 },
-        CurrencyEventName = GetString(LUIE_STRING_CA_CURRENCY_EVENT_TICKET),
-        CurrencyEventShowTotal = false,
-        CurrencyCrownsChange = false,
-        CurrencyCrownsColor = { 1, 1, 1, 1 },
-        CurrencyCrownsName = GetString(LUIE_STRING_CA_CURRENCY_CROWN),
-        CurrencyCrownsShowTotal = false,
-        CurrencyCrownGemsChange = false,
-        CurrencyCrownGemsColor = { 244 / 255, 56 / 255, 247 / 255, 1 },
-        CurrencyCrownGemsName = GetString(LUIE_STRING_CA_CURRENCY_CROWN_GEM),
-        CurrencyCrownGemsShowTotal = false,
-        CurrencyEndeavorsChange = true,
-        CurrencyEndeavorsColor = { 1, 1, 1, 1 },
-        CurrencyEndeavorsName = GetString(LUIE_STRING_CA_CURRENCY_ENDEAVOR),
-        CurrencyEndeavorsShowTotal = false,
-        CurrencyOutfitTokenChange = true,
-        CurrencyOutfitTokenColor = { 255 / 255, 225 / 255, 125 / 255, 1 },
-        CurrencyOutfitTokenName = GetString(LUIE_STRING_CA_CURRENCY_OUTFIT_TOKENS),
-        CurrencyOutfitTokenShowTotal = false,
-        CurrencyUndauntedChange = true,
-        CurrencyUndauntedColor = { 1, 1, 1, 1 },
-        CurrencyUndauntedName = GetString(LUIE_STRING_CA_CURRENCY_UNDAUNTED),
-        CurrencyUndauntedShowTotal = false,
-        CurrencyEndlessChange = true,
-        CurrencyEndlessColor = { 1, 1, 1, 1 },
-        CurrencyEndlessName = GetString(LUIE_STRING_CA_CURRENCY_ENDLESS),
-        CurrencyEndlessTotal = false,
-        CurrencyMessageTotalAP = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALAP),
-        CurrencyMessageTotalGold = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALGOLD),
-        CurrencyMessageTotalTV = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALTV),
-        CurrencyMessageTotalWV = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALWV),
-        CurrencyMessageTotalTransmute = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALTRANSMUTE),
-        CurrencyMessageTotalEvent = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALEVENT),
-        CurrencyMessageTotalCrowns = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALCROWNS),
-        CurrencyMessageTotalCrownGems = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALGEMS),
-        CurrencyMessageTotalEndeavors = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALENDEAVORS),
-        CurrencyMessageTotalOutfitToken = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALOUTFITTOKENS),
-        CurrencyMessageTotalUndaunted = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALUNDAUNTED),
-        CurrencyMessageTotalEndless = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TOTALENDLESS),
-    },
-
-    -- Loot
-    Inventory =
-    {
-        Loot = true,
-        LootLogOverride = false,
-        LootBank = true,
-        LootBlacklist = false,
-        LootTotal = false,
-        LootTotalString = GetString(LUIE_STRING_CA_LOOT_MESSAGE_TOTAL),
-        LootCraft = true,
-        LootGroup = true,
-        LootIcons = true,
-        LootMail = true,
-        LootNotTrash = true,
-        LootOnlyNotable = false,
-        LootShowArmorType = false,
-        LootShowStyle = false,
-        LootShowTrait = false,
-        LootConfiscate = true,
-        LootTrade = true,
-        LootVendor = true,
-        LootVendorCurrency = true,
-        LootVendorTotalCurrency = false,
-        LootVendorTotalItems = false,
-        LootShowCraftUse = false,
-        LootShowDestroy = true,
-        LootShowRemove = true,
-        LootShowTurnIn = true,
-        LootShowList = true,
-        LootShowUsePotion = false,
-        LootShowUseFood = false,
-        LootShowUseDrink = false,
-        LootShowUseRepairKit = true,
-        LootShowUseSoulGem = false,
-        LootShowUseSiege = true,
-        LootShowUseFish = true,
-        LootShowUseMisc = false,
-        LootShowContainer = true,
-        LootShowDisguise = true,
-        LootShowLockpick = true,
-        LootShowRecipe = true,
-        LootShowMotif = true,
-        LootShowStylePage = true,
-        LootRecipeHideAlert = true,
-        LootQuestAdd = true,
-        LootQuestRemove = false,
-    },
-
-    ContextMessages =
-    {
-        CurrencyMessageConfiscate = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_CONFISCATE),
-        CurrencyMessageDeposit = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DEPOSIT),
-        CurrencyMessageDepositStorage = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DEPOSITSTORAGE),
-        CurrencyMessageDepositGuild = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DEPOSITGUILD),
-        CurrencyMessageEarn = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_EARN),
-        CurrencyMessageLoot = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LOOT),
-        CurrencyMessageContainer = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_CONTAINER),
-        CurrencyMessageSteal = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_STEAL),
-        CurrencyMessageLost = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LOST),
-        CurrencyMessagePickpocket = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_PICKPOCKET),
-        CurrencyMessageReceive = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_RECEIVE),
-        CurrencyMessageSpend = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_SPEND),
-        CurrencyMessagePay = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_PAY),
-        CurrencyMessageUseKit = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_USEKIT),
-        CurrencyMessagePotion = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_POTION),
-        CurrencyMessageFood = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_EAT),
-        CurrencyMessageDrink = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DRINK),
-        CurrencyMessageDeploy = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DEPLOY),
-        CurrencyMessageStow = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_STOW),
-        CurrencyMessageFillet = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_FILLET),
-        CurrencyMessageLearnRecipe = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LEARN_RECIPE),
-        CurrencyMessageLearnMotif = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LEARN_MOTIF),
-        CurrencyMessageLearnStyle = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LEARN_STYLE),
-        CurrencyMessageExcavate = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_EXCAVATE),
-        CurrencyMessageTradeIn = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TRADEIN),
-        CurrencyMessageTradeInNoName = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TRADEIN_NO_NAME),
-        CurrencyMessageTradeOut = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TRADEOUT),
-        CurrencyMessageTradeOutNoName = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TRADEOUT_NO_NAME),
-        CurrencyMessageMailIn = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_MAILIN),
-        CurrencyMessageMailInNoName = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_MAILIN_NO_NAME),
-        CurrencyMessageMailOut = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_MAILOUT),
-        CurrencyMessageMailOutNoName = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_MAILOUT_NO_NAME),
-        CurrencyMessageMailCOD = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_MAILCOD),
-        CurrencyMessagePostage = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_POSTAGE),
-        CurrencyMessageWithdraw = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_WITHDRAW),
-        CurrencyMessageWithdrawStorage = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_WITHDRAWSTORAGE),
-        CurrencyMessageWithdrawGuild = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_WITHDRAWGUILD),
-        CurrencyMessageStable = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_STABLE),
-        CurrencyMessageStorage = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_STORAGE),
-        CurrencyMessageWayshrine = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_WAYSHRINE),
-        CurrencyMessageUnstuck = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_UNSTUCK),
-        CurrencyMessageChampion = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_CHAMPION),
-        CurrencyMessageAttributes = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_ATTRIBUTES),
-        CurrencyMessageSkills = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_SKILLS),
-        CurrencyMessageMorphs = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_MORPHS),
-        CurrencyMessageBounty = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_BOUNTY),
-        CurrencyMessageTrader = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TRADER),
-        CurrencyMessageRepair = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_REPAIR),
-        CurrencyMessageListing = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LISTING),
-        CurrencyMessageListingValue = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LISTING_VALUE),
-        CurrencyMessageList = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LIST),
-        CurrencyMessageCampaign = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_CAMPAIGN),
-        CurrencyMessageFence = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_FENCE_VALUE),
-        CurrencyMessageFenceNoV = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_FENCE),
-        CurrencyMessageSellNoV = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_SELL),
-        CurrencyMessageBuyNoV = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_BUY),
-        CurrencyMessageBuybackNoV = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_BUYBACK),
-        CurrencyMessageSell = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_SELL_VALUE),
-        CurrencyMessageBuy = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_BUY_VALUE),
-        CurrencyMessageBuyback = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_BUYBACK_VALUE),
-        CurrencyMessageLaunder = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LAUNDER_VALUE),
-        CurrencyMessageLaunderNoV = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LAUNDER),
-        CurrencyMessageUse = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_USE),
-        CurrencyMessageCraft = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_CRAFT),
-        CurrencyMessageExtract = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_EXTRACT),
-        CurrencyMessageUpgrade = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_UPGRADE),
-        CurrencyMessageUpgradeFail = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_UPGRADE_FAIL),
-        CurrencyMessageRefine = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_REFINE),
-        CurrencyMessageDeconstruct = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DECONSTRUCT),
-        CurrencyMessageResearch = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_RESEARCH),
-        CurrencyMessageDestroy = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DESTROY),
-        CurrencyMessageLockpick = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_LOCKPICK),
-        CurrencyMessageRemove = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_REMOVE),
-        CurrencyMessageQuestTurnIn = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_TURNIN),
-        CurrencyMessageQuestUse = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_QUESTUSE),
-        CurrencyMessageQuestExhaust = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_EXHAUST),
-        CurrencyMessageQuestOffer = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_OFFER),
-        CurrencyMessageQuestDiscard = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DISCARD),
-        CurrencyMessageQuestConfiscate = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_QUESTCONFISCATE),
-        CurrencyMessageQuestOpen = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_QUESTOPEN),
-        CurrencyMessageQuestAdminister = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_QUESTADMINISTER),
-        CurrencyMessageQuestPlace = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_QUESTPLACE),
-        CurrencyMessageQuestCombine = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_COMBINE),
-        CurrencyMessageQuestMix = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_MIX),
-        CurrencyMessageQuestBundle = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_BUNDLE),
-        CurrencyMessageGroup = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_GROUP),
-        CurrencyMessageDisguiseEquip = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DISGUISE_EQUIP),
-        CurrencyMessageDisguiseRemove = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DISGUISE_REMOVE),
-        CurrencyMessageDisguiseDestroy = GetString(LUIE_STRING_CA_CURRENCY_MESSAGE_DISGUISE_DESTROY),
-    },
-
-    DisplayAnnouncements =
-    {
-        Debug = false, -- Display EVENT_DISPLAY_ANNOUNCEMENT debug messages
-        General =
-        {
-            CA = false,
-            CSA = true,
-            Alert = false,
-        },
-        GroupArea =
-        {
-            CA = false,
-            CSA = true,
-            Alert = false,
-        },
-        Respec =
-        {
-            CA = true,
-            CSA = true,
-            Alert = false,
-        },
-        ZoneIC =
-        {
-            CA = true,
-            CSA = true,
-            Alert = false,
-            Description = true, -- For 2nd line of Display Announcements
-        },
-        ZoneCraglorn =
-        {
-            CA = false,
-            CSA = true,
-            Alert = false,
-        },
-        ArenaMaelstrom =
-        {
-            CA = true,
-            CSA = true,
-            Alert = false,
-        },
-        ArenaDragonstar =
-        {
-            CA = true,
-            CSA = true,
-            Alert = false,
-        },
-        DungeonEndlessArchive =
-        {
-            CA = true,
-            CSA = true,
-            Alert = false,
-        },
-    },
-}
 
 ------------------------------------------------
 -- LOCAL (GLOBAL) VARIABLE SETUP ---------------
@@ -901,7 +292,7 @@ local guildAllianceColors =
 
 local g_firstLoad = true
 
-local ChatEventFormattersDelete =
+local ChatEventHandlersToCustomize =
 {
     [EVENT_BATTLEGROUND_INACTIVITY_WARNING] = true,
     [EVENT_BROADCAST] = true,
@@ -915,16 +306,42 @@ local ChatEventFormattersDelete =
     [EVENT_TRIAL_FEATURE_RESTRICTED] = true,
 }
 
-function ChatAnnouncements.SlayChatHandlers()
+function ChatAnnouncements.CustomizeChatHandlers()
+    -- Store original handlers in case we need to restore them
+    local originalHandlers = {}
+
+    -- Get all registered formatters first
+    local registeredFormatters = CHAT_ROUTER:GetRegisteredMessageFormatters()
+
     -- Unregister ZOS handlers for events we need to modify
-    for eventCode, _ in pairs(ChatEventFormattersDelete) do
+    for eventCode, _ in pairs(ChatEventHandlersToCustomize) do
+        -- Store original handler if it exists
+        if registeredFormatters[eventCode] then
+            originalHandlers[eventCode] = registeredFormatters[eventCode]
+        end
         eventManager:UnregisterForEvent("ChatRouter", eventCode)
     end
 
-    -- Slay these events in case LibChatMessage is active and hooks them
+    -- Modify chat event formatters while preserving LibChatMessage functionality
     local ChatEventFormatters = ZO_ChatSystem_GetEventHandlers()
-    for eventType, _ in pairs(ChatEventFormattersDelete) do
+    for eventType, _ in pairs(ChatEventHandlersToCustomize) do
+        -- Store original formatter if it exists
+        if ChatEventFormatters[eventType] then
+            originalHandlers[eventType] = ChatEventFormatters[eventType]
+        end
         ChatEventFormatters[eventType] = nil
+    end
+
+    -- Store original handlers for potential restoration
+    ChatAnnouncements.OriginalHandlers = originalHandlers
+end
+
+-- Add a function to restore handlers if needed
+function ChatAnnouncements.RestoreChatHandlers()
+    if ChatAnnouncements.OriginalHandlers then
+        for eventCode, handler in pairs(ChatAnnouncements.OriginalHandlers) do
+            CHAT_ROUTER:RegisterMessageFormatter(eventCode, handler)
+        end
     end
 end
 
@@ -996,10 +413,10 @@ function ChatAnnouncements.Initialize(enabled)
     ChatAnnouncements.IndexGroupLoot()
 
     -- Stop other chat handlers from registering, then stop them again a few more times just in case.
-    ChatAnnouncements.SlayChatHandlers()
+    ChatAnnouncements.CustomizeChatHandlers()
     -- Call this again a few times shortly after load just in case.
-    zo_callLater(ChatAnnouncements.SlayChatHandlers, 1000)
-    zo_callLater(ChatAnnouncements.SlayChatHandlers, 5000)
+    zo_callLater(ChatAnnouncements.CustomizeChatHandlers, 100)
+    zo_callLater(ChatAnnouncements.CustomizeChatHandlers, 5000)
 end
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1906,7 +1323,7 @@ function ChatAnnouncements.ActivityStatusUpdate(eventCode, status)
 
     -- Debug
     if status == ACTIVITY_FINDER_STATUS_FORMING_GROUP and g_savedQueueValue ~= ACTIVITY_FINDER_STATUS_FORMING_GROUP then
-        if LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@ArtOfShredLegacy" or LUIE.PlayerDisplayName == "@HammerOfGlory" then
+        if LUIE.IsDevDebugEnabled() then
             d("Old ACTIVITY_FINDER_STATUS_FORMING_GROUP event triggered")
         end
     end
@@ -1914,97 +1331,96 @@ function ChatAnnouncements.ActivityStatusUpdate(eventCode, status)
     g_savedQueueValue = status
 end
 
--- EVENT_GROUPING_TOOLS_READY_CHECK_UPDATED
+-- Map activity types to their string IDs and descriptors
+local ACTIVITY_TYPE_STRINGS =
+{
+    [LFG_ACTIVITY_AVA] = { stringId = SI_LFGACTIVITY1 },
+    [LFG_ACTIVITY_DUNGEON] = { stringId = SI_LFGACTIVITY2, descriptor = SI_DUNGEON_FINDER_GENERAL_ACTIVITY_DESCRIPTOR },
+    [LFG_ACTIVITY_MASTER_DUNGEON] = { stringId = SI_LFGACTIVITY3, descriptor = SI_DUNGEON_FINDER_GENERAL_ACTIVITY_DESCRIPTOR },
+    [LFG_ACTIVITY_TRIAL] = { stringId = SI_LFGACTIVITY4 },
+    [LFG_ACTIVITY_BATTLE_GROUND_CHAMPION] = { stringId = SI_LFGACTIVITY5, descriptor = SI_BATTLEGROUND_FINDER_GENERAL_ACTIVITY_DESCRIPTOR },
+    [LFG_ACTIVITY_HOME_SHOW] = { stringId = SI_LFGACTIVITY6 },
+    [LFG_ACTIVITY_BATTLE_GROUND_NON_CHAMPION] = { stringId = SI_LFGACTIVITY7, descriptor = SI_BATTLEGROUND_FINDER_GENERAL_ACTIVITY_DESCRIPTOR },
+    [LFG_ACTIVITY_BATTLE_GROUND_LOW_LEVEL] = { stringId = SI_LFGACTIVITY8, descriptor = SI_BATTLEGROUND_FINDER_GENERAL_ACTIVITY_DESCRIPTOR },
+    [LFG_ACTIVITY_TRIBUTE_COMPETITIVE] = { stringId = SI_LFGACTIVITY9 },
+    [LFG_ACTIVITY_TRIBUTE_CASUAL] = { stringId = SI_LFGACTIVITY10 },
+    -- [LFG_ACTIVITY_EXPLORATION] = { stringId = SI_LFGACTIVITY11 },
+    -- [LFG_ACTIVITY_ARENA] = { stringId = SI_LFGACTIVITY12 },
+    -- [LFG_ACTIVITY_ENDLESS_DUNGEON] = { stringId = SI_LFGACTIVITY13 },
+}
+
+-- Helper function to get activity name based on type
+local function GetActivityName(activityType)
+    local activityInfo = ACTIVITY_TYPE_STRINGS[activityType]
+    if not activityInfo then return nil end
+
+    if activityInfo.descriptor then
+        return zo_strformat("<<1>> <<2>>", GetString(activityInfo.stringId), GetString(activityInfo.descriptor))
+    else
+        return GetString(activityInfo.stringId)
+    end
+end
+
 function ChatAnnouncements.ReadyCheckUpdate(eventCode)
-    -- d("ready check update")
     local activityType, playerRole = GetLFGReadyCheckNotificationInfo()
     local tanksAccepted, tanksPending, healersAccepted, healersPending, dpsAccepted, dpsPending = GetLFGReadyCheckCounts()
-    -- d(tanksAccepted .. " " .. tanksPending .. " " .. healersAccepted .. " " .. healersPending .. " " .. dpsAccepted .." " .. dpsPending)
+
     if g_showRCUpdates then
-        local activityName
+        -- Return early if invalid activity type
+        if activityType == LFG_ACTIVITY_INVALID then return end
 
-        if activityType == 0 then
-            return
-        end
-        if activityType == LFG_ACTIVITY_AVA then
-            activityName = GetString(SI_LFGACTIVITY1) -- TODO: Untested
-        end
-        if activityType == LFG_ACTIVITY_BATTLE_GROUND_NON_CHAMPION then
-            activityName = zo_strformat("<<1>> <<2>>", GetString(SI_LFGACTIVITY7), GetString(SI_BATTLEGROUND_FINDER_GENERAL_ACTIVITY_DESCRIPTOR)) -- Not yet implemented yet
-        end
-        if activityType == LFG_ACTIVITY_BATTLE_GROUND_CHAMPION then
-            activityName = zo_strformat("<<1>> <<2>>", GetString(SI_LFGACTIVITY5), GetString(SI_BATTLEGROUND_FINDER_GENERAL_ACTIVITY_DESCRIPTOR)) -- Not yet implemented yet
-        end
-        if activityType == LFG_ACTIVITY_BATTLE_GROUND_LOW_LEVEL then
-            activityName = zo_strformat("<<1>> <<2>>", GetString(SI_LFGACTIVITY8), GetString(SI_BATTLEGROUND_FINDER_GENERAL_ACTIVITY_DESCRIPTOR)) -- Not yet implemented yet
-        end
-        if activityType == LFG_ACTIVITY_DUNGEON then
-            activityName = zo_strformat("<<1>> <<2>>", GetString(SI_LFGACTIVITY2), GetString(SI_DUNGEON_FINDER_GENERAL_ACTIVITY_DESCRIPTOR))
-        end
-        if activityType == LFG_ACTIVITY_HOME_SHOW then
-            activityName = GetString(SI_LFGACTIVITY6) -- TODO: Untested
-        end
-        if activityType == LFG_ACTIVITY_MASTER_DUNGEON then
-            activityName = zo_strformat("<<1>> <<2>>", GetString(SI_LFGACTIVITY3), GetString(SI_DUNGEON_FINDER_GENERAL_ACTIVITY_DESCRIPTOR))
-        end
-        if activityType == LFG_ACTIVITY_TRIAL then
-            activityName = GetString(SI_LFGACTIVITY4) -- TODO: Untested
-        end
+        local activityName = GetActivityName(activityType)
+        if not activityName then return end
 
-        local message
-        local alertText
+        local message, alertText
         if playerRole ~= 0 then
             local roleIconSmall = zo_strformat("<<1>> ", zo_iconFormat(GetRoleIcon(playerRole), 16, 16)) or ""
             local roleIconLarge = zo_strformat("<<1>> ", zo_iconFormat(GetRoleIcon(playerRole), "100%", "100%")) or ""
             local roleString = GetString("SI_LFGROLE", playerRole)
+
             message = zo_strformat(GetString(LUIE_STRING_CA_GROUPFINDER_READY_CHECK_ACTIVITY_ROLE), activityName, roleIconSmall, roleString)
             alertText = zo_strformat(GetString(LUIE_STRING_CA_GROUPFINDER_READY_CHECK_ACTIVITY_ROLE), activityName, roleIconLarge, roleString)
-            if ChatAnnouncements.SV.Group.GroupLFGCA then
-                printToChat(message, true)
-            end
-            if ChatAnnouncements.SV.Group.GroupLFGAlert then
-                ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, alertText)
-            end
         else
             message = zo_strformat(GetString(LUIE_STRING_CA_GROUPFINDER_READY_CHECK_ACTIVITY), activityName)
-            alertText = zo_strformat(GetString(LUIE_STRING_CA_GROUPFINDER_READY_CHECK_ACTIVITY), activityName)
-            if ChatAnnouncements.SV.Group.GroupLFGCA then
-                printToChat(message, true)
-            end
-            if ChatAnnouncements.SV.Group.GroupLFGAlert then
-                ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, alertText)
-            end
+            alertText = message
+        end
+
+        if ChatAnnouncements.SV.Group.GroupLFGCA then
+            printToChat(message, true)
+        end
+        if ChatAnnouncements.SV.Group.GroupLFGAlert then
+            ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, alertText)
         end
     end
 
     g_showRCUpdates = false
 
-    -- Triggers when a group is succesfully formed or when a player cancels on the ready check. We set any relevant variables here as if the group did succesfully join.
-    if not g_showRCUpdates and (tanksAccepted == 0 and tanksPending == 0 and healersAccepted == 0 and healersPending == 0 and dpsAccepted == 0 and dpsPending == 0) then
-        if g_rcSpamPrevention == false then
-            --[[local message
-            message = (GetString(SI_LFGREADYCHECKCANCELREASON4))
-            if ChatAnnouncements.SV.Group.GroupLFGCA then
-                printToChat(message, true)
-            end
-            if ChatAnnouncements.SV.Group.GroupLFGAlert then
-                ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, message)
-            end]]
-            --
-            g_rcSpamPrevention = true
-            zo_callLater(function ()
-                g_rcSpamPrevention = false
-            end, 1000)
-            g_showActivityStatus = false
-            zo_callLater(function ()
-                g_showActivityStatus = true
-            end, 1000)
-            g_stopGroupLeaveQueue = true
-            zo_callLater(function ()
-                g_stopGroupLeaveQueue = false
-            end, 1000)
-            g_showRCUpdates = true
-        end
+    -- Handle ready check completion or cancellation
+    local allCountsZero = tanksAccepted == 0 and tanksPending == 0 and
+        healersAccepted == 0 and healersPending == 0 and
+        dpsAccepted == 0 and dpsPending == 0
+
+    if not g_showRCUpdates and allCountsZero and not g_rcSpamPrevention then
+        g_rcSpamPrevention = true
+
+        -- Reset spam prevention after 1 second
+        zo_callLater(function ()
+            g_rcSpamPrevention = false
+        end, 1000)
+
+        -- Reset activity status after 1 second
+        g_showActivityStatus = false
+        zo_callLater(function ()
+            g_showActivityStatus = true
+        end, 1000)
+
+        -- Reset group leave queue after 1 second
+        g_stopGroupLeaveQueue = true
+        zo_callLater(function ()
+            g_stopGroupLeaveQueue = false
+        end, 1000)
+
+        g_showRCUpdates = true
     end
 end
 
@@ -2587,7 +2003,7 @@ function ChatAnnouncements.OnCurrencyUpdate(eventCode, currency, currencyLocatio
 
     -- Haven't seen this one yet but it's more recently added and thus probably used for something.
     if reason == CURRENCY_CHANGE_REASON_LOOT_CURRENCY_CONTAINER then
-        if LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@ArtOfShredLegacy" or LUIE.PlayerDisplayName == "@HammerOfGlory" then
+        if LUIE.IsDevDebugEnabled() then
             d("Currency Change Reason 76 - CURRENCY_CHANGE_REASON_LOOT_CURRENCY_CONTAINER")
         end
     end
@@ -3206,75 +2622,6 @@ function ChatAnnouncements.OnMailCloseBox(eventCode)
 end
 
 -- Sends results of the trade to the Item Log print function and clears variables so they are reset for next trade interactions
--- function ChatAnnouncements.OnMailSuccess(eventCode)
---     if g_postageAmount > 0 then
---         local type = "LUIE_CURRENCY_POSTAGE"
---         local formattedValue = ZO_LocalizeDecimalNumber(GetCarriedCurrencyAmount(1))
---         local changeColor = ChatAnnouncements.SV.Currency.CurrencyContextColor and ColorizeColors.CurrencyDownColorize:ToHex() or ColorizeColors.CurrencyColorize:ToHex()
---         local changeType = ZO_LocalizeDecimalNumber(g_postageAmount)
---         local currencyTypeColor = ColorizeColors.CurrencyGoldColorize:ToHex()
---         local currencyIcon = ChatAnnouncements.SV.Currency.CurrencyIcon and "|t16:16:/esoui/art/currency/currency_gold.dds|t" or ""
---         local currencyName = zo_strformat(ChatAnnouncements.SV.Currency.CurrencyGoldName, g_postageAmount)
---         local currencyTotal = ChatAnnouncements.SV.Currency.CurrencyGoldShowTotal
---         local messageTotal = ChatAnnouncements.SV.Currency.CurrencyMessageTotalGold
---         local messageChange = ChatAnnouncements.SV.ContextMessages.CurrencyMessagePostage
---         ChatAnnouncements.CurrencyPrinter(nil, formattedValue, changeColor, changeType, currencyTypeColor, currencyIcon, currencyName, currencyTotal, messageChange, messageTotal, type)
---     end
-
---     if not g_mailCODPresent then
---         if g_mailAmount > 0 then
---             local type = "LUIE_CURRENCY_MAIL"
---             local formattedValue = ZO_LocalizeDecimalNumber(GetCarriedCurrencyAmount(1))
---             local changeColor = ChatAnnouncements.SV.Currency.CurrencyContextColor and ColorizeColors.CurrencyDownColorize:ToHex() or ColorizeColors.CurrencyColorize:ToHex()
---             local changeType = ZO_LocalizeDecimalNumber(g_mailAmount)
---             local currencyTypeColor = ColorizeColors.CurrencyGoldColorize:ToHex()
---             local currencyIcon = ChatAnnouncements.SV.Currency.CurrencyIcon and "|t16:16:/esoui/art/currency/currency_gold.dds|t" or ""
---             local currencyName = zo_strformat(ChatAnnouncements.SV.Currency.CurrencyGoldName, g_mailAmount)
---             local currencyTotal = ChatAnnouncements.SV.Currency.CurrencyGoldShowTotal
---             local messageTotal = ChatAnnouncements.SV.Currency.CurrencyMessageTotalGold
---             local messageChange = g_mailTarget ~= "" and ChatAnnouncements.SV.ContextMessages.CurrencyMessageMailOut or ChatAnnouncements.SV.ContextMessages.CurrencyMessageMailOutNoName
---             ChatAnnouncements.CurrencyPrinter(nil, formattedValue, changeColor, changeType, currencyTypeColor, currencyIcon, currencyName, currencyTotal, messageChange, messageTotal, type)
---         end
---     end
-
---     if ChatAnnouncements.SV.Notify.NotificationMailSendCA or ChatAnnouncements.SV.Notify.NotificationMailSendAlert then
---         local mailString
---         if not g_mailCODPresent then
---             if g_mailCOD > 1 then
---                 mailString = GetString(LUIE_STRING_CA_MAIL_SENT_COD)
---             else
---                 mailString = GetString(LUIE_STRING_CA_MAIL_SENT)
---             end
---         end
---         if mailString then
---             if ChatAnnouncements.SV.Notify.NotificationMailSendCA then
---                 ChatAnnouncements.QueuedMessages[ChatAnnouncements.QueuedMessagesCounter] = { message = mailString, type = "NOTIFICATION", isSystem = true }
---                 ChatAnnouncements.QueuedMessagesCounter = ChatAnnouncements.QueuedMessagesCounter + 1
---                 eventManager:RegisterForUpdate(moduleName .. "Printer", 50, ChatAnnouncements.PrintQueuedMessages)
---             end
---             if ChatAnnouncements.SV.Notify.NotificationMailSendAlert then
---                 ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, mailString)
---             end
---         end
---     end
-
---     if ChatAnnouncements.SV.Inventory.LootMail then
---         for mailIndex = 1, 6 do -- Have to iterate through all 6 possible mail attachments, otherwise nil values will bump later items off the list potentially.
---             if g_mailStacksOut[mailIndex] ~= nil then
---                 local gainOrLoss = ChatAnnouncements.SV.Currency.CurrencyContextColor and 2 or 4
---                 local logPrefix = g_mailTarget ~= "" and ChatAnnouncements.SV.ContextMessages.CurrencyMessageMailOut or ChatAnnouncements.SV.ContextMessages.CurrencyMessageMailOutNoName
---                 local item = g_mailStacksOut[mailIndex]
---                 ChatAnnouncements.ItemCounterDelayOut(item.icon, item.stack, item.itemType, item.itemId, item.itemLink, g_mailTarget, logPrefix, gainOrLoss, false)
---             end
---         end
---     end
-
---     g_mailCODPresent = false
---     g_mailCOD = 0
---     g_postageAmount = 0
---     g_mailAmount = 0
---     g_mailStacksOut = {}
--- end
 
 function ChatAnnouncements.OnMailSuccess(eventCode)
     local formattedValue = ZO_LocalizeDecimalNumber(GetCarriedCurrencyAmount(1))
@@ -3804,8 +3151,8 @@ function ChatAnnouncements.ResolveQuestItemChange()
             -- Lower
             if newValue < questItemIndex[itemId].stack then
                 -- Easy temporary debug for my accounts only
-                if LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@ArtOfShredLegacy" or LUIE.PlayerDisplayName == "@HammerOfGlory" then
-                    d(itemId .. " Removed")
+                if LUIE.IsDevDebugEnabled() then
+                    LUIE.Debug(itemId .. " Removed")
                 end
                 --
 
@@ -3872,9 +3219,9 @@ function ChatAnnouncements.ResolveQuestItemChange()
 
             -- Higher
             if newValue > questItemIndex[itemId].stack then
-                -- Easy temporary debug for my accounts only
-                if LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@ArtOfShredLegacy" or LUIE.PlayerDisplayName == "@HammerOfGlory" then
-                    d(itemId .. " Added")
+                -- Easy debug for my devs only
+                if LUIE.IsDevDebugEnabled() then
+                    LUIE.Debug(itemId .. " Added")
                 end
                 --
                 countChange = newValue - questItemIndex[itemId].stack
@@ -4078,17 +3425,17 @@ function ChatAnnouncements.ItemFilter(itemType, itemId, itemLink, groupLoot)
     if ChatAnnouncements.SV.Inventory.LootBlacklist and g_blacklistIDs[itemId] or (ChatAnnouncements.SV.Inventory.LootLogOverride and LootLog) then
         return false
     end
-
-    local _, specializedItemType = GetItemLinkItemType(itemLink)
+    local specializedItemType
+    itemType, specializedItemType = GetItemLinkItemType(itemLink)
     local itemQuality = GetItemLinkQuality(itemLink)
-    local itemIsSet = GetItemLinkSetInfo(itemLink, false)
+    local hasSet, setName, numBonuses, numNormalEquipped, maxEquipped, setId, numPerfectedEquipped = GetItemLinkSetInfo(itemLink, false)
 
     local itemIsKeyFragment = (itemType == ITEMTYPE_TROPHY) and (specializedItemType == SPECIALIZED_ITEMTYPE_TROPHY_KEY_FRAGMENT)
     local itemIsSpecial = (itemType == ITEMTYPE_TROPHY and not itemIsKeyFragment) or (itemType == ITEMTYPE_COLLECTIBLE) or IsItemLinkConsumable(itemLink)
 
     if ChatAnnouncements.SV.Inventory.LootOnlyNotable or groupLoot then
         -- Notable items are: any set items, any purple+ items, blue+ special items (e.g., treasure maps)
-        if itemIsSet or (itemQuality >= ITEM_QUALITY_ARCANE and itemIsSpecial) or (itemQuality >= ITEM_QUALITY_ARTIFACT and not itemIsKeyFragment) or (itemType == ITEMTYPE_COSTUME) or (itemType == ITEMTYPE_DISGUISE) or g_notableIDs[itemId] then
+        if hasSet or (itemQuality >= ITEM_QUALITY_ARCANE and itemIsSpecial) or (itemQuality >= ITEM_QUALITY_ARTIFACT and not itemIsKeyFragment) or (itemType == ITEMTYPE_COSTUME) or (itemType == ITEMTYPE_DISGUISE) or g_notableIDs[itemId] then
             return true
         end
     elseif ChatAnnouncements.SV.Inventory.LootNotTrash and (itemQuality == ITEM_QUALITY_TRASH) and not ((itemType == ITEMTYPE_ARMOR) or (itemType == ITEMTYPE_COSTUME) or (itemType == ITEMTYPE_DISGUISE)) then
@@ -4361,9 +3708,7 @@ end
 -- Simple posthook into ZOS crafting mode functions, based off MultiCraft, thanks Ayantir!
 function ChatAnnouncements.CraftModeOverrides()
     -- Get SMITHING mode
-    g_smithing.GetMode = function ()
-        return SMITHING.mode
-    end
+    g_smithing.GetMode = LUIE.GetMode
 
     -- Get ENCHANTING mode
     g_enchanting.GetMode = function ()
@@ -4417,8 +3762,8 @@ local delayedItemPoolOut = {} -- Stacks for outbound delayed item pool
 function ChatAnnouncements.ItemCounterDelay(icon, stack, itemType, itemId, itemLink, receivedBy, logPrefix, gainOrLoss, filter, groupLoot, alwaysFirst, delay)
     -- Return if we have an invalid itemId or stack
     if itemId == 0 or not stack then
-        if LUIE.PlayerDisplayName == "@ArtOfShred" or LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@dack_janiels" then
-            d("Item counter returned invalid items")
+        if LUIE.IsDevDebugEnabled() then
+            LUIE.Debug("Item counter returned invalid items")
         end
         return
     end
@@ -4429,7 +3774,8 @@ function ChatAnnouncements.ItemCounterDelay(icon, stack, itemType, itemId, itemL
     end
 
     -- Save parameters to delayed item pool
-    delayedItemPool[itemId] = {
+    delayedItemPool[itemId] =
+    {
         icon = icon,
         itemType = itemType,
         itemLink = itemLink,
@@ -4931,54 +4277,7 @@ function ChatAnnouncements.InventoryUpdateCraft(eventCode, bagId, slotId, isNewI
 
     -- Debug(traceback)
 
-    local function ResolveCraftingUsed(itemType)
-        local craftingType = GetCraftingInteractionType()
-        local smithingMode = g_smithing.GetMode()
-
-        local validItemTypes =
-        {
-            [ITEMTYPE_ADDITIVE] = true,
-            [ITEMTYPE_ARMOR_BOOSTER] = true,
-            [ITEMTYPE_ARMOR_TRAIT] = true,
-            [ITEMTYPE_BLACKSMITHING_BOOSTER] = true,
-            [ITEMTYPE_BLACKSMITHING_MATERIAL] = true,
-            [ITEMTYPE_BLACKSMITHING_RAW_MATERIAL] = true,
-            [ITEMTYPE_CLOTHIER_BOOSTER] = true,
-            [ITEMTYPE_CLOTHIER_MATERIAL] = true,
-            [ITEMTYPE_CLOTHIER_RAW_MATERIAL] = true,
-            [ITEMTYPE_ENCHANTING_RUNE_ASPECT] = true,
-            [ITEMTYPE_ENCHANTING_RUNE_ESSENCE] = true,
-            [ITEMTYPE_ENCHANTING_RUNE_POTENCY] = true,
-            [ITEMTYPE_ENCHANTMENT_BOOSTER] = true,
-            [ITEMTYPE_FISH] = true,
-            [ITEMTYPE_GLYPH_ARMOR] = true,
-            [ITEMTYPE_GLYPH_JEWELRY] = true,
-            [ITEMTYPE_GLYPH_WEAPON] = true,
-            [ITEMTYPE_GROUP_REPAIR] = true,
-            [ITEMTYPE_INGREDIENT] = true,
-            [ITEMTYPE_JEWELRYCRAFTING_BOOSTER] = true,
-            [ITEMTYPE_JEWELRYCRAFTING_MATERIAL] = true,
-            [ITEMTYPE_JEWELRYCRAFTING_RAW_BOOSTER] = true,
-            [ITEMTYPE_JEWELRYCRAFTING_RAW_MATERIAL] = true,
-            [ITEMTYPE_JEWELRY_RAW_TRAIT] = true,
-            [ITEMTYPE_JEWELRY_TRAIT] = true,
-            [ITEMTYPE_POISON_BASE] = true,
-            [ITEMTYPE_POTION_BASE] = true,
-            [ITEMTYPE_RAW_MATERIAL] = true,
-            [ITEMTYPE_REAGENT] = true,
-            [ITEMTYPE_STYLE_MATERIAL] = true,
-            [ITEMTYPE_WEAPON] = true,
-            [ITEMTYPE_WEAPON_BOOSTER] = true,
-            [ITEMTYPE_WEAPON_TRAIT] = true,
-            [ITEMTYPE_WOODWORKING_BOOSTER] = true,
-            [ITEMTYPE_WOODWORKING_MATERIAL] = true,
-            [ITEMTYPE_WOODWORKING_RAW_MATERIAL] = true,
-        }
-
-        if (craftingType == CRAFTING_TYPE_BLACKSMITHING or craftingType == CRAFTING_TYPE_CLOTHIER or craftingType == CRAFTING_TYPE_WOODWORKING or craftingType == CRAFTING_TYPE_JEWELRYCRAFTING) and smithingMode == 4 then
-            return validItemTypes[itemType] or false
-        end
-    end
+    local ResolveCraftingUsed = LUIE.ResolveCraftingUsed
 
     local receivedBy = "LUIE_RECEIVE_CRAFT" -- This keyword tells our item printer to print the items in a list separated by commas, to conserve space for the display of crafting mats consumed.
     local logPrefixPos = ChatAnnouncements.SV.ContextMessages.CurrencyMessageCraft
@@ -6293,7 +5592,7 @@ function ChatAnnouncements.OnPlayerActivated(eventCode)
     end
 
     if g_firstLoad then
-        ChatAnnouncements.SlayChatHandlers()
+        ChatAnnouncements.CustomizeChatHandlers()
         g_firstLoad = false
     end
 
@@ -6425,6 +5724,7 @@ function LUIE.HandleClickEvent(rawLink, mouseButton, linkText, linkStyle, linkTy
 end
 
 -- Used by functions calling bar updates
+---@param barParams CenterScreenPlayerProgressBarParams
 local function ValidateProgressBarParams(barParams)
     local barType = barParams:GetParams()
     if not (barType and PLAYER_PROGRESS_BAR:GetBarTypeInfoByBarType(barType)) then
@@ -8226,6 +7526,7 @@ function ChatAnnouncements.HookFunction()
         end
     end
 
+    -- Reset functions for quest status
     local function ResetQuestRewardStatus()
         g_itemReceivedIsQuestReward = false
     end
@@ -8236,70 +7537,128 @@ function ChatAnnouncements.HookFunction()
 
     -- EVENT_QUEST_ADDED (CSA Handler)
     local function QuestAddedHook(journalIndex, questName, objectiveName)
+        -- Debug for DEVS
+        if LUIE.IsDevDebugEnabled() then
+            LUIE.Debug([[Quest Added:
+    Name: %s
+    Index: %d
+    Objective: %s]],
+                questName,
+                journalIndex,
+                objectiveName or "nil"
+            )
+        end
+
+        -- Check WritCreater settings first
+        if WritCreater and WritCreater:GetSettings().suppressQuestAnnouncements and isQuestWritQuest(journalIndex) then
+            if LUIE.IsDevDebugEnabled() then
+                LUIE.Debug([[Writ Quest Add Suppressed:
+    Quest: %s
+    Index: %d]],
+                    questName,
+                    journalIndex
+                )
+            end
+            return true
+        end
+
+        -- Clear any buffered XP messages
         eventManager:UnregisterForUpdate(moduleName .. "BufferedXP")
         ChatAnnouncements.PrintBufferedXP()
 
+        -- Get quest information
         local questType = GetJournalQuestType(journalIndex)
         local instanceDisplayType = GetJournalInstanceDisplayType(journalIndex)
         local questJournalObject = SYSTEMS:GetObject("questJournal")
         local iconTexture = questJournalObject:GetIconTexture(questType, instanceDisplayType)
 
-        -- Add quest to index
+        -- Store quest info in index
         g_questIndex[questName] =
         {
             questType = questType,
             instanceDisplayType = instanceDisplayType,
         }
 
+        -- Format messages
+        local function getFormattedStrings(useSmallIcon, includeLongDescription)
+            local iconSize = useSmallIcon and "16, 16" or "75%, 75%"
+            local questNameFormatted
+
+            if includeLongDescription then
+                local stepText = GetJournalQuestStepInfo(journalIndex, 1)
+                questNameFormatted = zo_strformat("|c<<1>><<2>>:|r |c<<3>><<4>>|r",
+                    ColorizeColors.QuestColorQuestNameColorize:ToHex(),
+                    questName,
+                    ColorizeColors.QuestColorQuestDescriptionColorize,
+                    stepText
+                )
+            else
+                questNameFormatted = zo_strformat("|c<<1>><<2>>|r",
+                    ColorizeColors.QuestColorQuestNameColorize:ToHex(),
+                    questName
+                )
+            end
+
+            if iconTexture and ChatAnnouncements.SV.Quests.QuestIcon then
+                if useSmallIcon then
+                    return string_format(GetString(LUIE_STRING_CA_QUEST_ACCEPT) ..
+                        zo_iconFormat(iconTexture, iconSize) .. " " ..
+                        questNameFormatted
+                    )
+                else
+                    return zo_strformat(LUIE_STRING_CA_QUEST_ACCEPT_WITH_ICON,
+                        zo_iconFormat(iconTexture, iconSize),
+                        questNameFormatted
+                    )
+                end
+            else
+                if useSmallIcon then
+                    return string_format("%s%s",
+                        GetString(LUIE_STRING_CA_QUEST_ACCEPT),
+                        questNameFormatted
+                    )
+                else
+                    return zo_strformat(SI_NOTIFYTEXT_QUEST_ACCEPT,
+                        questNameFormatted
+                    )
+                end
+            end
+        end
+
+        -- Handle CSA announcement
         if ChatAnnouncements.SV.Quests.QuestAcceptCSA then
             local messageParams = CENTER_SCREEN_ANNOUNCE:CreateMessageParams(CSA_CATEGORY_LARGE_TEXT, SOUNDS.QUEST_ACCEPTED)
-            if iconTexture then
-                messageParams:SetText(zo_strformat(LUIE_STRING_CA_QUEST_ACCEPT_WITH_ICON, zo_iconFormat(iconTexture, "75%", "75%"), questName))
-            else
-                messageParams:SetText(zo_strformat(SI_NOTIFYTEXT_QUEST_ACCEPT, questName))
-            end
+            messageParams:SetText(getFormattedStrings(false, false))
             messageParams:SetCSAType(CENTER_SCREEN_ANNOUNCE_TYPE_QUEST_ADDED)
             CENTER_SCREEN_ANNOUNCE:AddMessageWithParams(messageParams)
         end
 
+        -- Handle Alert announcement
         if ChatAnnouncements.SV.Quests.QuestAcceptAlert then
-            local alertString
-            if iconTexture and ChatAnnouncements.SV.Quests.QuestIcon then
-                alertString = zo_strformat(LUIE_STRING_CA_QUEST_ACCEPT_WITH_ICON, zo_iconFormat(iconTexture, "75%", "75%"), questName)
-            else
-                alertString = zo_strformat(SI_NOTIFYTEXT_QUEST_ACCEPT, questName)
-            end
-            ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, alertString)
+            ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, getFormattedStrings(false, false))
         end
 
-        -- If we don't have either CSA or Alert on (then we want to play a sound here)
+        -- Play sound if CSA is disabled
         if not ChatAnnouncements.SV.Quests.QuestAcceptCSA then
             PlaySound(SOUNDS.QUEST_ACCEPTED)
         end
 
+        -- Handle Chat announcement
         if ChatAnnouncements.SV.Quests.QuestAcceptCA then
-            local questNameFormatted
-            local stepText = GetJournalQuestStepInfo(journalIndex, 1)
-            local formattedString
+            local formattedString = getFormattedStrings(true, ChatAnnouncements.SV.Quests.QuestLong)
 
-            if ChatAnnouncements.SV.Quests.QuestLong then
-                questNameFormatted = (zo_strformat("|c<<1>><<2>>:|r |c<<3>><<4>>|r", ColorizeColors.QuestColorQuestNameColorize:ToHex(), questName, ColorizeColors.QuestColorQuestDescriptionColorize, stepText))
-            else
-                questNameFormatted = (zo_strformat("|c<<1>><<2>>|r", ColorizeColors.QuestColorQuestNameColorize:ToHex(), questName))
-            end
-            if iconTexture and ChatAnnouncements.SV.Quests.QuestIcon then
-                formattedString = string_format(GetString(LUIE_STRING_CA_QUEST_ACCEPT) .. zo_iconFormat(iconTexture, 16, 16) .. " " .. questNameFormatted)
-            else
-                formattedString = string_format("%s%s", GetString(LUIE_STRING_CA_QUEST_ACCEPT), questNameFormatted)
-            end
-
-            -- If this message is duplicated by another addon then don't display twice.
+            -- Check for duplicate messages
             for i = 1, #ChatAnnouncements.QueuedMessages do
                 if ChatAnnouncements.QueuedMessages[i].message == formattedString then
                     return true
                 end
             end
-            ChatAnnouncements.QueuedMessages[ChatAnnouncements.QueuedMessagesCounter] = { message = formattedString, type = "QUEST" }
+
+            ChatAnnouncements.QueuedMessages[ChatAnnouncements.QueuedMessagesCounter] =
+            {
+                message = formattedString,
+                type = "QUEST"
+            }
             ChatAnnouncements.QueuedMessagesCounter = ChatAnnouncements.QueuedMessagesCounter + 1
             eventManager:RegisterForUpdate(moduleName .. "Printer", 50, ChatAnnouncements.PrintQueuedMessages)
         end
@@ -8309,61 +7668,114 @@ function ChatAnnouncements.HookFunction()
 
     -- EVENT_QUEST_COMPLETE (CSA Handler)
     local function QuestCompleteHook(questName, level, previousExperience, currentExperience, championPoints, questType, instanceDisplayType)
+        -- Debug for DEVS
+        if LUIE.IsDevDebugEnabled() then
+            LUIE.Debug([[Quest Completed:
+    Name: %s
+    Type: %s (%d)
+    Instance: %d
+    Level: %d
+    XP: %d -> %d
+    CP: %d]],
+                questName,
+                LUIE.GetQuestTypeName(questType), questType,
+                instanceDisplayType,
+                level,
+                previousExperience,
+                currentExperience,
+                championPoints
+            )
+        end
+
+        -- Check WritCreater settings first
+        if WritCreater and WritCreater:GetSettings().suppressQuestAnnouncements then
+            -- Since we don't have the journal index here, we need to find it
+            local numQuests = GetNumJournalQuests()
+            for questIndex = 1, numQuests do
+                if IsValidQuestIndex(questIndex) then
+                    local currentQuestName = GetJournalQuestName(questIndex)
+                    if currentQuestName == questName and isQuestWritQuest(questIndex) then
+                        if LUIE.IsDevDebugEnabled() then
+                            LUIE.Debug([[Writ Quest Completion Suppressed:
+        Quest: %s
+        Index: %d]],
+                                questName,
+                                questIndex
+                            )
+                        end
+                        return true
+                    end
+                end
+            end
+        end
+
+        -- Clear any buffered XP messages
         eventManager:UnregisterForUpdate(moduleName .. "BufferedXP")
         ChatAnnouncements.PrintBufferedXP()
 
+        -- Get quest icon
         local questJournalObject = SYSTEMS:GetObject("questJournal")
         local iconTexture = questJournalObject:GetIconTexture(questType, instanceDisplayType)
 
+        -- Format messages
+        local function getFormattedStrings(useSmallIcon)
+            local iconSize = useSmallIcon and "16, 16" or "75%, 75%"
+            local questNameFormatted = useSmallIcon and zo_strformat("|cFFA500<<1>>|r", questName) or questName
+
+            if iconTexture and ChatAnnouncements.SV.Quests.QuestIcon then
+                return zo_strformat(LUIE_STRING_CA_QUEST_COMPLETE_WITH_ICON,
+                    zo_iconFormat(iconTexture, iconSize),
+                    questNameFormatted
+                )
+            else
+                return zo_strformat(SI_NOTIFYTEXT_QUEST_COMPLETE, questNameFormatted)
+            end
+        end
+
+        -- Handle CSA announcement
         if ChatAnnouncements.SV.Quests.QuestCompleteCSA then
             local messageParams = CENTER_SCREEN_ANNOUNCE:CreateMessageParams(CSA_CATEGORY_LARGE_TEXT, SOUNDS.QUEST_COMPLETED)
-            if iconTexture then
-                messageParams:SetText(zo_strformat(LUIE_STRING_CA_QUEST_COMPLETE_WITH_ICON, zo_iconFormat(iconTexture, "75%", "75%"), questName))
-            else
-                messageParams:SetText(zo_strformat(SI_NOTIFYTEXT_QUEST_COMPLETE, questName))
-            end
+            messageParams:SetText(getFormattedStrings(false))
+
             if not LUIE.SV.HideXPBar then
                 messageParams:SetBarParams(GetRelevantBarParams(level, previousExperience, currentExperience, championPoints, EVENT_QUEST_COMPLETE))
             end
+
             messageParams:SetCSAType(CENTER_SCREEN_ANNOUNCE_TYPE_QUEST_COMPLETED)
             CENTER_SCREEN_ANNOUNCE:AddMessageWithParams(messageParams)
         end
 
+        -- Handle Alert announcement
         if ChatAnnouncements.SV.Quests.QuestCompleteAlert then
-            local alertString
-            if iconTexture and ChatAnnouncements.SV.Quests.QuestIcon then
-                alertString = zo_strformat(LUIE_STRING_CA_QUEST_COMPLETE_WITH_ICON, zo_iconFormat(iconTexture, "75%", "75%"), questName)
-            else
-                alertString = zo_strformat(SI_NOTIFYTEXT_QUEST_COMPLETE, questName)
-            end
-            ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, alertString)
+            ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, getFormattedStrings(false))
         end
 
+        -- Handle Chat announcement
         if ChatAnnouncements.SV.Quests.QuestCompleteCA then
-            local questNameFormatted = (zo_strformat("|cFFA500<<1>>|r", questName))
-            local formattedString
-            if iconTexture and ChatAnnouncements.SV.Quests.QuestIcon then
-                formattedString = zo_strformat(LUIE_STRING_CA_QUEST_COMPLETE_WITH_ICON, zo_iconFormat(iconTexture, 16, 16), questNameFormatted)
-            else
-                formattedString = zo_strformat(SI_NOTIFYTEXT_QUEST_COMPLETE, questNameFormatted)
-            end
-            -- This event double fires on quest completion, if an equivalent message is already detected in queue, then abort!
+            local formattedString = getFormattedStrings(true)
+
+            -- Check for duplicate messages
             for i = 1, #ChatAnnouncements.QueuedMessages do
                 if ChatAnnouncements.QueuedMessages[i].message == formattedString then
                     return true
                 end
             end
-            ChatAnnouncements.QueuedMessages[ChatAnnouncements.QueuedMessagesCounter] = { message = formattedString, type = "QUEST" }
+
+            ChatAnnouncements.QueuedMessages[ChatAnnouncements.QueuedMessagesCounter] =
+            {
+                message = formattedString,
+                type = "QUEST"
+            }
             ChatAnnouncements.QueuedMessagesCounter = ChatAnnouncements.QueuedMessagesCounter + 1
             eventManager:RegisterForUpdate(moduleName .. "Printer", 50, ChatAnnouncements.PrintQueuedMessages)
         end
 
-        -- If we don't have either CSA or Alert on (then we want to play a sound here)
+        -- Play sound if CSA is disabled
         if not ChatAnnouncements.SV.Quests.QuestCompleteCSA then
             PlaySound(SOUNDS.QUEST_COMPLETED)
         end
 
-        -- We set this variable to true in order to override the [Looted] message syntax that would be applied to a quest reward normally.
+        -- Handle quest reward status
         if ChatAnnouncements.SV.Inventory.Loot then
             g_itemReceivedIsQuestReward = true
             zo_callLater(ResetQuestRewardStatus, 500)
@@ -8375,7 +7787,51 @@ function ChatAnnouncements.HookFunction()
     -- EVENT_OBJECTIVE_COMPLETED (CSA Handler)
     -- Note we don't play a sound if the CSA is disabled here because the Quest complete message will already do this.
     local function ObjectiveCompletedHook(zoneIndex, poiIndex, level, previousExperience, currentExperience, championPoints)
-        local name, _, _, finishedDescription = GetPOIInfo(zoneIndex, poiIndex)
+        local name, objectiveLevel, startDescription, finishedDescription = GetPOIInfo(zoneIndex, poiIndex)
+
+        -- Debug initial info
+        if LUIE.IsDevDebugEnabled() then
+            LUIE.Debug([[Objective Completed:
+    POI Name: %s
+    Zone Index: %d
+    POI Index: %d
+    Level: %d
+    Description: %s]],
+                name,
+                zoneIndex,
+                poiIndex,
+                objectiveLevel,
+                finishedDescription or "nil"
+            )
+        end
+
+        -- Check all active quests for writ quests
+        local numQuests = GetNumJournalQuests()
+        for questIndex = 1, numQuests do
+            if IsValidQuestIndex(questIndex) then
+                local questName, _, _, questType, _, _, _, _, _, _ = GetJournalQuestInfo(questIndex)
+
+                if WritCreater and WritCreater:GetSettings().suppressQuestAnnouncements and isQuestWritQuest(questIndex) then
+                    if LUIE.IsDevDebugEnabled() then
+                        LUIE.Debug([[Active Writ Quest Found:
+    Quest: %s
+    Index: %d
+    Type: %s (%d)
+    Is Writ: %s
+    Suppress Active: %s]],
+                            questName,
+                            questIndex,
+                            LUIE.GetQuestTypeName(questType),
+                            questType,
+                            tostring(isQuestWritQuest(questIndex)),
+                            tostring(WritCreater:GetSettings().suppressQuestAnnouncements)
+                        )
+                    end
+                    return true
+                end
+            end
+        end
+
         local nameFormatted
         local formattedText
 
@@ -8418,134 +7874,183 @@ function ChatAnnouncements.HookFunction()
     -- EVENT_QUEST_CONDITION_COUNTER_CHANGED (CSA Handler)
     -- Note: Used for quest failure and updates
     local function ConditionCounterHook(journalIndex, questName, conditionText, conditionType, currConditionVal, newConditionVal, conditionMax, isFailCondition, stepOverrideText, isPushed, isComplete, isConditionComplete, isStepHidden, isConditionCompleteChanged)
+        -- Early exit conditions
         if isStepHidden or (isPushed and isComplete) or (currConditionVal >= newConditionVal) then
             return true
         end
 
+        -- Debug for DEVS
+        if LUIE.IsDevDebugEnabled() then
+            LUIE.Debug([[Quest Condition Update:
+            Type: %s (%d)
+            Quest: %s
+            Condition: %s
+            Progress: %d/%d (Previous: %d)
+            State: %s]],
+                LUIE.GetQuestConditionTypeName(conditionType),
+                conditionType,
+                questName,
+                conditionText,
+                newConditionVal,
+                conditionMax,
+                currConditionVal,
+                isConditionComplete and "Complete" or "In Progress"
+            )
+        end
+
+        -- Check WritCreater settings first
+        if WritCreater and WritCreater:GetSettings().suppressQuestAnnouncements and isQuestWritQuest(journalIndex) then
+            if LUIE.IsDevDebugEnabled() then
+                LUIE.Debug([[Writ Quest Condition Suppressed:
+    Quest: %s
+    Index: %d
+    Condition: %s]],
+                    questName,
+                    journalIndex,
+                    conditionText
+                )
+            end
+            return true
+        end
+
+        -- Initialize message parameters
         local type             -- This variable represents whether this message is an objective update or failure state message (1 = update, 2 = failure) There are too many conditionals to resolve what we need to print inside them so we do it after setting the formatting.
         local alertMessage     -- Variable for alert message
         local formattedMessage -- Variable for CA Message
         local sound            -- Set correct sound based off context
         local messageParams = CENTER_SCREEN_ANNOUNCE:CreateMessageParams(CSA_CATEGORY_SMALL_TEXT)
 
+        -- Set sound based on condition state
         if newConditionVal ~= currConditionVal and not isFailCondition then
             sound = isConditionComplete and SOUNDS.QUEST_OBJECTIVE_COMPLETE or SOUNDS.QUEST_OBJECTIVE_INCREMENT
             messageParams:SetSound(sound)
         end
 
-        -- Debug for my account - TODO: Remove
-        if LUIE.PlayerDisplayName == "ArtOfShred" or LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@ArtOfShredLegacy" or LUIE.PlayerDisplayName == "@HammerOfGlory" then
-            d(conditionType)
-        end
-
-        if isConditionComplete and conditionType == QUEST_CONDITION_TYPE_GIVE_ITEM or conditionType == QUEST_CONDITION_TYPE_TALK_TO then
-            -- We set this variable to true in order to override the [Looted] message syntax that would be applied to a quest reward normally.
+        -- Handle quest reward item conditions
+        if isConditionComplete and (conditionType == QUEST_CONDITION_TYPE_GIVE_ITEM or conditionType == QUEST_CONDITION_TYPE_TALK_TO) then
             if ChatAnnouncements.SV.Inventory.Loot then
                 g_itemReceivedIsQuestReward = true
                 zo_callLater(ResetQuestRewardStatus, 500)
             end
         end
 
+        -- Format messages based on condition type and state
         if isConditionComplete and conditionType == QUEST_CONDITION_TYPE_GIVE_ITEM then
             messageParams:SetText(zo_strformat(SI_TRACKED_QUEST_STEP_DONE, conditionText))
             alertMessage = zo_strformat(SI_TRACKED_QUEST_STEP_DONE, conditionText)
             formattedMessage = zo_strformat(SI_TRACKED_QUEST_STEP_DONE, conditionText)
             type = 1
         elseif stepOverrideText == "" then
+            -- Handle failure and update messages
             if isFailCondition then
                 if conditionMax > 1 then
-                    messageParams:SetText(zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_FAIL, conditionText, newConditionVal, conditionMax))
-                    alertMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_FAIL, conditionText, newConditionVal, conditionMax)
-                    formattedMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_FAIL, conditionText, newConditionVal, conditionMax)
+                    local formatString = SI_ALERTTEXT_QUEST_CONDITION_FAIL
+                    messageParams:SetText(zo_strformat(formatString, conditionText, newConditionVal, conditionMax))
+                    alertMessage = zo_strformat(formatString, conditionText, newConditionVal, conditionMax)
+                    formattedMessage = zo_strformat(formatString, conditionText, newConditionVal, conditionMax)
                 else
-                    messageParams:SetText(zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_FAIL_NO_COUNT, conditionText))
-                    alertMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_FAIL_NO_COUNT, conditionText)
-                    formattedMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_FAIL_NO_COUNT, conditionText)
+                    local formatString = SI_ALERTTEXT_QUEST_CONDITION_FAIL_NO_COUNT
+                    messageParams:SetText(zo_strformat(formatString, conditionText))
+                    alertMessage = zo_strformat(formatString, conditionText)
+                    formattedMessage = zo_strformat(formatString, conditionText)
                 end
                 type = 2
             else
                 if conditionMax > 1 and newConditionVal < conditionMax then
-                    messageParams:SetText(zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_UPDATE, conditionText, newConditionVal, conditionMax))
-                    alertMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_UPDATE, conditionText, newConditionVal, conditionMax)
-                    formattedMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_UPDATE, conditionText, newConditionVal, conditionMax)
+                    local formatString = SI_ALERTTEXT_QUEST_CONDITION_UPDATE
+                    messageParams:SetText(zo_strformat(formatString, conditionText, newConditionVal, conditionMax))
+                    alertMessage = zo_strformat(formatString, conditionText, newConditionVal, conditionMax)
+                    formattedMessage = zo_strformat(formatString, conditionText, newConditionVal, conditionMax)
                 else
-                    messageParams:SetText(zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_UPDATE_NO_COUNT, conditionText))
-                    alertMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_UPDATE_NO_COUNT, conditionText)
-                    formattedMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_UPDATE_NO_COUNT, conditionText)
+                    local formatString = SI_ALERTTEXT_QUEST_CONDITION_UPDATE_NO_COUNT
+                    messageParams:SetText(zo_strformat(formatString, conditionText))
+                    alertMessage = zo_strformat(formatString, conditionText)
+                    formattedMessage = zo_strformat(formatString, conditionText)
                 end
                 type = 1
             end
         else
-            if isFailCondition then
-                messageParams:SetText(zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_FAIL_NO_COUNT, stepOverrideText))
-                alertMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_FAIL_NO_COUNT, stepOverrideText)
-                formattedMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_FAIL_NO_COUNT, stepOverrideText)
-                type = 2
-            else
-                messageParams:SetText(zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_UPDATE_NO_COUNT, stepOverrideText))
-                alertMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_UPDATE_NO_COUNT, stepOverrideText)
-                formattedMessage = zo_strformat(SI_ALERTTEXT_QUEST_CONDITION_UPDATE_NO_COUNT, stepOverrideText)
-                type = 1
-            end
+            -- Handle step override text
+            local formatString = isFailCondition and SI_ALERTTEXT_QUEST_CONDITION_FAIL_NO_COUNT or SI_ALERTTEXT_QUEST_CONDITION_UPDATE_NO_COUNT
+            messageParams:SetText(zo_strformat(formatString, stepOverrideText))
+            alertMessage = zo_strformat(formatString, stepOverrideText)
+            formattedMessage = zo_strformat(formatString, stepOverrideText)
+            type = isFailCondition and 2 or 1
         end
 
-        -- Override text if its listed in the override table.
+        -- Apply text overrides if available
         if Quests.QuestObjectiveCompleteOverride[formattedMessage] then
-            messageParams:SetText(Quests.QuestObjectiveCompleteOverride[formattedMessage])
-            alertMessage = Quests.QuestObjectiveCompleteOverride[formattedMessage]
-            formattedMessage = Quests.QuestObjectiveCompleteOverride[formattedMessage]
+            local overrideText = Quests.QuestObjectiveCompleteOverride[formattedMessage]
+            messageParams:SetText(overrideText)
+            alertMessage = overrideText
+            formattedMessage = overrideText
         end
 
-        if isConditionComplete then
-            messageParams:SetCSAType(CENTER_SCREEN_ANNOUNCE_TYPE_QUEST_CONDITION_COMPLETED)
-        else
-            messageParams:SetCSAType(CENTER_SCREEN_ANNOUNCE_TYPE_QUEST_PROGRESSION_CHANGED)
-        end
+        -- Set CSA type based on condition state
+        messageParams:SetCSAType(isConditionComplete and
+            CENTER_SCREEN_ANNOUNCE_TYPE_QUEST_CONDITION_COMPLETED or
+            CENTER_SCREEN_ANNOUNCE_TYPE_QUEST_PROGRESSION_CHANGED)
 
+        -- Handle update messages (type == 1)
         if type == 1 then
-            if ChatAnnouncements.SV.Quests.QuestObjCompleteCA then
-                -- This event double fires on quest completion, if an equivalent message is already detected in queue, then abort!
-                for i = 1, #ChatAnnouncements.QueuedMessages do
-                    if ChatAnnouncements.QueuedMessages[i].message == formattedMessage then
-                        return true
+            local function processUpdateMessages()
+                if ChatAnnouncements.SV.Quests.QuestObjCompleteCA then
+                    -- Check for duplicate messages
+                    for i = 1, #ChatAnnouncements.QueuedMessages do
+                        if ChatAnnouncements.QueuedMessages[i].message == formattedMessage then
+                            return true
+                        end
                     end
+                    ChatAnnouncements.QueuedMessages[ChatAnnouncements.QueuedMessagesCounter] =
+                    {
+                        message = formattedMessage,
+                        type = "MESSAGE" -- Set as MESSAGE for quest item progression ordering
+                    }
+                    ChatAnnouncements.QueuedMessagesCounter = ChatAnnouncements.QueuedMessagesCounter + 1
+                    eventManager:RegisterForUpdate(moduleName .. "Printer", 50, ChatAnnouncements.PrintQueuedMessages)
                 end
-                ChatAnnouncements.QueuedMessages[ChatAnnouncements.QueuedMessagesCounter] = { message = formattedMessage, type = "MESSAGE" } -- We set the message type to MESSAGE so if we loot a quest item that progresses the quest this comes after.
-                ChatAnnouncements.QueuedMessagesCounter = ChatAnnouncements.QueuedMessagesCounter + 1
-                eventManager:RegisterForUpdate(moduleName .. "Printer", 50, ChatAnnouncements.PrintQueuedMessages)
+                if ChatAnnouncements.SV.Quests.QuestObjCompleteCSA then
+                    CENTER_SCREEN_ANNOUNCE:AddMessageWithParams(messageParams)
+                end
+                if ChatAnnouncements.SV.Quests.QuestObjCompleteAlert then
+                    ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, alertMessage)
+                end
+                if not ChatAnnouncements.SV.Quests.QuestObjCompleteCSA then
+                    PlaySound(sound)
+                end
             end
-            if ChatAnnouncements.SV.Quests.QuestObjCompleteCSA then
-                CENTER_SCREEN_ANNOUNCE:AddMessageWithParams(messageParams)
-            end
-            if ChatAnnouncements.SV.Quests.QuestObjCompleteAlert then
-                ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, alertMessage)
-            end
-            if not ChatAnnouncements.SV.Quests.QuestObjCompleteCSA then
-                PlaySound(sound)
-            end
+            processUpdateMessages()
         end
 
+        -- Handle failure messages (type == 2)
         if type == 2 then
-            if ChatAnnouncements.SV.Quests.QuestFailCA then
-                -- This event double fires on quest completion, if an equivalent message is already detected in queue, then abort!
-                for i = 1, #ChatAnnouncements.QueuedMessages do
-                    if ChatAnnouncements.QueuedMessages[i].message == formattedMessage then
-                        return true
+            local function processFailureMessages()
+                if ChatAnnouncements.SV.Quests.QuestFailCA then
+                    -- Check for duplicate messages
+                    for i = 1, #ChatAnnouncements.QueuedMessages do
+                        if ChatAnnouncements.QueuedMessages[i].message == formattedMessage then
+                            return true
+                        end
                     end
+                    ChatAnnouncements.QueuedMessages[ChatAnnouncements.QueuedMessagesCounter] =
+                    {
+                        message = formattedMessage,
+                        type = "MESSAGE"
+                    }
+                    ChatAnnouncements.QueuedMessagesCounter = ChatAnnouncements.QueuedMessagesCounter + 1
+                    eventManager:RegisterForUpdate(moduleName .. "Printer", 50, ChatAnnouncements.PrintQueuedMessages)
                 end
-                ChatAnnouncements.QueuedMessages[ChatAnnouncements.QueuedMessagesCounter] = { message = formattedMessage, type = "MESSAGE" }
-                ChatAnnouncements.QueuedMessagesCounter = ChatAnnouncements.QueuedMessagesCounter + 1
-                eventManager:RegisterForUpdate(moduleName .. "Printer", 50, ChatAnnouncements.PrintQueuedMessages)
+                if ChatAnnouncements.SV.Quests.QuestFailCSA then
+                    CENTER_SCREEN_ANNOUNCE:AddMessageWithParams(messageParams)
+                end
+                if ChatAnnouncements.SV.Quests.QuestFailAlert then
+                    ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, alertMessage)
+                end
+                if not ChatAnnouncements.SV.Quests.QuestFailCSA then
+                    PlaySound(sound)
+                end
             end
-            if ChatAnnouncements.SV.Quests.QuestFailCSA then
-                CENTER_SCREEN_ANNOUNCE:AddMessageWithParams(messageParams)
-            end
-            if ChatAnnouncements.SV.Quests.QuestFailAlert then
-                ZO_Alert(UI_ALERT_CATEGORY_ALERT, nil, alertMessage)
-            end
-            if not ChatAnnouncements.SV.Quests.QuestFailCSA then
-                PlaySound(sound)
-            end
+            processFailureMessages()
         end
 
         return true
@@ -8647,10 +8152,36 @@ function ChatAnnouncements.HookFunction()
     end
 
     -- EVENT_QUEST_ADVANCED (Registered through CSA_MiscellaneousHandlers)
-    -- Note: Quest Advancement displays all the "appropriate" conditions that the player needs to do to advance the current step
     local function OnQuestAdvanced(eventId, questIndex, questName, isPushed, isComplete, mainStepChanged, soundOverride)
-        -- Check if WritCreater is enabled & then call a copy of a local function from WritCreater to check if this is a Writ Quest
+        -- Get quest name if not provided
+        questName = questName or GetJournalQuestName(questIndex)
+
+        -- Debug WritCreater check
+        if LUIE.IsDevDebugEnabled() then
+            LUIE.Debug([[Quest Advanced Check:
+        Quest: %s
+        Index: %d
+        Is Writ: %s
+        Suppress Active: %s
+        Main Step Changed: %s]],
+                questName,
+                questIndex,
+                tostring(WritCreater and isQuestWritQuest(questIndex)),
+                tostring(WritCreater and WritCreater:GetSettings().suppressQuestAnnouncements),
+                tostring(mainStepChanged)
+            )
+        end
+
+        -- Check WritCreater settings first
         if WritCreater and WritCreater:GetSettings().suppressQuestAnnouncements and isQuestWritQuest(questIndex) then
+            if LUIE.IsDevDebugEnabled() then
+                LUIE.Debug([[Writ Quest Advanced Suppressed:
+        Quest: %s
+        Index: %d]],
+                    questName,
+                    questIndex
+                )
+            end
             return
         end
 
@@ -8732,23 +8263,80 @@ function ChatAnnouncements.HookFunction()
 
     -- EVENT_QUEST_ADDED (Registered through CSA_MiscellaneousHandlers)
     local function OnQuestAdded(eventId, questIndex)
-        -- Copied from Writ Creator, abandons a quest if it requires a mat that is disabled in Writ Creator setttings
+        local questName = GetJournalQuestName(questIndex)
+
+        -- Check WritCreater settings first
         if WritCreater then
-            local rejectedMat = rejectQuest(questIndex)
+            if LUIE.IsDevDebugEnabled() then
+                -- Safely check if the quest is a writ quest
+                local isWrit = false
+                if type(isQuestWritQuest) == "function" then
+                    isWrit = isQuestWritQuest(questIndex) or false
+                end
+
+                LUIE.Debug([[Quest Added WritCreater Check:
+        Quest: %s
+        Index: %d
+        Is Writ: %s
+        Suppress Active: %s]],
+                    questName,
+                    questIndex,
+                    tostring(isWrit),
+                    tostring(WritCreater:GetSettings().suppressQuestAnnouncements)
+                )
+            end
+
+            -- Check for suppressed announcements FIRST
+            -- Safely check if the quest is a writ quest
+            local isWrit = type(isQuestWritQuest) == "function" and isQuestWritQuest(questIndex)
+            if WritCreater:GetSettings().suppressQuestAnnouncements and isWrit then
+                if LUIE.IsDevDebugEnabled() then
+                    LUIE.Debug([[Writ Quest Added Suppressed:
+        Quest: %s
+        Index: %d]],
+                        questName,
+                        questIndex
+                    )
+                end
+                return -- Exit completely, don't process anything else
+            end
+
+            -- Check for rejected materials
+            local rejectedMat
+            if type(rejectQuest) == "function" then
+                rejectedMat = rejectQuest(questIndex)
+            end
+
             if rejectedMat then
-                d("Writ Crafter abandoned the " .. GetJournalQuestName(questIndex) .. " because it requires " .. rejectedMat .. " which was disallowed for use in the settings")
+                local message = zo_strformat("|cFF0000Writ Auto-Abandon:|r <<1>> (requires <<2>>)", questName, rejectedMat)
+                if LUIE.IsDevDebugEnabled() then
+                    LUIE.Debug([[Writ Quest Rejected:
+        Quest: %s
+        Rejected Material: %s]],
+                        questName,
+                        rejectedMat
+                    )
+                end
+                d(message)
                 zo_callLater(function ()
                     AbandonQuest(questIndex)
                 end, 500)
                 return
             end
         end
-        -- Check if WritCreater is enabled & then call a copy of a local function from WritCreater to check if this is a Writ Quest
-        if WritCreater and WritCreater:GetSettings().suppressQuestAnnouncements and isQuestWritQuest(questIndex) then
-            return
+
+        -- If we get here, process the quest normally
+        if LUIE.IsDevDebugEnabled() then
+            LUIE.Debug([[Processing Quest Added Normally:
+        Quest: %s
+        Index: %d]],
+                questName,
+                questIndex
+            )
         end
 
-        OnQuestAdvanced(EVENT_QUEST_ADVANCED, questIndex, nil, nil, nil, true, true)
+        -- Pass the quest name explicitly
+        OnQuestAdvanced(EVENT_QUEST_ADVANCED, questIndex, questName, nil, nil, true, true)
     end
 
     -- EVENT_DISCOVERY_EXPERIENCE (CSA Handler)
@@ -9857,17 +9445,27 @@ function ChatAnnouncements.HookFunction()
 
         -- Debug function
         if ChatAnnouncements.SV.DisplayAnnouncements.Debug and not debugDisable then
-            d("EVENT_DISPLAY_ANNOUNCEMENT: If you see this message please post a screenshot and context for the event on the LUI Extended ESOUI page.")
-            if primaryText then
-                d("Primary Text: " .. primaryText)
-            end
-            if secondaryText then
-                d("Secondary Text: " .. secondaryText)
-            end
-            local zoneid = GetZoneId(GetCurrentMapZoneIndex())
-            d("Zone Id: " .. zoneid)
-            local mapid = GetCurrentMapId()
-            d("Map Id: " .. mapid)
+            LUIE.Debug([[Display Announcement Debug:
+    Event: EVENT_DISPLAY_ANNOUNCEMENT
+    Primary Text: %s
+    Secondary Text: %s
+    Zone: %d (Current Map Zone)
+    Map: %d (Current Map)
+    Sound ID: %s
+    Category: %s
+    Lifespan: %s ms
+    -----------------------------]],
+                primaryText or "nil",
+                secondaryText or "nil",
+                GetZoneId(GetCurrentMapZoneIndex()),
+                GetCurrentMapId(),
+                tostring(soundId),
+                tostring(category),
+                tostring(lifespanMS)
+            )
+
+            -- Additional context message
+            LUIE.Debug("If you see this message please post a screenshot and context for the event on the LUI Extended ESOUI page.")
         end
 
         -- Display CA if enabled
@@ -11212,9 +10810,9 @@ function ChatAnnouncements.PrintQueuedMessages()
     -- Quest Items (Remove)
     for i = 1, #ChatAnnouncements.QueuedMessages do
         if ChatAnnouncements.QueuedMessages[i] and ChatAnnouncements.QueuedMessages[i].message ~= "" and ChatAnnouncements.QueuedMessages[i].type == "QUEST LOOT REMOVE" then
-            -- if LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@ArtOfShredLegacy" then d(ChatAnnouncements.QueuedMessages[i].itemId) end -- TODO: Remove debug later
+            -- if LUIE.IsDevDebugEnabled() then d(ChatAnnouncements.QueuedMessages[i].itemId) end -- TODO: Remove debug later
             local itemId = ChatAnnouncements.QueuedMessages[i].itemId
-            -- if LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@ArtOfShredLegacy" then d(g_questItemAdded[itemId]) end -- TODO: Remove debug later
+            -- if LUIE.IsDevDebugEnabled() then d(g_questItemAdded[itemId]) end -- TODO: Remove debug later
             if not g_questItemAdded[itemId] == true then
                 printToChat(ChatAnnouncements.QueuedMessages[i].message)
             end
@@ -11238,9 +10836,9 @@ function ChatAnnouncements.PrintQueuedMessages()
     -- Quest Items (ADD)
     for i = 1, #ChatAnnouncements.QueuedMessages do
         if ChatAnnouncements.QueuedMessages[i] and ChatAnnouncements.QueuedMessages[i].message ~= "" and ChatAnnouncements.QueuedMessages[i].type == "QUEST LOOT ADD" then
-            -- if LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@ArtOfShredLegacy" then d(ChatAnnouncements.QueuedMessages[i].itemId) end -- TODO: Remove debug later
+            -- if LUIE.IsDevDebugEnabled() then d(ChatAnnouncements.QueuedMessages[i].itemId) end -- TODO: Remove debug later
             local itemId = ChatAnnouncements.QueuedMessages[i].itemId
-            -- if LUIE.PlayerDisplayName == "@ArtOfShredPTS" or LUIE.PlayerDisplayName == "@ArtOfShredLegacy" then d(g_questItemRemoved[itemId]) end -- TODO: Remove debug later
+            -- if LUIE.IsDevDebugEnabled() then d(g_questItemRemoved[itemId]) end -- TODO: Remove debug later
             if not g_questItemRemoved[itemId] == true then
                 printToChat(ChatAnnouncements.QueuedMessages[i].message)
             end

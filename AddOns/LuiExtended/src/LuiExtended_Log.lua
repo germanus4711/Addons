@@ -1,9 +1,9 @@
---- @meta
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
---- @field name string The addon name
---- @field log_to_chat boolean Whether to output logs to chat
---- @field logger LibDebugLogger|NOP The logger instance
 local LUIE = LUIE
 
 --- @class NOP
@@ -17,27 +17,37 @@ local NOP = {}
 --- Debug logger function that does nothing
 --- @param message string The message to log
 --- @param ... any Additional values to format into message
-function NOP:Debug(message, ...) end
+function NOP:Debug(message, ...)
+    df(message, ...)
+end
 
 --- Info logger function that does nothing
 --- @param message string The message to log
 --- @param ... any Additional values to format into message
-function NOP:Info(message, ...) end
+function NOP:Info(message, ...)
+    df(message, ...)
+end
 
 --- Warning logger function that does nothing
 --- @param message string The message to log
 --- @param ... any Additional values to format into message
-function NOP:Warn(message, ...) end
+function NOP:Warn(message, ...)
+    df(message, ...)
+end
 
 --- Error logger function that does nothing
 --- @param message string The message to log
 --- @param ... any Additional values to format into message
-function NOP:Error(message, ...) end
+function NOP:Error(message, ...)
+    df(message, ...)
+end
 
 --- Verbose logger function that does nothing
 --- @param message string The message to log
 --- @param ... any Additional values to format into message
-function NOP:Verbose(message, ...) end
+function NOP:Verbose(message, ...)
+    df(message, ...)
+end
 
 local string_format = string.format
 
@@ -63,7 +73,12 @@ end
 --- @param ... any Variable number of arguments to be formatted and logged
 function LUIE.Log(color, ...)
     if LUIE.log_to_chat then
-        CHAT_ROUTER:AddSystemMessage("|c" .. color .. LUIE.name .. ": " .. string_format(...) .. "|r")
+        local message = LUIE.name .. ": "
+        if select('#', ...) > 0 then
+            message = message .. string_format(...)
+        end
+        -- ESO only supports 6 digit hex colors
+        CHAT_ROUTER:AddSystemMessage("|c" .. string.sub(color, 3) .. message .. "|r")
     end
 end
 

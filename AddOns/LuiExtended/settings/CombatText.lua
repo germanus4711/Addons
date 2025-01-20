@@ -1,10 +1,16 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
+
+local FontsList = LUIE.Media.FontList
+local SoundsList = LUIE.Media.SoundList
+local StatusbarTexturesList = LUIE.Media.StatusbarTexturesList
+
+--- @class (partial) LUIE.CombatText
 local CombatText = LUIE.CombatText
 local CombatTextConstants = LUIE.Data.CombatTextConstants
 local BlacklistPresets = LUIE.Data.CombatTextBlacklistPresets
@@ -16,7 +22,7 @@ local zo_strformat = zo_strformat
 local globalIconOptions = { "All Crowd Control", "NPC CC Only", "Player CC Only" }
 local globalIconOptionsKeys = { ["All Crowd Control"] = 1, ["NPC CC Only"] = 2, ["Player CC Only"] = 3 }
 
-local callbackManager = CALLBACK_MANAGER
+local callbackManager = LUIE.callbackObject
 
 local Blacklist, BlacklistValues = {}, {}
 
@@ -75,54 +81,6 @@ function CombatText.CreateSettings()
     local Defaults = CombatText.Defaults
     local Settings = CombatText.SV
 
-    local FontsList = {}
-    local LMP = LibMediaProvider
-    if LMP then
-        -- Add LUIE fonts first
-        for f, _ in pairs(LUIE.Fonts) do
-            table_insert(FontsList, f)
-        end
-        -- Add LMP fonts
-        for _, font in ipairs(LMP:List(LMP.MediaType.FONT)) do
-            -- Only add if not already in list
-            if not LUIE.Fonts[font] then
-                table_insert(FontsList, font)
-            end
-        end
-    end
-
-    -- Get sounds from LibMediaProvider
-    local SoundsList = {}
-    if LMP then
-        -- Add LUIE sounds first
-        for sound, _ in pairs(LUIE.Sounds) do
-            table_insert(SoundsList, sound)
-        end
-        -- Add LMP sounds
-        for _, sound in ipairs(LMP:List(LMP.MediaType.SOUND)) do
-            -- Only add if not already in list
-            if not LUIE.Sounds[sound] then
-                table_insert(SoundsList, sound)
-            end
-        end
-    end
-
-    -- Get statusbar textures from LibMediaProvider
-    local StatusbarTexturesList = {}
-    if LMP then
-        -- Add LUIE textures first
-        for key, _ in pairs(LUIE.StatusbarTextures) do
-            table_insert(StatusbarTexturesList, key)
-        end
-        -- Add LMP statusbar textures
-        for _, texture in ipairs(LMP:List(LMP.MediaType.STATUSBAR)) do
-            -- Only add if not already in list
-            if not LUIE.StatusbarTextures[texture] then
-                table_insert(StatusbarTexturesList, texture)
-            end
-        end
-    end
-
     -- Load Dialog Buttons
     loadDialogButtons()
 
@@ -139,7 +97,7 @@ function CombatText.CreateSettings()
         donation = LUIE.donation,
         slashCommand = "/luict",
         registerForRefresh = true,
-        registerForDefaults = false,
+        registerForDefaults = true,
     }
 
     local optionsDataCombatText = {}
@@ -3159,7 +3117,7 @@ function CombatText.CreateSettings()
                 -- Font Face Dropdown
                 type = "dropdown",
                 scrollable = true,
-                name = GetString(LUIE_STRING_LAM_CT_FONT_FACE),
+                name = zo_strformat("\t\t\t\t\t<<1>>", GetString(LUIE_STRING_LAM_FONT)),
                 tooltip = GetString(LUIE_STRING_LAM_CT_FONT_FACE_TP),
                 choices = FontsList,
                 sort = "name-up",
@@ -3170,22 +3128,77 @@ function CombatText.CreateSettings()
                     Settings.fontFace = var
                     CombatText.ApplyFont()
                 end,
+                width = "full",
                 default = Defaults.fontFace,
             },
             {
-                -- Font Outline Dropdown
-                type = "dropdown",
-                name = GetString(LUIE_STRING_LAM_CT_FONT_OUTLINE),
-                tooltip = GetString(LUIE_STRING_LAM_CT_FONT_OUTLINE_TP),
-                choices = CombatTextConstants.outlineType,
+                -- Font Size
+                type = "slider",
+                name = zo_strformat("\t\t\t\t\t<<1>>", GetString(LUIE_STRING_LAM_FONT_SIZE)),
+                tooltip = GetString(LUIE_STRING_LAM_CT_FONT_SIZE_TP),
+                min = 8,
+                max = 72,
+                step = 1,
                 getFunc = function ()
-                    return Settings.fontOutline
+                    return Settings.fontSize
                 end,
-                setFunc = function (var)
-                    Settings.fontOutline = var
+                setFunc = function (value)
+                    Settings.fontSize = value
+                    -- Update all font sizes proportionally
+                    Settings.fontSizes.damage = value
+                    Settings.fontSizes.damagecritical = value
+                    Settings.fontSizes.healing = value
+                    Settings.fontSizes.healingcritical = value
+                    Settings.fontSizes.dot = math.floor(value * 0.8)
+                    Settings.fontSizes.dotcritical = math.floor(value * 0.8)
+                    Settings.fontSizes.hot = math.floor(value * 0.8)
+                    Settings.fontSizes.hotcritical = math.floor(value * 0.8)
+                    Settings.fontSizes.gainLoss = value
+                    Settings.fontSizes.mitigation = value
+                    Settings.fontSizes.crowdControl = math.floor(value * 0.8)
+                    Settings.fontSizes.combatState = math.floor(value * 0.75)
+                    Settings.fontSizes.death = value
+                    Settings.fontSizes.point = math.floor(value * 0.75)
+                    Settings.fontSizes.resource = value
+                    Settings.fontSizes.readylabel = value
                     CombatText.ApplyFont()
                 end,
-                default = Defaults.fontOutline,
+                width = "full",
+                default = Defaults.fontSize,
+            },
+            {
+                -- Font Style
+                type = "dropdown",
+                name = zo_strformat("\t\t\t\t\t<<1>>", GetString(LUIE_STRING_LAM_FONT_STYLE)),
+                tooltip = GetString(LUIE_STRING_LAM_CT_FONT_STYLE_TP),
+                choices =
+                {
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
+                    "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
+                    "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                },
+                choicesValues =
+                {
+                    GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                },
+                sort = "name-up",
+                getFunc = function ()
+                    return Settings.fontStyle
+                end,
+                setFunc = function (var)
+                    Settings.fontStyle = var
+                    CombatText.ApplyFont()
+                end,
+                width = "full",
+                default = Defaults.fontStyle,
             },
             {
                 -- Test Font Button

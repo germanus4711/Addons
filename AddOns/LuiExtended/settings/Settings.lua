@@ -1,7 +1,7 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
@@ -92,7 +92,7 @@ function LUIE.CreateSettings()
             end
         end
         if not sourceCharacter or not targetCharacter then
-            d("LUIE - Unable to copy Character Profile Data.") -- TODO: localization
+            CHAT_ROUTER:AddSystemMessage(GetString(LUIE_STRING_LAM_PROFILE_COPY_ERROR))
             return
         else
             CopyTable(sourceCharacter, targetCharacter)
@@ -441,27 +441,27 @@ function LUIE.CreateSettings()
         width = "full",
     }
 
-    --[[
-    -- Alert Text Alignment
-    optionsData[#optionsData + 1] = {
-        type = "dropdown",
-        name = GetString(LUIE_STRING_LAM_ALERT_TEXT_ALIGNMENT),
-        tooltip = GetString(LUIE_STRING_LAM_ALERT_TEXT_ALIGNMENT_TP),
-        choices = alignmentOptions,
-        getFunc = function() return alignmentOptions[Settings.AlertFrameAlignment] end,
-        setFunc = function(value) Settings.AlertFrameAlignment = alignmentOptionsKeys[value] end,
-        width = "full",
-        default = Defaults.AlertFrameAlignment,
-    }
-    ]]
+    -- -- Alert Text Alignment
+    -- optionsData[#optionsData + 1] =
+    -- {
+    --     type = "dropdown",
+    --     name = GetString(LUIE_STRING_LAM_ALERT_TEXT_ALIGNMENT),
+    --     tooltip = GetString(LUIE_STRING_LAM_ALERT_TEXT_ALIGNMENT_TP),
+    --     choices = alignmentOptions,
+    --     getFunc = function () return alignmentOptions[Settings.AlertFrameAlignment] end,
+    --     setFunc = function (value) Settings.AlertFrameAlignment = alignmentOptionsKeys[value] end,
+    --     width = "full",
+    --     default = Defaults.AlertFrameAlignment,
+    -- }
+
     --
     -- Modules Header
-    optionsData[#optionsData + 1] =
-    {
-        type = "header",
-        name = GetString(LUIE_STRING_LAM_MODULEHEADER),
-        width = "full",
-    }
+    -- optionsData[#optionsData + 1] =
+    -- {
+    --     type = "header",
+    --     name = GetString(LUIE_STRING_LAM_MODULEHEADER),
+    --     width = "full",
+    -- }
 
     -- -- Custom Icons Toggle
     -- optionsData[#optionsData + 1] =
@@ -535,6 +535,215 @@ function LUIE.CreateSettings()
         end,
         width = "full",
         default = Defaults.StartupInfo,
+    }
+
+    -- Missing Base Game Settings
+    optionsData[#optionsData + 1] =
+    {
+        type = "header",
+        name = GetString(LUIE_STRING_LAM_MISSINGBASEGAMESETTINGS),
+        width = "full",
+    }
+
+    -- Post-Processing Overlay
+    optionsData[#optionsData + 1] =
+    {
+        type = "checkbox", 
+        name = "Screen Border Effects",
+        tooltip = "Toggle the screen border post-processing effects (munge overlay)",
+        getFunc = function ()
+            return GetCVar("PPFXOverlaysEnabled") == "1"
+        end,
+        setFunc = function (value)
+            SetCVar("PPFXOverlaysEnabled", value and "1" or "0")
+        end,
+        width = "full",
+        default = true,
+    }
+    -- Energy Sustainability
+    optionsData[#optionsData + 1] = 
+    {
+        type = "checkbox",
+        name = "Energy Sustainability",
+        tooltip = "Toggle energy sustainability measures",
+        getFunc = function ()
+            return GetCVar("EnergySustainabilityMeasuresEnabled") == "1"
+        end,
+        setFunc = function (value)
+            SetCVar("EnergySustainabilityMeasuresEnabled", value and "1" or "0")
+        end,
+        width = "full",
+        default = false,
+    }
+    -- FPS Limit
+    optionsData[#optionsData + 1] =
+    {
+        type = "slider",
+        name = "FPS Limit", 
+        tooltip = "Set the maximum FPS limit (requires game restart)\nDefault game UI only allows up to 100",
+        min = 1,
+        max = 300,
+        step = 1,
+        getFunc = function ()
+            -- Convert MinFrameTime to FPS (1/MinFrameTime)
+            local minFrameTime = tonumber(GetCVar("MinFrameTime.2"))
+            return minFrameTime and math.floor(1 / minFrameTime + 0.5) or 100
+        end,
+        setFunc = function (value)
+            -- Convert FPS to MinFrameTime (1/FPS)
+            local minFrameTime = string.format("%.8f", 1 / value)
+            SetCVar("MinFrameTime.2", minFrameTime)
+        end,
+        width = "full",
+        default = 60,
+    }
+
+    -- Skip Pregame Videos
+    optionsData[#optionsData + 1] =
+    {
+        type = "checkbox",
+        name = "Skip Pregame Videos",
+        tooltip = "Skip intro videos when launching the game",
+        getFunc = function ()
+            return GetCVar("SkipPregameVideos") == "1"
+        end,
+        setFunc = function (value)
+            SetCVar("SkipPregameVideos", value and "1" or "0")
+        end,
+        width = "full",
+        default = true,
+    }
+
+    -- Raw Mouse Input
+    optionsData[#optionsData + 1] =
+    {
+        type = "checkbox",
+        name = "Raw Mouse Input",
+        tooltip = "Enable raw mouse input for more precise control",
+        getFunc = function ()
+            return GetCVar("MouseRawInput") == "1"
+        end,
+        setFunc = function (value)
+            SetCVar("MouseRawInput", value and "1" or "0")
+        end,
+        width = "full",
+        default = true,
+    }
+
+    -- Screenshot Format
+    optionsData[#optionsData + 1] =
+    {
+        type = "dropdown",
+        name = "Screenshot Format",
+        tooltip = "Choose the format for saved screenshots",
+        choices = { "JPG", "PNG", "BMP" },
+        getFunc = function()
+            local format = GetCVar("ScreenshotFormat.2")
+            if format == "PNG" then return "PNG"
+            elseif format == "BMP" then return "BMP"
+            else return "JPG" end
+        end,
+        setFunc = function(value)
+            SetCVar("ScreenshotFormat.2", value)
+        end,
+        width = "full",
+        default = "PNG",
+    }
+
+    -- Disable Razer Chrome
+    optionsData[#optionsData + 1] =
+    {
+        type = "checkbox",
+        name = "Disable Razer Chroma",
+        tooltip = "Disable Razer Chroma integration",
+        getFunc = function ()
+            return GetCVar("UseChromaIfAvailable") == "0"
+        end,
+        setFunc = function (value)
+            SetCVar("UseChromaIfAvailable", value and "0" or "1")
+        end,
+        width = "full",
+        default = true,
+    }
+
+    -- Developer Options Header
+    optionsData[#optionsData + 1] =
+    {
+        type = "header",
+        name = "Developer Options",
+        width = "full",
+    }
+
+    -- Disable Precompiled Lua
+    optionsData[#optionsData + 1] =
+    {
+        type = "checkbox",
+        name = "Disable Precompiled Lua",
+        tooltip = "Disable use of precompiled Lua files",
+        getFunc = function ()
+            return GetCVar("UsePrecompiledLua.2") == "0"
+        end,
+        setFunc = function (value)
+            SetCVar("UsePrecompiledLua.2", value and "0" or "1")
+        end,
+        width = "full",
+        default = true,
+        requiresReload = true,
+        warning = "This is a developer option that may affect game performance. Changes require a UI reload.",
+    }
+
+    -- Disable Precompiled XML
+    optionsData[#optionsData + 1] =
+    {
+        type = "checkbox",
+        name = "Disable Precompiled XML",
+        tooltip = "Disable use of precompiled XML files",
+        getFunc = function ()
+            return GetCVar("UsePrecompiledXML.2") == "0"
+        end,
+        setFunc = function (value)
+            SetCVar("UsePrecompiledXML.2", value and "0" or "1")
+        end,
+        width = "full",
+        default = true,
+        requiresReload = true,
+        warning = "This is a developer option that may affect game performance. Changes require a UI reload.",
+    }
+
+    -- Profile Control Creation
+    optionsData[#optionsData + 1] =
+    {
+        type = "checkbox",
+        name = "Profile Control Creation",
+        tooltip = "Enable profiling of UI control creation",
+        getFunc = function ()
+            return GetCVar("ProfileControlCreation") == "1"
+        end,
+        setFunc = function (value)
+            SetCVar("ProfileControlCreation", value and "1" or "0")
+        end,
+        width = "full",
+        default = false,
+        requiresReload = true,
+        warning = "This is a developer option that may affect game performance. Changes require a UI reload.",
+    }
+
+    -- Enable Lua Class Verification
+    optionsData[#optionsData + 1] =
+    {
+        type = "checkbox",
+        name = "Lua Class Verification",
+        tooltip = "Enable Lua class verification",
+        getFunc = function ()
+            return GetCVar("EnableLuaClassVerification") == "1"
+        end,
+        setFunc = function (value)
+            SetCVar("EnableLuaClassVerification", value and "1" or "0")
+        end,
+        width = "full",
+        default = false,
+        requiresReload = true,
+        warning = "This is a developer option that may affect game performance. Changes require a UI reload.",
     }
 
     LAM:RegisterAddonPanel(LUIE.name .. "AddonOptions", panelData)

@@ -1,13 +1,16 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
 -- CombatText namespace
-LUIE.CombatText = {}
-local CombatText = LUIE.CombatText
+--- @class (partial) LUIE.CombatText
+local CombatText = {}
+CombatText.__index = CombatText
+--- @class (partial) LUIE.CombatText
+LUIE.CombatText = CombatText
 
 local CombatTextConstants = LUIE.Data.CombatTextConstants
 
@@ -190,8 +193,9 @@ CombatText.Defaults =
     staminaThreshold = 35,
 
     -- Font defaults
-    fontFace = [[Univers 67]],
-    fontOutline = [[soft-shadow-thick]],
+    fontFace = "Univers 67",
+    fontStyle = "soft-shadow-thick",
+    fontSize = 26,
     fontSizes =
     {
         -- Combat
@@ -401,7 +405,8 @@ function CombatText.AddToCustomList(list, input)
     local id = tonumber(input)
     local listRef = list == CombatText.SV.blacklist and GetString(LUIE_STRING_CUSTOM_LIST_CT_BLACKLIST) or ""
     if id and id > 0 then
-        local name = zo_strformat("<<C:1>>", GetAbilityName(id))
+        local cachedName = ZO_CachedStrFormat(SI_ABILITY_NAME, GetAbilityName(id))
+        local name = cachedName -- zo_strformat("<<C:1>>", GetAbilityName(id))
         if name ~= nil and name ~= "" then
             local icon = zo_iconFormat(GetAbilityIcon(id), 16, 16)
             list[id] = true
@@ -428,7 +433,8 @@ function CombatText.RemoveFromCustomList(list, input)
     local id = tonumber(input)
     local listRef = list == CombatText.SV.blacklist and GetString(LUIE_STRING_CUSTOM_LIST_CT_BLACKLIST) or ""
     if id and id > 0 then
-        local name = zo_strformat("<<C:1>>", GetAbilityName(id))
+        local cachedName = ZO_CachedStrFormat(SI_ABILITY_NAME, GetAbilityName(id))
+        local name = cachedName -- zo_strformat("<<C:1>>", GetAbilityName(id))
         local icon = zo_iconFormat(GetAbilityIcon(id), 16, 16)
         list[id] = nil
         CHAT_SYSTEM:Maximize()
@@ -445,12 +451,18 @@ function CombatText.RemoveFromCustomList(list, input)
 end
 
 function CombatText.ApplyFont()
+    -- Fetch the font name from the LUIE.Fonts table
     local fontName = LUIE.Fonts[LUIE.CombatText.SV.fontFace]
-    LUIE.CombatText.SV.fontFaceApplied = fontName
+
+    -- If the font name is not found or is an empty string, log an error message
     if not fontName or fontName == "" then
-        printToChat(GetString(LUIE_STRING_ERROR_FONT), true)
-        LUIE.CombatText.SV.fontFaceApplied = "$(MEDIUM_FONT)"
+        LUIE.Debug(GetString(LUIE_STRING_ERROR_FONT))
+        -- Set the font face to a default bold font
+        fontName = "Univers 67"
     end
+
+    -- Set the applied font face to the fetched or default font name
+    LUIE.CombatText.SV.fontFaceApplied = fontName
 end
 
 -- Module initialization
@@ -480,7 +492,7 @@ function CombatText.Initialize(enabled)
             _G[k]:SetAnchor(s.point, Combattext, s.relativePoint, s.offsetX, s.offsetY)
             _G[k]:SetDimensions(unpack(s.dimensions))
             _G[k]:SetHandler("OnMouseUp", SavePosition)
-            _G[k .. "_Label"]:SetFont(LUIE.CombatText.SV.fontFaceApplied .. "|26|" .. LUIE.CombatText.SV.fontOutline)
+            _G[k .. "_Label"]:SetFont(LUIE.CombatText.SV.fontFaceApplied .. "|26|" .. LUIE.CombatText.SV.fontStyle)
             _G[k .. "_Label"]:SetText(panelTitles[k])
         else
             LUIE.CombatText.SV.panels[k] = nil

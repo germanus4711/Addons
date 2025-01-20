@@ -1,3 +1,5 @@
+local PP = PP ---@class PP
+
 PP.gameMenuInGameScene = function()
 --===============================================================================================--
 	local SV_VER		= 0.1
@@ -29,11 +31,10 @@ PP.gameMenuInGameScene = function()
 --ADD-ONS------------------------------------------------------------------------------------------
 	if SV.addons_toggle then
 		PP:CreateBackground(ZO_AddOns, --[[#1]] nil, nil, nil, 2, -4, --[[#2]] nil, nil, nil, 4, -2)
+		PP.ScrollBar(ZO_AddOnsList,	--[[sb_c]] 180, 180, 180, 0.7, --[[bd_c]] 20, 20, 20, 0.7, false)
 
 		ZO_AddOnsBGLeft:SetHidden(true)
 		ZO_AddOnsDivider:SetHidden(true)
-
-		PP.ScrollBar(ZO_AddOnsList,	--[[sb_c]] 180, 180, 180, 0.7, --[[bd_c]] 20, 20, 20, 0.7, false)
 
 		PP.Anchor(ZO_AddOnsTitle,					--[[#1]] TOPLEFT, nil, TOPLEFT, 10, 5)
 		PP.Anchor(ZO_AddOnsList,					--[[#1]] TOPLEFT, ZO_AddOnsTitle, BOTTOMLEFT, 0, 5,		--[[#2]] true, BOTTOMRIGHT, ZO_AddOns, BOTTOMRIGHT, 0, -10)
@@ -45,11 +46,21 @@ PP.gameMenuInGameScene = function()
 		PP.Font(ZO_AddOnsSecondaryButtonNameLabel,	--[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
 		PP.Font(ZO_AddOnsTitle,						--[[Font]] PP.f.u67, 22, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
 
+		PP.Font(ZO_AddOnsAdvancedUIErrors.label,	--[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+		if AddonSelector == nil then
+			PP.Anchor(ZO_AddOnsCurrentBindingsSaved,		--[[#1]] TOPLEFT, ZO_AddOnsList, BOTTOMLEFT, 10, 15)
+			PP.Font(ZO_AddOnsCurrentBindingsSaved,			--[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+		end
 		ZO_Scroll_SetMaxFadeDistance(ZO_AddOnsList, 10)
---[[?]]
+		--[[?]]
 		local reAnchored = false
 		local function reAnchorAddonsUINow()
 			PP.Anchor(ZO_AddOns, --[[#1]] TOPLEFT, GuiRoot, TOPLEFT, 250, 50, --[[#2]] true, BOTTOMRIGHT, GuiRoot, BOTTOMLEFT, 1200, -70)
+
+			zo_callLater(function()
+				PP.Anchor(ZO_AddOnsAdvancedUIErrors.label,	--[[#1]] TOPRIGHT, ZO_AddOnsList, BOTTOMRIGHT, 0, 15)
+				PP.Anchor(ZO_AddOnsAdvancedUIErrors,		--[[#1]] RIGHT, ZO_AddOnsAdvancedUIErrors.label, LEFT, -5, -3)
+			end, 0)
 			-- gameMenuInGameScene:UnregisterCallback("StateChange",  SceneStateChange)
 			reAnchored = true
 		end
@@ -72,13 +83,30 @@ PP.gameMenuInGameScene = function()
 		ZO_PreHookHandler(ZO_AddOns, 'OnEffectivelyHidden', function()
 			SetFullscreenEffect(FULLSCREEN_EFFECT_NONE)
 		end)
---[[?]]
+		--[[?]]
 	end
---CONTROLS-----------------------------------------------------------------------------------------
-	-- ZO_KeybindingsLeft:SetHidden(true)
-	-- ZO_KeybindingsRight:SetHidden(true)
 
-	-- PP.Anchor(ZO_KeybindingsList,			--[[#1]] TOPLEFT, ZO_AddOnsTitle, TOPLEFT, 20, 40,		--[[#2]] true, BOTTOMRIGHT, ZO_AddOns, BOTTOMRIGHT, -10, -40)
-	
+	--OPTIONS------------------------------------------------------------------------------------------
+	-- ==ZO_GameMenu==--
+	if ZO_GameMenu_InGame then
+		PP.ScrollBar(ZO_OptionsWindowSettingsScrollBar)
+		PP.Anchor(ZO_OptionsWindowSettingsScrollBar, --[[#1]] nil, nil, nil, nil, nil, --[[#2]] true, nil, nil, nil, nil, nil)
+		ZO_Scroll_SetMaxFadeDistance(ZO_OptionsWindowSettingsScrollBar, PP.savedVars.ListStyle.list_fade_distance)
+		PP.ScrollBar(ZO_GameMenu_InGameNavigationContainerScrollBar)
+		PP.Anchor(ZO_GameMenu_InGameNavigationContainerScrollBar, --[[#1]] nil, nil, nil, nil, nil, --[[#2]] true, nil, nil, nil, nil, nil)
+		ZO_Scroll_SetMaxFadeDistance(ZO_GameMenu_InGameNavigationContainer, PP.savedVars.ListStyle.list_fade_distance)
+		ZO_SharedThinLeftPanelBackgroundLeft:SetHidden(true)
+		ZO_SharedThinLeftPanelBackgroundRight:SetHidden(true)
+		ZO_OptionsWindowBGLeft:SetHidden(true)
+
+		PP:CreateBackground(ZO_OptionsWindow,		--[[#1]] TOPLEFT, ZO_OptionsWindow, TOPLEFT, 40, 60, --[[#2]] BOTTOMRIGHT, ZO_OptionsWindow, BOTTOMRIGHT, -100, -50)
+	end
+
+	--CONTROLS-----------------------------------------------------------------------------------------
+	ZO_KeybindingsLeft:SetHidden(true)
+	ZO_KeybindingsRight:SetHidden(true)
+	--PP.Anchor(ZO_KeybindingsList,			--[[#1]] TOPLEFT, ZO_AddOnsTitle, TOPLEFT, 20, 40,		--[[#2]] true, BOTTOMRIGHT, ZO_AddOns, BOTTOMRIGHT, -10, -40)
+	PP:CreateBackground(ZO_Keybindings,		--[[#1]] nil, nil, nil, -6, 0, --[[#2]] nil, nil, nil, 0, 6)
+	PP.ScrollBar(ZO_KeybindingsListScrollBar)
 	
 end

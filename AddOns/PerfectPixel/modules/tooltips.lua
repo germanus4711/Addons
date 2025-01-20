@@ -1,4 +1,4 @@
-local PP		= PP
+local PP = PP ---@class PP
 local namespace	= 'Tooltips'
 
 PP.tooltips = function()
@@ -79,7 +79,8 @@ PP.tooltips = function()
 					if pressed then
 						-- d("Show")
 						ItemTooltip:ShowComparativeTooltips()
-						if not ComparativeTooltip1:GetAnchor() then
+                        local anchorIndex = 1
+						if not ComparativeTooltip1:GetAnchor(anchorIndex) then
 							-- d("anch")
 							PP.Anchor(ComparativeTooltip1, --[[#1]] TOPRIGHT, ItemTooltip, TOPLEFT, -20, 0)
 							PP.Anchor(ComparativeTooltip2, --[[#1]] TOPRIGHT, ComparativeTooltip1, TOPLEFT, -20, 0)
@@ -128,6 +129,9 @@ PP.tooltips = function()
 		['ZO_ActivityFinderTemplateTooltip_Keyboard']	= { ['x1'] = -8,	['y1'] = -8,	['x2'] = 8, ['y2'] = 8, },
 		['HarvensSkillTooltipMorph1']					= { ['y1'] = nil,	['y2'] = -6,	},
 		['HarvensSkillTooltipMorph2']					= { ['y1'] = nil,	['y2'] = -6,	},
+		["ZO_KeepTooltip"]                            = { ["y1"] = nil, ["y2"] = nil, },
+		["ZO_RetraitStation_KeyboardTopLevelReconstructPanelOptionsPreviewTooltip"] = { ["y1"] = nil, ["y2"] = nil, },
+		["ZO_RetraitStation_KeyboardTopLevelRetraitPanelResultTooltip"] = { ["y1"] = nil, ["y2"] = nil, },
 	}
 
 	local function SetStyle_Bar(control)
@@ -235,6 +239,10 @@ PP.tooltips = function()
 	SetStyle_Tooltip(ZO_AlchemyTopLevelTooltip)
 	SetStyle_Tooltip(ZO_EnchantingTopLevelTooltip)
 	SetStyle_Tooltip(ZO_SmithingTopLevelCreationPanelResultTooltip)
+	SetStyle_Tooltip(ZO_KeepTooltip)
+    SetStyle_Tooltip(ZO_RetraitStation_KeyboardTopLevelReconstructPanelOptionsPreviewTooltip)
+    SetStyle_Tooltip(ZO_RetraitStation_KeyboardTopLevelRetraitPanelResultTooltip)
+
 
 	ZO_PreHook("InitializeTooltip", function(tooltip, control, ...)
 		local specialLayout

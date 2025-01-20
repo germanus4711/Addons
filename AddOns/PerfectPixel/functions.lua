@@ -1,4 +1,4 @@
-local PP		= PP
+local PP = PP ---@class PP
 local SM		= SCENE_MANAGER
 local tinsert	= table.insert
 
@@ -18,6 +18,13 @@ over = ( 232, 232, 184 )
 -- function PP.СheckAllowedDataTypeId(typeId)
 	-- return self.AllowedDataTypeIds[typeId]
 -- end
+
+---@generic T
+---@param version any Version number for saved variables
+---@param namespace string Namespace for the saved variables
+---@param defaults T Default values
+---@return T savedVars The saved variables for this namespace
+---@return T defaults The default values
 function PP:AddNewSavedVars(version, namespace, defaults)
 	local SV = self.savedVars
 
@@ -28,6 +35,9 @@ function PP:AddNewSavedVars(version, namespace, defaults)
 	return SV[namespace], SV[namespace].default
 end
 
+---@param namespace string Namespace to get saved variables for
+---@return table|nil savedVars The saved variables for this namespace, or nil if not found
+---@return table|nil defaults The default values for this namespace, or nil if not found 
 function PP:GetSavedVars(namespace)
 	local SV = self.savedVars[namespace]
 
@@ -118,10 +128,10 @@ TLW_BG:SetDrawTier(0)
 PP.TLW_BG = TLW_BG
 
 function PP:CreateBackground(parent, --[[#1]] point1, relTo1, relPoint1, x1, y1, --[[#2]] point2, relTo2, relPoint2, x2, y2, namespace, width, height)
-	local namespace		= namespace or 'WindowStyle'
+	namespace		= namespace or 'WindowStyle'
 	local sv			= self:GetSavedVars(namespace)
 	local insets		= sv.skin_backdrop_insets
-	local parent		= parent
+	parent		= parent
 	local bg
 	local exBG
 
@@ -182,7 +192,7 @@ function PP:CreateBackground(parent, --[[#1]] point1, relTo1, relPoint1, x1, y1,
 end
 
 function PP:UpdateBackgrounds(namespace)
-	local namespace		= namespace or 'WindowStyle'
+	namespace		= namespace or 'WindowStyle'
 	local sv			= self:GetSavedVars(namespace)
 	local backgrounds	= self.backgrounds[namespace]
 	local insets		= sv.skin_backdrop_insets
@@ -338,7 +348,77 @@ local function offset(slider, hidden)
 	end
 end
 
+PP.ScrollBar = function (control, sb_r, sb_g, sb_b, sb_a, bd_r, bd_g, bd_b, bd_a, useDefaultInsets)
+    -- Early return if no control provided
+    if not control then return end
 
+    -- Get the actual slider control
+    local slider = control:GetType() == CT_SLIDER and control or control.scrollbar or control:GetParent().scrollbar
+    if not slider then return end
+
+    local sb = slider
+    local up = slider:GetNamedChild("Up") or slider:GetNamedChild("ScrollUp")
+    local down = slider:GetNamedChild("Down") or slider:GetNamedChild("ScrollDown")
+    local thumb = slider:GetThumbTextureControl()
+    local contents = slider:GetParent().contents
+    local tex = "PerfectPixel/tex/tex_white.dds"
+
+    -- Hide scroll buttons
+    if up then up:SetHidden(true) end
+    if down then down:SetHidden(true) end
+
+    -- Set default colors if not provided
+    local scrollbar_color =
+    {
+        r = sb_r and (sb_r / 255) or (120 / 255),
+        g = sb_g and (sb_g / 255) or (120 / 255),
+        b = sb_b and (sb_b / 255) or (120 / 255),
+        a = sb_a or 1
+    }
+
+    local backdrop_color =
+    {
+        r = bd_r and (bd_r / 255) or (50 / 255),
+        g = bd_g and (bd_g / 255) or (50 / 255),
+        b = bd_b and (bd_b / 255) or (50 / 255),
+        a = bd_a or 0.6
+    }
+
+    -- Configure scrollbar
+    sb:SetBackgroundMiddleTexture(tex)
+    sb:SetBackgroundTopTexture(nil)
+    sb:SetBackgroundBottomTexture(nil)
+    sb:SetColor(backdrop_color.r, backdrop_color.g, backdrop_color.b, backdrop_color.a)
+    sb:ClearAnchors()
+    sb:SetAnchor(TOPLEFT, nil, TOPRIGHT, 0, 0)
+    sb:SetAnchor(BOTTOMLEFT, nil, BOTTOMRIGHT, -10, 0)
+    sb:SetAlpha(backdrop_color.a)
+    sb:SetHitInsets(useDefaultInsets and 0 or -4, 0, useDefaultInsets and 0 or 5, 0)
+    sb:SetWidth(4)
+    sb.thumb = thumb
+
+    -- Configure thumb
+    if thumb then
+        thumb:SetWidth(4)
+        thumb:SetTexture(tex)
+        thumb:SetColor(scrollbar_color.r, scrollbar_color.g, scrollbar_color.b, scrollbar_color.a)
+        thumb:SetHitInsets(useDefaultInsets and 0 or -4, 0, useDefaultInsets and 0 or 5, 0)
+    end
+
+    if not contents then return end
+
+    -- Handle content offset
+    offset(sb, true)
+
+    ZO_PreHookHandler(sb, "OnEffectivelyShown", function ()
+        offset(sb, false)
+    end)
+    ZO_PreHookHandler(sb, "OnEffectivelyHidden", function ()
+        offset(sb, true)
+    end)
+end
+
+--[[
 PP.ScrollBar = function(control)
 	local slider	= control:GetType() == CT_SLIDER and control or control.scrollbar or control:GetParent().scrollbar
 	local sb		= slider
@@ -381,8 +461,10 @@ PP.ScrollBar = function(control)
 	end)
 
 end
+]]
 
 PP.Bar = function(control, --[[height]] height, --[[fontSize]] fSize, bgEdgeColor, glowEdgeColor, reAnchorText)
+	--todo 20250117 param reAnchorText is not used anywhere?
 	local bar		= control
 	local barText	= control:GetNamedChild("Progress")
 	local bg		= control:GetNamedChild("BG")
@@ -402,7 +484,7 @@ PP.Bar = function(control, --[[height]] height, --[[fontSize]] fSize, bgEdgeColo
 			local glowBG = CreateControl("$(parent)Backdrop", glow, CT_BACKDROP)
 			glowBG:SetCenterTexture(nil, 8, 0)
 			glowBG:SetCenterColor(0/255, 0/255, 0/255, 0)
-			glowBG:SetEdgeTexture(nil, 1, 1, 1, 0)
+			glowBG:SetEdgeTexture("", 1, 1, 1, 0)
 			glowBG:SetEdgeColor(173/255, 166/255, 132/255, 1)
 			PP_Anchor(glowBG, --[[#1]] TOPLEFT, bar, TOPLEFT, -3, -3, --[[#2]] true, BOTTOMRIGHT, bar, BOTTOMRIGHT, 3, 3)
 		end
@@ -431,7 +513,7 @@ PP.Bar = function(control, --[[height]] height, --[[fontSize]] fSize, bgEdgeColo
 		PP_Anchor(barBG, --[[#1]] TOPLEFT, control, TOPLEFT, -2, -2, --[[#2]] true, BOTTOMRIGHT, control, BOTTOMRIGHT,	2, 2)
 		barBG:SetCenterTexture(nil, 8, 0)
 		barBG:SetCenterColor(10/255, 10/255, 10/255, 0.8)
-		barBG:SetEdgeTexture(nil, 1, 1, 1, 0)
+		barBG:SetEdgeTexture("", 1, 1, 1, 0)
 		barBG:SetEdgeColor(60/255, 60/255, 60/255, 0.9)
 		barBG:SetInsets(-1, -1, 1, 1)
 	end
@@ -577,8 +659,8 @@ function PP:CreateAnimatedButton(parent, --[[#1]] point1, relTo1, relPoint1, x1,
 		end
 	end
 
-	function control:SetToggleFunction(fn)
-		self.toggleFunction = fn
+	function control:SetToggleFunction(tFn)
+		self.toggleFunction = tFn
 	end
 
 	control:SetHandler("OnMouseEnter", function(self)
@@ -754,7 +836,7 @@ function PP:RefreshStyle_InfoBar(infoBar, layout)
 	local retrait	= infoBar:GetNamedChild("RetraitCurrency")
 	local currency1	= infoBar:GetNamedChild("Currency1")
 	local currency2	= infoBar:GetNamedChild("Currency2")
-	local layout	= layout or { infoBar_y = 6 }
+	layout	= layout or { infoBar_y = 6 }
 	
 	PP_Anchor(infoBar, --[[#1]] TOPLEFT, nil, BOTTOMLEFT, 0, layout.infoBar_y, --[[#2]] true, TOPRIGHT, nil, BOTTOMRIGHT, 0, layout.infoBar_y)
 
@@ -790,7 +872,7 @@ end
 
 --ZO_MenuBar
 function PP:RefreshStyle_MenuBar(menuBar, layout)
-	local menuBar	= menuBar.m_object and menuBar or menuBar:GetNamedChild('Bar')
+	menuBar	= menuBar.m_object and menuBar or menuBar:GetNamedChild('Bar')
 	local m_object	= menuBar.m_object
 	
 	m_object.m_animationDuration	= layout.duration

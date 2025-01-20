@@ -1,28 +1,13 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
 
---- @class (partial) CombatInfo
---- @field AbilityAlerts AbilityAlerts
---- @field CrowdControlTracker CrowdControlTracker
-local CombatInfo =
-{
-    --- @class (partial) AbilityAlerts
-    AbilityAlerts =
-    {
-        name = LUIE.name .. "CombatInfo" .. "AbilityAlerts",
-    },
-    --- @class (partial) CrowdControlTracker
-    CrowdControlTracker =
-    {
-        name = LUIE.name .. "CombatInfo" .. "CrowdControlTracker",
-    }
-}
-
+--- @class (partial) LUIE.CombatInfo
+local CombatInfo = LUIE.CombatInfo
 
 local UI = LUIE.UI
 local Effects = LUIE.Data.Effects
@@ -42,266 +27,6 @@ local ANIMATION_MANAGER = GetAnimationManager()
 local moduleName = LUIE.name .. "CombatInfo"
 
 local ACTION_RESULT_AREA_EFFECT = 669966
-
-CombatInfo.Enabled = false
-CombatInfo.Defaults =
-{
-    blacklist = {},
-    GlobalShowGCD = false,
-    GlobalPotion = false,
-    GlobalFlash = true,
-    GlobalDesat = false,
-    GlobalLabelColor = false,
-    GlobalMethod = 3,
-    UltimateLabelEnabled = true,
-    UltimatePctEnabled = true,
-    UltimateHideFull = true,
-    UltimateGeneration = true,
-    UltimateLabelPosition = -20,
-    UltimateFontFace = "Univers 67",
-    UltimateFontStyle = "outline",
-    UltimateFontSize = 18,
-    ShowTriggered = true,
-    ProcEnableSound = true,
-    ProcSoundName = "Death Recap Killing Blow",
-    showMarker = false,
-    markerSize = 26,
-    ShowToggled = true,
-    ShowToggledUltimate = true,
-    BarShowLabel = true, -- Temp Disabled
-    BarLabelPosition = -20,
-    BarFontFace = "Univers 67",
-    BarFontStyle = "outline",
-    BarFontSize = 18,
-    BarMillis = true,
-    BarMillisAboveTen = true,
-    BarMillisThreshold = 10,
-    BarShowBack = false,
-    BarDarkUnused = false,
-    BarDesaturateUnused = false,
-    BarHideUnused = false,
-    PotionTimerShow = true,
-    PotionTimerLabelPosition = 0,
-    PotionTimerFontFace = "Univers 67",
-    PotionTimerFontStyle = "outline",
-    PotionTimerFontSize = 18,
-    PotionTimerColor = true,
-    PotionTimerMillis = true,
-    CastBarEnable = false,
-    CastBarSizeW = 300,
-    CastBarSizeH = 22,
-    CastBarIconSize = 32,
-    CastBarTexture = "Plain",
-    CastBarLabel = true,
-    CastBarTimer = true,
-    CastBarFontFace = "Univers 67",
-    CastBarFontStyle = "soft-shadow-thick",
-    CastBarFontSize = 16,
-    CastBarGradientC1 = { 0, 47 / 255, 130 / 255 },
-    CastBarGradientC2 = { 82 / 255, 215 / 255, 1 },
-    CastBarHeavy = false,
-    alerts =
-    {
-        toggles =
-        {
-            alertEnable = true,
-            alertFontFace = "Univers 67",
-            alertFontStyle = "soft-shadow-thick",
-            alertFontSize = 32,
-            alertTimer = true,
-            showMitigation = true,
-            mitigationAbilityName = "%t",
-            mitigationEnemyName = "%n -",
-            modifierEnable = true,
-            mitigationModifierOnYou = GetString(LUIE_STRING_CI_MITIGATION_MODIFIER_ON_YOU),
-            mitigationModifierSpreadOut = GetString(LUIE_STRING_CI_MITIGATION_MODIFIER_SPREAD_OUT),
-            showCrowdControlBorder = true,
-            ccLabelColor = false,
-            useDefaultIcon = false,
-            mitigationPowerPrefix2 = "%t",
-            mitigationPowerPrefixN2 = GetString(LUIE_STRING_CI_MITIGATION_FORMAT_POWER_N),
-            mitigationDestroyPrefix2 = "%t",
-            mitigationDestroyPrefixN2 = "%t",
-            mitigationSummonPrefix2 = "%t",
-            mitigationSummonPrefixN2 = "%t",
-            mitigationAura = false,
-            mitigationRank3 = true,
-            mitigationRank2 = true,
-            mitigationRank1 = true,
-            mitigationDungeon = true,
-            showAlertMitigate = true,
-            showAlertUnmit = true,
-            showAlertPower = true,
-            showAlertDestroy = true,
-            showAlertSummon = true,
-            alertOptions = 1,
-
-            soundVolume = 2,
-            sound_stEnable = false,
-            sound_st_ccEnable = true,
-            sound_aoeEnable = false,
-            sound_aoe_ccEnable = true,
-            sound_powerattackEnable = true,
-            sound_radialEnable = true,
-            sound_travelEnable = false,
-            sound_travel_ccEnable = true,
-            sound_groundEnable = false,
-            sound_meteorEnable = true,
-            sound_unmit_stEnable = true,
-            sound_unmit_aoeEnable = true,
-            sound_power_damageEnable = true,
-            sound_power_buffEnable = true,
-            sound_summonEnable = false,
-            sound_destroyEnable = true,
-            sound_healEnable = false,
-        },
-        colors =
-        {
-            alertShared = { 1, 1, 1, 1 },
-            alertTimer = { 1, 1, 1, 1 },
-            alertBlockA = { 1, 0, 0, 1 },
-            alertInterruptC = { 0, 127 / 255, 1, 1 },
-            alertUnmit = { 1, 0, 0, 1 },
-            alertDodgeA = { 1, 1, 50 / 255, 1 },
-            alertAvoidB = { 1, 127 / 255, 0, 1 },
-            alertPower = { 1, 1, 1, 1 },
-            alertDestroy = { 1, 1, 1, 1 },
-            alertSummon = { 1, 1, 1, 1 },
-            stunColor = { 1, 0, 0, 1 },
-            knockbackColor = { 1, 0, 0, 1 },
-            levitateColor = { 1, 0, 0, 1 },
-            disorientColor = { 0, 127 / 255, 1, 1 },
-            fearColor = { 143 / 255, 9 / 255, 236 / 255, 1 },
-            charmColor = { 64 / 255, 255 / 255, 32 / 255, 1 },
-            silenceColor = { 0, 1, 1, 1 },
-            staggerColor = { 1, 127 / 255, 0, 1 },
-            unbreakableColor = { 224 / 255, 224 / 255, 1, 1 },
-            snareColor = { 1, 242 / 255, 32 / 255, 1 },
-            rootColor = { 1, 165 / 255, 0, 1 },
-        },
-        formats =
-        {
-            alertBlock = GetString(LUIE_STRING_CI_BLOCK_DEFAULT),
-            alertBlockStagger = GetString(LUIE_STRING_CI_BLOCKSTAGGER_DEFAULT),
-            alertInterrupt = GetString(LUIE_STRING_CI_INTERRUPT_DEFAULT),
-            alertShouldUseCC = GetString(LUIE_STRING_CI_SHOULDUSECC_DEFAULT),
-            alertUnmit = GetString(LUIE_STRING_CI_UNMIT_DEFAULT),
-            alertDodge = GetString(LUIE_STRING_CI_DODGE_DEFAULT),
-            alertAvoid = GetString(LUIE_STRING_CI_AVOID_DEFAULT),
-            alertPower = GetString(LUIE_STRING_CI_POWER_DEFAULT),
-            alertDestroy = GetString(LUIE_STRING_CI_DESTROY_DEFAULT),
-            alertSummon = GetString(LUIE_STRING_CI_SUMMON_DEFAULT),
-        },
-        sounds =
-        {
-            --[[ Old Sounds here for reference
-            sound3                      = "Champion Damage Taken",
-            sound3CC                    = "Champion Points Committed",
-            sound3UB                    = "Trial - Scored Added Very Low",
-            sound2                      = "Champion Damage Taken",
-            sound2CC                    = "Champion Points Committed",
-            sound2UB                    = "Trial - Scored Added Low",
-            sound1                      = "Champion Damage Taken",
-            sound1CC                    = "Console Game Enter",
-            sound1UB                    = "Trial - Scored Added Normal",
-            soundUnmit                  = "Console Game Enter",
-            soundPower                  = "Champion Respec Accept",
-            soundSummon                 = "Duel Invite Received",
-            soundDestroy                = "Duel Invite Received",
-            ]]
-            --
-            sound_st = "Champion Respec Accept",
-            sound_st_cc = "Champion Points Committed",
-            sound_aoe = "Champion Respec Accept",
-            sound_aoe_cc = "Champion Points Committed",
-            sound_powerattack = "Trial - Scored Added Normal",
-            sound_radial = "Duel Accepted",
-            sound_travel = "Champion Respec Accept",
-            sound_travel_cc = "Console Game Enter",
-            sound_ground = "Champion Respec Accept",
-            sound_meteor = "LFG Find Replacement",
-            sound_unmit_st = "Duel Start",
-            sound_unmit_aoe = "Duel Start",
-            sound_power_damage = "Book Collection Completed",
-            sound_power_buff = "Book Collection Completed",
-            sound_summon = "Duel Invite Received",
-            sound_destroy = "Duel Invite Received",
-            sound_heal = "Console Game Enter",
-        },
-    },
-    cct =
-    {
-        enabled = false,
-        enabledOnlyInCyro = false,
-        unlock = false,
-        controlScale = 1.0,
-        useDefaultIcon = false,
-        defaultIconOptions = 1,
-        playAnimation = true,
-        playSound = true,
-        playSoundOption = "Death Recap Killing Blow",
-        useAbilityName = true,
-        showStaggered = true,
-        showImmune = true,
-        showAoe = true,
-        aoePlayerUltimate = true,
-        aoePlayerNormal = true,
-        aoePlayerSet = true,
-        aoeTraps = true,
-        aoeNPCBoss = true,
-        aoeNPCElite = true,
-        aoeNPCNormal = true,
-        showRoot = false,
-        showSnare = false,
-
-        aoePlayerUltimateSoundToggle = true,
-        aoePlayerNormalSoundToggle = true,
-        aoePlayerSetSoundToggle = true,
-        aoeTrapsSoundToggle = true,
-        aoeNPCBossSoundToggle = true,
-        aoeNPCEliteSoundToggle = true,
-        aoeNPCNormalSoundToggle = true,
-
-        aoePlayerUltimateSound = "Death Recap Killing Blow",
-        aoePlayerNormalSound = "Death Recap Killing Blow",
-        aoePlayerSetSound = "Death Recap Killing Blow",
-        aoeTrapsSound = "Death Recap Killing Blow",
-        aoeNPCBossSound = "Death Recap Killing Blow",
-        aoeNPCEliteSound = "Death Recap Killing Blow",
-        aoeNPCNormalSound = "Death Recap Killing Blow",
-
-        showGCD = false,
-        showImmuneOnlyInCyro = true,
-        immuneDisplayTime = 750,
-        showOptions = "all",
-        offsetX = 0,
-        offsetY = 0,
-        colors =
-        {
-            [ACTION_RESULT_AREA_EFFECT] = { 1, 242 / 255, 32 / 255, 1 },
-            [ACTION_RESULT_BLOCKED_DAMAGE] = { 1, 1, 1, 1 },
-            [ACTION_RESULT_BLOCKED] = { 1, 1, 1, 1 },
-            [ACTION_RESULT_CHARMED] = { 64 / 255, 255 / 255, 32 / 255, 1 },
-            [ACTION_RESULT_DISORIENTED] = { 0, 127 / 255, 1, 1 },
-            [ACTION_RESULT_DODGED] = { 1, 1, 1, 1 },
-            [ACTION_RESULT_EFFECT_GAINED_DURATION] = { 0.5, 0.5, 0.5, 1 },
-            [ACTION_RESULT_FEARED] = { 143 / 255, 9 / 255, 236 / 255, 1 },
-            [ACTION_RESULT_IMMUNE] = { 1, 1, 1, 1 },
-            [ACTION_RESULT_KNOCKBACK] = { 1, 0, 0, 1 },
-            [ACTION_RESULT_LEVITATED] = { 1, 0, 0, 1 },
-            [ACTION_RESULT_ROOTED] = { 1, 150 / 255, 32 / 255, 1 },
-            [ACTION_RESULT_SILENCED] = { 0, 1, 1, 1 },
-            [ACTION_RESULT_SNARED] = { 1, 242 / 255, 32 / 255, 1 },
-            [ACTION_RESULT_STAGGERED] = { 1, 127 / 255, 0, 1 },
-            [ACTION_RESULT_STUNNED] = { 1, 0, 0, 1 },
-            unbreakable = { 224 / 255, 224 / 255, 1, 1 },
-        },
-    },
-}
-
-CombatInfo.SV = ...
-CombatInfo.CastBarUnlocked = false
-CombatInfo.AlertFrameUnlocked = false
 
 local uiTlw = {}                                              -- GUI
 local castbar = {}                                            -- castbar
@@ -339,11 +64,11 @@ local g_actionBarActiveWeaponPair = GetActiveWeaponPairInfo() -- Toggled on when
 local g_backbarButtons = {}                                   -- Table to hold backbar buttons
 local g_activeWeaponSwapInProgress = false                    -- Toggled on when weapon swapping, TODO: maybe not needed
 local g_castbarWorldMapFix = false                            -- Fix for viewing the World Map changing the player coordinates for some reason
-
-local ACTION_BAR = _G["ZO_ActionBar1"]
-local BAR_INDEX_START = 3
-local BAR_INDEX_END = 8
-local BACKBAR_INDEX_END = 7 -- Separate index for backbar as long as we're not using an ultimate button.
+local ACTION_BAR_META = ZO_ActionBar1
+local ACTION_BAR = ACTION_BAR_META
+local BAR_INDEX_START = ACTION_BAR_FIRST_NORMAL_SLOT_INDEX + 1
+local BAR_INDEX_END = ACTION_BAR_ULTIMATE_SLOT_INDEX + 1
+local BACKBAR_INDEX_END = ACTION_BAR_ULTIMATE_SLOT_INDEX -- Separate index for backbar as long as we're not using an ultimate button.
 local BACKBAR_INDEX_OFFSET = 50
 
 -- Quickslot
@@ -461,11 +186,6 @@ function CombatInfo.Initialize(enabled)
         return
     end
     CombatInfo.Enabled = true
-
-    -- TODO: TEMP: Disabled due to issues
-    -- if CombatInfo.SV.BarShowLabel == true then
-    -- CombatInfo.SV.BarShowLabel = false
-    -- end
 
     CombatInfo.ApplyFont()
     CombatInfo.ApplyProcSound()
@@ -637,51 +357,24 @@ end
 
 function CombatInfo.HookGCD()
     -- Hook to update GCD support
-    --- @diagnostic disable-next-line: duplicate-set-field
-    ActionButton.UpdateUsable = function (self)
-        local slotnum = self:GetSlot()
+    ZO_PreHook(ActionButton, "UpdateCooldown", function (self, options)
+        local slotNum = self:GetSlot()
         local hotbarCategory = self.slot.slotNum == 1 and HOTBAR_CATEGORY_QUICKSLOT_WHEEL or g_hotbarCategory
-        local isGamepad = IsInGamepadPreferredMode()
-        local remain, duration, global, globalSlotType = GetSlotCooldownInfo(slotnum, hotbarCategory)
-        local isShowingCooldown = self.showingCooldown
-        local isKeyboardUltimateSlot = not isGamepad and self.slot.slotNum == ACTION_BAR_ULTIMATE_SLOT_INDEX + 1
-        local usable = false
-        if not self.useFailure and not isShowingCooldown then
-            usable = true
-        elseif isKeyboardUltimateSlot and self.costFailureOnly and not isShowingCooldown then
-            usable = true
-            -- Fix to grey out potions
-        elseif IsSlotItemConsumable(slotnum, hotbarCategory) and duration <= 1000 and not self.useFailure then
-            usable = true
-        end
-
-        if usable ~= self.usable or isGamepad ~= self.isGamepad then
-            self.usable = usable
-            self.isGamepad = isGamepad
-        end
-        -- Have to move this out of conditional to fix desaturation from getting stuck on icons.
-        local useDesaturation = (isShowingCooldown and CombatInfo.SV.GlobalDesat)
-        ZO_ActionSlot_SetUnusable(self.icon, not usable, useDesaturation)
-    end
-
-    -- Hook to update GCD support
-    --- @diagnostic disable-next-line: duplicate-set-field
-    ActionButton.UpdateCooldown = function (self, options)
-        local slotnum = self:GetSlot()
-        local hotbarCategory = self.slot.slotNum == 1 and HOTBAR_CATEGORY_QUICKSLOT_WHEEL or g_hotbarCategory
-        local remain, duration, global, globalSlotType = GetSlotCooldownInfo(slotnum, hotbarCategory)
+        local remain, duration, global, globalSlotType = GetSlotCooldownInfo(slotNum, hotbarCategory)
         local isInCooldown = duration > 0
-        local slotType = GetSlotType(slotnum, hotbarCategory)
+        local slotType = GetSlotType(slotNum, hotbarCategory)
         local showGlobalCooldownForCollectible = global and slotType == ACTION_TYPE_COLLECTIBLE and globalSlotType == ACTION_TYPE_COLLECTIBLE
         local showCooldown = isInCooldown and (CombatInfo.SV.GlobalShowGCD or not global or showGlobalCooldownForCollectible)
-        local updateChromaQuickslot = ((slotType ~= ACTION_TYPE_ABILITY) or (slotType ~= ACTION_TYPE_CRAFTED_ABILITY)) and ZO_RZCHROMA_EFFECTS
+        local updateChromaQuickslot = (slotType ~= ACTION_TYPE_ABILITY or slotType ~= ACTION_TYPE_CRAFTED_ABILITY) and ZO_RZCHROMA_EFFECTS
         local NO_LEADING_EDGE = false
+
         self.cooldown:SetHidden(not showCooldown)
 
         if showCooldown then
-            -- For items with a long CD we need to be sure not to hide the countdown radial timer, so if the duration is the 1 sec GCD, then we don't turn off the cooldown animation.
-            if not IsSlotItemConsumable(slotnum, hotbarCategory) or duration > 1000 or CombatInfo.SV.GlobalPotion then
+            -- Only show cooldown animation for non-consumables or if duration > 1sec or if potion cooldowns are enabled
+            if not IsSlotItemConsumable(slotNum, hotbarCategory) or duration > 1000 or CombatInfo.SV.GlobalPotion then
                 self.cooldown:StartCooldown(remain, duration, CooldownMethod[CombatInfo.SV.GlobalMethod], nil, NO_LEADING_EDGE)
+
                 if self.cooldownCompleteAnim.animation then
                     self.cooldownCompleteAnim.animation:GetTimeline():PlayInstantlyToStart()
                 end
@@ -696,36 +389,38 @@ function CombatInfo.HookGCD()
                     self.cooldown:SetHidden(false)
                 end
 
-                self.slot:SetHandler("OnUpdate", function ()
-                    self:RefreshCooldown()
-                end)
+                self.slot:SetHandler("OnUpdate", function () self:RefreshCooldown() end, "CooldownUpdate")
+
                 if updateChromaQuickslot then
                     ZO_RZCHROMA_EFFECTS:RemoveKeybindActionEffect("ACTION_BUTTON_9")
                 end
             end
         else
-            if CombatInfo.SV.GlobalFlash then
-                if self.showingCooldown then
-                    -- Stop flash from appearing on potion/ultimate if toggled off.
-                    if not IsSlotItemConsumable(slotnum, hotbarCategory) or duration > 1000 or CombatInfo.SV.GlobalPotion then
-                        self.cooldownCompleteAnim.animation = self.cooldownCompleteAnim.animation or CreateSimpleAnimation(ANIMATION_TEXTURE, self.cooldownCompleteAnim)
-                        local anim = self.cooldownCompleteAnim.animation
+            if CombatInfo.SV.GlobalFlash and self.showingCooldown then
+                -- Only show flash animation for non-consumables or if duration > 1sec or if potion cooldowns are enabled
+                if not IsSlotItemConsumable(slotNum, hotbarCategory) or duration > 1000 or CombatInfo.SV.GlobalPotion then
+                    if options ~= CombatInfo.SV.ProcEnableSound then
+                        PlaySound(SOUNDS.ABILITY_READY)
+                    end
 
-                        self.cooldownCompleteAnim:SetHidden(false)
-                        self.cooldown:SetHidden(false)
+                    self.cooldownCompleteAnim.animation = self.cooldownCompleteAnim.animation or CreateSimpleAnimation(ANIMATION_TEXTURE, self.cooldownCompleteAnim)
+                    local anim = self.cooldownCompleteAnim.animation
 
-                        anim:SetImageData(16, 1)
-                        anim:SetFramerate(30)
-                        anim:GetTimeline():PlayFromStart()
+                    self.cooldownCompleteAnim:SetHidden(false)
+                    self.cooldown:SetHidden(false)
 
-                        if updateChromaQuickslot then
-                            ZO_RZCHROMA_EFFECTS:AddKeybindActionEffect("ACTION_BUTTON_9")
-                        end
+                    anim:SetImageData(16, 1)
+                    anim:SetFramerate(30)
+                    anim:GetTimeline():PlayFromStart()
+
+                    if updateChromaQuickslot then
+                        ZO_RZCHROMA_EFFECTS:AddKeybindActionEffect("ACTION_BUTTON_9")
                     end
                 end
             end
+
             self.icon.percentComplete = 1
-            self.slot:SetHandler("OnUpdate", nil)
+            self.slot:SetHandler("OnUpdate", nil, "CooldownUpdate")
             self.cooldown:ResetCooldown()
         end
 
@@ -744,17 +439,61 @@ function CombatInfo.HookGCD()
             self.icon:SetDesaturation(0)
         end
 
-        local textColor
-        if CombatInfo.SV.GlobalLabelColor then
-            textColor = showCooldown and INTERFACE_TEXT_COLOR_FAILED or INTERFACE_TEXT_COLOR_SELECTED
-        else
-            textColor = INTERFACE_TEXT_COLOR_SELECTED
-        end
+        local textColor = CombatInfo.SV.GlobalLabelColor and
+            (showCooldown and INTERFACE_TEXT_COLOR_FAILED or INTERFACE_TEXT_COLOR_SELECTED) or
+            INTERFACE_TEXT_COLOR_SELECTED
         self.buttonText:SetColor(GetInterfaceColor(INTERFACE_COLOR_TYPE_TEXT_COLORS, textColor))
 
         self.isGlobalCooldown = global
         self:UpdateUsable()
-    end
+        return true
+    end)
+
+    -- Hook to update GCD support
+    ZO_PreHook(ActionButton, "UpdateUsable", function (self)
+        local slotNum = self:GetSlot()
+        local hotbarCategory = self.slot.slotNum == 1 and HOTBAR_CATEGORY_QUICKSLOT_WHEEL or g_hotbarCategory
+        local isGamepad = IsInGamepadPreferredMode()
+        local isShowingCooldown = self.showingCooldown
+        local isKeyboardUltimateSlot = not isGamepad and ZO_ActionBar_IsUltimateSlot(slotNum, hotbarCategory)
+        local usable = false
+
+        -- Check basic usability conditions
+        if not self.useFailure and not isShowingCooldown then
+            usable = true
+        elseif isKeyboardUltimateSlot and self.costFailureOnly and not isShowingCooldown then
+            usable = true
+            -- Custom fix for potions
+        elseif IsSlotItemConsumable(slotNum, hotbarCategory) and not self.useFailure then
+            local remain, duration = GetSlotCooldownInfo(slotNum, hotbarCategory)
+            if duration <= 1000 then
+                usable = true
+            end
+        end
+
+        -- Check stack count for items
+        local slotType = GetSlotType(slotNum, hotbarCategory)
+        local stackEmpty = false
+        if slotType == ACTION_TYPE_ITEM then
+            local stackCount = GetSlotItemCount(slotNum, hotbarCategory)
+            if stackCount <= 0 then
+                stackEmpty = true
+                usable = false
+            end
+        end
+
+        -- Update usability state
+        if usable ~= self.usable or isGamepad ~= self.isGamepad then
+            self.usable = usable
+            self.isGamepad = isGamepad
+        end
+
+        -- Apply desaturation based on settings and state
+        local useDesaturation = (isShowingCooldown and CombatInfo.SV.GlobalDesat) or stackEmpty
+        ZO_ActionSlot_SetUnusable(self.icon, not usable, useDesaturation)
+
+        return true
+    end)
 end
 
 -- Helper function to get override ability duration.
@@ -916,7 +655,8 @@ function CombatInfo.AddToCustomList(list, input)
     local id = tonumber(input)
     local listRef = list == CombatInfo.SV.blacklist and GetString(LUIE_STRING_CUSTOM_LIST_CASTBAR_BLACKLIST) or ""
     if id and id > 0 then
-        local name = zo_strformat("<<C:1>>", GetAbilityName(id))
+        local cachedName = ZO_CachedStrFormat(SI_ABILITY_NAME, GetAbilityName(id))
+        local name = cachedName -- zo_strformat("<<C:1>>", GetAbilityName(id))
         if name ~= nil and name ~= "" then
             local icon = zo_iconFormat(GetAbilityIcon(id), 16, 16)
             list[id] = true
@@ -943,7 +683,8 @@ function CombatInfo.RemoveFromCustomList(list, input)
     local id = tonumber(input)
     local listRef = list == CombatInfo.SV.blacklist and GetString(LUIE_STRING_CUSTOM_LIST_CASTBAR_BLACKLIST) or ""
     if id and id > 0 then
-        local name = zo_strformat("<<C:1>>", GetAbilityName(id))
+        local cachedName = ZO_CachedStrFormat(SI_ABILITY_NAME, GetAbilityName(id))
+        local name = cachedName -- zo_strformat("<<C:1>>", GetAbilityName(id))
         local icon = zo_iconFormat(GetAbilityIcon(id), 16, 16)
         list[id] = nil
         CHAT_SYSTEM:Maximize()
@@ -1206,8 +947,8 @@ function CombatInfo.ApplyFont()
     local function setupFont(fontNameKey, fontStyleKey, fontSizeKey, defaultFontStyle, defaultFontSize)
         local fontName = LUIE.Fonts[CombatInfo.SV[fontNameKey]]
         if not fontName or fontName == "" then
-            printToChat(GetString(LUIE_STRING_ERROR_FONT), true)
-            fontName = "$(MEDIUM_FONT)"
+            LUIE.Debug(GetString(LUIE_STRING_ERROR_FONT))
+            fontName = "Univers 67"
         end
         local fontStyle = (CombatInfo.SV[fontStyleKey] and CombatInfo.SV[fontStyleKey] ~= "") and CombatInfo.SV[fontStyleKey] or defaultFontStyle
         local fontSize = (CombatInfo.SV[fontSizeKey] and CombatInfo.SV[fontSizeKey] > 0) and CombatInfo.SV[fontSizeKey] or defaultFontSize
@@ -1925,7 +1666,7 @@ function CombatInfo.CreateCastBar()
     }
     castbar.id = 0
 
-    castbar.bar.backdrop:SetEdgeTexture("", 8, 2, 2)
+    castbar.bar.backdrop:SetEdgeTexture("", 8, 2, 2, 2)
     castbar.bar.backdrop:SetDrawLayer(DL_BACKGROUND)
     castbar.bar.backdrop:SetDrawLevel(DL_CONTROLS)
     castbar.bar.bar:SetMinMax(0, 1)
@@ -2202,7 +1943,8 @@ function CombatInfo.OnCombatEvent(eventCode, result, isError, abilityName, abili
     end
 
     local icon = GetAbilityIcon(abilityId)
-    local name = zo_strformat("<<C:1>>", GetAbilityName(abilityId))
+    local cachedName = ZO_CachedStrFormat(SI_ABILITY_NAME, GetAbilityName(abilityId))
+    local name = cachedName -- zo_strformat("<<C:1>>", GetAbilityName(abilityId))
 
     -- Return if ability not marked as cast or ability is blacklisted
     if not Castbar.IsCast[abilityId] or CombatInfo.SV.blacklist[abilityId] or CombatInfo.SV.blacklist[name] then
@@ -2494,7 +2236,8 @@ function CombatInfo.BarSlotUpdate(slotNum, wasfullUpdate, onlyProc)
         end
     end
 
-    local abilityName = Effects.EffectOverride[ability_id] and Effects.EffectOverride[ability_id].name or GetAbilityName(ability_id)
+    local cachedName = ZO_CachedStrFormat(SI_ABILITY_NAME, GetAbilityName(ability_id))
+    local abilityName = Effects.EffectOverride[ability_id] and Effects.EffectOverride[ability_id].name or cachedName
     local duration = GetUpdatedAbilityDuration(ability_id) or 0
 
     local currentTime = GetGameTimeMilliseconds()
@@ -2616,14 +2359,15 @@ function CombatInfo.PlayProcAnimations(slotNum)
         procLoopTexture:SetDrawLayer(DL_TEXT)
         procLoopTexture:SetHidden(true)
 
-        procLoopTexture.label = UI:Label(procLoopTexture, nil, nil, nil, g_barFont, nil, false)
-        procLoopTexture.label:SetAnchor(TOPLEFT, actionButton.slot)
-        procLoopTexture.label:SetAnchor(BOTTOMRIGHT, actionButton.slot, nil, 0, -CombatInfo.SV.BarLabelPosition)
-        procLoopTexture.label:SetDrawLayer(DL_CONTROLS)
-        procLoopTexture.label:SetDrawLayer(DL_OVERLAY)
-        procLoopTexture.label:SetDrawTier(DT_HIGH)
-        procLoopTexture.label:SetColor(unpack(CombatInfo.SV.RemainingTextColoured and color or { 1, 1, 1, 1 }))
-        procLoopTexture.label:SetHidden(false)
+        local label = UI:Label(procLoopTexture, nil, nil, nil, g_barFont, nil, false)
+        label:SetAnchor(TOPLEFT, actionButton.slot)
+        label:SetAnchor(BOTTOMRIGHT, actionButton.slot, nil, 0, -CombatInfo.SV.BarLabelPosition)
+        label:SetDrawLayer(DL_CONTROLS)
+        label:SetDrawLayer(DL_OVERLAY)
+        label:SetDrawTier(DT_HIGH)
+        label:SetColor(unpack(CombatInfo.SV.RemainingTextColoured and color or { 1, 1, 1, 1 }))
+        label:SetHidden(false)
+        procLoopTexture.label = label
 
         local procLoopTimeline = ANIMATION_MANAGER:CreateTimelineFromVirtual("UltimateReadyLoop", procLoopTexture)
         procLoopTimeline.procLoopTexture = procLoopTexture
@@ -2799,7 +2543,3 @@ function CombatInfo.OnInventorySlotUpdate(eventCode, bagId, slotId, isNewItem, i
         CombatInfo.UpdateUltimateLabel()
     end
 end
-
--- CombatInfo namespace
---- @class LUIE.CombatInfo : CombatInfo
-LUIE.CombatInfo = CombatInfo

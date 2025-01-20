@@ -56,27 +56,27 @@ PITHKA.Options.optionsTable = {
 
     ----------------------
 
-    {
-        type = "header",
-        name = "Sweatiest PVE-Er Competition",
-        width = "full",	--or "half" (optional)
-    },
-    {
-        type = "description",
-        --title = "My Title",	--(optional)
-        text = [[
-Congratulations to @Olibeau for having the most OP addon screenshot (before the account-wide achievements patch, March 2022).   Not only did he have every single trifecta in the game, but also 34 trial trifectas including 6 Godslayers, 3 Dawnbringer, along with 4 Unchaineds and 18 Spirit Slayers. 
+--     {
+--         type = "header",
+--         name = "Sweatiest PVE-Er Competition",
+--         width = "full",	--or "half" (optional)
+--     },
+--     {
+--         type = "description",
+--         --title = "My Title",	--(optional)
+--         text = [[
+-- Congratulations to @Olibeau for having the most OP addon screenshot (before the account-wide achievements patch, March 2022).   Not only did he have every single trifecta in the game, but also 34 trial trifectas including 6 Godslayers, 3 Dawnbringer, along with 4 Unchaineds and 18 Spirit Slayers. 
 
-Some honorable mentions in the competition
-- @Steenee with the most Godslayers (12x)
-- @VEx43 with the most Unchained (16x)
-- @Rhzolen with the most trials trifectas (40x)
-- @mlee with the most dungeon trifectas (152x)
+-- Some honorable mentions in the competition
+-- - @Steenee with the most Godslayers (12x)
+-- - @VEx43 with the most Unchained (16x)
+-- - @Rhzolen with the most trials trifectas (40x)
+-- - @mlee with the most dungeon trifectas (152x)
 
-Thank you to our judges @SkinnyCheeks and @Nefas, and a special thanks to @Raf for sponsoring the competition prize pool.
-]],
-        width = "full",	--or "half" (optional)
-    },
+-- Thank you to our judges @SkinnyCheeks and @Nefas, and a special thanks to @Raf for sponsoring the competition prize pool.
+-- ]],
+--         width = "full",	--or "half" (optional)
+--     },
 
         {
 			type = "checkbox",

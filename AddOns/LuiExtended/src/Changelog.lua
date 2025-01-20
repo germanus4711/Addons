@@ -1,17 +1,18 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
-
+-- -----------------------------------------------------------------------------
 local zo_strformat = zo_strformat
 local table_concat = table.concat
-
-local changelogMessages = {
+-- -----------------------------------------------------------------------------
+local changelogMessages =
+{
     -- Version Header
-    "|cFFA500LuiExtended Version 6.7.9.3|r",
+    "|cFFA500LuiExtended Version 6.8.0|r",
     "",
     -- General Changes
     "|cFFFF00General:|r",
@@ -21,7 +22,7 @@ local changelogMessages = {
     "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Fixed chat announcements for crafting items and materials to properly display all entries",
     "",
 }
-
+-- -----------------------------------------------------------------------------
 -- Hide toggle called by the menu or xml button
 function LUIE.ToggleChangelog(option)
     LUIE_Changelog:ClearAnchors()
@@ -29,6 +30,7 @@ function LUIE.ToggleChangelog(option)
     LUIE_Changelog:SetHidden(option)
 end
 
+-- -----------------------------------------------------------------------------
 -- Called on initialize
 function LUIE.ChangelogScreen()
     -- concat messages into one string
@@ -50,3 +52,5 @@ function LUIE.ChangelogScreen()
     -- Set version to current version
     LUIESV.Default[GetDisplayName()]["$AccountWide"].WelcomeVersion = LUIE.version
 end
+
+-- -----------------------------------------------------------------------------

@@ -1,13 +1,16 @@
---[[
-    LuiExtended
-    License: The MIT License (MIT)
---]]
+-- -----------------------------------------------------------------------------
+--  LuiExtended                                                               --
+--  Distributed under The MIT License (MIT) (see LICENSE file)                --
+-- -----------------------------------------------------------------------------
 
 --- @class (partial) LuiExtended
 local LUIE = LUIE
 -- SlashCommands namespace
-LUIE.SlashCommands = {}
-local SlashCommands = LUIE.SlashCommands
+--- @class (partial) LUIE.SlashCommands
+local SlashCommands = {}
+SlashCommands.__index = SlashCommands
+--- @class (partial) LUIE.SlashCommands
+LUIE.SlashCommands = SlashCommands
 
 local pairs = pairs
 

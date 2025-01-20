@@ -6,43 +6,43 @@ LBooks_SavedVariables =
         {
             ["$AccountWide"] = 
             {
+                ["shareData"] = true,
+                ["showDungeonTag"] = true,
+                ["postmailFirstInsert"] = 1732315105,
+                ["pinGrayscale"] = true,
+                ["questTools"] = 
+                {
+                },
                 ["pinGrayscaleEidetic"] = true,
+                ["unlockEidetic"] = false,
+                ["postmailData"] = "",
+                ["compassMaxDistance"] = 0.0400000000,
+                ["immersiveMode"] = 1,
+                ["filters"] = 
+                {
+                    ["LBooksMapPin_bookshelf"] = true,
+                    ["LBooksCompassPin_eidetic"] = false,
+                    ["LBooksCompassPin_unknown"] = true,
+                    ["LBooksMapPin_collected"] = false,
+                    ["LBooksMapPin_eideticCollected"] = false,
+                    ["LBooksMapPin_eidetic"] = false,
+                    ["LBooksMapPin_unknown"] = true,
+                    ["LBooksCompassPin_bookshelf"] = false,
+                },
+                ["version"] = 3,
+                ["showClickMenu"] = true,
                 ["pinTexture"] = 
                 {
                     ["level"] = 40,
                     ["size"] = 26,
                     ["type"] = 1,
                 },
-                ["showClickMenu"] = true,
-                ["postmailData"] = "",
-                ["pinGrayscale"] = true,
                 ["showQuestName"] = true,
-                ["immersiveMode"] = 1,
-                ["version"] = 3,
-                ["compassMaxDistance"] = 0.0400000000,
-                ["unlockEidetic"] = false,
-                ["shareData"] = true,
-                ["filters"] = 
-                {
-                    ["LBooksMapPin_unknown"] = true,
-                    ["LBooksCompassPin_unknown"] = true,
-                    ["LBooksCompassPin_bookshelf"] = false,
-                    ["LBooksCompassPin_eidetic"] = false,
-                    ["LBooksMapPin_collected"] = false,
-                    ["LBooksMapPin_eidetic"] = false,
-                    ["LBooksMapPin_bookshelf"] = true,
-                    ["LBooksMapPin_eideticCollected"] = false,
-                },
-                ["showDungeonTag"] = true,
-                ["postmailFirstInsert"] = 1732315105,
-                ["booksCollected"] = 
-                {
-                },
                 ["steps"] = 
                 {
                 },
                 ["pinTextureEidetic"] = 1,
-                ["questTools"] = 
+                ["booksCollected"] = 
                 {
                 },
             },

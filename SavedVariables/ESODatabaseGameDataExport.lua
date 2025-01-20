@@ -6,19 +6,19 @@ ESODBGameDataExportSV =
         {
             ["$AccountWide"] = 
             {
-                ["version"] = 1,
                 ["GameData"] = 
                 {
-                    ["ThievesTroves"] = 
+                    ["Chests"] = 
                     {
                     },
                     ["PsijikPortals"] = 
                     {
                     },
-                    ["Chests"] = 
+                    ["ThievesTroves"] = 
                     {
                     },
                 },
+                ["version"] = 1,
             },
         },
     },
