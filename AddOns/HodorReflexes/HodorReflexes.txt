@@ -1,8 +1,8 @@
 ## Title: HodorReflexes
-## Version: 2025.01.17
+## Version: 2025.01.23
 ## Author: |cFFFF00@andy.s|r, |c76c3f4@m00nyONE|r, |cef7682@seadotarley|r
 ## APIVersion: 101044
-## AddOnVersion: 20250117
+## AddOnVersion: 20250123
 ## SavedVariables: HodorReflexesSV
 ## DependsOn: LibAddonMenu-2.0>=32 LibCombat>=54 LibDataShare>=3
 ## OptionalDependsOn: RuESO LibGroupCombatStats LibGroupBroadcast
@@ -43,7 +43,7 @@ users/cfm/cfm.lua
 users/mot/mot.lua
 users/moo/moo.lua
 users/corsair/corsair.lua
-
+users/Piou/Piou.lua
 users/integritycheck.xml
 users/integritycheck.lua
 

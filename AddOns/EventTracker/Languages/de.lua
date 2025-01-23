@@ -51,16 +51,20 @@ local strings = {
 	
 	
 	
-	EVT_PTS_INFO_ANNIVERSARY = "PTS: Feb. 12-19.; Live: Early April. 3 tickets acquired once per day per account from eating Anniversary Cake. (Cake is a TOOL.) XP IS PASSIVE NOW!",
+	EVT_PTS_INFO_ANNIVERSARY = "PTS: Jan. 27-Feb. 3, 2025.; Live: April. 3 tickets acquired once per day per account from eating this year's Anniversary Cake. (Cake is a TOOL.) XP IS PASSIVE NOW!",
+--	EVT_PTS_INFO_ANNIVERSARY = "PTS: Feb. 12-19.; Live: Early April. 3 tickets acquired once per day per account from eating Anniversary Cake. (Cake is a TOOL.) XP IS PASSIVE NOW!",
 --	EVT_EVENT_INFO_ANNIVERSARY = "6.-18.April 2023 (39 Scheine) 3 Scheine täglich (pro Konto und Server) für den Verzehr von Jubiläumskuchen (inzwischen ein Werkzeug)",
-	EVT_EVENT_INFO_ANNIVERSARY = "EU: 4.-25.April 2024. NA: 4.-24.April 2024. 3 Scheine täglich (pro Konto und Server) für den Verzehr von Jubiläumskuchen (inzwischen ein Werkzeug)",
+	EVT_EVENT_INFO_ANNIVERSARY = "April 2025. 3 Scheine täglich (pro Konto und Server) für den Verzehr von Jubiläumskuchen (inzwischen ein Werkzeug)",
+--	EVT_EVENT_INFO_ANNIVERSARY = "EU: 4.-25.April 2024. NA: 4.-24.April 2024. 3 Scheine täglich (pro Konto und Server) für den Verzehr von Jubiläumskuchen (inzwischen ein Werkzeug)",
+
 	
 	
-	
-	EVT_PTS_INFO_JESTER = "PTS: Feb. 5-12; Live: Late March. 3 tickets per day per account from turning in your first Jester's daily. XP IS PASSIVE NOW!",
+	EVT_PTS_INFO_JESTER = "PTS: Jan. 21-27, 2025; Live: Late March. 3 tickets per day per account from turning in your first Jester's daily. XP IS PASSIVE NOW!",
+--	EVT_PTS_INFO_JESTER = "PTS: Feb. 5-12; Live: Late March. 3 tickets per day per account from turning in your first Jester's daily. XP IS PASSIVE NOW!",
 --	EVT_EVENT_INFO_JESTER = "29.Mrz. bis 06.Apr.2023 (24 Scheine) 3 Scheine täglich (pro Konto und Server) für das Abgeben des ersten täglichen Narrenquests. Esst Pastete (Werkzeug) für einen 2h XP-Bonus.",
-	EVT_EVENT_INFO_JESTER = "28.März-4.April 2024. 3 Scheine täglich (pro Konto und Server) für das Abgeben des ersten täglichen Narrenquests.",
-	
+	EVT_EVENT_INFO_JESTER = "März 2025. 3 Scheine täglich (pro Konto und Server) für das Abgeben des ersten täglichen Narrenquests.",
+--	EVT_EVENT_INFO_JESTER = "28.März-4.April 2024. 3 Scheine täglich (pro Konto und Server) für das Abgeben des ersten täglichen Narrenquests.",
+
 	
 	
 	PTS_EVENT_INFO_WITCHES = "PTS: July 24-31; Live: October, 2023. 2 tickets, once/day/acct: World or pub dungeon boss; FINAL boss of delve, dark fissure, dolmen/dragon/etc, dungeon, arena, or trial. XP buff is PASSIVE NOW!!",
@@ -81,7 +85,7 @@ local strings = {
 -- *************** NON-ANNUAL EVENTS	
 
 -- 2.240 "Pan-Tamriel"
-	EVT_EVENT_INFO_PAN_TAMRIEL = "Jan. 2025. 3 Scheine/Tag/Konto: Weltboss oder Endboss öffentliche Verliese, Endbosse von Gewölben, Dunkle Risse, Dolmen, Drachen usw., Verliese, Arenen oder Prüfungen.",
+	EVT_EVENT_INFO_PAN_TAMRIEL = "23.Jan-4.Feb 2025. 3 Scheine/Tag/Konto: Weltboss oder Endboss öffentliche Verliese, Endbosse von Gewölben, Dunkle Risse, Dolmen, Drachen usw., Verliese, Arenen oder Prüfungen.",
 -- 2.240 "Legacy of the Bretons"
 	EVT_EVENT_INFO_BRETONS = "21.Nov-3.Dec 2024. 2 Scheine/Tag/Konto, from your first High Isle/Tribute or Galen DAILY quest, Dreadsail WEEKLY quest, or the final boss of Coral Aerie, Shipwright's Regret, Earthen Root, or Graven Deep.",
 -- 2.240 "Fallen Leaves of the West Weald"

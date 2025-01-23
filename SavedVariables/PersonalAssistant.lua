@@ -4,8 +4,31 @@ PersonalAssistant_SavedVariables =
     {
         ["@germanus4711"] = 
         {
-            ["Otto von Bissmark"] = 
+            ["Christel v Koenigsberg"] = 
             {
+                ["Repair"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["debug"] = false,
+                ["Consume"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["General"] = 
+                {
+                    ["jumpOutside"] = false,
+                    ["welcomeMessage"] = true,
+                },
+                ["version"] = 1,
+                ["Integration"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Worker"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
                 ["Banking"] = 
                 {
                     ["activeProfile"] = 1,
@@ -14,112 +37,36 @@ PersonalAssistant_SavedVariables =
                 {
                     ["activeProfile"] = 1,
                 },
-                ["debug"] = false,
-                ["version"] = 1,
-                ["General"] = 
-                {
-                    ["welcomeMessage"] = true,
-                    ["jumpOutside"] = false,
-                },
-                ["Consume"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
                 ["Loot"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Worker"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Repair"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Integration"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-            },
-            ["Gustaf Helmuth v Feld"] = 
-            {
-                ["Banking"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Junk"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["debug"] = false,
-                ["version"] = 1,
-                ["General"] = 
-                {
-                    ["welcomeMessage"] = true,
-                    ["jumpOutside"] = false,
-                },
-                ["Consume"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Loot"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Worker"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Repair"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Integration"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-            },
-            ["Hubertus Freiherr v Feld"] = 
-            {
-                ["Banking"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Junk"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["debug"] = false,
-                ["version"] = 1,
-                ["General"] = 
-                {
-                    ["welcomeMessage"] = true,
-                    ["jumpOutside"] = false,
-                },
-                ["Consume"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Loot"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Worker"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Repair"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Integration"] = 
                 {
                     ["activeProfile"] = 1,
                 },
             },
             ["Gamal Loki"] = 
             {
+                ["Repair"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["debug"] = false,
+                ["Consume"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["General"] = 
+                {
+                    ["jumpOutside"] = false,
+                    ["welcomeMessage"] = true,
+                },
+                ["version"] = 1,
+                ["Integration"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Worker"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
                 ["Banking"] = 
                 {
                     ["activeProfile"] = 1,
@@ -128,18 +75,29 @@ PersonalAssistant_SavedVariables =
                 {
                     ["activeProfile"] = 1,
                 },
-                ["debug"] = false,
-                ["version"] = 1,
-                ["General"] = 
+                ["Loot"] = 
                 {
-                    ["welcomeMessage"] = true,
-                    ["jumpOutside"] = false,
+                    ["activeProfile"] = 1,
                 },
+            },
+            ["Hubertus Freiherr v Feld"] = 
+            {
+                ["Repair"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["debug"] = false,
                 ["Consume"] = 
                 {
                     ["activeProfile"] = 1,
                 },
-                ["Loot"] = 
+                ["General"] = 
+                {
+                    ["jumpOutside"] = false,
+                    ["welcomeMessage"] = true,
+                },
+                ["version"] = 1,
+                ["Integration"] = 
                 {
                     ["activeProfile"] = 1,
                 },
@@ -147,17 +105,52 @@ PersonalAssistant_SavedVariables =
                 {
                     ["activeProfile"] = 1,
                 },
-                ["Repair"] = 
+                ["Banking"] = 
                 {
                     ["activeProfile"] = 1,
                 },
-                ["Integration"] = 
+                ["Junk"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Loot"] = 
                 {
                     ["activeProfile"] = 1,
                 },
             },
+            ["$AccountWide"] = 
+            {
+                ["savedVarsVersion"] = 20501,
+                ["version"] = 1,
+                ["Debug"] = 
+                {
+                },
+            },
             ["Maüschen"] = 
             {
+                ["Repair"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["debug"] = false,
+                ["Consume"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["General"] = 
+                {
+                    ["jumpOutside"] = false,
+                    ["welcomeMessage"] = true,
+                },
+                ["version"] = 1,
+                ["Integration"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Worker"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
                 ["Banking"] = 
                 {
                     ["activeProfile"] = 3,
@@ -166,158 +159,36 @@ PersonalAssistant_SavedVariables =
                 {
                     ["activeProfile"] = 1,
                 },
-                ["debug"] = false,
-                ["version"] = 1,
-                ["General"] = 
-                {
-                    ["welcomeMessage"] = true,
-                    ["jumpOutside"] = false,
-                },
-                ["Consume"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
                 ["Loot"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Worker"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Repair"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Integration"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-            },
-            ["Mike v Petra"] = 
-            {
-                ["Banking"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Junk"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["debug"] = false,
-                ["version"] = 1,
-                ["General"] = 
-                {
-                    ["welcomeMessage"] = true,
-                    ["jumpOutside"] = false,
-                },
-                ["Consume"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Loot"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Worker"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Repair"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Integration"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-            },
-            ["$AccountWide"] = 
-            {
-                ["version"] = 1,
-                ["savedVarsVersion"] = 20501,
-                ["Debug"] = 
-                {
-                },
-            },
-            ["Christel v Koenigsberg"] = 
-            {
-                ["Banking"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Junk"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["debug"] = false,
-                ["version"] = 1,
-                ["General"] = 
-                {
-                    ["welcomeMessage"] = true,
-                    ["jumpOutside"] = false,
-                },
-                ["Consume"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Loot"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Worker"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Repair"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Integration"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-            },
-            ["Fridolin The Great"] = 
-            {
-                ["Banking"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Junk"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["debug"] = false,
-                ["version"] = 1,
-                ["General"] = 
-                {
-                    ["welcomeMessage"] = true,
-                    ["jumpOutside"] = false,
-                },
-                ["Consume"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Loot"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Worker"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Repair"] = 
-                {
-                    ["activeProfile"] = 1,
-                },
-                ["Integration"] = 
                 {
                     ["activeProfile"] = 1,
                 },
             },
             ["Freya Orm"] = 
             {
+                ["Repair"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["debug"] = false,
+                ["Consume"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["General"] = 
+                {
+                    ["jumpOutside"] = false,
+                    ["welcomeMessage"] = true,
+                },
+                ["version"] = 1,
+                ["Integration"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Worker"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
                 ["Banking"] = 
                 {
                     ["activeProfile"] = 1,
@@ -326,18 +197,29 @@ PersonalAssistant_SavedVariables =
                 {
                     ["activeProfile"] = 1,
                 },
-                ["debug"] = false,
-                ["version"] = 1,
-                ["General"] = 
+                ["Loot"] = 
                 {
-                    ["welcomeMessage"] = true,
-                    ["jumpOutside"] = false,
+                    ["activeProfile"] = 1,
                 },
+            },
+            ["Otto von Bissmark"] = 
+            {
+                ["Repair"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["debug"] = false,
                 ["Consume"] = 
                 {
                     ["activeProfile"] = 1,
                 },
-                ["Loot"] = 
+                ["General"] = 
+                {
+                    ["jumpOutside"] = false,
+                    ["welcomeMessage"] = true,
+                },
+                ["version"] = 1,
+                ["Integration"] = 
                 {
                     ["activeProfile"] = 1,
                 },
@@ -345,11 +227,129 @@ PersonalAssistant_SavedVariables =
                 {
                     ["activeProfile"] = 1,
                 },
+                ["Banking"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Junk"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Loot"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+            },
+            ["Gustaf Helmuth v Feld"] = 
+            {
                 ["Repair"] = 
                 {
                     ["activeProfile"] = 1,
                 },
+                ["debug"] = false,
+                ["Consume"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["General"] = 
+                {
+                    ["jumpOutside"] = false,
+                    ["welcomeMessage"] = true,
+                },
+                ["version"] = 1,
                 ["Integration"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Worker"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Banking"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Junk"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Loot"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+            },
+            ["Fridolin The Great"] = 
+            {
+                ["Repair"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["debug"] = false,
+                ["Consume"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["General"] = 
+                {
+                    ["jumpOutside"] = false,
+                    ["welcomeMessage"] = true,
+                },
+                ["version"] = 1,
+                ["Integration"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Worker"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Banking"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Junk"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Loot"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+            },
+            ["Mike v Petra"] = 
+            {
+                ["Repair"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["debug"] = false,
+                ["Consume"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["General"] = 
+                {
+                    ["jumpOutside"] = false,
+                    ["welcomeMessage"] = true,
+                },
+                ["version"] = 1,
+                ["Integration"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Worker"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Banking"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Junk"] = 
+                {
+                    ["activeProfile"] = 1,
+                },
+                ["Loot"] = 
                 {
                     ["activeProfile"] = 1,
                 },

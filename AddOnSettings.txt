@@ -456,6 +456,7 @@ LibVotansAddonList 1
 aTim99_Tbar 1
 LightAttackHelper 1
 SetTracker 0
+LuiData 0
 VotansAdvancedSettings 1
 HarvestMapDLC 1
 NodeDetection 1

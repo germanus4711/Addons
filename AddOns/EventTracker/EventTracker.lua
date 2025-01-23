@@ -1,8 +1,9 @@
 -- Added: --EVENTUPDATE tag to mark places in all .lua files that need to be updated or at least checked with every event update.
-local Latest_Version = 2.271
+local Latest_Version = 2.280
 
 -- ****** Line 939 ****** Remember to change the collectibles for each event as appropriate!
 
+-- 2.280 Pan-Tamriel; U45 API; Jester's & Anniversary on PTS
 -- 2.271 Collectibles weren't triggering right for 5-part house
 -- 2.270 New Life
 -- 2.260 Legacy of the Bretons
@@ -62,13 +63,16 @@ local No_Event_Info = string.format("Event Tracker version %s has no information
 local WhichQuarter,WhichMonthInQuarter
 
 -- 2.070 2024 cake 12422 (replaces 2023 cake 11089)
+-- /script for i=335,30000 do memname=GetCollectibleInfo(i) if memname == "Jubilee Cake 2026" then d(i) end end
 local Collectible_Num = {
-	["Jubilee Cake 2024"] = 12422,
+	["Jubilee Cake 2025"] = 13520,
+--	["Jubilee Cake 2024"] = 12422,
 --	["Jubilee Cake 2023"] = 11089,
-	["cake"] = 12422,
+	["cake"] = 13520,
+--	["cake"] = 12422, 2024
 	}
 -- 2.201 Cake
-local Current_Cake = "Jubilee Cake 2024"
+local Current_Cake = "Jubilee Cake 2025"
 
 --EVENTUPDATE
 EVT_EVENT_START = EVT_DATE_UNKNOWN
@@ -124,7 +128,7 @@ local MonthCode = {
 	["5A"] = 1727704800 + EVT_ONE_DAY*365,	-- Oct.
 	["5N"] = 1730383200 + EVT_ONE_DAY*365,	-- Nov. (EDT)
 	["5B"] = 1730386800 + EVT_ONE_DAY*365,	-- Nov. (EST)
-	["4C"] = 1732978800,	-- Dec.
+	["5C"] = 1732978800 + EVT_ONE_DAY*365,	-- Dec.
 
 }
 -- DST changes: (2am) (March: 2 becomes 3; Nov.: 2 becomes 1.)
@@ -173,7 +177,7 @@ EVT_EVENT_INFO_BOX = "2 GOLD boxes/day/account: 1 from High Isle or Galen daily 
 EVT_UPCOMING_INFO = "Dec: New Life(3); 2025 Jan.: Pan-Tamriel(3); Feb.: Whitestrake's Mayhem(3). (number)=Tickets per day, per account."
 ]]
 
--- 2.270 New Life 12/19/24-1/7/25
+--[[ 2.270 New Life 12/19/24-1/7/25
 EVT_EVENT_START = MonthCode["4C"] + EVT_ONE_DAY*19
 EVT_EVENT_END   = MonthCode["51"] + EVT_ONE_DAY*7
 EVT_NEXT_EVENT  = "New Life"
@@ -188,6 +192,26 @@ EVT_EVENT_DETAILS = {
 EVT_EVENT_INFO_BEGIN = "Go to Breda's tent in Kynesgrove in Eastmarch, south of Windhelm. You can port there from any Impresario tent."
 EVT_EVENT_INFO_BOX = "Additional boxes drop from New Life and Old Life quests; up to 10 boxes total per character per day."
 EVT_UPCOMING_INFO = "Jan.: Pan-Tamriel(3); Feb.: Whitestrake's Mayhem(3). (number)=Tickets per day, per account."
+]]
+
+-- 2.240 New Life PTS 9/23-30
+-- 2.241 Pan-Tamriel PTS 9/30-10/7 (Live: January 2025)
+
+-- 2.280 Pan-Tamriel 1/23/25-2/4/25
+EVT_EVENT_START = MonthCode["51"] + EVT_ONE_DAY*23
+EVT_EVENT_END   = MonthCode["52"] + EVT_ONE_DAY*4
+EVT_NEXT_EVENT  = "Pan-Tamriel"
+EVT_EVENT_DETAILS = {
+	["Name"] = "Pan-Tamriel",
+	["T_Types_1"] = "Pan-Tamriel",
+	["T_Types_2"] = "not used",
+	["T_Tickets"] = {3,0,0,0,},
+	["T_ToDo"] = {1,0,0,},
+}
+
+EVT_EVENT_INFO_BEGIN = "Check Crown Store for FREE starter quest."
+EVT_EVENT_INFO_BOX = "Up to 8 gold boxes/day/account from differnt types of final bosses: delve, wb, trial, arena, Tho'at, group dungeon, pub dungeon, incursion (dolmen/dragon/etc)."
+EVT_UPCOMING_INFO = "Feb.: Whitestrake's Mayhem(3); Mar: Jesters(3); Apr: Anniversary(3). (number)=Tickets per day, per account."
 
 
 --------------------------------------------------------------------
@@ -1011,8 +1035,8 @@ local function ShowCollectibles()
 
 -- 2.030 Until the library is working, set the variables manually.
 -- 2.100 LIBRARY Remove the following lines
-	WhichQuarter = 4
-	WhichMonthInQuarter = 4
+	WhichQuarter = 1
+	WhichMonthInQuarter = 1
 	if EVT.vars.Current_Event == "None" then
 		CHAT_ROUTER:AddSystemMessage("|cFF00CCThere is no event currently running. When the next starts:")
 	end
@@ -1038,26 +1062,31 @@ local function ShowCollectibles()
 		WhichMonthInQuarter = CycleLookup[EVT.vars.Current_Event][2]
 	end
 
---[[	if EVT.vars.Current_Event == "Witches" or (EVT.vars.Current_Event == "None" and EVT_NEXT_EVENT == "Witches") then
-		WhichQuarter = 4
-		WhichMonthInQuarter = 1
-	elseif EVT.vars.Current_Event == "Bretons" or (EVT.vars.Current_Event == "None" and EVT_NEXT_EVENT == "Bretons") then
-		WhichQuarter = 4
-		WhichMonthInQuarter = 2
-	elseif EVT.vars.Current_Event == "New Life" or (EVT.vars.Current_Event == "None" and EVT_NEXT_EVENT == "New Life") then
-		WhichQuarter = 4
-		WhichMonthInQuarter = 3
-	elseif EVT.vars.Current_Event == "Pan-Tamriel" or (EVT.vars.Current_Event == "None" and EVT_NEXT_EVENT == "Pan-Tamriel") then
-		WhichQuarter = 1
-		WhichMonthInQuarter = 1
-	elseif EVT.vars.Current_Event == "Whitestrake's Mayhem" or (EVT.vars.Current_Event == "None" and EVT_NEXT_EVENT == "Whitestrake's Mayhem") then
-		WhichQuarter = 1
-		WhichMonthInQuarter = 2
-	end
-]]
-
 --		ShowCollectibleBase("","pet",0,"",0,"",0,"",0,"none",0,3,3,"new")
 --		ShowCollectibleMorph("","type",0,"",0,"",0,"",0,"none",0,"none",0,WhichMonthInQuarter,3,"new")
+	if WhichQuarter == 4 and WhichMonthInQuarter == 3 then
+		ShowCollectibleBase("Stonewisp of Truth and Law","pet",12665,"Axiomatic Runestones",13082,"Glyph of Law",13083,"Powdered Wisp Remains",13084,"none",0,3,3,"new")
+		ShowCollectibleMorph("Exalted Icon of Logic","customized action",13085,"Flawless Prism",13086,"Jhunal's Magnificent Extrication",13087,"Logical Rune Extraction",13095,"none",0,3,3,"new")
+		ShowCollectibleMorph("Stonewisp of Truth and Law","pet",12665,"Axiomatic Runestones",13082,"Glyph of Law",13083,"Powdered Wisp Remains",13084,"none",0,3,3,"new")
+		ShowCollectibleMorph("Anchorborn Welwa","mount",11880,"Bizarre Daedric Meat",12508,"Fine Ebonsteel Chain",12509,"Strengthened Welwa Muzzle",12510,"none",0,"none",0,3,3,"new")
+		ShowCollectibleMorph("Haven of the Five Companions","notable house",12656,"Varen Aquilarios's Key",12694,"Lyris Titanborn's Key",12695,"Abnur Tharn's Key",12696,"Sai Sahan's Key",12697,"Mannimarco's Master Key",12698,5,5,"new")
+	elseif WhichQuarter == 1 then
+		ShowCollectibleBase("Stonewisp of Truth and Law","pet",12665,"Axiomatic Runestones",13082,"Glyph of Law",13083,"Powdered Wisp Remains",13084,"none",0,3,3,"new")
+		ShowCollectibleMorph("Exalted Icon of Logic","customized action",13085,"Flawless Prism",13086,"Jhunal's Magnificent Extrication",13087,"Logical Rune Extraction",13095,"none",0,"none",0,WhichMonthInQuarter,3,"new")
+	elseif WhichQuarter == 2 then
+		ShowCollectibleBase("Stonewisp of Truth and Law","pet",12665,"Axiomatic Runestones",13082,"Glyph of Law",13083,"Powdered Wisp Remains",13084,"none",0,3,3,"new")
+		ShowCollectibleMorph("Robes of Truth and Law","costume",12671,"Golden Fabric",13464,"Sapphire Fabric",13465,"Torc of Wisdom",13466,"none",0,WhichMonthInQuarter,3,"new")
+	elseif WhichQuarter == 3 then
+		ShowCollectibleBase("Stonewisp of Truth and Law","pet",12665,"Axiomatic Runestones",13082,"Glyph of Law",13083,"Powdered Wisp Remains",13084,"none",0,3,3,"new")
+		ShowCollectibleMorph("Anchorborn Welwa","mount",11880,"Bizarre Daedric Meat",12508,"Fine Ebonsteel Chain",12509,"Strengthened Welwa Muzzle",12510,"none",0,"none",0,WhichMonthInQuarter,3,"new")
+	elseif WhichQuarter == 4 then
+		ShowCollectibleBase("Stonewisp of Truth and Law","pet",12665,"Axiomatic Runestones",13082,"Glyph of Law",13083,"Powdered Wisp Remains",13084,"none",0,3,3,"new")
+		local FragsAvailable=WhichMonthInQuarter+1
+		if WhichMonthInQuarter==3 then FragsAvailable=5 end
+		ShowCollectibleMorph("Haven of the Five Companions","notable house",12656,"Varen Aquilarios's Key",12694,"Lyris Titanborn's Key",12695,"Abnur Tharn's Key",12696,"Sai Sahan's Key",12697,"Mannimarco's Master Key",12698,FragsAvailable,5,"new")
+	end
+
+--[[ 2024
 	if WhichQuarter == 4 and WhichMonthInQuarter == 3 then
 		ShowCollectibleBase("Molag Bal Illusion Imp pet","pet",11440,"Anchor Chain Fragment",11893,"Dark Anchor Pinion",11894,"Effigy of the Dominator",11895,"none",0,3,3,"new")
 		ShowCollectibleMorph("Planemeld's Master Body Art","body & face markings",11497,"Crematory Ash",11896,"Incandescent Brimstone",11897,"Seething Censer",11898,"none",0,"none",0,3,3,"new")
@@ -1080,6 +1109,7 @@ local function ShowCollectibles()
 		if WhichMonthInQuarter==3 then FragsAvailable=5 end
 		ShowCollectibleMorph("Haven of the Five Companions","notable house",12656,"Varen Aquilarios's Key",12694,"Lyris Titanborn's Key",12695,"Abnur Tharn's Key",12696,"Sai Sahan's Key",12697,"Mannimarco's Master Key",12698,FragsAvailable,5,"new")
 	end
+]]
 
 --[[ 2023
 		ShowCollectibleBase("Passion Dancer Blossom","pet",10697,"Chartreuse Lily Petals",11051,"Enchanted Silver Flute",11052,"Mystical Sheet Music",11053,"none",0,3,3,"new")
@@ -1106,6 +1136,7 @@ local function ShowCollectibles()
 	end
 	
 -- 2.210 2022 collectibles added to Philius along with the last of 2021 (2024 Q2)
+-- Add Sacred Hourglass of Alkosh - Engraved Glassblowing Tools - Hallowed White-Gold Ingot - Mysterious Time-Lost Sands
 	local HaveBase,BaseFrags,NeedBase = ShowCollectibleBase("Soulfire Dragon Illusion","pet",9437,"Hallowed Hourglass Basin",10068,"Illuminated Dragon Scroll",10069,"Kvatchian Incense",10070,"none",0,3,3,"old")
 	if WhichQuarter == 2 then
 		local HaveMorph,MorphFrags,NeedMorph = ShowCollectibleMorph("Scales of Akatosh","skin",9436,"Aureate Anointing Oils",10071,"Lustrous Ritual Sand",10072,"Sacred Scale",10179,"none",0,"none",0,3,3,"old")
@@ -1116,6 +1147,9 @@ local function ShowCollectibles()
 	elseif WhichQuarter == 4 then
 		local HaveMorph,MorphFrags,NeedMorph = ShowCollectibleMorph("Daggerfall Paladin","costume",9790,"Blessed Rubedite Enamel",10333,"Captured Dragonflame",10334,"Sanctified Metalworking Tools",10335,"none",0,"none",0,3,3,"old")
 		ShowOld ("Soulfire Dragon Illusion",HaveBase,BaseFrags,NeedBase,"Daggerfall Paladin",HaveMorph,MorphFrags,NeedMorph,"Philius Dormier, the Impresario's Assistant")
+	elseif WhichQuarter == 1 then
+		local HaveMorph,MorphFrags,NeedMorph = ShowCollectibleMorph("Sacred Hourglass of Alkosh","furnishing",10587,"Engraved Glassblowing Tools",10588,"Hallowed White-Gold Ingot",10589,"Mysterious Time-Lost Sands",10590,"none",0,"none",0,3,3,"old")
+		ShowOld ("Soulfire Dragon Illusion",HaveBase,BaseFrags,NeedBase,"Sacred Hourglass of Alkosh",HaveMorph,MorphFrags,NeedMorph,"Philius Dormier, the Impresario's Assistant")
 	end
 
 -- 2.060 Indriks
@@ -1561,7 +1595,7 @@ function EVT.XP_Event(mementoName)
 		["mead"] = 1168,
 		["witch"] = 479,
 -- 2.070 2024 cake 12422 (replaces 2023 cake 11089)
-		["cake"] = 12422,
+		["cake"] = CollectibleNum ["cake"],
 		["scroll"] = Scroll_Memento
 		}
 
@@ -1712,7 +1746,7 @@ function EVT.Refresh_XP_Buff(memento)
 		["pie"] = 1167,
 		["mead"] = 1168,
 		["witch"] = 479,
-		["cake"] = 12422,	-- 2024 cake
+		["cake"] = CollectibleNum ["cake"],	-- 2024 cake
 		["scroll"] = Scroll_Memento
 		}
 
@@ -2720,37 +2754,31 @@ EVT_EVENT_INFO_BOX = "There's a chance of additional boxes from anything in High
 EVT_UPCOMING_INFO = "Oct.: Witches(2; xp); Nov: Dark Heart of Skyrim(2); Dec: New Life(3; xp). (number)=Tickets per day, per account."
 ]]
 
--- 2.240 New Life PTS 9/23-30
-EVT_EVENT_START = 1725112800 + EVT_ONE_DAY*23
-EVT_EVENT_END   = 1725112800 + EVT_ONE_DAY*30
-EVT_NEXT_EVENT  = "New Life"
+-- 2.280 Jester's Festival (Jan. 21-27 2025 on PTS, started Tues because of holiday)
+EVT_EVENT_START = MonthCode["51"] + EVT_ONE_DAY*21
+EVT_EVENT_END   = MonthCode["51"] + EVT_ONE_DAY*27
+EVT_NEXT_EVENT  = "Jester's Festival"
 EVT_EVENT_DETAILS = {
-		["Name"] = "New Life",
-		["T_Types_1"] = "New Life",
-		["T_Types_2"] = "not used",
-		["T_Tickets"] = {3,0,0,0,},
-		["T_ToDo"] = {1,0,0,},
-		}
-
-EVT_EVENT_INFO_BEGIN = "Check Crown Store for FREE starter quest or go to Breda in Kynesgrove, Eastmarch; get one extra purple box per character for the event."
-EVT_EVENT_INFO_BOX = "Additional boxes drop from New Life and Old Life quests; up to 10 boxes total per character per day."
-EVT_UPCOMING_INFO = "January 2025: Pan-Tamriel(3). (number)=Tickets per day, per account."
-
-DLC_Names = {"","",""}
-DLC_Types = {"","",""}
-DLC_IDs = {0,0,0}
+	["Name"] = "Jester's Festival",
+	["T_Types_1"] = "Jester's Festival",
+	["T_Types_2"] = "none",
+	["T_Tickets"] = {3,0,0,0,},
+	["T_ToDo"] = {1,0,0,},
+}
+EVT_UPCOMING_INFO = "Next week on PTS: Anniversary. Also, EU server copy."
+EVT_EVENT_INFO_BEGIN = "Pick up the FREE quest in the Crown Store to start (it doesn't cost anything.) Then go to a Jester's tent near Vulkhel Guard, Daggerfall, or south of Ebonheart in Stonefalls."
+EVT_EVENT_INFO_BOX = "Get boxes from ANY DAILY QUEST, anywhere! (Even crafting!)"
 
 -- If a second event is going to be tested, put it here.
 		if EVT_EVENT_END < EVT.FindCurrentTime() then
 
 
--- 2.241 Pan-Tamriel PTS 9/30-10/7 (Live: January 2025)
-EVT_EVENT_START = 1725112800 + EVT_ONE_DAY*30
-EVT_EVENT_END   = 1727704800 + EVT_ONE_DAY*7
-EVT_NEXT_EVENT  = "Pan-Tamriel"
+EVT_EVENT_START = MonthCode["51"] + EVT_ONE_DAY*27
+EVT_EVENT_END   = MonthCode["52"] + EVT_ONE_DAY*3
+EVT_NEXT_EVENT  = "Anniversary"
 EVT_EVENT_DETAILS = {
-		["Name"] = "Pan-Tamriel",
-		["T_Types_1"] = "Pan-Tamriel",
+		["Name"] = "Anniversary",
+		["T_Types_1"] = "Anniversary",
 		["T_Types_2"] = "not used",
 		["T_Tickets"] = {3,0,0,0,},
 		["T_ToDo"] = {1,0,0,},
@@ -2758,7 +2786,7 @@ EVT_EVENT_DETAILS = {
 
 EVT_EVENT_INFO_BEGIN = "Check Crown Store for FREE starter quest."
 EVT_EVENT_INFO_BOX = "Additional purple boxes drop from same sources as gold boxes."
-EVT_UPCOMING_INFO = "2025 February: ?; March: Jester's; April: Anniversary. (number)=Tickets per day, per account."
+EVT_UPCOMING_INFO = "I have no idea what's coming next... this is the PTS!!"
 
 DLC_Names = {"","",""}
 DLC_Types = {"","",""}

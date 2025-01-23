@@ -98,20 +98,6 @@ LibZone_SV_Data =
                         ["zoneIndex"] = 18,
                         ["parentZone"] = 108,
                     },
-                    ["__lastZoneCheckAPIVersion__"] = 
-                    {
-                        ["en"] = 
-                        {
-                            ["__debugInfo__"] = 
-                            {
-                                [1] = 
-                                {
-                                    ["APIVersionLastUpdate"] = 101044,
-                                    ["LastUpdate"] = "1/3/2025 10:18:57 PM",
-                                },
-                            },
-                        },
-                    },
                     [117] = 
                     {
                         ["zoneIndex"] = 19,
@@ -5182,6 +5168,20 @@ LibZone_SV_Data =
                         ["zoneIndex"] = 1032,
                         ["parentZone"] = 1504,
                     },
+                    ["__lastZoneCheckAPIVersion__"] = 
+                    {
+                        ["en"] = 
+                        {
+                            ["__debugInfo__"] = 
+                            {
+                                [1] = 
+                                {
+                                    ["LastUpdate"] = "1/3/2025 10:18:57 PM",
+                                    ["APIVersionLastUpdate"] = 101044,
+                                },
+                            },
+                        },
+                    },
                     ["version"] = 8.9200000000,
                 },
             },
@@ -5196,32 +5196,32 @@ LibZone_Localized_SV_Data =
         {
             ["$AccountWide"] = 
             {
-                ["MissingZoneData"] = 
-                {
-                    ["version"] = 8.9200000000,
-                },
                 ["ZoneData"] = 
                 {
                     ["version"] = 8.9000000000,
                     ["en"] = 
                     {
                         [1504] = "Coldharbour Colosseum",
+                        [1483] = "Huntsman's Fortress",
                         [1500] = "Kthendral Deep Mines",
-                        [1482] = "Strid River Valley",
                         [1475] = "Seat of Detritus",
                         [1501] = "Grand Gallery of Tamriel",
-                        ["APIVersionAtLastUpdate"] = 101044,
-                        [1494] = "Seabloom Villa",
+                        [1498] = "Dusk Keep",
+                        ["lastUpdate"] = 1735930809,
                         [1495] = "Haven of the Five Companions",
                         [520] = "Reman's Folly",
                         [1481] = "Mota-ka",
-                        [1498] = "Dusk Keep",
-                        [1483] = "Huntsman's Fortress",
-                        [1484] = "Shehai Waystation",
-                        ["lastUpdate"] = 1735930809,
+                        [1482] = "Strid River Valley",
                         [1499] = "Star Haven Adeptorium",
+                        [1484] = "Shehai Waystation",
                         [1485] = "Port Dufort",
+                        ["APIVersionAtLastUpdate"] = 101044,
+                        [1494] = "Seabloom Villa",
                     },
+                },
+                ["MissingZoneData"] = 
+                {
+                    ["version"] = 8.9200000000,
                 },
             },
         },

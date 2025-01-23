@@ -6,13 +6,13 @@ PersonalAssistantIntegration_SavedVariables =
         {
             ["$AccountWide"] = 
             {
-                ["version"] = 1,
+                ["profileCounter"] = 1,
                 [1] = 
                 {
                     ["CharacterKnowledge"] = 
                     {
-                        ["characterName"] = "Freya Orm",
                         ["enabled"] = true,
+                        ["characterName"] = "Freya Orm",
                     },
                     ["name"] = "Profile 1",
                     ["LazyWritCrafter"] = 
@@ -21,6 +21,34 @@ PersonalAssistantIntegration_SavedVariables =
                     },
                     ["FCOItemSaver"] = 
                     {
+                        ["Research"] = 
+                        {
+                            ["itemMoveMode"] = 1,
+                        },
+                        ["Improvement"] = 
+                        {
+                            ["itemMoveMode"] = 0,
+                        },
+                        ["DynamicIcons"] = 
+                        {
+                        },
+                        ["Locked"] = 
+                        {
+                            ["preventAutoSell"] = false,
+                            ["preventMoving"] = true,
+                        },
+                        ["Deconstruction"] = 
+                        {
+                            ["itemMoveMode"] = 2,
+                        },
+                        ["Sell"] = 
+                        {
+                            ["autoSellMarked"] = false,
+                        },
+                        ["SellGuildStore"] = 
+                        {
+                            ["itemMoveMode"] = 0,
+                        },
                         ["GearSets"] = 
                         {
                             ["itemMoveMode"] = 
@@ -32,41 +60,13 @@ PersonalAssistantIntegration_SavedVariables =
                                 [5] = 0,
                             },
                         },
-                        ["Deconstruction"] = 
-                        {
-                            ["itemMoveMode"] = 2,
-                        },
-                        ["DynamicIcons"] = 
-                        {
-                        },
-                        ["SellGuildStore"] = 
-                        {
-                            ["itemMoveMode"] = 0,
-                        },
-                        ["Locked"] = 
-                        {
-                            ["preventAutoSell"] = false,
-                            ["preventMoving"] = true,
-                        },
-                        ["Sell"] = 
-                        {
-                            ["autoSellMarked"] = false,
-                        },
-                        ["Improvement"] = 
-                        {
-                            ["itemMoveMode"] = 0,
-                        },
                         ["Intricate"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
-                        ["Research"] = 
-                        {
-                            ["itemMoveMode"] = 1,
-                        },
                     },
                 },
-                ["profileCounter"] = 1,
+                ["version"] = 1,
                 ["savedVarsVersion"] = 20240922,
             },
         },

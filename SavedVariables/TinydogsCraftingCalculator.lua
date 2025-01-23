@@ -4,11 +4,59 @@ TinydogsCraftingCalculatorVars =
     {
         ["@germanus4711"] = 
         {
+            ["Gamal Loki"] = 
+            {
+                ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
+            },
+            ["Hubertus Freiherr v Feld"] = 
+            {
+                ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
+            },
+            ["Maüschen"] = 
+            {
+                ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
+            },
             ["Christel v Koenigsberg"] = 
             {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
                 ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
+            },
+            ["Fridolin The Great"] = 
+            {
+                ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
+            },
+            ["Otto von Bissmark"] = 
+            {
+                ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
+            },
+            ["Mike v Petra"] = 
+            {
+                ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
+            },
+            ["Gustaf Helmuth v Feld"] = 
+            {
+                ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
+            },
+            ["Freya Orm"] = 
+            {
+                ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
             },
             ["$AccountWide"] = 
             {
@@ -18,54 +66,6 @@ TinydogsCraftingCalculatorVars =
                 {
                     ["ItemOrder"] = "Local",
                 },
-            },
-            ["Otto von Bissmark"] = 
-            {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["version"] = 2,
-            },
-            ["Gustaf Helmuth v Feld"] = 
-            {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["version"] = 2,
-            },
-            ["Mike v Petra"] = 
-            {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["version"] = 2,
-            },
-            ["Freya Orm"] = 
-            {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["version"] = 2,
-            },
-            ["Hubertus Freiherr v Feld"] = 
-            {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["version"] = 2,
-            },
-            ["Fridolin The Great"] = 
-            {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["version"] = 2,
-            },
-            ["Gamal Loki"] = 
-            {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["version"] = 2,
-            },
-            ["Maüschen"] = 
-            {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["version"] = 2,
             },
         },
     },

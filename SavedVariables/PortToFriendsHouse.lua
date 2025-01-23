@@ -6,29 +6,13 @@ PortToFriendsHouseVars =
         {
             ["$AccountWide"] = 
             {
+                ["defaultTab"] = 1,
+                ["selectedLibraryFilter"] = 1,
                 ["selectedLibrarySort"] = 1,
-                ["vc_chatAllowed"] = 
+                ["selectedMyHousesSort"] = 1,
+                ["version"] = 1,
+                ["favorites"] = 
                 {
-                    ["g5"] = true,
-                    ["frzone"] = false,
-                    ["o4"] = true,
-                    ["g1"] = true,
-                    ["say"] = false,
-                    ["g4"] = true,
-                    ["dezone"] = false,
-                    ["o3"] = true,
-                    ["zone"] = false,
-                    ["g3"] = true,
-                    ["tell"] = true,
-                    ["yell"] = false,
-                    ["group"] = true,
-                    ["o5"] = true,
-                    ["emote"] = false,
-                    ["jpzone"] = false,
-                    ["o1"] = true,
-                    ["g2"] = true,
-                    ["enzone"] = false,
-                    ["o2"] = true,
                 },
                 ["myHousesFavorites"] = 
                 {
@@ -39,21 +23,37 @@ PortToFriendsHouseVars =
                     {
                     },
                 },
-                ["defaultTab"] = 1,
+                ["vc_chatAllowed"] = 
+                {
+                    ["emote"] = false,
+                    ["zone"] = false,
+                    ["o2"] = true,
+                    ["o5"] = true,
+                    ["g1"] = true,
+                    ["frzone"] = false,
+                    ["enzone"] = false,
+                    ["jpzone"] = false,
+                    ["o4"] = true,
+                    ["g4"] = true,
+                    ["o1"] = true,
+                    ["o3"] = true,
+                    ["g3"] = true,
+                    ["g5"] = true,
+                    ["tell"] = true,
+                    ["g2"] = true,
+                    ["dezone"] = false,
+                    ["group"] = true,
+                    ["say"] = false,
+                    ["yell"] = false,
+                },
+                ["port_mode"] = 3,
                 ["vc"] = 
                 {
+                    ["allowSelf"] = false,
                     ["receivedCards"] = 
                     {
                     },
-                    ["allowSelf"] = false,
                 },
-                ["favorites"] = 
-                {
-                },
-                ["selectedMyHousesSort"] = 1,
-                ["version"] = 1,
-                ["selectedLibraryFilter"] = 1,
-                ["port_mode"] = 3,
             },
         },
     },

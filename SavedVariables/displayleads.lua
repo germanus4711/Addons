@@ -6,13 +6,13 @@ RDLVars =
         {
             ["$AccountWide"] = 
             {
+                ["version"] = 1,
                 ["DropdownChoice"] = 
                 {
-                    ["Major"] = "Can Find",
-                    ["SetType"] = "Everything",
                     ["Zone"] = "All Zones",
+                    ["SetType"] = "Everything",
+                    ["Major"] = "Can Find",
                 },
-                ["version"] = 1,
             },
         },
     },

@@ -6,3847 +6,32 @@ PCHAT_OPTS =
         {
             ["$AccountWide"] = 
             {
-                ["chatTabChannel"] = 
-                {
-                    [4] = 
-                    {
-                        ["channel"] = 3,
-                    },
-                    [1] = 
-                    {
-                        ["channel"] = 13,
-                    },
-                    [2] = 
-                    {
-                        ["channel"] = 3,
-                    },
-                    [5] = 
-                    {
-                        ["channel"] = 13,
-                    },
-                },
-                ["dingSoundName"] = "New_Notification",
-                ["enableWhisperTab"] = false,
+                ["color"] = "3af47e",
                 ["restoreSystemOnly"] = false,
-                ["defaultTab"] = 5,
-                ["fonts"] = "ESO Standard Font",
-                ["disableBrackets"] = true,
-                ["timestampcolorislcol"] = false,
-                ["diffChatColorsDarkenValue"] = 50,
-                ["carriageReturn"] = false,
-                ["allGuildsSameColour"] = false,
-                ["lineNumber"] = 420,
-                ["officertag"] = 
-                {
-                },
-                ["restoreOnQuit"] = false,
-                ["restoreTextEntryHistoryAtLogOutQuit"] = false,
-                ["extras"] = "",
-                ["showCharacterLevelInContextMenuAtChat"] = false,
-                ["delzonetags"] = false,
-                ["notifyIM"] = true,
-                ["chatSyncConfig"] = false,
-                ["excl"] = false,
-                ["ignoreWithDialogContextMenuAtChat"] = false,
-                ["restoreOnReloadUI"] = true,
-                ["defaultchannel"] = 13,
-                ["useIgnoreAddedChatHandler"] = true,
-                ["restoreOnAFK"] = true,
-                ["migratedSVToServer"] = true,
+                ["enableWhisperTab"] = false,
+                ["teleportContextMenuAtChat"] = true,
+                ["lineNumber"] = 34,
+                ["urlHandling"] = true,
+                ["selfchar"] = false,
+                ["wantToProtect"] = true,
                 ["selfsend"] = false,
-                ["lastWasQuit"] = true,
-                ["chatMinimizedInMenusOldMode"] = false,
-                ["showTimestamp"] = true,
-                ["addChannelAndTargetToHistory"] = true,
-                ["notifyIMIndex"] = 1,
-                ["formatguild"] = 
-                {
-                    [955435] = 2,
-                    [812695] = 3,
-                    [61555] = 2,
-                    [347967] = 2,
-                },
-                ["oneColour"] = false,
-                ["enablepartyswitchPortToDungeon"] = false,
-                ["lookingForProtect"] = false,
-                ["diffforESOcolors"] = 40,
-                ["restoreSystem"] = true,
+                ["chatSyncConfig"] = false,
+                ["lastWasReloadUI"] = false,
                 ["augmentHistoryBuffer"] = true,
-                ["doNotNotifyOnRestoredWhisperFromHistory"] = false,
-                ["spamGracePeriod"] = 5,
-                ["chatTextFadeBegin"] = 3,
+                ["charCountZonePostTracker"] = false,
+                ["extras"] = "",
+                ["restoreOnQuit"] = false,
                 ["alwaysShowChat"] = true,
                 ["useIgnoreRemovedChatHandler"] = true,
-                ["switchFor"] = 
-                {
-                },
-                ["chatMaximizedAfterMove"] = false,
-                ["officerSwitchFor"] = 
-                {
-                },
-                ["enablecopy"] = true,
-                ["color"] = "3af47e",
-                ["lastWasReloadUI"] = false,
-                ["guildTags"] = 
-                {
-                },
-                ["chatMinimizedInMenus"] = true,
-                ["charCountZonePostTracker"] = false,
-                ["showAccountAndCharAtContextMenu"] = true,
-                ["useESOcolors"] = true,
-                ["chatEditBoxOnBackspaceHook"] = true,
-                ["history"] = 
-                {
-                    ["textEntry"] = 
-                    {
-                        ["numEntries"] = 0,
-                        ["entries"] = 
-                        {
-                        },
-                    },
-                    ["currentTab"] = 5,
-                },
-                ["geoChannelsFormat"] = 2,
-                ["restoreShowCurrentNameAndZone"] = false,
-                ["restoreWhisps"] = true,
-                ["timestampFormat"] = "HH:m",
-                ["usePlayerStatusChangedChatHandler"] = true,
-                ["capitalize"] = false,
+                ["changeColor"] = true,
                 ["wantToProtectGoldCrownSpam"] = true,
-                ["floodGracePeriod"] = 30,
-                ["useGroupTypeChangedChatHandler"] = true,
-                ["selfchar"] = false,
-                ["groupNames"] = 1,
-                ["teleportContextMenuAtChat"] = true,
-                ["useSystemMessageChatHandler"] = true,
-                ["restoreOnLogOut"] = true,
-                ["lastWasLogOut"] = false,
-                ["timeBeforeRestore"] = 2,
-                ["sendMailContextMenuAtChat"] = true,
-                ["addHistoryRestoredPrefix"] = false,
-                ["chatConfSync"] = 
+                ["restoreShowCurrentNameAndZone"] = false,
+                ["restoreOnAFK"] = true,
+                ["automatedMessages"] = 
                 {
-                    ["8796093062295781"] = 
-                    {
-                        ["fontSize"] = 16,
-                        ["width"] = 981,
-                        ["height"] = 266,
-                        ["charName"] = "Fridolin The Great",
-                        ["tabs"] = 
-                        {
-                            [1] = 
-                            {
-                                ["name"] = "Chat",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = true,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = true,
-                                    [7] = true,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = true,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = true,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["name"] = "Group",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = true,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["name"] = "PVPKillFeed",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = true,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["name"] = "Sys",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = true,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                        },
-                        ["colors"] = 
-                        {
-                            [1] = 
-                            {
-                                ["blue"] = 1,
-                                ["red"] = 1,
-                                ["green"] = 1,
-                            },
-                            [2] = 
-                            {
-                                ["blue"] = 0.2627451122,
-                                ["red"] = 0.7764706016,
-                                ["green"] = 0.2627451122,
-                            },
-                            [3] = 
-                            {
-                                ["blue"] = 0.9725490212,
-                                ["red"] = 0.1764705926,
-                                ["green"] = 1,
-                            },
-                            [4] = 
-                            {
-                                ["blue"] = 0.8431372643,
-                                ["red"] = 0.3686274588,
-                                ["green"] = 0.7254902124,
-                            },
-                            [6] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [7] = 
-                            {
-                                ["blue"] = 0.1019607857,
-                                ["red"] = 0.9921568632,
-                                ["green"] = 0.4784313738,
-                            },
-                            [8] = 
-                            {
-                                ["blue"] = 0.8705882430,
-                                ["red"] = 0.6313725710,
-                                ["green"] = 0.6117647290,
-                            },
-                            [9] = 
-                            {
-                                ["blue"] = 0,
-                                ["red"] = 0.9333333373,
-                                ["green"] = 0.9333333373,
-                            },
-                            [10] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [11] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [12] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [13] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [14] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [15] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [16] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [17] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [18] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [19] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [20] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [21] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [22] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [23] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [24] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [25] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [44] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [41] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [42] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [43] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                        },
-                    },
-                    ["8796093069174989"] = 
-                    {
-                        ["fontSize"] = 16,
-                        ["width"] = 870,
-                        ["tabs"] = 
-                        {
-                            [1] = 
-                            {
-                                ["name"] = "Chat",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = true,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = true,
-                                    [7] = true,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = true,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = true,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["name"] = "Group",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = true,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["name"] = "PVPKillFeed",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = true,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["name"] = "Sys",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = true,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [5] = 
-                            {
-                                ["name"] = "Fox",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = true,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = true,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                        },
-                        ["charName"] = "Mike v Petra",
-                        ["height"] = 267,
-                        ["colors"] = 
-                        {
-                            [1] = 
-                            {
-                                ["blue"] = 1,
-                                ["red"] = 1,
-                                ["green"] = 1,
-                            },
-                            [2] = 
-                            {
-                                ["blue"] = 0.2627451122,
-                                ["red"] = 0.7764706016,
-                                ["green"] = 0.2627451122,
-                            },
-                            [3] = 
-                            {
-                                ["blue"] = 0.9725490212,
-                                ["red"] = 0.1764705926,
-                                ["green"] = 1,
-                            },
-                            [4] = 
-                            {
-                                ["blue"] = 0.8431372643,
-                                ["red"] = 0.3686274588,
-                                ["green"] = 0.7254902124,
-                            },
-                            [6] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [7] = 
-                            {
-                                ["blue"] = 0.1019607857,
-                                ["red"] = 0.9921568632,
-                                ["green"] = 0.4784313738,
-                            },
-                            [8] = 
-                            {
-                                ["blue"] = 0.8705882430,
-                                ["red"] = 0.6313725710,
-                                ["green"] = 0.6117647290,
-                            },
-                            [9] = 
-                            {
-                                ["blue"] = 0,
-                                ["red"] = 0.9333333373,
-                                ["green"] = 0.9333333373,
-                            },
-                            [10] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [11] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [12] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [13] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [14] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [15] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [16] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [17] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [18] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [19] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [20] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [21] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [22] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [23] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [24] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [25] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [44] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [41] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [42] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [43] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                        },
-                    },
-                    ["8796093027479535"] = 
-                    {
-                        ["fontSize"] = 16,
-                        ["width"] = 1136,
-                        ["height"] = 267,
-                        ["tabs"] = 
-                        {
-                            [1] = 
-                            {
-                                ["name"] = "Chat",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = true,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = true,
-                                    [7] = true,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = true,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = true,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["name"] = "Group",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = true,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["name"] = "PVPKillFeed",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = true,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["name"] = "Sys",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = true,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [5] = 
-                            {
-                                ["name"] = "Fox",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = true,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = true,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                        },
-                        ["charName"] = "Christel v Koenigsberg",
-                        ["colors"] = 
-                        {
-                            [1] = 
-                            {
-                                ["blue"] = 1,
-                                ["red"] = 1,
-                                ["green"] = 1,
-                            },
-                            [2] = 
-                            {
-                                ["blue"] = 0.2627451122,
-                                ["red"] = 0.7764706016,
-                                ["green"] = 0.2627451122,
-                            },
-                            [3] = 
-                            {
-                                ["blue"] = 0.9725490212,
-                                ["red"] = 0.1764705926,
-                                ["green"] = 1,
-                            },
-                            [4] = 
-                            {
-                                ["blue"] = 0.8431372643,
-                                ["red"] = 0.3686274588,
-                                ["green"] = 0.7254902124,
-                            },
-                            [6] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [7] = 
-                            {
-                                ["blue"] = 0.1019607857,
-                                ["red"] = 0.9921568632,
-                                ["green"] = 0.4784313738,
-                            },
-                            [8] = 
-                            {
-                                ["blue"] = 0.8705882430,
-                                ["red"] = 0.6313725710,
-                                ["green"] = 0.6117647290,
-                            },
-                            [9] = 
-                            {
-                                ["blue"] = 0,
-                                ["red"] = 0.9333333373,
-                                ["green"] = 0.9333333373,
-                            },
-                            [10] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [11] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [12] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [13] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [14] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [15] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [16] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [17] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [18] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [19] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [20] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [21] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [22] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [23] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [24] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [25] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [44] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [41] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [42] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [43] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                        },
-                    },
-                    ["8796093023211051"] = 
-                    {
-                        ["fontSize"] = 16,
-                        ["width"] = 1229,
-                        ["height"] = 267,
-                        ["tabs"] = 
-                        {
-                            [1] = 
-                            {
-                                ["isLocked"] = false,
-                                ["isCombatLog"] = false,
-                                ["name"] = "Chat",
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = true,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = true,
-                                    [7] = true,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = true,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = true,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["isLocked"] = false,
-                                ["isCombatLog"] = false,
-                                ["name"] = "Group",
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = true,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["isLocked"] = true,
-                                ["isCombatLog"] = false,
-                                ["name"] = "PVPKillFeed",
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["isLocked"] = false,
-                                ["isCombatLog"] = false,
-                                ["name"] = "Sys",
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = true,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [5] = 
-                            {
-                                ["isLocked"] = false,
-                                ["isCombatLog"] = false,
-                                ["name"] = "Emp",
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = false,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                        },
-                        ["colors"] = 
-                        {
-                            [1] = 
-                            {
-                                ["blue"] = 1,
-                                ["red"] = 1,
-                                ["green"] = 1,
-                            },
-                            [2] = 
-                            {
-                                ["blue"] = 0.2627451122,
-                                ["red"] = 0.7764706016,
-                                ["green"] = 0.2627451122,
-                            },
-                            [3] = 
-                            {
-                                ["blue"] = 0.9725490212,
-                                ["red"] = 0.1764705926,
-                                ["green"] = 1,
-                            },
-                            [4] = 
-                            {
-                                ["blue"] = 0.8431372643,
-                                ["red"] = 0.3686274588,
-                                ["green"] = 0.7254902124,
-                            },
-                            [6] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [7] = 
-                            {
-                                ["blue"] = 0.1019607857,
-                                ["red"] = 0.9921568632,
-                                ["green"] = 0.4784313738,
-                            },
-                            [8] = 
-                            {
-                                ["blue"] = 0.8705882430,
-                                ["red"] = 0.6313725710,
-                                ["green"] = 0.6117647290,
-                            },
-                            [9] = 
-                            {
-                                ["blue"] = 0,
-                                ["red"] = 0.9333333373,
-                                ["green"] = 0.9333333373,
-                            },
-                            [10] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [11] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [12] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [13] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [14] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [15] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [16] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [17] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [18] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [19] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [20] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [21] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [22] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [23] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [24] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [25] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [44] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [41] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [42] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [43] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                        },
-                    },
-                    ["8796093072557313"] = 
-                    {
-                        ["fontSize"] = 16,
-                        ["width"] = 906,
-                        ["height"] = 267,
-                        ["tabs"] = 
-                        {
-                            [1] = 
-                            {
-                                ["name"] = "Chat",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = true,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = true,
-                                    [7] = true,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = true,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = true,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["name"] = "Group",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = true,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["name"] = "PVPKillFeed",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = true,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["name"] = "Sys",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = true,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [5] = 
-                            {
-                                ["name"] = "Fox",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = true,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = true,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                        },
-                        ["charName"] = "Gamal Loki",
-                        ["colors"] = 
-                        {
-                            [1] = 
-                            {
-                                ["blue"] = 1,
-                                ["red"] = 1,
-                                ["green"] = 1,
-                            },
-                            [2] = 
-                            {
-                                ["blue"] = 0.2627451122,
-                                ["red"] = 0.7764706016,
-                                ["green"] = 0.2627451122,
-                            },
-                            [3] = 
-                            {
-                                ["blue"] = 0.9725490212,
-                                ["red"] = 0.1764705926,
-                                ["green"] = 1,
-                            },
-                            [4] = 
-                            {
-                                ["blue"] = 0.8431372643,
-                                ["red"] = 0.3686274588,
-                                ["green"] = 0.7254902124,
-                            },
-                            [6] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [7] = 
-                            {
-                                ["blue"] = 0.1019607857,
-                                ["red"] = 0.9921568632,
-                                ["green"] = 0.4784313738,
-                            },
-                            [8] = 
-                            {
-                                ["blue"] = 0.8705882430,
-                                ["red"] = 0.6313725710,
-                                ["green"] = 0.6117647290,
-                            },
-                            [9] = 
-                            {
-                                ["blue"] = 0,
-                                ["red"] = 0.9333333373,
-                                ["green"] = 0.9333333373,
-                            },
-                            [10] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [11] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [12] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [13] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [14] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [15] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [16] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [17] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [18] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [19] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [20] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [21] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [22] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [23] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [24] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [25] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [44] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [41] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [42] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [43] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                        },
-                    },
-                    ["8796093025384257"] = 
-                    {
-                        ["fontSize"] = 16,
-                        ["width"] = 842,
-                        ["height"] = 267,
-                        ["charName"] = "Hubertus Freiherr v Feld",
-                        ["tabs"] = 
-                        {
-                            [1] = 
-                            {
-                                ["name"] = "Chat",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = true,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = true,
-                                    [7] = true,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = true,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = true,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["name"] = "Group",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = true,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["name"] = "PVPKillFeed",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = true,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["name"] = "Sys",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = true,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [5] = 
-                            {
-                                ["name"] = "Fox",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = true,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = true,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                        },
-                        ["colors"] = 
-                        {
-                            [1] = 
-                            {
-                                ["blue"] = 1,
-                                ["red"] = 1,
-                                ["green"] = 1,
-                            },
-                            [2] = 
-                            {
-                                ["blue"] = 0.2627451122,
-                                ["red"] = 0.7764706016,
-                                ["green"] = 0.2627451122,
-                            },
-                            [3] = 
-                            {
-                                ["blue"] = 0.9725490212,
-                                ["red"] = 0.1764705926,
-                                ["green"] = 1,
-                            },
-                            [4] = 
-                            {
-                                ["blue"] = 0.8431372643,
-                                ["red"] = 0.3686274588,
-                                ["green"] = 0.7254902124,
-                            },
-                            [6] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [7] = 
-                            {
-                                ["blue"] = 0.1019607857,
-                                ["red"] = 0.9921568632,
-                                ["green"] = 0.4784313738,
-                            },
-                            [8] = 
-                            {
-                                ["blue"] = 0.8705882430,
-                                ["red"] = 0.6313725710,
-                                ["green"] = 0.6117647290,
-                            },
-                            [9] = 
-                            {
-                                ["blue"] = 0,
-                                ["red"] = 0.9333333373,
-                                ["green"] = 0.9333333373,
-                            },
-                            [10] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [11] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [12] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [13] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [14] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [15] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [16] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [17] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [18] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [19] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [20] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [21] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [22] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [23] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [24] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [25] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [44] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [41] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [42] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [43] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                        },
-                    },
-                    ["8796093064640125"] = 
-                    {
-                        ["fontSize"] = 16,
-                        ["width"] = 947,
-                        ["height"] = 267,
-                        ["tabs"] = 
-                        {
-                            [1] = 
-                            {
-                                ["name"] = "Chat",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = true,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = true,
-                                    [7] = true,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = true,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = true,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["name"] = "Group",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = true,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["name"] = "PVPKillFeed",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = true,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["name"] = "Sys",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = true,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [5] = 
-                            {
-                                ["name"] = "Fox",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = true,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = true,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                        },
-                        ["charName"] = "Maüschen",
-                        ["colors"] = 
-                        {
-                            [1] = 
-                            {
-                                ["blue"] = 1,
-                                ["red"] = 1,
-                                ["green"] = 1,
-                            },
-                            [2] = 
-                            {
-                                ["blue"] = 0.2627451122,
-                                ["red"] = 0.7764706016,
-                                ["green"] = 0.2627451122,
-                            },
-                            [3] = 
-                            {
-                                ["blue"] = 0.9725490212,
-                                ["red"] = 0.1764705926,
-                                ["green"] = 1,
-                            },
-                            [4] = 
-                            {
-                                ["blue"] = 0.8431372643,
-                                ["red"] = 0.3686274588,
-                                ["green"] = 0.7254902124,
-                            },
-                            [6] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [7] = 
-                            {
-                                ["blue"] = 0.1019607857,
-                                ["red"] = 0.9921568632,
-                                ["green"] = 0.4784313738,
-                            },
-                            [8] = 
-                            {
-                                ["blue"] = 0.8705882430,
-                                ["red"] = 0.6313725710,
-                                ["green"] = 0.6117647290,
-                            },
-                            [9] = 
-                            {
-                                ["blue"] = 0,
-                                ["red"] = 0.9333333373,
-                                ["green"] = 0.9333333373,
-                            },
-                            [10] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [11] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [12] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [13] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [14] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [15] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [16] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [17] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [18] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [19] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [20] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [21] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [22] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [23] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [24] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [25] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [44] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [41] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [42] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [43] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                        },
-                    },
-                    ["8796093067546805"] = 
-                    {
-                        ["fontSize"] = 16,
-                        ["width"] = 996,
-                        ["height"] = 267,
-                        ["tabs"] = 
-                        {
-                            [1] = 
-                            {
-                                ["name"] = "Chat",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = true,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = true,
-                                    [7] = true,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = true,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = true,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["name"] = "Group",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = true,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["name"] = "PVPKillFeed",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = true,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["name"] = "Sys",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = true,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [5] = 
-                            {
-                                ["name"] = "Fox",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = true,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = true,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                        },
-                        ["charName"] = "Gustaf Helmuth v Feld",
-                        ["colors"] = 
-                        {
-                            [1] = 
-                            {
-                                ["blue"] = 1,
-                                ["red"] = 1,
-                                ["green"] = 1,
-                            },
-                            [2] = 
-                            {
-                                ["blue"] = 0.2627451122,
-                                ["red"] = 0.7764706016,
-                                ["green"] = 0.2627451122,
-                            },
-                            [3] = 
-                            {
-                                ["blue"] = 0.9725490212,
-                                ["red"] = 0.1764705926,
-                                ["green"] = 1,
-                            },
-                            [4] = 
-                            {
-                                ["blue"] = 0.8431372643,
-                                ["red"] = 0.3686274588,
-                                ["green"] = 0.7254902124,
-                            },
-                            [6] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [7] = 
-                            {
-                                ["blue"] = 0.1019607857,
-                                ["red"] = 0.9921568632,
-                                ["green"] = 0.4784313738,
-                            },
-                            [8] = 
-                            {
-                                ["blue"] = 0.8705882430,
-                                ["red"] = 0.6313725710,
-                                ["green"] = 0.6117647290,
-                            },
-                            [9] = 
-                            {
-                                ["blue"] = 0,
-                                ["red"] = 0.9333333373,
-                                ["green"] = 0.9333333373,
-                            },
-                            [10] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [11] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [12] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [13] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [14] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [15] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [16] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [17] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [18] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [19] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [20] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [21] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [22] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [23] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [24] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [25] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [44] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [41] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [42] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [43] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                        },
-                    },
-                    ["8796093074287095"] = 
-                    {
-                        ["fontSize"] = 16,
-                        ["width"] = 798,
-                        ["height"] = 267,
-                        ["charName"] = "Otto von Bissmark",
-                        ["tabs"] = 
-                        {
-                            [1] = 
-                            {
-                                ["name"] = "Chat",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = true,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = true,
-                                    [7] = true,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = true,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = true,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["name"] = "Group",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = true,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["name"] = "PVPKillFeed",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = true,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["name"] = "Sys",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = true,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [5] = 
-                            {
-                                ["name"] = "Fox",
-                                ["isCombatLog"] = false,
-                                ["isLocked"] = false,
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = true,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = true,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                        },
-                        ["colors"] = 
-                        {
-                            [1] = 
-                            {
-                                ["blue"] = 1,
-                                ["red"] = 1,
-                                ["green"] = 1,
-                            },
-                            [2] = 
-                            {
-                                ["blue"] = 0.2627451122,
-                                ["red"] = 0.7764706016,
-                                ["green"] = 0.2627451122,
-                            },
-                            [3] = 
-                            {
-                                ["blue"] = 0.9725490212,
-                                ["red"] = 0.1764705926,
-                                ["green"] = 1,
-                            },
-                            [4] = 
-                            {
-                                ["blue"] = 0.8431372643,
-                                ["red"] = 0.3686274588,
-                                ["green"] = 0.7254902124,
-                            },
-                            [6] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [7] = 
-                            {
-                                ["blue"] = 0.1019607857,
-                                ["red"] = 0.9921568632,
-                                ["green"] = 0.4784313738,
-                            },
-                            [8] = 
-                            {
-                                ["blue"] = 0.8705882430,
-                                ["red"] = 0.6313725710,
-                                ["green"] = 0.6117647290,
-                            },
-                            [9] = 
-                            {
-                                ["blue"] = 0,
-                                ["red"] = 0.9333333373,
-                                ["green"] = 0.9333333373,
-                            },
-                            [10] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [11] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [12] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [13] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [14] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [15] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [16] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [17] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [18] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [19] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [20] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [21] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [22] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [23] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [24] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [25] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [44] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [41] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [42] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [43] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                        },
-                    },
-                    ["lastChar"] = 
-                    {
-                        ["fontSize"] = 16,
-                        ["width"] = 1229,
-                        ["height"] = 267,
-                        ["tabs"] = 
-                        {
-                            [1] = 
-                            {
-                                ["isLocked"] = false,
-                                ["isCombatLog"] = false,
-                                ["name"] = "Chat",
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = true,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = true,
-                                    [7] = true,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = true,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = true,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["isLocked"] = false,
-                                ["isCombatLog"] = false,
-                                ["name"] = "Group",
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = true,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["isLocked"] = true,
-                                ["isCombatLog"] = false,
-                                ["name"] = "PVPKillFeed",
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = false,
-                                    [14] = false,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = false,
-                                    [19] = false,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["isLocked"] = false,
-                                ["isCombatLog"] = false,
-                                ["name"] = "Sys",
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = false,
-                                    [2] = false,
-                                    [3] = false,
-                                    [4] = false,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = false,
-                                    [9] = true,
-                                    [10] = false,
-                                    [11] = false,
-                                    [12] = false,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = false,
-                                    [17] = false,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                            [5] = 
-                            {
-                                ["isLocked"] = false,
-                                ["isCombatLog"] = false,
-                                ["name"] = "Emp",
-                                ["areTimestampsEnabled"] = false,
-                                ["isInteractable"] = true,
-                                ["enabledCategories"] = 
-                                {
-                                    [1] = true,
-                                    [2] = false,
-                                    [3] = true,
-                                    [4] = true,
-                                    [6] = false,
-                                    [7] = false,
-                                    [8] = true,
-                                    [9] = false,
-                                    [10] = false,
-                                    [11] = true,
-                                    [12] = true,
-                                    [13] = true,
-                                    [14] = true,
-                                    [15] = false,
-                                    [16] = true,
-                                    [17] = true,
-                                    [18] = true,
-                                    [19] = true,
-                                    [20] = false,
-                                    [21] = false,
-                                    [22] = false,
-                                    [23] = false,
-                                    [24] = false,
-                                    [25] = false,
-                                    [44] = false,
-                                    [41] = false,
-                                    [42] = false,
-                                    [43] = false,
-                                },
-                            },
-                        },
-                        ["colors"] = 
-                        {
-                            [1] = 
-                            {
-                                ["blue"] = 1,
-                                ["red"] = 1,
-                                ["green"] = 1,
-                            },
-                            [2] = 
-                            {
-                                ["blue"] = 0.2627451122,
-                                ["red"] = 0.7764706016,
-                                ["green"] = 0.2627451122,
-                            },
-                            [3] = 
-                            {
-                                ["blue"] = 0.9725490212,
-                                ["red"] = 0.1764705926,
-                                ["green"] = 1,
-                            },
-                            [4] = 
-                            {
-                                ["blue"] = 0.8431372643,
-                                ["red"] = 0.3686274588,
-                                ["green"] = 0.7254902124,
-                            },
-                            [6] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [7] = 
-                            {
-                                ["blue"] = 0.1019607857,
-                                ["red"] = 0.9921568632,
-                                ["green"] = 0.4784313738,
-                            },
-                            [8] = 
-                            {
-                                ["blue"] = 0.8705882430,
-                                ["red"] = 0.6313725710,
-                                ["green"] = 0.6117647290,
-                            },
-                            [9] = 
-                            {
-                                ["blue"] = 0,
-                                ["red"] = 0.9333333373,
-                                ["green"] = 0.9333333373,
-                            },
-                            [10] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [11] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [12] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [13] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [14] = 
-                            {
-                                ["blue"] = 0.3333333433,
-                                ["red"] = 0.3333333433,
-                                ["green"] = 0.7803921700,
-                            },
-                            [15] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [16] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [17] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [18] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [19] = 
-                            {
-                                ["blue"] = 0.7450980544,
-                                ["red"] = 0.5921568871,
-                                ["green"] = 1,
-                            },
-                            [20] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [21] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [22] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [23] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [24] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [25] = 
-                            {
-                                ["blue"] = 0.6196078658,
-                                ["red"] = 0.7725490332,
-                                ["green"] = 0.7607843280,
-                            },
-                            [44] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [41] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [42] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                            [43] = 
-                            {
-                                ["blue"] = 0.4901960790,
-                                ["red"] = 0.5294117928,
-                                ["green"] = 0.6078431606,
-                            },
-                        },
-                    },
                 },
-                ["whereIsPlayerContextMenuAtChat"] = true,
+                ["useSystemMessageChatHandler"] = true,
+                ["chatMaximizedAfterMove"] = false,
                 ["colours"] = 
                 {
                     [64] = "|cCEB36F",
@@ -3891,4676 +76,4216 @@ PCHAT_OPTS =
                     [41] = "|cC3F0C2",
                     [42] = "|cC3F0C2",
                     [43] = "|cC3F0C2",
-                    ["tabwarning"] = "|c76BCC3",
-                    ["groupleader"] = "|cC35582",
-                    [65] = "|cB0A074",
-                    [68] = "|cCEB36F",
-                    ["timestamp"] = "|c8F8F8F",
-                    [66] = "|cCEB36F",
-                    [70] = "|cCEB36F",
-                    [73] = "|cB0A074",
-                    [71] = "|cB0A074",
                     ["groupleader1"] = "|c76BCC3",
                     [69] = "|cB0A074",
-                    [77] = "|cB0A074",
-                    [72] = "|cCEB36F",
-                    [67] = "|cB0A074",
+                    [73] = "|cB0A074",
                     [76] = "|cCEB36F",
+                    [72] = "|cCEB36F",
+                    ["timestamp"] = "|c8F8F8F",
+                    [66] = "|cCEB36F",
+                    [65] = "|cB0A074",
+                    [71] = "|cB0A074",
+                    ["groupleader"] = "|cC35582",
+                    ["tabwarning"] = "|c76BCC3",
                     [0] = "|cFFFFFF",
+                    [70] = "|cCEB36F",
+                    [68] = "|cCEB36F",
+                    [67] = "|cB0A074",
+                    [77] = "|cB0A074",
                     [62] = "|cCEB36F",
                     [63] = "|cB0A074",
                 },
-                ["allNPCSameColour"] = true,
-                ["automatedMessages"] = 
+                ["usePlayerStatusChangedChatHandler"] = true,
+                ["switchFor"] = 
                 {
                 },
-                ["usePVPKillFeedChatHandler"] = true,
-                ["wholenames"] = false,
+                ["diffChatColorsDarkenValue"] = 50,
+                ["chatTextFadeBegin"] = 3,
+                ["guildTags"] = 
+                {
+                },
+                ["diffforESOcolors"] = 40,
+                ["useGroupTypeChangedChatHandler"] = true,
                 ["wantToProtectWWandVamp"] = true,
-                ["diffChatColorsLightenValue"] = 30,
-                ["allZonesSameColour"] = true,
-                ["floodProtect"] = true,
-                ["enableChatTabChannel"] = true,
-                ["version"] = 0.9000000000,
+                ["capitalize"] = false,
+                ["showIgnoredInfoInContextMenuAtChat"] = false,
+                ["chatMinimizedAtLaunch"] = false,
                 ["LineStrings"] = 
                 {
                     [1] = 
                     {
-                        ["rawFrom"] = "Tagersjaja^Fx",
-                        ["rawMessage"] = "WTS Crown 1:1100. If you need it, please contact me",
-                        ["rawValue"] = "|c8F8F8F[07:41] |r|cb0ad89|H0:character:Tagersjaja^Fx|hTagersjaja|h |H1:p:31|hzone|h: |r|cd3d0acWTS Crown 1:1100. If you need it, please contact me|r",
-                        ["channel"] = 31,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:281:31|h[07:41]|h |r|cb0ad89|H0:character:Tagersjaja^Fx|hTagersjaja|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:281:31|hWTS Crown 1:1100. If you need it, please contact me|h|r",
-                        ["rawLine"] = "[07:41] Tagersjaja zone: WTS Crown 1:1100. If you need it, please contact me",
-                        ["rawTimestamp"] = 1737376904,
-                        ["rawText"] = "WTS Crown 1:1100. If you need it, please contact me",
+                        ["rawTimestamp"] = 1737636537,
+                        ["rawLine"] = "[07:48] Dolgubon's Lazy Writ Crafter retrieved 1 [Drain Health Poison IX]. (286 in bank)",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:102:11|h[07:48] |h|r|H1:p:102:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:76826:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:65536|h|h|H1:p:102:11|h. (286 in bank)|h",
+                        ["rawText"] = "|c8F8F8F[07:48] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:76826:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:65536|h|h. (286 in bank)",
+                        ["channel"] = 11,
+                        ["rawValue"] = "|c8F8F8F[07:48] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:76826:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:65536|h|h. (286 in bank)",
+                        ["rawMessage"] = "[07:48] Dolgubon's Lazy Writ Crafter retrieved 1 [Drain Health Poison IX]. (286 in bank)",
+                        ["rawFrom"] = "",
                     },
                     [2] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] Dolgubon's Lazy Writ Crafter retrieved 1 [Essence of Ravage Health]. (62 in bank)",
-                        ["rawValue"] = "|c8F8F8F[07:43] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:44812:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:131072|h|h. (62 in bank)",
+                        ["rawTimestamp"] = 1737636537,
+                        ["rawLine"] = "[07:48] Dolgubon's Lazy Writ Crafter retrieved 1 [Lilmoth Garlic Hagfish]. (9 in bank)",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:103:11|h[07:48] |h|r|H1:p:103:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:103:11|h. (9 in bank)|h",
+                        ["rawText"] = "|c8F8F8F[07:48] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (9 in bank)",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:2:11|h[07:43] |h|r|H1:p:2:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:44812:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:131072|h|h|H1:p:2:11|h. (62 in bank)|h",
-                        ["rawLine"] = "[07:43] Dolgubon's Lazy Writ Crafter retrieved 1 [Essence of Ravage Health]. (62 in bank)",
-                        ["rawTimestamp"] = 1737377008,
-                        ["rawText"] = "|c8F8F8F[07:43] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:44812:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:131072|h|h. (62 in bank)",
+                        ["rawValue"] = "|c8F8F8F[07:48] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (9 in bank)",
+                        ["rawMessage"] = "[07:48] Dolgubon's Lazy Writ Crafter retrieved 1 [Lilmoth Garlic Hagfish]. (9 in bank)",
+                        ["rawFrom"] = "",
                     },
                     [3] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] Dolgubon's Lazy Writ Crafter retrieved 1 [Firsthold Fruit and Cheese Plate]. (17 in bank)",
-                        ["rawValue"] = "|c8F8F8F[07:43] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68236:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (17 in bank)",
+                        ["rawTimestamp"] = 1737636537,
+                        ["rawLine"] = "[07:48] Dolgubon's Lazy Writ Crafter retrieved 1 [Hagraven's Tonic]. (7 in bank)",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:104:11|h[07:48] |h|r|H1:p:104:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:104:11|h. (7 in bank)|h",
+                        ["rawText"] = "|c8F8F8F[07:48] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (7 in bank)",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:3:11|h[07:43] |h|r|H1:p:3:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68236:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:3:11|h. (17 in bank)|h",
-                        ["rawLine"] = "[07:43] Dolgubon's Lazy Writ Crafter retrieved 1 [Firsthold Fruit and Cheese Plate]. (17 in bank)",
-                        ["rawTimestamp"] = 1737377008,
-                        ["rawText"] = "|c8F8F8F[07:43] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68236:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (17 in bank)",
+                        ["rawValue"] = "|c8F8F8F[07:48] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (7 in bank)",
+                        ["rawMessage"] = "[07:48] Dolgubon's Lazy Writ Crafter retrieved 1 [Hagraven's Tonic]. (7 in bank)",
+                        ["rawFrom"] = "",
                     },
                     [4] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] Dolgubon's Lazy Writ Crafter retrieved 1 [Muthsera's Remorse]. (27 in bank)",
-                        ["rawValue"] = "|c8F8F8F[07:43] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68260:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (27 in bank)",
+                        ["rawTimestamp"] = 1737636540,
+                        ["rawLine"] = "[07:49] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:105:11|h[07:49] |h|r|H1:p:105:11|h[|h|cFFD700|H1:p:105:11|hPA B|h|r|cFFFFFF|H1:p:105:11|hanking|h|r|H1:p:105:11|h] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:4:11|h[07:43] |h|r|H1:p:4:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68260:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:4:11|h. (27 in bank)|h",
-                        ["rawLine"] = "[07:43] Dolgubon's Lazy Writ Crafter retrieved 1 [Muthsera's Remorse]. (27 in bank)",
-                        ["rawTimestamp"] = 1737377008,
-                        ["rawText"] = "|c8F8F8F[07:43] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68260:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (27 in bank)",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
+                        ["rawMessage"] = "[07:49] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
+                        ["rawFrom"] = "",
                     },
                     [5] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawValue"] = "|c8F8F8F[07:43] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
+                        ["rawTimestamp"] = 1737636540,
+                        ["rawLine"] = "[07:49] [PA Banking] All item transfers completed",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:106:11|h[07:49] |h|r|H1:p:106:11|h[|h|cFFD700|H1:p:106:11|hPA B|h|r|cFFFFFF|H1:p:106:11|hanking|h|r|H1:p:106:11|h] All item transfers completed|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:5:11|h[07:43] |h|r|H1:p:5:11|h[|h|cFFD700|H1:p:5:11|hPA B|h|r|cFFFFFF|H1:p:5:11|hanking|h|r|H1:p:5:11|h] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter|h",
-                        ["rawLine"] = "[07:43] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawTimestamp"] = 1737377011,
-                        ["rawText"] = "|c8F8F8F[07:43] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
+                        ["rawMessage"] = "[07:49] [PA Banking] All item transfers completed",
+                        ["rawFrom"] = "",
                     },
                     [6] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[07:43] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:6:11|h[07:43] |h|r|H1:p:6:11|h[|h|cFFD700|H1:p:6:11|hPA B|h|r|cFFFFFF|H1:p:6:11|hanking|h|r|H1:p:6:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[07:43] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737377011,
-                        ["rawText"] = "|c8F8F8F[07:43] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
+                        ["rawTimestamp"] = 1737636546,
+                        ["rawLine"] = "[07:49] Sadas Vidron: Is it true? There's a new archcanon?",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:107:7|h[07:49]|h |r|c728668Sadas Vidron: |r|c95a98b|H1:p:107:7|hIs it true? There's a new archcanon?|h|r",
+                        ["rawText"] = "Is it true? There's a new archcanon?",
+                        ["channel"] = 7,
+                        ["rawValue"] = "|c8F8F8F[07:49] |r|c728668Sadas Vidron: |r|c95a98bIs it true? There's a new archcanon?|r",
+                        ["rawMessage"] = "Is it true? There's a new archcanon?",
+                        ["rawFrom"] = "Sadas Vidron^M",
                     },
                     [7] = 
                     {
-                        ["rawFrom"] = "Gladiator Daynes^M",
-                        ["rawMessage"] = "Switch in 3… 2… 1!",
-                        ["rawValue"] = "|c8F8F8F[07:43] |r|c728668Gladiator Daynes: |r|c95a98bSwitch in 3… 2… 1!|r",
+                        ["rawTimestamp"] = 1737636549,
+                        ["rawLine"] = "[07:49] Taxilteer: Of course! There was a wonderful ceremony and everything!",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:108:7|h[07:49]|h |r|c728668Taxilteer: |r|c95a98b|H1:p:108:7|hOf course! There was a wonderful ceremony and everything!|h|r",
+                        ["rawText"] = "Of course! There was a wonderful ceremony and everything!",
                         ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:7:7|h[07:43]|h |r|c728668Gladiator Daynes: |r|c95a98b|H1:p:7:7|hSwitch in 3… 2… 1!|h|r",
-                        ["rawLine"] = "[07:43] Gladiator Daynes: Switch in 3… 2… 1!",
-                        ["rawTimestamp"] = 1737377014,
-                        ["rawText"] = "Switch in 3… 2… 1!",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r|c728668Taxilteer: |r|c95a98bOf course! There was a wonderful ceremony and everything!|r",
+                        ["rawMessage"] = "Of course! There was a wonderful ceremony and everything!",
+                        ["rawFrom"] = "Taxilteer^F",
                     },
                     [8] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737636550,
+                        ["rawLine"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:109:11|h[07:49] |h|r|H1:p:109:11|h[|h|cFFD700|H1:p:109:11|hPA W|h|r|cFFFFFF|H1:p:109:11|horker|h|r|H1:p:109:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:8:11|h[07:43] |h|r|H1:p:8:11|h[|h|cFFD700|H1:p:8:11|hPA W|h|r|cFFFFFF|H1:p:8:11|horker|h|r|H1:p:8:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377019,
-                        ["rawText"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawMessage"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawFrom"] = "",
                     },
                     [9] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737636553,
+                        ["rawLine"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:110:11|h[07:49] |h|r|H1:p:110:11|h[|h|cFFD700|H1:p:110:11|hPA W|h|r|cFFFFFF|H1:p:110:11|horker|h|r|H1:p:110:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:9:11|h[07:43] |h|r|H1:p:9:11|h[|h|cFFD700|H1:p:9:11|hPA W|h|r|cFFFFFF|H1:p:9:11|horker|h|r|H1:p:9:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377022,
-                        ["rawText"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawMessage"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawFrom"] = "",
                     },
                     [10] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:10:11|h[07:43] |h|r|H1:p:10:11|h[|h|cFFD700|H1:p:10:11|hPA W|h|r|cFFFFFF|H1:p:10:11|horker|h|r|H1:p:10:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377025,
-                        ["rawText"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737636553,
+                        ["rawLine"] = "[07:49] Zabashlargo: I've never been that close to Lord Vivec before. Archcanon Llevule will do wonders for the city!",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:111:7|h[07:49]|h |r|c728668Zabashlargo: |r|c95a98b|H1:p:111:7|hI've never been that close to Lord Vivec before. Archcanon Llevule will do wonders for the city!|h|r",
+                        ["rawText"] = "I've never been that close to Lord Vivec before. Archcanon Llevule will do wonders for the city!",
+                        ["channel"] = 7,
+                        ["rawValue"] = "|c8F8F8F[07:49] |r|c728668Zabashlargo: |r|c95a98bI've never been that close to Lord Vivec before. Archcanon Llevule will do wonders for the city!|r",
+                        ["rawMessage"] = "I've never been that close to Lord Vivec before. Archcanon Llevule will do wonders for the city!",
+                        ["rawFrom"] = "Zabashlargo^M",
                     },
                     [11] = 
                     {
-                        ["rawFrom"] = "Gladiator Daynes^M",
-                        ["rawMessage"] = "Switch in 3… 2… 1!",
-                        ["rawValue"] = "|c8F8F8F[07:43] |r|c728668Gladiator Daynes: |r|c95a98bSwitch in 3… 2… 1!|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:11:7|h[07:43]|h |r|c728668Gladiator Daynes: |r|c95a98b|H1:p:11:7|hSwitch in 3… 2… 1!|h|r",
-                        ["rawLine"] = "[07:43] Gladiator Daynes: Switch in 3… 2… 1!",
-                        ["rawTimestamp"] = 1737377025,
-                        ["rawText"] = "Switch in 3… 2… 1!",
+                        ["rawTimestamp"] = 1737636555,
+                        ["rawLine"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:112:11|h[07:49] |h|r|H1:p:112:11|h[|h|cFFD700|H1:p:112:11|hPA W|h|r|cFFFFFF|H1:p:112:11|horker|h|r|H1:p:112:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["channel"] = 11,
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawMessage"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawFrom"] = "",
                     },
                     [12] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:12:11|h[07:43] |h|r|H1:p:12:11|h[|h|cFFD700|H1:p:12:11|hPA W|h|r|cFFFFFF|H1:p:12:11|horker|h|r|H1:p:12:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377031,
-                        ["rawText"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737636559,
+                        ["rawLine"] = "[07:49] Sadas Vidron: I do hope so.",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:113:7|h[07:49]|h |r|c728668Sadas Vidron: |r|c95a98b|H1:p:113:7|hI do hope so.|h|r",
+                        ["rawText"] = "I do hope so.",
+                        ["channel"] = 7,
+                        ["rawValue"] = "|c8F8F8F[07:49] |r|c728668Sadas Vidron: |r|c95a98bI do hope so.|r",
+                        ["rawMessage"] = "I do hope so.",
+                        ["rawFrom"] = "Sadas Vidron^M",
                     },
                     [13] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737636563,
+                        ["rawLine"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:114:11|h[07:49] |h|r|H1:p:114:11|h[|h|cFFD700|H1:p:114:11|hPA W|h|r|cFFFFFF|H1:p:114:11|horker|h|r|H1:p:114:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:13:11|h[07:43] |h|r|H1:p:13:11|h[|h|cFFD700|H1:p:13:11|hPA W|h|r|cFFFFFF|H1:p:13:11|horker|h|r|H1:p:13:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377034,
-                        ["rawText"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawMessage"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawFrom"] = "",
                     },
                     [14] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737636565,
+                        ["rawLine"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:115:11|h[07:49] |h|r|H1:p:115:11|h[|h|cFFD700|H1:p:115:11|hPA W|h|r|cFFFFFF|H1:p:115:11|horker|h|r|H1:p:115:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:14:11|h[07:43] |h|r|H1:p:14:11|h[|h|cFFD700|H1:p:14:11|hPA W|h|r|cFFFFFF|H1:p:14:11|horker|h|r|H1:p:14:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:43] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377037,
-                        ["rawText"] = "|c8F8F8F[07:43] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawMessage"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawFrom"] = "",
                     },
                     [15] = 
                     {
-                        ["rawFrom"] = "Gladiator Daynes^M",
-                        ["rawMessage"] = "I feel ready for the battlegrounds now!",
-                        ["rawValue"] = "|c8F8F8F[07:44] |r|c728668Gladiator Daynes: |r|c95a98bI feel ready for the battlegrounds now!|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:15:7|h[07:44]|h |r|c728668Gladiator Daynes: |r|c95a98b|H1:p:15:7|hI feel ready for the battlegrounds now!|h|r",
-                        ["rawLine"] = "[07:44] Gladiator Daynes: I feel ready for the battlegrounds now!",
-                        ["rawTimestamp"] = 1737377041,
-                        ["rawText"] = "I feel ready for the battlegrounds now!",
+                        ["rawTimestamp"] = 1737636568,
+                        ["rawLine"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:116:11|h[07:49] |h|r|H1:p:116:11|h[|h|cFFD700|H1:p:116:11|hPA W|h|r|cFFFFFF|H1:p:116:11|horker|h|r|H1:p:116:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["channel"] = 11,
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawMessage"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawFrom"] = "",
                     },
                     [16] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737636570,
+                        ["rawLine"] = "[07:49] [PA Worker] [Farstrider Dagger] has been deconstructed",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:117:11|h[07:49] |h|r|H1:p:117:11|h[|h|cFFD700|H1:p:117:11|hPA W|h|r|cFFFFFF|H1:p:117:11|horker|h|r|H1:p:117:11|h] |h|H1:item:211822:363:50:0:0:0:0:0:0:0:0:0:0:0:1:50:0:1:0:400:0|h|h|H1:p:117:11|h has been deconstructed|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:211822:363:50:0:0:0:0:0:0:0:0:0:0:0:1:50:0:1:0:400:0|h|h has been deconstructed",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:16:11|h[07:44] |h|r|H1:p:16:11|h[|h|cFFD700|H1:p:16:11|hPA W|h|r|cFFFFFF|H1:p:16:11|horker|h|r|H1:p:16:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:44] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377042,
-                        ["rawText"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:211822:363:50:0:0:0:0:0:0:0:0:0:0:0:1:50:0:1:0:400:0|h|h has been deconstructed",
+                        ["rawMessage"] = "[07:49] [PA Worker] [Farstrider Dagger] has been deconstructed",
+                        ["rawFrom"] = "",
                     },
                     [17] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737636570,
+                        ["rawLine"] = "[07:49] [PA Worker] [Dagger of Bulwark Ruination] has been deconstructed",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:118:11|h[07:49] |h|r|H1:p:118:11|h[|h|cFFD700|H1:p:118:11|hPA W|h|r|cFFFFFF|H1:p:118:11|horker|h|r|H1:p:118:11|h] |h|H1:item:211610:363:50:0:0:0:0:0:0:0:0:0:0:0:1:50:0:1:0:400:0|h|h|H1:p:118:11|h has been deconstructed|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:211610:363:50:0:0:0:0:0:0:0:0:0:0:0:1:50:0:1:0:400:0|h|h has been deconstructed",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:17:11|h[07:44] |h|r|H1:p:17:11|h[|h|cFFD700|H1:p:17:11|hPA W|h|r|cFFFFFF|H1:p:17:11|horker|h|r|H1:p:17:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:44] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377045,
-                        ["rawText"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:211610:363:50:0:0:0:0:0:0:0:0:0:0:0:1:50:0:1:0:400:0|h|h has been deconstructed",
+                        ["rawMessage"] = "[07:49] [PA Worker] [Dagger of Bulwark Ruination] has been deconstructed",
+                        ["rawFrom"] = "",
                     },
                     [18] = 
                     {
-                        ["rawFrom"] = "Gladiator Runaki^F",
-                        ["rawMessage"] = "Same! I can't wait to see which team we'll be on this time.",
-                        ["rawValue"] = "|c8F8F8F[07:44] |r|c728668Gladiator Runaki: |r|c95a98bSame! I can't wait to see which team we'll be on this time.|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:18:7|h[07:44]|h |r|c728668Gladiator Runaki: |r|c95a98b|H1:p:18:7|hSame! I can't wait to see which team we'll be on this time.|h|r",
-                        ["rawLine"] = "[07:44] Gladiator Runaki: Same! I can't wait to see which team we'll be on this time.",
-                        ["rawTimestamp"] = 1737377045,
-                        ["rawText"] = "Same! I can't wait to see which team we'll be on this time.",
+                        ["rawTimestamp"] = 1737636574,
+                        ["rawLine"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:119:11|h[07:49] |h|r|H1:p:119:11|h[|h|cFFD700|H1:p:119:11|hPA W|h|r|cFFFFFF|H1:p:119:11|horker|h|r|H1:p:119:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["channel"] = 11,
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawMessage"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawFrom"] = "",
                     },
                     [19] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737636576,
+                        ["rawLine"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:120:11|h[07:49] |h|r|H1:p:120:11|h[|h|cFFD700|H1:p:120:11|hPA W|h|r|cFFFFFF|H1:p:120:11|horker|h|r|H1:p:120:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:19:11|h[07:44] |h|r|H1:p:19:11|h[|h|cFFD700|H1:p:19:11|hPA W|h|r|cFFFFFF|H1:p:19:11|horker|h|r|H1:p:19:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:44] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377054,
-                        ["rawText"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawMessage"] = "[07:49] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawFrom"] = "",
                     },
                     [20] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] [PA Worker] [Superb Glyph of Weakening] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
+                        ["rawTimestamp"] = 1737636578,
+                        ["rawLine"] = "[07:49] [PA Worker] [Netch Oil Shield] has been deconstructed",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:121:11|h[07:49] |h|r|H1:p:121:11|h[|h|cFFD700|H1:p:121:11|hPA W|h|r|cFFFFFF|H1:p:121:11|horker|h|r|H1:p:121:11|h] |h|H1:item:211933:363:50:0:0:0:0:0:0:0:0:0:0:0:1:50:0:1:0:10000:0|h|h|H1:p:121:11|h has been deconstructed|h",
+                        ["rawText"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:211933:363:50:0:0:0:0:0:0:0:0:0:0:0:1:50:0:1:0:10000:0|h|h has been deconstructed",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:20:11|h[07:44] |h|r|H1:p:20:11|h[|h|cFFD700|H1:p:20:11|hPA W|h|r|cFFFFFF|H1:p:20:11|horker|h|r|H1:p:20:11|h] |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:20:11|h has been deconstructed|h",
-                        ["rawLine"] = "[07:44] [PA Worker] [Superb Glyph of Weakening] has been deconstructed",
-                        ["rawTimestamp"] = 1737377057,
-                        ["rawText"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
+                        ["rawValue"] = "|c8F8F8F[07:49] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:211933:363:50:0:0:0:0:0:0:0:0:0:0:0:1:50:0:1:0:10000:0|h|h has been deconstructed",
+                        ["rawMessage"] = "[07:49] [PA Worker] [Netch Oil Shield] has been deconstructed",
+                        ["rawFrom"] = "",
                     },
                     [21] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] [PA Worker] [Superb Glyph of Disease Resist] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26847:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
+                        ["rawTimestamp"] = 1737636765,
+                        ["rawLine"] = "[07:52] [PA Junk] Moved [Carapace] to junk (Trash)",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:122:11|h[07:52] |h|r|H1:p:122:11|h[|h|cFFD700|H1:p:122:11|hPA J|h|r|cFFFFFF|H1:p:122:11|hunk|h|r|H1:p:122:11|h] Moved |h|H1:item:54382:177:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Carapace]|h|H1:p:122:11|h to junk (|h|cffa500|H1:p:122:11|hTrash|h|r|H1:p:122:11|h)|h",
+                        ["rawText"] = "|c8F8F8F[07:52] |r[|cFFD700PA J|r|cFFFFFFunk|r] Moved |H1:item:54382:177:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Carapace]|h to junk (|cffa500Trash|r)",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:21:11|h[07:44] |h|r|H1:p:21:11|h[|h|cFFD700|H1:p:21:11|hPA W|h|r|cFFFFFF|H1:p:21:11|horker|h|r|H1:p:21:11|h] |h|H1:item:26847:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:21:11|h has been deconstructed|h",
-                        ["rawLine"] = "[07:44] [PA Worker] [Superb Glyph of Disease Resist] has been deconstructed",
-                        ["rawTimestamp"] = 1737377057,
-                        ["rawText"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26847:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
+                        ["rawValue"] = "|c8F8F8F[07:52] |r[|cFFD700PA J|r|cFFFFFFunk|r] Moved |H1:item:54382:177:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Carapace]|h to junk (|cffa500Trash|r)",
+                        ["rawMessage"] = "[07:52] [PA Junk] Moved [Carapace] to junk (Trash)",
+                        ["rawFrom"] = "",
                     },
                     [22] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:22:11|h[07:44] |h|r|H1:p:22:11|h[|h|cFFD700|H1:p:22:11|hPA W|h|r|cFFFFFF|H1:p:22:11|horker|h|r|H1:p:22:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:44] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377059,
-                        ["rawText"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737637412,
+                        ["rawLine"] = "[08:03] Rawen-Al zone: anyone farming?",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:123:31|h[08:03]|h |r|cb0ad89|H0:character:Rawen-Al^Fx|hRawen-Al|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:123:31|hanyone farming?|h|r",
+                        ["rawText"] = "anyone farming?",
+                        ["channel"] = 31,
+                        ["rawValue"] = "|c8F8F8F[08:03] |r|cb0ad89|H0:character:Rawen-Al^Fx|hRawen-Al|h |H1:p:31|hzone|h: |r|cd3d0acanyone farming?|r",
+                        ["rawMessage"] = "anyone farming?",
+                        ["rawFrom"] = "Rawen-Al^Fx",
                     },
                     [23] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:23:11|h[07:44] |h|r|H1:p:23:11|h[|h|cFFD700|H1:p:23:11|hPA W|h|r|cFFFFFF|H1:p:23:11|horker|h|r|H1:p:23:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:44] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377061,
-                        ["rawText"] = "|c8F8F8F[07:44] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
+                        ["rawTimestamp"] = 1737637433,
+                        ["rawLine"] = "[08:03] Is-likely-Telel zone: |H1:guild:61555|hChildren of Hircine|h Dues free Guild Trader. AD PVP on Gray HOST 4-6 PM EST 3-5 times a week. Multi-guild WW pack 9PM EST 2-3 times a month.",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:124:31|h[08:03]|h |r|cb0ad89|H0:character:Is-likely-Telel^Mx|hIs-likely-Telel|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:guild:61555|hChildren of Hircine|h|H1:p:124:31|h Dues free Guild Trader. AD PVP on Gray HOST 4-6 PM EST 3-5 times a week. Multi-guild WW pack 9PM EST|h|H1:p:124:31|h 2-3 times a month.|h|r",
+                        ["rawText"] = "|H1:guild:61555|hChildren of Hircine|h Dues free Guild Trader. AD PVP on Gray HOST 4-6 PM EST 3-5 times a week. Multi-guild WW pack 9PM EST 2-3 times a month.",
+                        ["channel"] = 31,
+                        ["rawValue"] = "|c8F8F8F[08:03] |r|cb0ad89|H0:character:Is-likely-Telel^Mx|hIs-likely-Telel|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:guild:61555|hChildren of Hircine|h Dues free Guild Trader. AD PVP on Gray HOST 4-6 PM EST 3-5 times a week. Multi-guild WW pack 9PM EST 2-3 times a month.|r",
+                        ["rawMessage"] = "|H1:guild:61555|hChildren of Hircine|h Dues free Guild Trader. AD PVP on Gray HOST 4-6 PM EST 3-5 times a week. Multi-guild WW pack 9PM EST 2-3 times a month.",
+                        ["rawFrom"] = "Is-likely-Telel^Mx",
                     },
                     [24] = 
                     {
-                        ["rawFrom"] = "Tagersjaja^Fx",
-                        ["rawMessage"] = "WTS Crown 1:1100. If you need it, please contact me",
-                        ["rawValue"] = "|c8F8F8F[07:44] |r|cb0ad89|H0:character:Tagersjaja^Fx|hTagersjaja|h |H1:p:31|hzone|h: |r|cd3d0acWTS Crown 1:1100. If you need it, please contact me|r",
+                        ["rawTimestamp"] = 1737637434,
+                        ["rawLine"] = "[08:03] Chastychapstick zone: x",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:125:31|h[08:03]|h |r|cb0ad89|H0:character:Chastychapstick^Mx|hChastychapstick|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:125:31|hx|h|r",
+                        ["rawText"] = "x",
                         ["channel"] = 31,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:24:31|h[07:44]|h |r|cb0ad89|H0:character:Tagersjaja^Fx|hTagersjaja|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:24:31|hWTS Crown 1:1100. If you need it, please contact me|h|r",
-                        ["rawLine"] = "[07:44] Tagersjaja zone: WTS Crown 1:1100. If you need it, please contact me",
-                        ["rawTimestamp"] = 1737377069,
-                        ["rawText"] = "WTS Crown 1:1100. If you need it, please contact me",
+                        ["rawValue"] = "|c8F8F8F[08:03] |r|cb0ad89|H0:character:Chastychapstick^Mx|hChastychapstick|h |H1:p:31|hzone|h: |r|cd3d0acx|r",
+                        ["rawMessage"] = "x",
+                        ["rawFrom"] = "Chastychapstick^Mx",
                     },
                     [25] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] Writ Crafter: Queued [Rubedite Battle Axe] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued |H0:item:45301:308:50:0:0:0:0:0:0:0:0:0:0:0:0:6:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:25:11|h[07:44] |h|r|H1:p:25:11|hWrit Crafter: Queued |h|H0:item:45301:308:50:0:0:0:0:0:0:0:0:0:0:0:0:6:0:0:0:0:0|h|h|H1:p:25:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:44] Writ Crafter: Queued [Rubedite Battle Axe] for deconstruction",
-                        ["rawTimestamp"] = 1737377076,
-                        ["rawText"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued |H0:item:45301:308:50:0:0:0:0:0:0:0:0:0:0:0:0:6:0:0:0:0:0|h|h for deconstruction",
+                        ["rawTimestamp"] = 1737637442,
+                        ["rawLine"] = "[08:04] Rawen-Al zone: x",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:126:31|h[08:04]|h |r|cb0ad89|H0:character:Rawen-Al^Fx|hRawen-Al|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:126:31|hx|h|r",
+                        ["rawText"] = "x",
+                        ["channel"] = 31,
+                        ["rawValue"] = "|c8F8F8F[08:04] |r|cb0ad89|H0:character:Rawen-Al^Fx|hRawen-Al|h |H1:p:31|hzone|h: |r|cd3d0acx|r",
+                        ["rawMessage"] = "x",
+                        ["rawFrom"] = "Rawen-Al^Fx",
                     },
                     [26] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] Writ Crafter: Queued [Ruby Ash Ice Staff] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued |H0:item:45330:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:26:11|h[07:44] |h|r|H1:p:26:11|hWrit Crafter: Queued |h|H0:item:45330:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h|H1:p:26:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:44] Writ Crafter: Queued [Ruby Ash Ice Staff] for deconstruction",
-                        ["rawTimestamp"] = 1737377079,
-                        ["rawText"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued |H0:item:45330:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
+                        ["rawTimestamp"] = 1737637448,
+                        ["rawLine"] = "[08:04] Axius Dawnstrike zone: x",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:127:31|h[08:04]|h |r|cb0ad89|H0:character:Axius Dawnstrike^Mx|hAxius Dawnstrike|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:127:31|hx|h|r",
+                        ["rawText"] = "x",
+                        ["channel"] = 31,
+                        ["rawValue"] = "|c8F8F8F[08:04] |r|cb0ad89|H0:character:Axius Dawnstrike^Mx|hAxius Dawnstrike|h |H1:p:31|hzone|h: |r|cd3d0acx|r",
+                        ["rawMessage"] = "x",
+                        ["rawFrom"] = "Axius Dawnstrike^Mx",
                     },
                     [27] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] Writ Crafter: Queued up to deposit [Sealed Woodworking Writ]",
-                        ["rawValue"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued up to deposit |H0:item:121530:6:1:0:0:0:72:192:5:41:26:51:0:0:0:0:0:0:0:0:1512000|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:27:11|h[07:44] |h|r|H1:p:27:11|hWrit Crafter: Queued up to deposit |h|H0:item:121530:6:1:0:0:0:72:192:5:41:26:51:0:0:0:0:0:0:0:0:1512000|h|h",
-                        ["rawLine"] = "[07:44] Writ Crafter: Queued up to deposit [Sealed Woodworking Writ]",
-                        ["rawTimestamp"] = 1737377079,
-                        ["rawText"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued up to deposit |H0:item:121530:6:1:0:0:0:72:192:5:41:26:51:0:0:0:0:0:0:0:0:1512000|h|h",
+                        ["rawTimestamp"] = 1737637449,
+                        ["rawLine"] = "[08:04] Tempestasis zone: X FOR DOLMEN GROUP",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:128:31|h[08:04]|h |r|cb0ad89|H0:character:Tempestasis^Fx|hTempestasis|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:128:31|hX FOR DOLMEN GROUP|h|r",
+                        ["rawText"] = "X FOR DOLMEN GROUP",
+                        ["channel"] = 31,
+                        ["rawValue"] = "|c8F8F8F[08:04] |r|cb0ad89|H0:character:Tempestasis^Fx|hTempestasis|h |H1:p:31|hzone|h: |r|cd3d0acX FOR DOLMEN GROUP|r",
+                        ["rawMessage"] = "X FOR DOLMEN GROUP",
+                        ["rawFrom"] = "Tempestasis^Fx",
                     },
                     [28] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] Writ Crafter: Queued up to deposit [Sealed Alchemy Writ]",
-                        ["rawValue"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued up to deposit |H0:item:119701:5:1:0:0:0:239:27:1:4:0:0:0:0:0:0:0:0:0:0:20000|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:28:11|h[07:44] |h|r|H1:p:28:11|hWrit Crafter: Queued up to deposit |h|H0:item:119701:5:1:0:0:0:239:27:1:4:0:0:0:0:0:0:0:0:0:0:20000|h|h",
-                        ["rawLine"] = "[07:44] Writ Crafter: Queued up to deposit [Sealed Alchemy Writ]",
-                        ["rawTimestamp"] = 1737377083,
-                        ["rawText"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued up to deposit |H0:item:119701:5:1:0:0:0:239:27:1:4:0:0:0:0:0:0:0:0:0:0:20000|h|h",
+                        ["rawTimestamp"] = 1737637691,
+                        ["rawLine"] = "[08:08] Koichi Kono zone: x",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:129:31|h[08:08]|h |r|cb0ad89|H0:character:Koichi Kono^Mx|hKoichi Kono|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:129:31|hx|h|r",
+                        ["rawText"] = "x",
+                        ["channel"] = 31,
+                        ["rawValue"] = "|c8F8F8F[08:08] |r|cb0ad89|H0:character:Koichi Kono^Mx|hKoichi Kono|h |H1:p:31|hzone|h: |r|cd3d0acx|r",
+                        ["rawMessage"] = "x",
+                        ["rawFrom"] = "Koichi Kono^Mx",
                     },
                     [29] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] Writ Crafter: Queued [Rubedo Leather Arm Cops] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued |H0:item:45361:365:50:0:0:0:0:0:0:0:0:0:0:0:0:54:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:29:11|h[07:44] |h|r|H1:p:29:11|hWrit Crafter: Queued |h|H0:item:45361:365:50:0:0:0:0:0:0:0:0:0:0:0:0:54:0:0:0:10000:0|h|h|H1:p:29:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:44] Writ Crafter: Queued [Rubedo Leather Arm Cops] for deconstruction",
-                        ["rawTimestamp"] = 1737377085,
-                        ["rawText"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued |H0:item:45361:365:50:0:0:0:0:0:0:0:0:0:0:0:0:54:0:0:0:10000:0|h|h for deconstruction",
+                        ["rawTimestamp"] = 1737637843,
+                        ["rawLine"] = "[08:10] Tempestasis zone: X FOR DOLMEN GROUP",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:130:31|h[08:10]|h |r|cb0ad89|H0:character:Tempestasis^Fx|hTempestasis|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:130:31|hX FOR DOLMEN GROUP|h|r",
+                        ["rawText"] = "X FOR DOLMEN GROUP",
+                        ["channel"] = 31,
+                        ["rawValue"] = "|c8F8F8F[08:10] |r|cb0ad89|H0:character:Tempestasis^Fx|hTempestasis|h |H1:p:31|hzone|h: |r|cd3d0acX FOR DOLMEN GROUP|r",
+                        ["rawMessage"] = "X FOR DOLMEN GROUP",
+                        ["rawFrom"] = "Tempestasis^Fx",
                     },
                     [30] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:44] Writ Crafter: Queued [Platinum Ring] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued |H0:item:54511:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:30:11|h[07:44] |h|r|H1:p:30:11|hWrit Crafter: Queued |h|H0:item:54511:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:30:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:44] Writ Crafter: Queued [Platinum Ring] for deconstruction",
-                        ["rawTimestamp"] = 1737377088,
-                        ["rawText"] = "|c8F8F8F[07:44] |rWrit Crafter: Queued |H0:item:54511:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
+                        ["rawTimestamp"] = 1737637848,
+                        ["rawLine"] = "[08:10] Saltinei Pehrmesh zone: x",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:131:31|h[08:10]|h |r|cb0ad89|H0:character:Saltinei Pehrmesh^Mx|hSaltinei Pehrmesh|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:131:31|hx|h|r",
+                        ["rawText"] = "x",
+                        ["channel"] = 31,
+                        ["rawValue"] = "|c8F8F8F[08:10] |r|cb0ad89|H0:character:Saltinei Pehrmesh^Mx|hSaltinei Pehrmesh|h |H1:p:31|hzone|h: |r|cd3d0acx|r",
+                        ["rawMessage"] = "x",
+                        ["rawFrom"] = "Saltinei Pehrmesh^Mx",
                     },
                     [31] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:46] [PA Junk] Sold items for 386|u0:6%:currency:|u",
-                        ["rawValue"] = "|c8F8F8F[07:46] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00386|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:31:11|h[07:46] |h|r|H1:p:31:11|h[|h|cFFD700|H1:p:31:11|hPA J|h|r|cFFFFFF|H1:p:31:11|hunk|h|r|H1:p:31:11|h] Sold items for |h|c00ff00|H1:p:31:11|h386|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawLine"] = "[07:46] [PA Junk] Sold items for 386|u0:6%:currency:|u",
-                        ["rawTimestamp"] = 1737377210,
-                        ["rawText"] = "|c8F8F8F[07:46] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00386|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
+                        ["rawTimestamp"] = 1737637861,
+                        ["rawLine"] = "[08:11] Jasnahsorc zone: X",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:132:31|h[08:11]|h |r|cb0ad89|H0:character:Jasnahsorc^Mx|hJasnahsorc|h |H1:p:31|hzone|h: |r|cd3d0ac|H1:p:132:31|hX|h|r",
+                        ["rawText"] = "X",
+                        ["channel"] = 31,
+                        ["rawValue"] = "|c8F8F8F[08:11] |r|cb0ad89|H0:character:Jasnahsorc^Mx|hJasnahsorc|h |H1:p:31|hzone|h: |r|cd3d0acX|r",
+                        ["rawMessage"] = "X",
+                        ["rawFrom"] = "Jasnahsorc^Mx",
                     },
                     [32] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:46] Writ Crafter: Depositing [Sealed Woodworking Writ]",
-                        ["rawValue"] = "|c8F8F8F[07:46] |rWrit Crafter: Depositing |H0:item:121530:6:1:0:0:0:72:192:5:41:26:51:0:0:0:0:0:0:0:0:1512000|h|h",
+                        ["rawTimestamp"] = 1737637954,
+                        ["rawLine"] = "[08:12] [JackOfAllTrades] Professional Upkeep slotted.",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:133:11|h[08:12] |h|r|H1:p:133:11|h[JackOfAllTrades] |h|c638C29|t24:24:esoui/art/champion/champion_points_stamina_icon-hud-32.dds|t|H1:p:133:11|hProfessional Upkeep slotted.|h|r",
+                        ["rawText"] = "|c8F8F8F[08:12] |r[JackOfAllTrades] |c638C29|t24:24:esoui/art/champion/champion_points_stamina_icon-hud-32.dds|tProfessional Upkeep slotted.",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:32:11|h[07:46] |h|r|H1:p:32:11|hWrit Crafter: Depositing |h|H0:item:121530:6:1:0:0:0:72:192:5:41:26:51:0:0:0:0:0:0:0:0:1512000|h|h",
-                        ["rawLine"] = "[07:46] Writ Crafter: Depositing [Sealed Woodworking Writ]",
-                        ["rawTimestamp"] = 1737377217,
-                        ["rawText"] = "|c8F8F8F[07:46] |rWrit Crafter: Depositing |H0:item:121530:6:1:0:0:0:72:192:5:41:26:51:0:0:0:0:0:0:0:0:1512000|h|h",
+                        ["rawValue"] = "|c8F8F8F[08:12] |r[JackOfAllTrades] |c638C29|t24:24:esoui/art/champion/champion_points_stamina_icon-hud-32.dds|tProfessional Upkeep slotted.",
+                        ["rawMessage"] = "[08:12] [JackOfAllTrades] Professional Upkeep slotted.",
+                        ["rawFrom"] = "",
                     },
                     [33] = 
                     {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:46] [PA Banking] 5,293|u0:6%:currency:|u deposited",
-                        ["rawValue"] = "|c8F8F8F[07:46] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,293|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:33:11|h[07:46] |h|r|H1:p:33:11|h[|h|cFFD700|H1:p:33:11|hPA B|h|r|cFFFFFF|H1:p:33:11|hanking|h|r|H1:p:33:11|h] |h|cffffff|H1:p:33:11|h5,293|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:33:11|h deposited|h",
-                        ["rawLine"] = "[07:46] [PA Banking] 5,293|u0:6%:currency:|u deposited",
-                        ["rawTimestamp"] = 1737377217,
-                        ["rawText"] = "|c8F8F8F[07:46] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,293|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                    },
-                    [34] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:46] Writ Crafter: Depositing [Sealed Alchemy Writ]",
-                        ["rawValue"] = "|c8F8F8F[07:46] |rWrit Crafter: Depositing |H0:item:119701:5:1:0:0:0:239:27:1:4:0:0:0:0:0:0:0:0:0:0:20000|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:34:11|h[07:46] |h|r|H1:p:34:11|hWrit Crafter: Depositing |h|H0:item:119701:5:1:0:0:0:239:27:1:4:0:0:0:0:0:0:0:0:0:0:20000|h|h",
-                        ["rawLine"] = "[07:46] Writ Crafter: Depositing [Sealed Alchemy Writ]",
-                        ["rawTimestamp"] = 1737377218,
-                        ["rawText"] = "|c8F8F8F[07:46] |rWrit Crafter: Depositing |H0:item:119701:5:1:0:0:0:239:27:1:4:0:0:0:0:0:0:0:0:0:0:20000|h|h",
-                    },
-                    [35] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:46] [PA Banking] Could not move [Superb Glyph of Weakening] to Bank. Window was closed!",
-                        ["rawValue"] = "|c8F8F8F[07:46] |r[|cFFD700PA B|r|cFFFFFFanking|r] Could not move |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h to Bank. Window was closed!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:35:11|h[07:46] |h|r|H1:p:35:11|h[|h|cFFD700|H1:p:35:11|hPA B|h|r|cFFFFFF|H1:p:35:11|hanking|h|r|H1:p:35:11|h] Could not move |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:35:11|h to Bank. Window was closed!|h",
-                        ["rawLine"] = "[07:46] [PA Banking] Could not move [Superb Glyph of Weakening] to Bank. Window was closed!",
-                        ["rawTimestamp"] = 1737377218,
-                        ["rawText"] = "|c8F8F8F[07:46] |r[|cFFD700PA B|r|cFFFFFFanking|r] Could not move |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h to Bank. Window was closed!",
-                    },
-                    [36] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:36:11|h[07:47] |h|r|H1:p:36:11|h[|h|cFFD700|H1:p:36:11|hPA B|h|r|cFFFFFF|H1:p:36:11|hanking|h|r|H1:p:36:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:36:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["rawTimestamp"] = 1737377238,
-                        ["rawText"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                    },
-                    [37] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Disease Resist] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26847:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Disease Resist]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:37:11|h[07:47] |h|r|H1:p:37:11|h[|h|cFFD700|H1:p:37:11|hPA B|h|r|cFFFFFF|H1:p:37:11|hanking|h|r|H1:p:37:11|h] 1 x |h|H1:item:26847:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Disease Resist]|h|H1:p:37:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Disease Resist] moved to Bank",
-                        ["rawTimestamp"] = 1737377239,
-                        ["rawText"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26847:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Disease Resist]|h moved to Bank",
-                    },
-                    [38] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Flame] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:38:11|h[07:47] |h|r|H1:p:38:11|h[|h|cFFD700|H1:p:38:11|hPA B|h|r|cFFFFFF|H1:p:38:11|hanking|h|r|H1:p:38:11|h] 1 x |h|H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h|H1:p:38:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Flame] moved to Bank",
-                        ["rawTimestamp"] = 1737377239,
-                        ["rawText"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Bank",
-                    },
-                    [39] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:39:11|h[07:47] |h|r|H1:p:39:11|h[|h|cFFD700|H1:p:39:11|hPA B|h|r|cFFFFFF|H1:p:39:11|hanking|h|r|H1:p:39:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:39:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawTimestamp"] = 1737377240,
-                        ["rawText"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                    },
-                    [40] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Disease Resist] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26847:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Disease Resist]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:40:11|h[07:47] |h|r|H1:p:40:11|h[|h|cFFD700|H1:p:40:11|hPA B|h|r|cFFFFFF|H1:p:40:11|hanking|h|r|H1:p:40:11|h] 1 x |h|H1:item:26847:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Disease Resist]|h|H1:p:40:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Disease Resist] moved to Backpack",
-                        ["rawTimestamp"] = 1737377240,
-                        ["rawText"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26847:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Disease Resist]|h moved to Backpack",
-                    },
-                    [41] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Flame] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:41:11|h[07:47] |h|r|H1:p:41:11|h[|h|cFFD700|H1:p:41:11|hPA B|h|r|cFFFFFF|H1:p:41:11|hanking|h|r|H1:p:41:11|h] 1 x |h|H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h|H1:p:41:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:47] [PA Banking] 1 x [Superb Glyph of Flame] moved to Backpack",
-                        ["rawTimestamp"] = 1737377241,
-                        ["rawText"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Backpack",
-                    },
-                    [42] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:47] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:42:11|h[07:47] |h|r|H1:p:42:11|h[|h|cFFD700|H1:p:42:11|hPA B|h|r|cFFFFFF|H1:p:42:11|hanking|h|r|H1:p:42:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[07:47] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737377241,
-                        ["rawText"] = "|c8F8F8F[07:47] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [43] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:43:11|h[07:50] |h|r|H1:p:43:11|h[|h|cFFD700|H1:p:43:11|hPA B|h|r|cFFFFFF|H1:p:43:11|hanking|h|r|H1:p:43:11|h] 1 x |h|H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h|H1:p:43:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Bank",
-                        ["rawTimestamp"] = 1737377429,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Bank",
-                    },
-                    [44] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Reduce Feat Cost] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:44:11|h[07:50] |h|r|H1:p:44:11|h[|h|cFFD700|H1:p:44:11|hPA B|h|r|cFFFFFF|H1:p:44:11|hanking|h|r|H1:p:44:11|h] 1 x |h|H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h|H1:p:44:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Reduce Feat Cost] moved to Bank",
-                        ["rawTimestamp"] = 1737377429,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h moved to Bank",
-                    },
-                    [45] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Frost] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:45:11|h[07:50] |h|r|H1:p:45:11|h[|h|cFFD700|H1:p:45:11|hPA B|h|r|cFFFFFF|H1:p:45:11|hanking|h|r|H1:p:45:11|h] 1 x |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:45:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Frost] moved to Bank",
-                        ["rawTimestamp"] = 1737377430,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Bank",
-                    },
-                    [46] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Shock] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:46:11|h[07:50] |h|r|H1:p:46:11|h[|h|cFFD700|H1:p:46:11|hPA B|h|r|cFFFFFF|H1:p:46:11|hanking|h|r|H1:p:46:11|h] 1 x |h|H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h|H1:p:46:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Shock] moved to Bank",
-                        ["rawTimestamp"] = 1737377430,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h moved to Bank",
-                    },
-                    [47] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Bashing] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45872:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bashing]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:47:11|h[07:50] |h|r|H1:p:47:11|h[|h|cFFD700|H1:p:47:11|hPA B|h|r|cFFFFFF|H1:p:47:11|hanking|h|r|H1:p:47:11|h] 1 x |h|H1:item:45872:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bashing]|h|H1:p:47:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Bashing] moved to Bank",
-                        ["rawTimestamp"] = 1737377431,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45872:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bashing]|h moved to Bank",
-                    },
-                    [48] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Absorb Stamina] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:48:11|h[07:50] |h|r|H1:p:48:11|h[|h|cFFD700|H1:p:48:11|hPA B|h|r|cFFFFFF|H1:p:48:11|hanking|h|r|H1:p:48:11|h] 1 x |h|H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h|H1:p:48:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Absorb Stamina] moved to Bank",
-                        ["rawTimestamp"] = 1737377431,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h moved to Bank",
-                    },
-                    [49] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:49:11|h[07:50] |h|r|H1:p:49:11|h[|h|cFFD700|H1:p:49:11|hPA B|h|r|cFFFFFF|H1:p:49:11|hanking|h|r|H1:p:49:11|h] 1 x |h|H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h|H1:p:49:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:50] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Backpack",
-                        ["rawTimestamp"] = 1737377432,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Backpack",
-                    },
-                    [50] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] Dolgubon's Lazy Writ Crafter retrieved 1 [Damage Health Poison IX]. (1364 in bank)",
-                        ["rawValue"] = "|c8F8F8F[07:50] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:76827:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:131072|h|h. (1364 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:50:11|h[07:50] |h|r|H1:p:50:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:76827:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:131072|h|h|H1:p:50:11|h. (1364 in bank)|h",
-                        ["rawLine"] = "[07:50] Dolgubon's Lazy Writ Crafter retrieved 1 [Damage Health Poison IX]. (1364 in bank)",
-                        ["rawTimestamp"] = 1737377439,
-                        ["rawText"] = "|c8F8F8F[07:50] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:76827:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:131072|h|h. (1364 in bank)",
-                    },
-                    [51] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] Dolgubon's Lazy Writ Crafter retrieved 1 [Lilmoth Garlic Hagfish]. (16 in bank)",
-                        ["rawValue"] = "|c8F8F8F[07:50] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (16 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:51:11|h[07:50] |h|r|H1:p:51:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:51:11|h. (16 in bank)|h",
-                        ["rawLine"] = "[07:50] Dolgubon's Lazy Writ Crafter retrieved 1 [Lilmoth Garlic Hagfish]. (16 in bank)",
-                        ["rawTimestamp"] = 1737377439,
-                        ["rawText"] = "|c8F8F8F[07:50] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (16 in bank)",
-                    },
-                    [52] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] Dolgubon's Lazy Writ Crafter retrieved 1 [Hagraven's Tonic]. (14 in bank)",
-                        ["rawValue"] = "|c8F8F8F[07:50] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (14 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:52:11|h[07:50] |h|r|H1:p:52:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:52:11|h. (14 in bank)|h",
-                        ["rawLine"] = "[07:50] Dolgubon's Lazy Writ Crafter retrieved 1 [Hagraven's Tonic]. (14 in bank)",
-                        ["rawTimestamp"] = 1737377439,
-                        ["rawText"] = "|c8F8F8F[07:50] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (14 in bank)",
-                    },
-                    [53] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Banking] Could not move [Superb Glyph of Frost] to Backpack. Window was closed!",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] Could not move |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h to Backpack. Window was closed!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:53:11|h[07:50] |h|r|H1:p:53:11|h[|h|cFFD700|H1:p:53:11|hPA B|h|r|cFFFFFF|H1:p:53:11|hanking|h|r|H1:p:53:11|h] Could not move |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:53:11|h to Backpack. Window was closed!|h",
-                        ["rawLine"] = "[07:50] [PA Banking] Could not move [Superb Glyph of Frost] to Backpack. Window was closed!",
-                        ["rawTimestamp"] = 1737377441,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA B|r|cFFFFFFanking|r] Could not move |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h to Backpack. Window was closed!",
-                    },
-                    [54] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:54:11|h[07:50] |h|r|H1:p:54:11|h[|h|cFFD700|H1:p:54:11|hPA W|h|r|cFFFFFF|H1:p:54:11|horker|h|r|H1:p:54:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:50] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377450,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [55] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:55:11|h[07:50] |h|r|H1:p:55:11|h[|h|cFFD700|H1:p:55:11|hPA W|h|r|cFFFFFF|H1:p:55:11|horker|h|r|H1:p:55:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:50] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377453,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [56] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:50] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:50] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:56:11|h[07:50] |h|r|H1:p:56:11|h[|h|cFFD700|H1:p:56:11|hPA W|h|r|cFFFFFF|H1:p:56:11|horker|h|r|H1:p:56:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:50] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377455,
-                        ["rawText"] = "|c8F8F8F[07:50] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [57] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:57:11|h[07:53] |h|r|H1:p:57:11|h[|h|cFFD700|H1:p:57:11|hPA W|h|r|cFFFFFF|H1:p:57:11|horker|h|r|H1:p:57:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377588,
-                        ["rawText"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [58] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] AR Researching [Gauntlets of the Fire] (Divines)",
-                        ["rawValue"] = "|c8F8F8F[07:53] |rAR Researching |H0:item:95307:363:50:0:0:0:0:0:0:0:0:0:0:0:0:35:0:0:0:10000:0|h|h (Divines)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:58:11|h[07:53] |h|r|H1:p:58:11|hAR Researching |h|H0:item:95307:363:50:0:0:0:0:0:0:0:0:0:0:0:0:35:0:0:0:10000:0|h|h|H1:p:58:11|h (Divines)|h",
-                        ["rawLine"] = "[07:53] AR Researching [Gauntlets of the Fire] (Divines)",
-                        ["rawTimestamp"] = 1737377588,
-                        ["rawText"] = "|c8F8F8F[07:53] |rAR Researching |H0:item:95307:363:50:0:0:0:0:0:0:0:0:0:0:0:0:35:0:0:0:10000:0|h|h (Divines)",
-                    },
-                    [59] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:59:11|h[07:53] |h|r|H1:p:59:11|h[|h|cFFD700|H1:p:59:11|hPA W|h|r|cFFFFFF|H1:p:59:11|horker|h|r|H1:p:59:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377588,
-                        ["rawText"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [60] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:60:11|h[07:53] |h|r|H1:p:60:11|h[|h|cFFD700|H1:p:60:11|hPA W|h|r|cFFFFFF|H1:p:60:11|horker|h|r|H1:p:60:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377591,
-                        ["rawText"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [61] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:61:11|h[07:53] |h|r|H1:p:61:11|h[|h|cFFD700|H1:p:61:11|hPA W|h|r|cFFFFFF|H1:p:61:11|horker|h|r|H1:p:61:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377593,
-                        ["rawText"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [62] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:62:11|h[07:53] |h|r|H1:p:62:11|h[|h|cFFD700|H1:p:62:11|hPA W|h|r|cFFFFFF|H1:p:62:11|horker|h|r|H1:p:62:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377599,
-                        ["rawText"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [63] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:63:11|h[07:53] |h|r|H1:p:63:11|h[|h|cFFD700|H1:p:63:11|hPA W|h|r|cFFFFFF|H1:p:63:11|horker|h|r|H1:p:63:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377601,
-                        ["rawText"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [64] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:64:11|h[07:53] |h|r|H1:p:64:11|h[|h|cFFD700|H1:p:64:11|hPA W|h|r|cFFFFFF|H1:p:64:11|horker|h|r|H1:p:64:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377610,
-                        ["rawText"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [65] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] [PA Worker] [Superb Glyph of Stamina Recovery] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:65:11|h[07:53] |h|r|H1:p:65:11|h[|h|cFFD700|H1:p:65:11|hPA W|h|r|cFFFFFF|H1:p:65:11|horker|h|r|H1:p:65:11|h] |h|H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:65:11|h has been deconstructed|h",
-                        ["rawLine"] = "[07:53] [PA Worker] [Superb Glyph of Stamina Recovery] has been deconstructed",
-                        ["rawTimestamp"] = 1737377612,
-                        ["rawText"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [66] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] [PA Worker] [Superb Glyph of Reduce Feat Cost] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:66:11|h[07:53] |h|r|H1:p:66:11|h[|h|cFFD700|H1:p:66:11|hPA W|h|r|cFFFFFF|H1:p:66:11|horker|h|r|H1:p:66:11|h] |h|H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:66:11|h has been deconstructed|h",
-                        ["rawLine"] = "[07:53] [PA Worker] [Superb Glyph of Reduce Feat Cost] has been deconstructed",
-                        ["rawTimestamp"] = 1737377612,
-                        ["rawText"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [67] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:67:11|h[07:53] |h|r|H1:p:67:11|h[|h|cFFD700|H1:p:67:11|hPA W|h|r|cFFFFFF|H1:p:67:11|horker|h|r|H1:p:67:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:53] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377616,
-                        ["rawText"] = "|c8F8F8F[07:53] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [68] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] Writ Crafter: Queued [Rubedo Leather Jack] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:53] |rWrit Crafter: Queued |H0:item:45356:308:50:0:0:0:0:0:0:0:0:0:0:0:0:5:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:68:11|h[07:53] |h|r|H1:p:68:11|hWrit Crafter: Queued |h|H0:item:45356:308:50:0:0:0:0:0:0:0:0:0:0:0:0:5:0:0:0:10000:0|h|h|H1:p:68:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:53] Writ Crafter: Queued [Rubedo Leather Jack] for deconstruction",
-                        ["rawTimestamp"] = 1737377638,
-                        ["rawText"] = "|c8F8F8F[07:53] |rWrit Crafter: Queued |H0:item:45356:308:50:0:0:0:0:0:0:0:0:0:0:0:0:5:0:0:0:10000:0|h|h for deconstruction",
-                    },
-                    [69] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] Writ Crafter: Queued up to deposit [Clothier Survey: Stormhaven]",
-                        ["rawValue"] = "|c8F8F8F[07:53] |rWrit Crafter: Queued up to deposit |H0:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:69:11|h[07:53] |h|r|H1:p:69:11|hWrit Crafter: Queued up to deposit |h|H0:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["rawLine"] = "[07:53] Writ Crafter: Queued up to deposit [Clothier Survey: Stormhaven]",
-                        ["rawTimestamp"] = 1737377638,
-                        ["rawText"] = "|c8F8F8F[07:53] |rWrit Crafter: Queued up to deposit |H0:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                    },
-                    [70] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:53] Writ Crafter: Queued up to deposit [Sealed Clothier Writ]",
-                        ["rawValue"] = "|c8F8F8F[07:53] |rWrit Crafter: Queued up to deposit |H0:item:119694:5:1:0:0:0:29:194:4:41:25:23:0:0:0:0:0:0:0:0:172500|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:70:11|h[07:53] |h|r|H1:p:70:11|hWrit Crafter: Queued up to deposit |h|H0:item:119694:5:1:0:0:0:29:194:4:41:25:23:0:0:0:0:0:0:0:0:172500|h|h",
-                        ["rawLine"] = "[07:53] Writ Crafter: Queued up to deposit [Sealed Clothier Writ]",
-                        ["rawTimestamp"] = 1737377638,
-                        ["rawText"] = "|c8F8F8F[07:53] |rWrit Crafter: Queued up to deposit |H0:item:119694:5:1:0:0:0:29:194:4:41:25:23:0:0:0:0:0:0:0:0:172500|h|h",
-                    },
-                    [71] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] Writ Crafter: Queued [Rubedite Maul] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:54] |rWrit Crafter: Queued |H0:item:45302:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:71:11|h[07:54] |h|r|H1:p:71:11|hWrit Crafter: Queued |h|H0:item:45302:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h|H1:p:71:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:54] Writ Crafter: Queued [Rubedite Maul] for deconstruction",
-                        ["rawTimestamp"] = 1737377641,
-                        ["rawText"] = "|c8F8F8F[07:54] |rWrit Crafter: Queued |H0:item:45302:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [72] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] Writ Crafter: Queued [Ruby Ash Ice Staff] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:54] |rWrit Crafter: Queued |H0:item:45365:365:50:0:0:0:0:0:0:0:0:0:0:0:0:54:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:72:11|h[07:54] |h|r|H1:p:72:11|hWrit Crafter: Queued |h|H0:item:45365:365:50:0:0:0:0:0:0:0:0:0:0:0:0:54:0:0:0:0:0|h|h|H1:p:72:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:54] Writ Crafter: Queued [Ruby Ash Ice Staff] for deconstruction",
-                        ["rawTimestamp"] = 1737377646,
-                        ["rawText"] = "|c8F8F8F[07:54] |rWrit Crafter: Queued |H0:item:45365:365:50:0:0:0:0:0:0:0:0:0:0:0:0:54:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [73] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] Writ Crafter: Queued [Platinum Necklace] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:54] |rWrit Crafter: Queued |H0:item:54515:365:50:0:0:0:0:0:0:0:0:0:0:0:0:49:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:73:11|h[07:54] |h|r|H1:p:73:11|hWrit Crafter: Queued |h|H0:item:54515:365:50:0:0:0:0:0:0:0:0:0:0:0:0:49:0:0:0:0:0|h|h|H1:p:73:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:54] Writ Crafter: Queued [Platinum Necklace] for deconstruction",
-                        ["rawTimestamp"] = 1737377647,
-                        ["rawText"] = "|c8F8F8F[07:54] |rWrit Crafter: Queued |H0:item:54515:365:50:0:0:0:0:0:0:0:0:0:0:0:0:49:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [74] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Junk] Sold items for 606|u0:6%:currency:|u",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00606|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:74:11|h[07:54] |h|r|H1:p:74:11|h[|h|cFFD700|H1:p:74:11|hPA J|h|r|cFFFFFF|H1:p:74:11|hunk|h|r|H1:p:74:11|h] Sold items for |h|c00ff00|H1:p:74:11|h606|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawLine"] = "[07:54] [PA Junk] Sold items for 606|u0:6%:currency:|u",
-                        ["rawTimestamp"] = 1737377656,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00606|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                    },
-                    [75] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] Writ Crafter: Depositing [Clothier Survey: Stormhaven]",
-                        ["rawValue"] = "|c8F8F8F[07:54] |rWrit Crafter: Depositing |H0:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:75:11|h[07:54] |h|r|H1:p:75:11|hWrit Crafter: Depositing |h|H0:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["rawLine"] = "[07:54] Writ Crafter: Depositing [Clothier Survey: Stormhaven]",
-                        ["rawTimestamp"] = 1737377663,
-                        ["rawText"] = "|c8F8F8F[07:54] |rWrit Crafter: Depositing |H0:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                    },
-                    [76] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 5,681|u0:6%:currency:|u deposited",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,681|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:76:11|h[07:54] |h|r|H1:p:76:11|h[|h|cFFD700|H1:p:76:11|hPA B|h|r|cFFFFFF|H1:p:76:11|hanking|h|r|H1:p:76:11|h] |h|cffffff|H1:p:76:11|h5,681|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:76:11|h deposited|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 5,681|u0:6%:currency:|u deposited",
-                        ["rawTimestamp"] = 1737377663,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,681|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                    },
-                    [77] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] Writ Crafter: Depositing [Sealed Clothier Writ]",
-                        ["rawValue"] = "|c8F8F8F[07:54] |rWrit Crafter: Depositing |H0:item:119694:5:1:0:0:0:29:194:4:41:25:23:0:0:0:0:0:0:0:0:172500|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:77:11|h[07:54] |h|r|H1:p:77:11|hWrit Crafter: Depositing |h|H0:item:119694:5:1:0:0:0:29:194:4:41:25:23:0:0:0:0:0:0:0:0:172500|h|h",
-                        ["rawLine"] = "[07:54] Writ Crafter: Depositing [Sealed Clothier Writ]",
-                        ["rawTimestamp"] = 1737377664,
-                        ["rawText"] = "|c8F8F8F[07:54] |rWrit Crafter: Depositing |H0:item:119694:5:1:0:0:0:29:194:4:41:25:23:0:0:0:0:0:0:0:0:172500|h|h",
-                    },
-                    [78] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] Could not move [Superb Glyph of Stamina Recovery] to Bank. Window was closed!",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] Could not move |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h to Bank. Window was closed!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:78:11|h[07:54] |h|r|H1:p:78:11|h[|h|cFFD700|H1:p:78:11|hPA B|h|r|cFFFFFF|H1:p:78:11|hanking|h|r|H1:p:78:11|h] Could not move |h|H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h|H1:p:78:11|h to Bank. Window was closed!|h",
-                        ["rawLine"] = "[07:54] [PA Banking] Could not move [Superb Glyph of Stamina Recovery] to Bank. Window was closed!",
-                        ["rawTimestamp"] = 1737377665,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] Could not move |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h to Bank. Window was closed!",
-                    },
-                    [79] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:79:11|h[07:54] |h|r|H1:p:79:11|h[|h|cFFD700|H1:p:79:11|hPA B|h|r|cFFFFFF|H1:p:79:11|hanking|h|r|H1:p:79:11|h] 1 x |h|H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h|H1:p:79:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Bank",
-                        ["rawTimestamp"] = 1737377669,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Bank",
-                    },
-                    [80] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Reduce Feat Cost] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:80:11|h[07:54] |h|r|H1:p:80:11|h[|h|cFFD700|H1:p:80:11|hPA B|h|r|cFFFFFF|H1:p:80:11|hanking|h|r|H1:p:80:11|h] 1 x |h|H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h|H1:p:80:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Reduce Feat Cost] moved to Bank",
-                        ["rawTimestamp"] = 1737377670,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h moved to Bank",
-                    },
-                    [81] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Flame] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:81:11|h[07:54] |h|r|H1:p:81:11|h[|h|cFFD700|H1:p:81:11|hPA B|h|r|cFFFFFF|H1:p:81:11|hanking|h|r|H1:p:81:11|h] 1 x |h|H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h|H1:p:81:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Flame] moved to Bank",
-                        ["rawTimestamp"] = 1737377670,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Bank",
-                    },
-                    [82] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:82:11|h[07:54] |h|r|H1:p:82:11|h[|h|cFFD700|H1:p:82:11|hPA B|h|r|cFFFFFF|H1:p:82:11|hanking|h|r|H1:p:82:11|h] 1 x |h|H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h|H1:p:82:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Backpack",
-                        ["rawTimestamp"] = 1737377670,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Backpack",
-                    },
-                    [83] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Frost] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:83:11|h[07:54] |h|r|H1:p:83:11|h[|h|cFFD700|H1:p:83:11|hPA B|h|r|cFFFFFF|H1:p:83:11|hanking|h|r|H1:p:83:11|h] 1 x |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:83:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Frost] moved to Backpack",
-                        ["rawTimestamp"] = 1737377672,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Backpack",
-                    },
-                    [84] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Shock] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:84:11|h[07:54] |h|r|H1:p:84:11|h[|h|cFFD700|H1:p:84:11|hPA B|h|r|cFFFFFF|H1:p:84:11|hanking|h|r|H1:p:84:11|h] 1 x |h|H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h|H1:p:84:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Shock] moved to Backpack",
-                        ["rawTimestamp"] = 1737377673,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h moved to Backpack",
-                    },
-                    [85] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Bashing] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45872:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bashing]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:85:11|h[07:54] |h|r|H1:p:85:11|h[|h|cFFD700|H1:p:85:11|hPA B|h|r|cFFFFFF|H1:p:85:11|hanking|h|r|H1:p:85:11|h] 1 x |h|H1:item:45872:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bashing]|h|H1:p:85:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Bashing] moved to Backpack",
-                        ["rawTimestamp"] = 1737377673,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45872:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bashing]|h moved to Backpack",
-                    },
-                    [86] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Absorb Stamina] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:86:11|h[07:54] |h|r|H1:p:86:11|h[|h|cFFD700|H1:p:86:11|hPA B|h|r|cFFFFFF|H1:p:86:11|hanking|h|r|H1:p:86:11|h] 1 x |h|H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h|H1:p:86:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Absorb Stamina] moved to Backpack",
-                        ["rawTimestamp"] = 1737377674,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h moved to Backpack",
-                    },
-                    [87] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Reduce Feat Cost] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:87:11|h[07:54] |h|r|H1:p:87:11|h[|h|cFFD700|H1:p:87:11|hPA B|h|r|cFFFFFF|H1:p:87:11|hanking|h|r|H1:p:87:11|h] 1 x |h|H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h|H1:p:87:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Reduce Feat Cost] moved to Backpack",
-                        ["rawTimestamp"] = 1737377674,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h moved to Backpack",
-                    },
-                    [88] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Flame] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:88:11|h[07:54] |h|r|H1:p:88:11|h[|h|cFFD700|H1:p:88:11|hPA B|h|r|cFFFFFF|H1:p:88:11|hanking|h|r|H1:p:88:11|h] 1 x |h|H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h|H1:p:88:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:54] [PA Banking] 1 x [Superb Glyph of Flame] moved to Backpack",
-                        ["rawTimestamp"] = 1737377675,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Backpack",
-                    },
-                    [89] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:54] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:89:11|h[07:54] |h|r|H1:p:89:11|h[|h|cFFD700|H1:p:89:11|hPA B|h|r|cFFFFFF|H1:p:89:11|hanking|h|r|H1:p:89:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[07:54] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737377675,
-                        ["rawText"] = "|c8F8F8F[07:54] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [90] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:55] Dolgubon's Lazy Writ Crafter retrieved 1 [Essence of Health]. (61 in bank)",
-                        ["rawValue"] = "|c8F8F8F[07:55] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:54339:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:66816|h|h. (61 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:90:11|h[07:55] |h|r|H1:p:90:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:54339:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:66816|h|h|H1:p:90:11|h. (61 in bank)|h",
-                        ["rawLine"] = "[07:55] Dolgubon's Lazy Writ Crafter retrieved 1 [Essence of Health]. (61 in bank)",
-                        ["rawTimestamp"] = 1737377757,
-                        ["rawText"] = "|c8F8F8F[07:55] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:54339:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:66816|h|h. (61 in bank)",
-                    },
-                    [91] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:55] Dolgubon's Lazy Writ Crafter retrieved 1 [Lilmoth Garlic Hagfish]. (15 in bank)",
-                        ["rawValue"] = "|c8F8F8F[07:55] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (15 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:91:11|h[07:55] |h|r|H1:p:91:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:91:11|h. (15 in bank)|h",
-                        ["rawLine"] = "[07:55] Dolgubon's Lazy Writ Crafter retrieved 1 [Lilmoth Garlic Hagfish]. (15 in bank)",
-                        ["rawTimestamp"] = 1737377757,
-                        ["rawText"] = "|c8F8F8F[07:55] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (15 in bank)",
-                    },
-                    [92] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:55] Dolgubon's Lazy Writ Crafter retrieved 1 [Hagraven's Tonic]. (13 in bank)",
-                        ["rawValue"] = "|c8F8F8F[07:55] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (13 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:92:11|h[07:55] |h|r|H1:p:92:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:92:11|h. (13 in bank)|h",
-                        ["rawLine"] = "[07:55] Dolgubon's Lazy Writ Crafter retrieved 1 [Hagraven's Tonic]. (13 in bank)",
-                        ["rawTimestamp"] = 1737377757,
-                        ["rawText"] = "|c8F8F8F[07:55] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (13 in bank)",
-                    },
-                    [93] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:93:11|h[07:56] |h|r|H1:p:93:11|h[|h|cFFD700|H1:p:93:11|hPA B|h|r|cFFFFFF|H1:p:93:11|hanking|h|r|H1:p:93:11|h] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter|h",
-                        ["rawLine"] = "[07:56] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawTimestamp"] = 1737377760,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                    },
-                    [94] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:94:11|h[07:56] |h|r|H1:p:94:11|h[|h|cFFD700|H1:p:94:11|hPA B|h|r|cFFFFFF|H1:p:94:11|hanking|h|r|H1:p:94:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[07:56] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737377760,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [95] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:95:11|h[07:56] |h|r|H1:p:95:11|h[|h|cFFD700|H1:p:95:11|hPA W|h|r|cFFFFFF|H1:p:95:11|horker|h|r|H1:p:95:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377769,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [96] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:96:11|h[07:56] |h|r|H1:p:96:11|h[|h|cFFD700|H1:p:96:11|hPA W|h|r|cFFFFFF|H1:p:96:11|horker|h|r|H1:p:96:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377771,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [97] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:97:11|h[07:56] |h|r|H1:p:97:11|h[|h|cFFD700|H1:p:97:11|hPA W|h|r|cFFFFFF|H1:p:97:11|horker|h|r|H1:p:97:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377774,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [98] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:98:11|h[07:56] |h|r|H1:p:98:11|h[|h|cFFD700|H1:p:98:11|hPA W|h|r|cFFFFFF|H1:p:98:11|horker|h|r|H1:p:98:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377780,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [99] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:99:11|h[07:56] |h|r|H1:p:99:11|h[|h|cFFD700|H1:p:99:11|hPA W|h|r|cFFFFFF|H1:p:99:11|horker|h|r|H1:p:99:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377783,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [100] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:100:11|h[07:56] |h|r|H1:p:100:11|h[|h|cFFD700|H1:p:100:11|hPA W|h|r|cFFFFFF|H1:p:100:11|horker|h|r|H1:p:100:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377785,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [101] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:101:11|h[07:56] |h|r|H1:p:101:11|h[|h|cFFD700|H1:p:101:11|hPA W|h|r|cFFFFFF|H1:p:101:11|horker|h|r|H1:p:101:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377791,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [102] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:102:11|h[07:56] |h|r|H1:p:102:11|h[|h|cFFD700|H1:p:102:11|hPA W|h|r|cFFFFFF|H1:p:102:11|horker|h|r|H1:p:102:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377794,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [103] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:103:11|h[07:56] |h|r|H1:p:103:11|h[|h|cFFD700|H1:p:103:11|hPA W|h|r|cFFFFFF|H1:p:103:11|horker|h|r|H1:p:103:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377802,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [104] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] [Superb Glyph of Weakening] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:104:11|h[07:56] |h|r|H1:p:104:11|h[|h|cFFD700|H1:p:104:11|hPA W|h|r|cFFFFFF|H1:p:104:11|horker|h|r|H1:p:104:11|h] |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:104:11|h has been deconstructed|h",
-                        ["rawLine"] = "[07:56] [PA Worker] [Superb Glyph of Weakening] has been deconstructed",
-                        ["rawTimestamp"] = 1737377805,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [105] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:105:11|h[07:56] |h|r|H1:p:105:11|h[|h|cFFD700|H1:p:105:11|hPA W|h|r|cFFFFFF|H1:p:105:11|horker|h|r|H1:p:105:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:56] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377807,
-                        ["rawText"] = "|c8F8F8F[07:56] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [106] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] Writ Crafter: Queued [Rubedite Gauntlets] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:57] |rWrit Crafter: Queued |H0:item:45342:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:106:11|h[07:57] |h|r|H1:p:106:11|hWrit Crafter: Queued |h|H0:item:45342:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:10000:0|h|h|H1:p:106:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:57] Writ Crafter: Queued [Rubedite Gauntlets] for deconstruction",
-                        ["rawTimestamp"] = 1737377824,
-                        ["rawText"] = "|c8F8F8F[07:57] |rWrit Crafter: Queued |H0:item:45342:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:10000:0|h|h for deconstruction",
-                    },
-                    [107] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] Writ Crafter: Queued [Rubedo Leather Arm Cops] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:57] |rWrit Crafter: Queued |H0:item:45361:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:107:11|h[07:57] |h|r|H1:p:107:11|hWrit Crafter: Queued |h|H0:item:45361:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h|H1:p:107:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:57] Writ Crafter: Queued [Rubedo Leather Arm Cops] for deconstruction",
-                        ["rawTimestamp"] = 1737377827,
-                        ["rawText"] = "|c8F8F8F[07:57] |rWrit Crafter: Queued |H0:item:45361:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h for deconstruction",
-                    },
-                    [108] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] Writ Crafter: Queued [Ruby Ash Restoration Staff] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:57] |rWrit Crafter: Queued |H0:item:45367:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:108:11|h[07:57] |h|r|H1:p:108:11|hWrit Crafter: Queued |h|H0:item:45367:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h|H1:p:108:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:57] Writ Crafter: Queued [Ruby Ash Restoration Staff] for deconstruction",
-                        ["rawTimestamp"] = 1737377828,
-                        ["rawText"] = "|c8F8F8F[07:57] |rWrit Crafter: Queued |H0:item:45367:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [109] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] Writ Crafter: Queued [Platinum Necklace] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:57] |rWrit Crafter: Queued |H0:item:138797:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:109:11|h[07:57] |h|r|H1:p:109:11|hWrit Crafter: Queued |h|H0:item:138797:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:109:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:57] Writ Crafter: Queued [Platinum Necklace] for deconstruction",
-                        ["rawTimestamp"] = 1737377833,
-                        ["rawText"] = "|c8F8F8F[07:57] |rWrit Crafter: Queued |H0:item:138797:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [110] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] [PA Junk] Sold items for 363|u0:6%:currency:|u",
-                        ["rawValue"] = "|c8F8F8F[07:57] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00363|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:110:11|h[07:57] |h|r|H1:p:110:11|h[|h|cFFD700|H1:p:110:11|hPA J|h|r|cFFFFFF|H1:p:110:11|hunk|h|r|H1:p:110:11|h] Sold items for |h|c00ff00|H1:p:110:11|h363|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawLine"] = "[07:57] [PA Junk] Sold items for 363|u0:6%:currency:|u",
-                        ["rawTimestamp"] = 1737377848,
-                        ["rawText"] = "|c8F8F8F[07:57] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00363|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                    },
-                    [111] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] [PA Banking] 5,438|u0:6%:currency:|u deposited",
-                        ["rawValue"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,438|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:111:11|h[07:57] |h|r|H1:p:111:11|h[|h|cFFD700|H1:p:111:11|hPA B|h|r|cFFFFFF|H1:p:111:11|hanking|h|r|H1:p:111:11|h] |h|cffffff|H1:p:111:11|h5,438|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:111:11|h deposited|h",
-                        ["rawLine"] = "[07:57] [PA Banking] 5,438|u0:6%:currency:|u deposited",
-                        ["rawTimestamp"] = 1737377858,
-                        ["rawText"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,438|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                    },
-                    [112] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] [PA Banking] 1 x [Superb Glyph of Bracing] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45873:312:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h[Superb Glyph of Bracing]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:112:11|h[07:57] |h|r|H1:p:112:11|h[|h|cFFD700|H1:p:112:11|hPA B|h|r|cFFFFFF|H1:p:112:11|hanking|h|r|H1:p:112:11|h] 1 x |h|H1:item:45873:312:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h[Superb Glyph of Bracing]|h|H1:p:112:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:57] [PA Banking] 1 x [Superb Glyph of Bracing] moved to Bank",
-                        ["rawTimestamp"] = 1737377859,
-                        ["rawText"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45873:312:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h[Superb Glyph of Bracing]|h moved to Bank",
-                    },
-                    [113] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:113:11|h[07:57] |h|r|H1:p:113:11|h[|h|cFFD700|H1:p:113:11|hPA B|h|r|cFFFFFF|H1:p:113:11|hanking|h|r|H1:p:113:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:113:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:57] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["rawTimestamp"] = 1737377860,
-                        ["rawText"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                    },
-                    [114] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] [PA Banking] 1 x [Superb Glyph of Frost] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:114:11|h[07:57] |h|r|H1:p:114:11|h[|h|cFFD700|H1:p:114:11|hPA B|h|r|cFFFFFF|H1:p:114:11|hanking|h|r|H1:p:114:11|h] 1 x |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:114:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:57] [PA Banking] 1 x [Superb Glyph of Frost] moved to Bank",
-                        ["rawTimestamp"] = 1737377860,
-                        ["rawText"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Bank",
-                    },
-                    [115] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] [PA Banking] 1 x [Platinum Necklace]  moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:138797:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:115:11|h[07:57] |h|r|H1:p:115:11|h[|h|cFFD700|H1:p:115:11|hPA B|h|r|cFFFFFF|H1:p:115:11|hanking|h|r|H1:p:115:11|h] 1 x |h|H1:item:138797:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t|H1:p:115:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:57] [PA Banking] 1 x [Platinum Necklace]  moved to Bank",
-                        ["rawTimestamp"] = 1737377860,
-                        ["rawText"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:138797:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t moved to Bank",
-                    },
-                    [116] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:116:11|h[07:57] |h|r|H1:p:116:11|h[|h|cFFD700|H1:p:116:11|hPA B|h|r|cFFFFFF|H1:p:116:11|hanking|h|r|H1:p:116:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:116:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:57] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawTimestamp"] = 1737377861,
-                        ["rawText"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                    },
-                    [117] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] [PA Banking] 1 x [Superb Glyph of Frost] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:117:11|h[07:57] |h|r|H1:p:117:11|h[|h|cFFD700|H1:p:117:11|hPA B|h|r|cFFFFFF|H1:p:117:11|hanking|h|r|H1:p:117:11|h] 1 x |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:117:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:57] [PA Banking] 1 x [Superb Glyph of Frost] moved to Backpack",
-                        ["rawTimestamp"] = 1737377862,
-                        ["rawText"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Backpack",
-                    },
-                    [118] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:57] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:118:11|h[07:57] |h|r|H1:p:118:11|h[|h|cFFD700|H1:p:118:11|hPA B|h|r|cFFFFFF|H1:p:118:11|hanking|h|r|H1:p:118:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[07:57] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737377862,
-                        ["rawText"] = "|c8F8F8F[07:57] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [119] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:58] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:58] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:119:11|h[07:58] |h|r|H1:p:119:11|h[|h|cFFD700|H1:p:119:11|hPA B|h|r|cFFFFFF|H1:p:119:11|hanking|h|r|H1:p:119:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:119:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:58] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["rawTimestamp"] = 1737377886,
-                        ["rawText"] = "|c8F8F8F[07:58] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                    },
-                    [120] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:58] [PA Banking] 1 x [Superb Glyph of Frost] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[07:58] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:120:11|h[07:58] |h|r|H1:p:120:11|h[|h|cFFD700|H1:p:120:11|hPA B|h|r|cFFFFFF|H1:p:120:11|hanking|h|r|H1:p:120:11|h] 1 x |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:120:11|h moved to Bank|h",
-                        ["rawLine"] = "[07:58] [PA Banking] 1 x [Superb Glyph of Frost] moved to Bank",
-                        ["rawTimestamp"] = 1737377886,
-                        ["rawText"] = "|c8F8F8F[07:58] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Bank",
-                    },
-                    [121] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:58] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:58] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:121:11|h[07:58] |h|r|H1:p:121:11|h[|h|cFFD700|H1:p:121:11|hPA B|h|r|cFFFFFF|H1:p:121:11|hanking|h|r|H1:p:121:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:121:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:58] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawTimestamp"] = 1737377888,
-                        ["rawText"] = "|c8F8F8F[07:58] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                    },
-                    [122] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:58] [PA Banking] 1 x [Superb Glyph of Frost] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[07:58] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:122:11|h[07:58] |h|r|H1:p:122:11|h[|h|cFFD700|H1:p:122:11|hPA B|h|r|cFFFFFF|H1:p:122:11|hanking|h|r|H1:p:122:11|h] 1 x |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:122:11|h moved to Backpack|h",
-                        ["rawLine"] = "[07:58] [PA Banking] 1 x [Superb Glyph of Frost] moved to Backpack",
-                        ["rawTimestamp"] = 1737377888,
-                        ["rawText"] = "|c8F8F8F[07:58] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Backpack",
-                    },
-                    [123] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:58] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[07:58] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:123:11|h[07:58] |h|r|H1:p:123:11|h[|h|cFFD700|H1:p:123:11|hPA B|h|r|cFFFFFF|H1:p:123:11|hanking|h|r|H1:p:123:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[07:58] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737377889,
-                        ["rawText"] = "|c8F8F8F[07:58] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [124] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:59] Writ Crafter: Queued [Ruby Ash Lightning Staff] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[07:59] |rWrit Crafter: Queued |H0:item:45366:365:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:124:11|h[07:59] |h|r|H1:p:124:11|hWrit Crafter: Queued |h|H0:item:45366:365:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h|H1:p:124:11|h for deconstruction|h",
-                        ["rawLine"] = "[07:59] Writ Crafter: Queued [Ruby Ash Lightning Staff] for deconstruction",
-                        ["rawTimestamp"] = 1737377963,
-                        ["rawText"] = "|c8F8F8F[07:59] |rWrit Crafter: Queued |H0:item:45366:365:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [125] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:125:11|h[07:59] |h|r|H1:p:125:11|h[|h|cFFD700|H1:p:125:11|hPA W|h|r|cFFFFFF|H1:p:125:11|horker|h|r|H1:p:125:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377978,
-                        ["rawText"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [126] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:126:11|h[07:59] |h|r|H1:p:126:11|h[|h|cFFD700|H1:p:126:11|hPA W|h|r|cFFFFFF|H1:p:126:11|horker|h|r|H1:p:126:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377981,
-                        ["rawText"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [127] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:127:11|h[07:59] |h|r|H1:p:127:11|h[|h|cFFD700|H1:p:127:11|hPA W|h|r|cFFFFFF|H1:p:127:11|horker|h|r|H1:p:127:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377983,
-                        ["rawText"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [128] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:128:11|h[07:59] |h|r|H1:p:128:11|h[|h|cFFD700|H1:p:128:11|hPA W|h|r|cFFFFFF|H1:p:128:11|horker|h|r|H1:p:128:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377989,
-                        ["rawText"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [129] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:129:11|h[07:59] |h|r|H1:p:129:11|h[|h|cFFD700|H1:p:129:11|hPA W|h|r|cFFFFFF|H1:p:129:11|horker|h|r|H1:p:129:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377995,
-                        ["rawText"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [130] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:130:11|h[07:59] |h|r|H1:p:130:11|h[|h|cFFD700|H1:p:130:11|hPA W|h|r|cFFFFFF|H1:p:130:11|horker|h|r|H1:p:130:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[07:59] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737377998,
-                        ["rawText"] = "|c8F8F8F[07:59] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [131] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:00] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:131:11|h[08:00] |h|r|H1:p:131:11|h[|h|cFFD700|H1:p:131:11|hPA W|h|r|cFFFFFF|H1:p:131:11|horker|h|r|H1:p:131:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:00] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378000,
-                        ["rawText"] = "|c8F8F8F[08:00] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [132] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:00] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:132:11|h[08:00] |h|r|H1:p:132:11|h[|h|cFFD700|H1:p:132:11|hPA W|h|r|cFFFFFF|H1:p:132:11|horker|h|r|H1:p:132:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:00] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378007,
-                        ["rawText"] = "|c8F8F8F[08:00] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [133] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] [PA Worker] [Superb Glyph of Absorb Stamina] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:00] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:133:11|h[08:00] |h|r|H1:p:133:11|h[|h|cFFD700|H1:p:133:11|hPA W|h|r|cFFFFFF|H1:p:133:11|horker|h|r|H1:p:133:11|h] |h|H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:133:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:00] [PA Worker] [Superb Glyph of Absorb Stamina] has been deconstructed",
-                        ["rawTimestamp"] = 1737378010,
-                        ["rawText"] = "|c8F8F8F[08:00] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [134] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] [PA Worker] [Superb Glyph of Increase Magical Harm] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:00] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:134:11|h[08:00] |h|r|H1:p:134:11|h[|h|cFFD700|H1:p:134:11|hPA W|h|r|cFFFFFF|H1:p:134:11|horker|h|r|H1:p:134:11|h] |h|H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:134:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:00] [PA Worker] [Superb Glyph of Increase Magical Harm] has been deconstructed",
-                        ["rawTimestamp"] = 1737378010,
-                        ["rawText"] = "|c8F8F8F[08:00] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [135] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] [PA Worker] [Superb Glyph of Weakening] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:00] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:135:11|h[08:00] |h|r|H1:p:135:11|h[|h|cFFD700|H1:p:135:11|hPA W|h|r|cFFFFFF|H1:p:135:11|horker|h|r|H1:p:135:11|h] |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:135:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:00] [PA Worker] [Superb Glyph of Weakening] has been deconstructed",
-                        ["rawTimestamp"] = 1737378010,
-                        ["rawText"] = "|c8F8F8F[08:00] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [136] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] DailyAlchemy: [Drain Health Poison IX] x 1/1 [Bulk Creation]",
-                        ["rawValue"] = "|c8F8F8F[08:00] |r|c88aaffDailyAlchemy:|r |cffffff|t20:20:/esoui/art/icons/crafting_poison_002_red_005.dds|t|H0:item:76826:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:66816|h|h x 1/1 [Bulk Creation]|r",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:136:11|h[08:00] |h|r|c88aaff|H1:p:136:11|hDailyAlchemy:|h|r |cffffff|t20:20:/esoui/art/icons/crafting_poison_002_red_005.dds|t|H0:item:76826:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:66816|h|h|H1:p:136:11|h x 1/1 [Bulk Creation]|h|r",
-                        ["rawLine"] = "[08:00] DailyAlchemy: [Drain Health Poison IX] x 1/1 [Bulk Creation]",
-                        ["rawTimestamp"] = 1737378013,
-                        ["rawText"] = "|c8F8F8F[08:00] |r|c88aaffDailyAlchemy:|r |cffffff|t20:20:/esoui/art/icons/crafting_poison_002_red_005.dds|t|H0:item:76826:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:66816|h|h x 1/1 [Bulk Creation]|r",
-                    },
-                    [137] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] Writ Crafter: Queued [Platinum Ring] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:00] |rWrit Crafter: Queued |H0:item:54511:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:137:11|h[08:00] |h|r|H1:p:137:11|hWrit Crafter: Queued |h|H0:item:54511:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:137:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:00] Writ Crafter: Queued [Platinum Ring] for deconstruction",
-                        ["rawTimestamp"] = 1737378023,
-                        ["rawText"] = "|c8F8F8F[08:00] |rWrit Crafter: Queued |H0:item:54511:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [138] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] Writ Crafter: Queued [Ancestor Silk Hat] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:00] |rWrit Crafter: Queued |H0:item:45350:308:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:138:11|h[08:00] |h|r|H1:p:138:11|hWrit Crafter: Queued |h|H0:item:45350:308:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h|H1:p:138:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:00] Writ Crafter: Queued [Ancestor Silk Hat] for deconstruction",
-                        ["rawTimestamp"] = 1737378024,
-                        ["rawText"] = "|c8F8F8F[08:00] |rWrit Crafter: Queued |H0:item:45350:308:50:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:10000:0|h|h for deconstruction",
-                    },
-                    [139] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] Writ Crafter: Queued [Rubedite Sword] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:00] |rWrit Crafter: Queued |H0:item:45335:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:139:11|h[08:00] |h|r|H1:p:139:11|hWrit Crafter: Queued |h|H0:item:45335:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h|H1:p:139:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:00] Writ Crafter: Queued [Rubedite Sword] for deconstruction",
-                        ["rawTimestamp"] = 1737378026,
-                        ["rawText"] = "|c8F8F8F[08:00] |rWrit Crafter: Queued |H0:item:45335:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [140] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] Writ Crafter: Deconstructed [Ruby Ash Lightning Staff]",
-                        ["rawValue"] = "|c8F8F8F[08:00] |rWrit Crafter: Deconstructed |H0:item:45366:365:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:140:11|h[08:00] |h|r|H1:p:140:11|hWrit Crafter: Deconstructed |h|H0:item:45366:365:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h",
-                        ["rawLine"] = "[08:00] Writ Crafter: Deconstructed [Ruby Ash Lightning Staff]",
-                        ["rawTimestamp"] = 1737378028,
-                        ["rawText"] = "|c8F8F8F[08:00] |rWrit Crafter: Deconstructed |H0:item:45366:365:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h",
-                    },
-                    [141] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] [PA Banking] 3,625|u0:6%:currency:|u deposited",
-                        ["rawValue"] = "|c8F8F8F[08:00] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff3,625|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:141:11|h[08:00] |h|r|H1:p:141:11|h[|h|cFFD700|H1:p:141:11|hPA B|h|r|cFFFFFF|H1:p:141:11|hanking|h|r|H1:p:141:11|h] |h|cffffff|H1:p:141:11|h3,625|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:141:11|h deposited|h",
-                        ["rawLine"] = "[08:00] [PA Banking] 3,625|u0:6%:currency:|u deposited",
-                        ["rawTimestamp"] = 1737378042,
-                        ["rawText"] = "|c8F8F8F[08:00] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff3,625|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                    },
-                    [142] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] Dolgubon's Lazy Writ Crafter retrieved 1 [Markarth Mead]. (0 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:00] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68257:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (0 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:142:11|h[08:00] |h|r|H1:p:142:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68257:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:142:11|h. (0 in bank)|h",
-                        ["rawLine"] = "[08:00] Dolgubon's Lazy Writ Crafter retrieved 1 [Markarth Mead]. (0 in bank)",
-                        ["rawTimestamp"] = 1737378043,
-                        ["rawText"] = "|c8F8F8F[08:00] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68257:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (0 in bank)",
-                    },
-                    [143] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] [PA Banking] 1 x [Superb Glyph of Absorb Stamina] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:00] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:143:11|h[08:00] |h|r|H1:p:143:11|h[|h|cFFD700|H1:p:143:11|hPA B|h|r|cFFFFFF|H1:p:143:11|hanking|h|r|H1:p:143:11|h] 1 x |h|H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h|H1:p:143:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:00] [PA Banking] 1 x [Superb Glyph of Absorb Stamina] moved to Bank",
-                        ["rawTimestamp"] = 1737378044,
-                        ["rawText"] = "|c8F8F8F[08:00] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h moved to Bank",
-                    },
-                    [144] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] DailyProvisioning: [Hearty Garlic Corn Chowder] x 1/1 [Bulk Creation]",
-                        ["rawValue"] = "|c8F8F8F[08:00] |r|c88aaffDailyProvisioning:|r |cffffff|t20:20:/esoui/art/icons/crafting_soup_002.dds|t|H0:item:68239:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h x 1/1 [Bulk Creation]|r",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:144:11|h[08:00] |h|r|c88aaff|H1:p:144:11|hDailyProvisioning:|h|r |cffffff|t20:20:/esoui/art/icons/crafting_soup_002.dds|t|H0:item:68239:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:144:11|h x 1/1 [Bulk Creation]|h|r",
-                        ["rawLine"] = "[08:00] DailyProvisioning: [Hearty Garlic Corn Chowder] x 1/1 [Bulk Creation]",
-                        ["rawTimestamp"] = 1737378049,
-                        ["rawText"] = "|c8F8F8F[08:00] |r|c88aaffDailyProvisioning:|r |cffffff|t20:20:/esoui/art/icons/crafting_soup_002.dds|t|H0:item:68239:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h x 1/1 [Bulk Creation]|r",
-                    },
-                    [145] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] Writ Crafter: Queued [Ruby Ash Lightning Staff] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:00] |rWrit Crafter: Queued |H0:item:45366:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:145:11|h[08:00] |h|r|H1:p:145:11|hWrit Crafter: Queued |h|H0:item:45366:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h|H1:p:145:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:00] Writ Crafter: Queued [Ruby Ash Lightning Staff] for deconstruction",
-                        ["rawTimestamp"] = 1737378058,
-                        ["rawText"] = "|c8F8F8F[08:00] |rWrit Crafter: Queued |H0:item:45366:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [146] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:00] Writ Crafter: Queued up to deposit [Woodworker Survey: High Isle]",
-                        ["rawValue"] = "|c8F8F8F[08:00] |rWrit Crafter: Queued up to deposit |H0:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:146:11|h[08:00] |h|r|H1:p:146:11|hWrit Crafter: Queued up to deposit |h|H0:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["rawLine"] = "[08:00] Writ Crafter: Queued up to deposit [Woodworker Survey: High Isle]",
-                        ["rawTimestamp"] = 1737378058,
-                        ["rawText"] = "|c8F8F8F[08:00] |rWrit Crafter: Queued up to deposit |H0:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                    },
-                    [147] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Junk] Sold items for 710|u0:6%:currency:|u",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00710|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:147:11|h[08:01] |h|r|H1:p:147:11|h[|h|cFFD700|H1:p:147:11|hPA J|h|r|cFFFFFF|H1:p:147:11|hunk|h|r|H1:p:147:11|h] Sold items for |h|c00ff00|H1:p:147:11|h710|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawLine"] = "[08:01] [PA Junk] Sold items for 710|u0:6%:currency:|u",
-                        ["rawTimestamp"] = 1737378064,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00710|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                    },
-                    [148] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] Writ Crafter: Depositing [Woodworker Survey: High Isle]",
-                        ["rawValue"] = "|c8F8F8F[08:01] |rWrit Crafter: Depositing |H0:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:148:11|h[08:01] |h|r|H1:p:148:11|hWrit Crafter: Depositing |h|H0:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["rawLine"] = "[08:01] Writ Crafter: Depositing [Woodworker Survey: High Isle]",
-                        ["rawTimestamp"] = 1737378071,
-                        ["rawText"] = "|c8F8F8F[08:01] |rWrit Crafter: Depositing |H0:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                    },
-                    [149] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Banking] 2,160|u0:6%:currency:|u deposited",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff2,160|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:149:11|h[08:01] |h|r|H1:p:149:11|h[|h|cFFD700|H1:p:149:11|hPA B|h|r|cFFFFFF|H1:p:149:11|hanking|h|r|H1:p:149:11|h] |h|cffffff|H1:p:149:11|h2,160|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:149:11|h deposited|h",
-                        ["rawLine"] = "[08:01] [PA Banking] 2,160|u0:6%:currency:|u deposited",
-                        ["rawTimestamp"] = 1737378071,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff2,160|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                    },
-                    [150] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Banking] Could not move [Superb Glyph of Increase Magical Harm] to Bank. Window was closed!",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] Could not move |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h to Bank. Window was closed!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:150:11|h[08:01] |h|r|H1:p:150:11|h[|h|cFFD700|H1:p:150:11|hPA B|h|r|cFFFFFF|H1:p:150:11|hanking|h|r|H1:p:150:11|h] Could not move |h|H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h|H1:p:150:11|h to Bank. Window was closed!|h",
-                        ["rawLine"] = "[08:01] [PA Banking] Could not move [Superb Glyph of Increase Magical Harm] to Bank. Window was closed!",
-                        ["rawTimestamp"] = 1737378072,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] Could not move |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h to Bank. Window was closed!",
-                    },
-                    [151] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Increase Magical Harm] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:151:11|h[08:01] |h|r|H1:p:151:11|h[|h|cFFD700|H1:p:151:11|hPA B|h|r|cFFFFFF|H1:p:151:11|hanking|h|r|H1:p:151:11|h] 1 x |h|H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h|H1:p:151:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Increase Magical Harm] moved to Bank",
-                        ["rawTimestamp"] = 1737378077,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h moved to Bank",
-                    },
-                    [152] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:152:11|h[08:01] |h|r|H1:p:152:11|h[|h|cFFD700|H1:p:152:11|hPA B|h|r|cFFFFFF|H1:p:152:11|hanking|h|r|H1:p:152:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:152:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["rawTimestamp"] = 1737378078,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                    },
-                    [153] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Frost] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:153:11|h[08:01] |h|r|H1:p:153:11|h[|h|cFFD700|H1:p:153:11|hPA B|h|r|cFFFFFF|H1:p:153:11|hanking|h|r|H1:p:153:11|h] 1 x |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:153:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Frost] moved to Bank",
-                        ["rawTimestamp"] = 1737378078,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Bank",
-                    },
-                    [154] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Absorb Stamina] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:154:11|h[08:01] |h|r|H1:p:154:11|h[|h|cFFD700|H1:p:154:11|hPA B|h|r|cFFFFFF|H1:p:154:11|hanking|h|r|H1:p:154:11|h] 1 x |h|H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h|H1:p:154:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Absorb Stamina] moved to Backpack",
-                        ["rawTimestamp"] = 1737378079,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45867:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Stamina]|h moved to Backpack",
-                    },
-                    [155] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Increase Magical Harm] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:155:11|h[08:01] |h|r|H1:p:155:11|h[|h|cFFD700|H1:p:155:11|hPA B|h|r|cFFFFFF|H1:p:155:11|hanking|h|r|H1:p:155:11|h] 1 x |h|H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h|H1:p:155:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Increase Magical Harm] moved to Backpack",
-                        ["rawTimestamp"] = 1737378079,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h moved to Backpack",
-                    },
-                    [156] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:156:11|h[08:01] |h|r|H1:p:156:11|h[|h|cFFD700|H1:p:156:11|hPA B|h|r|cFFFFFF|H1:p:156:11|hanking|h|r|H1:p:156:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:156:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawTimestamp"] = 1737378080,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                    },
-                    [157] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Frost] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:157:11|h[08:01] |h|r|H1:p:157:11|h[|h|cFFD700|H1:p:157:11|hPA B|h|r|cFFFFFF|H1:p:157:11|hanking|h|r|H1:p:157:11|h] 1 x |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:157:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:01] [PA Banking] 1 x [Superb Glyph of Frost] moved to Backpack",
-                        ["rawTimestamp"] = 1737378080,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Backpack",
-                    },
-                    [158] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:01] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:158:11|h[08:01] |h|r|H1:p:158:11|h[|h|cFFD700|H1:p:158:11|hPA B|h|r|cFFFFFF|H1:p:158:11|hanking|h|r|H1:p:158:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[08:01] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737378081,
-                        ["rawText"] = "|c8F8F8F[08:01] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [159] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] Dolgubon's Lazy Writ Crafter retrieved 1 [Essence of Stamina]. (70 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:03] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:54341:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:327680|h|h. (70 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:159:11|h[08:03] |h|r|H1:p:159:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:54341:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:327680|h|h|H1:p:159:11|h. (70 in bank)|h",
-                        ["rawLine"] = "[08:03] Dolgubon's Lazy Writ Crafter retrieved 1 [Essence of Stamina]. (70 in bank)",
-                        ["rawTimestamp"] = 1737378183,
-                        ["rawText"] = "|c8F8F8F[08:03] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:54341:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:327680|h|h. (70 in bank)",
-                    },
-                    [160] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] Dolgubon's Lazy Writ Crafter retrieved 1 [Firsthold Fruit and Cheese Plate]. (16 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:03] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68236:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (16 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:160:11|h[08:03] |h|r|H1:p:160:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68236:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:160:11|h. (16 in bank)|h",
-                        ["rawLine"] = "[08:03] Dolgubon's Lazy Writ Crafter retrieved 1 [Firsthold Fruit and Cheese Plate]. (16 in bank)",
-                        ["rawTimestamp"] = 1737378183,
-                        ["rawText"] = "|c8F8F8F[08:03] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68236:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (16 in bank)",
-                    },
-                    [161] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] Dolgubon's Lazy Writ Crafter retrieved 1 [Muthsera's Remorse]. (26 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:03] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68260:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (26 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:161:11|h[08:03] |h|r|H1:p:161:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68260:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:161:11|h. (26 in bank)|h",
-                        ["rawLine"] = "[08:03] Dolgubon's Lazy Writ Crafter retrieved 1 [Muthsera's Remorse]. (26 in bank)",
-                        ["rawTimestamp"] = 1737378183,
-                        ["rawText"] = "|c8F8F8F[08:03] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68260:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (26 in bank)",
-                    },
-                    [162] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Loot] You have only 10 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFFF00You have only |cFFFFFF10 |cFFFF00inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:162:11|h[08:03] |h|r|H1:p:162:11|h[|h|cFFD700|H1:p:162:11|hPA L|h|r|cFFFFFF|H1:p:162:11|hoot|h|r|H1:p:162:11|h] |h|cFFFF00|H1:p:162:11|hYou have only |h|r|cFFFFFF|H1:p:162:11|h10 |h|r|cFFFF00|H1:p:162:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:03] [PA Loot] You have only 10 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378184,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFFF00You have only |cFFFFFF10 |cFFFF00inventory spaces left!",
-                    },
-                    [163] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Banking] 1 x [Clothier Survey: Stormhaven] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:163:11|h[08:03] |h|r|H1:p:163:11|h[|h|cFFD700|H1:p:163:11|hPA B|h|r|cFFFFFF|H1:p:163:11|hanking|h|r|H1:p:163:11|h] 1 x |h|H1:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h|H1:p:163:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:03] [PA Banking] 1 x [Clothier Survey: Stormhaven] moved to Backpack",
-                        ["rawTimestamp"] = 1737378185,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                    },
-                    [164] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Banking] 1 x [Jewelry Crafting Survey: Craglorn II] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:139438:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:164:11|h[08:03] |h|r|H1:p:164:11|h[|h|cFFD700|H1:p:164:11|hPA B|h|r|cFFFFFF|H1:p:164:11|hanking|h|r|H1:p:164:11|h] 1 x |h|H1:item:139438:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h|H1:p:164:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:03] [PA Banking] 1 x [Jewelry Crafting Survey: Craglorn II] moved to Backpack",
-                        ["rawTimestamp"] = 1737378185,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:139438:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                    },
-                    [165] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Banking] 1 x [Woodworker Survey: High Isle] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:165:11|h[08:03] |h|r|H1:p:165:11|h[|h|cFFD700|H1:p:165:11|hPA B|h|r|cFFFFFF|H1:p:165:11|hanking|h|r|H1:p:165:11|h] 1 x |h|H1:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h|H1:p:165:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:03] [PA Banking] 1 x [Woodworker Survey: High Isle] moved to Backpack",
-                        ["rawTimestamp"] = 1737378185,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                    },
-                    [166] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:166:11|h[08:03] |h|r|H1:p:166:11|h[|h|cFFD700|H1:p:166:11|hPA B|h|r|cFFFFFF|H1:p:166:11|hanking|h|r|H1:p:166:11|h] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter|h",
-                        ["rawLine"] = "[08:03] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawTimestamp"] = 1737378186,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                    },
-                    [167] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:167:11|h[08:03] |h|r|H1:p:167:11|h[|h|cFFD700|H1:p:167:11|hPA B|h|r|cFFFFFF|H1:p:167:11|hanking|h|r|H1:p:167:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[08:03] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737378186,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [168] = 
-                    {
-                        ["rawFrom"] = "Sorinne Gaerard^F",
-                        ["rawMessage"] = "The first rounds of the Tales of Tribute tournament is about to begin!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r|c728668Sorinne Gaerard: |r|c95a98bThe first rounds of the Tales of Tribute tournament is about to begin!|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:168:7|h[08:03]|h |r|c728668Sorinne Gaerard: |r|c95a98b|H1:p:168:7|hThe first rounds of the Tales of Tribute tournament is about to begin!|h|r",
-                        ["rawLine"] = "[08:03] Sorinne Gaerard: The first rounds of the Tales of Tribute tournament is about to begin!",
-                        ["rawTimestamp"] = 1737378188,
-                        ["rawText"] = "The first rounds of the Tales of Tribute tournament is about to begin!",
-                    },
-                    [169] = 
-                    {
-                        ["rawFrom"] = "Gladiator Daynes^M",
-                        ["rawMessage"] = "Switch in 3… 2… 1!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r|c728668Gladiator Daynes: |r|c95a98bSwitch in 3… 2… 1!|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:169:7|h[08:03]|h |r|c728668Gladiator Daynes: |r|c95a98b|H1:p:169:7|hSwitch in 3… 2… 1!|h|r",
-                        ["rawLine"] = "[08:03] Gladiator Daynes: Switch in 3… 2… 1!",
-                        ["rawTimestamp"] = 1737378191,
-                        ["rawText"] = "Switch in 3… 2… 1!",
-                    },
-                    [170] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:170:11|h[08:03] |h|r|H1:p:170:11|h[|h|cFFD700|H1:p:170:11|hPA W|h|r|cFFFFFF|H1:p:170:11|horker|h|r|H1:p:170:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378197,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [171] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Loot] You have only 9 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFFF00You have only |cFFFFFF9 |cFFFF00inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:171:11|h[08:03] |h|r|H1:p:171:11|h[|h|cFFD700|H1:p:171:11|hPA L|h|r|cFFFFFF|H1:p:171:11|hoot|h|r|H1:p:171:11|h] |h|cFFFF00|H1:p:171:11|hYou have only |h|r|cFFFFFF|H1:p:171:11|h9 |h|r|cFFFF00|H1:p:171:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:03] [PA Loot] You have only 9 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378199,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFFF00You have only |cFFFFFF9 |cFFFF00inventory spaces left!",
-                    },
-                    [172] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:172:11|h[08:03] |h|r|H1:p:172:11|h[|h|cFFD700|H1:p:172:11|hPA W|h|r|cFFFFFF|H1:p:172:11|horker|h|r|H1:p:172:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378200,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [173] = 
-                    {
-                        ["rawFrom"] = "Gladiator Daynes^M",
-                        ["rawMessage"] = "Switch in 3… 2… 1!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r|c728668Gladiator Daynes: |r|c95a98bSwitch in 3… 2… 1!|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:173:7|h[08:03]|h |r|c728668Gladiator Daynes: |r|c95a98b|H1:p:173:7|hSwitch in 3… 2… 1!|h|r",
-                        ["rawLine"] = "[08:03] Gladiator Daynes: Switch in 3… 2… 1!",
-                        ["rawTimestamp"] = 1737378202,
-                        ["rawText"] = "Switch in 3… 2… 1!",
-                    },
-                    [174] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Loot] You have only 8 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFFF00You have only |cFFFFFF8 |cFFFF00inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:174:11|h[08:03] |h|r|H1:p:174:11|h[|h|cFFD700|H1:p:174:11|hPA L|h|r|cFFFFFF|H1:p:174:11|hoot|h|r|H1:p:174:11|h] |h|cFFFF00|H1:p:174:11|hYou have only |h|r|cFFFFFF|H1:p:174:11|h8 |h|r|cFFFF00|H1:p:174:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:03] [PA Loot] You have only 8 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378202,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFFF00You have only |cFFFFFF8 |cFFFF00inventory spaces left!",
-                    },
-                    [175] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:175:11|h[08:03] |h|r|H1:p:175:11|h[|h|cFFD700|H1:p:175:11|hPA W|h|r|cFFFFFF|H1:p:175:11|horker|h|r|H1:p:175:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378202,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [176] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Loot] You have only 7 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFFF00You have only |cFFFFFF7 |cFFFF00inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:176:11|h[08:03] |h|r|H1:p:176:11|h[|h|cFFD700|H1:p:176:11|hPA L|h|r|cFFFFFF|H1:p:176:11|hoot|h|r|H1:p:176:11|h] |h|cFFFF00|H1:p:176:11|hYou have only |h|r|cFFFFFF|H1:p:176:11|h7 |h|r|cFFFF00|H1:p:176:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:03] [PA Loot] You have only 7 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378204,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFFF00You have only |cFFFFFF7 |cFFFF00inventory spaces left!",
-                    },
-                    [177] = 
-                    {
-                        ["rawFrom"] = "Gladiator Daynes^M",
-                        ["rawMessage"] = "I feel ready for the battlegrounds now!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r|c728668Gladiator Daynes: |r|c95a98bI feel ready for the battlegrounds now!|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:177:7|h[08:03]|h |r|c728668Gladiator Daynes: |r|c95a98b|H1:p:177:7|hI feel ready for the battlegrounds now!|h|r",
-                        ["rawLine"] = "[08:03] Gladiator Daynes: I feel ready for the battlegrounds now!",
-                        ["rawTimestamp"] = 1737378218,
-                        ["rawText"] = "I feel ready for the battlegrounds now!",
-                    },
-                    [178] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:178:11|h[08:03] |h|r|H1:p:178:11|h[|h|cFFD700|H1:p:178:11|hPA W|h|r|cFFFFFF|H1:p:178:11|horker|h|r|H1:p:178:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378218,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [179] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Loot] You have only 6 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFFF00You have only |cFFFFFF6 |cFFFF00inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:179:11|h[08:03] |h|r|H1:p:179:11|h[|h|cFFD700|H1:p:179:11|hPA L|h|r|cFFFFFF|H1:p:179:11|hoot|h|r|H1:p:179:11|h] |h|cFFFF00|H1:p:179:11|hYou have only |h|r|cFFFFFF|H1:p:179:11|h6 |h|r|cFFFF00|H1:p:179:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:03] [PA Loot] You have only 6 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378220,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFFF00You have only |cFFFFFF6 |cFFFF00inventory spaces left!",
-                    },
-                    [180] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:180:11|h[08:03] |h|r|H1:p:180:11|h[|h|cFFD700|H1:p:180:11|hPA W|h|r|cFFFFFF|H1:p:180:11|horker|h|r|H1:p:180:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378221,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [181] = 
-                    {
-                        ["rawFrom"] = "Gladiator Runaki^F",
-                        ["rawMessage"] = "Same! I can't wait to see which team we'll be on this time.",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r|c728668Gladiator Runaki: |r|c95a98bSame! I can't wait to see which team we'll be on this time.|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:181:7|h[08:03]|h |r|c728668Gladiator Runaki: |r|c95a98b|H1:p:181:7|hSame! I can't wait to see which team we'll be on this time.|h|r",
-                        ["rawLine"] = "[08:03] Gladiator Runaki: Same! I can't wait to see which team we'll be on this time.",
-                        ["rawTimestamp"] = 1737378221,
-                        ["rawText"] = "Same! I can't wait to see which team we'll be on this time.",
-                    },
-                    [182] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:182:11|h[08:03] |h|r|H1:p:182:11|h[|h|cFFD700|H1:p:182:11|hPA L|h|r|cFFFFFF|H1:p:182:11|hoot|h|r|H1:p:182:11|h] |h|cFFA500|H1:p:182:11|hYou have only |h|r|cFFFFFF|H1:p:182:11|h5 |h|r|cFFA500|H1:p:182:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:03] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378223,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                    },
-                    [183] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:183:11|h[08:03] |h|r|H1:p:183:11|h[|h|cFFD700|H1:p:183:11|hPA W|h|r|cFFFFFF|H1:p:183:11|horker|h|r|H1:p:183:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378223,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [184] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:184:11|h[08:03] |h|r|H1:p:184:11|h[|h|cFFD700|H1:p:184:11|hPA L|h|r|cFFFFFF|H1:p:184:11|hoot|h|r|H1:p:184:11|h] |h|cFFA500|H1:p:184:11|hYou have only |h|r|cFFFFFF|H1:p:184:11|h4 |h|r|cFFA500|H1:p:184:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:03] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378225,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                    },
-                    [185] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:185:11|h[08:03] |h|r|H1:p:185:11|h[|h|cFFD700|H1:p:185:11|hPA W|h|r|cFFFFFF|H1:p:185:11|horker|h|r|H1:p:185:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378229,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [186] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Loot] You have only 2 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF2 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:186:11|h[08:03] |h|r|H1:p:186:11|h[|h|cFFD700|H1:p:186:11|hPA L|h|r|cFFFFFF|H1:p:186:11|hoot|h|r|H1:p:186:11|h] |h|cFFA500|H1:p:186:11|hYou have only |h|r|cFFFFFF|H1:p:186:11|h2 |h|r|cFFA500|H1:p:186:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:03] [PA Loot] You have only 2 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378231,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF2 |cFFA500inventory spaces left!",
-                    },
-                    [187] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:187:11|h[08:03] |h|r|H1:p:187:11|h[|h|cFFD700|H1:p:187:11|hPA W|h|r|cFFFFFF|H1:p:187:11|horker|h|r|H1:p:187:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:03] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378232,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [188] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:03] [PA Loot] You have only 1 inventory space left!",
-                        ["rawValue"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF1 |cFFA500inventory space left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:188:11|h[08:03] |h|r|H1:p:188:11|h[|h|cFFD700|H1:p:188:11|hPA L|h|r|cFFFFFF|H1:p:188:11|hoot|h|r|H1:p:188:11|h] |h|cFFA500|H1:p:188:11|hYou have only |h|r|cFFFFFF|H1:p:188:11|h1 |h|r|cFFA500|H1:p:188:11|hinventory space left!|h|r",
-                        ["rawLine"] = "[08:03] [PA Loot] You have only 1 inventory space left!",
-                        ["rawTimestamp"] = 1737378234,
-                        ["rawText"] = "|c8F8F8F[08:03] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF1 |cFFA500inventory space left!",
-                    },
-                    [189] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:189:11|h[08:04] |h|r|H1:p:189:11|h[|h|cFFD700|H1:p:189:11|hPA W|h|r|cFFFFFF|H1:p:189:11|horker|h|r|H1:p:189:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:04] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378240,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [190] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have no inventory space left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFF7400You have |cFFFFFFno |cFF7400inventory space left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:190:11|h[08:04] |h|r|H1:p:190:11|h[|h|cFFD700|H1:p:190:11|hPA L|h|r|cFFFFFF|H1:p:190:11|hoot|h|r|H1:p:190:11|h] |h|cFF7400|H1:p:190:11|hYou have |h|r|cFFFFFF|H1:p:190:11|hno |h|r|cFF7400|H1:p:190:11|hinventory space left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have no inventory space left!",
-                        ["rawTimestamp"] = 1737378243,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFF7400You have |cFFFFFFno |cFF7400inventory space left!",
-                    },
-                    [191] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:191:11|h[08:04] |h|r|H1:p:191:11|h[|h|cFFD700|H1:p:191:11|hPA W|h|r|cFFFFFF|H1:p:191:11|horker|h|r|H1:p:191:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:04] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378245,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [192] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 2 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF2 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:192:11|h[08:04] |h|r|H1:p:192:11|h[|h|cFFD700|H1:p:192:11|hPA L|h|r|cFFFFFF|H1:p:192:11|hoot|h|r|H1:p:192:11|h] |h|cFFA500|H1:p:192:11|hYou have only |h|r|cFFFFFF|H1:p:192:11|h2 |h|r|cFFA500|H1:p:192:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 2 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378263,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF2 |cFFA500inventory spaces left!",
-                    },
-                    [193] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:193:11|h[08:04] |h|r|H1:p:193:11|h[|h|cFFD700|H1:p:193:11|hPA L|h|r|cFFFFFF|H1:p:193:11|hoot|h|r|H1:p:193:11|h] |h|cFFA500|H1:p:193:11|hYou have only |h|r|cFFFFFF|H1:p:193:11|h4 |h|r|cFFA500|H1:p:193:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378264,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                    },
-                    [194] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 2 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF2 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:194:11|h[08:04] |h|r|H1:p:194:11|h[|h|cFFD700|H1:p:194:11|hPA L|h|r|cFFFFFF|H1:p:194:11|hoot|h|r|H1:p:194:11|h] |h|cFFA500|H1:p:194:11|hYou have only |h|r|cFFFFFF|H1:p:194:11|h2 |h|r|cFFA500|H1:p:194:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 2 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378264,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF2 |cFFA500inventory spaces left!",
-                    },
-                    [195] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] Writ Crafter: Queued [Ancestor Silk Breeches] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:04] |rWrit Crafter: Queued |H0:item:45351:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:195:11|h[08:04] |h|r|H1:p:195:11|hWrit Crafter: Queued |h|H0:item:45351:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h|H1:p:195:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:04] Writ Crafter: Queued [Ancestor Silk Breeches] for deconstruction",
-                        ["rawTimestamp"] = 1737378264,
-                        ["rawText"] = "|c8F8F8F[08:04] |rWrit Crafter: Queued |H0:item:45351:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h for deconstruction",
-                    },
-                    [196] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:196:11|h[08:04] |h|r|H1:p:196:11|h[|h|cFFD700|H1:p:196:11|hPA L|h|r|cFFFFFF|H1:p:196:11|hoot|h|r|H1:p:196:11|h] |h|cFFA500|H1:p:196:11|hYou have only |h|r|cFFFFFF|H1:p:196:11|h4 |h|r|cFFA500|H1:p:196:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378266,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                    },
-                    [197] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 3 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF3 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:197:11|h[08:04] |h|r|H1:p:197:11|h[|h|cFFD700|H1:p:197:11|hPA L|h|r|cFFFFFF|H1:p:197:11|hoot|h|r|H1:p:197:11|h] |h|cFFA500|H1:p:197:11|hYou have only |h|r|cFFFFFF|H1:p:197:11|h3 |h|r|cFFA500|H1:p:197:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 3 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378266,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF3 |cFFA500inventory spaces left!",
-                    },
-                    [198] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] Writ Crafter: Queued [Ruby Ash Inferno Staff] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:04] |rWrit Crafter: Queued |H0:item:45364:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:198:11|h[08:04] |h|r|H1:p:198:11|hWrit Crafter: Queued |h|H0:item:45364:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h|H1:p:198:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:04] Writ Crafter: Queued [Ruby Ash Inferno Staff] for deconstruction",
-                        ["rawTimestamp"] = 1737378266,
-                        ["rawText"] = "|c8F8F8F[08:04] |rWrit Crafter: Queued |H0:item:45364:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [199] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:199:11|h[08:04] |h|r|H1:p:199:11|h[|h|cFFD700|H1:p:199:11|hPA L|h|r|cFFFFFF|H1:p:199:11|hoot|h|r|H1:p:199:11|h] |h|cFFA500|H1:p:199:11|hYou have only |h|r|cFFFFFF|H1:p:199:11|h4 |h|r|cFFA500|H1:p:199:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378267,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                    },
-                    [200] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:200:11|h[08:04] |h|r|H1:p:200:11|h[|h|cFFD700|H1:p:200:11|hPA L|h|r|cFFFFFF|H1:p:200:11|hoot|h|r|H1:p:200:11|h] |h|cFFA500|H1:p:200:11|hYou have only |h|r|cFFFFFF|H1:p:200:11|h5 |h|r|cFFA500|H1:p:200:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378269,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                    },
-                    [201] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:201:11|h[08:04] |h|r|H1:p:201:11|h[|h|cFFD700|H1:p:201:11|hPA L|h|r|cFFFFFF|H1:p:201:11|hoot|h|r|H1:p:201:11|h] |h|cFFA500|H1:p:201:11|hYou have only |h|r|cFFFFFF|H1:p:201:11|h5 |h|r|cFFA500|H1:p:201:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378270,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                    },
-                    [202] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] Writ Crafter: Queued [Rubedite Mace] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:04] |rWrit Crafter: Queued |H0:item:45299:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:202:11|h[08:04] |h|r|H1:p:202:11|hWrit Crafter: Queued |h|H0:item:45299:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h|H1:p:202:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:04] Writ Crafter: Queued [Rubedite Mace] for deconstruction",
-                        ["rawTimestamp"] = 1737378270,
-                        ["rawText"] = "|c8F8F8F[08:04] |rWrit Crafter: Queued |H0:item:45299:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [203] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] Writ Crafter: Queued up to deposit [Blacksmith Survey: Reaper's March]",
-                        ["rawValue"] = "|c8F8F8F[08:04] |rWrit Crafter: Queued up to deposit |H0:item:57793:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:203:11|h[08:04] |h|r|H1:p:203:11|hWrit Crafter: Queued up to deposit |h|H0:item:57793:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["rawLine"] = "[08:04] Writ Crafter: Queued up to deposit [Blacksmith Survey: Reaper's March]",
-                        ["rawTimestamp"] = 1737378270,
-                        ["rawText"] = "|c8F8F8F[08:04] |rWrit Crafter: Queued up to deposit |H0:item:57793:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                    },
-                    [204] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:204:11|h[08:04] |h|r|H1:p:204:11|h[|h|cFFD700|H1:p:204:11|hPA L|h|r|cFFFFFF|H1:p:204:11|hoot|h|r|H1:p:204:11|h] |h|cFFA500|H1:p:204:11|hYou have only |h|r|cFFFFFF|H1:p:204:11|h5 |h|r|cFFA500|H1:p:204:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378274,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                    },
-                    [205] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:205:11|h[08:04] |h|r|H1:p:205:11|h[|h|cFFD700|H1:p:205:11|hPA L|h|r|cFFFFFF|H1:p:205:11|hoot|h|r|H1:p:205:11|h] |h|cFFA500|H1:p:205:11|hYou have only |h|r|cFFFFFF|H1:p:205:11|h5 |h|r|cFFA500|H1:p:205:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378285,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                    },
-                    [206] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:04] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:206:11|h[08:04] |h|r|H1:p:206:11|h[|h|cFFD700|H1:p:206:11|hPA L|h|r|cFFFFFF|H1:p:206:11|hoot|h|r|H1:p:206:11|h] |h|cFFA500|H1:p:206:11|hYou have only |h|r|cFFFFFF|H1:p:206:11|h4 |h|r|cFFA500|H1:p:206:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:04] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378287,
-                        ["rawText"] = "|c8F8F8F[08:04] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                    },
-                    [207] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:05] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:207:11|h[08:05] |h|r|H1:p:207:11|h[|h|cFFD700|H1:p:207:11|hPA L|h|r|cFFFFFF|H1:p:207:11|hoot|h|r|H1:p:207:11|h] |h|cFFA500|H1:p:207:11|hYou have only |h|r|cFFFFFF|H1:p:207:11|h5 |h|r|cFFA500|H1:p:207:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:05] [PA Loot] You have only 5 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378300,
-                        ["rawText"] = "|c8F8F8F[08:05] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF5 |cFFA500inventory spaces left!",
-                    },
-                    [208] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] Writ Crafter: Queued [Platinum Ring] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:05] |rWrit Crafter: Queued |H0:item:138796:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:208:11|h[08:05] |h|r|H1:p:208:11|hWrit Crafter: Queued |h|H0:item:138796:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:208:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:05] Writ Crafter: Queued [Platinum Ring] for deconstruction",
-                        ["rawTimestamp"] = 1737378301,
-                        ["rawText"] = "|c8F8F8F[08:05] |rWrit Crafter: Queued |H0:item:138796:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [209] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawValue"] = "|c8F8F8F[08:05] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:209:11|h[08:05] |h|r|H1:p:209:11|h[|h|cFFD700|H1:p:209:11|hPA L|h|r|cFFFFFF|H1:p:209:11|hoot|h|r|H1:p:209:11|h] |h|cFFA500|H1:p:209:11|hYou have only |h|r|cFFFFFF|H1:p:209:11|h4 |h|r|cFFA500|H1:p:209:11|hinventory spaces left!|h|r",
-                        ["rawLine"] = "[08:05] [PA Loot] You have only 4 inventory spaces left!",
-                        ["rawTimestamp"] = 1737378301,
-                        ["rawText"] = "|c8F8F8F[08:05] |r[|cFFD700PA L|r|cFFFFFFoot|r] |cFFA500You have only |cFFFFFF4 |cFFA500inventory spaces left!",
-                    },
-                    [210] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] [PA Junk] Sold items for 393|u0:6%:currency:|u",
-                        ["rawValue"] = "|c8F8F8F[08:05] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00393|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:210:11|h[08:05] |h|r|H1:p:210:11|h[|h|cFFD700|H1:p:210:11|hPA J|h|r|cFFFFFF|H1:p:210:11|hunk|h|r|H1:p:210:11|h] Sold items for |h|c00ff00|H1:p:210:11|h393|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawLine"] = "[08:05] [PA Junk] Sold items for 393|u0:6%:currency:|u",
-                        ["rawTimestamp"] = 1737378349,
-                        ["rawText"] = "|c8F8F8F[08:05] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00393|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                    },
-                    [211] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] Writ Crafter: Depositing [Blacksmith Survey: Reaper's March]",
-                        ["rawValue"] = "|c8F8F8F[08:05] |rWrit Crafter: Depositing |H0:item:57793:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:211:11|h[08:05] |h|r|H1:p:211:11|hWrit Crafter: Depositing |h|H0:item:57793:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                        ["rawLine"] = "[08:05] Writ Crafter: Depositing [Blacksmith Survey: Reaper's March]",
-                        ["rawTimestamp"] = 1737378357,
-                        ["rawText"] = "|c8F8F8F[08:05] |rWrit Crafter: Depositing |H0:item:57793:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h",
-                    },
-                    [212] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] [PA Banking] 5,468|u0:6%:currency:|u deposited",
-                        ["rawValue"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,468|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:212:11|h[08:05] |h|r|H1:p:212:11|h[|h|cFFD700|H1:p:212:11|hPA B|h|r|cFFFFFF|H1:p:212:11|hanking|h|r|H1:p:212:11|h] |h|cffffff|H1:p:212:11|h5,468|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:212:11|h deposited|h",
-                        ["rawLine"] = "[08:05] [PA Banking] 5,468|u0:6%:currency:|u deposited",
-                        ["rawTimestamp"] = 1737378357,
-                        ["rawText"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,468|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                    },
-                    [213] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] [PA Banking] 1 x [Clothier Survey: Stormhaven] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:213:11|h[08:05] |h|r|H1:p:213:11|h[|h|cFFD700|H1:p:213:11|hPA B|h|r|cFFFFFF|H1:p:213:11|hanking|h|r|H1:p:213:11|h] 1 x |h|H1:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h|H1:p:213:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:05] [PA Banking] 1 x [Clothier Survey: Stormhaven] moved to Backpack",
-                        ["rawTimestamp"] = 1737378358,
-                        ["rawText"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:57756:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                    },
-                    [214] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] [PA Banking] 1 x [Jewelry Crafting Survey: Craglorn II] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:139438:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:214:11|h[08:05] |h|r|H1:p:214:11|h[|h|cFFD700|H1:p:214:11|hPA B|h|r|cFFFFFF|H1:p:214:11|hanking|h|r|H1:p:214:11|h] 1 x |h|H1:item:139438:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h|H1:p:214:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:05] [PA Banking] 1 x [Jewelry Crafting Survey: Craglorn II] moved to Backpack",
-                        ["rawTimestamp"] = 1737378358,
-                        ["rawText"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:139438:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                    },
-                    [215] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] [PA Banking] 1 x [Woodworker Survey: High Isle] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:215:11|h[08:05] |h|r|H1:p:215:11|h[|h|cFFD700|H1:p:215:11|hPA B|h|r|cFFFFFF|H1:p:215:11|hanking|h|r|H1:p:215:11|h] 1 x |h|H1:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h|H1:p:215:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:05] [PA Banking] 1 x [Woodworker Survey: High Isle] moved to Backpack",
-                        ["rawTimestamp"] = 1737378358,
-                        ["rawText"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:188197:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                    },
-                    [216] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] [PA Banking] 1 x [Blacksmith Survey: Reaper's March] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:57793:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:216:11|h[08:05] |h|r|H1:p:216:11|h[|h|cFFD700|H1:p:216:11|hPA B|h|r|cFFFFFF|H1:p:216:11|hanking|h|r|H1:p:216:11|h] 1 x |h|H1:item:57793:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h|H1:p:216:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:05] [PA Banking] 1 x [Blacksmith Survey: Reaper's March] moved to Backpack",
-                        ["rawTimestamp"] = 1737378358,
-                        ["rawText"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:57793:4:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h moved to Backpack",
-                    },
-                    [217] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:05] [PA Banking] Could not move [Superb Glyph of Frost] to Bank. Window was closed!",
-                        ["rawValue"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] Could not move |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h to Bank. Window was closed!",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:217:11|h[08:05] |h|r|H1:p:217:11|h[|h|cFFD700|H1:p:217:11|hPA B|h|r|cFFFFFF|H1:p:217:11|hanking|h|r|H1:p:217:11|h] Could not move |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:217:11|h to Bank. Window was closed!|h",
-                        ["rawLine"] = "[08:05] [PA Banking] Could not move [Superb Glyph of Frost] to Bank. Window was closed!",
-                        ["rawTimestamp"] = 1737378358,
-                        ["rawText"] = "|c8F8F8F[08:05] |r[|cFFD700PA B|r|cFFFFFFanking|r] Could not move |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h to Bank. Window was closed!",
-                    },
-                    [218] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:08] Dolgubon's Lazy Writ Crafter retrieved 1 [Damage Stamina Poison IX]. (399 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:08] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:76831:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:393216|h|h. (399 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:218:11|h[08:08] |h|r|H1:p:218:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:76831:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:393216|h|h|H1:p:218:11|h. (399 in bank)|h",
-                        ["rawLine"] = "[08:08] Dolgubon's Lazy Writ Crafter retrieved 1 [Damage Stamina Poison IX]. (399 in bank)",
-                        ["rawTimestamp"] = 1737378521,
-                        ["rawText"] = "|c8F8F8F[08:08] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:76831:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:393216|h|h. (399 in bank)",
-                    },
-                    [219] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:08] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawValue"] = "|c8F8F8F[08:08] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:219:11|h[08:08] |h|r|H1:p:219:11|h[|h|cFFD700|H1:p:219:11|hPA B|h|r|cFFFFFF|H1:p:219:11|hanking|h|r|H1:p:219:11|h] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter|h",
-                        ["rawLine"] = "[08:08] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawTimestamp"] = 1737378524,
-                        ["rawText"] = "|c8F8F8F[08:08] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                    },
-                    [220] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:08] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[08:08] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:220:11|h[08:08] |h|r|H1:p:220:11|h[|h|cFFD700|H1:p:220:11|hPA B|h|r|cFFFFFF|H1:p:220:11|hanking|h|r|H1:p:220:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[08:08] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737378524,
-                        ["rawText"] = "|c8F8F8F[08:08] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [221] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:08] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:08] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:221:11|h[08:08] |h|r|H1:p:221:11|h[|h|cFFD700|H1:p:221:11|hPA W|h|r|cFFFFFF|H1:p:221:11|horker|h|r|H1:p:221:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:08] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378533,
-                        ["rawText"] = "|c8F8F8F[08:08] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [222] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:08] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:08] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:222:11|h[08:08] |h|r|H1:p:222:11|h[|h|cFFD700|H1:p:222:11|hPA W|h|r|cFFFFFF|H1:p:222:11|horker|h|r|H1:p:222:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:08] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378536,
-                        ["rawText"] = "|c8F8F8F[08:08] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [223] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:08] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:08] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:223:11|h[08:08] |h|r|H1:p:223:11|h[|h|cFFD700|H1:p:223:11|hPA W|h|r|cFFFFFF|H1:p:223:11|horker|h|r|H1:p:223:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:08] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378538,
-                        ["rawText"] = "|c8F8F8F[08:08] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [224] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:224:11|h[08:09] |h|r|H1:p:224:11|h[|h|cFFD700|H1:p:224:11|hPA W|h|r|cFFFFFF|H1:p:224:11|horker|h|r|H1:p:224:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378546,
-                        ["rawText"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [225] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:225:11|h[08:09] |h|r|H1:p:225:11|h[|h|cFFD700|H1:p:225:11|hPA W|h|r|cFFFFFF|H1:p:225:11|horker|h|r|H1:p:225:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378548,
-                        ["rawText"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [226] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:226:11|h[08:09] |h|r|H1:p:226:11|h[|h|cFFD700|H1:p:226:11|hPA W|h|r|cFFFFFF|H1:p:226:11|horker|h|r|H1:p:226:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378551,
-                        ["rawText"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [227] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:227:11|h[08:09] |h|r|H1:p:227:11|h[|h|cFFD700|H1:p:227:11|hPA W|h|r|cFFFFFF|H1:p:227:11|horker|h|r|H1:p:227:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378556,
-                        ["rawText"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [228] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:228:11|h[08:09] |h|r|H1:p:228:11|h[|h|cFFD700|H1:p:228:11|hPA W|h|r|cFFFFFF|H1:p:228:11|horker|h|r|H1:p:228:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378559,
-                        ["rawText"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [229] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:229:11|h[08:09] |h|r|H1:p:229:11|h[|h|cFFD700|H1:p:229:11|hPA W|h|r|cFFFFFF|H1:p:229:11|horker|h|r|H1:p:229:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378561,
-                        ["rawText"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [230] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:230:11|h[08:09] |h|r|H1:p:230:11|h[|h|cFFD700|H1:p:230:11|hPA W|h|r|cFFFFFF|H1:p:230:11|horker|h|r|H1:p:230:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378569,
-                        ["rawText"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [231] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] [PA Worker] [Superb Glyph of Potion Speed] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45875:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:231:11|h[08:09] |h|r|H1:p:231:11|h[|h|cFFD700|H1:p:231:11|hPA W|h|r|cFFFFFF|H1:p:231:11|horker|h|r|H1:p:231:11|h] |h|H1:item:45875:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:231:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:09] [PA Worker] [Superb Glyph of Potion Speed] has been deconstructed",
-                        ["rawTimestamp"] = 1737378571,
-                        ["rawText"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45875:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [232] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:232:11|h[08:09] |h|r|H1:p:232:11|h[|h|cFFD700|H1:p:232:11|hPA W|h|r|cFFFFFF|H1:p:232:11|horker|h|r|H1:p:232:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:09] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378574,
-                        ["rawText"] = "|c8F8F8F[08:09] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [233] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] DailyProvisioning: [Hearty Garlic Corn Chowder] x 1/1 [Bulk Creation]",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r|c88aaffDailyProvisioning:|r |cffffff|t20:20:/esoui/art/icons/crafting_soup_002.dds|t|H0:item:68239:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h x 1/1 [Bulk Creation]|r",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:233:11|h[08:09] |h|r|c88aaff|H1:p:233:11|hDailyProvisioning:|h|r |cffffff|t20:20:/esoui/art/icons/crafting_soup_002.dds|t|H0:item:68239:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:233:11|h x 1/1 [Bulk Creation]|h|r",
-                        ["rawLine"] = "[08:09] DailyProvisioning: [Hearty Garlic Corn Chowder] x 1/1 [Bulk Creation]",
-                        ["rawTimestamp"] = 1737378581,
-                        ["rawText"] = "|c8F8F8F[08:09] |r|c88aaffDailyProvisioning:|r |cffffff|t20:20:/esoui/art/icons/crafting_soup_002.dds|t|H0:item:68239:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h x 1/1 [Bulk Creation]|r",
-                    },
-                    [234] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:09] DailyProvisioning: [Markarth Mead] x 1/1 [Bulk Creation]",
-                        ["rawValue"] = "|c8F8F8F[08:09] |r|c88aaffDailyProvisioning:|r |cffffff|t20:20:/esoui/art/icons/crafting_stoneware_bottle_001.dds|t|H0:item:68257:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h x 1/1 [Bulk Creation]|r",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:234:11|h[08:09] |h|r|c88aaff|H1:p:234:11|hDailyProvisioning:|h|r |cffffff|t20:20:/esoui/art/icons/crafting_stoneware_bottle_001.dds|t|H0:item:68257:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:234:11|h x 1/1 [Bulk Creation]|h|r",
-                        ["rawLine"] = "[08:09] DailyProvisioning: [Markarth Mead] x 1/1 [Bulk Creation]",
-                        ["rawTimestamp"] = 1737378583,
-                        ["rawText"] = "|c8F8F8F[08:09] |r|c88aaffDailyProvisioning:|r |cffffff|t20:20:/esoui/art/icons/crafting_stoneware_bottle_001.dds|t|H0:item:68257:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h x 1/1 [Bulk Creation]|r",
-                    },
-                    [235] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] Writ Crafter: Queued [Rubedite Maul] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:10] |rWrit Crafter: Queued |H0:item:45337:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:235:11|h[08:10] |h|r|H1:p:235:11|hWrit Crafter: Queued |h|H0:item:45337:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h|H1:p:235:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:10] Writ Crafter: Queued [Rubedite Maul] for deconstruction",
-                        ["rawTimestamp"] = 1737378601,
-                        ["rawText"] = "|c8F8F8F[08:10] |rWrit Crafter: Queued |H0:item:45337:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [236] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] Writ Crafter: Queued [Platinum Necklace] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:10] |rWrit Crafter: Queued |H0:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:236:11|h[08:10] |h|r|H1:p:236:11|hWrit Crafter: Queued |h|H0:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:236:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:10] Writ Crafter: Queued [Platinum Necklace] for deconstruction",
-                        ["rawTimestamp"] = 1737378604,
-                        ["rawText"] = "|c8F8F8F[08:10] |rWrit Crafter: Queued |H0:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [237] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] Writ Crafter: Queued [Ruby Ash Shield] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:10] |rWrit Crafter: Queued |H0:item:45363:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:237:11|h[08:10] |h|r|H1:p:237:11|hWrit Crafter: Queued |h|H0:item:45363:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h|H1:p:237:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:10] Writ Crafter: Queued [Ruby Ash Shield] for deconstruction",
-                        ["rawTimestamp"] = 1737378610,
-                        ["rawText"] = "|c8F8F8F[08:10] |rWrit Crafter: Queued |H0:item:45363:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h for deconstruction",
-                    },
-                    [238] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] Writ Crafter: Queued [Ancestor Silk Breeches] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:10] |rWrit Crafter: Queued |H0:item:45351:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:238:11|h[08:10] |h|r|H1:p:238:11|hWrit Crafter: Queued |h|H0:item:45351:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h|H1:p:238:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:10] Writ Crafter: Queued [Ancestor Silk Breeches] for deconstruction",
-                        ["rawTimestamp"] = 1737378612,
-                        ["rawText"] = "|c8F8F8F[08:10] |rWrit Crafter: Queued |H0:item:45351:365:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h for deconstruction",
-                    },
-                    [239] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] [PA Junk] Sold items for 422|u0:6%:currency:|u",
-                        ["rawValue"] = "|c8F8F8F[08:10] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00422|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:239:11|h[08:10] |h|r|H1:p:239:11|h[|h|cFFD700|H1:p:239:11|hPA J|h|r|cFFFFFF|H1:p:239:11|hunk|h|r|H1:p:239:11|h] Sold items for |h|c00ff00|H1:p:239:11|h422|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawLine"] = "[08:10] [PA Junk] Sold items for 422|u0:6%:currency:|u",
-                        ["rawTimestamp"] = 1737378624,
-                        ["rawText"] = "|c8F8F8F[08:10] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00422|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                    },
-                    [240] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] [PA Banking] 5,497|u0:6%:currency:|u deposited",
-                        ["rawValue"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,497|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:240:11|h[08:10] |h|r|H1:p:240:11|h[|h|cFFD700|H1:p:240:11|hPA B|h|r|cFFFFFF|H1:p:240:11|hanking|h|r|H1:p:240:11|h] |h|cffffff|H1:p:240:11|h5,497|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:240:11|h deposited|h",
-                        ["rawLine"] = "[08:10] [PA Banking] 5,497|u0:6%:currency:|u deposited",
-                        ["rawTimestamp"] = 1737378637,
-                        ["rawText"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,497|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                    },
-                    [241] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] [PA Banking] 1 x [Platinum Necklace]  moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:241:11|h[08:10] |h|r|H1:p:241:11|h[|h|cFFD700|H1:p:241:11|hPA B|h|r|cFFFFFF|H1:p:241:11|hanking|h|r|H1:p:241:11|h] 1 x |h|H1:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t|H1:p:241:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:10] [PA Banking] 1 x [Platinum Necklace]  moved to Bank",
-                        ["rawTimestamp"] = 1737378639,
-                        ["rawText"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t moved to Bank",
-                    },
-                    [242] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] [PA Banking] 1 x [Superb Glyph of Decrease Physical Harm] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45885:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Physical Harm]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:242:11|h[08:10] |h|r|H1:p:242:11|h[|h|cFFD700|H1:p:242:11|hPA B|h|r|cFFFFFF|H1:p:242:11|hanking|h|r|H1:p:242:11|h] 1 x |h|H1:item:45885:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Physical Harm]|h|H1:p:242:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:10] [PA Banking] 1 x [Superb Glyph of Decrease Physical Harm] moved to Bank",
-                        ["rawTimestamp"] = 1737378639,
-                        ["rawText"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45885:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Physical Harm]|h moved to Bank",
-                    },
-                    [243] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] [PA Banking] 1 x [Superb Glyph of Potion Speed] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45875:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Potion Speed]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:243:11|h[08:10] |h|r|H1:p:243:11|h[|h|cFFD700|H1:p:243:11|hPA B|h|r|cFFFFFF|H1:p:243:11|hanking|h|r|H1:p:243:11|h] 1 x |h|H1:item:45875:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Potion Speed]|h|H1:p:243:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:10] [PA Banking] 1 x [Superb Glyph of Potion Speed] moved to Bank",
-                        ["rawTimestamp"] = 1737378640,
-                        ["rawText"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45875:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Potion Speed]|h moved to Bank",
-                    },
-                    [244] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] [PA Banking] 1 x [Superb Glyph of Decrease Physical Harm] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45885:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Physical Harm]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:244:11|h[08:10] |h|r|H1:p:244:11|h[|h|cFFD700|H1:p:244:11|hPA B|h|r|cFFFFFF|H1:p:244:11|hanking|h|r|H1:p:244:11|h] 1 x |h|H1:item:45885:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Physical Harm]|h|H1:p:244:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:10] [PA Banking] 1 x [Superb Glyph of Decrease Physical Harm] moved to Backpack",
-                        ["rawTimestamp"] = 1737378640,
-                        ["rawText"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45885:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Physical Harm]|h moved to Backpack",
-                    },
-                    [245] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] [PA Banking] 1 x [Superb Glyph of Potion Speed] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45875:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Potion Speed]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:245:11|h[08:10] |h|r|H1:p:245:11|h[|h|cFFD700|H1:p:245:11|hPA B|h|r|cFFFFFF|H1:p:245:11|hanking|h|r|H1:p:245:11|h] 1 x |h|H1:item:45875:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Potion Speed]|h|H1:p:245:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:10] [PA Banking] 1 x [Superb Glyph of Potion Speed] moved to Backpack",
-                        ["rawTimestamp"] = 1737378642,
-                        ["rawText"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45875:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Potion Speed]|h moved to Backpack",
-                    },
-                    [246] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:10] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:246:11|h[08:10] |h|r|H1:p:246:11|h[|h|cFFD700|H1:p:246:11|hPA B|h|r|cFFFFFF|H1:p:246:11|hanking|h|r|H1:p:246:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[08:10] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737378642,
-                        ["rawText"] = "|c8F8F8F[08:10] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [247] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] Dolgubon's Lazy Writ Crafter retrieved 1 [Damage Health Poison IX]. (1363 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:12] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:76827:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:131072|h|h. (1363 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:247:11|h[08:12] |h|r|H1:p:247:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:76827:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:131072|h|h|H1:p:247:11|h. (1363 in bank)|h",
-                        ["rawLine"] = "[08:12] Dolgubon's Lazy Writ Crafter retrieved 1 [Damage Health Poison IX]. (1363 in bank)",
-                        ["rawTimestamp"] = 1737378737,
-                        ["rawText"] = "|c8F8F8F[08:12] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:76827:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:131072|h|h. (1363 in bank)",
-                    },
-                    [248] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] Dolgubon's Lazy Writ Crafter retrieved 1 [Lilmoth Garlic Hagfish]. (14 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:12] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (14 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:248:11|h[08:12] |h|r|H1:p:248:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:248:11|h. (14 in bank)|h",
-                        ["rawLine"] = "[08:12] Dolgubon's Lazy Writ Crafter retrieved 1 [Lilmoth Garlic Hagfish]. (14 in bank)",
-                        ["rawTimestamp"] = 1737378738,
-                        ["rawText"] = "|c8F8F8F[08:12] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (14 in bank)",
-                    },
-                    [249] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] Dolgubon's Lazy Writ Crafter retrieved 1 [Hagraven's Tonic]. (12 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:12] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (12 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:249:11|h[08:12] |h|r|H1:p:249:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:249:11|h. (12 in bank)|h",
-                        ["rawLine"] = "[08:12] Dolgubon's Lazy Writ Crafter retrieved 1 [Hagraven's Tonic]. (12 in bank)",
-                        ["rawTimestamp"] = 1737378739,
-                        ["rawText"] = "|c8F8F8F[08:12] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (12 in bank)",
-                    },
-                    [250] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:250:11|h[08:12] |h|r|H1:p:250:11|h[|h|cFFD700|H1:p:250:11|hPA B|h|r|cFFFFFF|H1:p:250:11|hanking|h|r|H1:p:250:11|h] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter|h",
-                        ["rawLine"] = "[08:12] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawTimestamp"] = 1737378741,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                    },
-                    [251] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:251:11|h[08:12] |h|r|H1:p:251:11|h[|h|cFFD700|H1:p:251:11|hPA B|h|r|cFFFFFF|H1:p:251:11|hanking|h|r|H1:p:251:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[08:12] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737378741,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [252] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [JackOfAllTrades] Meticulous Disassembly slotted.",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[JackOfAllTrades] |c638C29|t24:24:esoui/art/champion/champion_points_stamina_icon-hud-32.dds|tMeticulous Disassembly slotted.",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:252:11|h[08:12] |h|r|H1:p:252:11|h[JackOfAllTrades] |h|c638C29|t24:24:esoui/art/champion/champion_points_stamina_icon-hud-32.dds|t|H1:p:252:11|hMeticulous Disassembly slotted.|h|r",
-                        ["rawLine"] = "[08:12] [JackOfAllTrades] Meticulous Disassembly slotted.",
-                        ["rawTimestamp"] = 1737378750,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[JackOfAllTrades] |c638C29|t24:24:esoui/art/champion/champion_points_stamina_icon-hud-32.dds|tMeticulous Disassembly slotted.",
-                    },
-                    [253] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:253:11|h[08:12] |h|r|H1:p:253:11|h[|h|cFFD700|H1:p:253:11|hPA W|h|r|cFFFFFF|H1:p:253:11|horker|h|r|H1:p:253:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378750,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [254] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:254:11|h[08:12] |h|r|H1:p:254:11|h[|h|cFFD700|H1:p:254:11|hPA W|h|r|cFFFFFF|H1:p:254:11|horker|h|r|H1:p:254:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378753,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [255] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:255:11|h[08:12] |h|r|H1:p:255:11|h[|h|cFFD700|H1:p:255:11|hPA W|h|r|cFFFFFF|H1:p:255:11|horker|h|r|H1:p:255:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378755,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [256] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:256:11|h[08:12] |h|r|H1:p:256:11|h[|h|cFFD700|H1:p:256:11|hPA W|h|r|cFFFFFF|H1:p:256:11|horker|h|r|H1:p:256:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378763,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [257] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:257:11|h[08:12] |h|r|H1:p:257:11|h[|h|cFFD700|H1:p:257:11|hPA W|h|r|cFFFFFF|H1:p:257:11|horker|h|r|H1:p:257:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378765,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [258] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:258:11|h[08:12] |h|r|H1:p:258:11|h[|h|cFFD700|H1:p:258:11|hPA W|h|r|cFFFFFF|H1:p:258:11|horker|h|r|H1:p:258:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378768,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [259] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:259:11|h[08:12] |h|r|H1:p:259:11|h[|h|cFFD700|H1:p:259:11|hPA W|h|r|cFFFFFF|H1:p:259:11|horker|h|r|H1:p:259:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378774,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [260] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:260:11|h[08:12] |h|r|H1:p:260:11|h[|h|cFFD700|H1:p:260:11|hPA W|h|r|cFFFFFF|H1:p:260:11|horker|h|r|H1:p:260:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:12] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378776,
-                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [261] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:13] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:13] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:261:11|h[08:13] |h|r|H1:p:261:11|h[|h|cFFD700|H1:p:261:11|hPA W|h|r|cFFFFFF|H1:p:261:11|horker|h|r|H1:p:261:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:13] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378785,
-                        ["rawText"] = "|c8F8F8F[08:13] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [262] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:13] [PA Worker] [Superb Glyph of Foulness] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:13] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:262:11|h[08:13] |h|r|H1:p:262:11|h[|h|cFFD700|H1:p:262:11|hPA W|h|r|cFFFFFF|H1:p:262:11|horker|h|r|H1:p:262:11|h] |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:262:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:13] [PA Worker] [Superb Glyph of Foulness] has been deconstructed",
-                        ["rawTimestamp"] = 1737378788,
-                        ["rawText"] = "|c8F8F8F[08:13] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [263] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:13] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:13] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:263:11|h[08:13] |h|r|H1:p:263:11|h[|h|cFFD700|H1:p:263:11|hPA W|h|r|cFFFFFF|H1:p:263:11|horker|h|r|H1:p:263:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:13] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378791,
-                        ["rawText"] = "|c8F8F8F[08:13] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [264] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:13] Writ Crafter: Queued [Rubedite Sword] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:13] |rWrit Crafter: Queued |H0:item:45300:365:50:0:0:0:0:0:0:0:0:0:0:0:0:6:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:264:11|h[08:13] |h|r|H1:p:264:11|hWrit Crafter: Queued |h|H0:item:45300:365:50:0:0:0:0:0:0:0:0:0:0:0:0:6:0:0:0:0:0|h|h|H1:p:264:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:13] Writ Crafter: Queued [Rubedite Sword] for deconstruction",
-                        ["rawTimestamp"] = 1737378806,
-                        ["rawText"] = "|c8F8F8F[08:13] |rWrit Crafter: Queued |H0:item:45300:365:50:0:0:0:0:0:0:0:0:0:0:0:0:6:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [265] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:13] Writ Crafter: Queued [Ancestor Silk Shoes] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:13] |rWrit Crafter: Queued |H0:item:45313:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:265:11|h[08:13] |h|r|H1:p:265:11|hWrit Crafter: Queued |h|H0:item:45313:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:10000:0|h|h|H1:p:265:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:13] Writ Crafter: Queued [Ancestor Silk Shoes] for deconstruction",
-                        ["rawTimestamp"] = 1737378813,
-                        ["rawText"] = "|c8F8F8F[08:13] |rWrit Crafter: Queued |H0:item:45313:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:10000:0|h|h for deconstruction",
-                    },
-                    [266] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:13] Writ Crafter: Queued [Platinum Necklace] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:13] |rWrit Crafter: Queued |H0:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:266:11|h[08:13] |h|r|H1:p:266:11|hWrit Crafter: Queued |h|H0:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:266:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:13] Writ Crafter: Queued [Platinum Necklace] for deconstruction",
-                        ["rawTimestamp"] = 1737378814,
-                        ["rawText"] = "|c8F8F8F[08:13] |rWrit Crafter: Queued |H0:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [267] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:13] Writ Crafter: Queued [Ruby Ash Shield] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:13] |rWrit Crafter: Queued |H0:item:45328:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:267:11|h[08:13] |h|r|H1:p:267:11|hWrit Crafter: Queued |h|H0:item:45328:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h|H1:p:267:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:13] Writ Crafter: Queued [Ruby Ash Shield] for deconstruction",
-                        ["rawTimestamp"] = 1737378818,
-                        ["rawText"] = "|c8F8F8F[08:13] |rWrit Crafter: Queued |H0:item:45328:308:50:0:0:0:0:0:0:0:0:0:0:0:0:4:0:0:0:10000:0|h|h for deconstruction",
-                    },
-                    [268] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:13] [PA Junk] Sold items for 336|u0:6%:currency:|u",
-                        ["rawValue"] = "|c8F8F8F[08:13] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00336|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:268:11|h[08:13] |h|r|H1:p:268:11|h[|h|cFFD700|H1:p:268:11|hPA J|h|r|cFFFFFF|H1:p:268:11|hunk|h|r|H1:p:268:11|h] Sold items for |h|c00ff00|H1:p:268:11|h336|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawLine"] = "[08:13] [PA Junk] Sold items for 336|u0:6%:currency:|u",
-                        ["rawTimestamp"] = 1737378839,
-                        ["rawText"] = "|c8F8F8F[08:13] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00336|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                    },
-                    [269] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] 5,411|u0:6%:currency:|u deposited",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,411|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:269:11|h[08:14] |h|r|H1:p:269:11|h[|h|cFFD700|H1:p:269:11|hPA B|h|r|cFFFFFF|H1:p:269:11|hanking|h|r|H1:p:269:11|h] |h|cffffff|H1:p:269:11|h5,411|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:269:11|h deposited|h",
-                        ["rawLine"] = "[08:14] [PA Banking] 5,411|u0:6%:currency:|u deposited",
-                        ["rawTimestamp"] = 1737378849,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,411|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                    },
-                    [270] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:270:11|h[08:14] |h|r|H1:p:270:11|h[|h|cFFD700|H1:p:270:11|hPA B|h|r|cFFFFFF|H1:p:270:11|hanking|h|r|H1:p:270:11|h] 1 x |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h|H1:p:270:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Bank",
-                        ["rawTimestamp"] = 1737378850,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Bank",
-                    },
-                    [271] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:271:11|h[08:14] |h|r|H1:p:271:11|h[|h|cFFD700|H1:p:271:11|hPA B|h|r|cFFFFFF|H1:p:271:11|hanking|h|r|H1:p:271:11|h] 1 x |h|H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h|H1:p:271:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Bank",
-                        ["rawTimestamp"] = 1737378851,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Bank",
-                    },
-                    [272] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] 1 x [Platinum Necklace]  moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:272:11|h[08:14] |h|r|H1:p:272:11|h[|h|cFFD700|H1:p:272:11|hPA B|h|r|cFFFFFF|H1:p:272:11|hanking|h|r|H1:p:272:11|h] 1 x |h|H1:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t|H1:p:272:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:14] [PA Banking] 1 x [Platinum Necklace]  moved to Bank",
-                        ["rawTimestamp"] = 1737378851,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t moved to Bank",
-                    },
-                    [273] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:273:11|h[08:14] |h|r|H1:p:273:11|h[|h|cFFD700|H1:p:273:11|hPA B|h|r|cFFFFFF|H1:p:273:11|hanking|h|r|H1:p:273:11|h] 1 x |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h|H1:p:273:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Backpack",
-                        ["rawTimestamp"] = 1737378851,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Backpack",
-                    },
-                    [274] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:274:11|h[08:14] |h|r|H1:p:274:11|h[|h|cFFD700|H1:p:274:11|hPA B|h|r|cFFFFFF|H1:p:274:11|hanking|h|r|H1:p:274:11|h] 1 x |h|H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h|H1:p:274:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Backpack",
-                        ["rawTimestamp"] = 1737378852,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Backpack",
-                    },
-                    [275] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:275:11|h[08:14] |h|r|H1:p:275:11|h[|h|cFFD700|H1:p:275:11|hPA B|h|r|cFFFFFF|H1:p:275:11|hanking|h|r|H1:p:275:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[08:14] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737378853,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [276] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:276:11|h[08:14] |h|r|H1:p:276:11|h[|h|cFFD700|H1:p:276:11|hPA B|h|r|cFFFFFF|H1:p:276:11|hanking|h|r|H1:p:276:11|h] 1 x |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h|H1:p:276:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Bank",
-                        ["rawTimestamp"] = 1737378862,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Bank",
-                    },
-                    [277] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:277:11|h[08:14] |h|r|H1:p:277:11|h[|h|cFFD700|H1:p:277:11|hPA B|h|r|cFFFFFF|H1:p:277:11|hanking|h|r|H1:p:277:11|h] 1 x |h|H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h|H1:p:277:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Bank",
-                        ["rawTimestamp"] = 1737378863,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Bank",
-                    },
-                    [278] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:278:11|h[08:14] |h|r|H1:p:278:11|h[|h|cFFD700|H1:p:278:11|hPA B|h|r|cFFFFFF|H1:p:278:11|hanking|h|r|H1:p:278:11|h] 1 x |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h|H1:p:278:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Backpack",
-                        ["rawTimestamp"] = 1737378864,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Backpack",
-                    },
-                    [279] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:279:11|h[08:14] |h|r|H1:p:279:11|h[|h|cFFD700|H1:p:279:11|hPA B|h|r|cFFFFFF|H1:p:279:11|hanking|h|r|H1:p:279:11|h] 1 x |h|H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h|H1:p:279:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:14] [PA Banking] 1 x [Superb Glyph of Stamina Recovery] moved to Backpack",
-                        ["rawTimestamp"] = 1737378864,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26589:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Stamina Recovery]|h moved to Backpack",
-                    },
-                    [280] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:14] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:280:11|h[08:14] |h|r|H1:p:280:11|h[|h|cFFD700|H1:p:280:11|hPA B|h|r|cFFFFFF|H1:p:280:11|hanking|h|r|H1:p:280:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[08:14] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737378865,
-                        ["rawText"] = "|c8F8F8F[08:14] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [281] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:15] Dolgubon's Lazy Writ Crafter retrieved 1 [Damage Magicka Poison IX]. (331 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:15] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:76829:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:265216|h|h. (331 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:281:11|h[08:15] |h|r|H1:p:281:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:76829:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:265216|h|h|H1:p:281:11|h. (331 in bank)|h",
-                        ["rawLine"] = "[08:15] Dolgubon's Lazy Writ Crafter retrieved 1 [Damage Magicka Poison IX]. (331 in bank)",
-                        ["rawTimestamp"] = 1737378954,
-                        ["rawText"] = "|c8F8F8F[08:15] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:76829:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:1:0:0:0:265216|h|h. (331 in bank)",
-                    },
-                    [282] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:15] Dolgubon's Lazy Writ Crafter retrieved 1 [Lilmoth Garlic Hagfish]. (13 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:15] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (13 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:282:11|h[08:15] |h|r|H1:p:282:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:282:11|h. (13 in bank)|h",
-                        ["rawLine"] = "[08:15] Dolgubon's Lazy Writ Crafter retrieved 1 [Lilmoth Garlic Hagfish]. (13 in bank)",
-                        ["rawTimestamp"] = 1737378954,
-                        ["rawText"] = "|c8F8F8F[08:15] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (13 in bank)",
-                    },
-                    [283] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:15] Dolgubon's Lazy Writ Crafter retrieved 1 [Hagraven's Tonic]. (11 in bank)",
-                        ["rawValue"] = "|c8F8F8F[08:15] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (11 in bank)",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:283:11|h[08:15] |h|r|H1:p:283:11|hDolgubon's Lazy Writ Crafter retrieved 1 |h|H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h|H1:p:283:11|h. (11 in bank)|h",
-                        ["rawLine"] = "[08:15] Dolgubon's Lazy Writ Crafter retrieved 1 [Hagraven's Tonic]. (11 in bank)",
-                        ["rawTimestamp"] = 1737378954,
-                        ["rawText"] = "|c8F8F8F[08:15] |rDolgubon's Lazy Writ Crafter retrieved 1 |H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h. (11 in bank)",
-                    },
-                    [284] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:15] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawValue"] = "|c8F8F8F[08:15] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
+                        ["rawTimestamp"] = 1737637954,
+                        ["rawLine"] = "[08:12] [PA Junk] Sold items for 465|u0:6%:currency:|u",
+                        ["rawDisplayed"] = "|c8F8F8F|H1:p:134:11|h[08:12] |h|r|H1:p:134:11|h[|h|cFFD700|H1:p:134:11|hPA J|h|r|cFFFFFF|H1:p:134:11|hunk|h|r|H1:p:134:11|h] Sold items for |h|c00ff00|H1:p:134:11|h465|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
+                        ["rawText"] = "|c8F8F8F[08:12] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00465|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
                         ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:284:11|h[08:15] |h|r|H1:p:284:11|h[|h|cFFD700|H1:p:284:11|hPA B|h|r|cFFFFFF|H1:p:284:11|hanking|h|r|H1:p:284:11|h] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter|h",
-                        ["rawLine"] = "[08:15] [PA Banking] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                        ["rawTimestamp"] = 1737378957,
-                        ["rawText"] = "|c8F8F8F[08:15] |r[|cFFD700PA B|r|cFFFFFFanking|r] Some items were NOT deposited to avoid potential interferences with Dolgubon's Lazy Writ Crafter",
-                    },
-                    [285] = 
-                    {
+                        ["rawValue"] = "|c8F8F8F[08:12] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00465|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
+                        ["rawMessage"] = "[08:12] [PA Junk] Sold items for 465|u0:6%:currency:|u",
                         ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:15] [PA Banking] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[08:15] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:285:11|h[08:15] |h|r|H1:p:285:11|h[|h|cFFD700|H1:p:285:11|hPA B|h|r|cFFFFFF|H1:p:285:11|hanking|h|r|H1:p:285:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[08:15] [PA Banking] All item transfers completed",
-                        ["rawTimestamp"] = 1737378957,
-                        ["rawText"] = "|c8F8F8F[08:15] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                    },
-                    [286] = 
-                    {
-                        ["rawFrom"] = "Gladiator Daynes^M",
-                        ["rawMessage"] = "Switch in 3… 2… 1!",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r|c728668Gladiator Daynes: |r|c95a98bSwitch in 3… 2… 1!|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:286:7|h[08:16]|h |r|c728668Gladiator Daynes: |r|c95a98b|H1:p:286:7|hSwitch in 3… 2… 1!|h|r",
-                        ["rawLine"] = "[08:16] Gladiator Daynes: Switch in 3… 2… 1!",
-                        ["rawTimestamp"] = 1737378961,
-                        ["rawText"] = "Switch in 3… 2… 1!",
-                    },
-                    [287] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:287:11|h[08:16] |h|r|H1:p:287:11|h[|h|cFFD700|H1:p:287:11|hPA W|h|r|cFFFFFF|H1:p:287:11|horker|h|r|H1:p:287:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378967,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [288] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:288:11|h[08:16] |h|r|H1:p:288:11|h[|h|cFFD700|H1:p:288:11|hPA W|h|r|cFFFFFF|H1:p:288:11|horker|h|r|H1:p:288:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378970,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [289] = 
-                    {
-                        ["rawFrom"] = "Gladiator Daynes^M",
-                        ["rawMessage"] = "Switch in 3… 2… 1!",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r|c728668Gladiator Daynes: |r|c95a98bSwitch in 3… 2… 1!|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:289:7|h[08:16]|h |r|c728668Gladiator Daynes: |r|c95a98b|H1:p:289:7|hSwitch in 3… 2… 1!|h|r",
-                        ["rawLine"] = "[08:16] Gladiator Daynes: Switch in 3… 2… 1!",
-                        ["rawTimestamp"] = 1737378972,
-                        ["rawText"] = "Switch in 3… 2… 1!",
-                    },
-                    [290] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:290:11|h[08:16] |h|r|H1:p:290:11|h[|h|cFFD700|H1:p:290:11|hPA W|h|r|cFFFFFF|H1:p:290:11|horker|h|r|H1:p:290:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378972,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [291] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:291:11|h[08:16] |h|r|H1:p:291:11|h[|h|cFFD700|H1:p:291:11|hPA W|h|r|cFFFFFF|H1:p:291:11|horker|h|r|H1:p:291:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378980,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [292] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:292:11|h[08:16] |h|r|H1:p:292:11|h[|h|cFFD700|H1:p:292:11|hPA W|h|r|cFFFFFF|H1:p:292:11|horker|h|r|H1:p:292:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378983,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [293] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:293:11|h[08:16] |h|r|H1:p:293:11|h[|h|cFFD700|H1:p:293:11|hPA W|h|r|cFFFFFF|H1:p:293:11|horker|h|r|H1:p:293:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378985,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [294] = 
-                    {
-                        ["rawFrom"] = "Gladiator Daynes^M",
-                        ["rawMessage"] = "I feel ready for the battlegrounds now!",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r|c728668Gladiator Daynes: |r|c95a98bI feel ready for the battlegrounds now!|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:294:7|h[08:16]|h |r|c728668Gladiator Daynes: |r|c95a98b|H1:p:294:7|hI feel ready for the battlegrounds now!|h|r",
-                        ["rawLine"] = "[08:16] Gladiator Daynes: I feel ready for the battlegrounds now!",
-                        ["rawTimestamp"] = 1737378988,
-                        ["rawText"] = "I feel ready for the battlegrounds now!",
-                    },
-                    [295] = 
-                    {
-                        ["rawFrom"] = "Gladiator Runaki^F",
-                        ["rawMessage"] = "Same! I can't wait to see which team we'll be on this time.",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r|c728668Gladiator Runaki: |r|c95a98bSame! I can't wait to see which team we'll be on this time.|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:295:7|h[08:16]|h |r|c728668Gladiator Runaki: |r|c95a98b|H1:p:295:7|hSame! I can't wait to see which team we'll be on this time.|h|r",
-                        ["rawLine"] = "[08:16] Gladiator Runaki: Same! I can't wait to see which team we'll be on this time.",
-                        ["rawTimestamp"] = 1737378991,
-                        ["rawText"] = "Same! I can't wait to see which team we'll be on this time.",
-                    },
-                    [296] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:296:11|h[08:16] |h|r|H1:p:296:11|h[|h|cFFD700|H1:p:296:11|hPA W|h|r|cFFFFFF|H1:p:296:11|horker|h|r|H1:p:296:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378991,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [297] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:297:11|h[08:16] |h|r|H1:p:297:11|h[|h|cFFD700|H1:p:297:11|hPA W|h|r|cFFFFFF|H1:p:297:11|horker|h|r|H1:p:297:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737378994,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [298] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:298:11|h[08:16] |h|r|H1:p:298:11|h[|h|cFFD700|H1:p:298:11|hPA W|h|r|cFFFFFF|H1:p:298:11|horker|h|r|H1:p:298:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737379003,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [299] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Increase Magical Harm] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:299:11|h[08:16] |h|r|H1:p:299:11|h[|h|cFFD700|H1:p:299:11|hPA W|h|r|cFFFFFF|H1:p:299:11|horker|h|r|H1:p:299:11|h] |h|H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:299:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Increase Magical Harm] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [300] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Hardening] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:300:11|h[08:16] |h|r|H1:p:300:11|h[|h|cFFD700|H1:p:300:11|hPA W|h|r|cFFFFFF|H1:p:300:11|horker|h|r|H1:p:300:11|h] |h|H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:300:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Hardening] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [301] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Crushing] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:301:11|h[08:16] |h|r|H1:p:301:11|h[|h|cFFD700|H1:p:301:11|hPA W|h|r|cFFFFFF|H1:p:301:11|horker|h|r|H1:p:301:11|h] |h|H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:301:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Crushing] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [302] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Absorb Health] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:302:11|h[08:16] |h|r|H1:p:302:11|h[|h|cFFD700|H1:p:302:11|hPA W|h|r|cFFFFFF|H1:p:302:11|horker|h|r|H1:p:302:11|h] |h|H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:302:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Absorb Health] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [303] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Absorb Magicka] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45868:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:303:11|h[08:16] |h|r|H1:p:303:11|h[|h|cFFD700|H1:p:303:11|hPA W|h|r|cFFFFFF|H1:p:303:11|horker|h|r|H1:p:303:11|h] |h|H1:item:45868:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:303:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Absorb Magicka] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45868:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [304] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Bracing] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:304:11|h[08:16] |h|r|H1:p:304:11|h[|h|cFFD700|H1:p:304:11|hPA W|h|r|cFFFFFF|H1:p:304:11|horker|h|r|H1:p:304:11|h] |h|H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:304:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Bracing] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [305] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Crushing] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:305:11|h[08:16] |h|r|H1:p:305:11|h[|h|cFFD700|H1:p:305:11|hPA W|h|r|cFFFFFF|H1:p:305:11|horker|h|r|H1:p:305:11|h] |h|H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:305:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Crushing] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [306] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Bracing] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:306:11|h[08:16] |h|r|H1:p:306:11|h[|h|cFFD700|H1:p:306:11|hPA W|h|r|cFFFFFF|H1:p:306:11|horker|h|r|H1:p:306:11|h] |h|H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:306:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Bracing] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [307] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Crushing] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:307:11|h[08:16] |h|r|H1:p:307:11|h[|h|cFFD700|H1:p:307:11|hPA W|h|r|cFFFFFF|H1:p:307:11|horker|h|r|H1:p:307:11|h] |h|H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:307:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Crushing] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [308] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Flame] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:308:11|h[08:16] |h|r|H1:p:308:11|h[|h|cFFD700|H1:p:308:11|hPA W|h|r|cFFFFFF|H1:p:308:11|horker|h|r|H1:p:308:11|h] |h|H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:308:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Flame] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [309] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Decrease Health] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45869:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:309:11|h[08:16] |h|r|H1:p:309:11|h[|h|cFFD700|H1:p:309:11|hPA W|h|r|cFFFFFF|H1:p:309:11|horker|h|r|H1:p:309:11|h] |h|H1:item:45869:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:309:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Decrease Health] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45869:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [310] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Shock Resist] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:310:11|h[08:16] |h|r|H1:p:310:11|h[|h|cFFD700|H1:p:310:11|hPA W|h|r|cFFFFFF|H1:p:310:11|horker|h|r|H1:p:310:11|h] |h|H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:310:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Shock Resist] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [311] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Foulness] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:311:11|h[08:16] |h|r|H1:p:311:11|h[|h|cFFD700|H1:p:311:11|hPA W|h|r|cFFFFFF|H1:p:311:11|horker|h|r|H1:p:311:11|h] |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:311:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Foulness] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [312] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Frost] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:312:11|h[08:16] |h|r|H1:p:312:11|h[|h|cFFD700|H1:p:312:11|hPA W|h|r|cFFFFFF|H1:p:312:11|horker|h|r|H1:p:312:11|h] |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:312:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Frost] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [313] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Reduce Feat Cost] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:313:11|h[08:16] |h|r|H1:p:313:11|h[|h|cFFD700|H1:p:313:11|hPA W|h|r|cFFFFFF|H1:p:313:11|horker|h|r|H1:p:313:11|h] |h|H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:313:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Reduce Feat Cost] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [314] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Shock] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:314:11|h[08:16] |h|r|H1:p:314:11|h[|h|cFFD700|H1:p:314:11|hPA W|h|r|cFFFFFF|H1:p:314:11|horker|h|r|H1:p:314:11|h] |h|H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:314:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Shock] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [315] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Shock Resist] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:315:11|h[08:16] |h|r|H1:p:315:11|h[|h|cFFD700|H1:p:315:11|hPA W|h|r|cFFFFFF|H1:p:315:11|horker|h|r|H1:p:315:11|h] |h|H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:315:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Shock Resist] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [316] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Truly Superb Glyph of Health] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26580:365:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:316:11|h[08:16] |h|r|H1:p:316:11|h[|h|cFFD700|H1:p:316:11|hPA W|h|r|cFFFFFF|H1:p:316:11|horker|h|r|H1:p:316:11|h] |h|H1:item:26580:365:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:0:0|h|h|H1:p:316:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Truly Superb Glyph of Health] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26580:365:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [317] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Foulness] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:317:11|h[08:16] |h|r|H1:p:317:11|h[|h|cFFD700|H1:p:317:11|hPA W|h|r|cFFFFFF|H1:p:317:11|horker|h|r|H1:p:317:11|h] |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:317:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Foulness] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [318] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Poison Resist] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26586:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:318:11|h[08:16] |h|r|H1:p:318:11|h[|h|cFFD700|H1:p:318:11|hPA W|h|r|cFFFFFF|H1:p:318:11|horker|h|r|H1:p:318:11|h] |h|H1:item:26586:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:318:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Poison Resist] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26586:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [319] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Reduce Spell Cost] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:319:11|h[08:16] |h|r|H1:p:319:11|h[|h|cFFD700|H1:p:319:11|hPA W|h|r|cFFFFFF|H1:p:319:11|horker|h|r|H1:p:319:11|h] |h|H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:319:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Reduce Spell Cost] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [320] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Weakening] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:320:11|h[08:16] |h|r|H1:p:320:11|h[|h|cFFD700|H1:p:320:11|hPA W|h|r|cFFFFFF|H1:p:320:11|horker|h|r|H1:p:320:11|h] |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:320:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Weakening] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [321] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Weakening] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:321:11|h[08:16] |h|r|H1:p:321:11|h[|h|cFFD700|H1:p:321:11|hPA W|h|r|cFFFFFF|H1:p:321:11|horker|h|r|H1:p:321:11|h] |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:321:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Weakening] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [322] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] [Superb Glyph of Frost Resist] has been deconstructed",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:322:11|h[08:16] |h|r|H1:p:322:11|h[|h|cFFD700|H1:p:322:11|hPA W|h|r|cFFFFFF|H1:p:322:11|horker|h|r|H1:p:322:11|h] |h|H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:322:11|h has been deconstructed|h",
-                        ["rawLine"] = "[08:16] [PA Worker] [Superb Glyph of Frost Resist] has been deconstructed",
-                        ["rawTimestamp"] = 1737379005,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] |H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h has been deconstructed",
-                    },
-                    [323] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:323:11|h[08:16] |h|r|H1:p:323:11|h[|h|cFFD700|H1:p:323:11|hPA W|h|r|cFFFFFF|H1:p:323:11|horker|h|r|H1:p:323:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:16] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawTimestamp"] = 1737379008,
-                        ["rawText"] = "|c8F8F8F[08:16] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                    },
-                    [324] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] Writ Crafter: Queued [Ruby Ash Inferno Staff] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:17] |rWrit Crafter: Queued |H0:item:45364:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:324:11|h[08:17] |h|r|H1:p:324:11|hWrit Crafter: Queued |h|H0:item:45364:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h|H1:p:324:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:17] Writ Crafter: Queued [Ruby Ash Inferno Staff] for deconstruction",
-                        ["rawTimestamp"] = 1737379028,
-                        ["rawText"] = "|c8F8F8F[08:17] |rWrit Crafter: Queued |H0:item:45364:308:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [325] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] Writ Crafter: Queued [Rubedite Dagger] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:17] |rWrit Crafter: Queued |H0:item:45304:365:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:325:11|h[08:17] |h|r|H1:p:325:11|hWrit Crafter: Queued |h|H0:item:45304:365:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h|H1:p:325:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:17] Writ Crafter: Queued [Rubedite Dagger] for deconstruction",
-                        ["rawTimestamp"] = 1737379032,
-                        ["rawText"] = "|c8F8F8F[08:17] |rWrit Crafter: Queued |H0:item:45304:365:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [326] = 
-                    {
-                        ["rawFrom"] = "Ember^F",
-                        ["rawMessage"] = "Keep that close to you. A pickpocket will make a killing off of something like that!",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r|c728668Ember: |r|c95a98bKeep that close to you. A pickpocket will make a killing off of something like that!|r",
-                        ["channel"] = 7,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:326:7|h[08:17]|h |r|c728668Ember: |r|c95a98b|H1:p:326:7|hKeep that close to you. A pickpocket will make a killing off of something like that!|h|r",
-                        ["rawLine"] = "[08:17] Ember: Keep that close to you. A pickpocket will make a killing off of something like that!",
-                        ["rawTimestamp"] = 1737379033,
-                        ["rawText"] = "Keep that close to you. A pickpocket will make a killing off of something like that!",
-                    },
-                    [327] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] Writ Crafter: Queued [Platinum Necklace] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:17] |rWrit Crafter: Queued |H0:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:327:11|h[08:17] |h|r|H1:p:327:11|hWrit Crafter: Queued |h|H0:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:327:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:17] Writ Crafter: Queued [Platinum Necklace] for deconstruction",
-                        ["rawTimestamp"] = 1737379036,
-                        ["rawText"] = "|c8F8F8F[08:17] |rWrit Crafter: Queued |H0:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h for deconstruction",
-                    },
-                    [328] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] Writ Crafter: Queued [Rubedo Leather Boots] for deconstruction",
-                        ["rawValue"] = "|c8F8F8F[08:17] |rWrit Crafter: Queued |H0:item:45357:308:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:10000:0|h|h for deconstruction",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:328:11|h[08:17] |h|r|H1:p:328:11|hWrit Crafter: Queued |h|H0:item:45357:308:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:10000:0|h|h|H1:p:328:11|h for deconstruction|h",
-                        ["rawLine"] = "[08:17] Writ Crafter: Queued [Rubedo Leather Boots] for deconstruction",
-                        ["rawTimestamp"] = 1737379038,
-                        ["rawText"] = "|c8F8F8F[08:17] |rWrit Crafter: Queued |H0:item:45357:308:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:10000:0|h|h for deconstruction",
-                    },
-                    [329] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Junk] Sold items for 364|u0:6%:currency:|u",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00364|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:329:11|h[08:17] |h|r|H1:p:329:11|h[|h|cFFD700|H1:p:329:11|hPA J|h|r|cFFFFFF|H1:p:329:11|hunk|h|r|H1:p:329:11|h] Sold items for |h|c00ff00|H1:p:329:11|h364|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawLine"] = "[08:17] [PA Junk] Sold items for 364|u0:6%:currency:|u",
-                        ["rawTimestamp"] = 1737379046,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00364|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                    },
-                    [330] = 
-                    {
-                        ["rawFrom"] = "@Ghostbear1855",
-                        ["rawMessage"] = "Good morning",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r|c40b240|H1:channel:13|h[The Empire]|h |H0:character:Kazkostas|hKazkostas|h: |r|c63d563Good morning|r",
-                        ["channel"] = 13,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:330:13|h[08:17]|h |r|c40b240|H1:channel:13|h[The Empire]|h |H0:character:Kazkostas|hKazkostas|h: |r|c63d563|H1:p:330:13|hGood morning|h|r",
-                        ["rawLine"] = "[08:17] [The Empire] Kazkostas: Good morning",
-                        ["rawTimestamp"] = 1737379052,
-                        ["rawText"] = "Good morning",
-                    },
-                    [331] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 5,439|u0:6%:currency:|u deposited",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,439|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:331:11|h[08:17] |h|r|H1:p:331:11|h[|h|cFFD700|H1:p:331:11|hPA B|h|r|cFFFFFF|H1:p:331:11|hanking|h|r|H1:p:331:11|h] |h|cffffff|H1:p:331:11|h5,439|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:331:11|h deposited|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 5,439|u0:6%:currency:|u deposited",
-                        ["rawTimestamp"] = 1737379055,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,439|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                    },
-                    [332] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Increase Magical Harm] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:332:11|h[08:17] |h|r|H1:p:332:11|h[|h|cFFD700|H1:p:332:11|hPA B|h|r|cFFFFFF|H1:p:332:11|hanking|h|r|H1:p:332:11|h] 1 x |h|H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h|H1:p:332:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Increase Magical Harm] moved to Bank",
-                        ["rawTimestamp"] = 1737379056,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h moved to Bank",
-                    },
-                    [333] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Hardening] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:333:11|h[08:17] |h|r|H1:p:333:11|h[|h|cFFD700|H1:p:333:11|hPA B|h|r|cFFFFFF|H1:p:333:11|hanking|h|r|H1:p:333:11|h] 1 x |h|H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h|H1:p:333:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Hardening] moved to Bank",
-                        ["rawTimestamp"] = 1737379056,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to Bank",
-                    },
-                    [334] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:334:11|h[08:17] |h|r|H1:p:334:11|h[|h|cFFD700|H1:p:334:11|hPA B|h|r|cFFFFFF|H1:p:334:11|hanking|h|r|H1:p:334:11|h] 1 x |h|H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h|H1:p:334:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Bank",
-                        ["rawTimestamp"] = 1737379057,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Bank",
-                    },
-                    [335] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:335:11|h[08:17] |h|r|H1:p:335:11|h[|h|cFFD700|H1:p:335:11|hPA B|h|r|cFFFFFF|H1:p:335:11|hanking|h|r|H1:p:335:11|h] 1 x |h|H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h|H1:p:335:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Bank",
-                        ["rawTimestamp"] = 1737379057,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Bank",
-                    },
-                    [336] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Absorb Magicka] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45868:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Magicka]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:336:11|h[08:17] |h|r|H1:p:336:11|h[|h|cFFD700|H1:p:336:11|hPA B|h|r|cFFFFFF|H1:p:336:11|hanking|h|r|H1:p:336:11|h] 1 x |h|H1:item:45868:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Magicka]|h|H1:p:336:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Absorb Magicka] moved to Bank",
-                        ["rawTimestamp"] = 1737379057,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45868:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Magicka]|h moved to Bank",
-                    },
-                    [337] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Bracing] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:337:11|h[08:17] |h|r|H1:p:337:11|h[|h|cFFD700|H1:p:337:11|hPA B|h|r|cFFFFFF|H1:p:337:11|hanking|h|r|H1:p:337:11|h] 1 x |h|H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h|H1:p:337:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Bracing] moved to Bank",
-                        ["rawTimestamp"] = 1737379058,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h moved to Bank",
-                    },
-                    [338] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:338:11|h[08:17] |h|r|H1:p:338:11|h[|h|cFFD700|H1:p:338:11|hPA B|h|r|cFFFFFF|H1:p:338:11|hanking|h|r|H1:p:338:11|h] 1 x |h|H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h|H1:p:338:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Bank",
-                        ["rawTimestamp"] = 1737379058,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Bank",
-                    },
-                    [339] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Bracing] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:339:11|h[08:17] |h|r|H1:p:339:11|h[|h|cFFD700|H1:p:339:11|hPA B|h|r|cFFFFFF|H1:p:339:11|hanking|h|r|H1:p:339:11|h] 1 x |h|H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h|H1:p:339:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Bracing] moved to Bank",
-                        ["rawTimestamp"] = 1737379059,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h moved to Bank",
-                    },
-                    [340] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:340:11|h[08:17] |h|r|H1:p:340:11|h[|h|cFFD700|H1:p:340:11|hPA B|h|r|cFFFFFF|H1:p:340:11|hanking|h|r|H1:p:340:11|h] 1 x |h|H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h|H1:p:340:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Bank",
-                        ["rawTimestamp"] = 1737379059,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Bank",
-                    },
-                    [341] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Flame] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:341:11|h[08:17] |h|r|H1:p:341:11|h[|h|cFFD700|H1:p:341:11|hPA B|h|r|cFFFFFF|H1:p:341:11|hanking|h|r|H1:p:341:11|h] 1 x |h|H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h|H1:p:341:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Flame] moved to Bank",
-                        ["rawTimestamp"] = 1737379060,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Bank",
-                    },
-                    [342] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Decrease Health] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45869:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Health]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:342:11|h[08:17] |h|r|H1:p:342:11|h[|h|cFFD700|H1:p:342:11|hPA B|h|r|cFFFFFF|H1:p:342:11|hanking|h|r|H1:p:342:11|h] 1 x |h|H1:item:45869:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Health]|h|H1:p:342:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Decrease Health] moved to Bank",
-                        ["rawTimestamp"] = 1737379060,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45869:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Health]|h moved to Bank",
-                    },
-                    [343] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock Resist] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:343:11|h[08:17] |h|r|H1:p:343:11|h[|h|cFFD700|H1:p:343:11|hPA B|h|r|cFFFFFF|H1:p:343:11|hanking|h|r|H1:p:343:11|h] 1 x |h|H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h|H1:p:343:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock Resist] moved to Bank",
-                        ["rawTimestamp"] = 1737379060,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h moved to Bank",
-                    },
-                    [344] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:344:11|h[08:17] |h|r|H1:p:344:11|h[|h|cFFD700|H1:p:344:11|hPA B|h|r|cFFFFFF|H1:p:344:11|hanking|h|r|H1:p:344:11|h] 1 x |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h|H1:p:344:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Bank",
-                        ["rawTimestamp"] = 1737379061,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Bank",
-                    },
-                    [345] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Frost] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:345:11|h[08:17] |h|r|H1:p:345:11|h[|h|cFFD700|H1:p:345:11|hPA B|h|r|cFFFFFF|H1:p:345:11|hanking|h|r|H1:p:345:11|h] 1 x |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:345:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Frost] moved to Bank",
-                        ["rawTimestamp"] = 1737379061,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Bank",
-                    },
-                    [346] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Reduce Feat Cost] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:346:11|h[08:17] |h|r|H1:p:346:11|h[|h|cFFD700|H1:p:346:11|hPA B|h|r|cFFFFFF|H1:p:346:11|hanking|h|r|H1:p:346:11|h] 1 x |h|H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h|H1:p:346:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Reduce Feat Cost] moved to Bank",
-                        ["rawTimestamp"] = 1737379061,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h moved to Bank",
-                    },
-                    [347] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:347:11|h[08:17] |h|r|H1:p:347:11|h[|h|cFFD700|H1:p:347:11|hPA B|h|r|cFFFFFF|H1:p:347:11|hanking|h|r|H1:p:347:11|h] 1 x |h|H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h|H1:p:347:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock] moved to Bank",
-                        ["rawTimestamp"] = 1737379062,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h moved to Bank",
-                    },
-                    [348] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock Resist] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:348:11|h[08:17] |h|r|H1:p:348:11|h[|h|cFFD700|H1:p:348:11|hPA B|h|r|cFFFFFF|H1:p:348:11|hanking|h|r|H1:p:348:11|h] 1 x |h|H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h|H1:p:348:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock Resist] moved to Bank",
-                        ["rawTimestamp"] = 1737379062,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h moved to Bank",
-                    },
-                    [349] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Truly Superb Glyph of Health] moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26580:365:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:0:0|h[Truly Superb Glyph of Health]|h moved to Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:349:11|h[08:17] |h|r|H1:p:349:11|h[|h|cFFD700|H1:p:349:11|hPA B|h|r|cFFFFFF|H1:p:349:11|hanking|h|r|H1:p:349:11|h] 1 x |h|H1:item:26580:365:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:0:0|h[Truly Superb Glyph of Health]|h|H1:p:349:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Truly Superb Glyph of Health] moved to Bank",
-                        ["rawTimestamp"] = 1737379063,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26580:365:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:0:0|h[Truly Superb Glyph of Health]|h moved to Bank",
-                    },
-                    [350] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Foulness] moved to ESO Plus Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to ESO Plus Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:350:11|h[08:17] |h|r|H1:p:350:11|h[|h|cFFD700|H1:p:350:11|hPA B|h|r|cFFFFFF|H1:p:350:11|hanking|h|r|H1:p:350:11|h] 1 x |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h|H1:p:350:11|h moved to ESO Plus Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Foulness] moved to ESO Plus Bank",
-                        ["rawTimestamp"] = 1737379063,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to ESO Plus Bank",
-                    },
-                    [351] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Poison Resist] moved to ESO Plus Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26586:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Poison Resist]|h moved to ESO Plus Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:351:11|h[08:17] |h|r|H1:p:351:11|h[|h|cFFD700|H1:p:351:11|hPA B|h|r|cFFFFFF|H1:p:351:11|hanking|h|r|H1:p:351:11|h] 1 x |h|H1:item:26586:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Poison Resist]|h|H1:p:351:11|h moved to ESO Plus Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Poison Resist] moved to ESO Plus Bank",
-                        ["rawTimestamp"] = 1737379064,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26586:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Poison Resist]|h moved to ESO Plus Bank",
-                    },
-                    [352] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Reduce Spell Cost] moved to ESO Plus Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h moved to ESO Plus Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:352:11|h[08:17] |h|r|H1:p:352:11|h[|h|cFFD700|H1:p:352:11|hPA B|h|r|cFFFFFF|H1:p:352:11|hanking|h|r|H1:p:352:11|h] 1 x |h|H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h|H1:p:352:11|h moved to ESO Plus Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Reduce Spell Cost] moved to ESO Plus Bank",
-                        ["rawTimestamp"] = 1737379064,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h moved to ESO Plus Bank",
-                    },
-                    [353] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Weakening] moved to ESO Plus Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to ESO Plus Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:353:11|h[08:17] |h|r|H1:p:353:11|h[|h|cFFD700|H1:p:353:11|hPA B|h|r|cFFFFFF|H1:p:353:11|hanking|h|r|H1:p:353:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:353:11|h moved to ESO Plus Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Weakening] moved to ESO Plus Bank",
-                        ["rawTimestamp"] = 1737379064,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to ESO Plus Bank",
-                    },
-                    [354] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Weakening] moved to ESO Plus Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to ESO Plus Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:354:11|h[08:17] |h|r|H1:p:354:11|h[|h|cFFD700|H1:p:354:11|hPA B|h|r|cFFFFFF|H1:p:354:11|hanking|h|r|H1:p:354:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:354:11|h moved to ESO Plus Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Weakening] moved to ESO Plus Bank",
-                        ["rawTimestamp"] = 1737379065,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to ESO Plus Bank",
-                    },
-                    [355] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Frost Resist] moved to ESO Plus Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h moved to ESO Plus Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:355:11|h[08:17] |h|r|H1:p:355:11|h[|h|cFFD700|H1:p:355:11|hPA B|h|r|cFFFFFF|H1:p:355:11|hanking|h|r|H1:p:355:11|h] 1 x |h|H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h|H1:p:355:11|h moved to ESO Plus Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Frost Resist] moved to ESO Plus Bank",
-                        ["rawTimestamp"] = 1737379065,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h moved to ESO Plus Bank",
-                    },
-                    [356] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Platinum Necklace]  moved to ESO Plus Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t moved to ESO Plus Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:356:11|h[08:17] |h|r|H1:p:356:11|h[|h|cFFD700|H1:p:356:11|hPA B|h|r|cFFFFFF|H1:p:356:11|hanking|h|r|H1:p:356:11|h] 1 x |h|H1:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t|H1:p:356:11|h moved to ESO Plus Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Platinum Necklace]  moved to ESO Plus Bank",
-                        ["rawTimestamp"] = 1737379065,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:138797:307:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Necklace]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t moved to ESO Plus Bank",
-                    },
-                    [357] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Hardening] moved to ESO Plus Bank",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to ESO Plus Bank",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:357:11|h[08:17] |h|r|H1:p:357:11|h[|h|cFFD700|H1:p:357:11|hPA B|h|r|cFFFFFF|H1:p:357:11|hanking|h|r|H1:p:357:11|h] 1 x |h|H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h|H1:p:357:11|h moved to ESO Plus Bank|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Hardening] moved to ESO Plus Bank",
-                        ["rawTimestamp"] = 1737379066,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to ESO Plus Bank",
-                    },
-                    [358] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Increase Magical Harm] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:358:11|h[08:17] |h|r|H1:p:358:11|h[|h|cFFD700|H1:p:358:11|hPA B|h|r|cFFFFFF|H1:p:358:11|hanking|h|r|H1:p:358:11|h] 1 x |h|H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h|H1:p:358:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Increase Magical Harm] moved to Backpack",
-                        ["rawTimestamp"] = 1737379066,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45884:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Increase Magical Harm]|h moved to Backpack",
-                    },
-                    [359] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Hardening] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:359:11|h[08:17] |h|r|H1:p:359:11|h[|h|cFFD700|H1:p:359:11|hPA B|h|r|cFFFFFF|H1:p:359:11|hanking|h|r|H1:p:359:11|h] 1 x |h|H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h|H1:p:359:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Hardening] moved to Backpack",
-                        ["rawTimestamp"] = 1737379067,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to Backpack",
-                    },
-                    [360] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:360:11|h[08:17] |h|r|H1:p:360:11|h[|h|cFFD700|H1:p:360:11|hPA B|h|r|cFFFFFF|H1:p:360:11|hanking|h|r|H1:p:360:11|h] 1 x |h|H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h|H1:p:360:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Backpack",
-                        ["rawTimestamp"] = 1737379067,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Backpack",
-                    },
-                    [361] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:361:11|h[08:17] |h|r|H1:p:361:11|h[|h|cFFD700|H1:p:361:11|hPA B|h|r|cFFFFFF|H1:p:361:11|hanking|h|r|H1:p:361:11|h] 1 x |h|H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h|H1:p:361:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Backpack",
-                        ["rawTimestamp"] = 1737379068,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Backpack",
-                    },
-                    [362] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Absorb Magicka] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45868:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Magicka]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:362:11|h[08:17] |h|r|H1:p:362:11|h[|h|cFFD700|H1:p:362:11|hPA B|h|r|cFFFFFF|H1:p:362:11|hanking|h|r|H1:p:362:11|h] 1 x |h|H1:item:45868:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Magicka]|h|H1:p:362:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Absorb Magicka] moved to Backpack",
-                        ["rawTimestamp"] = 1737379068,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45868:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Magicka]|h moved to Backpack",
-                    },
-                    [363] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Bracing] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:363:11|h[08:17] |h|r|H1:p:363:11|h[|h|cFFD700|H1:p:363:11|hPA B|h|r|cFFFFFF|H1:p:363:11|hanking|h|r|H1:p:363:11|h] 1 x |h|H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h|H1:p:363:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Bracing] moved to Backpack",
-                        ["rawTimestamp"] = 1737379069,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h moved to Backpack",
-                    },
-                    [364] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:364:11|h[08:17] |h|r|H1:p:364:11|h[|h|cFFD700|H1:p:364:11|hPA B|h|r|cFFFFFF|H1:p:364:11|hanking|h|r|H1:p:364:11|h] 1 x |h|H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h|H1:p:364:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Backpack",
-                        ["rawTimestamp"] = 1737379069,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Backpack",
-                    },
-                    [365] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Bracing] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:365:11|h[08:17] |h|r|H1:p:365:11|h[|h|cFFD700|H1:p:365:11|hPA B|h|r|cFFFFFF|H1:p:365:11|hanking|h|r|H1:p:365:11|h] 1 x |h|H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h|H1:p:365:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Bracing] moved to Backpack",
-                        ["rawTimestamp"] = 1737379069,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45873:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Bracing]|h moved to Backpack",
-                    },
-                    [366] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:366:11|h[08:17] |h|r|H1:p:366:11|h[|h|cFFD700|H1:p:366:11|hPA B|h|r|cFFFFFF|H1:p:366:11|hanking|h|r|H1:p:366:11|h] 1 x |h|H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h|H1:p:366:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Crushing] moved to Backpack",
-                        ["rawTimestamp"] = 1737379070,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26845:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Crushing]|h moved to Backpack",
-                    },
-                    [367] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Flame] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:367:11|h[08:17] |h|r|H1:p:367:11|h[|h|cFFD700|H1:p:367:11|hPA B|h|r|cFFFFFF|H1:p:367:11|hanking|h|r|H1:p:367:11|h] 1 x |h|H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h|H1:p:367:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Flame] moved to Backpack",
-                        ["rawTimestamp"] = 1737379071,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26848:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Flame]|h moved to Backpack",
-                    },
-                    [368] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Decrease Health] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45869:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Health]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:368:11|h[08:17] |h|r|H1:p:368:11|h[|h|cFFD700|H1:p:368:11|hPA B|h|r|cFFFFFF|H1:p:368:11|hanking|h|r|H1:p:368:11|h] 1 x |h|H1:item:45869:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Health]|h|H1:p:368:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Decrease Health] moved to Backpack",
-                        ["rawTimestamp"] = 1737379071,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45869:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Decrease Health]|h moved to Backpack",
-                    },
-                    [369] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock Resist] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:369:11|h[08:17] |h|r|H1:p:369:11|h[|h|cFFD700|H1:p:369:11|hPA B|h|r|cFFFFFF|H1:p:369:11|hanking|h|r|H1:p:369:11|h] 1 x |h|H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h|H1:p:369:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock Resist] moved to Backpack",
-                        ["rawTimestamp"] = 1737379071,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h moved to Backpack",
-                    },
-                    [370] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:370:11|h[08:17] |h|r|H1:p:370:11|h[|h|cFFD700|H1:p:370:11|hPA B|h|r|cFFFFFF|H1:p:370:11|hanking|h|r|H1:p:370:11|h] 1 x |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h|H1:p:370:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Backpack",
-                        ["rawTimestamp"] = 1737379072,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Backpack",
-                    },
-                    [371] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Frost] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:371:11|h[08:17] |h|r|H1:p:371:11|h[|h|cFFD700|H1:p:371:11|hPA B|h|r|cFFFFFF|H1:p:371:11|hanking|h|r|H1:p:371:11|h] 1 x |h|H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h|H1:p:371:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Frost] moved to Backpack",
-                        ["rawTimestamp"] = 1737379072,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5365:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost]|h moved to Backpack",
-                    },
-                    [372] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Reduce Feat Cost] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:372:11|h[08:17] |h|r|H1:p:372:11|h[|h|cFFD700|H1:p:372:11|hPA B|h|r|cFFFFFF|H1:p:372:11|hanking|h|r|H1:p:372:11|h] 1 x |h|H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h|H1:p:372:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Reduce Feat Cost] moved to Backpack",
-                        ["rawTimestamp"] = 1737379072,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45871:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Feat Cost]|h moved to Backpack",
-                    },
-                    [373] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:373:11|h[08:17] |h|r|H1:p:373:11|h[|h|cFFD700|H1:p:373:11|hPA B|h|r|cFFFFFF|H1:p:373:11|hanking|h|r|H1:p:373:11|h] 1 x |h|H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h|H1:p:373:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock] moved to Backpack",
-                        ["rawTimestamp"] = 1737379073,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26844:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock]|h moved to Backpack",
-                    },
-                    [374] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock Resist] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:374:11|h[08:17] |h|r|H1:p:374:11|h[|h|cFFD700|H1:p:374:11|hPA B|h|r|cFFFFFF|H1:p:374:11|hanking|h|r|H1:p:374:11|h] 1 x |h|H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h|H1:p:374:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Shock Resist] moved to Backpack",
-                        ["rawTimestamp"] = 1737379073,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43570:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Shock Resist]|h moved to Backpack",
-                    },
-                    [375] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Truly Superb Glyph of Health] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26580:365:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:0:0|h[Truly Superb Glyph of Health]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:375:11|h[08:17] |h|r|H1:p:375:11|h[|h|cFFD700|H1:p:375:11|hPA B|h|r|cFFFFFF|H1:p:375:11|hanking|h|r|H1:p:375:11|h] 1 x |h|H1:item:26580:365:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:0:0|h[Truly Superb Glyph of Health]|h|H1:p:375:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Truly Superb Glyph of Health] moved to Backpack",
-                        ["rawTimestamp"] = 1737379074,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26580:365:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:0:0|h[Truly Superb Glyph of Health]|h moved to Backpack",
-                    },
-                    [376] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:376:11|h[08:17] |h|r|H1:p:376:11|h[|h|cFFD700|H1:p:376:11|hPA B|h|r|cFFFFFF|H1:p:376:11|hanking|h|r|H1:p:376:11|h] 1 x |h|H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h|H1:p:376:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Foulness] moved to Backpack",
-                        ["rawTimestamp"] = 1737379074,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26841:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Foulness]|h moved to Backpack",
-                    },
-                    [377] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawMessage"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Poison Resist] moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26586:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Poison Resist]|h moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:377:11|h[08:17] |h|r|H1:p:377:11|h[|h|cFFD700|H1:p:377:11|hPA B|h|r|cFFFFFF|H1:p:377:11|hanking|h|r|H1:p:377:11|h] 1 x |h|H1:item:26586:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Poison Resist]|h|H1:p:377:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:17] [PA Banking] 1 x [Superb Glyph of Poison Resist] moved to Backpack",
-                        ["rawTimestamp"] = 1737379074,
-                        ["rawText"] = "|c8F8F8F[08:17] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26586:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Poison Resist]|h moved to Backpack",
-                    },
-                    [378] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawMessage"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:378:11|h[08:20] |h|r|H1:p:378:11|h[|h|cFFD700|H1:p:378:11|hPA W|h|r|cFFFFFF|H1:p:378:11|horker|h|r|H1:p:378:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379209,
-                    },
-                    [379] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawMessage"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:379:11|h[08:20] |h|r|H1:p:379:11|h[|h|cFFD700|H1:p:379:11|hPA W|h|r|cFFFFFF|H1:p:379:11|horker|h|r|H1:p:379:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379212,
-                    },
-                    [380] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawMessage"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:380:11|h[08:20] |h|r|H1:p:380:11|h[|h|cFFD700|H1:p:380:11|hPA W|h|r|cFFFFFF|H1:p:380:11|horker|h|r|H1:p:380:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379214,
-                    },
-                    [381] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawMessage"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:381:11|h[08:20] |h|r|H1:p:381:11|h[|h|cFFD700|H1:p:381:11|hPA W|h|r|cFFFFFF|H1:p:381:11|horker|h|r|H1:p:381:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379220,
-                    },
-                    [382] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawMessage"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:382:11|h[08:20] |h|r|H1:p:382:11|h[|h|cFFD700|H1:p:382:11|hPA W|h|r|cFFFFFF|H1:p:382:11|horker|h|r|H1:p:382:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379227,
-                    },
-                    [383] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawMessage"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:383:11|h[08:20] |h|r|H1:p:383:11|h[|h|cFFD700|H1:p:383:11|hPA W|h|r|cFFFFFF|H1:p:383:11|horker|h|r|H1:p:383:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379229,
-                    },
-                    [384] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawMessage"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:384:11|h[08:20] |h|r|H1:p:384:11|h[|h|cFFD700|H1:p:384:11|hPA W|h|r|cFFFFFF|H1:p:384:11|horker|h|r|H1:p:384:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379232,
-                    },
-                    [385] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawMessage"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:385:11|h[08:20] |h|r|H1:p:385:11|h[|h|cFFD700|H1:p:385:11|hPA W|h|r|cFFFFFF|H1:p:385:11|horker|h|r|H1:p:385:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379237,
-                    },
-                    [386] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r|c88aaffDailyAlchemy:|r |cffffff|t20:20:/esoui/art/icons/consumable_potion_003_type_005.dds|t|H0:item:54341:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:327680|h|h x 1/1 [Bulk Creation]|r",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r|c88aaffDailyAlchemy:|r |cffffff|t20:20:/esoui/art/icons/consumable_potion_003_type_005.dds|t|H0:item:54341:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:327680|h|h x 1/1 [Bulk Creation]|r",
-                        ["rawMessage"] = "[08:20] DailyAlchemy: [Essence of Stamina] x 1/1 [Bulk Creation]",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:386:11|h[08:20] |h|r|c88aaff|H1:p:386:11|hDailyAlchemy:|h|r |cffffff|t20:20:/esoui/art/icons/consumable_potion_003_type_005.dds|t|H0:item:54341:308:50:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:327680|h|h|H1:p:386:11|h x 1/1 [Bulk Creation]|h|r",
-                        ["rawLine"] = "[08:20] DailyAlchemy: [Essence of Stamina] x 1/1 [Bulk Creation]",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379243,
-                    },
-                    [387] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawMessage"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:387:11|h[08:20] |h|r|H1:p:387:11|h[|h|cFFD700|H1:p:387:11|hPA W|h|r|cFFFFFF|H1:p:387:11|horker|h|r|H1:p:387:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379248,
-                    },
-                    [388] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r[|cFFD700PA W|r|cFFFFFForker|r] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawMessage"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:388:11|h[08:20] |h|r|H1:p:388:11|h[|h|cFFD700|H1:p:388:11|hPA W|h|r|cFFFFFF|H1:p:388:11|horker|h|r|H1:p:388:11|h] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest|h",
-                        ["rawLine"] = "[08:20] [PA Worker] Auto deconstruct/refine/research was blocked because you have an ongoing crafting quest",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379251,
-                    },
-                    [389] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r|c88aaffDailyProvisioning:|r |cffffff|t20:20:/esoui/art/icons/crafting_skillet_004.dds|t|H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h x 1/1 [Bulk Creation]|r",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r|c88aaffDailyProvisioning:|r |cffffff|t20:20:/esoui/art/icons/crafting_skillet_004.dds|t|H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h x 1/1 [Bulk Creation]|r",
-                        ["rawMessage"] = "[08:20] DailyProvisioning: [Lilmoth Garlic Hagfish] x 1/1 [Bulk Creation]",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:389:11|h[08:20] |h|r|c88aaff|H1:p:389:11|hDailyProvisioning:|h|r |cffffff|t20:20:/esoui/art/icons/crafting_skillet_004.dds|t|H0:item:68235:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:389:11|h x 1/1 [Bulk Creation]|h|r",
-                        ["rawLine"] = "[08:20] DailyProvisioning: [Lilmoth Garlic Hagfish] x 1/1 [Bulk Creation]",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379256,
-                    },
-                    [390] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:20] |r|c88aaffDailyProvisioning:|r |cffffff|t20:20:/esoui/art/icons/crafting_leather_vitriol.dds|t|H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h x 1/1 [Bulk Creation]|r",
-                        ["rawValue"] = "|c8F8F8F[08:20] |r|c88aaffDailyProvisioning:|r |cffffff|t20:20:/esoui/art/icons/crafting_leather_vitriol.dds|t|H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h x 1/1 [Bulk Creation]|r",
-                        ["rawMessage"] = "[08:20] DailyProvisioning: [Hagraven's Tonic] x 1/1 [Bulk Creation]",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:390:11|h[08:20] |h|r|c88aaff|H1:p:390:11|hDailyProvisioning:|h|r |cffffff|t20:20:/esoui/art/icons/crafting_leather_vitriol.dds|t|H0:item:68263:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:390:11|h x 1/1 [Bulk Creation]|h|r",
-                        ["rawLine"] = "[08:20] DailyProvisioning: [Hagraven's Tonic] x 1/1 [Bulk Creation]",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379258,
-                    },
-                    [391] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |rTake |H0:item:203634:34:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                        ["rawValue"] = "|c8F8F8F[08:21] |rTake |H0:item:203634:34:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                        ["rawMessage"] = "[08:21] Take [Chromium Plating]",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:391:11|h[08:21] |h|r|H1:p:391:11|hTake |h|H0:item:203634:34:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                        ["rawLine"] = "[08:21] Take [Chromium Plating]",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379272,
-                    },
-                    [392] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r|H0:lootlog|h[Loot Log]|h |H1:item:203634:34:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h → |cD29FBCYou|r",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r|H0:lootlog|h[Loot Log]|h |H1:item:203634:34:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h → |cD29FBCYou|r",
-                        ["rawMessage"] = "[08:21] |H0:lootlog|h[Loot Log]|h [Chromium Plating] → You",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:392:11|h[08:21] |h|r|H0:lootlog|h[Loot Log]|h |H1:item:203634:34:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h|H1:p:392:11|h → |h|cD29FBC|H1:p:392:11|hYou|h|r",
-                        ["rawLine"] = "[08:21] |H0:lootlog|h[Loot Log]|h [Chromium Plating] → You",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379272,
-                    },
-                    [393] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00214|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA J|r|cFFFFFFunk|r] Sold items for |c00ff00214|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawMessage"] = "[08:21] [PA Junk] Sold items for 214|u0:6%:currency:|u",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:393:11|h[08:21] |h|r|H1:p:393:11|h[|h|cFFD700|H1:p:393:11|hPA J|h|r|cFFFFFF|H1:p:393:11|hunk|h|r|H1:p:393:11|h] Sold items for |h|c00ff00|H1:p:393:11|h214|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t",
-                        ["rawLine"] = "[08:21] [PA Junk] Sold items for 214|u0:6%:currency:|u",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379281,
-                    },
-                    [394] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |rTake |H0:item:119682:5:1:0:0:0:65:192:4:81:25:50:0:0:0:0:0:0:0:0:199875|h|h",
-                        ["rawValue"] = "|c8F8F8F[08:21] |rTake |H0:item:119682:5:1:0:0:0:65:192:4:81:25:50:0:0:0:0:0:0:0:0:199875|h|h",
-                        ["rawMessage"] = "[08:21] Take [Sealed Woodworking Writ]",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:394:11|h[08:21] |h|r|H1:p:394:11|hTake |h|H0:item:119682:5:1:0:0:0:65:192:4:81:25:50:0:0:0:0:0:0:0:0:199875|h|h",
-                        ["rawLine"] = "[08:21] Take [Sealed Woodworking Writ]",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379284,
-                    },
-                    [395] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r|H0:lootlog|h[Loot Log]|h |H1:item:119682:5:1:0:0:0:65:192:4:81:25:50:0:0:0:0:0:0:0:0:199875|h|h → |cD29FBCYou|r",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r|H0:lootlog|h[Loot Log]|h |H1:item:119682:5:1:0:0:0:65:192:4:81:25:50:0:0:0:0:0:0:0:0:199875|h|h → |cD29FBCYou|r",
-                        ["rawMessage"] = "[08:21] |H0:lootlog|h[Loot Log]|h [Sealed Woodworking Writ] → You",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:395:11|h[08:21] |h|r|H0:lootlog|h[Loot Log]|h |H1:item:119682:5:1:0:0:0:65:192:4:81:25:50:0:0:0:0:0:0:0:0:199875|h|h|H1:p:395:11|h → |h|cD29FBC|H1:p:395:11|hYou|h|r",
-                        ["rawLine"] = "[08:21] |H0:lootlog|h[Loot Log]|h [Sealed Woodworking Writ] → You",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379284,
-                    },
-                    [396] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,289|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff5,289|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["rawMessage"] = "[08:21] [PA Banking] 5,289|u0:6%:currency:|u deposited",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:396:11|h[08:21] |h|r|H1:p:396:11|h[|h|cFFD700|H1:p:396:11|hPA B|h|r|cFFFFFF|H1:p:396:11|hanking|h|r|H1:p:396:11|h] |h|cffffff|H1:p:396:11|h5,289|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:396:11|h deposited|h",
-                        ["rawLine"] = "[08:21] [PA Banking] 5,289|u0:6%:currency:|u deposited",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379292,
-                    },
-                    [397] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:138796:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Ring]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:138796:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Ring]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t moved to Bank",
-                        ["rawMessage"] = "[08:21] [PA Banking] 1 x [Platinum Ring]  moved to Bank",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:397:11|h[08:21] |h|r|H1:p:397:11|h[|h|cFFD700|H1:p:397:11|hPA B|h|r|cFFFFFF|H1:p:397:11|hanking|h|r|H1:p:397:11|h] 1 x |h|H1:item:138796:365:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Platinum Ring]|h |t16:16:/esoui/art/inventory/inventory_trait_intricate_icon.dds|t|H1:p:397:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:21] [PA Banking] 1 x [Platinum Ring]  moved to Bank",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379295,
-                    },
-                    [398] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Bank",
-                        ["rawMessage"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Bank",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:398:11|h[08:21] |h|r|H1:p:398:11|h[|h|cFFD700|H1:p:398:11|hPA B|h|r|cFFFFFF|H1:p:398:11|hanking|h|r|H1:p:398:11|h] 1 x |h|H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h|H1:p:398:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Bank",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379295,
-                    },
-                    [399] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Backpack",
-                        ["rawMessage"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:399:11|h[08:21] |h|r|H1:p:399:11|h[|h|cFFD700|H1:p:399:11|hPA B|h|r|cFFFFFF|H1:p:399:11|hanking|h|r|H1:p:399:11|h] 1 x |h|H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h|H1:p:399:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379295,
-                    },
-                    [400] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h moved to Backpack",
-                        ["rawMessage"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Reduce Spell Cost] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:400:11|h[08:21] |h|r|H1:p:400:11|h[|h|cFFD700|H1:p:400:11|hPA B|h|r|cFFFFFF|H1:p:400:11|hanking|h|r|H1:p:400:11|h] 1 x |h|H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h|H1:p:400:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Reduce Spell Cost] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379297,
-                    },
-                    [401] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["rawMessage"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:401:11|h[08:21] |h|r|H1:p:401:11|h[|h|cFFD700|H1:p:401:11|hPA B|h|r|cFFFFFF|H1:p:401:11|hanking|h|r|H1:p:401:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:401:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379297,
-                    },
-                    [402] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["rawMessage"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:402:11|h[08:21] |h|r|H1:p:402:11|h[|h|cFFD700|H1:p:402:11|hPA B|h|r|cFFFFFF|H1:p:402:11|hanking|h|r|H1:p:402:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:402:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379297,
-                    },
-                    [403] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h moved to Backpack",
-                        ["rawMessage"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Frost Resist] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:403:11|h[08:21] |h|r|H1:p:403:11|h[|h|cFFD700|H1:p:403:11|hPA B|h|r|cFFFFFF|H1:p:403:11|hanking|h|r|H1:p:403:11|h] 1 x |h|H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h|H1:p:403:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Frost Resist] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379298,
-                    },
-                    [404] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to Backpack",
-                        ["rawMessage"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Hardening] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:404:11|h[08:21] |h|r|H1:p:404:11|h[|h|cFFD700|H1:p:404:11|hPA B|h|r|cFFFFFF|H1:p:404:11|hanking|h|r|H1:p:404:11|h] 1 x |h|H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h|H1:p:404:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:21] [PA Banking] 1 x [Superb Glyph of Hardening] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379298,
-                    },
-                    [405] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[08:21] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["rawMessage"] = "[08:21] [PA Banking] All item transfers completed",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:405:11|h[08:21] |h|r|H1:p:405:11|h[|h|cFFD700|H1:p:405:11|hPA B|h|r|cFFFFFF|H1:p:405:11|hanking|h|r|H1:p:405:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[08:21] [PA Banking] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379300,
-                    },
-                    [406] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff59,985|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] |cffffff59,985|r|u0:6%:currency:|u|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t deposited",
-                        ["rawMessage"] = "[08:22] [PA Banking] 59,985|u0:6%:currency:|u deposited",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:406:11|h[08:22] |h|r|H1:p:406:11|h[|h|cFFD700|H1:p:406:11|hPA B|h|r|cFFFFFF|H1:p:406:11|hanking|h|r|H1:p:406:11|h] |h|cffffff|H1:p:406:11|h59,985|h|r|t80%:80%:/esoui/art/currency/gold_mipmap.dds|t|H1:p:406:11|h deposited|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 59,985|u0:6%:currency:|u deposited",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379344,
-                    },
-                    [407] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Bank",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Bank",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:407:11|h[08:22] |h|r|H1:p:407:11|h[|h|cFFD700|H1:p:407:11|hPA B|h|r|cFFFFFF|H1:p:407:11|hanking|h|r|H1:p:407:11|h] 1 x |h|H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h|H1:p:407:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Bank",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379345,
-                    },
-                    [408] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h moved to Bank",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Reduce Spell Cost] moved to Bank",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:408:11|h[08:22] |h|r|H1:p:408:11|h[|h|cFFD700|H1:p:408:11|hPA B|h|r|cFFFFFF|H1:p:408:11|hanking|h|r|H1:p:408:11|h] 1 x |h|H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h|H1:p:408:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Reduce Spell Cost] moved to Bank",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379347,
-                    },
-                    [409] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:409:11|h[08:22] |h|r|H1:p:409:11|h[|h|cFFD700|H1:p:409:11|hPA B|h|r|cFFFFFF|H1:p:409:11|hanking|h|r|H1:p:409:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:409:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379347,
-                    },
-                    [410] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Bank",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:410:11|h[08:22] |h|r|H1:p:410:11|h[|h|cFFD700|H1:p:410:11|hPA B|h|r|cFFFFFF|H1:p:410:11|hanking|h|r|H1:p:410:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:410:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Bank",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379348,
-                    },
-                    [411] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h moved to Bank",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Frost Resist] moved to Bank",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:411:11|h[08:22] |h|r|H1:p:411:11|h[|h|cFFD700|H1:p:411:11|hPA B|h|r|cFFFFFF|H1:p:411:11|hanking|h|r|H1:p:411:11|h] 1 x |h|H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h|H1:p:411:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Frost Resist] moved to Bank",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379348,
-                    },
-                    [412] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to Bank",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to Bank",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Hardening] moved to Bank",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:412:11|h[08:22] |h|r|H1:p:412:11|h[|h|cFFD700|H1:p:412:11|hPA B|h|r|cFFFFFF|H1:p:412:11|hanking|h|r|H1:p:412:11|h] 1 x |h|H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h|H1:p:412:11|h moved to Bank|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Hardening] moved to Bank",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379349,
-                    },
-                    [413] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h moved to Backpack",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Reduce Spell Cost] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:413:11|h[08:22] |h|r|H1:p:413:11|h[|h|cFFD700|H1:p:413:11|hPA B|h|r|cFFFFFF|H1:p:413:11|hanking|h|r|H1:p:413:11|h] 1 x |h|H1:item:45870:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Reduce Spell Cost]|h|H1:p:413:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Reduce Spell Cost] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379349,
-                    },
-                    [414] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h moved to Backpack",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:414:11|h[08:22] |h|r|H1:p:414:11|h[|h|cFFD700|H1:p:414:11|hPA B|h|r|cFFFFFF|H1:p:414:11|hanking|h|r|H1:p:414:11|h] 1 x |h|H1:item:43573:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Absorb Health]|h|H1:p:414:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Absorb Health] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379350,
-                    },
-                    [415] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:415:11|h[08:22] |h|r|H1:p:415:11|h[|h|cFFD700|H1:p:415:11|hPA B|h|r|cFFFFFF|H1:p:415:11|hanking|h|r|H1:p:415:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:415:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379350,
-                    },
-                    [416] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h moved to Backpack",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:416:11|h[08:22] |h|r|H1:p:416:11|h[|h|cFFD700|H1:p:416:11|hPA B|h|r|cFFFFFF|H1:p:416:11|hanking|h|r|H1:p:416:11|h] 1 x |h|H1:item:26591:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Weakening]|h|H1:p:416:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Weakening] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379350,
-                    },
-                    [417] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h moved to Backpack",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Frost Resist] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:417:11|h[08:22] |h|r|H1:p:417:11|h[|h|cFFD700|H1:p:417:11|hPA B|h|r|cFFFFFF|H1:p:417:11|hanking|h|r|H1:p:417:11|h] 1 x |h|H1:item:5364:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Frost Resist]|h|H1:p:417:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Frost Resist] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379351,
-                    },
-                    [418] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to Backpack",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] 1 x |H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h moved to Backpack",
-                        ["rawMessage"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Hardening] moved to Backpack",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:418:11|h[08:22] |h|r|H1:p:418:11|h[|h|cFFD700|H1:p:418:11|hPA B|h|r|cFFFFFF|H1:p:418:11|hanking|h|r|H1:p:418:11|h] 1 x |h|H1:item:5366:309:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h[Superb Glyph of Hardening]|h|H1:p:418:11|h moved to Backpack|h",
-                        ["rawLine"] = "[08:22] [PA Banking] 1 x [Superb Glyph of Hardening] moved to Backpack",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379351,
-                    },
-                    [419] = 
-                    {
-                        ["rawFrom"] = "",
-                        ["rawText"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["rawValue"] = "|c8F8F8F[08:22] |r[|cFFD700PA B|r|cFFFFFFanking|r] All item transfers completed",
-                        ["rawMessage"] = "[08:22] [PA Banking] All item transfers completed",
-                        ["rawDisplayed"] = "|c8F8F8F|H1:p:419:11|h[08:22] |h|r|H1:p:419:11|h[|h|cFFD700|H1:p:419:11|hPA B|h|r|cFFFFFF|H1:p:419:11|hanking|h|r|H1:p:419:11|h] All item transfers completed|h",
-                        ["rawLine"] = "[08:22] [PA Banking] All item transfers completed",
-                        ["channel"] = 11,
-                        ["rawTimestamp"] = 1737379352,
                     },
                 },
-                ["wantToProtect"] = true,
-                ["chatMaximizedAfterMenus"] = true,
-                ["soundforincwhisps"] = "New_Notification",
-                ["chatTextFadeDuration"] = 2,
-                ["useKeepAttackUpdateChatHandler"] = true,
-                ["windowDarkness"] = 6,
-                ["lastWasAFK"] = false,
-                ["changeColor"] = true,
-                ["backupYourSavedVariablesReminderDone"] = 
+                ["defaultchannel"] = 13,
+                ["chatConfSync"] = 
                 {
-                    [101044] = 
+                    ["8796093062295781"] = 
                     {
-                        ["timestamp"] = 1730152380,
-                        ["reminded"] = true,
+                        ["tabs"] = 
+                        {
+                            [1] = 
+                            {
+                                ["name"] = "Chat",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = true,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = true,
+                                    [7] = true,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = true,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = true,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [2] = 
+                            {
+                                ["name"] = "Group",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = true,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [3] = 
+                            {
+                                ["name"] = "PVPKillFeed",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = true,
+                            },
+                            [4] = 
+                            {
+                                ["name"] = "Sys",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = true,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                        },
+                        ["fontSize"] = 16,
+                        ["width"] = 981,
+                        ["height"] = 266,
+                        ["colors"] = 
+                        {
+                            [1] = 
+                            {
+                                ["red"] = 1,
+                                ["green"] = 1,
+                                ["blue"] = 1,
+                            },
+                            [2] = 
+                            {
+                                ["red"] = 0.7764706016,
+                                ["green"] = 0.2627451122,
+                                ["blue"] = 0.2627451122,
+                            },
+                            [3] = 
+                            {
+                                ["red"] = 0.1764705926,
+                                ["green"] = 1,
+                                ["blue"] = 0.9725490212,
+                            },
+                            [4] = 
+                            {
+                                ["red"] = 0.3686274588,
+                                ["green"] = 0.7254902124,
+                                ["blue"] = 0.8431372643,
+                            },
+                            [6] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [7] = 
+                            {
+                                ["red"] = 0.9921568632,
+                                ["green"] = 0.4784313738,
+                                ["blue"] = 0.1019607857,
+                            },
+                            [8] = 
+                            {
+                                ["red"] = 0.6313725710,
+                                ["green"] = 0.6117647290,
+                                ["blue"] = 0.8705882430,
+                            },
+                            [9] = 
+                            {
+                                ["red"] = 0.9333333373,
+                                ["green"] = 0.9333333373,
+                                ["blue"] = 0,
+                            },
+                            [10] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [11] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [12] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [13] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [14] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [15] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [16] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [17] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [18] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [19] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [20] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [21] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [22] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [23] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [24] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [25] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [44] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [41] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [42] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [43] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                        },
+                        ["charName"] = "Fridolin The Great",
                     },
-                    [101043] = 
+                    ["8796093067546805"] = 
                     {
-                        ["timestamp"] = 1727437094,
-                        ["reminded"] = true,
+                        ["tabs"] = 
+                        {
+                            [1] = 
+                            {
+                                ["name"] = "Chat",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = true,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = true,
+                                    [7] = true,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = true,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = true,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [2] = 
+                            {
+                                ["name"] = "Group",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = true,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [3] = 
+                            {
+                                ["name"] = "PVPKillFeed",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = true,
+                            },
+                            [4] = 
+                            {
+                                ["name"] = "Sys",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = true,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [5] = 
+                            {
+                                ["name"] = "Fox",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = true,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = true,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                        },
+                        ["fontSize"] = 16,
+                        ["width"] = 996,
+                        ["height"] = 267,
+                        ["colors"] = 
+                        {
+                            [1] = 
+                            {
+                                ["red"] = 1,
+                                ["green"] = 1,
+                                ["blue"] = 1,
+                            },
+                            [2] = 
+                            {
+                                ["red"] = 0.7764706016,
+                                ["green"] = 0.2627451122,
+                                ["blue"] = 0.2627451122,
+                            },
+                            [3] = 
+                            {
+                                ["red"] = 0.1764705926,
+                                ["green"] = 1,
+                                ["blue"] = 0.9725490212,
+                            },
+                            [4] = 
+                            {
+                                ["red"] = 0.3686274588,
+                                ["green"] = 0.7254902124,
+                                ["blue"] = 0.8431372643,
+                            },
+                            [6] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [7] = 
+                            {
+                                ["red"] = 0.9921568632,
+                                ["green"] = 0.4784313738,
+                                ["blue"] = 0.1019607857,
+                            },
+                            [8] = 
+                            {
+                                ["red"] = 0.6313725710,
+                                ["green"] = 0.6117647290,
+                                ["blue"] = 0.8705882430,
+                            },
+                            [9] = 
+                            {
+                                ["red"] = 0.9333333373,
+                                ["green"] = 0.9333333373,
+                                ["blue"] = 0,
+                            },
+                            [10] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [11] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [12] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [13] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [14] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [15] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [16] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [17] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [18] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [19] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [20] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [21] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [22] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [23] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [24] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [25] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [44] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [41] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [42] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [43] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                        },
+                        ["charName"] = "Gustaf Helmuth v Feld",
+                    },
+                    ["8796093025384257"] = 
+                    {
+                        ["tabs"] = 
+                        {
+                            [1] = 
+                            {
+                                ["name"] = "Chat",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = true,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = true,
+                                    [7] = true,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = true,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = true,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [2] = 
+                            {
+                                ["name"] = "Group",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = true,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [3] = 
+                            {
+                                ["name"] = "PVPKillFeed",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = true,
+                            },
+                            [4] = 
+                            {
+                                ["name"] = "Sys",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = true,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [5] = 
+                            {
+                                ["name"] = "Fox",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = true,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = true,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                        },
+                        ["fontSize"] = 16,
+                        ["width"] = 842,
+                        ["height"] = 267,
+                        ["colors"] = 
+                        {
+                            [1] = 
+                            {
+                                ["red"] = 1,
+                                ["green"] = 1,
+                                ["blue"] = 1,
+                            },
+                            [2] = 
+                            {
+                                ["red"] = 0.7764706016,
+                                ["green"] = 0.2627451122,
+                                ["blue"] = 0.2627451122,
+                            },
+                            [3] = 
+                            {
+                                ["red"] = 0.1764705926,
+                                ["green"] = 1,
+                                ["blue"] = 0.9725490212,
+                            },
+                            [4] = 
+                            {
+                                ["red"] = 0.3686274588,
+                                ["green"] = 0.7254902124,
+                                ["blue"] = 0.8431372643,
+                            },
+                            [6] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [7] = 
+                            {
+                                ["red"] = 0.9921568632,
+                                ["green"] = 0.4784313738,
+                                ["blue"] = 0.1019607857,
+                            },
+                            [8] = 
+                            {
+                                ["red"] = 0.6313725710,
+                                ["green"] = 0.6117647290,
+                                ["blue"] = 0.8705882430,
+                            },
+                            [9] = 
+                            {
+                                ["red"] = 0.9333333373,
+                                ["green"] = 0.9333333373,
+                                ["blue"] = 0,
+                            },
+                            [10] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [11] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [12] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [13] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [14] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [15] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [16] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [17] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [18] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [19] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [20] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [21] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [22] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [23] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [24] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [25] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [44] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [41] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [42] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [43] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                        },
+                        ["charName"] = "Hubertus Freiherr v Feld",
+                    },
+                    ["8796093023211051"] = 
+                    {
+                        ["tabs"] = 
+                        {
+                            [1] = 
+                            {
+                                ["isInteractable"] = true,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = true,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = true,
+                                    [7] = true,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = true,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = true,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["name"] = "Chat",
+                                ["isCombatLog"] = false,
+                                ["areTimestampsEnabled"] = false,
+                                ["isLocked"] = false,
+                            },
+                            [2] = 
+                            {
+                                ["isInteractable"] = true,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = true,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["name"] = "Group",
+                                ["isCombatLog"] = false,
+                                ["areTimestampsEnabled"] = false,
+                                ["isLocked"] = false,
+                            },
+                            [3] = 
+                            {
+                                ["isInteractable"] = true,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["name"] = "PVPKillFeed",
+                                ["isCombatLog"] = false,
+                                ["areTimestampsEnabled"] = false,
+                                ["isLocked"] = true,
+                            },
+                            [4] = 
+                            {
+                                ["isInteractable"] = true,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = true,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["name"] = "Sys",
+                                ["isCombatLog"] = false,
+                                ["areTimestampsEnabled"] = false,
+                                ["isLocked"] = false,
+                            },
+                            [5] = 
+                            {
+                                ["isInteractable"] = true,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = false,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["name"] = "Emp",
+                                ["isCombatLog"] = false,
+                                ["areTimestampsEnabled"] = false,
+                                ["isLocked"] = false,
+                            },
+                        },
+                        ["colors"] = 
+                        {
+                            [1] = 
+                            {
+                                ["red"] = 1,
+                                ["green"] = 1,
+                                ["blue"] = 1,
+                            },
+                            [2] = 
+                            {
+                                ["red"] = 0.7764706016,
+                                ["green"] = 0.2627451122,
+                                ["blue"] = 0.2627451122,
+                            },
+                            [3] = 
+                            {
+                                ["red"] = 0.1764705926,
+                                ["green"] = 1,
+                                ["blue"] = 0.9725490212,
+                            },
+                            [4] = 
+                            {
+                                ["red"] = 0.3686274588,
+                                ["green"] = 0.7254902124,
+                                ["blue"] = 0.8431372643,
+                            },
+                            [6] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [7] = 
+                            {
+                                ["red"] = 0.9921568632,
+                                ["green"] = 0.4784313738,
+                                ["blue"] = 0.1019607857,
+                            },
+                            [8] = 
+                            {
+                                ["red"] = 0.6313725710,
+                                ["green"] = 0.6117647290,
+                                ["blue"] = 0.8705882430,
+                            },
+                            [9] = 
+                            {
+                                ["red"] = 0.9333333373,
+                                ["green"] = 0.9333333373,
+                                ["blue"] = 0,
+                            },
+                            [10] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [11] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [12] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [13] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [14] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [15] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [16] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [17] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [18] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [19] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [20] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [21] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [22] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [23] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [24] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [25] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [44] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [41] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [42] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [43] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                        },
+                        ["width"] = 1229,
+                        ["height"] = 267,
+                        ["fontSize"] = 16,
+                    },
+                    ["lastChar"] = 
+                    {
+                        ["tabs"] = 
+                        {
+                            [1] = 
+                            {
+                                ["isInteractable"] = true,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = true,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = true,
+                                    [7] = true,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = true,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = true,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["name"] = "Chat",
+                                ["isCombatLog"] = false,
+                                ["areTimestampsEnabled"] = false,
+                                ["isLocked"] = false,
+                            },
+                            [2] = 
+                            {
+                                ["isInteractable"] = true,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = true,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["name"] = "Group",
+                                ["isCombatLog"] = false,
+                                ["areTimestampsEnabled"] = false,
+                                ["isLocked"] = false,
+                            },
+                            [3] = 
+                            {
+                                ["isInteractable"] = true,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["name"] = "PVPKillFeed",
+                                ["isCombatLog"] = false,
+                                ["areTimestampsEnabled"] = false,
+                                ["isLocked"] = true,
+                            },
+                            [4] = 
+                            {
+                                ["isInteractable"] = true,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = true,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["name"] = "Sys",
+                                ["isCombatLog"] = false,
+                                ["areTimestampsEnabled"] = false,
+                                ["isLocked"] = false,
+                            },
+                            [5] = 
+                            {
+                                ["isInteractable"] = true,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = false,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["name"] = "Emp",
+                                ["isCombatLog"] = false,
+                                ["areTimestampsEnabled"] = false,
+                                ["isLocked"] = false,
+                            },
+                        },
+                        ["colors"] = 
+                        {
+                            [1] = 
+                            {
+                                ["red"] = 1,
+                                ["green"] = 1,
+                                ["blue"] = 1,
+                            },
+                            [2] = 
+                            {
+                                ["red"] = 0.7764706016,
+                                ["green"] = 0.2627451122,
+                                ["blue"] = 0.2627451122,
+                            },
+                            [3] = 
+                            {
+                                ["red"] = 0.1764705926,
+                                ["green"] = 1,
+                                ["blue"] = 0.9725490212,
+                            },
+                            [4] = 
+                            {
+                                ["red"] = 0.3686274588,
+                                ["green"] = 0.7254902124,
+                                ["blue"] = 0.8431372643,
+                            },
+                            [6] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [7] = 
+                            {
+                                ["red"] = 0.9921568632,
+                                ["green"] = 0.4784313738,
+                                ["blue"] = 0.1019607857,
+                            },
+                            [8] = 
+                            {
+                                ["red"] = 0.6313725710,
+                                ["green"] = 0.6117647290,
+                                ["blue"] = 0.8705882430,
+                            },
+                            [9] = 
+                            {
+                                ["red"] = 0.9333333373,
+                                ["green"] = 0.9333333373,
+                                ["blue"] = 0,
+                            },
+                            [10] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [11] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [12] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [13] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [14] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [15] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [16] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [17] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [18] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [19] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [20] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [21] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [22] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [23] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [24] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [25] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [44] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [41] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [42] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [43] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                        },
+                        ["width"] = 1229,
+                        ["height"] = 267,
+                        ["fontSize"] = 16,
+                    },
+                    ["8796093027479535"] = 
+                    {
+                        ["tabs"] = 
+                        {
+                            [1] = 
+                            {
+                                ["name"] = "Chat",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = true,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = true,
+                                    [7] = true,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = true,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = true,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [2] = 
+                            {
+                                ["name"] = "Group",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = true,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [3] = 
+                            {
+                                ["name"] = "PVPKillFeed",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = true,
+                            },
+                            [4] = 
+                            {
+                                ["name"] = "Sys",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = true,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [5] = 
+                            {
+                                ["name"] = "Fox",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = true,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = true,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                        },
+                        ["fontSize"] = 16,
+                        ["width"] = 1136,
+                        ["height"] = 267,
+                        ["colors"] = 
+                        {
+                            [1] = 
+                            {
+                                ["red"] = 1,
+                                ["green"] = 1,
+                                ["blue"] = 1,
+                            },
+                            [2] = 
+                            {
+                                ["red"] = 0.7764706016,
+                                ["green"] = 0.2627451122,
+                                ["blue"] = 0.2627451122,
+                            },
+                            [3] = 
+                            {
+                                ["red"] = 0.1764705926,
+                                ["green"] = 1,
+                                ["blue"] = 0.9725490212,
+                            },
+                            [4] = 
+                            {
+                                ["red"] = 0.3686274588,
+                                ["green"] = 0.7254902124,
+                                ["blue"] = 0.8431372643,
+                            },
+                            [6] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [7] = 
+                            {
+                                ["red"] = 0.9921568632,
+                                ["green"] = 0.4784313738,
+                                ["blue"] = 0.1019607857,
+                            },
+                            [8] = 
+                            {
+                                ["red"] = 0.6313725710,
+                                ["green"] = 0.6117647290,
+                                ["blue"] = 0.8705882430,
+                            },
+                            [9] = 
+                            {
+                                ["red"] = 0.9333333373,
+                                ["green"] = 0.9333333373,
+                                ["blue"] = 0,
+                            },
+                            [10] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [11] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [12] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [13] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [14] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [15] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [16] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [17] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [18] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [19] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [20] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [21] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [22] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [23] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [24] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [25] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [44] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [41] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [42] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [43] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                        },
+                        ["charName"] = "Christel v Koenigsberg",
+                    },
+                    ["8796093072557313"] = 
+                    {
+                        ["tabs"] = 
+                        {
+                            [1] = 
+                            {
+                                ["name"] = "Chat",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = true,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = true,
+                                    [7] = true,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = true,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = true,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [2] = 
+                            {
+                                ["name"] = "Group",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = true,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [3] = 
+                            {
+                                ["name"] = "PVPKillFeed",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = true,
+                            },
+                            [4] = 
+                            {
+                                ["name"] = "Sys",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = true,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [5] = 
+                            {
+                                ["name"] = "Fox",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = true,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = true,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                        },
+                        ["fontSize"] = 16,
+                        ["width"] = 906,
+                        ["height"] = 267,
+                        ["colors"] = 
+                        {
+                            [1] = 
+                            {
+                                ["red"] = 1,
+                                ["green"] = 1,
+                                ["blue"] = 1,
+                            },
+                            [2] = 
+                            {
+                                ["red"] = 0.7764706016,
+                                ["green"] = 0.2627451122,
+                                ["blue"] = 0.2627451122,
+                            },
+                            [3] = 
+                            {
+                                ["red"] = 0.1764705926,
+                                ["green"] = 1,
+                                ["blue"] = 0.9725490212,
+                            },
+                            [4] = 
+                            {
+                                ["red"] = 0.3686274588,
+                                ["green"] = 0.7254902124,
+                                ["blue"] = 0.8431372643,
+                            },
+                            [6] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [7] = 
+                            {
+                                ["red"] = 0.9921568632,
+                                ["green"] = 0.4784313738,
+                                ["blue"] = 0.1019607857,
+                            },
+                            [8] = 
+                            {
+                                ["red"] = 0.6313725710,
+                                ["green"] = 0.6117647290,
+                                ["blue"] = 0.8705882430,
+                            },
+                            [9] = 
+                            {
+                                ["red"] = 0.9333333373,
+                                ["green"] = 0.9333333373,
+                                ["blue"] = 0,
+                            },
+                            [10] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [11] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [12] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [13] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [14] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [15] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [16] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [17] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [18] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [19] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [20] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [21] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [22] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [23] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [24] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [25] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [44] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [41] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [42] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [43] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                        },
+                        ["charName"] = "Gamal Loki",
+                    },
+                    ["8796093069174989"] = 
+                    {
+                        ["tabs"] = 
+                        {
+                            [1] = 
+                            {
+                                ["name"] = "Chat",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = true,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = true,
+                                    [7] = true,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = true,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = true,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [2] = 
+                            {
+                                ["name"] = "Group",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = true,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [3] = 
+                            {
+                                ["name"] = "PVPKillFeed",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = true,
+                            },
+                            [4] = 
+                            {
+                                ["name"] = "Sys",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = true,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [5] = 
+                            {
+                                ["name"] = "Fox",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = true,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = true,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                        },
+                        ["fontSize"] = 16,
+                        ["width"] = 870,
+                        ["height"] = 267,
+                        ["colors"] = 
+                        {
+                            [1] = 
+                            {
+                                ["red"] = 1,
+                                ["green"] = 1,
+                                ["blue"] = 1,
+                            },
+                            [2] = 
+                            {
+                                ["red"] = 0.7764706016,
+                                ["green"] = 0.2627451122,
+                                ["blue"] = 0.2627451122,
+                            },
+                            [3] = 
+                            {
+                                ["red"] = 0.1764705926,
+                                ["green"] = 1,
+                                ["blue"] = 0.9725490212,
+                            },
+                            [4] = 
+                            {
+                                ["red"] = 0.3686274588,
+                                ["green"] = 0.7254902124,
+                                ["blue"] = 0.8431372643,
+                            },
+                            [6] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [7] = 
+                            {
+                                ["red"] = 0.9921568632,
+                                ["green"] = 0.4784313738,
+                                ["blue"] = 0.1019607857,
+                            },
+                            [8] = 
+                            {
+                                ["red"] = 0.6313725710,
+                                ["green"] = 0.6117647290,
+                                ["blue"] = 0.8705882430,
+                            },
+                            [9] = 
+                            {
+                                ["red"] = 0.9333333373,
+                                ["green"] = 0.9333333373,
+                                ["blue"] = 0,
+                            },
+                            [10] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [11] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [12] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [13] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [14] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [15] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [16] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [17] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [18] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [19] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [20] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [21] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [22] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [23] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [24] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [25] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [44] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [41] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [42] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [43] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                        },
+                        ["charName"] = "Mike v Petra",
+                    },
+                    ["8796093074287095"] = 
+                    {
+                        ["tabs"] = 
+                        {
+                            [1] = 
+                            {
+                                ["name"] = "Chat",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = true,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = true,
+                                    [7] = true,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = true,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = true,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [2] = 
+                            {
+                                ["name"] = "Group",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = true,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [3] = 
+                            {
+                                ["name"] = "PVPKillFeed",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = true,
+                            },
+                            [4] = 
+                            {
+                                ["name"] = "Sys",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = true,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [5] = 
+                            {
+                                ["name"] = "Fox",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = true,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = true,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                        },
+                        ["fontSize"] = 16,
+                        ["width"] = 798,
+                        ["height"] = 267,
+                        ["colors"] = 
+                        {
+                            [1] = 
+                            {
+                                ["red"] = 1,
+                                ["green"] = 1,
+                                ["blue"] = 1,
+                            },
+                            [2] = 
+                            {
+                                ["red"] = 0.7764706016,
+                                ["green"] = 0.2627451122,
+                                ["blue"] = 0.2627451122,
+                            },
+                            [3] = 
+                            {
+                                ["red"] = 0.1764705926,
+                                ["green"] = 1,
+                                ["blue"] = 0.9725490212,
+                            },
+                            [4] = 
+                            {
+                                ["red"] = 0.3686274588,
+                                ["green"] = 0.7254902124,
+                                ["blue"] = 0.8431372643,
+                            },
+                            [6] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [7] = 
+                            {
+                                ["red"] = 0.9921568632,
+                                ["green"] = 0.4784313738,
+                                ["blue"] = 0.1019607857,
+                            },
+                            [8] = 
+                            {
+                                ["red"] = 0.6313725710,
+                                ["green"] = 0.6117647290,
+                                ["blue"] = 0.8705882430,
+                            },
+                            [9] = 
+                            {
+                                ["red"] = 0.9333333373,
+                                ["green"] = 0.9333333373,
+                                ["blue"] = 0,
+                            },
+                            [10] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [11] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [12] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [13] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [14] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [15] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [16] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [17] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [18] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [19] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [20] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [21] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [22] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [23] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [24] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [25] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [44] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [41] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [42] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [43] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                        },
+                        ["charName"] = "Otto von Bissmark",
+                    },
+                    ["8796093064640125"] = 
+                    {
+                        ["tabs"] = 
+                        {
+                            [1] = 
+                            {
+                                ["name"] = "Chat",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = true,
+                                    [2] = true,
+                                    [3] = true,
+                                    [4] = true,
+                                    [6] = true,
+                                    [7] = true,
+                                    [8] = true,
+                                    [9] = false,
+                                    [10] = true,
+                                    [11] = true,
+                                    [12] = true,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = true,
+                                    [16] = true,
+                                    [17] = true,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [2] = 
+                            {
+                                ["name"] = "Group",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = true,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [3] = 
+                            {
+                                ["name"] = "PVPKillFeed",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = true,
+                            },
+                            [4] = 
+                            {
+                                ["name"] = "Sys",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = true,
+                                    [10] = false,
+                                    [11] = false,
+                                    [12] = false,
+                                    [13] = true,
+                                    [14] = true,
+                                    [15] = false,
+                                    [16] = false,
+                                    [17] = false,
+                                    [18] = true,
+                                    [19] = true,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                            [5] = 
+                            {
+                                ["name"] = "Fox",
+                                ["isInteractable"] = true,
+                                ["areTimestampsEnabled"] = false,
+                                ["isCombatLog"] = false,
+                                ["enabledCategories"] = 
+                                {
+                                    [1] = false,
+                                    [2] = false,
+                                    [3] = false,
+                                    [4] = false,
+                                    [6] = false,
+                                    [7] = false,
+                                    [8] = false,
+                                    [9] = false,
+                                    [10] = false,
+                                    [11] = true,
+                                    [12] = false,
+                                    [13] = false,
+                                    [14] = false,
+                                    [15] = false,
+                                    [16] = true,
+                                    [17] = false,
+                                    [18] = false,
+                                    [19] = false,
+                                    [20] = false,
+                                    [21] = false,
+                                    [22] = false,
+                                    [23] = false,
+                                    [24] = false,
+                                    [25] = false,
+                                    [44] = false,
+                                    [41] = false,
+                                    [42] = false,
+                                    [43] = false,
+                                },
+                                ["isLocked"] = false,
+                            },
+                        },
+                        ["fontSize"] = 16,
+                        ["width"] = 947,
+                        ["height"] = 267,
+                        ["colors"] = 
+                        {
+                            [1] = 
+                            {
+                                ["red"] = 1,
+                                ["green"] = 1,
+                                ["blue"] = 1,
+                            },
+                            [2] = 
+                            {
+                                ["red"] = 0.7764706016,
+                                ["green"] = 0.2627451122,
+                                ["blue"] = 0.2627451122,
+                            },
+                            [3] = 
+                            {
+                                ["red"] = 0.1764705926,
+                                ["green"] = 1,
+                                ["blue"] = 0.9725490212,
+                            },
+                            [4] = 
+                            {
+                                ["red"] = 0.3686274588,
+                                ["green"] = 0.7254902124,
+                                ["blue"] = 0.8431372643,
+                            },
+                            [6] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [7] = 
+                            {
+                                ["red"] = 0.9921568632,
+                                ["green"] = 0.4784313738,
+                                ["blue"] = 0.1019607857,
+                            },
+                            [8] = 
+                            {
+                                ["red"] = 0.6313725710,
+                                ["green"] = 0.6117647290,
+                                ["blue"] = 0.8705882430,
+                            },
+                            [9] = 
+                            {
+                                ["red"] = 0.9333333373,
+                                ["green"] = 0.9333333373,
+                                ["blue"] = 0,
+                            },
+                            [10] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [11] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [12] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [13] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [14] = 
+                            {
+                                ["red"] = 0.3333333433,
+                                ["green"] = 0.7803921700,
+                                ["blue"] = 0.3333333433,
+                            },
+                            [15] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [16] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [17] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [18] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [19] = 
+                            {
+                                ["red"] = 0.5921568871,
+                                ["green"] = 1,
+                                ["blue"] = 0.7450980544,
+                            },
+                            [20] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [21] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [22] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [23] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [24] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [25] = 
+                            {
+                                ["red"] = 0.7725490332,
+                                ["green"] = 0.7607843280,
+                                ["blue"] = 0.6196078658,
+                            },
+                            [44] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [41] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [42] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                            [43] = 
+                            {
+                                ["red"] = 0.5294117928,
+                                ["green"] = 0.6078431606,
+                                ["blue"] = 0.4901960790,
+                            },
+                        },
+                        ["charName"] = "Maüschen",
                     },
                 },
-                ["urlHandling"] = true,
-                ["showIgnoredInfoInContextMenuAtChat"] = false,
+                ["addChannelAndTargetToHistory"] = true,
+                ["groupNames"] = 1,
+                ["timeBeforeRestore"] = 2,
+                ["oneColour"] = false,
+                ["backupYourSavedVariablesReminder"] = true,
+                ["useKeepAttackUpdateChatHandler"] = true,
+                ["useIgnoreAddedChatHandler"] = true,
                 ["showGuildNumbers"] = false,
-                ["nicknames"] = "",
+                ["delzonetags"] = false,
+                ["showCharacterLevelInContextMenuAtChat"] = false,
+                ["doNotNotifyOnRestoredWhisperFromHistory"] = false,
+                ["lastWasLogOut"] = false,
+                ["chatTextFadeDuration"] = 2,
+                ["showTimestamp"] = true,
+                ["chatTabChannel"] = 
+                {
+                    [4] = 
+                    {
+                        ["channel"] = 3,
+                    },
+                    [1] = 
+                    {
+                        ["channel"] = 13,
+                    },
+                    [2] = 
+                    {
+                        ["channel"] = 3,
+                    },
+                    [5] = 
+                    {
+                        ["channel"] = 13,
+                    },
+                },
+                ["enableChatTabChannel"] = true,
+                ["wholenames"] = false,
+                ["restoreSystem"] = true,
+                ["notifyIMIndex"] = 1,
+                ["lastWasQuit"] = true,
                 ["ding"] = false,
-                ["chatMinimizedAtLaunch"] = false,
+                ["whereIsPlayerContextMenuAtChat"] = true,
+                ["groupLeader"] = false,
+                ["timestampcolorislcol"] = false,
+                ["enablepartyswitch"] = true,
+                ["restoreOnLogOut"] = true,
+                ["geoChannelsFormat"] = 2,
+                ["timestampFormat"] = "HH:m",
+                ["officertag"] = 
+                {
+                },
+                ["useCharCount"] = false,
+                ["allZonesSameColour"] = true,
+                ["useGroupMemberLeftChatHandler"] = true,
+                ["nicknames"] = "",
+                ["floodGracePeriod"] = 30,
+                ["restoreWhisps"] = true,
+                ["excl"] = false,
+                ["windowDarkness"] = 6,
+                ["enablecopy"] = true,
+                ["enablepartyswitchPortToDungeon"] = false,
+                ["restoreOnReloadUI"] = true,
+                ["chatEditBoxOnBackspaceHook"] = true,
+                ["officerSwitchFor"] = 
+                {
+                },
+                ["sendMailContextMenuAtChat"] = true,
+                ["dingSoundName"] = "New_Notification",
+                ["allGuildsSameColour"] = false,
+                ["lookingForProtect"] = false,
+                ["useESOcolors"] = true,
+                ["formatguild"] = 
+                {
+                    [61555] = 2,
+                    [347967] = 2,
+                    [955435] = 2,
+                    [812695] = 3,
+                },
+                ["showTagInEntry"] = true,
+                ["restoreTextEntryHistoryAtLogOutQuit"] = false,
+                ["diffChatColorsLightenValue"] = 30,
+                ["version"] = 0.9000000000,
+                ["chatMinimizedInMenus"] = true,
+                ["notifyIM"] = true,
+                ["lastWasAFK"] = false,
+                ["fonts"] = "ESO Standard Font",
+                ["chatMinimizedInMenusOldMode"] = false,
+                ["spamGracePeriod"] = 5,
+                ["carriageReturn"] = false,
                 ["chatSearchHistory"] = 
                 {
                     [2] = 
@@ -8570,12 +4295,41 @@ PCHAT_OPTS =
                     {
                     },
                 },
-                ["showTagInEntry"] = true,
-                ["useCharCount"] = false,
-                ["useGroupMemberLeftChatHandler"] = true,
-                ["enablepartyswitch"] = true,
-                ["groupLeader"] = false,
-                ["backupYourSavedVariablesReminder"] = true,
+                ["backupYourSavedVariablesReminderDone"] = 
+                {
+                    [101044] = 
+                    {
+                        ["reminded"] = true,
+                        ["timestamp"] = 1730152380,
+                    },
+                    [101043] = 
+                    {
+                        ["reminded"] = true,
+                        ["timestamp"] = 1727437094,
+                    },
+                },
+                ["allNPCSameColour"] = true,
+                ["usePVPKillFeedChatHandler"] = true,
+                ["floodProtect"] = true,
+                ["defaultTab"] = 5,
+                ["ignoreWithDialogContextMenuAtChat"] = false,
+                ["showAccountAndCharAtContextMenu"] = true,
+                ["chatMaximizedAfterMenus"] = true,
+                ["soundforincwhisps"] = "New_Notification",
+                ["disableBrackets"] = true,
+                ["addHistoryRestoredPrefix"] = false,
+                ["history"] = 
+                {
+                    ["textEntry"] = 
+                    {
+                        ["entries"] = 
+                        {
+                        },
+                        ["numEntries"] = 0,
+                    },
+                    ["currentTab"] = 5,
+                },
+                ["migratedSVToServer"] = true,
             },
         },
     },

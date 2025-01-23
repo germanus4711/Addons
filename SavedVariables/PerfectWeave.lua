@@ -6,22 +6,22 @@ PerfectWeaveSV =
         {
             ["$AccountWide"] = 
             {
-                ["mode"] = 1,
+                ["useWhitelist"] = false,
+                ["combat"] = true,
                 ["checkTarget"] = true,
-                ["autoLag"] = true,
-                ["block"] = true,
-                ["blockGrimFocus"] = true,
-                ["version"] = 1,
-                ["blacklist"] = 
-                {
-                },
-                ["blockGroundAbilities"] = true,
                 ["whitelist"] = 
                 {
                 },
+                ["blockGrimFocus"] = true,
+                ["autoLag"] = true,
+                ["version"] = 1,
+                ["blockGroundAbilities"] = true,
                 ["inputLag"] = 20,
-                ["useWhitelist"] = false,
-                ["combat"] = true,
+                ["blacklist"] = 
+                {
+                },
+                ["block"] = true,
+                ["mode"] = 1,
             },
         },
     },

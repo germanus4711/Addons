@@ -14,14 +14,14 @@ FCOLockpicker_Settings =
                 },
                 ["Settings"] = 
                 {
-                    ["chamberStressedSound"] = 2,
+                    ["deepDebug"] = false,
                     ["debug"] = false,
                     ["useSpringGreenColor"] = true,
                     ["version"] = 0.0100000000,
+                    ["chamberStressedSound"] = 2,
+                    ["showChamberResolvedIcon"] = true,
                     ["languageChoosen"] = false,
                     ["alwaysUseClientLanguage"] = true,
-                    ["showChamberResolvedIcon"] = true,
-                    ["deepDebug"] = false,
                     ["warnings"] = 
                     {
                         ["normal"] = 
@@ -29,10 +29,10 @@ FCOLockpicker_Settings =
                             ["valueMin"] = 999,
                             ["color"] = 
                             {
-                                ["a"] = 1,
                                 ["r"] = 1,
-                                ["b"] = 1,
+                                ["a"] = 1,
                                 ["g"] = 1,
+                                ["b"] = 1,
                             },
                         },
                         ["low"] = 
@@ -40,10 +40,10 @@ FCOLockpicker_Settings =
                             ["valueMin"] = 5,
                             ["color"] = 
                             {
-                                ["a"] = 1,
                                 ["r"] = 1,
-                                ["b"] = 0,
+                                ["a"] = 1,
                                 ["g"] = 0,
+                                ["b"] = 0,
                             },
                         },
                         ["medium"] = 
@@ -51,10 +51,10 @@ FCOLockpicker_Settings =
                             ["valueMin"] = 10,
                             ["color"] = 
                             {
-                                ["a"] = 1,
                                 ["r"] = 0,
-                                ["b"] = 1,
+                                ["a"] = 1,
                                 ["g"] = 1,
+                                ["b"] = 1,
                             },
                         },
                     },

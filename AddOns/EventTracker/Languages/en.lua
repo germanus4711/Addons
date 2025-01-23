@@ -51,20 +51,26 @@ local strings = {
 --	EVT_EVENT_INFO_WHITESTRAKE = "July 28-Aug. 9, 2022. Tickets from DAILY quests: 2 from Battlegrounds or Cyrodiil, plus 1 from Imperial City; per account per day.",
 --	EVT_EVENT_INFO_WHITESTRAKE = "Feb. 17-March 1, 2022 (39 tickets). Tickets from DAILY quests: 2 from Battlegrounds or Cyrodiil, plus 1 from Imperial City; per account per day.",
 
-	EVT_PTS_INFO_ANNIVERSARY = "PTS: Feb. 12-19, 2024.; Live: April. 3 tickets acquired once per day per account from eating Anniversary Cake. (Cake is a TOOL.) XP IS PASSIVE NOW!",
+	EVT_PTS_INFO_ANNIVERSARY = "PTS: Jan. 27-Feb. 3, 2025.; Live: April. 3 tickets acquired once per day per account from eating this year's Anniversary Cake. (Cake is a TOOL.) XP IS PASSIVE NOW!",
+--	EVT_PTS_INFO_ANNIVERSARY = "PTS: Feb. 12-19, 2024.; Live: April. 3 tickets acquired once per day per account from eating Anniversary Cake. (Cake is a TOOL.) XP IS PASSIVE NOW!",
 --	EVT_PTS_INFO_ANNIVERSARY = "PTS: Feb. 13-20; Live: Probably Apr. 6-18, 2023. 3 tickets acquired once per day per account from eating Anniversary Cake. (Cake is a TOOL now!)",
-	EVT_EVENT_INFO_ANNIVERSARY = "EU: Apr. 4-25, 2024. NA: Apr. 4-24, 2024.  3 tickets acquired once per day per account from eating 2024 Anniversary Cake. XP IS PASSIVE NOW!",
+	EVT_EVENT_INFO_ANNIVERSARY = "April, 2025. 3 tickets acquired once per day per account from eating 2025 Anniversary Cake. XP IS PASSIVE NOW!",
+--	EVT_EVENT_INFO_ANNIVERSARY = "EU: Apr. 4-25, 2024. NA: Apr. 4-24, 2024.  3 tickets acquired once per day per account from eating 2024 Anniversary Cake. XP IS PASSIVE NOW!",
 --	EVT_EVENT_INFO_ANNIVERSARY = "April 6-18, 2023 (39 tickets). 3 tickets acquired once per day per account from eating Anniversary Cake. (Cake is a TOOL now!)",
 --	EVT_EVENT_INFO_ANNIVERSARY = "April 7-19, 2022 (39 tickets). 3 tickets acquired once per day per account from eating Anniversary Cake. (Cake is a TOOL now!)",
 --	EVT_EVENT_INFO_ANNIVERSARY = "April 1-15, 2021 (45 tickets). 3 tickets acquired once per day per account from eating Anniversary Cake. (Cake is a TOOL now!)",
 --	EVT_EVENT_INFO_ANNIVERSARY = "April 2-14, 2020 (65 tickets). 3 tickets available per day per account from eating Anniversary Cake. Plus 2 additional tickets per day per account from a world or public dungeon boss, or the final boss of a delve, dark fissure, dolmen/geyser/dragon/harrowstorm, group dungeon, arena, or trial. Quest bosses may also work. ALWAYS LOOT BODIES/REWARD CHESTS!",
-	EVT_PTS_INFO_JESTER = "PTS: Feb. 5-12, 2024; Live: Late March. 3 tickets per day per account from turning in your first Jester's daily. XP IS PASSIVE NOW!",
+
+	EVT_PTS_INFO_JESTER = "PTS: Jan. 21-27, 2025; Live: Late March. 3 tickets per day per account from turning in your first Jester's daily. XP IS PASSIVE NOW!",
+--	EVT_PTS_INFO_JESTER = "PTS: Feb. 5-12, 2024; Live: Late March. 3 tickets per day per account from turning in your first Jester's daily. XP IS PASSIVE NOW!",
 --	EVT_PTS_INFO_JESTER = "PTS: Feb. 6-13; Live: March 29-Apr. 6. 3 tickets per day per account from turning in your first Jester's daily. Eat pie (TOOL) for a 2-hr xp buff!",
-	EVT_EVENT_INFO_JESTER = "March 28-Apr. 4, 2024 (21 tickets). 3 tickets per day per account from turning in your first Jester's daily. XP IS PASSIVE NOW!",
+	EVT_EVENT_INFO_JESTER = "Late March, 2025. 3 tickets per day per account from turning in your first Jester's daily. XP IS PASSIVE NOW!",
+--	EVT_EVENT_INFO_JESTER = "March 28-Apr. 4, 2024 (21 tickets). 3 tickets per day per account from turning in your first Jester's daily. XP IS PASSIVE NOW!",
 --	EVT_EVENT_INFO_JESTER = "March 29-Apr. 6, 2023 (24 tickets). 3 tickets per day per account from turning in your first Jester's daily. Eat pie (TOOL) for a 2-hr xp buff!",
 --	EVT_EVENT_INFO_JESTER = "March 31-Apr. 7, 2022 (39 tickets). 3 tickets per day per account from turning in your first Jester's daily. Eat pie (TOOL) for a 2-hr xp buff!",
 --	EVT_EVENT_INFO_JESTER = "March 25-Apr. 1, 2021 (24 tickets). 3 tickets per day per account from turning in your first Jester's daily. Eat pie (TOOL) for a 2-hr xp buff!",
 --	EVT_EVENT_INFO_JESTER = "March 26-April 2, 2020 (24 tickets). Collect all 3 tickets once per day per account from turning in your first Jester's daily quest.",
+
 	PTS_EVENT_INFO_WITCHES = "PTS: July 24-31; Live: October, 2024. 2 tickets, once/day/acct: World or pub dungeon boss; FINAL boss of delve, dark fissure, dolmen/dragon/etc, dungeon, arena, or trial. XP buff is PASSIVE NOW!!",
 	EVT_EVENT_INFO_WITCHES = "Oct. 24-Nov. 6, 2024 (28 tickets). 2 tickets, once/day/acct: World or pub dungeon boss; FINAL boss of delve, dark fissure, dolmen/dragon/etc, dungeon, arena, or trial. DOUBLE XP PASSIVE NOW!!",
 --	EVT_EVENT_INFO_WITCHES = "Oct. 26-Nov. 7, 2023 (26 tickets). 2 tickets, once/day/acct: World or pub dungeon boss; FINAL boss of delve, dark fissure, dolmen/dragon/etc, dungeon, arena, or trial. DOUBLE XP PASSIVE NOW!!",
@@ -83,7 +89,7 @@ local strings = {
 
 -- *************** NON-ANNUAL EVENTS
 -- 2.240 "Pan-Tamriel"
-	EVT_EVENT_INFO_PAN_TAMRIEL = "Jan. 2025. 3 tickets, once/day/acct: World or pub dungeon boss; FINAL boss of delve, dark fissure, dolmen/dragon/etc, dungeon, arena, or trial.",
+	EVT_EVENT_INFO_PAN_TAMRIEL = "Jan. 23-Feb. 4, 2025. 3 tickets, once/day/acct: World or pub dungeon boss; Tho'at; FINAL boss of delve, dark fissure, dolmen/dragon/etc, dungeon, arena, or trial. CAN GET ONE GOLD BOX FROM EACH OF THOSE PER DAY!",
 -- 2.240 "Legacy of the Bretons"
 	EVT_EVENT_INFO_BRETONS = "Nov. 21-Dec. 3, 2024. 2 tickets/day/account, from your first High Isle/Tribute or Galen DAILY quest, Dreadsail WEEKLY quest, or the final boss of Coral Aerie, Shipwright's Regret, Earthen Root, or Graven Deep.",
 -- 2.240 "Fallen Leaves of the West Weald"

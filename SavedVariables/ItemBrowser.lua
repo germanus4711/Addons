@@ -10,14 +10,14 @@ ItemBrowserSavedVariables =
                 ["favorites"] = 
                 {
                 },
+                ["filterId"] = 1,
                 ["usePercentage"] = false,
                 ["externalTooltips"] = 
                 {
-                    ["enableExtension"] = false,
-                    ["showPieces"] = 1,
                     ["showAccounts"] = 1,
+                    ["showPieces"] = 1,
+                    ["enableExtension"] = false,
                 },
-                ["filterId"] = 1,
             },
         },
     },

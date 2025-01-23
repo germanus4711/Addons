@@ -1,9 +1,9 @@
-## Title: |cFFFF00Event Tracker |c00CCFFNew Life (2)|r v2.271
+## Title: |cFFFF00Event Tracker |c00CCFFPan-Tamriel|r v2.280
 ## Description: Helps track Event Tickets so you don't miss any.
 ## Author: |cAA00FFKelinmiriel|r
-## Version: 2.271
-## AddOnVersion: 2271
-## APIVersion: 101044
+## Version: 2.280
+## AddOnVersion: 2280
+## APIVersion: 101044 101045
 ## SavedVariables: EventTrackerVars EventTrackerShared
 ;## DependsOn: LibEventTracker>=1
 ## OptionalDependsOn: LibSlashCommander
@@ -38,6 +38,7 @@ EVTUserInterface.lua
 EventTracker.xml
 
 ; Recent changes:
+; Version 2.280 (2025/01/23) Pan-Tamriel; U45 API; Jester & Anniversary on PTS
 ; Version 2.271 (2024/12/19) Minor collectible display issue for 5-part house
 ; Version 2.270 (2024/12/18) New Life
 ; Version 2.260 (2024/11/20) Legacy of the Bretons

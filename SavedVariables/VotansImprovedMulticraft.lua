@@ -9,9 +9,9 @@ VotansImprovedMulticraft_Data =
                 ["creationSpinner"] = 
                 {
                 },
-                ["refinementSpinner"] = 1,
                 ["autoMaxRefinement"] = false,
                 ["version"] = 1,
+                ["refinementSpinner"] = 1,
                 ["nonCrafterProtect"] = false,
             },
         },

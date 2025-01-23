@@ -8,213 +8,213 @@ CrutchAlertsSavedVariables =
             {
                 ["Options"] = 
                 {
-                    ["endlessArchive"] = 
+                    ["cloudrest"] = 
                     {
-                        ["markFabled"] = true,
-                        ["prominentMeteorCall"] = true,
-                        ["markNegate"] = false,
-                        ["potionIcon"] = true,
-                        ["dingDangerous"] = true,
-                        ["prominentGraspOfLorkhaj"] = true,
-                        ["prominentVenomousArrow"] = true,
-                        ["dingUppercut"] = false,
-                    },
-                    ["showSubtitles"] = false,
-                    ["dragonstar"] = 
-                    {
-                        ["prominentHeatWaveDSA"] = true,
-                        ["normalDamageTaken"] = false,
-                        ["prominentWintersReachDSA"] = true,
-                        ["prominentDrainingPoison"] = true,
-                    },
-                    ["asylumsanctorium"] = 
-                    {
-                        ["dingOthersCone"] = false,
-                        ["dingSelfCone"] = true,
-                    },
-                    ["general"] = 
-                    {
-                        ["hitValueUseWhitelist"] = true,
-                        ["showRaidDiag"] = false,
-                        ["showDamageable"] = true,
-                        ["beginHideArcanist"] = false,
-                        ["useNoneBlacklist"] = true,
-                        ["showGained"] = true,
-                        ["useNonNoneBlacklist"] = true,
-                        ["showOthers"] = true,
-                        ["hitValueAboveThreshold"] = 60000,
-                        ["beginHideSelf"] = false,
-                        ["showProminent"] = true,
-                        ["showBegin"] = true,
-                        ["hitValueBelowThreshold"] = 75,
-                    },
-                    ["sunspire"] = 
-                    {
-                        ["yolIconsSize"] = 150,
-                        ["showYolIcons"] = true,
-                        ["showLokkIcons"] = true,
-                        ["yolLeftIcons"] = false,
-                        ["prominentSunderingGale"] = true,
-                        ["prominentShieldCharge"] = true,
-                        ["lokkIconsSize"] = 150,
-                        ["lokkIconsSoloHeal"] = false,
-                    },
-                    ["debugOther"] = false,
-                    ["rockgrove"] = 
-                    {
-                        ["effectDeathTouch"] = true,
-                        ["prominentSavageBlitz"] = true,
-                        ["sludgeSides"] = true,
-                        ["showBleeding"] = "HEAL",
+                        ["showSpears"] = true,
+                        ["spearsSound"] = true,
+                        ["prominentCreeper"] = true,
+                        ["prominentDirectCurrent"] = true,
+                        ["deathIconColor"] = true,
+                        ["effectHoarfrost"] = true,
+                        ["effectVoltaicOverload"] = true,
+                        ["showFlaresSides"] = true,
+                        ["prominentGrievous"] = true,
+                        ["prominentGlacialSpikes"] = true,
                     },
                     ["bossHealthBar"] = 
                     {
-                        ["scale"] = 1,
                         ["enabled"] = true,
+                        ["scale"] = 1,
                         ["useFloorRounding"] = true,
                         ["firstTime"] = false,
                     },
-                    ["vateshran"] = 
+                    ["mawoflorkhaj"] = 
                     {
-                        ["showMissedAdds"] = false,
-                        ["prominentWintersReachVH"] = true,
-                        ["prominentHeatWaveVH"] = true,
+                        ["showZhajIcons"] = true,
+                        ["showPads"] = true,
+                        ["prominentShatteringStrike"] = true,
+                        ["prominentUnstableVoid"] = true,
+                        ["prominentGripOfLorkhaj"] = true,
+                        ["prominentThreshingWings"] = true,
+                        ["prominentColorSwap"] = true,
+                        ["effectShattered"] = true,
+                        ["zhajIconSize"] = 150,
                     },
-                    ["kynesaegis"] = 
+                    ["endlessArchive"] = 
                     {
-                        ["showFalgravnIcons"] = true,
-                        ["falgravnIconsSize"] = 150,
-                        ["prominentBooger"] = true,
-                        ["showPrisonIcon"] = true,
-                        ["showSpearIcon"] = true,
+                        ["prominentGraspOfLorkhaj"] = true,
+                        ["dingUppercut"] = false,
+                        ["markNegate"] = false,
+                        ["dingDangerous"] = true,
+                        ["markFabled"] = true,
+                        ["prominentVenomousArrow"] = true,
+                        ["prominentMeteorCall"] = true,
+                        ["potionIcon"] = true,
                     },
-                    ["cloudrest"] = 
+                    ["rockgrove"] = 
                     {
-                        ["prominentGrievous"] = true,
-                        ["prominentDirectCurrent"] = true,
-                        ["prominentCreeper"] = true,
-                        ["effectHoarfrost"] = true,
-                        ["spearsSound"] = true,
-                        ["effectVoltaicOverload"] = true,
-                        ["showFlaresSides"] = true,
-                        ["prominentGlacialSpikes"] = true,
-                        ["deathIconColor"] = true,
-                        ["showSpears"] = true,
-                    },
-                    ["sanitysedge"] = 
-                    {
-                        ["ansuulIconSize"] = 150,
-                        ["showAnsuulIcon"] = true,
-                        ["prominentChainPull"] = true,
-                    },
-                    ["spearsDisplay"] = 
-                    {
-                        ["x"] = 1280,
-                        ["y"] = 0,
-                    },
-                    ["maelstrom"] = 
-                    {
-                        ["prominentSoulTether"] = true,
-                        ["showRounds"] = true,
-                        ["prominentVolatilePoison"] = true,
-                        ["prominentPoisonArrowSpray"] = true,
-                        ["stage8Boss"] = "",
-                        ["normalDamageTaken"] = false,
-                        ["stage2Boss"] = "Equip boss setup!",
-                        ["stage3Boss"] = "Equip boss setup!",
-                        ["stage5Boss"] = "Equip boss setup!",
-                        ["stage4Boss"] = "Equip boss setup!",
-                        ["stage9Boss"] = "Equip boss setup!",
-                        ["stage1Boss"] = "Equip boss setup!",
-                        ["prominentHeatWaveMA"] = true,
-                        ["stage7Boss"] = "Equip boss setup!",
-                        ["stage6Boss"] = "Equip boss setup!",
-                        ["prominentTeleportStrike"] = true,
+                        ["showBleeding"] = "HEAL",
+                        ["prominentSavageBlitz"] = true,
+                        ["effectDeathTouch"] = true,
+                        ["sludgeSides"] = true,
                     },
                     ["subtitlesIgnoredZones"] = 
                     {
-                    },
-                    ["shipwrightsRegret"] = 
-                    {
-                        ["showBombStacks"] = true,
-                    },
-                    ["lucentcitadel"] = 
-                    {
-                        ["cavotIconSize"] = 100,
-                        ["prominentDarknessInflicted"] = true,
-                        ["showWeakeningCharge"] = "TANK",
-                        ["showCavotIcon"] = true,
-                        ["tempestIconsSize"] = 150,
-                        ["showKnotTimer"] = true,
-                        ["orphicIconsNumbers"] = false,
-                        ["prominentFateSealer"] = true,
-                        ["alertDarkness"] = true,
-                        ["showArcaneConveyanceTether"] = true,
-                        ["effectFateSealer"] = true,
-                        ["orphicIconSize"] = 150,
-                        ["showArcaneConveyance"] = true,
-                        ["showTempestIcons"] = true,
-                        ["showOrphicIcons"] = true,
                     },
                     ["bossHealthBarDisplay"] = 
                     {
                         ["x"] = -1280,
                         ["y"] = -100,
                     },
-                    ["damageableDisplay"] = 
-                    {
-                        ["x"] = 0,
-                        ["y"] = 288,
-                    },
-                    ["hallsoffabrication"] = 
-                    {
-                        ["showAGIcons"] = true,
-                        ["prominentPinnacleDirectCurrent"] = true,
-                        ["agIconsSize"] = 150,
-                        ["prominentStomp"] = true,
-                        ["prominentReclaimTheRuined"] = true,
-                        ["showTripletsIcon"] = true,
-                        ["tripletsIconSize"] = 150,
-                    },
-                    ["debugChatSpam"] = false,
-                    ["prominentV2FirstTime"] = false,
-                    ["version"] = 1,
-                    ["cursePadsDisplay"] = 
-                    {
-                        ["x"] = 1280,
-                        ["y"] = 360,
-                    },
+                    ["debugUi"] = false,
                     ["debugLine"] = false,
+                    ["maelstrom"] = 
+                    {
+                        ["showRounds"] = true,
+                        ["stage3Boss"] = "Equip boss setup!",
+                        ["prominentHeatWaveMA"] = true,
+                        ["prominentSoulTether"] = true,
+                        ["stage4Boss"] = "Equip boss setup!",
+                        ["stage5Boss"] = "Equip boss setup!",
+                        ["prominentVolatilePoison"] = true,
+                        ["stage9Boss"] = "Equip boss setup!",
+                        ["stage1Boss"] = "Equip boss setup!",
+                        ["stage7Boss"] = "Equip boss setup!",
+                        ["stage6Boss"] = "Equip boss setup!",
+                        ["normalDamageTaken"] = false,
+                        ["stage2Boss"] = "Equip boss setup!",
+                        ["prominentTeleportStrike"] = true,
+                        ["prominentPoisonArrowSpray"] = true,
+                        ["stage8Boss"] = "",
+                    },
+                    ["sanitysedge"] = 
+                    {
+                        ["ansuulIconSize"] = 150,
+                        ["prominentChainPull"] = true,
+                        ["showAnsuulIcon"] = true,
+                    },
+                    ["kynesaegis"] = 
+                    {
+                        ["prominentBooger"] = true,
+                        ["showPrisonIcon"] = true,
+                        ["showSpearIcon"] = true,
+                        ["falgravnIconsSize"] = 150,
+                        ["showFalgravnIcons"] = true,
+                    },
+                    ["lucentcitadel"] = 
+                    {
+                        ["tempestIconsSize"] = 150,
+                        ["prominentFateSealer"] = true,
+                        ["showOrphicIcons"] = true,
+                        ["showWeakeningCharge"] = "TANK",
+                        ["alertDarkness"] = true,
+                        ["orphicIconsNumbers"] = false,
+                        ["effectFateSealer"] = true,
+                        ["showArcaneConveyance"] = true,
+                        ["showTempestIcons"] = true,
+                        ["showCavotIcon"] = true,
+                        ["showArcaneConveyanceTether"] = true,
+                        ["orphicIconSize"] = 150,
+                        ["cavotIconSize"] = 100,
+                        ["showKnotTimer"] = true,
+                        ["prominentDarknessInflicted"] = true,
+                    },
+                    ["general"] = 
+                    {
+                        ["hitValueAboveThreshold"] = 60000,
+                        ["showOthers"] = true,
+                        ["showBegin"] = true,
+                        ["beginHideSelf"] = false,
+                        ["hitValueBelowThreshold"] = 75,
+                        ["showGained"] = true,
+                        ["beginHideArcanist"] = false,
+                        ["hitValueUseWhitelist"] = true,
+                        ["showRaidDiag"] = false,
+                        ["showDamageable"] = true,
+                        ["showProminent"] = true,
+                        ["useNonNoneBlacklist"] = true,
+                        ["useNoneBlacklist"] = true,
+                    },
                     ["blackrose"] = 
                     {
                         ["prominentLavaWhip"] = true,
                         ["showCursed"] = true,
                     },
-                    ["debugUi"] = false,
-                    ["display"] = 
+                    ["cursePadsDisplay"] = 
                     {
-                        ["x"] = 0,
-                        ["y"] = 480,
+                        ["x"] = 1280,
+                        ["y"] = 360,
+                    },
+                    ["dragonstar"] = 
+                    {
+                        ["normalDamageTaken"] = false,
+                        ["prominentWintersReachDSA"] = true,
+                        ["prominentHeatWaveDSA"] = true,
+                        ["prominentDrainingPoison"] = true,
                     },
                     ["dreadsailreef"] = 
                     {
                         ["staticThreshold"] = 7,
                         ["alertStaticStacks"] = true,
-                        ["volatileThreshold"] = 6,
                         ["alertVolatileStacks"] = true,
                         ["prominentCascadingBoot"] = true,
+                        ["volatileThreshold"] = 6,
                     },
-                    ["mawoflorkhaj"] = 
+                    ["spearsDisplay"] = 
                     {
-                        ["prominentShatteringStrike"] = true,
-                        ["prominentGripOfLorkhaj"] = true,
-                        ["prominentColorSwap"] = true,
-                        ["prominentThreshingWings"] = true,
-                        ["zhajIconSize"] = 150,
-                        ["showZhajIcons"] = true,
-                        ["prominentUnstableVoid"] = true,
-                        ["showPads"] = true,
-                        ["effectShattered"] = true,
+                        ["x"] = 1280,
+                        ["y"] = 0,
+                    },
+                    ["version"] = 1,
+                    ["hallsoffabrication"] = 
+                    {
+                        ["showAGIcons"] = true,
+                        ["showTripletsIcon"] = true,
+                        ["tripletsIconSize"] = 150,
+                        ["prominentReclaimTheRuined"] = true,
+                        ["prominentStomp"] = true,
+                        ["prominentPinnacleDirectCurrent"] = true,
+                        ["agIconsSize"] = 150,
+                    },
+                    ["sunspire"] = 
+                    {
+                        ["lokkIconsSoloHeal"] = false,
+                        ["lokkIconsSize"] = 150,
+                        ["showYolIcons"] = true,
+                        ["prominentSunderingGale"] = true,
+                        ["yolIconsSize"] = 150,
+                        ["prominentShieldCharge"] = true,
+                        ["showLokkIcons"] = true,
+                        ["yolLeftIcons"] = false,
+                    },
+                    ["shipwrightsRegret"] = 
+                    {
+                        ["showBombStacks"] = true,
+                    },
+                    ["asylumsanctorium"] = 
+                    {
+                        ["dingOthersCone"] = false,
+                        ["dingSelfCone"] = true,
+                    },
+                    ["showSubtitles"] = false,
+                    ["debugOther"] = false,
+                    ["debugChatSpam"] = false,
+                    ["damageableDisplay"] = 
+                    {
+                        ["x"] = 0,
+                        ["y"] = 288,
+                    },
+                    ["prominentV2FirstTime"] = false,
+                    ["vateshran"] = 
+                    {
+                        ["prominentHeatWaveVH"] = true,
+                        ["prominentWintersReachVH"] = true,
+                        ["showMissedAdds"] = false,
+                    },
+                    ["display"] = 
+                    {
+                        ["x"] = 0,
+                        ["y"] = 480,
                     },
                 },
             },

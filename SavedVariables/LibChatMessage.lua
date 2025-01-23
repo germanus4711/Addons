@@ -2,13 +2,13 @@ LibChatMessageSettings =
 {
     ["NA Megaserver@germanus4711"] = 
     {
-        ["tagPrefixMode"] = 2,
         ["timePrefixFormat"] = "[%X]",
-        ["historyEnabled"] = false,
-        ["historyMaxAge"] = 3600,
-        ["timePrefixEnabled"] = false,
-        ["timePrefixOnRegularChat"] = true,
         ["version"] = 1,
+        ["timePrefixOnRegularChat"] = true,
+        ["tagPrefixMode"] = 2,
+        ["historyEnabled"] = false,
+        ["timePrefixEnabled"] = false,
+        ["historyMaxAge"] = 3600,
     },
 }
 LibChatMessageHistory =

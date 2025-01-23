@@ -2,7 +2,7 @@ local MuchSmarterAutoLoot = ZO_Object:Subclass()
 local MuchSmarterAutoLootSettings = ZO_Object:Subclass()
 
 local startupInfoPrinted = false
-local addonVersion = "5.0.1"
+local addonVersion = "5.0.3"
 local settingPanel = {}
 local MSAL_NEVER_3RD_PARTY_WARNING = "msal_never_3rd_party_warning"
 local templateItemlink = "|H1:item:%s:123:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h"
@@ -1804,7 +1804,7 @@ local function SettingInitialize(db)
         for _, v in pairs(list) do
             if v == GetItemLinkItemId(link) then
                 d(string.format(GetString(MSAL_LIST_ALREADY_EXIST),
-                    trimString(GetItemLinkName(string.format(templateItemlink, GetItemLinkItemId(link)))),
+                    trimString(GetItemLinkName(string.format(templateItemlink, GetItemLinkItemId(link)))) .. " (" .. GetItemLinkItemId(link) ..")",
                     listName))
                 WM:GetControlByName(controlName).editbox:SetText("")
                 return
@@ -1812,7 +1812,7 @@ local function SettingInitialize(db)
         end
         table.insert(list, GetItemLinkItemId(link))
         d(string.format(GetString(MSAL_LIST_ADD),
-            trimString(GetItemLinkName(string.format(templateItemlink, GetItemLinkItemId(link)))), listName))
+            trimString(GetItemLinkName(string.format(templateItemlink, GetItemLinkItemId(link)))) .. " (" .. GetItemLinkItemId(link) ..")", listName))
 
         WM:GetControlByName(controlName).editbox:SetText("")
         WM:GetControlByName(removeControlName):UpdateChoices(getListChoices(token))
@@ -1840,8 +1840,8 @@ local function SettingInitialize(db)
             for i = #list, 1, -1 do
                 if tostring(list[i]) == itemid then
                     d(string.format(GetString(MSAL_LIST_REMOVE),
-                        trimString(GetItemLinkName(string.format(templateItemlink, list[i]))),
-                        listName))
+                    trimString(GetItemLinkName(string.format(templateItemlink, list[i]))) .. " (" .. itemid ..")",
+                    listName))
                     table.remove(list, i)
                 end
             end
