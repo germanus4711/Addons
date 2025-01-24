@@ -6,2115 +6,2149 @@ TamrielTradeCentreVars =
         {
             ["$AccountWide"] = 
             {
-                ["version"] = 3,
-                ["Settings"] = 
-                {
-                    ["EnableAutoRecordStoreEntries"] = true,
-                    ["SearchOnlineOrder"] = "desc",
-                    ["EnableItemPriceToChatBtn"] = false,
-                    ["EnableToolTipSalePrice"] = true,
-                    ["EnablePriceToChatStat"] = false,
-                    ["EnableSaleHistoryCollection"] = true,
-                    ["EnablePriceToChatLastUpdate"] = false,
-                    ["EnableItemToolTipPricing"] = true,
-                    ["EnableToolTipAggregate"] = true,
-                    ["EnablePriceToChatSalePrice"] = false,
-                    ["SearchOnlineSort"] = "LastSeen",
-                    ["EnableToolTipStat"] = true,
-                    ["AdditionalPriceToChatLang"] = 
-                    {
-                    },
-                    ["EnableToolTipSuggested"] = true,
-                    ["EnablePriceToChatAggregate"] = false,
-                    ["EnablePriceToChatSuggested"] = false,
-                    ["EnableSelfEntriesUpload"] = true,
-                    ["EnableItemPriceDetailOnlineBtn"] = false,
-                    ["MaxAutoRecordStoreEntryCount"] = 20000,
-                    ["EnableToolTipLastUpdate"] = true,
-                    ["EnableItemSearchOnlineBtn"] = true,
-                },
                 ["EUData"] = 
                 {
-                    ["SaleHistoryEntries"] = 
-                    {
-                        ["Count"] = 0,
-                        ["Guilds"] = 
-                        {
-                        },
-                    },
-                    ["IsFirstExecute"] = true,
                     ["AutoRecordEntries"] = 
                     {
-                        ["Count"] = 0,
                         ["Guilds"] = 
                         {
                         },
+                        ["Count"] = 0,
+                    },
+                    ["SaleHistoryEntries"] = 
+                    {
+                        ["Guilds"] = 
+                        {
+                        },
+                        ["Count"] = 0,
                     },
                     ["Guilds"] = 
                     {
                     },
+                    ["IsFirstExecute"] = true,
                 },
-                ["ActualVersion"] = 11,
-                ["ClientCulture"] = "en",
                 ["NAData"] = 
                 {
-                    ["SaleHistoryEntries"] = 
+                    ["AutoRecordEntries"] = 
                     {
-                        ["Count"] = 124,
                         ["Guilds"] = 
                         {
-                            ["The Free Trade Agreement"] = 
-                            {
-                                ["PlayerListings"] = 
-                                {
-                                },
-                            },
+                        },
+                        ["Count"] = 0,
+                    },
+                    ["SaleHistoryEntries"] = 
+                    {
+                        ["Guilds"] = 
+                        {
                             ["The Empire"] = 
                             {
                                 ["KioskLocationID"] = 76,
                                 ["PlayerListings"] = 
                                 {
-                                    ["Jaldemar"] = 
-                                    {
-                                        ["319224185"] = 
-                                        {
-                                            ["Name"] = "High Isle Stool, Cushioned",
-                                            ["ID"] = 26579,
-                                            ["ItemLink"] = "|H0:item:187831:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737611797,
-                                            ["Amount"] = 3,
-                                            ["UID"] = "319224185",
-                                            ["ItemType"] = 61,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 30000,
-                                        },
-                                    },
                                     ["AlchemistMama"] = 
                                     {
-                                        ["319178251"] = 
+                                        ["319617317"] = 
                                         {
-                                            ["Name"] = "Indoril Streetlight, Full Stone",
-                                            ["ID"] = 19474,
-                                            ["ItemLink"] = "|H0:item:126557:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737606037,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319178251",
                                             ["ItemType"] = 61,
                                             ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 100,
-                                        },
-                                        ["318766153"] = 
-                                        {
-                                            ["Name"] = "Branch, Forked Laurel",
-                                            ["ID"] = 16639,
-                                            ["ItemLink"] = "|H0:item:130297:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737553644,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318766153",
-                                            ["ItemType"] = 61,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 100,
-                                        },
-                                        ["319105471"] = 
-                                        {
-                                            ["Name"] = "Recipe: Pork and Bitter Melon",
-                                            ["ID"] = 332,
-                                            ["ItemLink"] = "|H0:item:45664:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598385,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319105471",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 250,
-                                        },
-                                        ["319129313"] = 
-                                        {
-                                            ["Name"] = "Recipe: Chicken Breast",
-                                            ["ID"] = 6189,
-                                            ["ItemLink"] = "|H0:item:45935:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737601063,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319129313",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 150,
-                                        },
-                                        ["319105283"] = 
-                                        {
-                                            ["Name"] = "Recipe: Cantaloupe Bread",
-                                            ["ID"] = 371,
-                                            ["ItemLink"] = "|H0:item:45928:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598373,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319105283",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 150,
-                                        },
-                                    },
-                                    ["RDKateran"] = 
-                                    {
-                                        ["319062375"] = 
-                                        {
-                                            ["Name"] = "Imperial Charity Writ",
-                                            ["ID"] = 23050,
-                                            ["ItemLink"] = "|H0:item:167170:5:1:0:0:0:33813:0:0:0:0:0:0:0:0:0:0:0:0:0:10000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["NumVoucher"] = 1,
-                                                ["RequiredItemID"] = 5756,
-                                            },
-                                            ["SaleTime"] = 1737593580,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319062375",
-                                            ["ItemType"] = 60,
-                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737674696,
+                                            ["UID"] = "319617317",
+                                            ["ItemLink"] = "|H0:item:206542:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Lucent Crystal Shards, Spiral",
+                                            ["TotalPrice"] = 2500,
                                             ["QualityID"] = 3,
-                                            ["TotalPrice"] = 200,
+                                            ["Amount"] = 5,
+                                            ["ID"] = 28262,
                                         },
                                     },
-                                    ["RotcellocEirolac"] = 
+                                    ["Lythkana"] = 
                                     {
-                                        ["319077885"] = 
+                                        ["319410725"] = 
                                         {
-                                            ["Name"] = "Arkthzand Sprocket",
-                                            ["ID"] = 22820,
-                                            ["ItemLink"] = "|H0:item:167976:30:1:0:0:0:0:0:0:0:0:0:0:0:0:112:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737595241,
-                                            ["Amount"] = 2,
-                                            ["UID"] = "319077885",
-                                            ["ItemType"] = 44,
+                                            ["ItemType"] = 34,
                                             ["Level"] = 1,
-                                            ["QualityID"] = 0,
-                                            ["TotalPrice"] = 5500,
-                                        },
-                                        ["319077875"] = 
-                                        {
-                                            ["Name"] = "Arkthzand Sprocket",
-                                            ["ID"] = 22820,
-                                            ["ItemLink"] = "|H0:item:167976:30:1:0:0:0:0:0:0:0:0:0:0:0:0:112:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737595240,
-                                            ["Amount"] = 2,
-                                            ["UID"] = "319077875",
-                                            ["ItemType"] = 44,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 0,
-                                            ["TotalPrice"] = 5500,
-                                        },
-                                        ["318814769"] = 
-                                        {
-                                            ["Name"] = "Ivory Brigade Clasp",
-                                            ["ID"] = 23720,
-                                            ["ItemLink"] = "|H0:item:171911:30:1:0:0:0:0:0:0:0:0:0:0:0:0:121:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737560201,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318814769",
-                                            ["ItemType"] = 44,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 0,
-                                            ["TotalPrice"] = 5850,
-                                        },
-                                        ["319077837"] = 
-                                        {
-                                            ["Name"] = "Arkthzand Sprocket",
-                                            ["ID"] = 22820,
-                                            ["ItemLink"] = "|H0:item:167976:30:1:0:0:0:0:0:0:0:0:0:0:0:0:112:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737595237,
-                                            ["Amount"] = 2,
-                                            ["UID"] = "319077837",
-                                            ["ItemType"] = 44,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 0,
-                                            ["TotalPrice"] = 5500,
-                                        },
-                                        ["319077861"] = 
-                                        {
-                                            ["Name"] = "Arkthzand Sprocket",
-                                            ["ID"] = 22820,
-                                            ["ItemLink"] = "|H0:item:167976:30:1:0:0:0:0:0:0:0:0:0:0:0:0:112:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737595239,
-                                            ["Amount"] = 2,
-                                            ["UID"] = "319077861",
-                                            ["ItemType"] = 44,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 0,
-                                            ["TotalPrice"] = 5500,
-                                        },
-                                        ["318815227"] = 
-                                        {
-                                            ["Name"] = "Ivory Brigade Clasp",
-                                            ["ID"] = 23720,
-                                            ["ItemLink"] = "|H0:item:171911:30:1:0:0:0:0:0:0:0:0:0:0:0:0:121:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737560244,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318815227",
-                                            ["ItemType"] = 44,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 0,
-                                            ["TotalPrice"] = 5850,
-                                        },
-                                        ["319077839"] = 
-                                        {
-                                            ["Name"] = "Arkthzand Sprocket",
-                                            ["ID"] = 22820,
-                                            ["ItemLink"] = "|H0:item:167976:30:1:0:0:0:0:0:0:0:0:0:0:0:0:112:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737595238,
-                                            ["Amount"] = 2,
-                                            ["UID"] = "319077839",
-                                            ["ItemType"] = 44,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 0,
-                                            ["TotalPrice"] = 5500,
-                                        },
-                                    },
-                                    ["CrookedTimber"] = 
-                                    {
-                                        ["319171617"] = 
-                                        {
-                                            ["Name"] = "Pattern: Apocrypha Alcove, Book Stacks",
-                                            ["ID"] = 27977,
-                                            ["ItemLink"] = "|H0:item:203340:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737605346,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319171617",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 158000,
-                                        },
-                                        ["319056885"] = 
-                                        {
-                                            ["Name"] = "Sealed Enchanting Writ",
-                                            ["ID"] = 12387,
-                                            ["ItemLink"] = "|H0:item:119564:5:1:0:0:0:26591:207:4:0:0:0:0:0:0:0:0:0:0:0:20000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["RequiredQualityID"] = 3,
-                                                ["NumVoucher"] = 2,
-                                                ["RequiredItemID"] = 4461,
-                                            },
-                                            ["SaleTime"] = 1737593029,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319056885",
-                                            ["ItemType"] = 60,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 4500,
-                                        },
-                                    },
-                                    ["Sheryllas"] = 
-                                    {
-                                        ["319105753"] = 
-                                        {
-                                            ["Name"] = "Recipe: Puckermint Tea",
-                                            ["ID"] = 246,
-                                            ["ItemLink"] = "|H0:item:46003:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598460,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319105753",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 300,
-                                        },
-                                    },
-                                    ["MegMegs"] = 
-                                    {
-                                        ["319133047"] = 
-                                        {
-                                            ["Name"] = "Turpen",
-                                            ["ID"] = 2969,
-                                            ["ItemLink"] = "|H0:item:54179:32:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737601365,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319133047",
-                                            ["ItemType"] = 42,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 100,
-                                        },
-                                        ["319326647"] = 
-                                        {
-                                            ["Name"] = "Honing Stone",
-                                            ["ID"] = 4593,
-                                            ["ItemLink"] = "|H0:item:54170:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737631880,
-                                            ["Amount"] = 3,
-                                            ["UID"] = "319326647",
-                                            ["ItemType"] = 41,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 300,
-                                        },
-                                    },
-                                    ["Docgunthor"] = 
-                                    {
-                                        ["318947975"] = 
-                                        {
-                                            ["Name"] = "Blackreach: Arkthzand Cavern Treasure Map",
-                                            ["ID"] = 22710,
-                                            ["ItemLink"] = "|H0:item:171475:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737578325,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318947975",
-                                            ["ItemType"] = 5,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 1200,
-                                        },
-                                    },
-                                    ["WitchyWolf"] = 
-                                    {
-                                        ["319106571"] = 
-                                        {
-                                            ["Name"] = "Praxis: Orcish Brazier, Smoldering",
-                                            ["ID"] = 13261,
-                                            ["ItemLink"] = "|H0:item:119028:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598596,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106571",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 72,
-                                        },
-                                        ["319106477"] = 
-                                        {
-                                            ["Name"] = "Blueprint: Argonian Cup, Tall",
-                                            ["ID"] = 13350,
-                                            ["ItemLink"] = "|H0:item:115735:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598584,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106477",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 69,
-                                        },
-                                    },
-                                    ["CrashVegas65"] = 
-                                    {
-                                        ["319173791"] = 
-                                        {
-                                            ["Name"] = "Truly Superb Glyph of Absorb Stamina",
-                                            ["ID"] = 984,
-                                            ["ItemLink"] = "|H0:item:45867:370:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737605636,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319173791",
-                                            ["ItemType"] = 20,
-                                            ["Level"] = 210,
+                                            ["SaleTime"] = 1737647616,
+                                            ["UID"] = "319410725",
+                                            ["ItemLink"] = "|H0:item:204842:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Legacy of the Draoife Pauldrons",
+                                            ["TotalPrice"] = 3700,
                                             ["QualityID"] = 4,
-                                            ["TotalPrice"] = 5000,
-                                        },
-                                        ["319174305"] = 
-                                        {
-                                            ["Name"] = "Truly Superb Glyph of Health Recovery",
-                                            ["ID"] = 2277,
-                                            ["ItemLink"] = "|H0:item:26581:370:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737605683,
                                             ["Amount"] = 1,
-                                            ["UID"] = "319174305",
-                                            ["ItemType"] = 26,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 5000,
-                                        },
-                                    },
-                                    ["MIAxMisfit"] = 
-                                    {
-                                        ["319237557"] = 
-                                        {
-                                            ["Name"] = "Gloves of Oakfather's Retribution",
-                                            ["ID"] = 27868,
-                                            ["ItemLink"] = "|H0:item:203939:362:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:10000:0|h|h",
-                                            ["SaleTime"] = 1737613907,
-                                            ["UID"] = "319237557",
-                                            ["QualityID"] = 2,
-                                            ["Category2IDOverWrite"] = 2,
-                                            ["TraitID"] = 13,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["Amount"] = 1,
-                                            ["TotalPrice"] = 3090,
-                                        },
-                                    },
-                                    ["SvanaRose"] = 
-                                    {
-                                        ["319197999"] = 
-                                        {
-                                            ["Name"] = "Aetherial Dust",
-                                            ["ID"] = 11807,
-                                            ["ItemLink"] = "|H0:item:115026:29:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737608228,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319197999",
-                                            ["ItemType"] = 10,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 250000,
-                                        },
-                                        ["319197989"] = 
-                                        {
-                                            ["Name"] = "Aetherial Dust",
-                                            ["ID"] = 11807,
-                                            ["ItemLink"] = "|H0:item:115026:29:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737608226,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319197989",
-                                            ["ItemType"] = 10,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 250000,
-                                        },
-                                        ["319198009"] = 
-                                        {
-                                            ["Name"] = "Aetherial Dust",
-                                            ["ID"] = 11807,
-                                            ["ItemLink"] = "|H0:item:115026:29:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737608230,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319198009",
-                                            ["ItemType"] = 10,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 250000,
-                                        },
-                                    },
-                                    ["brutalBIRDx"] = 
-                                    {
-                                        ["319185709"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 86: Sea Giant Shoulders",
-                                            ["ID"] = 22482,
-                                            ["ItemLink"] = "|H0:item:160571:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737606936,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319185709",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 3000,
-                                        },
-                                    },
-                                    ["Aurora_Dark"] = 
-                                    {
-                                        ["319178277"] = 
-                                        {
-                                            ["Name"] = "Indoril Streetlight, Full Stone",
-                                            ["ID"] = 19474,
-                                            ["ItemLink"] = "|H0:item:126557:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737606039,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319178277",
-                                            ["ItemType"] = 61,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 250,
-                                        },
-                                    },
-                                    ["Ghostbear1855"] = 
-                                    {
-                                        ["319091273"] = 
-                                        {
-                                            ["Name"] = "Glenmoril Wyrd Treasure Map: Stonefalls",
-                                            ["ID"] = 21083,
-                                            ["ItemLink"] = "|H0:item:153648:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737596707,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319091273",
-                                            ["ItemType"] = 5,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 999,
-                                        },
-                                        ["319091257"] = 
-                                        {
-                                            ["Name"] = "Glenmoril Wyrd Treasure Map: Malabal Tor",
-                                            ["ID"] = 21061,
-                                            ["ItemLink"] = "|H0:item:153644:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737596705,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319091257",
-                                            ["ItemType"] = 5,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 999,
-                                        },
-                                        ["319091297"] = 
-                                        {
-                                            ["Name"] = "Glenmoril Wyrd Treasure Map: Shadowfen",
-                                            ["ID"] = 21063,
-                                            ["ItemLink"] = "|H0:item:153647:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737596709,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319091297",
-                                            ["ItemType"] = 5,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 999,
-                                        },
-                                        ["319105693"] = 
-                                        {
-                                            ["Name"] = "Recipe: Black Coffee",
-                                            ["ID"] = 802,
-                                            ["ItemLink"] = "|H0:item:46033:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598431,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319105693",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 69,
-                                        },
-                                        ["319105729"] = 
-                                        {
-                                            ["Name"] = "Recipe: Tsaesci Tea",
-                                            ["ID"] = 2816,
-                                            ["ItemLink"] = "|H0:item:45595:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598440,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319105729",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 129,
-                                        },
-                                        ["319091279"] = 
-                                        {
-                                            ["Name"] = "Glenmoril Wyrd Treasure Map: Rivenspire",
-                                            ["ID"] = 21058,
-                                            ["ItemLink"] = "|H0:item:153646:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737596707,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319091279",
-                                            ["ItemType"] = 5,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 999,
-                                        },
-                                        ["319091291"] = 
-                                        {
-                                            ["Name"] = "Glenmoril Wyrd Treasure Map: Auridon",
-                                            ["ID"] = 21077,
-                                            ["ItemLink"] = "|H0:item:153640:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737596708,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319091291",
-                                            ["ItemType"] = 5,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 999,
-                                        },
-                                        ["319091253"] = 
-                                        {
-                                            ["Name"] = "Glenmoril Wyrd Treasure Map: Bangkorai",
-                                            ["ID"] = 21094,
-                                            ["ItemLink"] = "|H0:item:153641:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737596704,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319091253",
-                                            ["ItemType"] = 5,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 999,
-                                        },
-                                        ["319105715"] = 
-                                        {
-                                            ["Name"] = "Recipe: Acai Dry Mazte",
-                                            ["ID"] = 635,
-                                            ["ItemLink"] = "|H0:item:45580:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598436,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319105715",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 119,
-                                        },
-                                        ["319105745"] = 
-                                        {
-                                            ["Name"] = "Recipe: Creme de Menthe",
-                                            ["ID"] = 3082,
-                                            ["ItemLink"] = "|H0:item:45552:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598453,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319105745",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 169,
-                                        },
-                                        ["319091263"] = 
-                                        {
-                                            ["Name"] = "Glenmoril Wyrd Treasure Map: Glenumbra",
-                                            ["ID"] = 21071,
-                                            ["ItemLink"] = "|H0:item:153642:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737596706,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319091263",
-                                            ["ItemType"] = 5,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 999,
-                                        },
-                                    },
-                                    ["Liawan"] = 
-                                    {
-                                        ["318842899"] = 
-                                        {
-                                            ["Name"] = "Shalk's Ice Staff",
-                                            ["ID"] = 11548,
-                                            ["ItemLink"] = "|H0:item:96718:362:50:0:0:0:0:0:0:0:0:0:0:0:0:17:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737563442,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318842899",
-                                            ["TraitID"] = 7,
-                                            ["ItemType"] = 1,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 455,
-                                        },
-                                    },
-                                    ["REAPER6959"] = 
-                                    {
-                                        ["318865873"] = 
-                                        {
-                                            ["Name"] = "Ancestor Silk",
-                                            ["ID"] = 3799,
-                                            ["ItemLink"] = "|H0:item:64504:30:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737566086,
-                                            ["Amount"] = 200,
-                                            ["UID"] = "318865873",
-                                            ["ItemType"] = 40,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 0,
-                                            ["TotalPrice"] = 5199,
-                                        },
-                                    },
-                                    ["Todariq"] = 
-                                    {
-                                        ["319088401"] = 
-                                        {
-                                            ["Name"] = "Briarheart Mace",
-                                            ["ID"] = 11436,
-                                            ["ItemLink"] = "|H0:item:129735:362:50:0:0:0:0:0:0:0:0:0:0:0:0:37:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737596400,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319088401",
-                                            ["TraitID"] = 5,
-                                            ["ItemType"] = 1,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 5000,
-                                        },
-                                    },
-                                    ["Vexen"] = 
-                                    {
-                                        ["318823023"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 126: Shardborn Boots",
-                                            ["ID"] = 28054,
-                                            ["ItemLink"] = "|H0:item:203363:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737561175,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318823023",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1500,
-                                        },
-                                    },
-                                    ["elseerian734"] = 
-                                    {
-                                        ["319137937"] = 
-                                        {
-                                            ["Name"] = "Rallying Cry Robe",
-                                            ["ID"] = 24959,
-                                            ["ItemLink"] = "|H0:item:183335:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:10000:0|h|h",
-                                            ["SaleTime"] = 1737602048,
-                                            ["UID"] = "319137937",
-                                            ["QualityID"] = 3,
-                                            ["Category2IDOverWrite"] = 2,
-                                            ["TraitID"] = 9,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["Amount"] = 1,
-                                            ["TotalPrice"] = 6184,
-                                        },
-                                    },
-                                    ["Gaates"] = 
-                                    {
-                                        ["318808553"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 101: Ivory Brigade Boots",
-                                            ["ID"] = 23570,
-                                            ["ItemLink"] = "|H0:item:171898:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737559468,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318808553",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 5000,
-                                        },
-                                        ["319151465"] = 
-                                        {
-                                            ["Name"] = "Stone Husk Fragment",
-                                            ["ID"] = 21506,
-                                            ["ItemLink"] = "|H0:item:166466:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737603495,
-                                            ["Amount"] = 2,
-                                            ["UID"] = "319151465",
-                                            ["ItemType"] = 5,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 12000,
-                                        },
-                                    },
-                                    ["MamaDee69"] = 
-                                    {
-                                        ["319133089"] = 
-                                        {
-                                            ["Name"] = "Grain Solvent",
-                                            ["ID"] = 4314,
-                                            ["ItemLink"] = "|H0:item:54172:33:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737601378,
-                                            ["Amount"] = 20,
-                                            ["UID"] = "319133089",
-                                            ["ItemType"] = 41,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 5000,
-                                        },
-                                    },
-                                    ["ai0nion"] = 
-                                    {
-                                        ["319079225"] = 
-                                        {
-                                            ["Name"] = "Deadly Maul",
-                                            ["ID"] = 9205,
-                                            ["ItemLink"] = "|H0:item:87911:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737595415,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319079225",
-                                            ["TraitID"] = 4,
-                                            ["ItemType"] = 1,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 3999,
-                                        },
-                                    },
-                                    ["Zurcosis"] = 
-                                    {
-                                        ["319062153"] = 
-                                        {
-                                            ["Name"] = "Deep Winter Charity Writ",
-                                            ["ID"] = 21192,
-                                            ["ItemLink"] = "|H0:item:156731:4:1:0:0:0:117940:0:0:0:0:0:0:0:0:0:0:0:0:0:10000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["NumVoucher"] = 1,
-                                                ["RequiredItemID"] = 13424,
-                                            },
-                                            ["SaleTime"] = 1737593550,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319062153",
-                                            ["ItemType"] = 60,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 25,
-                                        },
-                                        ["319062229"] = 
-                                        {
-                                            ["Name"] = "Deep Winter Charity Writ",
-                                            ["ID"] = 21192,
-                                            ["ItemLink"] = "|H0:item:156731:4:1:0:0:0:117942:0:0:0:0:0:0:0:0:0:0:0:0:0:10000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["NumVoucher"] = 1,
-                                                ["RequiredItemID"] = 13202,
-                                            },
-                                            ["SaleTime"] = 1737593559,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319062229",
-                                            ["ItemType"] = 60,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 25,
-                                        },
-                                        ["319062171"] = 
-                                        {
-                                            ["Name"] = "Deep Winter Charity Writ",
-                                            ["ID"] = 21192,
-                                            ["ItemLink"] = "|H0:item:156735:4:1:0:0:0:117954:0:0:0:0:0:0:0:0:0:0:0:0:0:10000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["NumVoucher"] = 1,
-                                                ["RequiredItemID"] = 12753,
-                                            },
-                                            ["SaleTime"] = 1737593552,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319062171",
-                                            ["ItemType"] = 60,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 25,
-                                        },
-                                    },
-                                    ["SahaginDazs"] = 
-                                    {
-                                        ["319106555"] = 
-                                        {
-                                            ["Name"] = "Blueprint: Khajiit Signpost, Fortified",
-                                            ["ID"] = 12616,
-                                            ["ItemLink"] = "|H0:item:116098:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598593,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106555",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 70,
-                                        },
-                                    },
-                                    ["Arehtia"] = 
-                                    {
-                                        ["319352109"] = 
-                                        {
-                                            ["Name"] = "Pauldron of the Fire",
-                                            ["ID"] = 5888,
-                                            ["ItemLink"] = "|H0:item:95390:359:50:0:0:0:0:0:0:0:0:0:0:0:0:35:0:0:0:10000:0|h|h",
-                                            ["SaleTime"] = 1737637238,
-                                            ["UID"] = "319352109",
-                                            ["QualityID"] = 1,
-                                            ["Category2IDOverWrite"] = 4,
-                                            ["TraitID"] = 12,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["Amount"] = 1,
-                                            ["TotalPrice"] = 500,
-                                        },
-                                        ["318929799"] = 
-                                        {
-                                            ["Name"] = "Ring of Willpower",
-                                            ["ID"] = 5818,
-                                            ["ItemLink"] = "|H0:item:69277:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575498,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929799",
-                                            ["TraitID"] = 17,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1000,
-                                        },
-                                    },
-                                    ["Jadeazu"] = 
-                                    {
-                                        ["318929763"] = 
-                                        {
-                                            ["Name"] = "Necklace of Endurance",
-                                            ["ID"] = 1131,
-                                            ["ItemLink"] = "|H0:item:69168:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575488,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929763",
-                                            ["TraitID"] = 17,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 900,
-                                        },
-                                    },
-                                    ["Xelloss-7"] = 
-                                    {
-                                        ["319106545"] = 
-                                        {
-                                            ["Name"] = "Design: Elsweyr Spice Display, Saffron Red",
-                                            ["ID"] = 20255,
-                                            ["ItemLink"] = "|H0:item:151996:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598592,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106545",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 70,
-                                        },
-                                        ["319106521"] = 
-                                        {
-                                            ["Name"] = "Praxis: Elsweyr Wall, Wide Masonry",
-                                            ["ID"] = 20149,
-                                            ["ItemLink"] = "|H0:item:152111:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598589,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106521",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 70,
-                                        },
-                                    },
-                                    ["Gandolf573"] = 
-                                    {
-                                        ["319106513"] = 
-                                        {
-                                            ["Name"] = "Praxis: Vampiric Lamp, Amber Tall",
-                                            ["ID"] = 21538,
-                                            ["ItemLink"] = "|H0:item:166768:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598588,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106513",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 1999,
-                                        },
-                                        ["319113507"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 5: Breton Style",
-                                            ["ID"] = 6534,
-                                            ["ItemLink"] = "|H0:item:16425:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737599428,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319113507",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 100,
-                                        },
-                                    },
-                                    ["Gwydarin707"] = 
-                                    {
-                                        ["319271673"] = 
-                                        {
-                                            ["Name"] = "Praxis: Leyawiin Post, Stone Garden",
-                                            ["ID"] = 24124,
-                                            ["ItemLink"] = "|H0:item:181580:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737619440,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319271673",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 899,
-                                        },
-                                    },
-                                    ["Dragonwarrior86"] = 
-                                    {
-                                        ["319105985"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 12: Barbaric Style",
-                                            ["ID"] = 6359,
-                                            ["ItemLink"] = "|H0:item:51565:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598522,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319105985",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 500,
+                                            ["ID"] = 31078,
                                         },
                                     },
                                     ["MaxxNiTro"] = 
                                     {
-                                        ["319062311"] = 
+                                        ["319662387"] = 
                                         {
-                                            ["Name"] = "Deep Winter Charity Writ",
-                                            ["ID"] = 21192,
-                                            ["ItemLink"] = "|H0:item:156731:4:1:0:0:0:117940:0:0:0:0:0:0:0:0:0:0:0:0:0:10000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["NumVoucher"] = 1,
-                                                ["RequiredItemID"] = 13424,
-                                            },
-                                            ["SaleTime"] = 1737593569,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319062311",
-                                            ["ItemType"] = 60,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 50,
-                                        },
-                                        ["319062271"] = 
-                                        {
-                                            ["Name"] = "Deep Winter Charity Writ",
-                                            ["ID"] = 21192,
-                                            ["ItemLink"] = "|H0:item:156731:4:1:0:0:0:117940:0:0:0:0:0:0:0:0:0:0:0:0:0:10000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["NumVoucher"] = 1,
-                                                ["RequiredItemID"] = 13424,
-                                            },
-                                            ["SaleTime"] = 1737593565,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319062271",
-                                            ["ItemType"] = 60,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 50,
-                                        },
-                                        ["319113467"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 7: Khajiit Style",
-                                            ["ID"] = 6573,
-                                            ["ItemLink"] = "|H0:item:44698:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737599423,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319113467",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 97,
-                                        },
-                                        ["319106405"] = 
-                                        {
-                                            ["Name"] = "Blueprint: Breton Street Post, Plain",
-                                            ["ID"] = 12408,
-                                            ["ItemLink"] = "|H0:item:115933:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598569,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106405",
                                             ["ItemType"] = 29,
                                             ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 27,
-                                        },
-                                        ["319062249"] = 
-                                        {
-                                            ["Name"] = "Deep Winter Charity Writ",
-                                            ["ID"] = 21192,
-                                            ["ItemLink"] = "|H0:item:156731:4:1:0:0:0:117942:0:0:0:0:0:0:0:0:0:0:0:0:0:10000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["NumVoucher"] = 1,
-                                                ["RequiredItemID"] = 13202,
-                                            },
-                                            ["SaleTime"] = 1737593562,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319062249",
-                                            ["ItemType"] = 60,
-                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737679474,
+                                            ["UID"] = "319662387",
+                                            ["ItemLink"] = "|H0:item:68202:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Recipe: Garlic Cod with Potato Crust",
+                                            ["TotalPrice"] = 75,
                                             ["QualityID"] = 2,
-                                            ["TotalPrice"] = 50,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6345,
                                         },
                                     },
-                                    ["inanook"] = 
+                                    ["cbscrolls19"] = 
                                     {
-                                        ["318864929"] = 
+                                        ["319827741"] = 
                                         {
-                                            ["Name"] = "Crafting Motif 1: High Elf Style",
-                                            ["ID"] = 6533,
-                                            ["ItemLink"] = "|H0:item:16424:4:1:0:0:0:0:0:0:0:0:0:0:0:0:7:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737565920,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318864929",
-                                            ["ItemType"] = 8,
+                                            ["ItemType"] = 34,
                                             ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 30,
-                                        },
-                                        ["318864919"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 2: Dark Elf Style",
-                                            ["ID"] = 6511,
-                                            ["ItemLink"] = "|H0:item:27245:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737565918,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318864919",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 50,
-                                        },
-                                        ["319113449"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 1: High Elf Style",
-                                            ["ID"] = 6533,
-                                            ["ItemLink"] = "|H0:item:16424:4:1:0:0:0:0:0:0:0:0:0:0:0:0:7:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737599415,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319113449",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 50,
-                                        },
-                                    },
-                                    ["Trayzun"] = 
-                                    {
-                                        ["318828975"] = 
-                                        {
-                                            ["Name"] = "Macabre Vintage Maul",
-                                            ["ID"] = 28312,
-                                            ["ItemLink"] = "|H0:item:205081:3:32:0:0:0:0:0:0:0:0:0:0:0:0:147:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737561954,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318828975",
-                                            ["TraitID"] = 0,
-                                            ["ItemType"] = 1,
-                                            ["Level"] = 32,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 1000,
-                                        },
-                                    },
-                                    ["Redneckk16"] = 
-                                    {
-                                        ["319108857"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 34: Assassins League Belts",
-                                            ["ID"] = 8085,
-                                            ["ItemLink"] = "|H0:item:76880:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598829,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319108857",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 900,
-                                        },
-                                        ["319108841"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 81: New Moon Priest Chests",
-                                            ["ID"] = 21483,
-                                            ["ItemLink"] = "|H0:item:156613:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598827,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319108841",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 750,
-                                        },
-                                        ["319106187"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 81: New Moon Priest Gloves",
-                                            ["ID"] = 21492,
-                                            ["ItemLink"] = "|H0:item:156615:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598549,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106187",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 500,
-                                        },
-                                        ["319106151"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 81: New Moon Priest Helmets",
-                                            ["ID"] = 21479,
-                                            ["ItemLink"] = "|H0:item:156616:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598547,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106151",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 500,
-                                        },
-                                        ["319106169"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 81: New Moon Priest Maces",
-                                            ["ID"] = 21493,
-                                            ["ItemLink"] = "|H0:item:156618:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598548,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106169",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 500,
-                                        },
-                                    },
-                                    ["moonbunny529"] = 
-                                    {
-                                        ["319062365"] = 
-                                        {
-                                            ["Name"] = "Imperial Charity Writ",
-                                            ["ID"] = 23050,
-                                            ["ItemLink"] = "|H0:item:167169:5:1:0:0:0:120410:0:0:0:0:0:0:0:0:0:0:0:0:0:10000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["NumVoucher"] = 1,
-                                                ["RequiredItemID"] = 12454,
-                                            },
-                                            ["SaleTime"] = 1737593578,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319062365",
-                                            ["ItemType"] = 60,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 120,
-                                        },
-                                        ["319113489"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 3: Wood Elf Style",
-                                            ["ID"] = 6580,
-                                            ["ItemLink"] = "|H0:item:16428:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737599426,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319113489",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 2,
+                                            ["SaleTime"] = 1737694399,
+                                            ["UID"] = "319827741",
+                                            ["ItemLink"] = "|H0:item:170152:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Staff",
                                             ["TotalPrice"] = 100,
-                                        },
-                                        ["319105781"] = 
-                                        {
-                                            ["Name"] = "Recipe: Colovian Amber Ale",
-                                            ["ID"] = 4668,
-                                            ["ItemLink"] = "|H0:item:57023:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598470,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319105781",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 327,
-                                        },
-                                    },
-                                    ["sanlumiere"] = 
-                                    {
-                                        ["319106257"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 81: New Moon Priest Staves",
-                                            ["ID"] = 21489,
-                                            ["ItemLink"] = "|H0:item:156621:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598555,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106257",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 749,
-                                        },
-                                        ["319108869"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 81: New Moon Priest Staves",
-                                            ["ID"] = 21489,
-                                            ["ItemLink"] = "|H0:item:156621:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598833,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319108869",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 999,
-                                        },
-                                    },
-                                    ["Brutus5150"] = 
-                                    {
-                                        ["318978393"] = 
-                                        {
-                                            ["Name"] = "Formula: Druidic Throne, Y'ffre's Bloom",
-                                            ["ID"] = 26230,
-                                            ["ItemLink"] = "|H0:item:194393:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737582572,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318978393",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
                                             ["QualityID"] = 4,
-                                            ["TotalPrice"] = 35000,
-                                        },
-                                        ["319077471"] = 
-                                        {
-                                            ["Name"] = "Sketch: Daedric Mirror, Nightmarish",
-                                            ["ID"] = 27157,
-                                            ["ItemLink"] = "|H0:item:198059:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737595185,
                                             ["Amount"] = 1,
-                                            ["UID"] = "319077471",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 4,
-                                            ["TotalPrice"] = 40000,
-                                        },
-                                    },
-                                    ["Duskvalour"] = 
-                                    {
-                                        ["319317387"] = 
-                                        {
-                                            ["Name"] = "Steadfast's Mettle Jack",
-                                            ["ID"] = 25172,
-                                            ["ItemLink"] = "|H0:item:186175:363:50:0:0:0:0:0:0:0:0:0:0:0:0:131:0:0:0:10000:0|h|h",
-                                            ["SaleTime"] = 1737629510,
-                                            ["UID"] = "319317387",
-                                            ["QualityID"] = 3,
-                                            ["Category2IDOverWrite"] = 3,
-                                            ["TraitID"] = 9,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["Amount"] = 1,
-                                            ["TotalPrice"] = 1000,
-                                        },
-                                    },
-                                    ["serjos'wit"] = 
-                                    {
-                                        ["318929961"] = 
-                                        {
-                                            ["Name"] = "Ring of Agility",
-                                            ["ID"] = 1269,
-                                            ["ItemLink"] = "|H0:item:69385:5:27:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575518,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929961",
-                                            ["TraitID"] = 18,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 27,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1090,
-                                        },
-                                        ["318929971"] = 
-                                        {
-                                            ["Name"] = "Vampire Lord's Ring",
-                                            ["ID"] = 10690,
-                                            ["ItemLink"] = "|H0:item:100396:363:50:0:0:0:0:0:0:0:0:0:0:0:0:7:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575519,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929971",
-                                            ["TraitID"] = 17,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1153,
-                                        },
-                                    },
-                                    ["ALLnivore87"] = 
-                                    {
-                                        ["319080579"] = 
-                                        {
-                                            ["Name"] = "Copper Ounce",
-                                            ["ID"] = 17788,
-                                            ["ItemLink"] = "|H0:item:135140:30:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737595543,
-                                            ["Amount"] = 200,
-                                            ["UID"] = "319080579",
-                                            ["ItemType"] = 64,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 0,
-                                            ["TotalPrice"] = 2000,
-                                        },
-                                        ["318960911"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 54: Bloodforge Shields",
-                                            ["ID"] = 17011,
-                                            ["ItemLink"] = "|H0:item:132544:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737580419,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318960911",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 23000,
-                                        },
-                                        ["319080585"] = 
-                                        {
-                                            ["Name"] = "Copper Ounce",
-                                            ["ID"] = 17788,
-                                            ["ItemLink"] = "|H0:item:135140:30:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737595544,
-                                            ["Amount"] = 200,
-                                            ["UID"] = "319080585",
-                                            ["ItemType"] = 64,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 0,
-                                            ["TotalPrice"] = 2000,
-                                        },
-                                    },
-                                    ["RESPAWNBETA"] = 
-                                    {
-                                        ["319105209"] = 
-                                        {
-                                            ["Name"] = "Recipe: Rimmen Raisin Cookies",
-                                            ["ID"] = 3586,
-                                            ["ItemLink"] = "|H0:item:56946:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598364,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319105209",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 100,
-                                        },
-                                    },
-                                    ["naotaro1"] = 
-                                    {
-                                        ["318960239"] = 
-                                        {
-                                            ["Name"] = "Cloudy Damage Health Poison III",
-                                            ["ID"] = 8211,
-                                            ["ItemLink"] = "|H0:item:81194:2:29:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737580334,
-                                            ["Amount"] = 20,
-                                            ["TotalPrice"] = 180,
-                                            ["UID"] = "318960239",
-                                            ["ItemType"] = 30,
-                                            ["Level"] = 29,
-                                            ["QualityID"] = 0,
-                                            ["PotionEffects"] = 
-                                            {
-                                            },
-                                        },
-                                        ["318960135"] = 
-                                        {
-                                            ["Name"] = "Cloudy Gradual Ravage Health Poison III",
-                                            ["ID"] = 8164,
-                                            ["ItemLink"] = "|H0:item:81195:2:29:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737580321,
-                                            ["Amount"] = 24,
-                                            ["TotalPrice"] = 216,
-                                            ["UID"] = "318960135",
-                                            ["ItemType"] = 30,
-                                            ["Level"] = 29,
-                                            ["QualityID"] = 0,
-                                            ["PotionEffects"] = 
-                                            {
-                                            },
-                                        },
-                                        ["319108689"] = 
-                                        {
-                                            ["Name"] = "Big-Eared Ginger Kitten's Tag",
-                                            ["ID"] = 18568,
-                                            ["ItemLink"] = "|H0:item:139451:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598806,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319108689",
-                                            ["ItemType"] = 5,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 39,
-                                        },
-                                    },
-                                    ["Kara_Dee"] = 
-                                    {
-                                        ["319106455"] = 
-                                        {
-                                            ["Name"] = "Diagram: Bowl, Serving",
-                                            ["ID"] = 13224,
-                                            ["ItemLink"] = "|H0:item:119387:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598579,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106455",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 50,
-                                        },
-                                        ["318929787"] = 
-                                        {
-                                            ["Name"] = "Sword-Singer's Ring",
-                                            ["ID"] = 10336,
-                                            ["ItemLink"] = "|H0:item:99283:363:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575495,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929787",
-                                            ["TraitID"] = 19,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1000,
-                                        },
-                                        ["319113519"] = 
-                                        {
-                                            ["Name"] = "Crafting Motif 13: Primal Style",
-                                            ["ID"] = 6431,
-                                            ["ItemLink"] = "|H0:item:51345:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737599434,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319113519",
-                                            ["ItemType"] = 8,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 200,
-                                        },
-                                        ["318929789"] = 
-                                        {
-                                            ["Name"] = "Sword-Singer's Ring",
-                                            ["ID"] = 10336,
-                                            ["ItemLink"] = "|H0:item:99283:363:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575495,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929789",
-                                            ["TraitID"] = 19,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1000,
-                                        },
-                                        ["318929929"] = 
-                                        {
-                                            ["Name"] = "Ring of the Order of Diagna",
-                                            ["ID"] = 10335,
-                                            ["ItemLink"] = "|H0:item:99465:363:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575512,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929929",
-                                            ["TraitID"] = 18,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1500,
-                                        },
-                                        ["318929935"] = 
-                                        {
-                                            ["Name"] = "Spriggan's Ring",
-                                            ["ID"] = 10685,
-                                            ["ItemLink"] = "|H0:item:100587:363:50:0:0:0:0:0:0:0:0:0:0:0:0:8:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575514,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929935",
-                                            ["TraitID"] = 19,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1200,
-                                        },
-                                        ["318929737"] = 
-                                        {
-                                            ["Name"] = "Sword-Singer's Necklace",
-                                            ["ID"] = 10886,
-                                            ["ItemLink"] = "|H0:item:99284:363:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575481,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929737",
-                                            ["TraitID"] = 19,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 500,
-                                        },
-                                    },
-                                    ["Honoria_leBlanc"] = 
-                                    {
-                                        ["319223517"] = 
-                                        {
-                                            ["Name"] = "Common Pack, Backpack",
-                                            ["ID"] = 12425,
-                                            ["ItemLink"] = "|H0:item:118019:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737611564,
-                                            ["Amount"] = 2,
-                                            ["UID"] = "319223517",
-                                            ["ItemType"] = 61,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 2998,
-                                        },
-                                        ["318766383"] = 
-                                        {
-                                            ["Name"] = "Breton Carpet, Square",
-                                            ["ID"] = 12177,
-                                            ["ItemLink"] = "|H0:item:115171:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737553660,
-                                            ["Amount"] = 2,
-                                            ["UID"] = "318766383",
-                                            ["ItemType"] = 61,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 2998,
-                                        },
-                                    },
-                                    ["Rocket_Jumper"] = 
-                                    {
-                                        ["318866485"] = 
-                                        {
-                                            ["Name"] = "Sabatons of Elf Bane",
-                                            ["ID"] = 1341,
-                                            ["ItemLink"] = "|H0:item:89861:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:10000:0|h|h",
-                                            ["SaleTime"] = 1737566204,
-                                            ["UID"] = "318866485",
-                                            ["QualityID"] = 3,
-                                            ["Category2IDOverWrite"] = 4,
-                                            ["TraitID"] = 11,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["Amount"] = 1,
-                                            ["TotalPrice"] = 2000,
-                                        },
-                                        ["318891583"] = 
-                                        {
-                                            ["Name"] = "Helm of Elf Bane",
-                                            ["ID"] = 6042,
-                                            ["ItemLink"] = "|H0:item:89903:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:10000:0|h|h",
-                                            ["SaleTime"] = 1737570177,
-                                            ["UID"] = "318891583",
-                                            ["QualityID"] = 3,
-                                            ["Category2IDOverWrite"] = 4,
-                                            ["TraitID"] = 9,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["Amount"] = 1,
-                                            ["TotalPrice"] = 5000,
-                                        },
-                                        ["318866563"] = 
-                                        {
-                                            ["Name"] = "Girdle of Elf Bane",
-                                            ["ID"] = 799,
-                                            ["ItemLink"] = "|H0:item:89826:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:10000:0|h|h",
-                                            ["SaleTime"] = 1737566215,
-                                            ["UID"] = "318866563",
-                                            ["QualityID"] = 3,
-                                            ["Category2IDOverWrite"] = 4,
-                                            ["TraitID"] = 3,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["Amount"] = 1,
-                                            ["TotalPrice"] = 5000,
-                                        },
-                                        ["319133487"] = 
-                                        {
-                                            ["Name"] = "Cuirass of Elf Bane",
-                                            ["ID"] = 2512,
-                                            ["ItemLink"] = "|H0:item:89860:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:10000:0|h|h",
-                                            ["SaleTime"] = 1737601441,
-                                            ["UID"] = "319133487",
-                                            ["QualityID"] = 3,
-                                            ["Category2IDOverWrite"] = 4,
-                                            ["TraitID"] = 11,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["Amount"] = 1,
-                                            ["TotalPrice"] = 30000,
-                                        },
-                                    },
-                                    ["B1ACK_RAV3N"] = 
-                                    {
-                                        ["318794219"] = 
-                                        {
-                                            ["Name"] = "Mad Tinkerer's Bow",
-                                            ["ID"] = 16865,
-                                            ["ItemLink"] = "|H0:item:132878:362:50:0:0:0:0:0:0:0:0:0:0:0:0:65:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737557495,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318794219",
-                                            ["TraitID"] = 0,
-                                            ["ItemType"] = 1,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 2,
-                                            ["TotalPrice"] = 300,
+                                            ["ID"] = 23055,
                                         },
                                     },
                                     ["Zeekania"] = 
                                     {
-                                        ["319108981"] = 
+                                        ["319609691"] = 
                                         {
-                                            ["Name"] = "Crafting Motif 94: Ancestral Reach Bows",
-                                            ["ID"] = 22938,
-                                            ["ItemLink"] = "|H0:item:167274:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598851,
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737673874,
+                                            ["UID"] = "319609691",
+                                            ["ItemLink"] = "|H0:item:115852:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Pattern: Wood Elf Awning, Leather",
+                                            ["TotalPrice"] = 27,
+                                            ["QualityID"] = 1,
                                             ["Amount"] = 1,
-                                            ["UID"] = "319108981",
+                                            ["ID"] = 12912,
+                                        },
+                                        ["319828129"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694449,
+                                            ["UID"] = "319828129",
+                                            ["ItemLink"] = "|H0:item:153567:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Glenmoril Wyrd Axe",
+                                            ["TotalPrice"] = 200,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21049,
+                                        },
+                                        ["319595039"] = 
+                                        {
                                             ["ItemType"] = 8,
                                             ["Level"] = 1,
-                                            ["QualityID"] = 3,
+                                            ["SaleTime"] = 1737672113,
+                                            ["UID"] = "319595039",
+                                            ["ItemLink"] = "|H0:item:57586:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 15: Dwemer Swords",
                                             ["TotalPrice"] = 1200,
-                                        },
-                                    },
-                                    ["BadKarma-Yokai"] = 
-                                    {
-                                        ["319106701"] = 
-                                        {
-                                            ["Name"] = "Blueprint: High Elf Table, Sturdy Formal",
-                                            ["ID"] = 12880,
-                                            ["ItemLink"] = "|H0:item:118993:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598612,
+                                            ["QualityID"] = 3,
                                             ["Amount"] = 1,
-                                            ["UID"] = "319106701",
-                                            ["ItemType"] = 29,
+                                            ["ID"] = 6417,
+                                        },
+                                        ["319827891"] = 
+                                        {
+                                            ["ItemType"] = 34,
                                             ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 75,
-                                        },
-                                        ["319106759"] = 
-                                        {
-                                            ["Name"] = "Blueprint: High Elf Desk, Sturdy",
-                                            ["ID"] = 12792,
-                                            ["ItemLink"] = "|H0:item:118989:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598615,
+                                            ["SaleTime"] = 1737694412,
+                                            ["UID"] = "319827891",
+                                            ["ItemLink"] = "|H0:item:153568:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Glenmoril Wyrd Bow",
+                                            ["TotalPrice"] = 200,
+                                            ["QualityID"] = 4,
                                             ["Amount"] = 1,
-                                            ["UID"] = "319106759",
-                                            ["ItemType"] = 29,
+                                            ["ID"] = 21065,
+                                        },
+                                        ["319641135"] = 
+                                        {
+                                            ["ItemType"] = 8,
                                             ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 75,
-                                        },
-                                        ["319106637"] = 
-                                        {
-                                            ["Name"] = "Blueprint: Necrom Counter, Corner",
-                                            ["ID"] = 26651,
-                                            ["ItemLink"] = "|H0:item:197561:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598606,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319106637",
-                                            ["ItemType"] = 29,
-                                            ["Level"] = 1,
-                                            ["QualityID"] = 1,
-                                            ["TotalPrice"] = 75,
-                                        },
-                                    },
-                                    ["TheSaucySalad"] = 
-                                    {
-                                        ["318903501"] = 
-                                        {
-                                            ["Name"] = "Galerion's Shield",
-                                            ["ID"] = 8609,
-                                            ["ItemLink"] = "|H0:item:78266:362:50:0:0:0:0:0:0:0:0:0:0:0:0:7:0:0:0:10000:0|h|h",
-                                            ["SaleTime"] = 1737572131,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318903501",
-                                            ["TraitID"] = 8,
-                                            ["ItemType"] = 1,
-                                            ["Level"] = 210,
+                                            ["SaleTime"] = 1737677396,
+                                            ["UID"] = "319641135",
+                                            ["ItemLink"] = "|H0:item:16424:4:1:0:0:0:0:0:0:0:0:0:0:0:0:7:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 1: High Elf Style",
+                                            ["TotalPrice"] = 50,
                                             ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6533,
+                                        },
+                                        ["319641131"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737677395,
+                                            ["UID"] = "319641131",
+                                            ["ItemLink"] = "|H0:item:27246:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 9: Argonian Style",
+                                            ["TotalPrice"] = 50,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6612,
+                                        },
+                                    },
+                                    ["draegoth77"] = 
+                                    {
+                                        ["319588901"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737671422,
+                                            ["UID"] = "319588901",
+                                            ["ItemLink"] = "|H0:item:127149:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Morrowind Banner of the 6th House",
+                                            ["TotalPrice"] = 40000,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 16370,
+                                        },
+                                    },
+                                    ["RESPAWNBETA"] = 
+                                    {
+                                        ["319826883"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694270,
+                                            ["UID"] = "319826883",
+                                            ["ItemLink"] = "|H0:item:170158:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Dagger",
+                                            ["TotalPrice"] = 50,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23035,
+                                        },
+                                        ["319388523"] = 
+                                        {
+                                            ["ItemType"] = 5,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737644438,
+                                            ["UID"] = "319388523",
+                                            ["ItemLink"] = "|H0:item:124663:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Dwarven Theodolite Neck",
+                                            ["TotalPrice"] = 500,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 18619,
+                                        },
+                                        ["319365099"] = 
+                                        {
+                                            ["Name"] = "Companion's Shoes",
+                                            ["Level"] = 1,
+                                            ["Category2IDOverWrite"] = 2,
+                                            ["UID"] = "319365099",
+                                            ["ItemLink"] = "|H0:item:175811:429:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["SaleTime"] = 1737639901,
+                                            ["ItemType"] = 2,
+                                            ["Amount"] = 1,
+                                            ["TotalPrice"] = 100,
+                                            ["ID"] = 23520,
+                                            ["QualityID"] = 1,
+                                            ["TraitID"] = 31,
+                                        },
+                                        ["319826907"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694272,
+                                            ["UID"] = "319826907",
+                                            ["ItemLink"] = "|H0:item:170155:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Greatsword",
+                                            ["TotalPrice"] = 50,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23048,
+                                        },
+                                        ["319826927"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694273,
+                                            ["UID"] = "319826927",
+                                            ["ItemLink"] = "|H0:item:170154:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Maul",
+                                            ["TotalPrice"] = 50,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23053,
+                                        },
+                                        ["319641145"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737677398,
+                                            ["UID"] = "319641145",
+                                            ["ItemLink"] = "|H0:item:27244:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 4: Nord Style",
+                                            ["TotalPrice"] = 50,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6525,
+                                        },
+                                        ["319594521"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737672092,
+                                            ["UID"] = "319594521",
+                                            ["ItemLink"] = "|H0:item:51565:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 12: Barbaric Style",
+                                            ["TotalPrice"] = 200,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6359,
+                                        },
+                                    },
+                                    ["rymack7887"] = 
+                                    {
+                                        ["319941725"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737711073,
+                                            ["UID"] = "319941725",
+                                            ["ItemLink"] = "|H0:item:170215:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Doctrine Ordinator Girdle",
+                                            ["TotalPrice"] = 9500,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23234,
+                                        },
+                                    },
+                                    ["TripCyclone"] = 
+                                    {
+                                        ["319827015"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694280,
+                                            ["UID"] = "319827015",
+                                            ["ItemLink"] = "|H0:item:170151:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Shield",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23056,
+                                        },
+                                        ["319827023"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694282,
+                                            ["UID"] = "319827023",
+                                            ["ItemLink"] = "|H0:item:170157:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Sword",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23054,
+                                        },
+                                    },
+                                    ["MamaDee69"] = 
+                                    {
+                                        ["319672349"] = 
+                                        {
+                                            ["ItemType"] = 58,
+                                            ["Level"] = 200,
+                                            ["SaleTime"] = 1737680381,
+                                            ["UID"] = "319672349",
+                                            ["ItemLink"] = "|H0:item:75365:308:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Alkahest",
                                             ["TotalPrice"] = 10000,
+                                            ["QualityID"] = 0,
+                                            ["Amount"] = 162,
+                                            ["ID"] = 7967,
+                                        },
+                                    },
+                                    ["Mishal96"] = 
+                                    {
+                                        ["319850495"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737697143,
+                                            ["UID"] = "319850495",
+                                            ["ItemLink"] = "|H0:item:204812:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crystaljack Cocoon, Dormant",
+                                            ["TotalPrice"] = 700,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 28121,
+                                        },
+                                        ["319804307"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737691815,
+                                            ["UID"] = "319804307",
+                                            ["ItemLink"] = "|H0:item:118037:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Common Candles, Pair",
+                                            ["TotalPrice"] = 400,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 19537,
+                                        },
+                                        ["319804363"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737691818,
+                                            ["UID"] = "319804363",
+                                            ["ItemLink"] = "|H0:item:118114:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Candle, Group",
+                                            ["TotalPrice"] = 700,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 19468,
+                                        },
+                                    },
+                                    ["hynch"] = 
+                                    {
+                                        ["319828825"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694532,
+                                            ["UID"] = "319828825",
+                                            ["ItemLink"] = "|H0:item:199086:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Morningstar Frostwear Gloves",
+                                            ["TotalPrice"] = 400,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27676,
+                                        },
+                                        ["319828703"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694518,
+                                            ["UID"] = "319828703",
+                                            ["ItemLink"] = "|H0:item:199085:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Morningstar Frostwear Shoes",
+                                            ["TotalPrice"] = 250,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27665,
+                                        },
+                                        ["319828167"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694459,
+                                            ["UID"] = "319828167",
+                                            ["ItemLink"] = "|H0:item:198344:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Crowborne Hunter Shoes",
+                                            ["TotalPrice"] = 250,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27380,
+                                        },
+                                    },
+                                    ["Irreverend"] = 
+                                    {
+                                        ["319829087"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694555,
+                                            ["UID"] = "319829087",
+                                            ["ItemLink"] = "|H0:item:192584:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Evergreen Jack",
+                                            ["TotalPrice"] = 1100,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 26121,
+                                        },
+                                    },
+                                    ["Honoria_leBlanc"] = 
+                                    {
+                                        ["319850727"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737697188,
+                                            ["UID"] = "319850727",
+                                            ["ItemLink"] = "|H0:item:126364:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Dres Tapestry, Vines",
+                                            ["TotalPrice"] = 3998,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 2,
+                                            ["ID"] = 17451,
+                                        },
+                                        ["319850703"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737697179,
+                                            ["UID"] = "319850703",
+                                            ["ItemLink"] = "|H0:item:118020:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Common Pack, Satchel",
+                                            ["TotalPrice"] = 2998,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 2,
+                                            ["ID"] = 14198,
+                                        },
+                                    },
+                                    ["Zorin285"] = 
+                                    {
+                                        ["319410485"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737647553,
+                                            ["UID"] = "319410485",
+                                            ["ItemLink"] = "|H0:item:167021:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Legion Zero Vigiles Guards",
+                                            ["TotalPrice"] = 50000,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 22580,
+                                        },
+                                    },
+                                    ["Littlexboo99"] = 
+                                    {
+                                        ["319850991"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737697262,
+                                            ["UID"] = "319850991",
+                                            ["ItemLink"] = "|H0:item:187839:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "High Isle Bookcase, Carved Filled",
+                                            ["TotalPrice"] = 16248,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 25477,
+                                        },
+                                        ["319850995"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737697263,
+                                            ["UID"] = "319850995",
+                                            ["ItemLink"] = "|H0:item:187839:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "High Isle Bookcase, Carved Filled",
+                                            ["TotalPrice"] = 16248,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 25477,
+                                        },
+                                    },
+                                    ["harperelder"] = 
+                                    {
+                                        ["319380979"] = 
+                                        {
+                                            ["ItemType"] = 58,
+                                            ["Level"] = 40,
+                                            ["SaleTime"] = 1737643280,
+                                            ["UID"] = "319380979",
+                                            ["ItemLink"] = "|H0:item:75361:30:40:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Terebinthine",
+                                            ["TotalPrice"] = 300,
+                                            ["QualityID"] = 0,
+                                            ["Amount"] = 50,
+                                            ["ID"] = 8067,
+                                        },
+                                        ["319672321"] = 
+                                        {
+                                            ["ItemType"] = 31,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737680379,
+                                            ["UID"] = "319672321",
+                                            ["ItemLink"] = "|H0:item:30148:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Blue Entoloma",
+                                            ["TotalPrice"] = 2000,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 50,
+                                            ["ID"] = 6009,
+                                        },
+                                        ["319380991"] = 
+                                        {
+                                            ["ItemType"] = 31,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737643280,
+                                            ["UID"] = "319380991",
+                                            ["ItemLink"] = "|H0:item:77584:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Spider Egg",
+                                            ["TotalPrice"] = 90,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 15,
+                                            ["ID"] = 7920,
+                                        },
+                                        ["319381021"] = 
+                                        {
+                                            ["ItemType"] = 33,
+                                            ["Level"] = 20,
+                                            ["SaleTime"] = 1737643283,
+                                            ["UID"] = "319381021",
+                                            ["ItemLink"] = "|H0:item:4570:30:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Pristine Water",
+                                            ["TotalPrice"] = 45,
+                                            ["QualityID"] = 0,
+                                            ["Amount"] = 15,
+                                            ["ID"] = 4358,
+                                        },
+                                        ["319381007"] = 
+                                        {
+                                            ["ItemType"] = 31,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737643282,
+                                            ["UID"] = "319381007",
+                                            ["ItemLink"] = "|H0:item:77589:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Scrib Jelly",
+                                            ["TotalPrice"] = 90,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 15,
+                                            ["ID"] = 8182,
+                                        },
+                                        ["319661863"] = 
+                                        {
+                                            ["ItemType"] = 10,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737679411,
+                                            ["UID"] = "319661863",
+                                            ["ItemLink"] = "|H0:item:33753:25:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Fish",
+                                            ["TotalPrice"] = 500,
+                                            ["QualityID"] = 0,
+                                            ["Amount"] = 50,
+                                            ["ID"] = 4878,
+                                        },
+                                        ["319381055"] = 
+                                        {
+                                            ["ItemType"] = 31,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737643285,
+                                            ["UID"] = "319381055",
+                                            ["ItemLink"] = "|H0:item:30157:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Blessed Thistle",
+                                            ["TotalPrice"] = 90,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 15,
+                                            ["ID"] = 3855,
+                                        },
+                                        ["319380997"] = 
+                                        {
+                                            ["ItemType"] = 58,
+                                            ["Level"] = 20,
+                                            ["SaleTime"] = 1737643281,
+                                            ["UID"] = "319380997",
+                                            ["ItemLink"] = "|H0:item:75359:30:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Slime",
+                                            ["TotalPrice"] = 150,
+                                            ["QualityID"] = 0,
+                                            ["Amount"] = 50,
+                                            ["ID"] = 8000,
+                                        },
+                                        ["319593213"] = 
+                                        {
+                                            ["ItemType"] = 10,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737671930,
+                                            ["UID"] = "319593213",
+                                            ["ItemLink"] = "|H0:item:28603:25:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Tomato",
+                                            ["TotalPrice"] = 900,
+                                            ["QualityID"] = 0,
+                                            ["Amount"] = 100,
+                                            ["ID"] = 995,
+                                        },
+                                        ["319381035"] = 
+                                        {
+                                            ["ItemType"] = 31,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737643283,
+                                            ["UID"] = "319381035",
+                                            ["ItemLink"] = "|H0:item:77590:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Nightshade",
+                                            ["TotalPrice"] = 90,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 15,
+                                            ["ID"] = 8272,
+                                        },
+                                        ["319381045"] = 
+                                        {
+                                            ["ItemType"] = 31,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737643284,
+                                            ["UID"] = "319381045",
+                                            ["ItemLink"] = "|H0:item:30156:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Imp Stool",
+                                            ["TotalPrice"] = 90,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 15,
+                                            ["ID"] = 3064,
+                                        },
+                                    },
+                                    ["AdamJabs"] = 
+                                    {
+                                        ["319410679"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737647605,
+                                            ["UID"] = "319410679",
+                                            ["ItemLink"] = "|H0:item:211098:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Opal Earthgore Staff",
+                                            ["TotalPrice"] = 1500,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 28782,
+                                        },
+                                    },
+                                    ["DzenMugen"] = 
+                                    {
+                                        ["319829093"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694557,
+                                            ["UID"] = "319829093",
+                                            ["ItemLink"] = "|H0:item:153572:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Glenmoril Wyrd Staff",
+                                            ["TotalPrice"] = 1500,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21082,
+                                        },
+                                    },
+                                    ["Furemer"] = 
+                                    {
+                                        ["319827307"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694356,
+                                            ["UID"] = "319827307",
+                                            ["ItemLink"] = "|H0:item:170150:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Bow",
+                                            ["TotalPrice"] = 102,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23033,
+                                        },
+                                        ["319827297"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694350,
+                                            ["UID"] = "319827297",
+                                            ["ItemLink"] = "|H0:item:199081:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Morningstar Frostwear Jerkin",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27667,
+                                        },
+                                    },
+                                    ["Arkham_Sax"] = 
+                                    {
+                                        ["319927973"] = 
+                                        {
+                                            ["ItemType"] = 1,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737708250,
+                                            ["UID"] = "319927973",
+                                            ["ItemLink"] = "|H0:item:177185:430:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Amount"] = 1,
+                                            ["Name"] = "Companion's Shield",
+                                            ["TotalPrice"] = 650,
+                                            ["QualityID"] = 2,
+                                            ["ID"] = 23435,
+                                            ["TraitID"] = 34,
+                                        },
+                                    },
+                                    ["valyrianscroll"] = 
+                                    {
+                                        ["319829021"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694544,
+                                            ["UID"] = "319829021",
+                                            ["ItemLink"] = "|H0:item:199083:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Morningstar Frostwear Breeches",
+                                            ["TotalPrice"] = 550,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27658,
+                                        },
+                                    },
+                                    ["Kara_Dee"] = 
+                                    {
+                                        ["319380971"] = 
+                                        {
+                                            ["ItemType"] = 2,
+                                            ["Level"] = 210,
+                                            ["SaleTime"] = 1737643277,
+                                            ["UID"] = "319380971",
+                                            ["ItemLink"] = "|H0:item:99284:363:50:0:0:0:0:0:0:0:0:0:0:0:0:2:0:0:0:0:0|h|h",
+                                            ["Amount"] = 1,
+                                            ["Name"] = "Sword-Singer's Necklace",
+                                            ["TotalPrice"] = 500,
+                                            ["QualityID"] = 3,
+                                            ["ID"] = 10886,
+                                            ["TraitID"] = 19,
+                                        },
+                                    },
+                                    ["hcp316969"] = 
+                                    {
+                                        ["319643771"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737677683,
+                                            ["UID"] = "319643771",
+                                            ["ItemLink"] = "|H0:item:140446:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 63: Dremora Belts",
+                                            ["TotalPrice"] = 150,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 6,
+                                            ["ID"] = 18722,
+                                        },
+                                        ["319643777"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737677684,
+                                            ["UID"] = "319643777",
+                                            ["ItemLink"] = "|H0:item:140451:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 63: Dremora Gloves",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 4,
+                                            ["ID"] = 18760,
+                                        },
+                                    },
+                                    ["CourtneyAllyn"] = 
+                                    {
+                                        ["319828859"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694534,
+                                            ["UID"] = "319828859",
+                                            ["ItemLink"] = "|H0:item:199087:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Morningstar Frostwear Sash",
+                                            ["TotalPrice"] = 500,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27669,
+                                        },
+                                    },
+                                    ["Jaldemar"] = 
+                                    {
+                                        ["319556779"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737667468,
+                                            ["UID"] = "319556779",
+                                            ["ItemLink"] = "|H0:item:125566:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Hlaalu Shed, Enclosed",
+                                            ["TotalPrice"] = 40000,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 15977,
+                                        },
+                                        ["319557179"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737667503,
+                                            ["UID"] = "319557179",
+                                            ["ItemLink"] = "|H0:item:171827:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Brazier, Dragon-Headed Cold-Flame",
+                                            ["TotalPrice"] = 20000,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 2,
+                                            ["ID"] = 26761,
+                                        },
+                                        ["319851041"] = 
+                                        {
+                                            ["ItemType"] = 61,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737697285,
+                                            ["UID"] = "319851041",
+                                            ["ItemLink"] = "|H0:item:208116:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Colovian Chandelier, Grapes",
+                                            ["TotalPrice"] = 23000,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 28665,
+                                        },
+                                    },
+                                    ["Zurcosis"] = 
+                                    {
+                                        ["319594265"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737672049,
+                                            ["UID"] = "319594265",
+                                            ["ItemLink"] = "|H0:item:51688:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 14: Daedric Style",
+                                            ["TotalPrice"] = 5000,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6362,
+                                        },
+                                    },
+                                    ["Krazywelder"] = 
+                                    {
+                                        ["319828203"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694468,
+                                            ["UID"] = "319828203",
+                                            ["ItemLink"] = "|H0:item:203233:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Earthbone Ayleid Breeches",
+                                            ["TotalPrice"] = 300,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27751,
+                                        },
+                                        ["319828213"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694471,
+                                            ["UID"] = "319828213",
+                                            ["ItemLink"] = "|H0:item:198344:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Crowborne Hunter Shoes",
+                                            ["TotalPrice"] = 300,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27380,
+                                        },
+                                        ["319828195"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694467,
+                                            ["UID"] = "319828195",
+                                            ["ItemLink"] = "|H0:item:203235:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Earthbone Ayleid Shoes",
+                                            ["TotalPrice"] = 300,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27895,
+                                        },
+                                        ["319828315"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694477,
+                                            ["UID"] = "319828315",
+                                            ["ItemLink"] = "|H0:item:203233:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Earthbone Ayleid Breeches",
+                                            ["TotalPrice"] = 300,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27751,
+                                        },
+                                        ["319828261"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694475,
+                                            ["UID"] = "319828261",
+                                            ["ItemLink"] = "|H0:item:199082:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Morningstar Frostwear Hat",
+                                            ["TotalPrice"] = 300,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27675,
+                                        },
+                                        ["319828207"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694469,
+                                            ["UID"] = "319828207",
+                                            ["ItemLink"] = "|H0:item:153779:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Glenmoril Wyrd Epaulets",
+                                            ["TotalPrice"] = 300,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21088,
+                                        },
+                                    },
+                                    ["Gettorix"] = 
+                                    {
+                                        ["319828795"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694528,
+                                            ["UID"] = "319828795",
+                                            ["ItemLink"] = "|H0:item:203231:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Earthbone Ayleid Jerkin",
+                                            ["TotalPrice"] = 375,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27881,
+                                        },
+                                    },
+                                    ["BanJokeWarfare"] = 
+                                    {
+                                        ["319827485"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694369,
+                                            ["UID"] = "319827485",
+                                            ["ItemLink"] = "|H0:item:183881:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Saberkeel Gauntlets",
+                                            ["TotalPrice"] = 196,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 25026,
+                                        },
+                                    },
+                                    ["MegMegs"] = 
+                                    {
+                                        ["319672375"] = 
+                                        {
+                                            ["ItemType"] = 31,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737680384,
+                                            ["UID"] = "319672375",
+                                            ["ItemLink"] = "|H0:item:77584:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Spider Egg",
+                                            ["TotalPrice"] = 300,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 3,
+                                            ["ID"] = 7920,
+                                        },
+                                        ["319672361"] = 
+                                        {
+                                            ["ItemType"] = 31,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737680383,
+                                            ["UID"] = "319672361",
+                                            ["ItemLink"] = "|H0:item:77587:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Fleshfly Larva",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 8152,
+                                        },
+                                    },
+                                    ["inanook"] = 
+                                    {
+                                        ["319643839"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737677692,
+                                            ["UID"] = "319643839",
+                                            ["ItemLink"] = "|H0:item:27244:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 4: Nord Style",
+                                            ["TotalPrice"] = 59,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6525,
+                                        },
+                                    },
+                                    ["WitchyWolf"] = 
+                                    {
+                                        ["319439265"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737651055,
+                                            ["UID"] = "319439265",
+                                            ["ItemLink"] = "|H0:item:160603:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 89: Ancestral High Elf Maces",
+                                            ["TotalPrice"] = 1369,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 22142,
+                                        },
+                                        ["319611959"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737674078,
+                                            ["UID"] = "319611959",
+                                            ["ItemLink"] = "|H0:item:115933:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Blueprint: Breton Street Post, Plain",
+                                            ["TotalPrice"] = 82,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 12408,
+                                        },
+                                        ["319614793"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737674471,
+                                            ["UID"] = "319614793",
+                                            ["ItemLink"] = "|H0:item:115869:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Pattern: Wood Elf Hammock, Single",
+                                            ["TotalPrice"] = 469,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 14423,
+                                        },
+                                    },
+                                    ["Konavi2"] = 
+                                    {
+                                        ["319828145"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694453,
+                                            ["UID"] = "319828145",
+                                            ["ItemLink"] = "|H0:item:199086:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Morningstar Frostwear Gloves",
+                                            ["TotalPrice"] = 200,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27676,
+                                        },
+                                    },
+                                    ["Gaates"] = 
+                                    {
+                                        ["320021147"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737724514,
+                                            ["UID"] = "320021147",
+                                            ["ItemLink"] = "|H0:item:166941:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Design: Solitude Breakfast, Full",
+                                            ["TotalPrice"] = 15000,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21954,
+                                        },
+                                        ["319828451"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694485,
+                                            ["UID"] = "319828451",
+                                            ["ItemLink"] = "|H0:item:167967:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 96: Arkthzand Armory Gloves",
+                                            ["TotalPrice"] = 8000,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 22668,
+                                        },
+                                        ["319616041"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737674586,
+                                            ["UID"] = "319616041",
+                                            ["ItemLink"] = "|H0:item:182967:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Diagram: Deadlands Tenderizer",
+                                            ["TotalPrice"] = 6000,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 24505,
+                                        },
+                                        ["320020769"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737724486,
+                                            ["UID"] = "320020769",
+                                            ["ItemLink"] = "|H0:item:166787:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Pattern: Solitude Rug, Cowhide",
+                                            ["TotalPrice"] = 12000,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 22167,
+                                        },
+                                        ["319817301"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737693407,
+                                            ["UID"] = "319817301",
+                                            ["ItemLink"] = "|H0:item:147690:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 72: Meridian Helmets",
+                                            ["TotalPrice"] = 15000,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 20533,
+                                        },
+                                        ["319537979"] = 
+                                        {
+                                            ["ItemType"] = 5,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737665161,
+                                            ["UID"] = "319537979",
+                                            ["ItemLink"] = "|H0:item:171479:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Sealed Fabrication Materials",
+                                            ["TotalPrice"] = 18000,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23242,
+                                        },
+                                    },
+                                    ["Vexen"] = 
+                                    {
+                                        ["319828189"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694465,
+                                            ["UID"] = "319828189",
+                                            ["ItemLink"] = "|H0:item:203231:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Earthbone Ayleid Jerkin",
+                                            ["TotalPrice"] = 300,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27881,
+                                        },
+                                        ["320020871"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737724497,
+                                            ["UID"] = "320020871",
+                                            ["ItemLink"] = "|H0:item:166921:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Blueprint: Solitude Backpack, Basket",
+                                            ["TotalPrice"] = 14000,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 22018,
+                                        },
+                                    },
+                                    ["artemisx78"] = 
+                                    {
+                                        ["319609829"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737673895,
+                                            ["UID"] = "319609829",
+                                            ["ItemLink"] = "|H0:item:119354:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Design: Beet String, Display",
+                                            ["TotalPrice"] = 60,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 12477,
+                                        },
+                                        ["319828941"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694539,
+                                            ["UID"] = "319828941",
+                                            ["ItemLink"] = "|H0:item:153572:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Glenmoril Wyrd Staff",
+                                            ["TotalPrice"] = 500,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21082,
+                                        },
+                                    },
+                                    ["moonbunny529"] = 
+                                    {
+                                        ["319828433"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694484,
+                                            ["UID"] = "319828433",
+                                            ["ItemLink"] = "|H0:item:198345:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Crowborne Hunter Gloves",
+                                            ["TotalPrice"] = 350,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27330,
+                                        },
+                                        ["319594575"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737672096,
+                                            ["UID"] = "319594575",
+                                            ["ItemLink"] = "|H0:item:51638:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 11: Ancient Elf Style",
+                                            ["TotalPrice"] = 380,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6503,
+                                        },
+                                        ["319374249"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737641966,
+                                            ["UID"] = "319374249",
+                                            ["ItemLink"] = "|H0:item:160584:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 87: Ancestral Nord Helmets",
+                                            ["TotalPrice"] = 1439,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21752,
                                         },
                                     },
                                     ["Scarath421"] = 
                                     {
-                                        ["319151479"] = 
+                                        ["319827267"] = 
                                         {
-                                            ["Name"] = "Stone Husk Fragment",
-                                            ["ID"] = 21506,
-                                            ["ItemLink"] = "|H0:item:166466:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737603496,
-                                            ["Amount"] = 2,
-                                            ["UID"] = "319151479",
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694341,
+                                            ["UID"] = "319827267",
+                                            ["ItemLink"] = "|H0:item:170152:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Staff",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23055,
+                                        },
+                                        ["319827623"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694389,
+                                            ["UID"] = "319827623",
+                                            ["ItemLink"] = "|H0:item:170149:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Battle Axe",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23045,
+                                        },
+                                        ["319659485"] = 
+                                        {
+                                            ["ItemType"] = 19,
+                                            ["Level"] = 50,
+                                            ["SaleTime"] = 1737679119,
+                                            ["UID"] = "319659485",
+                                            ["ItemLink"] = "|H0:item:33271:31:50:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:0|h|h",
+                                            ["Name"] = "Soul Gem",
+                                            ["TotalPrice"] = 8000,
+                                            ["QualityID"] = 1,
+                                            ["Amount"] = 200,
+                                            ["ID"] = 1068,
+                                        },
+                                    },
+                                    ["Docgunthor"] = 
+                                    {
+                                        ["319381223"] = 
+                                        {
                                             ["ItemType"] = 5,
                                             ["Level"] = 1,
+                                            ["SaleTime"] = 1737643301,
+                                            ["UID"] = "319381223",
+                                            ["ItemLink"] = "|H0:item:141736:123:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Welkynar Binding",
+                                            ["TotalPrice"] = 1000,
                                             ["QualityID"] = 3,
-                                            ["TotalPrice"] = 12999,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 18671,
                                         },
                                     },
-                                    ["LalaLOVEit"] = 
+                                    ["brutalBIRDx"] = 
                                     {
-                                        ["319056893"] = 
+                                        ["319613589"] = 
                                         {
-                                            ["Name"] = "Sealed Enchanting Writ",
-                                            ["ID"] = 12387,
-                                            ["ItemLink"] = "|H0:item:119564:5:1:0:0:0:45869:207:4:0:0:0:0:0:0:0:0:0:0:0:20000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["RequiredQualityID"] = 3,
-                                                ["NumVoucher"] = 2,
-                                                ["RequiredItemID"] = 7,
-                                            },
-                                            ["SaleTime"] = 1737593030,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319056893",
-                                            ["ItemType"] = 60,
+                                            ["ItemType"] = 8,
                                             ["Level"] = 1,
+                                            ["SaleTime"] = 1737674361,
+                                            ["UID"] = "319613589",
+                                            ["ItemLink"] = "|H0:item:71725:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 27: Ebonheart Pact Chests",
+                                            ["TotalPrice"] = 4039,
                                             ["QualityID"] = 3,
-                                            ["TotalPrice"] = 4000,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 7687,
                                         },
-                                        ["319056897"] = 
+                                        ["319746393"] = 
                                         {
-                                            ["Name"] = "Sealed Enchanting Writ",
-                                            ["ID"] = 12387,
-                                            ["ItemLink"] = "|H0:item:119564:5:1:0:0:0:45871:207:4:0:0:0:0:0:0:0:0:0:0:0:20000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["RequiredQualityID"] = 3,
-                                                ["NumVoucher"] = 2,
-                                                ["RequiredItemID"] = 2210,
-                                            },
-                                            ["SaleTime"] = 1737593030,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319056897",
-                                            ["ItemType"] = 60,
+                                            ["ItemType"] = 8,
                                             ["Level"] = 1,
+                                            ["SaleTime"] = 1737686528,
+                                            ["UID"] = "319746393",
+                                            ["ItemLink"] = "|H0:item:71734:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 27: Ebonheart Pact Swords",
+                                            ["TotalPrice"] = 6500,
                                             ["QualityID"] = 3,
-                                            ["TotalPrice"] = 4000,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 7206,
                                         },
                                     },
-                                    ["TheSilentStoic"] = 
+                                    ["Redneckk16"] = 
                                     {
-                                        ["319056873"] = 
+                                        ["319374265"] = 
                                         {
-                                            ["Name"] = "Sealed Enchanting Writ",
-                                            ["ID"] = 12387,
-                                            ["ItemLink"] = "|H0:item:119564:5:1:0:0:0:45868:207:4:0:0:0:0:0:0:0:0:0:0:0:20000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["RequiredQualityID"] = 3,
-                                                ["NumVoucher"] = 2,
-                                                ["RequiredItemID"] = 3492,
-                                            },
-                                            ["SaleTime"] = 1737593028,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319056873",
-                                            ["ItemType"] = 60,
+                                            ["ItemType"] = 8,
                                             ["Level"] = 1,
+                                            ["SaleTime"] = 1737641967,
+                                            ["UID"] = "319374265",
+                                            ["ItemLink"] = "|H0:item:160611:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 88: Ancestral Orc Axes",
+                                            ["TotalPrice"] = 1500,
                                             ["QualityID"] = 3,
-                                            ["TotalPrice"] = 5000,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21669,
                                         },
                                     },
-                                    ["G00PH"] = 
+                                    ["blujoker"] = 
                                     {
-                                        ["318929783"] = 
+                                        ["319827431"] = 
                                         {
-                                            ["Name"] = "Ring of Endurance",
-                                            ["ID"] = 3792,
-                                            ["ItemLink"] = "|H0:item:69169:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575494,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929783",
-                                            ["TraitID"] = 19,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1000,
-                                        },
-                                        ["318929777"] = 
-                                        {
-                                            ["Name"] = "Ring of Endurance",
-                                            ["ID"] = 3792,
-                                            ["ItemLink"] = "|H0:item:69165:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575493,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929777",
-                                            ["TraitID"] = 18,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1000,
-                                        },
-                                        ["318929775"] = 
-                                        {
-                                            ["Name"] = "Necklace of Willpower",
-                                            ["ID"] = 4219,
-                                            ["ItemLink"] = "|H0:item:69280:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575492,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "318929775",
-                                            ["TraitID"] = 19,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1000,
-                                        },
-                                        ["319062069"] = 
-                                        {
-                                            ["Name"] = "Imperial Charity Writ",
-                                            ["ID"] = 23050,
-                                            ["ItemLink"] = "|H0:item:167172:5:1:0:0:0:117963:0:0:0:0:0:0:0:0:0:0:0:0:0:10000|h|h",
-                                            ["MasterWritInfo"] = 
-                                            {
-                                                ["NumVoucher"] = 1,
-                                                ["RequiredItemID"] = 12757,
-                                            },
-                                            ["SaleTime"] = 1737593541,
-                                            ["Amount"] = 1,
-                                            ["UID"] = "319062069",
-                                            ["ItemType"] = 60,
+                                            ["ItemType"] = 34,
                                             ["Level"] = 1,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 20,
-                                        },
-                                        ["318929779"] = 
-                                        {
-                                            ["Name"] = "Ring of Willpower",
-                                            ["ID"] = 5818,
-                                            ["ItemLink"] = "|H0:item:69275:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575493,
+                                            ["SaleTime"] = 1737694364,
+                                            ["UID"] = "319827431",
+                                            ["ItemLink"] = "|H0:item:192590:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Evergreen Belt",
+                                            ["TotalPrice"] = 150,
+                                            ["QualityID"] = 4,
                                             ["Amount"] = 1,
-                                            ["UID"] = "318929779",
-                                            ["TraitID"] = 18,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1000,
+                                            ["ID"] = 26128,
                                         },
-                                        ["318929785"] = 
+                                        ["319828157"] = 
                                         {
-                                            ["Name"] = "Ring of Agility",
-                                            ["ID"] = 1269,
-                                            ["ItemLink"] = "|H0:item:69385:363:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737575494,
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694456,
+                                            ["UID"] = "319828157",
+                                            ["ItemLink"] = "|H0:item:192584:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Evergreen Jack",
+                                            ["TotalPrice"] = 224,
+                                            ["QualityID"] = 4,
                                             ["Amount"] = 1,
-                                            ["UID"] = "318929785",
-                                            ["TraitID"] = 18,
-                                            ["ItemType"] = 2,
-                                            ["Level"] = 210,
-                                            ["QualityID"] = 3,
-                                            ["TotalPrice"] = 1000,
+                                            ["ID"] = 26121,
+                                        },
+                                        ["319828445"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694485,
+                                            ["UID"] = "319828445",
+                                            ["ItemLink"] = "|H0:item:199082:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Morningstar Frostwear Hat",
+                                            ["TotalPrice"] = 370,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27675,
+                                        },
+                                        ["319827003"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694279,
+                                            ["UID"] = "319827003",
+                                            ["ItemLink"] = "|H0:item:170157:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Sword",
+                                            ["TotalPrice"] = 78,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23054,
+                                        },
+                                        ["319827333"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694358,
+                                            ["UID"] = "319827333",
+                                            ["ItemLink"] = "|H0:item:192586:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Evergreen Guards",
+                                            ["TotalPrice"] = 105,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 26123,
+                                        },
+                                        ["319827419"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694363,
+                                            ["UID"] = "319827419",
+                                            ["ItemLink"] = "|H0:item:153781:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Glenmoril Wyrd Shoes",
+                                            ["TotalPrice"] = 144,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21091,
+                                        },
+                                        ["319827447"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694365,
+                                            ["UID"] = "319827447",
+                                            ["ItemLink"] = "|H0:item:192585:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Evergreen Helmet",
+                                            ["TotalPrice"] = 150,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 26126,
+                                        },
+                                        ["319828163"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694458,
+                                            ["UID"] = "319828163",
+                                            ["ItemLink"] = "|H0:item:192584:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Evergreen Jack",
+                                            ["TotalPrice"] = 224,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 26121,
+                                        },
+                                        ["319827965"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694420,
+                                            ["UID"] = "319827965",
+                                            ["ItemLink"] = "|H0:item:199084:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Morningstar Frostwear Epaulets",
+                                            ["TotalPrice"] = 213,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27668,
+                                        },
+                                        ["319827011"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694280,
+                                            ["UID"] = "319827011",
+                                            ["ItemLink"] = "|H0:item:153782:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Glenmoril Wyrd Gloves",
+                                            ["TotalPrice"] = 80,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21053,
+                                        },
+                                        ["319828485"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694488,
+                                            ["UID"] = "319828485",
+                                            ["ItemLink"] = "|H0:item:192588:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Evergreen Boots",
+                                            ["TotalPrice"] = 388,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 26122,
                                         },
                                     },
-                                    ["princessgryo"] = 
+                                    ["UglassBinch"] = 
                                     {
-                                        ["319105557"] = 
+                                        ["319826943"] = 
                                         {
-                                            ["Name"] = "Recipe: Taneth Coffee",
-                                            ["ID"] = 4525,
-                                            ["ItemLink"] = "|H0:item:46026:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                            ["SaleTime"] = 1737598409,
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694274,
+                                            ["UID"] = "319826943",
+                                            ["ItemLink"] = "|H0:item:153783:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Glenmoril Wyrd Robe",
+                                            ["TotalPrice"] = 50,
+                                            ["QualityID"] = 4,
                                             ["Amount"] = 1,
-                                            ["UID"] = "319105557",
+                                            ["ID"] = 21072,
+                                        },
+                                        ["319826969"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694276,
+                                            ["UID"] = "319826969",
+                                            ["ItemLink"] = "|H0:item:170156:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Mace",
+                                            ["TotalPrice"] = 50,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23042,
+                                        },
+                                    },
+                                    ["serjos'wit"] = 
+                                    {
+                                        ["319661853"] = 
+                                        {
+                                            ["ItemType"] = 10,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737679409,
+                                            ["UID"] = "319661853",
+                                            ["ItemLink"] = "|H0:item:33753:25:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Fish",
+                                            ["TotalPrice"] = 1266,
+                                            ["QualityID"] = 0,
+                                            ["Amount"] = 122,
+                                            ["ID"] = 4878,
+                                        },
+                                        ["319661829"] = 
+                                        {
+                                            ["ItemType"] = 10,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737679405,
+                                            ["UID"] = "319661829",
+                                            ["ItemLink"] = "|H0:item:33753:25:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Fish",
+                                            ["TotalPrice"] = 2200,
+                                            ["QualityID"] = 0,
+                                            ["Amount"] = 200,
+                                            ["ID"] = 4878,
+                                        },
+                                    },
+                                    ["JamieKay18"] = 
+                                    {
+                                        ["320011281"] = 
+                                        {
+                                            ["ItemType"] = 2,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737723251,
+                                            ["UID"] = "320011281",
+                                            ["ItemLink"] = "|H0:item:139660:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Amount"] = 1,
+                                            ["Name"] = "Exemplary Infused Necklace",
+                                            ["TotalPrice"] = 500,
+                                            ["QualityID"] = 3,
+                                            ["ID"] = 17687,
+                                            ["TraitID"] = 3,
+                                        },
+                                    },
+                                    ["ReticentKill"] = 
+                                    {
+                                        ["319613529"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737674343,
+                                            ["UID"] = "319613529",
+                                            ["ItemLink"] = "|H0:item:71721:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 27: Ebonheart Pact Axes",
+                                            ["TotalPrice"] = 3500,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 7459,
+                                        },
+                                        ["319815411"] = 
+                                        {
+                                            ["ItemType"] = 63,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737693194,
+                                            ["UID"] = "319815411",
+                                            ["ItemLink"] = "|H0:item:135145:30:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Platinum Dust",
+                                            ["TotalPrice"] = 25000,
+                                            ["QualityID"] = 0,
+                                            ["Amount"] = 200,
+                                            ["ID"] = 18023,
+                                        },
+                                    },
+                                    ["Nepheridus"] = 
+                                    {
+                                        ["319557593"] = 
+                                        {
+                                            ["ItemType"] = 5,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737667545,
+                                            ["UID"] = "319557593",
+                                            ["ItemLink"] = "|H0:item:198099:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Telvanni Peninsula Treasure Map III",
+                                            ["TotalPrice"] = 15000,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 26458,
+                                        },
+                                    },
+                                    ["Tiana_S"] = 
+                                    {
+                                        ["319827953"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694418,
+                                            ["UID"] = "319827953",
+                                            ["ItemLink"] = "|H0:item:192589:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Evergreen Bracers",
+                                            ["TotalPrice"] = 200,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 26120,
+                                        },
+                                        ["319927929"] = 
+                                        {
+                                            ["ItemType"] = 1,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737708227,
+                                            ["UID"] = "319927929",
+                                            ["ItemLink"] = "|H0:item:177182:430:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Amount"] = 1,
+                                            ["Name"] = "Companion's Mace",
+                                            ["TotalPrice"] = 400,
+                                            ["QualityID"] = 2,
+                                            ["ID"] = 23712,
+                                            ["TraitID"] = 34,
+                                        },
+                                    },
+                                    ["Arehtia"] = 
+                                    {
+                                        ["319439257"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737651053,
+                                            ["UID"] = "319439257",
+                                            ["ItemLink"] = "|H0:item:160599:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 89: Ancestral High Elf Daggers",
+                                            ["TotalPrice"] = 1500,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21821,
+                                        },
+                                    },
+                                    ["Frostee_Rucker"] = 
+                                    {
+                                        ["319512645"] = 
+                                        {
                                             ["ItemType"] = 29,
                                             ["Level"] = 1,
+                                            ["SaleTime"] = 1737661335,
+                                            ["UID"] = "319512645",
+                                            ["ItemLink"] = "|H0:item:203334:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Pattern: Apocrypha Archway, Book Stacks",
+                                            ["TotalPrice"] = 12000,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27710,
+                                        },
+                                    },
+                                    ["molyforest"] = 
+                                    {
+                                        ["319804745"] = 
+                                        {
+                                            ["ItemType"] = 60,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737691843,
+                                            ["MasterWritInfo"] = 
+                                            {
+                                                ["RequiredItemID"] = 17518,
+                                                ["RequiredSetID"] = 74,
+                                                ["NumVoucher"] = 110,
+                                                ["RequiredQualityID"] = 4,
+                                                ["RequiredTraitID"] = 23,
+                                            },
+                                            ["UID"] = "319804745",
+                                            ["ItemLink"] = "|H0:item:153738:6:1:0:0:0:24:255:5:74:32:0:0:0:0:0:0:0:0:0:1100000|h|h",
+                                            ["Name"] = "Sealed Jewelry Crafter Writ",
+                                            ["TotalPrice"] = 1000,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 18179,
+                                        },
+                                        ["319805347"] = 
+                                        {
+                                            ["ItemType"] = 60,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737691882,
+                                            ["MasterWritInfo"] = 
+                                            {
+                                                ["RequiredItemID"] = 17518,
+                                                ["RequiredSetID"] = 641,
+                                                ["NumVoucher"] = 27,
+                                                ["RequiredQualityID"] = 3,
+                                                ["RequiredTraitID"] = 21,
+                                            },
+                                            ["UID"] = "319805347",
+                                            ["ItemLink"] = "|H0:item:153737:5:1:0:0:0:24:255:4:641:31:0:0:0:0:0:0:0:0:0:275000|h|h",
+                                            ["Name"] = "Sealed Jewelry Crafter Writ",
+                                            ["TotalPrice"] = 500,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 18179,
+                                        },
+                                    },
+                                    ["BriGri"] = 
+                                    {
+                                        ["319384705"] = 
+                                        {
+                                            ["ItemType"] = 4,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737643966,
+                                            ["UID"] = "319384705",
+                                            ["ItemLink"] = "|H0:item:139016:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Artaeum Pickled Fish Bowl",
+                                            ["TotalPrice"] = 12500,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 25,
+                                            ["ID"] = 18168,
+                                        },
+                                    },
+                                    ["Whome1120"] = 
+                                    {
+                                        ["319827093"] = 
+                                        {
+                                            ["ItemType"] = 34,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737694305,
+                                            ["UID"] = "319827093",
+                                            ["ItemLink"] = "|H0:item:170153:124:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Style Page: Rkindaleft Dwarven Axe",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 4,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 23051,
+                                        },
+                                    },
+                                    ["yebasa"] = 
+                                    {
+                                        ["319850475"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737697130,
+                                            ["UID"] = "319850475",
+                                            ["ItemLink"] = "|H0:item:190915:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 119: Blessed Inheritor Legs",
+                                            ["TotalPrice"] = 111111,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 27062,
+                                        },
+                                    },
+                                    ["bonetexas"] = 
+                                    {
+                                        ["319641861"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737677488,
+                                            ["UID"] = "319641861",
+                                            ["ItemLink"] = "|H0:item:82024:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 42: Hollowjack Belts",
+                                            ["TotalPrice"] = 4039,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 11680,
+                                        },
+                                    },
+                                    ["Rebelspartan229"] = 
+                                    {
+                                        ["319594653"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737672102,
+                                            ["UID"] = "319594653",
+                                            ["ItemLink"] = "|H0:item:51345:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 13: Primal Style",
+                                            ["TotalPrice"] = 1000,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 2,
+                                            ["ID"] = 6431,
+                                        },
+                                        ["319594083"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737672017,
+                                            ["UID"] = "319594083",
+                                            ["ItemLink"] = "|H0:item:16425:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 5: Breton Style",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6534,
+                                        },
+                                        ["319594057"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737672014,
+                                            ["UID"] = "319594057",
+                                            ["ItemLink"] = "|H0:item:44698:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 7: Khajiit Style",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6573,
+                                        },
+                                    },
+                                    ["Gandolf573"] = 
+                                    {
+                                        ["319643847"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737677695,
+                                            ["UID"] = "319643847",
+                                            ["ItemLink"] = "|H0:item:27246:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 9: Argonian Style",
+                                            ["TotalPrice"] = 100,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 6612,
+                                        },
+                                        ["319615217"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737674486,
+                                            ["UID"] = "319615217",
+                                            ["ItemLink"] = "|H0:item:116115:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Diagram: Khajiit Basin, Claw",
+                                            ["TotalPrice"] = 499,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 12522,
+                                        },
+                                        ["319612075"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737674097,
+                                            ["UID"] = "319612075",
+                                            ["ItemLink"] = "|H0:item:119146:3:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Blueprint: Redguard Stool, Sturdy",
+                                            ["TotalPrice"] = 99,
                                             ["QualityID"] = 1,
-                                            ["TotalPrice"] = 27,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 12501,
+                                        },
+                                        ["319381353"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737643318,
+                                            ["UID"] = "319381353",
+                                            ["ItemLink"] = "|H0:item:116176:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Blueprint: Nord Counter, Long",
+                                            ["TotalPrice"] = 499,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 12478,
+                                        },
+                                        ["319615421"] = 
+                                        {
+                                            ["ItemType"] = 29,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737674529,
+                                            ["UID"] = "319615421",
+                                            ["ItemLink"] = "|H0:item:166761:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Pattern: Vampiric Bed, Single",
+                                            ["TotalPrice"] = 999,
+                                            ["QualityID"] = 2,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 21694,
+                                        },
+                                    },
+                                    ["Breadbeddle"] = 
+                                    {
+                                        ["319641841"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737677487,
+                                            ["UID"] = "319641841",
+                                            ["ItemLink"] = "|H0:item:82029:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 42: Hollowjack Gloves",
+                                            ["TotalPrice"] = 1000,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 11647,
+                                        },
+                                        ["319641815"] = 
+                                        {
+                                            ["ItemType"] = 8,
+                                            ["Level"] = 1,
+                                            ["SaleTime"] = 1737677485,
+                                            ["UID"] = "319641815",
+                                            ["ItemLink"] = "|H0:item:82030:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
+                                            ["Name"] = "Crafting Motif 42: Hollowjack Helmets",
+                                            ["TotalPrice"] = 1000,
+                                            ["QualityID"] = 3,
+                                            ["Amount"] = 1,
+                                            ["ID"] = 11605,
                                         },
                                     },
                                 },
                             },
                         },
-                    },
-                    ["IsFirstExecute"] = false,
-                    ["AutoRecordEntries"] = 
-                    {
-                        ["Count"] = 0,
-                        ["Guilds"] = 
-                        {
-                        },
+                        ["Count"] = 133,
                     },
                     ["Guilds"] = 
                     {
                         ["The Empire"] = 
                         {
+                            ["LastFullScan"] = 1737306406,
+                            ["LastUpdate"] = 1737306406,
+                            ["KioskLocationID"] = 76,
                             ["Entries"] = 
                             {
                                 [0] = 
                                 {
                                     ["Name"] = "Diagram: Alinor Brazier, Standing Coals",
-                                    ["ID"] = 17852,
-                                    ["ItemLink"] = "|H0:item:139526:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                    ["Amount"] = 1,
-                                    ["UID"] = "4621192855524186761",
-                                    ["ItemType"] = 29,
                                     ["Level"] = 1,
+                                    ["UID"] = "4621192855524186761",
+                                    ["ItemLink"] = "|H0:item:139526:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
                                     ["QualityID"] = 2,
                                     ["TotalPrice"] = 51000,
+                                    ["ID"] = 17852,
+                                    ["Amount"] = 1,
+                                    ["ItemType"] = 29,
                                 },
                                 [1] = 
                                 {
                                     ["Name"] = "Crafting Motif 93: Ancestral Breton Helmets",
-                                    ["ID"] = 25382,
-                                    ["ItemLink"] = "|H0:item:167198:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                    ["Amount"] = 1,
-                                    ["UID"] = "4621192855524531559",
-                                    ["ItemType"] = 8,
                                     ["Level"] = 1,
+                                    ["UID"] = "4621192855524531559",
+                                    ["ItemLink"] = "|H0:item:167198:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
                                     ["QualityID"] = 3,
                                     ["TotalPrice"] = 26500,
+                                    ["ID"] = 25382,
+                                    ["Amount"] = 1,
+                                    ["ItemType"] = 8,
                                 },
                                 [2] = 
                                 {
                                     ["Name"] = "Crafting Motif 93: Ancestral Breton Chests",
-                                    ["ID"] = 25089,
-                                    ["ItemLink"] = "|H0:item:167195:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                    ["Amount"] = 1,
-                                    ["UID"] = "4621192855524545755",
-                                    ["ItemType"] = 8,
                                     ["Level"] = 1,
+                                    ["UID"] = "4621192855524545755",
+                                    ["ItemLink"] = "|H0:item:167195:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
                                     ["QualityID"] = 3,
                                     ["TotalPrice"] = 38000,
+                                    ["ID"] = 25089,
+                                    ["Amount"] = 1,
+                                    ["ItemType"] = 8,
                                 },
                                 [3] = 
                                 {
                                     ["Name"] = "Crafting Motif 127: West Weald Legion Boots",
-                                    ["ID"] = 28787,
-                                    ["ItemLink"] = "|H0:item:203476:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                    ["Amount"] = 1,
-                                    ["UID"] = "4621192855524601981",
-                                    ["ItemType"] = 8,
                                     ["Level"] = 1,
+                                    ["UID"] = "4621192855524601981",
+                                    ["ItemLink"] = "|H0:item:203476:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
                                     ["QualityID"] = 3,
                                     ["TotalPrice"] = 41000,
+                                    ["ID"] = 28787,
+                                    ["Amount"] = 1,
+                                    ["ItemType"] = 8,
                                 },
                                 [4] = 
                                 {
                                     ["Name"] = "Crafting Motif 118: House Mornard Staves",
-                                    ["ID"] = 26389,
-                                    ["ItemLink"] = "|H0:item:188337:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                    ["Amount"] = 1,
-                                    ["UID"] = "4621192855524605566",
-                                    ["ItemType"] = 8,
                                     ["Level"] = 1,
+                                    ["UID"] = "4621192855524605566",
+                                    ["ItemLink"] = "|H0:item:188337:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
                                     ["QualityID"] = 3,
                                     ["TotalPrice"] = 3000,
+                                    ["ID"] = 26389,
+                                    ["Amount"] = 1,
+                                    ["ItemType"] = 8,
                                 },
                                 [5] = 
                                 {
                                     ["Name"] = "Praxis: Apocrypha Bookcase, Intricate",
-                                    ["ID"] = 27486,
-                                    ["ItemLink"] = "|H0:item:198509:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                    ["Amount"] = 1,
-                                    ["UID"] = "4621192855524584287",
-                                    ["ItemType"] = 29,
                                     ["Level"] = 1,
+                                    ["UID"] = "4621192855524584287",
+                                    ["ItemLink"] = "|H0:item:198509:4:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
                                     ["QualityID"] = 2,
                                     ["TotalPrice"] = 4000,
+                                    ["ID"] = 27486,
+                                    ["Amount"] = 1,
+                                    ["ItemType"] = 29,
                                 },
                                 [6] = 
                                 {
                                     ["Name"] = "Crafting Motif 30: Morag Tong Maces",
-                                    ["ID"] = 15343,
-                                    ["ItemLink"] = "|H0:item:73848:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                    ["Amount"] = 1,
-                                    ["UID"] = "4621192855524613967",
-                                    ["ItemType"] = 8,
                                     ["Level"] = 1,
+                                    ["UID"] = "4621192855524613967",
+                                    ["ItemLink"] = "|H0:item:73848:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
                                     ["QualityID"] = 3,
                                     ["TotalPrice"] = 9100,
+                                    ["ID"] = 15343,
+                                    ["Amount"] = 1,
+                                    ["ItemType"] = 8,
                                 },
                                 [7] = 
                                 {
                                     ["Name"] = "Crafting Motif 62: Sapiarch Axes",
-                                    ["ID"] = 17588,
-                                    ["ItemLink"] = "|H0:item:137921:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                    ["Amount"] = 1,
-                                    ["UID"] = "4621192855524595616",
-                                    ["ItemType"] = 8,
                                     ["Level"] = 1,
+                                    ["UID"] = "4621192855524595616",
+                                    ["ItemLink"] = "|H0:item:137921:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
                                     ["QualityID"] = 3,
                                     ["TotalPrice"] = 2000,
+                                    ["ID"] = 17588,
+                                    ["Amount"] = 1,
+                                    ["ItemType"] = 8,
                                 },
                                 [8] = 
                                 {
                                     ["Name"] = "Crafting Motif 114: Systres Guardian Shoulders",
-                                    ["ID"] = 25921,
-                                    ["ItemLink"] = "|H0:item:182566:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                    ["Amount"] = 1,
-                                    ["UID"] = "4621192855524528955",
-                                    ["ItemType"] = 8,
                                     ["Level"] = 1,
+                                    ["UID"] = "4621192855524528955",
+                                    ["ItemLink"] = "|H0:item:182566:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
                                     ["QualityID"] = 3,
                                     ["TotalPrice"] = 6000,
+                                    ["ID"] = 25921,
+                                    ["Amount"] = 1,
+                                    ["ItemType"] = 8,
                                 },
                                 [9] = 
                                 {
                                     ["Name"] = "Crafting Motif 118: House Mornard Bows",
-                                    ["ID"] = 26385,
-                                    ["ItemLink"] = "|H0:item:188328:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
-                                    ["Amount"] = 1,
-                                    ["UID"] = "4621192855524536220",
-                                    ["ItemType"] = 8,
                                     ["Level"] = 1,
+                                    ["UID"] = "4621192855524536220",
+                                    ["ItemLink"] = "|H0:item:188328:5:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h",
                                     ["QualityID"] = 3,
                                     ["TotalPrice"] = 2000,
+                                    ["ID"] = 26385,
+                                    ["Amount"] = 1,
+                                    ["ItemType"] = 8,
                                 },
                             },
-                            ["LastFullScan"] = 1737306406,
-                            ["KioskLocationID"] = 76,
-                            ["LastUpdate"] = 1737306406,
                         },
                         ["The Free Trade Agreement"] = 
                         {
+                            ["LastUpdate"] = 1736290901,
+                            ["LastFullScan"] = 1736290901,
                             ["Entries"] = 
                             {
                             },
-                            ["LastFullScan"] = 1736290901,
-                            ["LastUpdate"] = 1736290901,
                         },
                     },
+                    ["IsFirstExecute"] = false,
                 },
+                ["version"] = 3,
+                ["Settings"] = 
+                {
+                    ["EnableSelfEntriesUpload"] = true,
+                    ["EnablePriceToChatSalePrice"] = false,
+                    ["EnableToolTipSalePrice"] = true,
+                    ["AdditionalPriceToChatLang"] = 
+                    {
+                    },
+                    ["EnableAutoRecordStoreEntries"] = true,
+                    ["EnablePriceToChatSuggested"] = false,
+                    ["EnableItemPriceToChatBtn"] = false,
+                    ["EnablePriceToChatStat"] = false,
+                    ["SearchOnlineSort"] = "LastSeen",
+                    ["EnablePriceToChatLastUpdate"] = false,
+                    ["EnableToolTipAggregate"] = true,
+                    ["EnableToolTipStat"] = true,
+                    ["EnablePriceToChatAggregate"] = false,
+                    ["EnableToolTipSuggested"] = true,
+                    ["EnableItemToolTipPricing"] = true,
+                    ["EnableItemSearchOnlineBtn"] = true,
+                    ["EnableToolTipLastUpdate"] = true,
+                    ["SearchOnlineOrder"] = "desc",
+                    ["EnableItemPriceDetailOnlineBtn"] = false,
+                    ["EnableSaleHistoryCollection"] = true,
+                    ["MaxAutoRecordStoreEntryCount"] = 20000,
+                },
+                ["ClientCulture"] = "en",
+                ["ActualVersion"] = 11,
             },
         },
     },

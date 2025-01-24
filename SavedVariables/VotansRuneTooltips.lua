@@ -6,8 +6,8 @@ VotansRuneTooltips_Storage =
         {
             ["$AccountWide"] = 
             {
-                ["showUnknownPotency"] = true,
                 ["version"] = 1,
+                ["showUnknownPotency"] = true,
                 ["showUnknownEssence"] = true,
             },
         },

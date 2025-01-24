@@ -6,44 +6,32 @@ FCOLockpicker_Settings =
         {
             ["$AccountWide"] = 
             {
-                ["SettingsForAll"] = 
-                {
-                    ["saveMode"] = 2,
-                    ["version"] = 999,
-                    ["language"] = 1,
-                },
                 ["Settings"] = 
                 {
-                    ["deepDebug"] = false,
-                    ["debug"] = false,
-                    ["useSpringGreenColor"] = true,
-                    ["version"] = 0.0100000000,
-                    ["chamberStressedSound"] = 2,
                     ["showChamberResolvedIcon"] = true,
-                    ["languageChoosen"] = false,
-                    ["alwaysUseClientLanguage"] = true,
+                    ["debug"] = false,
                     ["warnings"] = 
                     {
-                        ["normal"] = 
-                        {
-                            ["valueMin"] = 999,
-                            ["color"] = 
-                            {
-                                ["r"] = 1,
-                                ["a"] = 1,
-                                ["g"] = 1,
-                                ["b"] = 1,
-                            },
-                        },
                         ["low"] = 
                         {
                             ["valueMin"] = 5,
                             ["color"] = 
                             {
-                                ["r"] = 1,
                                 ["a"] = 1,
-                                ["g"] = 0,
                                 ["b"] = 0,
+                                ["g"] = 0,
+                                ["r"] = 1,
+                            },
+                        },
+                        ["normal"] = 
+                        {
+                            ["valueMin"] = 999,
+                            ["color"] = 
+                            {
+                                ["a"] = 1,
+                                ["b"] = 1,
+                                ["g"] = 1,
+                                ["r"] = 1,
                             },
                         },
                         ["medium"] = 
@@ -51,13 +39,25 @@ FCOLockpicker_Settings =
                             ["valueMin"] = 10,
                             ["color"] = 
                             {
-                                ["r"] = 0,
                                 ["a"] = 1,
-                                ["g"] = 1,
                                 ["b"] = 1,
+                                ["g"] = 1,
+                                ["r"] = 0,
                             },
                         },
                     },
+                    ["useSpringGreenColor"] = true,
+                    ["deepDebug"] = false,
+                    ["alwaysUseClientLanguage"] = true,
+                    ["chamberStressedSound"] = 2,
+                    ["languageChoosen"] = false,
+                    ["version"] = 0.0100000000,
+                },
+                ["SettingsForAll"] = 
+                {
+                    ["version"] = 999,
+                    ["language"] = 1,
+                    ["saveMode"] = 2,
                 },
             },
         },

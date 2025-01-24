@@ -6,14 +6,42 @@ PortToFriendsHouseVars =
         {
             ["$AccountWide"] = 
             {
-                ["defaultTab"] = 1,
-                ["selectedLibraryFilter"] = 1,
-                ["selectedLibrarySort"] = 1,
-                ["selectedMyHousesSort"] = 1,
-                ["version"] = 1,
+                ["vc"] = 
+                {
+                    ["receivedCards"] = 
+                    {
+                    },
+                    ["allowSelf"] = false,
+                },
+                ["port_mode"] = 3,
                 ["favorites"] = 
                 {
                 },
+                ["vc_chatAllowed"] = 
+                {
+                    ["frzone"] = false,
+                    ["g5"] = true,
+                    ["g2"] = true,
+                    ["group"] = true,
+                    ["jpzone"] = false,
+                    ["o5"] = true,
+                    ["emote"] = false,
+                    ["yell"] = false,
+                    ["o3"] = true,
+                    ["enzone"] = false,
+                    ["g3"] = true,
+                    ["g4"] = true,
+                    ["o2"] = true,
+                    ["zone"] = false,
+                    ["g1"] = true,
+                    ["dezone"] = false,
+                    ["tell"] = true,
+                    ["o4"] = true,
+                    ["o1"] = true,
+                    ["say"] = false,
+                },
+                ["selectedMyHousesSort"] = 1,
+                ["selectedLibraryFilter"] = 1,
                 ["myHousesFavorites"] = 
                 {
                     [2] = 
@@ -23,37 +51,9 @@ PortToFriendsHouseVars =
                     {
                     },
                 },
-                ["vc_chatAllowed"] = 
-                {
-                    ["emote"] = false,
-                    ["zone"] = false,
-                    ["o2"] = true,
-                    ["o5"] = true,
-                    ["g1"] = true,
-                    ["frzone"] = false,
-                    ["enzone"] = false,
-                    ["jpzone"] = false,
-                    ["o4"] = true,
-                    ["g4"] = true,
-                    ["o1"] = true,
-                    ["o3"] = true,
-                    ["g3"] = true,
-                    ["g5"] = true,
-                    ["tell"] = true,
-                    ["g2"] = true,
-                    ["dezone"] = false,
-                    ["group"] = true,
-                    ["say"] = false,
-                    ["yell"] = false,
-                },
-                ["port_mode"] = 3,
-                ["vc"] = 
-                {
-                    ["allowSelf"] = false,
-                    ["receivedCards"] = 
-                    {
-                    },
-                },
+                ["defaultTab"] = 1,
+                ["selectedLibrarySort"] = 1,
+                ["version"] = 1,
             },
         },
     },

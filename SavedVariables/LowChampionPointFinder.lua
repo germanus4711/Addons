@@ -11,14 +11,16 @@ LowChampionPointFinderVars =
                     ["x"] = 0,
                     ["y"] = 60,
                 },
-                ["fontSize"] = 32,
+                ["isPvpOnly"] = true,
+                ["isAttackableOnly"] = true,
+                ["version"] = "1.01",
                 ["ChampionPointGroups"] = 
                 {
                     [1] = 
                     {
-                        ["text"] = "Low Cp",
-                        ["lowCp"] = 0,
                         ["highCp"] = 160,
+                        ["lowCp"] = 0,
+                        ["text"] = "Low Cp",
                         ["color"] = 
                         {
                             ["a"] = 1,
@@ -29,9 +31,9 @@ LowChampionPointFinderVars =
                     },
                     [2] = 
                     {
-                        ["text"] = "Low Cp",
-                        ["lowCp"] = 160,
                         ["highCp"] = 600,
+                        ["lowCp"] = 160,
+                        ["text"] = "Low Cp",
                         ["color"] = 
                         {
                             ["a"] = 1,
@@ -42,9 +44,9 @@ LowChampionPointFinderVars =
                     },
                     [3] = 
                     {
-                        ["text"] = "Low Cp",
-                        ["lowCp"] = 600,
                         ["highCp"] = 810,
+                        ["lowCp"] = 600,
+                        ["text"] = "Low Cp",
                         ["color"] = 
                         {
                             ["a"] = 1,
@@ -55,9 +57,9 @@ LowChampionPointFinderVars =
                     },
                     [4] = 
                     {
-                        ["text"] = "",
-                        ["lowCp"] = 810,
                         ["highCp"] = 1200,
+                        ["lowCp"] = 810,
+                        ["text"] = "",
                         ["color"] = 
                         {
                             ["a"] = 0.8000000000,
@@ -68,9 +70,9 @@ LowChampionPointFinderVars =
                     },
                     [5] = 
                     {
-                        ["text"] = "",
-                        ["lowCp"] = 1200,
                         ["highCp"] = 1500,
+                        ["lowCp"] = 1200,
+                        ["text"] = "",
                         ["color"] = 
                         {
                             ["a"] = 0.5000000000,
@@ -81,9 +83,9 @@ LowChampionPointFinderVars =
                     },
                     [6] = 
                     {
-                        ["text"] = "",
-                        ["lowCp"] = 1500,
                         ["highCp"] = 3600,
+                        ["lowCp"] = 1500,
+                        ["text"] = "",
                         ["color"] = 
                         {
                             ["a"] = 0.5000000000,
@@ -93,9 +95,7 @@ LowChampionPointFinderVars =
                         },
                     },
                 },
-                ["version"] = "1.01",
-                ["isAttackableOnly"] = true,
-                ["isPvpOnly"] = true,
+                ["fontSize"] = 32,
             },
         },
     },

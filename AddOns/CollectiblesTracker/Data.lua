@@ -9,6 +9,7 @@ end
 CollectiblesTracker.ext = {
 	cakes = {
 		-- Should be listed from newest to oldest
+	--	13520, -- Jubilee Cake 2025
 		12422, -- Jubilee Cake 2024
 		11089, -- Jubilee Cake 2023
 		10287, -- Jubilee Cake 2022
@@ -86,6 +87,8 @@ CollectiblesTracker.data.ct = {
 		--	11010, 11011, -- Roksa the Warped
 		--	12014, 12015, -- Anthelmir's Construct
 			12021, 12022, -- The Blind
+		--	12874, 12875, -- Squall of Retribution
+		--	12876, 12877, -- Orpheon the Tactician
 		}
 	},
 
@@ -146,11 +149,15 @@ CollectiblesTracker.data.ct = {
 		{
 			"5355-5376", "5378-5387", -- Fanged Worm
 			"5420-5451", -- Horned Dragon
-			"5645-5651", -- Body: Fire Drake
-			"5621-5634", -- Body: Pit Daemon (5621), Storm Lord (5628)
+			"5621-5634", -- Heavy: Pit Daemon (5621), Storm Lord (5628)
+			"5645-5651", -- Heavy: Fire Drake
 			"6209-6238", -- Weapons: Storm Lord (6209), Fire Drake (6219), Pit Daemon (6229)
 			"6632-6634", -- Chaos Ball Emotes
 			"6728-6733", "6782-6786", -- Battleground Runner
+			"12313-12319", -- Galeskirmish Gladiator
+			"12533-12563", -- Tokens: Eld Angavar Weapons (12533), Pit Daemon Light (12543), Storm Lord Light (12550), Fire Drake Medium (12557)
+			12769, -- Drakes and Daemons Mask
+			13111, 13112, -- Drakes and Daemons Duel Face/Body Art
 		}
 	},
 
@@ -160,6 +167,7 @@ CollectiblesTracker.data.ct = {
 		{
 			"10684-10690", -- Pelin's Paragon
 			"11917-11923", -- Frandar's Tribute
+			"12564-12570", 13079, -- Psijic Psion
 		}
 	},
 
@@ -178,6 +186,30 @@ CollectiblesTracker.data.ec = {
 	{
 		-- Special empty category for the filter dropdown
 		GetString(SI_COLLECTIBLESTRACKER_SOURCE_ALL), { }
+	},
+
+
+	----------------------------------------------------------------------------
+	{
+		GetString(SI_ACTIVITY_FINDER_CATEGORY_PROMOTIONAL_EVENTS), -- Golden Pursuits
+		{
+			-- 1
+			12239, -- Adventure-Ending Arrow
+			12717, -- 10-Year Anniversary Nord Hero
+
+			-- 2
+			"12592-12601", -- Evergreen Saturalia
+			12808, -- Frost Draugr Runegathering
+			12263, -- Shoal Bear
+
+			-- 3
+			12716, -- 10-Year Anniversary Elven Hero
+
+		--	12713, -- 10-Year Anniversary Mudcrab
+		--	12718, -- 10-Year Anniversary Breton Hero
+		--	12725, -- 10-Year Anniversary Golden Wisp
+		--	12729, -- 10-Year Anniversary Monkey
+		}
 	},
 
 
@@ -250,7 +282,6 @@ CollectiblesTracker.data.ec = {
 	},
 
 
-	--[[
 	----------------------------------------------------------------------------
 	{
 		zo_strformat(SI_EVENTCOLLECTIBLES_SOURCE_MORPHS, 2025),
@@ -259,7 +290,6 @@ CollectiblesTracker.data.ec = {
 			{ 13095, "13085-13087" }, -- Logical Rune Extraction
 		}
 	},
-	]]
 
 
 	----------------------------------------------------------------------------
@@ -306,12 +336,14 @@ CollectiblesTracker.data.ec = {
 			9006, -- Playful Prankster's Surprise Box
 			10235, -- Cadwell's Surprise Box
 			10665, -- Jester's Daedroth Suit
+		--	12793, -- Jester's Deadly Headband
 
 			"6097-6106", -- Cadwell
 			7616, 7617, -- Broom and Bucket
 			"9020-9026", -- Regal Regalia
 			"10000-10006", -- Second Seed Raiment
 			"12002-12008", -- Jester's Seeker Suit
+		--	"12830-12835", -- Jester's Mimicry
 		}
 	},
 
@@ -415,8 +447,8 @@ CollectiblesTracker.data.ec = {
 			5725, -- Crystalfrost
 			8221, -- Snowball Buddy
 			8541, -- Powderwhite Coney
-		--	12719, -- New Life Winter Storm Robes
-		--	13105, -- Surprising Snowglobe
+			12719, -- New Life Winter Storm Robes
+			13105, -- Surprising Snowglobe
 
 			"7293-7309", -- Skaal Explorer
 			"8730-8739", -- Rkindaleft Dwarven
@@ -499,8 +531,11 @@ CollectiblesTracker.data.ec = {
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_BRETON),
 		{
 			"10514-10520", -- Oaken Order
-		--	11063, -- Statuette: Ascendant Lord
-		--	"12571-12577", -- Legacy of the Draoife
+			"12571-12577", -- Legacy of the Draoife
+
+			10412, 10413, -- Oak's Promise Markings
+			10416, -- Plant Yourself
+			11063, -- Statuette: Ascendant Lord
 		}
 	},
 
@@ -532,7 +567,6 @@ CollectiblesTracker.data.ec = {
 	},
 
 
-	--[[
 	----------------------------------------------------------------------------
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_PANTAM),
@@ -540,5 +574,4 @@ CollectiblesTracker.data.ec = {
 			"12585-12591", -- Lion Guard Captain
 		}
 	},
-	]]
 }

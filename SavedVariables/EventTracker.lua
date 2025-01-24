@@ -8,45 +8,44 @@ EventTrackerVars =
             {
                 ["NA Megaserver"] = 
                 {
-                    ["Install_Time"] = 1726631845,
-                    ["Message_Time"] = 1737636496,
-                    ["top"] = 10,
-                    ["NewsIndex"] = 3,
-                    ["T_Types"] = 
-                    {
-                        [1] = "First",
-                        [2] = "Second",
-                        [3] = "Boss",
-                    },
-                    ["left"] = 450,
-                    ["LastUpdated"] = 1736254438,
-                    ["Total_Tickets"] = 0,
+                    ["EVT_version"] = 2.2800000000,
                     ["T_ToDo"] = 
                     {
-                        [1] = 0,
+                        [1] = 1,
                         [2] = 0,
                         [3] = 0,
                     },
-                    ["HideUI"] = false,
-                    ["autoHide"] = false,
-                    ["debug"] = false,
-                    ["EVT_version"] = 2.2710000000,
-                    ["T_Time"] = 
+                    ["Message_Time"] = 1737725227,
+                    ["LastUpdated"] = 1737687917,
+                    ["version"] = 2,
+                    ["T_Types"] = 
                     {
-                        [1] = 0,
-                        [2] = 0,
-                        [3] = 0,
+                        [1] = "Pan-Tamriel",
+                        [2] = "not used",
+                        [3] = "Boss",
                     },
+                    ["autoHide"] = false,
                     ["T_Tickets"] = 
                     {
                         [4] = 0,
-                        [1] = 0,
+                        [1] = 3,
                         [2] = 0,
                         [3] = 0,
                     },
-                    ["DataCleared"] = true,
-                    ["Current_Event"] = "None",
-                    ["version"] = 2,
+                    ["top"] = 10,
+                    ["debug"] = false,
+                    ["HideUI"] = false,
+                    ["NewsIndex"] = 3,
+                    ["T_Time"] = 
+                    {
+                        [1] = 1737687917,
+                        [2] = 1737673236,
+                        [3] = 0,
+                    },
+                    ["Install_Time"] = 1726631845,
+                    ["Current_Event"] = "Pan-Tamriel",
+                    ["left"] = 450,
+                    ["Total_Tickets"] = 3,
                 },
             },
         },
@@ -61,8 +60,8 @@ EventTrackerShared =
             ["$AccountWide"] = 
             {
                 ["XP_frequency"] = 5,
-                ["version"] = 1,
                 ["XP_refresh"] = 200,
+                ["version"] = 1,
             },
         },
     },

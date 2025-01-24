@@ -4,53 +4,144 @@ WritWorthyVars =
     {
         ["@germanus4711"] = 
         {
-            ["Christel v Koenigsberg"] = 
+            ["Otto von Bissmark"] = 
             {
-                ["enable_mat_list_chat"] = "Off",
-                ["lang"] = false,
-                ["enable_lib_price"] = true,
                 ["enable_mm_fallback"] = false,
+                ["enable_mat_list_tooltip"] = "Off",
                 ["writ_unique_id"] = 
                 {
                 },
-                ["enable_mat_list_tooltip"] = "Off",
-                ["version"] = 1,
-                ["enable_station_colors"] = false,
                 ["enable_mat_price_tooltip"] = true,
+                ["version"] = 1,
+                ["enable_mat_list_chat"] = "Off",
+                ["enable_station_colors"] = false,
                 ["enable_banked_vouchers"] = false,
+                ["lang"] = false,
+                ["enable_lib_price"] = true,
             },
-            ["Gamal Loki"] = 
+            ["Maüschen"] = 
             {
-                ["enable_mat_list_chat"] = "Off",
-                ["lang"] = false,
-                ["enable_lib_price"] = true,
                 ["enable_mm_fallback"] = false,
+                ["enable_mat_list_tooltip"] = "Off",
                 ["writ_unique_id"] = 
                 {
                 },
-                ["enable_mat_list_tooltip"] = "Off",
-                ["version"] = 1,
-                ["enable_station_colors"] = false,
                 ["enable_mat_price_tooltip"] = true,
+                ["version"] = 1,
+                ["enable_mat_list_chat"] = "Off",
+                ["enable_station_colors"] = false,
                 ["enable_banked_vouchers"] = false,
+                ["lang"] = false,
+                ["enable_lib_price"] = true,
+            },
+            ["Gustaf Helmuth v Feld"] = 
+            {
+                ["enable_mm_fallback"] = false,
+                ["enable_mat_list_tooltip"] = "Off",
+                ["writ_unique_id"] = 
+                {
+                },
+                ["enable_mat_price_tooltip"] = true,
+                ["version"] = 1,
+                ["enable_mat_list_chat"] = "Off",
+                ["enable_station_colors"] = false,
+                ["enable_banked_vouchers"] = false,
+                ["lang"] = false,
+                ["enable_lib_price"] = true,
             },
             ["Hubertus Freiherr v Feld"] = 
             {
-                ["enable_mat_list_chat"] = "Off",
-                ["lang"] = false,
-                ["enable_lib_price"] = true,
                 ["enable_mm_fallback"] = false,
+                ["enable_mat_list_tooltip"] = "Off",
                 ["writ_unique_id"] = 
                 {
                 },
-                ["enable_mat_list_tooltip"] = "Off",
-                ["version"] = 1,
-                ["enable_station_colors"] = false,
                 ["enable_mat_price_tooltip"] = true,
+                ["version"] = 1,
+                ["enable_mat_list_chat"] = "Off",
+                ["enable_station_colors"] = false,
                 ["enable_banked_vouchers"] = false,
+                ["lang"] = false,
+                ["enable_lib_price"] = true,
+            },
+            ["Mike v Petra"] = 
+            {
+                ["enable_mm_fallback"] = false,
+                ["enable_mat_list_tooltip"] = "Off",
+                ["writ_unique_id"] = 
+                {
+                },
+                ["enable_mat_price_tooltip"] = true,
+                ["version"] = 1,
+                ["enable_mat_list_chat"] = "Off",
+                ["enable_station_colors"] = false,
+                ["enable_banked_vouchers"] = false,
+                ["lang"] = false,
+                ["enable_lib_price"] = true,
+            },
+            ["Fridolin The Great"] = 
+            {
+                ["enable_mm_fallback"] = false,
+                ["enable_mat_list_tooltip"] = "Off",
+                ["writ_unique_id"] = 
+                {
+                },
+                ["enable_mat_price_tooltip"] = true,
+                ["version"] = 1,
+                ["enable_mat_list_chat"] = "Off",
+                ["enable_station_colors"] = false,
+                ["enable_banked_vouchers"] = false,
+                ["lang"] = false,
+                ["enable_lib_price"] = true,
+            },
+            ["Gamal Loki"] = 
+            {
+                ["enable_mm_fallback"] = false,
+                ["enable_mat_list_tooltip"] = "Off",
+                ["writ_unique_id"] = 
+                {
+                },
+                ["enable_mat_price_tooltip"] = true,
+                ["version"] = 1,
+                ["enable_mat_list_chat"] = "Off",
+                ["enable_station_colors"] = false,
+                ["enable_banked_vouchers"] = false,
+                ["lang"] = false,
+                ["enable_lib_price"] = true,
+            },
+            ["Christel v Koenigsberg"] = 
+            {
+                ["enable_mm_fallback"] = false,
+                ["enable_mat_list_tooltip"] = "Off",
+                ["writ_unique_id"] = 
+                {
+                },
+                ["enable_mat_price_tooltip"] = true,
+                ["version"] = 1,
+                ["enable_mat_list_chat"] = "Off",
+                ["enable_station_colors"] = false,
+                ["enable_banked_vouchers"] = false,
+                ["lang"] = false,
+                ["enable_lib_price"] = true,
+            },
+            ["Freya Orm"] = 
+            {
+                ["enable_mm_fallback"] = false,
+                ["enable_mat_list_tooltip"] = "Off",
+                ["writ_unique_id"] = 
+                {
+                },
+                ["enable_mat_price_tooltip"] = true,
+                ["version"] = 1,
+                ["enable_mat_list_chat"] = "Off",
+                ["enable_station_colors"] = false,
+                ["enable_banked_vouchers"] = false,
+                ["lang"] = false,
+                ["enable_lib_price"] = true,
             },
             ["$AccountWide"] = 
             {
+                ["version"] = 1,
                 ["position"] = 
                 {
                     [4] = 879,
@@ -58,97 +149,6 @@ WritWorthyVars =
                     [2] = 329,
                     [3] = 1937,
                 },
-                ["version"] = 1,
-            },
-            ["Maüschen"] = 
-            {
-                ["enable_mat_list_chat"] = "Off",
-                ["lang"] = false,
-                ["enable_lib_price"] = true,
-                ["enable_mm_fallback"] = false,
-                ["writ_unique_id"] = 
-                {
-                },
-                ["enable_mat_list_tooltip"] = "Off",
-                ["version"] = 1,
-                ["enable_station_colors"] = false,
-                ["enable_mat_price_tooltip"] = true,
-                ["enable_banked_vouchers"] = false,
-            },
-            ["Freya Orm"] = 
-            {
-                ["enable_mat_list_chat"] = "Off",
-                ["lang"] = false,
-                ["enable_lib_price"] = true,
-                ["enable_mm_fallback"] = false,
-                ["writ_unique_id"] = 
-                {
-                },
-                ["enable_mat_list_tooltip"] = "Off",
-                ["version"] = 1,
-                ["enable_station_colors"] = false,
-                ["enable_mat_price_tooltip"] = true,
-                ["enable_banked_vouchers"] = false,
-            },
-            ["Otto von Bissmark"] = 
-            {
-                ["enable_mat_list_chat"] = "Off",
-                ["lang"] = false,
-                ["enable_lib_price"] = true,
-                ["enable_mm_fallback"] = false,
-                ["writ_unique_id"] = 
-                {
-                },
-                ["enable_mat_list_tooltip"] = "Off",
-                ["version"] = 1,
-                ["enable_station_colors"] = false,
-                ["enable_mat_price_tooltip"] = true,
-                ["enable_banked_vouchers"] = false,
-            },
-            ["Gustaf Helmuth v Feld"] = 
-            {
-                ["enable_mat_list_chat"] = "Off",
-                ["lang"] = false,
-                ["enable_lib_price"] = true,
-                ["enable_mm_fallback"] = false,
-                ["writ_unique_id"] = 
-                {
-                },
-                ["enable_mat_list_tooltip"] = "Off",
-                ["version"] = 1,
-                ["enable_station_colors"] = false,
-                ["enable_mat_price_tooltip"] = true,
-                ["enable_banked_vouchers"] = false,
-            },
-            ["Fridolin The Great"] = 
-            {
-                ["enable_mat_list_chat"] = "Off",
-                ["lang"] = false,
-                ["enable_lib_price"] = true,
-                ["enable_mm_fallback"] = false,
-                ["writ_unique_id"] = 
-                {
-                },
-                ["enable_mat_list_tooltip"] = "Off",
-                ["version"] = 1,
-                ["enable_station_colors"] = false,
-                ["enable_mat_price_tooltip"] = true,
-                ["enable_banked_vouchers"] = false,
-            },
-            ["Mike v Petra"] = 
-            {
-                ["enable_mat_list_chat"] = "Off",
-                ["lang"] = false,
-                ["enable_lib_price"] = true,
-                ["enable_mm_fallback"] = false,
-                ["writ_unique_id"] = 
-                {
-                },
-                ["enable_mat_list_tooltip"] = "Off",
-                ["version"] = 1,
-                ["enable_station_colors"] = false,
-                ["enable_mat_price_tooltip"] = true,
-                ["enable_banked_vouchers"] = false,
             },
         },
     },

@@ -6,48 +6,27 @@ PersonalAssistantIntegration_SavedVariables =
         {
             ["$AccountWide"] = 
             {
+                ["version"] = 1,
+                ["savedVarsVersion"] = 20240922,
                 ["profileCounter"] = 1,
                 [1] = 
                 {
-                    ["CharacterKnowledge"] = 
-                    {
-                        ["enabled"] = true,
-                        ["characterName"] = "Freya Orm",
-                    },
-                    ["name"] = "Profile 1",
                     ["LazyWritCrafter"] = 
                     {
                         ["compatibility"] = true,
                     },
+                    ["name"] = "Profile 1",
+                    ["CharacterKnowledge"] = 
+                    {
+                        ["characterName"] = "Freya Orm",
+                        ["enabled"] = true,
+                    },
                     ["FCOItemSaver"] = 
                     {
-                        ["Research"] = 
-                        {
-                            ["itemMoveMode"] = 1,
-                        },
-                        ["Improvement"] = 
-                        {
-                            ["itemMoveMode"] = 0,
-                        },
-                        ["DynamicIcons"] = 
-                        {
-                        },
                         ["Locked"] = 
                         {
                             ["preventAutoSell"] = false,
                             ["preventMoving"] = true,
-                        },
-                        ["Deconstruction"] = 
-                        {
-                            ["itemMoveMode"] = 2,
-                        },
-                        ["Sell"] = 
-                        {
-                            ["autoSellMarked"] = false,
-                        },
-                        ["SellGuildStore"] = 
-                        {
-                            ["itemMoveMode"] = 0,
                         },
                         ["GearSets"] = 
                         {
@@ -60,14 +39,35 @@ PersonalAssistantIntegration_SavedVariables =
                                 [5] = 0,
                             },
                         },
+                        ["Sell"] = 
+                        {
+                            ["autoSellMarked"] = false,
+                        },
                         ["Intricate"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
+                        ["Research"] = 
+                        {
+                            ["itemMoveMode"] = 1,
+                        },
+                        ["Improvement"] = 
+                        {
+                            ["itemMoveMode"] = 0,
+                        },
+                        ["SellGuildStore"] = 
+                        {
+                            ["itemMoveMode"] = 0,
+                        },
+                        ["Deconstruction"] = 
+                        {
+                            ["itemMoveMode"] = 2,
+                        },
+                        ["DynamicIcons"] = 
+                        {
+                        },
                     },
                 },
-                ["version"] = 1,
-                ["savedVarsVersion"] = 20240922,
             },
         },
     },

@@ -4,13 +4,7 @@ TinydogsCraftingCalculatorVars =
     {
         ["@germanus4711"] = 
         {
-            ["Gamal Loki"] = 
-            {
-                ["version"] = 2,
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["CraftSelected"] = "Blacksmithing",
-            },
-            ["Hubertus Freiherr v Feld"] = 
+            ["Otto von Bissmark"] = 
             {
                 ["version"] = 2,
                 ["TabSelected"] = "tccBuilderTabButton",
@@ -22,19 +16,13 @@ TinydogsCraftingCalculatorVars =
                 ["TabSelected"] = "tccBuilderTabButton",
                 ["CraftSelected"] = "Blacksmithing",
             },
-            ["Christel v Koenigsberg"] = 
+            ["Gustaf Helmuth v Feld"] = 
             {
                 ["version"] = 2,
                 ["TabSelected"] = "tccBuilderTabButton",
                 ["CraftSelected"] = "Blacksmithing",
             },
-            ["Fridolin The Great"] = 
-            {
-                ["version"] = 2,
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["CraftSelected"] = "Blacksmithing",
-            },
-            ["Otto von Bissmark"] = 
+            ["Hubertus Freiherr v Feld"] = 
             {
                 ["version"] = 2,
                 ["TabSelected"] = "tccBuilderTabButton",
@@ -46,7 +34,19 @@ TinydogsCraftingCalculatorVars =
                 ["TabSelected"] = "tccBuilderTabButton",
                 ["CraftSelected"] = "Blacksmithing",
             },
-            ["Gustaf Helmuth v Feld"] = 
+            ["Fridolin The Great"] = 
+            {
+                ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
+            },
+            ["Gamal Loki"] = 
+            {
+                ["version"] = 2,
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["CraftSelected"] = "Blacksmithing",
+            },
+            ["Christel v Koenigsberg"] = 
             {
                 ["version"] = 2,
                 ["TabSelected"] = "tccBuilderTabButton",
