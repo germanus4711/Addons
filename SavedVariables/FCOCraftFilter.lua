@@ -8,10 +8,11 @@ FCOCraftFilter_Settings =
             {
                 ["Settings"] = 
                 {
-                    ["showButtonResearchOnlyCurrentlyResearched"] = false,
+                    ["defaultCraftTabDescriptorEnabled"] = false,
+                    ["showWornItemsAtOnlyInventory"] = false,
                     ["horizontalScrollBarFilterApplied"] = 
                     {
-                        [6] = 
+                        [2] = 
                         {
                             [18] = false,
                         },
@@ -19,7 +20,7 @@ FCOCraftFilter_Settings =
                         {
                             [18] = false,
                         },
-                        [2] = 
+                        [6] = 
                         {
                             [18] = false,
                         },
@@ -28,57 +29,10 @@ FCOCraftFilter_Settings =
                             [35] = false,
                         },
                     },
-                    ["enableMediumFilters"] = true,
-                    ["showWornItemsAtOnlyInventory"] = false,
-                    ["languageChoosen"] = false,
-                    ["defaultCraftTabDescriptor"] = 
-                    {
-                        [1] = -1,
-                        [2] = -1,
-                        [3] = -1,
-                        [4] = -1,
-                        [5] = -1,
-                        [6] = -1,
-                        [7] = -1,
-                        ["universalDeconstruction"] = -1,
-                        ["retrait"] = -1,
-                    },
+                    ["enableMasterCrafterSetsFavorites"] = false,
                     ["masterCrafterSetsFavoritesNames"] = 
                     {
                     },
-                    ["masterCrafterSetsFavoritesEnabled"] = 
-                    {
-                        [99001] = true,
-                        [99002] = true,
-                        [99003] = true,
-                        [99004] = true,
-                        [99005] = true,
-                        [99006] = true,
-                    },
-                    ["alwaysUseClientLanguage"] = true,
-                    ["enableMasterCrafterSetsFavorites"] = false,
-                    ["masterCrafterSetsFavorites"] = 
-                    {
-                        [99001] = 
-                        {
-                        },
-                        [99002] = 
-                        {
-                        },
-                        [99003] = 
-                        {
-                        },
-                        [99004] = 
-                        {
-                        },
-                        [99005] = 
-                        {
-                        },
-                        [99006] = 
-                        {
-                        },
-                    },
-                    ["version"] = 0.5100000000,
                     ["filterApplied"] = 
                     {
                         [0] = 
@@ -106,12 +60,6 @@ FCOCraftFilter_Settings =
                             [20] = 1,
                             [21] = 1,
                         },
-                        ["UniversalDeconstruction"] = 
-                        {
-                            [16] = 1,
-                            [33] = 1,
-                            [21] = 1,
-                        },
                         [6] = 
                         {
                             [16] = 1,
@@ -119,6 +67,12 @@ FCOCraftFilter_Settings =
                             [18] = 1,
                             [36] = 1,
                             [14] = 1,
+                        },
+                        ["UniversalDeconstruction"] = 
+                        {
+                            [16] = 1,
+                            [33] = 1,
+                            [21] = 1,
                         },
                         [7] = 
                         {
@@ -129,14 +83,60 @@ FCOCraftFilter_Settings =
                             [31] = 1,
                         },
                     },
-                    ["defaultCraftTabDescriptorEnabled"] = false,
+                    ["masterCrafterSetsFavorites"] = 
+                    {
+                        [99001] = 
+                        {
+                        },
+                        [99002] = 
+                        {
+                        },
+                        [99003] = 
+                        {
+                        },
+                        [99004] = 
+                        {
+                        },
+                        [99005] = 
+                        {
+                        },
+                        [99006] = 
+                        {
+                        },
+                    },
                     ["enableOnlyWornFilters"] = false,
+                    ["languageChoosen"] = false,
+                    ["defaultCraftTabDescriptor"] = 
+                    {
+                        [1] = -1,
+                        [2] = -1,
+                        [3] = -1,
+                        [4] = -1,
+                        [5] = -1,
+                        [6] = -1,
+                        [7] = -1,
+                        ["retrait"] = -1,
+                        ["universalDeconstruction"] = -1,
+                    },
+                    ["showButtonResearchOnlyCurrentlyResearched"] = false,
+                    ["enableMediumFilters"] = true,
+                    ["alwaysUseClientLanguage"] = true,
+                    ["masterCrafterSetsFavoritesEnabled"] = 
+                    {
+                        [99001] = true,
+                        [99002] = true,
+                        [99003] = true,
+                        [99004] = true,
+                        [99005] = true,
+                        [99006] = true,
+                    },
+                    ["version"] = 0.5100000000,
                 },
                 ["SettingsForAll"] = 
                 {
                     ["version"] = 999,
-                    ["language"] = 1,
                     ["saveMode"] = 2,
+                    ["language"] = 1,
                 },
             },
         },

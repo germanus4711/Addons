@@ -7,11 +7,11 @@
 ## Title: Loot Log
 ## Description: Searchable log of the items that you and your group members have looted
 ## Author: @code65536
-## Version: 4.6.5
-## AddOnVersion: 406050
-## APIVersion: 101043 101044
+## Version: 4.7.2.1
+## AddOnVersion: 407021
+## APIVersion: 101044 101045
 ## SavedVariables: LootLogSavedVariables LootLogHistory
-## DependsOn: LibExtendedJournal>=202020
+## DependsOn: LibExtendedJournal>=203020
 ## OptionalDependsOn: LibCharacterKnowledge>=200000 LibMultiAccountCollectibles>=1 LibMultiAccountSets>=9 LibAddonMenu-2.0
 
 l10n/default.lua
@@ -23,5 +23,6 @@ History.lua
 Mats.lua
 LootLogMulti.lua
 LootLogTrade.lua
+TreasureMapLeads.lua
 Tooltip.lua
 Bindings.xml

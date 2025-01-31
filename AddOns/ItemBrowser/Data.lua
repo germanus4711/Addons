@@ -490,9 +490,9 @@ ItemBrowser.data = {
 		{ 202567, 0x00, { 1471 } }, -- Blind Path Induction
 		{ 202739, 0x00, { 1471 } }, -- Tarnished Nightmare
 		{ 202904, 0x00, { 1471 } }, -- Reflected Fury
-		{ 203937, 0x20, { -4 } }, -- Oakfather's Retribution
-		{ 204109, 0x20, { -4 } }, -- Blunted Blades
-		{ 204274, 0x20, { -4 } }, -- Baan Dar's Blessing
+		{ 203937, 0x20, { 181, { CYRO_L } } }, -- Oakfather's Retribution
+		{ 204109, 0x20, { 181, { CYRO_M } } }, -- Blunted Blades
+		{ 204274, 0x20, { 181, { CYRO_H } } }, -- Baan Dar's Blessing
 		{ 204918, 0x00, { 1443 } }, -- Symmetry of the Weald
 		{ 205090, 0x00, { 1443 } }, -- Macabre Vintage
 		{ 205255, 0x00, { 1443 } }, -- Ayleid Refuge
@@ -517,6 +517,15 @@ ItemBrowser.data = {
 		{ 211617, 0x00, { -2 } }, -- Bulwark Ruination
 		{ 211789, 0x00, { -2 } }, -- Farstrider
 		{ 211954, 0x00, { -2 } }, -- Netch Oil
+		{ 212654, 0x00, { 1496 } }, -- Vandorallen's Resonance
+		{ 212826, 0x00, { 1496 } }, -- Jerensi's Bladestorm
+		{ 212991, 0x00, { 1496 } }, -- Lucilla's Windshield
+		{ 213212, 0x00, { 1497 } }, -- Heroic Unity
+		{ 213378, 0x00, { 1497 } }, -- Fledgling's Nest
+		{ 213550, 0x00, { 1497 } }, -- Noxious Boulder
+		{ 213772, 0x20, { -4 } }, -- Arkay's Charity
+		{ 213944, 0x20, { -4 } }, -- Lamp Knight's Art
+		{ 214109, 0x20, { -4 } }, -- Blackfeather Flight
 
 		-- Monster Sets --------------------------------------------------------
 		{ 59391, 0x18, { 934, { UN_MAJ } } }, -- Spawn of Mephala
@@ -582,6 +591,8 @@ ItemBrowser.data = {
 		{ 198829, 0x18, { 181 } }, -- Nibenay Bay Battlereeve
 		{ 202486, 0x18, { 1470, { UN_URG } } }, -- Anthelmir's Construct
 		{ 203051, 0x18, { 1471, { UN_URG } } }, -- The Blind
+		{ 213126, 0x18, { 1496, { UN_URG } } }, -- Squall of Retribution
+		{ 213691, 0x18, { 1497, { UN_URG } } }, -- Orpheon the Tactician
 
 		-- 3p Jewelry Sets -----------------------------------------------------
 		{ 69166, 0x22, { 584, -1 } }, -- Endurance
@@ -818,6 +829,8 @@ ItemBrowser.data = {
 		[1390] = 3, -- Scrivener's Hall
 		[1470] = 3, -- Oathsworn Pit
 		[1471] = 3, -- Bedlam Veil
+		[1496] = 3, -- Exiled Redoubt
+		[1497] = 3, -- Lep Seclusa
 
 		-- Trials --------------------------------------------------------------
 		[ 636] = 4, -- Hel Ra Citadel

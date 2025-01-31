@@ -4,75 +4,92 @@ VotansMiniMap_Data =
     {
         ["@germanus4711"] = 
         {
-            ["8796093027479535"] = 
+            ["8796093064640125"] = 
             {
-                ["version"] = 1,
+                ["$LastCharacterName"] = "Maüschen",
                 ["showMap"] = true,
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
-            },
-            ["8796093023211051"] = 
-            {
                 ["version"] = 1,
-                ["showMap"] = true,
-                ["$LastCharacterName"] = "Freya Orm",
             },
             ["8796093072557313"] = 
             {
-                ["version"] = 1,
-                ["showMap"] = true,
                 ["$LastCharacterName"] = "Gamal Loki",
-            },
-            ["8796093025384257"] = 
-            {
-                ["version"] = 1,
                 ["showMap"] = true,
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+                ["version"] = 1,
+            },
+            ["8796093023211051"] = 
+            {
+                ["$LastCharacterName"] = "Freya Orm",
+                ["showMap"] = true,
+                ["version"] = 1,
             },
             ["8796093067546805"] = 
             {
-                ["version"] = 1,
-                ["showMap"] = true,
                 ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
-            },
-            ["8796093064640125"] = 
-            {
-                ["version"] = 1,
                 ["showMap"] = true,
-                ["$LastCharacterName"] = "Maüschen",
-            },
-            ["8796093069174989"] = 
-            {
                 ["version"] = 1,
-                ["showMap"] = true,
-                ["$LastCharacterName"] = "Mike v Petra",
             },
-            ["8796093062295781"] = 
+            ["8796093025384257"] = 
             {
-                ["version"] = 1,
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
                 ["showMap"] = true,
-                ["$LastCharacterName"] = "Fridolin The Great",
+                ["version"] = 1,
             },
             ["8796093074287095"] = 
             {
-                ["version"] = 1,
-                ["showMap"] = true,
                 ["$LastCharacterName"] = "Otto von Bissmark",
+                ["showMap"] = true,
+                ["version"] = 1,
+            },
+            ["8796093027479535"] = 
+            {
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["showMap"] = true,
+                ["version"] = 1,
+            },
+            ["8796093069174989"] = 
+            {
+                ["$LastCharacterName"] = "Mike v Petra",
+                ["showMap"] = true,
+                ["version"] = 1,
             },
             ["$AccountWide"] = 
             {
-                ["titleAtTop"] = true,
+                ["showOnTop"] = false,
+                ["enableMap"] = true,
+                ["showHUD"] = true,
+                ["debug"] = false,
+                ["cameraAngle"] = 45,
+                ["enableCompass"] = "UNTOUCHED",
+                ["timeFormat"] = 4,
+                ["showSiege"] = true,
                 ["height"] = 363,
+                ["showFullTitle"] = false,
+                ["battlegroundZoom"] = 0,
+                ["showMounted"] = true,
+                ["frameStyle"] = "ESO",
+                ["zoneAlertMode"] = "MINIMAPHIDDEN",
+                ["version"] = 1,
+                ["titleFontSize"] = 16,
+                ["showLoot"] = true,
+                ["showCameraAngle"] = false,
+                ["mountedZoom"] = 1,
+                ["lockWindow"] = false,
+                ["showRealTimeClock"] = true,
+                ["zoomToPlayer"] = false,
+                ["zoom"] = 1.3000000000,
+                ["width"] = 301,
+                ["borderAlpha"] = 100,
+                ["y"] = -535,
+                ["titleFont"] = "BOLD_FONT",
+                ["enableTweaks"] = true,
+                ["asyncUpdate"] = false,
+                ["unitPinScaleLimit"] = 0.8000000000,
+                ["showClock"] = true,
+                ["zoomIn"] = 2,
+                ["showInGameClock"] = true,
                 ["fixedMaps"] = 
                 {
                 },
-                ["showInGameClock"] = true,
-                ["enableCompass"] = "UNTOUCHED",
-                ["version"] = 1,
-                ["zoom"] = 1.3000000000,
-                ["y"] = -535,
-                ["titleFontSize"] = 16,
-                ["showRealTimeClock"] = true,
-                ["debug"] = false,
                 ["titleColor"] = 
                 {
                     [4] = 1,
@@ -80,39 +97,22 @@ VotansMiniMap_Data =
                     [2] = 0.7607843876,
                     [3] = 0.6196078658,
                 },
-                ["lockWindow"] = false,
-                ["borderAlpha"] = 100,
-                ["asyncUpdate"] = false,
-                ["titleFont"] = "BOLD_FONT",
-                ["showLoot"] = true,
-                ["zoomToPlayer"] = false,
-                ["cameraAngle"] = 45,
-                ["frameStyle"] = "ESO",
-                ["keepSquare"] = true,
-                ["showHUD"] = true,
-                ["subZoneZoom"] = 1,
-                ["enableMap"] = true,
-                ["showClock"] = true,
-                ["unitPinScaleLimit"] = 0.8000000000,
-                ["battlegroundZoom"] = 0,
-                ["zoneAlertMode"] = "MINIMAPHIDDEN",
-                ["mountedZoom"] = 1,
-                ["zoomOut"] = 0.1500000000,
-                ["showMounted"] = true,
-                ["showFullTitle"] = false,
-                ["x"] = 1124,
-                ["timeFormat"] = 4,
-                ["showCameraAngle"] = false,
-                ["width"] = 301,
-                ["showOnTop"] = false,
-                ["enableTweaks"] = true,
-                ["showSiege"] = true,
                 ["pinSizes"] = 
                 {
                 },
-                ["zoomIn"] = 2,
-                ["showCombat"] = true,
+                ["subZoneZoom"] = 1,
+                ["keepSquare"] = true,
+                ["zoomOut"] = 0.1500000000,
+                ["titleAtTop"] = true,
+                ["x"] = 1124,
                 ["dungeonZoom"] = 0.7000000000,
+                ["showCombat"] = true,
+            },
+            ["8796093062295781"] = 
+            {
+                ["$LastCharacterName"] = "Fridolin The Great",
+                ["showMap"] = true,
+                ["version"] = 1,
             },
         },
     },

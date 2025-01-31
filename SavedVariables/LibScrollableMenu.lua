@@ -8,10 +8,10 @@ LibScrollableMenu_SavedVars =
             {
                 ["LSM"] = 
                 {
-                    ["version"] = 1,
                     ["textSearchHistory"] = 
                     {
                     },
+                    ["version"] = 1,
                     ["collapsedHeaderState"] = 
                     {
                         ["AddonSelectorddl"] = false,

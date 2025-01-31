@@ -46,28 +46,25 @@ function PP:GetSavedVars(namespace)
 	return SV, SV.default
 end
 
-function PP.Dummy() end
-local Dummy = PP.Dummy
+function PP.Empty() end
+local empty = PP.Empty
 
 function PP.PostHooksSetupCallback(list, mode, typeId, onCreateFn, onUpdateFn)
 	local dataType = list.dataTypes[typeId]
 	if not dataType then return end
 
-	local pool				= dataType.pool
-	local _hooks			= dataType.hooks
-	local _customFactory	= pool.customFactoryBehavior
-	local _setupCallback	= dataType.setupCallback
+    local hooks = dataType.hooks or {}
 
-	if not _hooks then
-		dataType.hooks = {}
+	if not dataType.hooks then
 		for m = 1, 3 do
-			dataType.hooks[m] = {
-				OnCreate	= Dummy,
-				OnUpdate	= Dummy,
-			}
+			hooks[m] = { OnCreate = empty, OnUpdate = empty }
 		end
 
-		local hooks = dataType.hooks
+		dataType.hooks = hooks
+
+		local pool				= dataType.pool
+		local _customFactory	= pool.customFactoryBehavior
+		local _setupCallback	= dataType.setupCallback
 
 		if _customFactory then
 			pool.customFactoryBehavior = function(...)
@@ -84,38 +81,23 @@ function PP.PostHooksSetupCallback(list, mode, typeId, onCreateFn, onUpdateFn)
 			_setupCallback(...)
 			hooks[list.mode].OnUpdate(...)
 		end
+	end
 
-		if onCreateFn then
-			hooks[mode].OnCreate = onCreateFn
+	local modeHooks = hooks[mode]
+	local _OnCreate = modeHooks.OnCreate
+	local _OnUpdate = modeHooks.OnUpdate
+
+	if onCreateFn then
+		modeHooks.OnCreate = _OnCreate == empty and onCreateFn or function(...)
+			_OnCreate(...)
+			onCreateFn(...)
 		end
+	end
 
-		if onUpdateFn then
-			hooks[mode].OnUpdate = onUpdateFn
-		end
-	elseif _hooks then
-		local exOnCreate = _hooks[mode].OnCreate
-		local exOnUpdate = _hooks[mode].OnUpdate
-
-		if onCreateFn then
-			if exOnCreate == Dummy then
-				_hooks[mode].OnCreate = onCreateFn
-			else
-				_hooks[mode].OnCreate = function(...)
-					exOnCreate(...)
-					onCreateFn(...)
-				end
-			end
-		end
-
-		if onUpdateFn then
-			if exOnUpdate == Dummy then
-				_hooks[mode].OnUpdate = onUpdateFn
-			else
-				_hooks[mode].OnUpdate = function(...)
-					exOnUpdate(...)
-					onUpdateFn(...)
-				end
-			end
+	if onUpdateFn then
+		modeHooks.OnUpdate = _OnUpdate == empty and onUpdateFn or function(...)
+			_OnUpdate(...)
+			onUpdateFn(...)
 		end
 	end
 end
@@ -482,7 +464,7 @@ PP.Bar = function(control, --[[height]] height, --[[fontSize]] fSize, bgEdgeColo
 
 		if not glow:GetNamedChild("Backdrop") then
 			local glowBG = CreateControl("$(parent)Backdrop", glow, CT_BACKDROP)
-			glowBG:SetCenterTexture(nil, 8, 0)
+			glowBG:SetCenterTexture("", 8, 0)
 			glowBG:SetCenterColor(0/255, 0/255, 0/255, 0)
 			glowBG:SetEdgeTexture("", 1, 1, 1, 0)
 			glowBG:SetEdgeColor(173/255, 166/255, 132/255, 1)
@@ -511,7 +493,7 @@ PP.Bar = function(control, --[[height]] height, --[[fontSize]] fSize, bgEdgeColo
 		local barBG = CreateControl("$(parent)Backdrop", control, CT_BACKDROP)
 
 		PP_Anchor(barBG, --[[#1]] TOPLEFT, control, TOPLEFT, -2, -2, --[[#2]] true, BOTTOMRIGHT, control, BOTTOMRIGHT,	2, 2)
-		barBG:SetCenterTexture(nil, 8, 0)
+		barBG:SetCenterTexture("", 8, 0)
 		barBG:SetCenterColor(10/255, 10/255, 10/255, 0.8)
 		barBG:SetEdgeTexture("", 1, 1, 1, 0)
 		barBG:SetEdgeColor(60/255, 60/255, 60/255, 0.9)

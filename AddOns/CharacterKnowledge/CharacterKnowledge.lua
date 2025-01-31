@@ -2,6 +2,8 @@ local LCCC = LibCodesCommonCode
 local LCK = LibCharacterKnowledge
 local LEJ = LibExtendedJournal
 
+LEJ.Used = true
+
 CharacterKnowledge = {
 	name = "CharacterKnowledge",
 

@@ -30,6 +30,12 @@ for i = PRIORITY_LOW, PRIORITY_MAX do
 	IndicatorIcons[i] = string.format("LootLog/art/uncollected-%d.dds", i)
 end
 
+local AntiquityIcons = {
+	general = "LootLog/art/antiquities-general.dds",
+	motif = "LootLog/art/antiquities-motif.dds",
+	motif2 = "LootLog/art/antiquities-motif-light.dds",
+}
+
 
 --------------------------------------------------------------------------------
 -- LootLogMulti.Initialize
@@ -332,6 +338,59 @@ local function ShouldFlagAsUncollectedCollectible( itemLink, context, checkInven
 	return ShouldFlagAsUncollectedSetItem(itemLink, context, checkInventory)
 end
 
+local function ShouldFlagAsTreasureMapWithLeads( itemLink, context )
+	if (context == LootLogMulti.CONTEXT_HISTORY_FILTER or context == LootLogMulti.CONTEXT_INCOMING_CHAT) then
+		return false
+	end
+
+	local totalLoreAcquired = 0
+	local totalLore = 0
+	local neverFound = false
+	local hasMotif = false
+
+	for _, antiquityId in ipairs(LootLog.GetAntiquityIdsForTreasureMap(itemLink)) do
+		local loreAcquired = GetNumAntiquityLoreEntriesAcquired(antiquityId)
+		local lore = GetNumAntiquityLoreEntries(antiquityId)
+
+		if (loreAcquired < lore and DoesAntiquityHaveLead(antiquityId)) then
+			-- If the player has an unexcavated lead, let it count towards the codex
+			loreAcquired = loreAcquired + 1
+		end
+
+		if (loreAcquired == 0) then
+			neverFound = true
+		end
+		totalLoreAcquired = totalLoreAcquired + loreAcquired
+		totalLore = totalLore + lore
+
+		if (not hasMotif and GetItemLinkItemType(LootLog.GetAntiquityRewardLink(antiquityId)) == ITEMTYPE_RACIAL_STYLE_MOTIF) then
+			hasMotif = true
+		end
+	end
+
+	if (totalLore > 0 and (hasMotif or not LootLog.vars.antiquityOnlyMotifs)) then
+		local color
+		if (totalLoreAcquired >= totalLore) then
+			color = "fullCodex"
+		elseif (not neverFound) then
+			color = "incompleteCodex"
+		else
+			color = "neverFound"
+		end
+		local icon
+		if (not hasMotif) then
+			icon = "general"
+		elseif (totalLore <= 4) then
+			icon = "motif2"
+		else
+			icon = "motif"
+		end
+		return true, LootLog.vars.antiquityMapColors[color], AntiquityIcons[icon], not neverFound
+	else
+		return false
+	end
+end
+
 function LootLogMulti.ShouldFlagAsUncollected( ... )
 	local results
 	local itemLink = ...
@@ -339,6 +398,8 @@ function LootLogMulti.ShouldFlagAsUncollected( ... )
 		results = { ShouldFlagAsUncollectedRecipeOrMotif(...) }
 	elseif (MultiEnabled(FLAG_SUPPORTED_LMAC) and GetItemLinkContainerCollectibleId(itemLink) > 0) then
 		results = { ShouldFlagAsUncollectedCollectible(...) }
+	elseif (LootLog.vars.antiquityEnabled and select(2, GetItemLinkItemType(itemLink)) == SPECIALIZED_ITEMTYPE_TROPHY_TREASURE_MAP) then
+		results = { ShouldFlagAsTreasureMapWithLeads(...) }
 	else
 		results = { ShouldFlagAsUncollectedSetItem(...) }
 	end

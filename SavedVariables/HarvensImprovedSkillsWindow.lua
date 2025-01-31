@@ -4,59 +4,59 @@ HarvensImprovedSkillsWindow_SavedVariables =
     {
         ["@germanus4711"] = 
         {
-            ["Otto von Bissmark"] = 
+            ["Hubertus Freiherr v Feld"] = 
             {
-                ["showDetails"] = true,
-                ["version"] = 1,
                 ["showTotal"] = false,
+                ["version"] = 1,
+                ["showDetails"] = true,
             },
             ["Maüschen"] = 
             {
-                ["showDetails"] = true,
-                ["version"] = 1,
                 ["showTotal"] = false,
-            },
-            ["Gustaf Helmuth v Feld"] = 
-            {
-                ["showDetails"] = true,
                 ["version"] = 1,
-                ["showTotal"] = false,
-            },
-            ["Hubertus Freiherr v Feld"] = 
-            {
                 ["showDetails"] = true,
-                ["version"] = 1,
-                ["showTotal"] = false,
-            },
-            ["Mike v Petra"] = 
-            {
-                ["showDetails"] = true,
-                ["version"] = 1,
-                ["showTotal"] = false,
-            },
-            ["Fridolin The Great"] = 
-            {
-                ["showDetails"] = true,
-                ["version"] = 1,
-                ["showTotal"] = false,
-            },
-            ["Gamal Loki"] = 
-            {
-                ["showDetails"] = true,
-                ["version"] = 1,
-                ["showTotal"] = false,
-            },
-            ["Freya Orm"] = 
-            {
-                ["showDetails"] = true,
-                ["version"] = 1,
-                ["showTotal"] = false,
             },
             ["Christel v Koenigsberg"] = 
             {
-                ["showDetails"] = true,
-                ["version"] = 1,
                 ["showTotal"] = false,
+                ["version"] = 1,
+                ["showDetails"] = true,
+            },
+            ["Otto von Bissmark"] = 
+            {
+                ["showTotal"] = false,
+                ["version"] = 1,
+                ["showDetails"] = true,
+            },
+            ["Freya Orm"] = 
+            {
+                ["showTotal"] = false,
+                ["version"] = 1,
+                ["showDetails"] = true,
+            },
+            ["Fridolin The Great"] = 
+            {
+                ["showTotal"] = false,
+                ["version"] = 1,
+                ["showDetails"] = true,
+            },
+            ["Gamal Loki"] = 
+            {
+                ["showTotal"] = false,
+                ["version"] = 1,
+                ["showDetails"] = true,
+            },
+            ["Gustaf Helmuth v Feld"] = 
+            {
+                ["showTotal"] = false,
+                ["version"] = 1,
+                ["showDetails"] = true,
+            },
+            ["Mike v Petra"] = 
+            {
+                ["showTotal"] = false,
+                ["version"] = 1,
+                ["showDetails"] = true,
             },
         },
     },

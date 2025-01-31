@@ -1,3 +1,21 @@
+Version 4.7.2 (2025/01/29)
+* The flag for treasure maps that can drop motifs leads will now appear to be
+  slightly faded for the alliance zone maps, to help distinguish them from the
+  newer DLC zone maps
+
+Version 4.7.1 (2025/01/29)
+* Improved the formatting of the treasure map antiquity lead tooltip section
+
+Version 4.7.0 (2025/01/28)
+* Expanded Loot Log's handling of antiquity leads by flagging treasure maps that
+  can drop leads and by adding a summary of possible leads and their codex
+  completion status to the item tooltips of treasure maps
+  - This feature can be customized in the addon settings panel
+* Added Spanish localization by Cisneros
+* Abyss-Drenched Folio Volume will now be regarded as a notable item
+* Loot Log will now fail gracefully without a Lua error if it cannot determine
+  the @UserId of a character
+
 Version 4.6.5 (2024/09/19)
 * API version bump for Update 44
 

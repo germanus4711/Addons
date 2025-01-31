@@ -124,7 +124,7 @@ end
 
 local function FindAchievement( styleName )
 	for i = 1, LMAA.GetMaxAchievementId() do
-		if (FindLower(GetAchievementName(i), AchievementAdjustments[styleName] or styleName .. " Style Master")) then
+		if (FindLower(zo_strformat(GetAchievementName(i)), AchievementAdjustments[styleName] or styleName .. " Style Master")) then
 			return i
 		end
 	end

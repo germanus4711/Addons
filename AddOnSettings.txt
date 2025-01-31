@@ -396,8 +396,8 @@ CombatMetronome 0
 VotansImprovedHouseTours 0
 #NA Megaserver-Freya Orm
 CustomCompassPins 1
-LibLootSummary 1
-LibCraftText 1
+VotansImprovedHouseTours 1
+CraftStoreFixedAndImproved 1
 AchievementInfo 1
 PerfectWeave 1
 LibAddonMenuOrderListBox 1
@@ -601,10 +601,10 @@ LibMainMenu-2.0 1
 LibManifest 1
 CombatMetronome 1
 LibPhinixFunctions 1
-LibMotif 1
-CraftStoreFixedAndImproved 1
-VotansImprovedHouseTours 1
 HarvestMapAD 1
+LibMotif 1
+LibLootSummary 1
+LibCraftText 1
 #NA Megaserver-Maüschen
 CustomCompassPins 0
 PerfectWeave 0

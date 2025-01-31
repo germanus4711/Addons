@@ -6,21 +6,12 @@ LowChampionPointFinderVars =
         {
             ["$AccountWide"] = 
             {
-                ["CpOffset"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 60,
-                },
-                ["isPvpOnly"] = true,
-                ["isAttackableOnly"] = true,
+                ["fontSize"] = 32,
                 ["version"] = "1.01",
                 ["ChampionPointGroups"] = 
                 {
                     [1] = 
                     {
-                        ["highCp"] = 160,
-                        ["lowCp"] = 0,
-                        ["text"] = "Low Cp",
                         ["color"] = 
                         {
                             ["a"] = 1,
@@ -28,12 +19,12 @@ LowChampionPointFinderVars =
                             ["g"] = 1,
                             ["r"] = 0,
                         },
+                        ["highCp"] = 160,
+                        ["text"] = "Low Cp",
+                        ["lowCp"] = 0,
                     },
                     [2] = 
                     {
-                        ["highCp"] = 600,
-                        ["lowCp"] = 160,
-                        ["text"] = "Low Cp",
                         ["color"] = 
                         {
                             ["a"] = 1,
@@ -41,12 +32,12 @@ LowChampionPointFinderVars =
                             ["g"] = 1,
                             ["r"] = 0,
                         },
+                        ["highCp"] = 600,
+                        ["text"] = "Low Cp",
+                        ["lowCp"] = 160,
                     },
                     [3] = 
                     {
-                        ["highCp"] = 810,
-                        ["lowCp"] = 600,
-                        ["text"] = "Low Cp",
                         ["color"] = 
                         {
                             ["a"] = 1,
@@ -54,12 +45,12 @@ LowChampionPointFinderVars =
                             ["g"] = 1,
                             ["r"] = 0,
                         },
+                        ["highCp"] = 810,
+                        ["text"] = "Low Cp",
+                        ["lowCp"] = 600,
                     },
                     [4] = 
                     {
-                        ["highCp"] = 1200,
-                        ["lowCp"] = 810,
-                        ["text"] = "",
                         ["color"] = 
                         {
                             ["a"] = 0.8000000000,
@@ -67,12 +58,12 @@ LowChampionPointFinderVars =
                             ["g"] = 1,
                             ["r"] = 0.8000000000,
                         },
+                        ["highCp"] = 1200,
+                        ["text"] = "",
+                        ["lowCp"] = 810,
                     },
                     [5] = 
                     {
-                        ["highCp"] = 1500,
-                        ["lowCp"] = 1200,
-                        ["text"] = "",
                         ["color"] = 
                         {
                             ["a"] = 0.5000000000,
@@ -80,12 +71,12 @@ LowChampionPointFinderVars =
                             ["g"] = 0.2000000000,
                             ["r"] = 1,
                         },
+                        ["highCp"] = 1500,
+                        ["text"] = "",
+                        ["lowCp"] = 1200,
                     },
                     [6] = 
                     {
-                        ["highCp"] = 3600,
-                        ["lowCp"] = 1500,
-                        ["text"] = "",
                         ["color"] = 
                         {
                             ["a"] = 0.5000000000,
@@ -93,9 +84,18 @@ LowChampionPointFinderVars =
                             ["g"] = 0,
                             ["r"] = 1,
                         },
+                        ["highCp"] = 3600,
+                        ["text"] = "",
+                        ["lowCp"] = 1500,
                     },
                 },
-                ["fontSize"] = 32,
+                ["isAttackableOnly"] = true,
+                ["CpOffset"] = 
+                {
+                    ["x"] = 0,
+                    ["y"] = 60,
+                },
+                ["isPvpOnly"] = true,
             },
         },
     },

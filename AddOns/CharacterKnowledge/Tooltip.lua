@@ -45,7 +45,8 @@ function CharacterKnowledge.AddTooltipExtension( tooltip, itemLink, server, acco
 		-- Achievement text
 		local achievementId = items and items.achievementId
 		if (achievementId and achievementId ~= 0 and achievementId ~= 1030 and achievementId ~= 1043) then
-			extension:AddSection(GetAchievementInfo(achievementId))
+			local name, description = GetAchievementInfo(achievementId)
+			extension:AddSection(zo_strformat(name), description)
 		end
 
 		if (items and #items.chapters > 0) then

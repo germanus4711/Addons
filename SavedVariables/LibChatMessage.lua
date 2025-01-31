@@ -5,10 +5,10 @@ LibChatMessageSettings =
         ["historyEnabled"] = false,
         ["timePrefixEnabled"] = false,
         ["tagPrefixMode"] = 2,
-        ["timePrefixOnRegularChat"] = true,
+        ["version"] = 1,
         ["timePrefixFormat"] = "[%X]",
         ["historyMaxAge"] = 3600,
-        ["version"] = 1,
+        ["timePrefixOnRegularChat"] = true,
     },
 }
 LibChatMessageHistory =

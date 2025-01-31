@@ -82,24 +82,25 @@ ZO_ChatOptions_ToggleChannel    pChat.SaveChatConfig()      Save the currently l
 
 --=======================================================================================================================================
 --Known problems/bugs:
---Last updated: 2025-01-05
---Total number: 26
+--Last updated: 2025-01-26
+--Total number: 27
 --=======================================================================================================================================
 
 --Working on:
+--Fix enableChatTabChannel to switch to group if not grouped, and to switch to guild
 
 --=======================================================================================================================================
--- Changelog version: 10.0.6.0 (last version 10.0.5.9)
+-- Changelog version: 10.0.6.3 (last version 10.0.6.2
 --=======================================================================================================================================
 --Fixed:
---Some wrong translations and missing translations
+--Fix /msg slash command list update after adding/removing entries
 
 --Changed:
---Settings menu for colors describes better why settings are disabled and where to change it (submenus are disabled in total e.g.)
+
 
 --Added:
---Timestamps with milliseconds format. Use xy in the formatting string to activate millisenconds (thanks to Dakjaniels for the idea and code)
---Auto completion for /msg: Activate LibSlashCommander and type ! in the chat to show your defined ! messages, and their text
+--Added API table for other addons, which contains the last checked displayName of a chat player context menu: pChat.lastCheckDisplayNameData = { displayName=guildMemberDisplayname, index=guildIndexFound, isOnline=isOnline, type = "guild" or "friend"}
+
 
 --Added on request:
 

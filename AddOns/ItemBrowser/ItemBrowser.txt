@@ -7,11 +7,11 @@
 ## Title: Item Set Browser
 ## Description: List and browse the game's item sets with tracking of Item Set Collection progress
 ## Author: @code65536
-## Version: 4.6.2
-## AddOnVersion: 406020
-## APIVersion: 101043 101044
+## Version: 4.6.3
+## AddOnVersion: 406030
+## APIVersion: 101044 101045
 ## SavedVariables: ItemBrowserSavedVariables
-## DependsOn: LibExtendedJournal>=202020
+## DependsOn: LibExtendedJournal>=203020
 ## OptionalDependsOn: LibMultiAccountSets LibUndauntedPledges LibAddonMenu-2.0
 
 l10n/default.lua

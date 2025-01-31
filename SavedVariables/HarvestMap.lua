@@ -1,502 +1,496 @@
 Harvest_SavedVars =
 {
+    ["tours"] = 
+    {
+    },
     ["account"] = 
     {
         ["germanus4711"] = 
         {
-            ["heatmap"] = false,
-            ["isSpawnFilterUsedForPinType"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [7] = true,
-                [13] = true,
-                [14] = true,
-                [19] = true,
-            },
+            ["useHiddenTime"] = false,
+            ["worldDistanceInMeters"] = 100,
+            ["worldPinDepth"] = true,
+            ["displayMinimapPins"] = true,
             ["pinLayouts"] = 
             {
                 [1] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.4900000000,
-                        ["r"] = 0.4470000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 0.4470000000,
+                        ["g"] = 0.4900000000,
+                        ["b"] = 1,
                     },
                 },
                 [2] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.9880000000,
-                        ["r"] = 0.5880000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 0.5880000000,
+                        ["g"] = 0.9880000000,
+                        ["b"] = 1,
                     },
                 },
                 [3] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4780000000,
-                        ["g"] = 0.4550000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 1,
+                        ["g"] = 0.4550000000,
+                        ["b"] = 0.4780000000,
                     },
                 },
                 [4] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4240000000,
-                        ["g"] = 0.5690000000,
-                        ["r"] = 0.4510000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 0.4510000000,
+                        ["g"] = 0.5690000000,
+                        ["b"] = 0.4240000000,
                     },
                 },
                 [5] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4940000000,
-                        ["g"] = 0.6940000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 1,
+                        ["g"] = 0.6940000000,
+                        ["b"] = 0.4940000000,
                     },
                 },
                 [6] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3800000000,
-                        ["g"] = 0.9370000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 1,
+                        ["g"] = 0.9370000000,
+                        ["b"] = 0.3800000000,
                     },
                 },
                 [7] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.8270000000,
-                        ["r"] = 0.5690000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 0.5690000000,
+                        ["g"] = 0.8270000000,
+                        ["b"] = 1,
                     },
                 },
                 [8] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 1,
+                        ["g"] = 1,
+                        ["b"] = 1,
                     },
                 },
                 [9] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3600000000,
-                        ["g"] = 0.6900000000,
-                        ["r"] = 0.4240000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 0.4240000000,
+                        ["g"] = 0.6900000000,
+                        ["b"] = 0.3600000000,
                     },
                 },
                 [10] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.4040000000,
-                        ["r"] = 0.7800000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 0.7800000000,
+                        ["g"] = 0.4040000000,
+                        ["b"] = 1,
                     },
                 },
                 [11] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 1,
+                        ["g"] = 1,
+                        ["b"] = 1,
                     },
                 },
                 [12] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 1,
+                        ["g"] = 1,
+                        ["b"] = 1,
                     },
                 },
                 [13] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5410000000,
-                        ["g"] = 1,
-                        ["r"] = 0.5570000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 0.5570000000,
+                        ["g"] = 1,
+                        ["b"] = 0.5410000000,
                     },
                 },
                 [14] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8080000000,
-                        ["g"] = 0.9370000000,
-                        ["r"] = 0.4390000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 0.4390000000,
+                        ["g"] = 0.9370000000,
+                        ["b"] = 0.8080000000,
                     },
                 },
                 [15] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 1,
+                        ["g"] = 1,
+                        ["b"] = 1,
                     },
                 },
                 [16] = 
@@ -525,124 +519,86 @@ Harvest_SavedVars =
                 },
                 [18] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 1,
+                        ["g"] = 1,
+                        ["b"] = 1,
                     },
                 },
                 [19] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5370000000,
-                        ["g"] = 0.3450000000,
-                        ["r"] = 0.9330000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [2] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
                         [3] = 
                         {
-                            ["show"] = nil, -- invalid value type [function] used
                             ["callback"] = nil, -- invalid value type [function] used
+                            ["show"] = nil, -- invalid value type [function] used
                         },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["r"] = 0.9330000000,
+                        ["g"] = 0.3450000000,
+                        ["b"] = 0.5370000000,
                     },
                 },
                 [100] = 
                 {
+                    ["size"] = 32,
+                    ["level"] = 55,
+                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
                     ["tint"] = 
                     {
                         ["a"] = 1,
-                        ["b"] = 0,
-                        ["g"] = 0,
                         ["r"] = 1,
+                        ["g"] = 0,
+                        ["b"] = 0,
                     },
-                    ["level"] = 55,
-                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
-                    ["size"] = 32,
                 },
             },
-            ["compassDistanceInMeters"] = 100,
-            ["displayMapPins"] = true,
-            ["worldDistanceInMeters"] = 100,
-            ["worldPinHeight"] = 200,
-            ["isPinTypeSavedOnGather"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [6] = true,
-                [7] = true,
-                [8] = true,
-                [9] = true,
-                [10] = true,
-                [11] = true,
-                [12] = true,
-                [13] = true,
-                [14] = true,
-                [15] = true,
-                [16] = true,
-                [17] = true,
-                [18] = false,
-                [19] = true,
-            },
-            ["maxVisibleDistanceInMeters"] = 300,
-            ["hasMaxVisibleDistance"] = true,
-            ["worldFilterProfile"] = 1,
-            ["mapSpawnFilter"] = true,
+            ["compassSpawnFilter"] = false,
+            ["heatmap"] = false,
             ["worldPinWidth"] = 100,
-            ["visitedRangeInMeters"] = 10,
-            ["hiddenTime"] = 1,
             ["minimapPinSize"] = 20,
-            ["minimapSpawnFilter"] = true,
-            ["accountWideSettings"] = true,
-            ["compassFilterProfile"] = 1,
-            ["mapFilterProfile"] = 1,
-            ["displayMinimapPins"] = true,
-            ["hiddenOnHarvest"] = true,
-            ["worldPinDepth"] = true,
-            ["showDebugOutput"] = false,
             ["filterProfiles"] = 
             {
                 [1] = 
@@ -669,64 +625,89 @@ Harvest_SavedVars =
                     ["name"] = "Default Filter Profile",
                 },
             },
+            ["showDebugOutput"] = false,
             ["displayWorldPins"] = true,
-            ["useHiddenTime"] = false,
-            ["worldSpawnFilter"] = true,
-            ["pinsAbovePoi"] = false,
-            ["displayCompassPins"] = true,
+            ["mapFilterProfile"] = 1,
             ["displayNotifications"] = true,
-            ["compassSpawnFilter"] = false,
+            ["hiddenOnHarvest"] = true,
+            ["worldFilterProfile"] = 1,
+            ["worldPinHeight"] = 200,
+            ["hasMaxVisibleDistance"] = true,
+            ["worldSpawnFilter"] = true,
+            ["isSpawnFilterUsedForPinType"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [7] = true,
+                [13] = true,
+                [14] = true,
+                [19] = true,
+            },
+            ["displayCompassPins"] = true,
+            ["mapSpawnFilter"] = true,
+            ["minimapSpawnFilter"] = true,
+            ["compassDistanceInMeters"] = 100,
+            ["accountWideSettings"] = true,
+            ["pinsAbovePoi"] = false,
+            ["visitedRangeInMeters"] = 10,
+            ["maxVisibleDistanceInMeters"] = 300,
+            ["isPinTypeSavedOnGather"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [6] = true,
+                [7] = true,
+                [8] = true,
+                [9] = true,
+                [10] = true,
+                [11] = true,
+                [12] = true,
+                [13] = true,
+                [14] = true,
+                [15] = true,
+                [16] = true,
+                [17] = true,
+                [18] = false,
+                [19] = true,
+            },
+            ["displayMapPins"] = true,
+            ["compassFilterProfile"] = 1,
+            ["hiddenTime"] = 1,
         },
     },
     ["character"] = 
     {
-        ["8796093027479535"] = 
+        ["8796093064640125"] = 
         {
-            ["isSpawnFilterUsedForPinType"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [7] = true,
-                [13] = true,
-                [14] = true,
-                [19] = true,
-            },
-            ["heatmap"] = false,
-            ["compassDistanceInMeters"] = 100,
-            ["displayMapPins"] = true,
+            ["useHiddenTime"] = false,
             ["worldDistanceInMeters"] = 100,
-            ["worldPinHeight"] = 200,
-            ["isPinTypeSavedOnGather"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [6] = true,
-                [7] = true,
-                [8] = true,
-                [9] = true,
-                [10] = true,
-                [11] = true,
-                [12] = true,
-                [13] = true,
-                [14] = true,
-                [15] = true,
-                [16] = true,
-                [17] = true,
-                [18] = false,
-                [19] = true,
-            },
-            ["maxVisibleDistanceInMeters"] = 300,
-            ["hasMaxVisibleDistance"] = false,
+            ["worldPinDepth"] = true,
             ["pinLayouts"] = 
             {
                 [1] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -734,10 +715,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4900000000,
                         ["r"] = 0.4470000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                },
+                [2] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -750,9 +730,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [2] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -760,10 +741,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9880000000,
                         ["r"] = 0.5880000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                },
+                [3] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -776,9 +756,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [3] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -786,10 +767,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4550000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                },
+                [4] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -802,9 +782,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [4] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -812,10 +793,9 @@ Harvest_SavedVars =
                         ["g"] = 0.5690000000,
                         ["r"] = 0.4510000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                },
+                [5] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -828,9 +808,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [5] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -838,10 +819,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6940000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                },
+                [6] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -854,9 +834,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [6] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -864,10 +845,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                },
+                [7] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -880,9 +860,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [7] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -890,10 +871,9 @@ Harvest_SavedVars =
                         ["g"] = 0.8270000000,
                         ["r"] = 0.5690000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                },
+                [8] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -906,9 +886,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [8] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -916,10 +897,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                },
+                [9] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -932,9 +912,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [9] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -942,10 +923,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6900000000,
                         ["r"] = 0.4240000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                },
+                [10] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -958,9 +938,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [10] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -968,10 +949,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4040000000,
                         ["r"] = 0.7800000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                },
+                [11] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -984,46 +964,20 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [11] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [12] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1036,9 +990,36 @@ Harvest_SavedVars =
                         {
                         },
                     },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
                 },
                 [13] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1046,10 +1027,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 0.5570000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                },
+                [14] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1062,9 +1042,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [14] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1072,10 +1053,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 0.4390000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                },
+                [15] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1088,31 +1068,16 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [15] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [16] = 
@@ -1141,6 +1106,22 @@ Harvest_SavedVars =
                 },
                 [18] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1148,10 +1129,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                },
+                [19] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1164,9 +1144,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [19] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1174,25 +1155,12 @@ Harvest_SavedVars =
                         ["g"] = 0.3450000000,
                         ["r"] = 0.9330000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
                 },
                 [100] = 
                 {
+                    ["size"] = 32,
+                    ["level"] = 55,
+                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1200,12 +1168,13 @@ Harvest_SavedVars =
                         ["g"] = 0,
                         ["r"] = 1,
                     },
-                    ["level"] = 55,
-                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
-                    ["size"] = 32,
                 },
             },
-            ["mapSpawnFilter"] = false,
+            ["compassSpawnFilter"] = false,
+            ["heatmap"] = false,
+            ["displayMinimapPins"] = true,
+            ["minimapPinSize"] = 20,
+            ["worldPinHeight"] = 200,
             ["filterProfiles"] = 
             {
                 [1] = 
@@ -1232,28 +1201,14 @@ Harvest_SavedVars =
                     ["name"] = "Default Filter Profile",
                 },
             },
-            ["visitedRangeInMeters"] = 10,
-            ["worldPinDepth"] = true,
-            ["minimapPinSize"] = 20,
-            ["minimapSpawnFilter"] = false,
-            ["hiddenTime"] = 1,
-            ["worldPinWidth"] = 100,
-            ["mapFilterProfile"] = 1,
-            ["displayMinimapPins"] = true,
-            ["worldFilterProfile"] = 1,
-            ["hiddenOnHarvest"] = true,
-            ["showDebugOutput"] = false,
             ["displayWorldPins"] = true,
-            ["worldSpawnFilter"] = false,
-            ["useHiddenTime"] = false,
-            ["pinsAbovePoi"] = false,
-            ["compassFilterProfile"] = 1,
-            ["displayCompassPins"] = true,
+            ["showDebugOutput"] = false,
             ["displayNotifications"] = true,
-            ["compassSpawnFilter"] = false,
-        },
-        ["8796093023211051"] = 
-        {
+            ["mapFilterProfile"] = 1,
+            ["hiddenOnHarvest"] = true,
+            ["worldFilterProfile"] = 1,
+            ["hasMaxVisibleDistance"] = false,
+            ["pinsAbovePoi"] = false,
             ["isSpawnFilterUsedForPinType"] = 
             {
                 [1] = true,
@@ -1266,11 +1221,14 @@ Harvest_SavedVars =
                 [14] = true,
                 [19] = true,
             },
-            ["heatmap"] = false,
-            ["compassDistanceInMeters"] = 100,
+            ["displayCompassPins"] = true,
+            ["mapSpawnFilter"] = false,
+            ["minimapSpawnFilter"] = false,
+            ["worldSpawnFilter"] = false,
+            ["visitedRangeInMeters"] = 10,
+            ["hiddenTime"] = 1,
             ["displayMapPins"] = true,
-            ["worldDistanceInMeters"] = 100,
-            ["worldPinHeight"] = 200,
+            ["maxVisibleDistanceInMeters"] = 300,
             ["isPinTypeSavedOnGather"] = 
             {
                 [1] = true,
@@ -1293,12 +1251,35 @@ Harvest_SavedVars =
                 [18] = false,
                 [19] = true,
             },
-            ["maxVisibleDistanceInMeters"] = 300,
-            ["hasMaxVisibleDistance"] = false,
+            ["worldPinWidth"] = 100,
+            ["compassFilterProfile"] = 1,
+            ["compassDistanceInMeters"] = 100,
+        },
+        ["8796093072557313"] = 
+        {
+            ["useHiddenTime"] = false,
+            ["worldDistanceInMeters"] = 100,
+            ["worldPinDepth"] = true,
             ["pinLayouts"] = 
             {
                 [1] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1306,10 +1287,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4900000000,
                         ["r"] = 0.4470000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                },
+                [2] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1322,9 +1302,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [2] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1332,10 +1313,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9880000000,
                         ["r"] = 0.5880000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                },
+                [3] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1348,9 +1328,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [3] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1358,10 +1339,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4550000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                },
+                [4] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1374,9 +1354,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [4] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1384,10 +1365,9 @@ Harvest_SavedVars =
                         ["g"] = 0.5690000000,
                         ["r"] = 0.4510000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                },
+                [5] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1400,9 +1380,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [5] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1410,10 +1391,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6940000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                },
+                [6] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1426,9 +1406,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [6] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1436,10 +1417,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                },
+                [7] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1452,9 +1432,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [7] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1462,10 +1443,9 @@ Harvest_SavedVars =
                         ["g"] = 0.8270000000,
                         ["r"] = 0.5690000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                },
+                [8] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1478,9 +1458,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [8] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1488,10 +1469,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                },
+                [9] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1504,9 +1484,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [9] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1514,10 +1495,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6900000000,
                         ["r"] = 0.4240000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                },
+                [10] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1530,9 +1510,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [10] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1540,10 +1521,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4040000000,
                         ["r"] = 0.7800000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                },
+                [11] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1556,46 +1536,20 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [11] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [12] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1608,9 +1562,36 @@ Harvest_SavedVars =
                         {
                         },
                     },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
                 },
                 [13] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1618,10 +1599,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 0.5570000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                },
+                [14] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1634,9 +1614,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [14] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1644,10 +1625,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 0.4390000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                },
+                [15] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1660,31 +1640,16 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [15] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [16] = 
@@ -1713,6 +1678,22 @@ Harvest_SavedVars =
                 },
                 [18] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1720,10 +1701,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                },
+                [19] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1736,9 +1716,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [19] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1746,10 +1727,115 @@ Harvest_SavedVars =
                         ["g"] = 0.3450000000,
                         ["r"] = 0.9330000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                },
+                [100] = 
+                {
+                    ["size"] = 32,
+                    ["level"] = 55,
+                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                },
+            },
+            ["compassSpawnFilter"] = false,
+            ["heatmap"] = false,
+            ["displayMinimapPins"] = true,
+            ["minimapPinSize"] = 20,
+            ["worldPinHeight"] = 200,
+            ["filterProfiles"] = 
+            {
+                [1] = 
+                {
+                    [1] = true,
+                    [2] = true,
+                    [3] = true,
+                    [4] = true,
+                    [5] = true,
+                    [6] = true,
+                    [7] = true,
+                    [8] = true,
+                    [9] = true,
+                    [10] = true,
+                    [11] = true,
+                    [12] = true,
+                    [13] = true,
+                    [14] = true,
+                    [15] = true,
+                    [16] = true,
+                    [17] = true,
+                    [18] = false,
+                    [19] = true,
+                    ["name"] = "Default Filter Profile",
+                },
+            },
+            ["displayWorldPins"] = true,
+            ["showDebugOutput"] = false,
+            ["displayNotifications"] = true,
+            ["mapFilterProfile"] = 1,
+            ["hiddenOnHarvest"] = true,
+            ["worldFilterProfile"] = 1,
+            ["hasMaxVisibleDistance"] = false,
+            ["pinsAbovePoi"] = false,
+            ["isSpawnFilterUsedForPinType"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [7] = true,
+                [13] = true,
+                [14] = true,
+                [19] = true,
+            },
+            ["displayCompassPins"] = true,
+            ["mapSpawnFilter"] = false,
+            ["minimapSpawnFilter"] = false,
+            ["worldSpawnFilter"] = false,
+            ["visitedRangeInMeters"] = 10,
+            ["hiddenTime"] = 1,
+            ["displayMapPins"] = true,
+            ["maxVisibleDistanceInMeters"] = 300,
+            ["isPinTypeSavedOnGather"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [6] = true,
+                [7] = true,
+                [8] = true,
+                [9] = true,
+                [10] = true,
+                [11] = true,
+                [12] = true,
+                [13] = true,
+                [14] = true,
+                [15] = true,
+                [16] = true,
+                [17] = true,
+                [18] = false,
+                [19] = true,
+            },
+            ["worldPinWidth"] = 100,
+            ["compassFilterProfile"] = 1,
+            ["compassDistanceInMeters"] = 100,
+        },
+        ["8796093023211051"] = 
+        {
+            ["useHiddenTime"] = false,
+            ["worldDistanceInMeters"] = 100,
+            ["worldPinDepth"] = true,
+            ["pinLayouts"] = 
+            {
+                [1] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -1762,9 +1848,463 @@ Harvest_SavedVars =
                         {
                         },
                     },
+                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.4900000000,
+                        ["r"] = 0.4470000000,
+                    },
+                },
+                [2] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.9880000000,
+                        ["r"] = 0.5880000000,
+                    },
+                },
+                [3] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.4780000000,
+                        ["g"] = 0.4550000000,
+                        ["r"] = 1,
+                    },
+                },
+                [4] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.4240000000,
+                        ["g"] = 0.5690000000,
+                        ["r"] = 0.4510000000,
+                    },
+                },
+                [5] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.4940000000,
+                        ["g"] = 0.6940000000,
+                        ["r"] = 1,
+                    },
+                },
+                [6] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.3800000000,
+                        ["g"] = 0.9370000000,
+                        ["r"] = 1,
+                    },
+                },
+                [7] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.8270000000,
+                        ["r"] = 0.5690000000,
+                    },
+                },
+                [8] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [9] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.3600000000,
+                        ["g"] = 0.6900000000,
+                        ["r"] = 0.4240000000,
+                    },
+                },
+                [10] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.4040000000,
+                        ["r"] = 0.7800000000,
+                    },
+                },
+                [11] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [12] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [13] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.5410000000,
+                        ["g"] = 1,
+                        ["r"] = 0.5570000000,
+                    },
+                },
+                [14] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.8080000000,
+                        ["g"] = 0.9370000000,
+                        ["r"] = 0.4390000000,
+                    },
+                },
+                [15] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [16] = 
+                {
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["size"] = 20,
+                },
+                [17] = 
+                {
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["size"] = 20,
+                },
+                [18] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [19] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 26,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.5370000000,
+                        ["g"] = 0.3450000000,
+                        ["r"] = 0.9330000000,
+                    },
                 },
                 [100] = 
                 {
+                    ["size"] = 32,
+                    ["level"] = 55,
+                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -1772,12 +2312,13 @@ Harvest_SavedVars =
                         ["g"] = 0,
                         ["r"] = 1,
                     },
-                    ["level"] = 55,
-                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
-                    ["size"] = 32,
                 },
             },
-            ["mapSpawnFilter"] = false,
+            ["compassSpawnFilter"] = false,
+            ["heatmap"] = false,
+            ["displayMinimapPins"] = true,
+            ["minimapPinSize"] = 20,
+            ["worldPinHeight"] = 200,
             ["filterProfiles"] = 
             {
                 [1] = 
@@ -1804,28 +2345,14 @@ Harvest_SavedVars =
                     ["name"] = "Default Filter Profile",
                 },
             },
-            ["visitedRangeInMeters"] = 10,
-            ["worldPinDepth"] = true,
-            ["minimapPinSize"] = 20,
-            ["minimapSpawnFilter"] = false,
-            ["hiddenTime"] = 1,
-            ["worldPinWidth"] = 100,
-            ["mapFilterProfile"] = 1,
-            ["displayMinimapPins"] = true,
-            ["worldFilterProfile"] = 1,
-            ["hiddenOnHarvest"] = true,
-            ["showDebugOutput"] = false,
             ["displayWorldPins"] = true,
-            ["worldSpawnFilter"] = false,
-            ["useHiddenTime"] = false,
-            ["pinsAbovePoi"] = false,
-            ["compassFilterProfile"] = 1,
-            ["displayCompassPins"] = true,
+            ["showDebugOutput"] = false,
             ["displayNotifications"] = true,
-            ["compassSpawnFilter"] = false,
-        },
-        ["8796093072557313"] = 
-        {
+            ["mapFilterProfile"] = 1,
+            ["hiddenOnHarvest"] = true,
+            ["worldFilterProfile"] = 1,
+            ["hasMaxVisibleDistance"] = false,
+            ["pinsAbovePoi"] = false,
             ["isSpawnFilterUsedForPinType"] = 
             {
                 [1] = true,
@@ -1838,11 +2365,14 @@ Harvest_SavedVars =
                 [14] = true,
                 [19] = true,
             },
-            ["heatmap"] = false,
-            ["compassDistanceInMeters"] = 100,
+            ["displayCompassPins"] = true,
+            ["mapSpawnFilter"] = false,
+            ["minimapSpawnFilter"] = false,
+            ["worldSpawnFilter"] = false,
+            ["visitedRangeInMeters"] = 10,
+            ["hiddenTime"] = 1,
             ["displayMapPins"] = true,
-            ["worldDistanceInMeters"] = 100,
-            ["worldPinHeight"] = 200,
+            ["maxVisibleDistanceInMeters"] = 300,
             ["isPinTypeSavedOnGather"] = 
             {
                 [1] = true,
@@ -1865,1156 +2395,35 @@ Harvest_SavedVars =
                 [18] = false,
                 [19] = true,
             },
-            ["maxVisibleDistanceInMeters"] = 300,
-            ["hasMaxVisibleDistance"] = false,
-            ["pinLayouts"] = 
-            {
-                [1] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.4900000000,
-                        ["r"] = 0.4470000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [2] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.9880000000,
-                        ["r"] = 0.5880000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [3] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4780000000,
-                        ["g"] = 0.4550000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [4] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4240000000,
-                        ["g"] = 0.5690000000,
-                        ["r"] = 0.4510000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [5] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4940000000,
-                        ["g"] = 0.6940000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [6] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3800000000,
-                        ["g"] = 0.9370000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [7] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.8270000000,
-                        ["r"] = 0.5690000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [8] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [9] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3600000000,
-                        ["g"] = 0.6900000000,
-                        ["r"] = 0.4240000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [10] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.4040000000,
-                        ["r"] = 0.7800000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [11] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [12] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [13] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5410000000,
-                        ["g"] = 1,
-                        ["r"] = 0.5570000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [14] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8080000000,
-                        ["g"] = 0.9370000000,
-                        ["r"] = 0.4390000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [15] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [16] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
-                    ["size"] = 20,
-                },
-                [17] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
-                    ["size"] = 20,
-                },
-                [18] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [19] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5370000000,
-                        ["g"] = 0.3450000000,
-                        ["r"] = 0.9330000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [100] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["g"] = 0,
-                        ["r"] = 1,
-                    },
-                    ["level"] = 55,
-                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
-                    ["size"] = 32,
-                },
-            },
-            ["mapSpawnFilter"] = false,
-            ["filterProfiles"] = 
-            {
-                [1] = 
-                {
-                    [1] = true,
-                    [2] = true,
-                    [3] = true,
-                    [4] = true,
-                    [5] = true,
-                    [6] = true,
-                    [7] = true,
-                    [8] = true,
-                    [9] = true,
-                    [10] = true,
-                    [11] = true,
-                    [12] = true,
-                    [13] = true,
-                    [14] = true,
-                    [15] = true,
-                    [16] = true,
-                    [17] = true,
-                    [18] = false,
-                    [19] = true,
-                    ["name"] = "Default Filter Profile",
-                },
-            },
-            ["visitedRangeInMeters"] = 10,
-            ["worldPinDepth"] = true,
-            ["minimapPinSize"] = 20,
-            ["minimapSpawnFilter"] = false,
-            ["hiddenTime"] = 1,
             ["worldPinWidth"] = 100,
-            ["mapFilterProfile"] = 1,
-            ["displayMinimapPins"] = true,
-            ["worldFilterProfile"] = 1,
-            ["hiddenOnHarvest"] = true,
-            ["showDebugOutput"] = false,
-            ["displayWorldPins"] = true,
-            ["worldSpawnFilter"] = false,
-            ["useHiddenTime"] = false,
-            ["pinsAbovePoi"] = false,
             ["compassFilterProfile"] = 1,
-            ["displayCompassPins"] = true,
-            ["displayNotifications"] = true,
-            ["compassSpawnFilter"] = false,
-        },
-        ["8796093025384257"] = 
-        {
-            ["isSpawnFilterUsedForPinType"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [7] = true,
-                [13] = true,
-                [14] = true,
-                [19] = true,
-            },
-            ["heatmap"] = false,
             ["compassDistanceInMeters"] = 100,
-            ["displayMapPins"] = true,
-            ["worldDistanceInMeters"] = 100,
-            ["worldPinHeight"] = 200,
-            ["isPinTypeSavedOnGather"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [6] = true,
-                [7] = true,
-                [8] = true,
-                [9] = true,
-                [10] = true,
-                [11] = true,
-                [12] = true,
-                [13] = true,
-                [14] = true,
-                [15] = true,
-                [16] = true,
-                [17] = true,
-                [18] = false,
-                [19] = true,
-            },
-            ["maxVisibleDistanceInMeters"] = 300,
-            ["hasMaxVisibleDistance"] = false,
-            ["pinLayouts"] = 
-            {
-                [1] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.4900000000,
-                        ["r"] = 0.4470000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [2] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.9880000000,
-                        ["r"] = 0.5880000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [3] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4780000000,
-                        ["g"] = 0.4550000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [4] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4240000000,
-                        ["g"] = 0.5690000000,
-                        ["r"] = 0.4510000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [5] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4940000000,
-                        ["g"] = 0.6940000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [6] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3800000000,
-                        ["g"] = 0.9370000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [7] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.8270000000,
-                        ["r"] = 0.5690000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [8] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [9] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3600000000,
-                        ["g"] = 0.6900000000,
-                        ["r"] = 0.4240000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [10] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.4040000000,
-                        ["r"] = 0.7800000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [11] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [12] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [13] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5410000000,
-                        ["g"] = 1,
-                        ["r"] = 0.5570000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [14] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8080000000,
-                        ["g"] = 0.9370000000,
-                        ["r"] = 0.4390000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [15] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [16] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
-                    ["size"] = 20,
-                },
-                [17] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
-                    ["size"] = 20,
-                },
-                [18] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [19] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5370000000,
-                        ["g"] = 0.3450000000,
-                        ["r"] = 0.9330000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [100] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["g"] = 0,
-                        ["r"] = 1,
-                    },
-                    ["level"] = 55,
-                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
-                    ["size"] = 32,
-                },
-            },
-            ["mapSpawnFilter"] = false,
-            ["filterProfiles"] = 
-            {
-                [1] = 
-                {
-                    [1] = true,
-                    [2] = true,
-                    [3] = true,
-                    [4] = true,
-                    [5] = true,
-                    [6] = true,
-                    [7] = true,
-                    [8] = true,
-                    [9] = true,
-                    [10] = true,
-                    [11] = true,
-                    [12] = true,
-                    [13] = true,
-                    [14] = true,
-                    [15] = true,
-                    [16] = true,
-                    [17] = true,
-                    [18] = false,
-                    [19] = true,
-                    ["name"] = "Default Filter Profile",
-                },
-            },
-            ["visitedRangeInMeters"] = 10,
-            ["worldPinDepth"] = true,
-            ["minimapPinSize"] = 20,
-            ["minimapSpawnFilter"] = false,
-            ["hiddenTime"] = 1,
-            ["worldPinWidth"] = 100,
-            ["mapFilterProfile"] = 1,
-            ["displayMinimapPins"] = true,
-            ["worldFilterProfile"] = 1,
-            ["hiddenOnHarvest"] = true,
-            ["showDebugOutput"] = false,
-            ["displayWorldPins"] = true,
-            ["worldSpawnFilter"] = false,
-            ["useHiddenTime"] = false,
-            ["pinsAbovePoi"] = false,
-            ["compassFilterProfile"] = 1,
-            ["displayCompassPins"] = true,
-            ["displayNotifications"] = true,
-            ["compassSpawnFilter"] = false,
         },
         ["8796093067546805"] = 
         {
-            ["isSpawnFilterUsedForPinType"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [7] = true,
-                [13] = true,
-                [14] = true,
-                [19] = true,
-            },
-            ["heatmap"] = false,
-            ["compassDistanceInMeters"] = 100,
-            ["displayMapPins"] = true,
+            ["useHiddenTime"] = false,
             ["worldDistanceInMeters"] = 100,
-            ["worldPinHeight"] = 200,
-            ["isPinTypeSavedOnGather"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [6] = true,
-                [7] = true,
-                [8] = true,
-                [9] = true,
-                [10] = true,
-                [11] = true,
-                [12] = true,
-                [13] = true,
-                [14] = true,
-                [15] = true,
-                [16] = true,
-                [17] = true,
-                [18] = false,
-                [19] = true,
-            },
-            ["maxVisibleDistanceInMeters"] = 300,
-            ["hasMaxVisibleDistance"] = false,
+            ["worldPinDepth"] = true,
             ["pinLayouts"] = 
             {
                 [1] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3022,10 +2431,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4900000000,
                         ["r"] = 0.4470000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                },
+                [2] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3038,9 +2446,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [2] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3048,10 +2457,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9880000000,
                         ["r"] = 0.5880000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                },
+                [3] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3064,9 +2472,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [3] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3074,10 +2483,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4550000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                },
+                [4] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3090,9 +2498,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [4] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3100,10 +2509,9 @@ Harvest_SavedVars =
                         ["g"] = 0.5690000000,
                         ["r"] = 0.4510000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                },
+                [5] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3116,9 +2524,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [5] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3126,10 +2535,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6940000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                },
+                [6] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3142,9 +2550,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [6] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3152,10 +2561,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                },
+                [7] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3168,9 +2576,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [7] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3178,10 +2587,9 @@ Harvest_SavedVars =
                         ["g"] = 0.8270000000,
                         ["r"] = 0.5690000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                },
+                [8] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3194,9 +2602,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [8] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3204,10 +2613,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                },
+                [9] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3220,9 +2628,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [9] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3230,10 +2639,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6900000000,
                         ["r"] = 0.4240000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                },
+                [10] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3246,9 +2654,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [10] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3256,10 +2665,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4040000000,
                         ["r"] = 0.7800000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                },
+                [11] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3272,46 +2680,20 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [11] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [12] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3324,9 +2706,36 @@ Harvest_SavedVars =
                         {
                         },
                     },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
                 },
                 [13] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3334,10 +2743,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 0.5570000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                },
+                [14] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3350,9 +2758,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [14] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3360,10 +2769,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 0.4390000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                },
+                [15] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3376,31 +2784,16 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [15] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [16] = 
@@ -3429,6 +2822,22 @@ Harvest_SavedVars =
                 },
                 [18] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3436,10 +2845,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                },
+                [19] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3452,9 +2860,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [19] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3462,25 +2871,12 @@ Harvest_SavedVars =
                         ["g"] = 0.3450000000,
                         ["r"] = 0.9330000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
                 },
                 [100] = 
                 {
+                    ["size"] = 32,
+                    ["level"] = 55,
+                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3488,12 +2884,13 @@ Harvest_SavedVars =
                         ["g"] = 0,
                         ["r"] = 1,
                     },
-                    ["level"] = 55,
-                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
-                    ["size"] = 32,
                 },
             },
-            ["mapSpawnFilter"] = false,
+            ["compassSpawnFilter"] = false,
+            ["heatmap"] = false,
+            ["displayMinimapPins"] = true,
+            ["minimapPinSize"] = 20,
+            ["worldPinHeight"] = 200,
             ["filterProfiles"] = 
             {
                 [1] = 
@@ -3520,73 +2917,85 @@ Harvest_SavedVars =
                     ["name"] = "Default Filter Profile",
                 },
             },
-            ["visitedRangeInMeters"] = 10,
-            ["worldPinDepth"] = true,
-            ["minimapPinSize"] = 20,
-            ["minimapSpawnFilter"] = false,
-            ["hiddenTime"] = 1,
-            ["worldPinWidth"] = 100,
-            ["mapFilterProfile"] = 1,
-            ["displayMinimapPins"] = true,
-            ["worldFilterProfile"] = 1,
-            ["hiddenOnHarvest"] = true,
-            ["showDebugOutput"] = false,
             ["displayWorldPins"] = true,
-            ["worldSpawnFilter"] = false,
-            ["useHiddenTime"] = false,
-            ["pinsAbovePoi"] = false,
-            ["compassFilterProfile"] = 1,
-            ["displayCompassPins"] = true,
+            ["showDebugOutput"] = false,
             ["displayNotifications"] = true,
-            ["compassSpawnFilter"] = false,
+            ["mapFilterProfile"] = 1,
+            ["hiddenOnHarvest"] = true,
+            ["worldFilterProfile"] = 1,
+            ["hasMaxVisibleDistance"] = false,
+            ["pinsAbovePoi"] = false,
+            ["isSpawnFilterUsedForPinType"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [7] = true,
+                [13] = true,
+                [14] = true,
+                [19] = true,
+            },
+            ["displayCompassPins"] = true,
+            ["mapSpawnFilter"] = false,
+            ["minimapSpawnFilter"] = false,
+            ["worldSpawnFilter"] = false,
+            ["visitedRangeInMeters"] = 10,
+            ["hiddenTime"] = 1,
+            ["displayMapPins"] = true,
+            ["maxVisibleDistanceInMeters"] = 300,
+            ["isPinTypeSavedOnGather"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [6] = true,
+                [7] = true,
+                [8] = true,
+                [9] = true,
+                [10] = true,
+                [11] = true,
+                [12] = true,
+                [13] = true,
+                [14] = true,
+                [15] = true,
+                [16] = true,
+                [17] = true,
+                [18] = false,
+                [19] = true,
+            },
+            ["worldPinWidth"] = 100,
+            ["compassFilterProfile"] = 1,
+            ["compassDistanceInMeters"] = 100,
         },
-        ["8796093064640125"] = 
+        ["8796093025384257"] = 
         {
-            ["isSpawnFilterUsedForPinType"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [7] = true,
-                [13] = true,
-                [14] = true,
-                [19] = true,
-            },
-            ["heatmap"] = false,
-            ["compassDistanceInMeters"] = 100,
-            ["displayMapPins"] = true,
+            ["useHiddenTime"] = false,
             ["worldDistanceInMeters"] = 100,
-            ["worldPinHeight"] = 200,
-            ["isPinTypeSavedOnGather"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [6] = true,
-                [7] = true,
-                [8] = true,
-                [9] = true,
-                [10] = true,
-                [11] = true,
-                [12] = true,
-                [13] = true,
-                [14] = true,
-                [15] = true,
-                [16] = true,
-                [17] = true,
-                [18] = false,
-                [19] = true,
-            },
-            ["maxVisibleDistanceInMeters"] = 300,
-            ["hasMaxVisibleDistance"] = false,
+            ["worldPinDepth"] = true,
             ["pinLayouts"] = 
             {
                 [1] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3594,10 +3003,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4900000000,
                         ["r"] = 0.4470000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                },
+                [2] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3610,9 +3018,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [2] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3620,10 +3029,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9880000000,
                         ["r"] = 0.5880000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                },
+                [3] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3636,9 +3044,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [3] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3646,10 +3055,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4550000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                },
+                [4] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3662,9 +3070,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [4] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3672,10 +3081,9 @@ Harvest_SavedVars =
                         ["g"] = 0.5690000000,
                         ["r"] = 0.4510000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                },
+                [5] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3688,9 +3096,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [5] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3698,10 +3107,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6940000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                },
+                [6] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3714,9 +3122,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [6] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3724,10 +3133,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                },
+                [7] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3740,9 +3148,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [7] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3750,10 +3159,9 @@ Harvest_SavedVars =
                         ["g"] = 0.8270000000,
                         ["r"] = 0.5690000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                },
+                [8] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3766,9 +3174,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [8] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3776,10 +3185,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                },
+                [9] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3792,9 +3200,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [9] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3802,10 +3211,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6900000000,
                         ["r"] = 0.4240000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                },
+                [10] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3818,9 +3226,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [10] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3828,10 +3237,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4040000000,
                         ["r"] = 0.7800000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                },
+                [11] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3844,46 +3252,20 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [11] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [12] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3896,9 +3278,36 @@ Harvest_SavedVars =
                         {
                         },
                     },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
                 },
                 [13] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3906,10 +3315,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 0.5570000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                },
+                [14] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3922,9 +3330,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [14] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -3932,10 +3341,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 0.4390000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                },
+                [15] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -3948,31 +3356,16 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [15] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [16] = 
@@ -4001,6 +3394,22 @@ Harvest_SavedVars =
                 },
                 [18] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4008,10 +3417,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                },
+                [19] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4024,9 +3432,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [19] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4034,25 +3443,12 @@ Harvest_SavedVars =
                         ["g"] = 0.3450000000,
                         ["r"] = 0.9330000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
                 },
                 [100] = 
                 {
+                    ["size"] = 32,
+                    ["level"] = 55,
+                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4060,12 +3456,13 @@ Harvest_SavedVars =
                         ["g"] = 0,
                         ["r"] = 1,
                     },
-                    ["level"] = 55,
-                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
-                    ["size"] = 32,
                 },
             },
-            ["mapSpawnFilter"] = false,
+            ["compassSpawnFilter"] = false,
+            ["heatmap"] = false,
+            ["displayMinimapPins"] = true,
+            ["minimapPinSize"] = 20,
+            ["worldPinHeight"] = 200,
             ["filterProfiles"] = 
             {
                 [1] = 
@@ -4092,28 +3489,14 @@ Harvest_SavedVars =
                     ["name"] = "Default Filter Profile",
                 },
             },
-            ["visitedRangeInMeters"] = 10,
-            ["worldPinDepth"] = true,
-            ["minimapPinSize"] = 20,
-            ["minimapSpawnFilter"] = false,
-            ["hiddenTime"] = 1,
-            ["worldPinWidth"] = 100,
-            ["mapFilterProfile"] = 1,
-            ["displayMinimapPins"] = true,
-            ["worldFilterProfile"] = 1,
-            ["hiddenOnHarvest"] = true,
-            ["showDebugOutput"] = false,
             ["displayWorldPins"] = true,
-            ["worldSpawnFilter"] = false,
-            ["useHiddenTime"] = false,
-            ["pinsAbovePoi"] = false,
-            ["compassFilterProfile"] = 1,
-            ["displayCompassPins"] = true,
+            ["showDebugOutput"] = false,
             ["displayNotifications"] = true,
-            ["compassSpawnFilter"] = false,
-        },
-        ["8796093062295781"] = 
-        {
+            ["mapFilterProfile"] = 1,
+            ["hiddenOnHarvest"] = true,
+            ["worldFilterProfile"] = 1,
+            ["hasMaxVisibleDistance"] = false,
+            ["pinsAbovePoi"] = false,
             ["isSpawnFilterUsedForPinType"] = 
             {
                 [1] = true,
@@ -4126,11 +3509,14 @@ Harvest_SavedVars =
                 [14] = true,
                 [19] = true,
             },
-            ["heatmap"] = false,
-            ["compassDistanceInMeters"] = 100,
+            ["displayCompassPins"] = true,
+            ["mapSpawnFilter"] = false,
+            ["minimapSpawnFilter"] = false,
+            ["worldSpawnFilter"] = false,
+            ["visitedRangeInMeters"] = 10,
+            ["hiddenTime"] = 1,
             ["displayMapPins"] = true,
-            ["worldDistanceInMeters"] = 100,
-            ["worldPinHeight"] = 200,
+            ["maxVisibleDistanceInMeters"] = 300,
             ["isPinTypeSavedOnGather"] = 
             {
                 [1] = true,
@@ -4153,584 +3539,35 @@ Harvest_SavedVars =
                 [18] = false,
                 [19] = true,
             },
-            ["maxVisibleDistanceInMeters"] = 300,
-            ["hasMaxVisibleDistance"] = false,
-            ["pinLayouts"] = 
-            {
-                [1] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.4900000000,
-                        ["r"] = 0.4470000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [2] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.9880000000,
-                        ["r"] = 0.5880000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [3] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4780000000,
-                        ["g"] = 0.4550000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [4] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4240000000,
-                        ["g"] = 0.5690000000,
-                        ["r"] = 0.4510000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [5] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4940000000,
-                        ["g"] = 0.6940000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [6] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3800000000,
-                        ["g"] = 0.9370000000,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [7] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.8270000000,
-                        ["r"] = 0.5690000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [8] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [9] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3600000000,
-                        ["g"] = 0.6900000000,
-                        ["r"] = 0.4240000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [10] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 0.4040000000,
-                        ["r"] = 0.7800000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [11] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [12] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [13] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5410000000,
-                        ["g"] = 1,
-                        ["r"] = 0.5570000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [14] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8080000000,
-                        ["g"] = 0.9370000000,
-                        ["r"] = 0.4390000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [15] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [16] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
-                    ["size"] = 20,
-                },
-                [17] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
-                    ["size"] = 20,
-                },
-                [18] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [19] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5370000000,
-                        ["g"] = 0.3450000000,
-                        ["r"] = 0.9330000000,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
-                },
-                [100] = 
-                {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["g"] = 0,
-                        ["r"] = 1,
-                    },
-                    ["level"] = 55,
-                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
-                    ["size"] = 32,
-                },
-            },
-            ["mapSpawnFilter"] = false,
-            ["filterProfiles"] = 
-            {
-                [1] = 
-                {
-                    [1] = true,
-                    [2] = true,
-                    [3] = true,
-                    [4] = true,
-                    [5] = true,
-                    [6] = true,
-                    [7] = true,
-                    [8] = true,
-                    [9] = true,
-                    [10] = true,
-                    [11] = true,
-                    [12] = true,
-                    [13] = true,
-                    [14] = true,
-                    [15] = true,
-                    [16] = true,
-                    [17] = true,
-                    [18] = false,
-                    [19] = true,
-                    ["name"] = "Default Filter Profile",
-                },
-            },
-            ["visitedRangeInMeters"] = 10,
-            ["worldPinDepth"] = true,
-            ["minimapPinSize"] = 20,
-            ["minimapSpawnFilter"] = false,
-            ["hiddenTime"] = 1,
             ["worldPinWidth"] = 100,
-            ["mapFilterProfile"] = 1,
-            ["displayMinimapPins"] = true,
-            ["worldFilterProfile"] = 1,
-            ["hiddenOnHarvest"] = true,
-            ["showDebugOutput"] = false,
-            ["displayWorldPins"] = true,
-            ["worldSpawnFilter"] = false,
-            ["useHiddenTime"] = false,
-            ["pinsAbovePoi"] = false,
             ["compassFilterProfile"] = 1,
-            ["displayCompassPins"] = true,
-            ["displayNotifications"] = true,
-            ["compassSpawnFilter"] = false,
+            ["compassDistanceInMeters"] = 100,
         },
         ["8796093074287095"] = 
         {
-            ["isSpawnFilterUsedForPinType"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [7] = true,
-                [13] = true,
-                [14] = true,
-                [19] = true,
-            },
-            ["heatmap"] = false,
-            ["compassDistanceInMeters"] = 100,
-            ["displayMapPins"] = true,
+            ["useHiddenTime"] = false,
             ["worldDistanceInMeters"] = 100,
-            ["worldPinHeight"] = 200,
-            ["isPinTypeSavedOnGather"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [6] = true,
-                [7] = true,
-                [8] = true,
-                [9] = true,
-                [10] = true,
-                [11] = true,
-                [12] = true,
-                [13] = true,
-                [14] = true,
-                [15] = true,
-                [16] = true,
-                [17] = true,
-                [18] = false,
-                [19] = true,
-            },
-            ["maxVisibleDistanceInMeters"] = 300,
-            ["hasMaxVisibleDistance"] = false,
+            ["worldPinDepth"] = true,
             ["pinLayouts"] = 
             {
                 [1] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4738,10 +3575,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4900000000,
                         ["r"] = 0.4470000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                },
+                [2] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4754,9 +3590,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [2] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4764,10 +3601,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9880000000,
                         ["r"] = 0.5880000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                },
+                [3] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4780,9 +3616,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [3] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4790,10 +3627,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4550000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                },
+                [4] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4806,9 +3642,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [4] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4816,10 +3653,9 @@ Harvest_SavedVars =
                         ["g"] = 0.5690000000,
                         ["r"] = 0.4510000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                },
+                [5] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4832,9 +3668,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [5] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4842,10 +3679,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6940000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                },
+                [6] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4858,9 +3694,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [6] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4868,10 +3705,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                },
+                [7] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4884,9 +3720,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [7] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4894,10 +3731,9 @@ Harvest_SavedVars =
                         ["g"] = 0.8270000000,
                         ["r"] = 0.5690000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                },
+                [8] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4910,9 +3746,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [8] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4920,10 +3757,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                },
+                [9] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4936,9 +3772,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [9] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4946,10 +3783,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6900000000,
                         ["r"] = 0.4240000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                },
+                [10] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4962,9 +3798,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [10] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -4972,10 +3809,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4040000000,
                         ["r"] = 0.7800000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                },
+                [11] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -4988,46 +3824,20 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [11] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [12] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5040,9 +3850,36 @@ Harvest_SavedVars =
                         {
                         },
                     },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
                 },
                 [13] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5050,10 +3887,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 0.5570000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                },
+                [14] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5066,9 +3902,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [14] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5076,10 +3913,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 0.4390000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                },
+                [15] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5092,31 +3928,16 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [15] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [16] = 
@@ -5145,6 +3966,22 @@ Harvest_SavedVars =
                 },
                 [18] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5152,10 +3989,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                },
+                [19] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5168,9 +4004,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [19] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 26.6666666667,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5178,25 +4015,12 @@ Harvest_SavedVars =
                         ["g"] = 0.3450000000,
                         ["r"] = 0.9330000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 26.6666666667,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
                 },
                 [100] = 
                 {
+                    ["size"] = 32,
+                    ["level"] = 55,
+                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5204,12 +4028,13 @@ Harvest_SavedVars =
                         ["g"] = 0,
                         ["r"] = 1,
                     },
-                    ["level"] = 55,
-                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
-                    ["size"] = 32,
                 },
             },
-            ["mapSpawnFilter"] = false,
+            ["compassSpawnFilter"] = false,
+            ["heatmap"] = false,
+            ["displayMinimapPins"] = true,
+            ["minimapPinSize"] = 20,
+            ["worldPinHeight"] = 200,
             ["filterProfiles"] = 
             {
                 [1] = 
@@ -5236,73 +4061,657 @@ Harvest_SavedVars =
                     ["name"] = "Default Filter Profile",
                 },
             },
-            ["visitedRangeInMeters"] = 10,
-            ["worldPinDepth"] = true,
-            ["minimapPinSize"] = 20,
-            ["minimapSpawnFilter"] = false,
-            ["hiddenTime"] = 1,
-            ["worldPinWidth"] = 100,
-            ["mapFilterProfile"] = 1,
-            ["displayMinimapPins"] = true,
-            ["worldFilterProfile"] = 1,
-            ["hiddenOnHarvest"] = true,
-            ["showDebugOutput"] = false,
             ["displayWorldPins"] = true,
-            ["worldSpawnFilter"] = false,
-            ["useHiddenTime"] = false,
-            ["pinsAbovePoi"] = false,
-            ["compassFilterProfile"] = 1,
-            ["displayCompassPins"] = true,
+            ["showDebugOutput"] = false,
             ["displayNotifications"] = true,
+            ["mapFilterProfile"] = 1,
+            ["hiddenOnHarvest"] = true,
+            ["worldFilterProfile"] = 1,
+            ["hasMaxVisibleDistance"] = false,
+            ["pinsAbovePoi"] = false,
+            ["isSpawnFilterUsedForPinType"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [7] = true,
+                [13] = true,
+                [14] = true,
+                [19] = true,
+            },
+            ["displayCompassPins"] = true,
+            ["mapSpawnFilter"] = false,
+            ["minimapSpawnFilter"] = false,
+            ["worldSpawnFilter"] = false,
+            ["visitedRangeInMeters"] = 10,
+            ["hiddenTime"] = 1,
+            ["displayMapPins"] = true,
+            ["maxVisibleDistanceInMeters"] = 300,
+            ["isPinTypeSavedOnGather"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [6] = true,
+                [7] = true,
+                [8] = true,
+                [9] = true,
+                [10] = true,
+                [11] = true,
+                [12] = true,
+                [13] = true,
+                [14] = true,
+                [15] = true,
+                [16] = true,
+                [17] = true,
+                [18] = false,
+                [19] = true,
+            },
+            ["worldPinWidth"] = 100,
+            ["compassFilterProfile"] = 1,
+            ["compassDistanceInMeters"] = 100,
+        },
+        ["8796093027479535"] = 
+        {
+            ["useHiddenTime"] = false,
+            ["worldDistanceInMeters"] = 100,
+            ["worldPinDepth"] = true,
+            ["pinLayouts"] = 
+            {
+                [1] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.4900000000,
+                        ["r"] = 0.4470000000,
+                    },
+                },
+                [2] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.9880000000,
+                        ["r"] = 0.5880000000,
+                    },
+                },
+                [3] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.4780000000,
+                        ["g"] = 0.4550000000,
+                        ["r"] = 1,
+                    },
+                },
+                [4] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.4240000000,
+                        ["g"] = 0.5690000000,
+                        ["r"] = 0.4510000000,
+                    },
+                },
+                [5] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.4940000000,
+                        ["g"] = 0.6940000000,
+                        ["r"] = 1,
+                    },
+                },
+                [6] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.3800000000,
+                        ["g"] = 0.9370000000,
+                        ["r"] = 1,
+                    },
+                },
+                [7] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.8270000000,
+                        ["r"] = 0.5690000000,
+                    },
+                },
+                [8] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [9] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.3600000000,
+                        ["g"] = 0.6900000000,
+                        ["r"] = 0.4240000000,
+                    },
+                },
+                [10] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.4040000000,
+                        ["r"] = 0.7800000000,
+                    },
+                },
+                [11] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [12] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [13] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.5410000000,
+                        ["g"] = 1,
+                        ["r"] = 0.5570000000,
+                    },
+                },
+                [14] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.8080000000,
+                        ["g"] = 0.9370000000,
+                        ["r"] = 0.4390000000,
+                    },
+                },
+                [15] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [16] = 
+                {
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["size"] = 20,
+                },
+                [17] = 
+                {
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["size"] = 20,
+                },
+                [18] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [19] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.5370000000,
+                        ["g"] = 0.3450000000,
+                        ["r"] = 0.9330000000,
+                    },
+                },
+                [100] = 
+                {
+                    ["size"] = 32,
+                    ["level"] = 55,
+                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                },
+            },
             ["compassSpawnFilter"] = false,
+            ["heatmap"] = false,
+            ["displayMinimapPins"] = true,
+            ["minimapPinSize"] = 20,
+            ["worldPinHeight"] = 200,
+            ["filterProfiles"] = 
+            {
+                [1] = 
+                {
+                    [1] = true,
+                    [2] = true,
+                    [3] = true,
+                    [4] = true,
+                    [5] = true,
+                    [6] = true,
+                    [7] = true,
+                    [8] = true,
+                    [9] = true,
+                    [10] = true,
+                    [11] = true,
+                    [12] = true,
+                    [13] = true,
+                    [14] = true,
+                    [15] = true,
+                    [16] = true,
+                    [17] = true,
+                    [18] = false,
+                    [19] = true,
+                    ["name"] = "Default Filter Profile",
+                },
+            },
+            ["displayWorldPins"] = true,
+            ["showDebugOutput"] = false,
+            ["displayNotifications"] = true,
+            ["mapFilterProfile"] = 1,
+            ["hiddenOnHarvest"] = true,
+            ["worldFilterProfile"] = 1,
+            ["hasMaxVisibleDistance"] = false,
+            ["pinsAbovePoi"] = false,
+            ["isSpawnFilterUsedForPinType"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [7] = true,
+                [13] = true,
+                [14] = true,
+                [19] = true,
+            },
+            ["displayCompassPins"] = true,
+            ["mapSpawnFilter"] = false,
+            ["minimapSpawnFilter"] = false,
+            ["worldSpawnFilter"] = false,
+            ["visitedRangeInMeters"] = 10,
+            ["hiddenTime"] = 1,
+            ["displayMapPins"] = true,
+            ["maxVisibleDistanceInMeters"] = 300,
+            ["isPinTypeSavedOnGather"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [6] = true,
+                [7] = true,
+                [8] = true,
+                [9] = true,
+                [10] = true,
+                [11] = true,
+                [12] = true,
+                [13] = true,
+                [14] = true,
+                [15] = true,
+                [16] = true,
+                [17] = true,
+                [18] = false,
+                [19] = true,
+            },
+            ["worldPinWidth"] = 100,
+            ["compassFilterProfile"] = 1,
+            ["compassDistanceInMeters"] = 100,
         },
         ["8796093069174989"] = 
         {
-            ["isSpawnFilterUsedForPinType"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [7] = true,
-                [13] = true,
-                [14] = true,
-                [19] = true,
-            },
-            ["heatmap"] = false,
-            ["compassDistanceInMeters"] = 100,
-            ["displayMapPins"] = true,
+            ["useHiddenTime"] = false,
             ["worldDistanceInMeters"] = 100,
-            ["worldPinHeight"] = 200,
-            ["isPinTypeSavedOnGather"] = 
-            {
-                [1] = true,
-                [2] = true,
-                [3] = true,
-                [4] = true,
-                [5] = true,
-                [6] = true,
-                [7] = true,
-                [8] = true,
-                [9] = true,
-                [10] = true,
-                [11] = true,
-                [12] = true,
-                [13] = true,
-                [14] = true,
-                [15] = true,
-                [16] = true,
-                [17] = true,
-                [18] = false,
-                [19] = true,
-            },
-            ["maxVisibleDistanceInMeters"] = 300,
-            ["hasMaxVisibleDistance"] = false,
+            ["worldPinDepth"] = true,
             ["pinLayouts"] = 
             {
                 [1] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5310,10 +4719,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4900000000,
                         ["r"] = 0.4470000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                },
+                [2] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5326,9 +4734,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [2] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5336,10 +4745,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9880000000,
                         ["r"] = 0.5880000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                },
+                [3] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5352,9 +4760,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [3] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5362,10 +4771,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4550000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                },
+                [4] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5378,9 +4786,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [4] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5388,10 +4797,9 @@ Harvest_SavedVars =
                         ["g"] = 0.5690000000,
                         ["r"] = 0.4510000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                },
+                [5] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5404,9 +4812,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [5] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5414,10 +4823,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6940000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                },
+                [6] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5430,9 +4838,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [6] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5440,10 +4849,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                },
+                [7] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5456,9 +4864,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [7] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5466,10 +4875,9 @@ Harvest_SavedVars =
                         ["g"] = 0.8270000000,
                         ["r"] = 0.5690000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                },
+                [8] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5482,9 +4890,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [8] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5492,10 +4901,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                },
+                [9] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5508,9 +4916,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [9] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5518,10 +4927,9 @@ Harvest_SavedVars =
                         ["g"] = 0.6900000000,
                         ["r"] = 0.4240000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                },
+                [10] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5534,9 +4942,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [10] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5544,10 +4953,9 @@ Harvest_SavedVars =
                         ["g"] = 0.4040000000,
                         ["r"] = 0.7800000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                },
+                [11] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5560,46 +4968,20 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [11] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [12] = 
                 {
-                    ["tint"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["g"] = 1,
-                        ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5612,9 +4994,36 @@ Harvest_SavedVars =
                         {
                         },
                     },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
                 },
                 [13] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5622,10 +5031,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 0.5570000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                },
+                [14] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5638,9 +5046,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [14] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5648,10 +5057,9 @@ Harvest_SavedVars =
                         ["g"] = 0.9370000000,
                         ["r"] = 0.4390000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                },
+                [15] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5664,31 +5072,16 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [15] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
                         ["b"] = 1,
                         ["g"] = 1,
                         ["r"] = 1,
-                    },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
                     },
                 },
                 [16] = 
@@ -5717,6 +5110,22 @@ Harvest_SavedVars =
                 },
                 [18] = 
                 {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5724,10 +5133,9 @@ Harvest_SavedVars =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                },
+                [19] = 
+                {
                     ["OnClickHandler"] = 
                     {
                         [1] = 
@@ -5740,9 +5148,10 @@ Harvest_SavedVars =
                         {
                         },
                     },
-                },
-                [19] = 
-                {
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5750,25 +5159,12 @@ Harvest_SavedVars =
                         ["g"] = 0.3450000000,
                         ["r"] = 0.9330000000,
                     },
-                    ["size"] = 20,
-                    ["level"] = 20,
-                    ["currentPinSize"] = 20,
-                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
-                    ["OnClickHandler"] = 
-                    {
-                        [1] = 
-                        {
-                        },
-                        [2] = 
-                        {
-                        },
-                        [3] = 
-                        {
-                        },
-                    },
                 },
                 [100] = 
                 {
+                    ["size"] = 32,
+                    ["level"] = 55,
+                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
                     ["tint"] = 
                     {
                         ["a"] = 1,
@@ -5776,12 +5172,13 @@ Harvest_SavedVars =
                         ["g"] = 0,
                         ["r"] = 1,
                     },
-                    ["level"] = 55,
-                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
-                    ["size"] = 32,
                 },
             },
-            ["mapSpawnFilter"] = false,
+            ["compassSpawnFilter"] = false,
+            ["heatmap"] = false,
+            ["displayMinimapPins"] = true,
+            ["minimapPinSize"] = 20,
+            ["worldPinHeight"] = 200,
             ["filterProfiles"] = 
             {
                 [1] = 
@@ -5808,33 +5205,636 @@ Harvest_SavedVars =
                     ["name"] = "Default Filter Profile",
                 },
             },
-            ["visitedRangeInMeters"] = 10,
-            ["worldPinDepth"] = true,
-            ["minimapPinSize"] = 20,
-            ["minimapSpawnFilter"] = false,
-            ["hiddenTime"] = 1,
-            ["worldPinWidth"] = 100,
-            ["mapFilterProfile"] = 1,
-            ["displayMinimapPins"] = true,
-            ["worldFilterProfile"] = 1,
-            ["hiddenOnHarvest"] = true,
-            ["showDebugOutput"] = false,
             ["displayWorldPins"] = true,
-            ["worldSpawnFilter"] = false,
-            ["useHiddenTime"] = false,
-            ["pinsAbovePoi"] = false,
-            ["compassFilterProfile"] = 1,
-            ["displayCompassPins"] = true,
+            ["showDebugOutput"] = false,
             ["displayNotifications"] = true,
+            ["mapFilterProfile"] = 1,
+            ["hiddenOnHarvest"] = true,
+            ["worldFilterProfile"] = 1,
+            ["hasMaxVisibleDistance"] = false,
+            ["pinsAbovePoi"] = false,
+            ["isSpawnFilterUsedForPinType"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [7] = true,
+                [13] = true,
+                [14] = true,
+                [19] = true,
+            },
+            ["displayCompassPins"] = true,
+            ["mapSpawnFilter"] = false,
+            ["minimapSpawnFilter"] = false,
+            ["worldSpawnFilter"] = false,
+            ["visitedRangeInMeters"] = 10,
+            ["hiddenTime"] = 1,
+            ["displayMapPins"] = true,
+            ["maxVisibleDistanceInMeters"] = 300,
+            ["isPinTypeSavedOnGather"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [6] = true,
+                [7] = true,
+                [8] = true,
+                [9] = true,
+                [10] = true,
+                [11] = true,
+                [12] = true,
+                [13] = true,
+                [14] = true,
+                [15] = true,
+                [16] = true,
+                [17] = true,
+                [18] = false,
+                [19] = true,
+            },
+            ["worldPinWidth"] = 100,
+            ["compassFilterProfile"] = 1,
+            ["compassDistanceInMeters"] = 100,
+        },
+        ["8796093062295781"] = 
+        {
+            ["useHiddenTime"] = false,
+            ["worldDistanceInMeters"] = 100,
+            ["worldPinDepth"] = true,
+            ["pinLayouts"] = 
+            {
+                [1] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mining.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.4900000000,
+                        ["r"] = 0.4470000000,
+                    },
+                },
+                [2] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/clothing.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.9880000000,
+                        ["r"] = 0.5880000000,
+                    },
+                },
+                [3] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/enchanting.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.4780000000,
+                        ["g"] = 0.4550000000,
+                        ["r"] = 1,
+                    },
+                },
+                [4] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/mushroom.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.4240000000,
+                        ["g"] = 0.5690000000,
+                        ["r"] = 0.4510000000,
+                    },
+                },
+                [5] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/wood.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.4940000000,
+                        ["g"] = 0.6940000000,
+                        ["r"] = 1,
+                    },
+                },
+                [6] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/chest.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.3800000000,
+                        ["g"] = 0.9370000000,
+                        ["r"] = 1,
+                    },
+                },
+                [7] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/solvent.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.8270000000,
+                        ["r"] = 0.5690000000,
+                    },
+                },
+                [8] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/fish.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [9] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/heavysack.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.3600000000,
+                        ["g"] = 0.6900000000,
+                        ["r"] = 0.4240000000,
+                    },
+                },
+                [10] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/trove.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 0.4040000000,
+                        ["r"] = 0.7800000000,
+                    },
+                },
+                [11] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/justice.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [12] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [13] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/flower.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.5410000000,
+                        ["g"] = 1,
+                        ["r"] = 0.5570000000,
+                    },
+                },
+                [14] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.8080000000,
+                        ["g"] = 0.9370000000,
+                        ["r"] = 0.4390000000,
+                    },
+                },
+                [15] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/clam.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [16] = 
+                {
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["size"] = 20,
+                },
+                [17] = 
+                {
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/stash.dds",
+                    ["size"] = 20,
+                },
+                [18] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "esoui/art/icons/poi/poi_crafting_complete.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                },
+                [19] = 
+                {
+                    ["OnClickHandler"] = 
+                    {
+                        [1] = 
+                        {
+                        },
+                        [2] = 
+                        {
+                        },
+                        [3] = 
+                        {
+                        },
+                    },
+                    ["texture"] = "HarvestMap/Textures/Map/waterplant.dds",
+                    ["currentPinSize"] = 20,
+                    ["level"] = 20,
+                    ["size"] = 20,
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0.5370000000,
+                        ["g"] = 0.3450000000,
+                        ["r"] = 0.9330000000,
+                    },
+                },
+                [100] = 
+                {
+                    ["size"] = 32,
+                    ["level"] = 55,
+                    ["texture"] = "HarvestMap/Textures/Map/tour.dds",
+                    ["tint"] = 
+                    {
+                        ["a"] = 1,
+                        ["b"] = 0,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                },
+            },
             ["compassSpawnFilter"] = false,
+            ["heatmap"] = false,
+            ["displayMinimapPins"] = true,
+            ["minimapPinSize"] = 20,
+            ["worldPinHeight"] = 200,
+            ["filterProfiles"] = 
+            {
+                [1] = 
+                {
+                    [1] = true,
+                    [2] = true,
+                    [3] = true,
+                    [4] = true,
+                    [5] = true,
+                    [6] = true,
+                    [7] = true,
+                    [8] = true,
+                    [9] = true,
+                    [10] = true,
+                    [11] = true,
+                    [12] = true,
+                    [13] = true,
+                    [14] = true,
+                    [15] = true,
+                    [16] = true,
+                    [17] = true,
+                    [18] = false,
+                    [19] = true,
+                    ["name"] = "Default Filter Profile",
+                },
+            },
+            ["displayWorldPins"] = true,
+            ["showDebugOutput"] = false,
+            ["displayNotifications"] = true,
+            ["mapFilterProfile"] = 1,
+            ["hiddenOnHarvest"] = true,
+            ["worldFilterProfile"] = 1,
+            ["hasMaxVisibleDistance"] = false,
+            ["pinsAbovePoi"] = false,
+            ["isSpawnFilterUsedForPinType"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [7] = true,
+                [13] = true,
+                [14] = true,
+                [19] = true,
+            },
+            ["displayCompassPins"] = true,
+            ["mapSpawnFilter"] = false,
+            ["minimapSpawnFilter"] = false,
+            ["worldSpawnFilter"] = false,
+            ["visitedRangeInMeters"] = 10,
+            ["hiddenTime"] = 1,
+            ["displayMapPins"] = true,
+            ["maxVisibleDistanceInMeters"] = 300,
+            ["isPinTypeSavedOnGather"] = 
+            {
+                [1] = true,
+                [2] = true,
+                [3] = true,
+                [4] = true,
+                [5] = true,
+                [6] = true,
+                [7] = true,
+                [8] = true,
+                [9] = true,
+                [10] = true,
+                [11] = true,
+                [12] = true,
+                [13] = true,
+                [14] = true,
+                [15] = true,
+                [16] = true,
+                [17] = true,
+                [18] = false,
+                [19] = true,
+            },
+            ["worldPinWidth"] = 100,
+            ["compassFilterProfile"] = 1,
+            ["compassDistanceInMeters"] = 100,
         },
     },
     ["global"] = 
     {
-        ["maxTimeDifference"] = 0,
         ["minGameVersion"] = 0,
-    },
-    ["tours"] = 
-    {
+        ["maxTimeDifference"] = 0,
     },
 }

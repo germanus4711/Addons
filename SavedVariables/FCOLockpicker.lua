@@ -8,13 +8,10 @@ FCOLockpicker_Settings =
             {
                 ["Settings"] = 
                 {
-                    ["showChamberResolvedIcon"] = true,
-                    ["debug"] = false,
                     ["warnings"] = 
                     {
                         ["low"] = 
                         {
-                            ["valueMin"] = 5,
                             ["color"] = 
                             {
                                 ["a"] = 1,
@@ -22,10 +19,10 @@ FCOLockpicker_Settings =
                                 ["g"] = 0,
                                 ["r"] = 1,
                             },
+                            ["valueMin"] = 5,
                         },
                         ["normal"] = 
                         {
-                            ["valueMin"] = 999,
                             ["color"] = 
                             {
                                 ["a"] = 1,
@@ -33,10 +30,10 @@ FCOLockpicker_Settings =
                                 ["g"] = 1,
                                 ["r"] = 1,
                             },
+                            ["valueMin"] = 999,
                         },
                         ["medium"] = 
                         {
-                            ["valueMin"] = 10,
                             ["color"] = 
                             {
                                 ["a"] = 1,
@@ -44,20 +41,23 @@ FCOLockpicker_Settings =
                                 ["g"] = 1,
                                 ["r"] = 0,
                             },
+                            ["valueMin"] = 10,
                         },
                     },
+                    ["showChamberResolvedIcon"] = true,
+                    ["debug"] = false,
                     ["useSpringGreenColor"] = true,
-                    ["deepDebug"] = false,
-                    ["alwaysUseClientLanguage"] = true,
                     ["chamberStressedSound"] = 2,
+                    ["alwaysUseClientLanguage"] = true,
+                    ["deepDebug"] = false,
                     ["languageChoosen"] = false,
                     ["version"] = 0.0100000000,
                 },
                 ["SettingsForAll"] = 
                 {
                     ["version"] = 999,
-                    ["language"] = 1,
                     ["saveMode"] = 2,
+                    ["language"] = 1,
                 },
             },
         },

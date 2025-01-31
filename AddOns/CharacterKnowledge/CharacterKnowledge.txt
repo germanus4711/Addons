@@ -7,11 +7,11 @@
 ## Title: Character Knowledge
 ## Description: Tracks the knowledge of recipes, furnishing plans, and motifs across different characters, accounts, and servers
 ## Author: @code65536
-## Version: 2.2.5
-## AddOnVersion: 202050
-## APIVersion: 101043 101044
+## Version: 2.2.6
+## AddOnVersion: 202060
+## APIVersion: 101044 101045
 ## SavedVariables: CharacterKnowledgeSavedVariables
-## DependsOn: LibCharacterKnowledge>=201010 LibExtendedJournal>=202020
+## DependsOn: LibCharacterKnowledge>=201020 LibExtendedJournal>=203020
 ## OptionalDependsOn: AdvancedFilters LibAddonMenu-2.0
 
 l10n/default.lua

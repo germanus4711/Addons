@@ -463,9 +463,9 @@ ItemBrowser.data = {
 		{ 193211, 0x00, { 1390 } }, -- Runecarver's Blaze
 		{ 193383, 0x00, { 1390 } }, -- Apocryphal Inspiration
 		{ 193548, 0x00, { 1390 } }, -- Abyssal Brace
-		{ 193886, 0x20, { -4 } }, -- Snake in the Stars
-		{ 194058, 0x20, { -4 } }, -- Shell Splitter
-		{ 194223, 0x20, { -4 } }, -- Judgement of Akatosh
+		{ 193886, 0x20, { 181, { CYRO_L } } }, -- Snake in the Stars
+		{ 194058, 0x20, { 181, { CYRO_M } } }, -- Shell Splitter
+		{ 194223, 0x20, { 181, { CYRO_H } } }, -- Judgement of Akatosh
 		{ 195734, 0x00, { 1413, 1414 } }, -- Vivec's Duality
 		{ 195906, 0x00, { 1413, 1414 } }, -- Camonna Tong
 		{ 196071, 0x00, { 1413, 1414 } }, -- Adamant Lurker
@@ -511,6 +511,12 @@ ItemBrowser.data = {
 		{ 209622, 0x10, { 1436 } }, -- Beacon of Oblivion
 		{ 209908, 0x10, { 1436 } }, -- Aetheric Lancer
 		{ 210257, 0x10, { 1436 } }, -- Aerie's Cry
+		{ 210399, 0x20, { -4 } }, -- Tracker's Lash
+		{ 210571, 0x20, { -4 } }, -- Shared Pain
+		{ 210736, 0x20, { -4 } }, -- Siegemaster's Focus
+		{ 211617, 0x00, { -2 } }, -- Bulwark Ruination
+		{ 211789, 0x00, { -2 } }, -- Farstrider
+		{ 211954, 0x00, { -2 } }, -- Netch Oil
 
 		-- Monster Sets --------------------------------------------------------
 		{ 59391, 0x18, { 934, { UN_MAJ } } }, -- Spawn of Mephala

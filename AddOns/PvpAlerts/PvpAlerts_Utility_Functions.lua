@@ -37,7 +37,18 @@ local PVP_FIGHT_DCEP = PVP:GetGlobal('PVP_FIGHT_DCEP')
 local PVP_ID_RETAIN_TIME = PVP:GetGlobal('PVP_ID_RETAIN_TIME')
 local PVP_ID_RETAIN_TIME_EFFECT = PVP:GetGlobal('PVP_ID_RETAIN_TIME_EFFECT')
 
+local strgsub= zo_strgsub
+local strlen = zo_strlen
+
 local sqrt = zo_sqrt
+--local sort = table.sort
+local insert = table.insert
+--local remove = table.remove
+local concat = table.concat
+--local upper = string.upper
+--local lower = string.lower
+--local format = string.format
+
 
 local databaseIntegrityCheck = {}
 
@@ -53,9 +64,9 @@ function PVP:RGBtoHEX(rgb)
 			hex = zo_strsub('0123456789ABCDEF', index, index) .. hex
 		end
 		-- d(value .. ' : ' .. hex)
-		if (zo_strlen(hex) == 0) then
+		if (strlen(hex) == 0) then
 			hex = '00'
-		elseif (zo_strlen(hex) == 1) then
+		elseif (strlen(hex) == 1) then
 			hex = '0' .. hex
 		end
 		-- d("hex: " .. hex)
@@ -172,7 +183,7 @@ function PVP:IsScrollTemple(zoneName)
 
 	if startIndex then
 		zoneName = zo_strsub(zoneName, startIndex, endIndex) ..
-			' of' .. zo_strsub(zoneName, endIndex + 1, zo_strlen(zoneName))
+			' of' .. zo_strsub(zoneName, endIndex + 1, strlen(zoneName))
 	end
 
 	return zoneName
@@ -198,16 +209,16 @@ function PVP:CombineAllianceInfo(alliance1, alliance2)
 end
 
 function PVP:StringStart(String, Start)
-	return zo_strsub(String, 1, zo_strlen(Start)) == Start
+	return zo_strsub(String, 1, strlen(Start)) == Start
 end
 
 function PVP:StringEnd(String, End)
-	return End == '' or zo_strsub(String, -zo_strlen(End)) == End
+	return End == '' or zo_strsub(String, -strlen(End)) == End
 end
 
 function PVP:Colorize(text, color)
 	local combineTable = { "|c", color, tostring(text), "|r" }
-	return table.concat(combineTable)
+	return concat(combineTable)
 end
 
 function PVP:HtmlToColor(html, isDark, isBright)
@@ -232,7 +243,7 @@ end
 function PVP:DeaccentString(inputString)
 	if (not inputString) or (inputString == "") then return end
 	for k, v in pairs(self.accents) do
-		inputString = zo_strgsub(inputString, k, v)
+		inputString = strgsub(inputString, k, v)
 	end
 	return inputString
 end
@@ -283,15 +294,12 @@ function PVP:AllianceToColor(alliance, passive)
 	end
 end
 
-function PVP:NameToAllianceColor(unitName, passive, overrideBgColor)
+function PVP:NameToAllianceColor(unitName, passive, overrideBgColor, unitAlliance)
 	if not overrideBgColor and IsActiveWorldBattleground() and PVP.bgNames and PVP.bgNames[unitName] then
-		return PVP
-			:BgAllianceToHexColor(PVP.bgNames[unitName])
+		return PVP:BgAllianceToHexColor(PVP.bgNames[unitName])
 	end
 
-	local unitAlliance
-
-	if self.SV.playersDB[unitName] then
+	if self.SV.playersDB[unitName] and not unitAlliance then
 		unitAlliance = self.SV.playersDB[unitName].unitAlliance
 	end
 	return PVP:AllianceToColor(unitAlliance, passive)
@@ -502,7 +510,7 @@ function PVP:GetFormattedName(playerName, truncate)
 		end
 
 
-		if zo_strlen(formattedName) >= cutOff then
+		if strlen(formattedName) >= cutOff then
 			formattedName = zo_strsub(formattedName, 1, substringCutOff) .. ".."
 		end
 	end
@@ -651,20 +659,20 @@ function PVP:FindUTFIndice(name)
 	local substring = name
 	local before, after, skip
 	local count = 0
-	for i = 1, zo_strlen(name) - 1 do
-		if zo_strlen(substring) == zo_strlen(PVP:DeaccentString(substring)) then break end
+	for i = 1, strlen(name) - 1 do
+		if strlen(substring) == strlen(PVP:DeaccentString(substring)) then break end
 		if not skip then
-			before = zo_strlen(PVP:DeaccentString(substring))
-			substring = zo_strsub(substring, 2, zo_strlen(substring))
-			after = zo_strlen(PVP:DeaccentString(substring))
+			before = strlen(PVP:DeaccentString(substring))
+			substring = zo_strsub(substring, 2, strlen(substring))
+			after = strlen(PVP:DeaccentString(substring))
 			if after - before == 0 then
-				table.insert(indice, (i - count))
-				table.insert(indiceAccented, i)
+				insert(indice, (i - count))
+				insert(indiceAccented, i)
 				count = count + 1
 				skip = true
 			end
 		else
-			substring = zo_strsub(substring, 2, zo_strlen(substring))
+			substring = zo_strsub(substring, 2, strlen(substring))
 			skip = false
 		end
 	end
@@ -733,7 +741,7 @@ function PVP:ProcessLengths(namesTable, maxLength, addedLength)
 	-- PVP_Counter_TestWidth:SetText(text)
 	-- local width = PVP_Counter_TestWidth:GetTextWidth()
 	-- return width
-	-- return zo_strlen(text) * 2
+	-- return strlen(text) * 2
 	-- end
 
 	-- local maxLength=0
@@ -741,28 +749,28 @@ function PVP:ProcessLengths(namesTable, maxLength, addedLength)
 	for i = 1, #namesTable do
 		if self:StringEnd(namesTable[i], "+") then
 			if addedLength < 35 then addedLength = 35 end
-			namesTable[i] = zo_strsub(namesTable[i], 1, (zo_strlen(namesTable[i]) - 1))
+			namesTable[i] = zo_strsub(namesTable[i], 1, (strlen(namesTable[i]) - 1))
 		elseif self:StringEnd(namesTable[i], "%") then
 			if addedLength < 45 then addedLength = 45 end
-			namesTable[i] = zo_strsub(namesTable[i], 1, (zo_strlen(namesTable[i]) - 1))
+			namesTable[i] = zo_strsub(namesTable[i], 1, (strlen(namesTable[i]) - 1))
 		elseif self:StringEnd(namesTable[i], "%*") then
 			if addedLength < 65 then addedLength = 65 end
-			namesTable[i] = zo_strsub(namesTable[i], 1, (zo_strlen(namesTable[i]) - 2))
+			namesTable[i] = zo_strsub(namesTable[i], 1, (strlen(namesTable[i]) - 2))
 		elseif self:StringEnd(namesTable[i], "+*") then
 			if addedLength < 55 then addedLength = 55 end
-			namesTable[i] = zo_strsub(namesTable[i], 1, (zo_strlen(namesTable[i]) - 2))
+			namesTable[i] = zo_strsub(namesTable[i], 1, (strlen(namesTable[i]) - 2))
 		elseif self:StringEnd(namesTable[i], "%**") then
 			if addedLength < 75 then addedLength = 75 end
-			namesTable[i] = zo_strsub(namesTable[i], 1, (zo_strlen(namesTable[i]) - 3))
+			namesTable[i] = zo_strsub(namesTable[i], 1, (strlen(namesTable[i]) - 3))
 		elseif self:StringEnd(namesTable[i], "+**") then
 			if addedLength < 65 then addedLength = 65 end
-			namesTable[i] = zo_strsub(namesTable[i], 1, (zo_strlen(namesTable[i]) - 3))
+			namesTable[i] = zo_strsub(namesTable[i], 1, (strlen(namesTable[i]) - 3))
 		elseif self:StringEnd(namesTable[i], "**") then
 			if addedLength < 45 then addedLength = 45 end
-			namesTable[i] = zo_strsub(namesTable[i], 1, (zo_strlen(namesTable[i]) - 2))
+			namesTable[i] = zo_strsub(namesTable[i], 1, (strlen(namesTable[i]) - 2))
 		elseif self:StringEnd(namesTable[i], "*") then
 			if addedLength < 40 then addedLength = 40 end
-			namesTable[i] = zo_strsub(namesTable[i], 1, (zo_strlen(namesTable[i]) - 1))
+			namesTable[i] = zo_strsub(namesTable[i], 1, (strlen(namesTable[i]) - 1))
 		end
 	end
 	return 6 * maxLength + 90 + addedLength

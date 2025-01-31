@@ -4,113 +4,113 @@ PotionMaker_Data =
     {
         ["@germanus4711"] = 
         {
-            ["8796093027479535"] = 
+            ["8796093064640125"] = 
             {
-                ["training"] = false,
-                ["version"] = 1,
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
-                ["lastUsedTab"] = "PoisonMaker",
                 ["fakeThirdSlot"] = false,
-                ["useUnknown"] = true,
-                ["useMissing"] = false,
-            },
-            ["8796093023211051"] = 
-            {
                 ["training"] = false,
-                ["version"] = 1,
-                ["$LastCharacterName"] = "Freya Orm",
-                ["lastUsedTab"] = 1,
-                ["fakeThirdSlot"] = false,
-                ["useUnknown"] = true,
                 ["useMissing"] = false,
+                ["version"] = 1,
+                ["useUnknown"] = true,
+                ["$LastCharacterName"] = "Maüschen",
+                ["lastUsedTab"] = "PotionMaker",
             },
             ["8796093072557313"] = 
             {
+                ["fakeThirdSlot"] = false,
                 ["training"] = false,
+                ["useMissing"] = false,
                 ["version"] = 1,
+                ["useUnknown"] = true,
                 ["$LastCharacterName"] = "Gamal Loki",
                 ["lastUsedTab"] = "PotionMaker",
-                ["fakeThirdSlot"] = false,
-                ["useUnknown"] = true,
-                ["useMissing"] = false,
             },
-            ["8796093025384257"] = 
+            ["8796093023211051"] = 
             {
-                ["training"] = false,
-                ["version"] = 1,
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-                ["lastUsedTab"] = "PotionMaker",
+                ["$LastCharacterName"] = "Freya Orm",
                 ["fakeThirdSlot"] = false,
-                ["useUnknown"] = true,
+                ["training"] = false,
                 ["useMissing"] = false,
+                ["version"] = 1,
+                ["useUnknown"] = true,
+                ["lastUsedTab"] = 1,
             },
             ["8796093067546805"] = 
             {
+                ["fakeThirdSlot"] = false,
                 ["training"] = false,
+                ["useMissing"] = false,
                 ["version"] = 1,
+                ["useUnknown"] = true,
                 ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
                 ["lastUsedTab"] = "PotionMaker",
-                ["fakeThirdSlot"] = false,
-                ["useUnknown"] = true,
-                ["useMissing"] = false,
             },
-            ["8796093064640125"] = 
+            ["8796093025384257"] = 
             {
-                ["training"] = false,
-                ["version"] = 1,
-                ["$LastCharacterName"] = "Maüschen",
-                ["lastUsedTab"] = "PotionMaker",
                 ["fakeThirdSlot"] = false,
-                ["useUnknown"] = true,
-                ["useMissing"] = false,
-            },
-            ["8796093069174989"] = 
-            {
                 ["training"] = false,
-                ["version"] = 1,
-                ["$LastCharacterName"] = "Mike v Petra",
-                ["lastUsedTab"] = "PotionMaker",
-                ["fakeThirdSlot"] = false,
-                ["useUnknown"] = true,
                 ["useMissing"] = false,
-            },
-            ["8796093062295781"] = 
-            {
-                ["training"] = false,
                 ["version"] = 1,
-                ["$LastCharacterName"] = "Fridolin The Great",
-                ["lastUsedTab"] = "PotionMaker",
-                ["fakeThirdSlot"] = false,
                 ["useUnknown"] = true,
-                ["useMissing"] = false,
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+                ["lastUsedTab"] = "PotionMaker",
             },
             ["8796093074287095"] = 
             {
+                ["fakeThirdSlot"] = false,
                 ["training"] = false,
+                ["useMissing"] = false,
                 ["version"] = 1,
+                ["useUnknown"] = true,
                 ["$LastCharacterName"] = "Otto von Bissmark",
                 ["lastUsedTab"] = "PoisonMaker",
+            },
+            ["8796093027479535"] = 
+            {
                 ["fakeThirdSlot"] = false,
-                ["useUnknown"] = true,
+                ["training"] = false,
                 ["useMissing"] = false,
+                ["version"] = 1,
+                ["useUnknown"] = true,
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["lastUsedTab"] = "PoisonMaker",
+            },
+            ["8796093069174989"] = 
+            {
+                ["fakeThirdSlot"] = false,
+                ["training"] = false,
+                ["useMissing"] = false,
+                ["version"] = 1,
+                ["useUnknown"] = true,
+                ["$LastCharacterName"] = "Mike v Petra",
+                ["lastUsedTab"] = "PotionMaker",
             },
             ["$AccountWide"] = 
             {
+                ["filterFavoriteBySolvents"] = true,
+                ["autoSwitchTab"] = true,
+                ["filterFavoriteByReagents"] = false,
+                ["suppressNewTraitDialog"] = false,
+                ["filterFavoriteByTraits"] = true,
+                ["useItemSaver"] = true,
+                ["showAsDefault"] = true,
+                ["version"] = 1,
+                ["XPMode"] = true,
+                ["showInFavorites"] = "REAGENTS",
+                ["reagentStackOrder"] = false,
                 ["favorites"] = 
                 {
                 },
-                ["showAsDefault"] = true,
-                ["reagentStackOrder"] = false,
-                ["showInFavorites"] = "REAGENTS",
                 ["showMainMenuItem"] = true,
-                ["filterFavoriteByTraits"] = true,
-                ["filterFavoriteBySolvents"] = true,
-                ["filterFavoriteByReagents"] = false,
-                ["XPMode"] = true,
+            },
+            ["8796093062295781"] = 
+            {
+                ["fakeThirdSlot"] = false,
+                ["training"] = false,
+                ["useMissing"] = false,
                 ["version"] = 1,
-                ["autoSwitchTab"] = true,
-                ["useItemSaver"] = true,
-                ["suppressNewTraitDialog"] = false,
+                ["useUnknown"] = true,
+                ["$LastCharacterName"] = "Fridolin The Great",
+                ["lastUsedTab"] = "PotionMaker",
             },
         },
     },

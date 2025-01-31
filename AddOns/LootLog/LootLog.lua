@@ -1,4 +1,7 @@
 local LCCC = LibCodesCommonCode
+local LEJ = LibExtendedJournal
+
+LEJ.Used = true
 
 LootLog = {
 	name = "LootLog",
@@ -33,7 +36,13 @@ LootLog = {
 			junk = false,
 		},
 
-		antiquityTooltips = true,
+		antiquityEnabled = true,
+		antiquityOnlyMotifs = false,
+		antiquityMapColors = {
+			fullCodex = 0x00FF66,
+			incompleteCodex = 0xCCCC00,
+			neverFound = 0xCC3333,
+		},
 
 		uncollectedColors = {
 			lootedPersonal = 0xCC0000,
@@ -57,6 +66,7 @@ LootLog = {
 			[150731] = true, -- Dragon's Blood
 			[150789] = true, -- Dragon's Bile
 			[166045] = true, -- Indeko
+			[197853] = true, -- Abyss-Drenched Folio Volume
 			[204881] = true, -- Luminous Ink
 		},
 		blacklist = {
@@ -324,10 +334,10 @@ function LootLog.LogItem( itemLink, quantity, notable, receivedBy )
 
 	local isUncollected, uncollectedColor, uncollectedIcon
 	if (LootLog.vars.chatItemCollector) then
-		isUncollected, uncollectedColor, uncollectedIcon = LootLogMulti.ShouldFlagAsUncollected(itemLink, personal)
+		isUncollected, uncollectedColor, uncollectedIcon, ignoreCollectability = LootLogMulti.ShouldFlagAsUncollected(itemLink, personal)
 	end
 
-	if ( (LootLog.vars.chatMode > 0 and isUncollected) or
+	if ( (LootLog.vars.chatMode > 0 and isUncollected and not ignoreCollectability) or
 	     (LootLog.vars.chatMode == 1 and hasSet and personal) or
 	     (LootLog.vars.chatMode == 2 and hasSet) or
 	     (LootLog.vars.chatMode == 3 and notable and personal) or
@@ -468,7 +478,7 @@ function LootLog.GetGearTraitName( itemLink )
 end
 
 function LootLog.GetAntiquityLeadName( antiquityId )
-	return zo_strformat(GetString(SI_ANTIQUITY_LEAD_NAME_FORMATTER), GetAntiquityName(antiquityId))
+	return zo_strformat(SI_ANTIQUITY_LEAD_NAME_FORMATTER, GetAntiquityName(antiquityId))
 end
 
 function LootLog.FormatAntiquityLead( antiquityId, useBrackets )
@@ -610,7 +620,7 @@ function LootLog.GetAccountName( character )
 		end
 	end
 
-	return accountName
+	return accountName or "@"
 end
 
 do
@@ -709,8 +719,11 @@ function LootLog.RegisterSettingsPanel( )
 			end
 		end
 
-		Colors.MakePicker = function( key, name, tooltip, disabledKey )
-			local setting = LootLog.vars.uncollectedColors
+		Colors.MakePicker = function( key, name, tooltip, disabledKey, group, namePrefix, icon )
+			local setting = group and LootLog.vars[group] or LootLog.vars.uncollectedColors
+			if (namePrefix) then
+				name = string.format("%s: %s", GetString(namePrefix), GetString(name))
+			end
 			local picker = {
 				type = "colorpicker",
 				name = name,
@@ -726,8 +739,12 @@ function LootLog.RegisterSettingsPanel( )
 			if (disabledKey) then
 				picker.disabled = function() return not LootLog.vars[disabledKey] end
 			end
-			Colors.data[key] = { setting = setting }
+			Colors.data[key] = { setting = setting, icon = icon }
 			return picker
+		end
+
+		Colors.MakePickerTreasureMaps = function( key, name )
+			return Colors.MakePicker(key, name, nil, "antiquityEnabled", "antiquityMapColors", SI_SPECIALIZEDITEMTYPE100, "LootLog/art/antiquities-general.dds")
 		end
 
 		Colors.CreatePreviews = function( panel )
@@ -889,20 +906,32 @@ function LootLog.RegisterSettingsPanel( )
 			--------------------------------------------------------------------
 			{
 				type = "header",
-				name = SI_PLAYER_MENU_MISC,
+				name = SI_MAP_INFO_MODE_ANTIQUITIES,
 			},
 			--------------------
 			{
 				type = "checkbox",
 				name = SI_LOOTLOG_SETTING_ANTIQUITY,
-				getFunc = function() return LootLog.vars.antiquityTooltips end,
+				getFunc = function() return LootLog.vars.antiquityEnabled end,
 				setFunc = function( enabled )
-					LootLog.vars.antiquityTooltips = enabled
+					LootLog.vars.antiquityEnabled = enabled
 					if (enabled) then
 						LootLog.HookAntiquityTooltips()
 					end
 				end,
 			},
+			--------------------
+			{
+				type = "checkbox",
+				name = SI_LOOTLOG_SETTING_ONLYMOTIF,
+				getFunc = function() return LootLog.vars.antiquityOnlyMotifs end,
+				setFunc = function(enabled) LootLog.vars.antiquityOnlyMotifs = enabled end,
+				disabled = function() return not LootLog.vars.antiquityEnabled end,
+			},
+			--------------------
+			Colors.MakePickerTreasureMaps("fullCodex", SI_LOOTLOG_SETTING_ACLRFULL),
+			Colors.MakePickerTreasureMaps("incompleteCodex", SI_LOOTLOG_SETTING_ACLRINC),
+			Colors.MakePickerTreasureMaps("neverFound", SI_LOOTLOG_SETTING_ACLRNEVER),
 
 			--------------------------------------------------------------------
 			{

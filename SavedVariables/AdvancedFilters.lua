@@ -8,6 +8,16 @@ AdvancedFilters_Settings =
             {
                 ["Settings"] = 
                 {
+                    ["hideSubFilterLabel"] = false,
+                    ["showDropdownSelectedReminderAnimation"] = true,
+                    ["debugSpam"] = false,
+                    ["subfilterBarDropdownLastSelectedEntries"] = 
+                    {
+                    },
+                    ["showSubMenuHeaderlinesInFilterDropdowns"] = false,
+                    ["dropdownVisibleSubmenuRows"] = 15,
+                    ["debugSpamExcludeRefreshSubfilterBar"] = true,
+                    ["grayOutSubFiltersWithNoItems"] = true,
                     ["itemCountLabelColor"] = 
                     {
                         ["a"] = 1,
@@ -15,26 +25,16 @@ AdvancedFilters_Settings =
                         ["g"] = 1,
                         ["r"] = 1,
                     },
-                    ["debugSpamExcludeRefreshSubfilterBar"] = true,
-                    ["hideSubFilterLabel"] = false,
-                    ["version"] = 1.5110000000,
                     ["dropdownVisibleRows"] = 15,
-                    ["hideItemCount"] = false,
-                    ["debugSpam"] = false,
                     ["showIconsInFilterDropdowns"] = true,
-                    ["debugSpamExcludeDropdownBoxFilters"] = true,
-                    ["grayOutSubFiltersWithNoItems"] = true,
-                    ["showDropdownSelectedReminderAnimation"] = true,
-                    ["subfilterBarDropdownLastSelectedEntries"] = 
-                    {
-                    },
                     ["showFilterDropdownMenuOnRightMouseAtSubFilterButton"] = false,
                     ["rememberFilterDropdownsLastSelection"] = true,
-                    ["showSubMenuHeaderlinesInFilterDropdowns"] = false,
-                    ["showDropdownLastSelectedEntries"] = true,
-                    ["dropdownVisibleSubmenuRows"] = 15,
                     ["hideCharBoundAtBankDeposit"] = false,
+                    ["showDropdownLastSelectedEntries"] = true,
+                    ["hideItemCount"] = false,
+                    ["debugSpamExcludeDropdownBoxFilters"] = true,
                     ["doDebugOutput"] = false,
+                    ["version"] = 1.5110000000,
                 },
             },
         },

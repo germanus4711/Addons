@@ -1,3 +1,16 @@
+Version 2.3.2 (2025/01/30)
+* Added Spanish localization by Cisneros
+
+Version 2.3.1 (2025/01/29)
+* Added support for text alignment to ExtendedJournalTooltipExtension:AddSection
+
+Version 2.3.0 (2025/01/28)
+* Added a Used flag to be set to by addons that use this library, in preparation
+  for a potential standalone Minion release in the future
+
+Version 2.2.3 (2025/01/23)
+* API version bump for Update 45
+
 Version 2.2.2 (2024/09/19)
 * API version bump for Update 44
 

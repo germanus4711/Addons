@@ -14,7 +14,7 @@ PP.compatibility = function ()
             local lcmSMHighlight = GetControl(lcmSM, "Highlight")
 
             ZO_PreHookHandler(LibCustomMenuSubmenu, "OnShow", function ()
-                lcmSMBG:SetCenterTexture(nil, 4, 0)
+                lcmSMBG:SetCenterTexture("", 4, 0)
                 lcmSMBG:SetCenterColor(10 / 255, 10 / 255, 10 / 255, 0.96)
                 lcmSMBG:SetEdgeTexture("", 1, 1, 1, 0)
                 lcmSMBG:SetEdgeColor(60 / 255, 60 / 255, 60 / 255, 1)
@@ -26,7 +26,7 @@ PP.compatibility = function ()
             -- lcmSMBG:SetInheritAlpha(false)
 
             if lcmSMHighlight then
-                lcmSMHighlight:SetCenterTexture(nil, 4, 0)
+                lcmSMHighlight:SetCenterTexture("", 4, 0)
                 lcmSMHighlight:SetCenterColor(96 / 255 * 0.3, 125 / 255 * 0.3, 139 / 255 * 0.3, 1)
                 lcmSMHighlight:SetEdgeTexture("", 1, 1, 1, 0)
                 lcmSMHighlight:SetEdgeColor(96 / 255 * 0.5, 125 / 255 * 0.5, 139 / 255 * 0.5, 0)
@@ -47,7 +47,7 @@ PP.compatibility = function ()
             local styledLSMControls = {}
 
             local function defaultEntryTypeLayout(highlight)
-                highlight:SetCenterTexture(nil, 4, 0)
+                highlight:SetCenterTexture("", 4, 0)
                 highlight:SetEdgeTexture("", 1, 1, 1, 0)
                 highlight:SetInsets(0, 0, 0, 0)
                 highlight:SetBlendMode(TEX_BLEND_MODE_ADD)
@@ -115,7 +115,7 @@ PP.compatibility = function ()
                     end
                 end
                 --SetCenterTexture(*string* _filename_, *layout_measurement* _tilingInterval_, *[TextureAddressMode|#TextureAddressMode]* _addressMode_)
-                --parentControl:SetCenterTexture(nil, 4, 0)
+                --parentControl:SetCenterTexture("", 4, 0)
                 parentControl:SetCenterColor(10 / 255, 10 / 255, 10 / 255, 0.96)
                 --SetEdgeTexture(*string* _filename_, *integer* _edgeFileWidth_, *integer* _edgeFileHeight_, *layout_measurement* _cornerSize_, *integer* _edgeFilePadding_)
                 --parentControl:SetEdgeTexture("", 1, 1, 1, 0)
@@ -322,22 +322,42 @@ PP.compatibility = function ()
 
         -- ==AddonSelector==--
         if AddonSelector then
-            PP.Anchor(ZO_AddOns, --[[#1]] TOPLEFT, GuiRoot, TOPLEFT, 256, 35, --[[#2]] false, nil, nil, nil, nil, nil)
-            PP.Anchor(ZO_AddOnsList, --[[#1]] TOPLEFT, AddonSelector, BOTTOMLEFT, 0, 5, --[[#2]] true, BOTTOMRIGHT, ZO_AddOns, BOTTOMRIGHT, 0, -10)
-            PP.Anchor(AddonSelectorBottomDivider, --[[#1]] BOTTOM, AddonSelector, BOTTOM, 40, 0)
-            PP.Anchor(AddonSelectorSearchBox, --[[#1]] TOPRIGHT, ZO_AddOns, TOPRIGHT, -6, 6)
-            if AddonSelectorAutoReloadUI and AddonSelectorAutoReloadUILabel then
-                PP.Anchor(AddonSelectorAutoReloadUILabel, --[[#1]] TOPRIGHT, AddonSelectorSearchBox, BOTTOMRIGHT, 0, 6)
-                PP.Anchor(AddonSelectorAutoReloadUI, --[[#1]] RIGHT, AddonSelectorAutoReloadUILabel, LEFT, -6, 0)
+            local SV_VER = 0.1
+            local addonSV = ZO_SavedVars:NewAccountWide(PP.ADDON_NAME, SV_VER, "GameMenuScene", {}, GetWorldName())
+            if addonSV.addons_toggle then
+                local function reAnchorAddOnsUIForAddonSelectorNow()
+			        PP.Anchor(ZO_AddOns, --[[#1]] TOPLEFT, GuiRoot, TOPLEFT, 256, 35, --[[#2]] true, BOTTOMRIGHT, GuiRoot, BOTTOMLEFT, 1200, -80)
+                    PP.Anchor(ZO_AddOnsList, --[[#1]] TOPLEFT, AddonSelector, BOTTOMLEFT, 0, 10, --[[#2]] true, BOTTOMRIGHT, ZO_AddOns, BOTTOMRIGHT, -20, -60)
+                end
+                reAnchorAddOnsUIForAddonSelectorNow()
+
+                PP.Anchor(AddonSelectorBottomDivider, --[[#1]] BOTTOM, AddonSelector, BOTTOM, 40, 0)
+                PP.Anchor(AddonSelectorSearchBox, --[[#1]] TOPRIGHT, ZO_AddOns, TOPRIGHT, -6, 6)
+                if AddonSelectorAutoReloadUI and AddonSelectorAutoReloadUILabel then
+                    PP.Anchor(AddonSelectorAutoReloadUILabel, --[[#1]] TOPRIGHT, AddonSelectorSearchBox, BOTTOMRIGHT, 0, 6)
+                    PP.Anchor(AddonSelectorAutoReloadUI, --[[#1]] RIGHT, AddonSelectorAutoReloadUILabel, LEFT, -6, 0)
+                end
+                PP.Anchor(AddonSelectorSettingsOpenDropdown, --[[#1]] TOPLEFT, ZO_AddOns, TOP, 40, -7)
+
+                PP.Font(AddonSelectorDeselectAddonsButtonKeyLabel, --[[Font]] PP.f.u57, 16, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+                PP.Font(AddonSelectorDeselectAddonsButtonNameLabel, --[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+                PP.Font(AddonSelectorSelectAddonsButtonKeyLabel, --[[Font]] PP.f.u57, 16, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+                PP.Font(AddonSelectorSelectAddonsButtonNameLabel, --[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+                PP.Font(AddonSelectorToggleAddonStateButtonKeyLabel, --[[Font]] PP.f.u57, 16, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+                PP.Font(AddonSelectorToggleAddonStateButtonNameLabel, --[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+                PP.Font(AddonSelectorStartAddonSearchButtonKeyLabel, --[[Font]] PP.f.u57, 16, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+                PP.Font(AddonSelectorStartAddonSearchButtonNameLabel, --[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
+
+                --Register these 2 events to react on an ALT+TAB or WIN outside and reanchor the ZO_AddOns UI properly again
+                EVENT_MANAGER:UnregisterForEvent("PerfectPixel_ZO_AddOns_EVENT_GAME_FOCUS_CHANGED", EVENT_GAME_FOCUS_CHANGED)
+                EVENT_MANAGER:RegisterForEvent("PerfectPixel_ZO_AddOns_EVENT_GAME_FOCUS_CHANGED", EVENT_GAME_FOCUS_CHANGED, function()
+                    EVENT_MANAGER:UnregisterForEvent("PerfectPixel_ZO_AddOns_EVENT_ALL_GUI_SCREENS_RESIZED", EVENT_ALL_GUI_SCREENS_RESIZED)
+                    EVENT_MANAGER:RegisterForEvent("PerfectPixel_ZO_AddOns_EVENT_ALL_GUI_SCREENS_RESIZED", EVENT_ALL_GUI_SCREENS_RESIZED, function()
+                        reAnchorAddOnsUIForAddonSelectorNow()
+                        EVENT_MANAGER:UnregisterForEvent("PerfectPixel_ZO_AddOns_EVENT_ALL_GUI_SCREENS_RESIZED", EVENT_ALL_GUI_SCREENS_RESIZED)
+                    end)
+                end)
             end
-            PP.Font(AddonSelectorDeselectAddonsButtonKeyLabel, --[[Font]] PP.f.u57, 16, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
-            PP.Font(AddonSelectorDeselectAddonsButtonNameLabel, --[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
-            PP.Font(AddonSelectorSelectAddonsButtonKeyLabel, --[[Font]] PP.f.u57, 16, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
-            PP.Font(AddonSelectorSelectAddonsButtonNameLabel, --[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
-            PP.Font(AddonSelectorToggleAddonStateButtonKeyLabel, --[[Font]] PP.f.u57, 16, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
-            PP.Font(AddonSelectorToggleAddonStateButtonNameLabel, --[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
-            PP.Font(AddonSelectorStartAddonSearchButtonKeyLabel, --[[Font]] PP.f.u57, 16, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
-            PP.Font(AddonSelectorStartAddonSearchButtonNameLabel, --[[Font]] PP.f.u67, 18, "outline", --[[Alpha]] nil, --[[Color]] nil, nil, nil, nil, --[[StyleColor]] 0, 0, 0, 0.5)
         end
         -- ===============================================================================================--
 
@@ -542,6 +562,82 @@ PP.compatibility = function ()
                 control:SetHidden(true)
             end
         end
+
+        --Dolgubons Lazy Writ Creator
+        if DolgubonsWrits then
+            local dlwcSmallUI = DolgubonsWrits
+            if dlwcSmallUI then
+                if DolgubonsWritCrafterSavedVars and 
+                   DolgubonsWritCrafterSavedVars["Default"][GetDisplayName()]["$AccountWide"]["skin"] ~= "default" then
+                    -- Skip styling for DolgubonsWrits if skin is not "default"
+                else
+                    PP:CreateBackground(dlwcSmallUI, nil, nil, nil, 0, 0, nil, nil, nil, 0, 0)
+                    DolgubonsWritsBackdropBackdrop:SetHidden(true)
+                end
+            end
+        end
+
+        if DolgubonsLazyWritStatsWindow then
+            PP:CreateBackground(DolgubonsLazyWritStatsWindowBackdrop, nil, nil, nil, 0, 0, nil, nil, nil, 0, 0)
+            local scrollList = DolgubonsLazyWritStatsWindowRewardScroll.object.list
+            PP.ScrollBar(scrollList)
+
+            -- Style all rows in the list
+            local dataType = ZO_ScrollList_GetDataTypeTable(scrollList, 1)
+            local originalSetupCallback = dataType.setupCallback
+            dataType.setupCallback = function (control, data)
+                originalSetupCallback(control, data)
+
+                -- Create backdrop if it doesn't exist
+                if not control.backdrop then
+                    local backdrop = PP.CreateBackdrop(control)
+                    backdrop:SetCenterColor(20 / 255, 20 / 255, 20 / 255, 0.8)
+                    backdrop:SetEdgeColor(40 / 255, 40 / 255, 40 / 255, 0.9)
+                    backdrop:SetEdgeTexture("", 1, 1, 1, 0)
+                    backdrop:SetInsets(1, 1, -1, -1)
+                end
+
+                -- Style each craft section in the row
+                for i = 1, 7 do
+                    local craftControl = control:GetNamedChild("Craft" .. i)
+                    if craftControl then
+                        -- Hide the default backdrop
+                        local bg = craftControl:GetNamedChild("BG")
+                        if bg then
+                            bg:SetHidden(true)
+                        end
+
+                        -- Style the labels
+                        local nameLabel = craftControl:GetNamedChild("Name")
+                        local amountLabel = craftControl:GetNamedChild("Amount")
+
+                        if nameLabel then
+                            -- Keep original color (76BCC3 from WritCreater.xml)
+                            PP.Font(nameLabel, PP.f.u67, 16, "outline")
+                            PP.Anchor(nameLabel, --[[#1]] LEFT, craftControl, LEFT, 5, 0)
+                        end
+
+                        if amountLabel then
+                            PP.Font(amountLabel, PP.f.u67, 16, "outline")
+                            PP.Anchor(amountLabel, --[[#1]] RIGHT, craftControl, RIGHT, -5, 0)
+                        end
+                    end
+                end
+
+                -- Adjust row height (30px from XML)
+                control:SetHeight(30)
+                control:SetMouseEnabled(true)
+
+                -- Add mouseover highlight behavior
+                control:SetHandler("OnMouseEnter", function (self)
+                    self.backdrop:SetCenterColor(30 / 255, 30 / 255, 30 / 255, 0.8)
+                end)
+                control:SetHandler("OnMouseExit", function (self)
+                    self.backdrop:SetCenterColor(20 / 255, 20 / 255, 20 / 255, 0.8)
+                end)
+            end
+        end
+
         -- ===============================================================================================--
         -- ==LibSets==--
         if LibSets then
@@ -731,6 +827,15 @@ PP.compatibility = function ()
                 ArkadiusTradeToolsSalesFrameFilterBarTimeBGMungeOverlay,
                 ArkadiusTradeToolsStatisticsFrameFilterBarTimeBGMungeOverlay,
                 ArkadiusTradeToolsWindowBackdropMungeOverlay,
+                ArkadiusTradeToolsWindowHeaderBackgroundTopLeft,
+                ArkadiusTradeToolsWindowHeaderBackgroundBottomLeft,
+                ArkadiusTradeToolsWindowHeaderBackgroundLeft,
+                ArkadiusTradeToolsWindowHeaderBackgroundTopRight,
+                ArkadiusTradeToolsWindowHeaderBackgroundBottomRight,
+                ArkadiusTradeToolsWindowHeaderBackgroundRight,
+                ArkadiusTradeToolsWindowHeaderBackgroundTop,
+                ArkadiusTradeToolsWindowHeaderBackgroundBottom,
+                ArkadiusTradeToolsWindowHeaderBackgroundCenter,
             }
 
             for i, overlay in ipairs(overlays) do
@@ -924,7 +1029,7 @@ PP.compatibility = function ()
 
         -- ==pChat==--
         if pChat then
-            pChat.ChangeChatWindowDarkness = PP.Dummy
+            pChat.ChangeChatWindowDarkness = PP.Empty
             ZO_PostHook(pChat, "ApplyChatConfig", function (...)
                 PP:UpdateBackgrounds("ChatWindow")
             end)
@@ -934,7 +1039,7 @@ PP.compatibility = function ()
 
         -- ==rChat==--
         if rChat then
-            rChat.ChangeChatWindowDarkness = PP.Dummy
+            rChat.ChangeChatWindowDarkness = PP.Empty
             ZO_PostHook(rChat, "ApplyChatConfig", function (...)
                 PP:UpdateBackgrounds("ChatWindow")
             end)
@@ -946,18 +1051,34 @@ PP.compatibility = function ()
             local wasHistyHooked = false
             SecurePostHook(ZO_GuildHistory_Keyboard, "OnDeferredInitialize", function ()
                 if not wasHistyHooked then
+                    local guildHistoryKeyboardTLCCtrl = ZO_GuildHistory_Keyboard_TL
                     local histyGuildHistoryTLC = LibHistoireGuildHistoryStatusWindow
                     local histyGuildHistoryTLCBG = histyGuildHistoryTLC:GetNamedChild("Bg") -- LibHistoireGuildHistoryStatusWindowBg
                     if histyGuildHistoryTLCBG ~= nil then
                         PP:CreateBackground(histyGuildHistoryTLCBG, --[[#1]] nil, nil, nil, -6, 0, --[[#2]] nil, nil, nil, 0, 6)
                     end
 
-                    local histyGuildHistoryTLCToggleButton = histyGuildHistoryTLC:GetNamedChild("ToggleButton") -- LibHistoireGuildHistoryStatusWindowToggleButton
-                    if histyGuildHistoryTLCToggleButton ~= nil then
-                        histyGuildHistoryTLCToggleButton:ClearAnchors()
-                        histyGuildHistoryTLCToggleButton:SetAnchor(BOTTOMLEFT, ZO_GuildHistory_Keyboard_TL, BOTTOMLEFT, 10, 0)
-                    end
                     wasHistyHooked = true
+
+                    local function updateHistyUIForPP()
+                        local histyGuildHistoryTLCToggleButton = histyGuildHistoryTLC:GetNamedChild("ToggleButton") -- LibHistoireGuildHistoryStatusWindowToggleButton
+                        if histyGuildHistoryTLCToggleButton ~= nil then
+                            histyGuildHistoryTLCToggleButton:ClearAnchors()
+                            histyGuildHistoryTLCToggleButton:SetAnchor(BOTTOMLEFT, guildHistoryKeyboardTLCCtrl, BOTTOMLEFT, 0, 5)
+                        end
+
+                        PP.Anchor(LibHistoireLinkedIcon, --[[#1]] BOTTOMRIGHT, guildHistoryKeyboardTLCCtrl, BOTTOMRIGHT, -20, 5)
+                    end
+                    updateHistyUIForPP()
+
+                    --[[
+                    GUILD_HISTORY_KEYBOARD_SCENE:RegisterCallback("StateChange", function(oldState, newState)
+                        if newState == SCENE_SHOWN then
+d("[PP]GUILD_HISTORY_KEYBOARD_SCENE:SHown")
+                            updateHistyUIForPP()
+                        end
+                    end)
+                    ]]
                 end
             end)
         end

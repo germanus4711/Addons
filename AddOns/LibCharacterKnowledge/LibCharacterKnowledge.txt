@@ -8,9 +8,9 @@
 ## Description: Library for managing character-specific knowledge across multiple accounts
 ## Author: @code65536
 ## IsLibrary: true
-## Version: 2.1.1
-## AddOnVersion: 201010
-## APIVersion: 101043 101044
+## Version: 2.1.2
+## AddOnVersion: 201020
+## APIVersion: 101044 101045
 ## SavedVariables: LibCharacterKnowledgeData
 ## OptionalDependsOn: LibAddonMenu-2.0
 

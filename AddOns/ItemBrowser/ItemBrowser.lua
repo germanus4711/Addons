@@ -1,6 +1,8 @@
 local LCCC = LibCodesCommonCode
 local LEJ = LibExtendedJournal
 
+LEJ.Used = true
+
 ItemBrowser = {
 	name = "ItemBrowser",
 

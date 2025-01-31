@@ -6,11 +6,11 @@ CollectiblesTrackerSavedVariables =
         {
             ["$AccountWide"] = 
             {
-                ["ct"] = 
+                ["ec"] = 
                 {
                     ["filterId"] = 1,
                 },
-                ["ec"] = 
+                ["ct"] = 
                 {
                     ["filterId"] = 1,
                 },
