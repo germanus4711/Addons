@@ -361,6 +361,7 @@ LibId64 1
 LibMapPins-1.0 1
 VotansFishermanExport 0
 LibStub 0
+AUI 1
 LibDataShare 0
 LibChatMessage 1
 TamrielTradeCentreSimplePrice 0
@@ -379,7 +380,7 @@ VotansImprovedLocations 1
 AutoResearch 1
 RaidNotifier 0
 ScriptTracker 0
-AUI_FightData 0
+AUI_FightData 1
 LibCombatAlerts 0
 LoreBooks 0
 LibAddonMenu-2.0 1
@@ -396,8 +397,8 @@ CombatMetronome 0
 VotansImprovedHouseTours 0
 #NA Megaserver-Freya Orm
 CustomCompassPins 1
-VotansImprovedHouseTours 1
-CraftStoreFixedAndImproved 1
+LibLootSummary 1
+LibCraftText 1
 AchievementInfo 1
 PerfectWeave 1
 LibAddonMenuOrderListBox 1
@@ -420,11 +421,11 @@ LibUnits2 0
 LibScrollableMenu 1
 PersonalAssistantWorker 1
 BanditsCompanions 1
-CraftingWritAssistant 0
+CraftingWritAssistant 1
 CombatMetricsFightData 1
 VotansTamrielMap 1
 ActionDurationReminder 1
-ESODatabaseLeaderboardExport 0
+ESODatabaseLeaderboardExport 1
 LibMapThemer 1
 HodorReflexes 1
 greyskull 1
@@ -437,7 +438,7 @@ LibLoreLibrary 0
 AlphaScry 0
 LibHandler 1
 LibPrice 1
-MasterRecipeList 1
+MasterRecipeList 0
 LibScroll 1
 LibSlashCommander 1
 VotansSurveyTheWorld 0
@@ -445,8 +446,8 @@ displayleads 1
 LibAddonMenuDatePicker 1
 LibMotifCategories 1
 SetCollectionMarker 1
-TinydogsCraftingCalculator 0
-Destinations 0
+TinydogsCraftingCalculator 1
+Destinations 1
 LibDelayedHandler 1
 VotansHousingFilter 1
 FCOLockpicker 1
@@ -483,7 +484,7 @@ LibCustomMenu 1
 PotionMaker 1
 LibQuestData 1
 LibAsync 1
-SquishyFinder 0
+SquishyFinder 1
 LibHistoire 1
 AdvancedFilters 1
 FCOCraftFilter 1
@@ -518,7 +519,7 @@ ItemBrowser 1
 DailyProvisioning 1
 BanditsUserInterface 1
 CrutchAlerts 1
-PithkaAchievementTracker 0
+PithkaAchievementTracker 1
 LibId64 1
 LibExtendedJournal 1
 LibCharacter 1
@@ -573,7 +574,7 @@ Dustman 1
 CombatMetrics 1
 AUI_FightData 0
 LibEventHandler 1
-ESODatabaseExport 0
+ESODatabaseExport 1
 LibCombatAlerts 1
 LoreBooks 0
 BeamMeUp 1
@@ -582,7 +583,7 @@ LibAddonMenu-2.0 1
 LibHarvensAddonSettings 1
 LibCombat 1
 DeclutteredScryingLeads 1
-ESODatabaseGameDataExport 0
+ESODatabaseGameDataExport 1
 SimpleDailyCraft 0
 LibPromises 1
 PersonalAssistant 1
@@ -601,10 +602,10 @@ LibMainMenu-2.0 1
 LibManifest 1
 CombatMetronome 1
 LibPhinixFunctions 1
-HarvestMapAD 1
 LibMotif 1
-LibLootSummary 1
-LibCraftText 1
+HarvestMapAD 1
+VotansImprovedHouseTours 1
+CraftStoreFixedAndImproved 1
 #NA Megaserver-Maüschen
 CustomCompassPins 0
 PerfectWeave 0

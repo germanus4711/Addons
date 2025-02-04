@@ -2,7 +2,7 @@ local MuchSmarterAutoLoot = ZO_Object:Subclass()
 local MuchSmarterAutoLootSettings = ZO_Object:Subclass()
 
 local startupInfoPrinted = false
-local addonVersion = "5.0.3"
+local addonVersion = "5.1.4"
 local settingPanel = {}
 local MSAL_NEVER_3RD_PARTY_WARNING = "msal_never_3rd_party_warning"
 local templateItemlink = "|H1:item:%s:123:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h"
@@ -24,6 +24,7 @@ local isRepetitiveGear = false
 local lastUnlockTime = 0
 local isResourceNode = false
 local isLockedChest = false
+local isSuccessionLoot = false
 local lootingBagContainer = false
 local unwantedLootIdList = {}
 local unwantedNameList = {}
@@ -34,6 +35,8 @@ local TOKEN_BLIST = 0
 local TOKEN_WLIST = 1
 local tempBlist = {}
 
+local destroyButton
+
 local defaults = {
     latestMajorUpdateVersion = "",
     never3rdPartyWaining = false,
@@ -43,7 +46,6 @@ local defaults = {
     printItems = false,
     printItemThreshold = true,
     closeLootWindow = false,
-    closeLootWindowSmarter = true,
     considerateMode = false,
     considerateModePrint = false,
     greedyMode = false,
@@ -55,6 +57,7 @@ local defaults = {
     autoBind = false,
     blacklist = {},
     whitelist = {},
+    addDestroyButton = true,
     -- filters, use plural for key and value by default
     filters = {
         set = "always loot",
@@ -254,17 +257,7 @@ end
 
 local function OnLootClosed()
     lootingBagContainer = false
-end
-
-local function OnUnwantedLootClosed()
-    -- d("triggered")
-    -- isResourceNode = false
-    -- isLockedChest = false
-    unwantedLootIdList = {}
-    unwantedNameList = {}
-
-    EVENT_MANAGER:UnregisterForEvent("MSAL_UNWANTED_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE)
-    EVENT_MANAGER:UnregisterForEvent("MSAL_LOOT_CLOSED", EVENT_LOOT_CLOSED)
+    isSuccessionLoot = false
 end
 
 local function OnUnwantedUpdated(_, bagId, slotId, isNewItem, _, _, _)
@@ -287,6 +280,19 @@ local function OnUnwantedUpdated(_, bagId, slotId, isNewItem, _, _, _)
         end
         DestroyItem(bagId, slotId)
     end
+end
+
+local function OnDestroyUpdated(_, bagId, slotId, isNewItem, _, _, _)
+    -- d("OnUnwantedUpdated")
+    if bagId ~= BAG_BACKPACK then
+        return
+    end
+    local link = GetItemLink(bagId, slotId)
+    -- d("unwanted: "..tostring(unwanted))
+    if db.considerateModePrint then
+        d(GetString(SI_ITEM_ACTION_DESTROY) .. " " .. link)
+    end
+    DestroyItem(bagId, slotId)
 end
 
 local function ArrayHasItem(arr, item)
@@ -931,7 +937,47 @@ local function OnInventoryUpdate(_, bagId, slotIndex, isNewItem, itemSoundCatego
     if (db.autoBind and isUncollected and not isCompanionGear and not isCrafted and not isRepetitiveGear and not itemOnList(itemid, name, TOKEN_BLIST)) then
         BindItem(bagId, slotIndex)
     end
+
+    for i = #currentNotLootedNameList, 1, -1 do
+        if currentNotLootedNameList[i] == name then
+            table.remove(currentNotLootedNameList, i)
+        end
+    end
+    lastNotLootedNameList = currentNotLootedNameList
 end
+
+function MuchSmarterAutoLoot_Destroy(self)
+    local num = GetNumLootItems()
+    EVENT_MANAGER:RegisterForEvent("MSAL_DESTROY_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE, OnDestroyUpdated)
+    EVENT_MANAGER:AddFilterForEvent("MSAL_DESTROY_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE,
+        REGISTER_FILTER_IS_NEW_ITEM, true)
+    EVENT_MANAGER:AddFilterForEvent("MSAL_DESTROY_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE,
+        REGISTER_FILTER_BAG_ID, BAG_BACKPACK)
+    zo_callLater(function() EVENT_MANAGER:UnregisterForEvent("MSAL_DESTROY_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE) end, GetLatency() + 50)
+
+    LootMoney()
+    for _, curt in ipairs(curtType) do
+        LootCurrency(curt)         
+    end
+    local hasBListSetGear = false
+    for i = 1, num, 1 do
+        local lootId, name, icon, quantity, quality, value, isQuest, isStolen, lootType = GetLootItemInfo(i)
+        local link = GetLootItemLink(lootId)
+        local isSetItem = IsItemLinkSetCollectionPiece(link)
+        if itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) and isSetItem then
+            hasBListSetGear = true
+        else
+            LootItemById(lootId)
+        end
+    end
+    if hasBListSetGear then
+        EndLooting()
+        SCENE_MANAGER:HideCurrentScene()
+        d(string.format(GetString(MSAL_LIST_LOOTING_CONFLICT), 
+        GetString(SI_ITEM_ACTION_DESTROY)))
+    end
+end
+
 
 local function OnLootUpdated()
     if (db.enabled == false) then
@@ -965,7 +1011,7 @@ local function OnLootUpdated()
     end
 
     local noCurtLeft = true
-    local noBListItem = true
+    local noBListSetGear = true
 
     local currencyInfo = LOOT_SHARED:GetLootCurrencyInformation()
     for curt, info in ipairs(currencyInfo) do
@@ -1074,8 +1120,31 @@ local function OnLootUpdated()
         if not isShiftKeyDown and (isStolen and (db.stolenRule == "never loot")) then
         -- do nothing
         elseif itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) or itemOnList(GetItemLinkItemId(link), name, TOKEN_WLIST) then
-            if itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) then
-                noBListItem = false
+            if itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) and isSetItem then
+                noBListSetGear = false
+                -- ZO_PreHook("ZO_Loot_ButtonKeybindPressed", function()
+                --     flag = not flag -- Since ZO_ActionBar_CanUseActionSlots is called twice for each ability cast
+                --     if flag then
+                --         local slotNum = tonumber(debug.traceback():match('ACTION_BUTTON_(%d)'))
+                --         -- if attempt to use SS or its morph
+                --         if (db ~= nil and db.skillIdLog) then
+                --             d(GetSlotBoundId(slotNum))
+                --         end
+                --         return false
+            
+                --         -- if GetSlotBoundId(slotNum) == 33319 or GetSlotBoundId(slotNum) == 36935 or GetSlotBoundId(slotNum) == 36908 then
+                --         -- 	-- if not using SS
+                --         -- 	if permission then
+                --         -- 		---start = GetGameTimeMilliseconds()
+                --         -- 		return false
+                --         -- 	else
+                --         -- 		ZO_Alert(UI_ALERT_CATEGORY_ERROR, SOUNDS.NEGATIVE_CLICK, SI_RESPECRESULT10)
+                --         -- 		return true
+                --         -- 	end
+                --         -- end
+                --         -- GetSlotBoundId(tonumber(debug.traceback():match('ACTION_BUTTON_6')))
+                --     end
+                -- end)
             end
             if itemOnList(GetItemLinkItemId(link), name, TOKEN_WLIST) then
                 LootItemById(lootId)
@@ -1455,7 +1524,11 @@ local function OnLootUpdated()
             REGISTER_FILTER_IS_NEW_ITEM, true)
         EVENT_MANAGER:AddFilterForEvent("MSAL_UNWANTED_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE,
             REGISTER_FILTER_BAG_ID, BAG_BACKPACK)
-        zo_callLater(function() EVENT_MANAGER:RegisterForEvent("MSAL_UNWANTED_LOOT_CLOSED", EVENT_LOOT_CLOSED, OnUnwantedLootClosed) end, GetLatency())
+        zo_callLater(function()
+            unwantedLootIdList = {}
+            unwantedNameList = {}
+            EVENT_MANAGER:UnregisterForEvent("MSAL_UNWANTED_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE)
+        end, GetLatency() + 50)
 
         if not noCurtLeft then
             LootMoney()
@@ -1465,28 +1538,35 @@ local function OnLootUpdated()
             noCurtLeft = true
         end
 
+        local hasBListSetGear = false
         for i = 1, #unwantedLootIdList, 1 do
-            LootItemById(unwantedLootIdList[i])
+            local lootId = unwantedLootIdList[i]
+            local link = GetLootItemLink(lootId)
+            local isSetItem = IsItemLinkSetCollectionPiece(link)
+            local name = GetItemLinkName(link)
+            if itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) and isSetItem then
+                hasBListSetGear = true
+            else
+                LootItemById(lootId)
+            end
         end
-
-        -- Force close the chest looting window to avoid picking up the blacklisted item
-        if isLockedChest and not noBListItem then
-            EndLooting()
-            SCENE_MANAGER:HideCurrentScene()
-            d(string.format(GetString(MSAL_LIST_CONSIDERATE_CONFLICT), 
-                GetString(MSAL_CONSIDERATE_MODE)))
+        if hasBListSetGear then
+            d(string.format(GetString(MSAL_LIST_LOOTING_CONFLICT), 
+            GetString(MSAL_CONSIDERATE_MODE)))
         end
     end
 
-    if (db.closeLootWindow and not considerateLoot) then
-        if (db.debugMode) then
-            if (IsSameArray(currentNotLootedNameList, lastNotLootedNameList) and #currentNotLootedNameList ~= 0 ) then
+    if (db.closeLootWindow and not considerateLoot and not isSuccessionLoot) then
+        if (IsSameArray(currentNotLootedNameList, lastNotLootedNameList) and #currentNotLootedNameList ~= 0 ) then
+            if (db.debugMode) then
                 d("is Succession loot")
             end
+            isSuccessionLoot = true
         end
 
+
         -- If Smarter Close is disabled or enabled but it is not a succession loot ------ then it need to be closed unless its a bag container
-        if not db.closeLootWindowSmarter or (db.closeLootWindowSmarter and not (IsSameArray(currentNotLootedNameList, lastNotLootedNameList))) and noBListItem then
+        if not IsSameArray(currentNotLootedNameList, lastNotLootedNameList) and noBListSetGear then
             -- if the case is bag container
             if (IsInGamepadPreferredMode() and tostring(currentScene) == "lootInventoryGamepad") or (not IsInGamepadPreferredMode() and tostring(currentScene) == "inventory") then
                 lootingBagContainer = true
@@ -1516,7 +1596,7 @@ local function OnLootUpdated()
         lastNotLootedNameList = currentNotLootedNameList
     end
 
-    if #currentNotLootedNameList == 0 and noCurtLeft and noBListItem then
+    if #currentNotLootedNameList == 0 and noCurtLeft and noBListSetGear then
         if (db.debugMode) then
             d("secured closing loot window, showing: "..currentScene)
         end
@@ -1761,7 +1841,7 @@ local function SettingInitialize(db)
         table.insert(temp, "-------- " .. title .. " --------")
         for _, itemid in pairs(list) do
             table.insert(temp,
-                trimString(GetItemLinkName(string.format(templateItemlink, itemid)) .. " (" .. itemid .. ")"))
+                trimString(GetItemLinkName(string.format(templateItemlink, itemid))) .. " (" .. itemid .. ")")
         end
         return temp
     end
@@ -1883,6 +1963,11 @@ local function SettingInitialize(db)
             name = GetString(MSAL_GENERAL_SETTINGS),
             controls = {
                 {
+                    type = "header",
+                    name = GetString(MSAL_GENERAL_SETTINGS_GENERAL),
+                    width = "full"
+                },
+                {
                     type = "checkbox",
                     name = GetString(MSAL_LOGIN_REMINDER),
                     tooltip = GetString(MSAL_LOGIN_REMINDER_TOOLTIP),
@@ -1935,18 +2020,15 @@ local function SettingInitialize(db)
                 },
                 {
                     type = "checkbox",
-                    name = GetString(MSAL_SMARTER_CLOSE_LOOT_WINDOW),
-                    tooltip = GetString(MSAL_SMARTER_CLOSE_LOOT_WINDOW_TOOLTIP),
+                    name = GetString(MSAL_GREEDY_MODE),
+                    tooltip = GetString(MSAL_GREEDY_MODE_TOOLTIP),
                     getFunc = function()
-                        return db.closeLootWindowSmarter
+                        return db.greedyMode
                     end,
                     setFunc = function(value)
-                        db.closeLootWindowSmarter = value
+                        db.greedyMode = value
                     end,
-                    default = true,
-                    disabled = function()
-                        return db.closeLootWindow == false
-                    end
+                    default = false
                 },
                 {
                     type = "dropdown",
@@ -1963,22 +2045,9 @@ local function SettingInitialize(db)
                     default = "never loot"
                 },
                 {
-                    type = "divider",
-                    height = 1,
-                    alpha = 0.5,
-                    width = "half"
-                },
-                {
-                    type = "checkbox",
-                    name = GetString(MSAL_GREEDY_MODE),
-                    tooltip = GetString(MSAL_GREEDY_MODE_TOOLTIP),
-                    getFunc = function()
-                        return db.greedyMode
-                    end,
-                    setFunc = function(value)
-                        db.greedyMode = value
-                    end,
-                    default = false
+                    type = "header",
+                    name = GetString(MSAL_GENERAL_SETTINGS_DESTROYING),
+                    width = "full"
                 },
                 {
                     type = "checkbox",
@@ -1994,6 +2063,25 @@ local function SettingInitialize(db)
                 },
                 {
                     type = "checkbox",
+                    name = GetString(MSAL_ADD_DESTROY_BUTTON),
+                    tooltip = GetString(MSAL_ADD_DESTROY_BUTTON_TOOLTIP),
+                    getFunc = function()
+                        return db.addDestroyButton
+                    end,
+                    setFunc = function(value)
+                        db.addDestroyButton = value
+                        if db.addDestroyButton then
+                            local customAnchor = ZO_Anchor:New(LEFT, ZO_Loot, RIGHT, 10, 0)
+                            customAnchor:Set(destroyButton)
+                        else
+                            local customAnchor = ZO_Anchor:New(LEFT, ZO_Loot, RIGHT, 114514, 0)
+                            customAnchor:Set(destroyButton)
+                        end
+                    end,
+                    default = true
+                },
+                {
+                    type = "checkbox",
                     name = GetString(MSAL_CONSIDERATE_MODE_PRINT),
                     getFunc = function()
                         return db.considerateModePrint
@@ -2003,14 +2091,13 @@ local function SettingInitialize(db)
                     end,
                     default = false,
                     disabled = function()
-                        return db.considerateMode == false
+                        return db.considerateMode == false and db.addDestroyButton == false
                     end
                 },
                 {
-                    type = "divider",
-                    height = 1,
-                    alpha = 0.5,
-                    width = "half"
+                    type = "header",
+                    name = GetString(MSAL_GENERAL_SETTINGS_FOR_DEVS),
+                    width = "full"
                 },
                 {
                     type = "checkbox",
@@ -2873,7 +2960,6 @@ local function SettingInitialize(db)
     LAM2:RegisterOptionControls("MuchSmarterAutoLootOptions", optionsData)
 end
 
-
 local function OnLoaded(_, addon)
     if addon ~= "MuchSmarterAutoLoot" then
         return
@@ -2882,8 +2968,9 @@ local function OnLoaded(_, addon)
     if LibSavedVars ~= nil then
         db = LibSavedVars:NewAccountWide(SV_NAME, "Account", defaults):AddCharacterSettingsToggle(SV_NAME, "Character")
     else
-        db = ZO_SavedVars:New(SV_NAME, 1, nil, defaults)
+        db = ZO_SavedVars:NewAccountWide(SV_NAME, 1, nil, defaults)
     end
+
     SettingInitialize(db)
 
     SLASH_COMMANDS["/msalt"] = function(keyWord, argument)
@@ -2909,16 +2996,15 @@ local function OnLoaded(_, addon)
 
     local currentDate = os.date("*t")
     if currentDate.month == 4 and currentDate.day == 1 then
-        -- EVENT_MANAGER:RegisterForEvent("MSAL_LOOT_UPDATED_FOOL", EVENT_LOOT_UPDATED, MuchSmarterAutoLoot.OnLootUpdatedFool)
-        local bigTitle = {}
-        local bigAchievement = {1838, 2075, 2139, 2467, 2746, 3003, 3249, 3564, 4019, 2368}
-        for i = 1, #bigAchievement do
-            local _, title = GetAchievementRewardTitle(bigAchievement[i])
-            table.insert(bigTitle, title.."...?")
+        local bigT = {}
+        local bigA = {1838, 2075, 2139, 2467, 2746, 3003, 3249, 3564, 4019, 2368}
+        for i = 1, #bigA do
+            local _, titl = GetAchievementRewardTitle(bigA[i])
+            table.insert(bigT, titl.."...?")
         end
 
         GetUnitTitle = function(unitTag)
-            return bigTitle[math.random(1, #bigTitle)]
+            return bigT[math.random(1, #bigT)]
         end
     else
         if LibCustomTitles then
@@ -2955,9 +3041,9 @@ local function OnLoaded(_, addon)
                         end
                     elseif GetUnitName(unitTag) == "This One Needs Moonsugar" then
                         if GetCVar("language.2") == "zh" then
-                            return  "|cd4353e湮|r|cdf656b灭|r|ce99697大|r|cf4c6c4镖|r|cfff6f1客|r"
+                            return  "|cf3a300吾|r|ce77600心|r|cda4a00之|r|cce1d00形|r"
                         else
-                            return "|ccc111cR|r|cce1d27e|r|cd12933d|r |cd4353eD|r|cd74149a|r|cd94d54e|r|cdc595fd|r|cdf656br|r|ce17176i|r|ce47e81c|r |ce78a8cR|r|ce99697e|r|ceca2a3d|r|cefaeaee|r|cf2bab9m|r|cf4c6c4p|r|cf7d2cft|r|cfadedbi|r|cfceae6o|r|cfff6f1n|r"
+                            return  "|cfcc200S|r|cf8b600h|r|cf5a900a|r|cf19c00p|r|cee8f00e|r |cea8300o|r|ce77600f|r |ce36900M|r|ce05d00y|r |cdc5000H|r|cd94300e|r|cd53600a|r|cd22a00r|r|cce1d00t|r"
                         end
                     elseif GetUnitName(unitTag) == "This One Steals Nothing" then
                         if GetCVar("language.2") == "zh" then
@@ -3023,6 +3109,8 @@ local function LoadScreen()
         end
         EVENT_MANAGER:UnregisterForEvent("MuchSmarterAutoLoot", EVENT_PLAYER_ACTIVATED)
     end
+    EVENT_MANAGER:UnregisterForEvent("MSAL_UNWANTED_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE)
+    EVENT_MANAGER:UnregisterForEvent("MSAL_DESTROY_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE)
 
     ZO_Dialogs_RegisterCustomDialog("MSAL_MAJOR_UPDATE", {
         title = {
@@ -3129,7 +3217,7 @@ end
 -- 要看哪个就先查skillLineIndex, 然后手动指定skillType和skillLineIndex
 function MuchSmarterAutoLoot:ListSkillIDs()
     local skillType = 2
-    local skillLineIndex = 1
+    local skillLineIndex = 5
     local numSkills = GetNumSkillAbilities(skillType, skillLineIndex)
     local abilityId, abilityName, CAbilityId
 
@@ -3150,7 +3238,7 @@ function MuchSmarterAutoLoot:ListSkillIDs()
         if (CAbilityId ~= nil) then
             d("Crafted Skill ID: " .. CAbilityId)
         end
-        d(string.format("Skill ID: %d - %s", abilityId, abilityName))
+        d(string.format("Skill Index:%s Skill ID:%d  - %s", skillIndex, abilityId, abilityName))
         -- d(string.format("Skill Morph ID: %d - %d", skillMorph1Id, skillMorph2Id))
     end
 end
@@ -3401,7 +3489,21 @@ end
 
 function MuchSmarterAutoLoot:test()
     d("printing...")
-    d(getStandardizeName("Woodworker's Case X"))
+    local actionName = "MSAL_DESTROY"  -- 替换为你想查询的动作名称
+    local layerIndex, categoryIndex, actionIndex = GetActionIndicesFromName(actionName)
+    for bindingIndex = 1, GetMaxBindingsPerAction() do
+        local guiKey, mod1, mod2, mod3, mod4 = GetActionBindingInfo(layerIndex, categoryIndex, actionIndex, bindingIndex)
+        if guiKey ~= KEY_INVALID then                  
+            -- Get the first non-gamepad, non-choord key
+            if not IsKeyCodeGamepadKey(guiKey) and not IsKeyCodeChordKey(guiKey) then
+                local chromaKey = GetChromaKeyboardKeyByZoGuiKey(guiKey)
+                if chromaKey ~= CHROMA_KEYBOARD_KEY_INVALID then
+                    d(ZO_Keybindings_GetTexturePathForKey(guiKey,false))
+                    d(GetKeyName(guiKey))
+                end
+            end
+        end
+    end
 end
 
 function MuchSmarterAutoLoot:ListChatWindowChildren()

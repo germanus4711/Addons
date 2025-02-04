@@ -6,9 +6,9 @@ PointsofColor_SavedVariables =
         {
             ["$AccountWide"] = 
             {
+                ["use_less_saturation_textures"] = false,
                 ["show_poi_glow_textures"] = false,
                 ["version"] = 3,
-                ["use_less_saturation_textures"] = false,
             },
         },
     },

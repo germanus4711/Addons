@@ -8,8 +8,8 @@ ZO_Pregame_SavedVariables =
             {
                 ["ChapterUpgrade"] = 
                 {
-                    ["chapterUpgradeSeenVersion"] = 0,
                     ["version"] = 1,
+                    ["chapterUpgradeSeenVersion"] = 0,
                 },
                 ["CharacterSelect_Manager"] = 
                 {

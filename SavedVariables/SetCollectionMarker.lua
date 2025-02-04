@@ -8,43 +8,43 @@ SetCollectionMarkerSavedVariables =
             {
                 ["Options"] = 
                 {
-                    ["iconOffset"] = 0,
-                    ["chatSystemShow"] = true,
-                    ["showTradeButton"] = true,
-                    ["show"] = 
-                    {
-                        ["bag"] = true,
-                        ["transmute"] = true,
-                        ["crafting"] = true,
-                        ["bank"] = true,
-                        ["guild"] = true,
-                        ["guildstore"] = true,
-                        ["trading"] = true,
-                        ["housebank"] = true,
-                    },
-                    ["showRequestLink"] = true,
-                    ["chatIconSize"] = 18,
-                    ["requestInWhisper"] = true,
-                    ["iconStoreOffset"] = 0,
-                    ["requestPrefix"] = "Can I get",
-                    ["iconSize"] = 36,
-                    ["showMailUI"] = true,
-                    ["chatIconColor"] = 
-                    {
-                        [1] = 0.4000000000,
-                        [2] = 1,
-                        [3] = 0.5000000000,
-                    },
                     ["iconColor"] = 
                     {
                         [1] = 0.4000000000,
                         [2] = 1,
                         [3] = 0.5000000000,
                     },
-                    ["chatMessageLocation"] = 1,
-                    ["chatMessageShow"] = true,
+                    ["showTradeButton"] = true,
+                    ["iconOffset"] = 0,
                     ["chatSystemLocation"] = 3,
+                    ["chatMessageShow"] = true,
+                    ["showRequestLink"] = true,
+                    ["requestInWhisper"] = true,
+                    ["chatIconSize"] = 18,
+                    ["requestPrefix"] = "Can I get",
+                    ["chatSystemShow"] = true,
+                    ["chatIconColor"] = 
+                    {
+                        [1] = 0.4000000000,
+                        [2] = 1,
+                        [3] = 0.5000000000,
+                    },
+                    ["show"] = 
+                    {
+                        ["bag"] = true,
+                        ["crafting"] = true,
+                        ["housebank"] = true,
+                        ["guild"] = true,
+                        ["guildstore"] = true,
+                        ["bank"] = true,
+                        ["trading"] = true,
+                        ["transmute"] = true,
+                    },
+                    ["showMailUI"] = true,
                     ["version"] = 1,
+                    ["iconStoreOffset"] = 0,
+                    ["chatMessageLocation"] = 1,
+                    ["iconSize"] = 36,
                 },
             },
         },

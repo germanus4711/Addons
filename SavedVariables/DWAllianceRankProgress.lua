@@ -4,122 +4,122 @@ DWAllianceRankProgress_SavedVars =
     {
         ["@germanus4711"] = 
         {
-            ["Hubertus Freiherr v Feld"] = 
-            {
-                ["meterType"] = "nn",
-                ["position"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 0,
-                },
-                ["barColour"] = "alliance",
-                ["showOnlyInAvaZones"] = true,
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
-            },
-            ["Maüschen"] = 
-            {
-                ["meterType"] = "nn",
-                ["position"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 0,
-                },
-                ["barColour"] = "alliance",
-                ["showOnlyInAvaZones"] = true,
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
-            },
             ["Christel v Koenigsberg"] = 
             {
-                ["meterType"] = "nn",
                 ["position"] = 
                 {
-                    ["x"] = 0,
                     ["y"] = 0,
+                    ["x"] = 0,
                 },
-                ["barColour"] = "alliance",
-                ["showOnlyInAvaZones"] = true,
-                ["swapRankAndAllianceIcons"] = false,
                 ["version"] = "1",
+                ["meterType"] = "nn",
+                ["barColour"] = "alliance",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
             },
-            ["Otto von Bissmark"] = 
+            ["Hubertus Freiherr v Feld"] = 
             {
-                ["meterType"] = "nn",
                 ["position"] = 
                 {
-                    ["x"] = 0,
                     ["y"] = 0,
+                    ["x"] = 0,
                 },
-                ["barColour"] = "alliance",
-                ["showOnlyInAvaZones"] = true,
-                ["swapRankAndAllianceIcons"] = false,
                 ["version"] = "1",
-            },
-            ["Freya Orm"] = 
-            {
                 ["meterType"] = "nn",
-                ["position"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 0,
-                },
                 ["barColour"] = "alliance",
-                ["showOnlyInAvaZones"] = true,
                 ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
-            },
-            ["Fridolin The Great"] = 
-            {
-                ["meterType"] = "nn",
-                ["position"] = 
-                {
-                    ["x"] = 0,
-                    ["y"] = 0,
-                },
-                ["barColour"] = "alliance",
                 ["showOnlyInAvaZones"] = true,
-                ["swapRankAndAllianceIcons"] = false,
-                ["version"] = "1",
             },
             ["Gamal Loki"] = 
             {
-                ["meterType"] = "nn",
                 ["position"] = 
                 {
-                    ["x"] = 0,
                     ["y"] = 0,
+                    ["x"] = 0,
                 },
-                ["barColour"] = "alliance",
-                ["showOnlyInAvaZones"] = false,
-                ["swapRankAndAllianceIcons"] = false,
                 ["version"] = "1",
+                ["meterType"] = "nn",
+                ["barColour"] = "alliance",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = false,
+            },
+            ["Fridolin The Great"] = 
+            {
+                ["position"] = 
+                {
+                    ["y"] = 0,
+                    ["x"] = 0,
+                },
+                ["version"] = "1",
+                ["meterType"] = "nn",
+                ["barColour"] = "alliance",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
+            },
+            ["Otto von Bissmark"] = 
+            {
+                ["position"] = 
+                {
+                    ["y"] = 0,
+                    ["x"] = 0,
+                },
+                ["version"] = "1",
+                ["meterType"] = "nn",
+                ["barColour"] = "alliance",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
             },
             ["Gustaf Helmuth v Feld"] = 
             {
-                ["meterType"] = "nn",
                 ["position"] = 
                 {
-                    ["x"] = 0,
                     ["y"] = 0,
+                    ["x"] = 0,
                 },
-                ["barColour"] = "alliance",
-                ["showOnlyInAvaZones"] = true,
-                ["swapRankAndAllianceIcons"] = false,
                 ["version"] = "1",
+                ["meterType"] = "nn",
+                ["barColour"] = "alliance",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
+            },
+            ["Freya Orm"] = 
+            {
+                ["position"] = 
+                {
+                    ["y"] = 0,
+                    ["x"] = 0,
+                },
+                ["version"] = "1",
+                ["meterType"] = "nn",
+                ["barColour"] = "alliance",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
+            },
+            ["Maüschen"] = 
+            {
+                ["position"] = 
+                {
+                    ["y"] = 0,
+                    ["x"] = 0,
+                },
+                ["version"] = "1",
+                ["meterType"] = "nn",
+                ["barColour"] = "alliance",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
             },
             ["Mike v Petra"] = 
             {
-                ["meterType"] = "nn",
                 ["position"] = 
                 {
-                    ["x"] = 0,
                     ["y"] = 0,
+                    ["x"] = 0,
                 },
-                ["barColour"] = "alliance",
-                ["showOnlyInAvaZones"] = true,
-                ["swapRankAndAllianceIcons"] = false,
                 ["version"] = "1",
+                ["meterType"] = "nn",
+                ["barColour"] = "alliance",
+                ["swapRankAndAllianceIcons"] = false,
+                ["showOnlyInAvaZones"] = true,
             },
         },
     },

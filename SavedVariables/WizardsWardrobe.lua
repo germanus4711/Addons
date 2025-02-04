@@ -4,93 +4,100 @@ WizardsWardrobeSV =
     {
         ["@germanus4711"] = 
         {
-            ["8796093064640125"] = 
+            ["$AccountWide"] = 
             {
-                ["autoEquipSetups"] = true,
-                ["pages"] = 
+                ["unequipEmpty"] = false,
+                ["fixes"] = 
                 {
-                    ["GEN"] = 
-                    {
-                        [0] = 
-                        {
-                            ["selected"] = 1,
-                        },
-                        [1] = 
-                        {
-                            ["name"] = "Page 1",
-                        },
-                    },
+                    ["surfingWeapons"] = true,
                 },
-                ["setups"] = 
+                ["ignoreTabards"] = true,
+                ["fillPoisons"] = false,
+                ["comparisonDepth"] = 1,
+                ["overwriteWarning"] = true,
+                ["chargeWeapons"] = true,
+                ["eatBuffFood"] = false,
+                ["legacyZoneSelection"] = false,
+                ["repairArmor"] = true,
+                ["setupValidation"] = 
                 {
-                },
-                ["$LastCharacterName"] = "Maüschen",
-                ["prebuffs"] = 
-                {
-                    [1] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [2] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [3] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [4] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [5] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
+                    ["ignoreCostumes"] = true,
+                    ["ignorePoisons"] = true,
+                    ["delay"] = 1500,
                 },
                 ["version"] = 1,
+                ["window"] = 
+                {
+                    ["gameMenuInGame"] = 
+                    {
+                        ["left"] = 1658,
+                        ["top"] = 406.5000000000,
+                        ["hidden"] = false,
+                    },
+                    ["wizard"] = 
+                    {
+                        ["scale"] = 1,
+                        ["width"] = 360,
+                        ["locked"] = false,
+                        ["height"] = 665,
+                    },
+                    ["hudui"] = 
+                    {
+                        ["left"] = 2380,
+                        ["top"] = 387.5000000000,
+                        ["hidden"] = true,
+                    },
+                    ["inventory"] = 
+                    {
+                        ["left"] = 2380,
+                        ["top"] = 387.5000000000,
+                        ["hidden"] = true,
+                    },
+                    ["hud"] = 
+                    {
+                        ["left"] = 2380,
+                        ["top"] = 387.5000000000,
+                        ["hidden"] = true,
+                    },
+                },
+                ["auto"] = 
+                {
+                    ["food"] = true,
+                    ["gear"] = true,
+                    ["skills"] = true,
+                    ["cp"] = true,
+                },
+                ["changelogs"] = 
+                {
+                    ["v1.8.0"] = true,
+                    ["1.18.3"] = true,
+                },
+                ["fixGearSwap"] = false,
+                ["initialized"] = true,
+                ["inventoryMarker"] = true,
+                ["panel"] = 
+                {
+                    ["left"] = 2803.5000000000,
+                    ["locked"] = true,
+                    ["mini"] = false,
+                    ["hidden"] = false,
+                    ["top"] = 1360,
+                    ["setup"] = true,
+                },
+                ["failedSwapLog"] = 
+                {
+                },
+                ["autoEquipSetups"] = true,
+                ["printMessages"] = "chat",
+                ["substitute"] = 
+                {
+                    ["dungeons"] = false,
+                    ["overland"] = false,
+                },
+                ["canUseCrownRepairKits"] = true,
             },
-            ["8796093072557313"] = 
+            ["8796093062295781"] = 
             {
-                ["autoEquipSetups"] = true,
-                ["pages"] = 
-                {
-                    ["GEN"] = 
-                    {
-                        [0] = 
-                        {
-                            ["selected"] = 1,
-                        },
-                        [1] = 
-                        {
-                            ["name"] = "Page 1",
-                        },
-                    },
-                },
-                ["setups"] = 
-                {
-                },
-                ["$LastCharacterName"] = "Gamal Loki",
                 ["prebuffs"] = 
                 {
                     [1] = 
@@ -135,34 +142,76 @@ WizardsWardrobeSV =
                     },
                 },
                 ["version"] = 1,
+                ["autoEquipSetups"] = true,
+                ["$LastCharacterName"] = "Fridolin The Great",
+                ["pages"] = 
+                {
+                    ["GEN"] = 
+                    {
+                        [0] = 
+                        {
+                            ["selected"] = 1,
+                        },
+                        [1] = 
+                        {
+                            ["name"] = "Page 1",
+                        },
+                    },
+                },
+                ["setups"] = 
+                {
+                },
             },
             ["8796093023211051"] = 
             {
+                ["prebuffs"] = 
+                {
+                    [1] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [2] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [3] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [4] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [5] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                },
+                ["version"] = 1,
                 ["autoEquipSetups"] = true,
+                ["$LastCharacterName"] = "Freya Orm",
                 ["pages"] = 
                 {
-                    ["PVP"] = 
-                    {
-                        [0] = 
-                        {
-                            ["selected"] = 1,
-                        },
-                        [1] = 
-                        {
-                            ["name"] = "Page 1",
-                        },
-                    },
-                    ["BRP"] = 
-                    {
-                        [0] = 
-                        {
-                            ["selected"] = 1,
-                        },
-                        [1] = 
-                        {
-                            ["name"] = "Page 1",
-                        },
-                    },
                     ["GEN"] = 
                     {
                         [0] = 
@@ -178,7 +227,7 @@ WizardsWardrobeSV =
                             ["name"] = "Page 2",
                         },
                     },
-                    ["SUB"] = 
+                    ["PVP"] = 
                     {
                         [0] = 
                         {
@@ -204,87 +253,37 @@ WizardsWardrobeSV =
                             ["name"] = "Page 2",
                         },
                     },
+                    ["SUB"] = 
+                    {
+                        [0] = 
+                        {
+                            ["selected"] = 1,
+                        },
+                        [1] = 
+                        {
+                            ["name"] = "Page 1",
+                        },
+                    },
+                    ["BRP"] = 
+                    {
+                        [0] = 
+                        {
+                            ["selected"] = 1,
+                        },
+                        [1] = 
+                        {
+                            ["name"] = "Page 1",
+                        },
+                    },
                 },
                 ["setups"] = 
                 {
-                    ["SUB"] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["gear"] = 
-                                {
-                                },
-                                ["name"] = "Substitute Boss",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                    ["boss"] = "Substitute Boss",
-                                },
-                                ["skills"] = 
-                                {
-                                    [0] = 
-                                    {
-                                    },
-                                    [1] = 
-                                    {
-                                    },
-                                },
-                                ["food"] = 
-                                {
-                                },
-                                ["cp"] = 
-                                {
-                                },
-                            },
-                            [1] = 
-                            {
-                                ["gear"] = 
-                                {
-                                },
-                                ["name"] = "Substitute Trash",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                    ["boss"] = "Substitute Trash",
-                                },
-                                ["skills"] = 
-                                {
-                                    [0] = 
-                                    {
-                                    },
-                                    [1] = 
-                                    {
-                                    },
-                                },
-                                ["food"] = 
-                                {
-                                },
-                                ["cp"] = 
-                                {
-                                },
-                            },
-                        },
-                    },
                     ["IA"] = 
                     {
                         [2] = 
                         {
                             [2] = 
                             {
-                                ["gear"] = 
-                                {
-                                },
-                                ["name"] = "Substitute Boss",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                    ["boss"] = "Substitute Boss",
-                                },
                                 ["skills"] = 
                                 {
                                     [0] = 
@@ -294,39 +293,49 @@ WizardsWardrobeSV =
                                     {
                                     },
                                 },
+                                ["name"] = "Substitute Boss",
+                                ["code"] = "",
+                                ["cp"] = 
+                                {
+                                },
                                 ["food"] = 
                                 {
                                 },
-                                ["cp"] = 
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                    ["boss"] = "Substitute Boss",
+                                },
+                                ["gear"] = 
                                 {
                                 },
                             },
                             [1] = 
                             {
-                                ["gear"] = 
+                                ["skills"] = 
                                 {
+                                    [0] = 
+                                    {
+                                    },
+                                    [1] = 
+                                    {
+                                    },
                                 },
                                 ["name"] = "Trash",
                                 ["code"] = "",
+                                ["cp"] = 
+                                {
+                                },
+                                ["food"] = 
+                                {
+                                },
                                 ["disabled"] = false,
                                 ["condition"] = 
                                 {
                                     ["trash"] = -1,
                                     ["boss"] = "Trash",
                                 },
-                                ["skills"] = 
-                                {
-                                    [0] = 
-                                    {
-                                    },
-                                    [1] = 
-                                    {
-                                    },
-                                },
-                                ["food"] = 
-                                {
-                                },
-                                ["cp"] = 
+                                ["gear"] = 
                                 {
                                 },
                             },
@@ -335,16 +344,34 @@ WizardsWardrobeSV =
                         {
                             [2] = 
                             {
-                                ["gear"] = 
+                                ["skills"] = 
                                 {
+                                    [0] = 
+                                    {
+                                    },
+                                    [1] = 
+                                    {
+                                    },
                                 },
                                 ["name"] = "Substitute Boss",
                                 ["code"] = "",
+                                ["cp"] = 
+                                {
+                                },
+                                ["food"] = 
+                                {
+                                },
                                 ["disabled"] = false,
                                 ["condition"] = 
                                 {
                                     ["boss"] = "Substitute Boss",
                                 },
+                                ["gear"] = 
+                                {
+                                },
+                            },
+                            [1] = 
+                            {
                                 ["skills"] = 
                                 {
                                     [0] = 
@@ -354,214 +381,21 @@ WizardsWardrobeSV =
                                     {
                                     },
                                 },
-                                ["food"] = 
-                                {
-                                },
+                                ["name"] = "Trash",
+                                ["code"] = "",
                                 ["cp"] = 
                                 {
                                 },
-                            },
-                            [1] = 
-                            {
-                                ["gear"] = 
+                                ["food"] = 
                                 {
                                 },
-                                ["name"] = "Trash",
-                                ["code"] = "",
                                 ["disabled"] = false,
                                 ["condition"] = 
                                 {
                                     ["trash"] = -1,
                                     ["boss"] = "Trash",
                                 },
-                                ["skills"] = 
-                                {
-                                    [0] = 
-                                    {
-                                    },
-                                    [1] = 
-                                    {
-                                    },
-                                },
-                                ["food"] = 
-                                {
-                                },
-                                ["cp"] = 
-                                {
-                                },
-                            },
-                        },
-                    },
-                    ["BRP"] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
                                 ["gear"] = 
-                                {
-                                },
-                                ["name"] = "Trash",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                    ["trash"] = -1,
-                                    ["boss"] = "Trash",
-                                },
-                                ["skills"] = 
-                                {
-                                    [0] = 
-                                    {
-                                    },
-                                    [1] = 
-                                    {
-                                    },
-                                },
-                                ["food"] = 
-                                {
-                                },
-                                ["cp"] = 
-                                {
-                                },
-                            },
-                            [2] = 
-                            {
-                                ["gear"] = 
-                                {
-                                },
-                                ["name"] = "Battlemage Ennodius",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                    ["boss"] = "Battlemage Ennodius",
-                                },
-                                ["skills"] = 
-                                {
-                                    [0] = 
-                                    {
-                                    },
-                                    [1] = 
-                                    {
-                                    },
-                                },
-                                ["food"] = 
-                                {
-                                },
-                                ["cp"] = 
-                                {
-                                },
-                            },
-                            [3] = 
-                            {
-                                ["gear"] = 
-                                {
-                                },
-                                ["name"] = "Tames-The-Beast",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                    ["boss"] = "Tames-The-Beast",
-                                },
-                                ["skills"] = 
-                                {
-                                    [0] = 
-                                    {
-                                    },
-                                    [1] = 
-                                    {
-                                    },
-                                },
-                                ["food"] = 
-                                {
-                                },
-                                ["cp"] = 
-                                {
-                                },
-                            },
-                            [4] = 
-                            {
-                                ["gear"] = 
-                                {
-                                },
-                                ["name"] = "Lady Minara",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                    ["boss"] = "Lady Minara",
-                                },
-                                ["skills"] = 
-                                {
-                                    [0] = 
-                                    {
-                                    },
-                                    [1] = 
-                                    {
-                                    },
-                                },
-                                ["food"] = 
-                                {
-                                },
-                                ["cp"] = 
-                                {
-                                },
-                            },
-                            [5] = 
-                            {
-                                ["gear"] = 
-                                {
-                                },
-                                ["name"] = "All of them",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                    ["boss"] = "All of them",
-                                },
-                                ["skills"] = 
-                                {
-                                    [0] = 
-                                    {
-                                    },
-                                    [1] = 
-                                    {
-                                    },
-                                },
-                                ["food"] = 
-                                {
-                                },
-                                ["cp"] = 
-                                {
-                                },
-                            },
-                            [6] = 
-                            {
-                                ["gear"] = 
-                                {
-                                },
-                                ["name"] = "Drakeeh the Unchained",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                    ["boss"] = "Drakeeh the Unchained",
-                                },
-                                ["skills"] = 
-                                {
-                                    [0] = 
-                                    {
-                                    },
-                                    [1] = 
-                                    {
-                                    },
-                                },
-                                ["food"] = 
-                                {
-                                },
-                                ["cp"] = 
                                 {
                                 },
                             },
@@ -573,6 +407,51 @@ WizardsWardrobeSV =
                         {
                             [2] = 
                             {
+                                ["skills"] = 
+                                {
+                                    [0] = 
+                                    {
+                                        [8] = 22144,
+                                        [3] = 22006,
+                                        [4] = 38788,
+                                        [5] = 40242,
+                                        [6] = 26797,
+                                        [7] = 38794,
+                                    },
+                                    [1] = 
+                                    {
+                                        [8] = 40237,
+                                        [3] = 22240,
+                                        [4] = 22095,
+                                        [5] = 26869,
+                                        [6] = 63044,
+                                        [7] = 40478,
+                                    },
+                                },
+                                ["name"] = "PVEBoom",
+                                ["code"] = "",
+                                ["cp"] = 
+                                {
+                                    [1] = 78,
+                                    [2] = 79,
+                                    [3] = 81,
+                                    [4] = 1,
+                                    [5] = 265,
+                                    [6] = 13,
+                                    [7] = 259,
+                                    [8] = 23,
+                                    [9] = 2,
+                                    [10] = 34,
+                                    [11] = 35,
+                                    [12] = 47,
+                                },
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                },
                                 ["gear"] = 
                                 {
                                     [0] = 
@@ -661,42 +540,38 @@ WizardsWardrobeSV =
                                         ["link"] = "|H0:item:87870:364:50:26587:370:50:4:0:0:0:0:0:0:0:2049:25:0:1:0:214:0|h|h",
                                     },
                                 },
-                                ["name"] = "PVEBoom",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                },
+                            },
+                            [1] = 
+                            {
                                 ["skills"] = 
                                 {
                                     [0] = 
                                     {
                                         [8] = 22144,
                                         [3] = 22006,
-                                        [4] = 38788,
+                                        [4] = 39052,
                                         [5] = 40242,
                                         [6] = 26797,
-                                        [7] = 38794,
+                                        [7] = 39095,
                                     },
                                     [1] = 
                                     {
-                                        [8] = 40237,
+                                        [8] = 22229,
                                         [3] = 22240,
-                                        [4] = 22095,
-                                        [5] = 26869,
+                                        [4] = 61507,
+                                        [5] = 40382,
                                         [6] = 63044,
-                                        [7] = 40478,
+                                        [7] = 38891,
                                     },
                                 },
-                                ["food"] = 
-                                {
-                                },
+                                ["name"] = "Exp1",
+                                ["code"] = "",
                                 ["cp"] = 
                                 {
                                     [1] = 78,
                                     [2] = 79,
-                                    [3] = 81,
-                                    [4] = 1,
+                                    [3] = 86,
+                                    [4] = 83,
                                     [5] = 265,
                                     [6] = 13,
                                     [7] = 259,
@@ -706,9 +581,13 @@ WizardsWardrobeSV =
                                     [11] = 35,
                                     [12] = 47,
                                 },
-                            },
-                            [1] = 
-                            {
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                },
                                 ["gear"] = 
                                 {
                                     [0] = 
@@ -797,41 +676,40 @@ WizardsWardrobeSV =
                                         ["link"] = "|H0:item:87870:364:50:26587:370:50:4:0:0:0:0:0:0:0:2049:25:0:1:0:274:0|h|h",
                                     },
                                 },
-                                ["name"] = "Exp1",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                },
+                            },
+                        },
+                        [1] = 
+                        {
+                            [4] = 
+                            {
                                 ["skills"] = 
                                 {
                                     [0] = 
                                     {
                                         [8] = 22144,
                                         [3] = 22006,
-                                        [4] = 39052,
+                                        [4] = 38788,
                                         [5] = 40242,
                                         [6] = 26797,
-                                        [7] = 39095,
+                                        [7] = 38794,
                                     },
                                     [1] = 
                                     {
-                                        [8] = 22229,
+                                        [8] = 39075,
                                         [3] = 22240,
                                         [4] = 61507,
-                                        [5] = 40382,
+                                        [5] = 40060,
                                         [6] = 63044,
-                                        [7] = 38891,
+                                        [7] = 40478,
                                     },
                                 },
-                                ["food"] = 
-                                {
-                                },
+                                ["name"] = "PVE",
+                                ["code"] = "",
                                 ["cp"] = 
                                 {
                                     [1] = 78,
                                     [2] = 79,
-                                    [3] = 86,
+                                    [3] = 91,
                                     [4] = 83,
                                     [5] = 265,
                                     [6] = 13,
@@ -842,12 +720,13 @@ WizardsWardrobeSV =
                                     [11] = 35,
                                     [12] = 47,
                                 },
-                            },
-                        },
-                        [1] = 
-                        {
-                            [4] = 
-                            {
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                },
                                 ["gear"] = 
                                 {
                                     [0] = 
@@ -936,12 +815,9 @@ WizardsWardrobeSV =
                                         ["link"] = "",
                                     },
                                 },
-                                ["name"] = "PVE",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                },
+                            },
+                            [1] = 
+                            {
                                 ["skills"] = 
                                 {
                                     [0] = 
@@ -955,17 +831,16 @@ WizardsWardrobeSV =
                                     },
                                     [1] = 
                                     {
-                                        [8] = 39075,
+                                        [8] = 40237,
                                         [3] = 22240,
                                         [4] = 61507,
-                                        [5] = 40060,
+                                        [5] = 40317,
                                         [6] = 63044,
                                         [7] = 40478,
                                     },
                                 },
-                                ["food"] = 
-                                {
-                                },
+                                ["name"] = "IA",
+                                ["code"] = "",
                                 ["cp"] = 
                                 {
                                     [1] = 78,
@@ -981,9 +856,15 @@ WizardsWardrobeSV =
                                     [11] = 35,
                                     [12] = 47,
                                 },
-                            },
-                            [1] = 
-                            {
+                                ["food"] = 
+                                {
+                                    ["id"] = 153629,
+                                    ["link"] = "|H0:item:153629:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h",
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                },
                                 ["gear"] = 
                                 {
                                     [0] = 
@@ -1072,12 +953,9 @@ WizardsWardrobeSV =
                                         ["link"] = "|H0:item:87870:364:50:26587:370:50:4:0:0:0:0:0:0:0:2049:25:0:1:0:434:0|h|h",
                                     },
                                 },
-                                ["name"] = "IA",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                },
+                            },
+                            [2] = 
+                            {
                                 ["skills"] = 
                                 {
                                     [0] = 
@@ -1099,11 +977,8 @@ WizardsWardrobeSV =
                                         [7] = 40478,
                                     },
                                 },
-                                ["food"] = 
-                                {
-                                    ["id"] = 153629,
-                                    ["link"] = "|H0:item:153629:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h",
-                                },
+                                ["name"] = "PVE",
+                                ["code"] = "",
                                 ["cp"] = 
                                 {
                                     [1] = 78,
@@ -1119,9 +994,15 @@ WizardsWardrobeSV =
                                     [11] = 35,
                                     [12] = 47,
                                 },
-                            },
-                            [2] = 
-                            {
+                                ["food"] = 
+                                {
+                                    ["id"] = 153629,
+                                    ["link"] = "|H0:item:153629:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h",
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                },
                                 ["gear"] = 
                                 {
                                     [0] = 
@@ -1210,12 +1091,9 @@ WizardsWardrobeSV =
                                         ["link"] = "|H0:item:87870:364:50:26587:370:50:4:0:0:0:0:0:0:0:2049:25:0:1:0:434:0|h|h",
                                     },
                                 },
-                                ["name"] = "PVE",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                },
+                            },
+                            [3] = 
+                            {
                                 ["skills"] = 
                                 {
                                     [0] = 
@@ -1229,7 +1107,7 @@ WizardsWardrobeSV =
                                     },
                                     [1] = 
                                     {
-                                        [8] = 40237,
+                                        [8] = 39075,
                                         [3] = 22240,
                                         [4] = 61507,
                                         [5] = 40317,
@@ -1237,17 +1115,14 @@ WizardsWardrobeSV =
                                         [7] = 40478,
                                     },
                                 },
-                                ["food"] = 
-                                {
-                                    ["id"] = 153629,
-                                    ["link"] = "|H0:item:153629:6:1:0:0:0:0:0:0:0:0:0:0:0:0:0:1:0:0:0:0|h|h",
-                                },
+                                ["name"] = "WW",
+                                ["code"] = "",
                                 ["cp"] = 
                                 {
                                     [1] = 78,
                                     [2] = 79,
-                                    [3] = 91,
-                                    [4] = 83,
+                                    [3] = 81,
+                                    [4] = 88,
                                     [5] = 265,
                                     [6] = 13,
                                     [7] = 259,
@@ -1257,9 +1132,13 @@ WizardsWardrobeSV =
                                     [11] = 35,
                                     [12] = 47,
                                 },
-                            },
-                            [3] = 
-                            {
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                },
                                 ["gear"] = 
                                 {
                                     [0] = 
@@ -1348,170 +1227,296 @@ WizardsWardrobeSV =
                                         ["link"] = "|H0:item:87870:364:50:26587:370:50:4:0:0:0:0:0:0:0:2049:25:0:1:0:67:0|h|h",
                                     },
                                 },
-                                ["name"] = "WW",
-                                ["code"] = "",
-                                ["disabled"] = false,
-                                ["condition"] = 
-                                {
-                                },
+                            },
+                        },
+                    },
+                    ["BRP"] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
                                 ["skills"] = 
                                 {
                                     [0] = 
                                     {
-                                        [8] = 22144,
-                                        [3] = 22006,
-                                        [4] = 38788,
-                                        [5] = 40242,
-                                        [6] = 26797,
-                                        [7] = 38794,
                                     },
                                     [1] = 
                                     {
-                                        [8] = 39075,
-                                        [3] = 22240,
-                                        [4] = 61507,
-                                        [5] = 40317,
-                                        [6] = 63044,
-                                        [7] = 40478,
                                     },
+                                },
+                                ["name"] = "Trash",
+                                ["code"] = "",
+                                ["cp"] = 
+                                {
                                 },
                                 ["food"] = 
                                 {
                                 },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                    ["trash"] = -1,
+                                    ["boss"] = "Trash",
+                                },
+                                ["gear"] = 
+                                {
+                                },
+                            },
+                            [2] = 
+                            {
+                                ["skills"] = 
+                                {
+                                    [0] = 
+                                    {
+                                    },
+                                    [1] = 
+                                    {
+                                    },
+                                },
+                                ["name"] = "Battlemage Ennodius",
+                                ["code"] = "",
                                 ["cp"] = 
                                 {
-                                    [1] = 78,
-                                    [2] = 79,
-                                    [3] = 81,
-                                    [4] = 88,
-                                    [5] = 265,
-                                    [6] = 13,
-                                    [7] = 259,
-                                    [8] = 23,
-                                    [9] = 2,
-                                    [10] = 34,
-                                    [11] = 35,
-                                    [12] = 47,
+                                },
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                    ["boss"] = "Battlemage Ennodius",
+                                },
+                                ["gear"] = 
+                                {
+                                },
+                            },
+                            [3] = 
+                            {
+                                ["skills"] = 
+                                {
+                                    [0] = 
+                                    {
+                                    },
+                                    [1] = 
+                                    {
+                                    },
+                                },
+                                ["name"] = "Tames-The-Beast",
+                                ["code"] = "",
+                                ["cp"] = 
+                                {
+                                },
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                    ["boss"] = "Tames-The-Beast",
+                                },
+                                ["gear"] = 
+                                {
+                                },
+                            },
+                            [4] = 
+                            {
+                                ["skills"] = 
+                                {
+                                    [0] = 
+                                    {
+                                    },
+                                    [1] = 
+                                    {
+                                    },
+                                },
+                                ["name"] = "Lady Minara",
+                                ["code"] = "",
+                                ["cp"] = 
+                                {
+                                },
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                    ["boss"] = "Lady Minara",
+                                },
+                                ["gear"] = 
+                                {
+                                },
+                            },
+                            [5] = 
+                            {
+                                ["skills"] = 
+                                {
+                                    [0] = 
+                                    {
+                                    },
+                                    [1] = 
+                                    {
+                                    },
+                                },
+                                ["name"] = "All of them",
+                                ["code"] = "",
+                                ["cp"] = 
+                                {
+                                },
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                    ["boss"] = "All of them",
+                                },
+                                ["gear"] = 
+                                {
+                                },
+                            },
+                            [6] = 
+                            {
+                                ["skills"] = 
+                                {
+                                    [0] = 
+                                    {
+                                    },
+                                    [1] = 
+                                    {
+                                    },
+                                },
+                                ["name"] = "Drakeeh the Unchained",
+                                ["code"] = "",
+                                ["cp"] = 
+                                {
+                                },
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                    ["boss"] = "Drakeeh the Unchained",
+                                },
+                                ["gear"] = 
+                                {
+                                },
+                            },
+                        },
+                    },
+                    ["SUB"] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["skills"] = 
+                                {
+                                    [0] = 
+                                    {
+                                    },
+                                    [1] = 
+                                    {
+                                    },
+                                },
+                                ["name"] = "Substitute Boss",
+                                ["code"] = "",
+                                ["cp"] = 
+                                {
+                                },
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                    ["boss"] = "Substitute Boss",
+                                },
+                                ["gear"] = 
+                                {
+                                },
+                            },
+                            [1] = 
+                            {
+                                ["skills"] = 
+                                {
+                                    [0] = 
+                                    {
+                                    },
+                                    [1] = 
+                                    {
+                                    },
+                                },
+                                ["name"] = "Substitute Trash",
+                                ["code"] = "",
+                                ["cp"] = 
+                                {
+                                },
+                                ["food"] = 
+                                {
+                                },
+                                ["disabled"] = false,
+                                ["condition"] = 
+                                {
+                                    ["boss"] = "Substitute Trash",
+                                },
+                                ["gear"] = 
+                                {
                                 },
                             },
                         },
                     },
                 },
-                ["$LastCharacterName"] = "Freya Orm",
-                ["prebuffs"] = 
-                {
-                    [1] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [2] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [3] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [4] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [5] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                },
-                ["version"] = 1,
             },
             ["8796093067546805"] = 
             {
-                ["autoEquipSetups"] = true,
-                ["pages"] = 
+                ["prebuffs"] = 
                 {
-                    ["GEN"] = 
+                    [1] = 
                     {
                         [0] = 
                         {
-                            ["selected"] = 1,
+                            ["toggle"] = false,
+                            ["delay"] = 500,
                         },
-                        [1] = 
+                    },
+                    [2] = 
+                    {
+                        [0] = 
                         {
-                            ["name"] = "Page 1",
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [3] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [4] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [5] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
                         },
                     },
                 },
-                ["setups"] = 
-                {
-                },
+                ["version"] = 1,
+                ["autoEquipSetups"] = true,
                 ["$LastCharacterName"] = "Gustaf Helmuth v Feld",
-                ["prebuffs"] = 
-                {
-                    [1] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [2] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [3] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [4] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [5] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                },
-                ["version"] = 1,
-            },
-            ["8796093025384257"] = 
-            {
-                ["autoEquipSetups"] = true,
                 ["pages"] = 
                 {
                     ["GEN"] = 
@@ -1529,139 +1534,9 @@ WizardsWardrobeSV =
                 ["setups"] = 
                 {
                 },
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-                ["prebuffs"] = 
-                {
-                    [1] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [2] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [3] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [4] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [5] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                },
-                ["version"] = 1,
-            },
-            ["8796093074287095"] = 
-            {
-                ["autoEquipSetups"] = true,
-                ["pages"] = 
-                {
-                    ["GEN"] = 
-                    {
-                        [0] = 
-                        {
-                            ["selected"] = 1,
-                        },
-                        [1] = 
-                        {
-                            ["name"] = "Page 1",
-                        },
-                    },
-                },
-                ["setups"] = 
-                {
-                },
-                ["$LastCharacterName"] = "Otto von Bissmark",
-                ["prebuffs"] = 
-                {
-                    [1] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [2] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [3] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [4] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [5] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                },
-                ["version"] = 1,
             },
             ["8796093027479535"] = 
             {
-                ["autoEquipSetups"] = true,
-                ["pages"] = 
-                {
-                    ["GEN"] = 
-                    {
-                        [0] = 
-                        {
-                            ["selected"] = 1,
-                        },
-                        [1] = 
-                        {
-                            ["name"] = "Page 1",
-                        },
-                    },
-                },
-                ["setups"] = 
-                {
-                },
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
                 ["prebuffs"] = 
                 {
                     [1] = 
@@ -1706,168 +1581,272 @@ WizardsWardrobeSV =
                     },
                 },
                 ["version"] = 1,
+                ["autoEquipSetups"] = true,
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["pages"] = 
+                {
+                    ["GEN"] = 
+                    {
+                        [0] = 
+                        {
+                            ["selected"] = 1,
+                        },
+                        [1] = 
+                        {
+                            ["name"] = "Page 1",
+                        },
+                    },
+                },
+                ["setups"] = 
+                {
+                },
+            },
+            ["8796093072557313"] = 
+            {
+                ["prebuffs"] = 
+                {
+                    [1] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [2] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [3] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [4] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [5] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                },
+                ["version"] = 1,
+                ["autoEquipSetups"] = true,
+                ["$LastCharacterName"] = "Gamal Loki",
+                ["pages"] = 
+                {
+                    ["GEN"] = 
+                    {
+                        [0] = 
+                        {
+                            ["selected"] = 1,
+                        },
+                        [1] = 
+                        {
+                            ["name"] = "Page 1",
+                        },
+                    },
+                },
+                ["setups"] = 
+                {
+                },
+            },
+            ["8796093074287095"] = 
+            {
+                ["prebuffs"] = 
+                {
+                    [1] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [2] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [3] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [4] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [5] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                },
+                ["version"] = 1,
+                ["autoEquipSetups"] = true,
+                ["$LastCharacterName"] = "Otto von Bissmark",
+                ["pages"] = 
+                {
+                    ["GEN"] = 
+                    {
+                        [0] = 
+                        {
+                            ["selected"] = 1,
+                        },
+                        [1] = 
+                        {
+                            ["name"] = "Page 1",
+                        },
+                    },
+                },
+                ["setups"] = 
+                {
+                },
+            },
+            ["8796093064640125"] = 
+            {
+                ["prebuffs"] = 
+                {
+                    [1] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [2] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [3] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [4] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [5] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                },
+                ["version"] = 1,
+                ["autoEquipSetups"] = true,
+                ["$LastCharacterName"] = "Maüschen",
+                ["pages"] = 
+                {
+                    ["GEN"] = 
+                    {
+                        [0] = 
+                        {
+                            ["selected"] = 1,
+                        },
+                        [1] = 
+                        {
+                            ["name"] = "Page 1",
+                        },
+                    },
+                },
+                ["setups"] = 
+                {
+                },
             },
             ["8796093069174989"] = 
             {
-                ["autoEquipSetups"] = true,
-                ["pages"] = 
+                ["prebuffs"] = 
                 {
-                    ["GEN"] = 
+                    [1] = 
                     {
                         [0] = 
                         {
-                            ["selected"] = 1,
+                            ["toggle"] = false,
+                            ["delay"] = 500,
                         },
-                        [1] = 
+                    },
+                    [2] = 
+                    {
+                        [0] = 
                         {
-                            ["name"] = "Page 1",
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [3] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [4] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
+                        },
+                    },
+                    [5] = 
+                    {
+                        [0] = 
+                        {
+                            ["toggle"] = false,
+                            ["delay"] = 500,
                         },
                     },
                 },
-                ["setups"] = 
-                {
-                },
+                ["version"] = 1,
+                ["autoEquipSetups"] = true,
                 ["$LastCharacterName"] = "Mike v Petra",
-                ["prebuffs"] = 
-                {
-                    [1] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [2] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [3] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [4] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                    [5] = 
-                    {
-                        [0] = 
-                        {
-                            ["toggle"] = false,
-                            ["delay"] = 500,
-                        },
-                    },
-                },
-                ["version"] = 1,
-            },
-            ["$AccountWide"] = 
-            {
-                ["fixes"] = 
-                {
-                    ["surfingWeapons"] = true,
-                },
-                ["substitute"] = 
-                {
-                    ["dungeons"] = false,
-                    ["overland"] = false,
-                },
-                ["printMessages"] = "chat",
-                ["fixGearSwap"] = false,
-                ["eatBuffFood"] = false,
-                ["repairArmor"] = true,
-                ["setupValidation"] = 
-                {
-                    ["delay"] = 1500,
-                    ["ignorePoisons"] = true,
-                    ["ignoreCostumes"] = true,
-                },
-                ["unequipEmpty"] = false,
-                ["legacyZoneSelection"] = false,
-                ["initialized"] = true,
-                ["canUseCrownRepairKits"] = true,
-                ["autoEquipSetups"] = true,
-                ["failedSwapLog"] = 
-                {
-                },
-                ["changelogs"] = 
-                {
-                    ["v1.8.0"] = true,
-                    ["1.18.3"] = true,
-                },
-                ["inventoryMarker"] = true,
-                ["ignoreTabards"] = true,
-                ["version"] = 1,
-                ["overwriteWarning"] = true,
-                ["window"] = 
-                {
-                    ["inventory"] = 
-                    {
-                        ["top"] = 387.5000000000,
-                        ["hidden"] = true,
-                        ["left"] = 2380,
-                    },
-                    ["wizard"] = 
-                    {
-                        ["scale"] = 1,
-                        ["width"] = 360,
-                        ["locked"] = false,
-                        ["height"] = 665,
-                    },
-                    ["hudui"] = 
-                    {
-                        ["top"] = 387.5000000000,
-                        ["hidden"] = true,
-                        ["left"] = 2380,
-                    },
-                    ["gameMenuInGame"] = 
-                    {
-                        ["top"] = 406.5000000000,
-                        ["hidden"] = false,
-                        ["left"] = 1658,
-                    },
-                    ["hud"] = 
-                    {
-                        ["top"] = 387.5000000000,
-                        ["hidden"] = true,
-                        ["left"] = 2380,
-                    },
-                },
-                ["auto"] = 
-                {
-                    ["gear"] = true,
-                    ["food"] = true,
-                    ["skills"] = true,
-                    ["cp"] = true,
-                },
-                ["fillPoisons"] = false,
-                ["panel"] = 
-                {
-                    ["locked"] = true,
-                    ["setup"] = true,
-                    ["mini"] = false,
-                    ["hidden"] = false,
-                    ["top"] = 1360,
-                    ["left"] = 2803.5000000000,
-                },
-                ["comparisonDepth"] = 1,
-                ["chargeWeapons"] = true,
-            },
-            ["8796093062295781"] = 
-            {
-                ["autoEquipSetups"] = true,
                 ["pages"] = 
                 {
                     ["GEN"] = 
@@ -1885,7 +1864,9 @@ WizardsWardrobeSV =
                 ["setups"] = 
                 {
                 },
-                ["$LastCharacterName"] = "Fridolin The Great",
+            },
+            ["8796093025384257"] = 
+            {
                 ["prebuffs"] = 
                 {
                     [1] = 
@@ -1930,6 +1911,25 @@ WizardsWardrobeSV =
                     },
                 },
                 ["version"] = 1,
+                ["autoEquipSetups"] = true,
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+                ["pages"] = 
+                {
+                    ["GEN"] = 
+                    {
+                        [0] = 
+                        {
+                            ["selected"] = 1,
+                        },
+                        [1] = 
+                        {
+                            ["name"] = "Page 1",
+                        },
+                    },
+                },
+                ["setups"] = 
+                {
+                },
             },
         },
     },

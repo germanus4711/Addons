@@ -6,30 +6,30 @@ PortToFriendsHouseVars =
         {
             ["$AccountWide"] = 
             {
-                ["port_mode"] = 3,
-                ["selectedMyHousesSort"] = 1,
+                ["version"] = 1,
+                ["defaultTab"] = 1,
                 ["vc_chatAllowed"] = 
                 {
-                    ["g2"] = true,
-                    ["g3"] = true,
-                    ["dezone"] = false,
-                    ["enzone"] = false,
-                    ["g1"] = true,
-                    ["g4"] = true,
-                    ["emote"] = false,
-                    ["o5"] = true,
-                    ["jpzone"] = false,
-                    ["group"] = true,
-                    ["yell"] = false,
-                    ["frzone"] = false,
-                    ["say"] = false,
-                    ["g5"] = true,
-                    ["tell"] = true,
-                    ["o2"] = true,
-                    ["zone"] = false,
-                    ["o3"] = true,
-                    ["o4"] = true,
                     ["o1"] = true,
+                    ["g5"] = true,
+                    ["o4"] = true,
+                    ["jpzone"] = false,
+                    ["zone"] = false,
+                    ["group"] = true,
+                    ["enzone"] = false,
+                    ["frzone"] = false,
+                    ["yell"] = false,
+                    ["o5"] = true,
+                    ["emote"] = false,
+                    ["o2"] = true,
+                    ["o3"] = true,
+                    ["g3"] = true,
+                    ["g1"] = true,
+                    ["tell"] = true,
+                    ["dezone"] = false,
+                    ["say"] = false,
+                    ["g2"] = true,
+                    ["g4"] = true,
                 },
                 ["myHousesFavorites"] = 
                 {
@@ -40,20 +40,20 @@ PortToFriendsHouseVars =
                     {
                     },
                 },
-                ["version"] = 1,
-                ["selectedLibrarySort"] = 1,
+                ["port_mode"] = 3,
+                ["selectedMyHousesSort"] = 1,
                 ["selectedLibraryFilter"] = 1,
+                ["selectedLibrarySort"] = 1,
                 ["vc"] = 
                 {
-                    ["allowSelf"] = false,
                     ["receivedCards"] = 
                     {
                     },
+                    ["allowSelf"] = false,
                 },
                 ["favorites"] = 
                 {
                 },
-                ["defaultTab"] = 1,
             },
         },
     },

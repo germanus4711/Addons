@@ -6,16 +6,32 @@ PithkaSavedVariables =
         {
             ["$AccountWide"] = 
             {
+                ["runOnce"] = 
+                {
+                    ["arenaBug"] = true,
+                },
                 ["state"] = 
                 {
-                    ["currentScreen"] = "dungeon",
-                    ["trifectaSummary"] = "~ Trifecta Summary ~",
-                    ["showExtra"] = true,
-                    ["title"] = "",
                     ["trialSummary"] = "~ Trial Summary ~",
-                    ["showWatermark"] = true,
+                    ["trifectaSummary"] = "~ Trifecta Summary ~",
+                    ["title"] = "",
                     ["dungeonSummary"] = "~ Dungeon Summary ~",
+                    ["showExtra"] = true,
+                    ["showWatermark"] = true,
+                    ["currentScreen"] = "dungeon",
                 },
+                ["scores"] = 
+                {
+                    ["EA2"] = 
+                    {
+                        ["Freya Orm"] = 44000,
+                    },
+                    ["EA1"] = 
+                    {
+                        ["Freya Orm"] = 37000,
+                    },
+                },
+                ["version"] = 1,
                 ["currentToons"] = 
                 {
                     ["NA Megaserver"] = 
@@ -31,26 +47,10 @@ PithkaSavedVariables =
                         [9] = "Otto von Bissmark",
                     },
                 },
-                ["scores"] = 
-                {
-                    ["EA1"] = 
-                    {
-                        ["Freya Orm"] = 37000,
-                    },
-                    ["EA2"] = 
-                    {
-                        ["Freya Orm"] = 20000,
-                    },
-                },
-                ["runOnce"] = 
-                {
-                    ["arenaBug"] = true,
-                },
                 ["options"] = 
                 {
                     ["enableTeleport"] = true,
                 },
-                ["version"] = 1,
             },
         },
     },

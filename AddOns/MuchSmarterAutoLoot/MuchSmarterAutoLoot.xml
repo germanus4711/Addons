@@ -1,5 +1,13 @@
 <GuiXml>
     <Controls>
-        <!-- This file is used to serve as Addon Inititiator but now it is deprecated -->
+        <Control name="ZO_LootAlphaContainerButtonDestroy" inherits="ZO_DialogButton" tier="MEDIUM">
+            <Anchor point="TOPRIGHT" relativeTo="ZO_LootAlphaContainerButton1" relativePoint="BOTTOMRIGHT" offsetY="-2" />
+            <OnInitialized>
+                self:SetParent(ZO_LootAlphaContainer)
+                self:GetNamedChild("NameLabel"):SetFont("$(BOLD_FONT)|18|thick-outline")
+                self:GetNamedChild("NameLabel"):SetColor("INTERFACE_COLOR_TYPE_TEXT_COLORS:INTERFACE_TEXT_COLOR_NORMAL")
+                ZO_KeybindButtonTemplate_Setup(self, "MSAL_DESTROY", function() MuchSmarterAutoLoot_Destroy(self) end, GetString(SI_BINDING_NAME_MSAL_DESTROY))
+            </OnInitialized>
+        </Control>
     </Controls>
 </GuiXml>

@@ -7,34 +7,42 @@ PersonalAssistantIntegration_SavedVariables =
             ["$AccountWide"] = 
             {
                 ["savedVarsVersion"] = 20240922,
+                ["profileCounter"] = 1,
                 [1] = 
                 {
                     ["FCOItemSaver"] = 
                     {
-                        ["Locked"] = 
-                        {
-                            ["preventAutoSell"] = false,
-                            ["preventMoving"] = true,
-                        },
-                        ["SellGuildStore"] = 
+                        ["Research"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
-                        ["Sell"] = 
+                        ["SellGuildStore"] = 
                         {
-                            ["autoSellMarked"] = false,
-                        },
-                        ["Intricate"] = 
-                        {
-                            ["itemMoveMode"] = 1,
+                            ["itemMoveMode"] = 2,
                         },
                         ["Improvement"] = 
                         {
                             ["itemMoveMode"] = 0,
                         },
-                        ["Research"] = 
+                        ["Locked"] = 
                         {
-                            ["itemMoveMode"] = 2,
+                            ["preventMoving"] = true,
+                            ["preventAutoSell"] = false,
+                        },
+                        ["Intricate"] = 
+                        {
+                            ["itemMoveMode"] = 1,
+                        },
+                        ["Deconstruction"] = 
+                        {
+                            ["itemMoveMode"] = 0,
+                        },
+                        ["Sell"] = 
+                        {
+                            ["autoSellMarked"] = true,
+                        },
+                        ["DynamicIcons"] = 
+                        {
                         },
                         ["GearSets"] = 
                         {
@@ -46,13 +54,6 @@ PersonalAssistantIntegration_SavedVariables =
                                 [4] = 0,
                                 [5] = 0,
                             },
-                        },
-                        ["DynamicIcons"] = 
-                        {
-                        },
-                        ["Deconstruction"] = 
-                        {
-                            ["itemMoveMode"] = 1,
                         },
                     },
                     ["name"] = "Profile 1",
@@ -66,7 +67,6 @@ PersonalAssistantIntegration_SavedVariables =
                         ["compatibility"] = true,
                     },
                 },
-                ["profileCounter"] = 1,
                 ["version"] = 1,
             },
         },

@@ -4,68 +4,79 @@ TinydogsCraftingCalculatorVars =
     {
         ["@germanus4711"] = 
         {
-            ["Maüschen"] = 
+            ["Christel v Koenigsberg"] = 
             {
-                ["version"] = 2,
-                ["TabSelected"] = "tccBuilderTabButton",
                 ["CraftSelected"] = "Blacksmithing",
-            },
-            ["Mike v Petra"] = 
-            {
-                ["version"] = 2,
                 ["TabSelected"] = "tccBuilderTabButton",
-                ["CraftSelected"] = "Blacksmithing",
-            },
-            ["Freya Orm"] = 
-            {
                 ["version"] = 2,
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["CraftSelected"] = "Blacksmithing",
-            },
-            ["Gamal Loki"] = 
-            {
-                ["version"] = 2,
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["CraftSelected"] = "Blacksmithing",
             },
             ["Hubertus Freiherr v Feld"] = 
             {
-                ["version"] = 2,
-                ["TabSelected"] = "tccBuilderTabButton",
                 ["CraftSelected"] = "Blacksmithing",
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["version"] = 2,
+            },
+            ["Gamal Loki"] = 
+            {
+                ["CraftSelected"] = "Blacksmithing",
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["version"] = 2,
             },
             ["Fridolin The Great"] = 
             {
-                ["version"] = 2,
-                ["TabSelected"] = "tccBuilderTabButton",
                 ["CraftSelected"] = "Blacksmithing",
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["version"] = 2,
             },
-            ["$AccountWide"] = 
+            ["Otto von Bissmark"] = 
             {
-                ["Scope"] = 
-                {
-                    ["ItemOrder"] = "Local",
-                },
-                ["EsoPlus"] = false,
+                ["CraftSelected"] = "Blacksmithing",
+                ["TabSelected"] = "tccBuilderTabButton",
                 ["version"] = 2,
             },
             ["Gustaf Helmuth v Feld"] = 
             {
-                ["version"] = 2,
+                ["CraftSelected"] = "Blacksmithing",
                 ["TabSelected"] = "tccBuilderTabButton",
+                ["version"] = 2,
+            },
+            ["Freya Orm"] = 
+            {
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["version"] = 2,
+                ["WindowPosition"] = 
+                {
+                    ["tccUI"] = 
+                    {
+                        ["y"] = 328,
+                        ["x"] = 1515,
+                    },
+                },
+                ["OrderItemData"] = 
+                {
+                },
                 ["CraftSelected"] = "Blacksmithing",
             },
-            ["Otto von Bissmark"] = 
+            ["$AccountWide"] = 
             {
+                ["EsoPlus"] = false,
+                ["Scope"] = 
+                {
+                    ["ItemOrder"] = "Local",
+                },
                 ["version"] = 2,
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["CraftSelected"] = "Blacksmithing",
             },
-            ["Christel v Koenigsberg"] = 
+            ["Maüschen"] = 
             {
-                ["version"] = 2,
-                ["TabSelected"] = "tccBuilderTabButton",
                 ["CraftSelected"] = "Blacksmithing",
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["version"] = 2,
+            },
+            ["Mike v Petra"] = 
+            {
+                ["CraftSelected"] = "Blacksmithing",
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["version"] = 2,
             },
         },
     },

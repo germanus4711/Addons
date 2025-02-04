@@ -8,27 +8,6 @@ EventTrackerVars =
             {
                 ["NA Megaserver"] = 
                 {
-                    ["top"] = 10,
-                    ["debug"] = false,
-                    ["Current_Event"] = "Pan-Tamriel",
-                    ["NewsIndex"] = 3,
-                    ["T_Time"] = 
-                    {
-                        [1] = 1738289024,
-                        [2] = 1737673236,
-                        [3] = 0,
-                    },
-                    ["left"] = 450,
-                    ["T_ToDo"] = 
-                    {
-                        [1] = 0,
-                        [2] = 0,
-                        [3] = 0,
-                    },
-                    ["autoHide"] = false,
-                    ["Message_Time"] = 1738290600,
-                    ["Total_Tickets"] = 9,
-                    ["EVT_version"] = 2.2800000000,
                     ["Install_Time"] = 1726631845,
                     ["T_Types"] = 
                     {
@@ -36,7 +15,21 @@ EventTrackerVars =
                         [2] = "not used",
                         [3] = "Boss",
                     },
+                    ["LastUpdated"] = 1738628729,
+                    ["T_ToDo"] = 
+                    {
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["left"] = 450,
+                    ["NewsIndex"] = 3,
                     ["HideUI"] = false,
+                    ["Total_Tickets"] = 1,
+                    ["top"] = 10,
+                    ["EVT_version"] = 2.2800000000,
+                    ["Current_Event"] = "Pan-Tamriel",
+                    ["Message_Time"] = 1738642140,
                     ["T_Tickets"] = 
                     {
                         [4] = 0,
@@ -44,8 +37,15 @@ EventTrackerVars =
                         [2] = 0,
                         [3] = 0,
                     },
-                    ["LastUpdated"] = 1738289024,
+                    ["debug"] = false,
+                    ["autoHide"] = false,
                     ["version"] = 2,
+                    ["T_Time"] = 
+                    {
+                        [1] = 1738628014,
+                        [2] = 1737673236,
+                        [3] = 0,
+                    },
                 },
             },
         },

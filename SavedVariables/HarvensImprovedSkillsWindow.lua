@@ -4,59 +4,59 @@ HarvensImprovedSkillsWindow_SavedVariables =
     {
         ["@germanus4711"] = 
         {
-            ["Hubertus Freiherr v Feld"] = 
-            {
-                ["showTotal"] = false,
-                ["version"] = 1,
-                ["showDetails"] = true,
-            },
-            ["Maüschen"] = 
-            {
-                ["showTotal"] = false,
-                ["version"] = 1,
-                ["showDetails"] = true,
-            },
             ["Christel v Koenigsberg"] = 
             {
+                ["showDetails"] = true,
                 ["showTotal"] = false,
                 ["version"] = 1,
-                ["showDetails"] = true,
             },
-            ["Otto von Bissmark"] = 
+            ["Hubertus Freiherr v Feld"] = 
             {
+                ["showDetails"] = true,
                 ["showTotal"] = false,
                 ["version"] = 1,
-                ["showDetails"] = true,
-            },
-            ["Freya Orm"] = 
-            {
-                ["showTotal"] = false,
-                ["version"] = 1,
-                ["showDetails"] = true,
-            },
-            ["Fridolin The Great"] = 
-            {
-                ["showTotal"] = false,
-                ["version"] = 1,
-                ["showDetails"] = true,
             },
             ["Gamal Loki"] = 
             {
+                ["showDetails"] = true,
                 ["showTotal"] = false,
                 ["version"] = 1,
+            },
+            ["Fridolin The Great"] = 
+            {
                 ["showDetails"] = true,
+                ["showTotal"] = false,
+                ["version"] = 1,
+            },
+            ["Otto von Bissmark"] = 
+            {
+                ["showDetails"] = true,
+                ["showTotal"] = false,
+                ["version"] = 1,
             },
             ["Gustaf Helmuth v Feld"] = 
             {
+                ["showDetails"] = true,
                 ["showTotal"] = false,
                 ["version"] = 1,
+            },
+            ["Freya Orm"] = 
+            {
                 ["showDetails"] = true,
+                ["showTotal"] = false,
+                ["version"] = 1,
+            },
+            ["Maüschen"] = 
+            {
+                ["showDetails"] = true,
+                ["showTotal"] = false,
+                ["version"] = 1,
             },
             ["Mike v Petra"] = 
             {
+                ["showDetails"] = true,
                 ["showTotal"] = false,
                 ["version"] = 1,
-                ["showDetails"] = true,
             },
         },
     },

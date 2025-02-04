@@ -4,15 +4,65 @@ VotansMiniMap_Data =
     {
         ["@germanus4711"] = 
         {
-            ["8796093064640125"] = 
+            ["$AccountWide"] = 
             {
-                ["$LastCharacterName"] = "Maüschen",
-                ["showMap"] = true,
+                ["showFullTitle"] = false,
+                ["dungeonZoom"] = 0.7000000000,
+                ["enableCompass"] = "UNTOUCHED",
+                ["showClock"] = true,
+                ["showMounted"] = true,
+                ["zoomIn"] = 2,
+                ["timeFormat"] = 4,
+                ["showOnTop"] = false,
+                ["showCombat"] = true,
+                ["width"] = 301,
+                ["unitPinScaleLimit"] = 0.8000000000,
+                ["debug"] = false,
+                ["zoneAlertMode"] = "MINIMAPHIDDEN",
+                ["borderAlpha"] = 100,
+                ["enableMap"] = true,
+                ["showCameraAngle"] = false,
+                ["mountedZoom"] = 1,
+                ["titleAtTop"] = true,
+                ["asyncUpdate"] = false,
+                ["x"] = 1124,
+                ["showLoot"] = true,
+                ["showHUD"] = true,
+                ["pinSizes"] = 
+                {
+                },
+                ["titleColor"] = 
+                {
+                    [4] = 1,
+                    [1] = 0.7725490928,
+                    [2] = 0.7607843876,
+                    [3] = 0.6196078658,
+                },
+                ["cameraAngle"] = 45,
+                ["lockWindow"] = false,
+                ["enableTweaks"] = true,
+                ["showSiege"] = true,
+                ["zoomToPlayer"] = false,
+                ["subZoneZoom"] = 1,
                 ["version"] = 1,
+                ["titleFontSize"] = 16,
+                ["showRealTimeClock"] = true,
+                ["zoomOut"] = 0.1500000000,
+                ["y"] = -535,
+                ["height"] = 363,
+                ["keepSquare"] = true,
+                ["battlegroundZoom"] = 0,
+                ["frameStyle"] = "ESO",
+                ["fixedMaps"] = 
+                {
+                },
+                ["zoom"] = 1.3000000000,
+                ["titleFont"] = "BOLD_FONT",
+                ["showInGameClock"] = true,
             },
-            ["8796093072557313"] = 
+            ["8796093062295781"] = 
             {
-                ["$LastCharacterName"] = "Gamal Loki",
+                ["$LastCharacterName"] = "Fridolin The Great",
                 ["showMap"] = true,
                 ["version"] = 1,
             },
@@ -28,9 +78,15 @@ VotansMiniMap_Data =
                 ["showMap"] = true,
                 ["version"] = 1,
             },
-            ["8796093025384257"] = 
+            ["8796093027479535"] = 
             {
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["showMap"] = true,
+                ["version"] = 1,
+            },
+            ["8796093072557313"] = 
+            {
+                ["$LastCharacterName"] = "Gamal Loki",
                 ["showMap"] = true,
                 ["version"] = 1,
             },
@@ -40,9 +96,9 @@ VotansMiniMap_Data =
                 ["showMap"] = true,
                 ["version"] = 1,
             },
-            ["8796093027479535"] = 
+            ["8796093064640125"] = 
             {
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["$LastCharacterName"] = "Maüschen",
                 ["showMap"] = true,
                 ["version"] = 1,
             },
@@ -52,65 +108,9 @@ VotansMiniMap_Data =
                 ["showMap"] = true,
                 ["version"] = 1,
             },
-            ["$AccountWide"] = 
+            ["8796093025384257"] = 
             {
-                ["showOnTop"] = false,
-                ["enableMap"] = true,
-                ["showHUD"] = true,
-                ["debug"] = false,
-                ["cameraAngle"] = 45,
-                ["enableCompass"] = "UNTOUCHED",
-                ["timeFormat"] = 4,
-                ["showSiege"] = true,
-                ["height"] = 363,
-                ["showFullTitle"] = false,
-                ["battlegroundZoom"] = 0,
-                ["showMounted"] = true,
-                ["frameStyle"] = "ESO",
-                ["zoneAlertMode"] = "MINIMAPHIDDEN",
-                ["version"] = 1,
-                ["titleFontSize"] = 16,
-                ["showLoot"] = true,
-                ["showCameraAngle"] = false,
-                ["mountedZoom"] = 1,
-                ["lockWindow"] = false,
-                ["showRealTimeClock"] = true,
-                ["zoomToPlayer"] = false,
-                ["zoom"] = 1.3000000000,
-                ["width"] = 301,
-                ["borderAlpha"] = 100,
-                ["y"] = -535,
-                ["titleFont"] = "BOLD_FONT",
-                ["enableTweaks"] = true,
-                ["asyncUpdate"] = false,
-                ["unitPinScaleLimit"] = 0.8000000000,
-                ["showClock"] = true,
-                ["zoomIn"] = 2,
-                ["showInGameClock"] = true,
-                ["fixedMaps"] = 
-                {
-                },
-                ["titleColor"] = 
-                {
-                    [4] = 1,
-                    [1] = 0.7725490928,
-                    [2] = 0.7607843876,
-                    [3] = 0.6196078658,
-                },
-                ["pinSizes"] = 
-                {
-                },
-                ["subZoneZoom"] = 1,
-                ["keepSquare"] = true,
-                ["zoomOut"] = 0.1500000000,
-                ["titleAtTop"] = true,
-                ["x"] = 1124,
-                ["dungeonZoom"] = 0.7000000000,
-                ["showCombat"] = true,
-            },
-            ["8796093062295781"] = 
-            {
-                ["$LastCharacterName"] = "Fridolin The Great",
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
                 ["showMap"] = true,
                 ["version"] = 1,
             },

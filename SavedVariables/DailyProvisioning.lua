@@ -4,18 +4,28 @@ DailyProvisioningVariables =
     {
         ["@germanus4711"] = 
         {
-            ["8796093064640125"] = 
+            ["$AccountWide"] = 
             {
-                ["levelWhenReceived"] = 6,
-                ["$LastCharacterName"] = "Maüschen",
-                ["qualityWhenReceived"] = 4,
+                ["isAcquireItem"] = true,
+                ["bulkQuantity"] = 1,
                 ["version"] = 1,
+                ["acquireDelay"] = 1,
+                ["isDebugQuest"] = true,
+                ["debugLog"] = 
+                {
+                },
+                ["isAutoExit"] = true,
+                ["isDontKnow"] = true,
+                ["isLog"] = true,
+                ["reservations"] = 
+                {
+                },
             },
-            ["8796093072557313"] = 
+            ["8796093062295781"] = 
             {
                 ["levelWhenReceived"] = 6,
-                ["$LastCharacterName"] = "Gamal Loki",
-                ["qualityWhenReceived"] = 4,
+                ["$LastCharacterName"] = "Fridolin The Great",
+                ["qualityWhenReceived"] = 1,
                 ["version"] = 1,
             },
             ["8796093023211051"] = 
@@ -32,11 +42,18 @@ DailyProvisioningVariables =
                 ["qualityWhenReceived"] = 1,
                 ["version"] = 1,
             },
-            ["8796093025384257"] = 
+            ["8796093027479535"] = 
             {
                 ["levelWhenReceived"] = 6,
-                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
-                ["qualityWhenReceived"] = 1,
+                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["qualityWhenReceived"] = 4,
+                ["version"] = 1,
+            },
+            ["8796093072557313"] = 
+            {
+                ["levelWhenReceived"] = 6,
+                ["$LastCharacterName"] = "Gamal Loki",
+                ["qualityWhenReceived"] = 4,
                 ["version"] = 1,
             },
             ["8796093074287095"] = 
@@ -46,10 +63,10 @@ DailyProvisioningVariables =
                 ["qualityWhenReceived"] = 2,
                 ["version"] = 1,
             },
-            ["8796093027479535"] = 
+            ["8796093064640125"] = 
             {
                 ["levelWhenReceived"] = 6,
-                ["$LastCharacterName"] = "Christel v Koenigsberg",
+                ["$LastCharacterName"] = "Maüschen",
                 ["qualityWhenReceived"] = 4,
                 ["version"] = 1,
             },
@@ -60,27 +77,10 @@ DailyProvisioningVariables =
                 ["qualityWhenReceived"] = 3,
                 ["version"] = 1,
             },
-            ["$AccountWide"] = 
-            {
-                ["isDontKnow"] = true,
-                ["isAutoExit"] = true,
-                ["debugLog"] = 
-                {
-                },
-                ["acquireDelay"] = 1,
-                ["bulkQuantity"] = 1,
-                ["isLog"] = true,
-                ["reservations"] = 
-                {
-                },
-                ["isDebugQuest"] = true,
-                ["isAcquireItem"] = true,
-                ["version"] = 1,
-            },
-            ["8796093062295781"] = 
+            ["8796093025384257"] = 
             {
                 ["levelWhenReceived"] = 6,
-                ["$LastCharacterName"] = "Fridolin The Great",
+                ["$LastCharacterName"] = "Hubertus Freiherr v Feld",
                 ["qualityWhenReceived"] = 1,
                 ["version"] = 1,
             },

@@ -8,13 +8,14 @@ LieberBreitAlsWide =
             {
                 ["¥CharacterWide"] = 
                 {
-                    ["known"] = "66ff66",
+                    ["version"] = 1,
+                    ["unknown"] = "ff6666",
                     ["accList"] = 
                     {
                         ["NA@germanus4711"] = 
                         {
                             ["name"] = "NA@germanus4711",
-                            ["claimed"] = 1738283219,
+                            ["claimed"] = 1738639344,
                             ["sort"] = 99,
                         },
                     },
@@ -22,8 +23,7 @@ LieberBreitAlsWide =
                     {
                         ["@germanus4711"] = true,
                     },
-                    ["unknown"] = "ff6666",
-                    ["version"] = 1,
+                    ["known"] = "66ff66",
                 },
             },
         },

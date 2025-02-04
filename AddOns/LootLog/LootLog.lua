@@ -269,7 +269,7 @@ function LootLog.IsItemNotable( itemLink, itemId )
 		return true
 	end
 
-	local itemType = GetItemLinkItemType(itemLink)
+	local itemType, specializedItemType = GetItemLinkItemType(itemLink)
 
 	if (GetItemLinkActorCategory(itemLink) == GAMEPLAY_ACTOR_CATEGORY_COMPANION) then
 		return GetItemLinkFunctionalQuality(itemLink) >= ITEM_FUNCTIONAL_QUALITY_ARTIFACT
@@ -277,6 +277,8 @@ function LootLog.IsItemNotable( itemLink, itemId )
 		if (GetItemLinkSetInfo(itemLink)) then
 			return true
 		end
+	elseif (specializedItemType == SPECIALIZED_ITEMTYPE_COLLECTIBLE_RARE_FISH) then
+		return true
 	else
 		local quality = GetItemLinkFunctionalQuality(itemLink)
 		if ( (quality >= ITEM_FUNCTIONAL_QUALITY_ARTIFACT) or

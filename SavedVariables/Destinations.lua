@@ -4,109 +4,102 @@ Destinations_Settings =
     {
         ["@germanus4711"] = 
         {
-            ["Gamal Loki"] = 
+            ["Christel v Koenigsberg"] = 
             {
-                ["data"] = 
-                {
-                    ["OceanSBaitLeft"] = 0,
-                    ["OceanBaitLeft"] = 0,
-                    ["LakeBaitLeft"] = 0,
-                    ["GeneralBait"] = 0,
-                    ["RiverSBaitLeft"] = 0,
-                    ["RiverBaitLeft"] = 0,
-                    ["LakeSBaitLeft"] = 0,
-                    ["FoulSBaitLeft"] = 0,
-                    ["FoulBaitLeft"] = 0,
-                },
                 ["settings"] = 
                 {
-                    ["ImproveCrafting"] = true,
+                    ["HideQuestGiverName"] = false,
+                    ["MapFiltersMisc"] = true,
+                    ["EnglishColorPOI"] = "efebbe",
+                    ["ShowDungeonBossesOnTop"] = false,
+                    ["EnglishColorKeeps"] = "dc8122",
                     ["AddEnglishOnUnknwon"] = false,
                     ["ShowCadwellsAlmanacOnly"] = false,
-                    ["ShowCadwellsAlmanac"] = false,
-                    ["MapFiltersPOIs"] = true,
-                    ["ShowDungeonBossesOnTop"] = false,
-                    ["MapFiltersAchievements"] = true,
-                    ["AddEnglishOnKeeps"] = false,
-                    ["MapFiltersQuestgivers"] = true,
-                    ["HideQuestGiverName"] = false,
-                    ["MapFiltersFishing"] = true,
-                    ["MapFiltersCollectibles"] = true,
-                    ["useAccountWide"] = false,
-                    ["ImproveMundus"] = true,
-                    ["EnglishColorPOI"] = "efebbe",
-                    ["MapFiltersMisc"] = true,
                     ["HideAllianceOnKeeps"] = false,
-                    ["EnglishColorKeeps"] = "dc8122",
-                    ["ShowDungeonBossesInZones"] = true,
+                    ["MapFiltersPOIs"] = true,
                     ["AddNewLineOnKeeps"] = true,
+                    ["MapFiltersAchievements"] = true,
+                    ["ImproveMundus"] = true,
+                    ["ShowCadwellsAlmanac"] = false,
+                    ["MapFiltersFishing"] = true,
+                    ["useAccountWide"] = false,
+                    ["MapFiltersCollectibles"] = true,
+                    ["MapFiltersQuestgivers"] = true,
+                    ["AddEnglishOnKeeps"] = false,
+                    ["ShowDungeonBossesInZones"] = true,
+                    ["ImproveCrafting"] = true,
                     ["activateReloaduiButton"] = false,
                 },
                 ["filters"] = 
                 {
-                    ["DEST_PinSet_Peacemaker"] = false,
-                    ["DEST_PinSet_Cutpurse_Above"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
-                    ["DEST_PinSet_Champion"] = false,
-                    ["DEST_Pin_Quest_Done"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me"] = false,
-                    ["DEST_PinSet_Breaking_Entering"] = false,
-                    ["DEST_PinSet_Dwemer"] = false,
-                    ["DEST_Compass_Misc"] = true,
-                    ["DEST_Pin_Quest_In_Progress"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait"] = false,
-                    ["DEST_PinSet_Other_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
-                    ["DEST_Compass_Collectibles"] = false,
-                    ["DEST_PinSet_Deadlands"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
-                    ["DEST_PinSet_WWVamp"] = false,
-                    ["DEST_Compass_Achievements"] = true,
-                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
-                    ["DEST_PinSet_Patron"] = false,
-                    ["DEST_Pin_Quest_Daily"] = false,
-                    ["DEST_PinSet_Last_Brawl"] = false,
-                    ["DEST_Pin_Fishing"] = false,
-                    ["DEST_Compass_Quest_Giver"] = false,
-                    ["DEST_PinSet_Werewolf_Shrine"] = false,
                     ["DEST_Compass_Fishing"] = false,
-                    ["DEST_PinSet_Nosediver"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
-                    ["DEST_PinSet_Unknown"] = true,
-                    ["DEST_PinSet_Vampire_Alter"] = false,
-                    ["DEST_PinSet_Peacemaker_Done"] = false,
-                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
-                    ["DEST_PinSet_Patron_Done"] = false,
-                    ["DEST_PinSet_Nosediver_Done"] = false,
-                    ["DEST_PinSet_Champion_Done"] = false,
-                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
-                    ["DEST_PinSet_HighIsle"] = false,
-                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
-                    ["DEST_Pin_Fishing_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
-                    ["DEST_Pin_Collectibles"] = false,
-                    ["DEST_PinSet_Last_Brawl_Done"] = false,
-                    ["DEST_Pin_Collectibles_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Water"] = false,
-                    ["DEST_Compass_WWVamp"] = true,
-                    ["DEST_Compass_Fishing_Show_FishName"] = false,
-                    ["DEST_Pin_Quest_Writ"] = false,
-                    ["DEST_Pin_Quest_Repeatable"] = false,
+                    ["DEST_PinSet_Deadlands"] = false,
                     ["DEST_Pin_Quest_Giver"] = false,
-                    ["DEST_PinSet_Other"] = false,
-                    ["DEST_PinSet_Maiq_Done"] = false,
-                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_Other_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
+                    ["DEST_PinSet_Nosediver_Done"] = false,
+                    ["DEST_Compass_Misc"] = true,
+                    ["DEST_Pin_Quest_Daily"] = false,
+                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering"] = false,
+                    ["DEST_Pin_Collectibles_Done"] = false,
+                    ["DEST_Compass_Fishing_Show_FishName"] = false,
+                    ["DEST_PinSet_Champion_Done"] = false,
+                    ["DEST_Compass_Collectibles"] = false,
+                    ["DEST_PinSet_Peacemaker"] = false,
+                    ["DEST_Pin_Quest_In_Progress"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
+                    ["DEST_PinSet_Vampire_Alter"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
+                    ["DEST_Compass_Achievements"] = true,
+                    ["DEST_Pin_Quest_Writ"] = false,
+                    ["DEST_PinSet_Patron_Done"] = false,
+                    ["DEST_PinSet_Champion"] = false,
                     ["DEST_PinSet_Maiq"] = false,
+                    ["DEST_PinSet_Other"] = false,
+                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
+                    ["DEST_PinSet_WWVamp"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait"] = false,
+                    ["DEST_PinSet_Patron"] = false,
                     ["DEST_Compass_Collectibles_Show_Item"] = false,
+                    ["DEST_Compass_Quest_Giver"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
+                    ["DEST_PinSet_Peacemaker_Done"] = false,
+                    ["DEST_PinSet_Unknown"] = true,
+                    ["DEST_Pin_Quest_Done"] = false,
+                    ["DEST_PinSet_Nosediver"] = false,
+                    ["DEST_PinSet_Werewolf_Shrine"] = false,
+                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_HighIsle"] = false,
+                    ["DEST_Compass_Fishing_Show_Water"] = false,
+                    ["DEST_PinSet_Last_Brawl_Done"] = false,
+                    ["DEST_Pin_Fishing_Done"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
+                    ["DEST_PinSet_Dwemer"] = false,
+                    ["DEST_Pin_Quest_Repeatable"] = false,
                     ["DEST_PinSet_Earthly_Possessions"] = false,
+                    ["DEST_Pin_Fishing"] = false,
+                    ["DEST_Compass_WWVamp"] = true,
+                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
+                    ["DEST_Pin_Collectibles"] = false,
+                    ["DEST_PinSet_Maiq_Done"] = false,
+                    ["DEST_PinSet_Cutpurse_Above"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
+                    ["DEST_PinSet_Last_Brawl"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me"] = false,
                 },
                 ["version"] = 1,
                 ["pins"] = 
                 {
-                    ["pinTextureChampionDone"] = 
+                    ["pinTextureCollectible"] = 
                     {
-                        ["type"] = 1,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -114,6 +107,10 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -121,62 +118,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemakerDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreakingDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureCutpurseDone"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -184,20 +139,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureAyleid"] = 
+                    ["pinTexturePatron"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -205,23 +160,46 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFishDone"] = 
+                    ["pinTextureQuestsUndone"] = 
                     {
-                        ["textcolorWater"] = 
+                        ["tintmain"] = 
                         {
-                            [1] = 1,
+                            [4] = 1,
+                            [1] = 0,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["tintday"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 0,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["tintrep"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 0,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                        ["texture"] = "",
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
                             [1] = 1,
                             [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tintdun"] = 
+                        {
+                            [4] = 1,
+                            [1] = 0,
+                            [2] = 0,
                             [3] = 1,
                         },
                         ["textcolor"] = 
@@ -230,27 +208,46 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["texture"] = "",
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["textcolorBait"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
                     },
-                    ["pinTextureOnMe"] = 
+                    ["pinTextureUnknown"] = 
                     {
-                        ["type"] = 6,
+                        ["textcolorEN"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorTrader"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 42,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["tint"] = 
+                        {
+                            [4] = 0.6000000000,
+                            [1] = 0.7000000000,
+                            [2] = 0.7000000000,
+                            [3] = 0.7000000000,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                    },
+                    ["pinTextureQuestsDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -258,6 +255,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 1,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -265,19 +263,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureCollectibleDone"] = 
+                    ["pinTextureBreakingDone"] = 
                     {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -285,48 +276,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunterDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBrawl"] = 
-                    {
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -334,9 +284,132 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWrothgarJumperDone"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureDwemer"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 145,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQuestsInProgress"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunter"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePeacemaker"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPosDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureUnknownOthers"] = 
                     {
@@ -348,16 +421,19 @@ Destinations_Settings =
                             [3] = 1,
                         },
                     },
-                    ["pinTextureWWShrine"] = 
+                    ["pinTextureVampAltar"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -365,13 +441,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTexturePatronDone"] = 
+                    ["pinTextureOnMeDone"] = 
                     {
-                        ["type"] = 5,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -379,6 +454,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -386,26 +462,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureQolPin"] = 
+                    ["pinTextureDeadlands"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -413,286 +483,33 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 45,
-                        ["size"] = 35,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumperDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPos"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureDwemer"] = 
-                    {
-                        ["type"] = 7,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 145,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunter"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediver"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsDone"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsInProgress"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWWVamp"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureHighIsle"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemaker"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePatron"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureChampion"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumper"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureOther"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPos"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -700,81 +517,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureVampAltar"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureUnknown"] = 
-                    {
-                        ["tint"] = 
-                        {
-                            [4] = 0.6000000000,
-                            [1] = 0.7000000000,
-                            [2] = 0.7000000000,
-                            [3] = 0.7000000000,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolorTrader"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["type"] = 7,
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 42,
-                        ["textcolorEN"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                    },
-                    ["pinTextureOtherDone"] = 
-                    {
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -782,18 +525,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFish"] = 
+                    ["pinTexturePeacemakerDone"] = 
                     {
-                        ["textcolorWater"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -801,138 +538,53 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureHighIsle"] = 
+                    {
                         ["texture"] = "",
-                        ["textcolortitle"] = 
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureFishDone"] = 
+                    {
                         ["textcolorBait"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["level"] = 30,
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureBrawlDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["level"] = 30,
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCutpurse"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureMaiq"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreaking"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPosDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCollectible"] = 
-                    {
-                        ["type"] = 2,
                         ["textcolortitle"] = 
                         {
                             [1] = 1,
@@ -946,90 +598,131 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["texture"] = "",
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediverDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsUndone"] = 
-                    {
-                        ["tintrep"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 0,
-                        },
-                        ["tintdun"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["tintday"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["maxDistance"] = 0.0500000000,
-                        ["tintmain"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
+                    },
+                    ["pinTextureWrothgarJumper"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCutpurse"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediver"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunterDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQolPin"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 35,
+                        ["level"] = 45,
+                        ["texture"] = "",
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureMaiqDone"] = 
                     {
-                        ["type"] = 6,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -1037,6 +730,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1044,13 +738,51 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureDeadlands"] = 
+                    ["pinTextureFish"] = 
                     {
+                        ["textcolorBait"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
+                    },
+                    ["pinTextureBreaking"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -1058,6 +790,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 5,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1065,20 +798,89 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureOnMeDone"] = 
+                    ["pinTextureBrawl"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePatronDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCollectibleDone"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediverDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1086,427 +888,612 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWWVamp"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampionDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOnMe"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampion"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWWShrine"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOtherDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureAyleid"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBrawlDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureMaiq"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                 },
-                ["miscColorCodes"] = 
+                ["data"] = 
                 {
-                    ["settingsTextAchievements"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.5333333333,
-                    },
-                    ["settingsTextWarn"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 1,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["settingsTextUnknown"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["mapFilterTextQUndone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextReloadWarning"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 0,
-                    },
-                    ["mapFilterTextQDone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 0.3333333333,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextFish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEvenLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.9294117647,
-                        ["g"] = 0.9294117647,
-                    },
-                    ["settingsTextVWW"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2666666667,
-                        ["r"] = 0.2666666667,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["settingsTextAccountWide"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextQProg"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["settingsTextAchHeaders"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6666666667,
-                        ["r"] = 0,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["mapFilterTextUndone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.8666666667,
-                        ["g"] = 0.7607843137,
-                    },
-                    ["settingsTextQuests"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4000000000,
-                        ["r"] = 0.4000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextOnlyText"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextOddLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextDone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEnglish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.6666666667,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextMiscellaneous"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextImprove"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["mapFilterTextDone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.7725490196,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["mapFilterTextUndone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6000000000,
-                    },
-                    ["settingsTextCollectibles"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextInstructions"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
+                    ["RiverSBaitLeft"] = 0,
+                    ["FoulSBaitLeft"] = 0,
+                    ["FoulBaitLeft"] = 0,
+                    ["LakeBaitLeft"] = 0,
+                    ["LakeSBaitLeft"] = 0,
+                    ["GeneralBait"] = 0,
+                    ["OceanBaitLeft"] = 0,
+                    ["OceanSBaitLeft"] = 0,
+                    ["RiverBaitLeft"] = 0,
                 },
-                ["Quests"] = 
+                ["TEMPPINDATA"] = 
                 {
                 },
                 ["QuestsDone"] = 
                 {
+                    [6528] = 1,
                     [5377] = 1,
-                    [4107] = 1,
-                    [4620] = 1,
-                    [5389] = 1,
+                    [6658] = 2,
+                    [5249] = 1,
+                    [5388] = 1,
                     [5392] = 1,
-                    [4625] = 1,
+                    [3987] = 2,
+                    [6665] = 1,
                     [5394] = 1,
+                    [5259] = 1,
+                    [6668] = 1,
+                    [5389] = 1,
+                    [6670] = 1,
+                    [6799] = 2,
+                    [4624] = 2,
+                    [6675] = 1,
+                    [3986] = 1,
                     [5395] = 1,
                     [5396] = 1,
-                    [7191] = 1,
+                    [3992] = 2,
+                    [3990] = 1,
+                    [6559] = 1,
                     [5400] = 1,
-                    [6171] = 1,
-                    [7197] = 1,
                     [5406] = 1,
+                    [7194] = 1,
+                    [6171] = 1,
                     [5407] = 1,
+                    [5921] = 1,
+                    [6558] = 1,
+                    [3999] = 1,
+                    [5417] = 1,
                     [5409] = 1,
+                    [5538] = 2,
+                    [4529] = 2,
                     [5412] = 1,
                     [5413] = 1,
                     [5414] = 2,
                     [5415] = 1,
                     [5416] = 1,
-                    [5417] = 1,
-                    [5418] = 1,
-                    [4663] = 2,
-                    [4666] = 2,
-                    [6971] = 2,
-                    [6972] = 2,
-                    [6973] = 1,
-                    [6974] = 2,
-                    [6978] = 1,
-                    [6979] = 1,
-                    [6981] = 1,
-                    [6982] = 1,
-                    [4680] = 1,
-                    [6985] = 1,
-                    [6218] = 1,
-                    [6993] = 1,
-                    [6994] = 1,
-                    [6227] = 1,
-                    [6228] = 1,
-                    [7000] = 1,
-                    [4441] = 1,
-                    [6749] = 1,
-                    [6750] = 1,
-                    [4450] = 1,
-                    [7015] = 1,
-                    [7017] = 1,
-                    [7018] = 1,
-                    [6514] = 1,
-                    [6515] = 1,
-                    [4724] = 1,
-                    [7036] = 1,
-                    [7038] = 1,
-                    [4737] = 1,
-                    [7042] = 1,
-                    [6532] = 1,
-                    [4997] = 2,
-                    [7048] = 1,
-                    [5259] = 1,
-                    [4493] = 1,
-                    [3985] = 1,
-                    [3986] = 1,
-                    [3987] = 1,
-                    [3988] = 1,
-                    [3990] = 1,
-                    [3991] = 1,
-                    [3992] = 1,
-                    [5531] = 1,
-                    [5534] = 2,
-                    [3999] = 1,
-                    [4002] = 1,
                     [5289] = 1,
-                    [5547] = 1,
-                    [4016] = 1,
+                    [5418] = 1,
+                    [5931] = 1,
+                    [5548] = 1,
+                    [6642] = 1,
+                    [5941] = 1,
+                    [6640] = 1,
+                    [6099] = 1,
+                    [5937] = 1,
+                    [6218] = 1,
                     [5811] = 1,
+                    [4532] = 1,
                     [7093] = 1,
                     [5302] = 1,
-                    [4023] = 1,
+                    [3639] = 1,
+                    [5838] = 1,
+                    [2873] = 1,
+                    [5845] = 1,
+                    [4667] = 1,
                     [6588] = 1,
+                    [3645] = 1,
                     [5310] = 1,
-                    [7104] = 1,
+                    [6635] = 1,
+                    [6228] = 1,
+                    [6337] = 1,
                     [5314] = 1,
                     [5315] = 1,
+                    [6633] = 1,
+                    [3667] = 1,
+                    [5958] = 2,
+                    [6105] = 1,
                     [4296] = 1,
+                    [3657] = 1,
                     [5834] = 1,
+                    [4831] = 2,
+                    [5605] = 1,
                     [5837] = 1,
-                    [5838] = 1,
-                    [5071] = 1,
-                    [6096] = 2,
-                    [5073] = 1,
-                    [5074] = 1,
-                    [5075] = 1,
-                    [5076] = 1,
-                    [5845] = 1,
+                    [3662] = 1,
+                    [5839] = 1,
+                    [6628] = 1,
+                    [5073] = 2,
+                    [6098] = 1,
+                    [6227] = 1,
+                    [6100] = 1,
+                    [4693] = 1,
                     [6102] = 1,
                     [6103] = 1,
                     [6104] = 1,
-                    [6105] = 1,
-                    [4316] = 1,
+                    [4441] = 1,
+                    [3039] = 1,
+                    [6626] = 1,
+                    [5852] = 1,
+                    [6749] = 1,
+                    [6750] = 1,
                     [5855] = 1,
                     [5856] = 1,
-                    [4767] = 2,
-                    [4322] = 1,
-                    [4067] = 1,
-                    [4967] = 2,
+                    [6130] = 1,
+                    [4450] = 1,
+                    [5603] = 1,
+                    [5604] = 1,
                     [6373] = 1,
                     [5606] = 1,
-                    [5737] = 2,
-                    [4831] = 2,
-                    [5249] = 1,
-                    [4738] = 1,
-                    [4723] = 1,
-                    [7044] = 1,
-                    [6498] = 1,
-                    [6134] = 1,
-                    [5388] = 1,
-                    [3995] = 1,
-                    [4722] = 1,
-                    [6130] = 1,
-                    [3856] = 1,
-                    [5852] = 1,
-                    [5839] = 1,
-                    [6646] = 1,
-                    [6647] = 1,
-                    [5368] = 1,
-                    [6098] = 1,
                     [6101] = 1,
-                    [6100] = 1,
-                    [5605] = 1,
-                    [6099] = 1,
+                    [6632] = 1,
+                    [5865] = 2,
+                    [3656] = 1,
+                    [5483] = 2,
+                    [6636] = 1,
+                    [6722] = 1,
+                    [4673] = 1,
+                    [5487] = 1,
+                    [6512] = 1,
+                    [6769] = 1,
+                    [4722] = 1,
+                    [6771] = 1,
+                    [6514] = 2,
+                    [4908] = 1,
+                    [6134] = 1,
+                    [3703] = 1,
+                    [5368] = 1,
+                    [3611] = 1,
+                    [3608] = 1,
+                    [3988] = 1,
+                    [6780] = 1,
+                    [5501] = 1,
                     [5374] = 1,
-                    [5077] = 1,
+                    [4738] = 2,
                 },
-                ["TEMPPINDATA"] = 
+                ["Quests"] = 
                 {
+                },
+                ["miscColorCodes"] = 
+                {
+                    ["settingsTextInstructions"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextQuests"] = 
+                    {
+                        ["b"] = 0.4000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.4000000000,
+                    },
+                    ["settingsTextOddLine"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextOnlyText"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextVWW"] = 
+                    {
+                        ["b"] = 0.2666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.2666666667,
+                    },
+                    ["settingsTextEvenLine"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.9294117647,
+                        ["r"] = 0.9294117647,
+                    },
+                    ["mapFilterTextUndone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAchievements"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.5333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextWarn"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextFish"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["mapFilterTextDone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.7725490196,
+                    },
+                    ["settingsTextCollectibles"] = 
+                    {
+                        ["b"] = 0.6000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextDone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextQDone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.3333333333,
+                    },
+                    ["settingsTextMiscellaneous"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0,
+                    },
+                    ["mapFilterTextUndone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.7607843137,
+                        ["r"] = 0.8666666667,
+                    },
+                    ["mapFilterTextQUndone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextEnglish"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0.6666666667,
+                    },
+                    ["settingsTextUnknown"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextAchHeaders"] = 
+                    {
+                        ["b"] = 0.6666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextReloadWarning"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAccountWide"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["mapFilterTextQProg"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextImprove"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 0.6000000000,
+                    },
                 },
             },
             ["Maüschen"] = 
             {
-                ["data"] = 
-                {
-                    ["OceanSBaitLeft"] = 0,
-                    ["OceanBaitLeft"] = 0,
-                    ["LakeBaitLeft"] = 0,
-                    ["GeneralBait"] = 0,
-                    ["RiverSBaitLeft"] = 0,
-                    ["RiverBaitLeft"] = 0,
-                    ["LakeSBaitLeft"] = 0,
-                    ["FoulSBaitLeft"] = 0,
-                    ["FoulBaitLeft"] = 0,
-                },
                 ["settings"] = 
                 {
-                    ["ImproveCrafting"] = true,
+                    ["HideQuestGiverName"] = false,
+                    ["MapFiltersMisc"] = true,
+                    ["EnglishColorPOI"] = "efebbe",
+                    ["ShowDungeonBossesOnTop"] = false,
+                    ["EnglishColorKeeps"] = "dc8122",
                     ["AddEnglishOnUnknwon"] = false,
                     ["ShowCadwellsAlmanacOnly"] = false,
-                    ["ShowCadwellsAlmanac"] = false,
-                    ["MapFiltersPOIs"] = true,
-                    ["ShowDungeonBossesOnTop"] = false,
-                    ["MapFiltersAchievements"] = true,
-                    ["AddEnglishOnKeeps"] = false,
-                    ["MapFiltersQuestgivers"] = true,
-                    ["HideQuestGiverName"] = false,
-                    ["MapFiltersFishing"] = true,
-                    ["MapFiltersCollectibles"] = true,
-                    ["useAccountWide"] = false,
-                    ["ImproveMundus"] = true,
-                    ["EnglishColorPOI"] = "efebbe",
-                    ["MapFiltersMisc"] = true,
                     ["HideAllianceOnKeeps"] = false,
-                    ["EnglishColorKeeps"] = "dc8122",
-                    ["ShowDungeonBossesInZones"] = true,
+                    ["MapFiltersPOIs"] = true,
                     ["AddNewLineOnKeeps"] = true,
+                    ["MapFiltersAchievements"] = true,
+                    ["ImproveMundus"] = true,
+                    ["ShowCadwellsAlmanac"] = false,
+                    ["MapFiltersFishing"] = true,
+                    ["useAccountWide"] = false,
+                    ["MapFiltersCollectibles"] = true,
+                    ["MapFiltersQuestgivers"] = true,
+                    ["AddEnglishOnKeeps"] = false,
+                    ["ShowDungeonBossesInZones"] = true,
+                    ["ImproveCrafting"] = true,
                     ["activateReloaduiButton"] = false,
                 },
                 ["filters"] = 
                 {
-                    ["DEST_PinSet_Peacemaker"] = false,
-                    ["DEST_PinSet_Cutpurse_Above"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
-                    ["DEST_PinSet_Champion"] = false,
-                    ["DEST_Pin_Quest_Done"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me"] = false,
-                    ["DEST_PinSet_Breaking_Entering"] = false,
-                    ["DEST_PinSet_Dwemer"] = false,
-                    ["DEST_Compass_Misc"] = true,
-                    ["DEST_Pin_Quest_In_Progress"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait"] = false,
-                    ["DEST_PinSet_Other_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
-                    ["DEST_Compass_Collectibles"] = false,
-                    ["DEST_PinSet_Deadlands"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
-                    ["DEST_PinSet_WWVamp"] = false,
-                    ["DEST_Compass_Achievements"] = true,
-                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
-                    ["DEST_PinSet_Patron"] = false,
-                    ["DEST_Pin_Quest_Daily"] = false,
-                    ["DEST_PinSet_Last_Brawl"] = false,
-                    ["DEST_Pin_Fishing"] = false,
-                    ["DEST_Compass_Quest_Giver"] = false,
-                    ["DEST_PinSet_Werewolf_Shrine"] = false,
                     ["DEST_Compass_Fishing"] = false,
-                    ["DEST_PinSet_Nosediver"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
-                    ["DEST_PinSet_Unknown"] = true,
-                    ["DEST_PinSet_Vampire_Alter"] = false,
-                    ["DEST_PinSet_Peacemaker_Done"] = false,
-                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
-                    ["DEST_PinSet_Patron_Done"] = false,
-                    ["DEST_PinSet_Nosediver_Done"] = false,
-                    ["DEST_PinSet_Champion_Done"] = false,
-                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
-                    ["DEST_PinSet_HighIsle"] = false,
-                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
-                    ["DEST_Pin_Fishing_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
-                    ["DEST_Pin_Collectibles"] = false,
-                    ["DEST_PinSet_Last_Brawl_Done"] = false,
-                    ["DEST_Pin_Collectibles_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Water"] = false,
-                    ["DEST_Compass_WWVamp"] = true,
-                    ["DEST_Compass_Fishing_Show_FishName"] = false,
-                    ["DEST_Pin_Quest_Writ"] = false,
-                    ["DEST_Pin_Quest_Repeatable"] = false,
+                    ["DEST_PinSet_Deadlands"] = false,
                     ["DEST_Pin_Quest_Giver"] = false,
-                    ["DEST_PinSet_Other"] = false,
-                    ["DEST_PinSet_Maiq_Done"] = false,
-                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_Other_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
+                    ["DEST_PinSet_Nosediver_Done"] = false,
+                    ["DEST_Compass_Misc"] = true,
+                    ["DEST_Pin_Quest_Daily"] = false,
+                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering"] = false,
+                    ["DEST_Pin_Collectibles_Done"] = false,
+                    ["DEST_Compass_Fishing_Show_FishName"] = false,
+                    ["DEST_PinSet_Champion_Done"] = false,
+                    ["DEST_Compass_Collectibles"] = false,
+                    ["DEST_PinSet_Peacemaker"] = false,
+                    ["DEST_Pin_Quest_In_Progress"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
+                    ["DEST_PinSet_Vampire_Alter"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
+                    ["DEST_Compass_Achievements"] = true,
+                    ["DEST_Pin_Quest_Writ"] = false,
+                    ["DEST_PinSet_Patron_Done"] = false,
+                    ["DEST_PinSet_Champion"] = false,
                     ["DEST_PinSet_Maiq"] = false,
+                    ["DEST_PinSet_Other"] = false,
+                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
+                    ["DEST_PinSet_WWVamp"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait"] = false,
+                    ["DEST_PinSet_Patron"] = false,
                     ["DEST_Compass_Collectibles_Show_Item"] = false,
+                    ["DEST_Compass_Quest_Giver"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
+                    ["DEST_PinSet_Peacemaker_Done"] = false,
+                    ["DEST_PinSet_Unknown"] = true,
+                    ["DEST_Pin_Quest_Done"] = false,
+                    ["DEST_PinSet_Nosediver"] = false,
+                    ["DEST_PinSet_Werewolf_Shrine"] = false,
+                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_HighIsle"] = false,
+                    ["DEST_Compass_Fishing_Show_Water"] = false,
+                    ["DEST_PinSet_Last_Brawl_Done"] = false,
+                    ["DEST_Pin_Fishing_Done"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
+                    ["DEST_PinSet_Dwemer"] = false,
+                    ["DEST_Pin_Quest_Repeatable"] = false,
                     ["DEST_PinSet_Earthly_Possessions"] = false,
+                    ["DEST_Pin_Fishing"] = false,
+                    ["DEST_Compass_WWVamp"] = true,
+                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
+                    ["DEST_Pin_Collectibles"] = false,
+                    ["DEST_PinSet_Maiq_Done"] = false,
+                    ["DEST_PinSet_Cutpurse_Above"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
+                    ["DEST_PinSet_Last_Brawl"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me"] = false,
                 },
                 ["version"] = 1,
                 ["pins"] = 
                 {
-                    ["pinTextureChampionDone"] = 
+                    ["pinTextureCollectible"] = 
                     {
-                        ["type"] = 1,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -1514,6 +1501,10 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1521,62 +1512,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemakerDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreakingDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureCutpurseDone"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1584,20 +1533,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureAyleid"] = 
+                    ["pinTexturePatron"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1605,23 +1554,46 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFishDone"] = 
+                    ["pinTextureQuestsUndone"] = 
                     {
-                        ["textcolorWater"] = 
+                        ["tintmain"] = 
                         {
-                            [1] = 1,
+                            [4] = 1,
+                            [1] = 0,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["tintday"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 0,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["tintrep"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 0,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                        ["texture"] = "",
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
                             [1] = 1,
                             [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tintdun"] = 
+                        {
+                            [4] = 1,
+                            [1] = 0,
+                            [2] = 0,
                             [3] = 1,
                         },
                         ["textcolor"] = 
@@ -1630,27 +1602,46 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["texture"] = "",
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["textcolorBait"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
                     },
-                    ["pinTextureOnMe"] = 
+                    ["pinTextureUnknown"] = 
                     {
-                        ["type"] = 6,
+                        ["textcolorEN"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorTrader"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 42,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["tint"] = 
+                        {
+                            [4] = 0.6000000000,
+                            [1] = 0.7000000000,
+                            [2] = 0.7000000000,
+                            [3] = 0.7000000000,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                    },
+                    ["pinTextureQuestsDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -1658,6 +1649,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 1,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1665,19 +1657,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureCollectibleDone"] = 
+                    ["pinTextureBreakingDone"] = 
                     {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -1685,48 +1670,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunterDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBrawl"] = 
-                    {
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1734,9 +1678,132 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWrothgarJumperDone"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureDwemer"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 145,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQuestsInProgress"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunter"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePeacemaker"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPosDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureUnknownOthers"] = 
                     {
@@ -1748,16 +1815,19 @@ Destinations_Settings =
                             [3] = 1,
                         },
                     },
-                    ["pinTextureWWShrine"] = 
+                    ["pinTextureVampAltar"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1765,13 +1835,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTexturePatronDone"] = 
+                    ["pinTextureOnMeDone"] = 
                     {
-                        ["type"] = 5,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -1779,6 +1848,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1786,26 +1856,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureQolPin"] = 
+                    ["pinTextureDeadlands"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -1813,286 +1877,33 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 45,
-                        ["size"] = 35,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumperDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPos"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureDwemer"] = 
-                    {
-                        ["type"] = 7,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 145,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunter"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediver"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsDone"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsInProgress"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWWVamp"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureHighIsle"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemaker"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePatron"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureChampion"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumper"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureOther"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPos"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -2100,81 +1911,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureVampAltar"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureUnknown"] = 
-                    {
-                        ["tint"] = 
-                        {
-                            [4] = 0.6000000000,
-                            [1] = 0.7000000000,
-                            [2] = 0.7000000000,
-                            [3] = 0.7000000000,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolorTrader"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["type"] = 7,
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 42,
-                        ["textcolorEN"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                    },
-                    ["pinTextureOtherDone"] = 
-                    {
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -2182,18 +1919,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFish"] = 
+                    ["pinTexturePeacemakerDone"] = 
                     {
-                        ["textcolorWater"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -2201,138 +1932,53 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureHighIsle"] = 
+                    {
                         ["texture"] = "",
-                        ["textcolortitle"] = 
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureFishDone"] = 
+                    {
                         ["textcolorBait"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["level"] = 30,
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureBrawlDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["level"] = 30,
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCutpurse"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureMaiq"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreaking"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPosDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCollectible"] = 
-                    {
-                        ["type"] = 2,
                         ["textcolortitle"] = 
                         {
                             [1] = 1,
@@ -2346,90 +1992,131 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["texture"] = "",
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediverDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsUndone"] = 
-                    {
-                        ["tintrep"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 0,
-                        },
-                        ["tintdun"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["tintday"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["maxDistance"] = 0.0500000000,
-                        ["tintmain"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
+                    },
+                    ["pinTextureWrothgarJumper"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCutpurse"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediver"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunterDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQolPin"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 35,
+                        ["level"] = 45,
+                        ["texture"] = "",
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureMaiqDone"] = 
                     {
-                        ["type"] = 6,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -2437,6 +2124,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -2444,13 +2132,51 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureDeadlands"] = 
+                    ["pinTextureFish"] = 
                     {
+                        ["textcolorBait"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
+                    },
+                    ["pinTextureBreaking"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -2458,6 +2184,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 5,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -2465,20 +2192,89 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureOnMeDone"] = 
+                    ["pinTextureBrawl"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePatronDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCollectibleDone"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediverDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -2486,183 +2282,210 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWWVamp"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampionDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOnMe"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampion"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWWShrine"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOtherDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureAyleid"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBrawlDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureMaiq"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                 },
-                ["miscColorCodes"] = 
+                ["data"] = 
                 {
-                    ["settingsTextAchievements"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.5333333333,
-                    },
-                    ["settingsTextWarn"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 1,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["settingsTextUnknown"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["mapFilterTextQUndone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextReloadWarning"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 0,
-                    },
-                    ["mapFilterTextQDone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 0.3333333333,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextFish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEvenLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.9294117647,
-                        ["g"] = 0.9294117647,
-                    },
-                    ["settingsTextVWW"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2666666667,
-                        ["r"] = 0.2666666667,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["settingsTextAccountWide"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextQProg"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["settingsTextAchHeaders"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6666666667,
-                        ["r"] = 0,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["mapFilterTextUndone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.8666666667,
-                        ["g"] = 0.7607843137,
-                    },
-                    ["settingsTextQuests"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4000000000,
-                        ["r"] = 0.4000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextOnlyText"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextOddLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextDone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEnglish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.6666666667,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextMiscellaneous"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextImprove"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["mapFilterTextDone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.7725490196,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["mapFilterTextUndone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6000000000,
-                    },
-                    ["settingsTextCollectibles"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextInstructions"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
+                    ["RiverSBaitLeft"] = 0,
+                    ["FoulSBaitLeft"] = 0,
+                    ["FoulBaitLeft"] = 0,
+                    ["LakeBaitLeft"] = 0,
+                    ["LakeSBaitLeft"] = 0,
+                    ["GeneralBait"] = 0,
+                    ["OceanBaitLeft"] = 0,
+                    ["OceanSBaitLeft"] = 0,
+                    ["RiverBaitLeft"] = 0,
                 },
-                ["Quests"] = 
+                ["TEMPPINDATA"] = 
                 {
                 },
                 ["QuestsDone"] = 
@@ -2867,12 +2690,12 @@ Destinations_Settings =
                     [4963] = 1,
                     [5476] = 1,
                     [5479] = 1,
-                    [5077] = 1,
+                    [6101] = 1,
                     [4967] = 1,
                     [5480] = 1,
-                    [5589] = 1,
+                    [5077] = 1,
                     [5588] = 1,
-                    [5075] = 1,
+                    [6099] = 1,
                     [5500] = 1,
                     [4569] = 1,
                     [6510] = 1,
@@ -2883,10 +2706,10 @@ Destinations_Settings =
                     [6515] = 1,
                     [6615] = 1,
                     [5506] = 1,
-                    [6101] = 1,
+                    [5589] = 1,
                     [5495] = 1,
                     [6100] = 1,
-                    [6099] = 1,
+                    [5587] = 1,
                     [4474] = 1,
                     [5074] = 1,
                     [3964] = 1,
@@ -2918,9 +2741,9 @@ Destinations_Settings =
                     [3990] = 1,
                     [4503] = 1,
                     [3992] = 1,
-                    [5531] = 1,
                     [3995] = 1,
                     [4507] = 1,
+                    [5531] = 1,
                     [3860] = 1,
                     [3999] = 1,
                     [6558] = 1,
@@ -2976,7 +2799,7 @@ Destinations_Settings =
                     [4560] = 1,
                     [5073] = 1,
                     [6098] = 1,
-                    [5587] = 1,
+                    [5075] = 1,
                     [5076] = 1,
                     [4565] = 1,
                     [6102] = 1,
@@ -3022,113 +2845,277 @@ Destinations_Settings =
                     [5836] = 1,
                     [4607] = 1,
                 },
-                ["TEMPPINDATA"] = 
+                ["Quests"] = 
                 {
+                },
+                ["miscColorCodes"] = 
+                {
+                    ["settingsTextInstructions"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextQuests"] = 
+                    {
+                        ["b"] = 0.4000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.4000000000,
+                    },
+                    ["settingsTextOddLine"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextOnlyText"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextVWW"] = 
+                    {
+                        ["b"] = 0.2666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.2666666667,
+                    },
+                    ["settingsTextEvenLine"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.9294117647,
+                        ["r"] = 0.9294117647,
+                    },
+                    ["mapFilterTextUndone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAchievements"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.5333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextWarn"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextFish"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["mapFilterTextDone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.7725490196,
+                    },
+                    ["settingsTextCollectibles"] = 
+                    {
+                        ["b"] = 0.6000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextDone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextQDone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.3333333333,
+                    },
+                    ["settingsTextMiscellaneous"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0,
+                    },
+                    ["mapFilterTextUndone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.7607843137,
+                        ["r"] = 0.8666666667,
+                    },
+                    ["mapFilterTextQUndone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextEnglish"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0.6666666667,
+                    },
+                    ["settingsTextUnknown"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextAchHeaders"] = 
+                    {
+                        ["b"] = 0.6666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextReloadWarning"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAccountWide"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["mapFilterTextQProg"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextImprove"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 0.6000000000,
+                    },
                 },
             },
             ["Gustaf Helmuth v Feld"] = 
             {
-                ["data"] = 
-                {
-                    ["OceanSBaitLeft"] = 0,
-                    ["OceanBaitLeft"] = 0,
-                    ["LakeBaitLeft"] = 0,
-                    ["GeneralBait"] = 0,
-                    ["RiverSBaitLeft"] = 0,
-                    ["RiverBaitLeft"] = 0,
-                    ["LakeSBaitLeft"] = 0,
-                    ["FoulSBaitLeft"] = 0,
-                    ["FoulBaitLeft"] = 0,
-                },
                 ["settings"] = 
                 {
-                    ["ImproveCrafting"] = true,
+                    ["HideQuestGiverName"] = false,
+                    ["MapFiltersMisc"] = true,
+                    ["EnglishColorPOI"] = "efebbe",
+                    ["ShowDungeonBossesOnTop"] = false,
+                    ["EnglishColorKeeps"] = "dc8122",
                     ["AddEnglishOnUnknwon"] = false,
                     ["ShowCadwellsAlmanacOnly"] = false,
-                    ["ShowCadwellsAlmanac"] = false,
-                    ["MapFiltersPOIs"] = true,
-                    ["ShowDungeonBossesOnTop"] = false,
-                    ["MapFiltersAchievements"] = true,
-                    ["AddEnglishOnKeeps"] = false,
-                    ["MapFiltersQuestgivers"] = true,
-                    ["HideQuestGiverName"] = false,
-                    ["MapFiltersFishing"] = true,
-                    ["MapFiltersCollectibles"] = true,
-                    ["useAccountWide"] = false,
-                    ["ImproveMundus"] = true,
-                    ["EnglishColorPOI"] = "efebbe",
-                    ["MapFiltersMisc"] = true,
                     ["HideAllianceOnKeeps"] = false,
-                    ["EnglishColorKeeps"] = "dc8122",
-                    ["ShowDungeonBossesInZones"] = true,
+                    ["MapFiltersPOIs"] = true,
                     ["AddNewLineOnKeeps"] = true,
+                    ["MapFiltersAchievements"] = true,
+                    ["ImproveMundus"] = true,
+                    ["ShowCadwellsAlmanac"] = false,
+                    ["MapFiltersFishing"] = true,
+                    ["useAccountWide"] = false,
+                    ["MapFiltersCollectibles"] = true,
+                    ["MapFiltersQuestgivers"] = true,
+                    ["AddEnglishOnKeeps"] = false,
+                    ["ShowDungeonBossesInZones"] = true,
+                    ["ImproveCrafting"] = true,
                     ["activateReloaduiButton"] = false,
                 },
                 ["filters"] = 
                 {
-                    ["DEST_PinSet_Peacemaker"] = false,
-                    ["DEST_PinSet_Cutpurse_Above"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
-                    ["DEST_PinSet_Champion"] = false,
-                    ["DEST_Pin_Quest_Done"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me"] = false,
-                    ["DEST_PinSet_Breaking_Entering"] = false,
-                    ["DEST_PinSet_Dwemer"] = false,
-                    ["DEST_Compass_Misc"] = true,
-                    ["DEST_Pin_Quest_In_Progress"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait"] = false,
-                    ["DEST_PinSet_Other_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
-                    ["DEST_Compass_Collectibles"] = false,
-                    ["DEST_PinSet_Deadlands"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
-                    ["DEST_PinSet_WWVamp"] = false,
-                    ["DEST_Compass_Achievements"] = true,
-                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
-                    ["DEST_PinSet_Patron"] = false,
-                    ["DEST_Pin_Quest_Daily"] = false,
-                    ["DEST_PinSet_Last_Brawl"] = false,
-                    ["DEST_Pin_Fishing"] = false,
-                    ["DEST_Compass_Quest_Giver"] = false,
-                    ["DEST_PinSet_Werewolf_Shrine"] = false,
                     ["DEST_Compass_Fishing"] = false,
-                    ["DEST_PinSet_Nosediver"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
-                    ["DEST_PinSet_Unknown"] = true,
-                    ["DEST_PinSet_Vampire_Alter"] = false,
-                    ["DEST_PinSet_Peacemaker_Done"] = false,
-                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
-                    ["DEST_PinSet_Patron_Done"] = false,
-                    ["DEST_PinSet_Nosediver_Done"] = false,
-                    ["DEST_PinSet_Champion_Done"] = false,
-                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
-                    ["DEST_PinSet_HighIsle"] = false,
-                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
-                    ["DEST_Pin_Fishing_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
-                    ["DEST_Pin_Collectibles"] = false,
-                    ["DEST_PinSet_Last_Brawl_Done"] = false,
-                    ["DEST_Pin_Collectibles_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Water"] = false,
-                    ["DEST_Compass_WWVamp"] = true,
-                    ["DEST_Compass_Fishing_Show_FishName"] = false,
-                    ["DEST_Pin_Quest_Writ"] = false,
-                    ["DEST_Pin_Quest_Repeatable"] = false,
+                    ["DEST_PinSet_Deadlands"] = false,
                     ["DEST_Pin_Quest_Giver"] = false,
-                    ["DEST_PinSet_Other"] = false,
-                    ["DEST_PinSet_Maiq_Done"] = false,
-                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_Other_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
+                    ["DEST_PinSet_Nosediver_Done"] = false,
+                    ["DEST_Compass_Misc"] = true,
+                    ["DEST_Pin_Quest_Daily"] = false,
+                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering"] = false,
+                    ["DEST_Pin_Collectibles_Done"] = false,
+                    ["DEST_Compass_Fishing_Show_FishName"] = false,
+                    ["DEST_PinSet_Champion_Done"] = false,
+                    ["DEST_Compass_Collectibles"] = false,
+                    ["DEST_PinSet_Peacemaker"] = false,
+                    ["DEST_Pin_Quest_In_Progress"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
+                    ["DEST_PinSet_Vampire_Alter"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
+                    ["DEST_Compass_Achievements"] = true,
+                    ["DEST_Pin_Quest_Writ"] = false,
+                    ["DEST_PinSet_Patron_Done"] = false,
+                    ["DEST_PinSet_Champion"] = false,
                     ["DEST_PinSet_Maiq"] = false,
+                    ["DEST_PinSet_Other"] = false,
+                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
+                    ["DEST_PinSet_WWVamp"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait"] = false,
+                    ["DEST_PinSet_Patron"] = false,
                     ["DEST_Compass_Collectibles_Show_Item"] = false,
+                    ["DEST_Compass_Quest_Giver"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
+                    ["DEST_PinSet_Peacemaker_Done"] = false,
+                    ["DEST_PinSet_Unknown"] = true,
+                    ["DEST_Pin_Quest_Done"] = false,
+                    ["DEST_PinSet_Nosediver"] = false,
+                    ["DEST_PinSet_Werewolf_Shrine"] = false,
+                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_HighIsle"] = false,
+                    ["DEST_Compass_Fishing_Show_Water"] = false,
+                    ["DEST_PinSet_Last_Brawl_Done"] = false,
+                    ["DEST_Pin_Fishing_Done"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
+                    ["DEST_PinSet_Dwemer"] = false,
+                    ["DEST_Pin_Quest_Repeatable"] = false,
                     ["DEST_PinSet_Earthly_Possessions"] = false,
+                    ["DEST_Pin_Fishing"] = false,
+                    ["DEST_Compass_WWVamp"] = true,
+                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
+                    ["DEST_Pin_Collectibles"] = false,
+                    ["DEST_PinSet_Maiq_Done"] = false,
+                    ["DEST_PinSet_Cutpurse_Above"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
+                    ["DEST_PinSet_Last_Brawl"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me"] = false,
                 },
                 ["version"] = 1,
                 ["pins"] = 
                 {
-                    ["pinTextureChampionDone"] = 
+                    ["pinTextureCollectible"] = 
                     {
-                        ["type"] = 1,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -3136,6 +3123,10 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -3143,62 +3134,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemakerDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreakingDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureCutpurseDone"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -3206,20 +3155,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureAyleid"] = 
+                    ["pinTexturePatron"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -3227,23 +3176,46 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFishDone"] = 
+                    ["pinTextureQuestsUndone"] = 
                     {
-                        ["textcolorWater"] = 
+                        ["tintmain"] = 
                         {
-                            [1] = 1,
+                            [4] = 1,
+                            [1] = 0,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["tintday"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 0,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["tintrep"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 0,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                        ["texture"] = "",
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
                             [1] = 1,
                             [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tintdun"] = 
+                        {
+                            [4] = 1,
+                            [1] = 0,
+                            [2] = 0,
                             [3] = 1,
                         },
                         ["textcolor"] = 
@@ -3252,27 +3224,46 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["texture"] = "",
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["textcolorBait"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
                     },
-                    ["pinTextureOnMe"] = 
+                    ["pinTextureUnknown"] = 
                     {
-                        ["type"] = 6,
+                        ["textcolorEN"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorTrader"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 42,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["tint"] = 
+                        {
+                            [4] = 0.6000000000,
+                            [1] = 0.7000000000,
+                            [2] = 0.7000000000,
+                            [3] = 0.7000000000,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                    },
+                    ["pinTextureQuestsDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -3280,6 +3271,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 1,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -3287,19 +3279,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureCollectibleDone"] = 
+                    ["pinTextureBreakingDone"] = 
                     {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -3307,48 +3292,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunterDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBrawl"] = 
-                    {
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -3356,9 +3300,132 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWrothgarJumperDone"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureDwemer"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 145,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQuestsInProgress"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunter"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePeacemaker"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPosDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureUnknownOthers"] = 
                     {
@@ -3370,16 +3437,19 @@ Destinations_Settings =
                             [3] = 1,
                         },
                     },
-                    ["pinTextureWWShrine"] = 
+                    ["pinTextureVampAltar"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -3387,13 +3457,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTexturePatronDone"] = 
+                    ["pinTextureOnMeDone"] = 
                     {
-                        ["type"] = 5,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -3401,6 +3470,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -3408,26 +3478,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureQolPin"] = 
+                    ["pinTextureDeadlands"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -3435,286 +3499,33 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 45,
-                        ["size"] = 35,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumperDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPos"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureDwemer"] = 
-                    {
-                        ["type"] = 7,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 145,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunter"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediver"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsDone"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsInProgress"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWWVamp"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureHighIsle"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemaker"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePatron"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureChampion"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumper"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureOther"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPos"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -3722,81 +3533,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureVampAltar"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureUnknown"] = 
-                    {
-                        ["tint"] = 
-                        {
-                            [4] = 0.6000000000,
-                            [1] = 0.7000000000,
-                            [2] = 0.7000000000,
-                            [3] = 0.7000000000,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolorTrader"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["type"] = 7,
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 42,
-                        ["textcolorEN"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                    },
-                    ["pinTextureOtherDone"] = 
-                    {
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -3804,18 +3541,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFish"] = 
+                    ["pinTexturePeacemakerDone"] = 
                     {
-                        ["textcolorWater"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -3823,138 +3554,53 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureHighIsle"] = 
+                    {
                         ["texture"] = "",
-                        ["textcolortitle"] = 
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureFishDone"] = 
+                    {
                         ["textcolorBait"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["level"] = 30,
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureBrawlDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["level"] = 30,
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCutpurse"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureMaiq"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreaking"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPosDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCollectible"] = 
-                    {
-                        ["type"] = 2,
                         ["textcolortitle"] = 
                         {
                             [1] = 1,
@@ -3968,90 +3614,131 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["texture"] = "",
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediverDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsUndone"] = 
-                    {
-                        ["tintrep"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 0,
-                        },
-                        ["tintdun"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["tintday"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["maxDistance"] = 0.0500000000,
-                        ["tintmain"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
+                    },
+                    ["pinTextureWrothgarJumper"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCutpurse"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediver"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunterDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQolPin"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 35,
+                        ["level"] = 45,
+                        ["texture"] = "",
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureMaiqDone"] = 
                     {
-                        ["type"] = 6,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -4059,6 +3746,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4066,13 +3754,51 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureDeadlands"] = 
+                    ["pinTextureFish"] = 
                     {
+                        ["textcolorBait"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
+                    },
+                    ["pinTextureBreaking"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -4080,6 +3806,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 5,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4087,20 +3814,89 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureOnMeDone"] = 
+                    ["pinTextureBrawl"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePatronDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCollectibleDone"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediverDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4108,183 +3904,210 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWWVamp"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampionDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOnMe"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampion"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWWShrine"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOtherDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureAyleid"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBrawlDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureMaiq"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                 },
-                ["miscColorCodes"] = 
+                ["data"] = 
                 {
-                    ["settingsTextAchievements"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.5333333333,
-                    },
-                    ["settingsTextWarn"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 1,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["settingsTextUnknown"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["mapFilterTextQUndone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextReloadWarning"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 0,
-                    },
-                    ["mapFilterTextQDone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 0.3333333333,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextFish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEvenLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.9294117647,
-                        ["g"] = 0.9294117647,
-                    },
-                    ["settingsTextVWW"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2666666667,
-                        ["r"] = 0.2666666667,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["settingsTextAccountWide"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextQProg"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["settingsTextAchHeaders"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6666666667,
-                        ["r"] = 0,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["mapFilterTextUndone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.8666666667,
-                        ["g"] = 0.7607843137,
-                    },
-                    ["settingsTextQuests"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4000000000,
-                        ["r"] = 0.4000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextOnlyText"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextOddLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextDone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEnglish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.6666666667,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextMiscellaneous"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextImprove"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["mapFilterTextDone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.7725490196,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["mapFilterTextUndone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6000000000,
-                    },
-                    ["settingsTextCollectibles"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextInstructions"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
+                    ["RiverSBaitLeft"] = 0,
+                    ["FoulSBaitLeft"] = 0,
+                    ["FoulBaitLeft"] = 0,
+                    ["LakeBaitLeft"] = 0,
+                    ["LakeSBaitLeft"] = 0,
+                    ["GeneralBait"] = 0,
+                    ["OceanBaitLeft"] = 0,
+                    ["OceanSBaitLeft"] = 0,
+                    ["RiverBaitLeft"] = 0,
                 },
-                ["Quests"] = 
+                ["TEMPPINDATA"] = 
                 {
                 },
                 ["QuestsDone"] = 
@@ -4361,37 +4184,37 @@ Destinations_Settings =
                     [4255] = 2,
                     [6559] = 1,
                     [5302] = 1,
-                    [6588] = 1,
-                    [5071] = 1,
                     [6171] = 1,
+                    [6674] = 1,
+                    [6588] = 1,
                     [6074] = 1,
                     [5368] = 1,
                     [6076] = 1,
                     [6077] = 1,
                     [5310] = 1,
-                    [5075] = 1,
+                    [6083] = 1,
                     [7104] = 1,
                     [6337] = 1,
                     [5314] = 1,
-                    [6083] = 1,
-                    [6101] = 1,
-                    [5839] = 1,
                     [6595] = 1,
+                    [5839] = 1,
+                    [6355] = 1,
+                    [6095] = 1,
                     [6087] = 1,
                     [4296] = 2,
                     [5074] = 1,
                     [5834] = 1,
-                    [6355] = 1,
-                    [6615] = 1,
+                    [6099] = 1,
+                    [5845] = 1,
                     [5837] = 1,
                     [5838] = 1,
-                    [6095] = 1,
-                    [6674] = 1,
+                    [5071] = 1,
+                    [6615] = 1,
                     [5073] = 1,
                     [6098] = 1,
-                    [6099] = 1,
+                    [5075] = 1,
                     [6100] = 1,
-                    [5077] = 1,
+                    [6101] = 1,
                     [6102] = 1,
                     [6103] = 1,
                     [6104] = 1,
@@ -4418,7 +4241,7 @@ Destinations_Settings =
                     [6637] = 1,
                     [6668] = 1,
                     [5315] = 1,
-                    [5845] = 1,
+                    [5077] = 1,
                     [5076] = 1,
                     [6130] = 1,
                     [6643] = 1,
@@ -4435,113 +4258,277 @@ Destinations_Settings =
                     [5886] = 1,
                     [5961] = 1,
                 },
-                ["TEMPPINDATA"] = 
+                ["Quests"] = 
                 {
+                },
+                ["miscColorCodes"] = 
+                {
+                    ["settingsTextInstructions"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextQuests"] = 
+                    {
+                        ["b"] = 0.4000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.4000000000,
+                    },
+                    ["settingsTextOddLine"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextOnlyText"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextVWW"] = 
+                    {
+                        ["b"] = 0.2666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.2666666667,
+                    },
+                    ["settingsTextEvenLine"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.9294117647,
+                        ["r"] = 0.9294117647,
+                    },
+                    ["mapFilterTextUndone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAchievements"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.5333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextWarn"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextFish"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["mapFilterTextDone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.7725490196,
+                    },
+                    ["settingsTextCollectibles"] = 
+                    {
+                        ["b"] = 0.6000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextDone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextQDone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.3333333333,
+                    },
+                    ["settingsTextMiscellaneous"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0,
+                    },
+                    ["mapFilterTextUndone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.7607843137,
+                        ["r"] = 0.8666666667,
+                    },
+                    ["mapFilterTextQUndone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextEnglish"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0.6666666667,
+                    },
+                    ["settingsTextUnknown"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextAchHeaders"] = 
+                    {
+                        ["b"] = 0.6666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextReloadWarning"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAccountWide"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["mapFilterTextQProg"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextImprove"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 0.6000000000,
+                    },
                 },
             },
-            ["Otto von Bissmark"] = 
+            ["$AccountWide"] = 
             {
-                ["data"] = 
-                {
-                    ["OceanSBaitLeft"] = 0,
-                    ["OceanBaitLeft"] = 0,
-                    ["LakeBaitLeft"] = 0,
-                    ["GeneralBait"] = 0,
-                    ["RiverSBaitLeft"] = 0,
-                    ["RiverBaitLeft"] = 0,
-                    ["LakeSBaitLeft"] = 0,
-                    ["FoulSBaitLeft"] = 0,
-                    ["FoulBaitLeft"] = 0,
-                },
                 ["settings"] = 
                 {
-                    ["ImproveCrafting"] = true,
-                    ["AddEnglishOnUnknwon"] = false,
-                    ["ShowCadwellsAlmanacOnly"] = false,
-                    ["ShowCadwellsAlmanac"] = false,
-                    ["MapFiltersPOIs"] = true,
-                    ["ShowDungeonBossesOnTop"] = false,
-                    ["MapFiltersAchievements"] = true,
-                    ["AddEnglishOnKeeps"] = false,
-                    ["MapFiltersQuestgivers"] = true,
                     ["HideQuestGiverName"] = false,
-                    ["MapFiltersFishing"] = true,
-                    ["MapFiltersCollectibles"] = true,
-                    ["useAccountWide"] = false,
-                    ["ImproveMundus"] = true,
-                    ["EnglishColorPOI"] = "efebbe",
                     ["MapFiltersMisc"] = true,
-                    ["HideAllianceOnKeeps"] = false,
+                    ["EnglishColorPOI"] = "efebbe",
+                    ["ShowDungeonBossesOnTop"] = false,
                     ["EnglishColorKeeps"] = "dc8122",
-                    ["ShowDungeonBossesInZones"] = true,
+                    ["AddEnglishOnUnknwon"] = true,
+                    ["ShowCadwellsAlmanacOnly"] = false,
+                    ["HideAllianceOnKeeps"] = false,
+                    ["MapFiltersPOIs"] = true,
                     ["AddNewLineOnKeeps"] = true,
+                    ["MapFiltersAchievements"] = true,
+                    ["ImproveMundus"] = true,
+                    ["ShowCadwellsAlmanac"] = false,
+                    ["MapFiltersFishing"] = true,
+                    ["useAccountWide"] = false,
+                    ["MapFiltersCollectibles"] = true,
+                    ["MapFiltersQuestgivers"] = true,
+                    ["AddEnglishOnKeeps"] = true,
+                    ["ShowDungeonBossesInZones"] = true,
+                    ["ImproveCrafting"] = true,
                     ["activateReloaduiButton"] = false,
                 },
                 ["filters"] = 
                 {
-                    ["DEST_PinSet_Peacemaker"] = false,
-                    ["DEST_PinSet_Cutpurse_Above"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
-                    ["DEST_PinSet_Champion"] = false,
-                    ["DEST_Pin_Quest_Done"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me"] = false,
-                    ["DEST_PinSet_Breaking_Entering"] = false,
-                    ["DEST_PinSet_Dwemer"] = false,
-                    ["DEST_Compass_Misc"] = true,
-                    ["DEST_Pin_Quest_In_Progress"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait"] = false,
-                    ["DEST_PinSet_Other_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
-                    ["DEST_Compass_Collectibles"] = false,
-                    ["DEST_PinSet_Deadlands"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
-                    ["DEST_PinSet_WWVamp"] = false,
-                    ["DEST_Compass_Achievements"] = true,
-                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
-                    ["DEST_PinSet_Patron"] = false,
-                    ["DEST_Pin_Quest_Daily"] = false,
-                    ["DEST_PinSet_Last_Brawl"] = false,
-                    ["DEST_Pin_Fishing"] = false,
-                    ["DEST_Compass_Quest_Giver"] = false,
-                    ["DEST_PinSet_Werewolf_Shrine"] = false,
                     ["DEST_Compass_Fishing"] = false,
-                    ["DEST_PinSet_Nosediver"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
-                    ["DEST_PinSet_Unknown"] = true,
-                    ["DEST_PinSet_Vampire_Alter"] = false,
-                    ["DEST_PinSet_Peacemaker_Done"] = false,
-                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
-                    ["DEST_PinSet_Patron_Done"] = false,
-                    ["DEST_PinSet_Nosediver_Done"] = false,
-                    ["DEST_PinSet_Champion_Done"] = false,
-                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
-                    ["DEST_PinSet_HighIsle"] = false,
-                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
-                    ["DEST_Pin_Fishing_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
-                    ["DEST_Pin_Collectibles"] = false,
-                    ["DEST_PinSet_Last_Brawl_Done"] = false,
-                    ["DEST_Pin_Collectibles_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Water"] = false,
-                    ["DEST_Compass_WWVamp"] = true,
-                    ["DEST_Compass_Fishing_Show_FishName"] = false,
-                    ["DEST_Pin_Quest_Writ"] = false,
-                    ["DEST_Pin_Quest_Repeatable"] = false,
+                    ["DEST_PinSet_Deadlands"] = false,
                     ["DEST_Pin_Quest_Giver"] = false,
-                    ["DEST_PinSet_Other"] = false,
-                    ["DEST_PinSet_Maiq_Done"] = false,
-                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_Other_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
+                    ["DEST_PinSet_Nosediver_Done"] = false,
+                    ["DEST_Compass_Misc"] = true,
+                    ["DEST_Pin_Quest_Daily"] = false,
+                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering"] = false,
+                    ["DEST_Pin_Collectibles_Done"] = false,
+                    ["DEST_Compass_Fishing_Show_FishName"] = false,
+                    ["DEST_PinSet_Champion_Done"] = false,
+                    ["DEST_Compass_Collectibles"] = false,
+                    ["DEST_PinSet_Peacemaker"] = false,
+                    ["DEST_Pin_Quest_In_Progress"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
+                    ["DEST_PinSet_Vampire_Alter"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
+                    ["DEST_Compass_Achievements"] = true,
+                    ["DEST_Pin_Quest_Writ"] = false,
+                    ["DEST_PinSet_Patron_Done"] = false,
+                    ["DEST_PinSet_Champion"] = false,
                     ["DEST_PinSet_Maiq"] = false,
+                    ["DEST_PinSet_Other"] = false,
+                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
+                    ["DEST_PinSet_WWVamp"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait"] = false,
+                    ["DEST_PinSet_Patron"] = false,
                     ["DEST_Compass_Collectibles_Show_Item"] = false,
+                    ["DEST_Compass_Quest_Giver"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
+                    ["DEST_PinSet_Peacemaker_Done"] = false,
+                    ["DEST_PinSet_Unknown"] = true,
+                    ["DEST_Pin_Quest_Done"] = false,
+                    ["DEST_PinSet_Nosediver"] = false,
+                    ["DEST_PinSet_Werewolf_Shrine"] = false,
+                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_HighIsle"] = false,
+                    ["DEST_Compass_Fishing_Show_Water"] = false,
+                    ["DEST_PinSet_Last_Brawl_Done"] = false,
+                    ["DEST_Pin_Fishing_Done"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
+                    ["DEST_PinSet_Dwemer"] = false,
+                    ["DEST_Pin_Quest_Repeatable"] = false,
                     ["DEST_PinSet_Earthly_Possessions"] = false,
+                    ["DEST_Pin_Fishing"] = false,
+                    ["DEST_Compass_WWVamp"] = true,
+                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
+                    ["DEST_Pin_Collectibles"] = false,
+                    ["DEST_PinSet_Maiq_Done"] = false,
+                    ["DEST_PinSet_Cutpurse_Above"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
+                    ["DEST_PinSet_Last_Brawl"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me"] = false,
                 },
                 ["version"] = 1,
                 ["pins"] = 
                 {
-                    ["pinTextureChampionDone"] = 
+                    ["pinTextureCollectible"] = 
                     {
-                        ["type"] = 1,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -4549,6 +4536,10 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4556,62 +4547,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemakerDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreakingDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureCutpurseDone"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4619,20 +4568,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureAyleid"] = 
+                    ["pinTexturePatron"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4640,23 +4589,46 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFishDone"] = 
+                    ["pinTextureQuestsUndone"] = 
                     {
-                        ["textcolorWater"] = 
+                        ["tintmain"] = 
                         {
-                            [1] = 1,
+                            [4] = 1,
+                            [1] = 0,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["tintday"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 0,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["tintrep"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 0,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                        ["texture"] = "",
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
                             [1] = 1,
                             [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tintdun"] = 
+                        {
+                            [4] = 1,
+                            [1] = 0,
+                            [2] = 0,
                             [3] = 1,
                         },
                         ["textcolor"] = 
@@ -4665,27 +4637,46 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["texture"] = "",
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["textcolorBait"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
                     },
-                    ["pinTextureOnMe"] = 
+                    ["pinTextureUnknown"] = 
                     {
-                        ["type"] = 6,
+                        ["textcolorEN"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorTrader"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 42,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["tint"] = 
+                        {
+                            [4] = 0.6000000000,
+                            [1] = 0.7000000000,
+                            [2] = 0.7000000000,
+                            [3] = 0.7000000000,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                    },
+                    ["pinTextureQuestsDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -4693,6 +4684,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 1,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4700,19 +4692,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureCollectibleDone"] = 
+                    ["pinTextureBreakingDone"] = 
                     {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -4720,48 +4705,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunterDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBrawl"] = 
-                    {
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4769,9 +4713,132 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWrothgarJumperDone"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureDwemer"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 145,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQuestsInProgress"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunter"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePeacemaker"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPosDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureUnknownOthers"] = 
                     {
@@ -4783,16 +4850,19 @@ Destinations_Settings =
                             [3] = 1,
                         },
                     },
-                    ["pinTextureWWShrine"] = 
+                    ["pinTextureVampAltar"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4800,13 +4870,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTexturePatronDone"] = 
+                    ["pinTextureOnMeDone"] = 
                     {
-                        ["type"] = 5,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -4814,6 +4883,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4821,26 +4891,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureQolPin"] = 
+                    ["pinTextureDeadlands"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -4848,286 +4912,33 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 45,
-                        ["size"] = 35,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumperDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPos"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureDwemer"] = 
-                    {
-                        ["type"] = 7,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 145,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunter"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediver"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsDone"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsInProgress"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWWVamp"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureHighIsle"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemaker"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePatron"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureChampion"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumper"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureOther"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPos"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -5135,81 +4946,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureVampAltar"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureUnknown"] = 
-                    {
-                        ["tint"] = 
-                        {
-                            [4] = 0.6000000000,
-                            [1] = 0.7000000000,
-                            [2] = 0.7000000000,
-                            [3] = 0.7000000000,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolorTrader"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["type"] = 7,
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 42,
-                        ["textcolorEN"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                    },
-                    ["pinTextureOtherDone"] = 
-                    {
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -5217,18 +4954,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFish"] = 
+                    ["pinTexturePeacemakerDone"] = 
                     {
-                        ["textcolorWater"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -5236,138 +4967,53 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureHighIsle"] = 
+                    {
                         ["texture"] = "",
-                        ["textcolortitle"] = 
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureFishDone"] = 
+                    {
                         ["textcolorBait"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["level"] = 30,
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureBrawlDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["level"] = 30,
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCutpurse"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureMaiq"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreaking"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPosDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCollectible"] = 
-                    {
-                        ["type"] = 2,
                         ["textcolortitle"] = 
                         {
                             [1] = 1,
@@ -5381,90 +5027,131 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["texture"] = "",
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediverDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsUndone"] = 
-                    {
-                        ["tintrep"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 0,
-                        },
-                        ["tintdun"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["tintday"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["maxDistance"] = 0.0500000000,
-                        ["tintmain"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
+                    },
+                    ["pinTextureWrothgarJumper"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCutpurse"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediver"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunterDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQolPin"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 35,
+                        ["level"] = 45,
+                        ["texture"] = "",
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureMaiqDone"] = 
                     {
-                        ["type"] = 6,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -5472,6 +5159,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -5479,13 +5167,51 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureDeadlands"] = 
+                    ["pinTextureFish"] = 
                     {
+                        ["textcolorBait"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
+                    },
+                    ["pinTextureBreaking"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -5493,6 +5219,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 5,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -5500,20 +5227,89 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureOnMeDone"] = 
+                    ["pinTextureBrawl"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePatronDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCollectibleDone"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediverDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -5521,454 +5317,487 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWWVamp"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampionDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOnMe"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampion"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWWShrine"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOtherDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureAyleid"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBrawlDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureMaiq"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                 },
-                ["miscColorCodes"] = 
+                ["oneTamrielUpdate"] = true,
+                ["data"] = 
                 {
-                    ["settingsTextAchievements"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.5333333333,
-                    },
-                    ["settingsTextWarn"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 1,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["settingsTextUnknown"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["mapFilterTextQUndone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextReloadWarning"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 0,
-                    },
-                    ["mapFilterTextQDone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 0.3333333333,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextFish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEvenLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.9294117647,
-                        ["g"] = 0.9294117647,
-                    },
-                    ["settingsTextVWW"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2666666667,
-                        ["r"] = 0.2666666667,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["settingsTextAccountWide"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextQProg"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["settingsTextAchHeaders"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6666666667,
-                        ["r"] = 0,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["mapFilterTextUndone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.8666666667,
-                        ["g"] = 0.7607843137,
-                    },
-                    ["settingsTextQuests"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4000000000,
-                        ["r"] = 0.4000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextOnlyText"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextOddLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextDone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEnglish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.6666666667,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextMiscellaneous"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextImprove"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["mapFilterTextDone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.7725490196,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["mapFilterTextUndone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6000000000,
-                    },
-                    ["settingsTextCollectibles"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextInstructions"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
+                    ["RiverSBaitLeft"] = 0,
+                    ["FoulSBaitLeft"] = 0,
+                    ["FoulBaitLeft"] = 0,
+                    ["LakeBaitLeft"] = 0,
+                    ["LakeSBaitLeft"] = 0,
+                    ["GeneralBait"] = 0,
+                    ["OceanBaitLeft"] = 0,
+                    ["OceanSBaitLeft"] = 0,
+                    ["RiverBaitLeft"] = 0,
                 },
-                ["Quests"] = 
+                ["TEMPPINDATA"] = 
                 {
                 },
                 ["QuestsDone"] = 
                 {
-                    [4864] = 1,
-                    [5377] = 1,
-                    [5388] = 1,
-                    [5389] = 1,
-                    [5392] = 1,
-                    [6673] = 1,
-                    [5394] = 1,
-                    [5395] = 1,
-                    [5396] = 1,
-                    [5400] = 1,
-                    [5403] = 1,
-                    [7197] = 2,
-                    [5406] = 1,
-                    [5407] = 1,
-                    [5409] = 1,
-                    [5412] = 1,
-                    [5413] = 1,
-                    [5414] = 2,
-                    [5415] = 1,
-                    [5416] = 1,
-                    [5417] = 1,
-                    [5418] = 1,
-                    [4911] = 1,
-                    [6449] = 1,
-                    [6451] = 1,
-                    [5941] = 1,
-                    [6712] = 1,
-                    [6971] = 2,
-                    [6972] = 2,
-                    [6973] = 1,
-                    [6974] = 2,
-                    [5953] = 1,
-                    [6722] = 1,
-                    [6979] = 1,
-                    [6980] = 1,
-                    [6471] = 2,
-                    [6218] = 1,
-                    [3916] = 1,
-                    [4944] = 1,
-                    [6227] = 1,
-                    [6228] = 1,
-                    [7000] = 1,
-                    [4441] = 1,
-                    [6749] = 1,
-                    [6497] = 2,
-                    [4450] = 1,
-                    [7013] = 2,
-                    [7015] = 1,
-                    [7016] = 1,
-                    [7017] = 1,
-                    [7018] = 1,
-                    [5739] = 1,
-                    [5742] = 1,
-                    [6769] = 2,
-                    [6514] = 1,
-                    [6515] = 1,
-                    [4982] = 2,
-                    [3963] = 1,
-                    [3964] = 1,
-                    [7037] = 1,
-                    [5249] = 1,
-                    [3970] = 1,
-                    [7043] = 1,
-                    [6532] = 1,
-                    [5259] = 1,
-                    [4493] = 1,
-                    [5520] = 1,
-                    [7060] = 1,
-                    [6549] = 1,
-                    [7063] = 1,
-                    [5784] = 1,
-                    [5531] = 1,
-                    [5532] = 2,
-                    [4767] = 1,
-                    [5538] = 1,
-                    [6313] = 1,
-                    [4526] = 1,
-                    [6319] = 2,
-                    [7041] = 1,
-                    [4529] = 1,
-                    [6780] = 2,
-                    [5811] = 1,
-                    [6757] = 1,
-                    [7093] = 2,
-                    [5302] = 1,
-                    [6978] = 1,
-                    [7104] = 1,
-                    [3001] = 1,
-                    [6467] = 2,
-                    [3003] = 1,
-                    [3004] = 1,
-                    [4541] = 2,
-                    [5822] = 1,
-                    [4543] = 1,
-                    [5312] = 1,
-                    [6337] = 1,
-                    [5314] = 1,
-                    [5315] = 1,
-                    [5316] = 1,
-                    [5075] = 1,
-                    [6648] = 1,
-                    [6101] = 1,
-                    [4296] = 1,
-                    [5321] = 1,
-                    [5834] = 1,
-                    [5076] = 1,
-                    [6171] = 1,
-                    [5837] = 1,
-                    [5838] = 1,
-                    [5071] = 1,
-                    [6105] = 1,
-                    [5073] = 1,
-                    [6098] = 1,
-                    [6099] = 1,
-                    [6100] = 1,
-                    [5077] = 1,
-                    [6102] = 1,
-                    [6103] = 1,
-                    [6104] = 1,
-                    [6361] = 1,
-                    [5008] = 1,
-                    [6642] = 1,
-                    [4316] = 1,
-                    [5949] = 1,
-                    [6384] = 1,
-                    [5855] = 1,
-                    [5856] = 1,
-                    [4322] = 1,
-                    [6626] = 1,
-                    [5289] = 1,
-                    [6628] = 1,
-                    [5839] = 1,
-                    [6668] = 1,
-                    [6624] = 1,
-                    [6623] = 1,
-                    [6633] = 1,
-                    [6588] = 1,
-                    [6358] = 1,
-                    [6555] = 1,
-                    [6637] = 1,
-                    [5310] = 1,
-                    [5852] = 1,
-                    [4336] = 2,
-                    [4831] = 2,
-                    [6130] = 1,
-                    [5074] = 1,
-                    [4054] = 1,
-                    [5845] = 1,
-                    [6134] = 1,
-                    [4737] = 1,
-                    [5368] = 1,
-                    [5921] = 1,
-                    [6650] = 1,
-                    [7035] = 1,
-                    [6718] = 1,
-                    [6983] = 1,
-                    [5374] = 1,
-                    [5733] = 1,
                 },
-                ["TEMPPINDATA"] = 
+                ["Quests"] = 
                 {
+                },
+                ["miscColorCodes"] = 
+                {
+                    ["settingsTextInstructions"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextQuests"] = 
+                    {
+                        ["b"] = 0.4000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.4000000000,
+                    },
+                    ["settingsTextOddLine"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextOnlyText"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextVWW"] = 
+                    {
+                        ["b"] = 0.2666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.2666666667,
+                    },
+                    ["settingsTextEvenLine"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.9294117647,
+                        ["r"] = 0.9294117647,
+                    },
+                    ["mapFilterTextUndone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAchievements"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.5333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextWarn"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextFish"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["mapFilterTextDone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.7725490196,
+                    },
+                    ["settingsTextCollectibles"] = 
+                    {
+                        ["b"] = 0.6000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextDone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextQDone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.3333333333,
+                    },
+                    ["settingsTextMiscellaneous"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0,
+                    },
+                    ["mapFilterTextUndone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.7607843137,
+                        ["r"] = 0.8666666667,
+                    },
+                    ["mapFilterTextQUndone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextEnglish"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0.6666666667,
+                    },
+                    ["settingsTextUnknown"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextAchHeaders"] = 
+                    {
+                        ["b"] = 0.6666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextReloadWarning"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAccountWide"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["mapFilterTextQProg"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextImprove"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 0.6000000000,
+                    },
                 },
             },
             ["Freya Orm"] = 
             {
-                ["data"] = 
-                {
-                    ["OceanSBaitLeft"] = 0,
-                    ["OceanBaitLeft"] = 0,
-                    ["LakeBaitLeft"] = 0,
-                    ["GeneralBait"] = 0,
-                    ["RiverSBaitLeft"] = 0,
-                    ["RiverBaitLeft"] = 0,
-                    ["LakeSBaitLeft"] = 0,
-                    ["FoulSBaitLeft"] = 0,
-                    ["FoulBaitLeft"] = 0,
-                },
-                ["oneTamrielUpdate"] = true,
                 ["settings"] = 
                 {
-                    ["ImproveCrafting"] = true,
+                    ["HideQuestGiverName"] = false,
+                    ["MapFiltersMisc"] = true,
+                    ["EnglishColorPOI"] = "efebbe",
+                    ["ShowDungeonBossesOnTop"] = false,
+                    ["EnglishColorKeeps"] = "dc8122",
                     ["AddEnglishOnUnknwon"] = false,
                     ["ShowCadwellsAlmanacOnly"] = false,
-                    ["ShowCadwellsAlmanac"] = false,
-                    ["MapFiltersPOIs"] = true,
-                    ["ShowDungeonBossesOnTop"] = false,
-                    ["MapFiltersAchievements"] = true,
-                    ["AddEnglishOnKeeps"] = false,
-                    ["MapFiltersQuestgivers"] = true,
-                    ["HideQuestGiverName"] = false,
-                    ["MapFiltersFishing"] = true,
-                    ["MapFiltersCollectibles"] = true,
-                    ["useAccountWide"] = false,
-                    ["ImproveMundus"] = true,
-                    ["EnglishColorPOI"] = "efebbe",
-                    ["MapFiltersMisc"] = true,
                     ["HideAllianceOnKeeps"] = false,
-                    ["EnglishColorKeeps"] = "dc8122",
-                    ["ShowDungeonBossesInZones"] = true,
+                    ["MapFiltersPOIs"] = true,
                     ["AddNewLineOnKeeps"] = true,
+                    ["MapFiltersAchievements"] = true,
+                    ["ImproveMundus"] = true,
+                    ["ShowCadwellsAlmanac"] = false,
+                    ["MapFiltersFishing"] = true,
+                    ["useAccountWide"] = false,
+                    ["MapFiltersCollectibles"] = true,
+                    ["MapFiltersQuestgivers"] = true,
+                    ["AddEnglishOnKeeps"] = false,
+                    ["ShowDungeonBossesInZones"] = true,
+                    ["ImproveCrafting"] = true,
                     ["activateReloaduiButton"] = false,
                 },
                 ["filters"] = 
                 {
-                    ["DEST_PinSet_Peacemaker"] = false,
-                    ["DEST_PinSet_Cutpurse_Above"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
-                    ["DEST_PinSet_Champion"] = false,
-                    ["DEST_Pin_Quest_Done"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me"] = false,
-                    ["DEST_PinSet_Breaking_Entering"] = false,
-                    ["DEST_PinSet_Dwemer"] = false,
-                    ["DEST_Compass_Misc"] = true,
-                    ["DEST_Pin_Quest_In_Progress"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait"] = false,
-                    ["DEST_PinSet_Other_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
-                    ["DEST_Compass_Collectibles"] = false,
-                    ["DEST_PinSet_Deadlands"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
-                    ["DEST_PinSet_WWVamp"] = false,
-                    ["DEST_Compass_Achievements"] = true,
-                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
-                    ["DEST_PinSet_Patron"] = false,
-                    ["DEST_Pin_Quest_Daily"] = false,
-                    ["DEST_PinSet_Last_Brawl"] = false,
-                    ["DEST_Pin_Fishing"] = false,
-                    ["DEST_Compass_Quest_Giver"] = false,
-                    ["DEST_PinSet_Werewolf_Shrine"] = false,
                     ["DEST_Compass_Fishing"] = false,
-                    ["DEST_PinSet_Nosediver"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
-                    ["DEST_PinSet_Unknown"] = true,
-                    ["DEST_PinSet_Vampire_Alter"] = false,
-                    ["DEST_PinSet_Peacemaker_Done"] = false,
-                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
-                    ["DEST_PinSet_Patron_Done"] = false,
-                    ["DEST_PinSet_Nosediver_Done"] = false,
-                    ["DEST_PinSet_Champion_Done"] = false,
-                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
-                    ["DEST_PinSet_HighIsle"] = false,
-                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
-                    ["DEST_Pin_Fishing_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
-                    ["DEST_Pin_Collectibles"] = false,
-                    ["DEST_PinSet_Last_Brawl_Done"] = false,
-                    ["DEST_Pin_Collectibles_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Water"] = false,
-                    ["DEST_Compass_WWVamp"] = true,
-                    ["DEST_Compass_Fishing_Show_FishName"] = false,
-                    ["DEST_Pin_Quest_Writ"] = false,
-                    ["DEST_Pin_Quest_Repeatable"] = false,
+                    ["DEST_PinSet_Deadlands"] = false,
                     ["DEST_Pin_Quest_Giver"] = false,
-                    ["DEST_PinSet_Other"] = false,
-                    ["DEST_PinSet_Maiq_Done"] = false,
-                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_Other_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
+                    ["DEST_PinSet_Nosediver_Done"] = false,
+                    ["DEST_Compass_Misc"] = true,
+                    ["DEST_Pin_Quest_Daily"] = false,
+                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering"] = false,
+                    ["DEST_Pin_Collectibles_Done"] = false,
+                    ["DEST_Compass_Fishing_Show_FishName"] = false,
+                    ["DEST_PinSet_Champion_Done"] = false,
+                    ["DEST_Compass_Collectibles"] = false,
+                    ["DEST_PinSet_Peacemaker"] = false,
+                    ["DEST_Pin_Quest_In_Progress"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
+                    ["DEST_PinSet_Vampire_Alter"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
+                    ["DEST_Compass_Achievements"] = true,
+                    ["DEST_Pin_Quest_Writ"] = false,
+                    ["DEST_PinSet_Patron_Done"] = false,
+                    ["DEST_PinSet_Champion"] = false,
                     ["DEST_PinSet_Maiq"] = false,
+                    ["DEST_PinSet_Other"] = false,
+                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
+                    ["DEST_PinSet_WWVamp"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait"] = false,
+                    ["DEST_PinSet_Patron"] = false,
                     ["DEST_Compass_Collectibles_Show_Item"] = false,
+                    ["DEST_Compass_Quest_Giver"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
+                    ["DEST_PinSet_Peacemaker_Done"] = false,
+                    ["DEST_PinSet_Unknown"] = true,
+                    ["DEST_Pin_Quest_Done"] = false,
+                    ["DEST_PinSet_Nosediver"] = false,
+                    ["DEST_PinSet_Werewolf_Shrine"] = false,
+                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_HighIsle"] = false,
+                    ["DEST_Compass_Fishing_Show_Water"] = false,
+                    ["DEST_PinSet_Last_Brawl_Done"] = false,
+                    ["DEST_Pin_Fishing_Done"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
+                    ["DEST_PinSet_Dwemer"] = false,
+                    ["DEST_Pin_Quest_Repeatable"] = false,
                     ["DEST_PinSet_Earthly_Possessions"] = false,
+                    ["DEST_Pin_Fishing"] = false,
+                    ["DEST_Compass_WWVamp"] = true,
+                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
+                    ["DEST_Pin_Collectibles"] = false,
+                    ["DEST_PinSet_Maiq_Done"] = false,
+                    ["DEST_PinSet_Cutpurse_Above"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
+                    ["DEST_PinSet_Last_Brawl"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me"] = false,
                 },
                 ["version"] = 1,
                 ["pins"] = 
                 {
-                    ["pinTextureChampionDone"] = 
+                    ["pinTextureCollectible"] = 
                     {
-                        ["type"] = 1,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -5976,6 +5805,10 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -5983,62 +5816,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemakerDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreakingDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureCutpurseDone"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6046,20 +5837,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureAyleid"] = 
+                    ["pinTexturePatron"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6067,23 +5858,46 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFishDone"] = 
+                    ["pinTextureQuestsUndone"] = 
                     {
-                        ["textcolorWater"] = 
+                        ["tintmain"] = 
                         {
-                            [1] = 1,
+                            [4] = 1,
+                            [1] = 0,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["tintday"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 0,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["tintrep"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 0,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                        ["texture"] = "",
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
                             [1] = 1,
                             [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tintdun"] = 
+                        {
+                            [4] = 1,
+                            [1] = 0,
+                            [2] = 0,
                             [3] = 1,
                         },
                         ["textcolor"] = 
@@ -6092,27 +5906,46 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["texture"] = "",
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["textcolorBait"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
                     },
-                    ["pinTextureOnMe"] = 
+                    ["pinTextureUnknown"] = 
                     {
-                        ["type"] = 6,
+                        ["textcolorEN"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorTrader"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 42,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["tint"] = 
+                        {
+                            [4] = 0.6000000000,
+                            [1] = 0.7000000000,
+                            [2] = 0.7000000000,
+                            [3] = 0.7000000000,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                    },
+                    ["pinTextureQuestsDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -6120,6 +5953,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 1,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6127,19 +5961,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureCollectibleDone"] = 
+                    ["pinTextureBreakingDone"] = 
                     {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -6147,48 +5974,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunterDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBrawl"] = 
-                    {
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6196,9 +5982,132 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWrothgarJumperDone"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureDwemer"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 145,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQuestsInProgress"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunter"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePeacemaker"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPosDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureUnknownOthers"] = 
                     {
@@ -6210,16 +6119,19 @@ Destinations_Settings =
                             [3] = 1,
                         },
                     },
-                    ["pinTextureWWShrine"] = 
+                    ["pinTextureVampAltar"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6227,13 +6139,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTexturePatronDone"] = 
+                    ["pinTextureOnMeDone"] = 
                     {
-                        ["type"] = 5,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -6241,6 +6152,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6248,26 +6160,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureQolPin"] = 
+                    ["pinTextureDeadlands"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6275,286 +6181,33 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 45,
-                        ["size"] = 35,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumperDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPos"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureDwemer"] = 
-                    {
-                        ["type"] = 7,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 145,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunter"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediver"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsDone"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsInProgress"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWWVamp"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureHighIsle"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemaker"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePatron"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureChampion"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumper"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureOther"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPos"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -6562,81 +6215,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureVampAltar"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureUnknown"] = 
-                    {
-                        ["tint"] = 
-                        {
-                            [4] = 0.6000000000,
-                            [1] = 0.7000000000,
-                            [2] = 0.7000000000,
-                            [3] = 0.7000000000,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolorTrader"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["type"] = 7,
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 42,
-                        ["textcolorEN"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                    },
-                    ["pinTextureOtherDone"] = 
-                    {
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6644,18 +6223,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFish"] = 
+                    ["pinTexturePeacemakerDone"] = 
                     {
-                        ["textcolorWater"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -6663,138 +6236,53 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureHighIsle"] = 
+                    {
                         ["texture"] = "",
-                        ["textcolortitle"] = 
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureFishDone"] = 
+                    {
                         ["textcolorBait"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["level"] = 30,
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureBrawlDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["level"] = 30,
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCutpurse"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureMaiq"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreaking"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPosDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCollectible"] = 
-                    {
-                        ["type"] = 2,
                         ["textcolortitle"] = 
                         {
                             [1] = 1,
@@ -6808,90 +6296,131 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["texture"] = "",
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediverDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsUndone"] = 
-                    {
-                        ["tintrep"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 0,
-                        },
-                        ["tintdun"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["tintday"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["maxDistance"] = 0.0500000000,
-                        ["tintmain"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
+                    },
+                    ["pinTextureWrothgarJumper"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCutpurse"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediver"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunterDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQolPin"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 35,
+                        ["level"] = 45,
+                        ["texture"] = "",
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureMaiqDone"] = 
                     {
-                        ["type"] = 6,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -6899,6 +6428,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6906,13 +6436,51 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureDeadlands"] = 
+                    ["pinTextureFish"] = 
                     {
+                        ["textcolorBait"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
+                    },
+                    ["pinTextureBreaking"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -6920,6 +6488,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 5,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6927,20 +6496,89 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureOnMeDone"] = 
+                    ["pinTextureBrawl"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePatronDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCollectibleDone"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediverDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -6948,183 +6586,211 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWWVamp"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampionDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOnMe"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampion"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWWShrine"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOtherDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureAyleid"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBrawlDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureMaiq"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                 },
-                ["miscColorCodes"] = 
+                ["oneTamrielUpdate"] = true,
+                ["data"] = 
                 {
-                    ["settingsTextAchievements"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.5333333333,
-                    },
-                    ["settingsTextWarn"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 1,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["settingsTextUnknown"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["mapFilterTextQUndone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextReloadWarning"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 0,
-                    },
-                    ["mapFilterTextQDone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 0.3333333333,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextFish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEvenLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.9294117647,
-                        ["g"] = 0.9294117647,
-                    },
-                    ["settingsTextVWW"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2666666667,
-                        ["r"] = 0.2666666667,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["settingsTextAccountWide"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextQProg"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["settingsTextAchHeaders"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6666666667,
-                        ["r"] = 0,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["mapFilterTextUndone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.8666666667,
-                        ["g"] = 0.7607843137,
-                    },
-                    ["settingsTextQuests"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4000000000,
-                        ["r"] = 0.4000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextOnlyText"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextOddLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextDone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEnglish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.6666666667,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextMiscellaneous"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextImprove"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["mapFilterTextDone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.7725490196,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["mapFilterTextUndone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6000000000,
-                    },
-                    ["settingsTextCollectibles"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextInstructions"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
+                    ["RiverSBaitLeft"] = 0,
+                    ["FoulSBaitLeft"] = 0,
+                    ["FoulBaitLeft"] = 0,
+                    ["LakeBaitLeft"] = 0,
+                    ["LakeSBaitLeft"] = 0,
+                    ["GeneralBait"] = 0,
+                    ["OceanBaitLeft"] = 0,
+                    ["OceanSBaitLeft"] = 0,
+                    ["RiverBaitLeft"] = 0,
                 },
-                ["Quests"] = 
+                ["TEMPPINDATA"] = 
                 {
                 },
                 ["QuestsDone"] = 
@@ -7948,7 +7614,7 @@ Destinations_Settings =
                     [5522] = 1,
                     [5523] = 1,
                     [5524] = 1,
-                    [5529] = 1,
+                    [5529] = 2,
                     [5531] = 1,
                     [5532] = 1,
                     [1437] = 1,
@@ -8050,12 +7716,13 @@ Destinations_Settings =
                     [5700] = 1,
                     [5701] = 1,
                     [5702] = 1,
+                    [5703] = 1,
                     [5705] = 1,
                     [5707] = 1,
                     [5708] = 1,
                     [1615] = 1,
-                    [5713] = 1,
-                    [5714] = 1,
+                    [5713] = 2,
+                    [5714] = 2,
                     [5719] = 1,
                     [5720] = 1,
                     [5724] = 1,
@@ -8221,6 +7888,7 @@ Destinations_Settings =
                     [5949] = 1,
                     [5950] = 1,
                     [5952] = 1,
+                    [5953] = 2,
                     [5954] = 1,
                     [5956] = 1,
                     [5958] = 1,
@@ -8363,7 +8031,7 @@ Destinations_Settings =
                     [6155] = 1,
                     [6156] = 1,
                     [6157] = 1,
-                    [6158] = 1,
+                    [6158] = 2,
                     [6159] = 1,
                     [6160] = 1,
                     [6162] = 1,
@@ -8395,10 +8063,12 @@ Destinations_Settings =
                     [6199] = 1,
                     [6202] = 1,
                     [6205] = 1,
+                    [6207] = 2,
                     [6210] = 1,
                     [6211] = 1,
-                    [6212] = 1,
+                    [6212] = 2,
                     [6213] = 1,
+                    [6216] = 2,
                     [6218] = 1,
                     [2130] = 1,
                     [6227] = 1,
@@ -8694,6 +8364,7 @@ Destinations_Settings =
                     [6594] = 1,
                     [6595] = 1,
                     [6596] = 1,
+                    [6597] = 2,
                     [6598] = 1,
                     [6599] = 1,
                     [2504] = 1,
@@ -8704,6 +8375,7 @@ Destinations_Settings =
                     [6605] = 1,
                     [6606] = 1,
                     [6609] = 1,
+                    [6610] = 2,
                     [6612] = 1,
                     [6613] = 1,
                     [6614] = 1,
@@ -8785,13 +8457,13 @@ Destinations_Settings =
                     [6709] = 1,
                     [6710] = 1,
                     [6711] = 1,
-                    [6712] = 1,
+                    [6712] = 2,
                     [6713] = 1,
                     [6714] = 1,
                     [6715] = 1,
                     [6716] = 1,
                     [6717] = 1,
-                    [6718] = 1,
+                    [6718] = 2,
                     [6719] = 1,
                     [6720] = 1,
                     [6721] = 1,
@@ -8860,7 +8532,9 @@ Destinations_Settings =
                     [2704] = 1,
                     [2706] = 1,
                     [2707] = 1,
+                    [6804] = 1,
                     [6805] = 1,
+                    [6806] = 1,
                     [6807] = 1,
                     [6808] = 1,
                     [6809] = 1,
@@ -8877,11 +8551,12 @@ Destinations_Settings =
                     [2726] = 1,
                     [2727] = 1,
                     [2728] = 1,
-                    [2729] = 1,
+                    [2729] = 2,
                     [6826] = 1,
                     [2731] = 1,
                     [2732] = 1,
                     [2733] = 1,
+                    [6831] = 2,
                     [2737] = 1,
                     [2738] = 1,
                     [6835] = 1,
@@ -8930,6 +8605,7 @@ Destinations_Settings =
                     [6904] = 1,
                     [6905] = 1,
                     [6906] = 1,
+                    [2811] = 2,
                     [6967] = 1,
                     [6971] = 1,
                     [6972] = 1,
@@ -8992,6 +8668,7 @@ Destinations_Settings =
                     [7051] = 1,
                     [2958] = 1,
                     [7056] = 1,
+                    [7057] = 2,
                     [2962] = 1,
                     [2963] = 1,
                     [2964] = 1,
@@ -9078,11 +8755,16 @@ Destinations_Settings =
                     [7210] = 1,
                     [7211] = 1,
                     [7214] = 1,
+                    [7216] = 1,
                     [7217] = 1,
                     [7218] = 1,
+                    [7219] = 1,
                     [7220] = 1,
+                    [7221] = 1,
                     [7228] = 1,
+                    [7230] = 1,
                     [7232] = 1,
+                    [7233] = 2,
                     [3172] = 1,
                     [3174] = 1,
                     [3183] = 1,
@@ -9285,49 +8967,54 @@ Destinations_Settings =
                     [3863] = 1,
                     [3864] = 1,
                     [3865] = 1,
+                    [2883] = 2,
+                    [7102] = 2,
                     [3868] = 1,
+                    [5637] = 2,
                     [7155] = 1,
                     [5733] = 1,
-                    [3874] = 1,
-                    [5831] = 1,
-                    [7115] = 1,
-                    [7114] = 1,
                     [1568] = 1,
+                    [7115] = 1,
+                    [3874] = 1,
+                    [7114] = 1,
+                    [5831] = 1,
                     [7112] = 1,
-                    [3880] = 1,
                     [7109] = 1,
                     [7107] = 1,
+                    [3880] = 1,
                     [7105] = 1,
                     [7100] = 1,
+                    [5687] = 1,
+                    [5900] = 1,
                     [3885] = 1,
                     [3886] = 1,
-                    [5687] = 1,
+                    [1384] = 1,
                     [3888] = 1,
                     [3889] = 1,
                     [3890] = 1,
-                    [5900] = 1,
-                    [1384] = 1,
-                    [3893] = 1,
                     [7094] = 1,
                     [7093] = 1,
+                    [3893] = 1,
                     [7078] = 1,
                     [7060] = 1,
-                    [3898] = 1,
                     [5479] = 1,
-                    [3900] = 1,
                     [1346] = 1,
+                    [3898] = 1,
+                    [7038] = 1,
+                    [3900] = 1,
+                    [7034] = 1,
                     [3902] = 1,
                     [3903] = 1,
                     [3904] = 1,
                     [3905] = 1,
-                    [7038] = 1,
-                    [7034] = 1,
+                    [7023] = 1,
+                    [7021] = 1,
                     [3908] = 1,
                     [3909] = 1,
                     [3910] = 1,
                     [3911] = 1,
                     [3912] = 1,
-                    [7023] = 1,
+                    [6852] = 1,
                     [3914] = 1,
                     [3915] = 1,
                     [3916] = 1,
@@ -9336,148 +9023,148 @@ Destinations_Settings =
                     [3919] = 1,
                     [3920] = 1,
                     [3921] = 1,
-                    [7021] = 1,
+                    [6848] = 1,
                     [3923] = 1,
                     [3924] = 1,
                     [3925] = 1,
-                    [6852] = 1,
+                    [6847] = 1,
                     [3927] = 1,
                     [3928] = 1,
-                    [6848] = 1,
-                    [6847] = 1,
                     [6846] = 1,
                     [6845] = 1,
                     [6843] = 1,
                     [6839] = 1,
                     [1485] = 1,
                     [6112] = 1,
+                    [6836] = 1,
                     [6833] = 1,
                     [6825] = 1,
                     [6822] = 1,
                     [6818] = 1,
-                    [6803] = 1,
                     [6113] = 1,
+                    [6800] = 2,
+                    [6796] = 1,
                     [6795] = 1,
-                    [6793] = 1,
-                    [6789] = 1,
                     [6114] = 1,
-                    [6778] = 1,
+                    [6789] = 1,
                     [5735] = 1,
                     [1554] = 1,
                     [5930] = 1,
-                    [6772] = 1,
+                    [6774] = 1,
                     [5931] = 1,
-                    [3953] = 1,
                     [6142] = 1,
+                    [6226] = 1,
+                    [3953] = 1,
+                    [6242] = 1,
                     [3955] = 1,
                     [3956] = 1,
                     [3957] = 1,
                     [3958] = 1,
                     [3959] = 1,
-                    [6226] = 1,
+                    [6769] = 1,
                     [3961] = 1,
-                    [6242] = 1,
+                    [6257] = 1,
                     [3963] = 1,
                     [3964] = 1,
                     [6755] = 1,
                     [3966] = 1,
-                    [6257] = 1,
-                    [3968] = 1,
-                    [6695] = 1,
-                    [3970] = 1,
                     [6318] = 1,
+                    [3968] = 1,
                     [6336] = 1,
+                    [3970] = 1,
+                    [6674] = 1,
+                    [6672] = 1,
                     [3973] = 1,
                     [3974] = 1,
-                    [6665] = 1,
-                    [6663] = 1,
+                    [6351] = 1,
+                    [737] = 1,
                     [3977] = 1,
                     [3978] = 1,
-                    [6351] = 1,
+                    [6662] = 1,
                     [3980] = 1,
                     [3981] = 1,
                     [3982] = 1,
-                    [737] = 1,
-                    [6652] = 1,
+                    [736] = 1,
+                    [728] = 1,
                     [3985] = 1,
                     [3986] = 1,
                     [3987] = 1,
                     [3988] = 1,
-                    [736] = 1,
+                    [6500] = 1,
                     [3990] = 1,
                     [3991] = 1,
                     [3992] = 1,
                     [3993] = 1,
-                    [728] = 1,
+                    [6645] = 1,
                     [3995] = 1,
                     [3996] = 1,
                     [3997] = 1,
-                    [6500] = 1,
+                    [614] = 1,
                     [3999] = 1,
                     [6633] = 1,
-                    [614] = 1,
-                    [4002] = 1,
-                    [6577] = 1,
                     [6547] = 1,
-                    [2192] = 1,
-                    [575] = 1,
+                    [4002] = 1,
                     [6600] = 1,
+                    [575] = 1,
+                    [2192] = 1,
+                    [2193] = 1,
                     [2251] = 1,
-                    [6593] = 1,
                     [467] = 1,
+                    [6577] = 1,
                     [465] = 1,
-                    [6584] = 1,
-                    [2356] = 1,
-                    [2436] = 1,
-                    [2403] = 1,
-                    [4016] = 1,
-                    [2364] = 1,
-                    [4018] = 1,
                     [6590] = 1,
+                    [2436] = 1,
+                    [2364] = 1,
+                    [2403] = 1,
+                    [6584] = 1,
+                    [4016] = 1,
+                    [2356] = 1,
+                    [4018] = 1,
                     [6591] = 1,
                     [6592] = 1,
+                    [6593] = 1,
                     [4022] = 1,
                     [4023] = 1,
                     [4024] = 1,
-                    [2193] = 1,
-                    [4026] = 1,
                     [2184] = 1,
-                    [4028] = 1,
+                    [4026] = 1,
                     [6632] = 1,
-                    [4030] = 1,
+                    [4028] = 1,
                     [6634] = 1,
-                    [6645] = 1,
+                    [4030] = 1,
                     [6648] = 1,
-                    [4034] = 1,
+                    [6652] = 1,
                     [6660] = 1,
-                    [6662] = 1,
+                    [4034] = 1,
+                    [6663] = 1,
+                    [6665] = 1,
                     [4037] = 1,
                     [4038] = 1,
-                    [6672] = 1,
-                    [6674] = 1,
-                    [4041] = 1,
+                    [6695] = 1,
                     [6751] = 1,
-                    [4043] = 1,
+                    [4041] = 1,
                     [6768] = 1,
-                    [6769] = 1,
+                    [4043] = 1,
                     [6770] = 1,
                     [6771] = 1,
-                    [4048] = 1,
+                    [6772] = 1,
                     [6773] = 1,
-                    [6774] = 1,
+                    [4048] = 1,
                     [6776] = 1,
-                    [4052] = 1,
+                    [6778] = 1,
                     [6787] = 1,
+                    [4052] = 1,
+                    [6793] = 1,
                     [4054] = 1,
                     [4055] = 1,
                     [4056] = 1,
-                    [6796] = 1,
+                    [6803] = 1,
                     [4058] = 1,
                     [4059] = 1,
                     [4060] = 1,
                     [4061] = 1,
                     [4062] = 1,
-                    [6836] = 1,
+                    [6837] = 1,
                     [6838] = 1,
                     [4065] = 1,
                     [4066] = 1,
@@ -9511,2776 +9198,277 @@ Destinations_Settings =
                     [7119] = 1,
                     [4095] = 1,
                 },
-                ["TEMPPINDATA"] = 
-                {
-                },
-            },
-            ["$AccountWide"] = 
-            {
-                ["data"] = 
-                {
-                    ["OceanSBaitLeft"] = 0,
-                    ["OceanBaitLeft"] = 0,
-                    ["LakeBaitLeft"] = 0,
-                    ["GeneralBait"] = 0,
-                    ["RiverSBaitLeft"] = 0,
-                    ["RiverBaitLeft"] = 0,
-                    ["LakeSBaitLeft"] = 0,
-                    ["FoulSBaitLeft"] = 0,
-                    ["FoulBaitLeft"] = 0,
-                },
-                ["oneTamrielUpdate"] = true,
-                ["settings"] = 
-                {
-                    ["ImproveCrafting"] = true,
-                    ["AddEnglishOnUnknwon"] = true,
-                    ["ShowCadwellsAlmanacOnly"] = false,
-                    ["ShowCadwellsAlmanac"] = false,
-                    ["MapFiltersPOIs"] = true,
-                    ["ShowDungeonBossesOnTop"] = false,
-                    ["MapFiltersAchievements"] = true,
-                    ["AddEnglishOnKeeps"] = true,
-                    ["MapFiltersQuestgivers"] = true,
-                    ["HideQuestGiverName"] = false,
-                    ["MapFiltersFishing"] = true,
-                    ["MapFiltersCollectibles"] = true,
-                    ["useAccountWide"] = false,
-                    ["ImproveMundus"] = true,
-                    ["EnglishColorPOI"] = "efebbe",
-                    ["MapFiltersMisc"] = true,
-                    ["HideAllianceOnKeeps"] = false,
-                    ["EnglishColorKeeps"] = "dc8122",
-                    ["ShowDungeonBossesInZones"] = true,
-                    ["AddNewLineOnKeeps"] = true,
-                    ["activateReloaduiButton"] = false,
-                },
-                ["filters"] = 
-                {
-                    ["DEST_PinSet_Peacemaker"] = false,
-                    ["DEST_PinSet_Cutpurse_Above"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
-                    ["DEST_PinSet_Champion"] = false,
-                    ["DEST_Pin_Quest_Done"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me"] = false,
-                    ["DEST_PinSet_Breaking_Entering"] = false,
-                    ["DEST_PinSet_Dwemer"] = false,
-                    ["DEST_Compass_Misc"] = true,
-                    ["DEST_Pin_Quest_In_Progress"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait"] = false,
-                    ["DEST_PinSet_Other_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
-                    ["DEST_Compass_Collectibles"] = false,
-                    ["DEST_PinSet_Deadlands"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
-                    ["DEST_PinSet_WWVamp"] = false,
-                    ["DEST_Compass_Achievements"] = true,
-                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
-                    ["DEST_PinSet_Patron"] = false,
-                    ["DEST_Pin_Quest_Daily"] = false,
-                    ["DEST_PinSet_Last_Brawl"] = false,
-                    ["DEST_Pin_Fishing"] = false,
-                    ["DEST_Compass_Quest_Giver"] = false,
-                    ["DEST_PinSet_Werewolf_Shrine"] = false,
-                    ["DEST_Compass_Fishing"] = false,
-                    ["DEST_PinSet_Nosediver"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
-                    ["DEST_PinSet_Unknown"] = true,
-                    ["DEST_PinSet_Vampire_Alter"] = false,
-                    ["DEST_PinSet_Peacemaker_Done"] = false,
-                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
-                    ["DEST_PinSet_Patron_Done"] = false,
-                    ["DEST_PinSet_Nosediver_Done"] = false,
-                    ["DEST_PinSet_Champion_Done"] = false,
-                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
-                    ["DEST_PinSet_HighIsle"] = false,
-                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
-                    ["DEST_Pin_Fishing_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
-                    ["DEST_Pin_Collectibles"] = false,
-                    ["DEST_PinSet_Last_Brawl_Done"] = false,
-                    ["DEST_Pin_Collectibles_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Water"] = false,
-                    ["DEST_Compass_WWVamp"] = true,
-                    ["DEST_Compass_Fishing_Show_FishName"] = false,
-                    ["DEST_Pin_Quest_Writ"] = false,
-                    ["DEST_Pin_Quest_Repeatable"] = false,
-                    ["DEST_Pin_Quest_Giver"] = false,
-                    ["DEST_PinSet_Other"] = false,
-                    ["DEST_PinSet_Maiq_Done"] = false,
-                    ["DEST_PinSet_Ayleid"] = false,
-                    ["DEST_PinSet_Maiq"] = false,
-                    ["DEST_Compass_Collectibles_Show_Item"] = false,
-                    ["DEST_PinSet_Earthly_Possessions"] = false,
-                },
-                ["version"] = 1,
-                ["pins"] = 
-                {
-                    ["pinTextureChampionDone"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemakerDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreakingDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCutpurseDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureAyleid"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureFishDone"] = 
-                    {
-                        ["textcolorWater"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["textcolorBait"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureOnMe"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCollectibleDone"] = 
-                    {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunterDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBrawl"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureUnknownOthers"] = 
-                    {
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                    },
-                    ["pinTextureWWShrine"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePatronDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQolPin"] = 
-                    {
-                        ["type"] = 1,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 45,
-                        ["size"] = 35,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumperDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPos"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureDwemer"] = 
-                    {
-                        ["type"] = 7,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 145,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunter"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediver"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsDone"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsInProgress"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWWVamp"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureHighIsle"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemaker"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePatron"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureChampion"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumper"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureOther"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureVampAltar"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureUnknown"] = 
-                    {
-                        ["tint"] = 
-                        {
-                            [4] = 0.6000000000,
-                            [1] = 0.7000000000,
-                            [2] = 0.7000000000,
-                            [3] = 0.7000000000,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolorTrader"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["type"] = 7,
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 42,
-                        ["textcolorEN"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                    },
-                    ["pinTextureOtherDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureFish"] = 
-                    {
-                        ["textcolorWater"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["textcolorBait"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureBrawlDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCutpurse"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureMaiq"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreaking"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPosDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCollectible"] = 
-                    {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediverDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsUndone"] = 
-                    {
-                        ["tintrep"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 0,
-                        },
-                        ["tintdun"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["tintday"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["maxDistance"] = 0.0500000000,
-                        ["tintmain"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureMaiqDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureDeadlands"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureOnMeDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                },
-                ["miscColorCodes"] = 
-                {
-                    ["settingsTextAchievements"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.5333333333,
-                    },
-                    ["settingsTextWarn"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 1,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["settingsTextUnknown"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["mapFilterTextQUndone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextReloadWarning"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 0,
-                    },
-                    ["mapFilterTextQDone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 0.3333333333,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextFish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEvenLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.9294117647,
-                        ["g"] = 0.9294117647,
-                    },
-                    ["settingsTextVWW"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2666666667,
-                        ["r"] = 0.2666666667,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["settingsTextAccountWide"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextQProg"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["settingsTextAchHeaders"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6666666667,
-                        ["r"] = 0,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["mapFilterTextUndone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.8666666667,
-                        ["g"] = 0.7607843137,
-                    },
-                    ["settingsTextQuests"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4000000000,
-                        ["r"] = 0.4000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextOnlyText"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextOddLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextDone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEnglish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.6666666667,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextMiscellaneous"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextImprove"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["mapFilterTextDone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.7725490196,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["mapFilterTextUndone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6000000000,
-                    },
-                    ["settingsTextCollectibles"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextInstructions"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
-                },
                 ["Quests"] = 
                 {
                 },
-                ["QuestsDone"] = 
-                {
-                },
-                ["TEMPPINDATA"] = 
-                {
-                },
-            },
-            ["Christel v Koenigsberg"] = 
-            {
-                ["data"] = 
-                {
-                    ["OceanSBaitLeft"] = 0,
-                    ["OceanBaitLeft"] = 0,
-                    ["LakeBaitLeft"] = 0,
-                    ["GeneralBait"] = 0,
-                    ["RiverSBaitLeft"] = 0,
-                    ["RiverBaitLeft"] = 0,
-                    ["LakeSBaitLeft"] = 0,
-                    ["FoulSBaitLeft"] = 0,
-                    ["FoulBaitLeft"] = 0,
-                },
-                ["settings"] = 
-                {
-                    ["ImproveCrafting"] = true,
-                    ["AddEnglishOnUnknwon"] = false,
-                    ["ShowCadwellsAlmanacOnly"] = false,
-                    ["ShowCadwellsAlmanac"] = false,
-                    ["MapFiltersPOIs"] = true,
-                    ["ShowDungeonBossesOnTop"] = false,
-                    ["MapFiltersAchievements"] = true,
-                    ["AddEnglishOnKeeps"] = false,
-                    ["MapFiltersQuestgivers"] = true,
-                    ["HideQuestGiverName"] = false,
-                    ["MapFiltersFishing"] = true,
-                    ["MapFiltersCollectibles"] = true,
-                    ["useAccountWide"] = false,
-                    ["ImproveMundus"] = true,
-                    ["EnglishColorPOI"] = "efebbe",
-                    ["MapFiltersMisc"] = true,
-                    ["HideAllianceOnKeeps"] = false,
-                    ["EnglishColorKeeps"] = "dc8122",
-                    ["ShowDungeonBossesInZones"] = true,
-                    ["AddNewLineOnKeeps"] = true,
-                    ["activateReloaduiButton"] = false,
-                },
-                ["filters"] = 
-                {
-                    ["DEST_PinSet_Peacemaker"] = false,
-                    ["DEST_PinSet_Cutpurse_Above"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
-                    ["DEST_PinSet_Champion"] = false,
-                    ["DEST_Pin_Quest_Done"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me"] = false,
-                    ["DEST_PinSet_Breaking_Entering"] = false,
-                    ["DEST_PinSet_Dwemer"] = false,
-                    ["DEST_Compass_Misc"] = true,
-                    ["DEST_Pin_Quest_In_Progress"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait"] = false,
-                    ["DEST_PinSet_Other_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
-                    ["DEST_Compass_Collectibles"] = false,
-                    ["DEST_PinSet_Deadlands"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
-                    ["DEST_PinSet_WWVamp"] = false,
-                    ["DEST_Compass_Achievements"] = true,
-                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
-                    ["DEST_PinSet_Patron"] = false,
-                    ["DEST_Pin_Quest_Daily"] = false,
-                    ["DEST_PinSet_Last_Brawl"] = false,
-                    ["DEST_Pin_Fishing"] = false,
-                    ["DEST_Compass_Quest_Giver"] = false,
-                    ["DEST_PinSet_Werewolf_Shrine"] = false,
-                    ["DEST_Compass_Fishing"] = false,
-                    ["DEST_PinSet_Nosediver"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
-                    ["DEST_PinSet_Unknown"] = true,
-                    ["DEST_PinSet_Vampire_Alter"] = false,
-                    ["DEST_PinSet_Peacemaker_Done"] = false,
-                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
-                    ["DEST_PinSet_Patron_Done"] = false,
-                    ["DEST_PinSet_Nosediver_Done"] = false,
-                    ["DEST_PinSet_Champion_Done"] = false,
-                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
-                    ["DEST_PinSet_HighIsle"] = false,
-                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
-                    ["DEST_Pin_Fishing_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
-                    ["DEST_Pin_Collectibles"] = false,
-                    ["DEST_PinSet_Last_Brawl_Done"] = false,
-                    ["DEST_Pin_Collectibles_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Water"] = false,
-                    ["DEST_Compass_WWVamp"] = true,
-                    ["DEST_Compass_Fishing_Show_FishName"] = false,
-                    ["DEST_Pin_Quest_Writ"] = false,
-                    ["DEST_Pin_Quest_Repeatable"] = false,
-                    ["DEST_Pin_Quest_Giver"] = false,
-                    ["DEST_PinSet_Other"] = false,
-                    ["DEST_PinSet_Maiq_Done"] = false,
-                    ["DEST_PinSet_Ayleid"] = false,
-                    ["DEST_PinSet_Maiq"] = false,
-                    ["DEST_Compass_Collectibles_Show_Item"] = false,
-                    ["DEST_PinSet_Earthly_Possessions"] = false,
-                },
-                ["version"] = 1,
-                ["pins"] = 
-                {
-                    ["pinTextureChampionDone"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemakerDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreakingDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCutpurseDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureAyleid"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureFishDone"] = 
-                    {
-                        ["textcolorWater"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["textcolorBait"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureOnMe"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCollectibleDone"] = 
-                    {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunterDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBrawl"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureUnknownOthers"] = 
-                    {
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                    },
-                    ["pinTextureWWShrine"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePatronDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQolPin"] = 
-                    {
-                        ["type"] = 1,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 45,
-                        ["size"] = 35,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumperDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPos"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureDwemer"] = 
-                    {
-                        ["type"] = 7,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 145,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunter"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediver"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsDone"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsInProgress"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWWVamp"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureHighIsle"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemaker"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePatron"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureChampion"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumper"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureOther"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureVampAltar"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureUnknown"] = 
-                    {
-                        ["tint"] = 
-                        {
-                            [4] = 0.6000000000,
-                            [1] = 0.7000000000,
-                            [2] = 0.7000000000,
-                            [3] = 0.7000000000,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolorTrader"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["type"] = 7,
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 42,
-                        ["textcolorEN"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                    },
-                    ["pinTextureOtherDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureFish"] = 
-                    {
-                        ["textcolorWater"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["textcolorBait"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureBrawlDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCutpurse"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureMaiq"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreaking"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPosDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureCollectible"] = 
-                    {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediverDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsUndone"] = 
-                    {
-                        ["tintrep"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 0,
-                        },
-                        ["tintdun"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["tintday"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["maxDistance"] = 0.0500000000,
-                        ["tintmain"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureMaiqDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureDeadlands"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureOnMeDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                },
                 ["miscColorCodes"] = 
                 {
-                    ["settingsTextAchievements"] = 
+                    ["settingsTextInstructions"] = 
                     {
+                        ["b"] = 1,
                         ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.5333333333,
-                    },
-                    ["settingsTextWarn"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 1,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["settingsTextUnknown"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["mapFilterTextQUndone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextReloadWarning"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 0,
-                    },
-                    ["mapFilterTextQDone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 0.3333333333,
                         ["g"] = 1,
-                    },
-                    ["settingsTextFish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
                         ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEvenLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.9294117647,
-                        ["g"] = 0.9294117647,
-                    },
-                    ["settingsTextVWW"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2666666667,
-                        ["r"] = 0.2666666667,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["settingsTextAccountWide"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextQProg"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["settingsTextAchHeaders"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6666666667,
-                        ["r"] = 0,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["mapFilterTextUndone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.8666666667,
-                        ["g"] = 0.7607843137,
                     },
                     ["settingsTextQuests"] = 
                     {
-                        ["a"] = 1,
                         ["b"] = 0.4000000000,
-                        ["r"] = 0.4000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextOnlyText"] = 
-                    {
                         ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 0.8000000000,
+                        ["g"] = 1,
+                        ["r"] = 0.4000000000,
                     },
                     ["settingsTextOddLine"] = 
                     {
-                        ["a"] = 1,
                         ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
                         ["r"] = 1,
-                        ["g"] = 1,
                     },
-                    ["mapFilterTextDone2"] = 
+                    ["settingsTextOnlyText"] = 
                     {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEnglish"] = 
-                    {
-                        ["a"] = 1,
                         ["b"] = 0,
-                        ["r"] = 0.6666666667,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextMiscellaneous"] = 
-                    {
                         ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
                         ["g"] = 0.8000000000,
+                        ["r"] = 0.8000000000,
                     },
-                    ["settingsTextImprove"] = 
+                    ["settingsTextVWW"] = 
                     {
+                        ["b"] = 0.2666666667,
                         ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["mapFilterTextDone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.7725490196,
                         ["g"] = 0.8666666667,
+                        ["r"] = 0.2666666667,
+                    },
+                    ["settingsTextEvenLine"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.9294117647,
+                        ["r"] = 0.9294117647,
                     },
                     ["mapFilterTextUndone2"] = 
                     {
-                        ["a"] = 1,
                         ["b"] = 0.5333333333,
-                        ["r"] = 1,
+                        ["a"] = 1,
                         ["g"] = 0.6000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAchievements"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.5333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextWarn"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextFish"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["mapFilterTextDone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.7725490196,
                     },
                     ["settingsTextCollectibles"] = 
                     {
-                        ["a"] = 1,
                         ["b"] = 0.6000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextInstructions"] = 
-                    {
                         ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 0.8000000000,
                         ["g"] = 1,
+                        ["r"] = 0.6000000000,
                     },
-                },
-                ["Quests"] = 
-                {
-                },
-                ["QuestsDone"] = 
-                {
-                    [6528] = 1,
-                    [5377] = 1,
-                    [6658] = 2,
-                    [3986] = 1,
-                    [5400] = 1,
-                    [6668] = 1,
-                    [5395] = 1,
-                    [6665] = 1,
-                    [5392] = 1,
-                    [5259] = 1,
-                    [5388] = 1,
-                    [5389] = 1,
-                    [6670] = 1,
-                    [6799] = 2,
-                    [4624] = 2,
-                    [6171] = 1,
-                    [5394] = 1,
-                    [6675] = 1,
-                    [5396] = 1,
-                    [3987] = 2,
-                    [3990] = 1,
-                    [5249] = 1,
-                    [3608] = 1,
-                    [5406] = 1,
-                    [7194] = 1,
-                    [3611] = 1,
-                    [3999] = 1,
-                    [5417] = 1,
-                    [6558] = 1,
-                    [5407] = 1,
-                    [5921] = 1,
-                    [5409] = 1,
-                    [5538] = 2,
-                    [4529] = 2,
-                    [5412] = 1,
-                    [5413] = 1,
-                    [5414] = 2,
-                    [5415] = 1,
-                    [5416] = 1,
-                    [5289] = 1,
-                    [5418] = 1,
-                    [5931] = 1,
-                    [5548] = 1,
-                    [6642] = 1,
-                    [5941] = 1,
-                    [6640] = 1,
-                    [6227] = 1,
-                    [5937] = 1,
-                    [6218] = 1,
-                    [5811] = 1,
-                    [4532] = 1,
-                    [7093] = 1,
-                    [5302] = 1,
-                    [3639] = 1,
-                    [5838] = 1,
-                    [2873] = 1,
-                    [5845] = 1,
-                    [4667] = 1,
-                    [6588] = 1,
-                    [3645] = 1,
-                    [5310] = 1,
-                    [6635] = 1,
-                    [6228] = 1,
-                    [6337] = 1,
-                    [5314] = 1,
-                    [5315] = 1,
-                    [6633] = 1,
-                    [6099] = 1,
-                    [5958] = 2,
-                    [6105] = 1,
-                    [4296] = 1,
-                    [3657] = 1,
-                    [5834] = 1,
-                    [5855] = 1,
-                    [5605] = 1,
-                    [5837] = 1,
-                    [3662] = 1,
-                    [5839] = 1,
-                    [6628] = 1,
-                    [5073] = 2,
-                    [6098] = 1,
-                    [3667] = 1,
-                    [6100] = 1,
-                    [4693] = 1,
-                    [6102] = 1,
-                    [6103] = 1,
-                    [6104] = 1,
-                    [4441] = 1,
-                    [4831] = 2,
-                    [6626] = 1,
-                    [5852] = 1,
-                    [6749] = 1,
-                    [6750] = 1,
-                    [3039] = 1,
-                    [5856] = 1,
-                    [6130] = 1,
-                    [4450] = 1,
-                    [5603] = 1,
-                    [5604] = 1,
-                    [6373] = 1,
-                    [5606] = 1,
-                    [6101] = 1,
-                    [6632] = 1,
-                    [5865] = 2,
-                    [3656] = 1,
-                    [5483] = 2,
-                    [6636] = 1,
-                    [6722] = 1,
-                    [4673] = 1,
-                    [5487] = 1,
-                    [6512] = 1,
-                    [6769] = 1,
-                    [4722] = 1,
-                    [6771] = 1,
-                    [6514] = 2,
-                    [4908] = 1,
-                    [6134] = 1,
-                    [3703] = 1,
-                    [5368] = 1,
-                    [6559] = 1,
-                    [3992] = 2,
-                    [3988] = 1,
-                    [6780] = 1,
-                    [5501] = 1,
-                    [5374] = 1,
-                    [4738] = 2,
-                },
-                ["TEMPPINDATA"] = 
-                {
+                    ["mapFilterTextDone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextQDone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.3333333333,
+                    },
+                    ["settingsTextMiscellaneous"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0,
+                    },
+                    ["mapFilterTextUndone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.7607843137,
+                        ["r"] = 0.8666666667,
+                    },
+                    ["mapFilterTextQUndone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextEnglish"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0.6666666667,
+                    },
+                    ["settingsTextUnknown"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextAchHeaders"] = 
+                    {
+                        ["b"] = 0.6666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextReloadWarning"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAccountWide"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["mapFilterTextQProg"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextImprove"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 0.6000000000,
+                    },
                 },
             },
             ["Fridolin The Great"] = 
             {
-                ["data"] = 
-                {
-                    ["OceanSBaitLeft"] = 0,
-                    ["OceanBaitLeft"] = 0,
-                    ["LakeBaitLeft"] = 0,
-                    ["GeneralBait"] = 0,
-                    ["RiverSBaitLeft"] = 0,
-                    ["RiverBaitLeft"] = 0,
-                    ["LakeSBaitLeft"] = 0,
-                    ["FoulSBaitLeft"] = 0,
-                    ["FoulBaitLeft"] = 0,
-                },
                 ["settings"] = 
                 {
-                    ["ImproveCrafting"] = true,
+                    ["HideQuestGiverName"] = false,
+                    ["MapFiltersMisc"] = true,
+                    ["EnglishColorPOI"] = "efebbe",
+                    ["ShowDungeonBossesOnTop"] = false,
+                    ["EnglishColorKeeps"] = "dc8122",
                     ["AddEnglishOnUnknwon"] = false,
                     ["ShowCadwellsAlmanacOnly"] = false,
-                    ["ShowCadwellsAlmanac"] = false,
-                    ["MapFiltersPOIs"] = true,
-                    ["ShowDungeonBossesOnTop"] = false,
-                    ["MapFiltersAchievements"] = true,
-                    ["AddEnglishOnKeeps"] = false,
-                    ["MapFiltersQuestgivers"] = true,
-                    ["HideQuestGiverName"] = false,
-                    ["MapFiltersFishing"] = true,
-                    ["MapFiltersCollectibles"] = true,
-                    ["useAccountWide"] = false,
-                    ["ImproveMundus"] = true,
-                    ["EnglishColorPOI"] = "efebbe",
-                    ["MapFiltersMisc"] = true,
                     ["HideAllianceOnKeeps"] = false,
-                    ["EnglishColorKeeps"] = "dc8122",
-                    ["ShowDungeonBossesInZones"] = true,
+                    ["MapFiltersPOIs"] = true,
                     ["AddNewLineOnKeeps"] = true,
+                    ["MapFiltersAchievements"] = true,
+                    ["ImproveMundus"] = true,
+                    ["ShowCadwellsAlmanac"] = false,
+                    ["MapFiltersFishing"] = true,
+                    ["useAccountWide"] = false,
+                    ["MapFiltersCollectibles"] = true,
+                    ["MapFiltersQuestgivers"] = true,
+                    ["AddEnglishOnKeeps"] = false,
+                    ["ShowDungeonBossesInZones"] = true,
+                    ["ImproveCrafting"] = true,
                     ["activateReloaduiButton"] = false,
                 },
                 ["filters"] = 
                 {
-                    ["DEST_PinSet_Peacemaker"] = false,
-                    ["DEST_PinSet_Cutpurse_Above"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
-                    ["DEST_PinSet_Champion"] = false,
-                    ["DEST_Pin_Quest_Done"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me"] = false,
-                    ["DEST_PinSet_Breaking_Entering"] = false,
-                    ["DEST_PinSet_Dwemer"] = false,
-                    ["DEST_Compass_Misc"] = true,
-                    ["DEST_Pin_Quest_In_Progress"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait"] = false,
-                    ["DEST_PinSet_Other_Done"] = false,
-                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
-                    ["DEST_Compass_Collectibles"] = false,
-                    ["DEST_PinSet_Deadlands"] = false,
-                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
-                    ["DEST_PinSet_WWVamp"] = false,
-                    ["DEST_Compass_Achievements"] = true,
-                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
-                    ["DEST_PinSet_Patron"] = false,
-                    ["DEST_Pin_Quest_Daily"] = false,
-                    ["DEST_PinSet_Last_Brawl"] = false,
-                    ["DEST_Pin_Fishing"] = false,
-                    ["DEST_Compass_Quest_Giver"] = false,
-                    ["DEST_PinSet_Werewolf_Shrine"] = false,
-                    ["DEST_PinSet_Maiq"] = false,
-                    ["DEST_PinSet_Nosediver"] = false,
-                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
-                    ["DEST_PinSet_Unknown"] = true,
-                    ["DEST_PinSet_Vampire_Alter"] = false,
-                    ["DEST_PinSet_Peacemaker_Done"] = false,
-                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
-                    ["DEST_PinSet_Other"] = false,
-                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
-                    ["DEST_PinSet_Nosediver_Done"] = false,
                     ["DEST_Compass_Fishing"] = false,
+                    ["DEST_PinSet_Deadlands"] = false,
+                    ["DEST_Pin_Quest_Giver"] = false,
+                    ["DEST_PinSet_Other_Done"] = false,
                     ["DEST_PinSet_Breaking_Entering_Done"] = false,
-                    ["DEST_PinSet_HighIsle"] = false,
-                    ["DEST_PinSet_Patron_Done"] = false,
-                    ["DEST_Pin_Fishing_Done"] = false,
-                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
-                    ["DEST_Pin_Collectibles"] = false,
-                    ["DEST_PinSet_Last_Brawl_Done"] = false,
+                    ["DEST_PinSet_Nosediver_Done"] = false,
+                    ["DEST_Compass_Misc"] = true,
+                    ["DEST_Pin_Quest_Daily"] = false,
+                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering"] = false,
                     ["DEST_Pin_Collectibles_Done"] = false,
+                    ["DEST_Compass_Fishing_Show_FishName"] = false,
+                    ["DEST_PinSet_Champion_Done"] = false,
+                    ["DEST_Compass_Collectibles"] = false,
+                    ["DEST_PinSet_Peacemaker"] = false,
+                    ["DEST_Pin_Quest_In_Progress"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
+                    ["DEST_PinSet_Vampire_Alter"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
+                    ["DEST_Compass_Achievements"] = true,
+                    ["DEST_Pin_Quest_Writ"] = false,
+                    ["DEST_PinSet_Patron_Done"] = false,
+                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
+                    ["DEST_PinSet_Maiq"] = false,
+                    ["DEST_PinSet_Other"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
+                    ["DEST_Compass_Collectibles_Show_Item"] = false,
+                    ["DEST_PinSet_WWVamp"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait"] = false,
+                    ["DEST_PinSet_Patron"] = false,
+                    ["DEST_Compass_Quest_Giver"] = false,
+                    ["DEST_PinSet_HighIsle"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
+                    ["DEST_PinSet_Cutpurse_Above"] = false,
+                    ["DEST_PinSet_Unknown"] = true,
+                    ["DEST_Pin_Quest_Done"] = false,
+                    ["DEST_PinSet_Nosediver"] = false,
+                    ["DEST_PinSet_Werewolf_Shrine"] = false,
+                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_Peacemaker_Done"] = false,
+                    ["DEST_PinSet_Champion"] = false,
+                    ["DEST_PinSet_Last_Brawl_Done"] = false,
+                    ["DEST_Pin_Fishing_Done"] = false,
+                    ["DEST_Pin_Quest_Repeatable"] = false,
+                    ["DEST_PinSet_Dwemer"] = false,
+                    ["DEST_Pin_Fishing"] = false,
+                    ["DEST_PinSet_Earthly_Possessions"] = false,
                     ["DEST_Compass_Fishing_Show_Water"] = false,
                     ["DEST_Compass_WWVamp"] = true,
-                    ["DEST_PinSet_Champion_Done"] = false,
-                    ["DEST_Pin_Quest_Writ"] = false,
-                    ["DEST_Pin_Quest_Repeatable"] = false,
-                    ["DEST_Pin_Quest_Giver"] = false,
-                    ["DEST_Compass_Fishing_Show_FishName"] = false,
+                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
+                    ["DEST_Pin_Collectibles"] = false,
                     ["DEST_PinSet_Maiq_Done"] = false,
                     ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
-                    ["DEST_PinSet_Ayleid"] = false,
-                    ["DEST_Compass_Collectibles_Show_Item"] = false,
-                    ["DEST_PinSet_Earthly_Possessions"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
+                    ["DEST_PinSet_Last_Brawl"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me"] = false,
                 },
                 ["version"] = 1,
                 ["pins"] = 
                 {
-                    ["pinTextureChampionDone"] = 
+                    ["pinTextureCollectible"] = 
                     {
-                        ["type"] = 1,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -12288,6 +9476,10 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -12295,62 +9487,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemakerDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBreakingDone"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureCutpurseDone"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -12358,20 +9508,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureAyleid"] = 
+                    ["pinTexturePatron"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -12379,23 +9529,46 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFishDone"] = 
+                    ["pinTextureQuestsUndone"] = 
                     {
-                        ["textcolorWater"] = 
+                        ["tintmain"] = 
                         {
-                            [1] = 1,
+                            [4] = 1,
+                            [1] = 0,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["tintday"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 0,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["tintrep"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 0,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                        ["texture"] = "",
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
                             [1] = 1,
                             [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tintdun"] = 
+                        {
+                            [4] = 1,
+                            [1] = 0,
+                            [2] = 0,
                             [3] = 1,
                         },
                         ["textcolor"] = 
@@ -12404,27 +9577,46 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["texture"] = "",
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["textcolorBait"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["level"] = 30,
-                        ["size"] = 26,
                         ["type"] = 1,
                     },
-                    ["pinTextureOnMe"] = 
+                    ["pinTextureUnknown"] = 
                     {
-                        ["type"] = 6,
+                        ["textcolorEN"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorTrader"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 42,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["tint"] = 
+                        {
+                            [4] = 0.6000000000,
+                            [1] = 0.7000000000,
+                            [2] = 0.7000000000,
+                            [3] = 0.7000000000,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                    },
+                    ["pinTextureQuestsDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -12432,6 +9624,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 1,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -12439,19 +9632,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureCollectibleDone"] = 
+                    ["pinTextureBreakingDone"] = 
                     {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -12459,48 +9645,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunterDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureBrawl"] = 
-                    {
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -12508,9 +9653,132 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWrothgarJumperDone"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureDwemer"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 145,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQuestsInProgress"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunter"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePeacemaker"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPosDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureUnknownOthers"] = 
                     {
@@ -12522,16 +9790,19 @@ Destinations_Settings =
                             [3] = 1,
                         },
                     },
-                    ["pinTextureWWShrine"] = 
+                    ["pinTextureVampAltar"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -12539,13 +9810,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTexturePatronDone"] = 
+                    ["pinTextureOnMeDone"] = 
                     {
-                        ["type"] = 5,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -12553,6 +9823,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -12560,26 +9831,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureQolPin"] = 
+                    ["pinTextureDeadlands"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -12587,286 +9852,33 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 45,
-                        ["size"] = 35,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumperDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPos"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureDwemer"] = 
-                    {
-                        ["type"] = 7,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 145,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureRelicHunter"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediver"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsDone"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsInProgress"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWWVamp"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureHighIsle"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePeacemaker"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTexturePatron"] = 
-                    {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureChampion"] = 
-                    {
-                        ["type"] = 1,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureWrothgarJumper"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureOther"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPos"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -12874,87 +9886,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureUnknown"] = 
-                    {
-                        ["tint"] = 
-                        {
-                            [4] = 0.6000000000,
-                            [1] = 0.7000000000,
-                            [2] = 0.7000000000,
-                            [3] = 0.7000000000,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["textcolorTrader"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["type"] = 7,
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 42,
-                        ["textcolorEN"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                    },
-                    ["pinTextureCollectible"] = 
-                    {
-                        ["type"] = 2,
-                        ["textcolortitle"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureOtherDone"] = 
-                    {
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -12962,18 +9894,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureFish"] = 
+                    ["pinTexturePeacemakerDone"] = 
                     {
-                        ["textcolorWater"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -12981,33 +9907,59 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureHighIsle"] = 
+                    {
                         ["texture"] = "",
-                        ["textcolortitle"] = 
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureFishDone"] = 
+                    {
                         ["textcolorBait"] = 
                         {
                             [1] = 1,
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["level"] = 30,
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["size"] = 26,
-                        ["type"] = 1,
-                    },
-                    ["pinTextureBrawlDone"] = 
-                    {
-                        ["type"] = 5,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -13015,6 +9967,28 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                    },
+                    ["pinTextureWrothgarJumper"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -13022,20 +9996,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
                     ["pinTextureCutpurse"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -13043,20 +10017,20 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureMaiq"] = 
+                    ["pinTextureNosediver"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -13064,13 +10038,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureBreaking"] = 
+                    ["pinTextureRelicHunterDone"] = 
                     {
-                        ["type"] = 5,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -13078,27 +10051,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureEarthlyPosDone"] = 
-                    {
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -13106,87 +10059,12 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureVampAltar"] = 
+                    ["pinTextureQolPin"] = 
                     {
-                        ["type"] = 5,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
+                        ["textcolortitle"] = 
                         {
                             [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureNosediverDone"] = 
-                    {
-                        ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
-                    },
-                    ["pinTextureQuestsUndone"] = 
-                    {
-                        ["tintrep"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 0,
-                        },
-                        ["tintdun"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["tintday"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 0,
-                            [3] = 1,
-                        },
-                        ["textcolor"] = 
-                        {
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
-                        ["texture"] = "",
-                        ["maxDistance"] = 0.0500000000,
-                        ["tintmain"] = 
-                        {
-                            [4] = 1,
-                            [1] = 0,
                             [2] = 1,
                             [3] = 1,
                         },
@@ -13197,13 +10075,23 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
-                        ["level"] = 30,
-                        ["size"] = 26,
+                        ["size"] = 35,
+                        ["level"] = 45,
+                        ["texture"] = "",
                         ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                     ["pinTextureMaiqDone"] = 
                     {
-                        ["type"] = 6,
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -13211,6 +10099,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 6,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -13218,13 +10107,51 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureDeadlands"] = 
+                    ["pinTextureFish"] = 
                     {
+                        ["textcolorBait"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 1,
+                    },
+                    ["pinTextureBreaking"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
                         ["tint"] = 
                         {
                             [4] = 1,
@@ -13232,6 +10159,7 @@ Destinations_Settings =
                             [2] = 1,
                             [3] = 1,
                         },
+                        ["type"] = 5,
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -13239,20 +10167,89 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
-                        ["texture"] = "",
                     },
-                    ["pinTextureOnMeDone"] = 
+                    ["pinTextureBrawl"] = 
                     {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePatronDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCollectibleDone"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediverDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
                         ["type"] = 6,
-                        ["tint"] = 
-                        {
-                            [4] = 1,
-                            [1] = 1,
-                            [2] = 1,
-                            [3] = 1,
-                        },
                         ["textcolor"] = 
                         {
                             [1] = 1,
@@ -13260,183 +10257,210 @@ Destinations_Settings =
                             [3] = 1,
                         },
                         ["maxDistance"] = 0.0500000000,
-                        ["level"] = 30,
-                        ["size"] = 26,
+                    },
+                    ["pinTextureWWVamp"] = 
+                    {
                         ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampionDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOnMe"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampion"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWWShrine"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOtherDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureAyleid"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBrawlDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureMaiq"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
                     },
                 },
-                ["miscColorCodes"] = 
+                ["data"] = 
                 {
-                    ["settingsTextAchievements"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.5333333333,
-                    },
-                    ["settingsTextWarn"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 1,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["settingsTextUnknown"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["mapFilterTextQUndone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextReloadWarning"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 0,
-                    },
-                    ["mapFilterTextQDone"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 0.3333333333,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextFish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEvenLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.8000000000,
-                        ["r"] = 0.9294117647,
-                        ["g"] = 0.9294117647,
-                    },
-                    ["settingsTextVWW"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2666666667,
-                        ["r"] = 0.2666666667,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["settingsTextAccountWide"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextQProg"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.3333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["settingsTextAchHeaders"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6666666667,
-                        ["r"] = 0,
-                        ["g"] = 0.6666666667,
-                    },
-                    ["settingsTextOnlyText"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["settingsTextQuests"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.4000000000,
-                        ["r"] = 0.4000000000,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextUndone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.8666666667,
-                        ["g"] = 0.7607843137,
-                    },
-                    ["settingsTextOddLine"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 1,
-                        ["g"] = 1,
-                    },
-                    ["mapFilterTextDone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextEnglish"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0.6666666667,
-                        ["g"] = 0.3333333333,
-                    },
-                    ["settingsTextMiscellaneous"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0,
-                        ["r"] = 0,
-                        ["g"] = 0.8000000000,
-                    },
-                    ["mapFilterTextUndone2"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.5333333333,
-                        ["r"] = 1,
-                        ["g"] = 0.6000000000,
-                    },
-                    ["mapFilterTextDone1"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6196078431,
-                        ["r"] = 0.7725490196,
-                        ["g"] = 0.8666666667,
-                    },
-                    ["settingsTextImprove"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.2000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 0.2000000000,
-                    },
-                    ["settingsTextCollectibles"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 0.6000000000,
-                        ["r"] = 0.6000000000,
-                        ["g"] = 1,
-                    },
-                    ["settingsTextInstructions"] = 
-                    {
-                        ["a"] = 1,
-                        ["b"] = 1,
-                        ["r"] = 0.8000000000,
-                        ["g"] = 1,
-                    },
+                    ["RiverSBaitLeft"] = 0,
+                    ["FoulSBaitLeft"] = 0,
+                    ["FoulBaitLeft"] = 0,
+                    ["LakeBaitLeft"] = 0,
+                    ["LakeSBaitLeft"] = 0,
+                    ["GeneralBait"] = 0,
+                    ["OceanBaitLeft"] = 0,
+                    ["OceanSBaitLeft"] = 0,
+                    ["RiverBaitLeft"] = 0,
                 },
-                ["Quests"] = 
+                ["TEMPPINDATA"] = 
                 {
                 },
                 ["QuestsDone"] = 
@@ -13508,50 +10532,50 @@ Destinations_Settings =
                     [5289] = 1,
                     [6317] = 1,
                     [6401] = 2,
-                    [6101] = 1,
-                    [5811] = 1,
-                    [3667] = 1,
-                    [5074] = 1,
-                    [5302] = 1,
-                    [5845] = 1,
-                    [3784] = 1,
                     [6465] = 1,
-                    [5852] = 1,
-                    [6620] = 1,
-                    [6588] = 1,
+                    [5811] = 1,
+                    [6476] = 2,
+                    [5409] = 1,
+                    [5302] = 1,
                     [6698] = 1,
+                    [6438] = 1,
+                    [5395] = 1,
+                    [5392] = 1,
+                    [5310] = 1,
+                    [6588] = 1,
+                    [5314] = 1,
                     [5822] = 2,
-                    [5855] = 1,
+                    [4296] = 1,
                     [7104] = 1,
                     [6593] = 1,
                     [6338] = 1,
                     [5315] = 1,
-                    [6438] = 1,
-                    [5409] = 1,
+                    [5839] = 1,
+                    [5076] = 1,
                     [5830] = 1,
                     [3783] = 1,
-                    [4296] = 1,
+                    [3784] = 1,
                     [6130] = 1,
                     [5834] = 1,
-                    [5076] = 1,
+                    [5845] = 1,
                     [6348] = 1,
                     [5837] = 1,
                     [5838] = 1,
                     [5071] = 1,
                     [4080] = 1,
                     [5073] = 1,
-                    [6098] = 1,
+                    [5074] = 1,
                     [5075] = 1,
                     [6100] = 1,
-                    [5077] = 1,
+                    [6101] = 1,
                     [6102] = 1,
                     [6103] = 1,
                     [6104] = 1,
                     [6105] = 1,
-                    [5395] = 1,
+                    [6620] = 1,
                     [6363] = 1,
-                    [6364] = 1,
-                    [5392] = 1,
+                    [5852] = 1,
+                    [5855] = 1,
                     [6622] = 1,
                     [4831] = 2,
                     [6624] = 1,
@@ -13568,27 +10592,3024 @@ Destinations_Settings =
                     [6379] = 1,
                     [6636] = 1,
                     [6637] = 1,
-                    [5407] = 1,
-                    [3645] = 1,
+                    [5856] = 1,
+                    [6364] = 1,
                     [6640] = 1,
-                    [5310] = 1,
+                    [5077] = 1,
                     [6642] = 1,
                     [6643] = 1,
-                    [6771] = 1,
-                    [5856] = 1,
+                    [6098] = 1,
+                    [6851] = 1,
                     [6134] = 1,
-                    [5314] = 1,
+                    [5407] = 1,
                     [5368] = 1,
-                    [6476] = 2,
-                    [5839] = 1,
+                    [3645] = 1,
+                    [6771] = 1,
                     [6651] = 1,
                     [6396] = 2,
                     [6653] = 1,
                     [5374] = 1,
-                    [6851] = 1,
+                    [3667] = 1,
+                },
+                ["Quests"] = 
+                {
+                },
+                ["miscColorCodes"] = 
+                {
+                    ["settingsTextInstructions"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextQuests"] = 
+                    {
+                        ["b"] = 0.4000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.4000000000,
+                    },
+                    ["settingsTextOddLine"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextOnlyText"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextVWW"] = 
+                    {
+                        ["b"] = 0.2666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.2666666667,
+                    },
+                    ["settingsTextEvenLine"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.9294117647,
+                        ["r"] = 0.9294117647,
+                    },
+                    ["mapFilterTextUndone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAchievements"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.5333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextWarn"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextFish"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["mapFilterTextDone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.7725490196,
+                    },
+                    ["settingsTextCollectibles"] = 
+                    {
+                        ["b"] = 0.6000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextDone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextQDone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.3333333333,
+                    },
+                    ["settingsTextMiscellaneous"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0,
+                    },
+                    ["mapFilterTextUndone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.7607843137,
+                        ["r"] = 0.8666666667,
+                    },
+                    ["mapFilterTextQUndone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextEnglish"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0.6666666667,
+                    },
+                    ["settingsTextUnknown"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextAchHeaders"] = 
+                    {
+                        ["b"] = 0.6666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextReloadWarning"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAccountWide"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["mapFilterTextQProg"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextImprove"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 0.6000000000,
+                    },
+                },
+            },
+            ["Otto von Bissmark"] = 
+            {
+                ["settings"] = 
+                {
+                    ["HideQuestGiverName"] = false,
+                    ["MapFiltersMisc"] = true,
+                    ["EnglishColorPOI"] = "efebbe",
+                    ["ShowDungeonBossesOnTop"] = false,
+                    ["EnglishColorKeeps"] = "dc8122",
+                    ["AddEnglishOnUnknwon"] = false,
+                    ["ShowCadwellsAlmanacOnly"] = false,
+                    ["HideAllianceOnKeeps"] = false,
+                    ["MapFiltersPOIs"] = true,
+                    ["AddNewLineOnKeeps"] = true,
+                    ["MapFiltersAchievements"] = true,
+                    ["ImproveMundus"] = true,
+                    ["ShowCadwellsAlmanac"] = false,
+                    ["MapFiltersFishing"] = true,
+                    ["useAccountWide"] = false,
+                    ["MapFiltersCollectibles"] = true,
+                    ["MapFiltersQuestgivers"] = true,
+                    ["AddEnglishOnKeeps"] = false,
+                    ["ShowDungeonBossesInZones"] = true,
+                    ["ImproveCrafting"] = true,
+                    ["activateReloaduiButton"] = false,
+                },
+                ["filters"] = 
+                {
+                    ["DEST_Compass_Fishing"] = false,
+                    ["DEST_PinSet_Deadlands"] = false,
+                    ["DEST_Pin_Quest_Giver"] = false,
+                    ["DEST_PinSet_Other_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
+                    ["DEST_PinSet_Nosediver_Done"] = false,
+                    ["DEST_Compass_Misc"] = true,
+                    ["DEST_Pin_Quest_Daily"] = false,
+                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering"] = false,
+                    ["DEST_Pin_Collectibles_Done"] = false,
+                    ["DEST_Compass_Fishing_Show_FishName"] = false,
+                    ["DEST_PinSet_Champion_Done"] = false,
+                    ["DEST_Compass_Collectibles"] = false,
+                    ["DEST_PinSet_Peacemaker"] = false,
+                    ["DEST_Pin_Quest_In_Progress"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
+                    ["DEST_PinSet_Vampire_Alter"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
+                    ["DEST_Compass_Achievements"] = true,
+                    ["DEST_Pin_Quest_Writ"] = false,
+                    ["DEST_PinSet_Patron_Done"] = false,
+                    ["DEST_PinSet_Champion"] = false,
+                    ["DEST_PinSet_Maiq"] = false,
+                    ["DEST_PinSet_Other"] = false,
+                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
+                    ["DEST_PinSet_WWVamp"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait"] = false,
+                    ["DEST_PinSet_Patron"] = false,
+                    ["DEST_Compass_Collectibles_Show_Item"] = false,
+                    ["DEST_Compass_Quest_Giver"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
+                    ["DEST_PinSet_Peacemaker_Done"] = false,
+                    ["DEST_PinSet_Unknown"] = true,
+                    ["DEST_Pin_Quest_Done"] = false,
+                    ["DEST_PinSet_Nosediver"] = false,
+                    ["DEST_PinSet_Werewolf_Shrine"] = false,
+                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_HighIsle"] = false,
+                    ["DEST_Compass_Fishing_Show_Water"] = false,
+                    ["DEST_PinSet_Last_Brawl_Done"] = false,
+                    ["DEST_Pin_Fishing_Done"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
+                    ["DEST_PinSet_Dwemer"] = false,
+                    ["DEST_Pin_Quest_Repeatable"] = false,
+                    ["DEST_PinSet_Earthly_Possessions"] = false,
+                    ["DEST_Pin_Fishing"] = false,
+                    ["DEST_Compass_WWVamp"] = true,
+                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
+                    ["DEST_Pin_Collectibles"] = false,
+                    ["DEST_PinSet_Maiq_Done"] = false,
+                    ["DEST_PinSet_Cutpurse_Above"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
+                    ["DEST_PinSet_Last_Brawl"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me"] = false,
+                },
+                ["version"] = 1,
+                ["pins"] = 
+                {
+                    ["pinTextureCollectible"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCutpurseDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePatron"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQuestsUndone"] = 
+                    {
+                        ["tintmain"] = 
+                        {
+                            [4] = 1,
+                            [1] = 0,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tintday"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 0,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["tintrep"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 0,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                        ["texture"] = "",
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tintdun"] = 
+                        {
+                            [4] = 1,
+                            [1] = 0,
+                            [2] = 0,
+                            [3] = 1,
+                        },
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                    },
+                    ["pinTextureUnknown"] = 
+                    {
+                        ["textcolorEN"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorTrader"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 42,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["tint"] = 
+                        {
+                            [4] = 0.6000000000,
+                            [1] = 0.7000000000,
+                            [2] = 0.7000000000,
+                            [3] = 0.7000000000,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                    },
+                    ["pinTextureQuestsDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBreakingDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWrothgarJumperDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureDwemer"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 145,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQuestsInProgress"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunter"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePeacemaker"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPosDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureUnknownOthers"] = 
+                    {
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                    },
+                    ["pinTextureVampAltar"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOnMeDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureDeadlands"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOther"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPos"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePeacemakerDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureHighIsle"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureFishDone"] = 
+                    {
+                        ["textcolorBait"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                    },
+                    ["pinTextureWrothgarJumper"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCutpurse"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediver"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunterDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQolPin"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 35,
+                        ["level"] = 45,
+                        ["texture"] = "",
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureMaiqDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureFish"] = 
+                    {
+                        ["textcolorBait"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                    },
+                    ["pinTextureBreaking"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBrawl"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePatronDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCollectibleDone"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediverDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWWVamp"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampionDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOnMe"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampion"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWWShrine"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOtherDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureAyleid"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBrawlDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureMaiq"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                },
+                ["data"] = 
+                {
+                    ["RiverSBaitLeft"] = 0,
+                    ["FoulSBaitLeft"] = 0,
+                    ["FoulBaitLeft"] = 0,
+                    ["LakeBaitLeft"] = 0,
+                    ["LakeSBaitLeft"] = 0,
+                    ["GeneralBait"] = 0,
+                    ["OceanBaitLeft"] = 0,
+                    ["OceanSBaitLeft"] = 0,
+                    ["RiverBaitLeft"] = 0,
                 },
                 ["TEMPPINDATA"] = 
                 {
+                },
+                ["QuestsDone"] = 
+                {
+                    [4864] = 1,
+                    [5377] = 1,
+                    [5388] = 1,
+                    [5389] = 1,
+                    [5392] = 1,
+                    [6673] = 1,
+                    [5394] = 1,
+                    [5395] = 1,
+                    [5396] = 1,
+                    [5400] = 1,
+                    [5403] = 1,
+                    [7197] = 2,
+                    [5406] = 1,
+                    [5407] = 1,
+                    [5409] = 1,
+                    [5412] = 1,
+                    [5413] = 1,
+                    [5414] = 2,
+                    [5415] = 1,
+                    [5416] = 1,
+                    [5417] = 1,
+                    [5418] = 1,
+                    [4911] = 1,
+                    [6449] = 1,
+                    [6451] = 1,
+                    [5941] = 1,
+                    [6712] = 1,
+                    [6971] = 2,
+                    [6972] = 2,
+                    [6973] = 1,
+                    [6974] = 2,
+                    [5953] = 1,
+                    [6722] = 1,
+                    [6979] = 1,
+                    [6980] = 1,
+                    [6471] = 2,
+                    [6218] = 1,
+                    [3916] = 1,
+                    [4944] = 1,
+                    [6227] = 1,
+                    [6228] = 1,
+                    [7000] = 1,
+                    [4441] = 1,
+                    [6749] = 1,
+                    [6497] = 2,
+                    [4450] = 1,
+                    [7013] = 2,
+                    [7015] = 1,
+                    [7016] = 1,
+                    [7017] = 1,
+                    [7018] = 1,
+                    [5739] = 1,
+                    [5742] = 1,
+                    [6769] = 2,
+                    [6514] = 1,
+                    [6515] = 1,
+                    [4982] = 2,
+                    [3963] = 1,
+                    [3964] = 1,
+                    [7037] = 1,
+                    [5249] = 1,
+                    [3970] = 1,
+                    [7043] = 1,
+                    [6532] = 1,
+                    [5259] = 1,
+                    [4493] = 1,
+                    [5520] = 1,
+                    [7060] = 1,
+                    [6549] = 1,
+                    [7063] = 1,
+                    [5784] = 1,
+                    [5531] = 1,
+                    [5532] = 2,
+                    [4767] = 1,
+                    [5538] = 1,
+                    [6313] = 1,
+                    [4526] = 1,
+                    [6319] = 2,
+                    [7041] = 1,
+                    [4529] = 1,
+                    [6780] = 2,
+                    [5811] = 1,
+                    [6757] = 1,
+                    [7093] = 2,
+                    [5302] = 1,
+                    [6978] = 1,
+                    [6467] = 2,
+                    [3001] = 1,
+                    [7104] = 1,
+                    [3003] = 1,
+                    [3004] = 1,
+                    [4541] = 2,
+                    [5822] = 1,
+                    [4543] = 1,
+                    [5312] = 1,
+                    [6337] = 1,
+                    [5314] = 1,
+                    [5315] = 1,
+                    [5316] = 1,
+                    [6171] = 1,
+                    [6648] = 1,
+                    [5075] = 1,
+                    [4296] = 1,
+                    [5321] = 1,
+                    [5834] = 1,
+                    [5076] = 1,
+                    [5845] = 1,
+                    [5837] = 1,
+                    [5838] = 1,
+                    [5071] = 1,
+                    [6105] = 1,
+                    [5073] = 1,
+                    [6098] = 1,
+                    [6099] = 1,
+                    [6100] = 1,
+                    [6101] = 1,
+                    [6102] = 1,
+                    [6103] = 1,
+                    [6104] = 1,
+                    [6361] = 1,
+                    [5008] = 1,
+                    [6642] = 1,
+                    [4316] = 1,
+                    [5949] = 1,
+                    [6384] = 1,
+                    [5855] = 1,
+                    [5856] = 1,
+                    [4322] = 1,
+                    [6626] = 1,
+                    [5289] = 1,
+                    [6628] = 1,
+                    [5839] = 1,
+                    [6668] = 1,
+                    [6624] = 1,
+                    [6623] = 1,
+                    [6633] = 1,
+                    [6588] = 1,
+                    [6358] = 1,
+                    [6555] = 1,
+                    [6637] = 1,
+                    [5310] = 1,
+                    [5852] = 1,
+                    [4336] = 2,
+                    [4831] = 2,
+                    [6130] = 1,
+                    [5074] = 1,
+                    [4054] = 1,
+                    [5077] = 1,
+                    [6134] = 1,
+                    [4737] = 1,
+                    [5368] = 1,
+                    [5921] = 1,
+                    [6650] = 1,
+                    [7035] = 1,
+                    [6718] = 1,
+                    [6983] = 1,
+                    [5374] = 1,
+                    [5733] = 1,
+                },
+                ["Quests"] = 
+                {
+                },
+                ["miscColorCodes"] = 
+                {
+                    ["settingsTextInstructions"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextQuests"] = 
+                    {
+                        ["b"] = 0.4000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.4000000000,
+                    },
+                    ["settingsTextOddLine"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextOnlyText"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextVWW"] = 
+                    {
+                        ["b"] = 0.2666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.2666666667,
+                    },
+                    ["settingsTextEvenLine"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.9294117647,
+                        ["r"] = 0.9294117647,
+                    },
+                    ["mapFilterTextUndone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAchievements"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.5333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextWarn"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextFish"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["mapFilterTextDone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.7725490196,
+                    },
+                    ["settingsTextCollectibles"] = 
+                    {
+                        ["b"] = 0.6000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextDone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextQDone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.3333333333,
+                    },
+                    ["settingsTextMiscellaneous"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0,
+                    },
+                    ["mapFilterTextUndone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.7607843137,
+                        ["r"] = 0.8666666667,
+                    },
+                    ["mapFilterTextQUndone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextEnglish"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0.6666666667,
+                    },
+                    ["settingsTextUnknown"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextAchHeaders"] = 
+                    {
+                        ["b"] = 0.6666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextReloadWarning"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAccountWide"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["mapFilterTextQProg"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextImprove"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 0.6000000000,
+                    },
+                },
+            },
+            ["Gamal Loki"] = 
+            {
+                ["settings"] = 
+                {
+                    ["HideQuestGiverName"] = false,
+                    ["MapFiltersMisc"] = true,
+                    ["EnglishColorPOI"] = "efebbe",
+                    ["ShowDungeonBossesOnTop"] = false,
+                    ["EnglishColorKeeps"] = "dc8122",
+                    ["AddEnglishOnUnknwon"] = false,
+                    ["ShowCadwellsAlmanacOnly"] = false,
+                    ["HideAllianceOnKeeps"] = false,
+                    ["MapFiltersPOIs"] = true,
+                    ["AddNewLineOnKeeps"] = true,
+                    ["MapFiltersAchievements"] = true,
+                    ["ImproveMundus"] = true,
+                    ["ShowCadwellsAlmanac"] = false,
+                    ["MapFiltersFishing"] = true,
+                    ["useAccountWide"] = false,
+                    ["MapFiltersCollectibles"] = true,
+                    ["MapFiltersQuestgivers"] = true,
+                    ["AddEnglishOnKeeps"] = false,
+                    ["ShowDungeonBossesInZones"] = true,
+                    ["ImproveCrafting"] = true,
+                    ["activateReloaduiButton"] = false,
+                },
+                ["filters"] = 
+                {
+                    ["DEST_Compass_Fishing"] = false,
+                    ["DEST_PinSet_Deadlands"] = false,
+                    ["DEST_Pin_Quest_Giver"] = false,
+                    ["DEST_PinSet_Other_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering_Done"] = false,
+                    ["DEST_PinSet_Nosediver_Done"] = false,
+                    ["DEST_Compass_Misc"] = true,
+                    ["DEST_Pin_Quest_Daily"] = false,
+                    ["DEST_PinSet_Cutpurse_Above_Done"] = false,
+                    ["DEST_PinSet_Breaking_Entering"] = false,
+                    ["DEST_Pin_Collectibles_Done"] = false,
+                    ["DEST_Compass_Fishing_Show_FishName"] = false,
+                    ["DEST_PinSet_Champion_Done"] = false,
+                    ["DEST_Compass_Collectibles"] = false,
+                    ["DEST_PinSet_Peacemaker"] = false,
+                    ["DEST_Pin_Quest_In_Progress"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper"] = false,
+                    ["DEST_PinSet_Vampire_Alter"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter"] = false,
+                    ["DEST_Compass_Achievements"] = true,
+                    ["DEST_Pin_Quest_Writ"] = false,
+                    ["DEST_PinSet_Patron_Done"] = false,
+                    ["DEST_PinSet_Champion"] = false,
+                    ["DEST_PinSet_Maiq"] = false,
+                    ["DEST_PinSet_Other"] = false,
+                    ["DEST_Compass_Collectibles_Show_MobName"] = false,
+                    ["DEST_PinSet_Wrothgar_Jumper_Done"] = false,
+                    ["DEST_PinSet_WWVamp"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait"] = false,
+                    ["DEST_PinSet_Patron"] = false,
+                    ["DEST_Compass_Collectibles_Show_Item"] = false,
+                    ["DEST_Compass_Quest_Giver"] = false,
+                    ["DEST_Compass_Fishing_Show_Bait_Left"] = false,
+                    ["DEST_PinSet_Peacemaker_Done"] = false,
+                    ["DEST_PinSet_Unknown"] = true,
+                    ["DEST_Pin_Quest_Done"] = false,
+                    ["DEST_PinSet_Nosediver"] = false,
+                    ["DEST_PinSet_Werewolf_Shrine"] = false,
+                    ["DEST_PinSet_Ayleid"] = false,
+                    ["DEST_PinSet_HighIsle"] = false,
+                    ["DEST_Compass_Fishing_Show_Water"] = false,
+                    ["DEST_PinSet_Last_Brawl_Done"] = false,
+                    ["DEST_Pin_Fishing_Done"] = false,
+                    ["DEST_PinSet_Wrothgar_Relic_Hunter_Done"] = false,
+                    ["DEST_PinSet_Dwemer"] = false,
+                    ["DEST_Pin_Quest_Repeatable"] = false,
+                    ["DEST_PinSet_Earthly_Possessions"] = false,
+                    ["DEST_Pin_Fishing"] = false,
+                    ["DEST_Compass_WWVamp"] = true,
+                    ["DEST_PinSet_Earthly_Possessions_Done"] = false,
+                    ["DEST_Pin_Collectibles"] = false,
+                    ["DEST_PinSet_Maiq_Done"] = false,
+                    ["DEST_PinSet_Cutpurse_Above"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me_Done"] = false,
+                    ["DEST_PinSet_Last_Brawl"] = false,
+                    ["DEST_PinSet_This_Ones_On_Me"] = false,
+                },
+                ["version"] = 1,
+                ["pins"] = 
+                {
+                    ["pinTextureCollectible"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCutpurseDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePatron"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQuestsUndone"] = 
+                    {
+                        ["tintmain"] = 
+                        {
+                            [4] = 1,
+                            [1] = 0,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tintday"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 0,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["tintrep"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 0,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                        ["texture"] = "",
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tintdun"] = 
+                        {
+                            [4] = 1,
+                            [1] = 0,
+                            [2] = 0,
+                            [3] = 1,
+                        },
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                    },
+                    ["pinTextureUnknown"] = 
+                    {
+                        ["textcolorEN"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorTrader"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 42,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["tint"] = 
+                        {
+                            [4] = 0.6000000000,
+                            [1] = 0.7000000000,
+                            [2] = 0.7000000000,
+                            [3] = 0.7000000000,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                    },
+                    ["pinTextureQuestsDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBreakingDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWrothgarJumperDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureDwemer"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 145,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 7,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQuestsInProgress"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunter"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePeacemaker"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPosDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureUnknownOthers"] = 
+                    {
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                    },
+                    ["pinTextureVampAltar"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOnMeDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureDeadlands"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOther"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureEarthlyPos"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePeacemakerDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureHighIsle"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureFishDone"] = 
+                    {
+                        ["textcolorBait"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                    },
+                    ["pinTextureWrothgarJumper"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCutpurse"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediver"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureRelicHunterDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureQolPin"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 35,
+                        ["level"] = 45,
+                        ["texture"] = "",
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureMaiqDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureFish"] = 
+                    {
+                        ["textcolorBait"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["textcolorWater"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["maxDistance"] = 0.0500000000,
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["texture"] = "",
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                    },
+                    ["pinTextureBreaking"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBrawl"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTexturePatronDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureCollectibleDone"] = 
+                    {
+                        ["textcolortitle"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["texture"] = "",
+                        ["type"] = 2,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureNosediverDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWWVamp"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampionDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOnMe"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureChampion"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 1,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureWWShrine"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureOtherDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureAyleid"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureBrawlDone"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 5,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                    ["pinTextureMaiq"] = 
+                    {
+                        ["texture"] = "",
+                        ["size"] = 26,
+                        ["level"] = 30,
+                        ["tint"] = 
+                        {
+                            [4] = 1,
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["type"] = 6,
+                        ["textcolor"] = 
+                        {
+                            [1] = 1,
+                            [2] = 1,
+                            [3] = 1,
+                        },
+                        ["maxDistance"] = 0.0500000000,
+                    },
+                },
+                ["data"] = 
+                {
+                    ["RiverSBaitLeft"] = 0,
+                    ["FoulSBaitLeft"] = 0,
+                    ["FoulBaitLeft"] = 0,
+                    ["LakeBaitLeft"] = 0,
+                    ["LakeSBaitLeft"] = 0,
+                    ["GeneralBait"] = 0,
+                    ["OceanBaitLeft"] = 0,
+                    ["OceanSBaitLeft"] = 0,
+                    ["RiverBaitLeft"] = 0,
+                },
+                ["TEMPPINDATA"] = 
+                {
+                },
+                ["QuestsDone"] = 
+                {
+                    [5377] = 1,
+                    [4107] = 1,
+                    [4620] = 1,
+                    [5389] = 1,
+                    [5392] = 1,
+                    [4625] = 1,
+                    [5394] = 1,
+                    [5395] = 1,
+                    [5396] = 1,
+                    [7191] = 1,
+                    [5400] = 1,
+                    [6171] = 1,
+                    [7197] = 1,
+                    [5406] = 1,
+                    [5407] = 1,
+                    [5409] = 1,
+                    [5412] = 1,
+                    [5413] = 1,
+                    [5414] = 2,
+                    [5415] = 1,
+                    [5416] = 1,
+                    [5417] = 1,
+                    [5418] = 1,
+                    [4663] = 2,
+                    [4666] = 2,
+                    [6971] = 2,
+                    [6972] = 2,
+                    [6973] = 1,
+                    [6974] = 2,
+                    [6978] = 1,
+                    [6979] = 1,
+                    [6981] = 1,
+                    [6982] = 1,
+                    [4680] = 1,
+                    [6985] = 1,
+                    [6218] = 1,
+                    [6993] = 1,
+                    [6994] = 1,
+                    [6227] = 1,
+                    [6228] = 1,
+                    [7000] = 1,
+                    [4441] = 1,
+                    [6749] = 1,
+                    [6750] = 1,
+                    [4450] = 1,
+                    [7015] = 1,
+                    [7017] = 1,
+                    [7018] = 1,
+                    [6514] = 1,
+                    [6515] = 1,
+                    [4724] = 1,
+                    [7036] = 1,
+                    [7038] = 1,
+                    [4737] = 1,
+                    [7042] = 1,
+                    [6532] = 1,
+                    [4997] = 2,
+                    [7048] = 1,
+                    [5259] = 1,
+                    [4493] = 1,
+                    [3985] = 1,
+                    [3986] = 1,
+                    [3987] = 1,
+                    [3988] = 1,
+                    [3990] = 1,
+                    [3991] = 1,
+                    [3992] = 1,
+                    [5531] = 1,
+                    [5534] = 2,
+                    [3999] = 1,
+                    [4002] = 1,
+                    [5289] = 1,
+                    [5547] = 1,
+                    [4016] = 1,
+                    [5811] = 1,
+                    [7093] = 1,
+                    [5302] = 1,
+                    [4023] = 1,
+                    [6588] = 1,
+                    [5310] = 1,
+                    [7104] = 1,
+                    [5314] = 1,
+                    [5315] = 1,
+                    [4296] = 1,
+                    [5834] = 1,
+                    [5837] = 1,
+                    [5838] = 1,
+                    [5071] = 1,
+                    [6096] = 2,
+                    [5073] = 1,
+                    [5074] = 1,
+                    [5075] = 1,
+                    [5076] = 1,
+                    [5845] = 1,
+                    [6102] = 1,
+                    [6103] = 1,
+                    [6104] = 1,
+                    [6105] = 1,
+                    [4316] = 1,
+                    [5855] = 1,
+                    [5856] = 1,
+                    [4767] = 2,
+                    [4322] = 1,
+                    [4067] = 1,
+                    [4967] = 2,
+                    [6373] = 1,
+                    [5606] = 1,
+                    [5737] = 2,
+                    [4831] = 2,
+                    [5249] = 1,
+                    [4738] = 1,
+                    [4723] = 1,
+                    [7044] = 1,
+                    [6498] = 1,
+                    [6134] = 1,
+                    [5388] = 1,
+                    [3995] = 1,
+                    [4722] = 1,
+                    [6130] = 1,
+                    [3856] = 1,
+                    [5852] = 1,
+                    [5839] = 1,
+                    [6646] = 1,
+                    [6647] = 1,
+                    [5368] = 1,
+                    [6098] = 1,
+                    [6101] = 1,
+                    [6100] = 1,
+                    [5605] = 1,
+                    [6099] = 1,
+                    [5374] = 1,
+                    [5077] = 1,
+                },
+                ["Quests"] = 
+                {
+                },
+                ["miscColorCodes"] = 
+                {
+                    ["settingsTextInstructions"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextQuests"] = 
+                    {
+                        ["b"] = 0.4000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.4000000000,
+                    },
+                    ["settingsTextOddLine"] = 
+                    {
+                        ["b"] = 1,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextOnlyText"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["settingsTextVWW"] = 
+                    {
+                        ["b"] = 0.2666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.2666666667,
+                    },
+                    ["settingsTextEvenLine"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.9294117647,
+                        ["r"] = 0.9294117647,
+                    },
+                    ["mapFilterTextUndone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAchievements"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.5333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextWarn"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextFish"] = 
+                    {
+                        ["b"] = 0.8000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.8000000000,
+                    },
+                    ["mapFilterTextDone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.8666666667,
+                        ["r"] = 0.7725490196,
+                    },
+                    ["settingsTextCollectibles"] = 
+                    {
+                        ["b"] = 0.6000000000,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextDone2"] = 
+                    {
+                        ["b"] = 0.5333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.6000000000,
+                    },
+                    ["mapFilterTextQDone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 0.3333333333,
+                    },
+                    ["settingsTextMiscellaneous"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.8000000000,
+                        ["r"] = 0,
+                    },
+                    ["mapFilterTextUndone1"] = 
+                    {
+                        ["b"] = 0.6196078431,
+                        ["a"] = 1,
+                        ["g"] = 0.7607843137,
+                        ["r"] = 0.8666666667,
+                    },
+                    ["mapFilterTextQUndone"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextEnglish"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0.6666666667,
+                    },
+                    ["settingsTextUnknown"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0.3333333333,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextAchHeaders"] = 
+                    {
+                        ["b"] = 0.6666666667,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 0,
+                    },
+                    ["settingsTextReloadWarning"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 0,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextAccountWide"] = 
+                    {
+                        ["b"] = 0,
+                        ["a"] = 1,
+                        ["g"] = 1,
+                        ["r"] = 1,
+                    },
+                    ["mapFilterTextQProg"] = 
+                    {
+                        ["b"] = 0.3333333333,
+                        ["a"] = 1,
+                        ["g"] = 0.6666666667,
+                        ["r"] = 1,
+                    },
+                    ["settingsTextImprove"] = 
+                    {
+                        ["b"] = 0.2000000000,
+                        ["a"] = 1,
+                        ["g"] = 0.2000000000,
+                        ["r"] = 0.6000000000,
+                    },
                 },
             },
         },
