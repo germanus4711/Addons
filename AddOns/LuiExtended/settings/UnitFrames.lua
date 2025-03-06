@@ -282,6 +282,43 @@ function UnitFrames.CreateSettings()
         end,
     }
 
+    -- Grid Snap Settings for Unit Frames
+    optionsDataUnitFrames[#optionsDataUnitFrames + 1] =
+    {
+        type = "checkbox",
+        name = "Enable Grid Snap (Unit Frames)",
+        tooltip = "Enable snapping unit frames to a grid when moving them",
+        getFunc = function ()
+            return LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_unitFrames
+        end,
+        setFunc = function (value)
+            LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_unitFrames = value
+        end,
+        width = "half",
+        default = false,
+    }
+
+    optionsDataUnitFrames[#optionsDataUnitFrames + 1] =
+    {
+        type = "slider",
+        name = "Grid Size (Unit Frames)",
+        tooltip = "Set the size of the grid for snapping unit frames",
+        min = 5,
+        max = 100,
+        step = 5,
+        getFunc = function ()
+            return LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGridSize_unitFrames or 15
+        end,
+        setFunc = function (value)
+            LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGridSize_unitFrames = value
+        end,
+        width = "half",
+        default = 15,
+        disabled = function ()
+            return not LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_unitFrames
+        end,
+    }
+
     -- Custom Unit Frames Reset position
     optionsDataUnitFrames[#optionsDataUnitFrames + 1] =
     {
@@ -522,20 +559,20 @@ function UnitFrames.CreateSettings()
                 choices =
                 {
                     "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
                     "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
                     "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
-                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
-                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
                     "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
                 },
                 choicesValues =
                 {
                     GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
                     GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
                     GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
-                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
-                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
                     GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
                 },
                 sort = "name-up",
                 getFunc = function ()
@@ -703,20 +740,20 @@ function UnitFrames.CreateSettings()
                 choices =
                 {
                     "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
                     "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
                     "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
-                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
-                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
                     "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
                 },
                 choicesValues =
                 {
                     GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
                     GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
                     GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
-                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
-                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
                     GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
                 },
                 sort = "name-up",
                 getFunc = function ()
@@ -846,6 +883,23 @@ function UnitFrames.CreateSettings()
                 end,
                 width = "full",
                 default = Defaults.CustomSmoothBar,
+                disabled = function ()
+                    return not LUIE.SV.UnitFrames_Enabled
+                end,
+            },
+            {
+                -- Custom Unit Frames Target Marker
+                type = "checkbox",
+                name = "Format unitframe names with target marker",
+                tooltip = "Format unitframe names with target marker",
+                getFunc = function ()
+                    return Settings.CustomTargetMarker
+                end,
+                setFunc = function (value)
+                    Settings.CustomTargetMarker = value
+                end,
+                width = "full",
+                default = Defaults.CustomTargetMarker,
                 disabled = function ()
                     return not LUIE.SV.UnitFrames_Enabled
                 end,

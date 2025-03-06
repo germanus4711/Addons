@@ -44,7 +44,7 @@ local strings = {
 	
 -- *************** ANNUAL EVENTS	
 	
-	EVT_EVENT_INFO_WHITESTRAKE = "Feb. 2025.  3 Scheine täglich (pro Konto und Server)",
+	EVT_EVENT_INFO_WHITESTRAKE = "20.Feb.-4.März 2025.  3 Scheine täglich (pro Konto und Server): 2 from Battlegrounds or Cyrodiil, plus 1 from Imperial City; per account per day. DOUBLE XP/AP/Tel Var PASSIVE NOW!",
 --	EVT_EVENT_INFO_WHITESTRAKE = "25.Juli-6.Aug. 2024 (39 Scheine).  3 Scheine täglich (pro Konto und Server)",
 --	EVT_EVENT_INFO_WHITESTRAKE = "Feb. 22-March 5, 2024. Tickets from DAILY quests: 2 from Battlegrounds or Cyrodiil, plus 1 from Imperial City; per account per day. DOUBLE XP/AP/Tel Var PASSIVE NOW!",
 --	EVT_EVENT_INFO_WHITESTRAKE = "29.Juni-11.Juli 2023 (39 Scheine). Tickets für Tägliche",
@@ -85,7 +85,7 @@ local strings = {
 -- *************** NON-ANNUAL EVENTS	
 
 -- 2.240 "Pan-Tamriel"
-	EVT_EVENT_INFO_PAN_TAMRIEL = "23.Jan-4.Feb 2025. 3 Scheine/Tag/Konto: Weltboss oder Endboss öffentliche Verliese, Endbosse von Gewölben, Dunkle Risse, Dolmen, Drachen usw., Verliese, Arenen oder Prüfungen.",
+	EVT_EVENT_INFO_PAN_TAMRIEL = "23.Jan-4.Feb 2025. (39 Scheine) 3 Scheine/Tag/Konto: Weltboss oder Endboss öffentliche Verliese, Endbosse von Gewölben, Dunkle Risse, Dolmen, Drachen usw., Verliese, Arenen oder Prüfungen.",
 -- 2.240 "Legacy of the Bretons"
 	EVT_EVENT_INFO_BRETONS = "21.Nov-3.Dec 2024. 2 Scheine/Tag/Konto, from your first High Isle/Tribute or Galen DAILY quest, Dreadsail WEEKLY quest, or the final boss of Coral Aerie, Shipwright's Regret, Earthen Root, or Graven Deep.",
 -- 2.240 "Fallen Leaves of the West Weald"

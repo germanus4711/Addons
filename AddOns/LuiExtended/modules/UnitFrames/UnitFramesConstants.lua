@@ -193,10 +193,12 @@ UnitFrames.Defaults =
     BarAlignCenterLabelPlayer = false,
     BarAlignCenterLabelTarget = false,
     CustomFormatCenterLabel = GetString(LUIE_STRING_UF_FORMAT_CENTER_LABEL),
+    CustomTargetMarker = false,
 }
 
+
 --- @class (partial) LUIE_UnitFrames_SV
-UnitFrames.SV = ...
+UnitFrames.SV = {}
 
 UnitFrames.CustomFrames = {}
 UnitFrames.CustomFramesMovingState = false

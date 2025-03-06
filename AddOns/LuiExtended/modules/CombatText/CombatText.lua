@@ -7,6 +7,7 @@
 local LUIE = LUIE
 -- CombatText namespace
 --- @class (partial) LUIE.CombatText
+--- @field SV LUIE.CombatText.SV
 local CombatText = {}
 CombatText.__index = CombatText
 --- @class (partial) LUIE.CombatText
@@ -368,17 +369,37 @@ CombatText.Defaults =
         hotcritical = 200,
     },
 }
-CombatText.SV = ...
+CombatText.SV = {}
 
+---
+--- @param panel userdata
 local function SavePosition(panel)
+    -- Validate panel
+    if not panel or not panel.GetAnchor or not panel.GetDimensions then
+        return
+    end
+
+    -- Get anchor data
     local anchor = { panel:GetAnchor(0) }
+    if not anchor[1] then -- isValidAnchor is false
+        return
+    end
+
+    -- Get dimensions
     local dimensions = { panel:GetDimensions() }
+    if not dimensions[1] or not dimensions[2] then -- Invalid dimensions
+        return
+    end
+
+    -- Save position and dimensions
     local panelSettings = LUIE.CombatText.SV.panels[panel:GetName()]
-    panelSettings.point = anchor[2]
-    panelSettings.relativePoint = anchor[4]
-    panelSettings.offsetX = anchor[5]
-    panelSettings.offsetY = anchor[6]
-    panelSettings.dimensions = dimensions
+    if panelSettings then
+        panelSettings.point = anchor[2]
+        panelSettings.relativePoint = anchor[4]
+        panelSettings.offsetX = anchor[5]
+        panelSettings.offsetY = anchor[6]
+        panelSettings.dimensions = dimensions
+    end
 end
 
 -- Bulk list add from menu buttons
@@ -559,3 +580,51 @@ function CombatText.Initialize(enabled)
     -- Increment so this doesn't occur again.
     LUIESV.Default[GetDisplayName()]["$AccountWide"].AdjustVarsCT = 4
 end
+
+-- -- Set position of panels
+-- function CombatText.SetPanelPosition()
+--     local Settings = CombatText.SV
+--     for k, v in pairs(Settings.panels) do
+--         local panel = _G[k]
+--         if panel then
+--             panel:ClearAnchors()
+--             if v.x ~= nil and v.y ~= nil then
+--                 local x, y = v.x, v.y
+--                 if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_combatText then
+--                     x, y = LUIE.ApplyGridSnap(x, y, "combatText")
+--                 end
+--                 panel:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
+--             else
+--                 panel:SetAnchor(v.anchor[1], GuiRoot, v.anchor[2], v.anchor[3], v.anchor[4])
+--             end
+--         end
+--     end
+-- end
+
+-- -- Unlock panels for moving
+-- --- @param state boolean
+-- function CombatText.SetMovingState(state)
+--     local Settings = CombatText.SV
+--     for k, _ in pairs(Settings.panels) do
+--         local panel = _G[k]
+--         if panel then
+--             panel:SetMouseEnabled(state)
+--             panel:SetMovable(state)
+--             _G[k .. "_Backdrop"]:SetHidden(not state)
+--             _G[k .. "_Label"]:SetHidden(not state)
+--             if state then
+--                 -- Add grid snapping handler
+--                 panel:SetHandler("OnMoveStop", function (self)
+--                     local left, top = self:GetLeft(), self:GetTop()
+--                     if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_combatText then
+--                         left, top = LUIE.ApplyGridSnap(left, top, "combatText")
+--                         self:ClearAnchors()
+--                         self:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, left, top)
+--                     end
+--                     Settings.panels[k].x = left
+--                     Settings.panels[k].y = top
+--                 end)
+--             end
+--         end
+--     end
+-- end

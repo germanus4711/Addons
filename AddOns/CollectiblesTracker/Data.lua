@@ -96,7 +96,7 @@ CollectiblesTracker.data.ct = {
 	{
 		LCCC.GetZoneName(1227),
 		{
-			"8856-8865", -- Hungering Void Weapons
+			8856, -8865, -- Hungering Void Weapons
 		}
 	},
 
@@ -104,10 +104,10 @@ CollectiblesTracker.data.ct = {
 	{
 		LCCC.GetZoneName(1436),
 		{
-			"11678-11684", -- Body: Reawakened Hierophant
-			"11694-11735", -- Body: Basalt-Blood Warrior (11694), Nobility in Decay (11701), Soulcleaver (11708), Monolith of Storms (11715), Wrathsun (11722), Gardener of Seasons (11729)
-			"11667-11676", -- Weapons: Reawakened Hierophant
-			"11736-11795", -- Weapons: Basalt-Blood Warrior (11736), Nobility in Decay (11746), Soulcleaver (11756), Monolith of Storms (11766), Wrathsun (11776), Gardener of Seasons (11786)
+			11678, -11684, -- Body: Reawakened Hierophant
+			11694, -11735, -- Body: Basalt-Blood Warrior (11694), Nobility in Decay (11701), Soulcleaver (11708), Monolith of Storms (11715), Wrathsun (11722), Gardener of Seasons (11729)
+			11667, -11676, -- Weapons: Reawakened Hierophant
+			11736, -11795, -- Weapons: Basalt-Blood Warrior (11736), Nobility in Decay (11746), Soulcleaver (11756), Monolith of Storms (11766), Wrathsun (11776), Gardener of Seasons (11786)
 		}
 	},
 
@@ -117,11 +117,11 @@ CollectiblesTracker.data.ct = {
 		{
 			5019, 5589, 5746, -- Arena Gladiator
 			6064, -- Elinhir Arena Lion
-			"7338-7343", "7380-7384", -- Knight of the Circle
+			7338, -7343, 7380, -7384, -- Knight of the Circle
 			7595, -- Reach-Mage Ceremonial Skullcap
 			9718, -- Siegestomper
-			"11565-11578", -- Cumberland Cavalier (11565), Highborn Gallant (11572)
-			"11581-11587", -- Thane of Falkreath
+			11565, -11578, -- Cumberland Cavalier (11565), Highborn Gallant (11572)
+			11581, -11587, -- Thane of Falkreath
 			11486, 11487, -- Unfeathered Battle
 			12679, 12680, -- Feral Favor
 		}
@@ -131,14 +131,14 @@ CollectiblesTracker.data.ct = {
 	{
 		LCCC.GetZoneName(584), -- Imperial City
 		{
-			"146-148", -- Xivkyn
+			146, -148, -- Xivkyn
 			6665, 6438, -- Siegemaster
 			8043, -- Timbercrow Wanderer
 			8655, -- Rage of the Reach
-			"9280-9286", -- Nibenese Court Wizard
-			"9853-9859", -- Dragonguard Berserker
-			"10531-10536", -- Red Rook Bandit
-			"11371-11377", -- Gravegrasp
+			9280, -9286, -- Nibenese Court Wizard
+			9853, -9859, -- Dragonguard Berserker
+			10531, -10536, -- Red Rook Bandit
+			11371, -11377, -- Gravegrasp
 			11911, 12427, -- Unkindness of Ravens
 		}
 	},
@@ -147,15 +147,15 @@ CollectiblesTracker.data.ct = {
 	{
 		GetString(SI_BATTLEGROUND_HUD_HEADER), -- Battlegrounds
 		{
-			"5355-5376", "5378-5387", -- Fanged Worm
-			"5420-5451", -- Horned Dragon
-			"5621-5634", -- Heavy: Pit Daemon (5621), Storm Lord (5628)
-			"5645-5651", -- Heavy: Fire Drake
-			"6209-6238", -- Weapons: Storm Lord (6209), Fire Drake (6219), Pit Daemon (6229)
-			"6632-6634", -- Chaos Ball Emotes
-			"6728-6733", "6782-6786", -- Battleground Runner
-			"12313-12319", -- Galeskirmish Gladiator
-			"12533-12563", -- Tokens: Eld Angavar Weapons (12533), Pit Daemon Light (12543), Storm Lord Light (12550), Fire Drake Medium (12557)
+			5355, -5376, 5378, -5387, -- Fanged Worm
+			5420, -5451, -- Horned Dragon
+			5621, -5634, -- Heavy: Pit Daemon (5621), Storm Lord (5628)
+			5645, -5651, -- Heavy: Fire Drake
+			6209, -6238, -- Weapons: Storm Lord (6209), Fire Drake (6219), Pit Daemon (6229)
+			6632, -6634, -- Chaos Ball Emotes
+			6728, -6733, 6782, -6786, -- Battleground Runner
+			12313, -12319, -- Galeskirmish Gladiator
+			12533, -12563, -- Tokens: Eld Angavar Weapons (12533), Pit Daemon Light (12543), Storm Lord Light (12550), Fire Drake Medium (12557)
 			12769, -- Drakes and Daemons Mask
 			13111, 13112, -- Drakes and Daemons Duel Face/Body Art
 		}
@@ -165,9 +165,9 @@ CollectiblesTracker.data.ct = {
 	{
 		GetString(SI_ACTIVITY_FINDER_CATEGORY_TRIBUTE), -- Tales of Tribute
 		{
-			"10684-10690", -- Pelin's Paragon
-			"11917-11923", -- Frandar's Tribute
-			"12564-12570", 13079, -- Psijic Psion
+			10684, -10690, -- Pelin's Paragon
+			11917, -11923, -- Frandar's Tribute
+			12564, -12570, 13079, -- Psijic Psion
 		}
 	},
 
@@ -198,12 +198,18 @@ CollectiblesTracker.data.ec = {
 			12717, -- 10-Year Anniversary Nord Hero
 
 			-- 2
-			"12592-12601", -- Evergreen Saturalia
+			12592, -12601, -- Evergreen Saturalia
 			12808, -- Frost Draugr Runegathering
 			12263, -- Shoal Bear
 
 			-- 3
 			12716, -- 10-Year Anniversary Elven Hero
+
+			-- 4
+			12401, -12407, -- Dibella's Exaltation
+
+			-- 5
+			13096, -- Mini Siege Mining
 
 		--	12713, -- 10-Year Anniversary Mudcrab
 		--	12718, -- 10-Year Anniversary Breton Hero
@@ -215,17 +221,17 @@ CollectiblesTracker.data.ec = {
 
 	----------------------------------------------------------------------------
 	{
-		zo_strformat(SI_EVENTCOLLECTIBLES_SOURCE_MORPHS, "2018-2020"),
+		zo_strformat(SI_EVENTCOLLECTIBLES_SOURCE_MORPHS, 2018, -2020),
 		{
-			{ 5710, "6706-6709", true }, -- Nascent Indrik
-			{ 5067, "6659-6662" }, 5085, -- Dawnwood / Springtide Indrik
-			{ 5068, "6694-6697" }, 5087, -- Luminous / Shimmering Indrik
-			{ 5549, "6698-6701" }, 6616, -- Onyx / Ebon-Glow Indrik
-			{ 5550, "6702-6705" }, 6617, -- Pure-Snow / Frost-Light Indrik
-			{ 6942, "7021-7024" }, 6950, -- Spectral / Haunting Indrik
-			{ 7219, "7791-7794" }, 7278, -- Icebreath / Rimedusk Indrik
-			{ 7468, "8126-8129" }, 7503, -- Mossheart / Sapling Indrik
-			{ 7467, "8465-8468" }, 7502, -- Crimson / Rosethorn Indrik
+			{ 5710, 6706, -6709, true }, -- Nascent Indrik
+			{ 5067, 6659, -6662 }, 5085, -- Dawnwood / Springtide Indrik
+			{ 5068, 6694, -6697 }, 5087, -- Luminous / Shimmering Indrik
+			{ 5549, 6698, -6701 }, 6616, -- Onyx / Ebon-Glow Indrik
+			{ 5550, 6702, -6705 }, 6617, -- Pure-Snow / Frost-Light Indrik
+			{ 6942, 7021, -7024 }, 6950, -- Spectral / Haunting Indrik
+			{ 7219, 7791, -7794 }, 7278, -- Icebreath / Rimedusk Indrik
+			{ 7468, 8126, -8129 }, 7503, -- Mossheart / Sapling Indrik
+			{ 7467, 8465, -8468 }, 7502, -- Crimson / Rosethorn Indrik
 		}
 	},
 
@@ -234,11 +240,11 @@ CollectiblesTracker.data.ec = {
 	{
 		zo_strformat(SI_EVENTCOLLECTIBLES_SOURCE_MORPHS, 2021),
 		{
-			{ 8124, "8866-8868", true }, -- Unstable Morpholith
-			{ 8469, "8869-8871" }, -- Deadlands Scorcher
-			{  774, "9085-9087" }, -- Deadlands Firewalker
-			{ 8880, "9162-9164" }, -- Dagonic Quasigriff
-			{ 9649, "9737-9741" }, -- Doomchar Plateau
+			{ 8124, 8866, -8868, true }, -- Unstable Morpholith
+			{ 8469, 8869, -8871 }, -- Deadlands Scorcher
+			{  774, 9085, -9087 }, -- Deadlands Firewalker
+			{ 8880, 9162, -9164 }, -- Dagonic Quasigriff
+			{ 9649, 9737, -9741 }, -- Doomchar Plateau
 		}
 	},
 
@@ -247,11 +253,11 @@ CollectiblesTracker.data.ec = {
 	{
 		zo_strformat(SI_EVENTCOLLECTIBLES_SOURCE_MORPHS, 2022),
 		{
-			{ 9437, "10068-10070", true }, -- Soulfire Dragon Illusion
+			{ 9437, 10068, -10070, true }, -- Soulfire Dragon Illusion
 			{ 9436, 10071, 10072, 10179 }, -- Scales of Akatosh
-			{ 9775, "10232-10234" }, -- Aurelic Quasigriff
-			{ 9790, "10333-10335" }, -- Daggerfall Paladin
-			{ 10587, "10588-10590" }, -- Sacred Hourglass of Alkosh
+			{ 9775, 10232, -10234 }, -- Aurelic Quasigriff
+			{ 9790, 10333, -10335 }, -- Daggerfall Paladin
+			{ 10587, 10588, -10590 }, -- Sacred Hourglass of Alkosh
 		}
 	},
 
@@ -260,11 +266,11 @@ CollectiblesTracker.data.ec = {
 	{
 		zo_strformat(SI_EVENTCOLLECTIBLES_SOURCE_MORPHS, 2023),
 		{
-			{ 10697, "11051-11053", true }, -- Passion Dancer Blossom
-			{ 10913, "11055-11057" }, -- Passion's Muse
-			{ 10661, "11176-11178" }, -- Meadowbreeze Memories
-			{ 10702, "11428-11430" }, -- Passion Dancer's Attire
-			{ 10703, "11509-11511" }, -- Hoardhunter Ursauk
+			{ 10697, 11051, -11053, true }, -- Passion Dancer Blossom
+			{ 10913, 11055, -11057 }, -- Passion's Muse
+			{ 10661, 11176, -11178 }, -- Meadowbreeze Memories
+			{ 10702, 11428, -11430 }, -- Passion Dancer's Attire
+			{ 10703, 11509, -11511 }, -- Hoardhunter Ursauk
 		}
 	},
 
@@ -273,11 +279,11 @@ CollectiblesTracker.data.ec = {
 	{
 		zo_strformat(SI_EVENTCOLLECTIBLES_SOURCE_MORPHS, 2024),
 		{
-			{ 11440, "11893-11895", true }, -- Molag Bal Illusion Imp
-			{ 11497, "11896-11898" }, -- Planemeld's Master Body Art
-			{ 11875, "12408-12410" }, -- Master of Schemes
-			{ 11880, "12508-12510" }, -- Anchorborn Welwa
-			{ 12656, "12694-12698" }, -- Haven of the Five Companions
+			{ 11440, 11893, -11895, true }, -- Molag Bal Illusion Imp
+			{ 11497, 11896, -11898 }, -- Planemeld's Master Body Art
+			{ 11875, 12408, -12410 }, -- Master of Schemes
+			{ 11880, 12508, -12510 }, -- Anchorborn Welwa
+			{ 12656, 12694, -12698 }, -- Haven of the Five Companions
 		}
 	},
 
@@ -286,8 +292,8 @@ CollectiblesTracker.data.ec = {
 	{
 		zo_strformat(SI_EVENTCOLLECTIBLES_SOURCE_MORPHS, 2025),
 		{
-			{ 12665, "13082-13084", true }, -- Stonewisp of Truth and Law
-			{ 13095, "13085-13087" }, -- Logical Rune Extraction
+			{ 12665, 13082, -13084, true }, -- Stonewisp of Truth and Law
+			{ 13095, 13085, -13087 }, -- Logical Rune Extraction
 		}
 	},
 
@@ -299,23 +305,23 @@ CollectiblesTracker.data.ec = {
 			1248, -- Midyear Victor's Laurel Wreath
 
 			6365, 6493, 6494, -- Alliance Banners
-			"8196-8198", -- Alliance Breton Terriers
-			"9347-9352", -- Alliance Banner-Bearer Shields/Staves
+			8196, -8198, -- Alliance Breton Terriers
+			9347, -9352, -- Alliance Banner-Bearer Shields/Staves
 			9402, 9403, -- The Black Drake's Warpaint
 			9877, 9878, -- Battle-Scarred Markings
 
-			"6586-6592", -- Second Legion
-			"7310-7316", -- Legion Zero
-			"8343-8352", -- Tools of Domination
-			"8356-8362", -- Legion Zero Vigiles
-			"8749-8755", -- Ebonsteel Knight
-			"9746-9752", -- Black Drake Clanwrap
-			"10279-10285", -- House Dufort Banneret
-			"10710-10716", -- Gloamsedge
-			"11243-11259", -- Sancre Tor Sentry
-			"11824-11830", -- Dovah's Du'ul
-			"12188-12194", -- Ayleid Lich
-		--	"12578-12584", -- Arkay Unending Cycle
+			6586, -6592, -- Second Legion
+			7310, -7316, -- Legion Zero
+			8343, -8352, -- Tools of Domination
+			8356, -8362, -- Legion Zero Vigiles
+			8749, -8755, -- Ebonsteel Knight
+			9746, -9752, -- Black Drake Clanwrap
+			10279, -10285, -- House Dufort Banneret
+			10710, -10716, -- Gloamsedge
+			11243, -11259, -- Sancre Tor Sentry
+			11824, -11830, -- Dovah's Du'ul
+			12188, -12194, -- Ayleid Lich
+			12578, -12584, -- Arkay Unending Cycle
 		}
 	},
 
@@ -332,18 +338,18 @@ CollectiblesTracker.data.ec = {
 			5885, -- Festive Noise Maker
 			5887, -- Jester's Festival Joke Popper
 			5910, -- Obnoxious Mute Face Paint
-			{ 7270, "7609-7615" }, -- Sovereign Sow
+			{ 7270, 7609, -7615 }, -- Sovereign Sow
 			9006, -- Playful Prankster's Surprise Box
 			10235, -- Cadwell's Surprise Box
 			10665, -- Jester's Daedroth Suit
 		--	12793, -- Jester's Deadly Headband
 
-			"6097-6106", -- Cadwell
+			6097, -6106, -- Cadwell
 			7616, 7617, -- Broom and Bucket
-			"9020-9026", -- Regal Regalia
-			"10000-10006", -- Second Seed Raiment
-			"12002-12008", -- Jester's Seeker Suit
-		--	"12830-12835", -- Jester's Mimicry
+			9020, -9026, -- Regal Regalia
+			10000, -10006, -- Second Seed Raiment
+			12002, -12008, -- Jester's Seeker Suit
+		--	12830, -12835, -- Jester's Mimicry
 		}
 	},
 
@@ -356,16 +362,17 @@ CollectiblesTracker.data.ec = {
 			9977, -- Aurora Firepot Spider
 			11535, -- Jubilee Steed
 
-			"6141-6146", 6295, -- Prophet
-			"6147-6153", 6155, -- Lyris Titanborn
-			"6157-6164", -- Sai Sahan
-			6165, "6167-6173", -- Abnur Tharn
-			"7331-7337", "7375-7379", -- Jephrine Paladin
-			"9028-9037", -- Imperial Champion
-			"9846-9852", -- Saberkeel Panoply
-			"10898-10904", -- Bonemold
-			"11995-12001", -- Earthbone Ayleid
-			"12437-12441", -- Replicas
+			6141, -6146, 6295, -- Prophet
+			6147, -6153, 6155, -- Lyris Titanborn
+			6157, -6164, -- Sai Sahan
+			6165, 6167, -6173, -- Abnur Tharn
+			7331, -7337, 7375, -7379, -- Jephrine Paladin
+			9028, -9037, -- Imperial Champion
+			9846, -9852, -- Saberkeel Panoply
+			10898, -10904, -- Bonemold
+			11995, -12001, -- Earthbone Ayleid
+			12437, -12441, -- Replicas
+		--	12836, -12842, -- Worm Cult Hunter
 		}
 	},
 
@@ -374,10 +381,10 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_ZENITHAR),
 		{
-			"10292-10299", -- High Rock Spellsword
-			"11090-11095", -- Kwama Miner's Kit
-			"11392-11401", -- Ashen Militia
-			"12181-12187", 12430, -- Gold Road Dragoon
+			10292, -10299, -- High Rock Spellsword
+			11090, -11095, -- Kwama Miner's Kit
+			11392, -11401, -- Ashen Militia
+			12181, -12187, 12430, -- Gold Road Dragoon
 		}
 	},
 
@@ -386,16 +393,16 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_UNDAUNTED),
 		{
-			"6814-6818", 6910, 6911, -- Opal Ilambris
-			"6819-6823", 6908, 6909, -- Opal Engine Guardian
-			"6824-6828", 6906, 6907, -- Opal Bloodspawn
-			"6829-6833", 6912, 6913, -- Opal Troll King
-			"7751-7771", -- Opal Iceheart (7751), Opal Lord Warden (7758), Opal Nightflame (7765)
-			"7803-7809", -- Opal Swarm Mother
-			"9807-9813", -- Opal Chokethorn
-			"10420-10426", -- Opal Earthgore
-			"10556-10562", -- Opal Velidreth
-			"10746-10752", -- Opal Rkugamz Sentinel
+			6814, -6818, 6910, 6911, -- Opal Ilambris
+			6819, -6823, 6908, 6909, -- Opal Engine Guardian
+			6824, -6828, 6906, 6907, -- Opal Bloodspawn
+			6829, -6833, 6912, 6913, -- Opal Troll King
+			7751, -7771, -- Opal Iceheart (7751), Opal Lord Warden (7758), Opal Nightflame (7765)
+			7803, -7809, -- Opal Swarm Mother
+			9807, -9813, -- Opal Chokethorn
+			10420, -10426, -- Opal Earthgore
+			10556, -10562, -- Opal Velidreth
+			10746, -10752, -- Opal Rkugamz Sentinel
 		}
 	},
 
@@ -410,7 +417,7 @@ CollectiblesTracker.data.ec = {
 			1338, -- Hollowjack Spectre Mask
 			1339, -- Thicketman Spectre Mask
 			5547, -- Witches Festival Ghost Netch
-			{ 5590, "6737-6743" }, -- Apple-Bobbing Cauldron
+			{ 5590, 6737, -6743 }, -- Apple-Bobbing Cauldron
 			6643, -- Skeletal Marionette
 			6648, -- Witch's Infernal Hat
 			8079, -- Throwing Bones
@@ -423,11 +430,11 @@ CollectiblesTracker.data.ec = {
 			12724, -- Plunder Skull Blunder
 			12964, 12967, -- Lord Hollowjack
 
-			"6753-6762", "6787-6794", -- Glenmoril Wyrd
-			"8324-8333", -- Grave Dancer
-			"10360-10366", -- Witchmother's Servant
-			"11588-11594", -- Crowborne Hunter
-			"12320-12326", -- Eltheric Revenant
+			6753, -6762, 6787, -6794, -- Glenmoril Wyrd
+			8324, -8333, -- Grave Dancer
+			10360, -10366, -- Witchmother's Servant
+			11588, -11594, -- Crowborne Hunter
+			12320, -12326, -- Eltheric Revenant
 		}
 	},
 
@@ -450,11 +457,11 @@ CollectiblesTracker.data.ec = {
 			12719, -- New Life Winter Storm Robes
 			13105, -- Surprising Snowglobe
 
-			"7293-7309", -- Skaal Explorer
-			"8730-8739", -- Rkindaleft Dwarven
-			"9798-9804", -- Nord Carved
-			"10720-10722", "10724-10726", -- Evergreen
-			"11817-11823", -- Morningstar Frostwear
+			7293, -7309, -- Skaal Explorer
+			8730, -8739, -- Rkindaleft Dwarven
+			9798, -9804, -- Nord Carved
+			10720, -10722, 10724, -10726, -- Evergreen
+			11817, -11823, -- Morningstar Frostwear
 		}
 	},
 
@@ -463,9 +470,9 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_GUILDS),
 		{
-			"3720-3728", 4892, -- Maelstrom weapons
-			"9297-9306", -- Old Orsinium
-			"11810-11816", -- Bristleback Hunter
+			3720, -3728, 4892, -- Maelstrom weapons
+			9297, -9306, -- Old Orsinium
+			11810, -11816, -- Bristleback Hunter
 		}
 	},
 
@@ -474,7 +481,7 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_MURKMIRE),
 		{
-			{ 6933, "7353-7359" }, -- Wooden Grave-Stake
+			{ 6933, 7353, -7359 }, -- Wooden Grave-Stake
 		}
 	},
 
@@ -488,9 +495,9 @@ CollectiblesTracker.data.ec = {
 			8658, -- Thetys Ramarys's Bait Kit
 			9401, -- Gloam Gryphon Fledgling
 
-			"8116-8123", -- Snowhawk Mage
-			"8674-8680", -- Doctrine Ordinator
-			"9753-9762", -- Evergloam Champion
+			8116, -8123, -- Snowhawk Mage
+			8674, -8680, -- Doctrine Ordinator
+			9753, -9762, -- Evergloam Champion
 		}
 	},
 
@@ -499,8 +506,8 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_DRAGON),
 		{
-			"9290-9296", -- Ja'zennji Siir
-			"10727-10733", -- Claw-Dance Acolyte
+			9290, -9296, -- Ja'zennji Siir
+			10727, -10733, -- Claw-Dance Acolyte
 		}
 	},
 
@@ -509,8 +516,8 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_DARK_SKYRIM),
 		{
-			"8367-8373", -- Sovngarde Stalwart
-			"10336-10341", -- Saarthal Scholar
+			8367, -8373, -- Sovngarde Stalwart
+			10336, -10341, -- Saarthal Scholar
 		}
 	},
 
@@ -519,10 +526,10 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_OBLIVION),
 		{
-			{ 6689, "7346-7352" }, -- Voriplasm
+			{ 6689, 7346, -7352 }, -- Voriplasm
 			9429, 9430, -- Shadows of Blackwood
 			9431, -- Pellucid Swamp Jelly
-			"11803-11809", -- Y'ffre's Fallen-Wood
+			11803, -11809, -- Y'ffre's Fallen-Wood
 		}
 	},
 
@@ -530,8 +537,8 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_BRETON),
 		{
-			"10514-10520", -- Oaken Order
-			"12571-12577", -- Legacy of the Draoife
+			10514, -10520, -- Oaken Order
+			12571, -12577, -- Legacy of the Draoife
 
 			10412, 10413, -- Oak's Promise Markings
 			10416, -- Plant Yourself
@@ -544,7 +551,7 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_TELVANNI),
 		{
-			"11595-11600", -- Apocrypha Expedition
+			11595, -11600, -- Apocrypha Expedition
 
 			11209, -- Ebony Dwarven Scarab
 			11368, 11369, -- Nightmare Nest
@@ -558,7 +565,7 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_WEST_WEALD),
 		{
-			"12327-12333", "12368-12377", -- Tree-Sap Legion
+			12327, -12333, 12368, -12377, -- Tree-Sap Legion
 
 			12262, -- Russet Brekka
 			12416, -- Vineyard Voriplasm
@@ -571,7 +578,7 @@ CollectiblesTracker.data.ec = {
 	{
 		GetString(SI_EVENTCOLLECTIBLES_SOURCE_PANTAM),
 		{
-			"12585-12591", -- Lion Guard Captain
+			12585, -12591, -- Lion Guard Captain
 		}
 	},
 }

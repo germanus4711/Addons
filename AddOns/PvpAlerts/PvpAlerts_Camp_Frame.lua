@@ -1,3 +1,4 @@
+---@class (partial) PvpAlerts
 local PVP = PVP_Alerts_Main_Table
 
 local PVP_ICON_MISSING = PVP:GetGlobal('PVP_ICON_MISSING')
@@ -7,31 +8,26 @@ local PVP_AYLEID_WELL_ID = PVP:GetGlobal('PVP_AYLEID_WELL_ID')
 local PVP_BLESSING_OF_WAR_ID = PVP:GetGlobal('PVP_BLESSING_OF_WAR_ID')
 local floor = zo_floor
 local GetGameTimeMilliseconds = GetGameTimeMilliseconds
+local zo_distance3D = zo_distance3D
 
 function PVP:FindNearbyKeepToRespawn(anyKeep)
-	local foundKeepId, minDistance = 0
 	local selfX, selfY = GetMapPlayerPosition('player')
+	local foundKeepId, minDistance
+
 	for i = 1, GetNumKeeps() do
 		local keepId = GetKeepKeysByIndex(i)
-
 		if anyKeep or (CanRespawnAtKeep(keepId) and not (IsInImperialCity() and GetKeepType(keepId) ~= KEEPTYPE_IMPERIAL_CITY_DISTRICT)) then
 			local _, targetX, targetY = GetKeepPinInfo(keepId, 1)
-
 			if targetX ~= 0 and targetY ~= 0 then
-				local distance = zo_sqrt(((targetX - selfX) * (targetX - selfX)) +
-				((targetY - selfY) * (targetY - selfY)))
-				if not minDistance then
-					minDistance = distance
-					foundKeepId = keepId
-				elseif distance < minDistance then
-					minDistance = distance
-					foundKeepId = keepId
+				local distance = zo_distance3D(selfX, selfY, 0, targetX, targetY, 0)
+				if not minDistance or distance < minDistance then
+					foundKeepId, minDistance = keepId, distance
 				end
 			end
 		end
 	end
 
-	if foundKeepId ~= 0 then return foundKeepId else return false end
+	return foundKeepId or false
 end
 
 function PVP:RespawnAtNearbyKeep()
@@ -99,63 +95,63 @@ function PVP:ManageCampFrame()
 		end
 	end
 
-	local SecondsToClock = PVP.SecondsToClock
+	local SecondsToClock = self.SecondsToClock
 
 	-- local buffsEnd = GetGameTimeMilliseconds()
 	-- d('Buff proc: '..tostring(buffsEnd - buffsStart))
 
 	if continuous then
-		local timeString = PVP:SecondsToClock(floor(continuous))
+		local timeString = self:SecondsToClock(floor(continuous))
 		PVP_ForwardCamp_IconContinuous.timeLeft = { "Continuous Attack", "Time left: " .. timeString }
-		PVP.SetToolTip(PVP_ForwardCamp_IconContinuous, 200, false, "Continuous Attack", "Time left: " .. timeString)
+		self.SetToolTip(PVP_ForwardCamp_IconContinuous, 200, false, "Continuous Attack", "Time left: " .. timeString)
 	else
 		PVP_ForwardCamp_IconContinuous.timeLeft = false
 		ColorBuffIcon(PVP_ForwardCamp_IconContinuous, 5)
-		PVP.ReleaseToolTip(PVP_ForwardCamp_IconContinuous)
+		self.ReleaseToolTip(PVP_ForwardCamp_IconContinuous)
 	end
 
 	if ayleid then
-		local timeString = PVP:SecondsToClock(floor(ayleid))
+		local timeString = self:SecondsToClock(floor(ayleid))
 		PVP_ForwardCamp_IconAyleid.timeLeft = { "Ayleid Well", "Time left: " .. timeString }
-		PVP.SetToolTip(PVP_ForwardCamp_IconAyleid, 200, false, "Ayleid Well", "Time left: " .. timeString)
+		self.SetToolTip(PVP_ForwardCamp_IconAyleid, 200, false, "Ayleid Well", "Time left: " .. timeString)
 	else
 		PVP_ForwardCamp_IconAyleid.timeLeft = false
 		ColorBuffIcon(PVP_ForwardCamp_IconAyleid, 5)
-		PVP.ReleaseToolTip(PVP_ForwardCamp_IconAyleid)
+		self.ReleaseToolTip(PVP_ForwardCamp_IconAyleid)
 	end
 
 	if blessing then
-		local timeString = PVP:SecondsToClock(floor(blessing))
+		local timeString = self:SecondsToClock(floor(blessing))
 		PVP_ForwardCamp_IconBlessing.timeLeft = { "Blessing of War", "Time left: " .. timeString }
-		PVP.SetToolTip(PVP_ForwardCamp_IconBlessing, 200, false, "Blessing of War", "Time left: " .. timeString)
+		self.SetToolTip(PVP_ForwardCamp_IconBlessing, 200, false, "Blessing of War", "Time left: " .. timeString)
 	else
 		PVP_ForwardCamp_IconBlessing.timeLeft = false
 		ColorBuffIcon(PVP_ForwardCamp_IconBlessing, 5)
-		PVP.ReleaseToolTip(PVP_ForwardCamp_IconBlessing)
+		self.ReleaseToolTip(PVP_ForwardCamp_IconBlessing)
 	end
 	-- local iconsEnd = GetGameTimeMilliseconds()
 	-- d('Icons proc: '..tostring(iconsEnd - buffsEnd))
-	local campState = PVP:FindNearbyCampToRespawn(true)
+	local campState = self:FindNearbyCampToRespawn(true)
 	-- local campFuncEnd = GetGameTimeMilliseconds()
 	-- d('Camp func proc: '..tostring(campFuncEnd - iconsEnd))
 	if not self.IsCampActive then
 		if campState then
-			PVP:StartAnimation(PVP_ForwardCamp_Icon, 'camp')
+			self:StartAnimation(PVP_ForwardCamp_Icon, 'camp')
 			if not self.lastCampTime then self.lastCampTime = currentTimeSec end
 			if self.SV.playCampSound and (currentTimeSec - self.lastCampTime >= 5 or self.lastCampTime == currentTimeSec) then
 				PlaySound(SOUNDS.ENLIGHTENED_STATE_GAINED)
 				self.lastCampTime = currentTimeSec
 			end
 			self.IsCampActive = true
-			PVP.SetToolTip(PVP_ForwardCamp_Icon, 200, false, "Forward Camp in range!")
+			self.SetToolTip(PVP_ForwardCamp_Icon, 200, false, "Forward Camp in range!")
 		end
 	elseif not campState then
 		if self.SV.playCampSound and currentTimeSec - self.lastCampTime >= 5 then
-			PVP:PlayLoudSound('JUSTICE_GOLD_REMOVED')
+			self:PlayLoudSound('JUSTICE_GOLD_REMOVED')
 			self.lastCampTime = currentTimeSec
 		end
 		self.IsCampActive = false
-		PVP.ReleaseToolTip(PVP_ForwardCamp_Icon)
+		self.ReleaseToolTip(PVP_ForwardCamp_Icon)
 	end
 end
 
@@ -164,7 +160,7 @@ function PVP_FindNearestForwardCamp()
 end
 
 function PVP:FindNearbyCampToRespawn(onUpdate)
-	if not PVP:IsInPVPZone() then return false end
+	if not self:IsInPVPZone() then return false end
 
 	if GetNumForwardCamps(1) == 0 then
 		if not onUpdate then
@@ -174,13 +170,13 @@ function PVP:FindNearbyCampToRespawn(onUpdate)
 		PVP_ForwardCamp_Icon:SetAlpha(0.5)
 		return false
 	end
-	local campIndex, count, minDistance, isUsable, campRadius = 0, 0
+	local campIndex, count, minDistance, isUsable, campRadius = 0, 0, nil, nil, nil
 	local selfX, selfY = GetMapPlayerPosition('player')
 	for i = 1, GetNumForwardCamps(1) do
 		local _, targetX, targetY, radius, usable = GetForwardCampPinInfo(1, i)
 
 		if usable and targetX ~= 0 and targetY ~= 0 then
-			local distance = zo_sqrt(((targetX - selfX) * (targetX - selfX)) + ((targetY - selfY) * (targetY - selfY)))
+			local distance = zo_distance3D(selfX, selfY, 0, targetX, targetY, 0)
 
 			if distance / radius < 1 then count = count + 1 end
 

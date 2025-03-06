@@ -8,44 +8,45 @@ EventTrackerVars =
             {
                 ["NA Megaserver"] = 
                 {
-                    ["Install_Time"] = 1726631845,
+                    ["T_Time"] = 
+                    {
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["version"] = 2,
+                    ["Message_Time"] = 1741266595,
+                    ["Current_Event"] = "None",
                     ["T_Types"] = 
                     {
-                        [1] = "Pan-Tamriel",
-                        [2] = "not used",
+                        [1] = "First",
+                        [2] = "Second",
                         [3] = "Boss",
                     },
-                    ["LastUpdated"] = 1738628729,
+                    ["LastUpdated"] = 1741092006,
+                    ["top"] = 10,
+                    ["HideUI"] = false,
+                    ["debug"] = false,
+                    ["T_Tickets"] = 
+                    {
+                        [4] = 0,
+                        [1] = 0,
+                        [2] = 0,
+                        [3] = 0,
+                    },
+                    ["DataCleared"] = true,
+                    ["left"] = 450,
+                    ["Total_Tickets"] = 3,
+                    ["EVT_version"] = 2.2910000000,
                     ["T_ToDo"] = 
                     {
                         [1] = 0,
                         [2] = 0,
                         [3] = 0,
                     },
-                    ["left"] = 450,
+                    ["Install_Time"] = 1726631845,
                     ["NewsIndex"] = 3,
-                    ["HideUI"] = false,
-                    ["Total_Tickets"] = 1,
-                    ["top"] = 10,
-                    ["EVT_version"] = 2.2800000000,
-                    ["Current_Event"] = "Pan-Tamriel",
-                    ["Message_Time"] = 1738642140,
-                    ["T_Tickets"] = 
-                    {
-                        [4] = 0,
-                        [1] = 3,
-                        [2] = 0,
-                        [3] = 0,
-                    },
-                    ["debug"] = false,
                     ["autoHide"] = false,
-                    ["version"] = 2,
-                    ["T_Time"] = 
-                    {
-                        [1] = 1738628014,
-                        [2] = 1737673236,
-                        [3] = 0,
-                    },
                 },
             },
         },
@@ -59,9 +60,9 @@ EventTrackerShared =
         {
             ["$AccountWide"] = 
             {
+                ["XP_refresh"] = 200,
                 ["XP_frequency"] = 5,
                 ["version"] = 1,
-                ["XP_refresh"] = 200,
             },
         },
     },

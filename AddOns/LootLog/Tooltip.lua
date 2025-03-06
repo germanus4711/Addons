@@ -72,10 +72,14 @@ function LootLog.AddTreasureMapTooltipExtension( tooltip, itemLink )
 		local loreAcquired = GetNumAntiquityLoreEntriesAcquired(antiquityId)
 		local lore = GetNumAntiquityLoreEntries(antiquityId)
 
+		local inProgressText = ""
 		local loreAcquiredEffective = loreAcquired
-		if (loreAcquiredEffective < lore and DoesAntiquityHaveLead(antiquityId)) then
-			-- If the player has an unexcavated lead, let it count towards the codex
-			loreAcquiredEffective = loreAcquiredEffective + 1
+		if (DoesAntiquityHaveLead(antiquityId)) then
+			inProgressText = "+1"
+			if (loreAcquiredEffective < lore) then
+				-- If the player has an unexcavated lead, let it count towards the codex
+				loreAcquiredEffective = loreAcquiredEffective + 1
+			end
 		end
 
 		totalRecovered = totalRecovered + recovered
@@ -93,7 +97,7 @@ function LootLog.AddTreasureMapTooltipExtension( tooltip, itemLink )
 			color = "neverFound"
 		end
 
-		table.insert(results, string.format("|c%06X%d / %d|r   •   %s |c%s(%d)|r", LootLog.vars.antiquityMapColors[color], loreAcquired, lore, LootLog.FormatAntiquityLead(antiquityId, false), ZO_DISABLED_TEXT:ToHex(), recovered))
+		table.insert(results, string.format("|c%06X%d / %d|r   •   %s |c%s(%d%s)|r", LootLog.vars.antiquityMapColors[color], loreAcquired, lore, LootLog.FormatAntiquityLead(antiquityId, false), ZO_DISABLED_TEXT:ToHex(), recovered, inProgressText))
 	end
 
 	local extension = LEJ.TooltipExtensionInitialize(

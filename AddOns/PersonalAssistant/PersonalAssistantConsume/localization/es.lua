@@ -1,74 +1,90 @@
+-- Translated by: Cisneros
+
 local PAC = PersonalAssistant.Constants
 local PACOStrings = {
     -- =================================================================================================================
-    -- Language specific texts that need to be translated --
+    -- Textos específicos del idioma que necesitan ser traducidos --
 
     -- =================================================================================================================
-    -- == MENU/PANEL TEXTS == --
+    -- == TEXTOS DE MENÚ/PANEL == --
     -- -----------------------------------------------------------------------------------------------------------------
-    -- PAConsume Menu --
-    SI_PA_MENU_CONSUME_DESCRIPTION = "PAConsume puede aplicar veneno, o consumir comida/bebida & pergamino de EXP",
+    -- Menú de PAConsume --
+    SI_PA_MENU_CONSUME_DESCRIPTION = "PAConsume puede aplicar veneno, o consumir comida/bebida y pergaminos de EXP",
 
-    -- auto poison --
-    SI_PA_MENU_CONSUME_POISON_HEADER = "Auto Aplicar Veneno",
-    SI_PA_MENU_CONSUME_POISON_ENABLE = "Activar Auto Aplicar Veneno",
-	SI_PA_MENU_CONSUME_POISON_ENABLE_T = "Auto aplicar tu mayor apilado de veneno después del combate si ya no hay mas en el arma",
-	
-	-- auto consume food & exp --
-	SI_PA_MENU_CONSUME_FOOD_HEADER = "Auto Consume Comida/Bebida",
-	SI_PA_MENU_CONSUME_EXP_HEADER = "Auto Consume Pergamino de EXP",
-	SI_PA_MENU_CONSUME_CURRENT_FOOD_BUFF = "La reciente aura de comida para este personaje es: ",
-	SI_PA_MENU_CONSUME_CURRENT_EXP_BUFF = "La reciente aura de EXP para este personaje es: ",
-    SI_PA_MENU_CONSUME_LABEL_ON = "Consume Automáticamente",
-    SI_PA_MENU_CONSUME_LABEL_OFF = "Para de Consumir Automáticamente",
-	SI_PA_MENU_CONSUME_USE_NUMBER_FOOD = "Consumir (segundos antes)",
-	SI_PA_MENU_CONSUME_USE_NUMBER_FOOD_T =  "Segundos para usar el aura de comida antes de que la reciente aura expire. Usa un numero entre 0 a 600 segundos para cambiar el tiempo de consumo de la comida.",
-	SI_PA_MENU_CONSUME_USE_NUMBER_EXP = "Consumir (segundos después)",
-    SI_PA_MENU_CONSUME_USE_NUMBER_EXP_T =  "Segundos para usar el aura de EXP después de que el aura expire. Usa un número entre 0 a 600 segundos para cambiar el tiempo de consumo del pergamino de EXP.",
+    -- veneno automático --
+    SI_PA_MENU_CONSUME_POISON_HEADER = "Aplicar veneno automáticamente",
+    SI_PA_MENU_CONSUME_POISON_ENABLE = "Habilitar auto aplicado de veneno ",
+    SI_PA_MENU_CONSUME_POISON_ENABLE_T = "Aplica automáticamente tu veneno más acumulado después del combate si no queda más en el arma",
+
+    -- consumo automático de comida y EXP --
+    SI_PA_MENU_CONSUME_FOOD_HEADER = "Consumir comida/bebida automáticamente",
+    SI_PA_MENU_CONSUME_EXP_HEADER = "Consumir pergaminos de EXP automáticamente",
+    SI_PA_MENU_CONSUME_CURRENT_FOOD_BUFF = "Buff de comida actual para este personaje: ",
+    SI_PA_MENU_CONSUME_CURRENT_EXP_BUFF = "Buff de EXP actual para este personaje: ",
+    SI_PA_MENU_CONSUME_LABEL_ON = "Consumir automáticamente",
+    SI_PA_MENU_CONSUME_LABEL_OFF = "Dejar de consumir automáticamente",
+    SI_PA_MENU_CONSUME_USE_NUMBER_FOOD = "Tiempo de anticipación (segundos antes)",
+    SI_PA_MENU_CONSUME_USE_NUMBER_FOOD_T = "Segundos para consumir el buff de comida antes de que expire el buff actual. Usa un número entre 0 y 600 segundos para cambiar el tiempo de anticipación.",
+    SI_PA_MENU_CONSUME_USE_NUMBER_EXP = "Tiempo de anticipación (segundos después)",
+    SI_PA_MENU_CONSUME_USE_NUMBER_EXP_T = "Segundos para consumir el buff de EXP después de que expire el buff actual. Usa un número entre 0 y 600 segundos para cambiar el tiempo de anticipación.",
     SI_PA_MENU_CONSUME_TURN_OFF_FOOD = "Suspender",
-    SI_PA_MENU_CONSUME_TURN_OFF_FOOD_T = "Parar de consumir la comida/bebida por ahora",
+    SI_PA_MENU_CONSUME_TURN_OFF_FOOD_T = "Deja de consumir esa comida/bebida por ahora",
     SI_PA_MENU_CONSUME_TURN_OFF_EXP = "Suspender",
-    SI_PA_MENU_CONSUME_TURN_OFF_EXP_T = "Para de consumir el pergamino de EXP por ahora",
-
-
+    SI_PA_MENU_CONSUME_TURN_OFF_EXP_T = "Deja de consumir ese buff de EXP por ahora",
 
     -- =================================================================================================================
-    -- == CHAT OUTPUTS == --
+    -- == SALIDAS DE CHAT == --
     -- -----------------------------------------------------------------------------------------------------------------
-    -- PAConsume poison--
-    SI_PA_CHAT_CONSUME_POISON_MAIN = "El arma principal ha sido imbuida con ",
-    SI_PA_CHAT_CONSUME_POISON_BACKUP = "El arma secundaria ha sido imbuida con ",
-	
-	-- PAConsume food & exp--
-	SI_PA_CHAT_CONSUME_NO_FOOD = "Ninguna comida ha sido seleccionada todavía. Abre el inventario, haz click derecho en la pila de comida o bebida que tu quieras, y elige la opción Consumir Automáticamente.",
-	SI_PA_CHAT_CONSUME_AUTO_EATING_OFF_BUT = "El consumo de comida automático esta desactivado. Pero tienes seleccionado <<1>> como tu comida preferida.",
-	SI_PA_CHAT_CONSUME_TO_ENABLE_EATING = "Para activar el consumo de comida automática para este personaje, abre el inventario, haz click derecho en el comida o bebida que tu quieras, y elige la opción Consumir Automáticamente.",
-	SI_PA_CHAT_CONSUME_LOOKS_LIKE = "Parece que <<1>> esta en el menú.",
-	SI_PA_CHAT_CONSUME_THIS_FOOD_WILL_BE_MINUTES = "Esto sera consumido <<1[cuando/$d minuto antes/$d minutos antes]>> tu comida reciente expire.",
-	SI_PA_CHAT_CONSUME_THIS_FOOD_WILL_BE_SECONDS = "Esto sera consumido <<1[cuando/$d segundo antes/$d segundos antes]>> tu comida reciente expire.",
-	SI_PA_CHAT_CONSUME_YOU_HAVE_ONLY = "Tienes solamente <<1>> en tu mochila.", -- "You have <<1[$d/only $d/only $d]>> left in your bag."
-	SI_PA_CHAT_CONSUME_YOU_HAVE = "Te quedan <<1>> en tu mochila.",
-	SI_PA_CHAT_CONSUME_WISH_STOP_EATING = "Si deseas detener el comer automático para este personaje, usa el menu PAconsume.",
-	
-	SI_PA_CHAT_CONSUME_NO_EXP = "Ningún pergamino de EXP ha sido seleccionada todavía. Open inventory, Abre el inventario, haz click derecho en la pila de pergaminos de EXP que tu quieras, y elige la opción Consumir Automáticamente.",
-	SI_PA_CHAT_CONSUME_AUTO_EXPING_OFF_BUT = "El consumo de pergaminos de EXP esta desactivado. Pero tienes seleccionado <<1>> como tu pergamino de EXP favorito.",
-    SI_PA_CHAT_CONSUME_TO_ENABLE_EXPING = "Para activar el consumo de pergaminos de EXP para este personaje abre el inventario, haz click derecho en el pergamino de EXP que tu quieras, y elige la opción Consumir Automáticamente.",
-    SI_PA_CHAT_CONSUME_THIS_EXP_WILL_BE_MINUTES = "Esto sera consumido <<1[cuando/$d minuto después/$d minutos después]>> de que tu beneficio de EXP expire.",
-    SI_PA_CHAT_CONSUME_THIS_EXP_WILL_BE_SECONDS = "Esto sera consumido <<1[cuando/$d segundo después/$d segundos después]>> de que tu beneficio de EXP expire.",
-    SI_PA_CHAT_CONSUME_WISH_STOP_EXPING = "Si tu deseas parar automáticamente el consumo del pergamino de EXP para este personaje, usa el menu PAconsume.",
+    -- PAConsume veneno --
+    SI_PA_CHAT_CONSUME_POISON_MAIN = "El arma principal ha sido impregnada con ",
+    SI_PA_CHAT_CONSUME_POISON_BACKUP = "El arma secundaria ha sido impregnada con ",
 
-    SI_PA_CHAT_CONSUME_FOOD_WILL_BE_CONSUMED = "La comida será consumida <<1>> segundos antes de que la reciente comida expire.",
-    SI_PA_CHAT_CONSUME_EXP_WILL_BE_CONSUMED = "El beneficio de EXP será consumida <<1>> segundos después de que beneficio de EXP expire.",
-    
-	SI_PA_CHAT_CONSUME_HAS_BEEN_AUTOMATICALLY_CONSUMED = " ha sido automáticamente consumido.",
-	SI_PA_CHAT_CONSUME_BUT_HAVE_ZERO = "Tienes establecido <<1>> para Consumir Automáticamente pero tienes 0 en tu mochila.",
+    -- PAConsume comida y EXP --
+    SI_PA_CHAT_CONSUME_NO_FOOD = "No se ha seleccionado ninguna comida todavía. Abre el inventario, haz clic derecho en la pila de comida o bebida que desees y elige la opción consumir automáticamente.",
+    SI_PA_CHAT_CONSUME_AUTO_EATING_OFF_BUT = "El consumo automático de comida está desactivado. Pero has seleccionado <<1>> como tu comida preferida.",
+    SI_PA_CHAT_CONSUME_TO_ENABLE_EATING = "Para habilitar el consumo automático de comida para este personaje, abre el inventario, haz clic derecho en la comida o bebida que desees y elige la opción consumir automáticamente.",
+    SI_PA_CHAT_CONSUME_LOOKS_LIKE = "Parece que <<1>> está en el menú.",
+    SI_PA_CHAT_CONSUME_THIS_FOOD_WILL_BE_MINUTES = "Esto se consumirá <<1[cuando/$d minuto antes/$d minutos antes]>> de que expire tu comida actual.",
+    SI_PA_CHAT_CONSUME_THIS_FOOD_WILL_BE_SECONDS = "Esto se consumirá <<1[cuando/$d segundo antes/$d segundos antes]>> de que expire tu comida actual.",
+    SI_PA_CHAT_CONSUME_YOU_HAVE_ONLY = "Solo te quedan <<1>> en tu bolsa.", -- "Te quedan <<1[$d/solo $d/solo $d]>> en tu bolsa."
+    SI_PA_CHAT_CONSUME_YOU_HAVE = "Te quedan <<1>> en tu bolsa.",
+    SI_PA_CHAT_CONSUME_WISH_STOP_EATING = "Si deseas detener el consumo automático de comida para este personaje, usa el menú de PAconsume.",
 
-	SI_PA_CHAT_CONSUME_FOOD_EXPIRE_SECONDS = "Tu comida reciente expirará en <<1[$d segundos./$d segundo./$d segundos.]>>",
-	SI_PA_CHAT_CONSUME_FOOD_EXPIRE_MINUTES = "Tu comida reciente expirará en <<1[$d minutos./$d minuto./$d minutos.]>>",
-	SI_PA_CHAT_CONSUME_EXP_EXPIRE_SECONDS = "Tu beneficio de EXP expirará en <<1[$d segundos./$d segundo./$d segundos.]>>",
-	SI_PA_CHAT_CONSUME_EXP_EXPIRE_MINUTES = "Tu beneficio de EXP expirará en <<1[$d minutos./$d minuto./$d minutos.]>>",
+    SI_PA_CHAT_CONSUME_NO_EXP = "No se ha seleccionado ningún buff de EXP todavía. Abre el inventario, haz clic derecho en la pila de pergaminos de EXP que desees y elige la opción consumir automáticamente.",
+    SI_PA_CHAT_CONSUME_AUTO_EXPING_OFF_BUT = "El consumo automático de buffs de EXP está desactivado. Pero has seleccionado <<1>> como tu buff de EXP preferido.",
+    SI_PA_CHAT_CONSUME_TO_ENABLE_EXPING = "Para habilitar el consumo automático de buffs de EXP para este personaje, abre el inventario, haz clic derecho en el pergamino de EXP que desees y elige la opción consumir automáticamente.",
+    SI_PA_CHAT_CONSUME_THIS_EXP_WILL_BE_MINUTES = "Esto se consumirá <<1[cuando/$d minuto después/$d minutos después]>> de que expire tu buff de EXP actual.",
+    SI_PA_CHAT_CONSUME_THIS_EXP_WILL_BE_SECONDS = "Esto se consumirá <<1[cuando/$d segundo después/$d segundos después]>> de que expire tu buff de EXP actual.",
+    SI_PA_CHAT_CONSUME_WISH_STOP_EXPING = "Si deseas detener el consumo automático de buffs de EXP para este personaje, usa el menú de PAconsume.",
+
+    SI_PA_CHAT_CONSUME_FOOD_WILL_BE_CONSUMED = "La comida se consumirá <<1>> segundos antes de que expire la comida actual.",
+    SI_PA_CHAT_CONSUME_EXP_WILL_BE_CONSUMED = "El buff de EXP se consumirá <<1>> segundos después de que expire el buff de EXP actual.",
+
+    SI_PA_CHAT_CONSUME_HAS_BEEN_AUTOMATICALLY_CONSUMED = " ha sido consumido automáticamente.",
+    SI_PA_CHAT_CONSUME_BUT_HAVE_ZERO = "Has configurado <<1>> para consumir automáticamente pero tienes 0 en tu bolsa.",
+
+    SI_PA_CHAT_CONSUME_FOOD_EXPIRE_SECONDS = "Tu comida actual expirará en <<1[$d segundos./$d segundo./$d segundos.]>>",
+    SI_PA_CHAT_CONSUME_FOOD_EXPIRE_MINUTES = "Tu comida actual expirará en <<1[$d minutos./$d minuto./$d minutos.]>>",
+    SI_PA_CHAT_CONSUME_EXP_EXPIRE_SECONDS = "Tu buff de EXP actual expirará en <<1[$d segundos./$d segundo./$d segundos.]>>",
+    SI_PA_CHAT_CONSUME_EXP_EXPIRE_MINUTES = "Tu buff de EXP actual expirará en <<1[$d minutos./$d minuto./$d minutos.]>>",
 }
 
 for key, value in pairs(PACOStrings) do
-	SafeAddString(_G[key], value, 1)
+    ZO_CreateStringId(key, value)
+    SafeAddVersion(key, 1)
+end
+
+local PACOGenericStrings = {
+    -- =================================================================================================================
+    -- Textos independientes del idioma (no necesitan ser traducidos/copiados a otros idiomas) --
+
+    -- =================================================================================================================
+    -- == SALIDAS DE CHAT == --
+    -- -----------------------------------------------------------------------------------------------------------------
+    --SI_PA_CHAT_Consume_CHARGE_WEAPON = "%s (%d%% --> %d%%) - %s",
+}
+
+for key, value in pairs(PACOGenericStrings) do
+    ZO_CreateStringId(key, value)
+    SafeAddVersion(key, 1)
 end

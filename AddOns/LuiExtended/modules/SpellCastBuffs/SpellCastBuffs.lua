@@ -218,22 +218,22 @@ SpellCastBuffs.Defaults =
     ShowSharedEffects = true,
     ShowSharedMajorMinor = true,
 }
-SpellCastBuffs.SV = ...
+SpellCastBuffs.SV = {}
 
 SpellCastBuffs.EffectsList =
 {
+    ground = {},
     player1 = {},
     player2 = {},
+    promb_ground = {},
+    promb_player = {},
+    promb_target = {},
+    promd_ground = {},
+    promd_player = {},
+    promd_target = {},
     reticleover1 = {},
     reticleover2 = {},
-    ground = {},
     saved = {},
-    promb_ground = {},
-    promb_target = {},
-    promb_player = {},
-    promd_ground = {},
-    promd_target = {},
-    promd_player = {},
 }                                  -- Saved Effects
 
 local uiTlw = {}                   -- GUI
@@ -409,6 +409,67 @@ function SpellCastBuffs.ClearPlayerBuff(abilityId)
     local context = { "player1", "promd_player", "promb_player" }
     for _, v in pairs(context) do
         SpellCastBuffs.EffectsList[v][abilityId] = nil
+    end
+end
+
+-- Callback to update coordinates while moving
+local function OnMoveStart(self)
+    eventManager:RegisterForUpdate(moduleName .. "PreviewMove", 200, function ()
+        if self.preview and self.preview.anchorLabel then
+            self.preview.anchorLabel:SetText(string.format("%d, %d", self:GetLeft(), self:GetTop()))
+        end
+    end)
+end
+
+-- Callback to stop updating coordinates when movement ends
+local function OnMoveStop(self)
+    eventManager:UnregisterForUpdate(moduleName .. "PreviewMove")
+end
+
+
+-- Initialize preview labels for all frames
+local function InitializePreviewLabels()
+    local frames =
+    {
+        { frame = uiTlw.playerb,          name = "playerb" },
+        { frame = uiTlw.playerd,          name = "playerd" },
+        { frame = uiTlw.targetb,          name = "targetb" },
+        { frame = uiTlw.targetd,          name = "targetd" },
+        { frame = uiTlw.player_long,      name = "player_long" },
+        { frame = uiTlw.prominentbuffs,   name = "prominentbuffs" },
+        { frame = uiTlw.prominentdebuffs, name = "prominentdebuffs" }
+    }
+
+    for _, f in ipairs(frames) do
+        if f.frame then
+            -- Create preview container if it doesn't exist
+            if not f.frame.preview then
+                f.frame.preview = UI:Control(f.frame, "fill", nil, false)
+            end
+
+            -- Create texture and label for anchor preview
+            if not f.frame.preview.anchorTexture then
+                f.frame.preview.anchorTexture = UI:Texture(f.frame.preview, { TOPLEFT, TOPLEFT }, { 16, 16 }, "/esoui/art/reticle/border_topleft.dds", DL_OVERLAY, false)
+                f.frame.preview.anchorTexture:SetColor(1, 1, 0, 0.9)
+            end
+
+            if not f.frame.preview.anchorLabel then
+                f.frame.preview.anchorLabel = UI:Label(f.frame.preview, { BOTTOMLEFT, TOPLEFT, 0, -1 }, nil, { 0, 2 }, "ZoFontGameSmall", "xxx, yyy", false)
+                f.frame.preview.anchorLabel:SetColor(1, 1, 0, 1)
+                f.frame.preview.anchorLabel:SetDrawLayer(DL_OVERLAY)
+                f.frame.preview.anchorLabel:SetDrawTier(DT_MEDIUM)
+            end
+
+            if not f.frame.preview.anchorLabelBg then
+                f.frame.preview.anchorLabelBg = UI:Backdrop(f.frame.preview.anchorLabel, "fill", nil, { 0, 0, 0, 1 }, { 0, 0, 0, 1 }, false)
+                f.frame.preview.anchorLabelBg:SetDrawLayer(DL_OVERLAY)
+                f.frame.preview.anchorLabelBg:SetDrawTier(DT_LOW)
+            end
+
+            -- Add movement handlers
+            f.frame:SetHandler("OnMoveStart", OnMoveStart)
+            f.frame:SetHandler("OnMoveStop", OnMoveStop)
+        end
     end
 end
 
@@ -716,6 +777,9 @@ function SpellCastBuffs.Initialize(enabled)
     end
     -- Increment so this doesn't occur again.
     LUIESV.Default[GetDisplayName()]["$AccountWide"].AdjustVarsSCB = 2
+
+    -- Initialize preview labels for all frames
+    InitializePreviewLabels()
 end
 
 function SpellCastBuffs.RegisterWerewolfEvents()
@@ -1023,8 +1087,12 @@ function SpellCastBuffs.SetTlwPosition()
     -- Otherwise set position of uiTlw[] which are CT_TOPLEVELCONTROLs to saved or default positions
     if uiTlw.playerb and uiTlw.playerb:GetType() == CT_TOPLEVELCONTROL then
         uiTlw.playerb:ClearAnchors()
-        if not SpellCastBuffs.SV.lockPositionToUnitFrames and SpellCastBuffs.SV.playerbOffsetX ~= nil and SpellCastBuffs.SV.playerbOffsetY ~= nil then
-            uiTlw.playerb:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, SpellCastBuffs.SV.playerbOffsetX, SpellCastBuffs.SV.playerbOffsetY)
+        if (SpellCastBuffs.SV.lockPositionToUnitFrames == nil or not SpellCastBuffs.SV.lockPositionToUnitFrames) and SpellCastBuffs.SV.playerbOffsetX ~= nil and SpellCastBuffs.SV.playerbOffsetY ~= nil then
+            local x, y = SpellCastBuffs.SV.playerbOffsetX, SpellCastBuffs.SV.playerbOffsetY
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                x, y = LUIE.ApplyGridSnap(x, y, "buffs")
+            end
+            uiTlw.playerb:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
         else
             uiTlw.playerb:SetAnchor(BOTTOM, ZO_PlayerAttributeHealth, TOP, 0, -10)
         end
@@ -1032,8 +1100,12 @@ function SpellCastBuffs.SetTlwPosition()
 
     if uiTlw.playerd and uiTlw.playerd:GetType() == CT_TOPLEVELCONTROL then
         uiTlw.playerd:ClearAnchors()
-        if not SpellCastBuffs.SV.lockPositionToUnitFrames and SpellCastBuffs.SV.playerdOffsetX ~= nil and SpellCastBuffs.SV.playerdOffsetY ~= nil then
-            uiTlw.playerd:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, SpellCastBuffs.SV.playerdOffsetX, SpellCastBuffs.SV.playerdOffsetY)
+        if (SpellCastBuffs.SV.lockPositionToUnitFrames == nil or not SpellCastBuffs.SV.lockPositionToUnitFrames) and SpellCastBuffs.SV.playerdOffsetX ~= nil and SpellCastBuffs.SV.playerdOffsetY ~= nil then
+            local x, y = SpellCastBuffs.SV.playerdOffsetX, SpellCastBuffs.SV.playerdOffsetY
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                x, y = LUIE.ApplyGridSnap(x, y, "buffs")
+            end
+            uiTlw.playerd:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
         else
             uiTlw.playerd:SetAnchor(BOTTOM, ZO_PlayerAttributeHealth, TOP, 0, -60)
         end
@@ -1041,8 +1113,12 @@ function SpellCastBuffs.SetTlwPosition()
 
     if uiTlw.targetb and uiTlw.targetb:GetType() == CT_TOPLEVELCONTROL then
         uiTlw.targetb:ClearAnchors()
-        if not SpellCastBuffs.SV.lockPositionToUnitFrames and SpellCastBuffs.SV.targetbOffsetX ~= nil and SpellCastBuffs.SV.targetbOffsetY ~= nil then
-            uiTlw.targetb:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, SpellCastBuffs.SV.targetbOffsetX, SpellCastBuffs.SV.targetbOffsetY)
+        if (SpellCastBuffs.SV.lockPositionToUnitFrames == nil or not SpellCastBuffs.SV.lockPositionToUnitFrames) and SpellCastBuffs.SV.targetbOffsetX ~= nil and SpellCastBuffs.SV.targetbOffsetY ~= nil then
+            local x, y = SpellCastBuffs.SV.targetbOffsetX, SpellCastBuffs.SV.targetbOffsetY
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                x, y = LUIE.ApplyGridSnap(x, y, "buffs")
+            end
+            uiTlw.targetb:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
         else
             uiTlw.targetb:SetAnchor(TOP, ZO_TargetUnitFramereticleover, BOTTOM, 0, 60)
         end
@@ -1050,8 +1126,12 @@ function SpellCastBuffs.SetTlwPosition()
 
     if uiTlw.targetd and uiTlw.targetd:GetType() == CT_TOPLEVELCONTROL then
         uiTlw.targetd:ClearAnchors()
-        if not SpellCastBuffs.SV.lockPositionToUnitFrames and SpellCastBuffs.SV.targetdOffsetX ~= nil and SpellCastBuffs.SV.targetdOffsetY ~= nil then
-            uiTlw.targetd:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, SpellCastBuffs.SV.targetdOffsetX, SpellCastBuffs.SV.targetdOffsetY)
+        if (SpellCastBuffs.SV.lockPositionToUnitFrames == nil or not SpellCastBuffs.SV.lockPositionToUnitFrames) and SpellCastBuffs.SV.targetdOffsetX ~= nil and SpellCastBuffs.SV.targetdOffsetY ~= nil then
+            local x, y = SpellCastBuffs.SV.targetdOffsetX, SpellCastBuffs.SV.targetdOffsetY
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                x, y = LUIE.ApplyGridSnap(x, y, "buffs")
+            end
+            uiTlw.targetd:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
         else
             uiTlw.targetd:SetAnchor(TOP, ZO_TargetUnitFramereticleover, BOTTOM, 0, 110)
         end
@@ -1061,13 +1141,21 @@ function SpellCastBuffs.SetTlwPosition()
         uiTlw.player_long:ClearAnchors()
         if uiTlw.player_long.alignVertical then
             if SpellCastBuffs.SV.playerVOffsetX ~= nil and SpellCastBuffs.SV.playerVOffsetY ~= nil then
-                uiTlw.player_long:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, SpellCastBuffs.SV.playerVOffsetX, SpellCastBuffs.SV.playerVOffsetY)
+                local x, y = SpellCastBuffs.SV.playerVOffsetX, SpellCastBuffs.SV.playerVOffsetY
+                if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                    x, y = LUIE.ApplyGridSnap(x, y, "buffs")
+                end
+                uiTlw.player_long:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
             else
                 uiTlw.player_long:SetAnchor(BOTTOMRIGHT, GuiRoot, BOTTOMRIGHT, -3, -75)
             end
         else
             if SpellCastBuffs.SV.playerHOffsetX ~= nil and SpellCastBuffs.SV.playerHOffsetY ~= nil then
-                uiTlw.player_long:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, SpellCastBuffs.SV.playerHOffsetX, SpellCastBuffs.SV.playerHOffsetY)
+                local x, y = SpellCastBuffs.SV.playerHOffsetX, SpellCastBuffs.SV.playerHOffsetY
+                if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                    x, y = LUIE.ApplyGridSnap(x, y, "buffs")
+                end
+                uiTlw.player_long:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
             else
                 uiTlw.player_long:SetAnchor(BOTTOM, ZO_PlayerAttributeHealth, TOP, 0, -70)
             end
@@ -1079,13 +1167,21 @@ function SpellCastBuffs.SetTlwPosition()
         uiTlw.prominentbuffs:ClearAnchors()
         if uiTlw.prominentbuffs.alignVertical then
             if SpellCastBuffs.SV.prominentbVOffsetX ~= nil and SpellCastBuffs.SV.prominentbVOffsetY ~= nil then
-                uiTlw.prominentbuffs:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, SpellCastBuffs.SV.prominentbVOffsetX, SpellCastBuffs.SV.prominentbVOffsetY)
+                local x, y = SpellCastBuffs.SV.prominentbVOffsetX, SpellCastBuffs.SV.prominentbVOffsetY
+                if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                    x, y = LUIE.ApplyGridSnap(x, y, "buffs")
+                end
+                uiTlw.prominentbuffs:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
             else
                 uiTlw.prominentbuffs:SetAnchor(CENTER, GuiRoot, CENTER, -340, -100)
             end
         else
             if SpellCastBuffs.SV.prominentbHOffsetX ~= nil and SpellCastBuffs.SV.prominentbHOffsetY ~= nil then
-                uiTlw.prominentbuffs:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, SpellCastBuffs.SV.prominentbHOffsetX, SpellCastBuffs.SV.prominentbHOffsetY)
+                local x, y = SpellCastBuffs.SV.prominentbHOffsetX, SpellCastBuffs.SV.prominentbHOffsetY
+                if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                    x, y = LUIE.ApplyGridSnap(x, y, "buffs")
+                end
+                uiTlw.prominentbuffs:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
             else
                 uiTlw.prominentbuffs:SetAnchor(CENTER, GuiRoot, CENTER, -340, -100)
             end
@@ -1096,13 +1192,21 @@ function SpellCastBuffs.SetTlwPosition()
         uiTlw.prominentdebuffs:ClearAnchors()
         if uiTlw.prominentdebuffs.alignVertical then
             if SpellCastBuffs.SV.prominentdVOffsetX ~= nil and SpellCastBuffs.SV.prominentdVOffsetY ~= nil then
-                uiTlw.prominentdebuffs:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, SpellCastBuffs.SV.prominentdVOffsetX, SpellCastBuffs.SV.prominentdVOffsetY)
+                local x, y = SpellCastBuffs.SV.prominentdVOffsetX, SpellCastBuffs.SV.prominentdVOffsetY
+                if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                    x, y = LUIE.ApplyGridSnap(x, y, "buffs")
+                end
+                uiTlw.prominentdebuffs:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
             else
                 uiTlw.prominentdebuffs:SetAnchor(CENTER, GuiRoot, CENTER, 340, -100)
             end
         else
             if SpellCastBuffs.SV.prominentdHOffsetX ~= nil and SpellCastBuffs.SV.prominentdHOffsetY ~= nil then
-                uiTlw.prominentdebuffs:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, SpellCastBuffs.SV.prominentdHOffsetX, SpellCastBuffs.SV.prominentdHOffsetY)
+                local x, y = SpellCastBuffs.SV.prominentdHOffsetX, SpellCastBuffs.SV.prominentdHOffsetY
+                if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                    x, y = LUIE.ApplyGridSnap(x, y, "buffs")
+                end
+                uiTlw.prominentdebuffs:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, x, y)
             else
                 uiTlw.prominentdebuffs:SetAnchor(CENTER, GuiRoot, CENTER, 340, -100)
             end
@@ -1116,34 +1220,160 @@ function SpellCastBuffs.SetMovingState(state)
         return
     end
 
+    -- Helper function to update position label
+    local function UpdatePositionLabel(control, label)
+        if state and label then
+            local left, top = control:GetLeft(), control:GetTop()
+            label:SetText(string.format("%d, %d", left, top))
+            label:SetHidden(false)
+            -- Anchor label to inside top-left of the frame
+            label:ClearAnchors()
+            label:SetAnchor(TOPLEFT, control.preview, TOPLEFT, 2, 2)
+        elseif label then
+            label:SetHidden(true)
+        end
+    end
+
     -- Set moving state
-    if uiTlw.playerb and uiTlw.playerb:GetType() == CT_TOPLEVELCONTROL and not SpellCastBuffs.SV.lockPositionToUnitFrames then
+    if uiTlw.playerb and uiTlw.playerb:GetType() == CT_TOPLEVELCONTROL and (SpellCastBuffs.SV.lockPositionToUnitFrames == nil or not SpellCastBuffs.SV.lockPositionToUnitFrames) then
         uiTlw.playerb:SetMouseEnabled(state)
         uiTlw.playerb:SetMovable(state)
+        UpdatePositionLabel(uiTlw.playerb, uiTlw.playerb.preview.anchorLabel)
+
+        -- Add grid snapping handler
+        uiTlw.playerb:SetHandler("OnMoveStop", function (self)
+            local left, top = self:GetLeft(), self:GetTop()
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                left, top = LUIE.ApplyGridSnap(left, top, "buffs")
+                self:ClearAnchors()
+                self:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, left, top)
+            end
+            SpellCastBuffs.SV.playerbOffsetX = left
+            SpellCastBuffs.SV.playerbOffsetY = top
+        end)
     end
-    if uiTlw.playerd and uiTlw.playerd:GetType() == CT_TOPLEVELCONTROL and not SpellCastBuffs.SV.lockPositionToUnitFrames then
+
+    if uiTlw.playerd and uiTlw.playerd:GetType() == CT_TOPLEVELCONTROL and (SpellCastBuffs.SV.lockPositionToUnitFrames == nil or not SpellCastBuffs.SV.lockPositionToUnitFrames) then
         uiTlw.playerd:SetMouseEnabled(state)
         uiTlw.playerd:SetMovable(state)
+        UpdatePositionLabel(uiTlw.playerd, uiTlw.playerd.preview.anchorLabel)
+
+        -- Add grid snapping handler
+        uiTlw.playerd:SetHandler("OnMoveStop", function (self)
+            local left, top = self:GetLeft(), self:GetTop()
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                left, top = LUIE.ApplyGridSnap(left, top, "buffs")
+                self:ClearAnchors()
+                self:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, left, top)
+            end
+            SpellCastBuffs.SV.playerdOffsetX = left
+            SpellCastBuffs.SV.playerdOffsetY = top
+        end)
     end
-    if uiTlw.targetb and uiTlw.targetb:GetType() == CT_TOPLEVELCONTROL and not SpellCastBuffs.SV.lockPositionToUnitFrames then
+
+    if uiTlw.targetb and uiTlw.targetb:GetType() == CT_TOPLEVELCONTROL and (SpellCastBuffs.SV.lockPositionToUnitFrames == nil or not SpellCastBuffs.SV.lockPositionToUnitFrames) then
         uiTlw.targetb:SetMouseEnabled(state)
         uiTlw.targetb:SetMovable(state)
+        UpdatePositionLabel(uiTlw.targetb, uiTlw.targetb.preview.anchorLabel)
+
+        -- Add grid snapping handler
+        uiTlw.targetb:SetHandler("OnMoveStop", function (self)
+            local left, top = self:GetLeft(), self:GetTop()
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                left, top = LUIE.ApplyGridSnap(left, top, "buffs")
+                self:ClearAnchors()
+                self:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, left, top)
+            end
+            SpellCastBuffs.SV.targetbOffsetX = left
+            SpellCastBuffs.SV.targetbOffsetY = top
+        end)
     end
-    if uiTlw.targetd and uiTlw.targetd:GetType() == CT_TOPLEVELCONTROL and not SpellCastBuffs.SV.lockPositionToUnitFrames then
+
+    if uiTlw.targetd and uiTlw.targetd:GetType() == CT_TOPLEVELCONTROL and (SpellCastBuffs.SV.lockPositionToUnitFrames == nil or not SpellCastBuffs.SV.lockPositionToUnitFrames) then
         uiTlw.targetd:SetMouseEnabled(state)
         uiTlw.targetd:SetMovable(state)
+        UpdatePositionLabel(uiTlw.targetd, uiTlw.targetd.preview.anchorLabel)
+
+        -- Add grid snapping handler
+        uiTlw.targetd:SetHandler("OnMoveStop", function (self)
+            local left, top = self:GetLeft(), self:GetTop()
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                left, top = LUIE.ApplyGridSnap(left, top, "buffs")
+                self:ClearAnchors()
+                self:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, left, top)
+            end
+            SpellCastBuffs.SV.targetdOffsetX = left
+            SpellCastBuffs.SV.targetdOffsetY = top
+        end)
     end
+
     if uiTlw.player_long then
         uiTlw.player_long:SetMouseEnabled(state)
         uiTlw.player_long:SetMovable(state)
+        UpdatePositionLabel(uiTlw.player_long, uiTlw.player_long.preview.anchorLabel)
+
+        -- Add grid snapping handler
+        uiTlw.player_long:SetHandler("OnMoveStop", function (self)
+            local left, top = self:GetLeft(), self:GetTop()
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                left, top = LUIE.ApplyGridSnap(left, top, "buffs")
+                self:ClearAnchors()
+                self:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, left, top)
+            end
+            if self.alignVertical then
+                SpellCastBuffs.SV.playerVOffsetX = left
+                SpellCastBuffs.SV.playerVOffsetY = top
+            else
+                SpellCastBuffs.SV.playerHOffsetX = left
+                SpellCastBuffs.SV.playerHOffsetY = top
+            end
+        end)
     end
+
     if uiTlw.prominentbuffs then
         uiTlw.prominentbuffs:SetMouseEnabled(state)
         uiTlw.prominentbuffs:SetMovable(state)
+        UpdatePositionLabel(uiTlw.prominentbuffs, uiTlw.prominentbuffs.preview.anchorLabel)
+
+        -- Add grid snapping handler
+        uiTlw.prominentbuffs:SetHandler("OnMoveStop", function (self)
+            local left, top = self:GetLeft(), self:GetTop()
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                left, top = LUIE.ApplyGridSnap(left, top, "buffs")
+                self:ClearAnchors()
+                self:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, left, top)
+            end
+            if self.alignVertical then
+                SpellCastBuffs.SV.prominentbVOffsetX = left
+                SpellCastBuffs.SV.prominentbVOffsetY = top
+            else
+                SpellCastBuffs.SV.prominentbHOffsetX = left
+                SpellCastBuffs.SV.prominentbHOffsetY = top
+            end
+        end)
     end
+
     if uiTlw.prominentdebuffs then
         uiTlw.prominentdebuffs:SetMouseEnabled(state)
         uiTlw.prominentdebuffs:SetMovable(state)
+        UpdatePositionLabel(uiTlw.prominentdebuffs, uiTlw.prominentdebuffs.preview.anchorLabel)
+
+        -- Add grid snapping handler
+        uiTlw.prominentdebuffs:SetHandler("OnMoveStop", function (self)
+            local left, top = self:GetLeft(), self:GetTop()
+            if LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs then
+                left, top = LUIE.ApplyGridSnap(left, top, "buffs")
+                self:ClearAnchors()
+                self:SetAnchor(TOPLEFT, GuiRoot, TOPLEFT, left, top)
+            end
+            if self.alignVertical then
+                SpellCastBuffs.SV.prominentdVOffsetX = left
+                SpellCastBuffs.SV.prominentdVOffsetY = top
+            else
+                SpellCastBuffs.SV.prominentdHOffsetX = left
+                SpellCastBuffs.SV.prominentdHOffsetY = top
+            end
+        end)
     end
 
     -- Show/hide preview
@@ -1572,7 +1802,7 @@ function SpellCastBuffs.Buff_OnMouseEnter(control)
 
                 -- Dynamic Tooltip if present
                 if Effects.EffectOverride[control.effectId] and Effects.EffectOverride[control.effectId].dynamicTooltip then
-                    tooltipText = LUIE.DynamicTooltip(control.effectId)
+                    tooltipText = LUIE.DynamicTooltip(control.effectId) or tooltipText -- Fallback to original tooltipText if nil
                 end
             else
                 duration = 0
@@ -1639,21 +1869,22 @@ function SpellCastBuffs.Buff_OnMouseEnter(control)
         -- GameTooltip:SetAbilityId(117391)
 
         -- Debug show default Tooltip on my account
-        if LUIE.PlayerDisplayName == "@ArtOfShred" or LUIE.PlayerDisplayName == "@ArtOfShredPTS" --[[or LUIE.PlayerDisplayName == '@dack_janiels']] then
-            GameTooltip:AddLine("Default Tooltip Below:", "", colorText:UnpackRGBA())
+        -- if LUIE.PlayerDisplayName == "@ArtOfShred" or LUIE.PlayerDisplayName == "@ArtOfShredPTS" --[[or LUIE.PlayerDisplayName == '@dack_janiels']] then
+        -- if LUIE.IsDevDebugEnabled() then
+        --     GameTooltip:AddLine("Default Tooltip Below:", "", colorText:UnpackRGBA())
 
-            local newtooltipText
+        --     local newtooltipText
 
-            if GetAbilityEffectDescription(control.buffSlot) ~= "" then
-                newtooltipText = GetAbilityEffectDescription(control.buffSlot)
-            end
-            if newtooltipText ~= "" and newtooltipText ~= nil then
-                GameTooltip:SetVerticalPadding(1)
-                ZO_Tooltip_AddDivider(GameTooltip)
-                GameTooltip:SetVerticalPadding(5)
-                GameTooltip:AddLine(newtooltipText, "", colorText:UnpackRGBA())
-            end
-        end
+        --     if GetAbilityEffectDescription(control.buffSlot) ~= "" then
+        --         newtooltipText = GetAbilityEffectDescription(control.buffSlot)
+        --     end
+        --     if newtooltipText ~= "" and newtooltipText ~= nil then
+        --         GameTooltip:SetVerticalPadding(1)
+        --         ZO_Tooltip_AddDivider(GameTooltip)
+        --         GameTooltip:SetVerticalPadding(5)
+        --         GameTooltip:AddLine(newtooltipText, "", colorText:UnpackRGBA())
+        --     end
+        -- end
     end
 end
 
@@ -1901,7 +2132,25 @@ function SpellCastBuffs.ApplyFont()
     end
 end
 
-function SpellCastBuffs.OnEffectChangedGround(eventCode, changeType, effectSlot, effectName, unitTag, beginTime, endTime, stackCount, iconName, buffType, effectType, abilityType, statusEffectType, unitName, unitId, abilityId, castByPlayer)
+-- Runs on the EVENT_EFFECT_CHANGED listener.
+--- @param eventId integer
+--- @param changeType EffectResult
+--- @param effectSlot integer
+--- @param effectName string
+--- @param unitTag string
+--- @param beginTime number
+--- @param endTime number
+--- @param stackCount integer
+--- @param iconName string
+--- @param deprecatedBuffType string
+--- @param effectType BuffEffectType
+--- @param abilityType AbilityType
+--- @param statusEffectType StatusEffectType
+--- @param unitName string
+--- @param unitId integer
+--- @param abilityId integer
+--- @param sourceType CombatUnitType
+function SpellCastBuffs.OnEffectChangedGround(eventId, changeType, effectSlot, effectName, unitTag, beginTime, endTime, stackCount, iconName, deprecatedBuffType, effectType, abilityType, statusEffectType, unitName, unitId, abilityId, sourceType)
     if SpellCastBuffs.SV.HideGroundEffects then
         return
     end
@@ -2037,13 +2286,13 @@ end
 
 -- Runs on the EVENT_EFFECT_CHANGED listener.
 -- This handler fires every long-term effect added or removed
---- @param eventCode integer
+--- @param eventId integer
 --- @param changeType EffectResult
 --- @param effectSlot integer
 --- @param effectName string
 --- @param unitTag string
---- @param beginTime integer
---- @param endTime integer
+--- @param beginTime number
+--- @param endTime number
 --- @param stackCount integer
 --- @param iconName string
 --- @param deprecatedBuffType string
@@ -2053,8 +2302,8 @@ end
 --- @param unitName string
 --- @param unitId integer
 --- @param abilityId integer
---- @param castByPlayer CombatUnitType
-function SpellCastBuffs.OnEffectChanged(eventCode, changeType, effectSlot, effectName, unitTag, beginTime, endTime, stackCount, iconName, deprecatedBuffType, effectType, abilityType, statusEffectType, unitName, unitId, abilityId, castByPlayer)
+--- @param sourceType CombatUnitType
+function SpellCastBuffs.OnEffectChanged(eventId, changeType, effectSlot, effectName, unitTag, beginTime, endTime, stackCount, iconName, deprecatedBuffType, effectType, abilityType, statusEffectType, unitName, unitId, abilityId, sourceType)
     -- Bail out if this is an effect from Oakensoul
     if IsOakensoul(abilityId) and unitTag == "player" and (SpellCastBuffs.SV.HideOakenSoul == true) then
         return
@@ -2086,7 +2335,7 @@ function SpellCastBuffs.OnEffectChanged(eventCode, changeType, effectSlot, effec
 
     -- If the source of the buff isn't the player or the buff is not on the AbilityId or AbilityName override list then we don't display it
     if unitTag ~= "player" then
-        if effectType == BUFF_EFFECT_TYPE_DEBUFF and not (castByPlayer == COMBAT_UNIT_TYPE_PLAYER) and not (debuffDisplayOverrideId[abilityId] or Effects.DebuffDisplayOverrideName[effectName]) then
+        if effectType == BUFF_EFFECT_TYPE_DEBUFF and not (sourceType == COMBAT_UNIT_TYPE_PLAYER) and not (debuffDisplayOverrideId[abilityId] or Effects.DebuffDisplayOverrideName[effectName]) then
             return
         end
     end
@@ -2242,7 +2491,7 @@ function SpellCastBuffs.OnEffectChanged(eventCode, changeType, effectSlot, effec
             end
         end
     else
-        context = SpellCastBuffs.DetermineContext(context, abilityId, effectName, castByPlayer)
+        context = SpellCastBuffs.DetermineContext(context, abilityId, effectName, sourceType)
     end
 
     -- Exit here if there is no container to hold this effect
@@ -2260,7 +2509,7 @@ function SpellCastBuffs.OnEffectChanged(eventCode, changeType, effectSlot, effec
             local fakeEffectType = Effects.EffectOverride[id] and Effects.EffectOverride[id].type or effectType
             if not (SpellCastBuffs.SV.BlacklistTable[name] or SpellCastBuffs.SV.BlacklistTable[id]) then
                 local simulatedContext = unitTag .. fakeEffectType
-                simulatedContext = SpellCastBuffs.DetermineContext(simulatedContext, id, name, castByPlayer)
+                simulatedContext = SpellCastBuffs.DetermineContext(simulatedContext, id, name, sourceType)
                 SpellCastBuffs.EffectsList[simulatedContext][Effects.EffectCreateSkillAura[abilityId].abilityId] = nil
             end
         end
@@ -2306,7 +2555,7 @@ function SpellCastBuffs.OnEffectChanged(eventCode, changeType, effectSlot, effec
                 local fakeUnbreakable = Effects.EffectOverride[id] and Effects.EffectOverride[id].unbreakable or 0
                 if not (SpellCastBuffs.SV.BlacklistTable[name] or SpellCastBuffs.SV.BlacklistTable[id]) then
                     local simulatedContext = unitTag .. fakeEffectType
-                    simulatedContext = SpellCastBuffs.DetermineContext(simulatedContext, id, name, castByPlayer)
+                    simulatedContext = SpellCastBuffs.DetermineContext(simulatedContext, id, name, sourceType)
 
                     -- Create Buff
                     local icon = Effects.EffectCreateSkillAura[abilityId].icon or GetAbilityIcon(id)
@@ -2489,8 +2738,9 @@ function SpellCastBuffs.ArtificialEffectUpdate(eventCode, effectId)
             duration, endTime, effectType = handleBGDeserterEffect(startTime)
         end
 
+        local tooltip, artificial
         -- Process effects and get tooltips
-        local effectId, tooltip, artificial = handleBattleSpiritEffectId(activeEffectId)
+        effectId, tooltip, artificial = handleBattleSpiritEffectId(activeEffectId)
 
         -- Create and store effect
         local context = SpellCastBuffs.DetermineContextSimple("player1", effectId, displayName)
@@ -3851,19 +4101,24 @@ function SpellCastBuffs.OnUpdate(currentTime)
         end
     end
 
-    -- TODO: Fix implementation if possible
-    --[[
     -- Display Block buff for player if enabled
     if SpellCastBuffs.SV.ShowBlockPlayer and not SpellCastBuffs.SV.HidePlayerBuffs then
         if IsBlockActive() and not IsPlayerStunned() then -- Is Block Active returns true when the player is stunned currently.
             local abilityId = 974
             local abilityName = Abilities.Innate_Brace
             local context = SpellCastBuffs.DetermineContextSimple("player1", abilityId, abilityName)
-            SpellCastBuffs.EffectsList[context][abilityId] = {
-                target=SpellCastBuffs.DetermineTarget(context), type=1,
-                id=abilityId, name=abilityName, icon='LuiExtended/media/icons/abilities/ability_innate_block.dds',
-                dur=0, starts=currentTime, ends=nil,
-                restart=true, iconNum=0,
+            SpellCastBuffs.EffectsList[context][abilityId] =
+            {
+                target = SpellCastBuffs.DetermineTarget(context),
+                type = 1,
+                id = abilityId,
+                name = abilityName,
+                icon = "LuiExtended/media/icons/abilities/ability_innate_block.dds",
+                dur = 0,
+                starts = currentTime,
+                ends = nil,
+                restart = true,
+                iconNum = 0,
                 forced = "short",
                 toggle = true,
             }
@@ -3871,7 +4126,6 @@ function SpellCastBuffs.OnUpdate(currentTime)
             SpellCastBuffs.ClearPlayerBuff(974)
         end
     end
-    ]]
 end
 
 function SpellCastBuffs.updateBar(currentTime, sortedList, container)
@@ -4247,122 +4501,79 @@ function SpellCastBuffs.OnVibration(eventCode, duration, coarseMotor, fineMotor,
     end
 end
 
--- Called from the menu and on initialize to build the table of hidden effects.
+-- Refactored version of SpellCastBuffs.UpdateContextHideList
 function SpellCastBuffs.UpdateContextHideList()
+    -- Initialize hidden effects tables
     hidePlayerEffects = {}
     hideTargetEffects = {}
 
-    -- Hide Warden Crystallized Shield & morphs from effects on the player (we use fake buffs to track this so that the stack count can be displayed)
-    hidePlayerEffects[86135] = true
-    hidePlayerEffects[86139] = true
-    hidePlayerEffects[86143] = true
+    -- Hard-coded player-specific effect IDs
+    local hardCodedPlayerIds = { 86135, 86139, 86143 }
+    for _, id in ipairs(hardCodedPlayerIds) do
+        hidePlayerEffects[id] = true
+    end
 
-    if SpellCastBuffs.SV.IgnoreMundusPlayer then
-        for k, v in pairs(Effects.IsBoon) do
-            hidePlayerEffects[k] = v
+    -- Helper to merge effects into a target table.
+    -- If the setting is enabled in SpellCastBuffs.SV, then for either:
+    --   - a provided effect table, merge its key/values into the target
+    --   - a constant ID via 'defaultValue'
+    --- @param targetTable table The table to merge effects into
+    --- @param settingKey string The setting key to check
+    --- @param effectSource table|nil The effect source table, or nil if using a constant ID
+    --- @param defaultValue integer|nil The constant ID to use if effectSource is nil
+    local function mergeEffects(targetTable, settingKey, effectSource, defaultValue)
+        if SpellCastBuffs.SV[settingKey] then
+            if effectSource and type(effectSource) == "table" then
+                for k, v in pairs(effectSource) do
+                    targetTable[k] = v
+                end
+            elseif defaultValue then
+                targetTable[defaultValue] = true
+            end
         end
     end
-    if SpellCastBuffs.SV.IgnoreMundusTarget then
-        for k, v in pairs(Effects.IsBoon) do
-            hideTargetEffects[k] = v
-        end
+
+    -- List of player settings mappings
+    local playerMappings =
+    {
+        { key = "IgnoreMundusPlayer",      src = Effects.IsBoon },
+        { key = "IgnoreVampPlayer",        src = Effects.IsVamp },
+        { key = "IgnoreLycanPlayer",       src = Effects.IsLycan },
+        { key = "IgnoreDiseasePlayer",     src = Effects.IsVampLycanDisease },
+        { key = "IgnoreBitePlayer",        src = Effects.IsVampLycanBite },
+        { key = "IgnoreCyrodiilPlayer",    src = Effects.IsCyrodiil },
+        { key = "IgnoreEsoPlusPlayer",     src = nil,                       value = 63601 },
+        { key = "IgnoreSoulSummonsPlayer", src = Effects.IsSoulSummons },
+        { key = "IgnoreFoodPlayer",        src = Effects.IsFoodBuff },
+        { key = "IgnoreExperiencePlayer",  src = Effects.IsExperienceBuff },
+        { key = "IgnoreAllianceXPPlayer",  src = Effects.IsAllianceXPBuff }
+    }
+
+    for _, mapping in ipairs(playerMappings) do
+        mergeEffects(hidePlayerEffects, mapping.key, mapping.src, mapping.value)
     end
-    if SpellCastBuffs.SV.IgnoreVampPlayer then
-        for k, v in pairs(Effects.IsVamp) do
-            hidePlayerEffects[k] = v
-        end
+
+    -- List of target settings mappings
+    local targetMappings =
+    {
+        { key = "IgnoreMundusTarget",      src = Effects.IsBoon },
+        { key = "IgnoreVampTarget",        src = Effects.IsVamp },
+        { key = "IgnoreLycanTarget",       src = Effects.IsLycan },
+        { key = "IgnoreDiseaseTarget",     src = Effects.IsVampLycanDisease },
+        { key = "IgnoreBiteTarget",        src = Effects.IsVampLycanBite },
+        { key = "IgnoreCyrodiilTarget",    src = Effects.IsCyrodiil },
+        { key = "IgnoreEsoPlusTarget",     src = nil,                       value = 63601 },
+        { key = "IgnoreSoulSummonsTarget", src = Effects.IsSoulSummons },
+        { key = "IgnoreFoodTarget",        src = Effects.IsFoodBuff },
+        { key = "IgnoreExperienceTarget",  src = Effects.IsExperienceBuff },
+        { key = "IgnoreAllianceXPTarget",  src = Effects.IsAllianceXPBuff }
+    }
+
+    for _, mapping in ipairs(targetMappings) do
+        mergeEffects(hideTargetEffects, mapping.key, mapping.src, mapping.value)
     end
-    if SpellCastBuffs.SV.IgnoreVampTarget then
-        for k, v in pairs(Effects.IsVamp) do
-            hideTargetEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreLycanPlayer then
-        for k, v in pairs(Effects.IsLycan) do
-            hidePlayerEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreLycanTarget then
-        for k, v in pairs(Effects.IsLycan) do
-            hideTargetEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreDiseasePlayer then
-        for k, v in pairs(Effects.IsVampLycanDisease) do
-            hidePlayerEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreDiseaseTarget then
-        for k, v in pairs(Effects.IsVampLycanDisease) do
-            hideTargetEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreBitePlayer then
-        for k, v in pairs(Effects.IsVampLycanBite) do
-            hidePlayerEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreBiteTarget then
-        for k, v in pairs(Effects.IsVampLycanBite) do
-            hideTargetEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreCyrodiilPlayer then
-        for k, v in pairs(Effects.IsCyrodiil) do
-            hidePlayerEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreCyrodiilTarget then
-        for k, v in pairs(Effects.IsCyrodiil) do
-            hideTargetEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreEsoPlusPlayer then
-        hidePlayerEffects[63601] = true
-    end
-    if SpellCastBuffs.SV.IgnoreEsoPlusTarget then
-        hideTargetEffects[63601] = true
-    end
-    if SpellCastBuffs.SV.IgnoreSoulSummonsPlayer then
-        for k, v in pairs(Effects.IsSoulSummons) do
-            hidePlayerEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreSoulSummonsTarget then
-        for k, v in pairs(Effects.IsSoulSummons) do
-            hideTargetEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreFoodPlayer then
-        for k, v in pairs(Effects.IsFoodBuff) do
-            hidePlayerEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreFoodTarget then
-        for k, v in pairs(Effects.IsFoodBuff) do
-            hideTargetEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreExperiencePlayer then
-        for k, v in pairs(Effects.IsExperienceBuff) do
-            hidePlayerEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreExperienceTarget then
-        for k, v in pairs(Effects.IsExperienceBuff) do
-            hideTargetEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreAllianceXPPlayer then
-        for k, v in pairs(Effects.IsAllianceXPBuff) do
-            hidePlayerEffects[k] = v
-        end
-    end
-    if SpellCastBuffs.SV.IgnoreAllianceXPTarget then
-        for k, v in pairs(Effects.IsAllianceXPBuff) do
-            hideTargetEffects[k] = v
-        end
-    end
+
+    -- Handle block effects based on ShowBlock toggles
     if not SpellCastBuffs.SV.ShowBlockPlayer then
         for k, v in pairs(Effects.IsBlock) do
             hidePlayerEffects[k] = v

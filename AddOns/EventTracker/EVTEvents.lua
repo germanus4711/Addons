@@ -463,6 +463,16 @@ function EVT.FindQuest(eventCode, isCompleted, journalIndex, questName, zoneInde
 -- EVENTUPDATE FINDQUEST TICKET QUEST TYPES
 -- ******************************************
 
+-- 2.291 This section of code was somehow MISSING, causing IC tickets to not be recognized. Restored from version 2.220
+-- 1.93 Re-activated (2.050 - left this active, since this'll be needed again soon)
+--(All alliances)
+		[5491] = "Imperial City", -- #1698 "Speaking For The Dead"		(Memorial District, Legate Gallus)
+		[5492] = "Imperial City", -- #2655 "The Lifeblood of an Empire"	(Arena District, Valga Atrius)
+		[5495] = "Imperial City", -- #2622 "Priceless Treasures"		(Temple District, Sister J'Reeza)
+		[5498] = "Imperial City", -- #2620 "Historical Accuracy"		(Arboretum, Loncano)
+		[5500] = "Imperial City", -- #3051 "Dousing the Fires of Industry"	(Elven Gardens, Quintia Rullus)
+		[5501] = "Imperial City", -- #2621 "Watch Your Step"		(Nobles District, Brihana)
+
 -- 2.050 Re-activated New Life
 		[5838] = "New Life", -- Mud Ball Merriment
 		[5855] = "New Life", -- Fish Boon Feast

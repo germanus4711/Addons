@@ -1,3 +1,7 @@
+local LEJ = LibExtendedJournal
+
+LEJ.Used = true
+
 CollectiblesTracker = {
 	name = "CollectiblesTracker",
 

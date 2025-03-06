@@ -6,10 +6,10 @@ AUI_Fights =
         {
             ["$AccountWide"] = 
             {
+                ["version"] = 1,
                 ["records"] = 
                 {
                 },
-                ["version"] = 1,
             },
         },
     },

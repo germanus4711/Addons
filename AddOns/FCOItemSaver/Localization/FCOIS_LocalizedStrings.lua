@@ -489,6 +489,8 @@ FCOIS.localizationVars.localizationAll = {
         ["options_remark_on_enchant_TT"]        = "Automatically re-mark items with their same marker icons, after they got enchanted.",
         ["options_remark_on_improvement"]           = "After improvement",
         ["options_remark_on_improvement_TT"]        = "Automatically re-mark items with their same marker icons, after they got improved.",
+        ["options_remark_after_launderfence_leave"]		 = "Remark items unmarked during laundring/fencing", --#299
+        ["options_remark_after_launderfence_leave_TT"]	 = "If you remove (context menu, keybind. <modificator key>+RIGHT mouse button) any marker icon at stolen items, while the launder UI is open:\n If this setting is enabled these items will be automatically marked again with their removed icons if you leave the launder/fence", --#299
         ["options_header_items_remark"]			 = "Automatic Re-Marking",
         ["options_header_items_demark_all"]	    = "De-mark all others",
         ["options_header_items_mark_new"]	            =   "New",
@@ -595,7 +597,7 @@ FCOIS.localizationVars.localizationAll = {
 		["options_enable_auto_mark_recipes_in_chat"]	= "Show recipes in chat",
 		["options_enable_auto_mark_recipes_in_chat_TT"] = "Show automatically marked unknown recipes in the chat",
 		["options_auto_mark_recipes_this_char"]			= "Only for this character",
-		["options_auto_mark_recipes_this_char_TT"]	= "If you enable this setting the (un)known recipes will only be checked for the currently loggedin character!\n\nIf this setting is disabled the (un)known recipes will be checked for other (non-logged in) characters too, and the marker icon will be added to the recipe, if\n-you are using the account wide settings of FCOIS\n-and if the following rules apply:\n\n[Chosen recipe addon: \'SousChef\']\n-The setting \'List Characters Who Know Recipe\' must be enabled in the SousChef settings\n-Recipe checks will be done for the 'Main Provisioner Character' chosen in the SousChef settings only. A check for all of your characters is currently not possible via the addon SousChef!.\n\n[Chosen recipe addon: \'CraftStoreFixedAndImproved\']\nIf the main crafting character is chosen (via right mouse button |t100.000000%:100.000000%:EsoUI/Art/Miscellaneous/icon_RMB.dds|t at the CraftStore character list popup):\nOnly this char will be checked.\nElse all your characters will be checked.",
+		["options_auto_mark_recipes_this_char_TT"]	= "If you enable this setting the (un)known recipes will only be checked for the currently loggedin character!\n\nIf this setting is disabled the (un)known recipes will be checked for other (non-logged in) characters too, and the marker icon will be added to the recipe, if\n-you are using the account wide settings of FCOIS\n-and if the following rules apply:\n\n[Chosen recipe addon: \'SousChef\']\n-The setting \'List Characters Who Know Recipe\' must be enabled in the SousChef settings\n-Recipe checks will be done for the 'Main Provisioner Character' chosen in the SousChef settings only. A check for all of your characters is currently not possible via the addon SousChef!.\n\n[Chosen recipe addon: \'CraftStoreFixedAndImproved\']\nIf the main crafting character is chosen (via right mouse button |t100.000000%:100.000000%:EsoUI/Art/Miscellaneous/icon_RMB.dds|t at the CraftStore character list popup):\nOnly this char will be checked.\nElse all your characters will be checked.\n\n[Chosen recipe addon: \'LibCharacterKnowledge\']\nOnly checks the current server and the characters that you have priorized in the library settings menu.",
 		["options_enable_auto_mark_recipes_hint"]		= "This option needs the selected recipe addon activated.\n\n[SousChef]\nPlease enable the option 'List Characters Who Know Recipe' in the SousChef settings!",
 		["options_auto_mark_crafted_items"] 			= "Mark crafted items",
 		["options_auto_mark_crafted_items_TT"] 	= "If you enable this setting the addon will automatically mark your crafted items at a crafting station with the 'lock' icon.",
@@ -1044,10 +1046,11 @@ FCOIS.localizationVars.localizationAll = {
 		["research_item_found"]                  = "] as researchable",
         ["researchScroll_item_found"]            = "] as wasted research scroll",
         ["set_part_found"]						 = "] as set part",
+        ["LibSetsSetSearchFavoriteCategory_part_found"] = "] as LibSets set search favorite",
 		["set_part_non_wished_found"]			 = "] as non-desired set part",
 		["quality_item_found"]                  = "] because of item's quality",
-		["known_recipe_found"]				= "] as known recipe",
-		["unknown_recipe_found"]				= "] as unknown recipe",
+		["known_recipe_found"]				= "] as " .. zo_strformat(GetString(SI_ITEM_FORMAT_STR_KNOWN_ITEM_TYPE), GetString(SI_ITEMTYPE29)),
+		["unknown_recipe_found"]				= "] as " .. GetString(SI_INPUT_LANGUAGE_UNKNOWN) .. " " .. GetString(SI_ITEMTYPE29),
         ["options_enable_auto_mark_quality_items"] = "Mark items with quality",
         ["options_enable_auto_mark_quality_items_TT"] =  "Automatically mark items with icon if there quality equals the selected quality",
         ["options_enable_auto_mark_higher_quality_items"] = "Mark higher quality too",
@@ -1261,7 +1264,7 @@ FCOIS.localizationVars.localizationAll = {
         ["options_auto_mark_sets_collection_unknown_icon"]    = "Unknown set collection item icon",
         ["options_auto_mark_sets_collection_unknown_icon_TT"] = "Choose the icon for unknown set collection items.",
 
-        ["options_description_automatic_marks"] = "Automatics Markings applies icons markers automatically to your items, depending on your defined criteria. E.g. mark set items which got a desired trait (precise, divine, ...) with a desired marker icon, and mark all others with the sell/deconstruct icon. Or mark unknown recipies. The Automatic markings may depend on other addons which you may need to install and setup.\nAutomatic markings will be internally checked and applied at each login/reloadui/zone change with loading screen for all items in all of your inventories!\nYou are also able to manually trigger them via the additional inventory \'flag\' "..addInvFlagIcon.." icons at the inventories -> sub context menu \'Automatic markings\'. Attention: Triggering it from the flag icon will ONLY apply the markings to the currently visible (filtered) items, and not all of your selected inventories (see submenu \'Inv. bags to scan\') and items!\n\nPlease read the tooltips of each setting in the Automatic markings submenus carefully!\n\nThe order of verification and applied Automatic markings is as follows::\n1) Set items\n2) Set collections\n3) Ornate\n4) Intricate\n5) Research\n6) Research scrolls\n7) Unknown recipes\n8) Known recipes\n9) Quality\nCrafted and new Automatic markings are special and will only be applied as the item is crafted by you or a new item enters your inventory.",
+        ["options_description_automatic_marks"] = "Automatics Markings applies icons markers automatically to your items, depending on your defined criteria. E.g. mark set items which got a desired trait (precise, divine, ...) with a desired marker icon, and mark all others with the sell/deconstruct icon. Or mark unknown recipies. The Automatic markings may depend on other addons which you may need to install and setup.\nAutomatic markings will be internally checked and applied at each login/reloadui/zone change with loading screen for all items in all of your inventories!\nYou are also able to manually trigger them via the additional inventory \'flag\' "..addInvFlagIcon.." icons at the inventories -> sub context menu \'Automatic markings\'. Attention: Triggering it from the flag icon will ONLY apply the markings to the currently visible (filtered) items, and not all of your selected inventories (see submenu \'Inv. bags to scan\') and items!\n\nPlease read the tooltips of each setting in the Automatic markings submenus carefully!\n\nThe order of verification and applied Automatic markings is as follows::\n1) Set items\n2) Set collections\n3) Ornate\n4) Intricate\n5) Research\n6) Research scrolls\n7) Unknown recipes\n8) Known recipes\n9) Unknown motifs\n10) Known motifs\n11) Quality\nCrafted and new Automatic markings are special and will only be applied as the item is crafted by you or a new item enters your inventory.",
         ["options_known"] = "known",
         ["options_bags_to_scan"]                        = "Inv. bags to scan",
         ["options_bags_to_scan_automatic_marks_TT"]     = "Inventory bags to scan for automatic marking as a ReloadUI/zone change with loading screen is done/items get into your inventory (loot).\nManually triggered automatic markings via the add. inv. "..addInvFlagIcon.." context menu will only scan the currently visible items at the currently opened inventory, and as you manually trigger them they will scan the currently visible bag even if it is disabled below!",
@@ -1290,6 +1293,28 @@ FCOIS.localizationVars.localizationAll = {
         ["options_automark_itemcooldowntracker"]        = "Mark \'Item Cooldown Tracker\' tracked",
         ["options_automark_itemcooldowntracker_TT"]     = "Automatically mark items tracked via \'Item Cooldown Tracker\' with a marker icon.",
         ["options_automark_itemcooldowntracker_icon_TT"] = "Choose the marker icon that should be applied on items that are tracked via \'Item Cooldown Tracker\'.",
+
+
+        --#301 LibSets set search favorites
+        ["options_enable_auto_mark_LibSetsSetSearchFavorites"] = "LibSets set search favorites mapping",
+        ["options_enable_auto_mark_LibSetsSetSearchFavorites_TT"] = "Map the LibSets set search favorite categories to FCOIS marker icons and show those in your inventories.",
+        ["options_LibSetsSetSearchFavorites_Mapping"] = "LibSets - Set search favorites mapping",
+        ["options_LibSetsSetSearchFavoritesCategory"] = "Set search favorite category",
+
+        --#308 Auto mark motifs
+        ["options_enable_auto_mark_motifs"]			    = "Mark unknown motifs",
+		["options_enable_auto_mark_motifs_TT"]	        = "Automatically mark unknown motifs with the chosen icon",
+        ["options_enable_auto_mark_known_motifs"]       = "Mark known motifs",
+        ["options_enable_auto_mark_known_motifs_TT"]    = "Automatically mark known motifs with the chosen icon",
+		["options_enable_auto_mark_motifs_in_chat"]	    = "Show motifs in chat",
+		["options_enable_auto_mark_motifs_in_chat_TT"]  = "Show automatically marked unknown motifs in the chat",
+		["options_enable_auto_mark_motifs_hint"]		= "This option needs the selected motifs addon activated.",
+    	["options_auto_mark_motifs_icon"]				= "Motif icon (%s)",
+		["options_auto_mark_motifs_icon_TT"]		    = "Icon for the automatically marked %s motifs",
+		["options_auto_mark_motifs_this_char"]			= "Only for this character",
+		["options_auto_mark_motifs_this_char_TT"]	    = "If you enable this setting the (un)known motifs will only be checked for the currently loggedin character!\n\nIf this setting is disabled the (un)known motifs will be checked for other (non-logged in) characters too, and the marker icon will be added to the motifs, if\n-you are using the account wide settings of FCOIS\n-and if the following rules apply:\n\n[Chosen motifs addon: \'LibCharacterKnowledge\']\nOnly checks the current server and the characters that you have priorized in the library settings menu.",
+		["known_motif_found"]				            = "] as " .. zo_strformat(GetString(SI_ITEM_FORMAT_STR_KNOWN_ITEM_TYPE), GetString(SI_ITEMTYPE8)),
+		["unknown_motif_found"]				            = "] as " .. GetString(SI_INPUT_LANGUAGE_UNKNOWN) .. " " .. GetString(SI_ITEMTYPE8),
 
         --LibShifterBoxes
         --[FCOIS_UNIQUEID_ITEMTYPES]
@@ -1742,6 +1767,8 @@ FCOIS.localizationVars.localizationAll = {
         ["options_remark_on_enchant_TT"]        = "Automatisch Gegenstände wieder mit denselben Markierungssymbolen markieren, nach dem Verzaubern.",
         ["options_remark_on_improvement"]           = "Nach dem Aufwerten",
         ["options_remark_on_improvement_TT"]        = "Automatisch Gegenstände wieder mit denselben Markierungssymbolen markieren, nach dem Aufwerten.",
+        ["options_remark_after_launderfence_leave"]		 = "Nach dem unmarkieren beim Hehler/Geldwäsche", --#299
+        ["options_remark_after_launderfence_leave_TT"]	 = "Wenn du Symbole an gestohlenen Gegenständen entfernst (Kontext Menü, Tastenkombination, <Modifikations Taste>+RECHTER Maus Knopf), während du beim Hehler/bei der Geldwäsche bist:\n Wenn diese Option aktiviert wurde, dann werden diese entfernten Symbole an den Gegenständen wiederhergesteltl, sobald du den Hehler/die Geldwäsche verlässt.", --#299
         ["options_header_items_demark_all"]	    = "De-markiere alle anderen",
         ["options_header_items_mark_new"]	            =   "Neu",
         ["options_enable_auto_mark_new_items"]          =   "Neue Gegenstände",
@@ -1771,7 +1798,7 @@ FCOIS.localizationVars.localizationAll = {
         ["options_auto_mark_addon"]             =   "Zu verwendendes Addon",
         ["options_auto_mark_addon_TT"]     =   "Addon, welches für die automatischen <<1>> Markierungen verwendet werden soll",
         ["options_auto_mark_recipes_this_char"]			= "Nur für diesen Charakter",
-        ["options_auto_mark_recipes_this_char_TT"]	= "Wenn Sie diese Option aktivieren werden nur für den aktuell eingeloggten Charakter (un)bekannte Rezepte markiert!\n\nWenn diese Option deaktiviert wird, werden die (un)bekannten Rezepte für andere Charaktere ebenfalls markiert, sofern:\n-Die Accountweiten Einstellungen von FCOIS verwendet werden\n-Die folgenden Punkte zum gewählten Rezept AddOn zutreffen:\n\n[Gewähltes Rezept AddOn: \'SousChef\']\n-Die SousChef Einstellung \'Charakter Rezeptsammlung in Kurzinfos auflisten\' muss aktiviert sein\n-Nur der in den SousChef Einstelungen gewählte 'Haupt Koch Charakter' wird geprüft. Eine Prüfung aller anderen Charaktere ist aktuell nicht möglich mit dem AddOn SousChef!\n\n[Gewähltes Rezept AddOn: \'CraftStoreFixedAndImproved\']\nWenn auf dem CraftStore Charakter Auswahl Popup (mit der rechten Maustaste) ein Haupt Handwerks Charakter gewählt wurde:\nEs wird nur dieser Charakter geprüft.\nAnsonsten werden alle anderen Charaktere geprüft.",
+        ["options_auto_mark_recipes_this_char_TT"]	= "Wenn Sie diese Option aktivieren werden nur für den aktuell eingeloggten Charakter (un)bekannte Rezepte markiert!\n\nWenn diese Option deaktiviert wird, werden die (un)bekannten Rezepte für andere Charaktere ebenfalls markiert, sofern:\n-Die Accountweiten Einstellungen von FCOIS verwendet werden\n-Die folgenden Punkte zum gewählten Rezept AddOn zutreffen:\n\n[Gewähltes Rezept AddOn: \'SousChef\']\n-Die SousChef Einstellung \'Charakter Rezeptsammlung in Kurzinfos auflisten\' muss aktiviert sein\n-Nur der in den SousChef Einstelungen gewählte 'Haupt Koch Charakter' wird geprüft. Eine Prüfung aller anderen Charaktere ist aktuell nicht möglich mit dem AddOn SousChef!\n\n[Gewähltes Rezept AddOn: \'CraftStoreFixedAndImproved\']\nWenn auf dem CraftStore Charakter Auswahl Popup (mit der rechten Maustaste) ein Haupt Handwerks Charakter gewählt wurde:\nEs wird nur dieser Charakter geprüft.\nAnsonsten werden alle anderen Charaktere geprüft.\n\n[Gewähltes Rezept AddOn: \'LibCharacterKnowledge\']\nPrüft nur den aktuellen Server und nur Charaktere, welche du in den Bibliothek Einstellungen entsprechend priorisiert hast.",
         ["options_enable_auto_mark_recipes_hint"]		= "Diese Option ist nur aktiv, wenn das gewählte Rezepte Addon aktiviert wurde.\n\n[SousChef]\nIn den SousChef Einstellungen muss insbesondere die Option 'Charakter Rezeptsammlung in Kurzinfos auflisten' aktiviert werden!",
         ["options_auto_mark_crafted_items"] 			= "Markiere hergestellte Gegenstände",
         ["options_auto_mark_crafted_items_TT"] 	= "Wenn Sie diese Option aktivieren werden, nach dem Herstellen (Crafting) von Gegenständen, Gegenstände automatich mit dem 'Schloß' Symbol markiert.",
@@ -2303,6 +2330,7 @@ FCOIS.localizationVars.localizationAll = {
         ["research_item_found"]                  = "] als analysierbar gesetzt",
         ["researchScroll_item_found"]            = "] als vergeudete Analyse Schriftrolle markiert",
         ["set_part_found"]						 = "] als Set Teil gesetzt",
+        ["LibSetsSetSearchFavoriteCategory_part_found"] = "] als LibSets Set Suche Favorit",
         ["set_part_non_wished_found"]			 = "] als nicht-gewünschtes Set Teil gesetzt",
         ["quality_item_found"]                  = "] durch die Qualität gesetzt",
         ["known_recipe_found"]				= "] als bekanntes Rezept gesetzt",
@@ -2490,7 +2518,7 @@ FCOIS.localizationVars.localizationAll = {
         ["options_auto_mark_sets_collection_unknown_icon"]    = "Unbekannte Set-Sammlung Geg. Symbol",
         ["options_auto_mark_sets_collection_unknown_icon_TT"] = "Wähle das Symbol für die unbekannten Set-Sammlungen Gegenstände.",
 
-        ["options_description_automatic_marks"] = "Automatische Markierungen sind automatisch gesetzte Markierungs Symbole an deinen Gegenständen. Diese sind abhängig von deinen definierten Kriterien, z.B. markiere Set Gegenstände welche eine gewünschte Eigenschaft (Präzise, Göttlich, ...) besitzen mit dem gewünschtes Set Symbol, und alle anderen mit dem Verkaufen/Zerlegen Symbol. Oder markiere unbekante Rezepte. Die automatischen Markierungen können von anderen AddOns abhängig sein, die du installieren und aktivieren musst.\nDie Autom. Markierungen werden bei jedem Login/Benutzeroberfläche neuladen oder Zonen Wechsel mit Ladebild für alle Gegenstände in deinen Inventaren durchgeführt.\nDu kannst diese aber auch manuell anstoßen, über den zusätzliche Inventar \'Flagge\' "..addInvFlagIcon.." Knopf -> Kontext Menü -> Automatische Markierung. Achtung: Beim manuellen Anstoß per Flagge Knopf werden NUR die aktuell angezeigten/gefilterten Gegenstände geprüft, nicht wie bei der automatischen Prüfung alle Gegenstände in den ausgewählten Inventaren (siehe Untermenü\'Zu prüfende Inventare\') !\n\nBitte lies die Tooltips an den Einstellungen sorgfältig, da diese weitere Informationen zu anderen AddOns und deren Einstellungen, bzw. zu der Option selbst liefern!\n\nReihenfolge der autom. Prüfungen\n1) Set Gegenstände\n2) Set Sammlung\n3) Verzierte (Wertvolle)\n4) Intrikate (mehr XP beim Zerlegen)\n5) Analyse\n6) Analyse Schriftrollen\n7) Unbekannte Rezepte\n8) Bekannte Rezepte\n9) Qualität\nHandwerklich hergestellte und neue Gegenstände werden gesondert behandelt und werden dem entsprechend für von dir hergestellte, oder neue (gelootete) Gegenstände automatisch gesetzt.",
+        ["options_description_automatic_marks"] = "Automatische Markierungen sind automatisch gesetzte Markierungs Symbole an deinen Gegenständen. Diese sind abhängig von deinen definierten Kriterien, z.B. markiere Set Gegenstände welche eine gewünschte Eigenschaft (Präzise, Göttlich, ...) besitzen mit dem gewünschtes Set Symbol, und alle anderen mit dem Verkaufen/Zerlegen Symbol. Oder markiere unbekante Rezepte. Die automatischen Markierungen können von anderen AddOns abhängig sein, die du installieren und aktivieren musst.\nDie Autom. Markierungen werden bei jedem Login/Benutzeroberfläche neuladen oder Zonen Wechsel mit Ladebild für alle Gegenstände in deinen Inventaren durchgeführt.\nDu kannst diese aber auch manuell anstoßen, über den zusätzliche Inventar \'Flagge\' "..addInvFlagIcon.." Knopf -> Kontext Menü -> Automatische Markierung. Achtung: Beim manuellen Anstoß per Flagge Knopf werden NUR die aktuell angezeigten/gefilterten Gegenstände geprüft, nicht wie bei der automatischen Prüfung alle Gegenstände in den ausgewählten Inventaren (siehe Untermenü\'Zu prüfende Inventare\') !\n\nBitte lies die Tooltips an den Einstellungen sorgfältig, da diese weitere Informationen zu anderen AddOns und deren Einstellungen, bzw. zu der Option selbst liefern!\n\nReihenfolge der autom. Prüfungen\n1) Set Gegenstände\n2) Set Sammlung\n3) Verzierte (Wertvolle)\n4) Intrikate (mehr XP beim Zerlegen)\n5) Analyse\n6) Analyse Schriftrollen\n7) Unbekannte Rezepte\n8) Bekannte Rezepte\n9) Unbekannte Stile\n10) Bekannte Stile\n11)Qualität\nHandwerklich hergestellte und neue Gegenstände werden gesondert behandelt und werden dem entsprechend für von dir hergestellte, oder neue (gelootete) Gegenstände automatisch gesetzt.",
         ["options_known"] = "bekannt",
         ["options_bags_to_scan"]                        = "Zu prüfende Inventare",
         ["options_bags_to_scan_automatic_marks_TT"]     = "Inventare, die bei den automatischen Markierungen nach dem Login/Benutzeroberfläche Neuladen/Zonen Wechsel mit Ladebildschirm/neuem Inventar Gegenstand (Loot) gescannt werden sollen.\nManuell ausgelöste automatische Markierungen über das zusätzl. Inventar "..addInvFlagIcon.." Kontextmenü werden nur die aktuell angezeigten Gegenstände im aktuell angezeigten Inventar prüfen, und auch dann durchgeführt, wenn das Inventar hier drunter deaktiviert wurde!",
@@ -2519,6 +2547,21 @@ FCOIS.localizationVars.localizationAll = {
         ["options_automark_itemcooldowntracker"]         = "Markiere \'Item Cooldown Tracker\' verfolgte",
         ["options_automark_itemcooldowntracker_TT"]      = "Markiere Gegenstände, welche mit \'Item Cooldown Tracker\' verfolgt werden, mit einem Symbol.",
         ["options_automark_itemcooldowntracker_icon_TT"] = "Wähle das Symbol, welches an durch \'Item Cooldown Tracker\' verfolgten Gegenständen markiert werden soll.",
+
+        --#308 Auto mark motifs
+        ["options_enable_auto_mark_motifs"]			    = "Markiere unbekannte Motive",
+		["options_enable_auto_mark_motifs_TT"]	        = "Markiert unbekannte Motive mit dem gewählten Symbol",
+        ["options_enable_auto_mark_known_motifs"]       = "Markiere bekannte Motive",
+        ["options_enable_auto_mark_known_motifs_TT"]    = "Markiert bekannte Motive mit dem gewählten Symbol",
+		["options_enable_auto_mark_motifs_in_chat"]	    = "Zeige Motive im Chat",
+		["options_enable_auto_mark_motifs_in_chat_TT"]  = "Zeigt automatisch markierte bekannte Motive im Chat",
+		["options_enable_auto_mark_motifs_hint"]		= "Diese Option benötigt ein aktiviertes und ausgewähltes Motive AddOn.",
+    	["options_auto_mark_motifs_icon"]				= "Motiv Symbol (%s)",
+		["options_auto_mark_motifs_icon_TT"]		    = "Symbol für die automatische Markierung von %s Motiven",
+		["options_auto_mark_motifs_this_char"]			= "Nut für diesen Charakter",
+		["options_auto_mark_motifs_this_char_TT"]	    = "Wenn Sie diese Option aktivieren werden nur für den aktuell eingeloggten Charakter (un)bekannte Motive markiert!\n\nWenn diese Option deaktiviert wird, werden die (un)bekannten Motive für andere Charaktere ebenfalls markiert, sofern:\n-Die Accountweiten Einstellungen von FCOIS verwendet werden\n-Die folgenden Punkte zum gewählten Motive AddOn zutreffen:\n\n[Gewähltes Motive AddOn: \'LibCharacterKnowledge\']\nPrüft nur den aktuellen Server und nur Charaktere, welche du in den Bibliothek Einstellungen entsprechend priorisiert hast.",
+		["known_motif_found"]				            = "] als " .. zo_strformat(GetString(SI_ITEM_FORMAT_STR_KNOWN_ITEM_TYPE), GetString(SI_ITEMTYPE8)),
+		["unknown_motif_found"]				            = "] als " .. GetString(SI_INPUT_LANGUAGE_UNKNOWN) .. " " .. GetString(SI_ITEMTYPE8),
 
         --LibShifterBoxes
         --[FCOIS_UNIQUEID_ITEMTYPES]

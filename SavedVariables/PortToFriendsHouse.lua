@@ -6,31 +6,8 @@ PortToFriendsHouseVars =
         {
             ["$AccountWide"] = 
             {
-                ["version"] = 1,
-                ["defaultTab"] = 1,
-                ["vc_chatAllowed"] = 
-                {
-                    ["o1"] = true,
-                    ["g5"] = true,
-                    ["o4"] = true,
-                    ["jpzone"] = false,
-                    ["zone"] = false,
-                    ["group"] = true,
-                    ["enzone"] = false,
-                    ["frzone"] = false,
-                    ["yell"] = false,
-                    ["o5"] = true,
-                    ["emote"] = false,
-                    ["o2"] = true,
-                    ["o3"] = true,
-                    ["g3"] = true,
-                    ["g1"] = true,
-                    ["tell"] = true,
-                    ["dezone"] = false,
-                    ["say"] = false,
-                    ["g2"] = true,
-                    ["g4"] = true,
-                },
+                ["selectedMyHousesSort"] = 1,
+                ["port_mode"] = 3,
                 ["myHousesFavorites"] = 
                 {
                     [2] = 
@@ -40,20 +17,43 @@ PortToFriendsHouseVars =
                     {
                     },
                 },
-                ["port_mode"] = 3,
-                ["selectedMyHousesSort"] = 1,
-                ["selectedLibraryFilter"] = 1,
-                ["selectedLibrarySort"] = 1,
                 ["vc"] = 
                 {
+                    ["allowSelf"] = false,
                     ["receivedCards"] = 
                     {
                     },
-                    ["allowSelf"] = false,
                 },
+                ["defaultTab"] = 1,
                 ["favorites"] = 
                 {
                 },
+                ["selectedLibraryFilter"] = 1,
+                ["vc_chatAllowed"] = 
+                {
+                    ["g5"] = true,
+                    ["jpzone"] = false,
+                    ["frzone"] = false,
+                    ["emote"] = false,
+                    ["g4"] = true,
+                    ["yell"] = false,
+                    ["group"] = true,
+                    ["g1"] = true,
+                    ["o4"] = true,
+                    ["enzone"] = false,
+                    ["tell"] = true,
+                    ["dezone"] = false,
+                    ["o5"] = true,
+                    ["g3"] = true,
+                    ["say"] = false,
+                    ["o2"] = true,
+                    ["zone"] = false,
+                    ["o3"] = true,
+                    ["g2"] = true,
+                    ["o1"] = true,
+                },
+                ["version"] = 1,
+                ["selectedLibrarySort"] = 1,
             },
         },
     },

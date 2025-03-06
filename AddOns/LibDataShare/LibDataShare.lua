@@ -1,10 +1,17 @@
 local NAME = "LibDataShare"
 
-local lib = {version = 6}
+local lib = {
+	version = "2025.02.11"
+}
 _G[NAME] = lib
 
 local LMP = LibMapPing2
 if LMP and not LMP.internal then LMP = nil end -- a naive check for LMP version just to avoid calling really old ones
+
+local LGB = LibGroupBroadcast
+local LGB_MESSAGE_ID = 2
+local LGB_Handler = {}
+local LGB_Protocol = {}
 
 local mapHandlers = {} -- currently registered maps
 
@@ -18,6 +25,9 @@ local lastOnPingTime = 0 -- time of the latest received and processed map ping
 local EM = EVENT_MANAGER
 local time = GetGameTimeMilliseconds
 
+local ApiVersion = GetAPIVersion()
+local WorldName = GetWorldName()
+
 local function IsCallable(f)
 	return type(f) == "function"
 end
@@ -26,7 +36,7 @@ end
 -- Each addon must acquire its own object by calling LibDataShare:RegisterMap()
 local MapHandler = {}
 function MapHandler:New(owner, mapId, dataHandler)
-	handler = {mapId = mapId, owner = owner}
+	local handler = {mapId = mapId, owner = owner}
 	setmetatable(handler, self)
 	self.__index = self
 	handler:SetDataHandler(dataHandler)
@@ -327,69 +337,210 @@ local function OnMapPing(eventCode, pingEventType, pingType, pingTag, offsetX, o
 	end
 end
 
-local function Initialize()
+--------------------------------------------------------------------------
+--------------- COMPATIBILITY LAYER WITH LibGroupBroadcast ---------------
+--------------------------------------------------------------------------
 
-	local function OnPlayerActivated()
+local queuedMessages = {}
 
-		-- EOL detection
-		local ApiVersion = GetAPIVersion()
-		local WorldName = GetWorldName()
-		if ApiVersion >= 101046 then
-			if WorldName ~= "PTS" then
-				zo_callLater(function()
-					d("|cFF00FFWarning: 'LibDataShare' is now disabled due to API restrictions in Update 46. The MapPing API only allows one ping every 10 seconds, and this library is no longer functional. Please uninstall it to avoid seeing this message.|r")
-				end, 5000)
+local function sendQueuedMessages()
+	if not ENABLED then queuedMessages = {} return end
 
-				-- remove functionality of the addon completely by overwriting all functions of the Library
-				MapHandler.QueueData = function() end
-				MapHandler.SendData = function() end
-				lib.PrepareMap = function() return false end
-				lib.IsEnabled = function() return false end
-				lib.GetMapPing = function() return 0, 0 end
-				lib.SetMapPing = function() end
-				lib.ResolveConflicts = function() end
-				OnMapPing = function() end
-				MapStateChange = function() end
+	for mapId, message in pairs(queuedMessages) do
+		LGB_Protocol:Send({
+			mapId = mapId,
+			data = message.data
+		})
 
-				return -- exit Initialize function here to not load the OnPlayerActivated function
-			end
-
-
-			-- set the ping rate to every 10seconds because of API changes in U46
-			PING_RATE = 10200
-			zo_callLater(function()
-				d("|cFF00FFImportant: Please remove 'LibDataShare' from your add-ons! The MapPing API has been rate-limited in Update 46, allowing only one ping every 10 seconds. Continuing to use this library may result in being kicked from the server.|r")
-			end, 5000)
-		end
-
-
-
-
-		-- Unregister map ping handler.
-		EM:UnregisterForEvent(NAME, EVENT_MAP_PING)
-
-		-- Unregister map state changes.
-		WORLD_MAP_SCENE:UnregisterCallback("StateChange", MapStateChange)
-		GAMEPAD_WORLD_MAP_SCENE:UnregisterCallback("StateChange", MapStateChange)
-
-		if lib:IsEnabled() then
-			-- Register map ping handler.
-			EM:RegisterForEvent(NAME, EVENT_MAP_PING, OnMapPing)
-
-			-- Register map state changes.
-			WORLD_MAP_SCENE:RegisterCallback("StateChange", MapStateChange)
-			GAMEPAD_WORLD_MAP_SCENE:RegisterCallback("StateChange", MapStateChange)
-
-			-- Mute all pings once and for all.
-			lib:MutePings()
-		else
-			lib:UnmutePings()
+		if IsCallable(message.callback) then
+			message.callback(true)
 		end
 	end
 
+	queuedMessages = {}
+end
+
+local function encodeNumber(num)
+	local byteArray = {}
+
+	while num > 0 do
+		table.insert(byteArray, num % 256)
+		num = math.floor(num / 256)
+	end
+
+	return byteArray
+end
+
+local function decodeNumber(byteArray)
+	local num = 0
+
+	for i = #byteArray, 1, -1 do
+		num = num * 256 + byteArray[i]
+	end
+
+	return num
+end
+
+local function mapHandler_SendData(self, data)
+	if not ENABLED then return end
+	LGB_Protocol:Send({
+		mapId = self.mapId,
+		data = encodeNumber(data)
+	})
+end
+
+local function mapHandler_QueueData(self, data, callback)
+	if not ENABLED then return end
+
+	local mapId = self.mapId
+	local msg = {
+		mapId = mapId,
+		data = encodeNumber(data),
+		callback = callback
+	}
+	queuedMessages[mapId] = msg
+
+	return GetGroupAddOnDataBroadcastCooldownRemainingMS()
+end
+
+local function lib_GetMapPing(self, unitTag) return nil end
+local function lib_SetMapPing(self, x, y) return end
+local function lib_IsSendWindow(self) return GetGroupAddOnDataBroadcastCooldownRemainingMS() <= 0 end
+local function lib_ResolveConflicts(self) return end
+local function lib_PrepareMap(self, mapId) return true end
+local function lib_RestoreMap(self)	return end
+
+local function overwriteLibFunctions()
+	lib.GetMapPing = lib_GetMapPing
+	lib.SetMapPing = lib_SetMapPing
+	lib.IsSendWindow = lib_IsSendWindow
+	lib.ResolveConflicts = lib_ResolveConflicts
+	lib.PrepareMap = lib_PrepareMap
+	lib.RestoreMap = lib_RestoreMap
+end
+local function overwriteMapHandlerFunctions()
+	MapHandler.SendData = mapHandler_SendData
+	MapHandler.QueueData = mapHandler_QueueData
+end
+
+local function unregisterSendQueuedMessages()
+	EM:UnregisterForUpdate(NAME .. "SendQueuedMessages")
+end
+local function registerSendQueuedMessages()
+	unregisterSendQueuedMessages()
+	EM:RegisterForUpdate(NAME .. "SendQueuedMessages", PING_RATE, sendQueuedMessages)
+end
+
+local function OnMessageReceived(unitTag, data)
+	if AreUnitsEqual(unitTag, "player") then
+		return
+	end
+
+	local handler = mapHandlers[data.mapId]
+	if handler and IsCallable(handler.dataHandler) then
+		handler.dataHandler(unitTag, decodeNumber(data.data), t)
+	end
+end
+local function DeclareLGBProtocols()
+	local CreateArrayField = LGB.CreateArrayField
+	local CreateNumericField = LGB.CreateNumericField
+
+	local handler = LGB:RegisterHandler(NAME)
+
+	local protocol = handler:DeclareProtocol(LGB_MESSAGE_ID, NAME)
+	protocol:AddField(CreateNumericField("mapId", {
+		minValue = 2,
+		maxValue = 38,
+	}))
+
+	protocol:AddField(CreateArrayField(CreateNumericField("data", {
+		minValue = 0,
+		maxValue = 2^8-1,
+	}), {
+		maxLength = 5
+	}))
+
+	protocol:OnData(OnMessageReceived)
+
+	if not protocol:Finalize({
+		isRelevantInCombat = true,
+		replaceQueuedMessages = false,
+	}) then
+		error("Failed to finalize LibDataShare legacy protocol")
+	end
+
+	LGB_Handler = handler
+	LGB_Protocol = protocol
+end
+
+--------------------------------------------------------------------------
+
+local function OnPlayerActivated()
+	-- EOL detection
+
+	if ApiVersion >= 101046 then
+		if WorldName ~= "PTS" then
+			zo_callLater(function()
+				d("|cFF00FFWarning: 'LibDataShare' is now disabled due to API restrictions in Update 46. The MapPing API only allows one ping every 10 seconds, and this library is no longer functional. Please uninstall it to avoid seeing this message.|r")
+			end, 5000)
+
+			-- remove functionality of the addon completely by overwriting all functions of the Library
+			MapHandler.QueueData = function() end
+			MapHandler.SendData = function() end
+			lib.PrepareMap = function() return false end
+			lib.IsEnabled = function() return false end
+			lib.GetMapPing = function() return 0, 0 end
+			lib.SetMapPing = function() end
+			lib.ResolveConflicts = function() end
+			OnMapPing = function() end
+			MapStateChange = function() end
+
+			return -- exit Initialize function here to not load the OnPlayerActivated function
+		end
 
 
-	EM:RegisterForEvent(NAME, EVENT_PLAYER_ACTIVATED, OnPlayerActivated)
+		-- set the ping rate to every 10seconds because of API changes in U46
+		PING_RATE = 10200
+		zo_callLater(function()
+			d("|cFF00FFImportant: Please remove 'LibDataShare' from your add-ons! The MapPing API has been rate-limited in Update 46, allowing only one ping every 10 seconds. Continuing to use this library may result in being kicked from the server.|r")
+		end, 5000)
+	end
+
+	-- Unregister map ping handler.
+	EM:UnregisterForEvent(NAME, EVENT_MAP_PING)
+
+	-- Unregister map state changes.
+	WORLD_MAP_SCENE:UnregisterCallback("StateChange", MapStateChange)
+	GAMEPAD_WORLD_MAP_SCENE:UnregisterCallback("StateChange", MapStateChange)
+
+	if lib:IsEnabled() then
+		-- Register map ping handler.
+		EM:RegisterForEvent(NAME, EVENT_MAP_PING, OnMapPing)
+
+		-- Register map state changes.
+		WORLD_MAP_SCENE:RegisterCallback("StateChange", MapStateChange)
+		GAMEPAD_WORLD_MAP_SCENE:RegisterCallback("StateChange", MapStateChange)
+
+		-- Mute all pings once and for all.
+		lib:MutePings()
+	else
+		lib:UnmutePings()
+	end
+end
+
+local function Initialize()
+	if not LGB then
+		-- run without compatibility layer
+		EM:RegisterForEvent(NAME, EVENT_PLAYER_ACTIVATED, OnPlayerActivated)
+		return
+	end
+
+	-- create compatibility layer
+	DeclareLGBProtocols()
+	overwriteLibFunctions()
+	overwriteMapHandlerFunctions()
+	registerSendQueuedMessages()
+	d("LibDataShare compatibility mode initiated")
 
 end
 

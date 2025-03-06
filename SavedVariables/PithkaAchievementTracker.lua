@@ -10,28 +10,31 @@ PithkaSavedVariables =
                 {
                     ["arenaBug"] = true,
                 },
+                ["options"] = 
+                {
+                    ["enableTeleport"] = true,
+                },
                 ["state"] = 
                 {
-                    ["trialSummary"] = "~ Trial Summary ~",
-                    ["trifectaSummary"] = "~ Trifecta Summary ~",
                     ["title"] = "",
                     ["dungeonSummary"] = "~ Dungeon Summary ~",
-                    ["showExtra"] = true,
-                    ["showWatermark"] = true,
+                    ["trifectaSummary"] = "~ Trifecta Summary ~",
                     ["currentScreen"] = "dungeon",
+                    ["showWatermark"] = true,
+                    ["trialSummary"] = "~ Trial Summary ~",
+                    ["showExtra"] = true,
                 },
                 ["scores"] = 
                 {
-                    ["EA2"] = 
-                    {
-                        ["Freya Orm"] = 44000,
-                    },
                     ["EA1"] = 
                     {
                         ["Freya Orm"] = 37000,
                     },
+                    ["EA2"] = 
+                    {
+                        ["Freya Orm"] = 48000,
+                    },
                 },
-                ["version"] = 1,
                 ["currentToons"] = 
                 {
                     ["NA Megaserver"] = 
@@ -47,10 +50,7 @@ PithkaSavedVariables =
                         [9] = "Otto von Bissmark",
                     },
                 },
-                ["options"] = 
-                {
-                    ["enableTeleport"] = true,
-                },
+                ["version"] = 1,
             },
         },
     },

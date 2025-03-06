@@ -260,19 +260,30 @@ end
 
 -- --------------------------------------------------------------------------------------------------------------------
 
+local function IsAPDrink(bagId, slotIndex) -- Returns: boolean isAPDrink
+	-- get the bag item's itemId
+	local itemId = GetItemId(bagId, slotIndex)
+	local itemTexture = GetItemInfo(bagId, slotIndex)
+
+	-- check to see if the itemId matches any of the AP drinks, and return true if it does
+	if	itemId == 171323	then return	true	-- Colovian War Torte / AP boost
+	elseif	itemId == 171329	then return	true	-- Molten War Torte / AP boost
+	elseif	itemId == 171432	then return	true	-- White-Gold War Torte / AP boost
+	else return false end
+end
+
+-- --------------------------------------------------------------------------------------------------------------------
+
 local function IsExperienceDrink(bagId, slotIndex) -- Returns: boolean isExpDrink
 	-- get the bag item's itemId
 	local itemId = GetItemId(bagId, slotIndex)
 	local itemTexture = GetItemInfo(bagId, slotIndex)
 
 	-- check to see if the itemId matches any of the experience drinks, and return true if it does
-	if		itemId == 64221		then return	true	-- Psijic Ambrosia
-	elseif	itemId == 120076	then return	true	-- Aetherial Ambrosia
-	elseif	itemId == 115027	then return	true	-- Mythic Aetherial Ambrosia
-	elseif	itemId == 171323	then return	true	-- Colovian War Torte
-	elseif	itemId == 171329	then return	true	-- Molten War Torte
-	elseif	itemId == 171432	then return	true	-- White-Gold War Torte
-	elseif itemTexture:find("experiencescroll") then return true -- Experience Scrolls
+	if		itemId == 64221		then return	true	-- Psijic Ambrosia / EXP boost
+	elseif	itemId == 120076	then return	true	-- Aetherial Ambrosia / EXP boost
+	elseif	itemId == 115027	then return	true	-- Mythic Aetherial Ambrosia / EXP boost 
+	elseif itemTexture:find("experiencescroll") then return true -- Experience Scrolls / EXP boost
 	else return false end
 end
 
@@ -287,8 +298,8 @@ local function IsValidFoodOrDrink(bagId, slotIndex) -- Returns: boolean isValidF
 		return false
 	end
 
-	-- make sure it's not one of the experience drinks
-	if IsExperienceDrink(bagId, slotIndex) then return false end
+	-- make sure it's not one of the experience or AP drinks
+	if IsExperienceDrink(bagId, slotIndex) or IsAPDrink(bagId, slotIndex) then return false end
 	
 	return true
 end
@@ -337,7 +348,7 @@ local function AddContextMenuItem(rowControl)
 				
 		end
 		
-	elseif IsExperienceDrink(rowControl.bagId, rowControl.slotIndex) then
+	elseif IsExperienceDrink(rowControl.bagId, rowControl.slotIndex) or IsAPDrink(rowControl.bagId, rowControl.slotIndex) then
 		local itemLink = GetItemLink(rowControl.bagId, rowControl.slotIndex, LINK_STYLE_BRACKETS)
 		
 		if (itemLink == PASavedVars.ConsumeCharacter.EXPLink) and (PASavedVars.ConsumeCharacter.isAutoConsumeEXP) then
@@ -413,7 +424,7 @@ end
 
 local function TryUseEXPItem(bagId, slotIndex) -- Returns: boolean success
 	-- make sure that what we're about to use really is a valid exp item and is usable
-	if IsExperienceDrink(bagId, slotIndex) then
+	if IsExperienceDrink(bagId, slotIndex) or (IsAPDrink(bagId, slotIndex) and (IsPlayerInAvAWorld() or IsActiveWorldBattleground())) then
 		if CanUseItem(bagId, slotIndex) then
 			-- use the exp item
 			-- UseItem is protected, so CallSecureProtected is used to make the call

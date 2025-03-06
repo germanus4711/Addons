@@ -395,22 +395,20 @@ PITHKA.Data.Ranks.summaries = {
 	['Hard Dungeoneers'] = {
 		guildId = function() return 694135 end,
 		text = function() 
-			local dungeonNoTri = {1132, 1511,1529,1942,1941}        -- dunegeon without tri			
-			local PointsDungeonNoTri = ALL(dungeonNoTri) and 1 or 0 -- 1 point if you have all non-tri dunegons
-			local PointsCha = COUNT(dCHA) - COUNT(dungeonNoTri)     -- 1 point for each cha (for dungeon w tri)
-			local PointsTri = 3*(COUNT(dTRI) - COUNT({2368}))       -- 3 points for each TRI, exclude BRP
-			local PointsBRP = 5*COUNT({2368})						-- 5 points for BRP
-			local score = PointsDungeonNoTri + PointsCha + PointsTri + PointsBRP
+			local PointsCha = COUNT(dCHA)					    -- 1 point for each cha 
+			local PointsTri = 3*(COUNT(dTRI) - COUNT({2368}))    -- 3 points for each TRI, exclude BRP
+			local PointsBRP = 5*COUNT({2368})				    -- 5 points for BRP
+			local score = PointsCha + PointsTri + PointsBRP
 
 			return PITHKA.Data.Ranks.summaryCalc('Hard Dungeoneers', {
 			{'Recruit  ||  '	.. score .. ' points', function() return true end},
 			{'Knight  ||  '	    .. score .. ' points', function() return score >= 4 end}, 
-			{'Baron  ||  '	    .. score .. ' points', function() return score >= 18 end},
-			{'Warlord  ||  '	.. score .. ' points', function() return score >= 33 end},
-			{'Undying  ||  '	.. score .. ' points', function() return score >= 50 end},
-			{'Immortal  ||  '	.. score .. ' points', function() return score >= 65 end},
-			{'Exitium  ||  '	.. score .. ' points', function() return score >= 83 end},
-			{'Amaranth || '     .. score .. ' points', function() return score >= 102 end},
+			{'Baron  ||  '	    .. score .. ' points', function() return score >= 19 end},
+			{'Warlord  ||  '	.. score .. ' points', function() return score >= 35 end},
+			{'Undying  ||  '	.. score .. ' points', function() return score >= 53 end},
+			{'Immortal  ||  '	.. score .. ' points', function() return score >= 69 end},
+			{'Exitium  ||  '	.. score .. ' points', function() return score >= 88 end},
+			{'Amaranth || '     .. score .. ' points', function() return score >= 109 end},
 			}) end,
 		tt = function() return 'RANKS\n\n'..
 			'Recruit       starting rank\n'..
@@ -423,8 +421,7 @@ PITHKA.Data.Ranks.summaries = {
 			'Amaranth     102 points\n\n'..
 			'** 1 pt per Challenger\n'..
 			'** 3 pt per Trifecta\n'..
-			'** 5 pt for Unchained\n' .. 
-			'** 1 pt for IC+ROM+COS+FH+BRF\n'
+			'** 5 pt for Unchained\n' 
 		end
 	},
 

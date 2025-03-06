@@ -1,5 +1,8 @@
+---@class (partial) PvpAlerts
 local PVP = PVP_Alerts_Main_Table
 
+PVP.LMP = LibMapPing2
+PVP.GPS = LibGPS3
 
 local PVP_DIMMED_AD_COLOR = PVP:GetGlobal('PVP_DIMMED_AD_COLOR')
 local PVP_BRIGHT_AD_COLOR = PVP:GetGlobal('PVP_BRIGHT_AD_COLOR')
@@ -37,6 +40,10 @@ local PVP_FIGHT_DCEP = PVP:GetGlobal('PVP_FIGHT_DCEP')
 local PVP_ID_RETAIN_TIME = PVP:GetGlobal('PVP_ID_RETAIN_TIME')
 local PVP_ID_RETAIN_TIME_EFFECT = PVP:GetGlobal('PVP_ID_RETAIN_TIME_EFFECT')
 
+local IsActiveWorldBattleground = IsActiveWorldBattleground
+local GetFrameTimeMilliseconds = GetFrameTimeMilliseconds
+local zo_distance = zo_distance
+
 local strgsub= zo_strgsub
 local strlen = zo_strlen
 
@@ -45,10 +52,17 @@ local sqrt = zo_sqrt
 local insert = table.insert
 --local remove = table.remove
 local concat = table.concat
+
 --local upper = string.upper
 --local lower = string.lower
 --local format = string.format
 
+local ccImmunityBuffs = {
+	["CC Immunity"] = true,
+	["Crowd Control Immunity"] = true,
+	["Unstoppable"] = true,
+	["Immovable"] = true,
+}
 
 local databaseIntegrityCheck = {}
 
@@ -253,10 +267,10 @@ function PVP:PointIsInsideOfTrapezoid(districtId, pointX, pointY)
 		PVP.ICtrapeziods[districtId].trap2, PVP.ICtrapeziods[districtId].trap3, PVP.ICtrapeziods[districtId].trap4,
 		PVP.ICtrapeziods[districtId].trap12, PVP.ICtrapeziods[districtId].trap23, PVP.ICtrapeziods[districtId].trap34,
 		PVP.ICtrapeziods[districtId].trap41, PVP.ICtrapeziods[districtId].trapArea
-	local pointToTrap1 = PVP:GetCoordsDistance2D(pointX, pointY, trap1.x, trap1.y)
-	local pointToTrap2 = PVP:GetCoordsDistance2D(pointX, pointY, trap2.x, trap2.y)
-	local pointToTrap3 = PVP:GetCoordsDistance2D(pointX, pointY, trap3.x, trap3.y)
-	local pointToTrap4 = PVP:GetCoordsDistance2D(pointX, pointY, trap4.x, trap4.y)
+	local pointToTrap1 = zo_distance(pointX, pointY, trap1.x, trap1.y)
+	local pointToTrap2 = zo_distance(pointX, pointY, trap2.x, trap2.y)
+	local pointToTrap3 = zo_distance(pointX, pointY, trap3.x, trap3.y)
+	local pointToTrap4 = zo_distance(pointX, pointY, trap4.x, trap4.y)
 
 	local function triangleArea(side1, side2, side3)
 		local p = 0.5 * (side1 + side2 + side3)
@@ -352,56 +366,32 @@ end
 
 function PVP:GetFormattedClassIcon(playerName, dimension, allianceColor, isDeadorResurrect, isTargetFrame,
 								   isTargetNameFrame, unitClass, id, currentTime, unitAvARank, playerDbRecord)
-	local classIcon, isPlayer
+	local isPlayer = playerName == self.playerName
 
-	isPlayer = playerName == self.playerName
 	playerDbRecord = playerDbRecord or self.SV.playersDB[playerName]
 
-	if not playerDbRecord and not isPlayer and not unitClass then
-		if unitAvARank and not isPlayer then
-			return self:GetFormattedAvaRankIcon(unitAvARank, allianceColor, dimension, playerName)
-		else
-			return ""
-		end
+	if ((not playerDbRecord) or (playerDbRecord == "none")) and (not isPlayer) and (not unitClass) then
+		return unitAvARank and self:GetFormattedAvaRankIcon(unitAvARank, allianceColor, dimension, playerName) or ""
 	end
 
-	dimension = dimension or 29
-	if isTargetNameFrame then dimension = 45 end
-	local specFromDB, color
+	if playerDbRecord == "none" then playerDbRecord = nil end
 
-	if not isPlayer and playerDbRecord then
-		specFromDB = playerDbRecord.unitSpec
-	end
+	dimension = isTargetNameFrame and 45 or (dimension or 29)
+	local specFromDB = not isPlayer and playerDbRecord and playerDbRecord.unitSpec
+	local color =
+		(isDeadorResurrect and "808080") or (specFromDB == "stam" and PVP_STAMINA_COLOR) or
+		(specFromDB == "mag" and PVP_MAGICKA_COLOR) or
+		(specFromDB and PVP_HYBRID_COLOR) or
+		"808080"
 
-	if specFromDB then
-		if specFromDB == "stam" then
-			color = PVP_STAMINA_COLOR
-		elseif specFromDB == "mag" then
-			color = PVP_MAGICKA_COLOR
-		else
-			color = PVP_HYBRID_COLOR
-		end
-	else
-		color = "808080"
-	end
-
-	if isDeadorResurrect then color = "808080" end
+	unitClass = unitClass or (isPlayer and GetUnitClassId("player")) or (playerDbRecord and playerDbRecord.unitClass)
 
 	local startSpacer, endSpacer = "", ""
-
-	if not unitClass then
-		if isPlayer then
-			unitClass = GetUnitClassId('player')
-		else
-			unitClass = playerDbRecord and playerDbRecord.unitClass
-		end
-	end
-
-	if not isTargetFrame then
+	if not isTargetFrame and unitClass then
 		if unitClass == 2 then
 			dimension = dimension - 3
 			startSpacer = zo_iconFormat(PVP_SPACER_ICON, 2, 2)
-			endSpacer = zo_iconFormat(PVP_SPACER_ICON, 2, 2)
+			endSpacer = startSpacer
 		elseif unitClass == 1 then
 			dimension = dimension - 2
 			startSpacer = zo_iconFormat(PVP_SPACER_ICON, 2, 2)
@@ -413,52 +403,33 @@ function PVP:GetFormattedClassIcon(playerName, dimension, allianceColor, isDeado
 
 	local mundus = ""
 	if playerDbRecord and playerDbRecord.mundus then
-		local mundusColor = ""
-		if self.mundusColors[playerDbRecord.mundus] then
-			mundusColor = self.mundusColors[playerDbRecord.mundus]
-		else
-			mundusColor = "FFFFFF"
-		end
-
-		local mundusDimension = 0
-
-		if isTargetNameFrame then
-			mundusDimension = 32
-		else
-			mundusDimension = 21
-		end
-		mundus = zo_iconFormatInheritColor("PvpAlerts/textures/" .. playerDbRecord.mundus .. "m.dds",
-			mundusDimension, mundusDimension)
+		local mundusColor = self.mundusColors[playerDbRecord.mundus] or "FFFFFF"
+		local mundusDimension = isTargetNameFrame and 32 or 21
+		mundus =
+			zo_iconFormatInheritColor(
+			"PvpAlerts/textures/" .. playerDbRecord.mundus .. "m.dds",
+			mundusDimension,
+			mundusDimension
+		)
 		if id and currentTime then
 			mundusColor = self:GetTimeFadedColor(mundusColor, id, currentTime)
 		end
 		mundus = self:Colorize(mundus, mundusColor)
 	end
 
-	if unitClass then
-		classIcon = zo_iconFormatInheritColor(self.classIcons[unitClass], dimension, dimension)
-		-- classIcon = self:Colorize(zo_iconFormatInheritColor(self.classIcons[unitClass], dimension, dimension), color)
-	else
-		classIcon = ""
-	end
+	local classIcon = unitClass and zo_iconFormatInheritColor(self.classIcons[unitClass], dimension, dimension) or ""
+	classIcon = self:Colorize(classIcon, color)
 
-	local avaRankIcon = ""
-	if unitAvARank then
-		avaRankIcon = self:Colorize(zo_iconFormatInheritColor(GetAvARankIcon(unitAvARank), dimension, dimension),
-			allianceColor)
-	elseif playerDbRecord and playerDbRecord.unitAvARank then
-		unitAvARank = playerDbRecord.unitAvARank
-		avaRankIcon = self:Colorize(zo_iconFormatInheritColor(GetAvARankIcon(unitAvARank), dimension, dimension),
-			allianceColor)
-	else
-		avaRankIcon = ""
-	end
+	unitAvARank = unitAvARank or playerDbRecord and playerDbRecord.unitAvARank
+	local avaRankIcon = unitAvARank and self:Colorize(
+			zo_iconFormatInheritColor(GetAvARankIcon(unitAvARank), dimension, dimension),
+			allianceColor
+		) or
+		""
 
 	if id and currentTime then
 		color = self:GetTimeFadedColor(color, id, currentTime)
 	end
-
-	classIcon = self:Colorize(classIcon, color)
 
 	return startSpacer .. mundus .. classIcon .. endSpacer .. avaRankIcon
 end
@@ -469,12 +440,15 @@ function PVP:GetFormattedAvaRankIcon(unitAvARank, allianceColor, dimension, play
 	if unitAvARank then
 		avaRankIcon = self:Colorize(zo_iconFormatInheritColor(GetAvARankIcon(unitAvARank), dimension, dimension),
 			allianceColor)
-	elseif self.SV.playersDB[playerName] and self.SV.playersDB[playerName].unitAvARank then
-		unitAvARank = self.SV.playersDB[playerName].unitAvARank
+	else
+		local playerDbRecord = self.SV.playersDB[playerName]
+		if playerDbRecord and playerDbRecord.unitAvARank then
+		unitAvARank = playerDbRecord.unitAvARank
 		avaRankIcon = self:Colorize(zo_iconFormatInheritColor(GetAvARankIcon(unitAvARank), dimension, dimension),
 			allianceColor)
-	else
-		avaRankIcon = ""
+		else
+			avaRankIcon = ""
+		end
 	end
 	return avaRankIcon
 end
@@ -501,7 +475,8 @@ function PVP:GetFormattedName(playerName, truncate)
 			substringCutOff = cutOff - 1
 		else
 			local numberSpecial = 0
-			for i = 1, #accentedSymbolsIndice do
+			local numAccented = #accentedSymbolsIndice
+			for i = 1, numAccented do
 				if accentedSymbolsIndice[i] <= (cutOff - 1) then
 					numberSpecial = numberSpecial + 1
 				end
@@ -524,9 +499,9 @@ function PVP:GetFormattedCharNameLink(playerName, truncate)
 end
 
 function PVP:GetFormattedClassNameLink(playerName, allianceColor, truncate, isDeadorResurrect, isTargetFrame,
-									   isTargetNameFrame, unitClass, id, currentTime, unitAvARank)
+									   isTargetNameFrame, unitClass, id, currentTime, unitAvARank, playerDbRecord)		   
 	return self:GetFormattedClassIcon(playerName, nil, allianceColor, isDeadorResurrect, isTargetFrame, isTargetNameFrame,
-			unitClass, id, currentTime, unitAvARank) ..
+			unitClass, id, currentTime, unitAvARank, playerDbRecord) ..
 		self:Colorize(self:GetFormattedCharNameLink(playerName, truncate), allianceColor)
 end
 
@@ -612,28 +587,23 @@ end
 function PVP:GetFightIcon(dimension, color, targetAlliance)
 	dimension = dimension or 24
 	color = color or "FFFFFF"
-	local icon = ""
 
-	if self.allianceOfPlayer == 1 then
-		if targetAlliance == 2 then
-			icon = PVP_FIGHT_ADEP
-		elseif targetAlliance == 3 then
-			icon = PVP_FIGHT_ADDC
-		end
-	elseif self.allianceOfPlayer == 2 then
-		if targetAlliance == 1 then
-			icon = PVP_FIGHT_EPAD
-		elseif targetAlliance == 3 then
-			icon = PVP_FIGHT_EPDC
-		end
-	elseif self.allianceOfPlayer == 3 then
-		if targetAlliance == 1 then
-			icon = PVP_FIGHT_DCAD
-		elseif targetAlliance == 2 then
-			icon = PVP_FIGHT_DCEP
-		end
-	end
+	local fightIcons = {
+		[ALLIANCE_ALDMERI_DOMINION] = {
+			[ALLIANCE_EBONHEART_PACT] = PVP_FIGHT_ADEP,
+			[ALLIANCE_DAGGERFALL_COVENANT] = PVP_FIGHT_ADDC
+		},
+		[ALLIANCE_EBONHEART_PACT] = {
+			[ALLIANCE_ALDMERI_DOMINION] = PVP_FIGHT_EPAD,
+			[ALLIANCE_DAGGERFALL_COVENANT] = PVP_FIGHT_EPDC
+		},
+		[ALLIANCE_DAGGERFALL_COVENANT] = {
+			[ALLIANCE_ALDMERI_DOMINION] = PVP_FIGHT_DCAD,
+			[ALLIANCE_EBONHEART_PACT] = PVP_FIGHT_DCEP
+		}
+	}
 
+	local icon = fightIcons[self.allianceOfPlayer] and fightIcons[self.allianceOfPlayer][targetAlliance] or ""
 
 	return self:Colorize(zo_iconFormatInheritColor(icon, dimension, dimension), color)
 end
@@ -681,21 +651,19 @@ end
 
 function PVP:TableConcat(t1, t2)
 	if next(t2) == nil then return t1 end
-
-	for i = 1, #t2 do
+	local numT2 = #t2
+	for i = 1, numT2 do
 		t1[#t1 + 1] = t2[i]
 	end
 	return t1
 end
 
-function PVP:IsPlayerCCImmune(graceTimeInSec)
-	if not graceTimeInSec then graceTimeInSec = 0 end
-
-	for i = 1, GetNumBuffs('player') do
-		local buffName, timeStarted, timeEnding, _, _, _, _, _, _, _, abilityId, _, castByPlayer = GetUnitBuffInfo(
-			'player', i)
-		if buffName == "CC Immunity" or buffName == "Crowd Control Immunity" or buffName == "Unstoppable" or buffName == "Immovable" then
-			if timeEnding - GetFrameTimeSeconds() >= graceTimeInSec then
+function PVP:IsPlayerCCImmune(currentTime, abilityDuration)
+	if not abilityDuration then abilityDuration = 1 end
+	local ccImmunity = self.ccImmunity
+	for abilityName, endTime in pairs(ccImmunity) do
+		if ccImmunityBuffs[abilityName] then
+			if (currentTime + abilityDuration) < endTime then
 				return true
 			end
 		end
@@ -746,7 +714,8 @@ function PVP:ProcessLengths(namesTable, maxLength, addedLength)
 
 	-- local maxLength=0
 	addedLength = addedLength or 0
-	for i = 1, #namesTable do
+	local numNames = #namesTable
+	for i = 1, numNames do
 		if self:StringEnd(namesTable[i], "+") then
 			if addedLength < 35 then addedLength = 35 end
 			namesTable[i] = zo_strsub(namesTable[i], 1, (strlen(namesTable[i]) - 1))
@@ -804,11 +773,18 @@ end
 
 function PVP:GetValidName(name)
 	if not name or name == '' then return end
-	if not PVP:IsMalformedName(name) then return name end
+	if not self:IsMalformedName(name) then return name end
 	-- if not PVP.bgNames then return end
 
-	if PVP.bgNames and PVP.bgNames[name .. '^Mx'] then return name .. '^Mx' end
-	if PVP.bgNames and PVP.bgNames[name .. '^Fx'] then return name .. '^Fx' end
+	if IsActiveWorldBattleground() then
+		local bgNames = self.bgNames
+		if bgNames and bgNames[name .. '^Mx'] then return name .. '^Mx' end
+		if bgNames and bgNames[name .. '^Fx'] then return name .. '^Fx' end
+	else
+		local playersDb = self.SV.playersDB
+		if playersDb and playersDb[name .. '^Mx'] then return name .. '^Mx' end
+		if playersDb and playersDb[name .. '^Fx'] then return name .. '^Fx' end
+	end
 end
 
 function PVP:GetRootNames(name)
@@ -822,12 +798,13 @@ function PVP:UpdatePlayerDbAccountName(unitCharName, unitAccName, oldUnitAccName
 
 	local isOnList
 
-	local oldCP = PVP.SV.CP[oldUnitAccName]
-	local newCP = PVP.SV.CP[unitAccName]
+	local playersCP = PVP.SV.CP
+	local oldCP = playersCP[oldUnitAccName]
+	local newCP = playersCP[unitAccName]
 	if oldCP then
 		if not newCP or (newCP == 0) then
-			PVP.SV.CP[unitAccName] = oldCP
-			PVP.SV.CP[oldUnitAccName] = nil
+			playersCP[unitAccName] = oldCP
+			playersCP[oldUnitAccName] = nil
 		elseif oldCP > newCP then
 			if databaseIntegrityCheck[unitCharName] then return end
 			PVP.CHAT:Printf(
@@ -838,37 +815,52 @@ function PVP:UpdatePlayerDbAccountName(unitCharName, unitAccName, oldUnitAccName
 			databaseIntegrityCheck[unitCharName] = true
 			return
 		end
-		PVP.SV.CP[oldUnitAccName] = nil
+		playersCP[oldUnitAccName] = nil
 	end
 
-	for k, v in pairs(PVP.SV.playersDB) do
+	local playersDB = PVP.SV.playersDB
+	for k, v in pairs(playersDB) do
 		if v.unitAccName == oldUnitAccName then
-			PVP.SV.playersDB[k].unitAccName = unitAccName
+			playersDB[k].unitAccName = unitAccName
 		end
 	end
-	for k, v in ipairs(PVP.SV.KOSList) do
+
+	local KOSList = PVP.SV.KOSList
+	for k, v in ipairs(KOSList) do
 		if v.unitAccName == oldUnitAccName then
-			PVP.SV.KOSList[k].unitAccName = unitAccName
+			KOSList[k].unitAccName = unitAccName
 			isOnList = true
+			PVP.KOSAccList[unitAccName] = true
 		end
 	end
-	for k, v in pairs(PVP.SV.coolList) do
+
+	local coolList = PVP.SV.coolList
+	for k, v in pairs(coolList) do
 		if v == oldUnitAccName then
-			PVP.SV.coolList[k] = unitAccName
+			coolList[k] = unitAccName
 			isOnList = true
+			PVP.coolAccList[unitAccName] = true
 		end
 	end
-	if PVP.SV.playerNotes[oldUnitAccName] then
-		local oldNote = PVP.SV.playerNotes[oldUnitAccName] or ""
-		local currentNote = PVP.SV.playerNotes[unitAccName] or ""
+
+	local guildmates = PVP.guildmates
+	if guildmates[oldUnitAccName] then
+		guildmates[unitAccName] = guildmates[oldUnitAccName]
+		guildmates[oldUnitAccName] = nil
+	end
+
+	local playerNotes = PVP.SV.playerNotes
+	if playerNotes[oldUnitAccName] then
+		local oldNote = playerNotes[oldUnitAccName] or ""
+		local currentNote = playerNotes[unitAccName] or ""
 		local combinedNote = ((oldNote ~= "" and oldNote) or "")
 		combinedNote = combinedNote .. ((currentNote ~= "" and " " .. currentNote) or "")
 		combinedNote = combinedNote .. ((nameChangeNote ~= "" and " " .. nameChangeNote) or "")
-		PVP.SV.playerNotes[unitAccName] = combinedNote
-		PVP.SV.playerNotes[oldUnitAccName] = nil
+		playerNotes[unitAccName] = combinedNote
+		playerNotes[oldUnitAccName] = nil
 	else
 		if isOnList then
-			PVP.SV.playerNotes[unitAccName] = nameChangeNote
+			playerNotes[unitAccName] = nameChangeNote
 		end
 	end
 
@@ -877,7 +869,7 @@ function PVP:UpdatePlayerDbAccountName(unitCharName, unitAccName, oldUnitAccName
 end
 
 function PVP:BgAllianceToHexColor(bgAlliance)
-	return ZO_ColorDef:New(GetBattlegroundAllianceColor(bgAlliance)):ToHex()
+	return ZO_ColorDef:New(GetBattlegroundTeamColor(bgAlliance)):ToHex()
 end
 
 -- 255, 45, 30 alliance 1 color
@@ -885,7 +877,7 @@ end
 -- 255, 73, 147 alliance 3 color
 
 function PVP:GetPlayerMarkerBgAllianceHexColor(bgAlliance)
-	-- local allianceColor = ZO_ColorDef:New(GetBattlegroundAllianceColor(bgAlliance)):ToHex()
+	-- local allianceColor = ZO_ColorDef:New(GetBattlegroundTeamColor(bgAlliance)):ToHex()
 	local r, g, b
 	if bgAlliance == 1 then
 		r = 255 / 255
@@ -896,7 +888,7 @@ function PVP:GetPlayerMarkerBgAllianceHexColor(bgAlliance)
 		g = 73 / 255
 		b = 147 / 255
 	elseif bgAlliance == 2 then
-		r, g, b = ZO_ColorDef:New(GetBattlegroundAllianceColor(bgAlliance)):UnpackRGB()
+		r, g, b = ZO_ColorDef:New(GetBattlegroundTeamColor(bgAlliance)):UnpackRGB()
 	end
 
 	return ZO_ColorDef:New(r, g, b, 1):ToHex()
@@ -920,12 +912,12 @@ function PVP:GetBattlegroundTeamBadgeTextFormattedIcon(alliance, dimensionX, dim
 
 	local icon = PVP:GetBattlegroundTeamBadgeIcon(alliance)
 
-	-- return ZO_ColorDef:New(GetBattlegroundAllianceColor(alliance)):Colorize(zo_iconFormatInheritColor(icon, dimensionX, dimensionY))
+	-- return ZO_ColorDef:New(GetBattlegroundTeamColor(alliance)):Colorize(zo_iconFormatInheritColor(icon, dimensionX, dimensionY))
 	return zo_iconFormatInheritColor(icon, dimensionX, dimensionY)
 end
 
 function PVP:ColorizeToBgTeamColor(alliance, text)
-	return ZO_ColorDef:New(GetBattlegroundAllianceColor(alliance)):Colorize(text)
+	return ZO_ColorDef:New(GetBattlegroundTeamColor(alliance)):Colorize(text)
 end
 
 function PVP:GetBattlegroundTypeText(battlegroundGameType)
@@ -1167,41 +1159,164 @@ function CountNestedElements(t)
 	-- /script d(CountNestedElements(PVP_Alerts_Main_Table.SV))
 end
 
-function PVP:GetCoordsDistance2D(selfX, selfY, targetX, targetY)
-	local distance = sqrt(((targetX - selfX) * (targetX - selfX)) + ((targetY - selfY) * (targetY - selfY)))
-	return distance
-end
-
-function PVP:GetGuildmateSharedGuilds(displayName)
+function PVP:GetGuildmateSharedGuilds(displayName, isGuildmate)
 	if (not displayName) or (displayName == "") then return "" end
-	if not IsGuildMate(displayName) then return "" end
+	local guildmateDatabase = self.guildmates
+	if not guildmateDatabase then
+		guildmateDatabase = self:PopulateGuildmateDatabase()
+	end
+	if (not isGuildmate) and (isGuildmate ~= nil) or not guildmateDatabase[displayName] then return "" end
 
 	local guildNamesToken = ""
 	local firstGuildAllianceColor
 	local foundGuilds = 0
+	local playerSharedGuilds = guildmateDatabase[displayName]
+	for guildId, _ in pairs(playerSharedGuilds) do
+		foundGuilds = foundGuilds + 1
+		local guildName = GetGuildName(guildId)
+		local guildAlliance = GetGuildAlliance(guildId)
+		local guildAllianceColor = self:GetTrueAllianceColorsHex(guildAlliance)
 
-	for i = 1, GetNumGuilds() do
-		local guildId = GetGuildId(i)
-		local memberIndex = GetGuildMemberIndexFromDisplayName(guildId, displayName)
-		if memberIndex then
-			foundGuilds = foundGuilds + 1
-			local guildName = GetGuildName(guildId)
-			local guildAlliance = GetGuildAlliance(guildId)
-			local guildAllianceColor = self:GetTrueAllianceColorsHex(guildAlliance)
+		if foundGuilds > 1 then
+			guildNamesToken = guildNamesToken .. ", "
+		end
 
-			if foundGuilds > 1 then
-				guildNamesToken = guildNamesToken .. ", "
-			end
+		guildNamesToken = guildNamesToken .. self:Colorize(guildName, guildAllianceColor)
 
-			guildNamesToken = guildNamesToken .. self:Colorize(guildName, guildAllianceColor)
-
-			if not firstGuildAllianceColor then
-				firstGuildAllianceColor = guildAllianceColor
-			end
+		if not firstGuildAllianceColor then
+			firstGuildAllianceColor = guildAllianceColor
 		end
 	end
 
 	return guildNamesToken, firstGuildAllianceColor
+end
+
+function PVP:PopulateGuildmateDatabase()
+	local guildmateDatabase = {}
+	for i = 1, GetNumGuilds() do
+		local guildId = GetGuildId(i)
+		local numMembers = GetNumGuildMembers(guildId)
+		for j = 1, numMembers do
+			local displayName, note, rankIndex, playerStatus, secsSinceLogoff = GetGuildMemberInfo(guildId, j)
+			if not guildmateDatabase[displayName] then
+				guildmateDatabase[displayName] = {}
+			end
+			guildmateDatabase[displayName][guildId] = true
+		end
+	end
+	return guildmateDatabase
+end
+
+function PVP:UpdateGuildId(eventCode, unitTag, oldGuildId, newGuildId)
+	local guildmateDatabase = PVP.guildmates or {}
+	for displayName, guilds in pairs(guildmateDatabase) do
+		if guilds[oldGuildId] then
+			guilds[oldGuildId] = nil
+			guilds[newGuildId] = true
+		end
+		guildmateDatabase[displayName] = guilds
+	end
+	PVP.guildmates = guildmateDatabase
+end
+
+function PVP:JoinedNewGuild(eventCode, guildServerId, characterName, guildId)
+	local guildmateDatabase = PVP.guildmates or {}
+	for i = 1, GetNumGuildMembers(guildId) do
+		local displayName, note, rankIndex, playerStatus, secsSinceLogoff = GetGuildMemberInfo(guildId, i)
+		if not guildmateDatabase[displayName] then
+			guildmateDatabase[displayName] = {}
+		end
+		guildmateDatabase[displayName][guildId] = true
+	end
+	PVP.guildmates = guildmateDatabase
+end
+
+function PVP:LeftGuild(eventCode, guildServerId, characterName, guildId)
+	local guildmateDatabase = PVP.guildmates or {}
+	for displayName, guilds in pairs(guildmateDatabase) do
+		if guilds[guildId] then
+			guilds[guildId] = nil
+		end
+		if not next(guilds) then
+			guildmateDatabase[displayName] = nil
+		else
+			guildmateDatabase[displayName] = guilds
+		end
+	end
+	PVP.guildmates = guildmateDatabase
+end
+
+function PVP:GuildMemberJoined(eventCode, guildId, displayName)
+	local guildmateDatabase = PVP.guildmates or {}
+	if not guildmateDatabase[displayName] then
+		guildmateDatabase[displayName] = {}
+	end
+	guildmateDatabase[displayName][guildId] = true
+	PVP.guildmates = guildmateDatabase
+end
+
+function PVP:GuildMemberLeft(eventCode, guildId, displayName)
+	local guildmateDatabase = PVP.guildmates or {}
+	if guildmateDatabase[displayName] then
+		if guildmateDatabase[displayName][guildId] then
+			guildmateDatabase[displayName][guildId] = nil
+		end
+		if not next(guildmateDatabase[displayName]) then
+			guildmateDatabase[displayName] = nil
+		end
+	end
+	PVP.guildmates = guildmateDatabase
+end
+
+--Original code comes from rdkgrouptool via AgonyWarning
+function PVP:SendWarning()
+	if AgonyWarning then return end
+	PVP.GPS:PushCurrentMap()
+	SetMapToMapListIndex(23)
+	PVP.LMP:SetMapPing(MAP_PIN_TYPE_PING, MAP_TYPE_LOCATION_CENTERED, PVP:EncodeMessage(10, 10, 10, 10))
+	PVP.GPS:PopCurrentMap()
+end
+
+function PVP.OnBeforePingAdded(pingType, pingTag, x, y, isPingOwner)
+	if (pingType == MAP_PIN_TYPE_PING) then
+		PVP.GPS:PushCurrentMap()
+		SetMapToMapListIndex(23)
+		x, y = PVP.LMP:GetMapPing(pingType, pingTag)
+		local b0, b1, b2, b3 = PVP:DecodeMessage(x,y)
+		PVP.GPS:PopCurrentMap()
+		PVP.LMP:SuppressPing(pingType, pingTag)
+
+		if not PVP.SV.showAttacks then return end
+		local pingData = PVP.networkingPingData[b0 .. "_" .. b1 .. "_" .. b2 .. "_" .. b3]
+		if pingData then
+			PVP:ProcessImportantAttacks(pingData.result, pingData.abilityName, pingData.abilityId, 1234567, pingData.sourceName, pingData.hitValue, GetFrameTimeMilliseconds())
+		end
+	end
+end
+
+function PVP.OnAfterPingRemoved(pingType, pingTag, x, y, isPingOwner)
+	if (pingType == MAP_PIN_TYPE_PING) then
+		PVP.LMP:UnsuppressPing(pingType, pingTag)
+	end
+end
+
+--Original code comes from libgroupsocket via AgonyWarning
+function PVP:DecodeMessage(x, y)
+	x = zo_floor(x / PVP.MapStepSize + 0.5)
+	y = zo_floor(y / PVP.MapStepSize + 0.5)
+	local b0 = zo_floor(x / 0x100)
+	local b1 = x % 0x100
+	local b2 = zo_floor(y / 0x100)
+	local b3 = y % 0x100
+	return b0, b1, b2, b3
+end
+
+function PVP:EncodeMessage(b0, b1, b2, b3)
+	b0 = b0 or 0
+	b1 = b1 or 0
+	b2 = b2 or 0
+	b3 = b3 or 0
+	return (b0 * 0x100 + b1) * PVP.MapStepSize, (b2 * 0x100 + b3) * PVP.MapStepSize
 end
 
 function GetPvpDbPlayerInfo(playerName, returnInfoToken, tokenColor)

@@ -1,3 +1,5 @@
+-- Translated by: Cisneros
+
 local PAC = PersonalAssistant.Constants
 local PAJStrings = {
     -- =================================================================================================================
@@ -10,11 +12,11 @@ local PAJStrings = {
     SI_PA_MENU_JUNK_DESCRIPTION = "PAJunk puede marcar objetos como basura si coinciden con alguna de las condiciones seleccionables; excepto si solo fue elaborado o recuperado del correo",
 
     -- Standard Items --
-    SI_PA_MENU_JUNK_STANDARD_ITEMS_HEADER = "Objetos Estándar",
-    SI_PA_MENU_JUNK_AUTOMARK_ENABLE = "Activa el Auto-Marcado de Objetos como Basura",
-    SI_PA_MENU_JUNK_AUTOMARK_ENABLE_T = "Es solamente aplicable a 'Objetos Estándar'. Reglas de Basura Personalizada no impactan para esta opción y necesita ser desactivada individualmente si ellos no deberían ser ejecutadas más.",
+    SI_PA_MENU_JUNK_STANDARD_ITEMS_HEADER = "Objetos estándar",
+    SI_PA_MENU_JUNK_AUTOMARK_ENABLE = "Activa el auto-marcado de objetos como basura",
+    SI_PA_MENU_JUNK_AUTOMARK_ENABLE_T = "Es solamente aplicable a 'objetos estándar'. Las reglas de basura personalizada no impactan para esta opción y necesita ser desactivada individualmente.",
 
-    SI_PA_MENU_JUNK_TRASH_AUTOMARK = table.concat({"Auto-Marcar objetos de tipo [", GetString("SI_ITEMTYPE", ITEMTYPE_TRASH), "]."}),
+    SI_PA_MENU_JUNK_TRASH_AUTOMARK = table.concat({"Auto-marcar objetos de tipo [", GetString("SI_ITEMTYPE", ITEMTYPE_TRASH), "]."}),
     SI_PA_MENU_JUNK_TRASH_AUTOMARK_T = table.concat({"¿Quieres automáticamente marcar objetos de tipo [", GetString("SI_ITEMTYPE", ITEMTYPE_TRASH), "] como basura?"}),
     SI_PA_MENU_JUNK_TRASH_EXCLUDE_ITEMS_DESC = table.concat({"NO marcar los objetos de tipo [", GetString("SI_ITEMTYPE", ITEMTYPE_TRASH), "] como basura si es . . ."}),
     SI_PA_MENU_JUNK_TRASH_EXCLUDE_NIBBLES_AND_BITS = table.concat({"> necesario para la misión diaria de ", PAC.COLOR.YELLOW:Colorize("Bocados y Pedacitos"), "."}),
@@ -22,13 +24,13 @@ local PAJStrings = {
     SI_PA_MENU_JUNK_TRASH_EXCLUDE_MORSELS_AND_PECKS = table.concat({"> necesario para la misión diaria de ", PAC.COLOR.YELLOW:Colorize("Bocados y Picotazos"), "."}),
     SI_PA_MENU_JUNK_TRASH_EXCLUDE_MORSELS_AND_PECKS_T = table.concat({PAC.COLOR.YELLOW:Colorize("Misión en: "), PAC.COLOR.ORANGE:Colorize("Ciudad Mecánica"), "\nSi esta ACTIVO, los siguientes objetos de basura NO serán marcados como Basura:\n[Esencia Elemental]\n[Raíces flexibles]\n[Ectoplasma]"}),
 
-    SI_PA_MENU_JUNK_COLLECTIBLES_AUTOMARK = table.concat({"Auto-Marcar objetos de tipo [", GetString("SI_ITEMSELLINFORMATION", ITEM_SELL_INFORMATION_PRIORITY_SELL), "]."}),
+    SI_PA_MENU_JUNK_COLLECTIBLES_AUTOMARK = table.concat({"Auto-marcar objetos de tipo [", GetString("SI_ITEMSELLINFORMATION", ITEM_SELL_INFORMATION_PRIORITY_SELL), "]."}),
     SI_PA_MENU_JUNK_COLLECTIBLES_AUTOMARK_T = table.concat({"¿Quieres automáticamente marcar objetos de tipo [", GetString("SI_ITEMSELLINFORMATION", ITEM_SELL_INFORMATION_PRIORITY_SELL), "] como basura?"}),
     SI_PA_MENU_JUNK_COLLECTIBLES_EXCLUDE_ITEMS_DESC = table.concat({"NO marcar los objetos de tipo [", GetString("SI_ITEMSELLINFORMATION", ITEM_SELL_INFORMATION_PRIORITY_SELL), "] como basura si es . . ."}),
     SI_PA_MENU_JUNK_COLLECTIBLES_EXCLUDE_RARE_FISH = table.concat({"> [", GetString("SI_SPECIALIZEDITEMTYPE", SPECIALIZED_ITEMTYPE_COLLECTIBLE_RARE_FISH), "] es necesario para la misión diaria de ", PAC.COLOR.YELLOW:Colorize("Fish Boon Feast"), "."}),
     SI_PA_MENU_JUNK_COLLECTIBLES_EXCLUDE_RARE_FISH_T = table.concat({PAC.COLOR.YELLOW:Colorize("Durante la misión: "), PAC.COLOR.ORANGE:Colorize("Festival de la Nueva Vida"), " que se da algunas veces en invierno.\nSi esta ACTIVO, todo tipo de [", GetString("SI_SPECIALIZEDITEMTYPE", SPECIALIZED_ITEMTYPE_COLLECTIBLE_RARE_FISH),"] NO serán marcados como Basura"}),
 
-    SI_PA_MENU_JUNK_MISCELLANEOUS_TREASURES_AUTOMARK = table.concat({"Auto-Marcar objetos de tipo [", GetString("SI_ITEMTYPE", ITEMTYPE_TREASURE), "]."}),
+    SI_PA_MENU_JUNK_MISCELLANEOUS_TREASURES_AUTOMARK = table.concat({"Auto-marcar objetos de tipo [", GetString("SI_ITEMTYPE", ITEMTYPE_TREASURE), "]."}),
     SI_PA_MENU_JUNK_MISCELLANEOUS_TREASURES_AUTOMARK_T = table.concat({"¿Quieres automáticamente marcar objetos de tipo [", GetString("SI_ITEMTYPE", ITEMTYPE_TREASURE), "] como basura?"}),
     SI_PA_MENU_JUNK_MISCELLANEOUS_TREASURES_EXCLUDE_ITEMS_DESC = table.concat({"NO destruir o marcar los objetos de tipo [", GetString("SI_ITEMTYPE", ITEMTYPE_TREASURE), "] como basura si es . . ."}),
     SI_PA_MENU_JUNK_MISCELLANEOUS_TREASURES_EXCLUDE_A_MATTER_OF_LEISURE = table.concat({"> necesario para la misión diaria de ", PAC.COLOR.YELLOW:Colorize("Una Cuestión de Ocio"), "."}),
@@ -41,11 +43,11 @@ local PAJStrings = {
     SI_PA_MENU_JUNK_MISCELLANEOUS_TREASURES_EXCLUDE_THE_COVETOUS_COUNTESS_T = table.concat({PAC.COLOR.YELLOW:Colorize("Misión en: "), PAC.COLOR.ORANGE:Colorize("Gremio de Ladrones"), "\nSi esta ACTIVO, los siguientes objetos de tipo Tesoro NO serán marcados como Basura:\n[Cosméticos]\n[Productos secos (Ropa de cama)]\n[Accesorios de Guardarropa]\n\n[Vasos]\n[Utensilios]\n[Platos y utensilios de cocina]\n\n[Juegos]\n[Muñecas]\n[Estatuas]\n\n[Escritos] & [Suministro para escribanos]\n[Mapas]\n\n[Objetos de Ritual]\n[Rarezas]"}),
  
     -- Stolen Items --
-    SI_PA_MENU_JUNK_AUTOMARK_STOLEN_HEADER = "Objetos Robados",
-    SI_PA_MENU_JUNK_ACTION_STOLEN_PLACEHOLDER = "Auto-Marcar objetos robados de tipo [%s]",
+    SI_PA_MENU_JUNK_AUTOMARK_STOLEN_HEADER = "Objetos robados",
+    SI_PA_MENU_JUNK_ACTION_STOLEN_PLACEHOLDER = "Auto-marcar objetos robados de tipo [%s]",
 
     -- Custom Items --
-    SI_PA_MENU_JUNK_CUSTOM_ITEMS_HEADER = "Objetos Personalizados",
+    SI_PA_MENU_JUNK_CUSTOM_ITEMS_HEADER = "Objetos personalizados",
     SI_PA_MENU_JUNK_CUSTOM_ITEMS_DESCRIPTION = table.concat({GetString(SI_PA_MENU_RULES_HOW_TO_ADD_PAJ), "\n\n", GetString(SI_PA_MENU_RULES_HOW_TO_FIND_MENU)}),
 
     -- Quest Items --
@@ -56,6 +58,24 @@ local PAJStrings = {
 
     -- Auto-Sell --
     SI_PA_MENU_JUNK_AUTO_SELL_JUNK_HEADER = "Auto-vender basura",
+	
+	-- Auto-Launder --
+    SI_PA_MENU_JUNK_AUTO_LAUNDER_HEADER = "Blanqueo automático",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER = "¿Blanqueo automático en los cercos?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_LOCKPICKS = "¿Blanqueo automático de ganzúas?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_INGREDIENTS = "¿Blanqueo automático de ingredientes de provisiones?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_MATERIALS = "¿Blanqueo automático de materiales y materias primas?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_CRAFTING_BOOSTERS = "¿Blanqueo automático de potenciadores de fabricación?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_ENCHANTING_RUNES = "¿Blanqueo automático de runas de encantamiento?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_GLYPHS = "¿Blanqueo automático de glifos?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_FURNISHING = "¿Blanqueo automático de mobiliario?",
+    SI_PA_MENU_JUNK_AUTO_LAUNDER_SOULGEMS = "¿Blanqueo automático de gemas de alma?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_TREASURES = "¿Blanqueo automático de tesoros?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_TREASURE_MAPS = "¿Blanqueo automático de mapas del tesoro?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_RECIPES = "¿Blanqueo automático de recetas y planos de mobiliario?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_MOTIFS = "¿Blanqueo automático de motivos?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_EDICTS = "¿Blanqueo automático de edictos?",
+	SI_PA_MENU_JUNK_AUTO_LAUNDER_CONTAINERS = "¿Blanqueo automático de contenedores?",
 
     -- Auto-Destroy --
     SI_PA_MENU_JUNK_AUTO_DESTROY_JUNK_HEADER = "Auto-destruir basura",
@@ -79,12 +99,12 @@ local PAJStrings = {
     SI_PA_MENU_JUNK_AUTO_DESTROY_STOLEN_JUNK_MAX_QUALITY_THRESHOLD_T = "Solamente se auto-destruirá los objetos robados cuando su nivel de calidad es igual o menor al elegido. ¡Una vez un objeto es destruido, no puede ser revertido!",
 
     -- Other Settings --
-    SI_PA_MENU_JUNK_MAILBOX_IGNORE = "Nunca marcar objetos recibidos desde el Correo como Basura",
-    SI_PA_MENU_JUNK_MAILBOX_IGNORE_T = "Objetos que son recibidos desde el Correo nunca deberían ser marcados como Basura",
-    SI_PA_MENU_JUNK_CRAFTED_IGNORE = "Nunca marcarás objetos que tu hayas creado como Basura",
-    SI_PA_MENU_JUNK_CRAFTED_IGNORE_T = "Objetos que tu has creado en la Estación de Elaboración nunca deberían ser marcados como Basura",
-    SI_PA_MENU_JUNK_AUTOSELL_JUNK = "¿Auto-Vender Basura a los Mercaderes y Peristas?",
-    SI_PA_MENU_JUNK_AUTOSELL_JUNK_PIRHARRI = "¿También auto-vender a Pirharri? (Asistente Perista)",
+    SI_PA_MENU_JUNK_MAILBOX_IGNORE = "Nunca marcar objetos recibidos desde el correo como basura",
+    SI_PA_MENU_JUNK_MAILBOX_IGNORE_T = "Objetos que son recibidos desde el correo nunca deberían ser marcados como basura",
+    SI_PA_MENU_JUNK_CRAFTED_IGNORE = "Nunca marcarás objetos que tu hayas creado como basura",
+    SI_PA_MENU_JUNK_CRAFTED_IGNORE_T = "Los objetos que tu has creado en la estación de elaboración nunca deberían ser marcados como basura",
+    SI_PA_MENU_JUNK_AUTOSELL_JUNK = "¿Auto-vender basura a los mercaderes y peristas?",
+    SI_PA_MENU_JUNK_AUTOSELL_JUNK_PIRHARRI = "¿También auto-vender a Pirharri? (asistente perista)",
     SI_PA_MENU_JUNK_AUTOSELL_JUNK_PIRHARRI_W = "A diferencia de otros peristas, Pirharri cobra una Tarifa de Contrabandista del 35% por sus servicios",
 
     SI_PA_MENU_JUNK_KEYBINDINGS_HEADER = "Atajos de teclado",
@@ -104,25 +124,25 @@ local PAJStrings = {
     SI_PA_MENU_JUNK_AUTOMARK_QUALITY_THRESHOLD_T = "Automáticamente marca %s como Basura si tiene una calidad seleccionada igual o menor",
     SI_PA_MENU_JUNK_AUTOMARK_ORNATE = table.concat({"Auto-Marcar %s con el rasgo de [", GetString("SI_ITEMTRAITTYPE", ITEM_TRAIT_TYPE_ARMOR_ORNATE), "]."}),
     SI_PA_MENU_JUNK_AUTOMARK_ORNATE_T = table.concat({"¿Quieres automáticamente marcar %s con el rasgo de [", GetString("SI_ITEMTRAITTYPE", ITEM_TRAIT_TYPE_ARMOR_ORNATE), "] (incrementa el valor de venta) como basura?"}),
-    SI_PA_MENU_JUNK_AUTOMARK_INTRICATE = table.concat({"Auto-Marcar %s con el rasgo de [", GetString("SI_ITEMTRAITTYPE", ITEM_TRAIT_TYPE_ARMOR_INTRICATE),"]."}),
+    SI_PA_MENU_JUNK_AUTOMARK_INTRICATE = table.concat({"Auto-marcar %s con el rasgo de [", GetString("SI_ITEMTRAITTYPE", ITEM_TRAIT_TYPE_ARMOR_INTRICATE),"]."}),
     SI_PA_MENU_JUNK_AUTOMARK_INTRICATE_T = table.concat({"¿Quieres automáticamente marcar %s con el rasgo de [", GetString("SI_ITEMTRAITTYPE", ITEM_TRAIT_TYPE_ARMOR_INTRICATE), "] (incrementa el material obtenido cuando deconstruyes) como basura?"}),
-    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_SETS = "También marca %s que son parte de un Conjunto",
-    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_SETS_T = "Si esta INACTIVO, solamente %s que NO son parte de un conjunto serán marcados como Basura",
-    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_KNOWN_TRAITS = "También marca %s con un Rasgo conocido",
-    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_KNOWN_TRAITS_T = "Si esta INACTIVO, solamente %s sin Rasgo o Rasgo desconocido serán marcados como Basura",
-    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_UNKNOWN_TRAITS = "También marca %s con un Rasgo desconocido",
-    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_UNKNOWN_TRAITS_T = "Si esta INACTIVO, solamente %s sin Rasgo o Rasgo conocido serán marcados como Basura",
+    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_SETS = "Marca %s que son de un conjunto",
+    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_SETS_T = "Si esta INACTIVO, solamente %s que NO son de un conjunto serán marcados como basura",
+    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_KNOWN_TRAITS = "Marca %s con un rasgo conocido",
+    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_KNOWN_TRAITS_T = "Si esta INACTIVO, solamente %s sin rasgo o rasgo desconocido serán marcados como basura",
+    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_UNKNOWN_TRAITS = "Marca %s con un Rasgo desconocido",
+    SI_PA_MENU_JUNK_AUTOMARK_INCLUDE_UNKNOWN_TRAITS_T = "Si esta INACTIVO, solamente %s sin rasgo o rasgo conocido serán marcados como basura",
 
     -- =================================================================================================================
     -- == MAIN MENU TEXTS == --
     -- -----------------------------------------------------------------------------------------------------------------
     -- PAJunk --
-    SI_PA_MAINMENU_JUNK_HEADER = "Reglas de Basura",
+    SI_PA_MAINMENU_JUNK_HEADER = "Reglas de basura",
 
     SI_PA_MAINMENU_JUNK_HEADER_ITEM = "Objeto",
-    SI_PA_MAINMENU_JUNK_HEADER_JUNK_COUNT = "Contador de Basura",
-    SI_PA_MAINMENU_JUNK_HEADER_LAST_JUNK = "Ultima Basura",
-    SI_PA_MAINMENU_JUNK_HEADER_RULE_ADDED = "Añadir Regla",
+    SI_PA_MAINMENU_JUNK_HEADER_JUNK_COUNT = "Contador de basura",
+    SI_PA_MAINMENU_JUNK_HEADER_LAST_JUNK = "Ultima basura",
+    SI_PA_MAINMENU_JUNK_HEADER_RULE_ADDED = "Añadir regla",
     SI_PA_MAINMENU_JUNK_HEADER_ACTIONS = "Acciones",
 
     SI_PA_MAINMENU_JUNK_ROW_NEVER_JUNKED = "nunca",
@@ -146,10 +166,10 @@ local PAJStrings = {
     SI_PA_CHAT_JUNK_DESTROYED_ALWAYS = table.concat({PAC.COLOR.ORANGE_RED:Colorize("Destruido"), " %d x %s (", PAC.COLOR.ORANGE:Colorize("Siempre"), ")"}),
     SI_PA_CHAT_JUNK_DESTROYED_CRITERIA_MATCH = table.concat({PAC.COLOR.ORANGE_RED:Colorize("Destruido"), " %d x %s (Valor de venta: %s)"}),
 
-    SI_PA_CHAT_JUNK_DESTROY_ON = table.concat({"Auto-Destruir los objetos de tipo basura ha sido cambiado a ", PAC.COLOR.RED:Colorize("ACTIVADO")}),
-    SI_PA_CHAT_JUNK_DESTROY_OFF = table.concat({"Auto-Destruir los objetos de tipo basura ha sido cambiado a ", PAC.COLOR.GREEN:Colorize("DESACTIVADO")}),
-    SI_PA_CHAT_JUNK_DESTROY_STOLEN_ON = table.concat({"Auto-Destruir los objetos robados de tipo basura ha sido cambiado a ", PAC.COLOR.RED:Colorize("ACTIVADO")}),
-    SI_PA_CHAT_JUNK_DESTROY_STOLEN_OFF = table.concat({"Auto-Destruir los objetos robados de tipo basura ha sido cambiado a ", PAC.COLOR.GREEN:Colorize("DESACTIVADO")}),
+    SI_PA_CHAT_JUNK_DESTROY_ON = table.concat({"Auto-destruir los objetos de tipo basura ha sido cambiado a ", PAC.COLOR.RED:Colorize("ACTIVADO")}),
+    SI_PA_CHAT_JUNK_DESTROY_OFF = table.concat({"Auto-destruir los objetos de tipo basura ha sido cambiado a ", PAC.COLOR.GREEN:Colorize("DESACTIVADO")}),
+    SI_PA_CHAT_JUNK_DESTROY_STOLEN_ON = table.concat({"Auto-destruir los objetos robados de tipo basura ha sido cambiado a ", PAC.COLOR.RED:Colorize("ACTIVADO")}),
+    SI_PA_CHAT_JUNK_DESTROY_STOLEN_OFF = table.concat({"Auto-destruir los objetos robados de tipo basura ha sido cambiado a ", PAC.COLOR.GREEN:Colorize("DESACTIVADO")}),
 
     SI_PA_CHAT_JUNK_SOLD_ITEMS_INFO = "Objetos vendidos por %s",
     SI_PA_CHAT_JUNK_FENCE_LIMIT_HOURS = table.concat({GetString("SI_STOREFAILURE", STORE_FAILURE_AT_FENCE_LIMIT), " Por favor esperar ~%d horas"}),
@@ -165,12 +185,12 @@ local PAJStrings = {
     -- == KEY BINDINGS == --
     -- -----------------------------------------------------------------------------------------------------------------
     -- Addon Keybindings menu --
-    SI_BINDING_NAME_PA_JUNK_TOGGLE_ITEM = "Marcar como Basura",
-    SI_BINDING_NAME_PA_JUNK_PERMANENT_TOGGLE_ITEM = "Marcar como Basura permanente",
-    SI_BINDING_NAME_PA_JUNK_DESTROY_ITEM = "Destruir Objeto",
+    SI_BINDING_NAME_PA_JUNK_TOGGLE_ITEM = "Marcar como basura",
+    SI_BINDING_NAME_PA_JUNK_PERMANENT_TOGGLE_ITEM = "Marcar como basura permanente",
+    SI_BINDING_NAME_PA_JUNK_DESTROY_ITEM = "Destruir objeto",
 
     -- Actual keybindings --
-    SI_PA_ITEM_ACTION_MARK_AS_PERM_JUNK = "Marcar como Basura perm.",
+    SI_PA_ITEM_ACTION_MARK_AS_PERM_JUNK = "Marcar como basura perm.",
     SI_PA_ITEM_ACTION_UNMARK_AS_PERM_JUNK = "Desmarcar como Basura perm.",
 
 

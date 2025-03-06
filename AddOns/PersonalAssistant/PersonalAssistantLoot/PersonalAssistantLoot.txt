@@ -5,10 +5,10 @@
 
 ## Title: |cFFD700P|rersonal|cFFD700A|rssistant |cFFD700L|root
 ## Description: PALoot informs you about interesting items and when you run out of inventory space.
-## Version: 2025.01.12
-## AddOnVersion: 20250112
+## Version: 2025.02.07
+## AddOnVersion: 20250207
 ## Author: Klingo, |c3CB371@Masteroshi430|r
-## APIVersion: 101044 
+## APIVersion: 101044 101045 
 ## SavedVariables: PersonalAssistantLoot_SavedVariables
 ## DependsOn: PersonalAssistant
 

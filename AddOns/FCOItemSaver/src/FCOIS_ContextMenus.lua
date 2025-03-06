@@ -80,7 +80,8 @@ local checkIfItemShouldBeDemarked = FCOIS.CheckIfItemShouldBeDemarked
 local getItemSaverControl = FCOIS.GetItemSaverControl
 local isCharacterShown = FCOIS.IsCharacterShown
 local isCompanionCharacterShown = FCOIS.IsCompanionCharacterShown
-local checkIfHouseBankBagAndInOwnHouse = FCOIS.CheckIfHouseBankBagAndInOwnHouse
+--local checkIfHouseBankBagAndInOwnHouse = FCOIS.CheckIfHouseBankBagAndInOwnHouse
+local checkIfHouseOwnerAndInsideOwnHouse = FCOIS.CheckIfHouseOwnerAndInsideOwnHouse
 local getCurrentlyLoggedInCharUniqueId = FCOIS.GetCurrentlyLoggedInCharUniqueId
 local changeAntiSettingsAccordingToFilterPanel = FCOIS.ChangeAntiSettingsAccordingToFilterPanel
 
@@ -92,6 +93,7 @@ local markAllEquipment = FCOIS.MarkAllEquipment
 local checkIfRecipeAddonUsed = FCOIS.CheckIfRecipeAddonUsed
 local checkIfResearchAddonUsed = FCOIS.CheckIfResearchAddonUsed
 local checkIfChosenResearchAddonActive = FCOIS.CheckIfChosenResearchAddonActive
+local checkIfMotifsAddonUsed = FCOIS.CheckIfMotifsAddonUsed --#308
 
 local destroySelectionHandler = FCOIS.DestroySelectionHandler
 local deconstructionSelectionHandler 	= FCOIS.DeconstructionSelectionHandler
@@ -111,7 +113,7 @@ local checkForIIfARightClickedRow = FCOIS.CheckForIIfARightClickedRow
 local buildMarkerIconProtectedWhereTooltip
 local buildMarkerIconsTooltipText
 
-local checkIfUniversaldDeconstructionNPC
+local checkIfUniversalDeconstructionNPC
 
 local isMarked
 local callItemSelectionHandler
@@ -119,6 +121,7 @@ local callDeconstructionSelectionHandler
 local changeContextMenuEntryTexts
 local isUnboundAndNotStolenItemChecks = FCOIS.IsUnboundAndNotStolenItemChecks
 local processJunkQueue = FCOIS.ProcessJunkQueue
+local getInventoryToSearch = FCOIS.GetInventoryToSearch --#308
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -262,36 +265,45 @@ local createContextMenuAdditionalData = FCOIS.CreateContextMenuAdditionalData
 
 --Function to show the tooltip at a ZO_Menu context menu entry, using library LibCustomMenu's function "runTooltip(control, inside)"
 function FCOIS.ContextMenuEntryTooltipFunc(control, inside, data)
---d("[FCOIS]FCOIS.contextMenuEntryTooltipFunc-control: " .. tos(control:GetName()) .. ", inside: " ..tos(inside))
+--d("[FCOIS]FCOIS.contextMenuEntryTooltipFunc-control: " .. tos(control:GetName()) .. ", inside: " ..tos(inside) .. ", data: " ..tos(data) .. ", zoMenu.items: " .. tos(zoMenu.items))
     --Hide old text tooltips
     ZO_Tooltips_HideTextTooltip()
     if not data then return end
+--d(">1")
     if not inside or not zoMenu.items or not control or not control:IsMouseEnabled() then return end
+--d(">2")
     local settings = FCOIS.settingsVars.settings
     if not settings.contextMenuItemEntryShowTooltip then return end
+--d(">3")
     --Only show if SHIFT key is pressed?
     if settings.contextMenuItemEntryShowTooltipWithSHIFTKeyOnly then
         if not IsShiftKeyDown() then return end
+--d(">4")
     end
+--d(">5")
     --Check the selected menu index (row index)
     --index = zo_max(zo_min(index, #ZO_Menu.items), 1)
     --Check if the parentControl of the menu's item menu (e.g. the inventory row) is an allowed FCOIS control
     local menuOwner = zoMenu.owner
     if menuOwner and menuOwner.GetName then
+--d(">6")
         local menuOwnerName = menuOwner:GetName()
         if not menuOwnerName then return false end
+--d(">7")
         --FCOIS specific checks for allowed parent control names of the ZO_Menu owner
         local checkVars = FCOIS.checkVars
         local notAllowedContextMenuParentControls = checkVars.notAllowedContextMenuParentControls
         local notAllowedContextMenuControls = checkVars.notAllowedContextMenuControls
         local notAllowed = notAllowedContextMenuParentControls[menuOwnerName] or false
         if not notAllowed then notAllowed = notAllowedContextMenuControls[menuOwnerName] or false end
+--d(">notAllowed: " ..tos(notAllowed))
         if notAllowed then return false end
         --Build the text tooltip
         local addonVars = FCOIS.addonVars
         local textTooltip
         local tooltipData = data
         if tooltipData and tooltipData.creatingAddon and tooltipData.creatingAddon == addonVars.gAddonNameShort then
+--d(">tooltipData found")
             textTooltip = tooltipData.text
             local tooltipAnchor = LEFT
             if tooltipData["align"] ~= nil then
@@ -302,6 +314,7 @@ function FCOIS.ContextMenuEntryTooltipFunc(control, inside, data)
             InformationTooltipTopLevel:BringWindowToTop()
         end
     else
+--d("<ABORT menuOwner unknown")
         return false
     end
     return true -- Set to true so LibCustomMenu's function "runTooltip" won't try to show the text tooltip again
@@ -515,8 +528,9 @@ function FCOIS.MarkMe(rowControl, markId, updateNow, doUnmark, refreshPopupDialo
         FCOIS.IIfAclicked.inThisOtherBags = inThisOtherBagsTableIIfA
         --House bank bag?
         if bagIdIIfA ~= nil and IsHouseBankBag(bagIdIIfA) then
-            --Not the owner of the house we are in or not in a house? Reset the bagid and slotIndex now!
-            isNotInHouseAndBagIsHouseBankBag = not checkIfHouseBankBagAndInOwnHouse(bagIdIIfA)
+            --Not the owner of the house we are in or not in a house? Reset the bagId and slotIndex now!
+            --isNotInHouseAndBagIsHouseBankBag = not checkIfHouseBankBagAndInOwnHouse(bagIdIIfA)
+            isNotInHouseAndBagIsHouseBankBag = not checkIfHouseOwnerAndInsideOwnHouse()
         end
         --House bank bag but not in any house/not owner of the house we are in! -> Reset the bagId and slotIndex
         if isNotInHouseAndBagIsHouseBankBag then
@@ -2049,6 +2063,11 @@ local function ContextMenuFCOISFilterButtonSettingsOnClicked(button, contextMenu
     if settings.filterButtonSettings[filterPanelId] and settings.filterButtonSettings[filterPanelId][buttonNr] ~= nil then
         if settings.filterButtonSettings[filterPanelId][buttonNr][settingsName] ~= nil then
             local newSettingsValue = buttonCheckboxState ~= nil and buttonCheckboxState or newValue
+            --#300 bugfix to prevent endless big SavedVars because the newSettingsValue is a table containign a complete LibScrollableMenu reference?!
+            if type(newSettingsValue) ~= "boolean" then
+--d(">type of newSettingsValue: " .. tos(type(newSettingsValue)))
+                newSettingsValue = false
+            end
             --filterWithLogical AND conjunction
             settings.filterButtonSettings[filterPanelId][buttonNr][settingsName] = newSettingsValue
 
@@ -2395,8 +2414,16 @@ function FCOIS.ShowContextMenuAtFCOISFilterButton(parentButton, p_FilterPanelId,
     tins(subMenuEntriesFilterButtonSettings,
         {
             label          = localizationVars["options_filter_button_settings_"..settingsName] ,
-            checked        = function() return FCOIS.settingsVars.settings.filterButtonSettings[p_FilterPanelId][buttonNr][settingsName] end,
-            callback       = function(state) ContextMenuFCOISFilterButtonSettingsOnClicked(parentButton, contextMenuType, settingsName, p_FilterPanelId, state, state) end,
+            checked        = function()
+--d("[FCOIS]FilterButton context menu checkbox, checked: " ..tos(FCOIS.settingsVars.settings.filterButtonSettings[p_FilterPanelId][buttonNr][settingsName]))
+                return FCOIS.settingsVars.settings.filterButtonSettings[p_FilterPanelId][buttonNr][settingsName]
+            end,
+            callback       = function(state)
+--d("[FCOIS]FilterButton context menu checkbox, callback called")
+                --#300 2024116 If LibScrollableMenu is enabled and replaces ZO_Menu the checkbox callback function at filterButtons right click context menu "(logical AND/OR)"
+                --saves the complete LSM combobox to savedvars of FCOIS via function ContextMenuFCOISFilterButtonSettingsOnClicked
+                ContextMenuFCOISFilterButtonSettingsOnClicked(parentButton, contextMenuType, settingsName, p_FilterPanelId, state, state)
+            end,
             myfont         = myFont,
             normalColor    = myColorEnabled,
             highlightColor = myColorEnabled,
@@ -2850,7 +2877,7 @@ local function contextMenuForAddInvButtonsOnClicked(buttonCtrl, iconId, doMark, 
     panelId = panelId or FCOIS.gFilterWhere
     isMarked = isMarked or FCOIS.IsMarked
 
-    local allowedSpecialButtonTypes = {
+    local allowedSpecialButtonTypes         = {
         ["quality"]                     = {allowed = true, icon = settings.autoMarkQualityIconNr},
         ["intricate"]                   = {allowed = true, icon = FCOIS_CON_ICON_INTRICATE},
         ["ornate"]                      = {allowed = true, icon = FCOIS_CON_ICON_SELL},
@@ -2858,27 +2885,29 @@ local function contextMenuForAddInvButtonsOnClicked(buttonCtrl, iconId, doMark, 
         ["researchScrolls"]             = {allowed = true, icon = FCOIS_CON_ICON_LOCK},
         ["recipes"]                     = {allowed = true, icon = settings.autoMarkRecipesIconNr},
         ["knownRecipes"]                = {allowed = true, icon = settings.autoMarkKnownRecipesIconNr},
+        ["motifs"]                      = {allowed = true, icon = settings.autoMarkMotifsIconNr},      --#308
+        ["knownMotifs"]                 = {allowed = true, icon = settings.autoMarkKnownMotifsIconNr}, --#308
         ["sets"]                        = {allowed = true, icon = settings.autoMarkSetsIconNr},
         ["setItemCollectionsUnknown"]   = {allowed = true, icon = settings.autoMarkSetsItemCollectionBookMissingIcon},
         ["setItemCollectionsKnown"]     = {allowed = true, icon = settings.autoMarkSetsItemCollectionBookNonMissingIcon},
     }
 
-    local isCompanionInventory = false
+    local isCompanionInventory              = false
     --local iconsDisabledAtCompanion = mappingVars.iconIsDisabledAtCompanion
-    local isCharacter = (panelId == FCOIS_CON_LF_CHARACTER) or false
-    local isCompanionCharacter = (panelId == FCOIS_CON_LF_COMPANION_CHARACTER) or false
+    local isCharacter                       = (panelId == FCOIS_CON_LF_CHARACTER) or false
+    local isCompanionCharacter              = (panelId == FCOIS_CON_LF_COMPANION_CHARACTER) or false
 
-    checkIfUniversaldDeconstructionNPC = checkIfUniversaldDeconstructionNPC or FCOIS.CheckIfUniversalDeconstructionNPC -- #202
-    local isUniversalDeconNPC = checkIfUniversaldDeconstructionNPC(panelId) -- #202
+    checkIfUniversalDeconstructionNPC       = checkIfUniversalDeconstructionNPC or FCOIS.CheckIfUniversalDeconstructionNPC -- #202
+    --local isUniversalDeconNPC               = checkIfUniversalDeconstructionNPC(panelId) -- #202 #308
 --d(">isUniversalDeconNPC: " ..tos(isUniversalDeconNPC))
 
-    local isUNDOButton 			 		= (specialButtonType == "UNDO") or false
-    local isREMOVEALLGEARSButton 		= (specialButtonType == "REMOVE_ALL_GEAR") or false
-    local isREMOVEALLButton 	 		= (specialButtonType == "REMOVE_ALL") or false
-    local isTOGGLEANTISETTINGSButton	= (specialButtonType == "ANTI_SETTINGS") or false
+    local isUNDOButton                      = (specialButtonType == "UNDO") or false
+    local isREMOVEALLGEARSButton            = (specialButtonType == "REMOVE_ALL_GEAR") or false
+    local isREMOVEALLButton                 = (specialButtonType == "REMOVE_ALL") or false
+    local isTOGGLEANTISETTINGSButton        = (specialButtonType == "ANTI_SETTINGS") or false
     local isTOGGLEANTISETTINGSSPECIALButton = (specialButtonType == "ANTI_SETTINGS_SPECIAL") or false
-    local isMARKALLASJUNKButton	        = (specialButtonType == "JUNK_CHECK_ALL") or false
-    local isMARKALLASNOJUNKButton	    = (specialButtonType == "UNJUNK_CHECK_ALL") or false
+    local isMARKALLASJUNKButton             = (specialButtonType == "JUNK_CHECK_ALL") or false
+    local isMARKALLASNOJUNKButton           = (specialButtonType == "UNJUNK_CHECK_ALL") or false
 
     local wasAddedToJunk = false
     local wasRemovedFromJunk = false
@@ -2905,69 +2934,8 @@ local function contextMenuForAddInvButtonsOnClicked(buttonCtrl, iconId, doMark, 
 
     --==================================================================================================================
     else
-        if not isUniversalDeconNPC then
-            --LibFilters panelIds:
-            --(Jewelry) Refinement panel?
-            if (panelId == LF_SMITHING_REFINE or panelId == LF_JEWELRY_REFINE) then
-                INVENTORY_TO_SEARCH = ctrlVars.REFINEMENT
-                contextmenuType = "REFINEMENT"
-                --(Jewelry) Deconstruction panel?
-            elseif (panelId == LF_SMITHING_DECONSTRUCT or panelId == LF_JEWELRY_DECONSTRUCT) then
-                INVENTORY_TO_SEARCH = ctrlVars.DECONSTRUCTION
-                contextmenuType = "DECONSTRUCTION"
-            elseif (panelId == LF_SMITHING_IMPROVEMENT or panelId == LF_JEWELRY_IMPROVEMENT) then
-                --(Jewelry) Improvement panel?
-                INVENTORY_TO_SEARCH = ctrlVars.IMPROVEMENT
-                contextmenuType = "IMPROVEMENT"
-            elseif panelId == LF_ALCHEMY_CREATION then
-                --Alchemy creation
-                INVENTORY_TO_SEARCH = ctrlVars.ALCHEMY_STATION
-                contextmenuType = "ALCHEMY CREATION"
-            elseif panelId == LF_ENCHANTING_CREATION then
-                --Enchanting creation
-                INVENTORY_TO_SEARCH = ctrlVars.ENCHANTING_STATION
-                contextmenuType = "ENCHANTING CREATION"
-            elseif panelId == LF_ENCHANTING_EXTRACTION then
-                --Enchanting extraction
-                contextmenuType = "ENCHANTING EXTRACTION"
-                INVENTORY_TO_SEARCH = ctrlVars.ENCHANTING_STATION
-            elseif panelId == LF_RETRAIT then
-                --Retrait / Transmutation station
-                contextmenuType = "RETRAIT"
-                INVENTORY_TO_SEARCH = ctrlVars.RETRAIT_LIST
-            elseif panelId == LF_HOUSE_BANK_WITHDRAW then
-                --House Banks
-                contextmenuType = "HOUSEBANK"
-                INVENTORY_TO_SEARCH = ctrlVars.HOUSE_BANK
-            elseif panelId == LF_INVENTORY_COMPANION then
-                --Companion
-                isCompanionInventory = true
-                contextmenuType = "COMPANION_INVENTORY"
-                INVENTORY_TO_SEARCH = ctrlVars.COMPANION_INV_LIST
-            else
-                --Inventory (mail, trade, etc.) or bank or craftbag (if other addons enabled the craftbag at mail panel etc.)
-                --Get the current inventorytype
-                local inventoryType = FCOIS.GetInventoryTypeByFilterPanel(panelId)
-                if inventoryType == INVENTORY_CRAFT_BAG then
-                    contextmenuType = "CRAFTBAG"
-                else
-                    contextmenuType = "INVENTORY"
-                end
-                --All non-filtered items will be in this list here:
-                --ctrlVars.playerInventoryInvs[inventoryType].data[1-28].data   .bagId & ... .slotIndex
-                if inventoryType == nil then
-                    d("[FCOIS] -ERROR- ContextMenuForAddInvButtonsOnClicked - Inventory type for filter panel ID \"" .. panelId .. "\" is not set!")
-                    return false
-                end
-                INVENTORY_TO_SEARCH = ctrlVars.playerInventoryInvs[inventoryType].listView
-            end
-------------------------------------------------------------------------------------------------------------------------
-        else
-            --#202 enable mass marking for the universald deconstruction NPC inventory
-            -->Which inventory does INVENTORY_TO_SEARCH need to be?
-            INVENTORY_TO_SEARCH = ctrlVars.UNIVERSAL_DECONSTRUCTION_INV_BACKPACK
-            contextmenuType = "UNIVERSAL_DECONSTRUCTION"
-        end
+        INVENTORY_TO_SEARCH, contextmenuType = getInventoryToSearch(panelId, nil)   --#308
+        isCompanionInventory = (contextmenuType ~= nil and contextmenuType == "COMPANION_INVENTORY" and true) or false --#308
     end
     --==================================================================================================================
 --d("FCOIS]ContextMenuForAddInvButtonsOnClicked - INVENTORY_TO_SEARCH: " .. INVENTORY_TO_SEARCH:GetName() .. ", contextmenuType: " .. contextmenuType)
@@ -3511,10 +3479,10 @@ function FCOIS.ShowContextMenuForAddInvButtons(invAddContextMenuInvokerButton, b
 --FCOIS._buttonDataOfInvokerButton = buttonDataOfInvokerButton
     --FCOIS v.0.8.8d
     --Add ZOs ZO_Menu contextMenu entries via addon library libCustomMenu
-    local filterPanelIdOfButtonData = buttonDataOfInvokerButton and buttonDataOfInvokerButton.filterPanelId
-    local panelId = filterPanelIdOfButtonData
-    checkIfUniversaldDeconstructionNPC = checkIfUniversaldDeconstructionNPC or FCOIS.CheckIfUniversalDeconstructionNPC -- #202
-    local isUniversalDeconNPC = checkIfUniversaldDeconstructionNPC(FCOIS.gFilterWhere) -- #202
+    local filterPanelIdOfButtonData   = buttonDataOfInvokerButton and buttonDataOfInvokerButton.filterPanelId
+    local panelId                     = filterPanelIdOfButtonData
+    checkIfUniversalDeconstructionNPC = checkIfUniversalDeconstructionNPC or FCOIS.CheckIfUniversalDeconstructionNPC -- #202
+    local isUniversalDeconNPC         = checkIfUniversalDeconstructionNPC(FCOIS.gFilterWhere) -- #202
     --Should the active filterPanelId be re-read again as the flag context menu button used is e.g. the "inventory" button which is
     --reused for many panels like mail, player2player trade, bank deposit etc.?
     if isUniversalDeconNPC == true or (buttonDataOfInvokerButton.updateActivePanelDataOnShowContextMenu ~= nil and buttonDataOfInvokerButton.updateActivePanelDataOnShowContextMenu == true) then
@@ -3924,6 +3892,20 @@ function FCOIS.ShowContextMenuForAddInvButtons(invAddContextMenuInvokerButton, b
                     label 		= zo_strf(GetString(SI_ITEM_FORMAT_STR_KNOWN_ITEM_TYPE), GetString(SI_ITEMTYPE29)),
                     callback 	= function() contextMenuForAddInvButtonsOnClicked(btnCtrl, nil, nil, "knownRecipes", panelId) end,
                     disabled	= function() return not settings.autoMarkKnownRecipes or not checkIfRecipeAddonUsed() or not settings.isIconEnabled[settings.autoMarkKnownRecipesIconNr] end,
+                }
+                tins(subMenuEntriesAutomaticMarking, subMenuEntryAutomaticMarking)
+                --Unknown motifs --#308
+                subMenuEntryAutomaticMarking = {
+                    label 		= GetString(SI_INPUT_LANGUAGE_UNKNOWN) .. " " .. GetString(SI_ITEMTYPE8),
+                    callback 	= function() contextMenuForAddInvButtonsOnClicked(btnCtrl, nil, nil, "motifs", panelId) end,
+                    disabled	= function() return not settings.autoMarkMotifs or not checkIfMotifsAddonUsed() or not settings.isIconEnabled[settings.autoMarkMotifsIconNr] end,
+                }
+                tins(subMenuEntriesAutomaticMarking, subMenuEntryAutomaticMarking)
+                --Known motifs --#308
+                subMenuEntryAutomaticMarking = {
+                    label 		= zo_strf(GetString(SI_ITEM_FORMAT_STR_KNOWN_ITEM_TYPE), GetString(SI_ITEMTYPE8)),
+                    callback 	= function() contextMenuForAddInvButtonsOnClicked(btnCtrl, nil, nil, "knownMotifs", panelId) end,
+                    disabled	= function() return not settings.autoMarkKnownMotifs or not checkIfMotifsAddonUsed() or not settings.isIconEnabled[settings.autoMarkKnownMotifsIconNr] end,
                 }
                 tins(subMenuEntriesAutomaticMarking, subMenuEntryAutomaticMarking)
             end

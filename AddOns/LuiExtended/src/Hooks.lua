@@ -38,7 +38,6 @@ function LUIE.InitializeHooks()
     -- Check if custom icons are enabled in settings
     -- if LUIE.SV.CustomIcons_Enabled then
     LUIE.InitializeHooksSkillAdvisor()
-	LUIE.InitializeHooksKeepTooltip()
 
     local zos_GetSkillAbilityInfo = GetSkillAbilityInfo
     --- Hook for Icon/Name changes.
@@ -298,7 +297,8 @@ function LUIE.InitializeHooks()
     --- @param casterUnitTag? string
     --- @return string abilityName
     GetAbilityName = function (abilityId, casterUnitTag)
-        local abilityName = zos_GetAbilityName(abilityId)
+        casterUnitTag = casterUnitTag or "player"
+        local abilityName = zos_GetAbilityName(abilityId, casterUnitTag)
         if LUIE.Data.Effects.EffectOverride[abilityId] and LUIE.Data.Effects.EffectOverride[abilityId].name then
             abilityName = LUIE.Data.Effects.EffectOverride[abilityId].name
         end
@@ -375,9 +375,7 @@ function LUIE.InitializeHooks()
         end
     end
 
-    --[[
-    Hook STATS Screen Buffs & Debuffs to hide buffs not needed, update icons, names, durations, and tooltips
-]]
+    -- Hook STATS Screen Buffs & Debuffs to hide buffs not needed, update icons, names, durations, and tooltips
     local function EffectsRowComparator(left, right)
         local leftIsArtificial, rightIsArtificial = left.isArtificial, right.isArtificial
         if leftIsArtificial ~= rightIsArtificial then
@@ -408,8 +406,14 @@ function LUIE.InitializeHooks()
     end
 
     -- Helper function to generate tooltip text
+    ---@param abilityId integer
+    ---@param buffSlot integer
+    ---@param timer integer
+    ---@param value2 integer
+    ---@param value3 integer
+    ---@return string tooltipText
     local function GetTooltipText(abilityId, buffSlot, timer, value2, value3)
-        local tooltipText
+        local tooltipText = ""
         local override = LUIE.Data.Effects.EffectOverride[abilityId]
 
         -- Handle veteran difficulty tooltip
@@ -439,7 +443,7 @@ function LUIE.InitializeHooks()
 
         -- Handle dynamic tooltip
         if override and override.dynamicTooltip then
-            tooltipText = LUIE.DynamicTooltip(abilityId)
+            tooltipText = LUIE.DynamicTooltip(abilityId) or tooltipText -- Fallback to original tooltipText if nil
         end
 
         -- Clean up tooltip text
@@ -1179,7 +1183,7 @@ function LUIE.InitializeHooks()
 
         local abilityId = LUIE.GetSlotTrueBoundId(slotnum, hotbarCategory) -- Check AbilityId for if this should be a fake activation highlight
 
-        local showHighlight = not slotIsEmpty and (HasActivationHighlight(slotnum, hotbarCategory) or LUIE.Data.Effects.IsAbilityActiveGlow[abilityId] == true) and not self.useFailure and not self.showingCooldown
+        local showHighlight = not slotIsEmpty and (ActionSlotHasActivationHighlight(slotnum, hotbarCategory) or LUIE.Data.Effects.IsAbilityActiveGlow[abilityId] == true) and not self.useFailure and not self.showingCooldown
         local isShowingHighlight = self.activationHighlight:IsHidden() == false
 
         if showHighlight ~= isShowingHighlight then
@@ -1608,8 +1612,6 @@ function LUIE.InitializeHooks()
 
     -- Generates extra lines for the Tooltips to show if the criteria for activating the passive is met (matches base functionality)
     local function KeepTooltipExtra(bonusType, tooltip)
-        -- Get Campaign ID
-        local campaignId = GetCurrentCampaignId()
         -- Local fields
         local r1, b1, g1
         local r2, b2, g2
@@ -1626,16 +1628,19 @@ function LUIE.InitializeHooks()
 
         -- Check Defensive Scroll Bonuses
         local function DefensiveScrolls(campaignId)
+            campaignId = campaignId or GetCurrentCampaignId()
             local allHomeScrollsHeld, enemyScrollsHeld = GetAvAArtifactScore(campaignId, GetUnitAlliance("player"), OBJECTIVE_ARTIFACT_DEFENSIVE)
             return allHomeScrollsHeld, enemyScrollsHeld
         end
 
         -- Check Offensive Scroll Bonuses
         local function OffensiveScrolls(campaignId)
+            campaignId = campaignId or GetCurrentCampaignId()
             local allHomeScrollsHeld, enemyScrollsHeld = GetAvAArtifactScore(campaignId, GetUnitAlliance("player"), OBJECTIVE_ARTIFACT_OFFENSIVE)
             return allHomeScrollsHeld, enemyScrollsHeld
         end
 
+        local campaignId = GetCurrentCampaignId()
         -- Conditional handling
         if bonusType == ZO_CAMPAIGN_BONUS_TYPE_DEFENSIVE_SCROLLS then
             tooltipLine2 = GetString(SI_CAMPAIGN_BONUSES_TOOLTIP_REQUIRES_DEFENSIVE_SCROLL)

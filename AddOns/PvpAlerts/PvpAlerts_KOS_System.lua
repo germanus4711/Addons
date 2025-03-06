@@ -1,6 +1,9 @@
+---@class (partial) PvpAlerts
 local PVP = PVP_Alerts_Main_Table
 
-local IsGuildMate = IsGuildMate
+local GetFrameTimeSeconds = GetFrameTimeSeconds
+local GetFrameTimeMilliseconds = GetFrameTimeMilliseconds
+
 local sort = table.sort
 local insert = table.insert
 local remove = table.remove
@@ -26,8 +29,9 @@ local function trim(s)
 	return (s:gsub("^%s*(.-)%s*$", "%1"))
 end
 
-local function GetKOSIndex(accName)
-	for k, v in ipairs(PVP.SV.KOSList) do
+local function GetKOSIndex(accName, contains)
+	local KOSList = PVP.SV.KOSList
+	for k, v in ipairs(KOSList) do
 		local dbAccName = contains and PVP:DeaccentString(v.unitAccName) or v.unitAccName
 		if lower(dbAccName) == accName then return k end
 	end
@@ -36,9 +40,10 @@ end
 
 local function WhoIsAccInDB(accName, contains)
 	accName = lower(accName)
-	local accKOSIndex = GetKOSIndex(accName)
+	local accKOSIndex = GetKOSIndex(accName, contains)
 	local playerNamesForAcc = {}
-	for k, v in pairs(PVP.SV.playersDB) do
+	local playersDB = PVP.SV.playersDB
+	for k, v in pairs(playersDB) do
 		local dbAccName = contains and PVP:DeaccentString(v.unitAccName) or v.unitAccName
 		if lower(dbAccName) == accName then insert(playerNamesForAcc, k) end
 	end
@@ -54,22 +59,23 @@ end
 local function GetListOfNames(name, contains)
 	local rawPlayerNames, lowercaseMatch, deaccentedMatch, looseMatch, stringPositionsArray = {}, {}, {}, {}, {}
 	local only
+	local playersDB = PVP.SV.playersDB
 
-	if PVP.SV.playersDB[name .. '^Mx'] then
+	if playersDB[name .. '^Mx'] then
 		insert(rawPlayerNames, name .. '^Mx')
-	elseif PVP.SV.playersDB[name .. '^Fx'] then
+	elseif playersDB[name .. '^Fx'] then
 		insert(rawPlayerNames, name .. '^Fx')
 	end
 
-	if contains and #rawPlayerNames == 1 then only = true end
+	local numRawPlayers = #rawPlayerNames
+	if contains and numRawPlayers == 1 then only = true end
 
-
-	if contains and #rawPlayerNames == 0 then
+	if contains and numRawPlayers == 0 then
 		local deaccentName = lower(PVP:DeaccentString(name))
 
 		name = lower(name)
 
-		for k, v in pairs(PVP.SV.playersDB) do
+		for k, v in pairs(playersDB) do
 			local strippedName = zo_strformat(SI_UNIT_NAME, k)
 			local lowerName = lower(strippedName)
 			local currentDeaccentedName = lower(PVP:DeaccentString(strippedName))
@@ -86,11 +92,10 @@ local function GetListOfNames(name, contains)
 
 					local indice = PVP:FindUTFIndice(lower(strippedName))
 
-
 					local newStartChar = startChar
 					local newEndChar = endChar
-
-					for j = 1, #indice do
+					local numIndice = #indice
+					for j = 1, numIndice do
 						if indice[j] < startChar then
 							newStartChar = newStartChar + 1
 							newEndChar = newEndChar + 1
@@ -104,7 +109,6 @@ local function GetListOfNames(name, contains)
 					local startChar, endChar = zo_strfind(currentDeaccentedName, deaccentName)
 					stringPositionsArray[k] = { startChar = startChar, endChar = endChar }
 				end
-
 
 				insert(looseMatch, k)
 			end
@@ -142,23 +146,28 @@ local function IsNameInDB(name, contains)
 	end
 end
 
-local function GetCharAccLink(rawName)
+local function GetCharAccLink(rawName, unitAccName, unitRace)
 	return PVP:GetFormattedClassNameLink(rawName, PVP:NameToAllianceColor(rawName, nil, true)) ..
 		', ' ..
-		GetRaceName(0, PVP.SV.playersDB[rawName].unitRace) ..
+		GetRaceName(0, unitRace) ..
 		', ' ..
-		((PVP:StringEnd(rawName, '^Mx') and 'male' or 'female') .. ', ' .. PVP:GetFormattedAccountNameLink(PVP.SV.playersDB[rawName].unitAccName, "FFFFFF"))
+		((PVP:StringEnd(rawName, '^Mx') and 'male' or 'female') .. ', ' .. PVP:GetFormattedAccountNameLink(unitAccName, "FFFFFF"))
 end
 
 local function GetHighlightedCharAccLink(rawName, startIndex, endIndex)
-	local strippedName  = zo_strformat(SI_UNIT_NAME, rawName)
-	local nameLength    = zo_strlen(strippedName)
+	local strippedName = zo_strformat(SI_UNIT_NAME, rawName)
+	local nameLength = zo_strlen(strippedName)
 	local allianceColor = PVP:NameToAllianceColor(rawName, nil, true)
-	local icon          = PVP:GetFormattedClassIcon(rawName, nil, allianceColor)
+	local playersDB = PVP.SV.playersDB
+	local playerDbRecord = playersDB[rawName]
+	local unitRace 	= playerDbRecord.unitRace
+	local unitAccName = playerDbRecord.unitAccName
+	local icon = PVP:GetFormattedClassIcon(rawName, nil, allianceColor, nil, nil, nil, nil,
+		nil, nil, nil, playerDbRecord or "none")
 
 	local normalPartBefore, normalPartAfter, highlightPart
 
-	highlightPart       = PVP:Colorize(
+	highlightPart = PVP:Colorize(
 		ZO_LinkHandler_CreateLinkWithoutBrackets(zo_strsub(strippedName, startIndex, endIndex), nil,
 			CHARACTER_LINK_TYPE,
 			rawName), 'FF00FF')
@@ -195,15 +204,16 @@ local function GetHighlightedCharAccLink(rawName, startIndex, endIndex)
 		highlightPart ..
 		normalPartAfter ..
 		', ' ..
-		GetRaceName(0, PVP.SV.playersDB[rawName].unitRace) ..
+		GetRaceName(0, unitRace) ..
 		', ' ..
-		((PVP:StringEnd(rawName, '^Mx') and 'male' or 'female') .. ', ' .. PVP:GetFormattedAccountNameLink(PVP.SV.playersDB[rawName].unitAccName, "FFFFFF"))
+		((PVP:StringEnd(rawName, '^Mx') and 'male' or 'female') .. ', ' .. PVP:GetFormattedAccountNameLink(unitAccName, "FFFFFF"))
 end
 
 local function GetCharLink(rawName)
+	local playersDB = PVP.SV.playersDB
 	return PVP:GetFormattedClassNameLink(rawName, PVP:NameToAllianceColor(rawName)) ..
 		', ' ..
-		GetRaceName(0, PVP.SV.playersDB[rawName].unitRace) .. ', ' ..
+		GetRaceName(0, playersDB[rawName].unitRace) .. ', ' ..
 		(PVP:StringEnd(rawName, '^Mx') and 'male' or 'female')
 end
 
@@ -220,7 +230,6 @@ function PVP:Who(name, contains)
 		d('No name provided!')
 		return
 	end
-
 
 	if zo_strlen(name) <= 2 then
 		d('Name has to be longer than 2 characters!')
@@ -245,11 +254,15 @@ function PVP:Who(name, contains)
 		return
 	end
 
+	local playersDb = self.SV.playersDB
+	local playersCP = self.SV.CP
+	local playerNotes = self.SV.playerNotes
 	if KOSIndex ~= nil then --single player account information returned
 		local currentCP = ""
-		local accName = PVP.SV.playersDB[foundPlayerNames[1]].unitAccName
+		local playerDbRecord = playersDb[foundPlayerNames[1]]
+		local accName = playerDbRecord.unitAccName
 		local sharedGuilds = PVP:GetGuildmateSharedGuilds(accName)
-		if self.SV.CP[accName] then currentCP = ' with ' .. PVP:Colorize(self.SV.CP[accName] .. 'cp', 'FFFFFF') .. ',' end
+		if playersCP[accName] then currentCP = ' with ' .. PVP:Colorize(playersCP[accName] .. 'cp', 'FFFFFF') .. ',' end
 		if isDecorated then
 			d('The player ' ..
 				PVP:GetFormattedAccountNameLink(accName, "FFFFFF") ..
@@ -271,8 +284,8 @@ function PVP:Who(name, contains)
 		if sharedGuilds and sharedGuilds ~= "" then
 			d('Shared Guild(s): ' .. sharedGuilds)
 		end
-		if self.SV.playerNotes[accName] and self.SV.playerNotes[accName] ~= "" then
-			d('Note: ' .. self:Colorize(self.SV.playerNotes[accName], "76BCC3"))
+		if playerNotes[accName] and playerNotes[accName] ~= "" then
+			d('Note: ' .. self:Colorize(playerNotes[accName], "76BCC3"))
 		end
 	else -- multiple players information returned
 		local patternName = zo_strformat(SI_UNIT_NAME, trimmedName)
@@ -281,18 +294,21 @@ function PVP:Who(name, contains)
 
 		d('Found ' .. tostring(#foundPlayerNames + #looseMatch) .. ' players, similar to ' .. highlightedName .. ':')
 
-		for i = 1, #foundPlayerNames do
-			local currentAccName = PVP.SV.playersDB[foundPlayerNames[i]].unitAccName
-			local currentAccCP = ""
-			if self.SV.CP[currentAccName] then currentAccCP = ' (' .. self.SV.CP[currentAccName] .. 'cp)' end
-			local currentName = foundPlayerNames[i]
+		if foundPlayerNames and #foundPlayerNames ~= 0 then
+			for i = 1, #foundPlayerNames do
+				local currentplayerDbRecord = playersDb[foundPlayerNames[i]]
+				local currentAccName = currentplayerDbRecord.unitAccName
+				local currentAccCP = ""
+				if playersCP[currentAccName] then currentAccCP = ' (' .. playersCP[currentAccName] .. 'cp)' end
+				local currentName = foundPlayerNames[i]
 
-			local nameLink = GetCharAccLink(currentName)
+				local nameLink = GetCharAccLink(currentName, currentAccName, currentplayerDbRecord.unitRace)
 
-			d(tostring(i) .. '. ' .. nameLink .. currentAccCP)
+				d(tostring(i) .. '. ' .. nameLink .. currentAccCP)
+			end
 		end
 
-		if #looseMatch ~= 0 then
+		if looseMatch and #looseMatch ~= 0 then
 			local startFullWord, midFullWord, startPartWord, remainder = {}, {}, {}, {}
 			for i = 1, #looseMatch do
 				local currentName = looseMatch[i]
@@ -333,9 +349,10 @@ function PVP:Who(name, contains)
 			local indexToHighlight = #startFullWord + #startPartWord + 1
 
 			for i = 1, #looseMatchOutput do
-				local currentAccName = PVP.SV.playersDB[looseMatchOutput[i]].unitAccName
+				local currentplayerDbRecord = playersDb[looseMatchOutput[i]]
+				local currentAccName = currentplayerDbRecord.unitAccName
 				local currentAccCP = ""
-				if self.SV.CP[currentAccName] then currentAccCP = ' (' .. self.SV.CP[currentAccName] .. 'cp)' end
+				if playersCP[currentAccName] then currentAccCP = ' (' .. playersCP[currentAccName] .. 'cp)' end
 				local currentName = looseMatchOutput[i]
 				local strippedCurrentName = zo_strformat(SI_UNIT_NAME, currentName)
 
@@ -345,7 +362,7 @@ function PVP:Who(name, contains)
 					nameLink = GetHighlightedCharAccLink(currentName, stringPositionsArray[currentName].startChar,
 						stringPositionsArray[currentName].endChar)
 				else
-					nameLink = GetCharAccLink(currentName)
+					nameLink = GetCharAccLink(currentName, currentAccName, currentplayerDbRecord.unitRace)
 				end
 
 				d(tostring(i) .. '. ' .. nameLink .. currentAccCP)
@@ -356,26 +373,27 @@ end
 
 local function IsAccFriendKOSorCOOL(charAccName)
 	if IsFriend(charAccName) then return true end
-	for i = 1, #PVP.SV.KOSList do
-		if PVP.SV.KOSList[i].unitAccName == charAccName then
-			return true
-		end
-	end
-	for i = 1, #PVP.SV.coolList do
-		if PVP.SV.coolList[i] == charAccName then return true end
-	end
+	local KOSList = PVP.SV.KOSAccList
+	if KOSList[charAccName] then return true end
+
+	local coolList = PVP.SV.coolAccList
+	if coolList[charAccName] then return true end
 	return false
 end
 
 local function IsAccMalformedName(charAccName)
-	for i = 1, #PVP.SV.KOSList do
-		local unitKOSName = PVP.SV.KOSList[i].unitName
+	local KOSList = PVP.SV.KOSList
+	local numKOS = #KOSList
+	for i = 1, numKOS do
+		local unitKOSName = KOSList[i].unitName
 		if PVP:DeaccentString(unitKOSName) == charAccName then
 			return true, unitKOSName
 		end
 	end
-	for i = 1, #PVP.SV.coolList do
-		local unitCOOLName = PVP.SV.coolList[i]
+	local coolList = PVP.SV.coolList
+	local numCool = #coolList
+	for i = 1, numCool do
+		local unitCOOLName = coolList[i]
 		if PVP:DeaccentString(unitCOOLName) == charAccName then
 			return true, unitCOOLName
 		end
@@ -392,22 +410,22 @@ function PVP:managePlayerNote(noteString)
 
 	if doFunc ~= "list" and doFunc ~= "clear" then
 		if not charAccName then
-			PVP.CHAT:Printf("No account name provided!")
+			self.CHAT:Printf("No account name provided!")
 			return
 		end
 
 		if charAccName:sub(1, 1) ~= "@" then
-			PVP.CHAT:Printf("Must use player @name to assign notes!")
+			self.CHAT:Printf("Must use player @name to assign notes!")
 			return
 		end
 
 		if not IsAccFriendKOSorCOOL(charAccName) then
 			local isMalformed, unitDBName = IsAccMalformedName(charAccName)
 			if isMalformed then
-				PVP.CHAT:Printf("%s wasn't found in your KOS, COOL. or Friends lists, did you mean \"%s\"?",
+				self.CHAT:Printf("%s wasn't found in your KOS, COOL. or Friends lists, did you mean \"%s\"?",
 					charAccName, self:GetFormattedAccountNameLink(unitDBName, "FFFFFF"))
 			else
-				PVP.CHAT:Printf("%s must be added to KOS, COOL, or Friends list for notes to display!",
+				self.CHAT:Printf("%s must be added to KOS, COOL, or Friends list for notes to display!",
 					self:GetFormattedAccountNameLink(charAccName, "FFFFFF"))
 			end
 		end
@@ -416,47 +434,49 @@ function PVP:managePlayerNote(noteString)
 	if doFunc == "add" then
 		if not self.SV.playerNotes[charAccName] then
 			self.SV.playerNotes[charAccName] = accNote
-			PVP.CHAT:Printf("Note added for %s!", self:GetFormattedAccountNameLink(charAccName, "FFFFFF"))
+			self.CHAT:Printf("Note added for %s!", self:GetFormattedAccountNameLink(charAccName, "FFFFFF"))
 		else
 			local oldAccNote = self.SV.playerNotes[charAccName]
 			self.SV.playerNotes[charAccName] = accNote
-			PVP.CHAT:Printf("Note '%s' overwritten for %s!", oldAccNote,
+			self.CHAT:Printf("Note '%s' overwritten for %s!", oldAccNote,
 				self:GetFormattedAccountNameLink(charAccName, "FFFFFF"))
 		end
 	elseif doFunc == "delete" then
 		if self.SV.playerNotes[charAccName] then
 			self.SV.playerNotes[charAccName] = nil
-			PVP.CHAT:Printf("Note deleted for %s!", self:GetFormattedAccountNameLink(charAccName, "FFFFFF"))
+			self.CHAT:Printf("Note deleted for %s!", self:GetFormattedAccountNameLink(charAccName, "FFFFFF"))
 		else
-			PVP.CHAT:Printf("No note exists for %s!", self:GetFormattedAccountNameLink(charAccName, "FFFFFF"))
+			self.CHAT:Printf("No note exists for %s!", self:GetFormattedAccountNameLink(charAccName, "FFFFFF"))
 		end
 	elseif doFunc == "show" then
 		if self.SV.playerNotes[charAccName] then
-			PVP.CHAT:Printf("Note for %s: %s", self:GetFormattedAccountNameLink(charAccName, "FFFFFF"),
+			self.CHAT:Printf("Note for %s: %s", self:GetFormattedAccountNameLink(charAccName, "FFFFFF"),
 				self:Colorize(self.SV.playerNotes[charAccName], "76BCC3"))
 		else
-			PVP.CHAT:Printf("No note exists for %s!", self:GetFormattedAccountNameLink(charAccName, "FFFFFF"))
+			self.CHAT:Printf("No note exists for %s!", self:GetFormattedAccountNameLink(charAccName, "FFFFFF"))
 		end
 	elseif doFunc == "list" then
 		if next(self.SV.playerNotes) then
-			PVP.CHAT:Printf("Player notes:")
+			self.CHAT:Printf("Player notes:")
 			for k, v in pairs(self.SV.playerNotes) do
-				PVP.CHAT:Printf(self:GetFormattedAccountNameLink(k, "FFFFFF") .. ": " .. self:Colorize(v, "76BCC3"))
+				self.CHAT:Printf(self:GetFormattedAccountNameLink(k, "FFFFFF") .. ": " .. self:Colorize(v, "76BCC3"))
 			end
 		else
-			PVP.CHAT:Printf("No notes found!")
+			self.CHAT:Printf("No notes found!")
 		end
 	elseif doFunc == "clear" then
 		self.SV.playerNotes = {}
-		PVP.CHAT:Printf("All notes cleared!")
+		self.CHAT:Printf("All notes cleared!")
 	else
-		PVP.CHAT:Printf("Invalid command! Options are 'add', 'delete', 'show', 'list', or 'clear'.")
+		self.CHAT:Printf("Invalid command! Options are 'add', 'delete', 'show', 'list', or 'clear'.")
 	end
 end
 
 local function IsAccInKOS(unitAccName)
-	for i = 1, #PVP.SV.KOSList do
-		if PVP.SV.KOSList[i].unitAccName == unitAccName then return PVP.SV.KOSList[i].unitName, i end
+	local KOSList = PVP.SV.KOSList
+	local numKOS = #KOSList
+	for i = 1, numKOS do
+		if KOSList[i].unitAccName == unitAccName then return KOSList[i].unitName, i end
 	end
 	return false
 end
@@ -465,16 +485,18 @@ local function IsKOSAccInDB(unitAccName)
 	local nameFromKOS, indexInKOS = IsAccInKOS(unitAccName)
 	if nameFromKOS then return nameFromKOS, indexInKOS end
 
+	local playersDB = PVP.SV.playersDB
+	local allianceOfPlayer = PVP.allianceOfPlayer
 	local foundPlayerNames = {}
-	for k, v in pairs(PVP.SV.playersDB) do
+	for k, v in pairs(playersDB) do
 		if v.unitAccName == unitAccName then insert(foundPlayerNames, k) end
 	end
-	if #foundPlayerNames > 0 then
-		if #foundPlayerNames == 1 then return foundPlayerNames[1] end
-		for i = 1, #foundPlayerNames do
-			if PVP.SV.playersDB[foundPlayerNames[i]].unitAlliance ~= PVP.allianceOfPlayer then
-				return
-					foundPlayerNames[i]
+	local numFoundPlayers = #foundPlayerNames
+	if numFoundPlayers > 0 then
+		if numFoundPlayers == 1 then return foundPlayerNames[1] end
+		for i = 1, numFoundPlayers do
+			if playersDB[foundPlayerNames[i]].unitAlliance ~= allianceOfPlayer then
+				return foundPlayerNames[i]
 			end
 		end
 		return foundPlayerNames[1]
@@ -486,16 +508,17 @@ local function CheckNameWithoutSuffixes(rawName)
 	local maleName = rawName .. "^Mx"
 	local femaleName = rawName .. "^Fx"
 	local playersDB = PVP.SV.playersDB
+	local allianceOfPlayer = PVP.allianceOfPlayer
 
 	if playersDB[maleName] or playersDB[femaleName] then
 		if playersDB[maleName] and not playersDB[femaleName] then return maleName end
 		if not playersDB[maleName] and playersDB[femaleName] then return femaleName end
 		if playersDB[maleName].unitAccName == playersDB[femaleName].unitAccName then
-			if playersDB[maleName].unitAlliance ~= PVP.allianceOfPlayer and playersDB[femaleName].unitAlliance == PVP.allianceOfPlayer then
+			if playersDB[maleName].unitAlliance ~= allianceOfPlayer and playersDB[femaleName].unitAlliance == allianceOfPlayer then
 				return
 					maleName
 			end
-			if playersDB[maleName].unitAlliance == PVP.allianceOfPlayer and playersDB[femaleName].unitAlliance ~= PVP.allianceOfPlayer then
+			if playersDB[maleName].unitAlliance == allianceOfPlayer and playersDB[femaleName].unitAlliance ~= allianceOfPlayer then
 				return
 					femaleName
 			end
@@ -511,9 +534,10 @@ local function CheckNameWithoutSuffixes(rawName)
 		end
 	end
 
-	if #foundNames ~= 0 then
+	local numFound = #foundNames
+	if numFound ~= 0 then
 		PVP.CHAT:Printf('Found multiple names. Please use account name to add the desired person:')
-		for i = 1, #foundNames do
+		for i = 1, numFound do
 			d(tostring(i) ..
 				'. ' ..
 				PVP:GetFormattedClassNameLink(foundNames[i], PVP:NameToAllianceColor(foundNames[i])) ..
@@ -581,157 +605,152 @@ function PVP_Add_COOL_Mouseover()
 	end
 end
 
-function PVP:FindInCOOL(playerName)
-	local playersDB = self.SV.playersDB
-	if not playersDB[playerName] then return false end
-	local found
-	for k, v in pairs(self.SV.coolList) do
-		if playersDB[playerName].unitAccName == v then
-			found = k
-			break
-		end
-	end
-	if found and found ~= playerName then
-		self.SV.coolList[found] = nil
-		self.SV.coolList[playerName] = playersDB[playerName].unitAccName
-		found = playerName
-	end
-	return found
-end
-
 function PVP:FindAccInCOOL(unitPlayerName, unitAccName)
 	if not unitAccName then return false end
+
+	local coolList = self.SV.coolList
 	local found
-	for k, v in pairs(self.SV.coolList) do
+	for k, v in pairs(coolList) do
 		if unitAccName == v then
 			found = k
 			break
 		end
 	end
 	if found and found ~= unitPlayerName then
-		self.SV.coolList[found] = nil
-		self.SV.coolList[unitPlayerName] = unitAccName
+		coolList[found] = nil
+		coolList[unitPlayerName] = unitAccName
 		found = unitPlayerName
 	end
 	return found
 end
 
 function PVP:AddKOS(playerName, isSlashCommand)
-	if not self.SV.showKOSFrame then PVP.CHAT:Printf('KOS/COOL system is disabled!') end
+	local SV = self.SV
+	if not SV.showKOSFrame then self.CHAT:Printf('KOS/COOL system is disabled!') end
 
 	if not playerName or playerName == "" then
-		d("Name was not provided!")
+		self.CHAT:Printf("Name was not provided!")
 		return
 	end
-	local playerDbRecord = cachedPlayerDbUpdates[playerName] or self.SV.playersDB[playerName] or {}
+	local KOSList = SV.KOSList
+	local playersDB = SV.playersDB
+	local playerDbRecord = playersDB[playerName] or {}
 	playerDbRecord.unitCharName = playerName
 	local rawName, isInKOS, isAmbiguous, isMultiple = self:CheckKOSValidity(playerName, playerDbRecord)
 	if rawName and (rawName ~= playerName) then
-		playerDbRecord = cachedPlayerDbUpdates[rawName] or self.SV.playersDB[rawName] or {}
+		playerDbRecord = playersDB[rawName] or {}
 		playerDbRecord.unitCharName = rawName
 	end
 
 	if not rawName then
-		if not isMultiple then PVP.CHAT:Printf("This player is not in the database!") end
+		if not isMultiple then self.CHAT:Printf("This player is not in the database!") end
 		return
 	end
 
 	if isAmbiguous then
-		PVP.CHAT:Printf("The name is ambiguous!")
+		self.CHAT:Printf("The name is ambiguous!")
 		return
 	end
 
 	-- if isInKOS then d('This account is already in KOS as: '..self:GetFormattedName(rawName).."!") return end
 
-	local cool = self:FindInCOOL(rawName)
+	local cool = self:FindAccInCOOL(rawName, playersDB[rawName].unitAccName)
 	if cool then
-		PVP.CHAT:Printf("Removed from COOL: %s%s!", self:GetFormattedName(self.SV.playersDB[cool].unitName),
-			self.SV.playersDB[cool].unitAccName)
-		self.SV.coolList[cool] = nil
-		self:PopulateReticleOverNamesBuffer()
+		self.CHAT:Printf("Removed from COOL: %s%s!", self:GetFormattedName(playersDB[cool].unitName),
+			playersDB[cool].unitAccName)
+		SV.coolList[cool] = nil
+		self:PopulateReticleOverNamesBuffer(true)
 	end
 
 	if not isInKOS then
 		local unitId = 0
-		if next(self.idToName) ~= nil and self.SV.playersDB[rawName] then
+		if next(self.idToName) ~= nil and playersDB[rawName] then
 			for k, v in pairs(self.idToName) do
-				if self.SV.playersDB[v] and self.SV.playersDB[v].unitAccName == self.SV.playersDB[rawName].unitAccName then
+				if playersDB[v] and playersDB[v].unitAccName == playersDB[rawName].unitAccName then
 					unitId = k
 					break
 				end
 			end
 		end
-		insert(self.SV.KOSList,
+		insert(KOSList,
 			{ unitName = rawName, unitAccName = playerDbRecord.unitAccName, unitId = unitId })
-		PVP.CHAT:Printf("Added to KOS: %s%s!", self:GetFormattedName(rawName), playerDbRecord.unitAccName)
+			self.CHAT:Printf("Added to KOS: %s%s!", self:GetFormattedName(rawName), playerDbRecord.unitAccName)
 	else
-		PVP.CHAT:Printf("Removed from KOS: %s%s!", self:GetFormattedName(self.SV.KOSList[isInKOS].unitName),
-			self.SV.KOSList[isInKOS].unitAccName)
-		remove(self.SV.KOSList, isInKOS)
+		self.CHAT:Printf("Removed from KOS: %s%s!", self:GetFormattedName(KOSList[isInKOS].unitName),
+			KOSList[isInKOS].unitAccName)
+		remove(KOSList, isInKOS)
 	end
-	self:PopulateKOSBuffer()
+	self:RefreshLocalPlayers()
 end
 
 function PVP:AddCOOL(playerName, isSlashCommand)
-	if not self.SV.showKOSFrame then PVP.CHAT:Printf('KOS/COOL system is disabled!') end
+	local SV = self.SV
+
+	if not SV.showKOSFrame then self.CHAT:Printf('KOS/COOL system is disabled!') end
 
 	if not playerName or playerName == "" then
-		PVP.CHAT:Printf("Name was not provided!")
+		self.CHAT:Printf("Name was not provided!")
 		return
 	end
 
-	local playerDbRecord = cachedPlayerDbUpdates[playerName] or self.SV.playersDB[playerName] or {}
+	local KOSList = SV.KOSList
+	local coolList = SV.coolList
+	local playersDB = SV.playersDB
+
+	local playerDbRecord = playersDB[playerName] or {}
 	local rawName, isInKOS, isAmbiguous, isMultiple = self:CheckKOSValidity(playerName, playerDbRecord)
 	if rawName and (rawName ~= playerName) then
-		playerDbRecord = cachedPlayerDbUpdates[rawName] or self.SV.playersDB[rawName] or {}
+		playerDbRecord = playersDB[rawName] or {}
 	end
 
 
 	if not rawName then
-		if not isMultiple then PVP.CHAT:Printf("This player is not in the database!") end
+		if not isMultiple then self.CHAT:Printf("This player is not in the database!") end
 		return
 	end
 
 	-- if isInKOS then d('This account is already in KOS as: '..self:GetFormattedName(rawName).."!") return end
 	if isAmbiguous then
-		PVP.CHAT:Printf("The name is ambiguous!")
+		self.CHAT:Printf("The name is ambiguous!")
 		return
 	end
 
 	if isInKOS then
-		for i = 1, #self.SV.KOSList do
-			if self.SV.KOSList[i].unitAccName == playerDbRecord.unitAccName then
-				PVP.CHAT:Printf("Removed from KOS: %s%s!", self:GetFormattedName(self.SV.KOSList[i].unitName),
-					self.SV.KOSList[i].unitAccName)
-				remove(self.SV.KOSList, i)
+		local numKOS = #KOSList
+		for i = 1, numKOS do
+			if KOSList[i].unitAccName == playerDbRecord.unitAccName then
+				self.CHAT:Printf("Removed from KOS: %s%s!", self:GetFormattedName(KOSList[i].unitName),
+					KOSList[i].unitAccName)
+				remove(KOSList, i)
 				break
 			end
 		end
 	end
 
-	local cool = self:FindInCOOL(rawName)
+	local cool = self:FindAccInCOOL(rawName, playersDB[rawName].unitAccName)
 
 
 	if not cool then
-		self.SV.coolList[rawName] = playerDbRecord.unitAccName
-		PVP.CHAT:Printf("Added to COOL: %s%s!", self:GetFormattedName(rawName), playerDbRecord.unitAccName)
+		coolList[rawName] = playerDbRecord.unitAccName
+		self.CHAT:Printf("Added to COOL: %s%s!", self:GetFormattedName(rawName), playerDbRecord.unitAccName)
 	else
-		PVP.CHAT:Printf("Removed from COOL: %s%s!", self:GetFormattedName(rawName), playerDbRecord.unitAccName)
-		PVP.SV.coolList[cool] = nil
+		self.CHAT:Printf("Removed from COOL: %s%s!", self:GetFormattedName(rawName), playerDbRecord.unitAccName)
+		SV.coolList[cool] = nil
 		-- d(self:GetFormattedName(rawName)..self.SV.playersDB[rawName].unitAccName.." is already COOL!")
 	end
 
-	self:PopulateKOSBuffer()
-	self:PopulateReticleOverNamesBuffer()
+	self:RefreshLocalPlayers()
+	self:PopulateReticleOverNamesBuffer(true)
 end
 
 function PVP:IsKOSOrFriend(playerName, unitAccName)
-	if PVP:GetValidName(GetRawUnitName(GetGroupLeaderUnitTag())) == playerName then return "groupleader" end
-	if IsPlayerInGroup(playerName) then return "group" end
-	if unitAccName and self:IsAccNameInKOS(unitAccName) then return "KOS" end
+	local isGrouped = IsUnitGrouped('player')
+	if isGrouped and self:GetValidName(GetRawUnitName(GetGroupLeaderUnitTag())) == playerName then return "groupleader" end
+	if isGrouped and IsPlayerInGroup(playerName) then return "group" end
+	if unitAccName and self.KOSAccList[unitAccName] then return "KOS" end
 	if self.SV.showFriends and IsFriend(playerName) then return "friend" end
-	if unitAccName and self:FindAccInCOOL(playerName, unitAccName) then return "cool" end
-	if self.SV.showGuildMates and IsGuildMate(playerName) then return "guild" end
+	if unitAccName and self.coolAccList[unitAccName] then return "cool" end
+	if self.SV.showGuildMates and self.guildmates[unitAccName] then return "guild" end
 
 	return false
 end
@@ -746,385 +765,341 @@ function PVP:IsEmperor(playerName, currentCampaignActiveEmperor)
 end
 
 function PVP:IsAccNameInKOS(unitAccName)
-	for i = 1, #self.SV.KOSList do
-		if unitAccName == self.SV.KOSList[i].unitAccName then return true end
+	local KOSList = self.SV.KOSList
+	local numKOS = #KOSList
+	for i = 1, numKOS do
+		if unitAccName == KOSList[i].unitAccName then return true end
 	end
 	return false
 end
 
-function PVP:FindKOSPlayer(index)
-	local currentTime = GetFrameTimeMilliseconds()
-	local unitId = 0
-	local kosPlayer = self.SV.KOSList[index]
-	if next(self.idToName) ~= nil then
-		for k, v in pairs(self.idToName) do
-			local playerDbRecord = self.SV.playersDB[v]
-			if self.playerDbRecord and playerDbRecord.unitAccName == kosPlayer.unitAccName then
-				local hasPlayerNote = (self.SV.playerNotes[kosPlayer.unitAccName] ~= nil)
-				if v ~= kosPlayer.unitName then kosPlayer.unitName = v end
-				if hasPlayerNote or not IsPlayerInGroup(v) then unitId = k end
-				break
-			end
-		end
-	end
-
-	if unitId == 0 and next(self.playerNames) ~= nil then
-		for k, _ in pairs(self.playerNames) do
-			local playerDbRecord = self.SV.playersDB[k]
-			if playerDbRecord and playerDbRecord.unitAccName == kosPlayer.unitAccName then
-				local hasPlayerNote = (self.SV.playerNotes[kosPlayer.unitAccName] ~= nil)
-				if k ~= kosPlayer.unitName then kosPlayer.unitName = k end
-				if hasPlayerNote or not IsPlayerInGroup(k) then unitId = 1234567890 end
-				break
-			end
-		end
-	end
-
-	local isInNames = self.playerNames[kosPlayer.unitName]
-
-	if kosPlayer.unitId == 0 and unitId ~= 0 and self.SV.playKOSSound and (isInNames or self.playerAlliance[unitId]) then
-		if (isInNames and self.SV.playersDB[kosPlayer.unitName].unitAlliance == self.allianceOfPlayer) or self.playerAlliance[unitId] == self.allianceOfPlayer or (IsActiveWorldBattleground() and PVP.bgNames and PVP.bgNames[self.SV.KOSList[index].unitName] and PVP.bgNames[self.SV.KOSList[index].unitName] == GetUnitBattlegroundTeam('player')) then
-			-- d('KOS failed here')
-			if PVP.SV.KOSmode == 2 then
-				if currentTime - self.kosSoundDelay > 2000 then
-					PlaySound(SOUNDS.CROWN_CRATES_CARD_FLIPPING)
-				end
-				PlaySound(SOUNDS.CROWN_CRATES_CARD_FLIPPING)
-				self.kosSoundDelay = currentTime
-			end
-		elseif PVP.SV.KOSmode ~= 2 then
-			if currentTime - self.kosSoundDelay > 2000 then
-				PlaySound(SOUNDS.JUSTICE_STATE_CHANGED)
-			end
-			PlaySound(SOUNDS.JUSTICE_STATE_CHANGED)
-			self.kosSoundDelay = currentTime
-		end
-	end
-	kosPlayer.unitId = unitId
-	return unitId
-end
-
-function PVP:FindCOOLPlayer(unitName, unitAccName)
-	local unitId = 0
-	local newName = unitName
-	if next(self.idToName) ~= nil then
-		for k, v in pairs(self.idToName) do
-			if self.SV.playersDB[v] and self.SV.playersDB[v].unitAccName == unitAccName then
-				local hasPlayerNote = (self.SV.playerNotes[unitAccName] ~= nil)
-				if v ~= unitName then
-					self.SV.coolList[v] = unitAccName
-					self.SV.coolList[unitName] = nil
-					newName = v
-				end
-				if hasPlayerNote or not IsPlayerInGroup(v) then
-					unitId = k
-				end
-				break
-			end
-		end
-	end
-
-	if unitId == 0 and next(self.playerNames) ~= nil then
-		for k, _ in pairs(self.playerNames) do
-			if self.SV.playersDB[k] and self.SV.playersDB[k].unitAccName == unitAccName then
-				local hasPlayerNote = (self.SV.playerNotes[unitAccName] ~= nil)
-				if k ~= unitName then
-					self.SV.coolList[k] = unitAccName
-					self.SV.coolList[unitName] = nil
-					newName = k
-				end
-				if hasPlayerNote or not IsPlayerInGroup(k) then
-					unitId = 1234567890
-				end
-				break
-			end
-		end
-	end
-	return unitId, newName
-end
-
-function PVP:FindPotentialAllies()
-	local currentTime = GetFrameTimeMilliseconds()
-	local showPlayerNotes = self.SV.showPlayerNotes
-	local showFriends = self.SV.showFriends
-	local showGuildMates = self.SV.showGuildMates
-
-	for k, v in pairs(self.idToName) do
-		local playerDbRecord = self.SV.playersDB[v]
-		if playerDbRecord then
-			local isCool = self:FindAccInCOOL(v, playerDbRecord.unitAccName)
-			local isPlayerGrouped = IsPlayerInGroup(v)
-			local playerNote = showPlayerNotes and self.SV.playerNotes[playerDbRecord.unitAccName] or nil
-			local hasPlayerNote = showPlayerNotes and (playerNote ~= nil) and (playerNote ~= "")
-			local isFriend = showFriends and IsFriend(v) or false
-			local isGuildmate = showGuildMates and IsGuildMate(v) or false
-			if hasPlayerNote or ((not isPlayerGrouped) and (isCool or isFriend or isGuildmate)) then
-				self.potentialAllies[v] = {
-					currentTime = currentTime,
-					unitAccName = playerDbRecord.unitAccName,
-					unitAlliance = playerDbRecord.unitAlliance,
-					isPlayerGrouped = isPlayerGrouped,
-					isFriend = isFriend,
-					isGuildmate = isGuildmate,
-					isCool = isCool,
-					playerNote = hasPlayerNote and playerNote or nil,
-					isResurrect = false
-				}
-			end
-		end
-	end
-
-	for k, _ in pairs(self.playerNames) do
-		if not self.potentialAllies[k] then
-			local playerDbRecord = self.SV.playersDB[k]
-			if playerDbRecord then
-				local isPlayerGrouped = IsPlayerInGroup(k)
-				local isCool = self:FindAccInCOOL(k, playerDbRecord.unitAccName)
-				local playerNote = showPlayerNotes and self.SV.playerNotes[playerDbRecord.unitAccName] or nil
-				local hasPlayerNote = showPlayerNotes and (playerNote ~= nil) and (playerNote ~= "")
-				local isFriend = showFriends and IsFriend(v) or false
-				local isGuildmate = showGuildMates and IsGuildMate(v) or false
-				if hasPlayerNote or ((not isPlayerGrouped) and (isCool or isFriend or isGuildmate)) then
-					self.potentialAllies[k] = {
-						currentTime = currentTime,
-						unitAccName = playerDbRecord.unitAccName,
-						unitAlliance = playerDbRecord.unitAlliance,
-						isPlayerGrouped = isPlayerGrouped,
-						isFriend =  isFriend,
-						isGuildmate = isGuildmate,
-						isCool = isCool,
-						playerNote = hasPlayerNote and playerNote or nil,
-						isResurrect = false
-					}
-				end
-			end
-		end
-	end
-
-	-- Update resurrect status for displayed names
-	for i = 1, #self.namesToDisplay do
-		local name = self.namesToDisplay[i]
-		if self.potentialAllies[name] and self.namesToDisplay[i].isResurrect then
-			self.potentialAllies[name].isResurrect = true
-		end
-	end
-end
-
-function PVP:PopulateKOSBuffer()
-	local function CheckActive()
-		if not self.KOSNamesList or self.KOSNamesList == {} then return end
-		local currentTime = GetFrameTimeSeconds()
-		if PVP.kosActivityList and PVP.kosActivityList.measureTime and (currentTime - PVP.kosActivityList.measureTime) < 60 then return end
-		QueryCampaignLeaderboardData()
-		local currentCampaignId = GetCurrentCampaignId()
-
-		if not PVP.kosActivityList then
-			PVP.kosActivityList = {}
-			PVP.kosActivityList.activeChars = {}
-			for k, v in pairs(self.KOSNamesList) do
-				PVP.kosActivityList[k] = {}
-				PVP.kosActivityList[k].chars = {}
-			end
-		end
-
-		for k, v in pairs(self.kosActivityList) do
-			if k ~= "activeChars" then
-				if not self.KOSNamesList[k] then self.kosActivityList[k] = nil end
-			end
-		end
-
-		PVP.kosActivityList.measureTime = currentTime
-
-		for alliance = 1, 3 do
-			for i = 1, GetNumCampaignAllianceLeaderboardEntries(currentCampaignId, alliance) do
-				local isPlayer, ranking, charName, alliancePoints, _, accName = GetCampaignAllianceLeaderboardEntryInfo(
-					currentCampaignId, alliance, i)
-
-				if self.KOSNamesList[accName] then
-					if not PVP.kosActivityList[accName] then
-						PVP.kosActivityList[accName] = {}
-						PVP.kosActivityList[accName].chars = {}
-					end
-					if not PVP.kosActivityList[accName].chars[charName] then
-						PVP.kosActivityList[accName].chars[charName] = {
-							currentTime = currentTime,
-							points = alliancePoints
-						}
-					else
-						if PVP.kosActivityList[accName].chars[charName].points < alliancePoints then
-							if not PVP.kosActivityList.activeChars[accName] then
-								if self.SV.outputNewKos then
-									d("ACTIVE KOS: " .. charName)
-								end
-								PVP.kosActivityList.activeChars[accName] = charName
-							end
-							PVP.kosActivityList[accName].chars[charName] = {
-								currentTime = currentTime,
-								points = alliancePoints
-							}
-						end
-					end
-				end
-			end
-		end
-
-		for k, v in pairs(PVP.kosActivityList.activeChars) do
-			if (PVP.kosActivityList[k] and PVP.kosActivityList[k].chars[v] and PVP.kosActivityList[k].chars[v].currentTime and (currentTime - PVP.kosActivityList[k].chars[v].currentTime) > 600) or (not PVP.kosActivityList[k]) or (not PVP.kosActivityList[k].chars[v]) then
-				PVP.kosActivityList.activeChars[k] = nil
-			end
-		end
-	end
-
-
-	if self.SV.unlocked then return end
-	if self.SV.showTargetNameFrame then self:UpdateTargetName() end
-	local mode = self.SV.KOSmode
-	PVP_KOS_Text:Clear()
-
-	self.KOSNamesList = {}
-	for i = 1, #self.SV.KOSList do
-		self.KOSNamesList[self.SV.KOSList[i].unitAccName] = true
-	end
-
-	local currentTime = GetFrameTimeMilliseconds()
-
-	if not PVP.lastActiveCheckedTime or ((currentTime - PVP.lastActiveCheckedTime) >= 300000) then
-		PVP.lastActiveCheckedTime = currentTime
-		CheckActive()
-	end
-
-	self:FindPotentialAllies()
-
-	if next(self.potentialAllies) ~= nil then
-		for rawName, v in pairs(self.potentialAllies) do
-			local isAlly = v.unitAlliance == self.allianceOfPlayer
-			if (mode == 2 and isAlly) or (mode == 3 and not isAlly) or mode == 1 then
-				local playerNoteToken
-				if v.playerNote then
-					playerNoteToken = PVP:Colorize("- " .. v.playerNote, 'C5C29F')
-				else
-					playerNoteToken = ""
-				end
-				if not self.KOSNamesList[v.unitAccName] then
-					local firstGuildAllianceColor, resurrectIcon
-					local importantIcon = ""
-					local guildNames = ""
-					if v.isFriend then
-						importantIcon = importantIcon .. self:GetFriendIcon()
-					end
-					if v.isCool then
-						importantIcon = importantIcon .. self:GetCoolIcon()
-					end
-					if v.isGuildmate then
-						guildNames, firstGuildAllianceColor = self:GetGuildmateSharedGuilds(v.unitAccName)
-						importantIcon = importantIcon .. self:GetGuildIcon(nil, firstGuildAllianceColor)
-					end
-					if v.isResurrect then
-						resurrectIcon = self:GetResurrectIcon()
-					else
-						resurrectIcon = ""
-					end
-					PVP_KOS_Text:AddMessage(self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName)) ..
-						self:GetFormattedAccountNameLink(v.unitAccName, "40BB40") ..
-						resurrectIcon ..
-						importantIcon .. (((not v.isPlayerGrouped) and guildNames) or "") .. playerNoteToken)
-					self.KOSNamesList[v.unitAccName] = true
-				end
-			end
-		end
-	end
-
-	local activeStringsArray = {}
-	for i = 1, #self.SV.KOSList do
-		local unitId = self:FindKOSPlayer(i)
-		local rawName = self.SV.KOSList[i].unitName
-		local accName = self.SV.KOSList[i].unitAccName
-		local ally = self.SV.playersDB[rawName].unitAlliance == self.allianceOfPlayer
-		local isActive = PVP.kosActivityList.activeChars[accName]
-		local isResurrect, playerNote, guildNames, firstGuildAllianceColor, guildIcon
-		local isGuildmate = self.SV.showGuildMates and IsGuildMate(accName) or false
-
-		if isGuildmate then
-			guildNames, firstGuildAllianceColor = self:GetGuildmateSharedGuilds(accName)
-			guildIcon = self:GetGuildIcon(nil, firstGuildAllianceColor)
+local function CheckActive(KOSNamesList, kosActivityList, reportActive)
+	if not KOSNamesList or KOSNamesList == {} then
+		if kosActivityList then
+			return kosActivityList
 		else
-			guildIcon = ""
-			guildNames = ""
+			return { activeChars = {} }
 		end
+	end
 
-		playerNote = self.SV.playerNotes[accName]
-		if playerNote then playerNote = PVP:Colorize("- " .. playerNote, 'C5C29F') else playerNote = "" end
+	local currentTime = GetFrameTimeSeconds()
+	if kosActivityList and kosActivityList.measureTime and (currentTime - kosActivityList.measureTime) < 60 then return kosActivityList end
+	QueryCampaignLeaderboardData()
+	local currentCampaignId = PVP.currentCampaignId
 
-		if unitId ~= 0 then
-			for j = 1, #self.namesToDisplay do
-				if self.namesToDisplay[j] == rawName and self.namesToDisplay[j].isResurrect then
-					isResurrect = true
+	if not kosActivityList or not kosActivityList.activeChars then
+		kosActivityList = { activeChars = {} }
+		for k, v in pairs(KOSNamesList) do
+			kosActivityList[k] = { chars = {} }
+		end
+	end
+
+	for k, v in pairs(kosActivityList) do
+		if k ~= "activeChars" and not KOSNamesList[k] then kosActivityList[k] = nil end
+	end
+
+	kosActivityList.measureTime = currentTime
+
+	for alliance = 1, 3 do
+		for i = 1, GetNumCampaignAllianceLeaderboardEntries(currentCampaignId, alliance) do
+			local isPlayer, ranking, charName, alliancePoints, _, accName = GetCampaignAllianceLeaderboardEntryInfo(currentCampaignId, alliance, i)
+
+			if KOSNamesList[accName] then
+				if not kosActivityList[accName] then
+					kosActivityList[accName] = { chars = {} }
+				end
+				if not kosActivityList[accName].chars[charName] then
+					kosActivityList[accName].chars[charName] = { currentTime = currentTime, points = alliancePoints }
+				elseif kosActivityList[accName].chars[charName].points < alliancePoints then
+					if not kosActivityList.activeChars[accName] then
+						if reportActive then
+							d("ACTIVE KOS: " .. charName)
+						end
+						kosActivityList.activeChars[accName] = charName
+					end
+					kosActivityList[accName].chars[charName] = { currentTime = currentTime, points = alliancePoints }
 				end
 			end
 		end
+	end
 
-		-- if (mode==2 and ally) or (mode==3 and not ally) or mode==4 or mode==1 then
-		if (mode == 2 and ally) or (mode == 3 and not ally) or mode == 1 then
+	for k, v in pairs(kosActivityList.activeChars) do
+		if (kosActivityList[k] and kosActivityList[k].chars[v] and kosActivityList[k].chars[v].currentTime and (currentTime - kosActivityList[k].chars[v].currentTime) > 600) or (not kosActivityList[k]) or (not kosActivityList[k].chars[v]) then
+			kosActivityList.activeChars[k] = nil
+		end
+	end
+	return kosActivityList
+end
+
+local function BuildImportantIcon(unitAccName, isFriend, isCool, isGuildmate, isPlayerGrouped)
+	local importantIcon = ""
+	if isFriend then importantIcon = importantIcon .. PVP:GetFriendIcon() end
+	if isCool then importantIcon = importantIcon .. PVP:GetCoolIcon() end
+	if isGuildmate then
+		if isPlayerGrouped then
+			local guildIcon = PVP:GetGuildIcon(nil, "40BB40")
+			importantIcon = importantIcon .. guildIcon
+		else
+			local guildNames, firstGuildAllianceColor = PVP:GetGuildmateSharedGuilds(unitAccName, isGuildmate)
+			local guildIcon = PVP:GetGuildIcon(nil, firstGuildAllianceColor)
+			importantIcon = importantIcon .. guildIcon .. guildNames
+		end
+	end
+	return importantIcon
+end
+
+local function FormatPlayerNote(playerNote)
+	return playerNote and PVP:Colorize("- " .. playerNote, 'C5C29F') or ""
+end
+
+local function FormatResurrectIcon(isResurrect)
+	return isResurrect and PVP:GetResurrectIcon() or ""
+end
+
+local function createIsResurrectList(namesToDisplay)
+	local isResurrectList = {}
+	if namesToDisplay then
+		local numNames = #namesToDisplay
+		for j = 1, numNames do
+			if namesToDisplay[j].isResurrect then
+				isResurrectList[namesToDisplay[j]] = true
+			end
+		end
+	end
+	return isResurrectList
+end
+
+function PVP:ProcessLocalPlayer(unitId, rawName, dbRec, currentTime, KOSAccList, kosActivityList, coolAccList, guildmates, isResurrectList, playerNotes, showPlayerNotes, showFriends, showGuildMates, allianceOfPlayer, mode)
+	local unitAccName = dbRec.unitAccName
+	local unitAlliance = dbRec.unitAlliance
+	local isKOS = KOSAccList[unitAccName] ~= nil
+	local isCool = coolAccList[unitAccName] ~= nil
+	local isPlayerGrouped = IsPlayerInGroup(rawName)
+	local playerNote = showPlayerNotes and playerNotes[unitAccName] or nil
+	local hasPlayerNote = playerNote and (playerNote ~= "")
+	local isFriend = showFriends and IsFriend(rawName) or false
+	local isGuildmate = showGuildMates and guildmates[unitAccName] or false
+
+	local newLocalPlayer = {
+		unitId = unitId,
+		unitAccName = unitAccName,
+		unitAlliance = unitAlliance,
+		isKOS = isKOS,
+		isCOOL = isCool
+	}
+
+	local isResurrect = isResurrectList[rawName] or false
+	local newString = nil
+	local isActive = false
+	local newPotentialAlly = nil
+
+	if isKOS then
+		local isAlly = (unitAlliance == allianceOfPlayer)
+		isActive = kosActivityList.activeChars[unitAccName]
+
+		if (mode == 2 and isAlly) or (mode == 3 and not isAlly) or mode == 1 then
 			if unitId ~= 0 then
-				local resurrectIcon
-				if isResurrect then
-					resurrectIcon = self:GetResurrectIcon()
-				else
-					resurrectIcon = ""
-				end
-				if ally then
-					PVP_KOS_Text:AddMessage(self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName)) ..
-						self:GetFormattedAccountNameLink(accName, "FFFFFF") .. self:GetKOSIcon(nil, "FFFFFF") ..
-						resurrectIcon .. guildIcon .. playerNote)
-				else
-					PVP_KOS_Text:AddMessage(self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName)) ..
-						self:GetFormattedAccountNameLink(accName, "BB4040") ..
-						self:GetKOSIcon() .. resurrectIcon .. guildIcon .. guildNames .. playerNote)
-				end
+				local kosIcon = self:GetKOSIcon(nil, isAlly and "FFFFFF" or nil) or ""
+				local resurrectIcon = FormatResurrectIcon(isResurrect)
+				local importantIcon = BuildImportantIcon(unitAccName, isFriend, isCool, isGuildmate, isPlayerGrouped)
+				local playerNoteToken = hasPlayerNote and FormatPlayerNote(playerNote) or ""
+				PVP_KOS_Text:AddMessage(
+					self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName), nil, isResurrect,
+					nil, nil, nil, unitId, currentTime, nil, dbRec or "none") ..
+					self:GetFormattedAccountNameLink(unitAccName, isAlly and "FFFFFF" or "BB4040") ..
+					kosIcon .. resurrectIcon .. importantIcon .. playerNoteToken
+				)
 			end
 		end
 
 		if mode == 4 then
-			if isActive then
-				if ally then
-					-- PVP_KOS_Text:AddMessage(self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName))..self:GetFormattedAccountNameLink(accName, "FFFFFF").." ACTIVE")
-					insert(activeStringsArray,
-						self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName)) ..
-						self:GetFormattedAccountNameLink(accName, "FFFFFF") .. " ACTIVE")
-				else
-					-- PVP_KOS_Text:AddMessage(self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName))..self:GetFormattedAccountNameLink(accName, "BB4040").." ACTIVE")
-					insert(activeStringsArray,
-						self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName)) ..
-						self:GetFormattedAccountNameLink(accName, "BB4040") .. " ACTIVE")
-				end
+			local guildNames, firstGuildAllianceColor, guildIcon
+			if isGuildmate then
+				guildNames, firstGuildAllianceColor = self:GetGuildmateSharedGuilds(unitAccName, isGuildmate)
+				guildIcon = self:GetGuildIcon(nil, firstGuildAllianceColor)
 			else
-				PVP_KOS_Text:AddMessage(self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName, true),
-						nil, true) ..
-					self:GetFormattedAccountNameLink(accName, "3F3F3F") .. guildIcon .. guildNames .. playerNote)
+				guildIcon = ""
+				guildNames = ""
+			end
+
+			if isActive then
+				newString = self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName), isResurrect, nil,
+				nil, nil, nil, unitId, currentTime, nil, dbRec or "none") ..
+					self:GetFormattedAccountNameLink(unitAccName, isAlly and "FFFFFF" or "BB4040") .. " ACTIVE"
+			else
+				newString = self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName, true), nil, true,
+				nil, nil, nil, unitId, currentTime, nil, dbRec or "none") ..
+					self:GetFormattedAccountNameLink(unitAccName, "3F3F3F") .. guildIcon .. guildNames .. FormatPlayerNote(playerNote)
+			end
+		end
+	end
+
+	if (not isKOS) and (hasPlayerNote or ((not isPlayerGrouped) and (isCool or isFriend or isGuildmate))) then
+		newPotentialAlly = {
+			currentTime = currentTime,
+			unitAccName = unitAccName,
+			unitAlliance = dbRec.unitAlliance,
+			isPlayerGrouped = isPlayerGrouped,
+			isFriend = isFriend,
+			isGuildmate = isGuildmate,
+			isCool = isCool,
+			playerNote = hasPlayerNote and playerNote or nil,
+			isResurrect = isResurrect
+		}
+		local isAlly = (unitAlliance == allianceOfPlayer)
+		local validAlliance = (mode == 1) or (mode == 2 and isAlly) or (mode == 3 and not isAlly)
+		if validAlliance and not isKOS then
+			local resurrectIcon = FormatResurrectIcon(isResurrect)
+			local importantIcon = BuildImportantIcon(unitAccName, isFriend, isCool, isGuildmate, isPlayerGrouped)
+			local playerNoteToken = hasPlayerNote and FormatPlayerNote(playerNote) or ""
+
+			PVP_KOS_Text:AddMessage(
+				self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName), isResurrect, nil,
+				nil, nil, nil, unitId, currentTime, nil, dbRec or "none") ..
+				self:GetFormattedAccountNameLink(unitAccName, "40BB40") ..
+				resurrectIcon .. importantIcon .. playerNoteToken
+			)
+		end
+	end
+
+	return newLocalPlayer, newString, isActive, newPotentialAlly
+end
+
+function PVP:RefreshLocalPlayers()
+	local SV = self.SV
+	if SV.unlocked then return end
+
+	local KOSList = SV.KOSList
+	local coolList = SV.coolList
+	local playersDB = SV.playersDB
+	local allianceOfPlayer = self.allianceOfPlayer
+
+	if SV.showTargetNameFrame then self:UpdateTargetName() end
+	local mode = SV.KOSmode
+	PVP_KOS_Text:Clear()
+
+	local KOSAccList = self.KOSAccList
+	local coolAccList = self.coolAccList
+	local guildmates = self.guildmates
+
+	local currentTime = GetFrameTimeMilliseconds()
+
+	if not self.lastActiveCheckedTime or ((currentTime - self.lastActiveCheckedTime) >= 300000) then
+		self.lastActiveCheckedTime = currentTime
+		self.kosActivityList = CheckActive(KOSAccList, self.kosActivityList, SV.outputNewKos)
+	end
+	local kosActivityList = self.kosActivityList
+
+
+	local localPlayers = {}
+	local potentialAllies = {}
+	local idToName = self.idToName
+	local playerNames = self.playerNames
+	local namesToDisplay = self.namesToDisplay
+	local playerNotes = SV.playerNotes
+	local showPlayerNotes = SV.showPlayerNotes
+	local showFriends = SV.showFriends
+	local showGuildMates = SV.showGuildMates
+
+	local activeStringsArray = {}
+	local inactiveStringsArray = {}
+
+	local isResurrectList = createIsResurrectList(namesToDisplay)
+
+	for unitId, rawName in pairs(idToName) do
+		local dbRec = playersDB[rawName]
+		if dbRec then
+			local newLocalPlayer, newString, isActive, newPotentialAlly = self:ProcessLocalPlayer(unitId, rawName, dbRec, currentTime, KOSAccList, kosActivityList, coolAccList, guildmates, isResurrectList, playerNotes, showPlayerNotes, showFriends, showGuildMates, allianceOfPlayer, mode)
+			localPlayers[rawName] = newLocalPlayer
+			if newString then
+				if isActive then
+					insert(activeStringsArray, newString)
+				else
+					insert(inactiveStringsArray, newString)
+				end
+			end
+			if newPotentialAlly then
+				potentialAllies[rawName] = newPotentialAlly
+			end
+		end
+	end
+
+	for rawName, _ in pairs(playerNames) do
+		if not localPlayers[rawName] then
+			local dbRec = playersDB[rawName]
+			if dbRec then
+				local newLocalPlayer, newString, isActive, newPotentialAlly = self:ProcessLocalPlayer(1234567890, rawName, dbRec, currentTime, KOSAccList, kosActivityList, coolAccList, guildmates, isResurrectList, playerNotes, showPlayerNotes, showFriends, showGuildMates, allianceOfPlayer, mode)
+				localPlayers[rawName] = newLocalPlayer
+				if newString then
+					if isActive then
+						insert(activeStringsArray, newString)
+					else
+						insert(inactiveStringsArray, newString)
+					end
+				end
+				if newPotentialAlly then
+					potentialAllies[rawName] = newPotentialAlly
+				end
 			end
 		end
 	end
 
 	if mode == 4 then
-		for k, v in pairs(self.SV.coolList) do
-			local unitId, newName = self:FindCOOLPlayer(k, v)
-			local playerNote
-			playerNote = self.SV.playerNotes[v]
-			if playerNote then playerNote = PVP:Colorize("- " .. playerNote, 'C5C29F') else playerNote = "" end
-			if unitId ~= 0 then
-				PVP_KOS_Text:AddMessage(self:GetFormattedClassNameLink(newName, self:NameToAllianceColor(newName)) ..
-					self:Colorize(v, "40BB40") .. self:GetCoolIcon() .. playerNote)
-			else
-				PVP_KOS_Text:AddMessage(self:GetFormattedClassNameLink(newName, self:NameToAllianceColor(newName, true),
-						nil, true) ..
-					self:GetFormattedAccountNameLink(v, "3F3F3F") .. self:GetCoolIcon(nil, true) .. playerNote)
+		for _, v in ipairs(KOSList) do
+			if not localPlayers[v.unitName] then
+				local dbRec = playersDB[v.unitName]
+				if dbRec then
+					local isAlly = (dbRec.unitAlliance == allianceOfPlayer)
+					local isActive = KOSAccList[dbRec.unitAccName] and kosActivityList.activeChars[dbRec.unitAccName]
+					local isResurrect, guildNames, firstGuildAllianceColor, guildIcon
+					local isGuildmate = guildmates[dbRec.unitAccName]
+
+					if isGuildmate then
+						guildNames, firstGuildAllianceColor = self:GetGuildmateSharedGuilds(dbRec.unitAccName, isGuildmate)
+						guildIcon = self:GetGuildIcon(nil, firstGuildAllianceColor)
+					else
+						guildIcon = ""
+						guildNames = ""
+					end
+
+					if isActive then
+						local activeMessage = self:GetFormattedClassNameLink(v.unitName, self:NameToAllianceColor(v.unitName), nil, nil,
+						nil, nil, nil, nil, currentTime, nil, dbRec or "none") ..
+							self:GetFormattedAccountNameLink(dbRec.unitAccName, isAlly and "FFFFFF" or "BB4040") .. " ACTIVE"
+						insert(activeStringsArray, activeMessage)
+					else
+						local inactiveMessage = self:GetFormattedClassNameLink(v.unitName, self:NameToAllianceColor(v.unitName, true), nil, true,
+						nil, nil, nil, nil, currentTime, nil, dbRec or "none") ..
+							self:GetFormattedAccountNameLink(dbRec.unitAccName, "3F3F3F") .. guildIcon .. guildNames .. FormatPlayerNote(playerNotes[dbRec.unitAccName])
+						insert(inactiveStringsArray, inactiveMessage)
+					end
+				end
 			end
 		end
 
-		for k, v in ipairs(activeStringsArray) do
+		for rawName, accName in pairs(coolList) do
+			if not localPlayers[rawName] then
+				local dbRec = playersDB[rawName]
+				if dbRec then
+					local message = self:GetFormattedClassNameLink(rawName, self:NameToAllianceColor(rawName), nil, nil,
+					nil, nil, nil, nil, currentTime, nil, dbRec or "none") ..
+						self:Colorize(accName, "3F3F3F") ..
+						self:GetCoolIcon(nil, true) .. FormatPlayerNote(playerNotes[accName])
+					insert(inactiveStringsArray, message)
+				end
+			end
+		end
+
+		for _, v in ipairs(activeStringsArray) do
+			PVP_KOS_Text:AddMessage(v)
+		end
+		for _, v in ipairs(inactiveStringsArray) do
 			PVP_KOS_Text:AddMessage(v)
 		end
 	end
+
+	self.localPlayers = localPlayers
+	self.potentialAllies = potentialAllies
 end
 
 function PVP:SetKOSSliderPosition()

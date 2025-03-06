@@ -6,13 +6,13 @@ VotansImprovedMulticraft_Data =
         {
             ["$AccountWide"] = 
             {
-                ["autoMaxRefinement"] = false,
-                ["refinementSpinner"] = 1,
-                ["version"] = 1,
                 ["creationSpinner"] = 
                 {
                 },
                 ["nonCrafterProtect"] = false,
+                ["autoMaxRefinement"] = false,
+                ["version"] = 1,
+                ["refinementSpinner"] = 1,
             },
         },
     },

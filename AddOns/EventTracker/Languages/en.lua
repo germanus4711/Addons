@@ -44,7 +44,7 @@ local strings = {
 
 -- *************** ANNUAL EVENTS
 -- July 12, 2021: Event name change announced, "Whitestrake's Mayhem".
-	EVT_EVENT_INFO_WHITESTRAKE = "February, 2025. Tickets from DAILY quests: 2 from Battlegrounds or Cyrodiil, plus 1 from Imperial City; per account per day. DOUBLE XP/AP/Tel Var PASSIVE NOW!",
+	EVT_EVENT_INFO_WHITESTRAKE = "Feb. 20-March 4, 2025. Tickets from DAILY quests: 2 from Battlegrounds or Cyrodiil, plus 1 from Imperial City; per account per day. DOUBLE XP/AP/Tel Var PASSIVE NOW!",
 --	EVT_EVENT_INFO_WHITESTRAKE = "July 25-August 6, 2024 (39 tickets). Tickets from DAILY quests: 2 from Battlegrounds or Cyrodiil, plus 1 from Imperial City; per account per day. DOUBLE XP/AP/Tel Var PASSIVE NOW!",
 --	EVT_EVENT_INFO_WHITESTRAKE = "Feb. 22-March 5, 2024. Tickets from DAILY quests: 2 from Battlegrounds or Cyrodiil, plus 1 from Imperial City; per account per day. DOUBLE XP/AP/Tel Var PASSIVE NOW!",
 --	EVT_EVENT_INFO_WHITESTRAKE = "June 29-July 11, 2023 (39 tickets). Tickets from DAILY quests: 2 from Battlegrounds or Cyrodiil, plus 1 from Imperial City; per account per day.",
@@ -89,7 +89,8 @@ local strings = {
 
 -- *************** NON-ANNUAL EVENTS
 -- 2.240 "Pan-Tamriel"
-	EVT_EVENT_INFO_PAN_TAMRIEL = "Jan. 23-Feb. 4, 2025. 3 tickets, once/day/acct: World or pub dungeon boss; Tho'at; FINAL boss of delve, dark fissure, dolmen/dragon/etc, dungeon, arena, or trial. CAN GET ONE GOLD BOX FROM EACH OF THOSE PER DAY!",
+	EVT_EVENT_INFO_PAN_TAMRIEL = "Jan. 23-Feb. 4, 2025. (39 tickets) 3 tickets, once/day/acct: World or pub dungeon boss; Tho'at; FINAL boss of delve, dark fissure, dolmen/dragon/etc, dungeon, arena, or trial. ONLY ONE GOLD BOX PER DAY.",
+--	EVT_EVENT_INFO_PAN_TAMRIEL = "Jan. 23-Feb. 4, 2025. 3 tickets, once/day/acct: World or pub dungeon boss; Tho'at; FINAL boss of delve, dark fissure, dolmen/dragon/etc, dungeon, arena, or trial. CAN GET ONE GOLD BOX FROM EACH OF THOSE PER DAY!",
 -- 2.240 "Legacy of the Bretons"
 	EVT_EVENT_INFO_BRETONS = "Nov. 21-Dec. 3, 2024. 2 tickets/day/account, from your first High Isle/Tribute or Galen DAILY quest, Dreadsail WEEKLY quest, or the final boss of Coral Aerie, Shipwright's Regret, Earthen Root, or Graven Deep.",
 -- 2.240 "Fallen Leaves of the West Weald"

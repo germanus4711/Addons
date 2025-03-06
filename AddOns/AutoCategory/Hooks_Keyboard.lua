@@ -9,7 +9,7 @@ This process involves executing all active rules for each items, and can be
 triggered multiple times in a row, notably for bank transfers (more than ten calls)
 In order to reduce the impact of the add-on:
 	1 - The results of rules' execution are stored in 'itemEntry.data'.
- 		As 'itemEntry.data' is persistent, results can be reused directly 
+		As 'itemEntry.data' is persistent, results can be reused directly 
 		without having to re-execute all the rules every time.
 		However, 'itemEntry.data' will not persist forever and will be reset 
 		at some point, and rules will need to be re-executed, but this is not much of an issue.
@@ -33,9 +33,9 @@ local LMP = LibMediaProvider
 local SF = LibSFUtils
 local AC = AutoCategory
 
--- uniqueIDs of items that have been updated (need rule re-execution), 
+-- uniqueIDs of items that have been updated (need rule re-execution),
 -- based on PLAYER_INVENTORY:OnInventorySlotUpdated hook
-local forceRuleReloadByUniqueIDs = {} 
+local forceRuleReloadByUniqueIDs = {}
 
 AutoCategory.dataCount = {}
 
@@ -177,23 +177,23 @@ local function setup_InventoryItemRowHeader(rowControl, slot, overrideOptions)
 			cateName == AutoCategory.saved.appearance["CATEGORY_OTHER_TEXT"] then
 		headerColor = "HIDDEN_CATEGORY_FONT_COLOR"
 	end
-	headerLabel:SetColor(appearance[headerColor][1], 
-						 appearance[headerColor][2], 
-						 appearance[headerColor][3], 
+	headerLabel:SetColor(appearance[headerColor][1],
+						 appearance[headerColor][2],
+						 appearance[headerColor][3],
 						 appearance[headerColor][4])
 
 	-- Add count to category name if selected in options
     if AutoCategory.acctSaved.general["SHOW_CATEGORY_ITEM_COUNT"] then
         headerLabel:SetText(string.format('%s |[%d]|r', cateName, num))
         headerLabel:SetColor(
-			appearance[headerColor][1], 
+			appearance[headerColor][1],
 			appearance[headerColor][2],
-			appearance[headerColor][3], 
+			appearance[headerColor][3],
 			appearance[headerColor][4])
 
     else
         headerLabel:SetText(cateName)
-    end	
+    end
 
 	-- set the collapse marker
 	local marker = rowControl:GetNamedChild("CollapseMarker")
@@ -249,8 +249,6 @@ local function createHeaderEntry(catInfo)
 			stackLaunderPrice = 0})
 	return headerEntry
 end
-
-
 -- ---------------------------------------------------
 
 local function isUngroupedHidden(bagTypeId)
@@ -262,10 +260,12 @@ local function isHiddenEntry(itemEntry)
 
 	local data = itemEntry.data
 	if data.AC_isHidden or data.AC_bagTypeId == nil then return true end
-	if not data.AC_matched and isUngroupedHidden(data.AC_bagTypeId) then 
+	if not data.AC_matched and isUngroupedHidden(data.AC_bagTypeId) then
 		return true
 	end
-	return false
+	--return false
+	return AutoCategory.IsCategoryCollapsed(data.AC_bagTypeId, data.AC_categoryName)
+
 end
 
 local function isCollapsed(itemEntry)
@@ -285,9 +285,12 @@ local function runRulesOnEntry(itemEntry, specialType)
 	local bagId = data.bagId
 	local slotIndex = data.slotIndex
 
-	local matched, categoryName, categoryPriority, bagTypeId, isHidden 
+	local matched, categoryName, categoryPriority, showPriority, bagTypeId, isHidden 
 				= AutoCategory:MatchCategoryRules(bagId, slotIndex, specialType)
 	data.AC_matched = matched
+	data.AC_bagTypeId = bagTypeId
+	data.AC_isHeader = false
+
 	if matched then
 		data.AC_categoryName = categoryName
 		data.AC_sortPriorityName = string.format("%04d%s", 1000 - categoryPriority , categoryName)
@@ -299,9 +302,6 @@ local function runRulesOnEntry(itemEntry, specialType)
 		-- if was not matched, then the isHidden value that was returned is not valid
 		data.AC_isHidden = isUngroupedHidden(bagTypeId)
 	end
-	data.AC_bagTypeId = bagTypeId
-	data.AC_isHeader = false
-
 end
 
 local function sortInventoryFn(inven, left, right, key, order) 
@@ -385,26 +385,27 @@ local function detectItemChanges(itemEntry, newEntryHash, needReload)
 		return setChange(true)
 	end
 
+	--- Test if uniqueID tagged for update
+	for i, uniqueID in ipairs(forceRuleReloadByUniqueIDs) do 
+		-- look for items with changes detected
+		if data.uniqueID == uniqueID then
+			table.remove(forceRuleReloadByUniqueIDs, i)
+			return setChange(true)
+		end
+	end
+
 	--- Update hash and test if changed
 	if data.AC_hash == nil or data.AC_hash ~= newEntryHash then
 		data.AC_hash = newEntryHash
 		return setChange(true)
 	end
 
-	--- Test last update time, triggers update if more than 4s
+	--- Test last update time, triggers update if more than 20s
 	if data.AC_lastUpdateTime == nil then
 		return setChange(true)
 
-	elseif currentTime - tonumber(data.AC_lastUpdateTime) > 4 then
+	elseif currentTime - tonumber(data.AC_lastUpdateTime) > 20 then
 		return setChange(true)
-	end
-
-	--- Test if uniqueID tagged for update
-	for _, uniqueID in ipairs(forceRuleReloadByUniqueIDs) do 
-		-- look for items with changes detected
-		if data.uniqueID == uniqueID then
-			return setChange(true)
-		end
 	end
 
 	return changeDetected
@@ -450,8 +451,7 @@ local function createNewScrollData(scrollData) --, sortfn)
 
 	local function addCount(name)
 		categoryList[name] = SF.safeTable(categoryList[name])
-		categoryList[name].AC_catCount = SF.nilDefault(categoryList[name].AC_catCount, 0)
-		categoryList[name].AC_catCount = categoryList[name].AC_catCount + 1
+		categoryList[name].AC_catCount = SF.nilDefault(categoryList[name].AC_catCount, 0) + 1
 	end
 
 	local function setCount(bagTypeId, name, count)
@@ -496,7 +496,7 @@ local function createNewScrollData(scrollData) --, sortfn)
 	end
 
 	-- Create headers and append to newScrollData
-		for _, catInfo in pairs(categoryList) do ---> add tracked categories
+	for _, catInfo in pairs(categoryList) do ---> add tracked categories
 		if catInfo.AC_catCount ~= nil then
 			--AutoCategory.logger:Debug("catinfo: "..". "..tostring(catInfo.AC_sortPriorityName))
 			local headerEntry = createHeaderEntry(catInfo)
@@ -512,6 +512,7 @@ end
 -- prehook
 local function prehookSort(self, inventoryType) 
 	if not AutoCategory.Enabled then return false end
+
 	-- revert to default behaviour if safety conditions not met
 	if inventoryType == INVENTORY_QUEST_ITEM then return false end
 
@@ -583,14 +584,10 @@ local function prehookCraftSort(self)
 	return false
 end
 
--- perform refresh of list - callback
-local function refresh(forceRuleReload)
-	AutoCategory.RefreshCurrentList(forceRuleReload)
-end
-
 --prehook 
-local function onInventorySlotUpdated(self, bagId, slotIndex)
-	if not AutoCategory.Enabled then return false end
+local function onInventorySlotUpdated(evCode, bagId, slotIndex, isNewItem)
+	if not AutoCategory.Enabled then return true end
+	if isNewItem == false then return true end
 
 	-- mark the slot as needing rule re-evaluation
 	table.insert(forceRuleReloadByUniqueIDs, GetItemUniqueId(bagId, slotIndex))
@@ -616,7 +613,6 @@ function AutoCategory.HookKeyboardMode()
 
     AddTypeToList(rowHeight, SMITHING.deconstructionPanel.inventory.list, nil)
     AddTypeToList(rowHeight, SMITHING.improvementPanel.inventory.list,    nil)
-
     AddTypeToList(rowHeight,
 		ZO_UniversalDeconstructionTopLevel_KeyboardPanelInventoryBackpack, nil )
 
@@ -631,8 +627,7 @@ function AutoCategory.HookKeyboardMode()
 	ZO_PreHook(PLAYER_INVENTORY, "OnInventorySlotUpdated", onInventorySlotUpdated) -- item has changed
 
 	-- Other events that cause a full refresh
-	CALLBACK_MANAGER:RegisterCallback("LAM-PanelClosed", refresh, true)
-
+	-- user can force a refresh with stack key
 	AutoCategory.evtmgr:registerEvt(EVENT_STACKED_ALL_ITEMS_IN_BAG, onStackItems)
 
 end

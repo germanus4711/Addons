@@ -1,8 +1,8 @@
 ﻿## Title: LibMediaProvider-1.0
 ## Author: Seerah, psypanda, ArtOfShred, Calamath
-## Version: 1.0 r32
-## APIVersion: 101043 101044
-## AddOnVersion: 32
+## Version: 1.0 r33
+## APIVersion: 101044 101045
+## AddOnVersion: 33
 ## IsLibrary: true
 ## Description: Facilitates shared media between addons.  Inspired by and borrowed from LibSharedMedia World of Warcraft.
 

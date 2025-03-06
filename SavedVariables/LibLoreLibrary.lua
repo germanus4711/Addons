@@ -1,16 +1,16 @@
 LibLoreLibrary_Settings =
 {
-    ["version"] = 1,
     ["lang"] = "en",
+    ["version"] = 1,
 }
 LibLoreLibrary_Data =
 {
-    ["data"] = 
-    {
-    },
-    ["isCollecting"] = false,
     ["locales"] = 
     {
     },
+    ["isCollecting"] = false,
     ["langIdx"] = 0,
+    ["data"] = 
+    {
+    },
 }

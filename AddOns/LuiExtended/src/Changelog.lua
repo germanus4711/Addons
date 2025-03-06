@@ -12,19 +12,28 @@ local table_concat = table.concat
 local changelogMessages =
 {
     -- Version Header
-    "|cFFA500LuiExtended Version 6.8.5|r",
+    "|cFFA500LuiExtended Version 6.8.7.2|r",
     "",
     -- General Changes
     "|cFFFF00General:|r",
-    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Added chat announcements for Golden Pursuits and Weekly Endeavors, off by Default. Thanks cyberox",
-    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t More illegal string formatting fixes.",
-    -- Previous Changes
-    "|cFFA500LuiExtended Version 6.8.4|r",
+    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Fixed frame snapping calculations for edge cases",
+    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Optimized grid snapping performance",
+    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Adjusted UI elements for better visual alignment",
     "",
-    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Blood Craze id update so it will now be tracked on the actionbar. Thanks @ExVault.",
-    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Fix for chat alerts. If you know, you know...",
-    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Code cleanup and improvements.",
+    -- Version Header
+    "|cFFA500LuiExtended Version 6.8.7.1|r",
     "",
+    -- General Changes
+    "|cFFFF00General:|r",
+    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Minor bug fix, default frames we not snapping. They are now...",
+    "",
+    -- Version Header
+    "|cFFA500LuiExtended Version 6.8.7|r",
+    "",
+    -- General Changes
+    "|cFFFF00General:|r",
+    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Added a new grid snapping system. Currently only for default game frames, custom unit frames, and the buffs & debuffs module.",
+    "|t12:12:EsoUI/Art/Miscellaneous/bullet.dds|t Code cleanup and optimizations.",
 }
 -- -----------------------------------------------------------------------------
 -- Hide toggle called by the menu or xml button

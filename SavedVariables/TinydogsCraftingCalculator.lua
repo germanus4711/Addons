@@ -4,13 +4,16 @@ TinydogsCraftingCalculatorVars =
     {
         ["@germanus4711"] = 
         {
-            ["Christel v Koenigsberg"] = 
+            ["$AccountWide"] = 
             {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
+                ["Scope"] = 
+                {
+                    ["ItemOrder"] = "Local",
+                },
+                ["EsoPlus"] = false,
                 ["version"] = 2,
             },
-            ["Hubertus Freiherr v Feld"] = 
+            ["Mike v Petra"] = 
             {
                 ["CraftSelected"] = "Blacksmithing",
                 ["TabSelected"] = "tccBuilderTabButton",
@@ -22,10 +25,39 @@ TinydogsCraftingCalculatorVars =
                 ["TabSelected"] = "tccBuilderTabButton",
                 ["version"] = 2,
             },
-            ["Fridolin The Great"] = 
+            ["Christel v Koenigsberg"] = 
             {
                 ["CraftSelected"] = "Blacksmithing",
                 ["TabSelected"] = "tccBuilderTabButton",
+                ["version"] = 2,
+            },
+            ["Maüschen"] = 
+            {
+                ["CraftSelected"] = "Blacksmithing",
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["version"] = 2,
+            },
+            ["Hubertus Freiherr v Feld"] = 
+            {
+                ["CraftSelected"] = "Blacksmithing",
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["version"] = 2,
+            },
+            ["Freya Orm"] = 
+            {
+                ["CraftSelected"] = "Blacksmithing",
+                ["TabSelected"] = "tccBuilderTabButton",
+                ["OrderItemData"] = 
+                {
+                },
+                ["WindowPosition"] = 
+                {
+                    ["tccUI"] = 
+                    {
+                        ["x"] = 1515,
+                        ["y"] = 328,
+                    },
+                },
                 ["version"] = 2,
             },
             ["Otto von Bissmark"] = 
@@ -40,39 +72,7 @@ TinydogsCraftingCalculatorVars =
                 ["TabSelected"] = "tccBuilderTabButton",
                 ["version"] = 2,
             },
-            ["Freya Orm"] = 
-            {
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["version"] = 2,
-                ["WindowPosition"] = 
-                {
-                    ["tccUI"] = 
-                    {
-                        ["y"] = 328,
-                        ["x"] = 1515,
-                    },
-                },
-                ["OrderItemData"] = 
-                {
-                },
-                ["CraftSelected"] = "Blacksmithing",
-            },
-            ["$AccountWide"] = 
-            {
-                ["EsoPlus"] = false,
-                ["Scope"] = 
-                {
-                    ["ItemOrder"] = "Local",
-                },
-                ["version"] = 2,
-            },
-            ["Maüschen"] = 
-            {
-                ["CraftSelected"] = "Blacksmithing",
-                ["TabSelected"] = "tccBuilderTabButton",
-                ["version"] = 2,
-            },
-            ["Mike v Petra"] = 
+            ["Fridolin The Great"] = 
             {
                 ["CraftSelected"] = "Blacksmithing",
                 ["TabSelected"] = "tccBuilderTabButton",

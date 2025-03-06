@@ -7,7 +7,7 @@
 ---
 --- @class (partial) LuiExtended
 --- @field __index LuiExtended
---- @field Data LuiData
+--- @field Data Data
 --- @field Combat LUIE.CombatInfo
 --- @field SpellCastBuffs LUIE.SpellCastBuffs
 --- @field name string The addon name
@@ -22,16 +22,16 @@ local LUIE = LUIE
 -- -----------------------------------------------------------------------------
 LUIE.tag = "LUIE"
 LUIE.name = "LuiExtended"
-LUIE.version = "6.8.5"
+LUIE.version = "6.8.7.2"
 LUIE.author = "ArtOfShred, DakJaniels, psypanda, Saenic & SpellBuilder"
 LUIE.website = "https://www.esoui.com/downloads/info818-LuiExtended.html"
-LUIE.github = "https://github.com/ArtOfShred/LuiExtended"
-LUIE.feedback = "https://github.com/ArtOfShred/LuiExtended/issues"
-LUIE.translation = "https://github.com/ArtOfShred/LuiExtended/tree/translations"
+LUIE.github = "https://github.com/DakJaniels/LuiExtended"
+LUIE.feedback = "https://github.com/DakJaniels/LuiExtended/issues"
+LUIE.translation = "https://github.com/DakJaniels/LuiExtended/tree/translations"
 LUIE.donation = "https://paypal.me/dakjaniels"
 -- -----------------------------------------------------------------------------
 -- Saved variables options
-LUIE.SV = ...
+LUIE.SV = {}
 LUIE.SVVer = 2
 LUIE.SVName = "LUIESV"
 -- -----------------------------------------------------------------------------
@@ -51,25 +51,35 @@ LUIE.Data = LuiData.Data
 -- Default Settings
 LUIE.Defaults =
 {
-    CharacterSpecificSV = false,
-    StartupInfo = false,
-    HideAlertFrame = false,
-    AlertFrameAlignment = 3,
+    CharacterSpecificSV       = false,
+    StartupInfo               = false,
+    HideAlertFrame            = false,
+    AlertFrameAlignment       = 3,
     -- CustomIcons_Enabled = true,
-    HideXPBar = false,
-    TempAlertHome = false,
-    TempAlertCampaign = false,
-    TempAlertOutfit = false,
-    WelcomeVersion = 0,
+    HideXPBar                 = false,
+    TempAlertHome             = false,
+    TempAlertCampaign         = false,
+    TempAlertOutfit           = false,
+    WelcomeVersion            = 0,
 
     -- Modules
-    UnitFrames_Enabled = true,
-    InfoPanel_Enabled = true,
-    CombatInfo_Enabled = true,
-    CombatText_Enabled = true,
-    SpellCastBuff_Enable = true,
-    ChatAnnouncements_Enable = true,
-    SlashCommands_Enable = true,
+    UnitFrames_Enabled        = true,
+    InfoPanel_Enabled         = true,
+    CombatInfo_Enabled        = true,
+    CombatText_Enabled        = true,
+    SpellCastBuff_Enable      = true,
+    ChatAnnouncements_Enable  = true,
+    SlashCommands_Enable      = true,
+
+    -- Grid settings
+    snapToGrid_default        = false,
+    snapToGridSize_default    = 15,
+    snapToGrid_unitFrames     = false,
+    snapToGridSize_unitFrames = 15,
+    snapToGrid_buffs          = false,
+    snapToGridSize_buffs      = 15,
+    -- snapToGrid_combatText     = false,
+    -- snapToGridSize_combatText = 15,
 }
 
 -- -----------------------------------------------------------------------------
@@ -101,6 +111,9 @@ LUIE.Fonts =
     ["Ginko"] = "LuiExtended/media/fonts/Ginko/ginko.slug",
     ["Heroic"] = "LuiExtended/media/fonts/Heroic/heroic.slug",
     ["Metamorphous"] = "LuiExtended/media/fonts/Metamorphous/metamorphous.slug",
+    ["Montserrat Bold"] = "LuiExtended/media/fonts/Montserrat/Montserrat-Bold.slug",
+    ["Montserrat ExtraBold"] = "LuiExtended/media/fonts/Montserrat/Montserrat-ExtraBold.slug",
+    ["Montserrat SemiBold"] = "LuiExtended/media/fonts/Montserrat/Montserrat-SemiBold.slug",
     ["Porky"] = "LuiExtended/media/fonts/Porky/porky.slug",
     ["ProFontWindows"] = "LuiExtended/media/fonts/ProFontWindows/ProFontWindows.slug",
     ["ProseAntique"] = ZoFontBookPaper:GetFontInfo(),

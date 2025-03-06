@@ -1124,7 +1124,6 @@ d("[PP]GUILD_HISTORY_KEYBOARD_SCENE:SHown")
                 end
             end)
         end
-
         -- ===============================================================================================--
 
         -- ==FarmingParty==--
@@ -1151,10 +1150,62 @@ d("[PP]GUILD_HISTORY_KEYBOARD_SCENE:SHown")
             end
             local callbackList = function (control)
                 PP.ScrollBar(control)
+                local listCtrl = control:GetNamedChild("List")
+                if listCtrl then
+                    ZO_Scroll_SetMaxFadeDistance(listCtrl, PP.savedVars.ListStyle.list_fade_distance)
+                    ZO_ScrollList_Commit(listCtrl)
+                end
             end
             LibExtendedJournal.SetAlternateMode(callbackMain, callbackList)
         end
+        -- ===============================================================================================--
 
+        -- ==JournalQuestLog==
+        if JournalQuestLog then
+            local jql = JournalQuestLog
+            local function applyElementChanges()
+                local jqlWindowQuestIndexList = GetControl(jql.control, "QuestIndex")
+                PP.ScrollBar(jql.navigationTree.scrollControl,	--[[sb_c]] 180, 180, 180, .7, --[[bd_c]] 20, 20, 20, .7, false)
+                PP.ScrollBar(jqlWindowQuestIndexList,	--[[sb_c]] 180, 180, 180, .7, --[[bd_c]] 20, 20, 20, .7, false)
+                ZO_Scroll_SetMaxFadeDistance(jqlWindowQuestIndexList, PP.savedVars.ListStyle.list_fade_distance)
+                ZO_ScrollList_Commit(jqlWindowQuestIndexList)
+
+                jql.control.PP_BG:SetHidden(false) --Somehow JQL hides the background on first open of the scene?
+            end
+            local journalQuestLogChanged = false
+            local scene = JQL_SCENE
+            PP.onStateChangeCallback(scene, function(oldState, newState)
+                if newState == SCENE_SHOWN and not journalQuestLogChanged then
+                    PP.journalSceneGroupEditScene(scene, jql.control, applyElementChanges)
+                    journalQuestLogChanged = true
+                end
+            end)
+        end
+        -- ===============================================================================================--
+
+        -- ==ESO_PROFILER==
+        local esoProfiler = ESO_PROFILER
+        if esoProfiler then
+            local scene = ESO_PROFILER_SCENE
+
+            local function applyElementChanges()
+                PP.Bar(esoProfiler.statusBar, 14, 15)
+                PP.ScrollBar(esoProfiler.contentList,	--[[sb_c]] 180, 180, 180, .7, --[[bd_c]] 20, 20, 20, .7, false)
+
+                esoProfiler.control.PP_BG:SetHidden(false) --Somehow ESO profiler hides the background on first open of the scene?
+
+                --Scripts
+                scene:RemoveFragment(LEFT_PANEL_BG_FRAGMENT)
+                PP:CreateBackground(esoProfiler.script, --[[#1]] nil, nil, nil, 0, -15, --[[#2]] nil, nil, nil, 20, 10)
+            end
+            local esoProfilerChanged = false
+            PP.onStateChangeCallback(scene, function(oldState, newState)
+                if newState == SCENE_SHOWN and not esoProfilerChanged then
+                    PP.journalSceneGroupEditScene(scene, esoProfiler.control, applyElementChanges)
+                    esoProfilerChanged = true
+                end
+            end)
+        end
         -- ===============================================================================================--
 
 

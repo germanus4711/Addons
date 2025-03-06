@@ -15,7 +15,8 @@ LUIE.TimeStampColorize = nil
 -- -----------------------------------------------------------------------------
 --- Updates the timestamp color based on the value in LUIE.ChatAnnouncements.SV.TimeStampColor.
 function LUIE.UpdateTimeStampColor()
-    LUIE.TimeStampColorize = ZO_ColorDef:New(unpack(LUIE.ChatAnnouncements.SV.TimeStampColor)):ToHex()
+    local color = LUIE.ChatAnnouncements.SV.TimeStampColor or { 0.5607843137, 0.5607843137, 0.5607843137 }
+    LUIE.TimeStampColorize = ZO_ColorDef:New(unpack(color)):ToHex()
 end
 
 -- -----------------------------------------------------------------------------
@@ -94,7 +95,7 @@ do
         local formattedMsg = msg or ""
         if doTimestamp then
             local timestring = GetTimeString()
-            local timestamp = LUIE.CreateTimestamp(timestring, nil)
+            local timestamp = LUIE.CreateTimestamp(timestring, nil, nil)
 
             -- Make timestamp clickable if lineNumber and chanCode are provided
             local timestampText
@@ -126,55 +127,6 @@ end
 
 -- -----------------------------------------------------------------------------
 do
-    local EmitMessage
-    local EmitTable
-    local d
-
-    EmitMessage = function (text)
-        if text == "" then
-            text = "[Empty String]"
-        end
-
-        if CHAT_ROUTER then
-            CHAT_ROUTER:AddSystemMessage(text)
-        end
-    end
-
-    EmitTable = function (t, indent, tableHistory)
-        indent = indent or "."
-        tableHistory = tableHistory or {}
-
-        for k, v in pairs(t)
-        do
-            local vType = type(v)
-
-            EmitMessage(indent .. "(" .. vType .. "): " .. tostring(k) .. " = " .. tostring(v))
-
-            if (vType == "table")
-            then
-                if (tableHistory[v])
-                then
-                    EmitMessage(indent .. "Avoiding cycle on table...")
-                else
-                    tableHistory[v] = true
-                    EmitTable(v, indent .. "  ", tableHistory)
-                end
-            end
-        end
-    end
-
-    d = function (...)
-        for i = 1, select("#", ...) do
-            local value = select(i, ...)
-            if (type(value) == "table")
-            then
-                EmitTable(value)
-            else
-                EmitMessage(tostring(value))
-            end
-        end
-    end
-
     --- Adds a system message to the chat.
     --- @param messageOrFormatter string: The message to be printed.
     --- @param ... string: Variable number of arguments to be passed to CHAT_ROUTER:AddSystemMessage.
@@ -187,59 +139,64 @@ do
         else
             formattedMessage = messageOrFormatter
         end
-        d(formattedMessage)
+        CHAT_ROUTER:AddSystemMessage(formattedMessage)
     end
     LUIE.AddSystemMessage = AddSystemMessage
 end
 -- -----------------------------------------------------------------------------
 do
+    local FormatMessage = LUIE.FormatMessage
+    local SystemMessage = LUIE.AddSystemMessage
     --- Easy Print to Chat.
     --- Prints a message to the chat.
     --- @param msg string: The message to be printed.
     --- @param isSystem? boolean: If true, the message is considered a system message.
     local function PrintToChat(msg, isSystem)
-        if not CHAT_SYSTEM.primaryContainer then return end
-
-        local function formatMessage(message)
-            if LUIE.ChatAnnouncements.SV.ChatBypassFormat then
-                return message
-            end
-            return LUIE.FormatMessage(message or "no message", LUIE.ChatAnnouncements.SV.TimeStamp)
-        end
-
-        local function sendToAllWindows(message)
-            LUIE.AddSystemMessage(message)
-        end
-
-        local function sendToSpecificTabs(message)
-            for _, cc in ipairs(CHAT_SYSTEM.containers) do
-                for i = 1, #cc.windows do
-                    if LUIE.ChatAnnouncements.SV.ChatTab[i] then
-                        local chatContainer = cc
-                        local chatWindow = cc.windows[i]
-
-                        -- Skip Combat Metrics Log window if CMX is enabled
-                        if not (CMX and CMX.db and CMX.db.chatLog and chatContainer:GetTabName(i) == CMX.db.chatLog.name) then
-                            chatContainer:AddEventMessageToWindow(chatWindow, message, CHAT_CATEGORY_SYSTEM)
+        if CHAT_SYSTEM.primaryContainer then
+            if LUIE.ChatAnnouncements.SV.ChatMethod == "Print to All Tabs" then
+                if not LUIE.ChatAnnouncements.SV.ChatBypassFormat and CHAT_SYSTEM.primaryContainer then
+                    -- Add timestamps if bypass is not enabled
+                    local formattedMsg = FormatMessage(msg or "no message", LUIE.ChatAnnouncements.SV.TimeStamp)
+                    SystemMessage(formattedMsg)
+                else
+                    SystemMessage(msg)
+                end
+            else
+                -- If we have system messages sent to display in all windows then just print to all windows at once, otherwise send messages to individual tabs.
+                if isSystem and LUIE.ChatAnnouncements.SV.ChatSystemAll then
+                    if not LUIE.ChatAnnouncements.SV.ChatBypassFormat then
+                        -- Add timestamps if bypass is not enabled
+                        local formattedMsg = FormatMessage(msg or "no message", LUIE.ChatAnnouncements.SV.TimeStamp)
+                        SystemMessage(formattedMsg)
+                    else
+                        SystemMessage(msg)
+                    end
+                else
+                    for k, cc in ipairs(CHAT_SYSTEM.containers) do
+                        for i = 1, #cc.windows do
+                            if LUIE.ChatAnnouncements.SV.ChatTab[i] == true then
+                                local chatContainer = cc
+                                if chatContainer then
+                                    local chatWindow = cc.windows[i]
+                                    local formattedMsg = FormatMessage(msg or "no message", LUIE.ChatAnnouncements.SV.TimeStamp)
+                                    -- Don't print into the Combat Metrics Log window if CMX is enabled.
+                                    local flagHide = false
+                                    if CMX and CMX.db and CMX.db.chatLog then
+                                        if chatContainer:GetTabName(i) == CMX.db.chatLog.name then
+                                            flagHide = true
+                                        end
+                                    end
+                                    if not flagHide then
+                                        chatContainer:AddEventMessageToWindow(chatWindow, formattedMsg, CHAT_CATEGORY_SYSTEM)
+                                    end
+                                end
+                            end
                         end
                     end
                 end
             end
         end
-
-        local formattedMsg = formatMessage(msg)
-
-        if LUIE.ChatAnnouncements.SV.ChatMethod == "Print to All Tabs" then
-            sendToAllWindows(formattedMsg)
-        else
-            if isSystem and LUIE.ChatAnnouncements.SV.ChatSystemAll then
-                sendToAllWindows(formattedMsg)
-            else
-                sendToSpecificTabs(formattedMsg)
-            end
-        end
     end
-
     LUIE.PrintToChat = PrintToChat
 end
 -- -----------------------------------------------------------------------------
@@ -249,9 +206,9 @@ end
 --- @param comma? boolean Whether to add localized digit separators
 --- @return string|number The formatted number
 function LUIE.AbbreviateNumber(number, shorten, comma)
-    -- Handle shortening for large numbers
     if number > 0 and shorten then
-        local value, suffix
+        local value
+        local suffix
         if number >= 1000000000 then
             value = number / 1000000000
             suffix = "G"
@@ -264,30 +221,29 @@ function LUIE.AbbreviateNumber(number, shorten, comma)
         else
             value = number
         end
-
-        -- Format the value
+        -- If we could not convert even to "G", return full number
         if value >= 1000 then
-            -- Number too large even for G suffix, return full number
-            return comma and ZO_CommaDelimitDecimalNumber(number) or number
-        end
-
-        -- Format with 0 or 1 decimal places based on size
-        local formattedValue
-        if value >= 100 or not suffix then
-            formattedValue = zo_strformat("<<1>>", zo_floor(value))
+            if comma then
+                value = ZO_CommaDelimitDecimalNumber(number)
+                return value
+            else
+                return number
+            end
+        elseif value >= 100 or suffix == nil then
+            value = string_format("%d", value)
         else
-            formattedValue = zo_strformat("<<f:1>>", value) -- Uses 1 decimal place
+            value = string_format("%.1f", value)
         end
-
-        -- Add suffix if we have one
-        return suffix and (formattedValue .. suffix) or formattedValue
+        if suffix ~= nil then
+            value = value .. suffix
+        end
+        return value
     end
-
-    -- Just add separators if requested
+    -- Add commas if needed
     if comma then
-        return ZO_CommaDelimitDecimalNumber(number)
+        local value = ZO_CommaDelimitDecimalNumber(number)
+        return value
     end
-
     return number
 end
 
@@ -609,30 +565,72 @@ local DECONSTRUCTIBLE_CRAFTING_TYPES =
     [CRAFTING_TYPE_JEWELRYCRAFTING] = true,
 }
 
+--- @alias SmithingMode integer
+--- | `SMITHING_MODE_ROOT` # 0
+--- | `SMITHING_MODE_REFINEMENT` # 1
+--- | `SMITHING_MODE_CREATION` # 2
+--- | `SMITHING_MODE_DECONSTRUCTION` # 3
+--- | `SMITHING_MODE_IMPROVEMENT` # 4
+--- | `SMITHING_MODE_RESEARCH` # 5
+--- | `SMITHING_MODE_RECIPES` # 6
+--- | `SMITHING_MODE_CONSOLIDATED_SET_SELECTION` # 7
+
+--- @alias EnchanthingMode integer
+--- | `ENCHANTING_MODE_NONE` # 0
+--- | `ENCHANTING_MODE_CREATION` # 1
+--- | `ENCHANTING_MODE_EXTRACTION` # 2
+--- | `ENCHANTING_MODE_RECIPES` # 3
+
 -- -----------------------------------------------------------------------------
 --- Get the current crafting mode, accounting for both keyboard and gamepad UI
---- @return number The current crafting mode
-function LUIE.GetMode()
-    if SCENE_MANAGER:IsShowingBaseScene() then
-        -- Gamepad UI
-        return SMITHING_GAMEPAD and SMITHING_GAMEPAD.mode or SMITHING.mode
+--- @return integer|SmithingMode mode The current crafting mode
+function LUIE.GetSmithingMode()
+    local mode
+    if IsInGamepadPreferredMode() == true then
+        -- In Gamepad UI, use SMITHING_GAMEPAD.mode
+        mode = SMITHING_GAMEPAD and SMITHING_GAMEPAD.mode
     else
-        -- Keyboard UI
-        return SMITHING.mode
+        -- For Keyboard UI, use SMITHING.mode
+        mode = SMITHING and SMITHING.mode
     end
+    --- @cast mode SmithingMode
+    -- At this point, mode should already be one of:
+    -- SMITHING_MODE_ROOT                       = 0
+    -- SMITHING_MODE_REFINEMENT                 = 1
+    -- SMITHING_MODE_CREATION                   = 2
+    -- SMITHING_MODE_DECONSTRUCTION             = 3
+    -- SMITHING_MODE_IMPROVEMENT                = 4
+    -- SMITHING_MODE_RESEARCH                   = 5
+    -- SMITHING_MODE_RECIPES                    = 6
+    -- SMITHING_MODE_CONSOLIDATED_SET_SELECTION = 7
+    --
+    -- Return mode (defaulting to SMITHING_MODE_ROOT if for some reason mode is nil)
+    return mode or SMITHING_MODE_ROOT
+end
+
+function LUIE.GetEnchantingMode()
+    local enchantingmode
+    if IsInGamepadPreferredMode() == true then
+        enchantingmode = GAMEPAD_ENCHANTING
+    else
+        enchantingmode = ENCHANTING
+    end
+    local mode = enchantingmode:GetEnchantingMode()
+    --- @cast mode EnchanthingMode
+    return mode or ENCHANTING_MODE_NONE
 end
 
 -- -----------------------------------------------------------------------------
 --- Checks if an item type is valid for deconstruction in the current crafting context
 --- @param itemType number The item type to check
---- @return boolean Returns true if the item can be deconstructed in current context
+--- @return boolean @Returns true if the item can be deconstructed in current context
 function LUIE.ResolveCraftingUsed(itemType)
     local craftingType = GetCraftingInteractionType()
-    local DECONSTRUCTION_MODE = 4
+    local DECONSTRUCTION_MODE = 3
 
     -- Check if current crafting type allows deconstruction and we're in deconstruction mode
     return DECONSTRUCTIBLE_CRAFTING_TYPES[craftingType]
-        and LUIE.GetMode() == DECONSTRUCTION_MODE
+        and LUIE.GetSmithingMode() == DECONSTRUCTION_MODE
         and DECONSTRUCTIBLE_ITEM_TYPES[itemType] or false
 end
 
@@ -684,6 +682,7 @@ end
 
 -- -----------------------------------------------------------------------------
 
+--- @type table<integer,string>
 local CLASS_ICONS = {}
 
 for i = 1, GetNumClasses() do
@@ -693,13 +692,16 @@ end
 
 LUIE.CLASS_ICONS = CLASS_ICONS
 
+---
+--- @param classId integer
+--- @return string
 function LUIE.GetClassIcon(classId)
     return CLASS_ICONS[classId]
 end
 
 -- -----------------------------------------------------------------------------
 
---- @param armorType any
+--- @param armorType ArmorType
 --- @return integer counter
 local function GetEquippedArmorPieces(armorType)
     local counter = 0
@@ -794,4 +796,158 @@ local TooltipHandlers =
 function LUIE.DynamicTooltip(abilityId)
     local handler = TooltipHandlers[abilityId]
     return handler and handler()
+end
+
+-- -----------------------------------------------------------------------------
+
+--- @param soundCategory ItemUISoundCategory
+--- @return string
+function LUIE.GetItemSoundCategoryName(soundCategory)
+    -- Ensure soundCategory is a valid number; if nil, default to 0.
+    soundCategory = tonumber(soundCategory) or 0
+
+    local soundCategories =
+    {
+        [0] = "ITEM_SOUND_CATEGORY_DEFAULT",
+        [1] = "ITEM_SOUND_CATEGORY_ONE_HAND_AX",
+        [2] = "ITEM_SOUND_CATEGORY_ONE_HAND_HAMMER",
+        [3] = "ITEM_SOUND_CATEGORY_ONE_HAND_SWORD",
+        [4] = "ITEM_SOUND_CATEGORY_TWO_HAND_AX",
+        [5] = "ITEM_SOUND_CATEGORY_TWO_HAND_HAMMER",
+        [6] = "ITEM_SOUND_CATEGORY_TWO_HAND_SWORD",
+        [7] = "ITEM_SOUND_CATEGORY_UNUSED",
+        [8] = "ITEM_SOUND_CATEGORY_DAGGER",
+        [9] = "ITEM_SOUND_CATEGORY_RING",
+        [10] = "ITEM_SOUND_CATEGORY_HEAVY_ARMOR",
+        [11] = "ITEM_SOUND_CATEGORY_MEDIUM_ARMOR",
+        [12] = "ITEM_SOUND_CATEGORY_LIGHT_ARMOR",
+        [13] = "ITEM_SOUND_CATEGORY_BOW",
+        [14] = "ITEM_SOUND_CATEGORY_NECKLACE",
+        [15] = "ITEM_SOUND_CATEGORY_RUNE",
+        [16] = "ITEM_SOUND_CATEGORY_SHIELD",
+        [17] = "ITEM_SOUND_CATEGORY_STAFF",
+        [18] = "ITEM_SOUND_CATEGORY_FOOD",
+        [19] = "ITEM_SOUND_CATEGORY_DRINK",
+        [20] = "ITEM_SOUND_CATEGORY_POTION",
+        [21] = "ITEM_SOUND_CATEGORY_SCROLL",
+        [22] = "ITEM_SOUND_CATEGORY_TRASH_LOOT",
+        [23] = "ITEM_SOUND_CATEGORY_PLANT_COMPONENT",
+        [24] = "ITEM_SOUND_CATEGORY_MINERAL_COMPONENT",
+        [25] = "ITEM_SOUND_CATEGORY_ANIMAL_COMPONENT",
+        [26] = "ITEM_SOUND_CATEGORY_METAL_COMPONENT",
+        [27] = "ITEM_SOUND_CATEGORY_FOOTLOCKER",
+        [28] = "ITEM_SOUND_CATEGORY_BATTLEFLAG",
+        [29] = "ITEM_SOUND_CATEGORY_CUSTOM_SOUND",
+        [30] = "ITEM_SOUND_CATEGORY_ENCHANTMENT",
+        [31] = "ITEM_SOUND_CATEGORY_NONE",
+        [32] = "ITEM_SOUND_CATEGORY_MEAT",
+        [33] = "ITEM_SOUND_CATEGORY_BREAD",
+        [34] = "ITEM_SOUND_CATEGORY_STEW",
+        [35] = "ITEM_SOUND_CATEGORY_SIEGE",
+        [36] = "ITEM_SOUND_CATEGORY_BOOK",
+        [37] = "ITEM_SOUND_CATEGORY_WOOD_COMPONENT",
+        [38] = "ITEM_SOUND_CATEGORY_INGREDIENT",
+        [39] = "ITEM_SOUND_CATEGORY_LURE",
+        [40] = "ITEM_SOUND_CATEGORY_CLOTH_COMPONENT",
+        [41] = "ITEM_SOUND_CATEGORY_SOUL_GEM",
+        [42] = "ITEM_SOUND_CATEGORY_REPAIR_KIT",
+        [43] = "ITEM_SOUND_CATEGORY_FISH",
+        [44] = "ITEM_SOUND_CATEGORY_BOOSTER",
+        [45] = "ITEM_SOUND_CATEGORY_TABARD",
+        [46] = "ITEM_SOUND_CATEGORY_CRAFTED_ABILITY",
+        [47] = "ITEM_SOUND_CATEGORY_CRAFTED_ABILITY_SCRIPT",
+        [48] = "ITEM_SOUND_CATEGORY_ENCHANTED_MEDALLION",
+    }
+    return soundCategories[soundCategory] or string_format("UNKNOWN_SOUND_CATEGORY_%d", soundCategory)
+end
+
+-- -----------------------------------------------------------------------------
+
+--- @param soundAction ItemUISoundAction
+--- @return string
+function LUIE.GetItemSoundActionName(soundAction)
+    local soundActions =
+    {
+        [0] = "ITEM_SOUND_ACTION_ACQUIRE",
+        [1] = "ITEM_SOUND_ACTION_SLOT", -- Note: EQUIP shares the same value
+        [3] = "ITEM_SOUND_ACTION_DESTROY",
+        [4] = "ITEM_SOUND_ACTION_UNEQUIP",
+        [5] = "ITEM_SOUND_ACTION_USE",
+        [6] = "ITEM_SOUND_ACTION_PICKUP",
+        [7] = "ITEM_SOUND_ACTION_CRAFTED",
+    }
+    return soundActions[soundAction] or string_format("UNKNOWN_SOUND_ACTION_%d", soundAction)
+end
+
+-- -----------------------------------------------------------------------------
+
+--- @param updateReason InventoryUpdateReason
+--- @return string
+function LUIE.GetInventoryUpdateReasonName(updateReason)
+    local updateReasons =
+    {
+        [0] = "INVENTORY_UPDATE_REASON_DEFAULT", -- Also covers MIN_VALUE and ITERATION_BEGIN
+        [1] = "INVENTORY_UPDATE_REASON_DURABILITY_CHANGE",
+        [2] = "INVENTORY_UPDATE_REASON_DYE_CHANGE",
+        [3] = "INVENTORY_UPDATE_REASON_ITEM_CHARGE",
+        [4] = "INVENTORY_UPDATE_REASON_PLAYER_LOCKED",
+        [5] = "INVENTORY_UPDATE_REASON_ARMORY_BUILD_CHANGED", -- Also covers MAX_VALUE and ITERATION_END
+    }
+    return updateReasons[updateReason] or string_format("UNKNOWN_UPDATE_REASON_%d", updateReason)
+end
+
+-- -----------------------------------------------------------------------------
+
+--- @param bag Bag
+--- @return string
+function LUIE.GetBagName(bag)
+    local bagNames =
+    {
+        [0] = "BAG_WORN", -- Also covers ITERATION_BEGIN and MIN_VALUE
+        [1] = "BAG_BACKPACK",
+        [2] = "BAG_BANK",
+        [3] = "BAG_GUILDBANK",
+        [4] = "BAG_BUYBACK",
+        [5] = "BAG_VIRTUAL",
+        [6] = "BAG_SUBSCRIBER_BANK",
+        [7] = "BAG_HOUSE_BANK_ONE",
+        [8] = "BAG_HOUSE_BANK_TWO",
+        [9] = "BAG_HOUSE_BANK_THREE",
+        [10] = "BAG_HOUSE_BANK_FOUR",
+        [11] = "BAG_HOUSE_BANK_FIVE",
+        [12] = "BAG_HOUSE_BANK_SIX",
+        [13] = "BAG_HOUSE_BANK_SEVEN",
+        [14] = "BAG_HOUSE_BANK_EIGHT",
+        [15] = "BAG_HOUSE_BANK_NINE",
+        [16] = "BAG_HOUSE_BANK_TEN",
+        [17] = "BAG_COMPANION_WORN", -- Also covers ITERATION_END
+        [18] = "BAG_MAX_VALUE",
+    }
+    return bagNames[bag] or string_format("UNKNOWN_BAG_%d", bag)
+end
+
+-- -----------------------------------------------------------------------------
+
+--- @param lootType LootItemType
+--- @return string
+function LUIE.GetLootTypeName(lootType)
+    local lootTypes =
+    {
+        [0] = "LOOT_TYPE_ANY",
+        [1] = "LOOT_TYPE_ITEM",
+        [2] = "LOOT_TYPE_QUEST_ITEM",
+        [3] = "LOOT_TYPE_MONEY",
+        [4] = "LOOT_TYPE_COLLECTIBLE",
+        [5] = "LOOT_TYPE_TELVAR_STONES",
+        [6] = "LOOT_TYPE_WRIT_VOUCHERS",
+        [7] = "LOOT_TYPE_CHAOTIC_CREATIA",
+        [8] = "LOOT_TYPE_STYLE_STONES",
+        [10] = "LOOT_TYPE_EVENT_TICKET",
+        [11] = "LOOT_TYPE_UNDAUNTED_KEYS",
+        [12] = "LOOT_TYPE_ANTIQUITY_LEAD",
+        [13] = "LOOT_TYPE_TRIBUTE_CARD_UPGRADE",
+        [14] = "LOOT_TYPE_ARCHIVAL_FORTUNES",
+        [15] = "LOOT_TYPE_IMPERIAL_FRAGMENTS",
+    }
+    return lootTypes[lootType] or string_format("UNKNOWN_LOOT_TYPE_%d", lootType)
 end

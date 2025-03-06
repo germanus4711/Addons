@@ -1,8 +1,8 @@
-## Title: |cFFFF00Event Tracker |c00CCFFPan-Tamriel|r v2.280
+## Title: |cFFFF00Event Tracker |c00CCFFMayhem (2)|r v2.291
 ## Description: Helps track Event Tickets so you don't miss any.
 ## Author: |cAA00FFKelinmiriel|r
-## Version: 2.280
-## AddOnVersion: 2280
+## Version: 2.291
+## AddOnVersion: 2291
 ## APIVersion: 101044 101045
 ## SavedVariables: EventTrackerVars EventTrackerShared
 ;## DependsOn: LibEventTracker>=1
@@ -38,6 +38,8 @@ EVTUserInterface.lua
 EventTracker.xml
 
 ; Recent changes:
+; Version 2.291 (2025/02/20) Fixed IC ticket algorithm
+; Version 2.290 (2025/02/19) Whitestrake's Mayhem
 ; Version 2.280 (2025/01/23) Pan-Tamriel; U45 API; Jester & Anniversary on PTS
 ; Version 2.271 (2024/12/19) Minor collectible display issue for 5-part house
 ; Version 2.270 (2024/12/18) New Life

@@ -8,7 +8,7 @@ local L = GetString
 
 local CVT = AutoCategory.CVT
 local aclogger = AutoCategory.logger
---local RuleApi = AutoCategory.RuleApi
+local RuleApi = AutoCategory.RuleApi
 --local ARW = AutoCategory.ARW
 --local RulesW = AutoCategory.RulesW
 
@@ -19,7 +19,7 @@ local aclogger = AutoCategory.logger
 
 -- variables
 
-AC_UI = {}
+--AC_UI = {}	-- moved to AutoCategory_Global.lua
 
 local AC_EMPTY_TAG_NAME = L(SI_AC_DEFAULT_NAME_EMPTY_TAG)
 
@@ -104,6 +104,7 @@ dropdownFontAlignment.choices = {
 }
 dropdownFontAlignment.choicesValues = {0, 1, 2}
 
+
 -- This is not a "class"! It is more of a singleton instance.
 AC_UI.BagSet_SelectBag_LAM = AC.BaseDD:New("AC_DROPDOWN_EDITBAG_BAG", AC_BAG_TYPE_BACKPACK, CVT.USE_VALUES + CVT.USE_TOOLTIPS)
 local BagSet_SelectBag_LAM = AC_UI.BagSet_SelectBag_LAM
@@ -125,6 +126,11 @@ local BagSet_EditCat_LAM = AC_UI.BagSet_EditCat_LAM
 
 AC_UI.BagSet_RemoveCat_LAM = AC.BaseUI:New()	-- button
 local BagSet_RemoveCat_LAM = AC_UI.BagSet_RemoveCat_LAM
+
+-- AC_UI.BagSet_OrderCat_LAM is defined in OrderListUI.lua
+--local BagSet_OrderCat_LAM = AC_UI.BagSet_OrderCat_LAM
+-- AC_UI.BagSet_DisplayCat_LAM is defined in DisplayListUI.lua
+--local BagSet_DisplayCat_LAM = AC_UI.BagSet_DisplayCat_LAM
 
 AC_UI.AddCat_SelectTag_LAM = AC.BaseDD:New("AC_DROPDOWN_ADDCATEGORY_TAG")	-- only uses choices
 local AddCat_SelectTag_LAM = AC_UI.AddCat_SelectTag_LAM
@@ -227,13 +233,13 @@ function AC_UI.BagSet_SelectBag_LAM:setValue(value)
 	end
 
 	local bs = getBagSettings(value)
-	--if not bs then return end
+	if not bs then return end
 
 	-- value will always be a valid cvt value, so we don't need to check CVT lists first
 	self.cvt.indexValue = value
 	-- we don't need to add/remove for the CVT as those lists are static
 
-	BagSet_HideOther_LAM:setValue(bs.isUngroupedHidden)
+	BagSet_HideOther_LAM:setValue(SF.nilDefault(bs.isUngroupedHidden, false))
 
 	-- manage related control values
 	AC_UI.RefreshDropdownData()
@@ -389,14 +395,10 @@ end
 -- set the selection of the BagSet_SelectRule_LAM field
 function AC_UI.BagSet_SelectRule_LAM:setValue(val)
 	if not val then return end
-	--if self:getValue() == val then return end
+	
 	self:select(val)
 	currentBagRule = val
 	local bagrule = AutoCategory.cache.entriesByName[getCurrentBagId()][val]
-	--aclogger:Debug("bagule = "..type(bagrule))
-	--aclogger:Debug("retrieving bagrule for name "..tostring(val))
-	--aclogger:Debug("bagule.name = "..tostring(bagrule.name))
-	--aclogger:Debug("bagule.priority = "..tostring(bagrule.priority))
 	if bagrule and bagrule.priority then
 		BagSet_Priority_LAM:setValue(bagrule.priority)
 	end
@@ -426,7 +428,7 @@ end
 -- customization of BaseUI for BagSet_Priority_LAM
 -- ------------------------------------------------
 AC_UI.BagSet_Priority_LAM.maxVal = 1000
-AC_UI.BagSet_Priority_LAM.minVal = 0
+AC_UI.BagSet_Priority_LAM.minVal = 2
 
 function AC_UI.BagSet_Priority_LAM:getValue()
 	local bag = getCurrentBagId()
@@ -554,6 +556,9 @@ function AC_UI.BagSet_RemoveCat_LAM:controlDef()
 		}
 
 end
+
+-- ----------------------------------------------------------
+
 -- ----------------------------------------------------------
 
 -- customization of BaseDD for AddCat_SelectTag_LAM
@@ -601,6 +606,7 @@ end
 -- customization of BaseDD for AddCat_SelectRule_LAM
 -- ----------------------------------------------------------
 
+-- returns a CVT of all of the known rules of a tag (group) that are not already in the bag
 -- will return empty CVT if no rules match the filter
 function AC_UI.AddCat_SelectRule_LAM.filterRules(bagId, tag)
 	local cache = AutoCategory.cache
@@ -611,7 +617,6 @@ function AC_UI.AddCat_SelectRule_LAM.filterRules(bagId, tag)
 
 	-- filter out already-in-use rules from the "add category" list for bag rules
 	local dataCurrentRules_AddCategory = CVT:New(AddCat_SelectRule_LAM:getControlName(), nil, CVT.USE_TOOLTIPS) -- uses choicesTooltips
-	dataCurrentRules_AddCategory.dirty = 1
 	if not AutoCategory.RulesW.tagGroups[tag] then
 		-- no rules available for tag
 		return dataCurrentRules_AddCategory
@@ -988,8 +993,10 @@ function AC_UI.CatSet_NewCat_LAM:execute()
 	AddCat_SelectRule_LAM:updateControl()
 	AddCat_SelectTag_LAM:updateControl()
 
-	--AC_UI.RefreshDropdownData()
-    AutoCategory.RulesW.CompileAll(AutoCategory.RulesW)
+	AC_UI.RefreshDropdownData()
+	if newRule and RuleApi.isCompiled(newRule) == nil then
+    	AutoCategory.RulesW.CompileAll(AutoCategory.RulesW)
+	end
 end
 
 function AC_UI.CatSet_NewCat_LAM:controlDef()
@@ -1083,15 +1090,26 @@ function AC_UI.CatSet_NameEdit_LAM:setValue(value)
 		return
 	end
 
-	AutoCategory.renameRule(currentRule.name, value)
+	currentRule.name = AutoCategory.renameRule(currentRule.name, value)
 
 	--Update drop downs
 	AutoCategory.cacheInitialize()
 	AC_UI.RefreshDropdownData()
 
-	CatSet_SelectRule_LAM:refresh()
-	CatSet_SelectRule_LAM:setValue(currentRule.name)
-	CatSet_SelectRule_LAM:updateControl()
+	if currentRule == nil then
+		currentRule = AutoCategory.GetRuleByName(value)
+	end
+	AC_UI.AddCat_SelectRule_LAM:assign(AC_UI.AddCat_SelectRule_LAM.filterRules(getCurrentBagId(),currentRule.tag))
+	AC_UI.AddCat_SelectRule_LAM:updateControl()
+	-- apparently one the AddCat_SelectRule_LAM calls is reseting the currentRule!
+	currentRule = AutoCategory.GetRuleByName(value)
+
+	--aclogger:Debug("new name1 - "..tostring(value))
+	--aclogger:Debug("new name2 - "..tostring(currentRule))
+	--aclogger:Debug("new name3 - "..tostring(currentRule.name))
+	AC_UI.CatSet_SelectRule_LAM:refresh()
+	AC_UI.CatSet_SelectRule_LAM:setValue(currentRule.name)
+	AC_UI.CatSet_SelectRule_LAM:updateControl()
 
 	BagSet_SelectRule_LAM:refresh()
 	BagSet_SelectRule_LAM:setValue(currentRule.name)
@@ -1584,6 +1602,9 @@ function AutoCategory.AddonMenuInit()
 				BagSet_EditCat_LAM:controlDef(),
                 -- Remove Category from Bag Button
 				BagSet_RemoveCat_LAM:controlDef(),
+
+				--AC_UI.BagSet_OrderCat_LAM:controlDef(),
+
                 -- Add Category to Bag Section
 				header(SI_AC_MENU_HEADER_ADD_CATEGORY),
                 -- Select Tag Dropdown - AC_DROPDOWN_ADDCATEGORY_TAG
@@ -1594,6 +1615,9 @@ function AutoCategory.AddonMenuInit()
 				AddCat_EditRule_LAM:controlDef(),
                 -- Add to Bag Button
 				AddCat_BagAdd_LAM:controlDef(),
+
+				--divider(),
+				--AC_UI.BagSet_DisplayCat_LAM:controlDef(),
 
 				divider(),
                 -- Import/Export Bag Settings
@@ -1650,10 +1674,13 @@ function AutoCategory.AddonMenuInit()
 					func = function() RequestOpenUnsafeURL("https://github.com/Shadowfen/AutoCategory/wiki/Creating-Custom-Categories") end,
 					width = "half",
 				},
+
                 -- Delete Category/Rule Button
 				AC_UI.CatSet_DeleteCat_LAM:controlDef(),
+
                 -- Edit Category Title
 				header(SI_AC_MENU_HEADER_EDIT_CATEGORY),
+
                 -- Predefined Text Description
                 {
                     type = "description",
@@ -1661,10 +1688,13 @@ function AutoCategory.AddonMenuInit()
                     --title = SI_AC_MENU_EC_BUTTON_PREDEFINED, -- or string id or function returning a string (optional)
                     width = "full", --or "half" (optional)
                 },
+
                 -- Name EditBox - AC_EDITBOX_EDITRULE_NAME
 				CatSet_NameEdit_LAM:controlDef(),
+
                 -- Tag EditBox - AC_EDITBOX_EDITRULE_TAG
 				CatSet_TagEdit_LAM:controlDef(),
+
                 --Description EditBox
 				{
 					type = "editbox",
@@ -1677,6 +1707,7 @@ function AutoCategory.AddonMenuInit()
                         return ""
 					end,
 					setFunc = function(value)
+						if not currentRule then return end
                         local oldval = currentRule.description
                         currentRule.description = value
                         if oldval ~= value then
@@ -1691,6 +1722,7 @@ function AutoCategory.AddonMenuInit()
 					width = "full",
 					reference = "AC_EDITBOX_EDITRULE_DESC",
 				},
+
                 -- Rule EditBox
 				{
 					type = "editbox",
@@ -1721,6 +1753,7 @@ function AutoCategory.AddonMenuInit()
 					width = "full",
 					reference = "AC_EDITBOX_EDITRULE_RULE",
 				},
+
                 -- RuleCheck Text - AutoCategoryCheckText
                 {
                     type = "description",
@@ -1728,6 +1761,7 @@ function AutoCategory.AddonMenuInit()
                     title = ruleCheckStatus.getTitle, -- or string id or function returning a string (optional)
                     width = "half", --or "half" (optional)
                 },
+
                 -- RuleCheck Button
 				{
 					type = "button",
@@ -1742,12 +1776,16 @@ function AutoCategory.AddonMenuInit()
 		    },
 
 		},
+
         -- General Settings
-        {
+		AC_UI.GeneralMenu,
+        --[[
+		{
             type = "submenu",
             name = SI_AC_MENU_SUBMENU_GENERAL_SETTING,
             reference = "AC_MENU_SUBMENU_GENERAL_SETTING",
             controls = {
+
                 -- Show message when toggle
                 {
                     type = "checkbox",
@@ -1756,6 +1794,7 @@ function AutoCategory.AddonMenuInit()
                     getFunc = function() return AutoCategory.saved.general["SHOW_MESSAGE_WHEN_TOGGLE"] end,
                     setFunc = function(value) AutoCategory.saved.general["SHOW_MESSAGE_WHEN_TOGGLE"] = value end,
                 },
+
                 -- Show category item count
                 {
                     type = "checkbox",
@@ -1769,6 +1808,7 @@ function AutoCategory.AddonMenuInit()
 						AutoCategory.saved.general["SHOW_CATEGORY_ITEM_COUNT"] = value
 						end,
                 },
+
                 -- Show category collapse icon
                 {
                     type = "checkbox",
@@ -1782,6 +1822,7 @@ function AutoCategory.AddonMenuInit()
                     	AutoCategory.RefreshCurrentList(true)
                     end,
                 },
+
                 -- Save category collapse status
                 {
                     type = "checkbox",
@@ -1791,6 +1832,7 @@ function AutoCategory.AddonMenuInit()
                     setFunc = function(value) AutoCategory.saved.general["SAVE_CATEGORY_COLLAPSE_STATUS"] = value end,
                     disabled = function() return AutoCategory.saved.general["SHOW_CATEGORY_COLLAPSE_ICON"] == false end,
                 },
+
                 -- Show category "SET ()"
                 {
                     type = "checkbox",
@@ -1803,15 +1845,22 @@ function AutoCategory.AddonMenuInit()
 					end,
                 },
             }
-        },
+        }, 
+		--]]
+
         -- Appearance Settings
+		AC_UI.AppearanceMenu,
+		
+		--[[
 		{
             type = "submenu",
             name = SI_AC_MENU_SUBMENU_APPEARANCE_SETTING,
             reference = "AC_SUBMENU_APPEARANCE_SETTING",
             controls = {
 				description(SF.ColorText(L(SI_AC_MENU_AS_DESCRIPTION_REFRESH_TIP), SF.hex.mocassin)),
-                divider(),
+                
+				divider(),
+
                 -- Category Text Font
                 {
                     type = 'dropdown',
@@ -1826,6 +1875,7 @@ function AutoCategory.AddonMenuInit()
                     end,
                     scrollable = 7,
                 },
+
                 -- Category Text Style
                 {
                     type = 'dropdown',
@@ -1839,6 +1889,7 @@ function AutoCategory.AddonMenuInit()
                     end,
                     scrollable = 7,
                 },
+
                 -- Category Text Alignment
                 {
                     type = 'dropdown',
@@ -1853,6 +1904,7 @@ function AutoCategory.AddonMenuInit()
                     end,
                     scrollable = 7,
                 },
+
                 -- Category Text Font Size
                 {
                     type = 'slider',
@@ -1866,6 +1918,7 @@ function AutoCategory.AddonMenuInit()
                         AutoCategory.saved.appearance["CATEGORY_FONT_SIZE"] = v
                     end,
                 },
+
                 -- Category Text Color
                 {
                     type = 'colorpicker',
@@ -1882,6 +1935,7 @@ function AutoCategory.AddonMenuInit()
                     widgetRightAlign		= true,
                     widgetPositionAndResize	= -15,
                 },
+
                 -- Hidden Category Text Color
                 {
                     type = 'colorpicker',
@@ -1898,6 +1952,7 @@ function AutoCategory.AddonMenuInit()
                     widgetRightAlign		= true,
                     widgetPositionAndResize	= -15,
                 },
+
                 -- Category Ungrouped Title EditBox
                 {
                     type = "editbox",
@@ -1909,6 +1964,7 @@ function AutoCategory.AddonMenuInit()
                     setFunc = function(value) AutoCategory.saved.appearance["CATEGORY_OTHER_TEXT"] = value end,
                     width = "full",
                 },
+
                 -- Category Header Height
                 {
                     type = 'slider',
@@ -1926,6 +1982,9 @@ function AutoCategory.AddonMenuInit()
                 },
             },
         },
+		--]]
+		
+
 		-- Gamepad settings
 		{
             type = "submenu",
@@ -1934,6 +1993,7 @@ function AutoCategory.AddonMenuInit()
             controls = {
 				description(SF.ColorText(L(SI_AC_MENU_GMS_DESCRIPTION_TIP), SF.hex.mocassin)),
                 divider(),
+
                 {
                     type = "checkbox",
                     name = SI_AC_MENU_GMS_CHECKBOX_ENABLE_GAMEPAD,
@@ -1942,6 +2002,7 @@ function AutoCategory.AddonMenuInit()
                     getFunc = function() return AutoCategory.saved.general["ENABLE_GAMEPAD"] end,
                     setFunc = function(value) AutoCategory.saved.general["ENABLE_GAMEPAD"] = value end,
                 },
+
 				{
                     type = "checkbox",
                     name = SI_AC_MENU_GMS_CHECKBOX_EXTENDED_GAMEPAD_SUPPLIES,

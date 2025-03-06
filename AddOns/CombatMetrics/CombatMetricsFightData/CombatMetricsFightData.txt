@@ -1,12 +1,12 @@
 ﻿## Title: CombatMetricsFightData
-## APIVersion: 101037
+## APIVersion: 101044 101045
 ## Author: Solinur
-## Version: 13
-## AddOnVersion: 13
+## Version: 18
+## AddOnVersion: 18
 ## IsLibrary: true
-## DependsOn: LibCombat>=65
+## DependsOn: LibCombat>=75 LibDataEncode
 ## SavedVariables: CombatMetricsFightDataSV
-
+## OptionalDependsOn: LibDebugLogger
 ## This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates.
 ## The Elder Scrolls® and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States and/or other countries.
 ## All rights reserved

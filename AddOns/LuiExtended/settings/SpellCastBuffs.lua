@@ -215,11 +215,52 @@ function SpellCastBuffs.CreateSettings()
         end,
         setFunc = function (value)
             g_BuffsMovingEnabled = value
+            -- Ensure lockPositionToUnitFrames is properly initialized when unlocking frames
+            if value and SpellCastBuffs.SV.lockPositionToUnitFrames == nil then
+                SpellCastBuffs.SV.lockPositionToUnitFrames = false
+            end
             SpellCastBuffs.SetMovingState(value)
         end,
         width = "half",
         default = false,
         resetFunc = SpellCastBuffs.ResetTlwPosition,
+    }
+
+    -- Grid Snap Settings for Buffs
+    optionsDataBuffsDebuffs[#optionsDataBuffsDebuffs + 1] =
+    {
+        type = "checkbox",
+        name = "Enable Grid Snap (Buffs)",
+        tooltip = "Enable snapping buff frames to a grid when moving them",
+        getFunc = function ()
+            return LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs
+        end,
+        setFunc = function (value)
+            LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs = value
+        end,
+        width = "half",
+        default = false,
+    }
+
+    optionsDataBuffsDebuffs[#optionsDataBuffsDebuffs + 1] =
+    {
+        type = "slider",
+        name = "Grid Size (Buffs)",
+        tooltip = "Set the size of the grid for snapping buff frames",
+        min = 5,
+        max = 100,
+        step = 5,
+        getFunc = function ()
+            return LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGridSize_buffs or 15
+        end,
+        setFunc = function (value)
+            LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGridSize_buffs = value
+        end,
+        width = "half",
+        default = 15,
+        disabled = function ()
+            return not LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_buffs
+        end,
     }
 
     -- Buffs Window Reset position
@@ -246,6 +287,7 @@ function SpellCastBuffs.CreateSettings()
         width = "full",
         warning = GetString(LUIE_STRING_LAM_BUFF_HARDLOCK_WARNING),
         default = Defaults.lockPositionToUnitFrames,
+        requiresReload = true,
     }
 
     -- Buffs&Debuffs - Position and Display Options Submenu
@@ -1506,20 +1548,20 @@ function SpellCastBuffs.CreateSettings()
                 choices =
                 {
                     "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
                     "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
                     "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
-                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
-                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
                     "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
                 },
                 choicesValues =
                 {
                     GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
                     GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
                     GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
-                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
-                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
                     GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
                 },
                 sort = "name-up",
                 getFunc = function ()
@@ -3009,20 +3051,20 @@ function SpellCastBuffs.CreateSettings()
                 choices =
                 {
                     "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
                     "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
                     "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
-                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
-                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
                     "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
                 },
                 choicesValues =
                 {
                     GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
                     GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
                     GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
-                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
-                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
                     GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
                 },
                 sort = "name-up",
                 getFunc = function ()

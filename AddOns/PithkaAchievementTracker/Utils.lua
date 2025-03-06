@@ -54,7 +54,7 @@ end
 
 -- print normal group  finder dungeon ids
 function PITHKA.Utils.showVetDungeon()
-    for n = 1, 50 do
+    for n = 1, 60 do
         local id = GetActivityIdByTypeAndIndex(LFG_ACTIVITY_MASTER_DUNGEON, n)
         local name = GetActivityName(id)
         d(tostring(id)..', '..name)
@@ -63,7 +63,7 @@ end
 
 -- print vet dungeon group finder ids
 function PITHKA.Utils.showNormDungeon()
-    for n = 1, 50 do
+    for n = 1, 60 do
         local id = GetActivityIdByTypeAndIndex(LFG_ACTIVITY_DUNGEON, n)
         local name = GetActivityName(id)
         d(tostring(id)..', '..name)
@@ -114,7 +114,6 @@ PITHKA.Utils.abbvMapping = {
 ["ARX"]  = { "AC", nil, nil},
 ["DFK"]  = { "DK", nil, nil},
 ["BHH"]  = { "BH", nil, nil},
-["ERE"]  = { "ER", nil, nil},
 ["BRP"]  = {  nil, 378, "Blackrose Prison"},-- needed because BRP has two entries and returns a table
 }
 

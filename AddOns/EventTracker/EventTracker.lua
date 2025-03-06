@@ -1,8 +1,10 @@
 -- Added: --EVENTUPDATE tag to mark places in all .lua files that need to be updated or at least checked with every event update.
-local Latest_Version = 2.280
+local Latest_Version = 2.291
 
 -- ****** Line 939 ****** Remember to change the collectibles for each event as appropriate!
 
+-- 2.291 Fixed ticket algorithm
+-- 2.290 Mayhem
 -- 2.280 Pan-Tamriel; U45 API; Jester's & Anniversary on PTS
 -- 2.271 Collectibles weren't triggering right for 5-part house
 -- 2.270 New Life
@@ -197,7 +199,7 @@ EVT_UPCOMING_INFO = "Jan.: Pan-Tamriel(3); Feb.: Whitestrake's Mayhem(3). (numbe
 -- 2.240 New Life PTS 9/23-30
 -- 2.241 Pan-Tamriel PTS 9/30-10/7 (Live: January 2025)
 
--- 2.280 Pan-Tamriel 1/23/25-2/4/25
+--[[ 2.280 Pan-Tamriel 1/23/25-2/4/25
 EVT_EVENT_START = MonthCode["51"] + EVT_ONE_DAY*23
 EVT_EVENT_END   = MonthCode["52"] + EVT_ONE_DAY*4
 EVT_NEXT_EVENT  = "Pan-Tamriel"
@@ -212,6 +214,23 @@ EVT_EVENT_DETAILS = {
 EVT_EVENT_INFO_BEGIN = "Check Crown Store for FREE starter quest."
 EVT_EVENT_INFO_BOX = "Up to 8 gold boxes/day/account from differnt types of final bosses: delve, wb, trial, arena, Tho'at, group dungeon, pub dungeon, incursion (dolmen/dragon/etc)."
 EVT_UPCOMING_INFO = "Feb.: Whitestrake's Mayhem(3); Mar: Jesters(3); Apr: Anniversary(3). (number)=Tickets per day, per account."
+]]
+
+-- 2.290 Mayhem 2/20/25-3/4/25
+EVT_EVENT_START = MonthCode["52"] + EVT_ONE_DAY*20
+EVT_EVENT_END   = MonthCode["5M"] + EVT_ONE_DAY*4 -- EST before time change
+EVT_NEXT_EVENT  = "Whitestrake's Mayhem"
+EVT_EVENT_DETAILS = {
+	["Name"] = "Whitestrake's Mayhem",
+	["T_Types_1"] = "Cyro/BG",
+	["T_Types_2"] = "Imperial City",
+	["T_Tickets"] = {2,1,0,0,},
+	["T_ToDo"] = {1,1,0,},
+}
+
+EVT_EVENT_INFO_BEGIN = "Look for Predicant Maera at any Battlegrounds Camp, or at your alliance base camp in Cyrodiil (use the alliance war menu, L, to travel there)."
+EVT_EVENT_INFO_BOX = "Get boxes from DAILY Battlegrounds quests, Cyrodiil quests (including towns), and Imperial City quests."
+EVT_UPCOMING_INFO = "Mar: Jesters(3); Apr: Anniversary(3). (number)=Tickets per day, per account."
 
 
 --------------------------------------------------------------------
@@ -1037,8 +1056,10 @@ local function ShowCollectibles()
 -- 2.100 LIBRARY Remove the following lines
 	WhichQuarter = 1
 	WhichMonthInQuarter = 1
+	local LookupEvent = EVT.vars.Current_Event
 	if EVT.vars.Current_Event == "None" then
 		CHAT_ROUTER:AddSystemMessage("|cFF00CCThere is no event currently running. When the next starts:")
+		LookupEvent = EVT_NEXT_EVENT
 	end
 
 -- 2.270 Changed method (this should be removed if/when library works)
@@ -1057,22 +1078,22 @@ local function ShowCollectibles()
 	["New Life"] = {4,3},
 	}
 
-	if CycleLookup[EVT.vars.Current_Event]~=nil then
-		WhichQuarter = CycleLookup[EVT.vars.Current_Event][1]
-		WhichMonthInQuarter = CycleLookup[EVT.vars.Current_Event][2]
+	if CycleLookup[LookupEvent]~=nil then
+		WhichQuarter = CycleLookup[LookupEvent][1]
+		WhichMonthInQuarter = CycleLookup[LookupEvent][2]
 	end
 
 --		ShowCollectibleBase("","pet",0,"",0,"",0,"",0,"none",0,3,3,"new")
 --		ShowCollectibleMorph("","type",0,"",0,"",0,"",0,"none",0,"none",0,WhichMonthInQuarter,3,"new")
 	if WhichQuarter == 4 and WhichMonthInQuarter == 3 then
 		ShowCollectibleBase("Stonewisp of Truth and Law","pet",12665,"Axiomatic Runestones",13082,"Glyph of Law",13083,"Powdered Wisp Remains",13084,"none",0,3,3,"new")
-		ShowCollectibleMorph("Exalted Icon of Logic","customized action",13085,"Flawless Prism",13086,"Jhunal's Magnificent Extrication",13087,"Logical Rune Extraction",13095,"none",0,3,3,"new")
+		ShowCollectibleMorph("Logical Rune Extraction","customized action",13095,"Exalted Icon of Logic",13085,"Flawless Prism",13086,"Jhunal's Magnificent Extrication",13087,"none",0,"none",0,3,3,"new")
 		ShowCollectibleMorph("Stonewisp of Truth and Law","pet",12665,"Axiomatic Runestones",13082,"Glyph of Law",13083,"Powdered Wisp Remains",13084,"none",0,3,3,"new")
 		ShowCollectibleMorph("Anchorborn Welwa","mount",11880,"Bizarre Daedric Meat",12508,"Fine Ebonsteel Chain",12509,"Strengthened Welwa Muzzle",12510,"none",0,"none",0,3,3,"new")
 		ShowCollectibleMorph("Haven of the Five Companions","notable house",12656,"Varen Aquilarios's Key",12694,"Lyris Titanborn's Key",12695,"Abnur Tharn's Key",12696,"Sai Sahan's Key",12697,"Mannimarco's Master Key",12698,5,5,"new")
 	elseif WhichQuarter == 1 then
 		ShowCollectibleBase("Stonewisp of Truth and Law","pet",12665,"Axiomatic Runestones",13082,"Glyph of Law",13083,"Powdered Wisp Remains",13084,"none",0,3,3,"new")
-		ShowCollectibleMorph("Exalted Icon of Logic","customized action",13085,"Flawless Prism",13086,"Jhunal's Magnificent Extrication",13087,"Logical Rune Extraction",13095,"none",0,"none",0,WhichMonthInQuarter,3,"new")
+		ShowCollectibleMorph("Logical Rune Extraction","customized action",13095,"Exalted Icon of Logic",13085,"Flawless Prism",13086,"Jhunal's Magnificent Extrication",13087,"none",0,"none",0,WhichMonthInQuarter,3,"new")
 	elseif WhichQuarter == 2 then
 		ShowCollectibleBase("Stonewisp of Truth and Law","pet",12665,"Axiomatic Runestones",13082,"Glyph of Law",13083,"Powdered Wisp Remains",13084,"none",0,3,3,"new")
 		ShowCollectibleMorph("Robes of Truth and Law","costume",12671,"Golden Fabric",13464,"Sapphire Fabric",13465,"Torc of Wisdom",13466,"none",0,WhichMonthInQuarter,3,"new")
@@ -2280,8 +2301,10 @@ function EVT.onCurrencyUpdate(_, currencyType, currencyLocation, newAmount, oldA
 
 -- 1.57 Add notification if in danger of losing tickets, and wasn't before(in EVTUserInterface).
 -- 1.60 Messages changed.
+-- 2.291 Removed warning for crown purchases, because it's just plain irritating.'
 		MaxToday, MaxTomorrow = EVT.MaxAvailable()
-		if EVT.vars.Current_Event ~= "Unknown" and EVT.vars.Current_Event ~= "None" and EVT.vars.Total_Tickets + MaxToday > 12 and Prev_Max_Total <= 12 and not EVT_PLAN_AHEAD then
+-- 2.291 was		if EVT.vars.Current_Event ~= "Unknown" and EVT.vars.Current_Event ~= "None" and EVT.vars.Total_Tickets + MaxToday > 12 and Prev_Max_Total <= 12 and not EVT_PLAN_AHEAD then
+		if EVT.vars.Current_Event ~= "Unknown" and EVT.vars.Current_Event ~= "None" and EVT.vars.Total_Tickets + MaxToday > 12 and Prev_Max_Total <= 12 and not EVT_PLAN_AHEAD and reason ~= CURRENCY_CHANGE_REASON_PURCHASED_WITH_CROWNS then
 			EVT.Notification("|cFF0000** WARNING","|rSpend Event Tickets or you could lose some! |cFF0000**|r",SOUNDS.LEVEL_UP)
 			EVT.Notification("|cFF0000** WARNING",string.format("|cFFD700You have %s tickets! |cFF0000**|r",EVT.vars.Total_Tickets),SOUNDS.CHAMPION_POINTS_COMMITTED)
 -- EVENTUPDATE

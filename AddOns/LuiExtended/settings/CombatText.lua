@@ -116,12 +116,6 @@ function CombatText.CreateSettings()
         return
     end
 
-    -- Load LibMediaProvider with backwards compatibility
-    local LMP = LibMediaProvider
-    if LMP == nil then
-        return
-    end
-
     local Defaults = CombatText.Defaults
     local Settings = CombatText.SV
 
@@ -141,7 +135,7 @@ function CombatText.CreateSettings()
         donation = LUIE.donation,
         slashCommand = "/luict",
         registerForRefresh = true,
-        registerForDefaults = true,
+        registerForDefaults = false,
     }
 
     local optionsDataCombatText = {}
@@ -160,6 +154,16 @@ function CombatText.CreateSettings()
         name = GetString(LUIE_STRING_LAM_RELOADUI),
         tooltip = GetString(LUIE_STRING_LAM_RELOADUI_BUTTON),
         func = function ()
+            -- Lock all panels before reloading
+            for k, _ in pairs(Settings.panels) do
+                _G[k]:SetMouseEnabled(false)
+                _G[k]:SetMovable(false)
+                _G[k .. "_Backdrop"]:SetHidden(true)
+                _G[k .. "_Label"]:SetHidden(true)
+            end
+            -- Reset the unlocked state
+            Settings.unlocked = false
+            -- Reload the UI
             ReloadUI("ingame")
         end,
         width = "full",
@@ -186,6 +190,43 @@ function CombatText.CreateSettings()
             end
         end,
     }
+
+    -- -- Grid Snap Settings for Combat Text
+    -- optionsDataCombatText[#optionsDataCombatText + 1] =
+    -- {
+    --     type = "checkbox",
+    --     name = "Enable Grid Snap (Combat Text)",
+    --     tooltip = "Enable snapping combat text panels to a grid when moving them",
+    --     getFunc = function ()
+    --         return LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_combatText
+    --     end,
+    --     setFunc = function (value)
+    --         LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_combatText = value
+    --     end,
+    --     width = "half",
+    --     default = false,
+    -- }
+
+    -- optionsDataCombatText[#optionsDataCombatText + 1] =
+    -- {
+    --     type = "slider",
+    --     name = "Grid Size (Combat Text)",
+    --     tooltip = "Set the size of the grid for snapping combat text panels",
+    --     min = 5,
+    --     max = 100,
+    --     step = 5,
+    --     getFunc = function ()
+    --         return LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGridSize_combatText or 15
+    --     end,
+    --     setFunc = function (value)
+    --         LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGridSize_combatText = value
+    --     end,
+    --     width = "half",
+    --     default = 15,
+    --     disabled = function ()
+    --         return not LUIESV.Default[GetDisplayName()]["$AccountWide"].snapToGrid_combatText
+    --     end,
+    -- }
 
     -- Combat Text - Common Options
     optionsDataCombatText[#optionsDataCombatText + 1] =
@@ -3218,20 +3259,20 @@ function CombatText.CreateSettings()
                 choices =
                 {
                     "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_NORMAL) .. "|r",
+                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
                     "|cEEEEEE" .. GetString(LUIE_FONT_STYLE_OUTLINE) .. "|r",
                     "|cFFFFFF" .. GetString(LUIE_FONT_STYLE_THICK_OUTLINE) .. "|r",
-                    "|c888888" .. GetString(LUIE_FONT_STYLE_SHADOW) .. "|r",
-                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
                     "|c777777" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THIN) .. "|r",
+                    "|c666666" .. GetString(LUIE_FONT_STYLE_SOFT_SHADOW_THICK) .. "|r",
                 },
                 choicesValues =
                 {
                     GetString(LUIE_FONT_STYLE_VALUE_NORMAL),
+                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
                     GetString(LUIE_FONT_STYLE_VALUE_OUTLINE),
                     GetString(LUIE_FONT_STYLE_VALUE_THICK_OUTLINE),
-                    GetString(LUIE_FONT_STYLE_VALUE_SHADOW),
-                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
                     GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THIN),
+                    GetString(LUIE_FONT_STYLE_VALUE_SOFT_SHADOW_THICK),
                 },
                 sort = "name-up",
                 getFunc = function ()

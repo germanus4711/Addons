@@ -109,6 +109,82 @@ end)
 
 
 --------------------------------------------------------------------------------
+-- Workers for ProcessNumericTable
+--------------------------------------------------------------------------------
+
+local function CountFragmentsWorker( id, index, self, fragments )
+	if (index > 1 and type(id) == "number") then
+		if (self.IsCollectibleOwned(id)) then
+			fragments.collected = fragments.collected + 1
+		end
+		table.insert(fragments.ids, id)
+	end
+end
+
+local function BuildMasterListWorker( entry, _, self, i, source )
+	local status, fragments
+	if (type(entry) == "table") then
+		if (#entry > 1) then
+			fragments = {
+				collected = 0,
+				ids = { },
+			}
+			LCCC.ProcessNumericTable(entry, CountFragmentsWorker, self, fragments)
+		end
+
+		-- Initialize morph set if item is a base morph
+		if (entry[#entry] == true) then
+			self.morphSets[i] = {
+				base = entry[1],
+				owned = 0,
+				total = 0,
+			}
+		end
+
+		entry = entry[1]
+	end
+
+	local name, _, _, _, unlocked, _, _, categoryType = GetCollectibleInfo(entry)
+	if (name ~= "") then
+		if (LMAC) then unlocked = self.IsCollectibleOwned(entry) end
+
+		if (unlocked) then
+			status = 2
+		elseif (fragments) then
+			status = fragments.collected / #fragments.ids
+		else
+			status = 0
+		end
+
+		-- Process morph set stats
+		if (fragments) then
+			local set = self.morphSets[i]
+			if (set) then
+				if (unlocked) then
+					set.owned = set.owned + 1
+				end
+				set.total = set.total + 1
+			end
+		end
+
+		table.insert(self.masterList, {
+			type = SORT_TYPE,
+			id = entry,
+			name = zo_strformat(SI_TOOLTIP_ITEM_NAME, name),
+			status = status,
+			fragmentsKnown = fragments and fragments.collected,
+			fragments = fragments and fragments.ids,
+			category = GetString("SI_COLLECTIBLECATEGORYTYPE", categoryType),
+			source = source[1],
+			sourceId = i,
+			itemLink = string.format("|H1:collectible:%d|h|h", entry),
+			key = self.key,
+		})
+	end
+end
+
+
+--------------------------------------------------------------------------------
 -- CollectiblesList
 --------------------------------------------------------------------------------
 
@@ -185,62 +261,7 @@ function CollectiblesList:BuildMasterList( )
 
 	for i, source in ipairs(self.data) do
 		for j = 2, #source do
-			for _, entry in ipairs(source[j]) do
-				local status, fragmentsKnown, fragments
-				if (type(entry) == "table") then
-					fragmentsKnown, fragments = self:CountFragments(entry)
-
-					-- Initialize morph set if item is a base morph
-					if (entry[#entry] == true) then
-						self.morphSets[i] = {
-							base = entry[1],
-							owned = 0,
-							total = 0,
-						}
-					end
-
-					entry = entry[1]
-				end
-
-				self:HandleDataItem(entry, function( id )
-					local name, _, _, _, unlocked, _, _, categoryType = GetCollectibleInfo(id)
-					if (name == "") then return end
-					if (LMAC) then unlocked = self.IsCollectibleOwned(id) end
-
-					if (unlocked) then
-						status = 2
-					elseif (fragments) then
-						status = fragmentsKnown / #fragments
-					else
-						status = 0
-					end
-
-					-- Process morph set stats
-					if (fragments) then
-						local set = self.morphSets[i]
-						if (set) then
-							if (unlocked) then
-								set.owned = set.owned + 1
-							end
-							set.total = set.total + 1
-						end
-					end
-
-					table.insert(self.masterList, {
-						type = SORT_TYPE,
-						id = id,
-						name = zo_strformat(SI_TOOLTIP_ITEM_NAME, name),
-						status = status,
-						fragmentsKnown = fragmentsKnown,
-						fragments = fragments,
-						category = GetString("SI_COLLECTIBLECATEGORYTYPE", categoryType),
-						source = source[1],
-						sourceId = i,
-						itemLink = string.format("|H1:collectible:%d|h|h", id),
-						key = self.key,
-					})
-				end)
-			end
+			LCCC.ProcessNumericTable(source[j], BuildMasterListWorker, self, i, source)
 		end
 	end
 end
@@ -336,35 +357,6 @@ function CollectiblesList:RefreshAccountList( )
 		Tabs[self.key].dirtiness = 1
 		CollectiblesTracker.RefreshBrowser(self.key)
 	end)
-end
-
-function CollectiblesList:HandleDataItem( item, fn )
-	if (type(item) == "number") then
-		fn(item)
-	elseif (type(item) == "string") then
-		local start, stop = zo_strsplit("-", item)
-		if (start and stop) then
-			for i = tonumber(start), tonumber(stop) do
-				fn(i)
-			end
-		end
-	end
-end
-
-function CollectiblesList:CountFragments( fragments )
-	if (#fragments > 1) then
-		local collected = 0
-		local ids = { }
-		for i = 2, #fragments do
-			self:HandleDataItem(fragments[i], function( id )
-				if (self.IsCollectibleOwned(id)) then
-					collected = collected + 1
-				end
-				table.insert(ids, id)
-			end)
-		end
-		return collected, ids
-	end
 end
 
 function CollectiblesList:IsIncompleteFragment( data )

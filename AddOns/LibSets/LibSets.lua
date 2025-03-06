@@ -29,13 +29,8 @@
 ========================================================================================================================
  !!! TODO / BUGs list !!!
 ========================================================================================================================
- Last updated: 2024-12-03, Baertram, AP101044
+ Last updated: 2025-01-25, Baertram, AP101045
 ------------------------------------------------------------------------------------------------------------------------
---Fixed wrong ZOs data for sets like Motjers sorrow. This item shows as set on PTS:
-"|H1:item:4316:366:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:10000:0|h|h"
-bot not on live! So the total set was removed due to that.
-Had to add extra code to not remove the total set because of single items not shown as set.
-
  --Known bugs--
 
  --Todo list--
@@ -271,7 +266,7 @@ local clientLang = lib.clientLang
 ------------------------------------------------------------------------
 -- 	Local variables, global for the library
 ------------------------------------------------------------------------
-local CM = CALLBACK_MANAGER
+--local CM = CALLBACK_MANAGER
 local EM = EVENT_MANAGER
 local WM = WINDOW_MANAGER
 local ISCDM = ITEM_SET_COLLECTIONS_DATA_MANAGER
@@ -406,6 +401,7 @@ local callDebugParams = {
     scanitemids         = "DebugScanAllSetData",
 
     getall              = "DebugGetAllData",
+    getallnoitemids     = function() lib.DebugGetAllData(true, true, false) end,
     getallnames         = "DebugGetAllNames",
 
     getzones            = "DebugGetAllZoneInfo",
@@ -4870,6 +4866,7 @@ local function slash_debug_help()
     d("|--------------------------------------------------------")
     d("|-> \'getall\'               Scan all set's and itemIds, maps, zones, wayshrines, dungeons, update the language dependent variables and put them into the SavedVariables.\n|cFF0000Attention:|r |cFFFFFFThe UI will reload several times for the supported languages of the library!|r")
     d("|-> \'getallnames\'          Get all names (sets, zones, maps, wayshrines, DLCs) of the current client language")
+    d("|-> \'getallnoitemids\'      Scan all set's (no itemIds!) and maps, zones, wayshrines, dungeons, update the language dependent variables and put them into the SavedVariables.\n|cFF0000Attention:|r |cFFFFFFThe UI will reload several times for the supported languages of the library!|r")
     d("|-> \'getzones\'             Get all zone data")
     d("|-> \'getmapnamess\'         Get all map names of the current client language")
     d("|-> \'getwayshrines\'        Get all wayshrine data of the currently shown zone. If the map is not opened it will be opened")
@@ -4884,6 +4881,12 @@ local function slash_debug_help()
     d("<<< [" .. lib.name .. "] |c0000FFSlash command DEBUG help -|r END <<<")
 end
 
+local function removeStandardDebugSlashCommandOptions(options)
+    trem(options, 1) --Remove "debug"
+    trem(options, 1) --Remove <type> (original options[2], now at [1] after "debug" was removed"; e.g. "getall")
+end
+
+
 local function command_handler(args)
     local options = getOptionsFromSlashCommandString(args)
 
@@ -4894,8 +4897,7 @@ local function command_handler(args)
         slash_help()
     elseif firstParam ~= nil then
         if callSearchParams[firstParam] == true then
-            trem(options, 1)
-            trem(options, 2)
+            removeStandardDebugSlashCommandOptions(options)
             slash_search(options)
         elseif firstParam == "dlcs" then
             slashcommand_dlcs()
@@ -4907,10 +4909,13 @@ local function command_handler(args)
             if secondParam ~= nil then
                 local debugFunc = callDebugParams[secondParam]
                 if debugFunc ~= nil then
-                    trem(options, 1)
-                    trem(options, 2)
-                    if lib[debugFunc] ~= nil then
-                        lib[debugFunc](unp(options))
+                    if type(debugFunc) == "function" then
+                        debugFunc()
+                    else
+                        if lib[debugFunc] ~= nil then
+                            removeStandardDebugSlashCommandOptions(options)
+                            lib[debugFunc](unp(options))
+                        end
                     end
                 end
             else

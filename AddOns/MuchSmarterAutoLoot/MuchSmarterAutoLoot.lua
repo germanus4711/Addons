@@ -2,7 +2,7 @@ local MuchSmarterAutoLoot = ZO_Object:Subclass()
 local MuchSmarterAutoLootSettings = ZO_Object:Subclass()
 
 local startupInfoPrinted = false
-local addonVersion = "5.1.4"
+local addonVersion = "5.3.0"
 local settingPanel = {}
 local MSAL_NEVER_3RD_PARTY_WARNING = "msal_never_3rd_party_warning"
 local templateItemlink = "|H1:item:%s:123:1:0:0:0:0:0:0:0:0:0:0:0:1:0:0:1:0:0:0|h|h"
@@ -10,6 +10,8 @@ local WM = GetWindowManager()
 local SV_NAME = 'MSAL_VARS'
 local SV_VER = 1
 local db
+local dbAccount
+local dbChar
 
 -- local gearLooted = false
 local lastExceed
@@ -34,6 +36,7 @@ local currentNotLootedNameList = {}
 local TOKEN_BLIST = 0
 local TOKEN_WLIST = 1
 local tempBlist = {}
+local noCurtLeft = true
 
 local destroyButton
 
@@ -42,6 +45,7 @@ local defaults = {
     never3rdPartyWaining = false,
     initPlusCheck = false,
     enabled = true,
+    useAccountWide = true,
     debugMode = false,
     printItems = false,
     printItemThreshold = true,
@@ -53,7 +57,7 @@ local defaults = {
     loginReminder = true,
     stolenRule = "never loot",
     minimumQuality = 1,
-    minimumValue = 0,
+    -- minimumValue = 0,
     autoBind = false,
     blacklist = {},
     whitelist = {},
@@ -83,7 +87,6 @@ local defaults = {
         furnishingMaterials = "never loot",
 
         uncapped = true,
-        crystals = "always loot",
 
         thirdPartyMinValue = 10000,
         lootThirdPartyNoPrice = true,
@@ -101,7 +104,6 @@ local defaults = {
         glyphs = "never loot",
         treasures = "never loot",
         potions = "never loot",
-        -- collectibles = "never loot",
         foodAndDrink = "only exp booster",
         poisons = "never loot",
         costumes = "never loot",
@@ -240,6 +242,7 @@ local curtType = {
     CURT_ALLIANCE_POINTS,
     CURT_ENDLESS_DUNGEON,
     CURT_CROWNS,
+    CURT_MONEY,
     CURT_CROWN_GEMS,
     CURT_ENDEAVOR_SEALS,
     CURT_EVENT_TICKETS,
@@ -258,6 +261,33 @@ end
 local function OnLootClosed()
     lootingBagContainer = false
     isSuccessionLoot = false
+    noCurtLeft = true
+end
+
+local function ChatboxLog(str)
+    local prefix = "|c265a91[|c265a91M|c516978S|r|c9c7e55A|r|ccb922fL|ccb922f]|r "
+    d(prefix .. str)
+end
+
+
+local function DebugLog(str)
+    if db.debugMode then
+        d(str)
+    end
+end
+
+local function ExceedWarning(curt)
+    local firstExceed = 0
+    if lastExceed == nil or lastExceed == 0 then
+        lastExceed = GetGameTimeMilliseconds()
+        firstExceed = 1
+    end
+
+    if GetGameTimeMilliseconds() - lastExceed > 20000 or firstExceed == 1 then
+        ChatboxLog(zo_strformat(GetString(MSAL_EXCEED_WARNING), GetCurrencyName(curt, false, false)))
+        lastExceed = GetGameTimeMilliseconds()
+    end
+    return
 end
 
 local function OnUnwantedUpdated(_, bagId, slotId, isNewItem, _, _, _)
@@ -276,7 +306,7 @@ local function OnUnwantedUpdated(_, bagId, slotId, isNewItem, _, _, _)
     -- d("unwanted: "..tostring(unwanted))
     if unwanted then
         if db.considerateModePrint then
-            d(GetString(SI_ITEM_ACTION_DESTROY) .. " " .. link)
+            ChatboxLog(GetString(SI_ITEM_ACTION_DESTROY) .. " " .. link)
         end
         DestroyItem(bagId, slotId)
     end
@@ -290,7 +320,7 @@ local function OnDestroyUpdated(_, bagId, slotId, isNewItem, _, _, _)
     local link = GetItemLink(bagId, slotId)
     -- d("unwanted: "..tostring(unwanted))
     if db.considerateModePrint then
-        d(GetString(SI_ITEM_ACTION_DESTROY) .. " " .. link)
+        ChatboxLog(GetString(SI_ITEM_ACTION_DESTROY) .. " " .. link)
     end
     DestroyItem(bagId, slotId)
 end
@@ -427,10 +457,10 @@ local function ShouldLootGear(filterType, quality, value)
         return true
     end
 
-    if (filterType == "per value threshold" and value >= db.minimumValue) then
-        -- gearLooted = true
-        return true
-    end
+    -- if (filterType == "per value threshold" and value >= db.minimumValue) then
+    --     -- gearLooted = true
+    --     return true
+    -- end
 
     return false
 end
@@ -824,19 +854,7 @@ local function ShouldLootTreasureMap(filterType, link)
     return false
 end
 
-local function ExceedWarning(curt)
-    local firstExceed = 0
-    if lastExceed == nil or lastExceed == 0 then
-        lastExceed = GetGameTimeMilliseconds()
-        firstExceed = 1
-    end
 
-    if GetGameTimeMilliseconds() - lastExceed > 20000 or firstExceed == 1 then
-        d(zo_strformat(GetString(MSAL_EXCEED_WARNING), GetCurrencyName(curt, false, false)))
-        lastExceed = GetGameTimeMilliseconds()
-    end
-    return
-end
 
 -- function MuchSmarterAutoLoot:OnLootUpdatedAF()
 --     local randomItemSentence = {
@@ -910,7 +928,7 @@ local function itemOnList(itemid, name, token)
     elseif token == TOKEN_WLIST then
         list = db.whitelist
     else
-        d("MSAL Error: Invalid list token")
+        ChatboxLog("Error: Invalid list token")
     end
 
     if #list == 0 then
@@ -959,22 +977,21 @@ function MuchSmarterAutoLoot_Destroy(self)
     for _, curt in ipairs(curtType) do
         LootCurrency(curt)         
     end
-    local hasBListSetGear = false
+    local bListSetGearList = {}
     for i = 1, num, 1 do
         local lootId, name, icon, quantity, quality, value, isQuest, isStolen, lootType = GetLootItemInfo(i)
         local link = GetLootItemLink(lootId)
         local isSetItem = IsItemLinkSetCollectionPiece(link)
         if itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) and isSetItem then
-            hasBListSetGear = true
+            table.insert(bListSetGearList, link)
         else
             LootItemById(lootId)
         end
     end
-    if hasBListSetGear then
+    if #bListSetGearList > 0 then
         EndLooting()
         SCENE_MANAGER:HideCurrentScene()
-        d(string.format(GetString(MSAL_LIST_LOOTING_CONFLICT), 
-        GetString(SI_ITEM_ACTION_DESTROY)))
+        ChatboxLog(zo_strformat(GetString(MSAL_LIST_LOOTING_CONFLICT), bListSetGearList[1], GetString(SI_ITEM_ACTION_DESTROY)))
     end
 end
 
@@ -984,9 +1001,8 @@ local function OnLootUpdated()
         return
     end
 
-    if (db.debugMode) then
-        d("[MSAL Debug Log]")
-    end
+    DebugLog("[MSAL Debug Log]")
+
     local num = GetNumLootItems()
     if num == 0 then
         isResourceNode = false
@@ -994,7 +1010,7 @@ local function OnLootUpdated()
         isResourceNode = true
     end
 
-    local isShiftKeyDown = IsShiftKeyDown()
+    -- local isShiftKeyDown = IsShiftKeyDown()
 
     -- wipe at loot beginning other than ending, to avoid server-end latency
     currentNotLootedNameList = {}
@@ -1010,39 +1026,38 @@ local function OnLootUpdated()
         isLockedChest = false
     end
 
-    local noCurtLeft = true
-    local noBListSetGear = true
-
     local currencyInfo = LOOT_SHARED:GetLootCurrencyInformation()
-    for curt, info in ipairs(currencyInfo) do
+    for curt, info in pairs(currencyInfo) do
         if curt == CURT_MONEY then
-            if (info.currencyAmount > 0 or info.stolenCurrencyAmount > 0) then
-                if (db.filters.uncapped == true) then
-                    isResourceNode = false
+            if info.currencyAmount > 0 then
+                isResourceNode = false
+                if db.filters.uncapped == true then
                     if db.printItems then
-                        d(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. GetCurrencyName(curt, false, true) .. ": " ..
+                        ChatboxLog(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. GetCurrencyName(curt, false, true) .. ": " ..
                         info.currencyAmount)
                     end
                     LootMoney()
                 else
                     noCurtLeft = false
                 end
+            elseif info.stolenCurrencyAmount > 0 then
+                isResourceNode = false
+                if db.filters.uncapped == true and db.stolenRule == "follow" then
+                    LootMoney()
+                else
+                    noCurtLeft = false 
+                end
             end
-        end
-    end
-
-    for _, curt in ipairs(curtType) do
-        local lootCurt = GetLootCurrency(curt)
-
-        if curt == CURT_CHAOTIC_CREATIA then
-            local currencyAmount = GetCurrencyAmount(CURT_CHAOTIC_CREATIA, CURRENCY_LOCATION_ACCOUNT)
-            local maxCurrency = GetMaxPossibleCurrency(CURT_CHAOTIC_CREATIA, CURRENCY_LOCATION_ACCOUNT)
-            if (lootCurt > 0) then
-                if (db.filters.crystals == "always loot") then
-                    if (currencyAmount + lootCurt <= maxCurrency) then
+        elseif curt == CURT_CHAOTIC_CREATIA then
+            local curtAmount = GetCurrencyAmount(CURT_CHAOTIC_CREATIA, CURRENCY_LOCATION_ACCOUNT)
+            local maxCurt = GetMaxPossibleCurrency(CURT_CHAOTIC_CREATIA, CURRENCY_LOCATION_ACCOUNT)
+            if info.currencyAmount > 0 then
+                isResourceNode = false
+                if db.filters.uncapped == true then
+                    if (curtAmount + info.currencyAmount <= maxCurt) then
                         if ( db.printItems) then
-                            d(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. GetCurrencyName(curt, false, true) ..
-                                ": " .. lootCurt)
+                            ChatboxLog(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. GetCurrencyName(curt, false, true) ..
+                                ": " .. info.currencyAmount)
                         end
                         LootCurrency(curt)
                     else
@@ -1054,12 +1069,12 @@ local function OnLootUpdated()
                 end
             end
         else
-            if (lootCurt > 0) then
-                if (db.filters.uncapped == true) then
-                    isResourceNode = false
+            if info.currencyAmount > 0 then
+                isResourceNode = false
+                if db.filters.uncapped == true then
                     if db.printItems then
-                        d(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. GetCurrencyName(curt, false, true) .. ": " ..
-                        lootCurt)
+                        ChatboxLog(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. GetCurrencyName(curt, false, true) .. ": " ..
+                        info.currencyAmount)
                     end
                     LootCurrency(curt)
                 else
@@ -1092,36 +1107,33 @@ local function OnLootUpdated()
         isResourceNode = isResourceNode and isNodeMat and targetType ~= INTERACT_TARGET_TYPE_ITEM
 
         local looted = false
-        if (db.debugMode) then
             
-            -- d("targetType: "..targetType)
-            -- d("lootId: "..lootId)
-            -- d("link: " .. link)
-            d("name: "..name)
-            d("itemType: " .. itemType)
-            -- d("lootType: " .. lootType)
-            -- d("filterType"..filterType)
-            -- d("itemId: " .. GetItemLinkItemId(link))
-            -- d(GetItemLinkActorCategory(link))
-            -- d(GetItemLinkActorCategory(link) == GAMEPLAY_ACTOR_CATEGORY_COMPANION)
-            -- d("have function: ")
-            -- d(tostring(IsItemSetCollectionPieceUnlocked))
-            -- Seems this function returns to opposite result of locked/unlocked
-            -- true when owned, false when new
-            -- d("is set item: "..tostring(isSetItem))
-            -- d("is collected: "..tostring(alreadyCollectedItem))
-            -- d("isGear : "..tostring(isGear))
-            -- d("isUnresearched : "..tostring(isUnresearched))
-            -- d("isJewelry : " .. tostring(isJewelry))
-            -- d("alreadyCollectedRecipe : "..tostring(IsItemLinkRecipeKnown(link)))
-        end
+        -- ChatboxDebugLog("targetType: " .. targetType)
+        -- ChatboxDebugLog("lootId: " .. lootId)
+        DebugLog("link: " .. link)
+        DebugLog("name: " .. name)
+        -- ChatboxDebugLog("itemType: " .. itemType)
+        -- ChatboxDebugLog("lootType: " .. lootType)
+        -- ChatboxDebugLog("filterType" .. filterType)
+        -- ChatboxDebugLog("itemId: " .. GetItemLinkItemId(link))
+        -- ChatboxDebugLog(GetItemLinkActorCategory(link))
+        -- ChatboxDebugLog(GetItemLinkActorCategory(link) == GAMEPLAY_ACTOR_CATEGORY_COMPANION)
+        -- ChatboxDebugLog("have function: ")
+        -- ChatboxDebugLog(tostring(IsItemSetCollectionPieceUnlocked))
+        -- -- Seems this function returns to opposite result of locked/unlocked
+        -- -- true when owned, false when new
+        -- ChatboxDebugLog("is set item: " .. tostring(isSetItem))
+        -- ChatboxDebugLog("is collected: " .. tostring(alreadyCollectedItem))
+        -- ChatboxDebugLog("isGear : " .. tostring(isGear))
+        -- ChatboxDebugLog("isUnresearched : " .. tostring(isUnresearched))
+        -- ChatboxDebugLog("isJewelry : " .. tostring(isJewelry))
+        -- ChatboxDebugLog("alreadyCollectedRecipe : " .. tostring(IsItemLinkRecipeKnown(link)))
+
 
         -- If this one is stolen AND looting stolen is not allowed, don't continue and do nothing. 
-        if not isShiftKeyDown and (isStolen and (db.stolenRule == "never loot")) then
+        if isStolen and (db.stolenRule == "never loot") then
         -- do nothing
         elseif itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) or itemOnList(GetItemLinkItemId(link), name, TOKEN_WLIST) then
-            if itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) and isSetItem then
-                noBListSetGear = false
                 -- ZO_PreHook("ZO_Loot_ButtonKeybindPressed", function()
                 --     flag = not flag -- Since ZO_ActionBar_CanUseActionSlots is called twice for each ability cast
                 --     if flag then
@@ -1145,7 +1157,6 @@ local function OnLootUpdated()
                 --         -- GetSlotBoundId(tonumber(debug.traceback():match('ACTION_BUTTON_6')))
                 --     end
                 -- end)
-            end
             if itemOnList(GetItemLinkItemId(link), name, TOKEN_WLIST) then
                 LootItemById(lootId)
                 looted = true
@@ -1370,7 +1381,7 @@ local function OnLootUpdated()
                     LootItemById(lootId)
                     looted = true
                     if (GetNumAntiquitiesRecovered(antiquityId) == 0) then
-                        d(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. name .. " (" ..
+                        ChatboxLog(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. name .. " (" ..
                               GetString(SI_GAMEPAD_GUILD_LIST_NEW_HEADER) .. ")")
                     end
                 end
@@ -1461,21 +1472,21 @@ local function OnLootUpdated()
         if (db.printItems and looted) then 
             if (not db.printItemThreshold or (db.printItemThreshold and quality >= 4)) then   
                 if (isUnresearched) then
-                    d(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. link .. " (" .. GetString(SI_ITEMTRAITINFORMATION3) .. ")")
+                    ChatboxLog(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. link .. " (" .. GetString(SI_ITEMTRAITINFORMATION3) .. ")")
                 elseif (isOrnate) then
-                    d(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. link .. " (" .. GetString(SI_ITEMTRAITTYPE10) .. ")")
+                    ChatboxLog(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. link .. " (" .. GetString(SI_ITEMTRAITTYPE10) .. ")")
                 elseif (isIntricate) then
-                    d(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. link .. " (" .. GetString(SI_ITEMTRAITTYPE9) .. ")")
+                    ChatboxLog(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. link .. " (" .. GetString(SI_ITEMTRAITTYPE9) .. ")")
                 elseif (isSetItem and isUncollected) then
-                    d(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. link .. " (" ..
+                    ChatboxLog(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. link .. " (" ..
                         GetString(SI_ITEM_FORMAT_STR_SET_COLLECTION_PIECE_LOCKED) .. ")")
                 else
-                    d(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. link)
+                    ChatboxLog(GetString(SI_ITEM_ACTION_LOOT_TAKE) .. " " .. link)
                 end
             end
         end
         
-        if (looted == false and not itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST)) then
+        if looted == false then
             table.insert(currentNotLootedNameList, string.lower(name))
             table.insert(unwantedLootIdList, lootId)
             table.insert(unwantedNameList, string.lower(name))
@@ -1490,34 +1501,29 @@ local function OnLootUpdated()
         isPsijicPortal = true
     end
 
-    if (db.debugMode) then
-        d("isLockedChest: " .. tostring(isLockedChest))
-        d("isResourceNode: " .. tostring(isResourceNode))
-        d("isPsijicPortal: " .. tostring(isPsijicPortal))
-        d("currentNotLootedNameList length: " .. tostring(#currentNotLootedNameList))
-        -- d("unwantedLootIdList: " .. tostring(#unwantedLootIdList))
-        -- d("length of id list: " .. #unwantedLootIdList)
-        -- for i = 1, #unwantedLootIdList, 1 do
-        --     d("unwantedLootIdList" .. i .. ": " .. unwantedLootIdList[i])
-        -- end
-        -- d("length of name list: " .. #unwantedNameList)
-        -- for i = 1, #unwantedNameList, 1 do
-        --     d("unwantedNameList" .. i .. ": " .. unwantedNameList[i])
-        -- end
-    end
+    DebugLog("isLockedChest: " .. tostring(isLockedChest))
+    DebugLog("isResourceNode: " .. tostring(isResourceNode))
+    DebugLog("isPsijicPortal: " .. tostring(isPsijicPortal))
+    DebugLog("currentNotLootedNameList length: " .. tostring(#currentNotLootedNameList))
+    -- ChatboxDebugLog("unwantedLootIdList: " .. tostring(#unwantedLootIdList))
+    -- ChatboxDebugLog("length of id list: " .. #unwantedLootIdList)
+    -- for i = 1, #unwantedLootIdList, 1 do
+    --     ChatboxDebugLog("unwantedLootIdList" .. i .. ": " .. unwantedLootIdList[i])
+    -- end
+    -- ChatboxDebugLog("length of name list: " .. #unwantedNameList)
+    -- for i = 1, #unwantedNameList, 1 do
+    --     ChatboxDebugLog("unwantedNameList" .. i .. ": " .. unwantedNameList[i])
+    -- end
 
     -- Performed after looting has been completed for the wanted items
     local considerateLoot = false
     local currentScene = SCENE_MANAGER:GetCurrentScene().name
-    if (db.debugMode) then
-        d("currentScene :"..currentScene)
-        d("noCurtLeft :"..tostring(noCurtLeft))
-    end
+    DebugLog("currentScene :"..currentScene)
+    DebugLog("noCurtLeft :"..tostring(noCurtLeft))
 
     if db.considerateMode and ((isLockedChest or isResourceNode or isPsijicPortal) and #unwantedLootIdList > 0 and tostring(currentScene) ~= "lootInventoryGamepad" and tostring(currentScene) ~= "inventory") then
-        if (db.debugMode) then
-            d("is considerateLoot")
-        end
+        DebugLog("is considerateLoot")
+
         considerateLoot = true
         EVENT_MANAGER:RegisterForEvent("MSAL_UNWANTED_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE, OnUnwantedUpdated)
         EVENT_MANAGER:AddFilterForEvent("MSAL_UNWANTED_UPDATE", EVENT_INVENTORY_SINGLE_SLOT_UPDATE,
@@ -1538,55 +1544,45 @@ local function OnLootUpdated()
             noCurtLeft = true
         end
 
-        local hasBListSetGear = false
+        local bListSetGearList = {}
         for i = 1, #unwantedLootIdList, 1 do
             local lootId = unwantedLootIdList[i]
             local link = GetLootItemLink(lootId)
             local isSetItem = IsItemLinkSetCollectionPiece(link)
             local name = GetItemLinkName(link)
             if itemOnList(GetItemLinkItemId(link), name, TOKEN_BLIST) and isSetItem then
-                hasBListSetGear = true
+                table.insert(bListSetGearList, link)
             else
                 LootItemById(lootId)
             end
         end
-        if hasBListSetGear then
-            d(string.format(GetString(MSAL_LIST_LOOTING_CONFLICT), 
-            GetString(MSAL_CONSIDERATE_MODE)))
+        if #bListSetGearList > 0 then
+            ChatboxLog(zo_strformat(GetString(MSAL_LIST_LOOTING_CONFLICT), bListSetGearList[1], GetString(MSAL_CONSIDERATE_MODE)))
         end
     end
 
     if (db.closeLootWindow and not considerateLoot and not isSuccessionLoot) then
         if (IsSameArray(currentNotLootedNameList, lastNotLootedNameList) and #currentNotLootedNameList ~= 0 ) then
-            if (db.debugMode) then
-                d("is Succession loot")
-            end
+            DebugLog("is Succession loot")
             isSuccessionLoot = true
         end
 
 
         -- If Smarter Close is disabled or enabled but it is not a succession loot ------ then it need to be closed unless its a bag container
-        if not IsSameArray(currentNotLootedNameList, lastNotLootedNameList) and noBListSetGear then
+        if not IsSameArray(currentNotLootedNameList, lastNotLootedNameList)then
             -- if the case is bag container
             if (IsInGamepadPreferredMode() and tostring(currentScene) == "lootInventoryGamepad") or (not IsInGamepadPreferredMode() and tostring(currentScene) == "inventory") then
                 lootingBagContainer = true
-                if (db.debugMode) then
-                    d("isBagContainer")
-                end
+                DebugLog("isBagContainer")
                 if #currentNotLootedNameList == 0 and noCurtLeft then -- if it is a bag container and everything is looted then close it, otherwise do nothing
-                    if (db.debugMode) then
-                        d("closing bag container loot window")
-                    end
-                    
+                    DebugLog("closing bag container loot window")
                     EndLooting()
                     SCENE_MANAGER:Show(currentScene)
                     lootingBagContainer = false
                 end
             else
                 if not lootingBagContainer and noCurtLeft then
-                    if (db.debugMode) then
-                        d("closing loot window")
-                    end
+                    DebugLog("closing loot window")
                     EndLooting()
                     SCENE_MANAGER:HideCurrentScene()
                     -- SCENE_MANAGER:ShowBaseScene()
@@ -1596,10 +1592,8 @@ local function OnLootUpdated()
         lastNotLootedNameList = currentNotLootedNameList
     end
 
-    if #currentNotLootedNameList == 0 and noCurtLeft and noBListSetGear then
-        if (db.debugMode) then
-            d("secured closing loot window, showing: "..currentScene)
-        end
+    if #currentNotLootedNameList == 0 and noCurtLeft then
+        DebugLog("secured closing loot window, showing: "..currentScene)
         if not IsInGamepadPreferredMode() then
             EndLooting()
             SCENE_MANAGER:Show(currentScene)
@@ -1622,7 +1616,7 @@ end
 
 local LAM2 = LibAddonMenu2
 
-local function SettingInitialize(db)
+local function SettingInitialize()
     local panelData = {
         type = "panel",
         name = GetString(MSAL_PANEL_NAME),
@@ -1635,25 +1629,21 @@ local function SettingInitialize(db)
     }
     local defaultChoices = {
         GetString(MSAL_ALWAYS_LOOT),
-        GetString(MSAL_NEVER_LOOT),
         GetString(MSAL_PER_QUALITY_THRESHOLD),
-        GetString(MSAL_PER_VALUE_THRESHOLD)
+        GetString(MSAL_NEVER_LOOT),
     }
     local defaultChoicesValues = {
         "always loot",
-        "never loot",
         "per quality threshold",
-        "per value threshold"
+        "never loot",
     }
 
     local valueChoices = {
         GetString(MSAL_ALWAYS_LOOT),
-        GetString(MSAL_PER_VALUE_THRESHOLD),
         GetString(MSAL_NEVER_LOOT)
     }
     local valueChoicesValues = {
         "always loot",
-        "per value threshold",
         "never loot"
     }
 
@@ -1867,14 +1857,14 @@ local function SettingInitialize(db)
         end
 
         if GetItemLinkItemId(link) == 0 then
-            d(GetString(SI_STOREITEMRESULT1))
+            ChatboxLog(GetString(SI_STOREITEMRESULT1))
             WM:GetControlByName(controlName).editbox:SetText("")
             return
         end
 
         for _, v in pairs(otherList) do
             if v == GetItemLinkItemId(link) then
-                d(string.format(GetString(MSAL_LIST_CONFLICT),
+                ChatboxLog(string.format(GetString(MSAL_LIST_CONFLICT),
                     trimString(GetItemLinkName(string.format(templateItemlink, GetItemLinkItemId(link))))))
                 WM:GetControlByName(controlName).editbox:SetText("")
                 return
@@ -1883,7 +1873,7 @@ local function SettingInitialize(db)
 
         for _, v in pairs(list) do
             if v == GetItemLinkItemId(link) then
-                d(string.format(GetString(MSAL_LIST_ALREADY_EXIST),
+                ChatboxLog(string.format(GetString(MSAL_LIST_ALREADY_EXIST),
                     trimString(GetItemLinkName(string.format(templateItemlink, GetItemLinkItemId(link)))) .. " (" .. GetItemLinkItemId(link) ..")",
                     listName))
                 WM:GetControlByName(controlName).editbox:SetText("")
@@ -1891,7 +1881,14 @@ local function SettingInitialize(db)
             end
         end
         table.insert(list, GetItemLinkItemId(link))
-        d(string.format(GetString(MSAL_LIST_ADD),
+        if token == TOKEN_BLIST then
+            if db.useAccountWide then
+                dbChar.blacklist = dbAccount.blacklist
+            else
+                dbAccount.blacklist = dbChar.blacklist
+            end
+        end
+        ChatboxLog(string.format(GetString(MSAL_LIST_ADD),
             trimString(GetItemLinkName(string.format(templateItemlink, GetItemLinkItemId(link)))) .. " (" .. GetItemLinkItemId(link) ..")", listName))
 
         WM:GetControlByName(controlName).editbox:SetText("")
@@ -1919,11 +1916,19 @@ local function SettingInitialize(db)
 
             for i = #list, 1, -1 do
                 if tostring(list[i]) == itemid then
-                    d(string.format(GetString(MSAL_LIST_REMOVE),
+                    ChatboxLog(string.format(GetString(MSAL_LIST_REMOVE),
                     trimString(GetItemLinkName(string.format(templateItemlink, list[i]))) .. " (" .. itemid ..")",
                     listName))
                     table.remove(list, i)
                 end
+            end
+        end
+
+        if token == TOKEN_BLIST then
+            if db.useAccountWide then
+                dbChar.blacklist = dbAccount.blacklist
+            else
+                dbAccount.blacklist = dbChar.blacklist
             end
         end
 
@@ -1939,9 +1944,29 @@ local function SettingInitialize(db)
         },
         {
             type = "checkbox",
+            name = GetString(MSAL_USE_ACCOUNT_WIDE),
+            tooltip = GetString(MSAL_USE_ACCOUNT_WIDE_TOOLTIP),
+            getFunc = function()
+                return dbChar.useAccountWide
+            end,
+            setFunc = function(value)
+                dbChar.useAccountWide = value
+                if dbChar.useAccountWide then
+                    db = dbAccount
+                else
+                    db = dbChar
+                end
+                WM:GetControlByName("MSAL_RemoveBList"):UpdateChoices(getListChoices(TOKEN_BLIST))
+                WM:GetControlByName("MSAL_RemoveWList"):UpdateChoices(getListChoices(TOKEN_WLIST))
+            end,
+            default = true
+        },
+        {
+            type = "checkbox",
             name = GetString(MSAL_ENABLE_MSAL),
             tooltip = GetString(MSAL_ENABLE_MSAL_TOOLTIP),
             keybind = "UI_SHORTCUT_PRIMARY",
+            reference = "MSAL_Enable",
             getFunc = function()
                 return db.enabled
             end,
@@ -1964,7 +1989,7 @@ local function SettingInitialize(db)
             controls = {
                 {
                     type = "header",
-                    name = GetString(MSAL_GENERAL_SETTINGS_GENERAL),
+                    name = GetString(SI_CAMERA_OPTIONS_GLOBAL),
                     width = "full"
                 },
                 {
@@ -1981,8 +2006,32 @@ local function SettingInitialize(db)
                 },
                 {
                     type = "checkbox",
+                    name = GetString(MSAL_AUTOLOOT_CURRENCY),
+                    tooltip = GetString(MSAL_AUTOLOOT_CURRENCY_TOOLTIP),
+                    getFunc = function()
+                        return db.filters.uncapped
+                    end,
+                    setFunc = function(value)
+                        db.filters.uncapped = value
+                    end,
+                    default = true
+                },
+                {
+                    type = "checkbox",
+                    name = GetString(MSAL_CLOSE_LOOT_WINDOW),
+                    tooltip = GetString(MSAL_CLOSE_LOOT_WINDOW_TOOLTIP),
+                    getFunc = function()
+                        return db.closeLootWindow
+                    end,
+                    setFunc = function(value)
+                        db.closeLootWindow = value
+                    end,
+                    default = false
+                },
+                {
+                    type = "checkbox",
                     name = GetString(MSAL_SHOW_ITEM_LINKS),
-                    tooltip = GetString(MSAL_SHOW_ITEM_LINKS_TOOLTIP),
+                    -- tooltip = GetString(MSAL_SHOW_ITEM_LINKS_TOOLTIP),
                     getFunc = function()
                         return db.printItems
                     end,
@@ -2005,18 +2054,6 @@ local function SettingInitialize(db)
                     disabled = function()
                         return db.printItems == false
                     end
-                },
-                {
-                    type = "checkbox",
-                    name = GetString(MSAL_CLOSE_LOOT_WINDOW),
-                    tooltip = GetString(MSAL_CLOSE_LOOT_WINDOW_TOOLTIP),
-                    getFunc = function()
-                        return db.closeLootWindow
-                    end,
-                    setFunc = function(value)
-                        db.closeLootWindow = value
-                    end,
-                    default = false
                 },
                 {
                     type = "checkbox",
@@ -2051,18 +2088,6 @@ local function SettingInitialize(db)
                 },
                 {
                     type = "checkbox",
-                    name = GetString(MSAL_CONSIDERATE_MODE),
-                    tooltip = GetString(MSAL_CONSIDERATE_MODE_TOOLTIP),
-                    getFunc = function()
-                        return db.considerateMode
-                    end,
-                    setFunc = function(value)
-                        db.considerateMode = value
-                    end,
-                    default = false
-                },
-                {
-                    type = "checkbox",
                     name = GetString(MSAL_ADD_DESTROY_BUTTON),
                     tooltip = GetString(MSAL_ADD_DESTROY_BUTTON_TOOLTIP),
                     getFunc = function()
@@ -2082,6 +2107,18 @@ local function SettingInitialize(db)
                 },
                 {
                     type = "checkbox",
+                    name = GetString(MSAL_CONSIDERATE_MODE),
+                    tooltip = GetString(MSAL_CONSIDERATE_MODE_TOOLTIP),
+                    getFunc = function()
+                        return db.considerateMode
+                    end,
+                    setFunc = function(value)
+                        db.considerateMode = value
+                    end,
+                    default = false
+                },
+                {
+                    type = "checkbox",
                     name = GetString(MSAL_CONSIDERATE_MODE_PRINT),
                     getFunc = function()
                         return db.considerateModePrint
@@ -2089,7 +2126,7 @@ local function SettingInitialize(db)
                     setFunc = function(value)
                         db.considerateModePrint = value
                     end,
-                    default = false,
+                    default = true,
                     disabled = function()
                         return db.considerateMode == false and db.addDestroyButton == false
                     end
@@ -2121,54 +2158,6 @@ local function SettingInitialize(db)
                     type = "description",
                     text = GetString(MSAL_HELP_GEAR),
                     width = "full"
-                },
-                {
-                    type = "slider",
-                    name = GetString(MSAL_QUALITY_THRESHOLD),
-                    tooltip = GetString(MSAL_QUALITY_THRESHOLD_TOOLTIP),
-                    min = 1,
-                    max = 5,
-                    step = 1,
-                    getFunc = function()
-                        return db.minimumQuality
-                    end,
-                    setFunc = function(value)
-                        db.minimumQuality = value
-                    end,
-                    default = 1
-                },
-                {
-                    type = "slider",
-                    name = GetString(MSAL_VALUE_THRESHOLD),
-                    tooltip = GetString(MSAL_VALUE_THRESHOLD_TOOLTIP),
-                    min = 0,
-                    max = 300,
-                    getFunc = function()
-                        return db.minimumValue
-                    end,
-                    setFunc = function(value)
-                        db.minimumValue = value
-                    end,
-                    default = 0
-                },
-                {
-                    type = "dropdown",
-                    name = GetString(SI_ITEM_FORMAT_STR_COMPANION),
-                    choices = qualityChoices,
-                    choicesValues = qualityChoicesValues,
-                    getFunc = function()
-                        return db.filters.companionGears
-                    end,
-                    setFunc = function(value)
-                        db.filters.companionGears = value
-                    end,
-                    default = "always loot"
-                },
-                {
-                    type = "divider",
-                    height = 1,
-                    alpha = 0.5,
-                    width = "half"
                 },
                 {
                     type = "dropdown",
@@ -2311,6 +2300,48 @@ local function SettingInitialize(db)
                     width = "half"
                 },
                 {
+                    type = "slider",
+                    name = GetString(MSAL_QUALITY_THRESHOLD),
+                    tooltip = GetString(MSAL_QUALITY_THRESHOLD_TOOLTIP),
+                    min = 1,
+                    max = 5,
+                    step = 1,
+                    getFunc = function()
+                        return db.minimumQuality
+                    end,
+                    setFunc = function(value)
+                        db.minimumQuality = value
+                    end,
+                    default = 1
+                },
+                -- {
+                --     type = "slider",
+                --     name = GetString(MSAL_VALUE_THRESHOLD),
+                --     tooltip = GetString(MSAL_VALUE_THRESHOLD_TOOLTIP),
+                --     min = 0,
+                --     max = 300,
+                --     getFunc = function()
+                --         return db.minimumValue
+                --     end,
+                --     setFunc = function(value)
+                --         db.minimumValue = value
+                --     end,
+                --     default = 0
+                -- },
+                {
+                    type = "dropdown",
+                    name = GetString(SI_ITEM_FORMAT_STR_COMPANION),
+                    choices = qualityChoices,
+                    choicesValues = qualityChoicesValues,
+                    getFunc = function()
+                        return db.filters.companionGears
+                    end,
+                    setFunc = function(value)
+                        db.filters.companionGears = value
+                    end,
+                    default = "always loot"
+                },
+                {
                     type = "dropdown",
                     name = GetString(MSAL_WEAPONS),
                     choices = defaultChoices,
@@ -2363,7 +2394,7 @@ local function SettingInitialize(db)
                 {
                     type = "dropdown",
                     name = GetString(MSAL_CRAFTING_MATERIALS),
-                    tooltip = GetString(MSAL_CRAFTING_MATERIALS_TOOLTIP),
+                    tooltip = GetString(SI_ITEMFILTERTYPE13) .. " & " .. GetString(SI_ITEMFILTERTYPE14) .. " & " .. GetString(SI_ITEMFILTERTYPE15) .. " & " .. GetString(SI_ITEMFILTERTYPE24),
                     choices = booleanChoices,
                     choicesValues = booleanChoicesValues,
                     getFunc = function()
@@ -2451,41 +2482,6 @@ local function SettingInitialize(db)
                         db.filters.furnishingMaterials = value
                     end,
                     default = "never loot"
-                }
-            }
-        },
-        {
-            type = "submenu",
-            name = GetString(MSAL_CURRENCY_FILTERS),
-            controls = {
-                {
-                    type = "description",
-                    text = GetString(MSAL_HELP_CURRENCY),
-                    width = "full"
-                },
-                {
-                    type = "checkbox",
-                    name = GetString(MSAL_UNCAPPED_CURRENCY),
-                    getFunc = function()
-                        return db.filters.uncapped
-                    end,
-                    setFunc = function(value)
-                        db.filters.uncapped = value
-                    end,
-                    default = true
-                },
-                {
-                    type = "dropdown",
-                    name = GetCurrencyName(CURT_CHAOTIC_CREATIA, false, false),
-                    choices = booleanChoices,
-                    choicesValues = booleanChoicesValues,
-                    getFunc = function()
-                        return db.filters.crystals
-                    end,
-                    setFunc = function(value)
-                        db.filters.crystals = value
-                    end,
-                    default = "always loot"
                 }
             }
         },
@@ -2856,14 +2852,16 @@ local function SettingInitialize(db)
                 {
                     type = "dropdown",
                     name = string.format(GetString(MSAL_REMOVE_ITEM), GetString(MSAL_BLIST)),
+                    tooltip = GetString(MSAL_BLIST_TOOLTIP),
                     choices = getListChoices(TOKEN_BLIST),
                     reference = "MSAL_RemoveBList",
+                    scrollable = true,
                     getFunc = function()
                         return
                     end,
                     setFunc = function(value)
                         removeListItem(value, TOKEN_BLIST)
-                    end
+                    end,
                 },
                 {
                     type = "header",
@@ -2887,12 +2885,13 @@ local function SettingInitialize(db)
                     name = string.format(GetString(MSAL_REMOVE_ITEM), GetString(MSAL_WLIST)),
                     choices = getListChoices(TOKEN_WLIST),
                     reference = "MSAL_RemoveWList",
+                    scrollable = true,
                     getFunc = function()
                         return
                     end,
                     setFunc = function(value)
                         removeListItem(value, TOKEN_WLIST)
-                    end
+                    end,
                 }
             }
         }
@@ -2900,10 +2899,10 @@ local function SettingInitialize(db)
 
     -- Dynamically inserted functions based on optional dependencies
     local dynamicOptionIndex = 7
-    if (LibSavedVars) then
-        table.insert(optionsData, 3, db:GetLibAddonMenuAccountCheckbox())
-        dynamicOptionIndex = dynamicOptionIndex + 1
-    end
+    -- if (LibSavedVars) then
+    --     table.insert(optionsData, 3, db:GetLibAddonMenuAccountCheckbox())
+    --     dynamicOptionIndex = dynamicOptionIndex + 1
+    -- end
 
     if (MasterMerchant or TamrielTradeCentre or ArkadiusTradeTools) then
         optionsData[dynamicOptionIndex].controls[1].text = GetString(MSAL_HELP_MISC_TRIMED)
@@ -2927,7 +2926,7 @@ local function SettingInitialize(db)
             name = GetString(MSAL_THIRD_PARTY_AVG_THRESHOLD),
             tooltip = GetString(MSAL_THIRD_PARTY_AVG_THRESHOLD_TOOLTIP),
             min = 0,
-            max = 100000,
+            max = 99999,
             getFunc = function()
                 return db.filters.thirdPartyMinValue
             end,
@@ -2938,13 +2937,13 @@ local function SettingInitialize(db)
         }
         table.insert(optionsData[dynamicOptionIndex].controls, 2, dynamicSlider)
 
-        local divider = {
-            type = "divider",
-            height = 1,
-            alpha = 0.5,
-            width = "half"
-        }
-        table.insert(optionsData[dynamicOptionIndex].controls, 4, divider)
+        -- local divider = {
+        --     type = "divider",
+        --     height = 1,
+        --     alpha = 0.5,
+        --     width = "half"
+        -- }
+        -- table.insert(optionsData[dynamicOptionIndex].controls, 4, divider)
 
         local divider = {
             type = "divider",
@@ -2952,7 +2951,7 @@ local function SettingInitialize(db)
             alpha = 0.5,
             width = "half"
         }
-        table.insert(optionsData[dynamicOptionIndex].controls, 10, divider)
+        table.insert(optionsData[dynamicOptionIndex].controls, 9, divider)
 
     end
 
@@ -2964,14 +2963,48 @@ local function OnLoaded(_, addon)
     if addon ~= "MuchSmarterAutoLoot" then
         return
     end
+    EVENT_MANAGER:UnregisterForEvent("MuchSmarterAutoLoot", EVENT_ADD_ON_LOADED)
 
-    if LibSavedVars ~= nil then
-        db = LibSavedVars:NewAccountWide(SV_NAME, "Account", defaults):AddCharacterSettingsToggle(SV_NAME, "Character")
-    else
-        db = ZO_SavedVars:NewAccountWide(SV_NAME, 1, nil, defaults)
+    local legacySV = nil
+    local hasLegacySV = false
+    if MSAL_VARS and MSAL_VARS.converted530 == nil then
+        if LibSavedVars ~= nil then
+            legacySV = MSAL_VARS[GetWorldName()][GetDisplayName()]["$AccountWide"]["Account"]
+        else
+            legacySV = MSAL_VARS["Default"][GetDisplayName()]["$AccountWide"]
+        end
+
+        if legacySV then
+            hasLegacySV = true
+        end
     end
 
-    SettingInitialize(db)
+    if hasLegacySV then
+        legacySV.useAccountWide = true
+        dbAccount = ZO_SavedVars:NewAccountWide(SV_NAME, 1, nil, legacySV, GetWorldName())
+        dbChar = ZO_SavedVars:NewCharacterIdSettings(SV_NAME, 1, nil, legacySV, GetWorldName())
+    else
+        dbAccount = ZO_SavedVars:NewAccountWide(SV_NAME, 1, nil, defaults, GetWorldName())
+        dbChar = ZO_SavedVars:NewCharacterIdSettings(SV_NAME, 1, nil, defaults, GetWorldName())
+    end
+    MSAL_VARS.converted530 = true
+    -- make sure the account-wide blacklist won't be tainted by char blacklist on load
+    dbChar.blacklist = dbAccount.blacklist
+
+    if dbChar.useAccountWide then
+        db = dbAccount
+    else
+        db = dbChar
+    end
+
+    -- if LibSavedVars ~= nil then
+    --     db = LibSavedVars:NewAccountWide(SV_NAME, "Account", defaults):AddCharacterSettingsToggle(SV_NAME, "Character")
+    -- else
+    --     db = ZO_SavedVars:NewAccountWide(SV_NAME, 1, nil, defaults)
+    -- end
+    
+
+    SettingInitialize()
 
     SLASH_COMMANDS["/msalt"] = function(keyWord, argument)
         if db.enabled == false then
@@ -2983,6 +3016,10 @@ local function OnLoaded(_, addon)
             db.enabled = false
             EVENT_MANAGER:UnregisterForEvent("MSAL_LOOT_UPDATED", EVENT_LOOT_UPDATED)
             d("Much Smarter AutoLoot |cd06756" .. GetString(SI_SCREEN_NARRATION_TOGGLE_OFF) .. "|r")
+        end
+        local enableControl = WM:GetControlByName("MSAL_Enable")
+        if enableControl then
+            enableControl:UpdateValue(false, db.enabled)
         end
     end
 
@@ -3098,14 +3135,11 @@ local function LoadScreen()
     end
 
     if (not startupInfoPrinted and db.loginReminder == true and db.enabled == true) then
-        d("|c215895 Lykeion's|cdb8e0b Much Smarter AutoLoot " .. addonVersion .. " " ..
+        d("|c265a91L|r|c2c5c8ey|r|c325e8ak|r|c396086e|r|c3f6283i|r|c45647fo|r|c4b677cn|r|c516978'|r|c576b74s|r |c5d6d71M|r|c646f6du|r|c6a7169c|r|c707366h|r |c767562S|r|c7c775em|r|c82795ba|r|c887b57r|r|c8f7d53t|r|c957f50e|r|c9b814cr|r |ca18449A|r|ca78645u|r|cad8841t|r|cb38a3eo|r|cba8c3aL|r|cc08e36o|r|cc69033o|r|ccc922ft|r " .. addonVersion .. " " ..
               GetString(SI_GAMEPAD_MARKET_FREE_TRIAL_TILE_ACTIVE_TEXT) .. "|r")
         -- d("IsESOPlusSubscriber() : "..tostring(IsESOPlusSubscriber()))
         if (db.closeLootWindow) then
-            d(GetString(MSAL_CLOSE_LOOT_WINDOW_REMINDER))
-        end
-        if (db.debugMode) then
-            d(GetString(MSAL_DEBUG_MODE_REMINDER))
+            ChatboxLog(zo_strformat(GetString(MSAL_LOGIN_ENABLED_REMINDER), GetString(MSAL_CLOSE_LOOT_WINDOW)))
         end
         EVENT_MANAGER:UnregisterForEvent("MuchSmarterAutoLoot", EVENT_PLAYER_ACTIVATED)
     end
@@ -3141,15 +3175,6 @@ local function LoadScreen()
         --     db.filters.runes = "never loot"
         -- end
 
-        if ( db.filters.recipes == "only unknown") then
-            db.filters.recipes = "never loot"
-            db.filters.alwaysLootUnknown = true
-        end
-
-        if db.stolenRule == "follow without mats" then
-            db.stolenRule = "follow"
-        end
-
         EVENT_MANAGER:RegisterForUpdate( "MuchSmarterAutoLoot", 1000, function()
             if not ZO_Dialogs_IsShowingDialog() then
                 ZO_Dialogs_ShowDialog("MSAL_MAJOR_UPDATE", {
@@ -3159,6 +3184,32 @@ local function LoadScreen()
                 EVENT_MANAGER:UnregisterForUpdate("MuchSmarterAutoLoot")
             end
         end )
+    end
+
+    -- deal with legacy options
+    if ( db.filters.recipes == "only unknown") then
+        db.filters.recipes = "never loot"
+        db.filters.alwaysLootUnknown = true
+    end
+
+    if db.stolenRule == "follow without mats" then
+        db.stolenRule = "follow"
+    end
+
+    if db.filters.ornate == "per value threshold" then
+        db.filters.ornate = "always loot"
+    end
+
+    if db.filters.weapons == "per value threshold" then
+        db.filters.weapons = "never loot"
+    end
+
+    if db.filters.armors == "per value threshold" then
+        db.filters.armors = "never loot"
+    end
+
+    if db.filters.jewelry == "per value threshold" then
+        db.filters.jewelry = "never loot"
     end
     
     startupInfoPrinted = true
@@ -3489,20 +3540,14 @@ end
 
 function MuchSmarterAutoLoot:test()
     d("printing...")
-    local actionName = "MSAL_DESTROY"  -- 替换为你想查询的动作名称
-    local layerIndex, categoryIndex, actionIndex = GetActionIndicesFromName(actionName)
-    for bindingIndex = 1, GetMaxBindingsPerAction() do
-        local guiKey, mod1, mod2, mod3, mod4 = GetActionBindingInfo(layerIndex, categoryIndex, actionIndex, bindingIndex)
-        if guiKey ~= KEY_INVALID then                  
-            -- Get the first non-gamepad, non-choord key
-            if not IsKeyCodeGamepadKey(guiKey) and not IsKeyCodeChordKey(guiKey) then
-                local chromaKey = GetChromaKeyboardKeyByZoGuiKey(guiKey)
-                if chromaKey ~= CHROMA_KEYBOARD_KEY_INVALID then
-                    d(ZO_Keybindings_GetTexturePathForKey(guiKey,false))
-                    d(GetKeyName(guiKey))
-                end
-            end
+    local legacySV
+    if MSAL_VARS ~= nil then
+        if LibSavedVars ~= nil then
+            legacySV = MSAL_VARS[GetWorldName()][GetDisplayName()]["$AccountWide"]["Account"]
+        else
+            legacySV = MSAL_VARS["Default"][GetDisplayName()]["$AccountWide"]
         end
+        d("legacySV: " .. tostring(legacySV))
     end
 end
 

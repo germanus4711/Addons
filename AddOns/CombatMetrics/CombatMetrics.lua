@@ -28,7 +28,7 @@ local CMX = CMX
 
 -- Basic values
 CMX.name = "CombatMetrics"
-CMX.version = "1.5.18"
+CMX.version = "1.6.6"
 
 -- Logger
 
@@ -70,12 +70,6 @@ local function Print(category, level, ...)
 end
 
 CMX.Print = Print
-
-function CMX.GetDebugLevels()
-
-	return 	LOG_LEVEL_VERBOSE, LOG_LEVEL_DEBUG, LOG_LEVEL_INFO, LOG_LEVEL_WARNING, LOG_LEVEL_ERROR
-
-end
 
 -- init and check for libs
 
@@ -1953,6 +1947,9 @@ local function CalculateChunk(fight)  -- called by CalculateFight or itself
 
 						end
 					end
+
+					effectdata.firstStartTime = nil
+					effectdata.firstGroupStartTime = nil
 				end
 			end
 		end
@@ -2263,6 +2260,9 @@ local function CalculateChunk(fight)  -- called by CalculateFight or itself
 				Print("misc", LOG_LEVEL_WARNING, "Time Array lengths don't match for bar %d", bar)
 
 			end
+
+			barStats.onTimes = nil
+			barStats.offTimes = nil
 		end
 
 		-- calculate avg performance values
@@ -2637,8 +2637,7 @@ local svdefaults = {
 	["accountwide"] = false,
 
 	["fighthistory"] = 25,
-	["maxSVsize"] = 10,
-	["SVsize"] = 0,
+	["maxSavedFights"] = 50,
 	["keepbossfights"] = false,
 	["chunksize"] = 1000,
 
@@ -2803,47 +2802,7 @@ local function Initialize(event, addon)
 
 	-- convert legacy data into new format
 
-	if type(db.FightReport.hitCritLayout) == "number" or type(db.FightReport.maxValue) == "boolean" then
-
-		db.FightReport.hitCritLayout = {
-			["damageOut"] 	= 1,
-			["damageIn"] 	= 1,
-			["healingOut"] 	= 1,
-			["healingIn"] 	= 1,
-		}
-
-		db.FightReport.averageLayout = {
-			["damageOut"] 	= 2,
-			["damageIn"] 	= 2,
-			["healingOut"] 	= 2,
-			["healingIn"] 	= 2,
-		}
-
-		db.FightReport.maxValue = {
-			["damageOut"] 	= true,
-			["damageIn"] 	= true,
-			["healingOut"] 	= true,
-			["healingIn"] 	= true,
-		}
-
-	end
-
-	local oldsv = CombatMetrics_Save["Default"][GetDisplayName()]["$AccountWide"]
-
-	local olddata = oldsv["Fights"]
-
-	if olddata ~= nil and olddata.fights ~= nil then
-
-		for id, fight in ipairs(olddata.fights) do
-
-			fightdata.Save(fight)
-
-		end
-
-		oldsv["Fights"] = nil
-
-	end
-
+	if db.maxSVsize then db.maxSVsize = nil end
 	--
 
 	for debuffKey, _ in pairs(variablePenetrationDebuffAbilityIds) do

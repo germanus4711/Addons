@@ -200,30 +200,30 @@ I'm guessing that the same sort of thing can happen any time a marked item becom
 
 
 --______________________________________
--- Current max # of bugs/features/ToDos: 297
+-- Current max # of bugs/features/ToDos: 308
 --______________________________________
 
 --Open/To work on this patch:
 
+
 --=== Not started yet ===
+--#301 Add LibSets set search favorites as marker icons of FCOIS to the inventories -> Maybe create a kind of "plugin system" that other addons can use to pass in a settings submenu, and some marker icons and textures of that other addon
 
 
 ------------------------------------------------------------------------------------
--- Currently worked on [Added/Fixed/Changed] -              Updated last 2024-08-11
+-- Currently worked on [Added/Fixed/Changed] -              Updated last 2025-02-19
 ------------------------------------------------------------------------------------
-
+--#308 Add LibCharacterKnowledge automatic motifs marking
 
 -------------------------------------------------------------------------------------
---Changelog (last version: 2.5.9 - New version: 2.6.0) -    Updated last: 2024-08-11
+--Changelog (last version: 2.6.3 - New version: 2.6.4) -    Updated last: 2025-02-19
 -------------------------------------------------------------------------------------
 --[Fixed]
---#295 Fix missing antiPanel settings to reset to default values
---#296 PTS API101043 Fix quickslot marker icons and errors due to ZOs change to deferred init.
 
 --[Changed]
 
 --[Added]
---
+
 
 --[Added on request]
 

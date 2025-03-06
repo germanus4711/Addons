@@ -7,6 +7,7 @@
 local LUIE = LUIE
 
 --- @class (partial) LUIE.CombatInfo
+--- @field SV LUIE.CombatInfo.SV
 local CombatInfo = LUIE.CombatInfo
 
 local UI = LUIE.UI
@@ -213,9 +214,15 @@ function CombatInfo.Initialize(enabled)
     -- And buff texture
     uiUltimate.Texture = UI:Texture(AB8, { CENTER, CENTER }, { 160, 160 }, "/esoui/art/crafting/white_burst.dds", DL_BACKGROUND, true)
 
-    -- Create a top level window for backbar butons
-    local tlw = windowManager:CreateControl("LUIE_Backbar", ACTION_BAR, CT_CONTROL)
-    tlw:SetParent(ACTION_BAR)
+    -- Create a top level window for backbar buttons using UI:Control
+    local tlw = UI:Control(
+        ACTION_BAR,    -- parent
+        "fill",        -- anchors
+        "inherit",     -- dims
+        false,         -- hidden
+        "LUIE_Backbar" -- name
+    )
+
 
     for i = BAR_INDEX_START + BACKBAR_INDEX_OFFSET, BACKBAR_INDEX_END + BACKBAR_INDEX_OFFSET do
         local button = ActionButton:New(i, ACTION_BUTTON_TYPE_VISIBLE, tlw, "ZO_ActionButton")
@@ -500,7 +507,14 @@ function CombatInfo.HookGCD()
 end
 
 -- Helper function to get override ability duration.
+---
+--- @param abilityId number
+--- @param overrideRank number?
+--- @param casterUnitTag string?
+--- @return integer  duration
 local function GetUpdatedAbilityDuration(abilityId, overrideRank, casterUnitTag)
+    overrideRank = overrideRank or nil
+    casterUnitTag = casterUnitTag or "player"
     local duration = g_barDurationOverride[abilityId] or LUIE.GetAbilityDuration(abilityId, overrideRank, casterUnitTag) or 0
     return duration
 end
@@ -508,62 +522,48 @@ end
 -- Called on initialization and menu changes
 -- Pull data from Effects.BarHighlightOverride Tables to filter the display of Bar Highlight abilities based off menu settings.
 function CombatInfo.UpdateBarHighlightTables()
-    g_uiProcAnimation = {}
-    g_uiCustomToggle = {}
-    g_triggeredSlotsFront = {}
-    g_triggeredSlotsBack = {}
-    g_triggeredSlotsRemain = {}
-    g_toggledSlotsFront = {}
-    g_toggledSlotsBack = {}
-    g_toggledSlotsRemain = {}
-    g_toggledSlotsStack = {}
-    g_toggledSlotsPlayer = {}
-    g_barOverrideCI = {}
-    g_barFakeAura = {}
-    g_barDurationOverride = {}
-    g_barNoRemove = {}
+    -- Reset all tables using ZO_ClearTable
+    for _, table in ipairs(
+        {
+            g_uiProcAnimation, g_uiCustomToggle, g_triggeredSlotsFront, g_triggeredSlotsBack,
+            g_triggeredSlotsRemain, g_toggledSlotsFront, g_toggledSlotsBack, g_toggledSlotsRemain,
+            g_toggledSlotsStack, g_toggledSlotsPlayer, g_barOverrideCI, g_barFakeAura,
+            g_barDurationOverride, g_barNoRemove
+        }) do
+        ZO_ClearTable(table)
+    end
 
-    if CombatInfo.SV.ShowTriggered or CombatInfo.SV.ShowToggled then
-        -- Grab any aura's from the list that have on EVENT_COMBAT_EVENT AURA support
-        for abilityId, value in pairs(Effects.BarHighlightOverride) do
-            if value.showFakeAura == true then
-                if value.newId then
-                    g_barOverrideCI[value.newId] = true
-                    if value.duration then
-                        g_barDurationOverride[value.newId] = value.duration
-                    end
-                    if value.noRemove then
-                        g_barNoRemove[value.newId] = true
-                    end
-                    g_barFakeAura[value.newId] = true
-                else
-                    g_barOverrideCI[abilityId] = true
-                    if value.duration then
-                        g_barDurationOverride[abilityId] = value.duration
-                    end
-                    if value.noRemove then
-                        g_barNoRemove[abilityId] = true
-                    end
-                    g_barFakeAura[abilityId] = true
-                end
-            else
-                if value.noRemove then
-                    if value.newId then
-                        g_barNoRemove[value.newId] = true
-                    else
-                        g_barNoRemove[abilityId] = true
-                    end
-                end
+    if not (CombatInfo.SV.ShowTriggered or CombatInfo.SV.ShowToggled) then
+        return
+    end
+
+    -- Process BarHighlightOverride entries
+    for abilityId, value in pairs(Effects.BarHighlightOverride) do
+        local targetId = value.newId or abilityId
+
+        -- Handle fake aura entries
+        if value.showFakeAura then
+            g_barOverrideCI[targetId] = true
+            g_barFakeAura[targetId] = true
+
+            if value.duration then
+                g_barDurationOverride[targetId] = value.duration
             end
         end
-        local counter = 0
-        for abilityId, _ in pairs(g_barOverrideCI) do
-            counter = counter + 1
-            local eventName = (moduleName .. "CombatEventBar" .. counter)
-            eventManager:RegisterForEvent(eventName, EVENT_COMBAT_EVENT, CombatInfo.OnCombatEventBar)
-            -- Register filter for specific abilityId's in table only, and filter for source = player, no errors
-            eventManager:AddFilterForEvent(eventName, EVENT_COMBAT_EVENT, REGISTER_FILTER_ABILITY_ID, abilityId, REGISTER_FILTER_IS_ERROR, false)
+
+        -- Handle noRemove flag
+        if value.noRemove then
+            g_barNoRemove[targetId] = true
         end
+    end
+
+    -- Register combat events for each ability
+    local counter = 0
+    for abilityId in pairs(g_barOverrideCI) do
+        counter = counter + 1
+        local eventName = moduleName .. "CombatEventBar" .. counter
+        eventManager:RegisterForEvent(eventName, EVENT_COMBAT_EVENT, CombatInfo.OnCombatEventBar)
+        eventManager:AddFilterForEvent(eventName, EVENT_COMBAT_EVENT, REGISTER_FILTER_ABILITY_ID, abilityId, REGISTER_FILTER_IS_ERROR, false)
     end
 end
 
@@ -736,9 +736,8 @@ local function SetBarRemainLabel(remain, abilityId)
     end
 end
 
--- Updates all floating labels. Called every 100ms
-function CombatInfo.OnUpdate(currentTime)
-    -- Procs
+-- Procs
+local doProcs = function (currentTime)
     for k, v in pairs(g_triggeredSlotsRemain) do
         local remain = v - currentTime
         local front = g_triggeredSlotsFront[k]
@@ -765,7 +764,10 @@ function CombatInfo.OnUpdate(currentTime)
             end
         end
     end
-    -- Ability Highlight
+end
+
+-- Ability Highlight
+local doHighlights = function (currentTime)
     for k, v in pairs(g_toggledSlotsRemain) do
         local remain = v - currentTime
         local front = g_toggledSlotsFront[k]
@@ -793,8 +795,10 @@ function CombatInfo.OnUpdate(currentTime)
             end
         end
     end
+end
 
-    -- Quickslot cooldown
+-- Quickslot cooldown
+local doQuickslot = function ()
     if CombatInfo.SV.PotionTimerShow then
         local slotIndex = GetCurrentQuickslot()
         local remain, duration, _ = GetSlotCooldownInfo(slotIndex, HOTBAR_CATEGORY_QUICKSLOT_WHEEL)
@@ -833,6 +837,40 @@ function CombatInfo.OnUpdate(currentTime)
             label:SetHidden(true)
         end
     end
+end
+
+-- Break castbar when movement interrupt is detected for certain effects.
+local doBreakCast = function ()
+    savedPlayerX = playerX
+    savedPlayerZ = playerZ
+    playerX, playerZ = GetMapPlayerPosition("player")
+    if savedPlayerX == playerX and savedPlayerZ == playerZ then
+        return
+    else
+        -- Fix if the player clicks on a Wayshrine in the World Map
+        if g_castbarWorldMapFix == false then
+            if Castbar.BreakCastOnMove[castbar.id] then
+                CombatInfo.StopCastBar()
+                -- TODO: Note probably should make StopCastBar event clear the id on it too. Not doing this right now due to not wanting to troubleshoot possible issues before update release.
+            end
+        end
+        -- Only have this enabled for 1 tick max (the players coordinates only update 1 time after the World Map is closed so if the player moves before 500 ms we want to cancel the cast bar still)
+        if g_castbarWorldMapFix == true then
+            g_castbarWorldMapFix = false
+        end
+    end
+end
+
+-- Updates all floating labels. Called every 100ms
+function CombatInfo.OnUpdate(currentTime)
+    -- Procs
+    doProcs(currentTime)
+
+    -- Ability Highlight
+    doHighlights(currentTime)
+
+    -- Quickslot cooldown
+    doQuickslot()
 
     -- Hide Ultimate generation texture if it is time to do so
     if CombatInfo.SV.UltimateGeneration then
@@ -852,24 +890,7 @@ function CombatInfo.OnUpdate(currentTime)
     end
 
     -- Break castbar when movement interrupt is detected for certain effects.
-    savedPlayerX = playerX
-    savedPlayerZ = playerZ
-    playerX, playerZ = GetMapPlayerPosition("player")
-    if savedPlayerX == playerX and savedPlayerZ == playerZ then
-        return
-    else
-        -- Fix if the player clicks on a Wayshrine in the World Map
-        if g_castbarWorldMapFix == false then
-            if Castbar.BreakCastOnMove[castbar.id] then
-                CombatInfo.StopCastBar()
-                -- TODO: Note probably should make StopCastBar event clear the id on it too. Not doing this right now due to not wanting to troubleshoot possible issues before update release.
-            end
-        end
-        -- Only have this enabled for 1 tick max (the players coordinates only update 1 time after the World Map is closed so if the player moves before 500 ms we want to cancel the cast bar still)
-        if g_castbarWorldMapFix == true then
-            g_castbarWorldMapFix = false
-        end
-    end
+    doBreakCast()
 end
 
 local function CastBarWorldMapFix()
@@ -1061,76 +1082,68 @@ end
 -- Runs on the EVENT_RETICLE_TARGET_CHANGED listener.
 -- This handler fires every time the player's reticle target changes
 function CombatInfo.OnReticleTargetChanged(eventCode)
-    -- Define all possible reticle unit tags
-    local reticleUnitTags =
-    {
-        "reticleover",
-        "reticleoverplayer",
-        "reticleovercompanion"
-    }
-
+    if not eventCode then return end
     -- Clear existing toggles that should be removed on target change
-    for k, v in pairs(g_toggledSlotsRemain) do
-        if ((g_toggledSlotsFront[k] and g_uiCustomToggle[g_toggledSlotsFront[k]]) or
-            (g_toggledSlotsBack[k] and g_uiCustomToggle[g_toggledSlotsBack[k]])) and
-        not (g_toggledSlotsPlayer[k] or g_barNoRemove[k]) then
-            -- Hide front slot if it exists
-            if g_toggledSlotsFront[k] and g_uiCustomToggle[g_toggledSlotsFront[k]] then
-                CombatInfo.HideSlot(g_toggledSlotsFront[k], k)
+    for k, _ in pairs(g_toggledSlotsRemain) do
+        local frontSlot = g_toggledSlotsFront[k]
+        local backSlot = g_toggledSlotsBack[k]
+
+        if  ((frontSlot and g_uiCustomToggle[frontSlot]) or (backSlot and g_uiCustomToggle[backSlot]))
+        and not (g_toggledSlotsPlayer[k] or g_barNoRemove[k]) then
+            if frontSlot and g_uiCustomToggle[frontSlot] then
+                CombatInfo.HideSlot(frontSlot, k)
             end
 
-            -- Hide back slot if it exists
-            if g_toggledSlotsBack[k] and g_uiCustomToggle[g_toggledSlotsBack[k]] then
-                CombatInfo.HideSlot(g_toggledSlotsBack[k], k)
+            if backSlot and g_uiCustomToggle[backSlot] then
+                CombatInfo.HideSlot(backSlot, k)
             end
 
-            -- Clear related data
             g_toggledSlotsRemain[k] = nil
             g_toggledSlotsStack[k] = nil
 
-            -- Check for bar highlight effects
             if Effects.BarHighlightCheckOnFade[k] then
                 CombatInfo.BarHighlightSwap(k)
             end
         end
     end
 
-    -- Process buffs for each reticle unit tag
-    for _, unitTag in ipairs(reticleUnitTags) do
-        if DoesUnitExist(unitTag) then
-            for i = 1, GetNumBuffs(unitTag) do
-                -- Get unit and buff information
-                local unitName = GetRawUnitName(unitTag)
-                local buffName, timeStarted, timeEnding, buffSlot, stackCount,
-                iconFilename, buffType, effectType, abilityType,
-                statusEffectType, abilityId, canClickOff, castByPlayer = GetUnitBuffInfo(unitTag, i)
+    -- Process buffs for reticle unit tag
+    local unitTag = "reticleover"
+    if DoesUnitExist(unitTag) then
+        -- -- Debug: Print the actual unit tag when processing buffs for "reticleover"
+        -- if unitTag == "reticleover" then
+        --     printToChat(string.format("[DEBUG] Processing buffs for %s", zo_strformat("<<1>>", GetRawUnitName(unitTag)), true))
+        -- end
 
-                -- Convert boolean castByPlayer to numeric value
-                local castByPlayerNumeric = castByPlayer and 1 or 5
+        local numBuffs = GetNumBuffs(unitTag)
+        for i = 1, numBuffs do
+            local unitName = GetRawUnitName(unitTag)
+            local buffName, timeStarted, timeEnding, buffSlot, stackCount, iconFilename, buffType, effectType, abilityType, statusEffectType, abilityId, canClickOff, castByPlayer = GetUnitBuffInfo(unitTag, i)
 
-                -- Process effect if unit is alive
-                if not IsUnitDead(unitTag) then
-                    CombatInfo.OnEffectChanged(
-                        0, -- eventCode
-                        EFFECT_RESULT_UPDATED,
-                        buffSlot,
-                        buffName,
-                        unitTag,
-                        timeStarted,
-                        timeEnding,
-                        stackCount,
-                        iconFilename,
-                        buffType,
-                        effectType,
-                        abilityType,
-                        statusEffectType,
-                        unitName,
-                        0, -- unitId
-                        abilityId,
-                        castByPlayerNumeric,
-                        false -- passThrough
-                    )
-                end
+            local castByPlayerNumeric = castByPlayer and 1 or 5
+
+            if not IsUnitDead(unitTag) then
+                CombatInfo.OnEffectChanged(
+                    0, -- eventCode
+                    EFFECT_RESULT_UPDATED,
+                    buffSlot,
+                    buffName,
+                    unitTag,
+                    timeStarted,
+                    timeEnding,
+                    stackCount,
+                    iconFilename,
+                    buffType,
+                    effectType,
+                    abilityType,
+                    statusEffectType,
+                    unitName,
+                    0, -- unitId
+                    abilityId,
+                    castByPlayerNumeric,
+                    false, -- passThrough
+                    0      -- savedId
+                )
             end
         end
     end

@@ -297,8 +297,8 @@ function PVP:InitializeAddonMenu()
 		},
 		{
 			type = "checkbox",
-			name = "Show important projectiles notification",
-			tooltip = "ON - notify about important projectiles, OFF - do not notify about important projectiles",
+			name = "Show Important Attacks Notification",
+			tooltip = "ON - notify about important attacks (e.g. Rush of Agony), OFF - do not notify about important attacks",
 			default = self.defaults.showImportant,
 			disabled = function() return not self.SV.enabled or not self.SV.showAttacks end,
 			getFunc = function() return self.SV.showImportant end,
@@ -309,7 +309,30 @@ function PVP:InitializeAddonMenu()
 		},
 		{
 			type = "checkbox",
-			name = "Show channaled abilities notification",
+			name = "Play Important Attack Sound",
+			tooltip = "Play a sound alert for important attacks",
+			default = self.defaults.enableAttackSound,
+			disabled = function() return not self.SV.enabled or not self.SV.showAttacks or not self.SV.showImportant end,
+			getFunc = function() return self.SV.enableAttackSound end,
+			setFunc = function(newValue)
+				self.SV.enableAttackSound = newValue
+			end,
+		},
+		{
+			type = "checkbox",
+			name = "Important Attack Networking",
+			tooltip = "Allows for limited information sharing between group members about some important AOE attacks",
+				default = self.defaults.enableNetworking,
+				disabled = function() return not self.SV.enabled or not self.SV.showAttacks or not self.SV.showImportant end,
+				getFunc = function() return self.SV.enableNetworking end,
+				setFunc = function(newValue)
+					self.SV.enableNetworking = newValue
+					self:InitNetworking()
+				end,
+		},
+		{
+			type = "checkbox",
+			name = "Show Channaled Abilities Notification",
 			tooltip =
 			"ON - notify about hard-hitting channeled abilities, OFF - do not notify about hard-hitting channeled abilities",
 			default = self.defaults.showSnipes,
@@ -322,13 +345,26 @@ function PVP:InitializeAddonMenu()
 		},
 		{
 			type = "checkbox",
-			name = "Show heavy attacks notification",
+			name = "Show Heavy Attacks Notification",
 			tooltip = "ON - notify about heavy attacks, OFF - do not notify about heavy attacks",
 			default = self.defaults.showHeavyAttacks,
 			disabled = function() return not self.SV.enabled or not self.SV.showAttacks end,
 			getFunc = function() return self.SV.showHeavyAttacks end,
 			setFunc = function(newValue)
 				self.SV.showHeavyAttacks = newValue
+				self:InitControls()
+			end,
+		},
+		{
+			type = "checkbox",
+			name = "Show Piercing Marks",
+			tooltip =
+			"ON - notify about piercing marks, OFF - do not notify about piercing marks",
+			default = self.defaults.showPiercingMark,
+			disabled = function() return not self.SV.enabled or not self.SV.showAttacks end,
+			getFunc = function() return self.SV.showPiercingMark end,
+			setFunc = function(newValue)
+				self.SV.showPiercingMark = newValue
 				self:InitControls()
 			end,
 		},
@@ -486,7 +522,7 @@ function PVP:InitializeAddonMenu()
 			name = "Play new attacker sound",
 			tooltip = "ON - play sound, OFF - do not play sound",
 			default = self.defaults.playNewAttackerSound,
-			disabled = function() return not self.SV.enabled or not self.SV.showNamesFrame end,
+			disabled = function() return not self.SV.enabled end,
 			getFunc = function() return self.SV.playNewAttackerSound end,
 			setFunc = function(newValue)
 				self.SV.playNewAttackerSound = newValue
@@ -759,9 +795,9 @@ function PVP:InitializeAddonMenu()
 		},
 		{
 			type = "checkbox",
-			name = "Show on screen info for close objective",
+			name = "Show on-screen info for nearby objectives",
 			tooltip =
-			"ON - shows on screen info from for objective, OFF - doesn't show on screen info from for objective",
+			"ON - shows on-screen info for objectives, OFF - doesn't show on-screen info for objectives",
 			default = self.defaults.showOnScreen,
 			disabled = function() return not self.SV.enabled or not self.SV.show3DIcons end,
 			getFunc = function() return self.SV.showOnScreen end,
@@ -772,9 +808,9 @@ function PVP:InitializeAddonMenu()
 		},
 		{
 			type = "checkbox",
-			name = "Replace 3d icon with on screen info",
+			name = "Replace 3d icon with on-screen info",
 			tooltip =
-			"ON - icon of the objective will be hidden, while having on screen info, OFF - both on screen info and 3d icon will be present",
+			"ON - icon of the objective will be hidden, while having on-screen info, OFF - both on screen info and 3d icon will be present",
 			default = self.defaults.onScreenReplace,
 			disabled = function() return not self.SV.enabled or not self.SV.show3DIcons or not self.SV.showOnScreen end,
 			getFunc = function() return self.SV.onScreenReplace end,
